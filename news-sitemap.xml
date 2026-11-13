@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T22:40:25+01:00</news:publication_date>
+      <news:title>USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/8fed8c026bcbd62bb0a535875d7e548f/?t=crop:5500:2403:nowe:0:63.951224461564,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/odbudowa-ukrainy-za-setki-miliardow-dolarow-polska-chce-byc-przy-stole/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T22:40:25+01:00</news:publication_date>
+      <news:title>Odbudowa Ukrainy za setki miliardów dolarów. Polska chce być przy stole</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.wnp.pl/d/57/83/58/578358_r0_300.jpg</image:loc>
+      <image:title>Odbudowa Ukrainy za setki miliardów dolarów. Polska chce być przy stole</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T22:40:25+01:00</news:publication_date>
+      <news:title>Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/b0e1912a3a1ffe48d889681a86a78f06/?t=crop:1980:866:nowe:0:167,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/pracownik-telewizji-republika-uslyszal-zarzut-minister-potwierdza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T22:40:25+01:00</news:publication_date>
+      <news:title>Pracownik Telewizji Republika usłyszał zarzut. Minister potwierdza</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ix/ix4j4ckqdmvgy3uawmhwhjpxnydfpe9g.jpg</image:loc>
+      <image:title>Pracownik Telewizji Republika usłyszał zarzut. Minister potwierdza</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/mirra-andriejewa-diana-sznajder-relacja-na-zywo/</loc>
     <news:news>
       <news:publication>
