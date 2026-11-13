@@ -4,7 +4,7 @@ VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS i At
 - Ograniczenie bazy testowej do maksymalnie 300 artykułów (kolejka krocząca).
 - Zapis do 4 najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu).
 - Pobieranie oficjalnych miniatur ze źródeł (enclosure / media:content / img).
-- Równoległe pobieranie z 69 zweryfikowanych kanałów (67 redakcji: ogólnopolskie, gospodarcze, regionalne z 16 województw, świat, sport).
+- Równoległe pobieranie z 79 zweryfikowanych kanałów (77 redakcji: ogólnopolskie, gospodarcze, regionalne z 16 województw, świat, sport).
 - Aktualizacja articles.json oraz news-sitemap.xml.
 """
 
@@ -23,12 +23,16 @@ MAX_NEW_PER_RUN = 4
 ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne miniatury dla 100% spokoju prawnego
 
 LIVE_RSS_FEEDS = [
-    # --- Polityka, Prawo, Bezpieczeństwo ---
-    {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss_main", "path": "/Polska/Polityka"},
+    # --- Polityka, Prawo, Bezpieczeństwo, Opinia ---
+    {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss_main", "path": "/Polska/Polityka", "group": "Gremi Media"},
     {"name": "Defence24", "url": "https://defence24.pl/feed", "path": "/Polska/Polityka"},
     {"name": "InfoSecurity24", "url": "https://infosecurity24.pl/feed", "path": "/Polska/Polityka"},
     {"name": "Niezależna.pl", "url": "https://niezalezna.pl/feed/", "path": "/Polska/Polityka"},
     {"name": "Newsweek Polska", "url": "https://www.newsweek.pl/.feed", "path": "/Polska/Polityka"},
+    {"name": "Tygodnik Powszechny", "url": "https://www.tygodnikpowszechny.pl/rss.xml", "path": "/Polska/Polityka"},
+    {"name": "Klub Jagielloński", "url": "https://klubjagiellonski.pl/feed/", "path": "/Polska/Polityka"},
+    {"name": "Krytyka Polityczna", "url": "https://krytykapolityczna.pl/feed/", "path": "/Polska/Polityka"},
+    {"name": "Kultura Liberalna", "url": "https://kulturaliberalna.pl/feed/", "path": "/Polska/Polityka"},
 
     # --- Gospodarka, Finanse, Rynek Pracy, Rolnictwo ---
     {"name": "Bankier.pl", "url": "https://www.bankier.pl/rss/wiadomosci.xml", "path": "/Polska/Gospodarka"},
@@ -40,6 +44,10 @@ LIVE_RSS_FEEDS = [
     {"name": "PulsHR", "url": "https://www.pulshr.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
     {"name": "Farmer.pl", "url": "https://www.farmer.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
     {"name": "Forsal.pl", "url": "https://forsal.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
+    {"name": "Puls Biznesu", "url": "https://www.pb.pl/rss/najnowsze.xml", "path": "/Polska/Gospodarka"},
+    {"name": "Parkiet", "url": "https://www.parkiet.com/rss_main", "path": "/Polska/Gospodarka", "group": "Gremi Media"},
+    {"name": "XYZ.pl", "url": "https://xyz.pl/feed", "path": "/Polska/Gospodarka"},
+    {"name": "Bezprawnik.pl", "url": "https://bezprawnik.pl/feed/", "path": "/Polska/Gospodarka"},
 
     # --- Energetyka, Transformacja ---
     {"name": "WysokieNapiecie.pl", "url": "https://wysokienapiecie.pl/feed/", "path": "/Polska/Energetyka"},
@@ -60,6 +68,8 @@ LIVE_RSS_FEEDS = [
     {"name": "Wyborcza.pl", "url": "https://wyborcza.pl/pub/rss/najnowsze_wyborcza.xml", "path": "/Polska"},
     {"name": "naTemat.pl", "url": "https://natemat.pl/rss/wszystkie", "path": "/Polska"},
     {"name": "o2.pl", "url": "https://www.o2.pl/rss.xml", "path": "/Polska"},
+    {"name": "Wirtualnemedia.pl", "url": "https://www.wirtualnemedia.pl/rss/aktualnosci", "path": "/Polska"},
+    {"name": "RadioMaryja.pl", "url": "https://www.radiomaryja.pl/feed/", "path": "/Polska"},
 
     # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
     {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Poznan"},
@@ -113,7 +123,7 @@ PREFERRED_PRIMARY_OUTLETS = {
     "Rzeczpospolita", "Bankier.pl", "Money.pl", "WNP.pl", "300Gospodarka",
     "WysokieNapiecie.pl", "Energetyka24", "Defence24", "InfoSecurity24",
     "RMF24", "Polsat News", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
-    "GazetaPrawna.pl (DGP)", "Forsal.pl",
+    "GazetaPrawna.pl (DGP)", "Forsal.pl", "Puls Biznesu", "Parkiet", "XYZ.pl",
 }
 
 OPINION_MARKERS = [
