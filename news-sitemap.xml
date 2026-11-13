@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://verity.pl/Polska/Gospodarka/skladka-zdrowotna-2027-uchwalona-sejm-wyniki-kwoty</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-02-05T14:20:00+01:00</news:publication_date>
+      <news:title>Sejm przegłosował nowelizację składki zdrowotnej dla przedsiębiorców od 2027 roku (234 za, 208 przeciw)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Poznan/zderzenie-tramwajow-glogowska-most-dworcowy-utrudnienia-mpk</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-19T08:45:00+01:00</news:publication_date>
+      <news:title>Zderzenie dwóch tramwajów na ul. Głogowskiej w Poznaniu: 4 osoby poszkodowane, wstrzymany ruch na liniach 5, 8, 11 i 14</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Poznan/protest-rolnikow-poznan-wizyta-premiera-petycja-mercosur</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-24T13:15:00+01:00</news:publication_date>
+      <news:title>Wizyta premiera Donalda Tuska w Poznaniu i protest rolników przed Urzędem Wojewódzkim: 4 postulaty ws. umowy Mercosur i akcyzy paliwowej</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Energetyka/ceny-pradu-zamrozenie-taryfy-dystrybucyjne-ure-oplata-mocowa</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-02-09T11:10:00+01:00</news:publication_date>
+      <news:title>Ceny energii elektrycznej: utrzymanie stawki 500 zł/MWh przy wzroście opłaty mocowej i dystrybucyjnej o 14%</news:title>
+    </news:news>
+  </url>
+</urlset>

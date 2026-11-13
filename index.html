@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VERITY – Wieloźródłowa Weryfikacja i Synteza Informacji</title>
+  <meta name="description" content="Wieloźródłowa weryfikacja i synteza informacji z 54 redakcji ogólnopolskich, regionalnych i branżowych. Pełna treść faktograficzna, zero clickbaitu, bezpośrednie porównanie ujęcia w redakcjach." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://verity.pl/Polska" />
+
+  <!-- OpenGraph / Google Discover -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="VERITY" />
+  <meta property="og:title" content="VERITY – Wieloźródłowa Weryfikacja Informacji" />
+  <meta property="og:description" content="Zestawienie twardych danych i faktów z wielu źródeł informacyjnych bez clickbaitu i anonimowych spekulacji." />
+
+  <!-- JSON-LD Structured Data (NewsArticle + BreadcrumbList + FAQPage) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "VERITY",
+      "url": "https://verity.pl",
+      "description": "Wieloźródłowa weryfikacja i synteza informacji z 54 redakcji w Polsce."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Polska", "item": "https://verity.pl/Polska" },
+        { "@type": "ListItem", "position": 2, "name": "Gospodarka", "item": "https://verity.pl/Polska/Gospodarka" },
+        { "@type": "ListItem", "position": 3, "name": "Polityka", "item": "https://verity.pl/Polska/Polityka" },
+        { "@type": "ListItem", "position": 4, "name": "Energetyka", "item": "https://verity.pl/Polska/Energetyka" },
+        { "@type": "ListItem", "position": 5, "name": "Poznań", "item": "https://verity.pl/Polska/Poznan" }
+      ]
+    }
+  ]
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-utility">
+    <div class="container top-utility-inner">
+      <div>
+        Weryfikacja z 54 źródeł (Agencje, Gospodarka, Prawo, 16 Województw) · Filtr Anty-Clickbait
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.85rem;">
+        <button class="btn-outline" style="padding: 0.2rem 0.6rem; font-size: 0.74rem;" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
+          Kolejka redakcyjna (<span id="pendingBadge">1</span>)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <!-- Brand -->
+        <div class="brand" onclick="selectPath('/Polska')">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-title">VERITY</div>
+            <div class="brand-subtitle">Wieloźródłowa weryfikacja faktów</div>
+          </div>
+        </div>
+
+        <!-- Search & Device Theme Switcher -->
+        <div class="header-controls">
+          <div class="search-box">
+            <input
+              id="searchInput"
+              type="search"
+              class="search-input"
+              placeholder="Szukaj (np. Poznaniu Tuskowi Styczniu, prąd, składka)..."
+              oninput="renderPortal()"
+              aria-label="Wyszukaj artykuły"
+            />
+            <button id="clearSearchBtn" class="search-clear hidden" onclick="clearSearch()" title="Wyczyść">✕</button>
+          </div>
+
+          <div class="theme-switcher" role="group" aria-label="Wybór motywu kolorystycznego">
+            <button id="themeBtn_auto" class="theme-btn active" onclick="applyTheme('auto')" title="Automatycznie dopasuj do motywu urządzenia">Auto</button>
+            <button id="themeBtn_light" class="theme-btn" onclick="applyTheme('light')" title="Motyw jasny">Jasny</button>
+            <button id="themeBtn_dark" class="theme-btn" onclick="applyTheme('dark')" title="Motyw ciemny">Ciemny</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clean Slash Navigation Bar -->
+      <nav class="path-nav" aria-label="Kategorie tematyczne">
+        <button class="path-chip active" data-path="/Polska" onclick="selectPath('/Polska')">/Polska</button>
+        <button class="path-chip" data-path="/Polska/Gospodarka" onclick="selectPath('/Polska/Gospodarka')">/Polska/Gospodarka</button>
+        <button class="path-chip" data-path="/Polska/Polityka" onclick="selectPath('/Polska/Polityka')">/Polska/Polityka</button>
+        <button class="path-chip" data-path="/Polska/Energetyka" onclick="selectPath('/Polska/Energetyka')">/Polska/Energetyka</button>
+        <button class="path-chip" data-path="/Polska/Poznan" onclick="selectPath('/Polska/Poznan')">/Polska/Poznan</button>
+        <span class="path-divider">|</span>
+        <button class="path-chip" data-path="/Swiat" onclick="selectPath('/Swiat')">/Swiat</button>
+        <button class="path-chip" data-path="/Sport" onclick="selectPath('/Sport')">/Sport</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    <!-- Public Reader View -->
+    <section id="viewPublic">
+      <div id="articlesFeed" class="articles-stack"></div>
+    </section>
+
+    <!-- Editorial Approval Queue View -->
+    <section id="viewEditorial" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+        <div>
+          <h1 style="font-size: 1.35rem; font-weight: 800;">Kolejka Weryfikacji Redakcyjnej</h1>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+          </p>
+        </div>
+        <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
+      </div>
+      <div id="editorialQueue" class="articles-stack"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>VERITY</strong> · Wieloźródłowa weryfikacja faktów bez clickbaitu i opinii publicystycznych
+      </div>
+      <div style="display: flex; gap: 1rem;">
+        <a href="news-sitemap.xml" style="color: var(--text-muted); text-decoration: none;">Mapa Google News (XML)</a>
+        <a href="robots.txt" style="color: var(--text-muted); text-decoration: none;">robots.txt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
