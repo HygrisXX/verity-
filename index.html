@@ -38,6 +38,9 @@
   ]
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -45,12 +48,16 @@
   <!-- Top Utility Bar -->
   <div class="top-utility">
     <div class="container top-utility-inner">
-      <div>
-        Weryfikacja z 97 redakcji (Ogólnopolskie, Gospodarka, Energetyka, 16 Województw, Świat, Sport) · Filtr Anty-Clickbait
+      <div class="top-utility-meta">
+        <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
+        <span class="top-sep" aria-hidden="true"></span>
+        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
-      <div style="display: flex; align-items: center; gap: 0.85rem;">
-        <button class="btn-outline" style="padding: 0.2rem 0.6rem; font-size: 0.74rem;" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna (<span id="pendingBadge">1</span>)
+      <div class="top-utility-actions">
+        <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
+          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">1</span>
         </button>
       </div>
     </div>
@@ -65,7 +72,7 @@
           <div class="brand-mark">V</div>
           <div>
             <div class="brand-title">VERITY</div>
-            <div class="brand-subtitle">Wieloźródłowa weryfikacja faktów</div>
+            <div class="brand-subtitle">Wieloźródłowa weryfikacja i synteza informacji</div>
           </div>
         </div>
 
@@ -76,7 +83,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj..."
+              placeholder="Szukaj tematów, instytucji, redakcji…"
               oninput="renderPortal()"
               aria-label="Wyszukaj artykuły"
             />
@@ -93,14 +100,14 @@
 
       <!-- Clean Slash Navigation Bar -->
       <nav class="path-nav" aria-label="Kategorie tematyczne">
-        <button class="path-chip active" data-path="/Polska" onclick="selectPath('/Polska')">/Polska</button>
-        <button class="path-chip" data-path="/Polska/Gospodarka" onclick="selectPath('/Polska/Gospodarka')">/Polska/Gospodarka</button>
-        <button class="path-chip" data-path="/Polska/Polityka" onclick="selectPath('/Polska/Polityka')">/Polska/Polityka</button>
-        <button class="path-chip" data-path="/Polska/Energetyka" onclick="selectPath('/Polska/Energetyka')">/Polska/Energetyka</button>
-        <button class="path-chip" data-path="/Polska/Poznan" onclick="selectPath('/Polska/Poznan')">/Polska/Poznan</button>
+        <button class="path-chip active" data-path="/Polska" onclick="selectPath('/Polska')">Polska</button>
+        <button class="path-chip" data-path="/Polska/Gospodarka" onclick="selectPath('/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</button>
+        <button class="path-chip" data-path="/Polska/Polityka" onclick="selectPath('/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</button>
+        <button class="path-chip" data-path="/Polska/Energetyka" onclick="selectPath('/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</button>
+        <button class="path-chip" data-path="/Polska/Poznan" onclick="selectPath('/Polska/Poznan')"><span class="path-root">Polska / </span>Poznań</button>
         <span class="path-divider">|</span>
-        <button class="path-chip" data-path="/Swiat" onclick="selectPath('/Swiat')">/Swiat</button>
-        <button class="path-chip" data-path="/Sport" onclick="selectPath('/Sport')">/Sport</button>
+        <button class="path-chip" data-path="/Swiat" onclick="selectPath('/Swiat')">Świat</button>
+        <button class="path-chip" data-path="/Sport" onclick="selectPath('/Sport')">Sport</button>
       </nav>
     </div>
   </header>
@@ -114,10 +121,10 @@
 
     <!-- Editorial Approval Queue View -->
     <section id="viewEditorial" class="hidden">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+      <div class="editorial-head">
         <div>
-          <h1 style="font-size: 1.35rem; font-weight: 800;">Kolejka Weryfikacji Redakcyjnej</h1>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">
+          <h1>Kolejka Weryfikacji Redakcyjnej</h1>
+          <p>
             Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
           </p>
         </div>
@@ -130,12 +137,14 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <strong>VERITY</strong> · Wieloźródłowa weryfikacja faktów bez clickbaitu i opinii publicystycznych
+      <div class="footer-brand">
+        <strong>VERITY</strong>
+        <p>Wieloźródłowa weryfikacja faktów z 97 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
-      <div style="display: flex; gap: 1rem;">
-        <a href="news-sitemap.xml" style="color: var(--text-muted); text-decoration: none;">Mapa Google News (XML)</a>
-        <a href="robots.txt" style="color: var(--text-muted); text-decoration: none;">robots.txt</a>
+      <div class="footer-links">
+        <a href="news-sitemap.xml">Mapa Google News (XML)</a>
+        <a href="robots.txt">robots.txt</a>
+        <a href="articles.json">Dane (JSON)</a>
       </div>
     </div>
   </footer>

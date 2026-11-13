@@ -2151,21 +2151,51 @@ function sourcesLabel(n) {
   return `${n} źródeł`;
 }
 
+const PATH_TITLES = {
+  '/Polska': 'Polska — wszystkie działy',
+  '/Polska/Gospodarka': 'Gospodarka i rynek',
+  '/Polska/Polityka': 'Polityka i prawo',
+  '/Polska/Energetyka': 'Energetyka i klimat',
+  '/Polska/Poznan': 'Poznań i Wielkopolska',
+  '/Swiat': 'Świat i geopolityka',
+  '/Sport': 'Sport'
+};
+
+function shortCatLabel(path) {
+  const parts = (path || '/Polska').split('/').filter(Boolean);
+  if (parts.length <= 1) return parts[0] || 'Polska';
+  return parts.slice(1).join(' · ');
+}
+
+function outletMonogram(name) {
+  const clean = (name || 'V').replace(/\s*\[[^\]]*\]/, '').trim();
+  const words = clean.split(/[\s.-]+/).filter(Boolean);
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
+  return clean.slice(0, 2).toUpperCase();
+}
+
+function thumbWrapHtml(art, wrapClass, imgClass) {
+  const label = esc(shortCatLabel(art.path));
+  const fallback = `<div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${label}</span><span class="thumb-fallback-mark">V</span></div>`;
+  const img = art.thumbnail_url
+    ? `<img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="${imgClass}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />`
+    : '';
+  return `<div class="${wrapClass}">${fallback}${img}</div>`;
+}
+
 function storyCardHtml(art) {
   const stats = art.metrics.slice(0, 2).map(m => `<span class="chip" title="${esc(m.label)}">${esc(m.val)}</span>`).join('');
-  const thumbHtml = art.thumbnail_url ? `
-    <div class="story-thumb-wrap">
-      <img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
-    </div>` : '';
   return `
     <article ${catAttr(art)} data-id="${art.id}" onclick="openArticle(${art.id})" tabindex="0" onkeydown="if(event.key==='Enter')openArticle(${art.id})">
-      <div class="story-card" style="border-top-color:var(--cat)">
-        ${thumbHtml}
-        <div class="story-top"><span class="cat-badge">${esc(art.path)}</span><span class="story-date">${esc(art.display_date)}</span></div>
-        <h2 class="story-title">${esc(art.seo_title)}</h2>
-        <p class="story-lede">${esc(articleLede(art, 200))}</p>
-        ${stats ? `<div class="story-chips">${stats}</div>` : ''}
-        <div class="story-foot">${meterHtml(art.fact_agreement_pct, art.sources.length)}<span>${sourcesLabel(art.sources.length)} · ${readingMinutes(art)} min czytania</span></div>
+      <div class="story-card">
+        ${thumbWrapHtml(art, 'story-thumb-wrap', 'story-thumb')}
+        <div class="story-body">
+          <div class="story-top"><span class="cat-badge">${esc(shortCatLabel(art.path))}</span><span class="story-date">${esc(art.display_date)}</span></div>
+          <h2 class="story-title">${esc(art.seo_title)}</h2>
+          <p class="story-lede">${esc(articleLede(art, 200))}</p>
+          ${stats ? `<div class="story-chips">${stats}</div>` : ''}
+          <div class="story-foot">${meterHtml(art.fact_agreement_pct, art.sources.length)}<span>${sourcesLabel(art.sources.length)} · ${readingMinutes(art)} min</span></div>
+        </div>
       </div>
     </article>`;
 }
@@ -2184,36 +2214,35 @@ function renderFeed(list, q) {
   const lead = useLead ? list[0] : null;
   const rest = useLead ? list.slice(1) : list;
 
+  const titleText = q ? `Wyniki dla „${esc(q)}”` : esc(PATH_TITLES[currentPath] || currentPath);
   const heading = `
     <div class="feed-heading">
-      <h1>${q ? 'Wyniki wyszukiwania' : esc(currentPath)}</h1>
-      <span>${list.length} ${list.length === 1 ? 'opracowanie' : 'opracowań'}</span>
+      <div>
+        <span class="feed-crumb">${esc(currentPath)}</span>
+        <h1>${titleText}</h1>
+      </div>
+      <span>${list.length} ${list.length === 1 ? 'opracowanie' : (list.length >= 2 && list.length <= 4 ? 'opracowania' : 'opracowań')}</span>
     </div>`;
 
-  const leadThumb = lead && lead.thumbnail_url ? `
-    <div class="lead-thumb-wrap">
-      <img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
-    </div>` : '';
-
   const leadHtml = lead ? `
-    <article ${catAttr(lead)} style="display:block">
-      <div class="lead-story" style="border-top-color:var(--cat)" onclick="openArticle(${lead.id})" tabindex="0" onkeydown="if(event.key==='Enter')openArticle(${lead.id})">
+    <article ${catAttr(lead)} class="lead-wrap">
+      <div class="lead-story" onclick="openArticle(${lead.id})" tabindex="0" onkeydown="if(event.key==='Enter')openArticle(${lead.id})">
+        ${thumbWrapHtml(lead, 'lead-thumb-wrap', 'lead-thumb')}
         <div class="lead-main">
-          ${leadThumb}
-          <div class="story-top"><span class="cat-badge">${esc(lead.path)}</span><span class="story-date">${esc(lead.display_date)}</span></div>
+          <div class="story-top"><span class="cat-badge">${esc(shortCatLabel(lead.path))}</span><span class="story-date">${esc(lead.display_date)}</span></div>
           <h2 class="lead-title">${esc(lead.seo_title)}</h2>
-          <p class="lead-lede">${esc(articleLede(lead, 300))}</p>
-          <div class="story-foot" style="border-top:none;padding-top:0">${meterHtml(lead.fact_agreement_pct, lead.sources.length)}<span>${sourcesLabel(lead.sources.length)} · ${readingMinutes(lead)} min czytania</span></div>
+          <p class="lead-lede">${esc(articleLede(lead, 290))}</p>
+          <div class="story-foot">${meterHtml(lead.fact_agreement_pct, lead.sources.length)}<span>${sourcesLabel(lead.sources.length)} · ${readingMinutes(lead)} min czytania</span></div>
         </div>
         <div class="lead-side">
-          <div class="lead-side-title">Kluczowe dane</div>
-          ${lead.metrics.map(m => `<div class="stat-row"><span class="stat-label">${esc(m.label)}</span><span class="stat-val">${esc(m.val)}</span></div>`).join('')}
+          <div class="lead-side-title">Kluczowe parametry</div>
+          ${lead.metrics.slice(0, 3).map(m => `<div class="stat-row"><span class="stat-label">${esc(m.label)}</span><span class="stat-val">${esc(m.val)}</span></div>`).join('')}
         </div>
       </div>
     </article>` : '';
 
   container.innerHTML = heading + leadHtml +
-    (rest.length ? `<div class="cards-grid" style="${lead ? 'margin-top:1.1rem' : ''}">${rest.map(storyCardHtml).join('')}</div>` : '');
+    (rest.length ? `<div class="cards-grid${lead ? ' after-lead' : ''}">${rest.map(storyCardHtml).join('')}</div>` : '');
 }
 
 function renderArticleView(art, published) {
@@ -2228,6 +2257,7 @@ function renderArticleView(art, published) {
 
   const heroThumb = art.thumbnail_url ? `
     <div class="article-hero-wrap">
+      <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(art.path))}</span><span class="thumb-fallback-mark">V</span></div>
       <img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
     </div>` : '';
 
@@ -2235,24 +2265,23 @@ function renderArticleView(art, published) {
     ? `
       <div class="aside-card">
         <div class="aside-title">Zgodność danych</div>
-        <div class="big-meter meter ${meterClass(art.fact_agreement_pct)}" style="font-size:1.7rem">${art.fact_agreement_pct}%<small>${sourcesLabel(art.sources.length)}</small></div>
-        <div class="meter-bar" style="width:100%;height:0.45rem;margin-top:0.6rem"><span class="meter-fill" style="width:${art.fact_agreement_pct}%;background:var(--m,var(--success))"></span></div>
+        <div class="big-meter meter ${meterClass(art.fact_agreement_pct)}">${art.fact_agreement_pct}%<small>${sourcesLabel(art.sources.length)}</small></div>
+        <div class="meter-bar wide"><span class="meter-fill" style="width:${art.fact_agreement_pct}%"></span></div>
       </div>`
     : `
       <div class="aside-card">
         <div class="aside-title">Status źródeł</div>
-        <div style="font-size:0.92rem;font-weight:700;color:var(--text-main)">1 redakcja (lokalne / branżowe)</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.35rem;line-height:1.45">
+        <div class="aside-status">1 redakcja (lokalne / branżowe)</div>
+        <div class="aside-note">
           Informacja niszowa z pojedynczego źródła — publikowana bez wskaźnika % zgodności krzyżowej.
         </div>
       </div>`;
 
   container.innerHTML = `
     <div ${catAttr(art)}>
-      <button class="back-link" onclick="closeArticle()">← Wróć do ${esc(currentPath)}</button>
+      <button class="back-link" onclick="closeArticle()">← Wróć do ${esc(PATH_TITLES[currentPath] || currentPath)}</button>
       <div class="reader ${hasAside ? 'has-aside' : ''}">
         <article class="article-main">
-          ${heroThumb}
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">${esc(art.path)}</span>
@@ -2262,6 +2291,8 @@ function renderArticleView(art, published) {
             <h1 class="article-title">${esc(art.seo_title)}</h1>
             <p class="article-lede">${esc(articleLede(art, 320))}</p>
           </header>
+
+          ${heroThumb}
 
           ${art.metrics && art.metrics.length ? `
             <div class="facts-strip">
@@ -2297,8 +2328,13 @@ function renderArticleView(art, published) {
             <div class="perspectives-grid">
               ${art.perspectives.map(p => `
                 <div class="perspective-col">
-                  <div class="perspective-outlet">${esc(p.outlet)}</div>
-                  <div class="perspective-angle">${esc(p.angle)}</div>
+                  <div class="perspective-head">
+                    <span class="outlet-mono" aria-hidden="true">${esc(outletMonogram(p.outlet))}</span>
+                    <div>
+                      <div class="perspective-outlet">${esc(p.outlet)}</div>
+                      <div class="perspective-angle">${esc(p.angle)}</div>
+                    </div>
+                  </div>
                   <p class="perspective-summary">${esc(p.summary)}</p>
                   ${p.url ? `<a class="perspective-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>` : ''}
                 </div>`).join('')}
@@ -2306,9 +2342,9 @@ function renderArticleView(art, published) {
           </div>` : ''}
 
           ${art.corrections.length ? `
-            <div class="callout callout-warn" style="margin-top:1.2rem;border-left-color:var(--success);background:var(--success-soft)">
+            <div class="callout callout-success">
               <strong>Zweryfikowane uzupełnienia czytelników (${art.corrections.length}):</strong>
-              ${art.corrections.map(c => `<div style="margin-top:0.25rem">• ${esc(c.claim_text)} (<a href="${esc(c.evidence_url)}" target="_blank" rel="noopener">link</a>)</div>`).join('')}
+              ${art.corrections.map(c => `<div>• ${esc(c.claim_text)} (<a href="${esc(c.evidence_url)}" target="_blank" rel="noopener">link</a>)</div>`).join('')}
             </div>` : ''}
 
           <div class="article-footer">
@@ -2316,13 +2352,13 @@ function renderArticleView(art, published) {
             <button class="btn-outline" onclick="toggleCorr(${art.id})">Zgłoś sprostowanie (wymagany link do źródła)</button>
           </div>
           <div id="corrDrawer_${art.id}" class="correction-drawer hidden">
-            <div style="font-size:0.8rem;font-weight:600">Zgłoś korektę faktograficzną – przyjmujemy wyłącznie zgłoszenia z linkiem do dokumentu lub źródła:</div>
+            <div class="corr-intro">Zgłoś korektę faktograficzną – przyjmujemy wyłącznie zgłoszenia z linkiem do dokumentu lub źródła:</div>
             <div class="form-row">
               <input id="corrClaim_${art.id}" type="text" class="text-input" placeholder="Co wymaga korekty?" />
               <input id="corrUrl_${art.id}" type="text" class="text-input" placeholder="Link do dowodu: https://..." />
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;flex-wrap:wrap">
-              <span id="corrMsg_${art.id}" style="font-size:0.78rem"></span>
+            <div class="corr-actions">
+              <span id="corrMsg_${art.id}" class="corr-msg"></span>
               <button class="btn-primary" onclick="submitCorr(${art.id})">Wyślij korektę</button>
             </div>
           </div>
@@ -2334,14 +2370,14 @@ function renderArticleView(art, published) {
           <div class="aside-card">
             <div class="aside-title">W tym artykule</div>
             <ul class="aside-list">
-              ${art.full_sections.map((s, i) => `<li><button class="toc-btn" onclick="document.getElementById('sec_${art.id}_${i}').scrollIntoView({behavior:'smooth'})">${esc(s.heading)}</button></li>`).join('')}
+              ${art.full_sections.map((s, i) => `<li><button class="toc-btn" onclick="document.getElementById('sec_${art.id}_${i}').scrollIntoView({behavior:'smooth'})"><span>${esc(s.heading)}</span><span>↓</span></button></li>`).join('')}
             </ul>
           </div>` : ''}
           ${uniqueLinks.length ? `
           <div class="aside-card">
             <div class="aside-title">Źródła do przeczytania</div>
             <ul class="aside-list">
-              ${uniqueLinks.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.outlet.replace(/\s*\[[^\]]*\]/, ''))} ↗</a></li>`).join('')}
+              ${uniqueLinks.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(p.outlet.replace(/\s*\[[^\]]*\]/, ''))}</span><span>↗</span></a></li>`).join('')}
             </ul>
           </div>` : ''}
         </aside>
@@ -2360,25 +2396,25 @@ function renderEditorialPanel(pending) {
   if (!container) return;
 
   if (!pending.length) {
-    container.innerHTML = `<div class="empty-state" style="color:var(--success);font-weight:600">Wszystkie artykuły z kolejki zostały zatwierdzone i opublikowane.</div>`;
+    container.innerHTML = `<div class="empty-state success">Wszystkie artykuły z kolejki zostały zatwierdzone i opublikowane.</div>`;
     return;
   }
 
   container.innerHTML = pending.map(art => `
-    <div class="article-card" style="padding:1.5rem;border-color:var(--warning)">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">
-        <span style="font-size:0.78rem;font-weight:700;color:var(--warning)">OCZEKUJE NA AKCEPTACJĘ REDAKCJI</span>
-        <span style="font-family:monospace;font-size:0.8rem;color:var(--text-muted)">${esc(art.path)}</span>
+    <div class="article-card queue-card">
+      <div class="queue-card-top">
+        <span class="queue-status">Oczekuje na akceptację redakcji</span>
+        <span class="queue-path">${esc(art.path)}</span>
       </div>
-      <h3 style="font-family:Georgia,serif;font-size:1.25rem;font-weight:700;margin-bottom:0.75rem">${esc(art.seo_title)}</h3>
-      <div style="margin-bottom:1rem">
+      <h3 class="queue-title">${esc(art.seo_title)}</h3>
+      <div class="queue-body">
         ${art.full_sections.map(s => `<p class="section-paragraph"><strong>${esc(s.heading)}:</strong> ${formatCitations(esc(s.paragraphs.join(' ')), art.perspectives)}</p>`).join('')}
       </div>
-      <div style="margin-bottom:1rem">
-        <label style="display:block;font-size:0.8rem;font-weight:700;margin-bottom:0.35rem;color:var(--warning)">Nota weryfikacyjna redakcji (wyświetli się nad artykułem):</label>
+      <div>
+        <label class="queue-label" for="adminNoteInput_${art.id}">Nota weryfikacyjna redakcji (wyświetli się nad artykułem):</label>
         <input id="adminNoteInput_${art.id}" type="text" class="text-input" value="${esc(art.admin_note)}" />
       </div>
-      <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
+      <div class="queue-actions">
         <button class="btn-primary" onclick="approveArt(${art.id})">Zatwierdź i opublikuj</button>
         <button class="btn-outline" onclick="rejectArt(${art.id})">Odrzuć</button>
       </div>
@@ -2430,6 +2466,14 @@ window.addEventListener('hashchange', () => { renderPortal(); window.scrollTo({ 
 
 window.addEventListener('DOMContentLoaded', async () => {
   applyTheme(currentThemeMode);
+  const dateEl = document.getElementById('todayDateLabel');
+  if (dateEl) {
+    try {
+      dateEl.textContent = new Intl.DateTimeFormat('pl-PL', {
+        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+      }).format(new Date());
+    } catch (e) {}
+  }
   try {
     const resp = await fetch('articles.json', { cache: 'no-store' });
     if (resp.ok) {
