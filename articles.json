@@ -1,6 +1,300 @@
 [
   {
     "id": 1,
+    "path": "/Polska",
+    "seo_url": "/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu",
+    "seo_title": "AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu",
+    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/c7/e1/radek-pietruszka-636x421-c7e17337.jpg",
+    "published_iso": "2026-11-13T15:43:30+01:00",
+    "display_date": "13.11.2026, 15:43",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "5 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (5 źródeł)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (5 redakcji)",
+        "paragraphs": [
+          "Sąd Okręgowy w Warszawie wydał w piątek (13 listopada) wyrok w precedensowym procesie dotyczącym wykorzystania przez firmę w reklamach wygenerowanego przez AI głosu znanego lektora. [Źródło: Radio Zachód, TVN24, Business Insider PL, Wirtualnemedia.pl]",
+          "Wyrok jest nieprawomocny. [Źródło: TVN24, Wirtualnemedia.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Sąd ocenił, że wygenerowane treści mają charakter deepfake i zasądził ich usunięcie, a także zadośćuczynienie oraz przeprosiny dla lektora. Sprawa przed Wydziałem Własności Intelektualnej warszawskiego SO toczyła się od końca stycznia. [Źródło: Radio Zachód]",
+          "- Mam nadzieję, że ten precedens z czasem znajdzie swoją drogę do zapisów w polskim prawie - skomentował w rozmowie z tvn24.pl Łukomski. [Źródło: TVN24]",
+          "Wyrok uznał, że głos stanowi dobro osobiste każdego człowieka podlegające ochronie prawnej. [Źródło: Business Insider PL]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu",
+        "url": "https://www.rmf24.pl/fakty/polska/news-ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-,nIdn,1026031"
+      },
+      {
+        "outlet": "Radio Zachód",
+        "angle": "Depesza źródłowa",
+        "summary": "Precedensowy wyrok sądu: sztuczna inteligencja „ukradła” głos lektora. Jarosław Łukomski wygrał proces!",
+        "url": "https://zachod.pl/1589929/precedensowy-wyrok-sadu-sztuczna-inteligencja-ukradla-glos-lektora-jaroslaw-lukomski-wygral-proces/"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Głos wygenerowany przez AI \"łudząco podobny\" do głosu lektora. Zapadł ważny wyrok",
+        "url": "https://tvn24.pl/biznes/prawo/jaroslaw-lukomski-firma-uzyla-glosu-wygenerowanego-przez-ai-zapadl-wazny-wyrok-st9338031?source=rss"
+      },
+      {
+        "outlet": "Business Insider PL",
+        "angle": "Depesza źródłowa",
+        "summary": "Precedensowy w Polsce wyrok w sprawie AI. Lektor wygrał prawo do swojego głosu",
+        "url": "https://businessinsider.com.pl/prawo/sztuczna-inteligencja-przegrala-w-sadzie-glos-lektora-wykorzystany-bezprawnie/l7q0lge"
+      },
+      {
+        "outlet": "Wirtualnemedia.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Głos znanego lektora w reklamie oczyszczalni ścieków. Zapadł wyrok sądu",
+        "url": "https://www.wirtualnemedia.pl/lektor-jaroslaw-lukomski-glos-ai-reklama-oczyszczalnia-sciekow-jfc-polska-eleven-labs-precedens,7350609600051200a"
+      }
+    ],
+    "sources": [
+      "Business Insider PL",
+      "RMF24",
+      "Radio Zachód",
+      "TVN24",
+      "Wirtualnemedia.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska",
+    "seo_url": "/Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw",
+    "seo_title": "Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw",
+    "thumbnail_url": "https://s20.tvp.pl/images2/0/5/1/uid_051198f010a34ab59b4225dc7c3584f9_width_1280_play_0_pos_0_gs_0_height_720.jpg",
+    "published_iso": "2026-11-13T15:43:30+01:00",
+    "display_date": "13.11.2026, 15:43",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "TVP.info"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "– Przeglądamy wszystkie sprawy w Trybunale. [Źródło: TVP.info, Onet Wiadomości, Gazeta.pl]",
+          "Najpierw wzięliśmy sto najstarszych spraw . [Źródło: TVP.info]",
+          "To są sprawy, które wpłynęły między 2013 rokiem a 2021. W bardzo wielu tych sprawach prawie od siedmiu lat niepodejmowane są żadne czynności – opowiada na nagraniu sędzia. [Źródło: TVP.info]",
+          "Obejrzyj także: Oświadczenie Anny Korwin-Piotrowskiej. [Źródło: TVP.info]",
+          "„Nadamy sprawom właściwy bieg” [Źródło: TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Poinformowała także, że odmówiła przyjęcia wniosku prokuratury w sprawie uchylenia immunitetu Bogdana Święczkowskiego z powodu braków formalnych. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "TVP.info",
+        "angle": "Depesza źródłowa",
+        "summary": "Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw",
+        "url": "https://www.tvp.info/96456613/oswiadczenie-anny-korwin-piotrowskiej-sedzia-mowi-o-planowanych-pracach-trybunalu-konstytucyjnego"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Nowe oświadczenie Anny Korwin-Piotrowskiej. Odmówiła przyjęcia wniosku prokuratury",
+        "url": "https://wiadomosci.onet.pl/kraj/nowe-oswiadczenie-anny-korwin-piotrowskiej-przekazala-czym-zajmuja-sie-sedziowie/7hwjme7"
+      },
+      {
+        "outlet": "Gazeta.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Nowe oświadczenie Korwin-Piotrowskiej. \"Przeglądamy sto najstarszych spraw w Trybunale\"",
+        "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33131393,nowe-oswiadczenie-korwin-piotrowskiej-przegladamy-sto-najstarszych.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+      }
+    ],
+    "sources": [
+      "Gazeta.pl",
+      "Onet Wiadomości",
+      "TVP.info"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska",
+    "seo_url": "/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie",
+    "seo_title": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\"",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/3n/3n85gbwvdqy81cw2zntw687crvx1sbcb.jpg",
+    "published_iso": "2026-11-13T15:43:30+01:00",
+    "display_date": "13.11.2026, 15:43",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej opozycji w wyborach do Sejmu. [Źródło: Polsat News, Niezależna.pl]",
+          "- Idziemy oczywiście sami do wyborów. (...) Nie chcesz Tuska, nie chcesz Brauna, wybierz Rozwój Plus. [Źródło: Polsat News, Niezależna.pl]",
+          "To jest nasze podejście do wyborów - zadeklarował były premier. [Źródło: Polsat News]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Widzę te zachęty kierownictwa PiS, aby iść razem z Braunem, z Konfederacją obecną. [Źródło: Niezależna.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Depesza źródłowa",
+        "summary": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\"",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie/"
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Morawiecki odpowiada na postulat Kaczyńskiego. \"My mamy zupełnie inne podejście\"",
+        "url": "https://niezalezna.pl/polityka/morawiecki-odpowiada-na-postulat-kaczynskiego-my-mamy-zupelnie-inne-podejscie/584096"
+      }
+    ],
+    "sources": [
+      "Niezależna.pl",
+      "Polsat News"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty-w-k",
+    "seo_title": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
+    "thumbnail_url": "https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821334.webp",
+    "published_iso": "2026-11-13T15:43:30+01:00",
+    "display_date": "13.11.2026, 15:43",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Wiadomości Handlowe"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "McDonald’s Polska zainaugurował swoją najważniejszą sezonową kampanię sprzedażową – z okazji 15-lecia Burgera Drwala sieć wprowadziła do oferty nowy wariant smakowy, utrzymując jednocześnie ceny na ubiegłorocznym poziomie. [Źródło: Wiadomości Handlowe, Bankier.pl]",
+          "Przedpremierowe degustacje pełnej linii produktowej ruszyły właśnie w Kielcach, na kilka dni przed ogólnopolskim startem. [Źródło: Wiadomości Handlowe]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "McDonald's wrócił ze swoją stałą już jesienno-zimowa pozycją. Po raz drugi w historii tej kultowej kanapki cena nie podskoczyła. Oznacza to, że legenda porównywana do Pumkin Spice Latte Starbucksa chwilowo straciła status popkulturowej miary polskiej inflacji. [Źródło: Bankier.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Wiadomości Handlowe",
+        "angle": "Depesza źródłowa",
+        "summary": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
+        "url": "https://www.wiadomoscihandlowe.pl/konsument-i-trendy-zakupowe/marketing-i-strategie-promocyjne/nowa-wersja-burgera-drwala-w-mcdonald-s-cena-bez-zmian-pierwsze-degustacje-w-kielcach-2539400"
+      },
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Cena kultowej kanapki w McDonald's zaskakuje. Burger Drwala powrócił do menu",
+        "url": "https://www.bankier.pl/wiadomosc/Cena-kultowej-kanapki-w-McDonald-s-zaskakuje-Burger-Drwala-powrocil-do-menu-9228230.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      }
+    ],
+    "sources": [
+      "Bankier.pl",
+      "Wiadomości Handlowe"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Sport",
     "seo_url": "/Sport/manchester-united-podal-nazwisko-nowego-trenera",
     "seo_title": "Manchester United podał nazwisko nowego trenera",
@@ -98,7 +392,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami",
     "seo_title": "Twarda deklaracja Morawieckiego: Idziemy sami",
@@ -164,7 +458,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Sport",
     "seo_url": "/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje",
     "seo_title": "Reprezentacja na łasce Lewandowskiego. \"Do Turcji jeździ się na wakacje\"",
@@ -240,7 +534,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Lublin",
     "seo_url": "/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek-zatrzymany",
     "seo_title": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
@@ -315,7 +609,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Sport",
     "seo_url": "/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy",
     "seo_title": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
@@ -399,7 +693,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma-nadzwyczaj",
     "seo_title": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
@@ -464,7 +758,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem",
     "seo_title": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
@@ -529,7 +823,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja-rosyj",
     "seo_title": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
@@ -594,7 +888,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek",
     "seo_title": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
@@ -692,7 +986,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska",
     "seo_url": "/Polska/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln",
     "seo_title": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
@@ -763,7 +1057,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska",
     "seo_url": "/Polska/rece-precz-od-republiki-atak-na-biuro-posla-ko",
     "seo_title": "„Ręce precz od Republiki”. Atak na biuro posła KO",
@@ -835,7 +1129,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska",
     "seo_url": "/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitala",
     "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
@@ -901,7 +1195,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckie",
     "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
@@ -989,7 +1283,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
     "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
@@ -1070,7 +1364,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira-blueca",
     "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
@@ -1130,7 +1424,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w-plat",
     "seo_title": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
@@ -1196,7 +1490,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026",
     "seo_title": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
@@ -1269,7 +1563,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska",
     "seo_url": "/Polska/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego-premiera-uk",
     "seo_title": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
@@ -1343,7 +1637,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/imigranci-odmladzaja-demografie-hiszpanii-rekordowy-wzrost-liczby-ludnosci",
     "seo_title": "Imigranci „odmładzają” demografię Hiszpanii. Rekordowy wzrost liczby ludności",
@@ -1407,7 +1701,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army-zatrzyman",
     "seo_title": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
@@ -1474,7 +1768,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w-psl",
     "seo_title": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
@@ -1569,7 +1863,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Sport",
     "seo_url": "/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna",
     "seo_title": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
@@ -1650,7 +1944,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto",
     "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
@@ -1726,7 +2020,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska",
     "seo_url": "/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
     "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
@@ -1798,7 +2092,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska",
     "seo_url": "/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy",
     "seo_title": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
@@ -1879,7 +2173,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska",
     "seo_url": "/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka-jednosc",
     "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
@@ -1951,7 +2245,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesad",
     "seo_title": "Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje",
@@ -2026,7 +2320,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Polska",
     "seo_url": "/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z-budzetu",
     "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
@@ -2090,7 +2384,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 33,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz",
     "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
@@ -2149,7 +2443,7 @@
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 34,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad",
     "seo_title": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
@@ -2216,7 +2510,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 35,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc",
     "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
@@ -2283,7 +2577,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 36,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -2348,7 +2642,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 37,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -2413,7 +2707,7 @@
     "corrections": []
   },
   {
-    "id": 34,
+    "id": 38,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -2512,7 +2806,7 @@
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 39,
     "path": "/Swiat",
     "seo_url": "/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -2577,7 +2871,7 @@
     "corrections": []
   },
   {
-    "id": 36,
+    "id": 40,
     "path": "/Swiat",
     "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -2643,7 +2937,7 @@
     "corrections": []
   },
   {
-    "id": 37,
+    "id": 41,
     "path": "/Swiat",
     "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -2717,7 +3011,7 @@
     "corrections": []
   },
   {
-    "id": 38,
+    "id": 42,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -2789,7 +3083,7 @@
     "corrections": []
   },
   {
-    "id": 39,
+    "id": 43,
     "path": "/Polska",
     "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -2863,7 +3157,7 @@
     "corrections": []
   },
   {
-    "id": 40,
+    "id": 44,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
     "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
@@ -2930,7 +3224,7 @@
     "corrections": []
   },
   {
-    "id": 41,
+    "id": 45,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -3012,7 +3306,7 @@
     "corrections": []
   },
   {
-    "id": 42,
+    "id": 46,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -3091,7 +3385,7 @@
     "corrections": []
   },
   {
-    "id": 43,
+    "id": 47,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -3163,7 +3457,7 @@
     "corrections": []
   },
   {
-    "id": 44,
+    "id": 48,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -3236,7 +3530,7 @@
     "corrections": []
   },
   {
-    "id": 45,
+    "id": 49,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -3319,7 +3613,7 @@
     "corrections": []
   },
   {
-    "id": 46,
+    "id": 50,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -3385,7 +3679,7 @@
     "corrections": []
   },
   {
-    "id": 47,
+    "id": 51,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -3451,7 +3745,7 @@
     "corrections": []
   },
   {
-    "id": 48,
+    "id": 52,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -3510,7 +3804,7 @@
     "corrections": []
   },
   {
-    "id": 49,
+    "id": 53,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -3575,7 +3869,7 @@
     "corrections": []
   },
   {
-    "id": 50,
+    "id": 54,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -3641,7 +3935,7 @@
     "corrections": []
   },
   {
-    "id": 51,
+    "id": 55,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -3714,7 +4008,7 @@
     "corrections": []
   },
   {
-    "id": 52,
+    "id": 56,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -3788,7 +4082,7 @@
     "corrections": []
   },
   {
-    "id": 53,
+    "id": 57,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -3853,7 +4147,7 @@
     "corrections": []
   },
   {
-    "id": 54,
+    "id": 58,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -3917,7 +4211,7 @@
     "corrections": []
   },
   {
-    "id": 55,
+    "id": 59,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -3998,7 +4292,7 @@
     "corrections": []
   },
   {
-    "id": 56,
+    "id": 60,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -4071,7 +4365,7 @@
     "corrections": []
   },
   {
-    "id": 57,
+    "id": 61,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -4148,7 +4442,7 @@
     "corrections": []
   },
   {
-    "id": 58,
+    "id": 62,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -4221,7 +4515,7 @@
     "corrections": []
   },
   {
-    "id": 59,
+    "id": 63,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -4313,7 +4607,7 @@
     "corrections": []
   },
   {
-    "id": 60,
+    "id": 64,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -4393,7 +4687,7 @@
     "corrections": []
   },
   {
-    "id": 61,
+    "id": 65,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -4477,7 +4771,7 @@
     "corrections": []
   },
   {
-    "id": 62,
+    "id": 66,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -4543,7 +4837,7 @@
     "corrections": []
   },
   {
-    "id": 63,
+    "id": 67,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -4594,7 +4888,7 @@
     "corrections": []
   },
   {
-    "id": 64,
+    "id": 68,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -4645,7 +4939,7 @@
     "corrections": []
   },
   {
-    "id": 65,
+    "id": 69,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -4696,7 +4990,7 @@
     "corrections": []
   },
   {
-    "id": 66,
+    "id": 70,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -4747,7 +5041,7 @@
     "corrections": []
   },
   {
-    "id": 67,
+    "id": 71,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
