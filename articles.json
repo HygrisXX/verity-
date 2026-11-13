@@ -1,6 +1,293 @@
 [
   {
     "id": 1,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
+    "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/11/12/320x240px/7fugkmDPp6nPt6Qi8jXc7ZkmPBk0MuUPE3f5gPSz.clwt.jpg",
+    "published_iso": "2026-11-13T03:48:54+01:00",
+    "display_date": "13.11.2026, 03:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "CyberDefence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Samoregulacja platform internetowych jest fikcją – stwierdził w czwartek pod Pałacem Prezydenckim Krzysztof Gawkowski. [Źródło: CyberDefence24, Wirtualnemedia.pl, Tabletowo.pl]",
+          "Podczas specjalnej konferencji prasowej wicepremier wraz z wiceministrem cyfryzacji Dariuszem Standerskim przedstawili „Czarną księgę młodych ofiar platform cyfrowych w Polsce”. [Źródło: CyberDefence24]",
+          "Zaapelowali do prezydenta o podpisanie drugiej ustawy wdrażającej Akt o usługach cyfrowych – termin na to mija w piątek. [Źródło: CyberDefence24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Zaprezentował też raport, z którego wynika m.in., że 45 proc. polskich dzieci i nastolatków zetknęło się z cyberagresją seksualną. [Źródło: Wirtualnemedia.pl]",
+          "Dane, które pojawiają się w dokumencie są zatrważające. Przeczytaj pełny artykuł tutaj: \"Czarna księga\" polskiego internetu. [Źródło: Tabletowo.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "CyberDefence24",
+        "angle": "Depesza źródłowa",
+        "summary": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
+        "url": "https://cyberdefence24.pl/polityka-i-prawo/polska/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta-ws-glosnej-ustawy"
+      },
+      {
+        "outlet": "Wirtualnemedia.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Minister cyfryzacji apeluje do prezydenta o podpisanie ustawy wdrażającej DSA. Prezentuje \"czarną księgę\"",
+        "url": "https://www.wirtualnemedia.pl/minister-cyfryzacji-apeluje-do-prezydenta-o-podpisanie-ustawy-wdrazajacej-dsa-prezentuje-czarna-ksiege,7350232408901632a"
+      },
+      {
+        "outlet": "Tabletowo.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "„Czarna księga” polskiego internetu. Te liczby przerażają",
+        "url": "https://www.tabletowo.pl/czarna-ksiega-ustawa-dsa-nastolatki-raport/"
+      }
+    ],
+    "sources": [
+      "CyberDefence24",
+      "Tabletowo.pl",
+      "Wirtualnemedia.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
+    "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
+    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/3c/68/getty-afp-636x421-3c686a20.jpg",
+    "published_iso": "2026-11-13T03:48:54+01:00",
+    "display_date": "13.11.2026, 03:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Prezydent USA Donald Trump powiedział w wywiadzie dla Fox News, że chce doprowadzić do zmiany sytuacji na Kubie przed końcem swojej kadencji. [Źródło: WP Wiadomości, Onet Wiadomości]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "- Kuba radzi sobie bardzo słabo. To w zasadzie upadłe miejsce - powiedział. [Źródło: WP Wiadomości]",
+          "Określił Kubę jako państwo upadłe. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe,nIdn,1025919"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Trump nie wyklucza użycia siły. \"Chcę załatwić sprawę Kuby\"",
+        "url": "https://wiadomosci.wp.pl/trump-nie-wyklucza-uzycia-sily-chce-zalatwic-sprawe-kuby-7350377741649920a"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Donald Trump ostrzega Kubę. Prezydent USA rozważa użycie siły",
+        "url": "https://wiadomosci.onet.pl/swiat/donald-trump-ostrzega-kube-prezydent-usa-rozwaza-uzycie-sily/mvczllh"
+      }
+    ],
+    "sources": [
+      "Onet Wiadomości",
+      "RMF24",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska",
+    "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
+    "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
+    "thumbnail_url": "https://tvn24.pl/najnowsze/cdn-zdjecie-magdalena-biejat-i-michal-wawer-ph9336588/alternates/LANDSCAPE_1280",
+    "published_iso": "2026-11-13T03:48:54+01:00",
+    "display_date": "13.11.2026, 03:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "TVN24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Jak na razie to są tylko takie hasełka rzucone do kamery, a nie było nigdy żadnej poważnej próby budowania takiej listy - powiedział w \"Kropce nad i\" poseł Konfederacji Michał Wawer. [Źródło: TVN24]",
+          "Jego zdaniem \"nie ma takiego planu\", aby ugrupowanie startowało w wyborach parlamentarnych na jednej liście z PiS i partią Brauna, jak chciałby Jarosław Kaczyński. [Źródło: TVN24, RadioMaryja.pl, Wyborcza.pl]",
+          "Magdalena Biejat z Lewicy przyznała, że nie dziwią jej słowa prezesa PiS. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Tymczasem liderzy pozostałych ugrupowań deklarują samodzielny start w przyszłorocznych wyborach do Sejmu. [Źródło: RadioMaryja.pl]",
+          "Konfederacja nie jest tym zainteresowana. [Źródło: Wyborcza.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
+        "url": "https://tvn24.pl/polska/wspolna-lista-prawicy-do-sejmu-michal-wawer-o-zapowiedzi-jaroslawa-kaczynskieg-st9336568?source=rss"
+      },
+      {
+        "outlet": "RadioMaryja.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Wspólna lista prawicy w wyborach parlamentarnych?",
+        "url": "https://www.radiomaryja.pl/informacje/wspolna-lista-prawicy-w-wyborach-parlamentarnych/"
+      },
+      {
+        "outlet": "Wyborcza.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Kaczyński przymila się do Konfederacji w sprawie wspólnej listy do Sejmu. \"To gierka pod publikę\"",
+        "url": "https://wyborcza.pl/7,75398,33129236,kaczynski-przymila-sie-do-konfederacji-takze-w-sprawie-wspolnej.html"
+      }
+    ],
+    "sources": [
+      "RadioMaryja.pl",
+      "TVN24",
+      "Wyborcza.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
+    "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
+    "thumbnail_url": "https://xyz.pl/wp-content/uploads/2026/08/Notowania-GPW-1024x576.jpg",
+    "published_iso": "2026-11-13T03:48:54+01:00",
+    "display_date": "13.11.2026, 03:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "XYZ.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Wtorkowa sesja na GPW przebiega spokojniej, a główne indeksy notują jedynie niewielkie zmiany. [Źródło: XYZ.pl]",
+          "Wśród liderów wzrostów znajdują się akcje LPP, Kruka i Allegro. [Źródło: XYZ.pl]",
+          "Po serii spadków odbija również kurs Orlenu. [Źródło: XYZ.pl]",
+          "Z kolei po stronie największych przecen znajdują się m.in. spółki energetyczne oraz Dino. [Źródło: XYZ.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Impuls i korekta - 12 listopada 2026 tchoman czw., 12.11.2026 Treść Dziś wracamy po dniu przerwy i zaczyna się optymistycznie. Wig ponownie w okolicach maksimów, wskaźnik przecina sygnalną od dołu z perspektywą dalszego wzrostu. Możliwe że to co nie udało się poprzednio, czyli trwałe wybicie z boczniaka jaki tworzy się od jakiegoś czasu, tym razem zostanie zrealizowane. fDAX nie zwalnia tempa, po wczorajszym ustanowieniu nowych maksimów dziś poprawia wynik. Dywergencja wciąż się utrzymuje, a wskaźnik jest już mocno wykupiony. Tu po woli może zwyciężyć chęć realizacji zysku, ale wciąż jest jeszcze przestrzeń do wzrostów. Należy jednak już uważać. Wydaje mi się że dalsze wzrosty w Europie będą uzależnione od zachowania S&P500. Indeks ten dotarł do ważnego miejsca, a mianowicie wcześniej wyłamanego wsparcia. Tu okaże się czy to tylko powrót, po którym podaż znów odezwie się, czy jednak wyłamią i pokażą aspirację do dalszych wzrostów. [Źródło: StrefaInwestorów.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "XYZ.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
+        "url": "https://xyz.pl/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026-r/"
+      },
+      {
+        "outlet": "StrefaInwestorów.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Impuls i korekta - 12 listopada 2026",
+        "url": "https://strefainwestorow.pl/impuls-i-korekta/impuls-i-korekta-12-listopada-2026"
+      }
+    ],
+    "sources": [
+      "StrefaInwestorów.pl",
+      "XYZ.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -82,7 +369,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -161,7 +448,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -233,7 +520,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -306,7 +593,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -389,7 +676,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -455,7 +742,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -521,7 +808,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -580,7 +867,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -645,7 +932,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -711,7 +998,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -784,7 +1071,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -858,7 +1145,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -923,7 +1210,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -987,7 +1274,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -1068,7 +1355,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -1141,7 +1428,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -1218,7 +1505,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -1291,7 +1578,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -1383,7 +1670,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -1463,7 +1750,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -1547,7 +1834,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -1613,7 +1900,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -1664,7 +1951,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -1715,7 +2002,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -1766,7 +2053,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -1817,7 +2104,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",

@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://verity.pl/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
+      <news:title>„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
+      <news:title>Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
+      <news:title>Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
+      <news:title>Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://verity.pl/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja</loc>
     <news:news>
       <news:publication>
