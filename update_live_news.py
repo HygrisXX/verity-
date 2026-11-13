@@ -4,7 +4,7 @@ VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS i At
 - Ograniczenie bazy testowej do maksymalnie 300 artykułów (kolejka krocząca).
 - Zapis do 4 najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu).
 - Pobieranie oficjalnych miniatur ze źródeł (enclosure / media:content / img).
-- Równoległe pobieranie z 63 zweryfikowanych kanałów (61 redakcji: ogólnopolskie, gospodarcze, regionalne z 16 województw, świat, sport).
+- Równoległe pobieranie z 69 zweryfikowanych kanałów (67 redakcji: ogólnopolskie, gospodarcze, regionalne z 16 województw, świat, sport).
 - Aktualizacja articles.json oraz news-sitemap.xml.
 """
 
@@ -39,6 +39,7 @@ LIVE_RSS_FEEDS = [
     {"name": "Forbes Polska", "url": "https://www.forbes.pl/.feed", "path": "/Polska/Gospodarka"},
     {"name": "PulsHR", "url": "https://www.pulshr.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
     {"name": "Farmer.pl", "url": "https://www.farmer.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
+    {"name": "Forsal.pl", "url": "https://forsal.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
 
     # --- Energetyka, Transformacja ---
     {"name": "WysokieNapiecie.pl", "url": "https://wysokienapiecie.pl/feed/", "path": "/Polska/Energetyka"},
@@ -53,7 +54,12 @@ LIVE_RSS_FEEDS = [
     {"name": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "path": "/Polska"},
     {"name": "Gazeta.pl", "url": "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm", "path": "/Polska"},
     {"name": "Fakt.pl", "url": "https://www.fakt.pl/wydarzenia.feed", "path": "/Polska"},
-    {"name": "Dziennik.pl", "url": "https://wiadomosci.dziennik.pl/.feed", "path": "/Polska"},
+    {"name": "Dziennik.pl", "url": "https://wiadomosci.dziennik.pl/.feed", "path": "/Polska", "group": "Infor PL"},
+    {"name": "GazetaPrawna.pl (DGP)", "url": "https://www.gazetaprawna.pl/.feed", "path": "/Polska", "group": "Infor PL"},
+    {"name": "TVP.info", "url": "https://www.tvp.info/tvp.info/rss+xml.php", "path": "/Polska"},
+    {"name": "Wyborcza.pl", "url": "https://wyborcza.pl/pub/rss/najnowsze_wyborcza.xml", "path": "/Polska"},
+    {"name": "naTemat.pl", "url": "https://natemat.pl/rss/wszystkie", "path": "/Polska"},
+    {"name": "o2.pl", "url": "https://www.o2.pl/rss.xml", "path": "/Polska"},
 
     # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
     {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Poznan"},
@@ -107,6 +113,7 @@ PREFERRED_PRIMARY_OUTLETS = {
     "Rzeczpospolita", "Bankier.pl", "Money.pl", "WNP.pl", "300Gospodarka",
     "WysokieNapiecie.pl", "Energetyka24", "Defence24", "InfoSecurity24",
     "RMF24", "Polsat News", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
+    "GazetaPrawna.pl (DGP)", "Forsal.pl",
 }
 
 OPINION_MARKERS = [
@@ -125,6 +132,9 @@ OPINION_MARKERS = [
     r"\bnie uwierzysz\b",
     r"\bten trik\b",
     r"\bpromocj[ae]\b",
+    r"\bmateriał sponsorowany\b",
+    r"\bartykuł sponsorowany\b",
+    r"®",
 ]
 
 EDITORIAL_URL_SEGMENTS = (
