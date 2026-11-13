@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poznań i Wielkopolska — VERITY</title>
+  <meta name="description" content="Najważniejsze informacje z Poznania i Wielkopolski — transport, inwestycje i wydarzenia lokalne." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://hygrisxx.github.io/verity-/Polska/Poznan/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="VERITY" />
+  <meta property="og:title" content="Poznań i Wielkopolska — VERITY" />
+  <meta property="og:description" content="Najważniejsze informacje z Poznania i Wielkopolski — transport, inwestycje i wydarzenia lokalne." />
+  <meta property="og:url" content="https://hygrisxx.github.io/verity-/Polska/Poznan/" />
+  <meta property="og:image" content="https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg" />
+  <meta name="twitter:image" content="https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Poznań i Wielkopolska — VERITY" />
+  <meta name="twitter:description" content="Najważniejsze informacje z Poznania i Wielkopolski — transport, inwestycje i wydarzenia lokalne." />
+
+  <script id="dynamicJsonLd" type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Poznań i Wielkopolska — VERITY",
+    "description": "Najważniejsze informacje z Poznania i Wielkopolski — transport, inwestycje i wydarzenia lokalne.",
+    "url": "https://hygrisxx.github.io/verity-/Polska/Poznan/",
+    "inLanguage": "pl"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": []
+  }
+]
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="VERITY RSS" href="../../feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+
+  <div class="top-utility">
+    <div class="container top-utility-inner">
+      <div class="top-utility-meta">
+        <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
+        <span class="top-sep" aria-hidden="true"></span>
+        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+      </div>
+      <div class="top-utility-actions">
+        <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
+          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <a class="brand" href="../../" onclick="return selectPathLink(event, '/Polska')">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-title">VERITY</div>
+            <div class="brand-subtitle">Wieloźródłowa weryfikacja i synteza informacji</div>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <div class="search-box">
+            <input
+              id="searchInput"
+              type="search"
+              class="search-input"
+              placeholder="Szukaj tematów…"
+              oninput="handleSearchInput()"
+              aria-label="Wyszukaj artykuły"
+            />
+            <button id="clearSearchBtn" class="search-clear hidden" onclick="clearSearch()" title="Wyczyść">✕</button>
+          </div>
+
+          <div class="theme-switcher" role="group" aria-label="Wybór motywu kolorystycznego">
+            <button id="themeBtn_auto" class="theme-btn active" onclick="applyTheme('auto')" title="Automatycznie dopasuj do motywu urządzenia">Auto</button>
+            <button id="themeBtn_light" class="theme-btn" onclick="applyTheme('light')" title="Motyw jasny">Jasny</button>
+            <button id="themeBtn_dark" class="theme-btn" onclick="applyTheme('dark')" title="Motyw ciemny">Ciemny</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="path-nav" aria-label="Kategorie tematyczne">
+        <a class="path-chip" data-path="/Polska" href="../../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+        <a class="path-chip" data-path="/Polska/Gospodarka" href="../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
+        <a class="path-chip" data-path="/Polska/Polityka" href="../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
+        <a class="path-chip" data-path="/Polska/Energetyka" href="../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
+        <a class="path-chip active" data-path="/Polska/Poznan" href="../../Polska/Poznan/" onclick="return selectPathLink(event, '/Polska/Poznan')"><span class="path-root">Polska / </span>Poznań</a>
+        <span class="path-divider" aria-hidden="true">|</span>
+        <a class="path-chip" data-path="/Swiat" href="../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+        <a class="path-chip" data-path="/Sport" href="../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section id="viewPublic">
+      <div id="articlesFeed" class="articles-stack">
+        <div class="feed-heading">
+        <div>
+          <span class="feed-crumb">/Polska/Poznan</span>
+          <h1>Poznań i Wielkopolska</h1>
+        </div>
+        <span>0 opracowań</span>
+      </div><div class="empty-state">Brak opracowań w dziale <strong>/Polska/Poznan</strong>.</div>
+      </div>
+    </section>
+
+    <section id="viewEditorial" class="hidden">
+      <div class="editorial-head">
+        <div>
+          <h1>Kolejka Weryfikacji Redakcyjnej</h1>
+          <p>
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+          </p>
+        </div>
+        <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
+      </div>
+      <div id="editorialQueue" class="articles-stack"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>VERITY</strong>
+        <p>Wieloźródłowa weryfikacja faktów z 97 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
+        <a href="../../sitemap.xml">Sitemap (XML)</a>
+        <a href="../../feed.xml">Kanał RSS</a>
+        <a href="../../robots.txt">robots.txt</a>
+        <a href="../../articles.json">Dane (JSON)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_PATH="/Polska/Poznan";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
+  <script src="../../app.js"></script>
+</body>
+</html>

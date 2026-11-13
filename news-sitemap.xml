@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -13,7 +14,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -22,20 +23,13 @@
       <news:publication_date>2026-11-13T17:46:33+01:00</news:publication_date>
       <news:title>Rosyjskie żądania ws. wystąpienia Finlandii z NATO. "Po prostu oburzające"</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg</image:loc>
+      <image:title>Rosyjskie żądania ws. wystąpienia Finlandii z NATO. "Po prostu oburzające"</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/dziki-kon-dziewiec-trudno-sobie-wyobrazic-piekniejsze-zakonczenie-tej-histo</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T17:46:33+01:00</news:publication_date>
-      <news:title>„Dziki Koń Dziewięć”. Trudno sobie wyobrazić piękniejsze zakończenie tej historii</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -44,9 +38,13 @@
       <news:publication_date>2026-11-13T17:46:33+01:00</news:publication_date>
       <news:title>Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/3e/d8/zdjecie-ilustracyjne-636x421-3ed8a736.jpg</image:loc>
+      <image:title>Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal-prze</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -55,9 +53,13 @@
       <news:publication_date>2026-11-13T16:48:28+01:00</news:publication_date>
       <news:title>Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/536a0c4bebac2fcbe889c8b8e9f567df/?t=crop:1914:837:nowe:0:35.40926201399,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -66,9 +68,13 @@
       <news:publication_date>2026-11-13T16:48:28+01:00</news:publication_date>
       <news:title>Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-13-104004.png</image:loc>
+      <image:title>Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -77,9 +83,13 @@
       <news:publication_date>2026-11-13T16:48:28+01:00</news:publication_date>
       <news:title>Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2019/01/17/320x240px/meCqiBUu4SE4H11wSaZ5eurDh5nYKJORi9BR9vzE.zqj6.jpg</image:loc>
+      <image:title>Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -88,9 +98,13 @@
       <news:publication_date>2026-11-13T16:48:28+01:00</news:publication_date>
       <news:title>Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcn/NhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAw/MDAwMDAwMDAwMDc1MjAxODcvZmlsZXMvZG5pLXdvbG5lLX/ctMjAyNi1yb2t1LTM5MjIwMzgyLmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -99,9 +113,13 @@
       <news:publication_date>2026-11-13T15:43:30+01:00</news:publication_date>
       <news:title>AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/c7/e1/radek-pietruszka-636x421-c7e17337.jpg</image:loc>
+      <image:title>AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -110,9 +128,13 @@
       <news:publication_date>2026-11-13T15:43:30+01:00</news:publication_date>
       <news:title>Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://s20.tvp.pl/images2/0/5/1/uid_051198f010a34ab59b4225dc7c3584f9_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -121,9 +143,13 @@
       <news:publication_date>2026-11-13T15:43:30+01:00</news:publication_date>
       <news:title>Morawiecki o kluczowej decyzji ws. wyborów. "Mamy zupełnie inne podejście"</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/3n/3n85gbwvdqy81cw2zntw687crvx1sbcb.jpg</image:loc>
+      <image:title>Morawiecki o kluczowej decyzji ws. wyborów. "Mamy zupełnie inne podejście"</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty-w-k</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -132,9 +158,13 @@
       <news:publication_date>2026-11-13T15:43:30+01:00</news:publication_date>
       <news:title>Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821334.webp</image:loc>
+      <image:title>Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/manchester-united-podal-nazwisko-nowego-trenera</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/manchester-united-podal-nazwisko-nowego-trenera/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -143,9 +173,13 @@
       <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
       <news:title>Manchester United podał nazwisko nowego trenera</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg</image:loc>
+      <image:title>Manchester United podał nazwisko nowego trenera</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -154,9 +188,13 @@
       <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
       <news:title>Twarda deklaracja Morawieckiego: Idziemy sami</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/ab/7d/prezes-stowarzyszenia-rozwoj-plus-mateusz-morawiecki-przemawia-podczas-poznanskiego-kongresu-gospodarczego-636x421-ab7d060b.jpg</image:loc>
+      <image:title>Twarda deklaracja Morawieckiego: Idziemy sami</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -165,9 +203,13 @@
       <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
       <news:title>Reprezentacja na łasce Lewandowskiego. "Do Turcji jeździ się na wakacje"</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NIZ85PLTFO5NW-C321.webp</image:loc>
+      <image:title>Reprezentacja na łasce Lewandowskiego. "Do Turcji jeździ się na wakacje"</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek-zatrzymany</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -176,9 +218,13 @@
       <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
       <news:title>Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/61-677111.jpg</image:loc>
+      <image:title>Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -187,9 +233,13 @@
       <news:publication_date>2026-11-13T12:56:54+01:00</news:publication_date>
       <news:title>Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp</image:loc>
+      <image:title>Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma-nadzwyczaj</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -198,9 +248,13 @@
       <news:publication_date>2026-11-13T12:56:54+01:00</news:publication_date>
       <news:title>Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/03/23/320x240px/pLlxqVSco6x0GGKQPSN9QKMR7DpLUQNqc55akCky.utci.jpg</image:loc>
+      <image:title>Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -209,9 +263,13 @@
       <news:publication_date>2026-11-13T12:56:54+01:00</news:publication_date>
       <news:title>Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/10/20/320x240px/2ckkEZL3mZo6X4MLhTyx0gf6w2AW2HhaKHQZHG5T.t7gd.jpg</image:loc>
+      <image:title>Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja-rosyj</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -220,9 +278,13 @@
       <news:publication_date>2026-11-13T12:56:54+01:00</news:publication_date>
       <news:title>Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/13/320x240px/ZJENIT2LyLl26tn4mwcIbf761ei7uhDx1wXEbRhG.yh4w.png</image:loc>
+      <image:title>Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -231,9 +293,13 @@
       <news:publication_date>2026-11-13T11:50:05+01:00</news:publication_date>
       <news:title>Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/09/02/320x240px/pGqjNb4kx0i6Rzsy1Sebrqa487LZAGxGizv8YAGq.diny.jpg</image:loc>
+      <image:title>Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -242,9 +308,13 @@
       <news:publication_date>2026-11-13T11:50:05+01:00</news:publication_date>
       <news:title>Łukasz Gibała z "pilną prośbą" do Donalda Tuska. Padła kwota 10 mln</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/en/enyo3ijimz77f4uk7mmd8iaertks9bdq.jpeg</image:loc>
+      <image:title>Łukasz Gibała z "pilną prośbą" do Donalda Tuska. Padła kwota 10 mln</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/rece-precz-od-republiki-atak-na-biuro-posla-ko</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/rece-precz-od-republiki-atak-na-biuro-posla-ko/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -253,9 +323,13 @@
       <news:publication_date>2026-11-13T11:50:05+01:00</news:publication_date>
       <news:title>„Ręce precz od Republiki”. Atak na biuro posła KO</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/6b/5a/michal-jaros-fot-636x421-6b5af87c.jpg</image:loc>
+      <image:title>„Ręce precz od Republiki”. Atak na biuro posła KO</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitala</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -266,7 +340,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckie</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -275,9 +349,13 @@
       <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
       <news:title>Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/60e3dd06e527c52f1f3e1a8d52db7605/dron-rozpoznawczy-vector?t=crop:4349:1901:nowe:0:129,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -286,9 +364,13 @@
       <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
       <news:title>Jak bardzo wzrosły ceny? Są nowe dane o inflacji</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvc/nNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQj/AwMDAwMDAwMDAwMDc3MDE1NDcvZmlsZXMvc3VwZXJtYXJ/rZXQtemFrdXB5LTM5MzA4MzM0LmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Jak bardzo wzrosły ceny? Są nowe dane o inflacji</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira-blueca</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -297,9 +379,13 @@
       <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
       <news:title>Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cashless.86eccc8cd4d75212496aabd35095cfe4.eu.r2.cloudflarestorage.com/system/uploads/ckeditor/pictures/3417/content_kir.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Credential=3b14ef0c715f100a6ab42ce1213f28b0%2F20261109%2Fauto%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20261109T000000Z&amp;amp;X-Amz-Expires=604800&amp;amp;X-Amz-SignedHeaders=host&amp;amp;X-Amz-Signature=44b18807085014473919410b46f412b0996c489c3a96d45ef84011e8a9ad4ae6</image:loc>
+      <image:title>Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w-plat</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -308,9 +394,13 @@
       <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
       <news:title>Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://mamstartup.pl/wp-content/uploads/2023/02/blik.jpg</image:loc>
+      <image:title>Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -319,9 +409,13 @@
       <news:publication_date>2026-11-13T09:54:25+01:00</news:publication_date>
       <news:title>Cena euro, dolara i franka. Kursy walut 13.11.2026</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmN/kbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc2OD/E1MjQvZmlsZXMvd2FsdXRhLXdhbHV0eS1ub3Rvd2FuaWEtZWJ1cnktd/3J6ZXNpZW4tb2JsaWdhY2plLTM5MjgzNjA2LnBuZyIsInciOjM4NDB9</image:loc>
+      <image:title>Cena euro, dolara i franka. Kursy walut 13.11.2026</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego-premiera-uk</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -330,20 +424,13 @@
       <news:publication_date>2026-11-13T09:54:25+01:00</news:publication_date>
       <news:title>Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/hh/hhs32zkd5svjag7ov2w4q4hoyopm8ckf.jpeg</image:loc>
+      <image:title>Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/imigranci-odmladzaja-demografie-hiszpanii-rekordowy-wzrost-liczby-ludnosci</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T09:54:25+01:00</news:publication_date>
-      <news:title>Imigranci „odmładzają” demografię Hiszpanii. Rekordowy wzrost liczby ludności</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/Polityka/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army-zatrzyman</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -352,9 +439,13 @@
       <news:publication_date>2026-11-13T09:54:25+01:00</news:publication_date>
       <news:title>Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/09/22/320x240px/IiLUUjKK7gS1SRXVVQHfvzAS533Rs3p1wfV8Qyxw.zxla.jpg</image:loc>
+      <image:title>Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w-psl</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -363,9 +454,13 @@
       <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
       <news:title>Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/8fb2614f47b5f37589f98350f039858e/?t=crop:8192:3581:nowe:0:439.59310344828,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -374,9 +469,13 @@
       <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
       <news:title>Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NIY7XVMHMOIJ5-C321.webp</image:loc>
+      <image:title>Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -385,9 +484,13 @@
       <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
       <news:title>Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/183-311357.webp</image:loc>
+      <image:title>Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -396,42 +499,13 @@
       <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
       <news:title>Karambol na S6 z samego rana. Zderzyło się pięć samochodów</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bc218166-c828-441f-9268-f2262949e228</image:loc>
+      <image:title>Karambol na S6 z samego rana. Zderzyło się pięć samochodów</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
-      <news:title>Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka-jednosc</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
-      <news:title>Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesad</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
-      <news:title>Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z-budzetu</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -440,20 +514,58 @@
       <news:publication_date>2026-11-13T07:02:48+01:00</news:publication_date>
       <news:title>Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/76/f9/zdjecie-ilustracyjne-636x421-76f937bc.jpg</image:loc>
+      <image:title>Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-13T05:54:47+01:00</news:publication_date>
-      <news:title>Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia</news:title>
+      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
+      <news:title>Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ty/tykr6jjdwafsv7qq81gdb34he11x2smn.jpg</image:loc>
+      <image:title>Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
+      <news:title>Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/02/4a/marcin-ociepa-fot-636x421-024a8b49.jpg</image:loc>
+      <image:title>Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
+      <news:title>Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się </news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/bad163bb-5c5b-473b-bc15-8f5b098d514b.jpg</image:loc>
+      <image:title>Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się </image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -462,20 +574,28 @@
       <news:publication_date>2026-11-13T05:54:48+01:00</news:publication_date>
       <news:title>Prezes APS: Nie ma opóźnień w programie San. "Uruchomiliśmy nowy zakład"</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://pliki.wnp.pl/d/57/81/64/578164_r0_300.jpg</image:loc>
+      <image:title>Prezes APS: Nie ma opóźnień w programie San. "Uruchomiliśmy nowy zakład"</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-13T05:54:48+01:00</news:publication_date>
-      <news:title>800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia</news:title>
+      <news:title>800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w spr</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmNkbi5wbC/9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc0ODczNDkvZmlsZXMv/dHJ6eW5hc3RhLWVtZXJ5dHVyYS1lbWVyeXR1cmEtZW1lcnl0dXJ5LWdvdG93a2/EtZW1lcnl0LXBpZW5pYWR6ZS1zZW5pb3ItMzg5NDc3ODYuanBnIiwidyI6Mzg0MH0</image:loc>
+      <image:title>800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w spr</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -484,9 +604,28 @@
       <news:publication_date>2026-11-13T05:54:48+01:00</news:publication_date>
       <news:title>Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://comparic.pl/comparic.pl/wp-content/uploads/2026/08/hossa-bessa-wyniki-zyski-straty-AI-23423523235-freepik-cc-32325325-4-150x150.webp</image:loc>
+      <image:title>Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T05:54:47+01:00</news:publication_date>
+      <news:title>Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LmluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMv/Rk9CMDAwMDAwMDAwMDAwNzU3Njc4Ny9maWxlcy9w/b2xpY2phLTM5MTM4Mjk0LnBuZyIsInciOjM4NDB9</image:loc>
+      <image:title>Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -495,9 +634,13 @@
       <news:publication_date>2026-11-13T04:53:56+01:00</news:publication_date>
       <news:title>Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/5d2c780f4fe38253436d3e2dfebcd019/krzysztof-szczerski-i-radoslaw-sikorski?t=crop:3840:1679:nowe:0:149.20691338901,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -506,9 +649,13 @@
       <news:publication_date>2026-11-13T04:53:56+01:00</news:publication_date>
       <news:title>Rząd szykuje na 2027 rok zamrożenie cen gazu</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2022/09/rachunki_energia_ogrzewanie_efektywnosc.x63527.jpg</image:loc>
+      <image:title>Rząd szykuje na 2027 rok zamrożenie cen gazu</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -517,9 +664,13 @@
       <news:publication_date>2026-11-13T04:53:56+01:00</news:publication_date>
       <news:title>Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/12/320x240px/UMnER2LStL5PAIszKKvnAS9lZg2Ec8gNEBwbjUD2.1mge.jpg</image:loc>
+      <image:title>Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -528,9 +679,13 @@
       <news:publication_date>2026-11-13T04:53:56+01:00</news:publication_date>
       <news:title>Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/12/320x240px/YGLVZtKyBQetmWTZozuplxnaDWL6EzP7MhZ5DlmW.46kg.png</image:loc>
+      <image:title>Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -539,9 +694,13 @@
       <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
       <news:title>„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/12/320x240px/7fugkmDPp6nPt6Qi8jXc7ZkmPBk0MuUPE3f5gPSz.clwt.jpg</image:loc>
+      <image:title>„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -550,9 +709,13 @@
       <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
       <news:title>Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/3c/68/getty-afp-636x421-3c686a20.jpg</image:loc>
+      <image:title>Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -561,20 +724,13 @@
       <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
       <news:title>Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-magdalena-biejat-i-michal-wawer-ph9336588/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
-      <news:title>Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -583,9 +739,13 @@
       <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
       <news:title>Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://xyz.pl/wp-content/uploads/2025/11/Marcin-Kusmierz-31-1024x683.jpg</image:loc>
+      <image:title>Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -594,9 +754,13 @@
       <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
       <news:title>Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem</news:title>
     </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/7/7/74273ac3a6bade-948-568-22-67-2977-1786.jpg</image:loc>
+      <image:title>Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -605,9 +769,13 @@
       <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
       <news:title>Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/i8/i863auieegx7hveejr3kdgurg56nmwr3.png</image:loc>
+      <image:title>Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -616,9 +784,13 @@
       <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
       <news:title>Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/4394b05ace0a78d40fc3225aab049aba/?t=crop:5657:2473:nowe:0:649,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -627,9 +799,13 @@
       <news:publication_date>2026-11-13T02:15:03+01:00</news:publication_date>
       <news:title>Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/rn/rnzzpncwrp5znv5me3vgzpgir6a6eniz.jpg</image:loc>
+      <image:title>Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -638,9 +814,13 @@
       <news:publication_date>2026-11-13T02:15:03+01:00</news:publication_date>
       <news:title>Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLm/luY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9C/MDAwMDAwMDAwMDAwNzY4NTA2MS9maWxlcy9rYXJvbC/1uYXdyb2NraS0zOTI4ODEyOC5qcGciLCJ3IjozODQwfQ</image:loc>
+      <image:title>Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -649,9 +829,13 @@
       <news:publication_date>2026-11-13T02:15:03+01:00</news:publication_date>
       <news:title>Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://s17.tvp.pl/images2/7/6/9/uid_769c2f2a7d6d4a5eb957c2347f35e53b_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -660,9 +844,13 @@
       <news:publication_date>2026-11-13T02:09:05+01:00</news:publication_date>
       <news:title>Czarzasty zwrócił się do prezydenta. Padły słowa o "juncie wojskowej"</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ab/abrqn92yues5874dkwks9mtuu2n41kg5.jpeg</image:loc>
+      <image:title>Czarzasty zwrócił się do prezydenta. Padły słowa o "juncie wojskowej"</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -671,9 +859,13 @@
       <news:publication_date>2026-11-13T02:09:05+01:00</news:publication_date>
       <news:title>Londyn uderza w Rosję nowymi sankcjami</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/00f95ff87545b147bc9b1873b968094e/?t=crop:3588:1569:nowe:0:412,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Londyn uderza w Rosję nowymi sankcjami</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -682,20 +874,13 @@
       <news:publication_date>2026-11-13T02:09:05+01:00</news:publication_date>
       <news:title>Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/10/30/320x240px/gHGeUG4pB8PXPFfvpBrhVYVEVoZ2lI8mLItru5gI.canx.jpg</image:loc>
+      <image:title>Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
-      <news:title>Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -704,9 +889,13 @@
       <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
       <news:title>Anglia awansowała do ćwierćfinału Ligi Narodów</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/wx/wxn6wqw63r8m5rjxv8112rfngmnkaqz9.jpg</image:loc>
+      <image:title>Anglia awansowała do ćwierćfinału Ligi Narodów</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -715,9 +904,13 @@
       <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
       <news:title>Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR</news:title>
     </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/0/0/f07732967f063f-948-568-96-68-1281-768.jpg</image:loc>
+      <image:title>Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -726,9 +919,13 @@
       <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
       <news:title>Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/a258dcfef370f32215637e0f9992ba76/?t=crop:4822:2108:nowe:0:0,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -737,9 +934,13 @@
       <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
       <news:title>Marsz Niepodległości przeszedł ulicami Warszawy</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/11/320x240px/uVqURYXosrYoYBsAxtLsaSuxlq4NGEMhoipgkmcX.al5q.jpg</image:loc>
+      <image:title>Marsz Niepodległości przeszedł ulicami Warszawy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -748,9 +949,13 @@
       <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
       <news:title>Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2022/03/22/320x180px/AzhVIhTUTyIVhzXhllVTRoP9wmrpPUR7SOuPZTrL.yz7a.jpg</image:loc>
+      <image:title>Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -759,9 +964,13 @@
       <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
       <news:title>Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NIXOF14I6FKLA-C321.webp</image:loc>
+      <image:title>Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -770,9 +979,13 @@
       <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
       <news:title>Polski Związek Strzelectwa reaguje na zamach w Krakowie</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/f5/00/1b/z28312565IHG.jpg</image:loc>
+      <image:title>Polski Związek Strzelectwa reaguje na zamach w Krakowie</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -781,9 +994,13 @@
       <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Globalna awaria Microsoftu. Nie działają aplikacje i usługi</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/wv/wvfftvvjf2hxysn9ifiakrsqajd7wdm1.jpg</image:loc>
+      <image:title>Globalna awaria Microsoftu. Nie działają aplikacje i usługi</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -792,9 +1009,13 @@
       <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://rmf.rmffm.pl/news/attachments/b4/70/prezydent-karol-na-636x421-b470a47c.jpg</image:loc>
+      <image:title>Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5</loc>
+    <loc>https://hygrisxx.github.io/verity-/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -803,9 +1024,13 @@
       <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NIXWZN3EU0JMK-C321.webp</image:loc>
+      <image:title>Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -814,9 +1039,13 @@
       <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę</news:title>
     </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/5/6/c695cd28142089-948-568-5-140-1991-1195.jpg</image:loc>
+      <image:title>Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/sprawa-elektrowni-ostroleka-to-symbol-chorych-ukladow-w-panstwowych/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -825,9 +1054,13 @@
       <news:publication_date>2026-11-13T01:06:33+01:00</news:publication_date>
       <news:title>Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2018/12/polityk_rynek.x63527.jpg</image:loc>
+      <image:title>Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/przemysl-energochlonny-oze-szansa-na-finansowanie-inwestycji-w-zielona/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -836,9 +1069,13 @@
       <news:publication_date>2026-11-13T01:06:33+01:00</news:publication_date>
       <news:title>„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/2025-11-06-PS-Ogolne-srodowiskowe-002-scaled.x63527.jpg</image:loc>
+      <image:title>„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -847,9 +1084,13 @@
       <news:publication_date>2026-11-13T01:06:33+01:00</news:publication_date>
       <news:title>Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/06/Ormuz-Iran-fot.-Depositphotos.x63527.jpg</image:loc>
+      <image:title>Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -858,9 +1099,13 @@
       <news:publication_date>2026-11-13T01:06:33+01:00</news:publication_date>
       <news:title>W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/Kapota_Zdar-002.x63527.png</image:loc>
+      <image:title>W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/hegseth-odznaczyl-zolnierza-ktory-udzielil-mu-reprymendy-na-cmentarzu/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
