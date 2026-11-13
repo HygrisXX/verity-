@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://verity.pl/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
+      <news:title>Marsz Niepodległości przeszedł ulicami Warszawy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
+      <news:title>Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
+      <news:title>Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
+      <news:title>Polski Związek Strzelectwa reaguje na zamach w Krakowie</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://verity.pl/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi</loc>
     <news:news>
       <news:publication>

@@ -1,6 +1,327 @@
 [
   {
     "id": 1,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
+    "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/11/11/320x240px/uVqURYXosrYoYBsAxtLsaSuxlq4NGEMhoipgkmcX.al5q.jpg",
+    "published_iso": "2026-11-13T01:57:27+01:00",
+    "display_date": "13.11.2026, 01:57",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "InfoSecurity24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: InfoSecurity24",
+        "paragraphs": [
+          "W środę 11 listopada ulicami Warszawy przeszedł Marsz Niepodległości. Uczestniczył w nim m.in. prezydent Karol Nawrocki. [Źródło: InfoSecurity24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Sport.pl",
+        "paragraphs": [
+          "Warszawski Marsz Niepodległości to coroczna tradycja odbywająca sie 11 listopada, z okazji Dnia Niepodległości Polski. W tym roku w wydarzeniu uczestniczył zawodnik KSW, Hugo Deux. Francuz w rozmowie z Przeglądem Sportowym Onet opowiedział o swoich wrażeniach. [Źródło: Sport.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Newsweek Polska",
+        "paragraphs": [
+          "Race były, podobnie jak patriotyczne hasła. Były też tradycyjne obelgi wobec premiera Donalda Tuska. I tylko jedna nowość: Koła Gospodyń Wiejskich sprzedawały bigos i kiełbasę. [Źródło: Newsweek Polska]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: ePoznan.pl",
+        "paragraphs": [
+          "Mieszkańcy oddali hołd tragicznie zmarłej Izabeli Woźnej. [Źródło: ePoznan.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "InfoSecurity24",
+        "angle": "Depesza źródłowa",
+        "summary": "Marsz Niepodległości przeszedł ulicami Warszawy",
+        "url": "https://infosecurity24.pl/bezpieczenstwo-wewnetrzne/marsz-niepodleglosci-przeszedl-ulicami-warszawy"
+      },
+      {
+        "outlet": "Sport.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Francuz poszedł na Marsz Niepodległości i wydał wyrok. \"W świecie zachodnim...\"",
+        "url": "https://www.sport.pl/inne/7,102005,33130254,francuz-poszedl-na-marsz-niepodleglosci-i-wydal-wyrok-w-swiecie.html"
+      },
+      {
+        "outlet": "Newsweek Polska",
+        "angle": "Depesza źródłowa",
+        "summary": "Kim: Gaz w przejściu podziemnym, obelgi pod adresem Tuska i jedna nowość. Byłam na Marszu Niepodległości",
+        "url": "https://www.newsweek.pl/polska/spoleczenstwo/duzo-obelg-pod-adresem-tuska-i-jedna-nowosc-bylam-na-marszu-niepodleglosci/hmqdll2"
+      },
+      {
+        "outlet": "ePoznan.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Marsz ciszy przeszedł ulicami Chodzieży. To sprzeciw wobec przemocy",
+        "url": "https://epoznan.pl/news-news-181915-marsz_ciszy_przeszedl_ulicami_chodziezy_to_sprzeciw_wobec_przemocy?rss=1"
+      }
+    ],
+    "sources": [
+      "InfoSecurity24",
+      "Newsweek Polska",
+      "Sport.pl",
+      "ePoznan.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
+    "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
+    "thumbnail_url": "https://cdn.defence24.pl/2022/03/22/320x180px/AzhVIhTUTyIVhzXhllVTRoP9wmrpPUR7SOuPZTrL.yz7a.jpg",
+    "published_iso": "2026-11-13T01:57:27+01:00",
+    "display_date": "13.11.2026, 01:57",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 93,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Defence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Defence24",
+        "paragraphs": [
+          "Ukraiński prezydent Wołodymyr Zełenski spotkał się w czwartek w Dublinie z przywódcami 13 państw, które określił jako przyjaciół Ukrainy i jej największych partnerów; wśród uczestników był premier Donald Tusk. Według Zełenskiego rozmowa dotyczyła wsparcia Ukrainy w obliczu nieustających rosyjskich ataków. [Źródło: Defence24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: TVN24",
+        "paragraphs": [
+          "Prezydent Wołodymyr Zełenski poinformował w czwartek, że spotkał się w Dublinie z premierem Polski Donaldem Tuskiem. Rozmawiali między innymi o wsparciu Polski w przygotowaniach do zimy, a także o rozszerzeniu połączeń na potrzeby dostaw paliwa na Ukrainę. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Wołodymyr Zełenski spotkał się w Irlandii z wysłannikami Donalda Trumpa: Steve'em Witkoffem i Jaredem Kushnerem. Celem jest wypracowanie porozumienia pokojowego między Rosją a Ukrainą. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Defence24",
+        "angle": "Depesza źródłowa",
+        "summary": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
+        "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Prezydent Ukrainy Wołodymyr Zełenski spotkał się z Donaldem Tuskiem. \"Jak Polska może pomóc\"",
+        "url": "https://tvn24.pl/biznes/ze-swiata/prezydent-ukrainy-wolodymyr-zelenski-spotkal-sie-z-donaldem-tuskiem-jak-polska-moze-pomoc-st9336612?source=rss"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Wołodymyr Zełenski spotkał się z wysłannikami Donalda Trumpa",
+        "url": "https://wiadomosci.onet.pl/swiat/wolodymyr-zelenski-spotkal-sie-z-wyslannikami-donalda-trumpa/pxcv3xf"
+      }
+    ],
+    "sources": [
+      "Defence24",
+      "Onet Wiadomości",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Sport",
+    "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
+    "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
+    "thumbnail_url": "https://i.iplsc.com/-/000NIXOF14I6FKLA-C321.webp",
+    "published_iso": "2026-11-13T01:57:27+01:00",
+    "display_date": "13.11.2026, 01:57",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 93,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Interia Sport",
+        "paragraphs": [
+          "6 listopada odbyły się historyczne derby Krakowa. Mecz ten wywoływał emocje na długo przed pierwszym gwizdkiem arbitra. Te naturalnie sięgały zenitu w miarę postępowania pojedynku. Z tego powodu doszło do kilku incydentów, którym wnikliwie przyjrzała się Komisja Ligi PKO BP Ekstraklasy. 12 listopada otrzymaliśmy rozpiskę kar, nałożonych na krakowskie drużyny oraz zawodnika, który podczas meczu dopuścił się bardzo groźnego faulu. Nie upiekło się także członkowi sztabu jednej z ekip. [Źródło: Interia Sport]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Sport.pl",
+        "paragraphs": [
+          "Komisja Ligi zadecydowała już o karze dla Mateusza Klicha za brutalny faul w derbach Krakowa. Piłkarz będzie długo pauzował oraz zapłaci karę finansową. [Źródło: Sport.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Radio Kraków",
+        "paragraphs": [
+          "Komisja Ligi Ekstraklasy ogłosiła w czwartek (12 listopada) wyczekiwane decyzje dotyczące wydarzeń, do których doszło podczas ostatnich Wielkich Derbów Krakowa. Rozegrane 6 listopada przy Reymonta spotkanie, w którym Wisła Kraków pokonała Cracovię 2:1, przyniosło dotkliwe konsekwencje zarówno dla samych klubów, jak i członków drużyny gości. [Źródło: Radio Kraków]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Depesza źródłowa",
+        "summary": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
+        "url": "https://sport.interia.pl/pilka-nozna/ekstraklasa/news-szesc-meczow-zawieszenia-a-to-nie-koniec-drakonskie-kary-po,nId,23572793"
+      },
+      {
+        "outlet": "Sport.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Są kary po derbach Krakowa! Tyle ma pauzować Klich",
+        "url": "https://www.sport.pl/pilka/7,65039,33130147,sa-kary-po-derbach-krakowa-tyle-ma-pauzowac-klich.html"
+      },
+      {
+        "outlet": "Radio Kraków",
+        "angle": "Depesza źródłowa",
+        "summary": "Surowe decyzje Komisji Ligi po Wielkich Derbach Krakowa. Posypały się kary finansowe i zawieszenia",
+        "url": "https://radiokrakow.pl/sport/surowe-decyzje-komisji-ligi-po-wielkich-derbach-krakowa-posypaly-sie-kary-finansowe-i-zawieszenia/187661"
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "Radio Kraków",
+      "Sport.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Sport",
+    "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
+    "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
+    "thumbnail_url": "https://bi.im-g.pl/im/f5/00/1b/z28312565IHG.jpg",
+    "published_iso": "2026-11-13T01:57:27+01:00",
+    "display_date": "13.11.2026, 01:57",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 93,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Sport.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Sport.pl",
+        "paragraphs": [
+          "Polski Związek Strzelectwa Sportowego wydał komunikat związany z wielką tragedią do której doszło w sobotę w Krakowie. [Źródło: Sport.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Radio Kraków",
+        "paragraphs": [
+          "W Zielonkach pod Krakowem rodzina, przyjaciele i znajomi pożegnali 61-letnią Dorotę Baran, jedną z sześciu ofiar zamachu na Rynku Głównym w Krakowie. Kobieta zginęła 7 listopada. Bliscy wspominają ją jako osobę niezwykle oddaną rodzinie, szczególnie opiece nad 80-letnią matką. – Jedyną właściwą, mądrą odpowiedzią na zło jest dobro i miłość – podkreślił podczas uroczystości pogrzebowych ks. Mariusz Kopacz. [Źródło: Radio Kraków]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Radio Rzeszów",
+        "paragraphs": [
+          "Zamach w Krakowie. Sześć osób zginęło na Rynku Głównym Sześć osób – czworo Polaków i dwoje obcokrajowców, obywateli Wielkiej Brytanii i Austrii zginęło z rąk zamachowca na Rynku Głównym w Krakowie. Wcześniej zastrzelił on swoją rodzinę: rodziców i siostrę. W najbliższych dniach wszystkie ofiary spoczną na cmentarzach. W trakcie sobotniego zamachu na Rynku Głównym napastnik […] PAP / Polskie Radio Rzeszów [Źródło: Radio Rzeszów]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Sport.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
+        "url": "https://www.sport.pl/inne/7,64998,33130240,polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie.html"
+      },
+      {
+        "outlet": "Radio Kraków",
+        "angle": "Depesza źródłowa",
+        "summary": "W Zielonkach pożegnano Dorotę Baran, jedną z ofiar zamachu na Rynku Głównym w Krakowie",
+        "url": "https://radiokrakow.pl/wiadomosci/krakow/w-zielonkach-pozegnano-dorote-baran-jedna-z-ofiar-zamachu-na-rynku-glownym-w-krakowie/187658"
+      },
+      {
+        "outlet": "Radio Rzeszów",
+        "angle": "Depesza źródłowa",
+        "summary": "Ofiary zamachu w Krakowie. Kim byli ludzie, którzy zginęli na Rynku Głównym?",
+        "url": "https://radio.rzeszow.pl/373334/ofiary-zamachu-w-krakowie-kim-byli-ludzie-ktorzy-zgineli-na-rynku-glownym/"
+      }
+    ],
+    "sources": [
+      "Radio Kraków",
+      "Radio Rzeszów",
+      "Sport.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -116,7 +437,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -206,7 +527,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -296,7 +617,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -373,7 +694,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -424,7 +745,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -475,7 +796,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -526,7 +847,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -577,7 +898,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
@@ -640,7 +961,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/warszawa-liderem-wzrost-w-w-europie-allegro-orlen-i-banki-ci-gn-gpw-w-g-r",
     "seo_title": "Warszawa liderem wzrostów w Europie. Allegro, Orlen i banki ciągną GPW w górę",
@@ -690,7 +1011,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/pieni-dze-pa-p-nie-p-jd-na-sp-at-pfizera-jest-decyzja-belgijskiego-s-du",
     "seo_title": "Pieniądze PAŻP nie pójdą na spłatę Pfizera. Jest decyzja belgijskiego sądu",
@@ -740,7 +1061,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-s-d-uzna-kontrol-za-niezgodn-z-prawe",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -790,7 +1111,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/huti-uderzyli-w-obiekty-aramco-celem-tak-e-strategiczny-ropoci-g",
     "seo_title": "Huti uderzyli w obiekty Aramco. Celem także strategiczny ropociąg",
@@ -840,7 +1161,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/wstrz-s-w-nvidii-jensen-huang-odchodzi-po-aferze-szpiegowskiej",
     "seo_title": "Wstrząs w Nvidii. Jensen Huang odchodzi po aferze szpiegowskiej",
@@ -890,7 +1211,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/zus-automatycznie-umorzy-nale-no-ci-sprzed-1999-r-oto-skutki",
     "seo_title": "ZUS automatycznie umorzy należności sprzed 1999 r. Oto skutki",
@@ -940,7 +1261,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/reklamy-w-republice-brzoska-odpowiada-dziennikarzowi-dezinformacja-dla-clic",
     "seo_title": "Reklamy w Republice. Brzoska odpowiada dziennikarzowi: dezinformacja dla clickbaitu",
@@ -990,7 +1311,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/sp-ka-mentzen-ze-strat-przychody-spad-y",
     "seo_title": "Spółka Mentzen ze stratą. Przychody spadły",
@@ -1040,7 +1361,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burza-wok-republiki-co-z-reklamami-firmy-t-umacz",
     "seo_title": "Burza wokół Republiki. Co z reklamami? Firmy tłumaczą",
@@ -1090,7 +1411,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/ile-kosztuje-dolar-kurs-dolara-do-z-otego-pln-usd-12-11-2026",
     "seo_title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 12.11.2026",
@@ -1140,7 +1461,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/elastyczno-czyli-jak-kupowa-gaz-i-na-tym-zyska",
     "seo_title": "Elastyczność, czyli jak kupować gaz i na tym zyskać",
