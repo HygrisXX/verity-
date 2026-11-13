@@ -301,6 +301,54 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
         self.assertRegex(home_doc, r'src="app\.js\?v=[0-9a-f]{8}"')
         self.assertNotIn("Szukaj tematów", home_doc)
 
+    def test_category_classification_separates_poland_world_and_sport(self):
+        cases = [
+            ("/Swiat", "https://space24.pl/pojazdy-kosmiczne/systemy-nosne/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot", "Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot", "/Polska"),
+            ("/Polska", "https://space24.pl/pojazdy-kosmiczne/systemy-nosne/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot", "Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot", "/Polska"),
+            ("/Polska", "https://www.polsatnews.pl/wiadomosc/2026-11-12/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby", "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby", "/Swiat"),
+            ("/Polska/Polityka", "https://defence24.pl/geopolityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin", "Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin", "/Swiat"),
+            ("/Sport", "https://www.sport.pl/pilka/7,64946,33131669,mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart.html", "Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart", "/Swiat"),
+            ("/Sport", "https://sportowefakty.wp.pl/pilka-nozna/1284061/moze-zostac-prezydentem-niemiec-to-byly-mistrz-swiata", "Może zostać prezydentem Niemiec. To były mistrz świata", "/Swiat"),
+            ("/Sport", "https://www.sport.pl/inne/7,64998,33130240,polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie.html", "Polski Związek Strzelectwa reaguje na zamach w Krakowie", "/Polska"),
+            ("/Polska/Polityka", "https://www.rp.pl/prawo-w-polsce/art45487551-zakaz-reklamy-aptek-zniesiony", "Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta", "/Polska/Polityka"),
+            ("/Polska", "https://www.polsatnews.pl/wiadomosc/2026-11-12/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli", "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli", "/Polska/Gospodarka"),
+            ("/Polska/Energetyka", "https://energetyka24.com/surowce/ropa/plonie-rafineria-w-wolgogradzie", "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce", "/Swiat"),
+            ("/Polska", "https://www.polsatnews.pl/wiadomosc/2026-11-13/slawa-upa-na-pomnikach-w-trojmiescie", '"Slawa UPA" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy', "/Polska"),
+            ("/Polska/Polityka", "https://www.rp.pl/transport/art45487771-usa-wstrzymuja-wszystkie-starty", "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz", "/Swiat"),
+        ]
+        for def_path, url, title, expected in cases:
+            with self.subTest(title=title, def_path=def_path):
+                self.assertEqual(uln.infer_category_path(def_path, url, title), expected)
+
+    def test_category_url_prefix_and_feed_separation_integrity(self):
+        valid_cat_paths = {p for p, _, _ in seo_builder.CATEGORIES}
+        for art in self.articles:
+            cat_dir = art["seo_url"].rsplit("/", 1)[0]
+            self.assertEqual(
+                cat_dir,
+                art["path"],
+                f"Niespójność path ({art['path']}) vs seo_url ({art['seo_url']}) w id={art['id']}",
+            )
+            if art["path"] not in valid_cat_paths:
+                html_file = os.path.join(ROOT_DIR, art["seo_url"].lstrip("/"), "index.html")
+                with open(html_file, "r", encoding="utf-8") as f:
+                    art_doc = f.read()
+                self.assertIn("← Wróć do Polska", art_doc)
+                self.assertNotIn(f'"{art["path"]}/"', art_doc)
+
+        for fname in ("index.html", os.path.join("Polska", "index.html")):
+            with open(os.path.join(ROOT_DIR, fname), "r", encoding="utf-8") as f:
+                pol_doc = f.read()
+            feed_html = pol_doc.split('id="articlesFeed"', 1)[-1].split("</section>", 1)[0]
+            self.assertNotIn("/Swiat/", feed_html, f"{fname} nie może zawierać linków do artykułów /Swiat/")
+            self.assertNotIn("/Sport/", feed_html, f"{fname} nie może zawierać linków do artykułów /Sport/")
+
+        with open(os.path.join(ROOT_DIR, "Swiat", "index.html"), "r", encoding="utf-8") as f:
+            swiat_feed = f.read().split('id="articlesFeed"', 1)[-1].split("</section>", 1)[0]
+        self.assertNotIn("ILR-33", swiat_feed)
+        self.assertNotIn("polska rakieta", swiat_feed.lower())
+        self.assertNotIn("/Polska/", swiat_feed)
+
 
 if __name__ == "__main__":
     unittest.main()

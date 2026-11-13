@@ -67,7 +67,17 @@ def path_hue(path: str) -> int:
 
 
 def short_cat_label(path: str) -> str:
-    pretty = {"Swiat": "Świat", "Poznan": "Poznań"}
+    pretty = {
+        "Swiat": "Świat",
+        "Poznan": "Poznań",
+        "Krakow": "Kraków",
+        "Wroclaw": "Wrocław",
+        "Gdansk": "Gdańsk",
+        "Lodz": "Łódź",
+        "Bialystok": "Białystok",
+        "Rzeszow": "Rzeszów",
+        "Slask": "Śląsk",
+    }
     parts = [pretty.get(p, p) for p in (path or "/Polska").split("/") if p]
     if len(parts) <= 1:
         return parts[0] if parts else "Polska"
@@ -347,7 +357,7 @@ def _sort_articles_for_feed(items: list) -> list:
 
 def render_feed_ssr(articles: list, path: str, rel_root: str) -> str:
     filtered = _sort_articles_for_feed(
-        [a for a in articles if path == "/Polska" or (a.get("path") or "").startswith(path)]
+        [a for a in articles if (a.get("path") or "").startswith(path)]
     )
     title_map = {p: t for p, t, _ in CATEGORIES}
     heading_title = html.escape(title_map.get(path, path))
@@ -418,8 +428,9 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
     hue = path_hue(art.get("path") or "/Polska")
     cat_path = art.get("path") or "/Polska"
     title_map = {p: t for p, t, _ in CATEGORIES}
-    back_label = html.escape(title_map.get(cat_path, cat_path))
-    back_href = html.escape(_rel_href(rel_root, cat_path), quote=True)
+    back_cat = cat_path if cat_path in title_map else "/Polska"
+    back_label = html.escape(title_map.get(back_cat, back_cat))
+    back_href = html.escape(_rel_href(rel_root, back_cat), quote=True)
     raw_title = art.get("seo_title") or ""
     title_attr = html.escape(raw_title, quote=True)
     title_html = html.escape(pl_typography(raw_title))
@@ -562,7 +573,11 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
         links_html = f'<div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list">{link_items}</ul></div>'
 
     ordered_all = _sort_articles_for_feed(all_articles)
+    top_cat = "/" + (cat_path.strip("/").split("/")[0] or "Polska")
     related = [a for a in ordered_all if a["id"] != art["id"] and a.get("path") == cat_path][:2]
+    if len(related) < 2:
+        more_top = [a for a in ordered_all if a["id"] != art["id"] and a not in related and (a.get("path") or "").startswith(top_cat)]
+        related = (related + more_top)[:2]
     if not related:
         related = [a for a in ordered_all if a["id"] != art["id"]][:2]
     related_html = (
@@ -575,12 +590,12 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
     canonical_esc = html.escape(canonical_full, quote=True)
 
     return f"""<div class="cat" style="--h:{hue}">
-      <a class="back-link" href="{back_href}" onclick="return selectPathLink(event, '{html.escape(cat_path, quote=True)}')">← Wróć do {back_label}</a>
+      <a class="back-link" href="{back_href}" onclick="return selectPathLink(event, '{html.escape(back_cat, quote=True)}')">← Wróć do {back_label}</a>
       <div class="reader has-aside">
         <article class="article-main">
           <header class="article-head">
             <div class="article-kicker">
-              <span class="cat-badge">{html.escape(cat_path)}</span>
+              <span class="cat-badge">{html.escape(short_cat_label(cat_path))}</span>
               <time datetime="{html.escape(art.get('published_iso') or '')}">{date_esc}</time>
               <span>{minutes_label(mins)}</span>
             </div>
@@ -641,13 +656,16 @@ def _build_news_article_jsonld(art: dict, site_base_url: str) -> list:
     canonical = f"{site_base_url}{art.get('seo_url', '')}/"
     cat_path = art.get("path") or "/Polska"
     parts = [p for p in cat_path.split("/") if p]
+    valid_cats = {p for p, _, _ in CATEGORIES}
+    pretty_names = {"Polska": "Polska", "Swiat": "Świat", "Sport": "Sport", "Gospodarka": "Gospodarka", "Polityka": "Polityka", "Energetyka": "Energetyka", "Poznan": "Poznań"}
     breadcrumbs = [
         {"@type": "ListItem", "position": 1, "name": "VERITY", "item": f"{site_base_url}/"},
     ]
     acc = ""
-    for i, part in enumerate(parts, start=2):
+    for part in parts:
         acc += f"/{part}"
-        breadcrumbs.append({"@type": "ListItem", "position": i, "name": part, "item": f"{site_base_url}{acc}/"})
+        if acc in valid_cats:
+            breadcrumbs.append({"@type": "ListItem", "position": len(breadcrumbs) + 1, "name": pretty_names.get(part, part), "item": f"{site_base_url}{acc}/"})
     breadcrumbs.append({"@type": "ListItem", "position": len(breadcrumbs) + 1, "name": art.get("seo_title") or "", "item": canonical})
 
     citations = []
@@ -907,7 +925,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
                     "url": f"{site_base_url}{a['seo_url']}/",
                     "name": a["seo_title"],
                 }
-                for idx, a in enumerate(published[:15], start=1)
+                for idx, a in enumerate([x for x in published if (x.get("path") or "").startswith("/Polska")][:15], start=1)
             ],
         },
     ]
@@ -934,7 +952,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         rel_dir = cat_path.strip("/")
         depth = len([p for p in rel_dir.split("/") if p])
         rel_root = "../" * depth
-        cat_arts = [a for a in published if cat_path == "/Polska" or (a.get("path") or "").startswith(cat_path)]
+        cat_arts = [a for a in published if (a.get("path") or "").startswith(cat_path)]
         cat_thumb = next((a.get("thumbnail_url") for a in cat_arts if a.get("thumbnail_url")), first_thumb)
         cat_ld = [
             {

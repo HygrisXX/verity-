@@ -120,11 +120,1147 @@ let articles = [
   {
     "id": 1,
     "path": "/Swiat",
-    "seo_url": "/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza",
+    "seo_url": "/Swiat/usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz",
+    "seo_title": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
+    "summary_lead": "USA wstrzymują starty samolotów w całym kraju. FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku.",
+    "meta_description": "USA wstrzymują starty samolotów w całym kraju. FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności.",
+    "keywords": "Swiat, wstrzymują, wszystkie, starty, samolotów, wydała, nadzwyczajny",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/8fed8c026bcbd62bb0a535875d7e548f/?t=crop:5500:2403:nowe:0:63.951224461564,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T22:40:25+01:00",
+    "display_date": "13.11.2026, 22:40",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "USA wstrzymują starty samolotów w całym kraju. FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku. [Źródło: Rzeczpospolita]",
+          "Władze zapewniają, że to nie był cyberatak. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Bezprecedensowe utrudnienia w amerykańskim ruchu lotniczym. Powodem są problemy z systemami kontroli ruchu lotniczego. Amerykańskie służby powołały się na wyjątkowe okoliczności i względy bezpieczeństwa. [Źródło: Warszawa w Pigułce]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja wiodąca",
+        "summary": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
+        "url": "https://www.rp.pl/transport/art45487771-usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz"
+      },
+      {
+        "outlet": "Warszawa w Pigułce",
+        "angle": "Doniesienie regionalne",
+        "summary": "PILNE! USA wstrzymały starty samolotów w całym kraju. Nadzwyczajna decyzja FAA. Co z lotami z Warszawy?",
+        "url": "https://warszawawpigulce.pl/pilne-usa-wstrzymaly-starty-samolotow-w-calym-kraju-nadzwyczajna-decyzja-faa-co-z-lotami-z-warszawy/"
+      }
+    ],
+    "sources": [
+      "Rzeczpospolita",
+      "Warszawa w Pigułce"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/odbudowa-ukrainy-za-setki-miliardow-dolarow-polska-chce-byc-przy-stole",
+    "seo_title": "Odbudowa Ukrainy za setki miliardów dolarów. Polska chce być przy stole",
+    "summary_lead": "Odbudowa Ukrainy może pochłonąć setki miliardów dolarów, a polskie firmy chcą uczestniczyć w tym ogromnym przedsięwzięciu.",
+    "meta_description": "Odbudowa Ukrainy może pochłonąć setki miliardów dolarów, a polskie firmy chcą uczestniczyć w tym ogromnym przedsięwzięciu.",
+    "keywords": "Gospodarka, Odbudowa, Ukrainy, setki, miliardów, dolarów, chce",
+    "thumbnail_url": "https://pliki.wnp.pl/d/57/83/58/578358_r0_300.jpg",
+    "published_iso": "2026-11-13T22:40:25+01:00",
+    "display_date": "13.11.2026, 22:40",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WNP.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Odbudowa Ukrainy może pochłonąć setki miliardów dolarów, a polskie firmy chcą uczestniczyć w tym ogromnym przedsięwzięciu. Szanse otwierają się przede wszystkim przed przedsiębiorstwami z sektora energetycznego, rolno-spożywczego i małymi oraz średnimi firmami. [Źródło: WNP.pl]",
+          "Barierą pozostają jednak problemy na granicy, przeszkody administracyjne i ograniczony dostęp do ukraińskiego rynku zamówień publicznych. [Źródło: WNP.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Polska znalazła się w gronie pięciu państw, które będą reprezentować Europę w negocjacjach dotyczących zakończenia rosyjskiej wojny przeciw Ukrainie. W skład europejskiego zespołu wejdą również Francja, Niemcy, Wielka Brytania i Włochy, a także przedstawiciele instytucji unijnych – ogłosił w piątek szef Rady Europejskiej Antonio Costa. [Źródło: Puls Biznesu]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WNP.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Odbudowa Ukrainy za setki miliardów dolarów. Polska chce być przy stole",
+        "url": "https://www.wnp.pl/rynki/odbudowa-ukrainy-za-setki-miliardow-dolarow-polska-chce-byc-przy-stole,1119628.html"
+      },
+      {
+        "outlet": "Puls Biznesu",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Polska przy stole negocjacyjnym ws. Ukrainy. Costa ogłosił decyzję",
+        "url": "https://www.pb.pl/polska-przy-stole-negocjacyjnym-ws-ukrainy-costa-oglosil-decyzje-1270419"
+      }
+    ],
+    "sources": [
+      "Puls Biznesu",
+      "WNP.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen",
+    "seo_title": "Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen",
+    "summary_lead": "Norweski Sąd Najwyższy orzekł, że plany zagospodarowania i wydobycia ropy i gazu na części norweskiego szelfu zostały zatwierdzone niezgodnie z prawem.",
+    "meta_description": "Norweski Sąd Najwyższy orzekł, że plany zagospodarowania i wydobycia ropy i gazu na części norweskiego szelfu zostały zatwierdzone niezgodnie z prawem.",
+    "keywords": "Gospodarka, Norwegii, Ważą, losy, złóż, których, wydobywa",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/b0e1912a3a1ffe48d889681a86a78f06/?t=crop:1980:866:nowe:0:167,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T22:40:25+01:00",
+    "display_date": "13.11.2026, 22:40",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Parkiet"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Norweski Sąd Najwyższy orzekł, że plany zagospodarowania i wydobycia ropy i gazu na części norweskiego szelfu zostały zatwierdzone niezgodnie z prawem. Państwo norweskie miało nie dochować wymaganych warunków w ocenach skutków wydobycia. Na objętych wyrokiem polach koncesje ma Orlen. [Źródło: Parkiet]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Orzeczenie dotyczy trzech strategicznych pól na Morzu Północnym, w tym złóż, w których udziały posiada polski Orlen. [Źródło: Energetyka24]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Parkiet",
+        "angle": "Raport rynkowy",
+        "summary": "Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen",
+        "url": "https://www.parkiet.com/surowce-i-paliwa/art45485951-przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen"
+      },
+      {
+        "outlet": "Energetyka24",
+        "angle": "Kontekst sektorowy",
+        "summary": "Przełomowy wyrok w Norwegii: plany wydobycia ropy i gazu bezprawne. Co ze złożami Orlenu?",
+        "url": "https://energetyka24.com/surowce/ropa/przelomowy-wyrok-w-norwegii-plany-wydobycia-ropy-i-gazu-bezprawne-co-ze-zlozami-orlenu"
+      }
+    ],
+    "sources": [
+      "Energetyka24",
+      "Parkiet"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/pracownik-telewizji-republika-uslyszal-zarzut-minister-potwierdza",
+    "seo_title": "Pracownik Telewizji Republika usłyszał zarzut. Minister potwierdza",
+    "summary_lead": "Pracownik Telewizji Republika, Jarosław O., usłyszał zarzut naruszenia miru domowego – poinformował w mediach społecznościowych Waldemar Żurek.",
+    "meta_description": "Pracownik Telewizji Republika, Jarosław O., usłyszał zarzut naruszenia miru domowego – poinformował w mediach społecznościowych Waldemar Żurek.",
+    "keywords": "Polityka, Pracownik, Telewizji, Republika, Minister, potwierdza",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/ix/ix4j4ckqdmvgy3uawmhwhjpxnydfpe9g.jpg",
+    "published_iso": "2026-11-13T22:40:25+01:00",
+    "display_date": "13.11.2026, 22:40",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Pracownik Telewizji Republika, Jarosław O., usłyszał zarzut naruszenia miru domowego – poinformował w mediach społecznościowych Waldemar Żurek. Jak wyjaśniono sprawa dotyczy wdarcia się do strefy ochronnej budynku Prokuratury Krajowej podczas przesłuchania Tomasza Sakiewicza. [Źródło: Polsat News, WP Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Relacja wiodąca",
+        "summary": "Pracownik Telewizji Republika usłyszał zarzut. Minister potwierdza",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/pracownik-telewizji-republika-uslyszal-zarzut-minister-potwierdza/"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Pracownik TV Republika z zarzutem. Żurek ujawnia szczegóły",
+        "url": "https://wiadomosci.wp.pl/pracownik-tv-republika-z-zarzutem-zurek-ujawnia-szczegoly-7350712164108320a"
+      }
+    ],
+    "sources": [
+      "Polsat News",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
+    "path": "/Sport",
+    "seo_url": "/Sport/mirra-andriejewa-diana-sznajder-relacja-na-zywo",
+    "seo_title": "Mirra Andriejewa – Diana Sznajder [RELACJA NA ŻYWO]",
+    "summary_lead": "Mirra Andriejewa w ostatniej chwili dowiedziała się, że jej rywalką na koniec zmagań w grupie nie będzie Karolina Muchova. Czeszkę zastąpiła Diana Sznajder. To będzie jedyny mecz Rosjanki na tym turnieju.",
+    "meta_description": "Mirra Andriejewa w ostatniej chwili dowiedziała się, że jej rywalką na koniec zmagań w grupie nie będzie Karolina Muchova. Czeszkę zastąpiła Diana Sznajder.",
+    "keywords": "Sport, Mirra, Andriejewa, Diana, Sznajder",
+    "thumbnail_url": "https://cdn.przegladsportowy.onet.pl/1/OWGk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8zOTY0NzY1NWI1YzE5Mjk5NDVkMWUwNTNlZThkZTJlOS5qcGeSlQMAzLHNFjDNDHuTBc0JYM0GQN4AAqEwB6ExBA",
+    "published_iso": "2026-11-13T21:44:09+01:00",
+    "display_date": "13.11.2026, 21:44",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Przegląd Sportowy"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Mirra Andriejewa w ostatniej chwili dowiedziała się, że jej rywalką na koniec zmagań w grupie nie będzie Karolina Muchova. Czeszkę zastąpiła Diana Sznajder. To będzie jedyny mecz Rosjanki na tym turnieju. [Źródło: Przegląd Sportowy, Polsat Sport]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Po 56 minutach Andriejewa cieszyła się zwycięstwem 6:2, 6:1. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Przegląd Sportowy",
+        "angle": "Relacja wiodąca",
+        "summary": "Mirra Andriejewa – Diana Sznajder [RELACJA NA ŻYWO]",
+        "url": "https://przegladsportowy.onet.pl/tenis/mirra-andriejewa-diana-sznajder-relacja-na-zywo-wta-finals-live/ekt98d3"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Relacja sportowa",
+        "summary": "Mecz niegodny WTA Finals? 56 minut i Mirra Andriejewa już myślami w półfinale",
+        "url": "https://sportowefakty.wp.pl/tenis/1284025/mecz-niegodny-wta-finals-56-minut-i-mirra-andriejewa-myslami-w-polfinale"
+      },
+      {
+        "outlet": "Polsat Sport",
+        "angle": "Relacja sportowa",
+        "summary": "WTA Finals: Mirra Andriejewa – Diana Sznajder. Relacja live i wynik na żywo",
+        "url": "https://www.polsatsport.pl/wiadomosc/2026-11-13/wta-finals-mirra-andriejewa-diana-sznajder-relacja-live-i-wynik-na-zywo/"
+      }
+    ],
+    "sources": [
+      "Polsat Sport",
+      "Przegląd Sportowy",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 6,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/starshield-ponownie-ograniczony-dla-ukrainy-zelenski-alarmuje",
+    "seo_title": "Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje",
+    "summary_lead": "Wojska ukraińskie odnotowują poważne zakłócenia w działaniu systemu wojskowej łączności satelitarnej Starshield; utrudnia to walkę z rosyjskimi dronami odrzutowymi i ułatwia Kremlowi zabijanie cywilów – oświadczył w czwartek prezydent…",
+    "meta_description": "Wojska ukraińskie odnotowują poważne zakłócenia w działaniu systemu wojskowej łączności satelitarnej Starshield; utrudnia to walkę z rosyjskimi dronami…",
+    "keywords": "Swiat, Starshield, ponownie, ograniczony, Ukrainy, Zełeński, alarmuje",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/03/31/320x240px/2dA1VoFwswU4nhhSIURUdY60uH3hsowpoY74ZRMI.btd7.jpg",
+    "published_iso": "2026-11-13T21:44:09+01:00",
+    "display_date": "13.11.2026, 21:44",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Space24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Wojska ukraińskie odnotowują poważne zakłócenia w działaniu systemu wojskowej łączności satelitarnej Starshield; utrudnia to walkę z rosyjskimi dronami odrzutowymi i ułatwia Kremlowi zabijanie cywilów – oświadczył w czwartek prezydent Ukrainy Wołodymyr Zełenski. [Źródło: Space24, WP Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Space24",
+        "angle": "Analiza sektorowa",
+        "summary": "Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje",
+        "url": "https://space24.pl/bezpieczenstwo/technologie-wojskowe/starshield-ponownie-ograniczony-dla-ukrainy-zelenski-alarmuje"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Ukraina ma problem z przechwytywaniem rosyjskich dronów. Zełenski alarmuje",
+        "url": "https://wiadomosci.wp.pl/ukraina-ma-problem-z-przechwytywaniem-rosyjskich-dronow-zelenski-alarmuje-7350690454632448a"
+      }
+    ],
+    "sources": [
+      "Space24",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 7,
+    "path": "/Polska",
+    "seo_url": "/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
+    "seo_title": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy",
+    "summary_lead": "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA.",
+    "meta_description": "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego.",
+    "keywords": "Polska, Slawa, pomnikach, Trójmieście, 17-latka, Ukrainy",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/35/354jmv74f83g2qj21thahhe4f6ionn98.jpg",
+    "published_iso": "2026-11-13T21:44:08+01:00",
+    "display_date": "13.11.2026, 21:44",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "5 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (5 źródeł)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (5 redakcji)",
+        "paragraphs": [
+          "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA. Zastosowano wobec niego dozór policyjny oraz zakaz opuszczania kraju. [Źródło: Polsat News, Gazeta.pl, Wyborcza.pl, Radio Gdańsk]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Na obeliskach i miejscach pamięci namalowano m.in. hasło \"Sława UPA\". Nastolatek usłyszał siedem zarzutów, w tym dotyczących propagowania ideologii faszystowskiej, nawoływania do nienawiści na tle narodowościowym i znieważenia pomników. [Źródło: Fakt.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Relacja wiodąca",
+        "summary": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/"
+      },
+      {
+        "outlet": "Fakt.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "\"Slawa UPA\" na trójmiejskich pomnikach. Zatrzymano 17-latka",
+        "url": "https://www.fakt.pl/wydarzenia/polska/trojmiasto/napisy-slawa-upa-na-pomnikach-w-gdansku-i-gdyni-17-latek-uslyszal-zarzuty/0vve7hp"
+      },
+      {
+        "outlet": "Gazeta.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Napis \"Slawa UPA\" na kilkunastu pomnikach w Polsce. Zarzuty dla 17-letniego Ukraińca",
+        "url": "https://wiadomosci.gazeta.pl/polska/7,198073,33131679,napis-slawa-upa-na-kilkunastu-pomnikach-w-polsce-zarzuty.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+      },
+      {
+        "outlet": "Wyborcza.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Zarzuty dla 17-latka. Na polskich pomnikach umieścił napis \"Slawa UPA\"",
+        "url": "https://wyborcza.pl/7,75398,33131706,zarzuty-dla-17-latka-na-polskich-pomnikach-umiescil-napis-slawa.html"
+      },
+      {
+        "outlet": "Radio Gdańsk",
+        "angle": "Doniesienie regionalne",
+        "summary": "Pisał „Slawa UPA” na trójmiejskich pomnikach. Grożą mu 3 lata więzienia",
+        "url": "https://radiogdansk.pl/wiadomosci/trojmiasto/2026/11/13/pisal-slawa-upa-na-trojmiejskich-pomnikach-groza-mu-3-lata-wiezienia/"
+      }
+    ],
+    "sources": [
+      "Fakt.pl",
+      "Gazeta.pl",
+      "Polsat News",
+      "Radio Gdańsk",
+      "Wyborcza.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 8,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/tankowiec-uderzyl-w-statek-wycieczkowy-dramatyczna-akcja-ratunkowa-na",
+    "seo_title": "Tankowiec uderzył w statek wycieczkowy. Dramatyczna akcja ratunkowa na Missisipi",
+    "summary_lead": "Trwa dramatyczna akcja ratunkowa na rzece Missisipi w Nowym Orleanie. W piątek (13 listopada) 160-metrowy tankowiec uderzył w zacumowany przy brzegu statek wycieczkowy.",
+    "meta_description": "Trwa dramatyczna akcja ratunkowa na rzece Missisipi w Nowym Orleanie. W piątek (13 listopada) 160-metrowy tankowiec uderzył w zacumowany przy brzegu statek…",
+    "keywords": "Swiat, Tankowiec, uderzył, statek, wycieczkowy, Dramatyczna, akcja",
+    "thumbnail_url": "https://ocdn.eu/pulscms-transforms/1/qwRk9kuTURBXy83YTkzZjFiOC1hOTFkLTQ4NTQtYTRiMi04ZDFhMDFmMWU5M2EuanBlZ5GTAs0EsADeAAGhMAE",
+    "published_iso": "2026-11-13T21:44:08+01:00",
+    "display_date": "13.11.2026, 21:44",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Fakt.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (4 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (4 redakcje)",
+        "paragraphs": [
+          "Trwa dramatyczna akcja ratunkowa na rzece Missisipi w Nowym Orleanie. W piątek (13 listopada) 160-metrowy tankowiec uderzył w zacumowany przy brzegu statek wycieczkowy. Według wstępnych informacji na pokładzie znajdowało się do 150 osób, w tym pasażerowie i członkowie załogi. [Źródło: Fakt.pl, WP Wiadomości]",
+          "Na razie nie ma informacji o ofiarach śmiertelnych. [Źródło: Fakt.pl, WP Wiadomości]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Jednostka zaczęła nabierać wody. [Źródło: Onet Wiadomości]",
+          "Z pierwszych doniesień amerykańskich mediów wynika, że na pokładzie wycieczkowca znajdowało się ponad 130 osób. [Źródło: TVN24]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Fakt.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Tankowiec uderzył w statek wycieczkowy. Dramatyczna akcja ratunkowa na Missisipi",
+        "url": "https://www.fakt.pl/wydarzenia/swiat/usa-tankowiec-uderzyl-w-statek-wycieczkowy-trwa-akcja-ratunkowa-na-missisipi/4en57q0"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Akcja ratunkowa w porcie w Nowym Orleanie. Tonie statek z prawie 150 osobami",
+        "url": "https://wiadomosci.onet.pl/swiat/akcja-ratunkowa-w-porcie-w-nowym-orleanie-tonie-statek-z-prawie-150-pasazerami/9z3d6r7"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Tankowiec uderzył w statek wycieczkowy. Akcja służb w USA",
+        "url": "https://tvn24.pl/swiat/statek-wycieczkowy-zderzyl-sie-z-tankowcem-w-nowym-orleanie-st9338558?source=rss"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Tankowiec staranował statek. Trwa akcja ratunkowa na Missisipi",
+        "url": "https://wiadomosci.wp.pl/tankowiec-staranowal-statek-trwa-akcja-ratunkowa-na-missisipi-7350699373516800a"
+      }
+    ],
+    "sources": [
+      "Fakt.pl",
+      "Onet Wiadomości",
+      "TVN24",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 9,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart",
+    "seo_title": "Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart",
+    "summary_lead": "Fani międzynarodowej piłki nożnej z lat 80. i 90. mogą zapewne pamiętać Thomasa Bertholda. To podstawowy obrońca reprezentacji RFN, która w 1990 roku zdobyła mistrzostwo świata.",
+    "meta_description": "Fani międzynarodowej piłki nożnej z lat 80. i 90. mogą zapewne pamiętać Thomasa Bertholda.",
+    "keywords": "Swiat, Mistrz, kandydatem, prezydenta, Niemiec, żart",
+    "thumbnail_url": "https://bi.im-g.pl/im/a7/98/1f/z33131687IHG,GERMANY-POLITICS-AFD-EUROPE.jpg",
+    "published_iso": "2026-11-13T20:48:58+01:00",
+    "display_date": "13.11.2026, 20:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Sport.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Fani międzynarodowej piłki nożnej z lat 80. i 90. mogą zapewne pamiętać Thomasa Bertholda. To podstawowy obrońca reprezentacji RFN, która w 1990 roku zdobyła mistrzostwo świata. Po zakończeniu kariery były piłkarz zaangażował się m.in. w politykę. [Źródło: Sport.pl]",
+          "Według doniesień niemieckich mediów partia AfD ma zamiar wystawić go jako kandydata na prezydenta kraju. Mimo że... nie ma on najmniejszych szans na zwycięstwo. [Źródło: Sport.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "\"Die Welt\" przedstawia, kim jest 62-krotny reprezentant kraju i jakie ma poglądy. Wiele z nich można uznać za skrajne. [Źródło: Przegląd Sportowy]",
+          "Oficjalna decyzja ma zapaść w sobotę, 14 listopada. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Sport.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart",
+        "url": "https://www.sport.pl/pilka/7,64946,33131669,mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart.html"
+      },
+      {
+        "outlet": "Przegląd Sportowy",
+        "angle": "Relacja sportowa",
+        "summary": "Gwiazdor może być nowym prezydentem Niemiec. AfD wskazało kandydata",
+        "url": "https://przegladsportowy.onet.pl/pilka-nozna/gwiazdor-nowym-prezydentem-niemiec-afd-wskazalo-kandydata/b3httmw"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Relacja sportowa",
+        "summary": "Może zostać prezydentem Niemiec. To były mistrz świata",
+        "url": "https://sportowefakty.wp.pl/pilka-nozna/1284061/moze-zostac-prezydentem-niemiec-to-byly-mistrz-swiata"
+      }
+    ],
+    "sources": [
+      "Przegląd Sportowy",
+      "Sport.pl",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 10,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/tyle-trzeba-zarabiac-na-3500-zl-emerytury-kobiety-maja-gorzej",
+    "seo_title": "Tyle trzeba zarabiać na 3500 zł emerytury. Kobiety mają gorzej",
+    "summary_lead": "Marzysz o spokojnej jesieni życia i emeryturze na poziomie przynajmniej 3500 zł? Choć dla wielu osób to kwota pozwalająca zaledwie na pokrycie podstawowych rachunków, wypracowanie jej w polskim systemie wymaga zarobków znacznie…",
+    "meta_description": "Marzysz o spokojnej jesieni życia i emeryturze na poziomie przynajmniej 3500 zł?",
+    "keywords": "Gospodarka, Tyle, trzeba, zarabiać, emerytury, gorzej",
+    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2RuLnB/sL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMDAwMDAwMDAwNz/cwMTcwMS9maWxlcy9rb211LXp1cy1kb3BsYWNpLWRvLWVtZXJ5d/HVyeS1taW5pbWFsbmVqLTM5MjMyMzM2LmpwZyIsInciOjM4NDB9",
+    "published_iso": "2026-11-13T20:48:58+01:00",
+    "display_date": "13.11.2026, 20:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "GazetaPrawna.pl (DGP)"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Marzysz o spokojnej jesieni życia i emeryturze na poziomie przynajmniej 3500 zł? Choć dla wielu osób to kwota pozwalająca zaledwie na pokrycie podstawowych rachunków, wypracowanie jej w polskim systemie wymaga zarobków znacznie powyżej krajowej średniej. Sprawdzamy aktualne wyliczenia – różnice między kobietami a mężczyznami są ogromne. [Źródło: GazetaPrawna.pl (DGP)]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Wysokość emerytury w ZUS zależy przede wszystkim od tego, ile zarabiamy i jak długo odprowadzamy składki w trakcie pracy. Osoby, które dziś mają 40 lat i chcą w przyszłości dostawać około 5 tys. zł miesięcznie, muszą zarabiać od 10 do 17 tys. zł brutto. [Źródło: WP Finanse]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "GazetaPrawna.pl (DGP)",
+        "angle": "Relacja wiodąca",
+        "summary": "Tyle trzeba zarabiać na 3500 zł emerytury. Kobiety mają gorzej",
+        "url": "https://www.gazetaprawna.pl/praca/emerytury-i-renty/artykuly/11344279,tyle-trzeba-zarabiac-na-3500-zl-emerytury-kobiety-maja-gorzej.html"
+      },
+      {
+        "outlet": "WP Finanse",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Tyle trzeba zarabiać na 5 tys. zł emerytury. Oto wyliczenia",
+        "url": "https://finanse.wp.pl/tyle-trzeba-zarabiac-na-5-tys-zl-emerytury-oto-wyliczenia-7350678904064000a"
+      }
+    ],
+    "sources": [
+      "GazetaPrawna.pl (DGP)",
+      "WP Finanse"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 11,
+    "path": "/Polska",
+    "seo_url": "/Polska/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot",
+    "seo_title": "Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot",
+    "summary_lead": "Rakieta suborbitalna ILR-33 BURSZTYN 2K Łukasiewicz – Instytutu Lotnictwa zakończyła planowany lot w ramach listopadowych prób poligonowych projektu SUBCOM.",
+    "meta_description": "Rakieta suborbitalna ILR-33 BURSZTYN 2K Łukasiewicz – Instytutu Lotnictwa zakończyła planowany lot w ramach listopadowych prób poligonowych projektu SUBCOM.",
+    "keywords": "Polska, rakieta, ILR-33, BURSZTYN, zaliczyła, udany",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/zFaoMlKkDnKggSn4OsPusHPL4ThS840YsWJgh4Ie.jpbl.jpg",
+    "published_iso": "2026-11-13T20:48:58+01:00",
+    "display_date": "13.11.2026, 20:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Space24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Rakieta suborbitalna ILR-33 BURSZTYN 2K Łukasiewicz – Instytutu Lotnictwa zakończyła planowany lot w ramach listopadowych prób poligonowych projektu SUBCOM. Głównym celem testu była weryfikacja systemów komunikacji, lokalizacji i śledzenia rakiety, opracowanych przez firmę Thorium Space, w warunkach rzeczywistego lotu. [Źródło: Space24, RadioMaryja.pl]",
+          "Zgodnie z planowanym profilem misji rakieta rozpędziła się do dwukrotności prędkości dźwięku. [Źródło: Space24]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Space24",
+        "angle": "Analiza sektorowa",
+        "summary": "Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot",
+        "url": "https://space24.pl/pojazdy-kosmiczne/systemy-nosne/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot"
+      },
+      {
+        "outlet": "RadioMaryja.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Udany próbny lot rakiety ILR-33 BURSZTYN 2K",
+        "url": "https://www.radiomaryja.pl/informacje/udany-probny-lot-rakiety-ilr-33-bursztyn-2k/"
+      }
+    ],
+    "sources": [
+      "RadioMaryja.pl",
+      "Space24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 12,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/kreml-przejal-zachodni-biznes-miliony-rubli-na-sprzet-dla-armii",
+    "seo_title": "Kreml przejął zachodni biznes. Miliony rubli na sprzęt dla armii",
+    "summary_lead": "Rosja wykorzystuje przejęte aktywa zachodnich przedsiębiorstw do wspierania własnej armii. Środki są przeznaczane m.in. na zakup dronów, pojazdów terenowych i sprzętu łączności – ustalił Bloomberg.",
+    "meta_description": "Rosja wykorzystuje przejęte aktywa zachodnich przedsiębiorstw do wspierania własnej armii.",
+    "keywords": "Swiat, Kreml, przejął, zachodni, biznes, Miliony, rubli",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/3dff1114ee68ba49b4d22b9c88c2d745/?t=crop:4000:1749:nowe:0:331.34282018111,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T20:48:58+01:00",
+    "display_date": "13.11.2026, 20:48",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Rosja wykorzystuje przejęte aktywa zachodnich przedsiębiorstw do wspierania własnej armii. Środki są przeznaczane m.in. na zakup dronów, pojazdów terenowych i sprzętu łączności – ustalił Bloomberg. [Źródło: Rzeczpospolita, Business Insider PL]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja wiodąca",
+        "summary": "Kreml przejął zachodni biznes. Miliony rubli na sprzęt dla armii",
+        "url": "https://www.rp.pl/biznes/art45487511-kreml-przejal-zachodni-biznes-miliony-rubli-na-sprzet-dla-armii"
+      },
+      {
+        "outlet": "Business Insider PL",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Kreml przejął zachodnie firmy. Teraz wpłacają środki na armię",
+        "url": "https://businessinsider.com.pl/gospodarka/zachodnie-marki-pod-kontrola-rosji-pieniadze-trafiaja-na-front/2241jm2"
+      }
+    ],
+    "sources": [
+      "Business Insider PL",
+      "Rzeczpospolita"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 13,
+    "path": "/Polska",
+    "seo_url": "/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
+    "seo_title": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem",
+    "summary_lead": "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z informacji krakowskiej Policji. W zdarzeniu nikt nie został ranny.",
+    "meta_description": "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z…",
+    "keywords": "Polska, Strzelał, Krakowie, Funkcjonariusze, odpowiedzieli, ogniem",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/09/01/320x240px/NbBjKSxEiBC1K1BTZ5pOwhZrCAGOcVBs0DvzjOB8.13zc.jpg",
+    "published_iso": "2026-11-13T19:50:37+01:00",
+    "display_date": "13.11.2026, 19:50",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "InfoSecurity24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z informacji krakowskiej Policji. W zdarzeniu nikt nie został ranny. [Źródło: InfoSecurity24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Mężczyzna został zatrzymany po pościgu w rejonie ulic Wielickiej i Bieżanowskiej. Jak ujawniła prokuratura, 39-latek ma na koncie wyrok za zabójstwo. [Źródło: Fakt.pl]",
+          "Prokuratura chce dla niego tymczasowego aresztu. [Źródło: Gazeta.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "InfoSecurity24",
+        "angle": "Analiza sektorowa",
+        "summary": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem",
+        "url": "https://infosecurity24.pl/sluzby-mundurowe/policja/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem"
+      },
+      {
+        "outlet": "Fakt.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Strzelał do policjantów w Krakowie. Ma kryminalną przeszłość. 39-latek usłyszał zarzuty",
+        "url": "https://www.fakt.pl/wydarzenia/krakow-39-latek-strzelal-do-policjantow-prokuratura-przedstawila-mu-zarzuty/2g8njb6"
+      },
+      {
+        "outlet": "Gazeta.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Zarzuty dla mężczyzny, który strzelał z broni gazowej do policjantów w Krakowie. \"Jest recydywistą\"",
+        "url": "https://wiadomosci.gazeta.pl/polska/7,198072,33131581,zarzuty-dla-mezczyzny-ktory-strzelal-z-broni-gazowej-do-policjantow.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+      }
+    ],
+    "sources": [
+      "Fakt.pl",
+      "Gazeta.pl",
+      "InfoSecurity24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 14,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/zakaz-reklamy-aptek-zniesiony-ale-kary-beda-wyzsze-decyzja-prezydenta",
+    "seo_title": "Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta",
+    "summary_lead": "Prezydent Karol Nawrocki podpisał ustawę znoszącą całkowity zakaz reklamy aptek. Będą jednak ograniczenia dotyczące reklam, za których złamanie mają grozić kary do miliona złotych.",
+    "meta_description": "Prezydent Karol Nawrocki podpisał ustawę znoszącą całkowity zakaz reklamy aptek.",
+    "keywords": "Polityka, Zakaz, reklamy, aptek, zniesiony, kary, wyższe",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/8376316cf12ee69552c15e62105094df/?t=crop:7360:3217:nowe:0:847,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T19:50:37+01:00",
+    "display_date": "13.11.2026, 19:50",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 94,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Prezydent Karol Nawrocki podpisał ustawę znoszącą całkowity zakaz reklamy aptek. Będą jednak ograniczenia dotyczące reklam, za których złamanie mają grozić kary do miliona złotych. [Źródło: Rzeczpospolita, Gazeta.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Kancelaria Prezydenta przekazała tę informację w piątek. Nowe przepisy wprowadzają możliwość prowadzenia reklamy, choć z licznymi ograniczeniami. Za naruszenie regulacji grozi kara sięgająca miliona złotych. [Źródło: Business Insider PL]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja wiodąca",
+        "summary": "Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta",
+        "url": "https://www.rp.pl/prawo-w-polsce/art45487551-zakaz-reklamy-aptek-zniesiony-ale-kary-beda-wyzsze-decyzja-prezydenta"
+      },
+      {
+        "outlet": "Business Insider PL",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Prezydent podpisał ustawę dla aptek. Koniec zakazu, ale nie wszystko wolno",
+        "url": "https://businessinsider.com.pl/prawo/zakaz-reklamy-aptek-zniesiony-prezydent-podpisal-ustawe/f2mk6h6"
+      },
+      {
+        "outlet": "Gazeta.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Nawrocki podpisał sześć ustaw. Wśród nich zniesienie całkowitego zakazu reklamy aptek",
+        "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33131546,nawrocki-podpisal-szesc-ustaw-wsrod-nich-m-in-zniesienie-calkowitego.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+      }
+    ],
+    "sources": [
+      "Business Insider PL",
+      "Gazeta.pl",
+      "Rzeczpospolita"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 15,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/darowizny-dla-ofiar-zamachu-bez-podatku-jest-projekt-rozporzadzenia",
+    "seo_title": "Darowizny dla ofiar zamachu bez podatku. Jest projekt rozporządzenia",
+    "summary_lead": "Ministerstwo Finansów przygotowało projekt rozporządzenia dotyczącego zaniechania poboru podatku od spadków i darowizn w związku z zamachem w Krakowie.",
+    "meta_description": "Ministerstwo Finansów przygotowało projekt rozporządzenia dotyczącego zaniechania poboru podatku od spadków i darowizn w związku z zamachem w Krakowie.",
+    "keywords": "Gospodarka, Darowizny, ofiar, zamachu, podatku, projekt, rozporządzenia",
+    "thumbnail_url": "https://files.niezalezna.tech/images/upload/2026/11/13/n_97e8339b7d6f267229da7b750e9cba43510d22f2c7821e8715be40856bf34511_c.jpg?r=750,400",
+    "published_iso": "2026-11-13T19:50:37+01:00",
+    "display_date": "13.11.2026, 19:50",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Niezależna.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Ministerstwo Finansów przygotowało projekt rozporządzenia dotyczącego zaniechania poboru podatku od spadków i darowizn w związku z zamachem w Krakowie. Nowe przepisy mają objąć osoby ranne w ataku z 7 listopada oraz rodziny zabitych, w tym bliskich ofiar z Ostrowca Świętokrzyskiego. Zwolnienie będzie dotyczyć darowizn przekazanych do końca 2027 roku. [Źródło: Niezależna.pl, Radio Kraków]",
+          "Projekt opublikowano w piątek na stronach Rządowego Centrum Legislacji. Rozporządzenie ma wejść w życie dzień po ogłoszeniu. [Źródło: Niezależna.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Jest projekt ważnych zmian dla osób dotkniętych tragedią w Krakowie oraz ich bliskich. [Źródło: Fakt.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Darowizny dla ofiar zamachu bez podatku. Jest projekt rozporządzenia",
+        "url": "https://niezalezna.pl/polska/darowizny-dla-ofiar-zamachu-bez-podatku-jest-projekt-rozporzadzenia/584119"
+      },
+      {
+        "outlet": "Fakt.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Zamach w Krakowie. Ważna decyzja ws. darowizn na rzecz ofiar ataku i ich bliskich",
+        "url": "https://www.fakt.pl/wydarzenia/krakow-darowizny-na-rzecz-ofiar-zamachu-i-ich-bliskich-beda-zwolnione-z-podatku/kdty92j"
+      },
+      {
+        "outlet": "Radio Kraków",
+        "angle": "Doniesienie regionalne",
+        "summary": "Darowizny dla ofiar ataku w Krakowie bez podatku. Jest projekt rozporządzenia",
+        "url": "https://radiokrakow.pl/wiadomosci/krakow/darowizny-dla-ofiar-ataku-w-krakowie-bez-podatku-jest-projekt-rozporzadzenia/187719"
+      }
+    ],
+    "sources": [
+      "Fakt.pl",
+      "Niezależna.pl",
+      "Radio Kraków"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 16,
+    "path": "/Sport",
+    "seo_url": "/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze",
+    "seo_title": "Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"",
+    "summary_lead": "Już w sobotę o godz. 20:45 piłkarska reprezentacja Polski zmierzy się z Rumunią w ramach 5. kolejki Dywizji B Ligi Narodów.",
+    "meta_description": "Już w sobotę o godz. 20:45 piłkarska reprezentacja Polski zmierzy się z Rumunią w ramach 5. kolejki Dywizji B Ligi Narodów.",
+    "keywords": "Sport, Odważne, słowa, debiutanta, Urbana, kadrze, Wyjdę",
+    "thumbnail_url": "https://i.iplsc.com/-/000NCR1LRRID81JN-C321.webp",
+    "published_iso": "2026-11-13T19:50:37+01:00",
+    "display_date": "13.11.2026, 19:50",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Już w sobotę o godz. 20:45 piłkarska reprezentacja Polski zmierzy się z Rumunią w ramach 5. kolejki Dywizji B Ligi Narodów. Kadra Jana Urbana w piątek udała się do Bukaresztu, gdzie odbyła się oficjalna przedmeczowa konferencja prasowa. W niej poza selekcjonerem kadry udział wziął również debiutant, Bartosz Mazurek. [Źródło: Interia Sport]",
+          "Gracz Red Bull Salzburg został zapytany m.in. o swoją drogę, gdyż jeszcze rok temu był w znacznie innym miejscu. Do tego zdradził, co ma zamiar zrobić w narodowych barwach. Mniej więcej rok temu nie trafiałem karnego w III lidze – powiedział na konferencji prasowej przed meczem z Rumunią. [Źródło: Interia Sport]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Bartosz Mazurek znakomicie zaadaptował się do gry w RB Salzburg, a teraz otrzymał debiutanckie powołanie do reprezentacji Polski. Choć 19-latek czuł, że prędzej czy później zaistnieje w kadrze, nie spodziewał się, że stanie się to tak szybko. [Źródło: Sport.pl]",
+          "Kariera Bartosza Mazurka nabrała tempa. 19-latek stoi przed szansą debiutu w reprezentacji Polski. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Relacja wiodąca",
+        "summary": "Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"",
+        "url": "https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-debiutant-urbana-powiedzial-wprost-to-po-to-jest-w-kadrze-wy,nId,23573309"
+      },
+      {
+        "outlet": "Sport.pl",
+        "angle": "Relacja sportowa",
+        "summary": "\"Rok temu zepsułem karnego w III lidze\". Debiutant w kadrze Urbana mówi wprost",
+        "url": "https://www.sport.pl/pilka/7,65037,33131592,rok-temu-zepsulem-karnego-w-iii-lidze-debiutant-w-kadrze.html"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Relacja sportowa",
+        "summary": "Rok temu grał w III lidze, teraz czeka na debiut w kadrze. \"Uznałbym to za abstrakcję\"",
+        "url": "https://sportowefakty.wp.pl/pilka-nozna/1284033/kadrowicz-byl-szczery-do-bolu-uznalbym-to-za-abstrakcje"
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "Sport.pl",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 17,
+    "path": "/Polska",
+    "seo_url": "/Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza",
     "seo_title": "Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza",
     "summary_lead": "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa.",
     "meta_description": "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa.",
-    "keywords": "Swiat, wśród, państw, negocjujących, wojny, Rosji, Bruksela",
+    "keywords": "Polska, wśród, państw, negocjujących, wojny, Rosji, Bruksela",
     "thumbnail_url": "https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp",
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
@@ -138,7 +1274,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Swiat"
+        "val": "/Polska"
       },
       {
         "label": "Główne źródło",
@@ -201,13 +1337,13 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 2,
-    "path": "/Polska",
-    "seo_url": "/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia",
+    "id": 18,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia",
     "seo_title": "Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia",
     "summary_lead": "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku.",
     "meta_description": "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i…",
-    "keywords": "Polska, Kreml, zażądał, wyjścia, Finlandii, NATO, Helsinki",
+    "keywords": "Swiat, Kreml, zażądał, wyjścia, Finlandii, NATO, Helsinki",
     "thumbnail_url": "https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg",
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
@@ -221,7 +1357,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Swiat"
       },
       {
         "label": "Główne źródło",
@@ -278,7 +1414,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 19,
     "path": "/Swiat",
     "seo_url": "/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek",
     "seo_title": "Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek",
@@ -347,13 +1483,13 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 4,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
+    "id": 20,
+    "path": "/Polska",
+    "seo_url": "/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
     "seo_title": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem",
     "summary_lead": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
     "meta_description": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
-    "keywords": "Polityka, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
+    "keywords": "Polska, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
     "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg",
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
@@ -367,7 +1503,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Polityka"
+        "val": "/Polska"
       },
       {
         "label": "Główne źródło",
@@ -422,7 +1558,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 21,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci",
     "seo_title": "Autopay celem cyberataku. Chodzi o dane dotyczące płatności",
@@ -489,9 +1625,9 @@ let articles = [
     "keywords": "Gospodarka, Autopay, cyberataku, dane, płatności"
   },
   {
-    "id": 6,
-    "path": "/Polska",
-    "seo_url": "/Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace",
+    "id": 22,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace",
     "seo_title": "Rosyjskie żądania ws. wystąpienia Finlandii z NATO. \"Po prostu oburzające\"",
     "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg",
     "published_iso": "2026-11-13T17:46:33+01:00",
@@ -506,7 +1642,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Swiat"
       },
       {
         "label": "Główne źródło",
@@ -549,10 +1685,10 @@ let articles = [
     "corrections": [],
     "summary_lead": "Fiński minister obrony Antti Hakkanen stanowczo zareagował na doniesienia o żądaniach przedstawicieli Rosji podczas rozmów pokojowych w Abu Zabi, którzy mieli się domagać m.in. wystąpienia Finlandii z NATO.",
     "meta_description": "Fiński minister obrony Antti Hakkanen stanowczo zareagował na doniesienia o żądaniach przedstawicieli Rosji podczas rozmów pokojowych w Abu Zabi, którzy…",
-    "keywords": "Polska, Rosyjskie, żądania, Finlandii, NATO"
+    "keywords": "Swiat, Rosyjskie, żądania, Finlandii, NATO"
   },
   {
-    "id": 7,
+    "id": 23,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets",
     "seo_title": "Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS",
@@ -619,7 +1755,7 @@ let articles = [
     "keywords": "Gospodarka, Miliardy, euro, oszczędności, przemysłu, zwiększa, pulę"
   },
   {
-    "id": 8,
+    "id": 24,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal",
     "seo_title": "Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy",
@@ -717,7 +1853,7 @@ let articles = [
     "keywords": "Polityka, Nielegalne, treści, internetu, Nawrocki, zawetował"
   },
   {
-    "id": 9,
+    "id": 25,
     "path": "/Polska/Olsztyn",
     "seo_url": "/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
     "seo_title": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa",
@@ -772,9 +1908,9 @@ let articles = [
     "keywords": "Olsztyn, Mrągowem, 30-latek, zabójstwa"
   },
   {
-    "id": 10,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin",
+    "id": 26,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin",
     "seo_title": "Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin",
     "thumbnail_url": "https://cdn.defence24.pl/2019/01/17/320x240px/meCqiBUu4SE4H11wSaZ5eurDh5nYKJORi9BR9vzE.zqj6.jpg",
     "published_iso": "2026-11-13T16:48:28+01:00",
@@ -789,7 +1925,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Polityka"
+        "val": "/Swiat"
       },
       {
         "label": "Główne źródło",
@@ -836,12 +1972,12 @@ let articles = [
     "corrections": [],
     "summary_lead": "Na początku listopada Chińska Republika Ludowa przeprowadziła na zachodnim Pacyfiku i w rejonie Tajwanu niezapowiedziane manewry morskie z udziałem ponad 100 okrętów wojennych i jednostek straży przybrzeżnej.",
     "meta_description": "Na początku listopada Chińska Republika Ludowa przeprowadziła na zachodnim Pacyfiku i w rejonie Tajwanu niezapowiedziane manewry morskie z udziałem ponad 100…",
-    "keywords": "Polityka, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin"
+    "keywords": "Swiat, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin"
   },
   {
-    "id": 11,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym",
+    "id": 27,
+    "path": "/Polska",
+    "seo_url": "/Polska/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym",
     "seo_title": "Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?",
     "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcn/NhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAw/MDAwMDAwMDAwMDc1MjAxODcvZmlsZXMvZG5pLXdvbG5lLX/ctMjAyNi1yb2t1LTM5MjIwMzgyLmpwZyIsInciOjM4NDB9",
     "published_iso": "2026-11-13T16:48:28+01:00",
@@ -856,7 +1992,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
+        "val": "/Polska"
       },
       {
         "label": "Główne źródło",
@@ -903,10 +2039,10 @@ let articles = [
     "corrections": [],
     "summary_lead": "W 2027 roku kalendarz świąt będzie sprzyjał pracownikom planującym dłuższy wypoczynek. Kilka dni ustawowo wolnych od pracy przypada w poniedziałki lub piątki, dzięki czemu pojawi się sporo okazji do przedłużenia weekendów.",
     "meta_description": "W 2027 roku kalendarz świąt będzie sprzyjał pracownikom planującym dłuższy wypoczynek.",
-    "keywords": "Gospodarka, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym"
+    "keywords": "Polska, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym"
   },
   {
-    "id": 12,
+    "id": 28,
     "path": "/Polska",
     "seo_url": "/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu",
     "seo_title": "AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu",
@@ -996,9 +2132,9 @@ let articles = [
     "keywords": "Polska, wygenerowała, głos, lektora, warszawskiego"
   },
   {
-    "id": 13,
-    "path": "/Polska",
-    "seo_url": "/Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw",
+    "id": 29,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw",
     "seo_title": "Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw",
     "thumbnail_url": "https://s20.tvp.pl/images2/0/5/1/uid_051198f010a34ab59b4225dc7c3584f9_width_1280_play_0_pos_0_gs_0_height_720.jpg",
     "published_iso": "2026-11-13T15:43:30+01:00",
@@ -1013,7 +2149,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Polityka"
       },
       {
         "label": "Główne źródło",
@@ -1068,12 +2204,12 @@ let articles = [
     "corrections": [],
     "summary_lead": "— Przeglądamy wszystkie sprawy w Trybunale.",
     "meta_description": "— Przeglądamy wszystkie sprawy w Trybunale. Najpierw wzięliśmy sto najstarszych spraw. To są sprawy, które wpłynęły między 2013 rokiem a 2021.",
-    "keywords": "Polska, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych"
+    "keywords": "Polityka, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych"
   },
   {
-    "id": 14,
-    "path": "/Polska",
-    "seo_url": "/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie",
+    "id": 30,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie",
     "seo_title": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\"",
     "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/3n/3n85gbwvdqy81cw2zntw687crvx1sbcb.jpg",
     "published_iso": "2026-11-13T15:43:30+01:00",
@@ -1088,7 +2224,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Polityka"
       },
       {
         "label": "Główne źródło",
@@ -1137,1205 +2273,9 @@ let articles = [
     "corrections": [],
     "summary_lead": "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej opozycji w wyborach do Sejmu.",
     "meta_description": "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej…",
-    "keywords": "Polska, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne"
-  },
-  {
-    "id": 15,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty",
-    "seo_title": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
-    "thumbnail_url": "https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821334.webp",
-    "published_iso": "2026-11-13T15:43:30+01:00",
-    "display_date": "13.11.2026, 15:43",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Wiadomości Handlowe"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "McDonald’s Polska zainaugurował swoją najważniejszą sezonową kampanię sprzedażową – z okazji 15-lecia Burgera Drwala sieć wprowadziła do oferty nowy wariant smakowy, utrzymując jednocześnie ceny na ubiegłorocznym poziomie. Przedpremierowe degustacje pełnej linii produktowej ruszyły właśnie w Kielcach, na kilka dni przed ogólnopolskim startem. [Źródło: Wiadomości Handlowe]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "McDonald's wrócił ze swoją stałą już jesienno-zimowa pozycją. Po raz drugi w historii tej kultowej kanapki cena nie podskoczyła. Oznacza to, że legenda porównywana do Pumkin Spice Latte Starbucksa chwilowo straciła status popkulturowej miary polskiej inflacji. [Źródło: Bankier.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Wiadomości Handlowe",
-        "angle": "Relacja wiodąca",
-        "summary": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
-        "url": "https://www.wiadomoscihandlowe.pl/konsument-i-trendy-zakupowe/marketing-i-strategie-promocyjne/nowa-wersja-burgera-drwala-w-mcdonald-s-cena-bez-zmian-pierwsze-degustacje-w-kielcach-2539400"
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Cena kultowej kanapki w McDonald's zaskakuje. Burger Drwala powrócił do menu",
-        "url": "https://www.bankier.pl/wiadomosc/Cena-kultowej-kanapki-w-McDonald-s-zaskakuje-Burger-Drwala-powrocil-do-menu-9228230.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
-      }
-    ],
-    "sources": [
-      "Bankier.pl",
-      "Wiadomości Handlowe"
-    ],
-    "corrections": [],
-    "summary_lead": "McDonald’s Polska zainaugurował swoją najważniejszą sezonową kampanię sprzedażową – z okazji 15-lecia Burgera Drwala sieć wprowadziła do oferty nowy wariant smakowy, utrzymując jednocześnie ceny na ubiegłorocznym poziomie.",
-    "meta_description": "McDonald’s Polska zainaugurował swoją najważniejszą sezonową kampanię sprzedażową – z okazji 15-lecia Burgera Drwala sieć wprowadziła do oferty nowy wariant…",
-    "keywords": "Gospodarka, Burger, Drwala, wraca, McDonald, Cena, premiera"
-  },
-  {
-    "id": 16,
-    "path": "/Sport",
-    "seo_url": "/Sport/manchester-united-podal-nazwisko-nowego-trenera",
-    "seo_title": "Manchester United podał nazwisko nowego trenera",
-    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg",
-    "published_iso": "2026-11-13T14:11:13+01:00",
-    "display_date": "13.11.2026, 14:11",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "6 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Sport"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "RMF24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (6 redakcji)",
-        "paragraphs": [
-          "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United. Argentyńczyk pracuje obecnie jako selekcjoner reprezentacji USA, a na Wyspy Brytyjskie przeniesie się tuż po przerwie reprezentacyjnej. [Źródło: Interia Sport]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Zmiana szkoleniowca Czerwonych Diabłów nastąpiła po najsłabszym od czterech dekad początku sezonu. [Źródło: Polsat Sport]",
-          "W piątek (13 listopada) klub poinformował, że zawarł porozumienie z argentyńskim szkoleniowcem. Cała transakcja – według relacji brytyjskich mediów – będzie \"Czerwone Diabły\" słono kosztować. [Źródło: Sport.pl]",
-          "Argentyńczyk miał umowę z narodową kadrą do 2030 r. [Źródło: Przegląd Sportowy]",
-          "Argentyńczyk rozpocznie pracę 18 listopada po zakończeniu obowiązków przy reprezentacji USA. [Źródło: WP SportoweFakty]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "RMF24",
-        "angle": "Relacja wiodąca",
-        "summary": "Manchester United podał nazwisko nowego trenera",
-        "url": "https://www.rmf24.pl/fakty/sport/news-manchester-united-podal-nazwisko-nowego-trenera,nIdn,1026018"
-      },
-      {
-        "outlet": "Interia Sport",
-        "angle": "Relacja sportowa",
-        "summary": "Koszmarny start sezonu Manchesteru United. Wybrano nowego trenera",
-        "url": "https://sport.interia.pl/pilka-nozna/premier-league/news-katastrofa-na-starcie-sezonu-gigant-zmienil-trenera-ogloszon,nId,23573171"
-      },
-      {
-        "outlet": "Polsat Sport",
-        "angle": "Relacja sportowa",
-        "summary": "Potwierdziło się. Znamy nowego trenera Manchesteru United",
-        "url": "https://www.polsatsport.pl/wiadomosc/2026-11-13/potwierdzilo-sie-znamy-nowego-trenera-manchesteru-united/"
-      },
-      {
-        "outlet": "Sport.pl",
-        "angle": "Relacja sportowa",
-        "summary": "Manchester United ma nowego trenera! Ten zakup będzie słono kosztował",
-        "url": "https://www.sport.pl/pilka/7,65080,33130994,manchester-united-ma-nowego-trenera-ten-zakup-bedzie-slono.html"
-      },
-      {
-        "outlet": "Przegląd Sportowy",
-        "angle": "Relacja sportowa",
-        "summary": "Oficjalnie. Manchester United ma nowego trenera. Musi dźwignąć giganta z dna",
-        "url": "https://przegladsportowy.onet.pl/pilka-nozna/premier-league/oficjalnie-manchester-united-ma-nowego-trenera-musi-dzwignac-giganta-z-dna/l0ehtrl"
-      },
-      {
-        "outlet": "WP SportoweFakty",
-        "angle": "Relacja sportowa",
-        "summary": "To już pewne. Manchester United ma nowego trenera",
-        "url": "https://sportowefakty.wp.pl/pilka-nozna/1283992/to-juz-pewne-manchester-united-ma-nowego-trenera"
-      }
-    ],
-    "sources": [
-      "Interia Sport",
-      "Polsat Sport",
-      "Przegląd Sportowy",
-      "RMF24",
-      "Sport.pl",
-      "WP SportoweFakty"
-    ],
-    "corrections": [],
-    "summary_lead": "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United. Argentyńczyk pracuje obecnie jako selekcjoner reprezentacji USA, a na Wyspy Brytyjskie przeniesie się tuż po przerwie reprezentacyjnej.",
-    "meta_description": "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United.",
-    "keywords": "Sport, Manchester, United, podał, nazwisko, nowego, trenera"
-  },
-  {
-    "id": 17,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami",
-    "seo_title": "Twarda deklaracja Morawieckiego: Idziemy sami",
-    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/ab/7d/prezes-stowarzyszenia-rozwoj-plus-mateusz-morawiecki-przemawia-podczas-poznanskiego-kongresu-gospodarczego-636x421-ab7d060b.jpg",
-    "published_iso": "2026-11-13T14:11:13+01:00",
-    "display_date": "13.11.2026, 14:11",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Polityka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "RMF24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Idziemy do wyborów sami — zadeklarował w Poznaniu lider Rozwoju Plus oraz były premier Mateusz Morawiecki. Ocenił jednocześnie, że na polskiej prawicy nie ma obecnie hegemona, tak jak to było kiedyś. [Źródło: Business Insider PL, Onet Wiadomości]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "RMF24",
-        "angle": "Relacja wiodąca",
-        "summary": "Twarda deklaracja Morawieckiego: Idziemy sami",
-        "url": "https://www.rmf24.pl/fakty/polityka/news-twarda-deklaracja-morawieckiego-idziemy-sami,nIdn,1026013"
-      },
-      {
-        "outlet": "Business Insider PL",
-        "angle": "Perspektywa rynkowa",
-        "summary": "\"Idziemy sami\". Mateusz Morawiecki deklaruje",
-        "url": "https://businessinsider.com.pl/wiadomosci/widze-te-zachety-mateusz-morawiecki-nie-chce-startowac-z-pis/ht1fq8x"
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Mateusz Morawiecki nie chce iść do wyborów z PiS. Zamierza być alternatywą dla dwóch partii",
-        "url": "https://wiadomosci.onet.pl/kraj/ugrupowanie-morawieckiego-pojdzie-z-pis-do-wyborow-jasna-deklaracja/yhcyegm"
-      }
-    ],
-    "sources": [
-      "Business Insider PL",
-      "Onet Wiadomości",
-      "RMF24"
-    ],
-    "corrections": [],
-    "summary_lead": "Idziemy do wyborów sami — zadeklarował w Poznaniu lider Rozwoju Plus oraz były premier Mateusz Morawiecki. Ocenił jednocześnie, że na polskiej prawicy nie ma obecnie hegemona, tak jak to było kiedyś.",
-    "meta_description": "Idziemy do wyborów sami — zadeklarował w Poznaniu lider Rozwoju Plus oraz były premier Mateusz Morawiecki.",
-    "keywords": "Polityka, Twarda, deklaracja, Morawieckiego, Idziemy, sami"
-  },
-  {
-    "id": 18,
-    "path": "/Sport",
-    "seo_url": "/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje",
-    "seo_title": "Reprezentacja na łasce Lewandowskiego. \"Do Turcji jeździ się na wakacje\"",
-    "thumbnail_url": "https://i.iplsc.com/-/000NIZ85PLTFO5NW-C321.webp",
-    "published_iso": "2026-11-13T14:11:13+01:00",
-    "display_date": "13.11.2026, 14:11",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Sport"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Interia Sport"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "— 50 procent kadry jest do wymiany – mówi były napastnik reprezentacji Polski Paweł Kryszałowicz przed meczem z Rumunią. [Źródło: Interia Sport]",
-          "— Żeby do czegoś dojść, my musimy w końcu przyznać, że z pewnymi zawodnikami już nic nie zrobimy, że postępu nie będzie. [Źródło: Interia Sport]",
-          "Z pewnej grupy trzeba zrezygnować, nie ma sensu ciągnąć jej za uszy – dodaje snajper z drużyny Jerzego Engela i wylicza całą litanię problemów przed kluczowym spotkaniem. Pyta też o sens odmładzania kadry, teraz gdy potrzeba nam punktów, a nie eksperymentów. [Źródło: Interia Sport]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Cezary Kucharski był bardzo krytyczny wobec Roberta Lewandowskiego przed sobotnim meczem Rumunia – Polska. Bez względu na wiek, ostatnie zgrupowanie pokazało, że wybiera sobie mecze. Wykartkował się z premedytacją na rewanżowe spotkanie z Bośnią. [Źródło: Sport.pl]",
-          "— Gra pod siebie, statystyki, które chce wyśrubować, kontrakty reklamowe – dlatego przyjeżdża na kadrę – mówi nam Cezary Kucharski. [Źródło: WP SportoweFakty]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Interia Sport",
-        "angle": "Relacja wiodąca",
-        "summary": "Reprezentacja na łasce Lewandowskiego. \"Do Turcji jeździ się na wakacje\"",
-        "url": "https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-reprezentacja-polski-na-lasce-lewandowskiego-do-turcji-jezdz,nId,23573028"
-      },
-      {
-        "outlet": "Sport.pl",
-        "angle": "Relacja sportowa",
-        "summary": "\"Lewandowski jest problemem reprezentacji. Nie widzę szans\"",
-        "url": "https://www.sport.pl/pilka/7,65037,33131169,lewandowski-jest-problemem-reprezentacji-nie-widze-szans.html"
-      },
-      {
-        "outlet": "WP SportoweFakty",
-        "angle": "Relacja sportowa",
-        "summary": "Kucharski szokuje. \"Lewandowski jest problemem reprezentacji\"",
-        "url": "https://sportowefakty.wp.pl/pilka-nozna/1283836/kucharski-szokuje-lewandowski-jest-problemem-reprezentacji"
-      }
-    ],
-    "sources": [
-      "Interia Sport",
-      "Sport.pl",
-      "WP SportoweFakty"
-    ],
-    "corrections": [],
-    "summary_lead": "— 50 procent kadry jest do wymiany – mówi były napastnik reprezentacji Polski Paweł Kryszałowicz przed meczem z Rumunią.",
-    "meta_description": "— 50 procent kadry jest do wymiany – mówi były napastnik reprezentacji Polski Paweł Kryszałowicz przed meczem z Rumunią.",
-    "keywords": "Sport, Reprezentacja, łasce, Lewandowskiego, Turcji, jeździ, wakacje"
-  },
-  {
-    "id": 19,
-    "path": "/Polska/Lublin",
-    "seo_url": "/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek",
-    "seo_title": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
-    "thumbnail_url": "https://www.lublin112.pl/wp-content/uploads/2026/11/61-677111.jpg",
-    "published_iso": "2026-11-13T14:11:13+01:00",
-    "display_date": "13.11.2026, 14:11",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Lublin"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Lublin112.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Dzielnicowi z Tomaszowa Lubelskiego zatrzymali 39-latka poszukiwanego do odbycia kary sześciu miesięcy pozbawienia wolności za niestosowanie się do sądowego zakazu prowadzenia pojazdów. Podczas czynności policjanci znaleźli przy mężczyźnie substancje psychotropowe, a kolejne narkotyki ujawnili w miejscu jego zamieszkania. Zatrzymany usłyszał dodatkowe zarzuty. [Źródło: Lublin112.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "62-letni mężczyzna został zatrzymany przez policjantów, którzy podczas przeszukania jego posesji znaleźli i zabezpieczyli niebezpieczne narzędzie. [Źródło: Radio Gdańsk]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Lublin112.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
-        "url": "https://www.lublin112.pl/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek-zatrzymany-przez-policjantow/"
-      },
-      {
-        "outlet": "Radio Gdańsk",
-        "angle": "Doniesienie regionalne",
-        "summary": "Groził sąsiadce, miał przy sobie maczetę",
-        "url": "https://radiogdansk.pl/wiadomosci/region/powisle/2026/11/13/grozil-sasiadce-mial-przy-sobie-maczete/"
-      }
-    ],
-    "sources": [
-      "Lublin112.pl",
-      "Radio Gdańsk"
-    ],
-    "corrections": [],
-    "summary_lead": "Dzielnicowi z Tomaszowa Lubelskiego zatrzymali 39-latka poszukiwanego do odbycia kary sześciu miesięcy pozbawienia wolności za niestosowanie się do sądowego zakazu prowadzenia pojazdów.",
-    "meta_description": "Dzielnicowi z Tomaszowa Lubelskiego zatrzymali 39-latka poszukiwanego do odbycia kary sześciu miesięcy pozbawienia wolności za niestosowanie się do sądowego…",
-    "keywords": "Lublin, dożywotni, zakaz, prowadzenia, pojazdów, złamał, 39-latek"
-  },
-  {
-    "id": 20,
-    "path": "/Sport",
-    "seo_url": "/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy",
-    "seo_title": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
-    "thumbnail_url": "https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp",
-    "published_iso": "2026-11-13T12:56:54+01:00",
-    "display_date": "13.11.2026, 12:56",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "4 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Sport"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Interia Sport"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (4 redakcje)",
-        "paragraphs": [
-          "Panczenistka Wiktoria Dąbrowska zajęła trzecie miejsce na dystansie 1000 metrów. To był debiut 20-latki w zawodach Pucharu Świata. Napisał się piękny scenariusz. [Źródło: Interia Sport, Niezależna.pl]",
-          "Jej dobrą formę było widać już podczas mistrzostw Polski. [Źródło: Interia Sport]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Wiktoria Dąbrowska zapowiadała, że po sukcesach wśród juniorek chce na dobre wejść do seniorskiego łyżwiarstwa. [Źródło: WP SportoweFakty]",
-          "Polka uzyskała czas 1.15,85. Zwyciężyła Holenderka Angel Daleman (1.14,07). Na 13. pozycji w grupie A uplasowała się Karolina Bosiek. [Źródło: Radio PiK]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Interia Sport",
-        "angle": "Relacja wiodąca",
-        "summary": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
-        "url": "https://sport.interia.pl/zimowe/news-alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-s,nId,23572984"
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja sportowa",
-        "summary": "Wymarzony debiut Polki w Pucharze Świata. Wiktoria Dąbrowska na podium w Pekinie",
-        "url": "https://niezalezna.pl/sport/wymarzony-debiut-polski-w-pucharze-swiata-wiktoria-dabrowska-na-podium-w-pekinie/584094"
-      },
-      {
-        "outlet": "WP SportoweFakty",
-        "angle": "Relacja sportowa",
-        "summary": "20-letnia Polka odpaliła w Pekinie. Jest podium PŚ",
-        "url": "https://sportowefakty.wp.pl/lyzwiarstwo-szybkie/1283988/20-letnia-polka-odpalila-w-pekinie-jest-podium-ps"
-      },
-      {
-        "outlet": "Radio PiK",
-        "angle": "Doniesienie regionalne",
-        "summary": "Debiut w PŚ i od razu podium. Panczenistka Wiktoria Dąbrowska wywalczyła trzecie miejsce",
-        "url": "https://www.radiopik.pl/40,143671,debiut-w-ps-i-od-razu-podium-panczenistka-wiktor"
-      }
-    ],
-    "sources": [
-      "Interia Sport",
-      "Niezależna.pl",
-      "Radio PiK",
-      "WP SportoweFakty"
-    ],
-    "corrections": [],
-    "summary_lead": "Panczenistka Wiktoria Dąbrowska zajęła trzecie miejsce na dystansie 1000 metrów. To był debiut 20-latki w zawodach Pucharu Świata. Napisał się piękny scenariusz.",
-    "meta_description": "Panczenistka Wiktoria Dąbrowska zajęła trzecie miejsce na dystansie 1000 metrów. To był debiut 20-latki w zawodach Pucharu Świata.",
-    "keywords": "Sport, Ależ, debiut, Polki, Pucharze, podium, Decydowały"
-  },
-  {
-    "id": 21,
-    "path": "/Polska/Energetyka",
-    "seo_url": "/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma",
-    "seo_title": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
-    "thumbnail_url": "https://cdn.defence24.pl/2026/03/23/320x240px/pLlxqVSco6x0GGKQPSN9QKMR7DpLUQNqc55akCky.utci.jpg",
-    "published_iso": "2026-11-13T12:56:54+01:00",
-    "display_date": "13.11.2026, 12:56",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Energetyka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Energetyka24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "W obecnej sytuacji Orlen Lietuva ma nadzwyczajne straty, a nie zyski – stwierdził minister energii Miłosz Motyka, odnosząc się do planów litewskiego rządu wprowadzenia podatku od nadmiarowych zysków koncernów paliwowych, wzorowanego niejako na polskim rozwiązaniu. [Źródło: Energetyka24, Bankier.pl, Puls Biznesu]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Energetyka24",
-        "angle": "Analiza sektorowa",
-        "summary": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
-        "url": "https://energetyka24.com/surowce/ropa/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma-nadzwyczajne-straty"
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Minister energii: Orlen Litwa ma nadzwyczajne straty, a nie nadzwyczajne zyski",
-        "url": "https://www.bankier.pl/wiadomosc/Orlen-Lietuva-ma-nadzwyczajne-straty-a-nie-zyski-minister-Motyka-o-windfall-tax-na-Litwie-9228430.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
-      },
-      {
-        "outlet": "Puls Biznesu",
-        "angle": "Doniesienie regionalne",
-        "summary": "Litwa chce wprowadzić windfall tax. „Orlen Lietuva ma nadzwyczajne straty, a nie zyski”",
-        "url": "https://www.pb.pl/litwa-chce-wprowadzic-windfall-tax-orlen-lietuva-ma-nadzwyczajne-straty-a-nie-zyski-1270402"
-      }
-    ],
-    "sources": [
-      "Bankier.pl",
-      "Energetyka24",
-      "Puls Biznesu"
-    ],
-    "corrections": [],
-    "summary_lead": "W obecnej sytuacji Orlen Lietuva ma nadzwyczajne straty, a nie zyski – stwierdził minister energii Miłosz Motyka, odnosząc się do planów litewskiego rządu wprowadzenia podatku od nadmiarowych zysków koncernów paliwowych, wzorowanego…",
-    "meta_description": "W obecnej sytuacji Orlen Lietuva ma nadzwyczajne straty, a nie zyski – stwierdził minister energii Miłosz Motyka, odnosząc się do planów litewskiego rządu…",
-    "keywords": "Energetyka, Spór, podatek, zysków, Orlen, Lietuva, Minister"
-  },
-  {
-    "id": 22,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem",
-    "seo_title": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
-    "thumbnail_url": "https://cdn.defence24.pl/2026/10/20/320x240px/2ckkEZL3mZo6X4MLhTyx0gf6w2AW2HhaKHQZHG5T.t7gd.jpg",
-    "published_iso": "2026-11-13T12:56:54+01:00",
-    "display_date": "13.11.2026, 12:56",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Polityka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Defence24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Prezydent USA Donald Trump opublikował post, w którym opisał swoją wizję dalszej przyszłości J.D. Vance’a w swojej administracji. Wiceprezydent od teraz ma się skupić wyłącznie na polityce krajowej i zrezygnować z angażowania się w amerykańską politykę zagraniczną. [Źródło: Defence24]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "J.D. Vance wskazał wojnę z Iranem jako powód porażki Republikanów w wyborach śródokresowych. Narasta spór na najwyższych szczeblach władzy w USA — jeszcze do niedawna taki rozłam był nie do pomyślenia. [Źródło: Onet Wiadomości]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Defence24",
-        "angle": "Analiza sektorowa",
-        "summary": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
-        "url": "https://defence24.pl/polityka-obronna/trump-odsuwa-jv-vancea-w-tle-wojna-i-negocjacje-z-iranem"
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Donald Trump odrzuca umowę z Iranem i gani J.D. Vance'a. Narasta rozłam w Białym Domu",
-        "url": "https://wiadomosci.onet.pl/swiat/trump-odrzuca-umowe-z-iranem-i-gani-vancea-rozlam-w-bialym-domu/22ptr5h"
-      }
-    ],
-    "sources": [
-      "Defence24",
-      "Onet Wiadomości"
-    ],
-    "corrections": [],
-    "summary_lead": "Prezydent USA Donald Trump opublikował post, w którym opisał swoją wizję dalszej przyszłości J.D. Vance’a w swojej administracji.",
-    "meta_description": "Prezydent USA Donald Trump opublikował post, w którym opisał swoją wizję dalszej przyszłości J.D. Vance’a w swojej administracji.",
-    "keywords": "Polityka, Trump, odsuwa, Vance, wojna, negocjacje, Iranem"
-  },
-  {
-    "id": 23,
-    "path": "/Polska/Energetyka",
-    "seo_url": "/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja",
-    "seo_title": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
-    "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/ZJENIT2LyLl26tn4mwcIbf761ei7uhDx1wXEbRhG.yh4w.png",
-    "published_iso": "2026-11-13T12:56:54+01:00",
-    "display_date": "13.11.2026, 12:56",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Energetyka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Energetyka24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Energetyka24)",
-        "paragraphs": [
-          "W nocy z czwartku na piątek ukraińskie drony zaatakowały obwód wołgogradzki w europejskiej części Rosji. Celem ataku miała być Wołgogradzka Rafineria Ropy Naftowej, która należy do koncernu Łukoil. [Źródło: Energetyka24]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Energetyka24",
-        "angle": "Analiza sektorowa",
-        "summary": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
-        "url": "https://energetyka24.com/surowce/ropa/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja-rosyjskie-moce"
-      }
-    ],
-    "sources": [
-      "Energetyka24"
-    ],
-    "corrections": [],
-    "summary_lead": "W nocy z czwartku na piątek ukraińskie drony zaatakowały obwód wołgogradzki w europejskiej części Rosji. Celem ataku miała być Wołgogradzka Rafineria Ropy Naftowej, która należy do koncernu Łukoil.",
-    "meta_description": "W nocy z czwartku na piątek ukraińskie drony zaatakowały obwód wołgogradzki w europejskiej części Rosji.",
-    "keywords": "Energetyka, Płonie, rafineria, Wołgogradzie, Ukraińskie, znacząco, zmniejszają"
-  },
-  {
-    "id": 24,
-    "path": "/Polska/Energetyka",
-    "seo_url": "/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek",
-    "seo_title": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
-    "thumbnail_url": "https://cdn.defence24.pl/2026/09/02/320x240px/pGqjNb4kx0i6Rzsy1Sebrqa487LZAGxGizv8YAGq.diny.jpg",
-    "published_iso": "2026-11-13T11:50:05+01:00",
-    "display_date": "13.11.2026, 11:50",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "6 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Energetyka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Energetyka24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (6 redakcji)",
-        "paragraphs": [
-          "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł – wynika z piątkowego obwieszczenia Ministra Energii. Ceny maksymalne tych paliw będą więc niższe niż w piątek. [Źródło: Energetyka24, Rzeczpospolita, TVN24]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Kierowców czeka zmiana układu cen przy dystrybutorach i to bardzo dobra wiadomość. Warto czekać z tankowaniem benzyny i ON do jutra. Ministerstwo Energii wyznaczyło stawki na cały weekend, rozpoczynając od jutra, czyli 14 listopada. [Źródło: Auto Świat]",
-          "W sobotę, niedzielę i poniedziałek (14-16.11.) na stacjach benzynowych obowiązywać będą nowe stawki. [Źródło: Biznes Interia]",
-          "Za litr benzyny 95 zapłacimy 6 zł 2 gr, najmniej odkąd funkcjonuje trzecia edycja programu CPN. [Źródło: Business Insider PL]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Energetyka24",
-        "angle": "Analiza sektorowa",
-        "summary": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
-        "url": "https://energetyka24.com/surowce/ropa/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek"
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Doniesienie regionalne",
-        "summary": "Ceny paliwa na weekend. Pb 95 tanieje, trzech groszy zabrakło do piątki z przodu",
-        "url": "https://energia.rp.pl/paliwa/art45484571-ceny-paliwa-na-weekend-pb-95-tanieje-trzech-groszy-zabraklo-do-piatki-z-przodu"
-      },
-      {
-        "outlet": "Auto Świat",
-        "angle": "Doniesienie regionalne",
-        "summary": "Ceny paliw na weekend 14-16 listopada. PB95 za 6,02 zł, ON taniej, a LPG wita się z czwórką",
-        "url": "https://www.auto-swiat.pl/wiadomosci/aktualnosci/ceny-paliw-na-weekend-14-16-listopada-taniej-choc-lpg-wita-sie-z-czworka/7rn4wlr"
-      },
-      {
-        "outlet": "Biznes Interia",
-        "angle": "Doniesienie regionalne",
-        "summary": "Ile zapłacimy za paliwa w weekend i poniedziałek? Są nowe maksymalne ceny",
-        "url": "https://biznes.interia.pl/gospodarka/news-maksymalne-ceny-paliw-na-weekend-tyle-zaplacimy-za-benzyne-i,nId,23573017"
-      },
-      {
-        "outlet": "Business Insider PL",
-        "angle": "Doniesienie regionalne",
-        "summary": "Znamy maksymalne ceny paliw na weekend. Tankowanie znowu tańsze",
-        "url": "https://businessinsider.com.pl/wiadomosci/pakiet-cpn-i-maksymalne-ceny-paliw-w-weekend-zaplacimy-mniej-za-benzyne-i-olej/1m0gcsd"
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Doniesienie regionalne",
-        "summary": "Ceny paliw na weekend. Nowe stawki",
-        "url": "https://tvn24.pl/biznes/pieniadze/ceny-paliw-w-polsce-14-16-listopada-2026-ile-kierowcy-zaplaca-za-litr-pb95-pb98-oraz-on-st9336990?source=rss"
-      }
-    ],
-    "sources": [
-      "Auto Świat",
-      "Biznes Interia",
-      "Business Insider PL",
-      "Energetyka24",
-      "Rzeczpospolita",
-      "TVN24"
-    ],
-    "corrections": [],
-    "summary_lead": "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł – wynika z piątkowego obwieszczenia Ministra Energii.",
-    "meta_description": "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł –…",
-    "keywords": "Energetyka, zapłacisz, paliwo, weekend, taniej"
-  },
-  {
-    "id": 25,
-    "path": "/Polska",
-    "seo_url": "/Polska/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln",
-    "seo_title": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
-    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/en/enyo3ijimz77f4uk7mmd8iaertks9bdq.jpeg",
-    "published_iso": "2026-11-13T11:50:05+01:00",
-    "display_date": "13.11.2026, 11:50",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Polsat News"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Zwróciłem się do premiera Donalda Tuska z pilną prośbą o przyznanie z budżetu państwa 10 mln zł – przekazał prezydent Krakowa Łukasz Gibała na platformie X. Pieniądze mają zostać przeznaczone na wyposażenie Centrum Bezpieczeństwa i Monitoringu Miasta. [Źródło: Polsat News, Niezależna.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Mowa o kwocie 10 mln złotych. Wniosek to pokłosie tragicznej strzelaniny na Rynku Głównym. [Źródło: Interia Wydarzenia]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja wiodąca",
-        "summary": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln/"
-      },
-      {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Gibała zwrócił się do Tuska, \"pilna prośba\". Ma poparcie parlamentarzystów",
-        "url": "https://wydarzenia.interia.pl/malopolskie/news-gibala-zwrocil-sie-do-tuska-pilna-prosba-ma-poparcie-parlame,nId,23573009"
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Gibała zwrócił się do Tuska o pieniądze",
-        "url": "https://niezalezna.pl/polska/gibala-zwrocil-sie-do-tuska-o-pieniadze/584088"
-      }
-    ],
-    "sources": [
-      "Interia Wydarzenia",
-      "Niezależna.pl",
-      "Polsat News"
-    ],
-    "corrections": [],
-    "summary_lead": "Zwróciłem się do premiera Donalda Tuska z pilną prośbą o przyznanie z budżetu państwa 10 mln zł – przekazał prezydent Krakowa Łukasz Gibała na platformie X.",
-    "meta_description": "Zwróciłem się do premiera Donalda Tuska z pilną prośbą o przyznanie z budżetu państwa 10 mln zł – przekazał prezydent Krakowa Łukasz Gibała na platformie X.",
-    "keywords": "Polska, Łukasz, Gibała, pilną, prośbą, Donalda, Tuska"
-  },
-  {
-    "id": 26,
-    "path": "/Polska",
-    "seo_url": "/Polska/rece-precz-od-republiki-atak-na-biuro-posla-ko",
-    "seo_title": "„Ręce precz od Republiki”. Atak na biuro posła KO",
-    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/6b/5a/michal-jaros-fot-636x421-6b5af87c.jpg",
-    "published_iso": "2026-11-13T11:50:05+01:00",
-    "display_date": "13.11.2026, 11:50",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "RMF24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Nieznani sprawcy pomalowali farbą filię biura poselskiego Michała Jarosa w Trzebnicy. Na witrynach i elewacji budynku pojawiły się hasła odnoszące się do Telewizji Republika i premiera Donalda Tuska. [Źródło: WP Wiadomości]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "— Skoro już robicie Republice reklamę, mam dobrą wiadomość.",
-          "Przy biurze też są kamery – komentuje w rozmowie z Wirtualną Polską wiceminister rozwoju, poseł Koalicji Obywatelskiej. [Źródło: Onet Wiadomości]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "RMF24",
-        "angle": "Relacja wiodąca",
-        "summary": "„Ręce precz od Republiki”. Atak na biuro posła KO",
-        "url": "https://www.rmf24.pl/fakty/polska/news-rece-precz-od-republiki-atak-na-biuro-posla-ko,nIdn,1025994"
-      },
-      {
-        "outlet": "WP Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "\"Ręce precz od Republiki\". Zdewastowali biuro wiceministra",
-        "url": "https://wiadomosci.wp.pl/rece-precz-od-republiki-zdewastowali-biuro-wiceministra-7350539292428320a"
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "\"Ręce precz od Republiki\". Ktoś zdewastował fasadę biura posła KO Michała Jarosa",
-        "url": "https://wiadomosci.onet.pl/wroclaw/rece-precz-od-republiki-ktos-zdewastowal-fasade-biura-posla-michala-jarosa/f6xz2cy"
-      }
-    ],
-    "sources": [
-      "Onet Wiadomości",
-      "RMF24",
-      "WP Wiadomości"
-    ],
-    "corrections": [],
-    "summary_lead": "Nieznani sprawcy pomalowali farbą filię biura poselskiego Michała Jarosa w Trzebnicy. Na witrynach i elewacji budynku pojawiły się hasła odnoszące się do Telewizji Republika i premiera Donalda Tuska.",
-    "meta_description": "Nieznani sprawcy pomalowali farbą filię biura poselskiego Michała Jarosa w Trzebnicy.",
-    "keywords": "Polska, Ręce, precz, Republiki, biuro, posła"
-  },
-  {
-    "id": 27,
-    "path": "/Polska",
-    "seo_url": "/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w",
-    "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-13T11:50:05+01:00",
-    "display_date": "13.11.2026, 11:50",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Niedziela.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar. [Źródło: Niedziela.pl, Radio Kielce, RadioMaryja.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Niedziela.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
-        "url": "https://www.niedziela.pl/artykul/129806/Stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitalach"
-      },
-      {
-        "outlet": "Radio Kielce",
-        "angle": "Doniesienie regionalne",
-        "summary": "Stan rannych w zamachu poprawia się, ale pozostają w szpitalach",
-        "url": "https://radiokielce.pl/1457434/stan-rannych-w-zamachu-poprawia-sie-ale-pozostaja-w-szpitalach/"
-      },
-      {
-        "outlet": "RadioMaryja.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Kraków: stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
-        "url": "https://www.radiomaryja.pl/informacje/krakow-stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitalach/"
-      }
-    ],
-    "sources": [
-      "Niedziela.pl",
-      "Radio Kielce",
-      "RadioMaryja.pl"
-    ],
-    "corrections": [],
-    "summary_lead": "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar.",
-    "meta_description": "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach.",
-    "keywords": "Polska, Stan, rannych, zamachu, systematycznie, poprawia, pozostają"
-  },
-  {
-    "id": 28,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do",
-    "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
-    "thumbnail_url": "https://i.gremicdn.pl/image/free/60e3dd06e527c52f1f3e1a8d52db7605/dron-rozpoznawczy-vector?t=crop:4349:1901:nowe:0:129,resize:fill:600:300,enlarge:1",
-    "published_iso": "2026-11-13T10:54:04+01:00",
-    "display_date": "13.11.2026, 10:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "6 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Polityka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Rzeczpospolita"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (6 redakcji)",
-        "paragraphs": [
-          "Na serwerze z aktualizacjami oprogramowania monachijskiego producenta dronów Quantum Systems, który dostarcza drony zarówno niemieckiej, jak i ukraińskiej armii, pojawiło się szkodliwe oprogramowanie. O sprawie pisze „Der Spiegel”. Jako pierwszy o incydencie poinformował brytyjski dziennik „Financial Times”. [Źródło: Rzeczpospolita, Bankier.pl, CyberDefence24, RMF24, Dziennik.pl, TVN24]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja wiodąca",
-        "summary": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
-        "url": "https://radar.rp.pl/przemysl-obronny/art45484091-cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckiej-armii"
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Cyberatak na producenta dronów. Niemcy uziemiają flotę \"Sokołów\"",
-        "url": "https://www.bankier.pl/wiadomosc/Cyberatak-na-producenta-dronow-Niemcy-uziemiaja-flote-Sokolow-9228335.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
-      },
-      {
-        "outlet": "CyberDefence24",
-        "angle": "Kontekst technologiczny",
-        "summary": "Producent dronów dla Niemiec i Ukrainy ofiarą cyberataku. Bundeswehra uziemiła bezzałogowce",
-        "url": "https://cyberdefence24.pl/armia-i-sluzby/cyberatak-na-niemieckiego-producenta-bundeswehra-uziemila-drony"
-      },
-      {
-        "outlet": "RMF24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Flota niemieckiej armii była uziemiona. Cyberatak na producenta dronów",
-        "url": "https://www.rmf24.pl/fakty/swiat/news-flota-niemieckiej-armii-byla-uziemiona-cyberatak-na-producen,nIdn,1025972"
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Cyberatak na producenta dronów dla Bundeswehry i Ukrainy. Uziemiono flotę",
-        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11344131,cyberatak-na-producenta-dronow-dla-bundeswehry-i-ukrainy-uziemiono-fl.html"
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Cyberatak na producenta dronów dla armii Niemiec i Ukrainy",
-        "url": "https://tvn24.pl/biznes/ze-swiata/quantum-systems-cyberatak-na-producenta-dronow-dla-armii-niemiec-i-ukrainy-st9337163?source=rss"
-      }
-    ],
-    "sources": [
-      "Bankier.pl",
-      "CyberDefence24",
-      "Dziennik.pl",
-      "RMF24",
-      "Rzeczpospolita",
-      "TVN24"
-    ],
-    "corrections": [],
-    "summary_lead": "Na serwerze z aktualizacjami oprogramowania monachijskiego producenta dronów Quantum Systems, który dostarcza drony zarówno niemieckiej, jak i ukraińskiej armii, pojawiło się szkodliwe oprogramowanie. O sprawie pisze „Der Spiegel”.",
-    "meta_description": "Na serwerze z aktualizacjami oprogramowania monachijskiego producenta dronów Quantum Systems, który dostarcza drony zarówno niemieckiej, jak i ukraińskiej…",
-    "keywords": "Polityka, Cyberatak, Niemczech, producenta, dronów, hakerzy, trafili"
-  },
-  {
-    "id": 29,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
-    "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
-    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvc/nNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQj/AwMDAwMDAwMDAwMDc3MDE1NDcvZmlsZXMvc3VwZXJtYXJ/rZXQtemFrdXB5LTM5MzA4MzM0LmpwZyIsInciOjM4NDB9",
-    "published_iso": "2026-11-13T10:54:04+01:00",
-    "display_date": "13.11.2026, 10:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "4 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Forsal.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (4 redakcje)",
-        "paragraphs": [
-          "Główny Urząd Statystyczny podał dziś najnowsze dane. [Źródło: Forsal.pl, Biznes Interia]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Okazały się one zgodne z tzw. odczytem flash. [Źródło: Puls Biznesu]",
-          "W porównaniu z poprzednim miesiącem ceny towarów i usług spadły o 0,4 procent. [Źródło: TVN24]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Forsal.pl",
-        "angle": "Raport rynkowy",
-        "summary": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
-        "url": "https://forsal.pl/gospodarka/inflacja/artykuly/11344132,jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji.html"
-      },
-      {
-        "outlet": "Puls Biznesu",
-        "angle": "Perspektywa rynkowa",
-        "summary": "GUS potwierdził mocny spadek inflacji w październiku. Są finalne dane",
-        "url": "https://www.pb.pl/gus-potwierdzil-mocny-spadek-inflacji-w-pazdzierniku-sa-finalne-dane-1270383"
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Inflacja w Polsce. Nowe dane",
-        "url": "https://tvn24.pl/biznes/pieniadze/inflacja-w-pazdzierniku-2026-w-polsce-najnowsze-dane-gus-st9336880?source=rss"
-      },
-      {
-        "outlet": "Biznes Interia",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Wiadomo, co z cenami w październiku. GUS podał nowe dane o inflacji",
-        "url": "https://biznes.interia.pl/gospodarka/news-wiadomo-co-z-cenami-w-pazdzierniku-gus-podal-nowe-dane-o-inf,nId,23572876"
-      }
-    ],
-    "sources": [
-      "Biznes Interia",
-      "Forsal.pl",
-      "Puls Biznesu",
-      "TVN24"
-    ],
-    "corrections": [],
-    "summary_lead": "Główny Urząd Statystyczny podał dziś najnowsze dane.",
-    "meta_description": "Główny Urząd Statystyczny podał dziś najnowsze dane. Okazały się one zgodne z tzw. odczytem flash.",
-    "keywords": "Gospodarka, wzrosły, ceny, dane, inflacji"
-  },
-  {
-    "id": 30,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira",
-    "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
-    "thumbnail_url": "https://cashless.86eccc8cd4d75212496aabd35095cfe4.eu.r2.cloudflarestorage.com/system/uploads/ckeditor/pictures/3417/content_kir.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=3b14ef0c715f100a6ab42ce1213f28b0%2F20261109%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261109T000000Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=44b18807085014473919410b46f412b0996c489c3a96d45ef84011e8a9ad4ae6",
-    "published_iso": "2026-11-13T10:54:04+01:00",
-    "display_date": "13.11.2026, 10:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Cashless.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował analizy dotyczące cyklicznie monitorowanych przez bank centralny danych dotyczących liczby transakcji oszukańczych, kart płatniczych czy cen usług bankowych za II kw. 2026 r. i wyniosła w analizowanym okresie 520 zł. [Źródło: Cashless.pl, MamStartup.pl]",
-          "W perspektywie ostatnich lat widać, że wartość przelewów znów wykazuje tendencję wzrostową (po kilku dołkach, jak w II I kw. [Źródło: Cashless.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Cashless.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
-        "url": "https://www.cashless.pl/19958-nbp-express-elixir-autopay-blue-cash"
-      },
-      {
-        "outlet": "MamStartup.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "SKOK-i dołączają do Express Elixir. Klienci zyskają dostęp do przelewów natychmiastowych i P2P Blikiem",
-        "url": "https://mamstartup.pl/skok-i-dolaczaja-do-express-elixir-klienci-zyskaja-dostep-do-przelewow-natychmiastowych-i-p2p-blikiem/"
-      }
-    ],
-    "sources": [
-      "Cashless.pl",
-      "MamStartup.pl"
-    ],
-    "corrections": [],
-    "summary_lead": "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował analizy dotyczące cyklicznie monitorowanych przez bank centralny danych…",
-    "meta_description": "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował…",
-    "keywords": "Gospodarka, Przelewy, natychmiastowe, rekordy, Express, Elixira, BlueCash"
+    "keywords": "Polityka, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne"
   }
-]
+];
 
 const CANONICAL_ORIGIN = (
   typeof window !== 'undefined' && typeof window.VERITY_CANONICAL_ORIGIN === 'string' && window.VERITY_CANONICAL_ORIGIN
@@ -2593,13 +2533,15 @@ function resolveStateFromLocation() {
     relPath = pn.replace(/^\/+|\/+$/g, '').replace(/(?:^|\/)index\.html$/, '');
   }
 
+  const validCat = p => (p && PATH_TITLES[p]) ? p : '/Polska';
+
   if (!relPath) {
     if (window.VERITY_INITIAL_ARTICLE_URL) {
       const artInit = articles.find(a => a.seo_url === window.VERITY_INITIAL_ARTICLE_URL);
-      if (artInit) return { path: artInit.path || '/Polska', articleId: artInit.id, notFound: false };
+      if (artInit) return { path: validCat(artInit.path), articleId: artInit.id, notFound: false };
     }
     const pInit = window.VERITY_INITIAL_PATH;
-    return { path: (pInit && PATH_TITLES[pInit]) ? pInit : '/Polska', articleId: null, notFound: false };
+    return { path: validCat(pInit), articleId: null, notFound: false };
   }
 
   const slashRel = '/' + relPath;
@@ -2609,7 +2551,7 @@ function resolveStateFromLocation() {
 
   const exactArt = articles.find(a => a.seo_url === slashRel);
   if (exactArt) {
-    return { path: exactArt.path || '/Polska', articleId: exactArt.id, notFound: false };
+    return { path: validCat(exactArt.path), articleId: exactArt.id, notFound: false };
   }
 
   const slugSeg = relPath.split('/').pop();
@@ -2619,7 +2561,7 @@ function resolveStateFromLocation() {
       return aSlug === slugSeg || aSlug.startsWith(slugSeg.slice(0, 36)) || slugSeg.startsWith(aSlug.slice(0, 36));
     });
     if (bySlug) {
-      return { path: bySlug.path || '/Polska', articleId: bySlug.id, notFound: false, recoveredUrl: articleHref(bySlug.seo_url) };
+      return { path: validCat(bySlug.path), articleId: bySlug.id, notFound: false, recoveredUrl: articleHref(bySlug.seo_url) };
     }
   }
 
@@ -2855,11 +2797,14 @@ function syncSeoHead(openArt, published, query) {
     ogType = 'article';
     ogImg = openArt.thumbnail_url || '';
     const parts = (openArt.path || '/Polska').split('/').filter(Boolean);
+    const prettyCrumb = { Polska: 'Polska', Swiat: 'Świat', Sport: 'Sport', Gospodarka: 'Gospodarka', Polityka: 'Polityka', Energetyka: 'Energetyka', Poznan: 'Poznań' };
     const crumbs = [{ '@type': 'ListItem', position: 1, name: 'VERITY', item: `${CANONICAL_ORIGIN}/` }];
     let acc = '';
-    parts.forEach((p, idx) => {
+    parts.forEach(p => {
       acc += '/' + p;
-      crumbs.push({ '@type': 'ListItem', position: idx + 2, name: p, item: `${CANONICAL_ORIGIN}${acc}/` });
+      if (PATH_TITLES[acc]) {
+        crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: prettyCrumb[p] || p, item: `${CANONICAL_ORIGIN}${acc}/` });
+      }
     });
     crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: openArt.seo_title, item: canUrl });
     const newsLd = {
@@ -2897,7 +2842,7 @@ function syncSeoHead(openArt, published, query) {
       : (PATH_DESCRIPTIONS[currentPath] || PATH_DESCRIPTIONS['/Polska']);
     canUrl = isRootHome ? `${CANONICAL_ORIGIN}/` : `${CANONICAL_ORIGIN}${currentPath}/`;
     ogType = 'website';
-    const catArts = (published || []).filter(a => currentPath === '/Polska' || (a.path || '').startsWith(currentPath));
+    const catArts = (published || []).filter(a => (a.path || '').startsWith(currentPath));
     ogImg = (catArts.find(a => a.thumbnail_url) || {}).thumbnail_url || '';
     ldObj = [
       {
@@ -2963,7 +2908,7 @@ function renderPortal() {
       }
     } else {
       const list = published
-        .filter(a => currentPath === '/Polska' || a.path.startsWith(currentPath))
+        .filter(a => q ? true : (a.path || '').startsWith(currentPath))
         .filter(a => matchesStemQuery(a, q))
         .sort((a, b) => ((b.declickbait?.length ? 1 : 0) - (a.declickbait?.length ? 1 : 0)) || b.published_iso.localeCompare(a.published_iso));
       renderFeed(list, q);
@@ -2975,7 +2920,17 @@ function renderPortal() {
 }
 
 function shortCatLabel(path) {
-  const pretty = { Swiat: 'Świat', Poznan: 'Poznań' };
+  const pretty = {
+    Swiat: 'Świat',
+    Poznan: 'Poznań',
+    Krakow: 'Kraków',
+    Wroclaw: 'Wrocław',
+    Gdansk: 'Gdańsk',
+    Lodz: 'Łódź',
+    Bialystok: 'Białystok',
+    Rzeszow: 'Rzeszów',
+    Slask: 'Śląsk'
+  };
   const parts = (path || '/Polska').split('/').filter(Boolean).map(p => pretty[p] || p);
   if (parts.length <= 1) return parts[0] || 'Polska';
   return parts.slice(1).join(' · ');
@@ -3024,7 +2979,7 @@ function renderFeed(list, q) {
   if (!container) return;
 
   if (!list.length) {
-    container.innerHTML = `<div class="empty-state">Brak opracowań w ścieżce <strong>${esc(currentPath)}</strong>${q ? ' dla zapytania „' + esc(q) + '”' : ''}.</div>`;
+    container.innerHTML = `<div class="empty-state">${q ? `Brak opracowań dla zapytania „${esc(q)}”.` : `Brak opracowań w dziale <strong>${esc(currentPath)}</strong>.`}</div>`;
     return;
   }
 
@@ -3032,11 +2987,12 @@ function renderFeed(list, q) {
   const lead = useLead ? list[0] : null;
   const rest = useLead ? list.slice(1) : list;
 
+  const crumbText = q ? 'Wszystkie działy' : currentPath;
   const titleText = q ? `Wyniki dla „${esc(q)}”` : esc(PATH_TITLES[currentPath] || currentPath);
   const heading = `
     <div class="feed-heading">
       <div>
-        <span class="feed-crumb">${esc(currentPath)}</span>
+        <span class="feed-crumb">${esc(crumbText)}</span>
         <h1>${titleText}</h1>
       </div>
       <span>${countArticlesLabel(list.length)}</span>
@@ -3127,7 +3083,12 @@ function renderArticleView(art, published) {
   const container = document.getElementById('articlesFeed');
   if (!container) return;
 
-  const related = published.filter(a => a.id !== art.id && a.path === art.path).slice(0, 2);
+  const topCat = '/' + ((art.path || '/Polska').split('/').filter(Boolean)[0] || 'Polska');
+  let related = published.filter(a => a.id !== art.id && a.path === art.path).slice(0, 2);
+  if (related.length < 2) {
+    const moreTop = published.filter(a => a.id !== art.id && !related.includes(a) && (a.path || '').startsWith(topCat));
+    related = related.concat(moreTop).slice(0, 2);
+  }
   const others = related.length ? related : published.filter(a => a.id !== art.id).slice(0, 2);
 
   const linked = (art.perspectives || []).filter(p => p.url);
@@ -3203,7 +3164,7 @@ function renderArticleView(art, published) {
         <article class="article-main">
           <header class="article-head">
             <div class="article-kicker">
-              <span class="cat-badge">${esc(art.path)}</span>
+              <span class="cat-badge">${esc(shortCatLabel(art.path))}</span>
               <time datetime="${esc(art.published_iso || '')}">${esc(art.display_date)}</time>
               <span>${minutesLabel(mins)}</span>
             </div>

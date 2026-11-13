@@ -123,16 +123,16 @@ LIVE_RSS_FEEDS = [
     # --- Świat, Technologia, Cyberbezpieczeństwo, Kosmos ---
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/swiat.xml", "path": "/Swiat"},
     {"name": "TVN24", "url": "https://tvn24.pl/swiat.xml", "path": "/Swiat"},
-    {"name": "Niebezpiecznik", "url": "https://niebezpiecznik.pl/feed/", "path": "/Swiat"},
-    {"name": "Sekurak", "url": "https://sekurak.pl/feed/", "path": "/Swiat"},
-    {"name": "CHIP.pl", "url": "https://www.chip.pl/feed", "path": "/Swiat"},
-    {"name": "PurePC", "url": "https://www.purepc.pl/rss.xml", "path": "/Swiat"},
-    {"name": "Spider's Web", "url": "https://spidersweb.pl/feed", "path": "/Swiat"},
-    {"name": "CyberDefence24", "url": "https://cyberdefence24.pl/feed", "path": "/Swiat", "group": "Defence24"},
-    {"name": "Space24", "url": "https://space24.pl/feed", "path": "/Swiat", "group": "Defence24"},
-    {"name": "Komputer Świat", "url": "https://www.komputerswiat.pl/.feed", "path": "/Swiat"},
-    {"name": "Antyweb.pl", "url": "https://antyweb.pl/feed/", "path": "/Swiat"},
-    {"name": "Tabletowo.pl", "url": "https://www.tabletowo.pl/feed/", "path": "/Swiat"},
+    {"name": "Niebezpiecznik", "url": "https://niebezpiecznik.pl/feed/", "path": "/Polska"},
+    {"name": "Sekurak", "url": "https://sekurak.pl/feed/", "path": "/Polska"},
+    {"name": "CHIP.pl", "url": "https://www.chip.pl/feed", "path": "/Polska"},
+    {"name": "PurePC", "url": "https://www.purepc.pl/rss.xml", "path": "/Polska"},
+    {"name": "Spider's Web", "url": "https://spidersweb.pl/feed", "path": "/Polska"},
+    {"name": "CyberDefence24", "url": "https://cyberdefence24.pl/feed", "path": "/Polska", "group": "Defence24"},
+    {"name": "Space24", "url": "https://space24.pl/feed", "path": "/Polska", "group": "Defence24"},
+    {"name": "Komputer Świat", "url": "https://www.komputerswiat.pl/.feed", "path": "/Polska"},
+    {"name": "Antyweb.pl", "url": "https://antyweb.pl/feed/", "path": "/Polska"},
+    {"name": "Tabletowo.pl", "url": "https://www.tabletowo.pl/feed/", "path": "/Polska"},
     {"name": "Kresy.pl", "url": "https://kresy.pl/feed/", "path": "/Swiat"},
 
     # --- Sport ---
@@ -143,6 +143,11 @@ LIVE_RSS_FEEDS = [
     {"name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/rss.xml", "path": "/Sport", "group": "Wirtualna Polska"},
     {"name": "RMF24 Sport", "url": "https://www.rmf24.pl/sport/feed", "path": "/Sport"},
 ]
+
+OUTLET_DEFAULT_PATH = {}
+for _f in LIVE_RSS_FEEDS:
+    if _f["name"] not in OUTLET_DEFAULT_PATH:
+        OUTLET_DEFAULT_PATH[_f["name"]] = _f["path"]
 
 BLACKLIST = {"oko.press", "demagog.org.pl"}
 
@@ -176,6 +181,7 @@ OPINION_MARKERS = [
     r"\btransmisj[aę]\s+w\s+tv\b",
     r"\bstream\s+online\b",
     r"\bmem(?:y|ów)\b",
+    r"\bprzesąd",
     r"®",
 ]
 
@@ -329,28 +335,175 @@ def _parse_feed_xml(xml_raw: bytes):
             return ET.fromstring(text_clean.encode("utf-8"))
 
 
-def infer_category_path(default_path: str, link: str, title: str) -> str:
+def infer_category_path(default_path: str, link: str, title: str, description: str = "") -> str:
     u = (link or "").lower()
     tl = (title or "").lower()
     tl_norm = _norm_pl(tl)
-    if any(seg in u for seg in ("/sport/", "/tenis/", "/pilka-nozna/", "/siatkowka/", "/koszykowka/", "/zuzel/")) or any(
-        kw in tl for kw in ("wta finals", "ekstraklasa", "liga narodów", "liga mistrzów", "puchar świata", "lewandowski", "świątek")
-    ):
+
+    # 1. Sport — ale z wykluczeniem tematów politycznych/kryminalnych/społecznych (np. zamach w Krakowie, Marsz Niepodległości, wybory prezydenta Niemiec AfD)
+    is_non_sport = bool(
+        re.search(
+            _norm_pl(
+                r"\bzamach|\bwybor|\bkandydat\b.*\bprezydent|\bprezydent\w*\s+(?:kraju|niemiec|polsk\w*|usa|stanow|rosj\w*|ukrain\w*|francj\w*|wloch\w*|elek\w*)"
+                r"|\bafd\b|\bsejm\w*|\bparlament\w*|\bpolicj|\bprokuratur|\bsąd\b|\bstrzelanin|\bmarsz\b"
+            ),
+            tl_norm,
+        )
+    )
+    is_sport_url = any(
+        seg in u
+        for seg in (
+            "/sport/", "/tenis/", "/pilka-nozna/", "/siatkowka/", "/koszykowka/", "/zuzel/",
+            "sport.pl", "przegladsportowy", "sportowefakty", "polsatsport", "sport.interia",
+        )
+    )
+    is_sport_kw = any(
+        kw in tl
+        for kw in (
+            "wta finals", "ekstraklasa", "liga narodów", "liga mistrzów", "puchar świata",
+            "lewandowski", "świątek", "sabalenk", "hurkacz", "probierz", "skoki narciarskie",
+        )
+    ) or bool(re.search(r"\burban(?:a|em|owi)?\b", tl))
+    if (is_sport_url or is_sport_kw) and not is_non_sport:
         return "/Sport"
-    if default_path in ("/Polska", "/Polska/Polityka"):
-        if any(seg in u for seg in ("/swiat/", "/fakty/swiat/", "/ze-swiata/", "/zagranica/", "cyfrowa.rp.pl", "/technologie/")):
-            return "/Swiat"
-        if any(seg in u for seg in ("/energetyka/", "/energia/", "/oze/")):
-            return "/Polska/Energetyka"
-        if any(seg in u for seg in ("/gospodarka/", "/biznes/", "/ekonomia/", "/finanse/", "ekonomia.rp.pl", "/pieniadze/")):
-            return "/Polska/Gospodarka"
-        if any(seg in u for seg in ("/polityka/", "/kraj/", "/prawo/")):
-            return "/Polska/Polityka"
-    elif default_path == "/Swiat" and not any(seg in u for seg in ("/swiat/", "/zagranica/", "/za-granica/", "/ze-swiata/")):
-        if "/polityka/" in u or any(kw in tl_norm for kw in ("czarzast", "nawrock", "tusk", "kaczynsk", "holown", "sejm", "senat")):
-            return "/Polska/Polityka"
-        if "/policja/" in u and any(kw in tl_norm for kw in ("krakow", "warszaw", "gdansk", "poznan", "wroclaw", "polsk")):
-            return "/Polska"
+    if default_path == "/Sport" and is_non_sport:
+        default_path = "/Polska"
+
+    # 2. Wykrywanie wyraźnego polskiego kontekstu w tytule
+    pl_markers = _norm_pl(
+        r"\b(?:polsk\w*|polak\w*|polac\w*|polk[aięąo]\b|warszaw\w*|krakow\w*|kraków|wrocław\w*|wroclaw\w*|"
+        r"poznan\w*|poznań\w*|gdańsk\w*|gdansk\w*|szczecin\w*|lublin\w*|katowic\w*|łódź|lodz\w*|łodzi\w*|"
+        r"białystok\w*|bialystok\w*|białegostok\w*|bialegostok\w*|rzeszow\w*|rzeszów|olsztyn\w*|bydgoszcz\w*|toruń\w*|torun\w*|"
+        r"kielc\w*|opol\w*|radom\w*|częstochow\w*|czestochow\w*|sosnowi\w*|gliwic\w*|zabrze|bytom\w*|bielsk\w*|"
+        r"rybnik\w*|tychy|tychach|elbląg\w*|elblag\w*|płock\w*|plock\w*|wałbrzych\w*|walbrzych\w*|włocław\w*|wloclaw\w*|"
+        r"tarnow\w*|tarnów|koszalin\w*|kalisz\w*|legnic\w*|grudziądz\w*|grudziadz\w*|słupsk\w*|slupsk\w*|jaworzn\w*|"
+        r"jastrzębi\w*|nowy\s+sącz|nowym\s+sączu|jeleni\w+\s+gór\w*|konin\w*|piotrkow\w*|piotrków|inowrocław\w*|"
+        r"lubin\w*|ostrow\w+\s+wielkopolsk\w*|suwałk\w*|suwalk\w*|gniezn\w*|głogow\w*|glogow\w*|chełm\w*|chelm\w*|"
+        r"zamość|zamosc\w*|przemyśl\w*|przemysl\w*|stalow\w+\s+wol\w*|mielec\w*|tomaszow\w*|leszn\w*|zgorzelc\w*|"
+        r"świnoujści\w*|swinoujsci\w*|kołobrzeg\w*|kolobrzeg\w*|sopot\w*|gdyni\w*|podhale|zakopan\w*|tatr\w*|"
+        r"bieszczad\w*|mazur\w*|śląsk\w*|slask\w*|wielkopolsk\w*|małopolsk\w*|malopolsk\w*|pomorz\w*|podlasi\w*|"
+        r"podkarpaci\w*|mazowsz\w*|kujaw\w*|warmi\w*|lubuski\w*|świętokrzysk\w*|swietokrzysk\w*|dolnośląsk\w*|"
+        r"zachodniopomorsk\w*|wisł[aąęy]|wisl[aae]|odr[aąęy]|bałtyk\w*|baltyk\w*|ostrołęk\w*|"
+        r"sejm\w*|senat\w*|tusk\w*|nawrock\w*|kaczyńsk\w*|kaczynsk\w*|trzaskowsk\w*|czarzast\w*|hołown\w*|holown\w*|"
+        r"mentzen\w*|bosak\w*|kosiniak\w*|sikorsk\w*|bodnar\w*|żurek\w*|zurek\w*|duda\b|dudy\b|dudzie\b|dudę\b|"
+        r"morawieck\w*|ziobr\w*|romanowsk\w*|czarnek\w*|błaszczak\w*|blaszczak\w*|macierewicz\w*|giertych\w*|"
+        r"biejat\w*|zandberg\w*|gawkowsk\w*|domańsk\w*|domansk\w*|hennig-klosk\w*|leszczyńsk\w*|leszczynsk\w*|"
+        r"kierwińsk\w*|kierwinsk\w*|siemoniak\w*|nowack\w*|lubnauer\w*|szłapk\w*|szlapk\w*|nitras\w*|kropiwnick\w*|"
+        r"gibał\w*|gibal\w*|sutryk\w*|miszalsk\w*|zdanowsk\w*|krupow\w*|trzaskowsk\w*|korwin-piotrowsk\w*|zgorzelsk\w*|ociepa\b|krajewsk\w*|"
+        r"trójmiast\w*|trójmieśc\w*|trojmiast\w*|trojmiesc\w*|mrągow\w*|mragow\w*|telewizj\w*\s+republik\w*|\btv\s+republik\w*|"
+        r"\bnfz\b|\bzus\b|\bkrus\b|\bgus\b|\bnbp\b|\bknf\b|\buokik\b|\bpkol\b|\bpge\b|\borlen\w*|\btauron\w*|\benea\b|"
+        r"\bpko\b|\bpekao\b|\bpzu\b|\bkghm\b|\bpgnig\b|\blotos\w*|\bpkp\b|\bcpk\b|\bgddkia\b|\bpażp\b|\bpazp\b|\bkowr\b|"
+        r"\bipn\b|\bnik\b|\brpo\b|\bkrrt\w*|\bkrrit\b|\bkrs\b|\btk\b|\bsn\b|\bnsa\b|\bwot\b|\bcbśp\b|\bcbsp\b|"
+        r"\babw\b|\bcba\b|\bsop\b|\bmon\b|\bmsz\b|\bmswia\b|\bmen\b|\bmz\b|\bmf\b|\bmap\b|"
+        r"allegro\w*|inpost\w*|autopay\w*|blik\w*|złot(?:y|ych|ego|ówki|owki)\b|\bpln\b|\bzł\b|trójmorz\w*|trojmorz\w*|ilr-33|bursztyn\s+2k)\b"
+    )
+    has_pl = bool(re.search(pl_markers, tl_norm))
+
+    # 3. Wykrywanie wyraźnego kontekstu zagranicznego / międzynarodowego / BigTech
+    foreign_kw = _norm_pl(
+        r"\b(?:usa\b|stany\s+zjednoczone|stanów\s+zjednoczonych|stanow\s+zjednoczonych|ameryka\w*|waszyngton\w*|"
+        r"biał(?:y|ego|emu|ym)\s+dom(?:u|em|ie|owi)?|bial(?:y|ego|emu|ym)\s+dom(?:u|em|ie|owi)?|kapitol\w*|pentagon\w*|wall\s+street|"
+        r"now(?:y|ego|ym)\s+jork\w*|kaliforni\w*|floryd\w*|teksas\w*|missisipi|\bfaa\b|\bcia\b|\bfbi\b|\bnasa\b|"
+        r"trump\w*|biden\w*|vance\w*|hegseth\w*|musk\w*|rubio\b|harris\w*|kongres\w*\s+usa|us\s+army|"
+        r"rosj\w*|rosyjsk\w*|kreml\w*|putin\w*|moskw\w*|miedwiediew\w*|ławrow\w*|lawrow\w*|szojgu|wołgograd\w*|wolgograd\w*|biełgorod\w*|bielgorod\w*|kursk\w*|syberi\w*|"
+        r"ukrain\w*|ukraińsk\w*|ukrainsk\w*|kijow\w*|kijów|zełensk\w*|zelensk\w*|donbas\w*|charkow\w*|charków|odess\w*|lwów|lwow\w*|krym\w*|"
+        r"chin\w*|chińsk\w*|chinsk\w*|pekin\w*|szanghaj\w*|hongkong\w*|tajwan\w*|xi\s+jinping|"
+        r"niemc\w*|niemiec\w*|niemieck\w*|berlin\w*|bundestag\w*|bundeswehr\w*|scholz\w*|merz\w*|\bafd\b|"
+        r"francj\w*|francusk\w*|paryż\w*|paryz\w*|macron\w*|le\s+pen|"
+        r"wielk\w+\s+brytani\w*|brytyjsk\w*|londyn\w*|starmer\w*|angli\w*|szkocj\w*|"
+        r"włoch\w*|wloch\w*|włosz\w*|wlosz\w*|włosk\w*|wlosk\w*|\brzym(?:ie|u|em)?\b|meloni\w*|watykan\w*|papież\w*|papiez\w*|"
+        r"hiszpan\w*|madryt\w*|barcelon\w*|walencj\w*|portugali\w*|portugalsk\w*|lizbon\w*|"
+        r"węgr\w*|wegr\w*|węgrz\w*|wegrz\w*|węgier\w*|wegier\w*|budapeszt\w*|orban\w*|orbán\w*|"
+        r"finland\w*|fińsk\w*|finsk\w*|helsink\w*|szwecj\w*|szwedzk\w*|sztokholm\w*|norwegi\w*|norwesk\w*|oslo\b|dani\w*|duńsk\w*|kopenhag\w*|"
+        r"holandi\w*|niderland\w*|amsterdam\w*|hadze\b|belgi\w*|bruksel\w*|austri\w*|wiedeń\w*|wieden\w*|szwajcari\w*|genew\w*|zurych\w*|"
+        r"irland\w*|dublin\w*|grecj\w*|greck\w*|aten(?:y|ach)\b|serbi\w*|belgrad\w*|chorwacj\w*|zagrzeb\w*|"
+        r"czech\w*|czesk\w*|praga|pradze|słowacj\w*|slowacj\w*|bratysław\w*|fico\b|rumuni\w*|bukareszt\w*|bułgari\w*|bulgari\w*|"
+        r"litw\w*|litewsk\w*|wiln\w*|łotw\w*|lotw\w*|ryga|rydze|estoni\w*|tallin\w*|białoru\w*|bialoru\w*|mińsk\w*|minsk\w*|łukaszenk\w*|lukaszenk\w*|"
+        r"mołdawi\w*|moldawi\w*|gruzj\w*|tbilisi|armeni\w*|azerbejdżan\w*|"
+        r"izrael\w*|netanjahu|stref\w+\s+gazy|gaza\b|gazie|hamas\w*|hezbollah\w*|liban\w*|beirut\w*|"
+        r"iran\w*|irańsk\w*|iransk\w*|teheran\w*|syri\w*|damaszk\w*|turcj\w*|tureck\w*|ankar\w*|erdogan\w*|jemen\w*|"
+        r"arabi\w+\s+saudyjsk\w*|saudi\s+aramco|zjednoczone\s+emiraty|abu\s+zabi|dubaj\w*|katar\w*|rijad\w*|"
+        r"indi\w*|indyjsk\w*|japoni\w*|japońsk\w*|japonsk\w*|tokio|kore\w+\s+północn\w*|kore\w+\s+południow\w*|seul\w*|pjongjang\w*|filipin\w*|indonezj\w*|"
+        r"kanad\w*|kanadyjsk\w*|meksyk\w*|brazyli\w*|argentyn\w*|wenezuel\w*|kuba\b|kubie\b|kuby\b|kubańsk\w*|kubansk\w*|afryc\w*|afryk\w*|egipt\w*|sudan\w*|australi\w*|sydney\b|"
+        r"\bnato\b|\bonz\b|\bwho\b|\bmfw\b|\bopec\b|komisj\w+\s+europejsk\w*|parlament\w+\s+europejsk\w*|rad\w+\s+europejsk\w*|"
+        r"nvidi\w*|jensen\w+\s+huang\w*|microsoft\w*|apple\b|google\b|meta\b|openai\b|chatgpt\b|spacex\w*|boeing\w*|airbus\w*)\b"
+    )
+    has_foreign_title = bool(re.search(foreign_kw, tl_norm))
+    has_foreign_url = any(seg in u for seg in ("/swiat/", "/fakty/swiat/", "/ze-swiata/", "/zagranica/", "/za-granica/"))
+
+    if (has_foreign_title or has_foreign_url) and not has_pl:
+        return "/Swiat"
+
+    # 4. Zachowaj ścieżki lokalne/miejskie (np. /Polska/Poznan, /Polska/Lublin, /Polska/Warszawa)
+    if default_path in LOCAL_PATHS and default_path != "/Polska/Energetyka":
+        return default_path
+
+    # 5. Energetyka (w kontekście polskim lub ogólnym krajowym)
+    energy_url = any(seg in u for seg in ("/energetyka/", "/energia/", "/oze/", "wysokienapiecie.pl", "energetyka24.com"))
+    energy_kw = bool(
+        re.search(
+            _norm_pl(
+                r"\b(?:energetyk\w*|elektrown\w*|wiatrak\w*|fotowoltaik\w*|jądrow\w*|jadrow\w*|atomow\w*|prąd\w*|prad\w*|"
+                r"taryf\w*\s+na\s+prąd|ciepłown\w*|cieplown\w*|węgl\w*|wegl\w*|kopaln\w*|gazociąg\w*|gazociag\w*|terminal\w*\s+lng|"
+                r"paliw\w*|zamrożeni\w*\s+cen\s+gazu|orlen\s+lietuva|\boze\b|\bpge\b|\btauron\w*|\benea\b)"
+            ),
+            tl_norm,
+        )
+    )
+    if (energy_url or energy_kw) and (has_pl or not has_foreign_title):
+        return "/Polska/Energetyka"
+
+    # 6. Gospodarka / Finanse vs Polityka w Polsce
+    econ_kw = bool(
+        re.search(
+            _norm_pl(
+                r"\b(?:gospodark\w*|inflacj\w*|stopy\s+procentow\w*|stóp\s+procentow\w*|\bnbp\b|\brpp\b|\bgus\b|\bpkb\b|"
+                r"podatk\w*|podatek\w*|\bvat\b|\bpit\b|\bcit\b|składk\w*|skladk\w*|\bzus\b|emerytur\w*|emeryt\w*|rent\w*|"
+                r"płac\w*|plac\w*|wynagrodzen\w*|zarabia\w*|zarobk\w*|pensj\w*|budżet\w*|budzet\w*|deficyt\w*|dług\w*\s+publiczn\w*|"
+                r"giełd\w*|gield\w*|\bgpw\b|\bwig\b|akcj[ie]\b|obligacj\w*|inwestycj\w*|inwestor\w*|kredyt\w*|hipotek\w*|hipoteczn\w*|"
+                r"bank\w*|mieszkan\w*|nieruchomośc\w*|nieruchomosc\w*|deweloper\w*|cen[ay]\b|drożej\w*|drozej\w*|taniej\w*|"
+                r"eksport\w*|import\w*|handl\w*|sklep\w*|dyskont\w*|biedronk\w*|lidl\w*|dino\b|żabk\w*|zabk\w*|allegro\w*|inpost\w*|"
+                r"przedsiębiorc\w*|przedsiebiorc\w*|firm[ayę]\b|biznes\w*|rynek\s+pracy|bezroboci\w*|etat\w*|zasiłk\w*|zasilk\w*|"
+                r"świadczen\w*|swiadczen\w*|800\s*plus|babciowe|waloryzacj\w*|przelew\w*|płatnośc\w*|platnosc\w*|blik\w*|autopay\w*|"
+                r"kurs\w*\s+walut|euro\b|dolar\w*|frank\w*|aktyw\w*\s+pażp|uprawnie\w*\s+ets|\bets\b|miliard\w*\s+(?:zł|euro)|tys\.\s*zł|\bzł\b)\b"
+            ),
+            tl_norm,
+        )
+    )
+    econ_url = any(
+        seg in u
+        for seg in (
+            "/gospodarka/", "/biznes/", "/ekonomia/", "/finanse/", "ekonomia.rp.pl", "/pieniadze/",
+            "pulsbiznesu", "pb.pl", "parkiet.com", "300gospodarka", "pulshr.pl", "farmer.pl",
+            "wiadomoscihandlowe.pl", "cashless.pl", "strefainwestorow.pl",
+        )
+    )
+
+    pol_strong_kw = bool(
+        re.search(
+            _norm_pl(
+                r"\b(?:sejm\w*|senat\w*|trybuna[lł]\w*\s+konstytucyjn|konstytucj\w*|rząd\w*|premier\w*|wiceminist\w*|minist(?:er|ra|erstw)\w*|"
+                r"koalicj\w*|opozycj\w*|pos(?:eł|ła|łowie|elsk)\w*|ustaw\w*|wet[oa]\b|zawetowa\w*|ułaskawi\w*|"
+                r"ziobr\w*|tusk\w*|nawrock\w*|kaczyńsk\w*|kaczynsk\w*|czarzast\w*|hołown\w*|holown\w*|mentzen\w*|"
+                r"sikorsk\w*|kosiniak\w*|gawkowsk\w*|żurek\w*|zurek\w*|morawieck\w*|duda\b|dudy\b|dudzie\b|"
+                r"trzaskowsk\w*|biejat\w*|zandberg\w*|konfederacj\w*|lewica|prawic\w*|\bpis\b|\bpsl\b|sonda[zż]\w*|wybor(?:y|ów|ach|cze|czy)\b|"
+                r"referend\w*|komisj\w*\s+śledcz|immunitet\w*|orzeczeni\w*\s+tk\b|\btk\b|\bkrs\b|kancelari\w*\s+prezydent|"
+                r"decyzj\w*\s+prezydent|prezydent\w*\s+(?:polski|rp|proponuj\w*|podpis\w*|zawetow\w*|wetuj\w*|oglos\w*|powol\w*))\b"
+            ),
+            tl_norm,
+        )
+    )
+    pol_url = any(seg in u for seg in ("/polityka/", "/wybory/", "/sejm/", "/rząd/", "/rzad/", "/prawo-w-polsce/", "/prawo/"))
+
+    if (pol_strong_kw or pol_url) and not econ_kw:
+        return "/Polska/Polityka"
+    if econ_kw or (econ_url and not pol_strong_kw):
+        return "/Polska/Gospodarka"
+    if default_path in ("/Polska/Polityka", "/Polska/Gospodarka") and not pol_strong_kw and not pol_url and not econ_kw and not econ_url:
+        return "/Polska"
+    if default_path == "/Swiat" and (has_pl or not (has_foreign_title or has_foreign_url)):
+        return "/Polska"
+
     return default_path
 
 
@@ -403,7 +556,7 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
                 continue
 
             thumb = extract_thumbnail_from_item(node, best_raw + " " + raw_content)
-            inferred_path = infer_category_path(feed["path"], link, title)
+            inferred_path = infer_category_path(feed["path"], link, title, desc)
 
             out.append({
                 "outlet": feed["name"],
@@ -478,7 +631,7 @@ LOCAL_PATHS = {
 }
 
 NICHE_OUTLETS = {
-    "Farmer.pl", "PulsHR", "WysokieNapiecie.pl", "Elektrowóz.pl",
+    "Farmer.pl", "PulsHR", "WysokieNapiecie.pl", "Energetyka24", "Elektrowóz.pl",
     "Space24", "CyberDefence24", "Niebezpiecznik", "Sekurak",
     "Cashless.pl", "MamStartup.pl", "Wiadomości Handlowe",
     "Subiektywnie o Finansach", "StrefaInwestorów.pl",
@@ -510,12 +663,14 @@ STOP_WORDS_PL = {
     "polsce", "polska", "polski", "polskie", "polskich", "polskiego", "polsk", "polak", "polacy",
     "nowe", "nowy", "nowa", "nowych", "bedzie", "beda", "jest", "roku", "lata", "latek", "latka",
     "przez", "tylko", "moze", "oraz", "wielu", "ktory", "ktora", "ktore", "bardzo", "wlasnie",
-    "gdzie", "kiedy", "dlaczego", "wszystko", "maja", "zostal", "zostala", "zostali", "zostalo",
+    "gdzie", "kiedy", "dlaczego", "wszystko", "maja", "mial", "miala", "mieli", "mialy",
+    "zostal", "zostala", "zostali", "zostalo",
     "jako", "przed", "ponad", "miedzy", "podczas", "wedlug", "kolejny", "kolejne", "kolejna",
     "wideo", "zdjecia", "sprawdz", "zobacz", "czytaj", "obejrzyj", "relacja", "transmisja",
     "osoby", "osob", "osoba", "sprawa", "sprawie", "spraw", "zycia", "zycie", "zyci",
     "dzien", "czas", "temat", "miejsce", "miejscu", "kraj", "kraju", "swiat", "swiata",
     "zatrzymany", "zatrzymanych", "zatrzymano", "zatrzymanie", "zarzut", "zarzuty", "zarzutem",
+    "policj", "policja", "policjant", "policjanci", "policjantow", "funkcjonariusz", "prezes", "prezesi",
     "sprawca", "sprawcy", "atak", "ataku", "ataki", "mecz", "meczu", "wynik", "wyniki", "zywo",
     "stream", "online", "rekord", "rekordowy", "rekordowa", "rekordowe", "liczba", "wzrost", "spadek",
     "historia", "historii", "trudno", "wyobrazic", "piekniejsze", "zakonczenie",
@@ -533,6 +688,7 @@ CITY_STEM_MAP = {
     "lublin": "lublin", "bydgoszcz": "bydgoszcz", "bialystok": "bialystok", "bialegostok": "bialystok",
     "rzeszow": "rzeszow", "olsztyn": "olsztyn", "kielc": "kielce", "opol": "opole",
     "mragow": "mragowo", "torun": "torun", "gdyni": "gdynia", "sopot": "sopot",
+    "tarnow": "tarnow", "chodziez": "chodziez", "slupsk": "slupsk",
     "kijow": "kijow", "moskw": "moskwa", "berlin": "berlin", "paryz": "paryz",
     "rzym": "rzym", "madryt": "madryt", "helsink": "helsinki", "waszyngton": "waszyngton",
     "londyn": "londyn", "bruksel": "bruksela", "dublin": "dublin", "budapeszt": "budapeszt",
@@ -640,10 +796,18 @@ def has_cluster_conflict(item_a: dict, item_b: dict) -> bool:
     city_b, country_b = _extract_geo_entities(tb)
     if city_a and city_b and not (city_a & city_b):
         return True
+    if pa in LOCAL_PATHS and pb in LOCAL_PATHS and pa != pb and "/Polska/Energetyka" not in (pa, pb):
+        if not (city_a & city_b):
+            return True
     if not (city_a & city_b) and country_a and country_b and not (country_a & country_b):
         # Dwa rozłączne kraje bez wspólnego miasta — konflikt, chyba że oba to różne etykiety miejsca vs podmiot (np. Dublin vs Ukraina w spotkaniu międzynarodowym)
         if not (city_a or city_b):
             return True
+
+    roads_a = set(re.findall(r"\b(?:[sa]\d{1,2}|dk\d{1,3})\b", _norm_pl(ta)))
+    roads_b = set(re.findall(r"\b(?:[sa]\d{1,2}|dk\d{1,3})\b", _norm_pl(tb)))
+    if roads_a and roads_b and not (roads_a & roads_b):
+        return True
 
     ca = _extract_age_or_count(ta)
     cb = _extract_age_or_count(tb)
@@ -1218,26 +1382,27 @@ def build_article_from_group(group: list, art_id: int) -> dict:
     sources = sorted(list({it["outlet"] for it in ranked_group}))
 
     clean_title = polish_typography_clean(primary["title"])
+    art_path = infer_category_path(primary["path"], primary.get("link", ""), clean_title, primary.get("description", ""))
     slug = _make_clean_slug(clean_title)
     sections, fact_agreement_pct = synthesize_article_sections(ranked_group, clean_title)
-    summary_lead, meta_description, keywords = _build_meta_and_summary(clean_title, sections, primary["path"], sources)
+    summary_lead, meta_description, keywords = _build_meta_and_summary(clean_title, sections, art_path, sources)
 
     perspectives = [
         {
             "outlet": it["outlet"],
-            "angle": _contextual_angle(it["outlet"], it["title"], primary["path"], idx == 0),
+            "angle": _contextual_angle(it["outlet"], it["title"], art_path, idx == 0),
             "summary": polish_typography_clean(it["title"]),
             "url": it["link"],
         }
         for idx, it in enumerate(ranked_group[:6])
     ]
 
-    metrics = _metrics_for_article(sources, primary["path"], primary["outlet"])
+    metrics = _metrics_for_article(sources, art_path, primary["outlet"])
 
     return {
         "id": art_id,
-        "path": primary["path"],
-        "seo_url": f"{primary['path']}/{slug}",
+        "path": art_path,
+        "seo_url": f"{art_path}/{slug}",
         "seo_title": clean_title,
         "summary_lead": summary_lead,
         "meta_description": meta_description,
@@ -1296,13 +1461,14 @@ def _upgrade_existing_article(art: dict) -> dict | None:
     title = polish_typography_clean(art.get("seo_title") or "")
     persps = list(art.get("perspectives") or [])
     primary_url = persps[0].get("url", "") if persps else ""
+    first_outlet = (persps[0].get("outlet") or "").strip() if persps else ""
 
     if is_opinion_or_blacklisted(title, primary_url):
         return None
     if not title:
         return None
 
-    old_path = art.get("path") or "/Polska"
+    old_path = OUTLET_DEFAULT_PATH.get(first_outlet) or art.get("path") or "/Polska"
     new_path = infer_category_path(old_path, primary_url, title)
     # Jeśli artykuł miał główną perspektywę z RSS Sport lub sportową — skoryguj dział
     art["path"] = new_path
@@ -1325,7 +1491,8 @@ def _upgrade_existing_article(art: dict) -> dict | None:
             desc_parts = outlet_texts["all"].get(out_name) or []
         else:
             desc_parts = outlet_texts["exclusive"].get(out_name) or outlet_texts["all"].get(out_name) or []
-        p_path = infer_category_path(new_path, p_url, p_title)
+        p_default = OUTLET_DEFAULT_PATH.get(out_name, new_path)
+        p_path = infer_category_path(p_default, p_url, p_title)
         candidates.append({
             "outlet": out_name,
             "title": p_title,
@@ -1384,6 +1551,9 @@ def _upgrade_existing_article(art: dict) -> dict | None:
 
     sources = sorted(list({c["outlet"] for c in candidates}))
     primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
+    lead_url = candidates[0]["link"] if candidates else primary_url
+    new_path = infer_category_path(old_path, lead_url, title)
+    art["path"] = new_path
 
     # Egzekucja reguły 1 źródła: wyłącznie tematy lokalne lub niszowe
     if len(sources) <= 1:
@@ -1392,9 +1562,10 @@ def _upgrade_existing_article(art: dict) -> dict | None:
 
     # Odśwież czysty slug (szczególnie jeśli był ucięty w pół słowa lub zmieniła się ścieżka działu)
     old_seo = art.get("seo_url") or ""
+    old_cat = old_seo.rsplit("/", 1)[0] if "/" in old_seo else ""
     old_slug = old_seo.split("/")[-1] if old_seo else ""
     new_slug = _make_clean_slug(title)
-    if not old_seo or not old_seo.startswith(new_path + "/") or len(old_slug) >= 74:
+    if not old_seo or old_cat != new_path or len(old_slug) >= 74:
         art["seo_url"] = f"{new_path}/{new_slug}"
 
     # Przebuduj treść przez ulepszony syntezator

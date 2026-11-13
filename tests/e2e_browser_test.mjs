@@ -234,13 +234,15 @@ async function run() {
       hasNbsp: document.getElementById('articlesFeed').textContent.includes('\\u00A0'),
       robots: document.querySelector('meta[name="robots"]')?.content || '',
       canonical: document.querySelector('link[rel="canonical"]')?.href || '',
+      badges: Array.from(document.querySelectorAll('#articlesFeed .story-top .cat-badge')).map(b => b.textContent.trim()),
     }))()`);
     assert(homeInfo.cards >= 10, `Za mało kart na stronie głównej: ${homeInfo.cards}`);
     assert(!homeInfo.overflow, `Poziomy scroll na desktopie (/): ${homeInfo.scrollW} > ${homeInfo.clientW}`);
     assert(homeInfo.hasNbsp, 'Brak niełamliwych spacji \\u00A0 na stronie głównej');
     assert(homeInfo.robots.includes('index'), `Zły meta robots na /: ${homeInfo.robots}`);
+    assert(!homeInfo.badges.includes('Świat') && !homeInfo.badges.includes('Sport'), `Karty Świat/Sport nie powinny pojawiać się w dziale Polska (/): ${homeInfo.badges.join(', ')}`);
     await browser.screenshot('desktop_home.png');
-    console.log(`[PASS] Desktop strona główna (${homeInfo.cards} linków artykułów, 0 overflow, \\u00A0 OK)`);
+    console.log(`[PASS] Desktop strona główna (${homeInfo.cards} linków artykułów, czysta kategoria Polska, 0 overflow, \\u00A0 OK)`);
 
     // 3. Nawigacja SPA kliknięciem karty -> sprawdzenie History API, typografii, dropcapu, braku duplikatu leadu, JSON-LD, kopiowania linku, paska scrolla
     await browser.evalJs(`(() => {
@@ -378,21 +380,37 @@ async function run() {
       const act = document.querySelector('.path-chip.active');
       const nBox = nav?.getBoundingClientRect();
       const aBox = act?.getBoundingClientRect();
+      const badges = Array.from(document.querySelectorAll('#articlesFeed .story-top .cat-badge')).map(b => b.textContent.trim());
+      const feedText = document.getElementById('articlesFeed')?.textContent || '';
       return {
         overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
         activeLabel: act?.textContent?.trim() || '',
         activeVisible: Boolean(nBox && aBox && aBox.left >= nBox.left - 2 && aBox.right <= nBox.right + 2),
+        badges,
+        hasRocket: feedText.includes('ILR-33'),
       };
     })()`);
     assert(!mobSwiat.overflow, 'Poziomy scroll na mobile (/Swiat/)');
     assert(mobSwiat.activeVisible, `Aktywna zakładka ${mobSwiat.activeLabel} niewidoczna na pasku nawigacji mobile`);
+    assert(mobSwiat.badges.length > 0 && mobSwiat.badges.every(b => b === 'Świat'), `Dział Świat zawiera obce etykiety: ${mobSwiat.badges.join(', ')}`);
+    assert(!mobSwiat.hasRocket, 'Dział Świat nie powinien zawierać artykułu o polskiej rakiecie ILR-33');
     await browser.screenshot('mobile_swiat.png');
 
     await browser.goto(`${baseUrl}${sampleMulti.seo_url}/`);
     const mobArt = await browser.evalJs('({ overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth })');
     assert(!mobArt.overflow, `Poziomy scroll na mobile (artykuł): ${mobArt.sw} > ${mobArt.cw}`);
     await browser.screenshot('mobile_article.png');
-    console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", 0 overflow) OK`);
+
+    const sampleRegional = articles.find(a => !['/Polska', '/Polska/Gospodarka', '/Polska/Polityka', '/Polska/Energetyka', '/Polska/Poznan', '/Swiat', '/Sport'].includes(a.path));
+    if (sampleRegional) {
+      await browser.goto(`${baseUrl}${sampleRegional.seo_url}/`);
+      const regInfo = await browser.evalJs(`({
+        backText: document.querySelector('.back-link')?.textContent?.trim() || '',
+        backHref: document.querySelector('.back-link')?.getAttribute('href') || '',
+      })`);
+      assert(regInfo.backText.includes('Polska'), `Niepoprawny link powrotu dla regionalnego artykułu: ${regInfo.backText}`);
+    }
+    console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", czyste Świat=${mobSwiat.badges.length}, 0 overflow) OK`);
 
     assert(browser.pageExceptions.length === 0, `Nieobsłużone wyjątki JS: ${browser.pageExceptions.join('; ')}`);
     assert(browser.consoleErrors.length === 0, `Błędy console.error: ${browser.consoleErrors.join('; ')}`);
