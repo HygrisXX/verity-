@@ -1,6 +1,298 @@
 [
   {
     "id": 1,
+    "path": "/Polska",
+    "seo_url": "/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy",
+    "seo_title": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/ty/tykr6jjdwafsv7qq81gdb34he11x2smn.jpg",
+    "published_iso": "2026-11-13T07:02:47+01:00",
+    "display_date": "13.11.2026, 07:02",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (4 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (4 redakcje)",
+        "paragraphs": [
+          "Ukraina i Rosja zgodziły się, aby w kolejnej rundzie negocjacji wzięli udział także przedstawiciele Europy - ogłosił Jared Kushner po spotkaniu z Wołodymyrem Zełenskim w Dublinie. [Źródło: Polsat News, Interia Wydarzenia, Dziennik.pl]",
+          "Specjalny wysłannik Donalda Trumpa poinformował również, że po rozmowie z prezydentem Ukrainy konsultował się między innymi z reprezentantem Polski. [Źródło: Polsat News]",
+          "Przedstawiciele USA rozmawiali też z urzędnikami z Polski, Niemiec czy Francji. [Źródło: Interia Wydarzenia, Dziennik.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Wcześniej w Moskwie spotkali się z Władimirem Putinem. [Źródło: Interia Wydarzenia]",
+          "Europa będzie uczestniczyć w rozmowach z Rosją, choć nie wiadomo, w jakim formacie. [Źródło: Wyborcza.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Depesza źródłowa",
+        "summary": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy/"
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Depesza źródłowa",
+        "summary": "Rosja i Ukraina się zgodziły. Europa dołączy do negocjacji pokojowych",
+        "url": "https://wydarzenia.interia.pl/ukraina-rosja/news-rosja-i-ukraina-sie-zgodzily-europa-dolaczy-do-negocjacji-po,nId,23572832"
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Rosja i Ukraina się zgodziły. Negocjacje będą rozszerzone",
+        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11344034,rosja-i-ukraina-sie-zgodzily-negocjacje-beda-rozszerzone.html"
+      },
+      {
+        "outlet": "Wyborcza.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Europa zaproszona do stołu. Co wiemy po kolejnej rundzie negocjacji Ukrainy z Rosją",
+        "url": "https://wyborcza.pl/7,75399,33130389,europa-zaproszona-do-stolu-co-wiemy-po-kolejnej-rundzie-negocjacji.html"
+      }
+    ],
+    "sources": [
+      "Dziennik.pl",
+      "Interia Wydarzenia",
+      "Polsat News",
+      "Wyborcza.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska",
+    "seo_url": "/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka-jednosc",
+    "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
+    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/02/4a/marcin-ociepa-fot-636x421-024a8b49.jpg",
+    "published_iso": "2026-11-13T07:02:47+01:00",
+    "display_date": "13.11.2026, 07:02",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Jan Grabiec został zapytany przez Justynę Dobrosz-Oracz o to, czy spodziewał się, że prezydent odrzuci zaproszenie premiera do jego domu w Sopocie. [Źródło: TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Jan Grabiec został zapytany przez Justynę Dobrosz-Oracz o to, czy spodziewał się, że prezydent odrzuci zaproszenie premiera do jego domu w Sopocie. Szef KPRM stwierdził, że prezydent „Może się jeszcze nawróci i znajdzie czas na to, żeby porozmawiać z premierem o sprawach ważnych dla Polski”. To strategia „im gorzej w Polsce, tym lepiej dla nich” – Mam wrażenie, że „wszystko już pojechało” po tamtej stronie: PiS-u, prezydenta Nawrockiego i Konfederacji. W polskim systemie prawnym kampanie prezydenckie finansowane są przez główne partie polityczne. Prezydent może trochę pohasać, ale nie za daleko i na koniec musi pilnować linii partii – podkreślił polityk. Grabiec przekonywał, że chodziło o „obniżenie ciśnienia”. – Czytałem dziś list episkopatu skierowany do pana premiera, który dotyczył tego, by zadbać – niezależnie od różnić politycznych – by mógł się toczyć dialog społeczny i była przestrzeń do rozmowy o najważniejszych sprawach – stwierdził gość „Pytania dnia”. Szukaliśmy porozumienia i nici łączącej nas wszystkich. Tylko, gdy niektórzy politycy wychodzą przed kamery okazuje się, że bardziej opłaca im się zaogniać sprawę i stawiać ją na ostrzu noża – zaznaczył polityk. Zdaniem Grabca, „prezes Kaczyński przywołał cały swój obóz polityczny”. – Oni mają iść na wojnę z Tuskiem i rządem, a nie próbować się dogadać. Polacy na końcu ocenią, czy strategia wojny wewnętrznej jest lepszą strategią. Czy jednak próby zbudowania porozumienia w podstawowych sprawach, a przynajmniej obniżenia ciśnienia? – pytał szef KPRM. [Źródło: TVP.info]",
+          "Premier wyciąga opłatek, ale nie wyciąga ręki do porozumienia w sprawie Trybunału Konstytucyjnego. Donald Tusk zaprasza prezydenta Karola Nawrockiego na przedświąteczne spotkanie, ale sam nie zamierza wycofać się z działań wokół Trybunału. Dla opozycji to wyłącznie czysta zagrywka polityczna premiera. [Źródło: RadioMaryja.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
+        "url": "https://www.rmf24.pl/rozmowy/rozmowa-o-7/news-co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byl,nIdn,1025895"
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Depesza źródłowa",
+        "summary": "Nawrocki wykręca się od spotkania z Tuskiem. „Ktoś komuś pewnie zmył głowę”",
+        "url": "https://www.tvp.info/96442700/jan-grabiec-w-pytaniu-dnia-12112026-dlaczego-prezydent-odmowil-spotkania-z-premierem-pozycja-nawrockiego-na-prawicy"
+      },
+      {
+        "outlet": "RadioMaryja.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "D. Tusk najpierw obraża prezydenta K. Nawrockiego, a teraz zaprasza na spotkanie przedświąteczne. Opozycja: to wyłącznie czysta zagrywka polityczna premiera",
+        "url": "https://www.radiomaryja.pl/informacje/d-tusk-najpierw-obraza-prezydenta-k-nawrockiego-a-teraz-zaprasza-na-spotkanie-przedswiateczne-opozycja-to-wylacznie-czysta-zagrywka-polityczna-premiera/"
+      }
+    ],
+    "sources": [
+      "RMF24",
+      "RadioMaryja.pl",
+      "TVP.info"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Warszawa",
+    "seo_url": "/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesad",
+    "seo_title": "Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje",
+    "thumbnail_url": "https://warszawawpigulce.pl/wp-content/uploads/2026/11/bad163bb-5c5b-473b-bc15-8f5b098d514b.jpg",
+    "published_iso": "2026-11-13T07:02:47+01:00",
+    "display_date": "13.11.2026, 07:02",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Warszawa"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Warszawa w Pigułce"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "13 listopada 2026 roku wypada w piątek, więc dla osób przesądnych to jedna z najbardziej charakterystycznych dat w kalendarzu. [Źródło: Warszawa w Pigułce]",
+          "Samo połączenie piątku i liczby 13 od dawna kojarzy się w wielu krajach z pechem, ale nie ma żadnych naukowych dowodów na to, że tego dnia rzeczywiście częściej przydarzają się nieszczęścia. [Źródło: Warszawa w Pigułce]",
+          "To przede wszystkim bardzo mocno […] Artykuł Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? [Źródło: Warszawa w Pigułce]",
+          "Historia tego przesądu jest dużo dziwniejsza, niż się wydaje pochodzi z serwisu Warszawa W Pigułce . [Źródło: Warszawa w Pigułce]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Piątek trzynastego wypada 13 sierpnia 2021. Przesądy tego dnia są głęboko zakorzenione w ludzkiej świadomości. Strach przed piątkiem trzynastego dorobił się nawet swojej nazwy: to paraskewidekatriafobia. Pochodzi od greckiego parakevi (piątek), dekatreis oznacza trzynasty, a fobia to po grecku strach. Skąd bierze się zatem strach przed tym dniem? Lepiej tego dnia zostać w domu i po prostu przeczekać? [Źródło: Gazeta Krakowska]",
+          "Piątek 13 budzi skrajne emocje od ekscytacji po autentyczny lęk przed pechem. Ten powszechny przesąd ma głębokie korzenie w historii, religii i numerologii. Wyjaśniamy skąd się wziął. [Źródło: Radio Gdańsk]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Warszawa w Pigułce",
+        "angle": "Depesza źródłowa",
+        "summary": "Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje",
+        "url": "https://warszawawpigulce.pl/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesadu-jest-duzo-dziwniejsza-niz-sie-wydaje/"
+      },
+      {
+        "outlet": "Gazeta Krakowska",
+        "angle": "Depesza źródłowa",
+        "summary": "Piątek trzynastego - przesądy i MEMY. Tego dnia lepiej nie wychodzić z domu - pech czai się za rogiem? 13 memów na piątek 13.",
+        "url": "https://gazetakrakowska.pl/piatek-trzynastego-przesady-i-memy-tego-dnia-lepiej-nie-wychodzic-z-domu-pech-czai-sie-za-rogiem-13-memow-na-piatek-13/ar/c11-13093011"
+      },
+      {
+        "outlet": "Radio Gdańsk",
+        "angle": "Depesza źródłowa",
+        "summary": "Piątek 13 i słynny przesąd. Dlaczego ta data budzi lęk?",
+        "url": "https://radiogdansk.pl/wiadomosci/2026/11/13/piatek-13-i-slynny-przesad-dlaczego-ta-data-budzi-lek/"
+      }
+    ],
+    "sources": [
+      "Gazeta Krakowska",
+      "Radio Gdańsk",
+      "Warszawa w Pigułce"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska",
+    "seo_url": "/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z-budzetu",
+    "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
+    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/76/f9/zdjecie-ilustracyjne-636x421-76f937bc.jpg",
+    "published_iso": "2026-11-13T07:02:48+01:00",
+    "display_date": "13.11.2026, 07:02",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Jak informuje „Rzeczpospolita”, w ubiegłym roku firmy Eli Lilly i Novo Nordisk, producenci odpowiednio Mounjaro i Wegovy, przekazały lekarzom oraz organizacjom ochrony zdrowia łącznie około 25 mln zł. [Źródło: TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Jak informuje „Rzeczpospolita”, w ubiegłym roku firmy Eli Lilly i Novo Nordisk, producenci odpowiednio Mounjaro i Wegovy, przekazały lekarzom oraz organizacjom ochrony zdrowia łącznie około 25 mln zł. Z tej kwoty 16 mln zł trafiło na sponsoring towarzystw naukowych, uczelni, szpitali i organizacji pacjenckich. Kolejne 9 mln zł przeznaczono na wynagrodzenia dla przedstawicieli środowiska medycznego za świadczone usługi. Dane te nie uwzględniają m.in. kosztów finansowania udziału lekarzy w konferencjach. Wsparcie kampanii społecznych i inicjatyw edukacyjnych Środki pochodzące od producentów wspierają również kampanie społeczne i inicjatywy edukacyjne poświęcone leczeniu otyłości. W wydarzeniach organizowanych na ten temat, także na terenie parlamentu, uczestniczą podmioty finansowane przez koncerny farmaceutyczne. Jak zauważa dziennik, szczególną aktywność w działaniach na rzecz walki z otyłością wykazują wicemarszałek Sejmu Monika Wielichowska oraz senator Agnieszka Gorgoń-Komor z Koalicji Obywatelskiej. Przedstawiciele Ministerstwa Zdrowia krytycznie odnoszą się do skali działań lobbingowych, które – według cytowanej przez gazetę opinii – przekroczyły „mury parlamentu i granice przyzwoitości”. Jednym z głównych celów producentów jest uzyskanie refundacji dla ich preparatów. Z szacunków wynika, że refundacja Mounjaro kosztowałaby budżet około 550 mln zł w ciągu dwóch lat, natomiast w przypadku Wegovy wydatki wyniosłyby około 860 mln zł w ciągu czterech lat. Prezes Agencji Oceny Technologii Medycznych i Taryfikacji nie zarekomendował dotychczas objęcia refundacją żadnej z tych terapii. Wysokie zainteresowanie lekami Mimo braku refundacji zainteresowanie lekami pozostaje wysokie. W ubiegłym roku Polacy wydali na nie łącznie niemal 1,5 mld zł. Zdecydowana większość tej kwoty, 1,29 mld zł, przypadła na Mounjaro, natomiast sprzedaż Wegovy wyniosła 182 mln zł. [Źródło: TVP.info]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
+        "url": "https://www.rmf24.pl/fakty/polska/news-otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pien,nIdn,1025926"
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Depesza źródłowa",
+        "summary": "Koncerny wydają miliony na lobbing. Chcą refundacji leków na otyłość",
+        "url": "https://www.tvp.info/96452169/producenci-mounjaro-i-wegovy-zabiegaja-o-refundacje-lekow-na-otylosc-na-sponsoring-i-wspolprace-z-lekarzami-wydali-juz-25-mln-zl"
+      }
+    ],
+    "sources": [
+      "RMF24",
+      "TVP.info"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz",
     "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
@@ -59,7 +351,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad",
     "seo_title": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
@@ -126,7 +418,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc",
     "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
@@ -193,7 +485,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -258,7 +550,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -323,7 +615,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -422,7 +714,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Swiat",
     "seo_url": "/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -487,7 +779,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Swiat",
     "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -553,7 +845,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Swiat",
     "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -627,7 +919,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -699,7 +991,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska",
     "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -773,7 +1065,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
     "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
@@ -840,7 +1132,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -922,7 +1214,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -1001,7 +1293,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -1073,7 +1365,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -1146,7 +1438,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -1229,7 +1521,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -1295,7 +1587,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -1361,7 +1653,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -1420,7 +1712,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -1485,7 +1777,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -1551,7 +1843,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -1624,7 +1916,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -1698,7 +1990,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -1763,7 +2055,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -1827,7 +2119,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -1908,7 +2200,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -1981,7 +2273,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 33,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -2058,7 +2350,7 @@
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 34,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -2131,7 +2423,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 35,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -2223,7 +2515,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 36,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -2303,7 +2595,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 37,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -2387,7 +2679,7 @@
     "corrections": []
   },
   {
-    "id": 34,
+    "id": 38,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -2453,7 +2745,7 @@
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 39,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -2504,7 +2796,7 @@
     "corrections": []
   },
   {
-    "id": 36,
+    "id": 40,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -2555,7 +2847,7 @@
     "corrections": []
   },
   {
-    "id": 37,
+    "id": 41,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -2606,7 +2898,7 @@
     "corrections": []
   },
   {
-    "id": 38,
+    "id": 42,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -2657,7 +2949,7 @@
     "corrections": []
   },
   {
-    "id": 39,
+    "id": 43,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
