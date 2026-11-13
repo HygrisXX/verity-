@@ -483,7 +483,7 @@ function renderPortal() {
       const list = published
         .filter(a => currentPath === '/Polska' || a.path.startsWith(currentPath))
         .filter(a => matchesStemQuery(a, q))
-        .sort((a, b) => b.published_iso.localeCompare(a.published_iso));
+        .sort((a, b) => ((b.declickbait?.length ? 1 : 0) - (a.declickbait?.length ? 1 : 0)) || b.published_iso.localeCompare(a.published_iso));
       renderFeed(list, q);
     }
   }
