@@ -852,9 +852,14 @@ function renderPortal() {
 
 function storyCardHtml(art) {
   const stats = art.metrics.slice(0, 2).map(m => `<span class="chip" title="${esc(m.label)}">${esc(m.val)}</span>`).join('');
+  const thumbHtml = art.thumbnail_url ? `
+    <div class="story-thumb-wrap">
+      <img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
+    </div>` : '';
   return `
     <article ${catAttr(art)} data-id="${art.id}" onclick="openArticle(${art.id})" tabindex="0" onkeydown="if(event.key==='Enter')openArticle(${art.id})">
       <div class="story-card" style="border-top-color:var(--cat)">
+        ${thumbHtml}
         <div class="story-top"><span class="cat-badge">${esc(art.path)}</span><span class="story-date">${esc(art.display_date)}</span></div>
         <h2 class="story-title">${esc(art.seo_title)}</h2>
         <p class="story-lede">${esc(articleLede(art, 200))}</p>
@@ -884,10 +889,16 @@ function renderFeed(list, q) {
       <span>${list.length} ${list.length === 1 ? 'opracowanie' : 'opracowań'}</span>
     </div>`;
 
+  const leadThumb = lead && lead.thumbnail_url ? `
+    <div class="lead-thumb-wrap">
+      <img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
+    </div>` : '';
+
   const leadHtml = lead ? `
     <article ${catAttr(lead)} style="display:block">
       <div class="lead-story" style="border-top-color:var(--cat)" onclick="openArticle(${lead.id})" tabindex="0" onkeydown="if(event.key==='Enter')openArticle(${lead.id})">
         <div class="lead-main">
+          ${leadThumb}
           <div class="story-top"><span class="cat-badge">${esc(lead.path)}</span><span class="story-date">${esc(lead.display_date)}</span></div>
           <h2 class="lead-title">${esc(lead.seo_title)}</h2>
           <p class="lead-lede">${esc(articleLede(lead, 300))}</p>
@@ -914,11 +925,17 @@ function renderArticleView(art, published) {
   const uniqueLinks = [];
   linked.forEach(p => { if (!uniqueLinks.some(u => u.url === p.url)) uniqueLinks.push(p); });
 
+  const heroThumb = art.thumbnail_url ? `
+    <div class="article-hero-wrap">
+      <img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
+    </div>` : '';
+
   container.innerHTML = `
     <div ${catAttr(art)}>
       <button class="back-link" onclick="closeArticle()">← Wróć do ${esc(currentPath)}</button>
       <div class="reader ${hasAside ? 'has-aside' : ''}">
         <article class="article-main">
+          ${heroThumb}
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">${esc(art.path)}</span>

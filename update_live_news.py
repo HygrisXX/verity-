@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-VERITY - Skrypt produkcyjny pobierający PRAWDZIWE artykuły z polskich kanałów RSS
-i generujący plik articles.json dla domeny testowej.
-
-Uruchomienie na serwerze / komputerze z dostępem do internetu:
-    python3 update_live_news.py
+VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS.
+- Ograniczenie bazy testowej do maksymalnie 100 artykułów (kolejka krocząca).
+- Zapis do 4 najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu).
+- Pobieranie oficjalnych miniatur ze źródeł (enclosure / media:content / img).
+- Płynne dopełnianie wcześniejszymi najważniejszymi tematami, jeśli w danej godzinie pojawiło się mniej niż 4 duże wydarzenia.
+- Aktualizacja articles.json oraz news-sitemap.xml.
 """
 
 import json
@@ -12,11 +13,12 @@ import os
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
+import xml.sax.saxutils
 from datetime import datetime
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+MAX_TOTAL_ARTICLES = 100
+MAX_NEW_PER_RUN = 4
 
-# Reprezentatywne kanały RSS z 5 koszyków (Polska, Gospodarka, Prawo, Regiony, Branżowe)
 LIVE_RSS_FEEDS = [
     {"name": "PAP", "url": "https://www.pap.pl/rss.xml", "path": "/Polska/Polityka"},
     {"name": "Bankier.pl", "url": "https://www.bankier.pl/rss/wiadomosci.xml", "path": "/Polska/Gospodarka"},
@@ -36,12 +38,37 @@ OPINION_MARKERS = [
     r"\bopinia\b",
     r"\bnieoficjalnie\b",
     r"\bnaszym zdaniem\b",
+    r"\bhoroskop\b",
 ]
 
 
 def strip_html(raw: str) -> str:
     text = re.sub(r"<[^>]+>", " ", raw or "")
     return re.sub(r"\s+", " ", text).strip()
+
+
+def extract_thumbnail_from_item(item_elem, desc_raw: str) -> str:
+    # 1. Sprawdź enclosure (standard RSS dla miniatur)
+    for enc in item_elem.findall("enclosure"):
+        url = enc.get("url")
+        ctype = enc.get("type", "")
+        if url and ("image" in ctype or any(url.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".webp"])):
+            return url.strip()
+
+    # 2. Sprawdź media:content / media:thumbnail
+    for child in item_elem:
+        tag = child.tag.lower()
+        if "thumbnail" in tag or "content" in tag:
+            url = child.get("url")
+            if url and ("http" in url):
+                return url.strip()
+
+    # 3. Sprawdź <img> w opisie
+    m = re.search(r'<img[^>]+src=["\'](https?://[^"\']+)["\']', desc_raw or "", re.IGNORECASE)
+    if m:
+        return m.group(1).strip()
+
+    return ""
 
 
 def is_opinion_or_blacklisted(title: str, link: str) -> bool:
@@ -55,25 +82,38 @@ def is_opinion_or_blacklisted(title: str, link: str) -> bool:
     return False
 
 
-def fetch_rss_items(max_per_feed: int = 5) -> list:
+def fetch_rss_items(max_per_feed: int = 8) -> list:
     items = []
     headers = {"User-Agent": "VerityBot/1.0 (+https://verity.pl)"}
     for feed in LIVE_RSS_FEEDS:
         try:
             req = urllib.request.Request(feed["url"], headers=headers)
             with urllib.request.urlopen(req, timeout=10) as resp:
-                xml_bytes = resp.read()
-            root = ET.fromstring(xml_bytes)
+                xml_raw = resp.read()
+
+            # Bezpieczne parsowanie XML z ignorowaniem błędów kodowania
+            try:
+                root = ET.fromstring(xml_raw)
+            except Exception:
+                text_clean = xml_raw.decode("utf-8", errors="ignore")
+                text_clean = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", text_clean)
+                root = ET.fromstring(text_clean.encode("utf-8"))
+
             count = 0
             for item in root.iter("item"):
                 title = strip_html(item.findtext("title") or "")
-                desc = strip_html(item.findtext("description") or "")
+                raw_desc = item.findtext("description") or ""
+                desc = strip_html(raw_desc)
                 link = (item.findtext("link") or "").strip()
                 pub_date = (item.findtext("pubDate") or "").strip()
-                if not title or len(desc) < 40:
+
+                if not title or len(desc) < 30:
                     continue
                 if is_opinion_or_blacklisted(title, link):
                     continue
+
+                thumb = extract_thumbnail_from_item(item, raw_desc)
+
                 items.append({
                     "outlet": feed["name"],
                     "path": feed["path"],
@@ -81,6 +121,7 @@ def fetch_rss_items(max_per_feed: int = 5) -> list:
                     "description": desc,
                     "link": link,
                     "pub_date": pub_date,
+                    "thumbnail": thumb,
                 })
                 count += 1
                 if count >= max_per_feed:
@@ -91,122 +132,191 @@ def fetch_rss_items(max_per_feed: int = 5) -> list:
     return items
 
 
+def tokenize_title(title: str) -> set:
+    words = re.findall(r"\w{4,}", title.lower())
+    stop_words = {"polsce", "polska", "polski", "nowe", "będzie", "jest", "roku", "przez", "tylko", "może", "oraz"}
+    return {w for w in words if w not in stop_words}
+
+
 def cluster_similar_items(items: list) -> list:
-    """Grupuje depesze z różnych redakcji o tym samym wydarzeniu (wspólne słowa kluczowe >= 4 znaki)."""
+    """Grupuje depesze z różnych redakcji o tym samym wydarzeniu."""
     clusters = []
     used = set()
     for i, item in enumerate(items):
         if i in used:
             continue
-        words_i = {w.lower() for w in re.findall(r"\w{4,}", item["title"])}
+        words_i = tokenize_title(item["title"])
         group = [item]
         used.add(i)
         for j in range(i + 1, len(items)):
             if j in used:
                 continue
-            words_j = {w.lower() for w in re.findall(r"\w{4,}", items[j]["title"])}
-            if len(words_i & words_j) >= 2:
+            words_j = tokenize_title(items[j]["title"])
+            if words_i and words_j and len(words_i & words_j) >= 2:
                 group.append(items[j])
                 used.add(j)
         clusters.append(group)
-    # Sortuj od grup z największą liczbą niezależnych źródeł
-    clusters.sort(key=lambda g: len(g), reverse=True)
+
+    # Sortuj według wagi wydarzenia (liczba niezależnych źródeł, miniatura, długość treści)
+    def cluster_score(grp):
+        score = len(grp) * 10
+        if any(it.get("thumbnail") for it in grp):
+            score += 2
+        score += min(5, sum(len(it["description"]) for it in grp) // 200)
+        return score
+
+    clusters.sort(key=cluster_score, reverse=True)
     return clusters
 
 
-def build_articles_json(clusters: list) -> list:
+def is_already_covered(candidate_title: str, existing_articles: list) -> bool:
+    c_words = tokenize_title(candidate_title)
+    if not c_words:
+        return False
+    for art in existing_articles:
+        e_words = tokenize_title(art.get("seo_title", ""))
+        if len(c_words & e_words) >= 2:
+            overlap = len(c_words & e_words) / max(1, min(len(c_words), len(e_words)))
+            if overlap >= 0.5:
+                return True
+    return False
+
+
+def build_article_from_group(group: list, art_id: int) -> dict:
     now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
     now_display = datetime.now().strftime("%d.%m.%Y, %H:%M")
-    articles_out = []
 
-    for idx, group in enumerate(clusters[:12], start=1):
-        primary = group[0]
-        sources = sorted(list({it["outlet"] for it in group}))
-        slug = re.sub(r"[^a-z0-9]+", "-", primary["title"].lower()).strip("-")[:75]
+    # Wybierz reprezentatywną pozycję z miniaturą, jeśli dostępna
+    primary = next((it for it in group if it.get("thumbnail")), group[0])
+    thumbnail_url = next((it["thumbnail"] for it in group if it.get("thumbnail")), "")
+    sources = sorted(list({it["outlet"] for it in group}))
 
-        sections = []
-        for it in group:
-            sections.append({
-                "heading": f"Relacja źródłowa: {it['outlet']}",
-                "paragraphs": [
-                    f"{it['description']} [Źródło: {it['outlet']}]"
-                ]
-            })
+    # Czysty slug
+    slug = re.sub(r"[^a-z0-9]+", "-", primary["title"].lower()).strip("-")[:75]
 
-        perspectives = [
-            {
-                "outlet": it["outlet"],
-                "angle": "Depesza źródłowa",
-                "summary": it["title"],
-                "url": it["link"],
-            }
-            for it in group[:3]
-        ]
-
-        articles_out.append({
-            "id": idx,
-            "path": primary["path"],
-            "seo_url": f"{primary['path']}/{slug}",
-            "seo_title": primary["title"],
-            "published_iso": now_iso,
-            "display_date": now_display,
-            "status": "AUTO_PUBLISHED",
-            "fact_agreement_pct": min(98, 75 + len(sources) * 5),
-            "admin_note": "",
-            "metrics": [
-                {"label": "Liczba źródeł", "val": f"{len(sources)} redakcji"},
-                {"label": "Kategoria", "val": primary["path"]},
-                {"label": "Główne źródło", "val": primary["outlet"]},
-                {"label": "Weryfikacja", "val": "Fakty / RSS"}
-            ],
-            "declickbait": [],
-            "full_sections": sections,
-            "perspectives": perspectives,
-            "sources": sources,
-            "corrections": []
+    sections = []
+    for it in group:
+        sections.append({
+            "heading": f"Relacja źródłowa: {it['outlet']}",
+            "paragraphs": [
+                f"{it['description']} [Źródło: {it['outlet']}]"
+            ]
         })
 
-    return articles_out
+    perspectives = [
+        {
+            "outlet": it["outlet"],
+            "angle": "Depesza źródłowa",
+            "summary": it["title"],
+            "url": it["link"],
+        }
+        for it in group[:4]
+    ]
+
+    metrics = [
+        {"label": "Liczba źródeł", "val": f"{len(sources)} {('redakcja' if len(sources) == 1 else 'redakcje' if len(sources) < 5 else 'redakcji')}"},
+        {"label": "Kategoria", "val": primary["path"]},
+        {"label": "Główne źródło", "val": primary["outlet"]},
+        {"label": "Weryfikacja", "val": "Fakty / RSS"}
+    ]
+
+    return {
+        "id": art_id,
+        "path": primary["path"],
+        "seo_url": f"{primary['path']}/{slug}",
+        "seo_title": primary["title"],
+        "thumbnail_url": thumbnail_url,
+        "published_iso": now_iso,
+        "display_date": now_display,
+        "status": "AUTO_PUBLISHED",
+        "fact_agreement_pct": min(98, 75 + len(sources) * 6),
+        "admin_note": "",
+        "metrics": metrics,
+        "declickbait": [],
+        "full_sections": sections,
+        "perspectives": perspectives,
+        "sources": sources,
+        "corrections": []
+    }
+
+
+def update_news_cycle():
+    base_dir = os.path.dirname(__file__)
+    articles_path = os.path.join(base_dir, "articles.json")
+    sitemap_path = os.path.join(base_dir, "news-sitemap.xml")
+
+    # 1. Wczytaj istniejące artykuły
+    existing_articles = []
+    if os.path.exists(articles_path):
+        try:
+            with open(articles_path, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                if isinstance(loaded, list):
+                    # Zachowaj tylko artykuły od 13.11.2026
+                    existing_articles = [a for a in loaded if (a.get("published_iso") or "")[:10] >= "2026-11-13"]
+        except Exception as e:
+            print(f"[WARN] Błąd odczytu {articles_path}: {e}")
+
+    # 2. Pobierz świeże depesze
+    print("Pobieranie wiadomości z polskich kanałów RSS...")
+    raw_items = fetch_rss_items()
+    clusters = cluster_similar_items(raw_items) if raw_items else []
+
+    # 3. Wybierz do 4 najważniejszych nowych wydarzeń (nieobecnych jeszcze w bazie)
+    new_articles = []
+    for grp in clusters:
+        if len(new_articles) >= MAX_NEW_PER_RUN:
+            break
+        cand_title = grp[0]["title"]
+        if not is_already_covered(cand_title, existing_articles):
+            art = build_article_from_group(grp, len(new_articles) + 1)
+            new_articles.append(art)
+
+    print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie.")
+
+    # 4. Jeśli w danej godzinie nic nowego się nie pojawiło (np. w nocy)
+    # zachowujemy dotychczasowe artykuły bez dodawania duplikatów.
+    combined = new_articles + existing_articles
+
+    # 5. Ograniczenie do maksymalnie 100 artykułów w bazie testowej (kolejka krocząca)
+    combined = combined[:MAX_TOTAL_ARTICLES]
+
+    # Przenumeruj identyfikatory
+    for idx, a in enumerate(combined, start=1):
+        a["id"] = idx
+
+    # 6. Zapisz articles.json
+    with open(articles_path, "w", encoding="utf-8") as f:
+        json.dump(combined, f, ensure_ascii=False, indent=2)
+    print(f"[SUKCES] Baza zaktualizowana: {len(combined)} artykułów zapisanych w {articles_path}")
+
+    # 7. Zapisz news-sitemap.xml
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
+    ]
+    for a in combined:
+        loc = f"https://verity.pl{a['seo_url']}"
+        title = xml.sax.saxutils.escape(a["seo_title"])
+        xml_lines.extend([
+            '  <url>',
+            f'    <loc>{loc}</loc>',
+            '    <news:news>',
+            '      <news:publication>',
+            '        <news:name>VERITY</news:name>',
+            '        <news:language>pl</news:language>',
+            '      </news:publication>',
+            f'      <news:publication_date>{a["published_iso"]}</news:publication_date>',
+            f'      <news:title>{title}</news:title>',
+            '    </news:news>',
+            '  </url>'
+        ])
+    xml_lines.append('</urlset>\n')
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(xml_lines))
+    print(f"[SUKCES] Zaktualizowano sitemapę: {len(combined)} wpisów w {sitemap_path}")
 
 
 if __name__ == "__main__":
-    print("Pobieranie prawdziwych wiadomości z polskich kanałów RSS...")
-    raw_items = fetch_rss_items()
-    if not raw_items:
-        print("Brak połączenia z internetem lub zablokowane wyjście RSS w tym środowisku.")
-    else:
-        clusters = cluster_similar_items(raw_items)
-        articles = build_articles_json(clusters)
-        out_path = os.path.join(os.path.dirname(__file__), "articles.json")
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(articles, f, ensure_ascii=False, indent=2)
-        print(f"Zapisano {len(articles)} prawdziwych opracowań do {out_path}")
-
-        # Aktualizacja news-sitemap.xml
-        sitemap_path = os.path.join(os.path.dirname(__file__), "news-sitemap.xml")
-        xml_lines = [
-            '<?xml version="1.0" encoding="UTF-8"?>',
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
-            '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
-        ]
-        import xml.sax.saxutils
-        for a in articles:
-            loc = f"https://verity.pl{a['seo_url']}"
-            title = xml.sax.saxutils.escape(a["seo_title"])
-            xml_lines.extend([
-                '  <url>',
-                f'    <loc>{loc}</loc>',
-                '    <news:news>',
-                '      <news:publication>',
-                '        <news:name>VERITY</news:name>',
-                '        <news:language>pl</news:language>',
-                '      </news:publication>',
-                f'      <news:publication_date>{a["published_iso"]}</news:publication_date>',
-                f'      <news:title>{title}</news:title>',
-                '    </news:news>',
-                '  </url>'
-            ])
-        xml_lines.append('</urlset>\n')
-        with open(sitemap_path, "w", encoding="utf-8") as f:
-            f.write("\n".join(xml_lines))
-        print(f"Zaktualizowano {sitemap_path}")
+    update_news_cycle()
