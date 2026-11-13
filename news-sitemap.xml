@@ -3,6 +3,92 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/dwie-kobiety-uratowane-z-plonacego-budynku-przestroga-na-zime/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T23:37:52+01:00</news:publication_date>
+      <news:title>Dwie kobiety uratowane z płonącego budynku. Przestroga na zimę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvs.pl/wp-content/uploads/2026/11/news_pozar_straz_pozarna_tvs_zajawka_2026.11.13-1.webp</image:loc>
+      <image:title>Dwie kobiety uratowane z płonącego budynku. Przestroga na zimę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/konflikt-w-miejskiej-spolce-dyrektorka-bydgoskiego-zoo-zlozyla/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T23:37:52+01:00</news:publication_date>
+      <news:title>Konflikt w miejskiej spółce. Dyrektorka bydgoskiego zoo złożyła wypowiedzenie z pracy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/loty-samolotow-wstrzymane-w-calych-usa-pierwsze-informacje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T23:37:51+01:00</news:publication_date>
+      <news:title>Loty samolotów wstrzymane w całych USA. Pierwsze informacje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ3FNFV7B181G-C321.webp</image:loc>
+      <image:title>Loty samolotów wstrzymane w całych USA. Pierwsze informacje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/tragiczny-karambol-z-udzialem-wojskowych-ciezarowek-zadzialal-efekt/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T23:37:51+01:00</news:publication_date>
+      <news:title>Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał "efekt domina". Troje dzieci w szpitalu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/vQ6k9kuTURBXy80MTc2MmYyMy1lYzA3LTQwODYtYTBlZC0zMjFiYTFmN2IxMTkuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
+      <image:title>Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał "efekt domina". Troje dzieci w szpitalu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/piotr-kusznieruk-wykluczony-z-nowej-lewicy-mial-razaco-naruszyc-statut/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T23:37:51+01:00</news:publication_date>
+      <news:title>Piotr Kusznieruk wykluczony z Nowej Lewicy. Miał "rażąco naruszyć statut"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/39/39dah9c3uzbocabcchi6opv5ewqfbs7x.jpg</image:loc>
+      <image:title>Piotr Kusznieruk wykluczony z Nowej Lewicy. Miał "rażąco naruszyć statut"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/5-0-juz-do-przerwy-absolutny-pogrom-w-lidze-narodow-calkowita-dominacja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T23:37:51+01:00</news:publication_date>
+      <news:title>5:0 już do przerwy, absolutny pogrom w Lidze Narodów. Całkowita dominacja</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ3DEQN2ABRTV-C321.webp</image:loc>
+      <image:title>5:0 już do przerwy, absolutny pogrom w Lidze Narodów. Całkowita dominacja</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz/</loc>
     <news:news>
       <news:publication>
