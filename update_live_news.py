@@ -4,7 +4,7 @@ VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS i At
 - Ograniczenie bazy testowej do maksymalnie 300 artykułów (kolejka krocząca).
 - Zapis do 4 najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu).
 - Pobieranie oficjalnych miniatur ze źródeł (enclosure / media:content / img).
-- Równoległe pobieranie z 79 zweryfikowanych kanałów (77 redakcji: ogólnopolskie, gospodarcze, regionalne z 16 województw, świat, sport).
+- Równoległe pobieranie z 99 zweryfikowanych kanałów (97 redakcji: ogólnopolskie, gospodarcze, specjalistyczne, regionalne z 16 województw, świat, sport).
 - Aktualizacja articles.json oraz news-sitemap.xml.
 """
 
@@ -25,8 +25,8 @@ ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne m
 LIVE_RSS_FEEDS = [
     # --- Polityka, Prawo, Bezpieczeństwo, Opinia ---
     {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss_main", "path": "/Polska/Polityka", "group": "Gremi Media"},
-    {"name": "Defence24", "url": "https://defence24.pl/feed", "path": "/Polska/Polityka"},
-    {"name": "InfoSecurity24", "url": "https://infosecurity24.pl/feed", "path": "/Polska/Polityka"},
+    {"name": "Defence24", "url": "https://defence24.pl/feed", "path": "/Polska/Polityka", "group": "Defence24"},
+    {"name": "InfoSecurity24", "url": "https://infosecurity24.pl/feed", "path": "/Polska/Polityka", "group": "Defence24"},
     {"name": "Niezależna.pl", "url": "https://niezalezna.pl/feed/", "path": "/Polska/Polityka"},
     {"name": "Newsweek Polska", "url": "https://www.newsweek.pl/.feed", "path": "/Polska/Polityka"},
     {"name": "Tygodnik Powszechny", "url": "https://www.tygodnikpowszechny.pl/rss.xml", "path": "/Polska/Polityka"},
@@ -34,7 +34,7 @@ LIVE_RSS_FEEDS = [
     {"name": "Krytyka Polityczna", "url": "https://krytykapolityczna.pl/feed/", "path": "/Polska/Polityka"},
     {"name": "Kultura Liberalna", "url": "https://kulturaliberalna.pl/feed/", "path": "/Polska/Polityka"},
 
-    # --- Gospodarka, Finanse, Rynek Pracy, Rolnictwo ---
+    # --- Gospodarka, Finanse, Prawo, Rynek Pracy, Rolnictwo ---
     {"name": "Bankier.pl", "url": "https://www.bankier.pl/rss/wiadomosci.xml", "path": "/Polska/Gospodarka"},
     {"name": "Money.pl", "url": "https://www.money.pl/rss/main.xml", "path": "/Polska/Gospodarka"},
     {"name": "WNP.pl", "url": "https://www.wnp.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
@@ -48,16 +48,26 @@ LIVE_RSS_FEEDS = [
     {"name": "Parkiet", "url": "https://www.parkiet.com/rss_main", "path": "/Polska/Gospodarka", "group": "Gremi Media"},
     {"name": "XYZ.pl", "url": "https://xyz.pl/feed", "path": "/Polska/Gospodarka"},
     {"name": "Bezprawnik.pl", "url": "https://bezprawnik.pl/feed/", "path": "/Polska/Gospodarka"},
+    {"name": "Infor.pl", "url": "https://www.infor.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
+    {"name": "Cashless.pl", "url": "https://www.cashless.pl/rss", "path": "/Polska/Gospodarka"},
+    {"name": "Comparic.pl", "url": "https://comparic.pl/feed/", "path": "/Polska/Gospodarka"},
+    {"name": "StrefaInwestorów.pl", "url": "https://strefainwestorow.pl/rss.xml", "path": "/Polska/Gospodarka"},
+    {"name": "Subiektywnie o Finansach", "url": "https://subiektywnieofinansach.pl/feed/", "path": "/Polska/Gospodarka"},
+    {"name": "MamStartup.pl", "url": "https://mamstartup.pl/feed/", "path": "/Polska/Gospodarka"},
+    {"name": "Wiadomości Handlowe", "url": "https://www.wiadomoscihandlowe.pl/feed", "path": "/Polska/Gospodarka"},
+    {"name": "WP Finanse", "url": "https://finanse.wp.pl/rss.xml", "path": "/Polska/Gospodarka", "group": "Wirtualna Polska"},
+    {"name": "Biznes Interia", "url": "https://biznes.interia.pl/feed", "path": "/Polska/Gospodarka", "group": "Interia"},
 
-    # --- Energetyka, Transformacja ---
+    # --- Energetyka, Transformacja, Elektromobilność ---
     {"name": "WysokieNapiecie.pl", "url": "https://wysokienapiecie.pl/feed/", "path": "/Polska/Energetyka"},
-    {"name": "Energetyka24", "url": "https://energetyka24.com/feed", "path": "/Polska/Energetyka"},
+    {"name": "Energetyka24", "url": "https://energetyka24.com/feed", "path": "/Polska/Energetyka", "group": "Defence24"},
+    {"name": "Elektrowóz.pl", "url": "https://elektrowoz.pl/feed/", "path": "/Polska/Energetyka"},
 
-    # --- Wydarzenia Ogólnopolskie (pełne spektrum redakcji) ---
+    # --- Wydarzenia Ogólnopolskie, Zdrowie, Motoryzacja (pełne spektrum redakcji) ---
     {"name": "RMF24", "url": "https://www.rmf24.pl/feed", "path": "/Polska"},
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/wszystkie.xml", "path": "/Polska"},
-    {"name": "Interia Wydarzenia", "url": "https://wydarzenia.interia.pl/feed", "path": "/Polska"},
-    {"name": "WP Wiadomości", "url": "https://wiadomosci.wp.pl/rss.xml", "path": "/Polska"},
+    {"name": "Interia Wydarzenia", "url": "https://wydarzenia.interia.pl/feed", "path": "/Polska", "group": "Interia"},
+    {"name": "WP Wiadomości", "url": "https://wiadomosci.wp.pl/rss.xml", "path": "/Polska", "group": "Wirtualna Polska"},
     {"name": "Onet Wiadomości", "url": "https://wiadomosci.onet.pl/.feed", "path": "/Polska"},
     {"name": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "path": "/Polska"},
     {"name": "Gazeta.pl", "url": "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm", "path": "/Polska"},
@@ -67,9 +77,12 @@ LIVE_RSS_FEEDS = [
     {"name": "TVP.info", "url": "https://www.tvp.info/tvp.info/rss+xml.php", "path": "/Polska"},
     {"name": "Wyborcza.pl", "url": "https://wyborcza.pl/pub/rss/najnowsze_wyborcza.xml", "path": "/Polska"},
     {"name": "naTemat.pl", "url": "https://natemat.pl/rss/wszystkie", "path": "/Polska"},
-    {"name": "o2.pl", "url": "https://www.o2.pl/rss.xml", "path": "/Polska"},
+    {"name": "o2.pl", "url": "https://www.o2.pl/rss.xml", "path": "/Polska", "group": "Wirtualna Polska"},
     {"name": "Wirtualnemedia.pl", "url": "https://www.wirtualnemedia.pl/rss/aktualnosci", "path": "/Polska"},
     {"name": "RadioMaryja.pl", "url": "https://www.radiomaryja.pl/feed/", "path": "/Polska"},
+    {"name": "Auto Świat", "url": "https://www.auto-swiat.pl/.feed", "path": "/Polska"},
+    {"name": "Medonet.pl", "url": "https://www.medonet.pl/.feed", "path": "/Polska"},
+    {"name": "Niedziela.pl", "url": "https://www.niedziela.pl/rss", "path": "/Polska"},
 
     # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
     {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Poznan"},
@@ -89,6 +102,7 @@ LIVE_RSS_FEEDS = [
     {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss", "path": "/Polska/Bydgoszcz", "group": "Polska Press"},
     {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Lublin"},
     {"name": "Kurier Lubelski", "url": "https://kurierlubelski.pl/rss", "path": "/Polska/Lublin", "group": "Polska Press"},
+    {"name": "Lublin112.pl", "url": "https://www.lublin112.pl/feed/", "path": "/Polska/Lublin"},
     {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Rzeszow"},
     {"name": "Nowiny24", "url": "https://nowiny24.pl/rss", "path": "/Polska/Rzeszow", "group": "Polska Press"},
     {"name": "Kurier Poranny", "url": "https://poranny.pl/rss", "path": "/Polska/Bialystok", "group": "Polska Press"},
@@ -99,7 +113,7 @@ LIVE_RSS_FEEDS = [
     {"name": "Echo Dnia Kielce", "url": "https://echodnia.eu/rss", "path": "/Polska/Kielce", "group": "Polska Press"},
     {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss", "path": "/Polska/Opole", "group": "Polska Press"},
 
-    # --- Świat, Technologia, Cyberbezpieczeństwo ---
+    # --- Świat, Technologia, Cyberbezpieczeństwo, Kosmos ---
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/swiat.xml", "path": "/Swiat"},
     {"name": "TVN24", "url": "https://tvn24.pl/swiat.xml", "path": "/Swiat"},
     {"name": "Niebezpiecznik", "url": "https://niebezpiecznik.pl/feed/", "path": "/Swiat"},
@@ -107,13 +121,19 @@ LIVE_RSS_FEEDS = [
     {"name": "CHIP.pl", "url": "https://www.chip.pl/feed", "path": "/Swiat"},
     {"name": "PurePC", "url": "https://www.purepc.pl/rss.xml", "path": "/Swiat"},
     {"name": "Spider's Web", "url": "https://spidersweb.pl/feed", "path": "/Swiat"},
+    {"name": "CyberDefence24", "url": "https://cyberdefence24.pl/feed", "path": "/Swiat", "group": "Defence24"},
+    {"name": "Space24", "url": "https://space24.pl/feed", "path": "/Swiat", "group": "Defence24"},
+    {"name": "Komputer Świat", "url": "https://www.komputerswiat.pl/.feed", "path": "/Swiat"},
+    {"name": "Antyweb.pl", "url": "https://antyweb.pl/feed/", "path": "/Swiat"},
+    {"name": "Tabletowo.pl", "url": "https://www.tabletowo.pl/feed/", "path": "/Swiat"},
+    {"name": "Kresy.pl", "url": "https://kresy.pl/feed/", "path": "/Swiat"},
 
     # --- Sport ---
     {"name": "Sport.pl", "url": "https://www.sport.pl/pub/rss/sport.htm", "path": "/Sport"},
     {"name": "Przegląd Sportowy", "url": "https://przegladsportowy.onet.pl/.feed", "path": "/Sport"},
-    {"name": "Interia Sport", "url": "https://sport.interia.pl/feed", "path": "/Sport"},
+    {"name": "Interia Sport", "url": "https://sport.interia.pl/feed", "path": "/Sport", "group": "Interia"},
     {"name": "Polsat Sport", "url": "https://www.polsatsport.pl/rss/wszystkie.xml", "path": "/Sport"},
-    {"name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/rss.xml", "path": "/Sport"},
+    {"name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/rss.xml", "path": "/Sport", "group": "Wirtualna Polska"},
     {"name": "RMF24 Sport", "url": "https://www.rmf24.pl/sport/feed", "path": "/Sport"},
 ]
 
@@ -124,6 +144,7 @@ PREFERRED_PRIMARY_OUTLETS = {
     "WysokieNapiecie.pl", "Energetyka24", "Defence24", "InfoSecurity24",
     "RMF24", "Polsat News", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
     "GazetaPrawna.pl (DGP)", "Forsal.pl", "Puls Biznesu", "Parkiet", "XYZ.pl",
+    "CyberDefence24", "Space24", "Infor.pl", "Wiadomości Handlowe",
 }
 
 OPINION_MARKERS = [
