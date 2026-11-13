@@ -1,6 +1,285 @@
 [
   {
     "id": 1,
+    "path": "/Sport",
+    "seo_url": "/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy",
+    "seo_title": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
+    "thumbnail_url": "https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp",
+    "published_iso": "2026-11-13T12:56:54+01:00",
+    "display_date": "13.11.2026, 12:56",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (4 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (4 redakcje)",
+        "paragraphs": [
+          "Panczenistka Wiktoria Dąbrowska zajęła trzecie miejsce na dystansie 1000 metrów. [Źródło: Interia Sport, Niezależna.pl, WP SportoweFakty, Radio PiK]",
+          "To był debiut 20-latki w zawodach Pucharu Świata. [Źródło: Interia Sport]",
+          "Napisał się piękny scenariusz. [Źródło: Interia Sport]",
+          "Jej dobrą formę było widać już podczas mistrzostw Polski. [Źródło: Interia Sport]",
+          "Sensacja na olimpijskim torze w stolicy Chin. [Źródło: Niezależna.pl, Radio PiK]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Wiktoria Dąbrowska w swoim pierwszym starcie w Pucharze Świata stanęła na najniższym stopniu podium na dystansie 1000 m (1.15,85), wyprzedzając między innymi utytułowaną Holenderkę Femke Kok. [Źródło: Niezależna.pl]",
+          "Wiktoria Dąbrowska zapowiadała, że po sukcesach wśród juniorek chce na dobre wejść do seniorskiego łyżwiarstwa. [Źródło: WP SportoweFakty]",
+          "Polka uzyskała czas 1.15,85. Zwyciężyła Holenderka Angel Daleman (1.14,07). Drugie miejsce zajęła Holenderka Femke Kok (1.15,99). Na 13. pozycji w grupie A uplasowała się Karolina Bosiek. Jej wynik to 1.17,77. 20-letnia Dąbrowska to brązowa medalistka mistrzostw świata juniorów. Rozpoczęła sezon w rewelacyjnym stylu, wygrywając rywalizację na 500 i 1000 metrów podczas seniorskich mistrzostw kraju w Tomaszowie Mazowieckim. [Źródło: Radio PiK]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Depesza źródłowa",
+        "summary": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
+        "url": "https://sport.interia.pl/zimowe/news-alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-s,nId,23572984"
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Wymarzony debiut Polki w Pucharze Świata. Wiktoria Dąbrowska na podium w Pekinie",
+        "url": "https://niezalezna.pl/sport/wymarzony-debiut-polski-w-pucharze-swiata-wiktoria-dabrowska-na-podium-w-pekinie/584094"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Depesza źródłowa",
+        "summary": "20-letnia Polka odpaliła w Pekinie. Jest podium PŚ",
+        "url": "https://sportowefakty.wp.pl/lyzwiarstwo-szybkie/1283988/20-letnia-polka-odpalila-w-pekinie-jest-podium-ps"
+      },
+      {
+        "outlet": "Radio PiK",
+        "angle": "Depesza źródłowa",
+        "summary": "Debiut w PŚ i od razu podium. Panczenistka Wiktoria Dąbrowska wywalczyła trzecie miejsce",
+        "url": "https://www.radiopik.pl/40,143671,debiut-w-ps-i-od-razu-podium-panczenistka-wiktor"
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "Niezależna.pl",
+      "Radio PiK",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska/Energetyka",
+    "seo_url": "/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma-nadzwyczaj",
+    "seo_title": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/03/23/320x240px/pLlxqVSco6x0GGKQPSN9QKMR7DpLUQNqc55akCky.utci.jpg",
+    "published_iso": "2026-11-13T12:56:54+01:00",
+    "display_date": "13.11.2026, 12:56",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Energetyka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Energetyka24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "W obecnej sytuacji Orlen Lietuva ma nadzwyczajne straty, a nie zyski – stwierdził minister energii Miłosz Motyka, odnosząc się do planów litewskiego rządu wprowadzenia podatku od nadmiarowych zysków koncernów paliwowych, wzorowanego niejako na polskim rozwiązaniu. [Źródło: Energetyka24, Bankier.pl, Puls Biznesu]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Energetyka24",
+        "angle": "Depesza źródłowa",
+        "summary": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
+        "url": "https://energetyka24.com/surowce/ropa/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma-nadzwyczajne-straty"
+      },
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Minister energii: Orlen Litwa ma nadzwyczajne straty, a nie nadzwyczajne zyski",
+        "url": "https://www.bankier.pl/wiadomosc/Orlen-Lietuva-ma-nadzwyczajne-straty-a-nie-zyski-minister-Motyka-o-windfall-tax-na-Litwie-9228430.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      },
+      {
+        "outlet": "Puls Biznesu",
+        "angle": "Depesza źródłowa",
+        "summary": "Litwa chce wprowadzić windfall tax. „Orlen Lietuva ma nadzwyczajne straty, a nie zyski”",
+        "url": "https://www.pb.pl/litwa-chce-wprowadzic-windfall-tax-orlen-lietuva-ma-nadzwyczajne-straty-a-nie-zyski-1270402"
+      }
+    ],
+    "sources": [
+      "Bankier.pl",
+      "Energetyka24",
+      "Puls Biznesu"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem",
+    "seo_title": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/10/20/320x240px/2ckkEZL3mZo6X4MLhTyx0gf6w2AW2HhaKHQZHG5T.t7gd.jpg",
+    "published_iso": "2026-11-13T12:56:54+01:00",
+    "display_date": "13.11.2026, 12:56",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Defence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Prezydent USA Donald Trump opublikował post, w którym opisał swoją wizję dalszej przyszłości J.D. Vance’a w swojej administracji. [Źródło: Defence24, Onet Wiadomości]",
+          "Wiceprezydent od teraz ma się skupić wyłącznie na polityce krajowej i zrezygnować z angażowania się w amerykańską politykę zagraniczną. [Źródło: Defence24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "J.D. Vance wskazał wojnę z Iranem jako powód porażki Republikanów w wyborach śródokresowych. Narasta spór na najwyższych szczeblach władzy w USA — jeszcze do niedawna taki rozłam był nie do pomyślenia. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Defence24",
+        "angle": "Depesza źródłowa",
+        "summary": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
+        "url": "https://defence24.pl/polityka-obronna/trump-odsuwa-jv-vancea-w-tle-wojna-i-negocjacje-z-iranem"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Donald Trump odrzuca umowę z Iranem i gani J.D. Vance'a. Narasta rozłam w Białym Domu",
+        "url": "https://wiadomosci.onet.pl/swiat/trump-odrzuca-umowe-z-iranem-i-gani-vancea-rozlam-w-bialym-domu/22ptr5h"
+      }
+    ],
+    "sources": [
+      "Defence24",
+      "Onet Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Energetyka",
+    "seo_url": "/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja-rosyj",
+    "seo_title": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/ZJENIT2LyLl26tn4mwcIbf761ei7uhDx1wXEbRhG.yh4w.png",
+    "published_iso": "2026-11-13T12:56:54+01:00",
+    "display_date": "13.11.2026, 12:56",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Energetyka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Energetyka24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "W nocy z czwartku na piątek ukraińskie drony zaatakowały obwód wołgogradzki w europejskiej części Rosji. [Źródło: Energetyka24]",
+          "Celem ataku miała być Wołgogradzka Rafineria Ropy Naftowej, która należy do koncernu Łukoil. [Źródło: Energetyka24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Największy ukraiński producent oleju słonecznikowego, koncern Kernel, wstrzymał działalność zakładów przetwórczych po rosyjskich atakach, które uszkodziły instalacje produkcyjne i magazyny. W ostatnim tygodniu rosyjskie uderzenia dotknęły również inne przedsiębiorstwa ukraińskiej branży olejarskiej. [Źródło: Kresy.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Energetyka24",
+        "angle": "Depesza źródłowa",
+        "summary": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
+        "url": "https://energetyka24.com/surowce/ropa/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja-rosyjskie-moce"
+      },
+      {
+        "outlet": "Kresy.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Rosyjskie ataki na ukraińskie fabryki oleju. Największy producent wstrzymał działalność",
+        "url": "https://kresy.pl/wydarzenia/rosyjskie-ataki-na-ukrainskie-fabryki-oleju-najwiekszy-producent-wstrzymal-dzialalnosc/"
+      }
+    ],
+    "sources": [
+      "Energetyka24",
+      "Kresy.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek",
     "seo_title": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
@@ -98,7 +377,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska",
     "seo_url": "/Polska/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln",
     "seo_title": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
@@ -169,7 +448,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska",
     "seo_url": "/Polska/rece-precz-od-republiki-atak-na-biuro-posla-ko",
     "seo_title": "„Ręce precz od Republiki”. Atak na biuro posła KO",
@@ -241,7 +520,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska",
     "seo_url": "/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitala",
     "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
@@ -307,7 +586,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckie",
     "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
@@ -395,7 +674,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
     "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
@@ -476,7 +755,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira-blueca",
     "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
@@ -536,7 +815,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w-plat",
     "seo_title": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
@@ -602,7 +881,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026",
     "seo_title": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
@@ -675,7 +954,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska",
     "seo_url": "/Polska/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego-premiera-uk",
     "seo_title": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
@@ -749,7 +1028,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/imigranci-odmladzaja-demografie-hiszpanii-rekordowy-wzrost-liczby-ludnosci",
     "seo_title": "Imigranci „odmładzają” demografię Hiszpanii. Rekordowy wzrost liczby ludności",
@@ -813,7 +1092,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army-zatrzyman",
     "seo_title": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
@@ -880,7 +1159,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w-psl",
     "seo_title": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
@@ -975,7 +1254,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Sport",
     "seo_url": "/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna",
     "seo_title": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
@@ -1056,7 +1335,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto",
     "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
@@ -1132,7 +1411,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska",
     "seo_url": "/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
     "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
@@ -1204,7 +1483,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska",
     "seo_url": "/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy",
     "seo_title": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
@@ -1285,7 +1564,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska",
     "seo_url": "/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka-jednosc",
     "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
@@ -1357,7 +1636,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesad",
     "seo_title": "Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje",
@@ -1432,7 +1711,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska",
     "seo_url": "/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z-budzetu",
     "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
@@ -1496,7 +1775,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz",
     "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
@@ -1555,7 +1834,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad",
     "seo_title": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
@@ -1622,7 +1901,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc",
     "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
@@ -1689,7 +1968,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -1754,7 +2033,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -1819,7 +2098,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -1918,7 +2197,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Swiat",
     "seo_url": "/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -1983,7 +2262,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Swiat",
     "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -2049,7 +2328,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 33,
     "path": "/Swiat",
     "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -2123,7 +2402,7 @@
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 34,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -2195,7 +2474,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 35,
     "path": "/Polska",
     "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -2269,7 +2548,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 36,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
     "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
@@ -2336,7 +2615,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 37,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -2418,7 +2697,7 @@
     "corrections": []
   },
   {
-    "id": 34,
+    "id": 38,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -2497,7 +2776,7 @@
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 39,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -2569,7 +2848,7 @@
     "corrections": []
   },
   {
-    "id": 36,
+    "id": 40,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -2642,7 +2921,7 @@
     "corrections": []
   },
   {
-    "id": 37,
+    "id": 41,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -2725,7 +3004,7 @@
     "corrections": []
   },
   {
-    "id": 38,
+    "id": 42,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -2791,7 +3070,7 @@
     "corrections": []
   },
   {
-    "id": 39,
+    "id": 43,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -2857,7 +3136,7 @@
     "corrections": []
   },
   {
-    "id": 40,
+    "id": 44,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -2916,7 +3195,7 @@
     "corrections": []
   },
   {
-    "id": 41,
+    "id": 45,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -2981,7 +3260,7 @@
     "corrections": []
   },
   {
-    "id": 42,
+    "id": 46,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -3047,7 +3326,7 @@
     "corrections": []
   },
   {
-    "id": 43,
+    "id": 47,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -3120,7 +3399,7 @@
     "corrections": []
   },
   {
-    "id": 44,
+    "id": 48,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -3194,7 +3473,7 @@
     "corrections": []
   },
   {
-    "id": 45,
+    "id": 49,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -3259,7 +3538,7 @@
     "corrections": []
   },
   {
-    "id": 46,
+    "id": 50,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -3323,7 +3602,7 @@
     "corrections": []
   },
   {
-    "id": 47,
+    "id": 51,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -3404,7 +3683,7 @@
     "corrections": []
   },
   {
-    "id": 48,
+    "id": 52,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -3477,7 +3756,7 @@
     "corrections": []
   },
   {
-    "id": 49,
+    "id": 53,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -3554,7 +3833,7 @@
     "corrections": []
   },
   {
-    "id": 50,
+    "id": 54,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -3627,7 +3906,7 @@
     "corrections": []
   },
   {
-    "id": 51,
+    "id": 55,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -3719,7 +3998,7 @@
     "corrections": []
   },
   {
-    "id": 52,
+    "id": 56,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -3799,7 +4078,7 @@
     "corrections": []
   },
   {
-    "id": 53,
+    "id": 57,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -3883,7 +4162,7 @@
     "corrections": []
   },
   {
-    "id": 54,
+    "id": 58,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -3949,7 +4228,7 @@
     "corrections": []
   },
   {
-    "id": 55,
+    "id": 59,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -4000,7 +4279,7 @@
     "corrections": []
   },
   {
-    "id": 56,
+    "id": 60,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -4051,7 +4330,7 @@
     "corrections": []
   },
   {
-    "id": 57,
+    "id": 61,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -4102,7 +4381,7 @@
     "corrections": []
   },
   {
-    "id": 58,
+    "id": 62,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -4153,7 +4432,7 @@
     "corrections": []
   },
   {
-    "id": 59,
+    "id": 63,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
