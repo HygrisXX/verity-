@@ -4,7 +4,7 @@ VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS i At
 - Ograniczenie bazy testowej do maksymalnie 300 artykułów (kolejka krocząca).
 - Zapis do 4 najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu).
 - Pobieranie oficjalnych miniatur ze źródeł (enclosure / media:content / img).
-- Równoległe pobieranie z ponad 40 zweryfikowanych redakcji (ogólnopolskich, gospodarczych, regionalnych, świat, sport).
+- Równoległe pobieranie z 63 zweryfikowanych kanałów (61 redakcji: ogólnopolskie, gospodarcze, regionalne z 16 województw, świat, sport).
 - Aktualizacja articles.json oraz news-sitemap.xml.
 """
 
@@ -52,6 +52,8 @@ LIVE_RSS_FEEDS = [
     {"name": "Onet Wiadomości", "url": "https://wiadomosci.onet.pl/.feed", "path": "/Polska"},
     {"name": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "path": "/Polska"},
     {"name": "Gazeta.pl", "url": "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm", "path": "/Polska"},
+    {"name": "Fakt.pl", "url": "https://www.fakt.pl/wydarzenia.feed", "path": "/Polska"},
+    {"name": "Dziennik.pl", "url": "https://wiadomosci.dziennik.pl/.feed", "path": "/Polska"},
 
     # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
     {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Poznan"},
@@ -127,7 +129,8 @@ OPINION_MARKERS = [
 
 EDITORIAL_URL_SEGMENTS = (
     "/opinie/", "/felietony/", "/komentarze/", "/blogi/",
-    "/horoskop/", "/quiz/", "/lotto/", "/galerie/",
+    "/horoskop/", "/horoskopy/", "/quiz/", "/lotto/", "/galerie/",
+    "/porady/", "/gwiazdy/", "/plotki/",
 )
 
 
@@ -201,6 +204,8 @@ def _parse_feed_xml(xml_raw: bytes):
         text_clean = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", text_clean)
         if "<media:" in text_clean and "xmlns:media=" not in text_clean:
             text_clean = re.sub(r"<rss\b", '<rss xmlns:media="http://search.yahoo.com/mrss/"', text_clean, count=1)
+        if "<content:" in text_clean and "xmlns:content=" not in text_clean:
+            text_clean = re.sub(r"<rss\b", '<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"', text_clean, count=1)
         try:
             return ET.fromstring(text_clean.encode("utf-8"))
         except Exception:
