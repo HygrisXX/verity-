@@ -98,11 +98,127 @@ let articles = [
   {
     "id": 1,
     "path": "/Polska",
+    "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
+    "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/wv/wvfftvvjf2hxysn9ifiakrsqajd7wdm1.jpg",
+    "published_iso": "2026-11-13T01:38:43+01:00",
+    "display_date": "13.11.2026, 01:38",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "6 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Polsat News",
+        "paragraphs": [
+          "Microsoft potwierdził, że awaria usług odnotowana w pierwszej kolejności w regionie Ameryki Północnej rozlała się na cały świat. Chociaż podejmujemy działania mające na celu złagodzenie skutków tej sytuacji, potwierdziliśmy, że problem ten może wpływać na łączność z usługami Microsoft 365 u użytkowników we wszystkich regionach - przekazała korporacja. [Źródło: Polsat News]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Rzeczpospolita",
+        "paragraphs": [
+          "W czwartek doszło do rozległej awarii usług Microsoftu, w tym poczty Outlook. Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. Awaria dotyczy także usług w Polsce. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: RMF24",
+        "paragraphs": [
+          "Problemy z Microsoft 365. Nie działa wiele usług [Źródło: RMF24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: TVN24",
+        "paragraphs": [
+          "Awaria Outlooka dała się we znaki użytkownikom w wielu krajach. Są także problemy z dostępem do usług Microsoft 365, np. Teams czy Copilota - podał serwis Downdetector.com, monitorujący awarie systemów informatycznych. Awarię potwierdził Microsoft, który poinformował o podejmowanych działaniach. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Użytkownicy mogą nie być w stanie połączyć się z wieloma usługami Microsoft 365 — poinformowała w czwartek wieczorem firma. Chodzi m.in. o działanie aplikacji takich jak Microsoft Teams, SharePoint Online czy Microsoft Copilot 365. Firma pracuje nad przywróceniem pełnej funkcjonalności. [Źródło: Onet Wiadomości]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: WP Wiadomości",
+        "paragraphs": [
+          "W czwartek użytkownicy zgłaszali problemy z działaniem Outlooka, Microsoft 365 i Teams. Jak podał serwis Downdetector.com, liczba raportów dotyczących samego Outlooka przekroczyła 97 tys. Microsoft poinformował o działaniach mających przywrócić prawidłowe funkcjonowanie usług. [Źródło: WP Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Depesza źródłowa",
+        "summary": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi/"
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
+        "url": "https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Problemy z Microsoft 365. Nie działa wiele usług",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-problemy-z-microsoft-365-nie-dziala-wiele-uslug,nIdn,1025918"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Wielka awaria Microsoftu. Outlook nie działa",
+        "url": "https://tvn24.pl/biznes/ze-swiata/awaria-microsoft-365-i-outlooka-dotknela-tysiace-uzytkownikow-st9336650?source=rss"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Microsoft 365 z globalną awarią. Trwają prace nad przywróceniem usług dla klientów",
+        "url": "https://wiadomosci.onet.pl/swiat/microsoft-365-z-globalna-awaria-nie-dziala-teams-copilot-i-sharepoint/cypfejj"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Awaria usług Microsoft. Tysiące użytkowników zgłaszają problemy",
+        "url": "https://wiadomosci.wp.pl/awaria-uslug-microsoft-tysiace-uzytkownikow-zglaszaja-problemy-7350346787448832a"
+      }
+    ],
+    "sources": [
+      "Onet Wiadomości",
+      "Polsat News",
+      "RMF24",
+      "Rzeczpospolita",
+      "TVN24",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
     "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/b4/70/prezydent-karol-na-636x421-b470a47c.jpg",
-    "published_iso": "2026-11-13T01:35:54+01:00",
-    "display_date": "13.11.2026, 01:35",
+    "published_iso": "2026-11-13T01:38:43+01:00",
+    "display_date": "13.11.2026, 01:38",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 98,
     "admin_note": "",
@@ -186,103 +302,13 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 2,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail",
-    "seo_title": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
-    "thumbnail_url": "https://i.gremicdn.pl/image/free/2da38a1aca65b05d9e4e6cab2cfbfa4d/?t=crop:4000:1749:nowe:0:310.1724137931,resize:fill:600:300,enlarge:1",
-    "published_iso": "2026-11-13T01:35:54+01:00",
-    "display_date": "13.11.2026, 01:35",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "4 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Swiat"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Rzeczpospolita"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Fakty / RSS"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa: Rzeczpospolita",
-        "paragraphs": [
-          "W czwartek doszło do rozległej awarii usług Microsoftu, w tym poczty Outlook. Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. Awaria dotyczy także usług w Polsce. [Źródło: Rzeczpospolita]"
-        ]
-      },
-      {
-        "heading": "Relacja źródłowa: RMF24",
-        "paragraphs": [
-          "Problemy z Microsoft 365. Nie działa wiele usług [Źródło: RMF24]"
-        ]
-      },
-      {
-        "heading": "Relacja źródłowa: Onet Wiadomości",
-        "paragraphs": [
-          "Użytkownicy mogą nie być w stanie połączyć się z wieloma usługami Microsoft 365 — poinformowała w czwartek wieczorem firma. Chodzi m.in. o działanie aplikacji takich jak Microsoft Teams, SharePoint Online czy Microsoft Copilot 365. Firma pracuje nad przywróceniem pełnej funkcjonalności. [Źródło: Onet Wiadomości]"
-        ]
-      },
-      {
-        "heading": "Relacja źródłowa: WP Wiadomości",
-        "paragraphs": [
-          "W czwartek użytkownicy zgłaszali problemy z działaniem Outlooka, Microsoft 365 i Teams. Jak podał serwis Downdetector.com, liczba raportów dotyczących samego Outlooka przekroczyła 97 tys. Microsoft poinformował o działaniach mających przywrócić prawidłowe funkcjonowanie usług. [Źródło: WP Wiadomości]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Depesza źródłowa",
-        "summary": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
-        "url": "https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail"
-      },
-      {
-        "outlet": "RMF24",
-        "angle": "Depesza źródłowa",
-        "summary": "Problemy z Microsoft 365. Nie działa wiele usług",
-        "url": "https://www.rmf24.pl/fakty/swiat/news-problemy-z-microsoft-365-nie-dziala-wiele-uslug,nIdn,1025918"
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Depesza źródłowa",
-        "summary": "Microsoft 365 z globalną awarią. Trwają prace nad przywróceniem usług dla klientów",
-        "url": "https://wiadomosci.onet.pl/swiat/microsoft-365-z-globalna-awaria-nie-dziala-teams-copilot-i-sharepoint/cypfejj"
-      },
-      {
-        "outlet": "WP Wiadomości",
-        "angle": "Depesza źródłowa",
-        "summary": "Awaria usług Microsoft. Tysiące użytkowników zgłaszają problemy",
-        "url": "https://wiadomosci.wp.pl/awaria-uslug-microsoft-tysiace-uzytkownikow-zglaszaja-problemy-7350346787448832a"
-      }
-    ],
-    "sources": [
-      "Onet Wiadomości",
-      "RMF24",
-      "Rzeczpospolita",
-      "WP Wiadomości"
-    ],
-    "corrections": []
-  },
-  {
     "id": 3,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
     "thumbnail_url": "https://i.iplsc.com/-/000NIXWZN3EU0JMK-C321.webp",
-    "published_iso": "2026-11-13T01:35:54+01:00",
-    "display_date": "13.11.2026, 01:35",
+    "published_iso": "2026-11-13T01:38:43+01:00",
+    "display_date": "13.11.2026, 01:38",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 98,
     "admin_note": "",
@@ -367,12 +393,12 @@ let articles = [
   },
   {
     "id": 4,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
-    "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
-    "thumbnail_url": "https://cdn.defence24.pl/2022/03/22/320x180px/AzhVIhTUTyIVhzXhllVTRoP9wmrpPUR7SOuPZTrL.yz7a.jpg",
-    "published_iso": "2026-11-13T01:35:54+01:00",
-    "display_date": "13.11.2026, 01:35",
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
+    "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
+    "thumbnail_url": "http://galeria.bankier.pl/p/5/6/c695cd28142089-948-568-5-140-1991-1195.jpg",
+    "published_iso": "2026-11-13T01:38:43+01:00",
+    "display_date": "13.11.2026, 01:38",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 93,
     "admin_note": "",
@@ -383,11 +409,11 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Polityka"
+        "val": "/Polska/Gospodarka"
       },
       {
         "label": "Główne źródło",
-        "val": "Defence24"
+        "val": "Bankier.pl"
       },
       {
         "label": "Weryfikacja",
@@ -397,48 +423,48 @@ let articles = [
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Relacja źródłowa: Defence24",
+        "heading": "Relacja źródłowa: Bankier.pl",
         "paragraphs": [
-          "Ukraiński prezydent Wołodymyr Zełenski spotkał się w czwartek w Dublinie z przywódcami 13 państw, które określił jako przyjaciół Ukrainy i jej największych partnerów; wśród uczestników był premier Donald Tusk. Według Zełenskiego rozmowa dotyczyła wsparcia Ukrainy w obliczu nieustających rosyjskich ataków. [Źródło: Defence24]"
+          "W Radzie Najwyższej (parlamencie) Ukrainy utworzono Radę Współpracy z Polską. Jej zadaniem będzie zacieśnianie współpracy parlamentarnej obu państw oraz angażowanie różnych środowisk w rozwijanie przyjaznych stosunków polsko-ukraińskich – poinformował w czwartek ukraiński deputowany Mykoła Kniażycki. [Źródło: Bankier.pl]"
         ]
       },
       {
-        "heading": "Relacja źródłowa: TVN24",
+        "heading": "Relacja źródłowa: Interia Wydarzenia",
         "paragraphs": [
-          "Prezydent Wołodymyr Zełenski poinformował w czwartek, że spotkał się w Dublinie z premierem Polski Donaldem Tuskiem. Rozmawiali między innymi o wsparciu Polski w przygotowaniach do zimy, a także o rozszerzeniu połączeń na potrzeby dostaw paliwa na Ukrainę. [Źródło: TVN24]"
+          "W Radzie Najwyższej Ukrainy utworzono Radę Współpracy z Polską, której zadaniem będzie m.in. angażowanie różnych środowisk w rozwijanie przyjaznych relacji między oboma krajami. - Parlament jest naturalnym miejscem, by dyskusja o stosunkach ukraińsko-polskich trwała (...) - argumentował ukraiński deputowany Mykoła Kniażycki. [Źródło: Interia Wydarzenia]"
         ]
       },
       {
-        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "heading": "Relacja źródłowa: Gazeta.pl",
         "paragraphs": [
-          "Wołodymyr Zełenski spotkał się w Irlandii z wysłannikami Donalda Trumpa: Steve'em Witkoffem i Jaredem Kushnerem. Celem jest wypracowanie porozumienia pokojowego między Rosją a Ukrainą. [Źródło: Onet Wiadomości]"
+          "- Parlament jest naturalnym miejscem, aby dyskusja o stosunkach ukraińsko-polskich trwała, żeby włączyli się do niej zarówno przedstawiciele władz, jak i przedstawiciele społeczeństwa obywatelskiego, intelektualiści oraz ludzie biznesu - powiedział ukraiński deputowany Mykoła Kniażycki. [Źródło: Gazeta.pl]"
         ]
       }
     ],
     "perspectives": [
       {
-        "outlet": "Defence24",
+        "outlet": "Bankier.pl",
         "angle": "Depesza źródłowa",
-        "summary": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
-        "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski"
+        "summary": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
+        "url": "https://www.bankier.pl/wiadomosc/Polska-i-Ukraina-zaciesnia-wspolprace-W-Kijowie-powolano-nowa-rade-9228098.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       },
       {
-        "outlet": "TVN24",
+        "outlet": "Interia Wydarzenia",
         "angle": "Depesza źródłowa",
-        "summary": "Prezydent Ukrainy Wołodymyr Zełenski spotkał się z Donaldem Tuskiem. \"Jak Polska może pomóc\"",
-        "url": "https://tvn24.pl/biznes/ze-swiata/prezydent-ukrainy-wolodymyr-zelenski-spotkal-sie-z-donaldem-tuskiem-jak-polska-moze-pomoc-st9336612?source=rss"
+        "summary": "Ukraina i Polska zacieśnią współpracę? Powołano specjalną radę",
+        "url": "https://wydarzenia.interia.pl/zagranica/news-ukraina-i-polska-zaciesnia-wspolprace-powolano-specjalna-rad,nId,23572814"
       },
       {
-        "outlet": "Onet Wiadomości",
+        "outlet": "Gazeta.pl",
         "angle": "Depesza źródłowa",
-        "summary": "Wołodymyr Zełenski spotkał się z wysłannikami Donalda Trumpa",
-        "url": "https://wiadomosci.onet.pl/swiat/wolodymyr-zelenski-spotkal-sie-z-wyslannikami-donalda-trumpa/pxcv3xf"
+        "summary": "Ukraiński parlament utworzył Radę Współpracy z Polską. \"Sprawa niezwykle ważna dla naszej przyszłości\"",
+        "url": "https://wiadomosci.gazeta.pl/polityka/7,198013,33130164,ukrainski-parlament-utworzyl-rade-wspolpracy-z-polska-sprawa.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       }
     ],
     "sources": [
-      "Defence24",
-      "Onet Wiadomości",
-      "TVN24"
+      "Bankier.pl",
+      "Gazeta.pl",
+      "Interia Wydarzenia"
     ],
     "corrections": []
   },

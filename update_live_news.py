@@ -291,22 +291,50 @@ def fetch_rss_items(max_per_feed: int = 12) -> list:
     return items
 
 
+_PL_SUFFIXES = (
+    "iejszymi", "iejszych", "iejszym", "iejszej", "iejsza", "iejsze",
+    "owskiego", "owskiemu", "owskich", "owskimi", "owskim", "owskiej", "owska", "owski",
+    "skiego", "skiemu", "skich", "skimi", "skim", "skiej", "ska", "ski",
+    "aniami", "aniach", "aniom", "aniem", "ania", "aniu", "anie",
+    "eniami", "eniach", "eniom", "eniem", "enia", "eniu", "enie",
+    "iami", "iach", "iemu", "iego", "imi", "ich", "iej",
+    "ami", "ach", "owi", "omu", "emu", "ego", "iom", "iem", "om", "ow",
+    "ie", "iu", "em", "a", "u", "y", "i", "e", "o",
+)
+
+
 def _norm_pl(text: str) -> str:
     trans = str.maketrans("ąćęłńóśźż", "acelnoszz")
     return (text or "").lower().translate(trans)
 
 
+def _stem_pl(word: str) -> str:
+    if len(word) <= 4:
+        return word
+    for suf in _PL_SUFFIXES:
+        if word.endswith(suf) and (len(word) - len(suf)) >= 4:
+            return word[:-len(suf)]
+    return word
+
+
 def tokenize_title(title: str) -> set:
     words = re.findall(r"[a-z0-9]{4,}", _norm_pl(title))
     stop_words = {
-        "polsce", "polska", "polski", "polskie", "polskich", "polskiego",
+        "polsce", "polska", "polski", "polskie", "polskich", "polskiego", "polsk",
         "nowe", "nowy", "nowa", "nowych", "bedzie", "beda", "jest", "roku",
         "przez", "tylko", "moze", "oraz", "wielu", "ktory", "ktora", "ktore",
         "gdzie", "kiedy", "dlaczego", "wszystko", "maja", "zostal", "zostala",
         "jako", "przed", "ponad", "miedzy", "podczas", "wedlug", "kolejny",
         "kolejne", "kolejna", "wideo", "zdjecia", "sprawdz", "zobacz",
     }
-    return {w for w in words if w not in stop_words}
+    stems = set()
+    for w in words:
+        if w in stop_words:
+            continue
+        s = _stem_pl(w)
+        if s not in stop_words and len(s) >= 4:
+            stems.add(s)
+    return stems
 
 
 def cluster_similar_items(items: list) -> list:
@@ -353,7 +381,8 @@ def cluster_similar_items(items: list) -> list:
 
 def is_already_covered(group: list, existing_articles: list) -> bool:
     candidate_title = group[0]["title"]
-    c_words = tokenize_title(candidate_title)
+    cand_titles_tokens = [tokenize_title(it["title"]) for it in group if it.get("title")]
+    cand_union_tokens = set().union(*cand_titles_tokens) if cand_titles_tokens else set()
     cand_links = {it.get("link", "").strip() for it in group if it.get("link")}
     cand_slug = re.sub(r"[^a-z0-9]+", "-", _norm_pl(candidate_title)).strip("-")[:60]
 
@@ -368,11 +397,18 @@ def is_already_covered(group: list, existing_articles: list) -> bool:
         if cand_slug and e_slug and cand_slug == e_slug:
             return True
 
-        # 3. Sprawdź zbieżność słów kluczowych w tytule
-        e_words = tokenize_title(art.get("seo_title", ""))
-        if c_words and e_words and len(c_words & e_words) >= 2:
-            overlap = len(c_words & e_words) / max(1, min(len(c_words), len(e_words)))
-            if overlap >= 0.45:
+        # 3. Sprawdź zbieżność rdzeni słów kluczowych (tytuł główny + tytuły ze wszystkich perspektyw)
+        ext_titles = [art.get("seo_title", "")] + [p.get("summary", "") for p in art.get("perspectives", [])]
+        for et in ext_titles:
+            e_words = tokenize_title(et)
+            if not e_words:
+                continue
+            for c_words in cand_titles_tokens:
+                if c_words and len(c_words & e_words) >= 2:
+                    overlap = len(c_words & e_words) / max(1, min(len(c_words), len(e_words)))
+                    if overlap >= 0.40:
+                        return True
+            if cand_union_tokens and len(cand_union_tokens & e_words) >= 3:
                 return True
     return False
 

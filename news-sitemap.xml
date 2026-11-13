@@ -2,47 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://verity.pl/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T01:36:49+01:00</news:publication_date>
-      <news:title>Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://verity.pl/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-13T01:36:49+01:00</news:publication_date>
+      <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Globalna awaria Microsoftu. Nie działają aplikacje i usługi</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T01:36:49+01:00</news:publication_date>
-      <news:title>Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T01:36:49+01:00</news:publication_date>
-      <news:title>Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę</news:title>
     </news:news>
   </url>
   <url>
@@ -52,19 +19,8 @@
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-13T01:35:54+01:00</news:publication_date>
+      <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://verity.pl/Swiat/duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T01:35:54+01:00</news:publication_date>
-      <news:title>Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail</news:title>
     </news:news>
   </url>
   <url>
@@ -74,19 +30,19 @@
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-13T01:35:54+01:00</news:publication_date>
+      <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
       <news:title>Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://verity.pl/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski</loc>
+    <loc>https://verity.pl/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-13T01:35:54+01:00</news:publication_date>
-      <news:title>Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski</news:title>
+      <news:publication_date>2026-11-13T01:38:43+01:00</news:publication_date>
+      <news:title>Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę</news:title>
     </news:news>
   </url>
   <url>
