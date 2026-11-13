@@ -1,6 +1,353 @@
 [
   {
     "id": 1,
+    "path": "/Polska",
+    "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
+    "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
+    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/b4/70/prezydent-karol-na-636x421-b470a47c.jpg",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: RMF24",
+        "paragraphs": [
+          "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta [Źródło: RMF24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Niezależna.pl",
+        "paragraphs": [
+          "Prokuratura chce przesłuchać prezydenta Karola Nawrockiego w charakterze świadka w sprawie kawalerki Jerzego Ż. – poinformował Onet. Portal ponownie przywołuje przy tym wypowiedzi Anny Kanigowskiej, dawnej opiekunki seniora. Nie wspomina jednak, że kobieta została prawomocnie skazana za oszustwo na trzy lata pozbawienia wolności i w lipcu trafiła do aresztu śledczego. Jej kryminalną przeszłość, w tym wcześniejsze wyroki za oszustwa i przestępstwa związane z dokumentami, ujawniły Niezalezna.pl i Telewizja Republika. [Źródło: Niezależna.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: TVN24",
+        "paragraphs": [
+          "Gdańska prokuratura zamierza przesłuchać prezydenta Karola Nawrockiego w sprawie przejęcia przez niego mieszkania od Jerzego Ż. Do prezydenckiej kancelarii wpłynęło pismo w tej sprawie. Głowa państwa ma złożyć zeznania w charakterze świadka. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Radio Gdańsk",
+        "paragraphs": [
+          "Prokuratura chce przesłuchać Karola Nawrockiego w sprawie mieszkania Jerzego Ż. Śledczy z Gdańska uznali, że prezydent powinien wystąpić w charakterze świadka. Tymczasem w Warszawie wyznaczono termin pierwszej rozprawy w procesie karnym, który Nawrocki wytoczył dziennikarzom Onetu [Źródło: Radio Gdańsk]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
+        "url": "https://www.rmf24.pl/fakty/polska/news-prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii,nIdn,1025911"
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Prokuratura chce przesłuchać prezydenta. Onet znów cytuje skazaną za oszustwo \"opiekunkę\"",
+        "url": "https://niezalezna.pl/polityka/prokuratura-chce-przesluchac-prezydenta-onet-znow-cytuje-skazana-za-oszustwo-opiekunke/584042"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Sprawa kawalerki Jerzego Ż. Prokuratura chce przesłuchać prezydenta Karola Nawrockiego",
+        "url": "https://tvn24.pl/polska/karol-nawrocki-sprawa-kawalerki-jerzego-z-prokuratura-chce-przesluchac-prezydenta-st9336628?source=rss"
+      },
+      {
+        "outlet": "Radio Gdańsk",
+        "angle": "Depesza źródłowa",
+        "summary": "Gdańska prokuratura chce przesłuchać Karola Nawrockiego",
+        "url": "https://radiogdansk.pl/wiadomosci/trojmiasto/2026/11/12/gdanska-prokuratura-chce-przesluchac-karola-nawrockiego/"
+      }
+    ],
+    "sources": [
+      "Niezależna.pl",
+      "RMF24",
+      "Radio Gdańsk",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail",
+    "seo_title": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/2da38a1aca65b05d9e4e6cab2cfbfa4d/?t=crop:4000:1749:nowe:0:310.1724137931,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Rzeczpospolita",
+        "paragraphs": [
+          "W czwartek doszło do rozległej awarii usług Microsoftu, w tym poczty Outlook. Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. Awaria dotyczy także usług w Polsce. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: RMF24",
+        "paragraphs": [
+          "Problemy z Microsoft 365. Nie działa wiele usług [Źródło: RMF24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Użytkownicy mogą nie być w stanie połączyć się z wieloma usługami Microsoft 365 — poinformowała w czwartek wieczorem firma. Chodzi m.in. o działanie aplikacji takich jak Microsoft Teams, SharePoint Online czy Microsoft Copilot 365. Firma pracuje nad przywróceniem pełnej funkcjonalności. [Źródło: Onet Wiadomości]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: WP Wiadomości",
+        "paragraphs": [
+          "W czwartek użytkownicy zgłaszali problemy z działaniem Outlooka, Microsoft 365 i Teams. Jak podał serwis Downdetector.com, liczba raportów dotyczących samego Outlooka przekroczyła 97 tys. Microsoft poinformował o działaniach mających przywrócić prawidłowe funkcjonowanie usług. [Źródło: WP Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
+        "url": "https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Problemy z Microsoft 365. Nie działa wiele usług",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-problemy-z-microsoft-365-nie-dziala-wiele-uslug,nIdn,1025918"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Microsoft 365 z globalną awarią. Trwają prace nad przywróceniem usług dla klientów",
+        "url": "https://wiadomosci.onet.pl/swiat/microsoft-365-z-globalna-awaria-nie-dziala-teams-copilot-i-sharepoint/cypfejj"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Awaria usług Microsoft. Tysiące użytkowników zgłaszają problemy",
+        "url": "https://wiadomosci.wp.pl/awaria-uslug-microsoft-tysiace-uzytkownikow-zglaszaja-problemy-7350346787448832a"
+      }
+    ],
+    "sources": [
+      "Onet Wiadomości",
+      "RMF24",
+      "Rzeczpospolita",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Sport",
+    "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
+    "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
+    "thumbnail_url": "https://i.iplsc.com/-/000NIXWZN3EU0JMK-C321.webp",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Interia Sport",
+        "paragraphs": [
+          "Linda Noskova już po dwóch spotkaniach WTA Finals była pewna swojego awansu z grupy A, o powrocie do domu mogła myśleć Marta Kostiuk, podopieczna Sandry Zaniewskiej. A niewiadomą było to, która z Amerykanek do niej dołączy: Coco Gauff czy Jessica Pegula. Ta pierwsza zaczęła czwartkową sesję od starcia z Kostiuk, sama wygrana, nawet 2:0, mogła nie wystarczyć. Gauff wygrała seta 6:4, Ukrainka miała kłopot z nadgarstkiem. A później to Amerykanka mierzyła się z bólem pleców, broniła trzech setboli przy stanie 1:5. I... wygrała sześć kolejnych gemów. Kto więc zagra w półfinale? [Źródło: Interia Sport]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Przegląd Sportowy",
+        "paragraphs": [
+          "Nieprawdopodobne sceny w WTA Finals! W drugim secie Coco Gauff była już kompletnie rozbita, a mimo to we wspaniałym stylu odwróciła losy partii i pokonała Martę Kostiuk 6:4, 7:5. To zaś ma poważne konsekwencje, jeśli chodzi o walkę o awans do dalszej fazy turnieju. [Źródło: Przegląd Sportowy]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Sport.pl",
+        "paragraphs": [
+          "Coco Gauff przegrywała aż 1:5 w drugim secie meczu fazy grupowej WTA Finals z Martą Kostiuk. Amerykanka pokazała jednak wielki charakter, odrobiła straty i wygrała 6:4, 7:5. Teraz musi liczyć na porażkę Peguli z Noskovą, by awansować do półfinału imprezy. [Źródło: Sport.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: WP SportoweFakty",
+        "paragraphs": [
+          "Coco Gauff wygrała dwa mecze, ale nie wystąpi w półfinale WTA Finals. To efekt tego, że Jessica Pegula w kluczowym spotkaniu pokonała Lindę Noskovą po trzysetowym boju. Choć przegrała z rodaczką na otwarcie, to zdobyła więcej setów. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Depesza źródłowa",
+        "summary": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
+        "url": "https://sport.interia.pl/tenis/wta-finals/news-lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-pow,nId,23572821"
+      },
+      {
+        "outlet": "Przegląd Sportowy",
+        "angle": "Depesza źródłowa",
+        "summary": "Było już 1:5. Ależ powrót Coco Gauff. I musi czekać w WTA Finals",
+        "url": "https://przegladsportowy.onet.pl/tenis/bylo-juz-15-alez-powrot-coco-gauff-i-moze-swietowac-w-wta-finals/yl9bsws"
+      },
+      {
+        "outlet": "Sport.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Co za mecz w WTA Finals. Gauff przegrywała już 1:5",
+        "url": "https://www.sport.pl/tenis/7,64987,33130275,co-za-mecz-w-wta-finals-gauff-przegrywala-juz-1-5.html"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Depesza źródłowa",
+        "summary": "Istny thriller. Wyrzuciła Gauff z WTA Finals",
+        "url": "https://sportowefakty.wp.pl/tenis/1283919/istny-thriller-wyrzucila-gauff-z-wta-finals"
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "Przegląd Sportowy",
+      "Sport.pl",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
+    "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
+    "thumbnail_url": "https://cdn.defence24.pl/2022/03/22/320x180px/AzhVIhTUTyIVhzXhllVTRoP9wmrpPUR7SOuPZTrL.yz7a.jpg",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 93,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Defence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Defence24",
+        "paragraphs": [
+          "Ukraiński prezydent Wołodymyr Zełenski spotkał się w czwartek w Dublinie z przywódcami 13 państw, które określił jako przyjaciół Ukrainy i jej największych partnerów; wśród uczestników był premier Donald Tusk. Według Zełenskiego rozmowa dotyczyła wsparcia Ukrainy w obliczu nieustających rosyjskich ataków. [Źródło: Defence24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: TVN24",
+        "paragraphs": [
+          "Prezydent Wołodymyr Zełenski poinformował w czwartek, że spotkał się w Dublinie z premierem Polski Donaldem Tuskiem. Rozmawiali między innymi o wsparciu Polski w przygotowaniach do zimy, a także o rozszerzeniu połączeń na potrzeby dostaw paliwa na Ukrainę. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Wołodymyr Zełenski spotkał się w Irlandii z wysłannikami Donalda Trumpa: Steve'em Witkoffem i Jaredem Kushnerem. Celem jest wypracowanie porozumienia pokojowego między Rosją a Ukrainą. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Defence24",
+        "angle": "Depesza źródłowa",
+        "summary": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
+        "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Prezydent Ukrainy Wołodymyr Zełenski spotkał się z Donaldem Tuskiem. \"Jak Polska może pomóc\"",
+        "url": "https://tvn24.pl/biznes/ze-swiata/prezydent-ukrainy-wolodymyr-zelenski-spotkal-sie-z-donaldem-tuskiem-jak-polska-moze-pomoc-st9336612?source=rss"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Wołodymyr Zełenski spotkał się z wysłannikami Donalda Trumpa",
+        "url": "https://wiadomosci.onet.pl/swiat/wolodymyr-zelenski-spotkal-sie-z-wyslannikami-donalda-trumpa/pxcv3xf"
+      }
+    ],
+    "sources": [
+      "Defence24",
+      "Onet Wiadomości",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -51,7 +398,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -102,7 +449,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -153,7 +500,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -204,7 +551,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
@@ -267,7 +614,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/warszawa-liderem-wzrost-w-w-europie-allegro-orlen-i-banki-ci-gn-gpw-w-g-r",
     "seo_title": "Warszawa liderem wzrostów w Europie. Allegro, Orlen i banki ciągną GPW w górę",
@@ -317,7 +664,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/pieni-dze-pa-p-nie-p-jd-na-sp-at-pfizera-jest-decyzja-belgijskiego-s-du",
     "seo_title": "Pieniądze PAŻP nie pójdą na spłatę Pfizera. Jest decyzja belgijskiego sądu",
@@ -367,7 +714,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-s-d-uzna-kontrol-za-niezgodn-z-prawe",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -417,7 +764,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/huti-uderzyli-w-obiekty-aramco-celem-tak-e-strategiczny-ropoci-g",
     "seo_title": "Huti uderzyli w obiekty Aramco. Celem także strategiczny ropociąg",
@@ -467,7 +814,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/wstrz-s-w-nvidii-jensen-huang-odchodzi-po-aferze-szpiegowskiej",
     "seo_title": "Wstrząs w Nvidii. Jensen Huang odchodzi po aferze szpiegowskiej",
@@ -517,7 +864,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/zus-automatycznie-umorzy-nale-no-ci-sprzed-1999-r-oto-skutki",
     "seo_title": "ZUS automatycznie umorzy należności sprzed 1999 r. Oto skutki",
@@ -567,7 +914,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/reklamy-w-republice-brzoska-odpowiada-dziennikarzowi-dezinformacja-dla-clic",
     "seo_title": "Reklamy w Republice. Brzoska odpowiada dziennikarzowi: dezinformacja dla clickbaitu",
@@ -617,7 +964,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/sp-ka-mentzen-ze-strat-przychody-spad-y",
     "seo_title": "Spółka Mentzen ze stratą. Przychody spadły",
@@ -667,7 +1014,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burza-wok-republiki-co-z-reklamami-firmy-t-umacz",
     "seo_title": "Burza wokół Republiki. Co z reklamami? Firmy tłumaczą",
@@ -717,7 +1064,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/ile-kosztuje-dolar-kurs-dolara-do-z-otego-pln-usd-12-11-2026",
     "seo_title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 12.11.2026",
@@ -767,7 +1114,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/elastyczno-czyli-jak-kupowa-gaz-i-na-tym-zyska",
     "seo_title": "Elastyczność, czyli jak kupować gaz i na tym zyskać",

@@ -98,6 +98,557 @@ let articles = [
   {
     "id": 1,
     "path": "/Polska",
+    "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
+    "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
+    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/b4/70/prezydent-karol-na-636x421-b470a47c.jpg",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: RMF24",
+        "paragraphs": [
+          "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta [Źródło: RMF24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Niezależna.pl",
+        "paragraphs": [
+          "Prokuratura chce przesłuchać prezydenta Karola Nawrockiego w charakterze świadka w sprawie kawalerki Jerzego Ż. – poinformował Onet. Portal ponownie przywołuje przy tym wypowiedzi Anny Kanigowskiej, dawnej opiekunki seniora. Nie wspomina jednak, że kobieta została prawomocnie skazana za oszustwo na trzy lata pozbawienia wolności i w lipcu trafiła do aresztu śledczego. Jej kryminalną przeszłość, w tym wcześniejsze wyroki za oszustwa i przestępstwa związane z dokumentami, ujawniły Niezalezna.pl i Telewizja Republika. [Źródło: Niezależna.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: TVN24",
+        "paragraphs": [
+          "Gdańska prokuratura zamierza przesłuchać prezydenta Karola Nawrockiego w sprawie przejęcia przez niego mieszkania od Jerzego Ż. Do prezydenckiej kancelarii wpłynęło pismo w tej sprawie. Głowa państwa ma złożyć zeznania w charakterze świadka. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Radio Gdańsk",
+        "paragraphs": [
+          "Prokuratura chce przesłuchać Karola Nawrockiego w sprawie mieszkania Jerzego Ż. Śledczy z Gdańska uznali, że prezydent powinien wystąpić w charakterze świadka. Tymczasem w Warszawie wyznaczono termin pierwszej rozprawy w procesie karnym, który Nawrocki wytoczył dziennikarzom Onetu [Źródło: Radio Gdańsk]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
+        "url": "https://www.rmf24.pl/fakty/polska/news-prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii,nIdn,1025911"
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Prokuratura chce przesłuchać prezydenta. Onet znów cytuje skazaną za oszustwo \"opiekunkę\"",
+        "url": "https://niezalezna.pl/polityka/prokuratura-chce-przesluchac-prezydenta-onet-znow-cytuje-skazana-za-oszustwo-opiekunke/584042"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Sprawa kawalerki Jerzego Ż. Prokuratura chce przesłuchać prezydenta Karola Nawrockiego",
+        "url": "https://tvn24.pl/polska/karol-nawrocki-sprawa-kawalerki-jerzego-z-prokuratura-chce-przesluchac-prezydenta-st9336628?source=rss"
+      },
+      {
+        "outlet": "Radio Gdańsk",
+        "angle": "Depesza źródłowa",
+        "summary": "Gdańska prokuratura chce przesłuchać Karola Nawrockiego",
+        "url": "https://radiogdansk.pl/wiadomosci/trojmiasto/2026/11/12/gdanska-prokuratura-chce-przesluchac-karola-nawrockiego/"
+      }
+    ],
+    "sources": [
+      "Niezależna.pl",
+      "RMF24",
+      "Radio Gdańsk",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail",
+    "seo_title": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/2da38a1aca65b05d9e4e6cab2cfbfa4d/?t=crop:4000:1749:nowe:0:310.1724137931,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Rzeczpospolita",
+        "paragraphs": [
+          "W czwartek doszło do rozległej awarii usług Microsoftu, w tym poczty Outlook. Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. Awaria dotyczy także usług w Polsce. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: RMF24",
+        "paragraphs": [
+          "Problemy z Microsoft 365. Nie działa wiele usług [Źródło: RMF24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Użytkownicy mogą nie być w stanie połączyć się z wieloma usługami Microsoft 365 — poinformowała w czwartek wieczorem firma. Chodzi m.in. o działanie aplikacji takich jak Microsoft Teams, SharePoint Online czy Microsoft Copilot 365. Firma pracuje nad przywróceniem pełnej funkcjonalności. [Źródło: Onet Wiadomości]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: WP Wiadomości",
+        "paragraphs": [
+          "W czwartek użytkownicy zgłaszali problemy z działaniem Outlooka, Microsoft 365 i Teams. Jak podał serwis Downdetector.com, liczba raportów dotyczących samego Outlooka przekroczyła 97 tys. Microsoft poinformował o działaniach mających przywrócić prawidłowe funkcjonowanie usług. [Źródło: WP Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail",
+        "url": "https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Problemy z Microsoft 365. Nie działa wiele usług",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-problemy-z-microsoft-365-nie-dziala-wiele-uslug,nIdn,1025918"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Microsoft 365 z globalną awarią. Trwają prace nad przywróceniem usług dla klientów",
+        "url": "https://wiadomosci.onet.pl/swiat/microsoft-365-z-globalna-awaria-nie-dziala-teams-copilot-i-sharepoint/cypfejj"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Awaria usług Microsoft. Tysiące użytkowników zgłaszają problemy",
+        "url": "https://wiadomosci.wp.pl/awaria-uslug-microsoft-tysiace-uzytkownikow-zglaszaja-problemy-7350346787448832a"
+      }
+    ],
+    "sources": [
+      "Onet Wiadomości",
+      "RMF24",
+      "Rzeczpospolita",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Sport",
+    "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
+    "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
+    "thumbnail_url": "https://i.iplsc.com/-/000NIXWZN3EU0JMK-C321.webp",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Interia Sport",
+        "paragraphs": [
+          "Linda Noskova już po dwóch spotkaniach WTA Finals była pewna swojego awansu z grupy A, o powrocie do domu mogła myśleć Marta Kostiuk, podopieczna Sandry Zaniewskiej. A niewiadomą było to, która z Amerykanek do niej dołączy: Coco Gauff czy Jessica Pegula. Ta pierwsza zaczęła czwartkową sesję od starcia z Kostiuk, sama wygrana, nawet 2:0, mogła nie wystarczyć. Gauff wygrała seta 6:4, Ukrainka miała kłopot z nadgarstkiem. A później to Amerykanka mierzyła się z bólem pleców, broniła trzech setboli przy stanie 1:5. I... wygrała sześć kolejnych gemów. Kto więc zagra w półfinale? [Źródło: Interia Sport]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Przegląd Sportowy",
+        "paragraphs": [
+          "Nieprawdopodobne sceny w WTA Finals! W drugim secie Coco Gauff była już kompletnie rozbita, a mimo to we wspaniałym stylu odwróciła losy partii i pokonała Martę Kostiuk 6:4, 7:5. To zaś ma poważne konsekwencje, jeśli chodzi o walkę o awans do dalszej fazy turnieju. [Źródło: Przegląd Sportowy]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Sport.pl",
+        "paragraphs": [
+          "Coco Gauff przegrywała aż 1:5 w drugim secie meczu fazy grupowej WTA Finals z Martą Kostiuk. Amerykanka pokazała jednak wielki charakter, odrobiła straty i wygrała 6:4, 7:5. Teraz musi liczyć na porażkę Peguli z Noskovą, by awansować do półfinału imprezy. [Źródło: Sport.pl]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: WP SportoweFakty",
+        "paragraphs": [
+          "Coco Gauff wygrała dwa mecze, ale nie wystąpi w półfinale WTA Finals. To efekt tego, że Jessica Pegula w kluczowym spotkaniu pokonała Lindę Noskovą po trzysetowym boju. Choć przegrała z rodaczką na otwarcie, to zdobyła więcej setów. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Depesza źródłowa",
+        "summary": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
+        "url": "https://sport.interia.pl/tenis/wta-finals/news-lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-pow,nId,23572821"
+      },
+      {
+        "outlet": "Przegląd Sportowy",
+        "angle": "Depesza źródłowa",
+        "summary": "Było już 1:5. Ależ powrót Coco Gauff. I musi czekać w WTA Finals",
+        "url": "https://przegladsportowy.onet.pl/tenis/bylo-juz-15-alez-powrot-coco-gauff-i-moze-swietowac-w-wta-finals/yl9bsws"
+      },
+      {
+        "outlet": "Sport.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Co za mecz w WTA Finals. Gauff przegrywała już 1:5",
+        "url": "https://www.sport.pl/tenis/7,64987,33130275,co-za-mecz-w-wta-finals-gauff-przegrywala-juz-1-5.html"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Depesza źródłowa",
+        "summary": "Istny thriller. Wyrzuciła Gauff z WTA Finals",
+        "url": "https://sportowefakty.wp.pl/tenis/1283919/istny-thriller-wyrzucila-gauff-z-wta-finals"
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "Przegląd Sportowy",
+      "Sport.pl",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
+    "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
+    "thumbnail_url": "https://cdn.defence24.pl/2022/03/22/320x180px/AzhVIhTUTyIVhzXhllVTRoP9wmrpPUR7SOuPZTrL.yz7a.jpg",
+    "published_iso": "2026-11-13T01:35:54+01:00",
+    "display_date": "13.11.2026, 01:35",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 93,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Defence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Defence24",
+        "paragraphs": [
+          "Ukraiński prezydent Wołodymyr Zełenski spotkał się w czwartek w Dublinie z przywódcami 13 państw, które określił jako przyjaciół Ukrainy i jej największych partnerów; wśród uczestników był premier Donald Tusk. Według Zełenskiego rozmowa dotyczyła wsparcia Ukrainy w obliczu nieustających rosyjskich ataków. [Źródło: Defence24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: TVN24",
+        "paragraphs": [
+          "Prezydent Wołodymyr Zełenski poinformował w czwartek, że spotkał się w Dublinie z premierem Polski Donaldem Tuskiem. Rozmawiali między innymi o wsparciu Polski w przygotowaniach do zimy, a także o rozszerzeniu połączeń na potrzeby dostaw paliwa na Ukrainę. [Źródło: TVN24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Wołodymyr Zełenski spotkał się w Irlandii z wysłannikami Donalda Trumpa: Steve'em Witkoffem i Jaredem Kushnerem. Celem jest wypracowanie porozumienia pokojowego między Rosją a Ukrainą. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Defence24",
+        "angle": "Depesza źródłowa",
+        "summary": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
+        "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Prezydent Ukrainy Wołodymyr Zełenski spotkał się z Donaldem Tuskiem. \"Jak Polska może pomóc\"",
+        "url": "https://tvn24.pl/biznes/ze-swiata/prezydent-ukrainy-wolodymyr-zelenski-spotkal-sie-z-donaldem-tuskiem-jak-polska-moze-pomoc-st9336612?source=rss"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Wołodymyr Zełenski spotkał się z wysłannikami Donalda Trumpa",
+        "url": "https://wiadomosci.onet.pl/swiat/wolodymyr-zelenski-spotkal-sie-z-wyslannikami-donalda-trumpa/pxcv3xf"
+      }
+    ],
+    "sources": [
+      "Defence24",
+      "Onet Wiadomości",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
+    "path": "/Polska/Energetyka",
+    "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
+    "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
+    "thumbnail_url": "https://wysokienapiecie.pl/wp-content/uploads/2018/12/polityk_rynek.x63527.jpg",
+    "published_iso": "2026-11-13T01:06:33+01:00",
+    "display_date": "13.11.2026, 01:06",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 81,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Energetyka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WysokieNapiecie.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: WysokieNapiecie.pl",
+        "paragraphs": [
+          "Dwa lata potrzebowała prokuratura do postawienia 6 listopada 2026 r. zarzutów 25 osobom odpowiedzialnym za nieszczęsną budowę elektrowni węglowej w Ostrołęce. Przypomnijmy garść faktów. Pojawia się i znika Historia Ostrołęki C rozpoczęła się jeszcze za rządów pierwszej koalicji PO-PSL. Energa planowała budowę nowego bloku węglowego o mocy 1000 MW, który miał zastąpić część starzejących się elektrowni. W 2009 r. powstała spółka celowa, a w 2011 r. ogłoszono przetarg na wykonawcę inwestycji. Jednak już we wrześniu 2012 r. zarząd Energi zdecydował o zamrożeniu projektu. Powodem były trudności z pozyskaniem finansowania, pogorszenie warunków rynkowych i wątpliwości co do opłacalności inwestycji. Do 2015 r. budowy nie wznowiono, choć spółka nadal poszukiwała potencjalnego inwestora. Sytuacja zmieniła się po dojściu PiS do władzy. Budowa elektrowni stała się jednym z priorytetów ministra energii Krzysztofa Tchórzewskiego, który podkreślał jej znaczenie dla bezpieczeństwa energetycznego i utrzymania zapotrzebowania na polski węgiel. W maju 2016 r. zarząd Energi uchylił decyzję o wstrzymaniu inwestycji. W grudniu tego samego roku Energa zawarła umowę o wspólnej realizacji projektu z Eneą, która następnie objęła połowę udziałów w spółce Elektrownia Ostrołęka. W kwietniu 2018 r. wybrano generalnego wykonawcę – konsorcjum GE Power i Alstom, które zaoferowało budowę bloku za nieco ponad 6 mld zł brutto. Kontrakt podpisano 12 lipca 2018 r. W październiku, na kilka dni przed wyborami samorządowymi, zorganizowano uroczystość rozpoczęcia inwestycji. Kluczowe decyzje zapadły jednak dopiero w grudniu 2018 r . Elektrownia Ostrołęka uzyskała kontrakt na rynku mocy, a 28 grudnia podjęto decyzję o wydaniu generalnemu wykonawcy polecenia rozpoczęcia prac (NTP). Nastąpiło to mimo braku zapewnionego finansowania całej inwestycji. Energa i Enea deklarowały zaangażowanie po około miliard złotych, ale nie udało się doprowadzić do zamknięcia finansowania bankowego ani pozyskać wszystkich planowanych inwestorów. W 2019 r. trwały kolejne próby znalezienia pieniędzy. Rozważano między innymi udział PGE. Minister Tchórzewski naciskał na kontynuowanie projektu. W ujawnionym przez Onet w 2022 r. &nbsp;piśmie z 26 kwietnia 2019 r. do organów Energi i Enei zarzucał zarządom niechętny stosunek do inwestycji i sygnalizował, że jako przedstawiciel akcjonariusza będzie rozliczał ich działania. Cztery dni później obie spółki zawarły kolejne porozumienie dotyczące finansowania budowy. Jednak cały czas nie mogły zdobyć finansowania – banki nie chciały dać kredytów na elektrownię, w której rentowność nie wierzyły. Pomimo to zapadła decyzja o rozpoczęciu budowy. Po wyborach w 2019 zmieniła się konfiguracja rządowa – Tchórzewski stracił tekę ministra energii, a stery nad energetyką przejął Jacek Sasin. &nbsp;&nbsp;Energa i Enea zawiesiły finansowanie inwestycji, wskazując na zmianę warunków rynkowych i regulacyjnych. W czerwcu podjęto decyzję o odejściu od projektu węglowego na rzecz elektrowni gazowej. Wkrótce Enea wycofała się z dalszego udziału w przedsięwzięciu, a główną rolę przejął Orlen kierowany przez Daniela Obajtka, który wcześniej kupił Energę. W marcu 2021 r. rozpoczęła się rozbiórka części konstrukcji niedokończonego bloku węglowego. Najwyższa Izba Kontroli w 2020 i 2021 r. stwierdziła liczne nieprawidłowości, w tym podejmowanie decyzji bez zapewnienia finansowania oraz nierzetelne przedstawianie organom spółek informacji dotyczących sytuacji projektu. Według NIK działania i zaniechania kontrolowanych podmiotów doprowadziły do bezpowrotnej utraty ponad 1,3 mld zł. Łącznie projekt niedokończonego bloku węglowego pochłonął ponad 1,5 mld zł. Jak czytać intencje ministra Mechanizm podejmowania decyzji jest mniej więcej znany. Minister energii Krzysztof Tchórzewski chciał tej inwestycji, wierzył, że jest potrzebna. Na pewno rolę odgrywał też fakt, że Ostrołęka to jego okręg wyborczy, a budowa oznaczała kilka lat boomu inwestycyjnego w regionie. Argumenty o nierentowności nie przekonały ministra. Ponieważ sama Energa nie była w stanie udźwignąć budowy, doproszono jeszcze poznańską Eneę. Protokół przesłuchania ministra przez NIK nie został opublikowany. Z dostępnych fragmentów wiadomo, że powiedział kontrolerom, że ministerstwu zależało na tym, aby dać zbyt na polski węgiel, a jednocześnie zapewnić bezpieczeństwo energetyczne, a uzyskanie finansowania na tę inwestycję nie było problemem. Ponadto zeznał, że z punktu widzenia państwa zysk nie był najważniejszy. Chodziło o to, żeby projekty realizowane z punktu widzenia bezpieczeństwa państwa zamykały się na poziomie rentowności powyżej 0%. Sęk w tym, że już wtedy było wiadomo, że ta inwestycja może nie osiągnąć „poziomu powyżej 0%”. Czytaj więcej: Nowa Ostrołęka – elektrownia, która się słupkom nie kłania Zarządy zwlekają i marudzą Kolejni prezesów Energi zmieniano jak rękawiczki, tylko w latach prześwietlonych przez NIK czyli 2018 -2019 było ich aż trójka: Barbara Klimiuk, Grzegorz Ksepko i Jacek Goliński. W Enei prezes był jeden, Mirosław Kowalik, doświadczony menedżer, przed objęciem sterów Enei długoletni szef polskiej spółki Alstomu. Gdyby ci ludzie mieli swobodę podejmowania decyzji, zapewne nigdy nie wpadliby na pomysł realizacji takiego projektu. Każdy menedżer może się pomylić, ludzie decydujący o miliardowych inwestycjach nie mają szklanej kuli. Ale trzeba odróżnić „uczciwą” pomyłkę, która wynika z błędnej oceny, od sytuacji w której ktoś wie, że popełnia błąd, ale nie umie postąpić inaczej, bo boi się polityków. Dziś Mirosław Kowalik jest szefem polskiej spółki Westinghouse, czyli amerykańskiej firmy, która ma wyprodukować reaktor dla polskiej elektrowni. Dlaczego uznał, że lepiej zostać w Enei i mieć plamę na menedżerskiej reputacji niż honorowo podać się do dymisji? Wbicie symbolicznej pierwszej łopaty pod budowę Ostrołęki w 2018 r. Wszyscy obecni dumnie prezentują swoje narzędzia z pamiątkowym grawerem, tylko prezes Enei Mirosław Kowalik trzyma łopatę odwrotnie. Przypadkowo, podświadomie czy intencjonalnie - tego pewnie sam już nie pamięta Polską Grupę Energetyczną również próbowano ubrać w tę inwestycję, ale skutecznie się wykręciła. Być może wynikało to z mocniejszej pozycji politycznej ówczesnego szefa spółki Henryka Baranowskiego. &nbsp; Jeśli dojdzie do procesu sądowego, to być może poznamy kulisy podejmowania decyzji i mechanizmy nacisku. Sam Krzysztof Tchórzewski powiedział kontrolerom NIK, że nie kazał budować elektrowni, ale \" wola budowy była sygnalizowana na zgromadzeniach akcjonariuszy\". W 2022 r. Onet ujawnił list Tchórzewskiego z 2019 r. do zarządów Enei i Energi, w którym ostrzega iż „ zauważa niechętny stosunek obu zarządów do tej inwestycji i jako akcjonariusz większościowy bacznie obserwuje działania zarządów i rozliczenie tego zadania\". Rzeczywiście można odnieść wrażenie, że zarządy – zwłaszcza Enei - robiły wszystko żeby przeciągać moment podjęcia decyzji. Zamawiano dodatkowe analizy, wymyślano piętrowe konstrukcje inżynierii finansowej, które jednak nie chciały się złożyć bo banki nie wierzyły w optymistyczne prognozy. W 2019 r. przyszła jednak chwila, w której, jak to pięknie napisał Andrzej Sapkowski, „ trzeba albo srać, albo oswobodzić wychodek ”. Podjęto więc decyzję o budowie Ostrołęki bez zapewnionego finansowania. Finał znamy. Ostrołęka to czubek góry lodowej Takich inwestycji było w energetyce III RP dużo więcej. W latach 2016-2018 PGE, Energa, Enea i PGNiG zostały zmuszone do wsadzenia (trudno tu mówić o zainwestowaniu) 2,3 mld zł w akcje Polskiej Grupy Górniczej. Akcje te po kilku latach skarb państwa kupił za złotówkę. Odpowiedzialności nikt nie poniósł, choć zarządy miały świadomość, że kupują spółkę bez wartości. W 2015 r. rząd Ewy Kopacz z PO zmusił giełdowy Tauron, aby kupił za ponad 130 mln zł nierentowną kopalnię Brzeszcze, do której potem dołożył jeszcze 450 mln zł. Cały ówczesny zarząd Taurona nie chciał wziąć odpowiedzialności za tę decyzję, odwołano go więc i mianowano posłusznych. Skarb państwa po kilku latach odkupił od Taurona tę i inne kopalnie za złotówkę. Krzysztof Kilian, prezes zarządu PGE w 2013 r. nie chciał budować nowych bloków węglowych w elektrowni Opole, bo uważał, że będą to źle wydane pieniądze. Kilian był dawnym kolegą ówczesnego i dzisiejszego premiera Donalda Tuska, ale tu mu nie pomogło. Został odwołany, a nowy zarząd przystąpił do budowy Opola. Szefowie Enei i Energi nie znaleźli w sobie siły, aby powiedzieć ministrowi „nie”. Prezesi z zarzutami, mechanizmy zostały Sprawa Ostrołęki była zbyt głośna, aby zamieść ją pod dywan, zwłaszcza, że doniesienie do prokuratury złożył NIK. Oskarżeni spędzą teraz wiele lat włócząc się po sądach, bo polski wymiar sprawiedliwości nie słynie z szybkości. Wyrok trudno przewidzieć. Ale na ławie oskarżonych powinien przede wszystkim znaleźć się polski system nadzoru właścicielskiego, który bardziej przypomina klientelistyczne układy Rzeczypospolitej czasów Radziwiłłów i Potockich niż nowoczesny nadzór korporacyjny. Każdy szanujący się polski polityk uważa wpływy personalne w spółkach skarbu państwa za ważny element budowania swojej pozycji. Nie chodzi tylko o wymianę kadr po wyborach, choć to też jest beznadziejne. Nawet w łonie jednej partii instalowanie \"swoich\" i pozbywanie się tych z konkurencyjnej frakcji to chleb powszedni. Zakulisowe intrygi, donosy, celowo roznoszone plotki - wszystko to sprawia, że menedżerowie często więcej czasu spędzają na pilnowaniu stołka niż na realnym zarządzaniu. Opinia publiczna może tylko czasem obserwować ten spektakl. Kilka lat temu związkowcy z „Solidarności” Jastrzębskiej Spółki Węglowej urządzili „kocią muzykę” pod domem posłanki Izabeli Kloc z PiS, żądając aby przestała nasyłać swoich ludzi na tłuste posady w bogatej wtedy jeszcze spółce. A przecież takich posłów i posłanek jest bardzo wiele… Prawo sobie, politycy sobie Menedżerowie największych państwowych spółek bywają różni, bardziej lub mniej fachowi. Ale łączy ich jedno – wszyscy są uwikłani w układ polityczny, który ich mianował. To odróżnia polskie spółki państwowe od skandynawskich czy nawet włoskich, w których szefowie trwają wiele kadencji i mogą w spokoju pracować. W Anglii Henryka VIII funkcjonowało powiedzonko „niełaska władcy oznacza śmierć”. Dziś rządzący są milsi, menedżerowie nie chcący wykonywać poleceń płacą tylko dymisją. Czytaj też: Czy spółki skarbu państwa mogą być zbawione od polityków? Swoje credo dotyczące relacji polityków z prezesami państwowych spółek energetycznych wygłosił w zeszłym roku premier Donald Tusk. &nbsp; \" Pierwszym zadaniem państwowego menedżera, nawet jeśli stoi na czele giełdowej spółki, np. w przypadku spółki energetycznej jest zapewnianie bezpieczeństwa energetycznego państwu polskiemu, zapewnienie możliwie taniej, powszechnej energii polskim rodzinom, gospodarstwom domowym i przedsiębiorcom, a niekoniecznie maksymalizacja zysków spółki Skarbu Państwa. Gdyby to tylko maksymalizacja zysku Skarbu Państwa miała sens, to właściwie po co państwo w takiej spółce \". Czytaj też: Po co spółkom energetycznym potrzebna jest giełda? Zapewne obrońcy oskarżonych w procesie o Ostrołękę C nie omieszkają wykorzystać tej wypowiedzi obecnego premiera. Przecież Krzysztof Tchórzewski też uzasadniał budowę tej elektrowni „bezpieczeństwem energetycznym”. Tymczasem żaden przepis prawa – ani kodeks spółek handlowych ani ustawa o zarządzaniu mieniem państwowym – nie daje politykom prawa do wyznaczania jakiegoś dopuszczalnego poziomu „maksymalizacji zysków”, zwłaszcza w spółkach giełdowych, w których skarb państwa jest tylko jednym z akcjonariuszy. Kilka lat temu do statutu ówczesnego PGNiG (dziś Orlenu) wprowadzono zapis o „ inwestycjach mogących trwale lub przejściowo pogorszyć efektywność ekonomiczną działalności Spółki, ale koniecznych do realizacji zadania dla zapewnienia bezpieczeństwa energetycznego” . Żadna ustawa nie rozstrzyga przy tym jakie to mają być inwestycje, więc można sobie spokojnie wyobrazić, że jutro jakiś minister każe wybudować rurę bądź linię energetyczną na swoją działkę „pośrodku niczego”, bo oczywiście jest to niezbędne dla bezpieczeństwa energetycznego. Jeśli prezes spółki będzie miał odwagę, to odmówi. A jeśli nie? Wydaje się, że finanse spółek giełdowych powinny mieć lepsze zabezpieczenie niż obecność przysłowiowych męskich organów płciowych u członków zarządów. Skoro politycy chcą decydować, to niech decydują. Zgodnie z prawem Uregulowanie takich spraw jest stosunkowo proste. Jeśli państwo tj. reprezentujący je politycy oczekują od jakiejś spółki niezbędnych dla państwa inwestycji, a zarząd spółki uważa, że inwestycje te przyniosą jej straty, to politycy powinni wskazać źródło ewentualnego pokrycia tych strat. Może to być budżet państwa, może być jakaś państwowa instytucja finansowa – BGK, NFOŚiGW, czy PFR. Jest to banalne rozwiązanie, które można wpisać do ustawy o zarządzaniu mieniem państwowym. Decyzję powinni podejmować politycy bo to im - a nie menedżerom - na niej zależy. W 2021 r. szef Polskiego Funduszu Rozwoju Paweł Borys uznał, że nie weźmie odpowiedzialności za miliardową pożyczkę dla plajtującej Polskiej Grupy Górniczej, bo spółka nigdy jej nie zwróci i zażądał uchwały Rady Ministrów w tej sprawie. Rząd uchwałę przyjął, PFR pieniądze wypłacił, PGG oczywiście ich nie oddała i nie odda, ale odpowiedzialność wzięli politycy. Nota bene nikt się ich nie czepiał. To uczciwsze niż zakulisowe naciski i oczekiwania, jak w Ostrołęce. &nbsp; Przydałoby się też powołanie specjalnej prokuratury przy NIK (oraz Komisji Nadzoru Finansowego), aby prokuratorzy nie dublowali działań NIK, tak jak to było w przypadku Ostrołęki. Problem w tym, że nikt – ani politycy, ani mianowani przez nich menedżerowie – nie jest zainteresowany w likwidacji układu, w którym politycy mianują menedżerów i &nbsp;w razie potrzeby ich bronią przed innymi politykami, a menedżerowie &nbsp;odwdzięczają się przysługami i posłuszeństwem. A że czasem to posłuszeństwo prowadzi na ławę oskarżonych… Cóż, ryzyko zawodowe. [Źródło: WysokieNapiecie.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WysokieNapiecie.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
+        "url": "https://wysokienapiecie.pl/122723-sprawa-elektrowni-ostroleka-to-symbol-chorych-ukladow-w-panstwowych-firmach/"
+      }
+    ],
+    "sources": [
+      "WysokieNapiecie.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 6,
+    "path": "/Polska/Energetyka",
+    "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
+    "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
+    "thumbnail_url": "https://wysokienapiecie.pl/wp-content/uploads/2026/11/2025-11-06-PS-Ogolne-srodowiskowe-002-scaled.x63527.jpg",
+    "published_iso": "2026-11-13T01:06:33+01:00",
+    "display_date": "13.11.2026, 01:06",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 81,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Energetyka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WysokieNapiecie.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: WysokieNapiecie.pl",
+        "paragraphs": [
+          "Rosnące zapotrzebowanie na energię elektryczną, presja na ograniczanie emisji gazów cieplarnianych oraz potrzeba zwiększania konkurencyjności przemysłu sprawiają, że własne źródła energii odnawialnej stają się coraz ważniejszym elementem strategii przedsiębiorstw. W odpowiedzi na te potrzeby, Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej 2 listopada 2026 r. rozpoczął już po raz trzeci nabór wniosków w ramach Programu Priorytetowego „ Przemysł energochłonny – OZE ”, którego celem jest zmniejszenie emisyjności energochłonnych branż polskiego przemysłu poprzez zwiększenie wytwarzania energii elektrycznej z odnawialnych źródeł energii. Nabór dotyczy wyłącznie wytwarzania energii elektrycznej w instalacjach odnawialnego źródła energii, a zatem do dofinansowania nie kwalifikują się instalacje wytwarzające energię elektryczną i ciepło w skojarzeniu, nawet jeśli byłyby oparte o OZE. Nabór skierowany jest dla tych przedsiębiorców, którzy chcą budować lub rozbudować własną infrastrukturę energetyczną, ograniczać zależność od zewnętrznych dostaw energii, a jednocześnie mieć wpływ na zmniejszenie oddziaływania swojej działalności na środowisko. Kto może ubiegać się o wsparcie? Wnioski o wsparcie mogą składać wszyscy przedsiębiorcy, posiadający tytuł prawny do instalacji objętej systemem handlu uprawnieniami do emisji gazów cieplarnianych, czyli systemem EU ETS . Wymagany tytuł prawny może wynikać z prawa własności, użytkowania wieczystego lub trwałego zarządu. Należy pamiętać, że Wnioskodawcą nie może być podmiot, który znajduje się w likwidacji lub w postępowaniu upadłościowym. W praktyce konkurs skierowany jest przede wszystkim do przedsiębiorstw działających w branżach energochłonnych, takich jak hutnictwo stali, przemysł cementowy, chemiczny i koksowniczy, produkcja papieru, aluminium oraz biopaliw. Obejmuje zatem podmioty, których procesy produkcyjne wiążą się ze znacznym zużyciem energii. Jakie przedsięwzięcia będą wspierane? Wsparcie obejmuje inwestycje dotyczące budowy lub przebudowy jednostek wytwórczych energii elektrycznej z odnawialnych źródeł energii wraz z magazynem energii, bądź podłączeniem ich do sieci zakładowej i/lub dystrybucyjnej/przesyłowej. Warunkiem udzielenia wsparcia na magazyn energii jest zintegrowanie go ze źródłem energii, które będzie realizowane równolegle w ramach inwestycji. Warto również pamiętać, że inwestycja nie może być zakończona przed złożeniem wniosku, a koszty kwalifikowane programu mogą obejmować okres od 1 stycznia 2022 r. do 30 września 2030 r. Istotne znaczenie mają dwa warunki techniczne. Po pierwsze, co najmniej 80% energii elektrycznej wytworzonej przez instalację musi zostać wykorzystane na potrzeby własne Wnioskodawcy. Oznacza to, że planowana instalacja powinna odpowiadać przede wszystkim na potrzeby własne przedsiębiorstwa, a nie być projektowana wyłącznie z myślą o sprzedaży energii. Po drugie, w ramach przedsięwzięcia można zastosować wyłącznie nowe urządzenia, które zostały wyprodukowane nie wcześniej niż 48 miesięcy przed ich montażem. Na jakich zasadach udzielane jest wsparcie? W ramach trzeciego naboru przewidziano dofinansowanie w formie pożyczki, z możliwością częściowego umorzenia. Zgodnie z warunkami określonymi w dokumentacji konkursowej, pożyczka może objąć nawet 100% kosztów kwalifikowanych. W przypadku inwestycji realizowanych w formule project finance wymagany jest wkład własny w wysokości co najmniej 15% kosztów kwalifikowanych, wniesiony w formie kapitału zakładowego pokrytego wkładem pieniężnym. Finansowanie w formie pożyczki dostępne jest w wysokości od 5 mln zł do 300 mln zł. Maksymalny okres finansowania wynosi 20 lat, a oprocentowanie na warunkach preferencyjnych jest powiązane ze wskaźnikiem WIBOR 3M, przy minimalnym poziomie 1,5 proc. w skali roku. Możliwość częściowego umorzenia pożyczki Dodatkowym instrumentem, który przewidział NFOŚiGW jest premia w postaci umorzenia nawet do 30% pożyczki. &nbsp;Poziom premii jest uzależniony od produktywności wspieranej instalacji, a jej przyznanie wiąże się z koniecznością osiągnięcia i potwierdzenia założonego efektu ekologicznego. Budżet i terminy składania wniosków Na prowadzony obecnie nabór przeznaczono około 348 &nbsp;mln zł w formie pożyczek. Nabór trwa od 2 listopada 2026 r. do 30 kwietnia 2027 r. lub do wyczerpania dostępnej alokacji, a takie przypadki jak wyczerpany budżet coraz częściej się zdarzają. Wnioski składa się wyłącznie elektronicznie za pośrednictwem Generatora Wniosków o Dofinansowanie (GWD), z zastosowaniem wymaganego podpisu elektronicznego. Co będzie miało znaczenie podczas oceny projektu? Poza formalnym spełnieniem warunków dostępu istotne jest odpowiednie przygotowanie merytoryczne inwestycji. Wnioski będą oceniane pod kątem wiarygodności i realności założeń przedłożonych od wyliczenia efektu ekologicznego, harmonogramu realizacji, szacowania kosztów czy wyboru odpowiedniej technologii. Badana będzie także zdolność finansowa i organizacyjna wnioskodawcy do przeprowadzenia projektu i zachowania jego trwałości. Istotnym elementem jest także przygotowanie administracyjne Wnioskodawcy, w tym przygotowanie dokumentacji projektowej, dostęp do gruntów lub obiektów, wymagane pozwolenia, tj. decyzja środowiskowa, warunki przyłączenia czy pozwolenie na budowę. Ekoinnowacyjność jako element podejścia do inwestycji Podczas oceny wniosków, będzie można otrzymać dodatkowe punkty, jeśli projekt będzie przewidywał wdrożenie ekoinnowacyjności, czyli zastosowanie w praktyce gospodarczej nowej albo znacząco udoskonalonej technologii, która zapewni poprawę efektywności wykorzystania zasobów naturalnych, ograniczanie presję na środowisko albo zwiększy odporności gospodarki na zagrożenia środowiskowe. Jak przygotować się do ubiegania o wsparcie? Dla przedsiębiorstw zainteresowanych udziałem w naborze kluczowe będzie odpowiednio wczesne rozpoczęcie prac przygotowawczych i dokładne przeanalizowanie dokumentacji konkursowej. Ostateczne decyzje inwestycyjne oraz sposób przygotowania wniosku powinny opierać się na aktualnych dokumentach programu i regulaminie III naboru. Przedsiębiorców rozważających realizację inwestycji i ubieganie się o dofinansowanie, zainteresowanych poznaniem szczegółowych wytycznych programu oraz praktycznych aspektów przygotowania dokumentacji aplikacyjnej, METROPOLIS Doradztwo Gospodarcze zaprasza na bezpłatne webinarium w formule online. Spotkanie odbędzie się 19 listopada 2026 r. o godz. 10:00 na platformie Microsoft Teams. Webinarium poprowadzi Anna Zrobczyńska, Project Manager w METROPOLIS Doradztwo Gospodarcze, posiadająca ponad 17-letnie doświadczenie w pozyskiwaniu finansowania dla projektów z obszaru energetyki i ochrony środowiska. Zapisy: www.metropolisdg.pl/webinar W przypadku dodatkowych pytań kontakt możliwy jest również drogą mailową: anna.zrobczynska(at)metropolisdg.pl [Źródło: WysokieNapiecie.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WysokieNapiecie.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
+        "url": "https://wysokienapiecie.pl/122676-przemysl-energochlonny-oze-szansa-na-finansowanie-inwestycji-w-zielona-energie-dla-przedsiebiorstw/"
+      }
+    ],
+    "sources": [
+      "WysokieNapiecie.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 7,
+    "path": "/Polska/Energetyka",
+    "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
+    "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
+    "thumbnail_url": "https://wysokienapiecie.pl/wp-content/uploads/2026/06/Ormuz-Iran-fot.-Depositphotos.x63527.jpg",
+    "published_iso": "2026-11-13T01:06:33+01:00",
+    "display_date": "13.11.2026, 01:06",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 81,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Energetyka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WysokieNapiecie.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: WysokieNapiecie.pl",
+        "paragraphs": [
+          "Wojna nie zatopiła Saudi Aramco Blokada Cieśniny Ormuz oraz irańskie ataki na ropociągi i instalacje naftowe ograniczyły eksport arabskiej ropy, ale nie zyski Saudi Aramco. Koncern zarabia jeszcze więcej niż przed wojną dzięki wyższym cenom - analizuje \"The Economist\". Koncern w trzecim kwartale 2026 roku odnotował 31 mld dolarów zysku netto, co stanowi wzrost o 9% w porównaniu z analogicznym okresem minionego roku. Tygodnik wskazuje, że od momentu wybuchu wojny Saudi Aramco jest zmuszone do ciągłej adaptacji do trudnego otoczenia. Najpierw zaczęło więc transportować więcej ropy przez Morze Czerwone. W lipcu, gdy jemeńscy Huti zablokowali południową przeprawę przez Cieśninę Bab al-Mandab, koncern przekierował swoje statki na północ, aby w większym stopniu wykorzystać suesko-śródziemnomorski rurociąg Sumed. Z kolei we wrześniu, gdy ataki na kluczowy w Arabii Saudyjskiej rurociąg Wschód-Zachód ograniczyły ilość ropy docierającej do Morza Czerwonego, zaczęło wysyłać tankowce przez Cieśninę Ormuz do Zatoki Omańskiej. Tam przeładowuje ropę na statki klientów. W październiku Saudi Aramco wprowadzało na rynek około 7 mln baryłek ropy dziennie wobec 4,5 mln w lipcu. Było to również niewiele mniej niż w lutym, czyli zasadniczo jeszcze przed wojną rozpoczętą dokładnie 28 lutego 2026 roku. Zyskom koncernu sprzyjają też niskie koszty wydobycia i wysokie ceny ropy, a koszty odbudowy uszkodzonej infrastruktury nie okazały się jak dotąd zbyt dotkliwe. Po trzech kwartałach tego roku nakłady inwestycyjne spadły o 4% w porównaniu z poprzednim rokiem. Nie zmienia to faktu, że koszty transportu podrożały, a logistyczna ekwilibrystyka dodatkowo zmniejsza jego efektywność. Dlatego Saudi Aramco oprócz rozbudowy rurociągu Wschód-Zachód, zamierza rozwijać też nowe połączenia. Wśród nich znajduje się rurociąg ze złóż ropy naftowej na wschodzie Arabii Saudyjskiej do Duqm na wybrzeżu Omanu. Firma konsultingowa Rystad Energy szacuje, że miałby on długość około 1000 km, a jego budowa kosztowałaby do 7 mld dolarów - 14% rocznego budżetu inwestycyjnego koncernu. Amin Naser, prezes Aramco, przekonuje, że inwestycje w rurociągi szybko się zwrócą, gdyż globalne zapasy ropy naftowej są na wyczerpaniu. Dlatego państwa mogą stanąć przed koniecznością uzupełnienia rezerw strategicznych, a to może skutkować zwiększonym popytem przez co najmniej dwa lata po zakończeniu wojny. Zobacz także: Amerykańskie koncerny naftowe zarabiają krocie dzięki wojnie Katar będzie handlował amerykańskim LNG Jeszcze kilka lat temu Katar był największym producentem skroplonego gazu na świecie, nim utracił to miano na rzecz USA. Natomiast teraz, na skutek wojny i blokady Cieśniny Ormuz, Katar staje się największym nabywcą amerykańskiego LNG - donosi \"Financial Times\". Dziennik wskazuje, że pod koniec października kontrolowana przez państwo spółka QatarEnergy podpisała dwie umowy, które zwiększają zakupy LNG produkowanego w USA o 7 mln ton rocznie. Dzięki temu, łącznie ze swoimi udziałami w projekcie Golden Pass w Teksasie, QatarEnergy jest na dobrej drodze, aby do 2033 roku kontrolować blisko 24 mln ton amerykańskiego surowca. Dzięki temu stanie się największym nabywcą LNG z USA, wyprzedzając takie koncerny jak TotalEnergies, Shell, Woodside Energy, ConocoPhillips, JERA czy ExxonMobil. Katar był największym na świecie dostawcą LNG do 2023 roku, gdyż został wyprzedzony przez USA dzięki trwającej tam rewolucji łupkowej. Koszty produkcji skroplonego gazu w Katarze należą do najniższych na świecie, ale obecnie te atuty nie mogą być wykorzystywane. QatarEnergy wstrzymał produkcję LNG i ogłosiło stan siły wyższej wobec swoich odbiorców kilka dni po zaatakowaniu Iranu przez USA i Izrael. Po irańskich atakach odwetowych na infrastrukturę gazową oraz blokadzie Cieśniny Ormuz, przez którą wiedzie jedyny szlak do klientów spoza Zatoki Perskiej, eksport katarskiego LNG spadł w tym roku do mniej niż jednej trzeciej standardowego poziomu. W tej sytuacji QatarEnergy chce odbudować nadszarpniętą przez wojnę reputację niezawodnego dostawcy i zawiera umowy na kupno surowca, aby następnie móc go zaoferować swoim klientom. Analitycy spodziewają się, że w najbliższym czasie spółka może zawrzeć jeszcze 2-3 kontrakty w USA lub innych krajach. \"Financial Times\" zwraca jednak uwagę, że podpisane pod koniec ubiegłego miesiąca umowy przewidują rozpoczęcie dostaw LNG w latach 2030-2031. Dlatego nie przyniosą one znaczącej ulgi dla napiętej sytuacji, która panuje na globalnym rynku gazu. Niemniej jest to istotny czynnik dla długoterminowych perspektyw sektora. Zobacz również: Orlen powiększył kluczowy magazyn gazu. Ale to wciąż za mało dla bezpieczeństwa systemu Demokraci mogą przystopować budowę centrów danych Około 40% planowanej mocy centrów danych w USA znajduje się w stanach, w których nowo wybrani gubernatorzy z Partii Demokratycznej w kampanii wyborczej zapowiadali zahamowanie lub wstrzymanie budowy takich obiektów - wskazuje Bloomberg. Agencja dodaje, że chodzi o takie stany jak Ohio, Georgia, Michigan, Nowy Meksyk i Teksas. Z kolei gubernatorzy w Nowym Jorku i Oregonie zobowiązali się do przedłużenia już obowiązujących moratoriów. Wyborów ostatecznie nie rozstrzygnięto jeszcze w Kansas i Alasce, ale prowadzący tam Demokraci również wzywają do ogłoszenia moratoriów. Łącznie, jak wyliczyła firma analityczna Cleanview, w powyższych stanach znajduje się około 40% planowanej mocy centrów danych w USA. Do tego dochodzi jeszcze 46 lokalnych inicjatyw referendalnych - zatwierdzonych lub czekających na zatwierdzenie. Pośród nich co najmniej 17 dotyczy całkowitego zakazu budowy dużych centrów danych. Bloomberg podkreśla, że zagraża to planom koncernów technologicznych, które inwestują dziesiątki miliardów dolarów w centra danych dla sztucznej inteligencji (AI). W reakcji na zwycięstwo Demokratów w wyborach połówkowych do Kongresu, w tym takich bastionach Republikanów jak Teksas, akcje firm związanych z sektorem AI zareagowały spadkiem. Sprzeciw wobec budowy wielkoskalowych centrów danych narasta. Według grupy badawczej Data Center Watch sprzeciw lokalnych społeczności utrudnił już realizację co najmniej 45 projektów w drugim kwartale 2026 roku. Bloomberg Intelligence szacuje, że wygrana Demokratów w wyborach może skutkować uszczupleniem wartego około 1,4 bln dolarów boomu inwestycyjnego o 5-7% w 2027 roku. Kwota ta obejmuje wydatki związane z budową centrów danych, czyli m.in. zakup gruntów, prace budowlane, dostawy chipów i sprzętu IT, a także inwestycje związane z zaopatrzeniem w energię. Jak szacują analitycy, spodziewane spowolnienie wydawania zgód administracyjnych może spowodować, że w przyszłym roku nie uda się uruchomić zgodnie z planem nawet 10 GW mocy w centrach danych. Zobacz także: Co unijne etykiety energetyczne oznaczają dla polskich centrów danych? Długa kolejka baterii do niemieckich sieci Bateryjne magazyny energii stały się jedną najatrakcyjniejszych inwestycji na niemieckim rynku energii. Jednak wdrażanie projektów do realizacji utrudniają niejednolite zasady przyłączania instalacji do sieci, które nie promują najbardziej dojrzałych przedsięwzięć - analizuje Montel. Portal wskazuje, że w 2025 roku operatorzy otrzymali ponad 18 tysięcy wniosków o przyłączenie do sieci baterii o łącznej mocy około 574 GW. Jednocześnie w ubiegłym roku operatorzy wydali warunki przyłączenia dla 54 GW magazynów, wliczając w to również wnioski, które spłynęły w latach wcześniejszych. Z kolei moc eksploatowanych już baterii, podłączonych do średniego i wysokiego napięcia, to zaledwie 3,6 GW. Większość projektów aplikuje o przyłącza do sieci dystrybucyjnych, a ich operatorzy nie mają jednolitych reguł, według których rozpatrują wnioski. Niemniej dominuje tryb postępowania w myśl zasady \"kto pierwszy, ten lepszy\", czyli kluczowe jest miejsce w kolejce, a nie gotowość do realizacji inwestycji pod względem zgód administracyjnych, finansowania czy łańcuchów dostaw. Obok magazynów energii w kolejkach ustawiają się też inwestorzy, którzy chcą budować farmy fotowoltaiczne, wiatraki, centra danych czy obiekty przemysłowe. W rezultacie spada efektywność całego procesu przyłączeniowego. Montel podkreśla, że w rozładowaniu kolejek pomogłoby dystrybutorom energii pójście śladem operatorów sieci przesyłowych. Od kwietnia 2026 roku stosują oni nowe zasady procesu przyłączeniowego, które opierają się ocenianiu dojrzałości projektów do realizacji. W efekcie większe szanse na przyłącze do sieci mają realne przedsięwzięcia, a nie te spekulacyjne. Portal przyznaje, że ten system nie jest idealny, gdyż naturalnie premiuje tych deweloperów, którzy dysponują największymi budżetami. Niemniej wspólne i klarowne zasady gry u wszystkich operatorów byłyby o wiele lepsze niż obecna formula, która spowalnia transformację energetyczną. Zobacz też: Nowe technologie baterii z Europy. Oto co rozwijamy [Źródło: WysokieNapiecie.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WysokieNapiecie.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
+        "url": "https://wysokienapiecie.pl/122709-saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej/"
+      }
+    ],
+    "sources": [
+      "WysokieNapiecie.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 8,
+    "path": "/Polska/Energetyka",
+    "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
+    "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
+    "thumbnail_url": "https://wysokienapiecie.pl/wp-content/uploads/2026/11/Kapota_Zdar-002.x63527.png",
+    "published_iso": "2026-11-13T01:06:33+01:00",
+    "display_date": "13.11.2026, 01:06",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 81,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Energetyka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WysokieNapiecie.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: WysokieNapiecie.pl",
+        "paragraphs": [
+          "Zdaniem ekspertów z think tanku Forum Energii, ograniczenia w produkcji OZE wynikają m.in. z jej niedopasowania do zapotrzebowania i niedostatecznej elastyczności systemu. I tu coraz większego znaczenia nabierają nie tylko magazyny energii, lecz także agregacja elastyczności, usługi bilansujące oraz aktywne zarządzanie generacją rozproszoną. Dla właścicieli odpowiednio wyposażonych instalacji może to oznaczać nowe możliwości uzyskiwania przychodów z już posiadanych aktywów energetycznych. OZE produkują coraz więcej energii. System nie zawsze jest w stanie odebrać całą dostępną produkcję Jak wynika z Miesięcznika Forum Energii , produkcja energii elektrycznej z OZE we wrześniu 2026 r. była o 22,1% wyższa niż rok wcześniej. Jednocześnie PSE wprowadzały nierynkowe ograniczenia generacji przez 197 godzin w ciągu 25 dni. Ograniczenia objęły 69,7 GWh potencjalnej produkcji z wielkoskalowych instalacji fotowoltaicznych i 56,4 GWh z farm wiatrowych. Od początku roku do końca września ograniczono łącznie 1 736,9 GWh potencjalnej produkcji z OZE, czyli o 48,8% więcej niż w analogicznym okresie 2025 r. Skala ograniczeń nie wynika wyłącznie z rosnącego udziału odnawialnych źródeł energii. Forum Energii zwraca również uwagę na ograniczoną elastyczność elektrowni konwencjonalnych i elektrociepłowni (CHP), a także niewystarczające możliwości przesuwania zużycia energii na godziny wysokiej produkcji z OZE . Problem ma również wymiar ekonomiczny. Według analizy Forum Energii średnia cena na rynku dnia następnego (RDN) we wrześniu wynosiła około 665 zł/MWh. Najwyższa godzinowa cena ważona wolumenem sięgnęła jednak 2 602,4 zł/MWh, a najniższa spadła do –37,4 zł/MWh. Były to wartości skrajne, odnotowane w różnych godzinach miesiąca, a nie typowa dobowa rozpiętość cen ani gwarantowana okazja do osiągnięcia zysku. Pokazują jednak, jak istotna jest możliwość dostosowywania produkcji i zużycia energii elektrycznej do warunków rynkowych. – Maksymalizacja liczby godzin pracy instalacji nie zawsze oznacza maksymalizację jej rentowności. Przy dużej zmienności cen liczy się to, kiedy dane źródło wytwarza energię i czy potrafi reagować na warunki rynkowe. Właściciele jednostek kogeneracyjnych, biogazowni czy bateryjnych magazynów energii dysponują elastycznością, która może mieć wymierną wartość finansową. Jej wykorzystanie wymaga jednak połączenia wiedzy technicznej z prognozowaniem cen i aktywnym zarządzaniem produkcją. Przedsiębiorstwa, które potrafią zarządzać nie tylko samym urządzeniem, ale także jego pozycją na rynku energii, mogą zyskiwać coraz większą przewagę konkurencyjną – mówi Nikola Štěpánková, odpowiedzialna za rozwój biznesu aggregaat w Polsce. Bilansowanie energii: potencjalne korzyści liczone w milionach złotych Znaczenie aktywnego zarządzania portfelem ilustruje raport PSE dotyczący bilansowania handlowego w sierpniu 2026 r. Operator zbadał hipotetyczny scenariusz, w którym 40% wolumenu niezbilansowania skorygowano po cenach rynku dnia następnego (RDN), kolejne 40% – po cenach rynku dnia bieżącego (RDB), a pozostałe 20% rozliczono po cenach niezbilansowania. W tym modelu potencjalne korzyści dla wszystkich podmiotów odpowiedzialnych za bilansowanie handlowe (POB) wyniosły 202 mln zł w ciągu jednego miesiąca. Pięć spośród dziesięciu podmiotów o największych wolumenach niezbilansowania mogłoby uzyskać łącznie 96 mln zł korzyści. Nie są to rzeczywiste oszczędności, lecz wyniki symulacji opartej na określonych założeniach. Raport potwierdza znaczenie prognozowania, aktywnego handlu na rynku dnia następnego i rynku dnia bieżącego oraz reagowania na odchylenia. Bilansowanie własnej pozycji handlowej wymaga nie tylko odpowiednich umów, ale również dostępu do zasobów, którymi można sterować. To właśnie w tym obszarze coraz większą rolę odgrywa profesjonalne zarządzanie elastycznością aktywów energetycznych. Elektrownie wirtualne: jak działa agregacja elastyczności? Jednym ze sposobów wykorzystania już istniejących zasobów jest agregacja elastyczności . Polega ona na połączeniu wielu rozproszonych źródeł wytwórczych, magazynów energii oraz odbiorców, których zużyciem można sterować, w jeden wspólnie zarządzany portfel. W ten sposób powstaje elektrownia wirtualna (VPP), zdolna reagować na zmiany cen energii elektrycznej i zapotrzebowania systemu. Dzięki temu mniejsze instalacje, które samodzielnie nie spełniałyby określonych wymogów rynkowych, mogą uzyskać dostęp do dodatkowych mechanizmów wynagradzania. W praktyce jednostka kogeneracyjna może wytwarzać energię w godzinach wyższych cen i świadczyć usługi bilansujące w kierunku zwiększenia mocy, gdy ceny na rynku spot spadają. Biogazownia dysponująca odpowiednią pojemnością magazynowania biogazu może przesuwać część produkcji na korzystniejsze godziny i świadczyć usługi bilansujące w kierunku zmniejszenia mocy, uzyskując dodatkowe przychody. Z kolei bateryjny magazyn energii (BESS) może wykorzystywać różnice cen, a po spełnieniu odpowiednich wymogów technicznych i rynkowych świadczyć usługi bilansujące w obu kierunkach – zarówno zwiększania, jak i zmniejszania mocy. Przykładem takiego podejścia jest elektrownia wirtualna aggregaat , której model biznesowy łączy techniczną agregację elastyczności z optymalizacją handlową. Autorska platforma aggregaat Virtuel monitoruje ponad 200 parametrów pracy urządzeń, a centrum dyspozytorskie wspiera sterowanie nimi na podstawie danych technicznych, prognoz i warunków panujących na rynku energii. Kluczowe jest równoczesne zarządzanie dwoma obszarami. Pierwszy z nich to elastyczność techniczna , obejmująca rezerwację i aktywację mocy w ramach usług bilansujących. Drugi to elastyczność handlowa , czyli optymalizacja sprzedaży i zakupu energii elektrycznej oraz bilansowanie portfela. Połączenie obu obszarów może zwiększyć wartość instalacji, pod warunkiem przestrzegania ograniczeń technicznych i unikania sprzecznych zobowiązań na różnych rynkach. – Agregator nie powinien być jedynie pośrednikiem w sprzedaży usług systemowych. Jego rolą jest łączenie możliwości technicznych aktywa z warunkami handlowymi i ograniczeniami wynikającymi z eksploatacji urządzeń. W aggregaat wykorzystujemy platformę Virtuel oraz nasze kompetencje dyspozytorskie i handlowe. Pozwala nam to planować pracę urządzeń z uwzględnieniem ich dostępności, cen energii elektrycznej i zobowiązań na różnych rynkach. Dla właściciela instalacji liczy się ostatecznie jej wynik finansowy, a nie sama liczba aktywacji czy godzin pracy – podkreśla Nikola Štěpánková. Polska będzie potrzebować większej elastyczności. Nie każda instalacja uzyska z niej takie same przychody Rosnąca liczba źródeł OZE, magazynów energii i innych sterowalnych zasobów zwiększa znaczenie koordynacji ich pracy. Nie oznacza to jednak, że każda instalacja automatycznie zacznie przynosić dodatkowe przychody. Kluczowe są jej parametry techniczne, możliwość sterowania, wymagania kwalifikacyjne i warunki handlowe. Dla właścicieli rozproszonych źródeł wytwórczych coraz ważniejsze staje się więc pytanie, jak wykorzystać istniejące zasoby na różnych rynkach i czy można poprawić ich wyniki finansowe. Istotny jest również dobór odpowiedniego modelu współpracy z agregatorem energii : od podziału dodatkowych przychodów i rozwiązań z gwarantowanym wynagrodzeniem po outsourcing dyspozytorski i korzystanie ze specjalistycznego oprogramowania. W polskiej energetyce wartość powstaje coraz częściej nie tylko dzięki nowym megawatom, lecz także dzięki efektywniejszemu wykorzystaniu mocy już pracujących w systemie. Zgodnie z Krajowym planem w dziedzinie energii i klimatu , przyjętym przez polski rząd w czerwcu 2026 r., udział OZE w krajowej produkcji energii elektrycznej ma do 2030 r. wynieść 51,6–53,2%, zależnie od scenariusza. Równolegle rozwijane są zasoby umożliwiające reagowanie na wahania generacji. W zaktualizowanej strategii do 2035 r. PGE zakłada osiągnięcie 18 GWh pojemności magazynów energii, natomiast TGE i NODES przygotowują pilotażową platformę lokalnych usług elastyczności. [Źródło: WysokieNapiecie.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WysokieNapiecie.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
+        "url": "https://wysokienapiecie.pl/122622-w-miesiac-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi/"
+      }
+    ],
+    "sources": [
+      "WysokieNapiecie.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 9,
+    "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
     "published_iso": "2026-11-13T00:47:13+01:00",
@@ -159,7 +710,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 10,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/warszawa-liderem-wzrost-w-w-europie-allegro-orlen-i-banki-ci-gn-gpw-w-g-r",
     "seo_title": "Warszawa liderem wzrostów w Europie. Allegro, Orlen i banki ciągną GPW w górę",
@@ -209,7 +760,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 11,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/pieni-dze-pa-p-nie-p-jd-na-sp-at-pfizera-jest-decyzja-belgijskiego-s-du",
     "seo_title": "Pieniądze PAŻP nie pójdą na spłatę Pfizera. Jest decyzja belgijskiego sądu",
@@ -259,7 +810,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 12,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-s-d-uzna-kontrol-za-niezgodn-z-prawe",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -309,7 +860,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 13,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/huti-uderzyli-w-obiekty-aramco-celem-tak-e-strategiczny-ropoci-g",
     "seo_title": "Huti uderzyli w obiekty Aramco. Celem także strategiczny ropociąg",
@@ -359,7 +910,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 14,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/wstrz-s-w-nvidii-jensen-huang-odchodzi-po-aferze-szpiegowskiej",
     "seo_title": "Wstrząs w Nvidii. Jensen Huang odchodzi po aferze szpiegowskiej",
@@ -409,7 +960,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 15,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/zus-automatycznie-umorzy-nale-no-ci-sprzed-1999-r-oto-skutki",
     "seo_title": "ZUS automatycznie umorzy należności sprzed 1999 r. Oto skutki",
@@ -459,7 +1010,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 16,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/reklamy-w-republice-brzoska-odpowiada-dziennikarzowi-dezinformacja-dla-clic",
     "seo_title": "Reklamy w Republice. Brzoska odpowiada dziennikarzowi: dezinformacja dla clickbaitu",
@@ -509,7 +1060,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 17,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/sp-ka-mentzen-ze-strat-przychody-spad-y",
     "seo_title": "Spółka Mentzen ze stratą. Przychody spadły",
@@ -559,7 +1110,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 18,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burza-wok-republiki-co-z-reklamami-firmy-t-umacz",
     "seo_title": "Burza wokół Republiki. Co z reklamami? Firmy tłumaczą",
@@ -609,7 +1160,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 19,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/ile-kosztuje-dolar-kurs-dolara-do-z-otego-pln-usd-12-11-2026",
     "seo_title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 12.11.2026",
@@ -659,7 +1210,7 @@ let articles = [
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 20,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/elastyczno-czyli-jak-kupowa-gaz-i-na-tym-zyska",
     "seo_title": "Elastyczność, czyli jak kupować gaz i na tym zyskać",
