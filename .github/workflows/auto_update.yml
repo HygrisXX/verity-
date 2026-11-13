@@ -31,6 +31,6 @@ jobs:
           if [ -f articles.json ]; then
             git config user.name "VerityBot"
             git config user.email "bot@verity.pl"
-            git add articles.json
+            git add articles.json news-sitemap.xml
             git diff --staged --quiet || (git commit -m "Automatyczna aktualizacja artykułów RSS" && git push)
           fi

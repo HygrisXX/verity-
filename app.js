@@ -96,257 +96,617 @@ if (window.matchMedia) {
 // =========================================================================
 let articles = [
   {
-    id: 1,
-    path: '/Polska/Gospodarka',
-    seo_url: '/Polska/Gospodarka/nowelizacja-pit-cit-ryczalt-uchwalona-sejm-stawka-24-proc',
-    seo_title: 'Sejm po raz drugi uchwalił nowelizację PIT, CIT i ryczałtu: nowa stawka 24% PIT, podwyżka CIT do 22% i limit ryczałtu 250 tys. euro',
-    published_iso: '2026-11-05T16:40:00+01:00',
-    display_date: '5 listopada 2026',
-    status: 'AUTO_PUBLISHED',
-    fact_agreement_pct: 97,
-    admin_note: '',
-    metrics: [
-      { label: 'Wynik w Sejmie', val: '236 za / 207 przeciw' },
-      { label: 'Nowy próg i stawka PIT', val: '24% (130–150 tys. zł)' },
-      { label: 'Podwyżka CIT (>50 mln €)', val: 'z 19% do 22%' },
-      { label: 'Nowy limit ryczałtu', val: '250 tys. € (z 2 mln €)' }
-    ],
-    declickbait: [
+    "id": 1,
+    "path": "/Polska",
+    "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
+    "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 85,
+    "admin_note": "",
+    "metrics": [
       {
-        outlet: 'Komunikat rządowy',
-        original: 'Niższe podatki dla 3,5 mln Polaków! Nawet 7,2 tys. zł zysku dla rodziny!',
-        fact: 'Podniesieniu pierwszego progu PIT ze 120 do 130 tys. zł towarzyszy ośmiokrotne obniżenie limitu ryczałtu (dotknie 43 tys. firm), wzrost CIT z 19% do 22% (4,6 tys. spółek) oraz wzrost daniny solidarnościowej z 4% do 5%.'
+        "label": "Liczba źródeł",
+        "val": "2 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "RMF24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
       }
     ],
-    full_sections: [
+    "declickbait": [],
+    "full_sections": [
       {
-        heading: 'Wynik głosowania i przyczyna ponownego złożenia ustawy przez rząd',
-        paragraphs: [
-          'Sejm uchwalił po raz drugi rządową nowelizację ustaw o podatku dochodowym od osób fizycznych (PIT), podatku dochodowym od osób prawnych (CIT) oraz o zryczałtowanym podatku dochodowym. Za przyjęciem ustawy głosowało 236 posłów, przeciw było 207, nikt nie wstrzymał się od głosu. Dzień później ustawę bez poprawek zaakceptował Senat [1: PAP][2: Rzeczpospolita].',
-          'Złożenie drugiego projektu wynikało z wątpliwości konstytucyjnych wokół pierwszej ustawy: posłowie wykreślili z niej podwyżkę CIT i dodali coroczną waloryzację progów PIT, po czym Senat próbował przywrócić podwyżkę CIT poprawką senacką. Biuro Legislacyjne Senatu uznało taką poprawkę za wykraczającą poza materię ustawy przekazaną z Sejmu, dlatego rząd przeprowadził ekspresowo nową ścieżkę legislacyjną [1: PAP][2: Rzeczpospolita].'
+        "heading": "Relacja źródłowa: RMF24",
+        "paragraphs": [
+          "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu [Źródło: RMF24]"
         ]
       },
       {
-        heading: 'Nowa skala podatkowa PIT: próg 130 tys. zł i pośrednia stawka 24%',
-        paragraphs: [
-          'Uchwalona ustawa podnosi pierwszy próg podatkowy ze 120 000 zł do 130 000 zł przy zachowaniu stawki 12%. Jednocześnie wprowadza nowy, pośredni próg podatkowy dla dochodów w przedziale od 130 000 zł do 150 000 zł rocznie, objęty stawką 24%. Dochody przekraczające 150 000 zł pozostają opodatkowane stawką 32% [1: PAP][3: Biznes PAP].',
-          'Według wyliczeń Ministerstwa Finansów na modyfikacji skali PIT skorzysta 3,5 mln podatników, a maksymalna korzyść wyniesie do 3 600 zł rocznie na jednego podatnika (do 7 200 zł przy wspólnym rozliczeniu małżonków). Podczas głosowania Sejm odrzucił poprawki opozycji i części koalicji zakładające podniesienie progu do 180–200 tys. zł oraz coroczną waloryzację o wskaźnik inflacji [1: PAP][2: Rzeczpospolita].'
-        ]
-      },
-      {
-        heading: 'Źródła sfinansowania zmian: wyższy CIT, ryczałt od 250 tys. euro i danina solidarnościowa',
-        paragraphs: [
-          'Aby zbilansować ubytek w budżecie, ustawa wprowadza trzy podwyżki podatków: (1) ośmiokrotne obniżenie limitu przychodów uprawniającego do rozliczania się ryczałtem z 2 mln euro do 250 tys. euro rocznie, co według szacunków MF dotknie co najmniej 43 tys. przedsiębiorców; (2) podniesienie stawki CIT z 19% do 22% dla spółek o przychodach powyżej 50 mln euro rocznie (ok. 4,6 tys. podmiotów); oraz (3) podwyższenie daniny solidarnościowej z 4% do 5% (płaconej przez ok. 39 tys. podatników) [2: Rzeczpospolita][3: Biznes PAP].'
+        "heading": "Relacja źródłowa: Polsat News",
+        "paragraphs": [
+          "Pete Hegseth odznaczył szeregowego Thomasa Iglesiasa, który zrugał delegację z szefem Pentagonu wizytującą Cmentarz Narodowy w Arlington. Strażnik przepisowo zareagował na głośny śmiech grupy, przypominając o obowiązku zachowania ciszy i oddania szacunku. Dobra robota, starszy szeregowy! - napisał Hegseth w mediach społecznościowych. [Źródło: Polsat News]"
         ]
       }
     ],
-    perspectives: [
+    "perspectives": [
       {
-        outlet: 'PAP / Biznes PAP [1, 3]',
-        angle: 'Depesza parlamentarna',
-        summary: 'Przedstawia dokładny rozkład głosów (236 za, 207 przeciw), odrzucone poprawki poselskie oraz parametry nowych progów 130 tys. i 150 tys. zł.',
-        url: 'https://www.pap.pl/aktualnosci/sejm-po-raz-drugi-uchwalil-ustawe-ktora-dodaje-nowa-stawke-w-pit-i-zmienia-progi'
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-hegseth-odznaczyl-zolnierza-ktory-udzielil-mu-reprymendy-na-,nIdn,1025914"
       },
       {
-        outlet: 'Rzeczpospolita (Prawo i Podatki) [2]',
-        angle: 'Analiza prawno-podatkowa',
-        summary: 'Zestawia zyski 3,5 mln podatników na skali PIT ze stratami 43 tys. ryczałtowców oraz opisuje błąd legislacyjny przy pierwszej nowelizacji w Senacie.',
-        url: 'https://pro.rp.pl/podatki/art45452541-zmiany-w-skali-pit-podwyzka-cit-i-ograniczenia-ryczaltu-druga-wersja-nowelizacji-idzie-jak-burza'
-      },
-      {
-        outlet: 'Biznes PAP [3]',
-        angle: 'Skutki dla przedsiębiorstw',
-        summary: 'Szczegółowo wylicza wpływ podwyżki CIT z 19% do 22% oraz obniżenia limitu ryczałtu do 250 tys. euro na sektor MŚP i duże spółki.',
-        url: 'https://biznes.pap.pl/wiadomosci/gospodarka/sejm-uchwalil-ustawe-ktora-min-wprowadza-nowa-24-proc-stawke-podatkowa-w-0'
+        "outlet": "Polsat News",
+        "angle": "Depesza źródłowa",
+        "summary": "Hegseth odznaczył żołnierza, który zrugał jego delegację. \"Dobra robota\"",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/hegseth-oznaczyl-zolnierza-ktory-upomnial-jego-delegacje-dobra-robota/"
       }
     ],
-    sources: ['PAP', 'Rzeczpospolita', 'Biznes PAP'],
-    corrections: []
+    "sources": [
+      "Polsat News",
+      "RMF24"
+    ],
+    "corrections": []
   },
   {
-    id: 2,
-    path: '/Polska/Poznan',
-    seo_url: '/Polska/Poznan/obchody-11-listopada-poznan-imieniny-ulicy-swiety-marcin-bieg-marsz',
-    seo_title: '11 listopada w Poznaniu: 12 tys. uczestników Biegu Niepodległości, Imieniny Ulicy Święty Marcin z kontrolami bezpieczeństwa i Marsz z Rynku Wildeckiego',
-    published_iso: '2026-11-11T16:30:00+01:00',
-    display_date: '11 listopada 2026',
-    status: 'AUTO_PUBLISHED',
-    fact_agreement_pct: 96,
-    admin_note: '',
-    metrics: [
-      { label: 'Bieg Niepodległości', val: '12 000 biegaczy (10 km)' },
-      { label: 'Marsz z Rynku Wildeckiego', val: '~1 800 uczestników' },
-      { label: 'Św. Marcin / CK Zamek', val: 'Strefa kontroli bagażu' },
-      { label: 'Rekord w CH M1 Franowo', val: '316 osób (rogale)' }
-    ],
-    declickbait: [
+    "id": 2,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/warszawa-liderem-wzrost-w-w-europie-allegro-orlen-i-banki-ci-gn-gpw-w-g-r",
+    "seo_title": "Warszawa liderem wzrostów w Europie. Allegro, Orlen i banki ciągną GPW w górę",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
       {
-        outlet: 'Portal lokalny',
-        original: 'Tłumy i kordony policji w samym sercu Poznania! Zobacz co działo się na ulicach!',
-        fact: 'Wzmocnione patrole policji i kontrole bagażu wokół CK Zamek zabezpieczały równoległe obchody Imienin Ulicy Święty Marcin, 12-tysięczny Bieg Niepodległości oraz 1,8-tysięczny Marsz Niepodległości; nie odnotowano incydentów.'
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Bankier.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
       }
     ],
-    full_sections: [
+    "declickbait": [],
+    "full_sections": [
       {
-        heading: 'Imieniny Ulicy Święty Marcin i zaostrzone środki bezpieczeństwa wokół CK Zamek',
-        paragraphs: [
-          'O godzinie 14:00 w centrum Poznania wyruszył tradycyjny korowód Świętego Marcina, który przeszedł trasą przez ul. Święty Marcin, al. Niepodległości, ul. Składową i Towarową, po czym prezydent miasta przekazał klucze patronowi ulicy [1: Radio Poznań][2: epoznan.pl].',
-          'W związku z wcześniejszymi wydarzeniami w Krakowie na całym terenie imprezy masowej wokół Centrum Kultury Zamek wprowadzono zaostrzone kontrole osobiste oraz sprawdzanie bagażu. Równolegle dla mieszkańców udostępniono bezpłatnie punkt widokowy na Kopcu Wolności nad Maltą [1: Radio Poznań][3: epoznan.pl].'
-        ]
-      },
-      {
-        heading: 'Wielki Bieg Niepodległości (12 tys. uczestników) i zmiany w organizacji ruchu',
-        paragraphs: [
-          'Punktualnie o godzinie 11:11 wystartował poznański Bieg Niepodległości na dystansie 10 kilometrów, w którym udział wzięło ponad 12 000 zawodników. Trasa prowadziła ulicą Grunwaldzką od rejonu skrzyżowania z ul. Śniadeckich do ul. Cmentarnej i z powrotem, co wiązało się z czasowym wyłączeniem ruchu kołowego i zmianami tras linii komunikacji miejskiej [4: epoznan.pl].'
-        ]
-      },
-      {
-        heading: 'Przebieg 5. Poznańskiego Marszu Niepodległości',
-        paragraphs: [
-          'O godzinie 14:00 z Rynku Wildeckiego wyruszyła również piąta edycja poznańskiego Marszu Niepodległości pod hasłem „Łączy Nas Polska”. Według szacunków w zgromadzeniu uczestniczyło około 1 800 osób. Przemarsz był zabezpieczany przez policję i zakończył się bez odnotowania niebezpiecznych incydentów [2: epoznan.pl].'
+        "heading": "Relacja źródłowa: Bankier.pl",
+        "paragraphs": [
+          "Czwartkowa sesja na warszawskim parkiecie przyniosła wyraźną przewagę strony popytowej, czyniąc z głównych indeksów GPW najsilniejsze benchmarki w Europie. Warszawska giełda skutecznie oparła się ospałym nastrojom na rynkach bazowych. Lokomotywą wzrostów w indeksie WIG20 było Allegro, napędzane lepszymi od oczekiwań wynikami. Pozytywny sentyment wspierały również Orlen oraz sektor bankowy. [Źródło: Bankier.pl]"
         ]
       }
     ],
-    perspectives: [
+    "perspectives": [
       {
-        outlet: 'Radio Poznań [1]',
-        angle: 'Obchody w całym regionie',
-        summary: 'Relacjonuje korowód na ul. Święty Marcin, otwarcie Kopca Wolności oraz uroczystości 108. rocznicy niepodległości w Kaliszu, Koninie, Lesznie i Rawiczu.',
-        url: 'https://radiopoznan.fm/informacje/pozostale/poznan-szykuje-sie-na-marsz-niepodleglosci-znamy-trase-i-haslo-tegorocznego-pochodu'
-      },
-      {
-        outlet: 'epoznan.pl (Komunikacja i Bieg) [4]',
-        angle: 'Utrudnienia i frekwencja',
-        summary: 'Skupia się na logistyce 12-tysięcznego Biegu Niepodległości na ul. Grunwaldzkiej, kolejkach na Kopiec Wolności i zabezpieczeniu miasta.',
-        url: 'https://epoznan.pl/news-news-181864-wielki_bieg_niepodleglosci_w_poznaniu_na_starcie_12_tysiecy_uczestnikow'
-      },
-      {
-        outlet: 'epoznan.pl (Relacja z Marszu) [2]',
-        angle: 'Przebieg zgromadzeń',
-        summary: 'Podaje szacunkową frekwencję 1 800 osób na marszu z Rynku Wildeckiego, cytuje skandowane hasła i potwierdza brak incydentów siłowych.',
-        url: 'https://epoznan.pl/news-news-181878-marsz_niepodleglosci_przeszedl_przez_poznan_raz_sierpem_raz_mlotem_czerwona_holote'
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Warszawa liderem wzrostów w Europie. Allegro, Orlen i banki ciągną GPW w górę",
+        "url": "https://www.bankier.pl/wiadomosc/Warszawa-liderem-wzrostow-w-Europie-Allegro-Orlen-i-banki-ciagna-GPW-w-gore-9227989.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       }
     ],
-    sources: ['Radio Poznań', 'epoznan.pl'],
-    corrections: []
+    "sources": [
+      "Bankier.pl"
+    ],
+    "corrections": []
   },
   {
-    id: 3,
-    path: '/Polska/Polityka',
-    seo_url: '/Polska/Polityka/projekt-przywracajacy-handel-w-niedziele-komisja-sejmowa',
-    seo_title: 'Projekt nowelizacji zakazu handlu w niedzielę wraca do komisji sejmowej: propozycja dwóch niedziel handlowych w miesiącu',
-    published_iso: '2026-11-05T12:15:00+01:00',
-    display_date: '5 listopada 2026',
-    status: 'AUTO_PUBLISHED',
-    fact_agreement_pct: 93,
-    admin_note: '',
-    metrics: [
-      { label: 'Proponowany model', val: '1. i 3. niedziela miesiąca' },
-      { label: 'Obowiązujący zakaz', val: 'od 2018 roku (8 lat)' },
-      { label: 'Status projektu', val: 'Komisja sejmowa' },
-      { label: 'Ryzyko legislacyjne', val: 'Zapowiedź weta prezydenta' }
-    ],
-    declickbait: [
+    "id": 3,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/pieni-dze-pa-p-nie-p-jd-na-sp-at-pfizera-jest-decyzja-belgijskiego-s-du",
+    "seo_title": "Pieniądze PAŻP nie pójdą na spłatę Pfizera. Jest decyzja belgijskiego sądu",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
       {
-        outlet: 'Portal informacyjny',
-        original: 'Koniec zakazu handlu w niedzielę?! Przełom w Sejmie!',
-        fact: 'Projekt po dwóch latach w komisji zakłada jedynie częściowe otwarcie sklepów (w 1. i 3. niedzielę miesiąca), a jego wejście w życie wymaga jeszcze większości w Sejmie i podpisu prezydenta.'
-      }
-    ],
-    full_sections: [
-      {
-        heading: 'Założenia projektu poselskiego po dwóch latach w komisji',
-        paragraphs: [
-          'Sejmowa komisja wraca do prac nad projektem nowelizacji ustawy ograniczającej handel w niedziele, która obowiązuje od 2018 roku. Projekt złożony pierwotnie w 2024 roku przez Ryszarda Petru (obecnie klub Centrum) zakłada dopuszczenie handlu w pierwszą i trzecią niedzielę każdego miesiąca [1: Rzeczpospolita].',
-          'Wnioskodawcy zapowiadają gotowość do korekt podczas prac komisji, wskazując na postulaty części branży handlowej oraz utrzymanie gwarancji podwójnego wynagrodzenia lub dnia wolnego dla pracowników handlu [1: Rzeczpospolita].'
-        ]
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
       },
       {
-        heading: 'Stanowisko Polskiej Organizacji Handlu i Dystrybucji oraz badania społeczne',
-        paragraphs: [
-          'Z przytoczonych badań Shopfully wynika, że po ośmiu latach obowiązywania przepisów grupa zwolenników pełnego otwarcia sklepów we wszystkie niedziele spadła poniżej liczby osób przyzwyczajonych do obecnych ograniczeń, natomiast najwyższe poparcie dla liberalizacji utrzymuje się w grupie wiekowej 45–64 lata [1: Rzeczpospolita].',
-          'Prezes Polskiej Organizacji Handlu i Dystrybucji (POHiD) Renata Juszkiewicz wskazuje, że odmienne stanowiska prezentują sieci spożywcze oraz sklepy z ofertą przemysłową w galeriach handlowych, a kluczową barierą dla uchwalenia ustawy pozostaje zapowiadany sprzeciw prezydenta Karola Nawrockiego [1: Rzeczpospolita].'
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Bankier.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Bankier.pl",
+        "paragraphs": [
+          "Sąd w Belgii uchylił w czwartek o zajęciu środków Polskiej Agencji Żeglugi Powietrznej (PAŻP) na rzecz koncernu farmaceutycznego Pfizer. Przychylił się tym samym do skargi PAŻP, która dowodziła, że nie jest stroną sporu między Pfizerem a państwem polskim w sprawie szczepionek przeciwko COVID-19. [Źródło: Bankier.pl]"
         ]
       }
     ],
-    perspectives: [
+    "perspectives": [
       {
-        outlet: 'Rzeczpospolita (Ekonomia i Handel) [1]',
-        angle: 'Analiza legislacyjna i rynkowa',
-        summary: 'Omawia szczegóły projektu (1. i 3. niedziela miesiąca), wyniki badań konsumenckich Shopfully oraz stanowisko POHiD.',
-        url: 'https://www.rp.pl/handel/art45448841-handel-w-niedziele-moze-wrocic-projektem-zajmie-sie-sejm'
-      },
-      {
-        outlet: 'Wnioskodawcy (Klub Centrum)',
-        angle: 'Argumentacja deregulacyjna',
-        summary: 'Wskazuje na korzyści dla gospodarki, studentów oraz pracowników niepełnoetatowych przy zachowaniu dwóch wolnych niedziel w miesiącu.',
-        url: 'https://www.rp.pl/handel/art45448841-handel-w-niedziele-moze-wrocic-projektem-zajmie-sie-sejm'
-      },
-      {
-        outlet: 'Związki zawodowe i Pałac Prezydencki',
-        angle: 'Argumentacja społeczna',
-        summary: 'Podnosi sprzeciw pracowników handlu wobec pracy w niedziele i wskazuje na wysokie prawdopodobieństwo weta prezydenckiego.',
-        url: 'https://www.rp.pl/handel/art45448841-handel-w-niedziele-moze-wrocic-projektem-zajmie-sie-sejm'
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Pieniądze PAŻP nie pójdą na spłatę Pfizera. Jest decyzja belgijskiego sądu",
+        "url": "https://www.bankier.pl/wiadomosc/Pieniadze-PAZP-nie-pojda-na-splate-Pfizera-Jest-decyzja-belgijskiego-sadu-9227955.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       }
     ],
-    sources: ['Rzeczpospolita'],
-    corrections: []
+    "sources": [
+      "Bankier.pl"
+    ],
+    "corrections": []
   },
-  // W KOLEJCE REDAKCYJNEJ DO AKCEPTACJI (1) - PRAWDZIWY PRZYKŁAD WERYFIKACJI DEKLARACJI RZĄDOWEJ
   {
-    id: 4,
-    path: '/Polska/Energetyka',
-    seo_url: '/Polska/Energetyka/ceny-gazu-i-pradu-tge-zapowiedz-rzadu-deficyt-6-7-proc',
-    seo_title: 'Zapowiedź rządowego pakietu ws. cen gazu i deklaracja o niższym deficycie (6,7% PKB) na tle wzrostów notowań na TGE',
-    published_iso: '2026-11-06T14:10:00+01:00',
-    display_date: '6 listopada 2026',
-    status: 'PENDING_ADMIN',
-    fact_agreement_pct: 68,
-    admin_note: 'Weryfikacja redakcyjna: Minister Finansów deklaruje rozwiązanie ws. cen gazu w ciągu 10 dni bez podania konkretnych kwot i źródeł finansowania, przy jednoczesnym utrzymaniu wysokiego deficytu 6,7% PKB oraz najwyższych od miesięcy notowań na TGE.',
-    metrics: [
-      { label: 'Deklarowany termin', val: '10 dni na projekt' },
-      { label: 'Notowania na TGE', val: 'Szczyt październikowy' },
-      { label: 'Deficyt sektora (MF)', val: '~6,7% PKB' },
-      { label: 'Konkretny projekt ustawy', val: 'Brak opublikowanego druku' }
-    ],
-    declickbait: [
+    "id": 4,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-s-d-uzna-kontrol-za-niezgodn-z-prawe",
+    "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
       {
-        outlet: 'Deklaracja medialna',
-        original: 'Rząd nie chce obciążać Polaków! Nowe rozwiązania dotyczące cen gazu już za chwilę!',
-        fact: 'Minister finansów zapowiedział przedstawienie propozycji w ciągu 10 dni, jednak na ten moment nie opublikowano projektu ustawy ani kwot osłonowych, podczas gdy październikowe ceny na TGE osiągnęły wielomiesięczne maksima.'
-      }
-    ],
-    full_sections: [
-      {
-        heading: 'Deklaracja Ministra Finansów i Gospodarki ws. cen gazu',
-        paragraphs: [
-          'Minister finansów i gospodarki Andrzej Domański zapowiedział, że w ciągu około 10 dni rząd przedstawi propozycję dotyczącą cen gazu dla gospodarstw domowych, wypracowywaną wspólnie z ministrem energii oraz ministrem aktywów państwowych. Szef resortu odmówił jednak podania szczegółowych parametrów finansowych przed zakończeniem prac międzyresortowych [1: Energia RP.pl].'
-        ]
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
       },
       {
-        heading: 'Dane rynkowe z Towarowej Giełdy Energii (TGE) oraz stan deficytu budżetowego',
-        paragraphs: [
-          'Z podsumowania październikowego handlu na Towarowej Giełdzie Energii (TGE) wynika, że hurtowe ceny energii elektrycznej i gazu w Polsce wzrosły w związku z sytuacją na Bliskim Wschodzie do najwyższych poziomów od wielu miesięcy [1: Energia RP.pl].',
-          'Równocześnie minister poinformował, że tegoroczny deficyt wyniesie około 6,7% PKB (nieco mniej od pierwotnych prognoz dzięki wpływom z VAT i CIT, lecz nadal na wysokim poziomie wymagającym podwyżek podatków sektorowych) [1: Energia RP.pl].'
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Bankier.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Bankier.pl",
+        "paragraphs": [
+          "Kontrole graniczne zarządzone przez niemieckie ministerstwo spraw wewnętrznych na granicach z Polską i Czechami były niezgodne z prawem - orzekł w czwartek sąd administracyjny w Dreźnie. Wyroki są nieprawomocne. [Źródło: Bankier.pl]"
         ]
       }
     ],
-    perspectives: [
+    "perspectives": [
       {
-        outlet: 'Deklaracja MF (Andrzej Domański) [1]',
-        angle: 'Zapowiedź rządowa',
-        summary: 'Zapowiada przedstawienie w ciągu 10 dni rozwiązań osłonowych dla gospodarstw domowych oraz wskazuje na spadek deficytu do 6,7% PKB.',
-        url: 'https://energia.rp.pl/gaz/art45455051-nowe-rozwiazania-dotyczace-cen-gazu-coraz-blizej-rzad-nie-chce-obciazac-polakow'
-      },
-      {
-        outlet: 'Energia RP.pl / Dane TGE [1]',
-        angle: 'Dane giełdowe i budżetowe',
-        summary: 'Zestawia brak konkretnych szczegółów projektu z październikowym szczytem cen gazu i prądu na Towarowej Giełdzie Energii.',
-        url: 'https://energia.rp.pl/gaz/art45455051-nowe-rozwiazania-dotyczace-cen-gazu-coraz-blizej-rzad-nie-chce-obciazac-polakow'
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
+        "url": "https://www.bankier.pl/wiadomosc/Polak-zatrzymany-na-granicy-z-Niemcami-Sad-uznal-kontrole-za-niezgodna-z-prawem-9228045.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       }
     ],
-    sources: ['Energia RP.pl', 'Dane TGE'],
-    corrections: []
+    "sources": [
+      "Bankier.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/huti-uderzyli-w-obiekty-aramco-celem-tak-e-strategiczny-ropoci-g",
+    "seo_title": "Huti uderzyli w obiekty Aramco. Celem także strategiczny ropociąg",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Bankier.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Bankier.pl",
+        "paragraphs": [
+          "Jemeńscy proirańscy rebelianci Huti poinformowali w czwartek o zaatakowaniu ropociągu Wschód-Zachód oraz terminalu naftowego w mieście Janbu w Arabii Saudyjskiej. Zapewnili też, że nie zaatakowali Mekki. [Źródło: Bankier.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Huti uderzyli w obiekty Aramco. Celem także strategiczny ropociąg",
+        "url": "https://www.bankier.pl/wiadomosc/Huti-uderzyli-w-obiekty-Aramco-Celem-takze-strategiczny-ropociag-9228123.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      }
+    ],
+    "sources": [
+      "Bankier.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 6,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/wstrz-s-w-nvidii-jensen-huang-odchodzi-po-aferze-szpiegowskiej",
+    "seo_title": "Wstrząs w Nvidii. Jensen Huang odchodzi po aferze szpiegowskiej",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Bankier.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Bankier.pl",
+        "paragraphs": [
+          "Szef i współzałożyciel Nvidii Jensen Huang zrezygnował w czwartek ze stanowisk prezesa, dyrektora generalnego (CEO) oraz członka rady dyrektorów ze skutkiem natychmiastowym - poinformowała firma w komunikacie. [Źródło: Bankier.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Wstrząs w Nvidii. Jensen Huang odchodzi po aferze szpiegowskiej",
+        "url": "https://www.bankier.pl/wiadomosc/Wstrzas-w-Nvidii-Jensen-Huang-odchodzi-po-aferze-szpiegowskiej-9227904.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      }
+    ],
+    "sources": [
+      "Bankier.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 7,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/zus-automatycznie-umorzy-nale-no-ci-sprzed-1999-r-oto-skutki",
+    "seo_title": "ZUS automatycznie umorzy należności sprzed 1999 r. Oto skutki",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Money.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Money.pl",
+        "paragraphs": [
+          "Zakład Ubezpieczeń Społecznych umorzy 1 maja 2027&nbsp;r. należności wobec ZUS sprzed 1999 r. Nie trzeba składać w tej sprawie żadnego wniosku. Aby zrezygnować z umorzenia, trzeba będzie złożyć oświadczenie – poinformował w czwartek ZUS. Podkreślił też, że umorzenie może wpłynąć na wysokość przyszłej emerytury. [Źródło: Money.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Money.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "ZUS automatycznie umorzy należności sprzed 1999 r. Oto skutki",
+        "url": "https://www.money.pl/finanse/zus-automatycznie-umorzy-naleznosci-sprzed-1999-r-oto-skutki-7350261849696256a.html"
+      }
+    ],
+    "sources": [
+      "Money.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 8,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/reklamy-w-republice-brzoska-odpowiada-dziennikarzowi-dezinformacja-dla-clic",
+    "seo_title": "Reklamy w Republice. Brzoska odpowiada dziennikarzowi: dezinformacja dla clickbaitu",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Money.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Money.pl",
+        "paragraphs": [
+          "Rafał Brzoska zabrał głos ws. Republiki, gdy Bartosz Wieliński z \"Gazety Wyborczej\" zarzucił firmie InPost, że ta reklamuje się w telewizji. Przedsiębiorca we wpisie na portalu X odpowiedział, że \"reklamy kupuje się pakietowo\" i pracownicy firmy nie decydują \"w jakim kanale ukaże się reklama\". Brzoska zarzucił Wielińskiemu dezinformację. [Źródło: Money.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Money.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Reklamy w Republice. Brzoska odpowiada dziennikarzowi: dezinformacja dla clickbaitu",
+        "url": "https://www.money.pl/finanse/reklamy-w-republice-brzoska-odpowiada-dziennikarzowi-dezinformacja-dla-clickbaitu-7350185856707040a.html"
+      }
+    ],
+    "sources": [
+      "Money.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 9,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/sp-ka-mentzen-ze-strat-przychody-spad-y",
+    "seo_title": "Spółka Mentzen ze stratą. Przychody spadły",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Money.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Money.pl",
+        "paragraphs": [
+          "Spółka Mentzen zakończyła III kwartał 2026 r. stratą netto 288,8 tys. zł. Jej przychody zmniejszyły się o 16,5 proc., do 3,1 mln zł, a wyniki były słabsze niż rok wcześniej – podaje \"Rzeczpospolita\". [Źródło: Money.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Money.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Spółka Mentzen ze stratą. Przychody spadły",
+        "url": "https://www.money.pl/gielda/spolka-mentzen-ze-strata-przychody-spadly-7350168404494784a.html"
+      }
+    ],
+    "sources": [
+      "Money.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 10,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/burza-wok-republiki-co-z-reklamami-firmy-t-umacz",
+    "seo_title": "Burza wokół Republiki. Co z reklamami? Firmy tłumaczą",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Money.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Money.pl",
+        "paragraphs": [
+          "Wycofanie reklam RTV Euro AGD z TV Republika i apel Tomasza Sakiewicza o bojkot sieci otworzyły dyskusję o odpowiedzialności reklamodawców. Eksperci w rozmowach z Wirtualnymi Mediami oceniają, że skutki sporu mogą dotknąć zarówno marki, jak i samą stację. – Czas antenowy na potrzeby kampanii marki Krakus kupujemy w pakietach – tłumaczy firma Animex. [Źródło: Money.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Money.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Burza wokół Republiki. Co z reklamami? Firmy tłumaczą",
+        "url": "https://www.money.pl/biznes/maja-reklamy-w-tv-republika-teraz-tlumacza-nie-ma-bezposredniej-umowy-7350148635347392a.html"
+      }
+    ],
+    "sources": [
+      "Money.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 11,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/ile-kosztuje-dolar-kurs-dolara-do-z-otego-pln-usd-12-11-2026",
+    "seo_title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 12.11.2026",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Money.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Money.pl",
+        "paragraphs": [
+          "Kurs dolara - 12.11.2026. W czwartek za jednego dolara (USD) trzeba zapłacić 3.9804 zł. [Źródło: Money.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Money.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 12.11.2026",
+        "url": "https://www.money.pl/pieniadze/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-12-11-2026-7350122464508384a.html"
+      }
+    ],
+    "sources": [
+      "Money.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 12,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/elastyczno-czyli-jak-kupowa-gaz-i-na-tym-zyska",
+    "seo_title": "Elastyczność, czyli jak kupować gaz i na tym zyskać",
+    "published_iso": "2026-11-13T00:47:13+01:00",
+    "display_date": "13.11.2026, 00:47",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 80,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Rzeczpospolita",
+        "paragraphs": [
+          "Najnowsze dane Towarowej Giełdy Energii dotyczące średnich cen gazu ziemnego w kontraktach spotowych i rocznych budzą obawy. Choć na sytuację na rynku wpływają przede wszystkim czynniki zewnętrzne, nie oznacza to, że odbiorcy są pozbawieni możliwości działania. Jednym ze sposobów ograniczenia kosztów jest kontrolowanie rachunków za gaz, a przede wszystkim wybór odpowiedniego kontraktu zakupowego. [Źródło: Rzeczpospolita]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Elastyczność, czyli jak kupować gaz i na tym zyskać",
+        "url": "https://energia.rp.pl/nowa-energia/art45482221-elastycznosc-czyli-jak-kupowac-gaz-i-na-tym-zyskac"
+      }
+    ],
+    "sources": [
+      "Rzeczpospolita"
+    ],
+    "corrections": []
   }
 ];
 
@@ -745,17 +1105,29 @@ window.addEventListener('DOMContentLoaded', async () => {
     if (resp.ok) {
       const liveData = await resp.json();
       if (Array.isArray(liveData) && liveData.length > 0) {
-        const normalizedLive = liveData.map((a, i) => ({
-          status: 'AUTO_PUBLISHED', fact_agreement_pct: 80, admin_note: '',
-          metrics: [], declickbait: [], perspectives: [], sources: [], corrections: [],
-          full_sections: [], display_date: '', seo_url: '', ...a,
-          id: 100 + i
-        }));
-        articles = [...articles, ...normalizedLive];
+        // Tylko artykuły od 13.11.2026
+        const fresh = liveData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
+        if (fresh.length > 0) {
+          articles = fresh.map((a, i) => ({
+            id: a.id || (i + 1),
+            status: a.status || 'AUTO_PUBLISHED',
+            fact_agreement_pct: a.fact_agreement_pct || 80,
+            admin_note: a.admin_note || '',
+            metrics: a.metrics || [],
+            declickbait: a.declickbait || [],
+            perspectives: a.perspectives || [],
+            sources: a.sources || [],
+            corrections: a.corrections || [],
+            full_sections: a.full_sections || [],
+            display_date: a.display_date || '',
+            seo_url: a.seo_url || '',
+            ...a
+          }));
+        }
       }
     }
   } catch (e) {
-    // Używa wbudowanych artykułów
+    // Używa wbudowanych bieżących artykułów
   }
   renderPortal();
 });

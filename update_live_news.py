@@ -181,3 +181,32 @@ if __name__ == "__main__":
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(articles, f, ensure_ascii=False, indent=2)
         print(f"Zapisano {len(articles)} prawdziwych opracowań do {out_path}")
+
+        # Aktualizacja news-sitemap.xml
+        sitemap_path = os.path.join(os.path.dirname(__file__), "news-sitemap.xml")
+        xml_lines = [
+            '<?xml version="1.0" encoding="UTF-8"?>',
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+            '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
+        ]
+        import xml.sax.saxutils
+        for a in articles:
+            loc = f"https://verity.pl{a['seo_url']}"
+            title = xml.sax.saxutils.escape(a["seo_title"])
+            xml_lines.extend([
+                '  <url>',
+                f'    <loc>{loc}</loc>',
+                '    <news:news>',
+                '      <news:publication>',
+                '        <news:name>VERITY</news:name>',
+                '        <news:language>pl</news:language>',
+                '      </news:publication>',
+                f'      <news:publication_date>{a["published_iso"]}</news:publication_date>',
+                f'      <news:title>{title}</news:title>',
+                '    </news:news>',
+                '  </url>'
+            ])
+        xml_lines.append('</urlset>\n')
+        with open(sitemap_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(xml_lines))
+        print(f"Zaktualizowano {sitemap_path}")
