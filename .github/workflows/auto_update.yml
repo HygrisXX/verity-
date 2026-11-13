@@ -1,0 +1,36 @@
+name: Automatyczna Aktualizacja Wiadomości RSS (VERITY)
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-synthesize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz kod portalu VERITY
+        uses: actions/checkout@v4
+
+      - name: Ustaw środowisko Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Pobierz najnowsze wiadomości z polskich kanałów RSS
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 update_live_news.py
+
+      - name: Zapisz zaktualizowane artykuły na stronie (GitHub Pages)
+        run: |
+          if [ -f articles.json ]; then
+            git config user.name "VerityBot"
+            git config user.email "bot@verity.pl"
+            git add articles.json
+            git diff --staged --quiet || (git commit -m "Automatyczna aktualizacja artykułów RSS" && git push)
+          fi
