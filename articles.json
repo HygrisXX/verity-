@@ -1,6 +1,262 @@
 [
   {
     "id": 1,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
+    "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/ab/abrqn92yues5874dkwks9mtuu2n41kg5.jpeg",
+    "published_iso": "2026-11-13T02:09:05+01:00",
+    "display_date": "13.11.2026, 02:09",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 87,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Polsat News",
+        "paragraphs": [
+          "Uprzejmie informuję panie prezydencie, że junta wojskowa nie jest charakterystyczna dla naszego kraju w czasach demokratycznych - zwrócił się do głowy państwa marszałek Sejmu Włodzimierz Czarzasty. W ocenie lidera Lewicy, Karol Nawrocki podczas jednego z przemówień miał sugerować, że dobrze by było, gdyby prezydent wraz z generałami zarządzał krajem. [Źródło: Polsat News]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Dziennik.pl",
+        "paragraphs": [
+          "To nie jest tak, że prezydent Karol Nawrocki rządzi Polską razem z generałami - powiedział w czwartek w Bratysławie marszałek Sejmu Włodzimierz Czarzasty nawiązując do wypowiedzi prezydenta podczas uroczystości w dniu Narodowego Święta Niepodległości. [Źródło: Dziennik.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Depesza źródłowa",
+        "summary": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej/"
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Marszałek Czarzasty krytykuje prezydenta Nawrockiego. Padły słowa o \"juncie wojskowej\"",
+        "url": "https://wiadomosci.dziennik.pl/polityka/artykuly/11343999,marszalek-czarzasty-krytykuje-prezydenta-nawrockiego-padly-slowa-o-juncie-wojskowej.html"
+      }
+    ],
+    "sources": [
+      "Dziennik.pl",
+      "Polsat News"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
+    "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/00f95ff87545b147bc9b1873b968094e/?t=crop:3588:1569:nowe:0:412,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T02:09:05+01:00",
+    "display_date": "13.11.2026, 02:09",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 87,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Rzeczpospolita",
+        "paragraphs": [
+          "Wielka Brytania jest pierwszym państwem na świecie, które objęło sankcjami wszystkie 10 największych koncernów naftowych Rosji. Londyn ogłosił dziś nowy pakiet ograniczeń w odpowiedzi na „ciągłe barbarzyństwo Rosji”. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Energetyka24",
+        "paragraphs": [
+          "Ambasadorowie państw członkowskich przy UE uzgodnili objęcie sankcjami 145 podmiotów i osób związanych z rosyjskim systemem finansowym, tzw. flotą cieni oraz kampaniami dezinformacyjnymi. [Źródło: Energetyka24]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Londyn uderza w Rosję nowymi sankcjami",
+        "url": "https://energia.rp.pl/surowce-i-paliwa/art45482381-londyn-uderza-w-rosje-nowymi-sankcjami"
+      },
+      {
+        "outlet": "Energetyka24",
+        "angle": "Depesza źródłowa",
+        "summary": "Nowe sankcje wobec Rosji. Unia uderza we flotę cieni",
+        "url": "https://energetyka24.com/polityka/prawo/nowe-sankcje-wobec-rosji-unia-uderza-we-flote-cieni"
+      }
+    ],
+    "sources": [
+      "Energetyka24",
+      "Rzeczpospolita"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/polacy-i-zydzi-tysiac-lat-wspolnej-historii",
+    "seo_title": "Polacy i Żydzi: tysiąc lat wspólnej historii",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/d3a096a1feb8fc93f31e67c086c1f5d1/?t=resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T02:09:05+01:00",
+    "display_date": "13.11.2026, 02:09",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 87,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Rzeczpospolita",
+        "paragraphs": [
+          "„Znaczna część elity izraelskiej wywodzi się z diaspory, która, począwszy od lat 80. XIX wieku, zaczęła opuszczać ziemie dawnej Rzeczypospolitej. Dziś między Polską a Izraelem istnieje bliskość – i zarazem trwałe niezrozumienie” – mówi prof. Andrzej Chwalba w rozmowie z Michałem Przeperskim. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: WP Wiadomości",
+        "paragraphs": [
+          "Wołodymyr Zełenski przekazał, że dojdzie do \"największej wymiany jeńców\" wojennych z Rosją. Prezydent Ukrainy przekazał tę wiadomość po spotkaniu z Jaredem Kushnerem i Stevem Witkoffem. [Źródło: WP Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Polacy i Żydzi: tysiąc lat wspólnej historii",
+        "url": "https://historia.rp.pl/historia-polski/art45481421-polacy-i-zydzi-tysiac-lat-wspolnej-historii"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Tysiące żołnierzy mają wrócić. \"Największa wymiana w historii\"",
+        "url": "https://wiadomosci.wp.pl/tysiace-zolnierzy-maja-wrocic-najwieksza-wymiana-w-historii-7350387763316736a"
+      }
+    ],
+    "sources": [
+      "Rzeczpospolita",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
+    "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/10/30/320x240px/gHGeUG4pB8PXPFfvpBrhVYVEVoZ2lI8mLItru5gI.canx.jpg",
+    "published_iso": "2026-11-13T02:09:05+01:00",
+    "display_date": "13.11.2026, 02:09",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 87,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Defence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Fakty / RSS"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa: Defence24",
+        "paragraphs": [
+          "W środę, 11 listopada, na cmentarzu w Arlington pojawił się Pete Hegseth, składający kwiaty na Grobie Nieznanego Żołnierza. Niestety, nie wszyscy potrafili zachować należytą powagę. Musiał interweniować wartownik. [Źródło: Defence24]"
+        ]
+      },
+      {
+        "heading": "Relacja źródłowa: Onet Wiadomości",
+        "paragraphs": [
+          "Sekretarz obrony USA Pete Hegseth odznaczył starszego szeregowego Thomasa Iglesiasa medalem pochwalnym. Dzień wcześniej wojskowy upomniał delegację z Pete'em Hegsethem na czele za niestosowne zachowanie podczas wizyty na Cmentarzu Narodowym w Arlington. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Defence24",
+        "angle": "Depesza źródłowa",
+        "summary": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
+        "url": "https://defence24.pl/geopolityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zolnierza"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Pete Hegseth upomniany przez żołnierza. Szeregowy otrzymał medal",
+        "url": "https://wiadomosci.onet.pl/swiat/zolnierz-upomnial-petea-hegsetha-sekretarz-obrony-usa-wreczyl-mu-medal/874e89y"
+      }
+    ],
+    "sources": [
+      "Defence24",
+      "Onet Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -77,7 +333,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -154,7 +410,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -218,7 +474,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -282,7 +538,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -372,7 +628,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -449,7 +705,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -526,7 +782,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -603,7 +859,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -719,7 +975,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -809,7 +1065,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -899,7 +1155,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -976,7 +1232,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -1027,7 +1283,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -1078,7 +1334,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -1129,7 +1385,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -1180,7 +1436,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
@@ -1243,7 +1499,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/warszawa-liderem-wzrost-w-w-europie-allegro-orlen-i-banki-ci-gn-gpw-w-g-r",
     "seo_title": "Warszawa liderem wzrostów w Europie. Allegro, Orlen i banki ciągną GPW w górę",
@@ -1293,7 +1549,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/pieni-dze-pa-p-nie-p-jd-na-sp-at-pfizera-jest-decyzja-belgijskiego-s-du",
     "seo_title": "Pieniądze PAŻP nie pójdą na spłatę Pfizera. Jest decyzja belgijskiego sądu",
@@ -1343,7 +1599,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-s-d-uzna-kontrol-za-niezgodn-z-prawe",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -1393,7 +1649,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/huti-uderzyli-w-obiekty-aramco-celem-tak-e-strategiczny-ropoci-g",
     "seo_title": "Huti uderzyli w obiekty Aramco. Celem także strategiczny ropociąg",
@@ -1443,7 +1699,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/wstrz-s-w-nvidii-jensen-huang-odchodzi-po-aferze-szpiegowskiej",
     "seo_title": "Wstrząs w Nvidii. Jensen Huang odchodzi po aferze szpiegowskiej",
@@ -1493,7 +1749,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/zus-automatycznie-umorzy-nale-no-ci-sprzed-1999-r-oto-skutki",
     "seo_title": "ZUS automatycznie umorzy należności sprzed 1999 r. Oto skutki",
@@ -1543,7 +1799,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/reklamy-w-republice-brzoska-odpowiada-dziennikarzowi-dezinformacja-dla-clic",
     "seo_title": "Reklamy w Republice. Brzoska odpowiada dziennikarzowi: dezinformacja dla clickbaitu",
@@ -1593,7 +1849,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/sp-ka-mentzen-ze-strat-przychody-spad-y",
     "seo_title": "Spółka Mentzen ze stratą. Przychody spadły",
@@ -1643,7 +1899,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burza-wok-republiki-co-z-reklamami-firmy-t-umacz",
     "seo_title": "Burza wokół Republiki. Co z reklamami? Firmy tłumaczą",
@@ -1693,7 +1949,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/ile-kosztuje-dolar-kurs-dolara-do-z-otego-pln-usd-12-11-2026",
     "seo_title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 12.11.2026",
@@ -1743,7 +1999,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/elastyczno-czyli-jak-kupowa-gaz-i-na-tym-zyska",
     "seo_title": "Elastyczność, czyli jak kupować gaz i na tym zyskać",
