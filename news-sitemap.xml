@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T18:46:12+01:00</news:publication_date>
+      <news:title>Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp</image:loc>
+      <image:title>Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T18:46:12+01:00</news:publication_date>
+      <news:title>Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T18:46:12+01:00</news:publication_date>
+      <news:title>Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/an/anj1f1beu4zi915s5nrnnt2a6so295ts.jpg</image:loc>
+      <image:title>Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T18:46:12+01:00</news:publication_date>
+      <news:title>Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg</image:loc>
+      <image:title>Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci/</loc>
     <news:news>
       <news:publication>
