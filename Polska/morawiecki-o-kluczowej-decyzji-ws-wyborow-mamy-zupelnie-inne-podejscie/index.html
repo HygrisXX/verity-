@@ -105,7 +105,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../styles.css?v=420c7465" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -114,8 +114,8 @@
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -144,7 +144,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -266,15 +266,15 @@
         <a class="card-media-link" href="../../Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia/" onclick="return openArticleLink(event, 2, '/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg" alt="Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg" alt="Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 18:46</span></div>
           <h2 class="story-title"><a class="story-title-link" href="../../Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia/" onclick="return openArticleLink(event, 2, '/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia')">Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia</a></h2>
           <p class="story-lede">Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii…</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">4 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:96%"></span></span>96% zgodności</span><span>4 źródła · 1 min</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>3 źródła · 1 min</span></div>
         </div>
       </div>
     </article><article class="cat" style="--h:20" data-id="6">
@@ -282,7 +282,7 @@
         <a class="card-media-link" href="../../Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace/" onclick="return openArticleLink(event, 6, '/Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg" alt="Rosyjskie żądania ws. wystąpienia Finlandii z NATO. &quot;Po prostu oburzające&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg" alt="Rosyjskie żądania ws. wystąpienia Finlandii z NATO. &quot;Po prostu oburzające&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -329,6 +329,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js"></script>
+  <script src="../../app.js?v=6ad73779"></script>
 </body>
 </html>

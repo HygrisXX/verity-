@@ -288,6 +288,18 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
             body_part = doc.split('id="articlesFeed"', 1)[-1]
             self.assertLessEqual(body_part.count(lead_nb), 1)
 
+    def test_editorial_filter_blocks_plus_minus_and_html_has_asset_cache_busting(self):
+        self.assertTrue(
+            uln.is_opinion_or_blacklisted(
+                "„Dziki Koń Dziewięć”. Trudno sobie wyobrazić piękniejsze zakończenie tej historii",
+                "https://www.rp.pl/plus-minus/art45484011-dziki-kon-dziewiec",
+            )
+        )
+        with open(os.path.join(ROOT_DIR, "index.html"), "r", encoding="utf-8") as f:
+            home_doc = f.read()
+        self.assertRegex(home_doc, r'href="styles\.css\?v=[0-9a-f]{8}"')
+        self.assertRegex(home_doc, r'src="app\.js\?v=[0-9a-f]{8}"')
+
 
 if __name__ == "__main__":
     unittest.main()

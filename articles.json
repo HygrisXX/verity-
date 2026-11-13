@@ -94,12 +94,12 @@
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -111,18 +111,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku. [Źródło: TVP.info, WP Wiadomości, Radio Zachód, Kresy.pl]",
+          "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku. [Źródło: TVP.info]",
           "Wśród swoich warunków wymienił też przejęcie całego Donbasu, w tym części obwodów donieckiego i ługańskiego, które obecnie znajdują się pod kontrolą Kijowa. Ponadto Ukraina miałaby przyjąć status państwa niezaangażowanego i zrzec się planów przystąpienia do NATO, przy czym opcja członkostwa w Unii Europejskiej pozostałaby otwarta. [Źródło: TVP.info]",
-          "Według rosyjskiego planu porty w Odessie i Mikołajowie zostałyby zdemilitaryzowane, aby Ukraina nie mogła wykorzystywać ich jako baz morskich. Propozycja zawiera również zapisy dotyczące swobody żeglugi na Morzu Czarnym i Bałtyckim. Według „Bilda” żądania Moskwy dotyczą także Mołdawii. [Źródło: TVP.info]",
-          "— Samo proponowanie czegoś takiego jest po prostu oburzające – oświadczył fiński minister obrony Antti Häkkänen. [Źródło: WP Wiadomości, Kresy.pl]"
+          "Według rosyjskiego planu porty w Odessie i Mikołajowie zostałyby zdemilitaryzowane, aby Ukraina nie mogła wykorzystywać ich jako baz morskich. Propozycja zawiera również zapisy dotyczące swobody żeglugi na Morzu Czarnym i Bałtyckim. Według „Bilda” żądania Moskwy dotyczą także Mołdawii. [Źródło: TVP.info]"
         ]
       },
       {
@@ -147,12 +146,6 @@
         "url": "https://wiadomosci.wp.pl/rosja-chce-wyjscia-finlandii-z-nato-ostra-reakcja-helsinek-7350645734774784a"
       },
       {
-        "outlet": "Radio Zachód",
-        "angle": "Doniesienie regionalne",
-        "summary": "Wyjście Finlandii z NATO i wycofanie Sojuszu z krajów bałtyckich. Doniesienia nt. żądań Rosji w Abu Zabi",
-        "url": "https://zachod.pl/1590064/wyjscie-finlandii-z-nato-i-wycofanie-sojuszu-z-krajow-baltyckich-doniesienia-nt-zadan-rosji-w-abu-zabi/"
-      },
-      {
         "outlet": "Kresy.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Media: Rosja chce wspólnie z USA ustalić nowy porządek w Europie. Finlandia poza NATO, Mołdawia państwem federalnym",
@@ -161,7 +154,6 @@
     ],
     "sources": [
       "Kresy.pl",
-      "Radio Zachód",
       "TVP.info",
       "WP Wiadomości"
     ],
@@ -248,7 +240,7 @@
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
@@ -273,7 +265,7 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie. Autor pisma domaga się zbadania legalności użycia broni palnej przez funkcjonariusza. [Źródło: InfoSecurity24, Niezależna.pl, Fakt.pl]"
+          "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie. Autor pisma domaga się zbadania legalności użycia broni palnej przez funkcjonariusza. [Źródło: InfoSecurity24]"
         ]
       },
       {
@@ -3590,8 +3582,8 @@
   },
   {
     "id": 50,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
+    "path": "/Polska",
+    "seo_url": "/Polska/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
     "thumbnail_url": "https://cdn.defence24.pl/2026/11/12/320x240px/YGLVZtKyBQetmWTZozuplxnaDWL6EzP7MhZ5DlmW.46kg.png",
     "published_iso": "2026-11-13T04:53:56+01:00",
@@ -3606,7 +3598,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Swiat"
+        "val": "/Polska"
       },
       {
         "label": "Główne źródło",
@@ -3640,7 +3632,7 @@
     "corrections": [],
     "summary_lead": "Policja zatrzymała już 11 osób podejrzewanych o publikowanie w internecie wpisów gloryfikujących sprawcę tragicznego ataku w Krakowie lub sugerujących możliwość kolejnych zamachów.",
     "meta_description": "Policja zatrzymała już 11 osób podejrzewanych o publikowanie w internecie wpisów gloryfikujących sprawcę tragicznego ataku w Krakowie lub sugerujących…",
-    "keywords": "Swiat, Wychwalali, sprawcę, Krakowie"
+    "keywords": "Polska, Wychwalali, sprawcę, Krakowie"
   },
   {
     "id": 51,
@@ -4401,8 +4393,8 @@
   },
   {
     "id": 61,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
     "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/ab/abrqn92yues5874dkwks9mtuu2n41kg5.jpeg",
     "published_iso": "2026-11-13T02:09:05+01:00",
@@ -4417,7 +4409,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Swiat"
+        "val": "/Polska/Polityka"
       },
       {
         "label": "Główne źródło",
@@ -4458,7 +4450,7 @@
     "corrections": [],
     "summary_lead": "Uprzejmie informuję panie prezydencie, że junta wojskowa nie jest charakterystyczna dla naszego kraju w czasach demokratycznych – zwrócił się do głowy państwa marszałek Sejmu Włodzimierz Czarzasty.",
     "meta_description": "Uprzejmie informuję panie prezydencie, że junta wojskowa nie jest charakterystyczna dla naszego kraju w czasach demokratycznych – zwrócił się do głowy…",
-    "keywords": "Swiat, Czarzasty, zwrócił, prezydenta, Padły, słowa, juncie"
+    "keywords": "Polityka, Czarzasty, zwrócił, prezydenta, Padły, słowa, juncie"
   },
   {
     "id": 62,

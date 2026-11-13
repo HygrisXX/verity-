@@ -97,7 +97,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=420c7465" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -106,8 +106,8 @@
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -136,7 +136,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -177,7 +177,7 @@
       <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 16, '/Sport/manchester-united-podal-nazwisko-nowego-trenera')">
         <a class="lead-thumb-wrap" href="../Sport/manchester-united-podal-nazwisko-nowego-trenera/" onclick="return openArticleLink(event, 16, '/Sport/manchester-united-podal-nazwisko-nowego-trenera')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-          <img src="https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg" alt="Manchester United podał nazwisko nowego trenera" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()" />
+          <img src="https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg" alt="Manchester United podał nazwisko nowego trenera" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />
         </a>
         <div class="lead-main">
           <div class="story-top"><span class="cat-badge">Sport</span><span class="story-date">13.11.2026, 14:11</span></div>
@@ -195,7 +195,7 @@
         <a class="card-media-link" href="../Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje/" onclick="return openArticleLink(event, 18, '/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000NIZ85PLTFO5NW-C321.webp" alt="Reprezentacja na łasce Lewandowskiego. &quot;Do Turcji jeździ się na wakacje&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.iplsc.com/-/000NIZ85PLTFO5NW-C321.webp" alt="Reprezentacja na łasce Lewandowskiego. &quot;Do Turcji jeździ się na wakacje&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -212,7 +212,7 @@
         <a class="card-media-link" href="../Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy/" onclick="return openArticleLink(event, 20, '/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp" alt="Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp" alt="Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -229,7 +229,7 @@
         <a class="card-media-link" href="../Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna/" onclick="return openArticleLink(event, 36, '/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000NIY7XVMHMOIJ5-C321.webp" alt="Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.iplsc.com/-/000NIY7XVMHMOIJ5-C321.webp" alt="Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -246,7 +246,7 @@
         <a class="card-media-link" href="../Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow/" onclick="return openArticleLink(event, 64, '/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/wx/wxn6wqw63r8m5rjxv8112rfngmnkaqz9.jpg" alt="Anglia awansowała do ćwierćfinału Ligi Narodów" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://ipla.pluscdn.pl/dituel/cp/wx/wxn6wqw63r8m5rjxv8112rfngmnkaqz9.jpg" alt="Anglia awansowała do ćwierćfinału Ligi Narodów" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -263,7 +263,7 @@
         <a class="card-media-link" href="../Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow/" onclick="return openArticleLink(event, 66, '/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.gremicdn.pl/image/free/a258dcfef370f32215637e0f9992ba76/?t=crop:4822:2108:nowe:0:0,resize:fill:600:300,enlarge:1" alt="Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.gremicdn.pl/image/free/a258dcfef370f32215637e0f9992ba76/?t=crop:4822:2108:nowe:0:0,resize:fill:600:300,enlarge:1" alt="Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -280,7 +280,7 @@
         <a class="card-media-link" href="../Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci/" onclick="return openArticleLink(event, 69, '/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000NIXOF14I6FKLA-C321.webp" alt="Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.iplsc.com/-/000NIXOF14I6FKLA-C321.webp" alt="Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -297,7 +297,7 @@
         <a class="card-media-link" href="../Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie/" onclick="return openArticleLink(event, 70, '/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://bi.im-g.pl/im/f5/00/1b/z28312565IHG.jpg" alt="Polski Związek Strzelectwa reaguje na zamach w Krakowie" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://bi.im-g.pl/im/f5/00/1b/z28312565IHG.jpg" alt="Polski Związek Strzelectwa reaguje na zamach w Krakowie" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -314,7 +314,7 @@
         <a class="card-media-link" href="../Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5/" onclick="return openArticleLink(event, 73, '/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000NIXWZN3EU0JMK-C321.webp" alt="Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.iplsc.com/-/000NIXWZN3EU0JMK-C321.webp" alt="Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -360,6 +360,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/Sport";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../app.js"></script>
+  <script src="../app.js?v=6ad73779"></script>
 </body>
 </html>

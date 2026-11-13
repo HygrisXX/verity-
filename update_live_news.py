@@ -183,6 +183,7 @@ EDITORIAL_URL_SEGMENTS = (
     "/opinie/", "/felietony/", "/komentarze/", "/blogi/",
     "/horoskop/", "/horoskopy/", "/quiz/", "/lotto/", "/galerie/",
     "/porady/", "/gwiazdy/", "/plotki/", "/transmisje/",
+    "/plus-minus/", "/kultura/", "/film/", "/muzyka/", "/ksiazki/", "/recenzje/", "/rozrywka/", "/styl-zycia/",
 )
 
 
@@ -331,6 +332,7 @@ def _parse_feed_xml(xml_raw: bytes):
 def infer_category_path(default_path: str, link: str, title: str) -> str:
     u = (link or "").lower()
     tl = (title or "").lower()
+    tl_norm = _norm_pl(tl)
     if any(seg in u for seg in ("/sport/", "/tenis/", "/pilka-nozna/", "/siatkowka/", "/koszykowka/", "/zuzel/")) or any(
         kw in tl for kw in ("wta finals", "ekstraklasa", "liga narodów", "liga mistrzów", "puchar świata", "lewandowski", "świątek")
     ):
@@ -344,6 +346,11 @@ def infer_category_path(default_path: str, link: str, title: str) -> str:
             return "/Polska/Gospodarka"
         if any(seg in u for seg in ("/polityka/", "/kraj/", "/prawo/")):
             return "/Polska/Polityka"
+    elif default_path == "/Swiat" and not any(seg in u for seg in ("/swiat/", "/zagranica/", "/za-granica/", "/ze-swiata/")):
+        if "/polityka/" in u or any(kw in tl_norm for kw in ("czarzast", "nawrock", "tusk", "kaczynsk", "holown", "sejm", "senat")):
+            return "/Polska/Polityka"
+        if "/policja/" in u and any(kw in tl_norm for kw in ("krakow", "warszaw", "gdansk", "poznan", "wroclaw", "polsk")):
+            return "/Polska"
     return default_path
 
 

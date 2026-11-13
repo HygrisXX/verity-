@@ -111,7 +111,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css" />
+  <link rel="stylesheet" href="../../../styles.css?v=420c7465" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -120,8 +120,8 @@
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -150,7 +150,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -270,7 +270,7 @@
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:150" data-id="5">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci/" onclick="return openArticleLink(event, 5, '/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
             
           </div>
@@ -288,7 +288,7 @@
         <a class="card-media-link" href="../../../Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets/" onclick="return openArticleLink(event, 7, '/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://rmf.rmffm.pl/news/attachments/3e/d8/zdjecie-ilustracyjne-636x421-3ed8a736.jpg" alt="Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://rmf.rmffm.pl/news/attachments/3e/d8/zdjecie-ilustracyjne-636x421-3ed8a736.jpg" alt="Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -335,6 +335,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js"></script>
+  <script src="../../../app.js?v=6ad73779"></script>
 </body>
 </html>

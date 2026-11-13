@@ -4,6 +4,7 @@ VERITY - Generator warstw SEO, stron statycznych HTTP 200, map witryny i RSS.
 Wywoływany automatycznie po każdej aktualizacji bazy przez update_live_news.py.
 """
 
+import hashlib
 import html
 import json
 import os
@@ -66,7 +67,8 @@ def path_hue(path: str) -> int:
 
 
 def short_cat_label(path: str) -> str:
-    parts = [p for p in (path or "/Polska").split("/") if p]
+    pretty = {"Swiat": "Świat", "Poznan": "Poznań"}
+    parts = [pretty.get(p, p) for p in (path or "/Polska").split("/") if p]
     if len(parts) <= 1:
         return parts[0] if parts else "Polska"
     return " · ".join(parts[1:])
@@ -247,9 +249,10 @@ def _render_card_ssr(art: dict, rel_root: str) -> str:
         meter = '<span class="meter neutral">Temat lokalny/niszowy</span>'
 
     thumb_url = art.get("thumbnail_url") or ""
+    no_thumb_cls = "" if thumb_url else " no-thumb"
     img_html = (
         f'<img src="{html.escape(thumb_url, quote=True)}" alt="{title_attr}" class="story-thumb" '
-        f'loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />'
+        f'loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add(\'no-thumb\');this.remove()" />'
         if thumb_url
         else ""
     )
@@ -263,7 +266,7 @@ def _render_card_ssr(art: dict, rel_root: str) -> str:
     return f"""<article class="cat" style="--h:{hue}" data-id="{art['id']}">
       <div class="story-card">
         <a class="card-media-link" href="{href}" onclick="return openArticleLink(event, {art['id']}, '{js_url}')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap{no_thumb_cls}">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">{cat_label}</span><span class="thumb-fallback-mark">V</span></div>
             {img_html}
           </div>
@@ -300,9 +303,10 @@ def _render_lead_ssr(lead: dict, rel_root: str) -> str:
         meter = '<span class="meter neutral">Temat lokalny/niszowy</span>'
 
     thumb_url = lead.get("thumbnail_url") or ""
+    no_thumb_cls = "" if thumb_url else " no-thumb"
     img_html = (
         f'<img src="{html.escape(thumb_url, quote=True)}" alt="{title_attr}" class="lead-thumb" '
-        f'loading="eager" referrerpolicy="no-referrer" onerror="this.remove()" />'
+        f'loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add(\'no-thumb\');this.closest(\'.lead-story\')?.classList.add(\'no-thumb\');this.remove()" />'
         if thumb_url
         else ""
     )
@@ -314,8 +318,8 @@ def _render_lead_ssr(lead: dict, rel_root: str) -> str:
     js_url = html.escape(seo_url, quote=True)
 
     return f"""<article class="cat lead-wrap" style="--h:{hue}">
-      <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, {lead['id']}, '{js_url}')">
-        <a class="lead-thumb-wrap" href="{href}" onclick="return openArticleLink(event, {lead['id']}, '{js_url}')" tabindex="-1" aria-hidden="true">
+      <div class="lead-story{no_thumb_cls}" onclick="if(!event.target.closest('a'))openArticleLink(event, {lead['id']}, '{js_url}')">
+        <a class="lead-thumb-wrap{no_thumb_cls}" href="{href}" onclick="return openArticleLink(event, {lead['id']}, '{js_url}')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">{cat_label}</span><span class="thumb-fallback-mark">V</span></div>
           {img_html}
         </a>
@@ -697,6 +701,8 @@ def _page_shell(
     extra_meta_html: str = "",
     init_script_vars: str = "",
     robots_content: str = "index, follow, max-image-preview:large, max-snippet:-1",
+    css_ver: str = "1",
+    js_ver: str = "1",
 ) -> str:
     safe_title = html.escape(title, quote=True)
     safe_desc = html.escape(description, quote=True)
@@ -739,7 +745,7 @@ def _page_shell(
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="{html.escape(rel_root, quote=True)}styles.css" />
+  <link rel="stylesheet" href="{html.escape(rel_root, quote=True)}styles.css?v={html.escape(css_ver, quote=True)}" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -748,8 +754,8 @@ def _page_shell(
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -778,7 +784,7 @@ def _page_shell(
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -837,7 +843,7 @@ def _page_shell(
   </footer>
 
   <script>{init_script_vars}</script>
-  <script src="{html.escape(rel_root, quote=True)}app.js"></script>
+  <script src="{html.escape(rel_root, quote=True)}app.js?v={html.escape(js_ver, quote=True)}"></script>
 </body>
 </html>
 """
@@ -849,10 +855,20 @@ def _write_file(path: str, content: str):
         f.write(content)
 
 
+def _asset_hash(path: str) -> str:
+    try:
+        with open(path, "rb") as f:
+            return hashlib.sha1(f.read()).hexdigest()[:8]
+    except Exception:
+        return "1"
+
+
 def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = None):
     if not site_base_url:
         site_base_url = detect_site_base_url(base_dir)
     site_base_url = site_base_url.rstrip("/")
+    css_ver = _asset_hash(os.path.join(base_dir, "styles.css"))
+    js_ver = _asset_hash(os.path.join(base_dir, "app.js"))
 
     published = _sort_articles_for_feed(
         [a for a in articles if a.get("status", "AUTO_PUBLISHED") == "AUTO_PUBLISHED"]
@@ -908,6 +924,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         active_path="/Polska",
         ssr_main_html=render_feed_ssr(published, "/Polska", ""),
         init_script_vars=f'window.VERITY_BASE="";window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+        css_ver=css_ver,
+        js_ver=js_ver,
     )
     with open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(home_html)
@@ -953,6 +971,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             active_path=cat_path,
             ssr_main_html=render_feed_ssr(published, cat_path, rel_root),
             init_script_vars=f'window.VERITY_BASE={json.dumps(rel_root)};window.VERITY_INITIAL_PATH={json.dumps(cat_path)};window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+            css_ver=css_ver,
+            js_ver=js_ver,
         )
         _write_file(os.path.join(base_dir, rel_dir, "index.html"), cat_html)
 
@@ -990,6 +1010,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
                 f'window.VERITY_INITIAL_ARTICLE_URL={json.dumps("/" + seo_url)};'
                 f'window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};'
             ),
+            css_ver=css_ver,
+            js_ver=js_ver,
         )
         _write_file(os.path.join(base_dir, seo_url, "index.html"), art_html)
 
@@ -1009,6 +1031,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         ssr_main_html='<div class="empty-state"><h2>Nie znaleziono strony (404)</h2><p style="margin-top:0.5rem">Sprawdź adres lub wróć na stronę główną portalu VERITY.</p></div>',
         init_script_vars=f'window.VERITY_IS_404=true;window.VERITY_BASE={json.dumps(root_abs_prefix)};window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
         robots_content="noindex, follow",
+        css_ver=css_ver,
+        js_ver=js_ver,
     )
     with open(os.path.join(base_dir, "404.html"), "w", encoding="utf-8") as f:
         f.write(not_found_html)

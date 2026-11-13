@@ -114,7 +114,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../styles.css?v=420c7465" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -123,8 +123,8 @@
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -153,7 +153,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -285,7 +285,7 @@
         <a class="card-media-link" href="../../Sport/manchester-united-podal-nazwisko-nowego-trenera/" onclick="return openArticleLink(event, 16, '/Sport/manchester-united-podal-nazwisko-nowego-trenera')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg" alt="Manchester United podał nazwisko nowego trenera" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg" alt="Manchester United podał nazwisko nowego trenera" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -301,7 +301,7 @@
         <a class="card-media-link" href="../../Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy/" onclick="return openArticleLink(event, 20, '/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp" alt="Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.iplsc.com/-/000NJ0C3OEXISHYI-C321.webp" alt="Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -348,6 +348,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js"></script>
+  <script src="../../app.js?v=6ad73779"></script>
 </body>
 </html>

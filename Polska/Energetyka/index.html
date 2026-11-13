@@ -91,7 +91,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../styles.css?v=420c7465" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -100,8 +100,8 @@
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -130,7 +130,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -171,7 +171,7 @@
       <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 21, '/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma')">
         <a class="lead-thumb-wrap" href="../../Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma/" onclick="return openArticleLink(event, 21, '/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-          <img src="https://cdn.defence24.pl/2026/03/23/320x240px/pLlxqVSco6x0GGKQPSN9QKMR7DpLUQNqc55akCky.utci.jpg" alt="Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()" />
+          <img src="https://cdn.defence24.pl/2026/03/23/320x240px/pLlxqVSco6x0GGKQPSN9QKMR7DpLUQNqc55akCky.utci.jpg" alt="Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />
         </a>
         <div class="lead-main">
           <div class="story-top"><span class="cat-badge">Energetyka</span><span class="story-date">13.11.2026, 12:56</span></div>
@@ -189,7 +189,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja/" onclick="return openArticleLink(event, 23, '/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://cdn.defence24.pl/2026/11/13/320x240px/ZJENIT2LyLl26tn4mwcIbf761ei7uhDx1wXEbRhG.yh4w.png" alt="Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://cdn.defence24.pl/2026/11/13/320x240px/ZJENIT2LyLl26tn4mwcIbf761ei7uhDx1wXEbRhG.yh4w.png" alt="Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -206,7 +206,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek/" onclick="return openArticleLink(event, 24, '/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://cdn.defence24.pl/2026/09/02/320x240px/pGqjNb4kx0i6Rzsy1Sebrqa487LZAGxGizv8YAGq.diny.jpg" alt="Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://cdn.defence24.pl/2026/09/02/320x240px/pGqjNb4kx0i6Rzsy1Sebrqa487LZAGxGizv8YAGq.diny.jpg" alt="Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -223,7 +223,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu/" onclick="return openArticleLink(event, 48, '/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://wysokienapiecie.pl/wp-content/uploads/2022/09/rachunki_energia_ogrzewanie_efektywnosc.x63527.jpg" alt="Rząd szykuje na 2027 rok zamrożenie cen gazu" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://wysokienapiecie.pl/wp-content/uploads/2022/09/rachunki_energia_ogrzewanie_efektywnosc.x63527.jpg" alt="Rząd szykuje na 2027 rok zamrożenie cen gazu" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -240,7 +240,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/sprawa-elektrowni-ostroleka-to-symbol-chorych-ukladow-w-panstwowych/" onclick="return openArticleLink(event, 75, '/Polska/Energetyka/sprawa-elektrowni-ostroleka-to-symbol-chorych-ukladow-w-panstwowych')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://wysokienapiecie.pl/wp-content/uploads/2018/12/polityk_rynek.x63527.jpg" alt="Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://wysokienapiecie.pl/wp-content/uploads/2018/12/polityk_rynek.x63527.jpg" alt="Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -257,7 +257,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/przemysl-energochlonny-oze-szansa-na-finansowanie-inwestycji-w-zielona/" onclick="return openArticleLink(event, 76, '/Polska/Energetyka/przemysl-energochlonny-oze-szansa-na-finansowanie-inwestycji-w-zielona')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://wysokienapiecie.pl/wp-content/uploads/2026/11/2025-11-06-PS-Ogolne-srodowiskowe-002-scaled.x63527.jpg" alt="„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://wysokienapiecie.pl/wp-content/uploads/2026/11/2025-11-06-PS-Ogolne-srodowiskowe-002-scaled.x63527.jpg" alt="„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -274,7 +274,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej/" onclick="return openArticleLink(event, 77, '/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://wysokienapiecie.pl/wp-content/uploads/2026/06/Ormuz-Iran-fot.-Depositphotos.x63527.jpg" alt="Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://wysokienapiecie.pl/wp-content/uploads/2026/06/Ormuz-Iran-fot.-Depositphotos.x63527.jpg" alt="Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -291,7 +291,7 @@
         <a class="card-media-link" href="../../Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi/" onclick="return openArticleLink(event, 78, '/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://wysokienapiecie.pl/wp-content/uploads/2026/11/Kapota_Zdar-002.x63527.png" alt="W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://wysokienapiecie.pl/wp-content/uploads/2026/11/Kapota_Zdar-002.x63527.png" alt="W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -337,6 +337,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_PATH="/Polska/Energetyka";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js"></script>
+  <script src="../../app.js?v=6ad73779"></script>
 </body>
 </html>

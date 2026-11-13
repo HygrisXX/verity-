@@ -329,18 +329,70 @@ async function run() {
     assert(searchInfo.h1.includes('Wyniki dla'), `Brak nagłówka wyników wyszukiwania: ${searchInfo.h1}`);
     console.log('[PASS] Bezpośrednie wejście SSR + wyszukiwarka noindex OK');
 
-    // 5. Test responsywności Mobile 390x844
+    // 5. Test responsywności Mobile 390x844 i 360x780 (Android) + szerokość pola szukania
     await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
     await browser.goto(`${baseUrl}/`);
-    const mobHome = await browser.evalJs('({ overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth })');
+    const mobHome = await browser.evalJs(`(() => {
+      const si = document.getElementById('searchInput')?.getBoundingClientRect();
+      const topBar = document.querySelector('.top-utility')?.getBoundingClientRect();
+      const themeBox = document.querySelector('.theme-switcher')?.getBoundingClientRect();
+      const brandBox = document.querySelector('.brand')?.getBoundingClientRect();
+      return {
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        sw: document.documentElement.scrollWidth,
+        cw: document.documentElement.clientWidth,
+        searchW: si ? Math.round(si.width) : 0,
+        topH: topBar ? Math.round(topBar.height) : 0,
+        brandSameRowAsTheme: Boolean(brandBox && themeBox && Math.abs(brandBox.top - themeBox.top) < 20),
+        themeAboveSearch: Boolean(themeBox && si && themeBox.bottom <= si.top + 2),
+      };
+    })()`);
     assert(!mobHome.overflow, `Poziomy scroll na mobile (/): ${mobHome.sw} > ${mobHome.cw}`);
+    assert(mobHome.searchW >= 300, `Za wąskie pole szukania na mobile 390px: ${mobHome.searchW}px`);
+    assert(mobHome.topH <= 38, `Pasek top-utility na mobile powinien mieścić się w 1 linii (wysokość=${mobHome.topH}px)`);
+    assert(mobHome.brandSameRowAsTheme && mobHome.themeAboveSearch, `Zły układ mobilnego nagłówka: ${JSON.stringify(mobHome)}`);
     await browser.screenshot('mobile_home.png');
+
+    // Wąski ekran Android 360x780 w trybie ciemnym + widok artykułu z leadem bez miniatury (.no-thumb)
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 360, height: 780, deviceScaleFactor: 3, mobile: true });
+    await browser.goto(`${baseUrl}/`);
+    await browser.evalJs('applyTheme("dark");');
+    await new Promise(r => setTimeout(r, 150));
+    const mob360 = await browser.evalJs(`(() => {
+      const si = document.getElementById('searchInput')?.getBoundingClientRect();
+      const topBar = document.querySelector('.top-utility')?.getBoundingClientRect();
+      return {
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        searchW: si ? Math.round(si.width) : 0,
+        topH: topBar ? Math.round(topBar.height) : 0,
+      };
+    })()`);
+    assert(!mob360.overflow && mob360.searchW >= 290, `Problem na 360px: ${JSON.stringify(mob360)}`);
+    await browser.screenshot('mobile_360_dark.png');
+    await browser.evalJs('applyTheme("light");');
+
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
+    await browser.goto(`${baseUrl}/Swiat/`);
+    const mobSwiat = await browser.evalJs(`(() => {
+      const nav = document.querySelector('.path-nav');
+      const act = document.querySelector('.path-chip.active');
+      const nBox = nav?.getBoundingClientRect();
+      const aBox = act?.getBoundingClientRect();
+      return {
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        activeLabel: act?.textContent?.trim() || '',
+        activeVisible: Boolean(nBox && aBox && aBox.left >= nBox.left - 2 && aBox.right <= nBox.right + 2),
+      };
+    })()`);
+    assert(!mobSwiat.overflow, 'Poziomy scroll na mobile (/Swiat/)');
+    assert(mobSwiat.activeVisible, `Aktywna zakładka ${mobSwiat.activeLabel} niewidoczna na pasku nawigacji mobile`);
+    await browser.screenshot('mobile_swiat.png');
 
     await browser.goto(`${baseUrl}${sampleMulti.seo_url}/`);
     const mobArt = await browser.evalJs('({ overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth })');
     assert(!mobArt.overflow, `Poziomy scroll na mobile (artykuł): ${mobArt.sw} > ${mobArt.cw}`);
     await browser.screenshot('mobile_article.png');
-    console.log('[PASS] Mobile 390px strona główna i artykuł (0 overflow) OK');
+    console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", 0 overflow) OK`);
 
     assert(browser.pageExceptions.length === 0, `Nieobsłużone wyjątki JS: ${browser.pageExceptions.join('; ')}`);
     assert(browser.consoleErrors.length === 0, `Błędy console.error: ${browser.consoleErrors.join('; ')}`);

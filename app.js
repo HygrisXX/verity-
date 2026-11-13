@@ -119,6 +119,310 @@ if (window.matchMedia) {
 let articles = [
   {
     "id": 1,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza",
+    "seo_title": "Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza",
+    "summary_lead": "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa.",
+    "meta_description": "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa.",
+    "keywords": "Swiat, wśród, państw, negocjujących, wojny, Rosji, Bruksela",
+    "thumbnail_url": "https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp",
+    "published_iso": "2026-11-13T18:46:12+01:00",
+    "display_date": "13.11.2026, 18:46",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 98,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "5 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Wydarzenia"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (5 źródeł)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (5 redakcji)",
+        "paragraphs": [
+          "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa. Jak dodał, oprócz naszego kraju w rozmowach udział wezmą: Francja, Niemcy, Wielka Brytania i Włochy oraz instytucje Unii Europejskiej. [Źródło: Interia Wydarzenia, Onet Wiadomości, TVN24, WP Wiadomości, Wyborcza.pl]",
+          "— Polska będzie w tym formacie odgrywała kluczową rolę – wskazał premier Donald Tusk. [Źródło: Interia Wydarzenia, Onet Wiadomości, TVN24, Wyborcza.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Relacja wiodąca",
+        "summary": "Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza",
+        "url": "https://wydarzenia.interia.pl/zagranica/news-polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruk,nId,23573329"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Polska wśród państw negocjujących z Rosją w sprawie Ukrainy. Jest decyzja",
+        "url": "https://wiadomosci.onet.pl/swiat/polska-wsrod-panstw-negocjujacych-z-rosja-w-sprawie-ukrainy-jest-decyzja/5s1fwm0"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Polska wśród krajów UE negocjujących w sprawie wojny Rosji przeciwko Ukrainie. \"Ucieszyłem się\"",
+        "url": "https://tvn24.pl/swiat/polska-wsrod-krajow-ue-negocjujacych-z-rosja-w-sprawie-wojny-w-ukrainie-st9338400?source=rss"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Costa: Polska wśród państw negocjujących ws. Ukrainy",
+        "url": "https://wiadomosci.wp.pl/costa-polska-wsrod-panstw-negocjujacych-ws-ukrainy-7350647710607360a"
+      },
+      {
+        "outlet": "Wyborcza.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Polska wśród państw, które będą negocjować w sprawie Ukrainy",
+        "url": "https://wyborcza.pl/7,75399,33131600,polska-wsrod-panstw-ktore-beda-negocjowac-w-sprawie-ukrainy.html"
+      }
+    ],
+    "sources": [
+      "Interia Wydarzenia",
+      "Onet Wiadomości",
+      "TVN24",
+      "WP Wiadomości",
+      "Wyborcza.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska",
+    "seo_url": "/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia",
+    "seo_title": "Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia",
+    "summary_lead": "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku.",
+    "meta_description": "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i…",
+    "keywords": "Polska, Kreml, zażądał, wyjścia, Finlandii, NATO, Helsinki",
+    "thumbnail_url": "https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg",
+    "published_iso": "2026-11-13T18:46:12+01:00",
+    "display_date": "13.11.2026, 18:46",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "TVP.info"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku. [Źródło: TVP.info]",
+          "Wśród swoich warunków wymienił też przejęcie całego Donbasu, w tym części obwodów donieckiego i ługańskiego, które obecnie znajdują się pod kontrolą Kijowa. Ponadto Ukraina miałaby przyjąć status państwa niezaangażowanego i zrzec się planów przystąpienia do NATO, przy czym opcja członkostwa w Unii Europejskiej pozostałaby otwarta. [Źródło: TVP.info]",
+          "Według rosyjskiego planu porty w Odessie i Mikołajowie zostałyby zdemilitaryzowane, aby Ukraina nie mogła wykorzystywać ich jako baz morskich. Propozycja zawiera również zapisy dotyczące swobody żeglugi na Morzu Czarnym i Bałtyckim. Według „Bilda” żądania Moskwy dotyczą także Mołdawii. [Źródło: TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Według niemieckiego dziennika \"Bild\" takie kwestie miały znaleźć się na stole podczas negocjacji pokojowych w Abu Zabi. Helsinki stanowczo odrzucają rosyjskie żądania. [Źródło: WP Wiadomości]",
+          "W zamian miałaby wycofać broń jądrową z Białorusi. [Źródło: Kresy.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja wiodąca",
+        "summary": "Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia",
+        "url": "https://www.tvp.info/96459710/finlandia-ma-wyjsc-z-nato-kreml-stawia-warunki-w-negocjacjach-pokojowych"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Rosja chce wyjścia Finlandii z NATO? Ostra reakcja Helsinek",
+        "url": "https://wiadomosci.wp.pl/rosja-chce-wyjscia-finlandii-z-nato-ostra-reakcja-helsinek-7350645734774784a"
+      },
+      {
+        "outlet": "Kresy.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Media: Rosja chce wspólnie z USA ustalić nowy porządek w Europie. Finlandia poza NATO, Mołdawia państwem federalnym",
+        "url": "https://kresy.pl/wydarzenia/media-rosja-chce-wspolnie-z-usa-ustalic-nowy-porzadek-w-europie-finlandia-poza-nato-moldawia-panstwem-federalnym/"
+      }
+    ],
+    "sources": [
+      "Kresy.pl",
+      "TVP.info",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek",
+    "seo_title": "Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek",
+    "summary_lead": "— Kiedy zrozumiemy prawdziwe intencje Europejczyków i chęć wniesienia wkładu w proces pokojowy, będziemy mogli podjąć decyzję o prowadzeniu rozmów w rozszerzonym formacie – w ten sposób Dmitrij Pieskow skomentował doniesienia o…",
+    "meta_description": "— Kiedy zrozumiemy prawdziwe intencje Europejczyków i chęć wniesienia wkładu w proces pokojowy, będziemy mogli podjąć decyzję o prowadzeniu rozmów w…",
+    "keywords": "Swiat, Negocjacje, udziałem, Europy, dwugłos, Rosja, stawia",
+    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/an/anj1f1beu4zi915s5nrnnt2a6so295ts.jpg",
+    "published_iso": "2026-11-13T18:46:12+01:00",
+    "display_date": "13.11.2026, 18:46",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 94,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Polsat News"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "— Kiedy zrozumiemy prawdziwe intencje Europejczyków i chęć wniesienia wkładu w proces pokojowy, będziemy mogli podjąć decyzję o prowadzeniu rozmów w rozszerzonym formacie – w ten sposób Dmitrij Pieskow skomentował doniesienia o udziale przedstawicieli Starego Kontynentu w negocjacjach na temat wojny w Ukrainie. [Źródło: Polsat News, TVP.info, TVN24]",
+          "Wcześniej USA komunikowały, iż Moskwa i Kijów wyraziły na to zgodę. [Źródło: Polsat News, TVP.info]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Polsat News",
+        "angle": "Relacja wiodąca",
+        "summary": "Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek/"
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Kolejna runda negocjacji. Rosja wciąż się waha w sprawie Europy",
+        "url": "https://www.tvp.info/96458008/negocjacje-pokojowe-ukraina-rosja-ze-wsparciem-usa-rosja-nie-podjela-decyzji"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Europa przy negocjacjach z Rosją? Kaja Kallas: Jared Kushner w końcu to przyznał",
+        "url": "https://tvn24.pl/swiat/europa-przy-negocjacjach-z-rosja-kaja-kallas-o-spotkaniu-w-dublinie-z-wyslannikami-prezydenta-usa-st9337555?source=rss"
+      }
+    ],
+    "sources": [
+      "Polsat News",
+      "TVN24",
+      "TVP.info"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
+    "seo_title": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem",
+    "summary_lead": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
+    "meta_description": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
+    "keywords": "Polityka, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg",
+    "published_iso": "2026-11-13T18:46:12+01:00",
+    "display_date": "13.11.2026, 18:46",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "InfoSecurity24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie. Autor pisma domaga się zbadania legalności użycia broni palnej przez funkcjonariusza. [Źródło: InfoSecurity24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Dwóch młodych policjantów rzuciło się na uzbrojonego zamachowca i przypłaciło to ciężkimi ranami. Jeden z nich dopiero co wybudził się ze śpiączki farmakologicznej. Cała Polska nazywa ich bohaterami. [Źródło: Niezależna.pl]",
+          "Funkcjonariusze otrzymali m.in. Krzyże Oficerskie Orderu Odrodzenia Polski oraz Krzyże Rycerskie za Męstwo, Ratowanie Życia i Ochronę Mienia. Kierownictwo policji przyznało im też po 100 tys. zł zapomogi. [Źródło: Fakt.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "InfoSecurity24",
+        "angle": "Analiza sektorowa",
+        "summary": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem",
+        "url": "https://infosecurity24.pl/sluzby-mundurowe/policja/doniosl-na-policjanta-ktory-zatrzymal-sprawce-strzelaniny-w-krakowie-prokuratura-zajmie-sie-zawiadomieniem"
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Wiadomo, kto doniósł na policjantów z Krakowa? Sam się pochwalił w sieci",
+        "url": "https://blaskonline.pl/wiadomo-kto-doniosl-na-policjantow-z-krakowa-sam-sie-pochwalil-w-sieci/"
+      },
+      {
+        "outlet": "Fakt.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Zatrzymali zamachowca w Krakowie. Teraz dostali odznaczenia. \"To nasi bohaterowie\"",
+        "url": "https://www.fakt.pl/wydarzenia/polska/krakow/krakow-artur-moranski-i-jakub-kulik-nagrodzeni-za-odwage-podczas-zamachu/yn79cfn"
+      }
+    ],
+    "sources": [
+      "Fakt.pl",
+      "InfoSecurity24",
+      "Niezależna.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci",
     "seo_title": "Autopay celem cyberataku. Chodzi o dane dotyczące płatności",
@@ -185,7 +489,7 @@ let articles = [
     "keywords": "Gospodarka, Autopay, cyberataku, dane, płatności"
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska",
     "seo_url": "/Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace",
     "seo_title": "Rosyjskie żądania ws. wystąpienia Finlandii z NATO. \"Po prostu oburzające\"",
@@ -248,7 +552,7 @@ let articles = [
     "keywords": "Polska, Rosyjskie, żądania, Finlandii, NATO"
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets",
     "seo_title": "Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS",
@@ -315,7 +619,7 @@ let articles = [
     "keywords": "Gospodarka, Miliardy, euro, oszczędności, przemysłu, zwiększa, pulę"
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal",
     "seo_title": "Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy",
@@ -413,7 +717,7 @@ let articles = [
     "keywords": "Polityka, Nielegalne, treści, internetu, Nawrocki, zawetował"
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Olsztyn",
     "seo_url": "/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
     "seo_title": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa",
@@ -468,7 +772,7 @@ let articles = [
     "keywords": "Olsztyn, Mrągowem, 30-latek, zabójstwa"
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin",
     "seo_title": "Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin",
@@ -535,7 +839,7 @@ let articles = [
     "keywords": "Polityka, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin"
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym",
     "seo_title": "Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?",
@@ -602,7 +906,7 @@ let articles = [
     "keywords": "Gospodarka, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym"
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska",
     "seo_url": "/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu",
     "seo_title": "AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu",
@@ -692,7 +996,7 @@ let articles = [
     "keywords": "Polska, wygenerowała, głos, lektora, warszawskiego"
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska",
     "seo_url": "/Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw",
     "seo_title": "Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw",
@@ -767,7 +1071,7 @@ let articles = [
     "keywords": "Polska, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych"
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska",
     "seo_url": "/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie",
     "seo_title": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\"",
@@ -836,7 +1140,7 @@ let articles = [
     "keywords": "Polska, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne"
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty",
     "seo_title": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
@@ -903,7 +1207,7 @@ let articles = [
     "keywords": "Gospodarka, Burger, Drwala, wraca, McDonald, Cena, premiera"
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Sport",
     "seo_url": "/Sport/manchester-united-podal-nazwisko-nowego-trenera",
     "seo_title": "Manchester United podał nazwisko nowego trenera",
@@ -1001,7 +1305,7 @@ let articles = [
     "keywords": "Sport, Manchester, United, podał, nazwisko, nowego, trenera"
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami",
     "seo_title": "Twarda deklaracja Morawieckiego: Idziemy sami",
@@ -1069,7 +1373,7 @@ let articles = [
     "keywords": "Polityka, Twarda, deklaracja, Morawieckiego, Idziemy, sami"
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Sport",
     "seo_url": "/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje",
     "seo_title": "Reprezentacja na łasce Lewandowskiego. \"Do Turcji jeździ się na wakacje\"",
@@ -1146,7 +1450,7 @@ let articles = [
     "keywords": "Sport, Reprezentacja, łasce, Lewandowskiego, Turcji, jeździ, wakacje"
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Lublin",
     "seo_url": "/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek",
     "seo_title": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
@@ -1213,7 +1517,7 @@ let articles = [
     "keywords": "Lublin, dożywotni, zakaz, prowadzenia, pojazdów, złamał, 39-latek"
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Sport",
     "seo_url": "/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy",
     "seo_title": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
@@ -1296,7 +1600,7 @@ let articles = [
     "keywords": "Sport, Ależ, debiut, Polki, Pucharze, podium, Decydowały"
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma",
     "seo_title": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
@@ -1364,7 +1668,7 @@ let articles = [
     "keywords": "Energetyka, Spór, podatek, zysków, Orlen, Lietuva, Minister"
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem",
     "seo_title": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
@@ -1431,7 +1735,7 @@ let articles = [
     "keywords": "Polityka, Trump, odsuwa, Vance, wojna, negocjacje, Iranem"
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja",
     "seo_title": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
@@ -1485,7 +1789,7 @@ let articles = [
     "keywords": "Energetyka, Płonie, rafineria, Wołgogradzie, Ukraińskie, znacząco, zmniejszają"
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek",
     "seo_title": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
@@ -1582,7 +1886,7 @@ let articles = [
     "keywords": "Energetyka, zapłacisz, paliwo, weekend, taniej"
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Polska",
     "seo_url": "/Polska/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln",
     "seo_title": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
@@ -1656,7 +1960,7 @@ let articles = [
     "keywords": "Polska, Łukasz, Gibała, pilną, prośbą, Donalda, Tuska"
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Polska",
     "seo_url": "/Polska/rece-precz-od-republiki-atak-na-biuro-posla-ko",
     "seo_title": "„Ręce precz od Republiki”. Atak na biuro posła KO",
@@ -1731,7 +2035,7 @@ let articles = [
     "keywords": "Polska, Ręce, precz, Republiki, biuro, posła"
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska",
     "seo_url": "/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w",
     "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
@@ -1799,7 +2103,7 @@ let articles = [
     "keywords": "Polska, Stan, rannych, zamachu, systematycznie, poprawia, pozostają"
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do",
     "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
@@ -1888,7 +2192,7 @@ let articles = [
     "keywords": "Polityka, Cyberatak, Niemczech, producenta, dronów, hakerzy, trafili"
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
     "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
@@ -1970,7 +2274,7 @@ let articles = [
     "keywords": "Gospodarka, wzrosły, ceny, dane, inflacji"
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira",
     "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
@@ -2030,293 +2334,8 @@ let articles = [
     "summary_lead": "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował analizy dotyczące cyklicznie monitorowanych przez bank centralny danych…",
     "meta_description": "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował…",
     "keywords": "Gospodarka, Przelewy, natychmiastowe, rekordy, Express, Elixira, BlueCash"
-  },
-  {
-    "id": 27,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w",
-    "seo_title": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
-    "thumbnail_url": "https://mamstartup.pl/wp-content/uploads/2023/02/blik.jpg",
-    "published_iso": "2026-11-13T10:54:04+01:00",
-    "display_date": "13.11.2026, 10:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "MamStartup.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni. Bank Millennium wprowadził jako pierwszy na rynku możliwość rozkładania takich transakcji na miesięczne raty. Z rozwiązania mogą korzystać zarówno dotychczasowi, jak i nowi użytkownicy. [Źródło: MamStartup.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Należności mogą spłacać w trzech, sześciu lub 12 ratach. Oprocentowanie zadłużenia naliczane jest od momentu zakupu, a odsetki wynoszą 14,5 proc. rocznie. Nie ma dodatkowej prowizji za skorzystanie z rat. [Źródło: Cashless.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "MamStartup.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
-        "url": "https://mamstartup.pl/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w-platnosciach-odroczonych/"
-      },
-      {
-        "outlet": "Cashless.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Blik Płacę Później to już nie tylko płatności odroczone. Millennium wprowadza w ramach tej usługi raty",
-        "url": "https://www.cashless.pl/19954-blik-place-pozniej-millennium-raty"
-      }
-    ],
-    "sources": [
-      "Cashless.pl",
-      "MamStartup.pl"
-    ],
-    "corrections": [],
-    "summary_lead": "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni. Bank Millennium wprowadził jako pierwszy na rynku możliwość rozkładania takich transakcji na miesięczne raty.",
-    "meta_description": "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni.",
-    "keywords": "Gospodarka, Blik, Płacę, Później, opcją, Bank, Millennium"
-  },
-  {
-    "id": 28,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026",
-    "seo_title": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
-    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmN/kbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc2OD/E1MjQvZmlsZXMvd2FsdXRhLXdhbHV0eS1ub3Rvd2FuaWEtZWJ1cnktd/3J6ZXNpZW4tb2JsaWdhY2plLTM5MjgzNjA2LnBuZyIsInciOjM4NDB9",
-    "published_iso": "2026-11-13T09:54:25+01:00",
-    "display_date": "13.11.2026, 09:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Forsal.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Dziś Główny Urząd Statystyczny opublikował nowe dane o PKB i inflacji, ale zdaniem analityków informacje te raczej nie będą istotnym wsparciem dla krajowej waluty. [Źródło: Forsal.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "W piątek za jednego dolara (USD) trzeba zapłacić 3.983 zł. [Źródło: Money.pl]",
-          "W piątek, 13.11.2026 r. o poranku polski złoty wyraźnie traci względem głównych konkurentów na rynku Forex. Dzisiejsza sesja charakteryzuje się następującymi zmianami na parach walutowych: GBP/PLN (-0,03%), CHF/PLN (-0,02%), USD/PLN (+0,06%) oraz EUR/PLN (+0,10%). Największa zmienność występuje w przypadku euro, które wraca w rejon 4,40 zł. Para walutowa dolar-złoty wraca okolice 3,98 zł Notowania EUR/PLN. [Źródło: Comparic.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Forsal.pl",
-        "angle": "Raport rynkowy",
-        "summary": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
-        "url": "https://forsal.pl/finanse/waluty/artykuly/11344111,cena-euro-dolara-i-franka-kursy-walut-13112026.html"
-      },
-      {
-        "outlet": "Money.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 13.11.2026",
-        "url": "https://www.money.pl/pieniadze/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-13-11-2026-7350476023773184a.html"
-      },
-      {
-        "outlet": "Comparic.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Dolar zmierza w stronę 4 zł! Co z kursem złotego w piątek 13.11.2026 r.?",
-        "url": "https://comparic.pl/dolar-zmierza-w-strone-4-zl-co-z-kursem-zlotego-w-piatek-13-11-2026-r/"
-      }
-    ],
-    "sources": [
-      "Comparic.pl",
-      "Forsal.pl",
-      "Money.pl"
-    ],
-    "corrections": [],
-    "summary_lead": "Dziś Główny Urząd Statystyczny opublikował nowe dane o PKB i inflacji, ale zdaniem analityków informacje te raczej nie będą istotnym wsparciem dla krajowej waluty.",
-    "meta_description": "Dziś Główny Urząd Statystyczny opublikował nowe dane o PKB i inflacji, ale zdaniem analityków informacje te raczej nie będą istotnym wsparciem dla krajowej…",
-    "keywords": "Gospodarka, Cena, euro, dolara, franka, Kursy, walut"
-  },
-  {
-    "id": 29,
-    "path": "/Polska",
-    "seo_url": "/Polska/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego",
-    "seo_title": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
-    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/hh/hhs32zkd5svjag7ov2w4q4hoyopm8ckf.jpeg",
-    "published_iso": "2026-11-13T09:54:25+01:00",
-    "display_date": "13.11.2026, 09:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Polsat News"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Były rzecznik prasowy dawnego premiera Ukrainy Mykoły Azarowa ucierpiał w wyniku wybuchu samochodu w Moskwie – podają rosyjskie media. Mężczyzna przetransportowany został do szpitala. To już druga eksplozja auta w Rosji w ciągu dwóch dni. [Źródło: Polsat News]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Rankiem 13 listopada SUV eksplodował na ul. Kirowogradzkiej w moskiewskiej dzielnicy Czertanowo, prawdopodobnie w wyniku detonacji podłożonego pod nim ładunku wybuchowego. [Źródło: Onet Wiadomości]",
-          "Ranny został w ciężkim stanie przewieziony do szpitala. [Źródło: Interia Wydarzenia]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja wiodąca",
-        "summary": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego-premiera-ukrainy/"
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Eksplozja w Moskwie. Ranny były rzecznik premiera Ukrainy",
-        "url": "https://wiadomosci.onet.pl/swiat/eksplozja-w-moskwie-ranny-byly-rzecznik-premiera-ukrainy/m60leds"
-      },
-      {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Eksplozja w Moskwie. Media: Ranny rzecznik byłego premiera Ukrainy",
-        "url": "https://wydarzenia.interia.pl/ukraina-rosja/news-eksplozja-w-moskwie-media-ranny-rzecznik-bylego-premiera-ukr,nId,23572951"
-      }
-    ],
-    "sources": [
-      "Interia Wydarzenia",
-      "Onet Wiadomości",
-      "Polsat News"
-    ],
-    "corrections": [],
-    "summary_lead": "Były rzecznik prasowy dawnego premiera Ukrainy Mykoły Azarowa ucierpiał w wyniku wybuchu samochodu w Moskwie – podają rosyjskie media. Mężczyzna przetransportowany został do szpitala.",
-    "meta_description": "Były rzecznik prasowy dawnego premiera Ukrainy Mykoły Azarowa ucierpiał w wyniku wybuchu samochodu w Moskwie – podają rosyjskie media.",
-    "keywords": "Polska, Eksplozja, auta, Moskwie, pokładzie, postać, otoczenia"
-  },
-  {
-    "id": 30,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army",
-    "seo_title": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
-    "thumbnail_url": "https://cdn.defence24.pl/2026/09/22/320x240px/IiLUUjKK7gS1SRXVVQHfvzAS533Rs3p1wfV8Qyxw.zxla.jpg",
-    "published_iso": "2026-11-13T09:54:25+01:00",
-    "display_date": "13.11.2026, 09:54",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Polityka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "InfoSecurity24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Amerykański oficer pełniący służbę w dowództwie Sojuszniczego Korpusu Szybkiego Reagowania NATO został zatrzymany w Wielkiej Brytanii w związku z podejrzeniem szpiegostwa na rzecz Rosji. Według ustaleń mediów ma stopień podpułkownika, pracował w pionie kadrowym i był uprawniony do zapoznawania się z materiałami oznaczonymi klauzulą „NATO Secret”. [Źródło: InfoSecurity24]",
-          "Stopień wojskowy oraz miejsce służby nadają sprawie szczególne znaczenie. Z doniesień prasowych wynika jednocześnie, że działania służb mogły zapobiec przekazaniu informacji Moskwie. [Źródło: InfoSecurity24]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Urzędnik wysyłał maila, a kopia szła do Moskwy. [Źródło: Spider's Web]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "InfoSecurity24",
-        "angle": "Analiza sektorowa",
-        "summary": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
-        "url": "https://infosecurity24.pl/za-granica/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army-zatrzymano-w-wielkiej-brytanii"
-      },
-      {
-        "outlet": "Spider's Web",
-        "angle": "Kontekst technologiczny",
-        "summary": "Urzędnik wysyłał maila, a kopia szła do Moskwy. Rosjanie szpiegowali NATO i UE",
-        "url": "https://spidersweb.pl/2026/11/rosja-szpiegostwo-maile-nato-ue-eset.html"
-      }
-    ],
-    "sources": [
-      "InfoSecurity24",
-      "Spider's Web"
-    ],
-    "corrections": [],
-    "summary_lead": "Amerykański oficer pełniący służbę w dowództwie Sojuszniczego Korpusu Szybkiego Reagowania NATO został zatrzymany w Wielkiej Brytanii w związku z podejrzeniem szpiegostwa na rzecz Rosji.",
-    "meta_description": "Amerykański oficer pełniący służbę w dowództwie Sojuszniczego Korpusu Szybkiego Reagowania NATO został zatrzymany w Wielkiej Brytanii w związku z…",
-    "keywords": "Polityka, Pracował, NATO, szpiegował, rzecz, Rosji, Podpułkownika"
   }
-];
+]
 
 const CANONICAL_ORIGIN = (
   typeof window !== 'undefined' && typeof window.VERITY_CANONICAL_ORIGIN === 'string' && window.VERITY_CANONICAL_ORIGIN
@@ -2525,9 +2544,22 @@ function isModifiedClick(e) {
 }
 
 function syncNavActive() {
+  let activeBtn = null;
   document.querySelectorAll('.path-chip').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-path') === currentPath);
+    const isAct = btn.getAttribute('data-path') === currentPath;
+    btn.classList.toggle('active', isAct);
+    if (isAct) activeBtn = btn;
   });
+  if (activeBtn && activeBtn.parentElement) {
+    const nav = activeBtn.parentElement;
+    const left = activeBtn.offsetLeft - 12;
+    const right = activeBtn.offsetLeft + activeBtn.offsetWidth + 12;
+    if (left < nav.scrollLeft) {
+      nav.scrollLeft = Math.max(0, left);
+    } else if (right > nav.scrollLeft + nav.clientWidth) {
+      nav.scrollLeft = Math.max(0, right - nav.clientWidth);
+    }
+  }
 }
 
 function syncStaticNavHrefs() {
@@ -2943,7 +2975,8 @@ function renderPortal() {
 }
 
 function shortCatLabel(path) {
-  const parts = (path || '/Polska').split('/').filter(Boolean);
+  const pretty = { Swiat: 'Świat', Poznan: 'Poznań' };
+  const parts = (path || '/Polska').split('/').filter(Boolean).map(p => pretty[p] || p);
   if (parts.length <= 1) return parts[0] || 'Polska';
   return parts.slice(1).join(' · ');
 }
@@ -2957,11 +2990,12 @@ function outletMonogram(name) {
 
 function thumbWrapHtml(art, wrapClass, imgClass, eager = false) {
   const label = esc(shortCatLabel(art.path));
+  const noThumbCls = art.thumbnail_url ? '' : ' no-thumb';
   const fallback = `<div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${label}</span><span class="thumb-fallback-mark">V</span></div>`;
   const img = art.thumbnail_url
-    ? `<img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="${imgClass}" loading="${eager ? 'eager' : 'lazy'}" referrerpolicy="no-referrer" onerror="this.remove()" />`
+    ? `<img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="${imgClass}" loading="${eager ? 'eager' : 'lazy'}" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />`
     : '';
-  return `<div class="${wrapClass}">${fallback}${img}</div>`;
+  return `<div class="${wrapClass}${noThumbCls}">${fallback}${img}</div>`;
 }
 
 function storyCardHtml(art) {
@@ -3012,12 +3046,13 @@ function renderFeed(list, q) {
   if (lead) {
     const lHref = esc(articleHref(lead.seo_url));
     const lJsUrl = esc(lead.seo_url || '');
+    const lNoThumbCls = lead.thumbnail_url ? '' : ' no-thumb';
     leadHtml = `
     <article ${catAttr(lead)} class="lead-wrap">
-      <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, ${lead.id}, '${lJsUrl}')">
-        <a class="lead-thumb-wrap" href="${lHref}" onclick="return openArticleLink(event, ${lead.id}, '${lJsUrl}')" tabindex="-1" aria-hidden="true">
+      <div class="lead-story${lNoThumbCls}" onclick="if(!event.target.closest('a'))openArticleLink(event, ${lead.id}, '${lJsUrl}')">
+        <a class="lead-thumb-wrap${lNoThumbCls}" href="${lHref}" onclick="return openArticleLink(event, ${lead.id}, '${lJsUrl}')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(lead.path))}</span><span class="thumb-fallback-mark">V</span></div>
-          ${lead.thumbnail_url ? `<img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()" />` : ''}
+          ${lead.thumbnail_url ? `<img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />` : ''}
         </a>
         <div class="lead-main">
           <div class="story-top"><span class="cat-badge">${esc(shortCatLabel(lead.path))}</span><span class="story-date">${esc(lead.display_date)}</span></div>

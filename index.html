@@ -169,7 +169,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=420c7465" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -178,8 +178,8 @@
     <div class="container top-utility-inner">
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
-        <span class="top-sep" aria-hidden="true"></span>
-        <span>Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -208,7 +208,7 @@
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów…"
+              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -248,11 +248,11 @@
       </div><article class="cat lead-wrap" style="--h:265">
       <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 1, '/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza')">
         <a class="lead-thumb-wrap" href="Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza/" onclick="return openArticleLink(event, 1, '/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza')" tabindex="-1" aria-hidden="true">
-          <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Swiat</span><span class="thumb-fallback-mark">V</span></div>
-          <img src="https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp" alt="Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()" />
+          <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Świat</span><span class="thumb-fallback-mark">V</span></div>
+          <img src="https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp" alt="Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />
         </a>
         <div class="lead-main">
-          <div class="story-top"><span class="cat-badge">Swiat</span><span class="story-date">13.11.2026, 18:46</span></div>
+          <div class="story-top"><span class="cat-badge">Świat</span><span class="story-date">13.11.2026, 18:46</span></div>
           <h2 class="lead-title"><a class="story-title-link" href="Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza/" onclick="return openArticleLink(event, 1, '/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza')">Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza</a></h2>
           <p class="lead-lede">Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa.</p>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>5 źródeł · 1 minuta czytania</span></div>
@@ -267,15 +267,15 @@
         <a class="card-media-link" href="Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia/" onclick="return openArticleLink(event, 2, '/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg" alt="Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg" alt="Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 18:46</span></div>
           <h2 class="story-title"><a class="story-title-link" href="Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia/" onclick="return openArticleLink(event, 2, '/Polska/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia')">Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia</a></h2>
           <p class="story-lede">Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii…</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">4 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:96%"></span></span>96% zgodności</span><span>4 źródła · 1 min</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>3 źródła · 1 min</span></div>
         </div>
       </div>
     </article>
@@ -283,12 +283,12 @@
       <div class="story-card">
         <a class="card-media-link" href="Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek/" onclick="return openArticleLink(event, 3, '/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Swiat</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/an/anj1f1beu4zi915s5nrnnt2a6so295ts.jpg" alt="Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Świat</span><span class="thumb-fallback-mark">V</span></div>
+            <img src="https://ipla.pluscdn.pl/dituel/cp/an/anj1f1beu4zi915s5nrnnt2a6so295ts.jpg" alt="Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Swiat</span><span class="story-date">13.11.2026, 18:46</span></div>
+          <div class="story-top"><span class="cat-badge">Świat</span><span class="story-date">13.11.2026, 18:46</span></div>
           <h2 class="story-title"><a class="story-title-link" href="Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek/" onclick="return openArticleLink(event, 3, '/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek')">Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek</a></h2>
           <p class="story-lede">— Kiedy zrozumiemy prawdziwe intencje Europejczyków i chęć wniesienia wkładu w proces pokojowy, będziemy mogli podjąć decyzję o prowadzeniu rozmów w rozszerzonym formacie – w ten sposób Dmitrij…</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Swiat</span></div>
@@ -301,7 +301,7 @@
         <a class="card-media-link" href="Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/" onclick="return openArticleLink(event, 4, '/Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg" alt="Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg" alt="Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -309,14 +309,14 @@
           <h2 class="story-title"><a class="story-title-link" href="Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/" onclick="return openArticleLink(event, 4, '/Polska/Polityka/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura')">Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem</a></h2>
           <p class="story-lede">Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>3 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>3 źródła · 1 min</span></div>
         </div>
       </div>
     </article>
 <article class="cat" style="--h:150" data-id="5">
       <div class="story-card">
         <a class="card-media-link" href="Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci/" onclick="return openArticleLink(event, 5, '/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
             
           </div>
@@ -335,7 +335,7 @@
         <a class="card-media-link" href="Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace/" onclick="return openArticleLink(event, 6, '/Polska/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg" alt="Rosyjskie żądania ws. wystąpienia Finlandii z NATO. &quot;Po prostu oburzające&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg" alt="Rosyjskie żądania ws. wystąpienia Finlandii z NATO. &quot;Po prostu oburzające&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -352,7 +352,7 @@
         <a class="card-media-link" href="Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets/" onclick="return openArticleLink(event, 7, '/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://rmf.rmffm.pl/news/attachments/3e/d8/zdjecie-ilustracyjne-636x421-3ed8a736.jpg" alt="Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://rmf.rmffm.pl/news/attachments/3e/d8/zdjecie-ilustracyjne-636x421-3ed8a736.jpg" alt="Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -369,7 +369,7 @@
         <a class="card-media-link" href="Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal/" onclick="return openArticleLink(event, 8, '/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.gremicdn.pl/image/free/536a0c4bebac2fcbe889c8b8e9f567df/?t=crop:1914:837:nowe:0:35.40926201399,resize:fill:600:300,enlarge:1" alt="Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://i.gremicdn.pl/image/free/536a0c4bebac2fcbe889c8b8e9f567df/?t=crop:1914:837:nowe:0:35.40926201399,resize:fill:600:300,enlarge:1" alt="Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -386,7 +386,7 @@
         <a class="card-media-link" href="Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/" onclick="return openArticleLink(event, 9, '/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Olsztyn</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://radioolsztyn.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-13-104004.png" alt="Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://radioolsztyn.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-13-104004.png" alt="Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -403,7 +403,7 @@
         <a class="card-media-link" href="Polska/Polityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin/" onclick="return openArticleLink(event, 10, '/Polska/Polityka/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://cdn.defence24.pl/2019/01/17/320x240px/meCqiBUu4SE4H11wSaZ5eurDh5nYKJORi9BR9vzE.zqj6.jpg" alt="Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://cdn.defence24.pl/2019/01/17/320x240px/meCqiBUu4SE4H11wSaZ5eurDh5nYKJORi9BR9vzE.zqj6.jpg" alt="Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -420,7 +420,7 @@
         <a class="card-media-link" href="Polska/Gospodarka/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym/" onclick="return openArticleLink(event, 11, '/Polska/Gospodarka/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcn/NhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAw/MDAwMDAwMDAwMDc1MjAxODcvZmlsZXMvZG5pLXdvbG5lLX/ctMjAyNi1yb2t1LTM5MjIwMzgyLmpwZyIsInciOjM4NDB9" alt="Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcn/NhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAw/MDAwMDAwMDAwMDc1MjAxODcvZmlsZXMvZG5pLXdvbG5lLX/ctMjAyNi1yb2t1LTM5MjIwMzgyLmpwZyIsInciOjM4NDB9" alt="Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -437,7 +437,7 @@
         <a class="card-media-link" href="Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu/" onclick="return openArticleLink(event, 12, '/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://rmf.rmffm.pl/news/attachments/c7/e1/radek-pietruszka-636x421-c7e17337.jpg" alt="AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://rmf.rmffm.pl/news/attachments/c7/e1/radek-pietruszka-636x421-c7e17337.jpg" alt="AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -454,7 +454,7 @@
         <a class="card-media-link" href="Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw/" onclick="return openArticleLink(event, 13, '/Polska/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://s20.tvp.pl/images2/0/5/1/uid_051198f010a34ab59b4225dc7c3584f9_width_1280_play_0_pos_0_gs_0_height_720.jpg" alt="Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://s20.tvp.pl/images2/0/5/1/uid_051198f010a34ab59b4225dc7c3584f9_width_1280_play_0_pos_0_gs_0_height_720.jpg" alt="Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -471,7 +471,7 @@
         <a class="card-media-link" href="Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie/" onclick="return openArticleLink(event, 14, '/Polska/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/3n/3n85gbwvdqy81cw2zntw687crvx1sbcb.jpg" alt="Morawiecki o kluczowej decyzji ws. wyborów. &quot;Mamy zupełnie inne podejście&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://ipla.pluscdn.pl/dituel/cp/3n/3n85gbwvdqy81cw2zntw687crvx1sbcb.jpg" alt="Morawiecki o kluczowej decyzji ws. wyborów. &quot;Mamy zupełnie inne podejście&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -488,7 +488,7 @@
         <a class="card-media-link" href="Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty/" onclick="return openArticleLink(event, 15, '/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821334.webp" alt="Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821334.webp" alt="Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -505,7 +505,7 @@
         <a class="card-media-link" href="Sport/manchester-united-podal-nazwisko-nowego-trenera/" onclick="return openArticleLink(event, 16, '/Sport/manchester-united-podal-nazwisko-nowego-trenera')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg" alt="Manchester United podał nazwisko nowego trenera" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+            <img src="https://rmf.rmffm.pl/news/attachments/ac/38/east-news-636x421-ac3837db.jpg" alt="Manchester United podał nazwisko nowego trenera" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
@@ -551,6 +551,6 @@
   </footer>
 
   <script>window.VERITY_BASE="";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="app.js"></script>
+  <script src="app.js?v=6ad73779"></script>
 </body>
 </html>
