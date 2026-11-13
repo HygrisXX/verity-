@@ -16,8 +16,9 @@ import xml.etree.ElementTree as ET
 import xml.sax.saxutils
 from datetime import datetime
 
-MAX_TOTAL_ARTICLES = 100
+MAX_TOTAL_ARTICLES = 300
 MAX_NEW_PER_RUN = 4
+ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne miniatury dla 100% spokoju prawnego
 
 LIVE_RSS_FEEDS = [
     {"name": "PAP", "url": "https://www.pap.pl/rss.xml", "path": "/Polska/Polityka"},
@@ -169,15 +170,28 @@ def cluster_similar_items(items: list) -> list:
     return clusters
 
 
-def is_already_covered(candidate_title: str, existing_articles: list) -> bool:
+def is_already_covered(group: list, existing_articles: list) -> bool:
+    candidate_title = group[0]["title"]
     c_words = tokenize_title(candidate_title)
-    if not c_words:
-        return False
+    cand_links = {it.get("link", "").strip() for it in group if it.get("link")}
+    cand_slug = re.sub(r"[^a-z0-9]+", "-", candidate_title.lower()).strip("-")[:60]
+
     for art in existing_articles:
+        # 1. Sprawdź zbieżność linków źródłowych
+        existing_links = {p.get("url", "").strip() for p in art.get("perspectives", []) if p.get("url")}
+        if cand_links and existing_links and (cand_links & existing_links):
+            return True
+
+        # 2. Sprawdź identyczny lub zbliżony slug
+        e_slug = (art.get("seo_url", "").split("/")[-1] or "")[:60]
+        if cand_slug and e_slug and cand_slug == e_slug:
+            return True
+
+        # 3. Sprawdź zbieżność słów kluczowych w tytule
         e_words = tokenize_title(art.get("seo_title", ""))
-        if len(c_words & e_words) >= 2:
+        if c_words and e_words and len(c_words & e_words) >= 2:
             overlap = len(c_words & e_words) / max(1, min(len(c_words), len(e_words)))
-            if overlap >= 0.5:
+            if overlap >= 0.45:
                 return True
     return False
 
@@ -186,9 +200,9 @@ def build_article_from_group(group: list, art_id: int) -> dict:
     now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
     now_display = datetime.now().strftime("%d.%m.%Y, %H:%M")
 
-    # Wybierz reprezentatywną pozycję z miniaturą, jeśli dostępna
-    primary = next((it for it in group if it.get("thumbnail")), group[0])
-    thumbnail_url = next((it["thumbnail"] for it in group if it.get("thumbnail")), "")
+    # Wybierz reprezentatywną pozycję z miniaturą, jeśli dozwolona i dostępna
+    primary = next((it for it in group if it.get("thumbnail")), group[0]) if ENABLE_THUMBNAILS else group[0]
+    thumbnail_url = next((it["thumbnail"] for it in group if it.get("thumbnail")), "") if ENABLE_THUMBNAILS else ""
     sources = sorted(list({it["outlet"] for it in group}))
 
     # Czysty slug
@@ -267,8 +281,7 @@ def update_news_cycle():
     for grp in clusters:
         if len(new_articles) >= MAX_NEW_PER_RUN:
             break
-        cand_title = grp[0]["title"]
-        if not is_already_covered(cand_title, existing_articles):
+        if not is_already_covered(grp, existing_articles):
             art = build_article_from_group(grp, len(new_articles) + 1)
             new_articles.append(art)
 
@@ -278,7 +291,7 @@ def update_news_cycle():
     # zachowujemy dotychczasowe artykuły bez dodawania duplikatów.
     combined = new_articles + existing_articles
 
-    # 5. Ograniczenie do maksymalnie 100 artykułów w bazie testowej (kolejka krocząca)
+    # 5. Ograniczenie do maksymalnie 300 artykułów w bazie testowej (kolejka krocząca)
     combined = combined[:MAX_TOTAL_ARTICLES]
 
     # Przenumeruj identyfikatory
