@@ -1,6 +1,301 @@
 [
   {
     "id": 1,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckie",
+    "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/60e3dd06e527c52f1f3e1a8d52db7605/dron-rozpoznawczy-vector?t=crop:4349:1901:nowe:0:129,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T10:54:04+01:00",
+    "display_date": "13.11.2026, 10:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 94,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "6 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (6 źródeł)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (6 redakcji)",
+        "paragraphs": [
+          "Na serwerze z aktualizacjami oprogramowania monachijskiego producenta dronów Quantum Systems, który dostarcza drony zarówno niemieckiej, jak i ukraińskiej armii, pojawiło się szkodliwe oprogramowanie. [Źródło: Rzeczpospolita, Bankier.pl, CyberDefence24, RMF24, Dziennik.pl, TVN24]",
+          "O sprawie pisze „Der Spiegel”. [Źródło: Rzeczpospolita]",
+          "Jako pierwszy o incydencie poinformował brytyjski dziennik „Financial Times”. [Źródło: Rzeczpospolita]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
+        "url": "https://radar.rp.pl/przemysl-obronny/art45484091-cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckiej-armii"
+      },
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Cyberatak na producenta dronów. Niemcy uziemiają flotę \"Sokołów\"",
+        "url": "https://www.bankier.pl/wiadomosc/Cyberatak-na-producenta-dronow-Niemcy-uziemiaja-flote-Sokolow-9228335.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      },
+      {
+        "outlet": "CyberDefence24",
+        "angle": "Depesza źródłowa",
+        "summary": "Producent dronów dla Niemiec i Ukrainy ofiarą cyberataku. Bundeswehra uziemiła bezzałogowce",
+        "url": "https://cyberdefence24.pl/armia-i-sluzby/cyberatak-na-niemieckiego-producenta-bundeswehra-uziemila-drony"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Flota niemieckiej armii była uziemiona. Cyberatak na producenta dronów",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-flota-niemieckiej-armii-byla-uziemiona-cyberatak-na-producen,nIdn,1025972"
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Cyberatak na producenta dronów dla Bundeswehry i Ukrainy. Uziemiono flotę",
+        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11344131,cyberatak-na-producenta-dronow-dla-bundeswehry-i-ukrainy-uziemiono-fl.html"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Cyberatak na producenta dronów dla armii Niemiec i Ukrainy",
+        "url": "https://tvn24.pl/biznes/ze-swiata/quantum-systems-cyberatak-na-producenta-dronow-dla-armii-niemiec-i-ukrainy-st9337163?source=rss"
+      }
+    ],
+    "sources": [
+      "Bankier.pl",
+      "CyberDefence24",
+      "Dziennik.pl",
+      "RMF24",
+      "Rzeczpospolita",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
+    "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
+    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvc/nNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQj/AwMDAwMDAwMDAwMDc3MDE1NDcvZmlsZXMvc3VwZXJtYXJ/rZXQtemFrdXB5LTM5MzA4MzM0LmpwZyIsInciOjM4NDB9",
+    "published_iso": "2026-11-13T10:54:04+01:00",
+    "display_date": "13.11.2026, 10:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 94,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Forsal.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (4 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (4 redakcje)",
+        "paragraphs": [
+          "Jak szybko rosy ceny w październiku 2026 roku i które grupy towarów podrożały najbardziej? [Źródło: Forsal.pl]",
+          "Główny Urząd Statystyczny podał dziś najnowsze dane. [Źródło: Forsal.pl, TVN24, Biznes Interia]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Inflacja w październiku wyniosła -0,4 proc. w ujęciu miesięcznym i 3,5 proc. w ujęciu rocznym - podał GUS w ramach finalnych danych. Okazały się one zgodne z tzw. odczytem flash. [Źródło: Puls Biznesu]",
+          "W październiku 2026 roku w Polsce inflacja CPI wyniosła 3,5 procent w skali roku - podał Główny Urząd Statystyczny. W porównaniu z poprzednim miesiącem ceny towarów i usług spadły o 0,4 procent. [Źródło: TVN24]",
+          "Główny Urząd Statystyczny przekazał, że w październiku ceny wzrosły o 3,5 proc. rok do roku, ale w porównaniu z wrześniem spadły o 0,4 proc. [Źródło: Biznes Interia]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Forsal.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
+        "url": "https://forsal.pl/gospodarka/inflacja/artykuly/11344132,jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji.html"
+      },
+      {
+        "outlet": "Puls Biznesu",
+        "angle": "Depesza źródłowa",
+        "summary": "GUS potwierdził mocny spadek inflacji w październiku. Są finalne dane",
+        "url": "https://www.pb.pl/gus-potwierdzil-mocny-spadek-inflacji-w-pazdzierniku-sa-finalne-dane-1270383"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Inflacja w Polsce. Nowe dane",
+        "url": "https://tvn24.pl/biznes/pieniadze/inflacja-w-pazdzierniku-2026-w-polsce-najnowsze-dane-gus-st9336880?source=rss"
+      },
+      {
+        "outlet": "Biznes Interia",
+        "angle": "Depesza źródłowa",
+        "summary": "Wiadomo, co z cenami w październiku. GUS podał nowe dane o inflacji",
+        "url": "https://biznes.interia.pl/gospodarka/news-wiadomo-co-z-cenami-w-pazdzierniku-gus-podal-nowe-dane-o-inf,nId,23572876"
+      }
+    ],
+    "sources": [
+      "Biznes Interia",
+      "Forsal.pl",
+      "Puls Biznesu",
+      "TVN24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira-blueca",
+    "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
+    "thumbnail_url": "https://cashless.86eccc8cd4d75212496aabd35095cfe4.eu.r2.cloudflarestorage.com/system/uploads/ckeditor/pictures/3417/content_kir.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=3b14ef0c715f100a6ab42ce1213f28b0%2F20261109%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261109T000000Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=44b18807085014473919410b46f412b0996c489c3a96d45ef84011e8a9ad4ae6",
+    "published_iso": "2026-11-13T10:54:04+01:00",
+    "display_date": "13.11.2026, 10:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Cashless.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował analizy dotyczące cyklicznie monitorowanych przez bank centralny danych dotyczących liczby transakcji oszukańczych , kart płatniczych czy cen usług bankowych za II kw. [Źródło: Cashless.pl, MamStartup.pl]",
+          "2026 r. i wyniosła w analizowanym okresie 520 zł. [Źródło: Cashless.pl]",
+          "W perspektywie ostatnich lat widać, że wartość przelewów znów wykazuje tendencję wzrostową (po kilku dołkach, jak w II I kw. [Źródło: Cashless.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Cashless.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
+        "url": "https://www.cashless.pl/19958-nbp-express-elixir-autopay-blue-cash"
+      },
+      {
+        "outlet": "MamStartup.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "SKOK-i dołączają do Express Elixir. Klienci zyskają dostęp do przelewów natychmiastowych i P2P Blikiem",
+        "url": "https://mamstartup.pl/skok-i-dolaczaja-do-express-elixir-klienci-zyskaja-dostep-do-przelewow-natychmiastowych-i-p2p-blikiem/"
+      }
+    ],
+    "sources": [
+      "Cashless.pl",
+      "MamStartup.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w-plat",
+    "seo_title": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
+    "thumbnail_url": "https://mamstartup.pl/wp-content/uploads/2023/02/blik.jpg",
+    "published_iso": "2026-11-13T10:54:04+01:00",
+    "display_date": "13.11.2026, 10:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "MamStartup.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni. [Źródło: MamStartup.pl, Cashless.pl]",
+          "Bank Millennium wprowadził jako pierwszy na rynku możliwość rozkładania takich transakcji na miesięczne raty. [Źródło: MamStartup.pl]",
+          "Z rozwiązania mogą korzystać zarówno dotychczasowi, jak i nowi użytkownicy. [Źródło: MamStartup.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Należności mogą spłacać w trzech, sześciu lub 12 ratach. Oprocentowanie zadłużenia naliczane jest od momentu zakupu, a odsetki wynoszą 14,5 proc. rocznie. Nie ma dodatkowej prowizji za skorzystanie z rat. To użytkownik decyduje o sposobie spłaty, a cały proces odbywa się w jego aplikacji bankowej. Dzięki temu rozwijamy usługę zgodnie z potrzebami użytkowników, zachowując prostotę, która jest fundamentem Blika – mówi Witold Litaszewski, dyrektor departamentu finansowania konsumenckiego w Bliku. Spłata całości zadłużenia w tym okresie pozwala uniknąć jakichkolwiek kosztów związanych z obsługą finansowania. [Źródło: Cashless.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "MamStartup.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
+        "url": "https://mamstartup.pl/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w-platnosciach-odroczonych/"
+      },
+      {
+        "outlet": "Cashless.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Blik Płacę Później to już nie tylko płatności odroczone. Millennium wprowadza w ramach tej usługi raty",
+        "url": "https://www.cashless.pl/19954-blik-place-pozniej-millennium-raty"
+      }
+    ],
+    "sources": [
+      "Cashless.pl",
+      "MamStartup.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026",
     "seo_title": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
@@ -73,7 +368,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska",
     "seo_url": "/Polska/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego-premiera-uk",
     "seo_title": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
@@ -147,7 +442,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/imigranci-odmladzaja-demografie-hiszpanii-rekordowy-wzrost-liczby-ludnosci",
     "seo_title": "Imigranci „odmładzają” demografię Hiszpanii. Rekordowy wzrost liczby ludności",
@@ -211,7 +506,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army-zatrzyman",
     "seo_title": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
@@ -278,7 +573,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w-psl",
     "seo_title": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
@@ -373,7 +668,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Sport",
     "seo_url": "/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna",
     "seo_title": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
@@ -454,7 +749,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto",
     "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
@@ -530,7 +825,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska",
     "seo_url": "/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
     "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
@@ -602,7 +897,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska",
     "seo_url": "/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy",
     "seo_title": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
@@ -683,7 +978,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska",
     "seo_url": "/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka-jednosc",
     "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
@@ -755,7 +1050,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesad",
     "seo_title": "Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje",
@@ -830,7 +1125,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska",
     "seo_url": "/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z-budzetu",
     "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
@@ -894,7 +1189,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz",
     "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
@@ -953,7 +1248,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad",
     "seo_title": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
@@ -1020,7 +1315,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc",
     "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
@@ -1087,7 +1382,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -1152,7 +1447,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -1217,7 +1512,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -1316,7 +1611,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Swiat",
     "seo_url": "/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -1381,7 +1676,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Swiat",
     "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -1447,7 +1742,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Swiat",
     "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -1521,7 +1816,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -1593,7 +1888,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska",
     "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -1667,7 +1962,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
     "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
@@ -1734,7 +2029,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -1816,7 +2111,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -1895,7 +2190,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -1967,7 +2262,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -2040,7 +2335,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 33,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -2123,7 +2418,7 @@
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 34,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -2189,7 +2484,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 35,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -2255,7 +2550,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 36,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -2314,7 +2609,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 37,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -2379,7 +2674,7 @@
     "corrections": []
   },
   {
-    "id": 34,
+    "id": 38,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -2445,7 +2740,7 @@
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 39,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -2518,7 +2813,7 @@
     "corrections": []
   },
   {
-    "id": 36,
+    "id": 40,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -2592,7 +2887,7 @@
     "corrections": []
   },
   {
-    "id": 37,
+    "id": 41,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -2657,7 +2952,7 @@
     "corrections": []
   },
   {
-    "id": 38,
+    "id": 42,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -2721,7 +3016,7 @@
     "corrections": []
   },
   {
-    "id": 39,
+    "id": 43,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -2802,7 +3097,7 @@
     "corrections": []
   },
   {
-    "id": 40,
+    "id": 44,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -2875,7 +3170,7 @@
     "corrections": []
   },
   {
-    "id": 41,
+    "id": 45,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -2952,7 +3247,7 @@
     "corrections": []
   },
   {
-    "id": 42,
+    "id": 46,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -3025,7 +3320,7 @@
     "corrections": []
   },
   {
-    "id": 43,
+    "id": 47,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -3117,7 +3412,7 @@
     "corrections": []
   },
   {
-    "id": 44,
+    "id": 48,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -3197,7 +3492,7 @@
     "corrections": []
   },
   {
-    "id": 45,
+    "id": 49,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -3281,7 +3576,7 @@
     "corrections": []
   },
   {
-    "id": 46,
+    "id": 50,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -3347,7 +3642,7 @@
     "corrections": []
   },
   {
-    "id": 47,
+    "id": 51,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -3398,7 +3693,7 @@
     "corrections": []
   },
   {
-    "id": 48,
+    "id": 52,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -3449,7 +3744,7 @@
     "corrections": []
   },
   {
-    "id": 49,
+    "id": 53,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -3500,7 +3795,7 @@
     "corrections": []
   },
   {
-    "id": 50,
+    "id": 54,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -3551,7 +3846,7 @@
     "corrections": []
   },
   {
-    "id": 51,
+    "id": 55,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
