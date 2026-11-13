@@ -2,6 +2,264 @@
   {
     "id": 1,
     "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz",
+    "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
+    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LmluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMv/Rk9CMDAwMDAwMDAwMDAwNzU3Njc4Ny9maWxlcy9w/b2xpY2phLTM5MTM4Mjk0LnBuZyIsInciOjM4NDB9",
+    "published_iso": "2026-11-13T05:54:47+01:00",
+    "display_date": "13.11.2026, 05:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "GazetaPrawna.pl (DGP)"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Policjanci ranni podczas sobotniego ataku w Krakowie otrzymają zapomogi w wysokości po 100 tysięcy złotych oraz pełne pokrycie kosztów rehabilitacji – potwierdziło MSWiA. [Źródło: GazetaPrawna.pl (DGP), InfoSecurity24]",
+          "Funkcjonariusze, którzy z narażeniem życia powstrzymali zamachowca, zostali już uhonorowani orderami przez prezydenta Karola Nawrockiego, a szef resortu przyznał im prestiżowe medale im. podkomisarza Andrzeja Struja. [Źródło: GazetaPrawna.pl (DGP)]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "GazetaPrawna.pl (DGP)",
+        "angle": "Depesza źródłowa",
+        "summary": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11343872,policjanci-ranni-atak-krakow-zapomogi-100-tys-odznaczenia-mswia.html"
+      },
+      {
+        "outlet": "InfoSecurity24",
+        "angle": "Depesza źródłowa",
+        "summary": "Po 100 tys. zł dla rannych policjantów z Krakowa. MSWiA zapowiada dalszą pomoc",
+        "url": "https://infosecurity24.pl/sluzby-mundurowe/policja/po-100-tys-zl-dla-rannych-policjantow-z-krakowa-mswia-zapowiada-dalsza-pomoc"
+      }
+    ],
+    "sources": [
+      "GazetaPrawna.pl (DGP)",
+      "InfoSecurity24"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad",
+    "seo_title": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
+    "thumbnail_url": "https://pliki.wnp.pl/d/57/81/64/578164_r0_300.jpg",
+    "published_iso": "2026-11-13T05:54:48+01:00",
+    "display_date": "13.11.2026, 05:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WNP.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Harmonogram programu San jest napięty, ale realny. [Źródło: WNP.pl]",
+          "Wszystkie nasze prace realizujemy na czas - zapewnia w rozmowie z WNP Maciej Klemm, prezes Advanced Protection Systems. [Źródło: WNP.pl]",
+          "Mówi o medialnych atakach na spółkę, wielkich inwestycjach w produkcję, doświadczeniach z wojny w Ukrainie i ekspansji zagranicznej, a także dlaczego nie chce ujawniać lokalizacji nowej fabryki. [Źródło: WNP.pl]",
+          "Zdradza też, jakie plany APS ma na czas po zakończeniu programu SAN. [Źródło: WNP.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Proces byłego prezesa tarnowskich Zakładów Mechanicznych Henryka Łabędzia, jego zastępcy Roberta Pacany oraz byłego prezesa Orlen Oil Janusza F. dobiega końca. Mężczyźni są oskarżeni o płatną protekcję w związku z próbami załatwienia pracy znajomym i członkom rodziny. Choć ostatecznie nikt nie został zatrudniony, zdaniem prokuratury nie ma to znaczenia dla odpowiedzialności karnej oskarżonych. Wszyscy nie przyznają się do winy i domagają się uniewinnienia. [Źródło: Radio Kraków]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WNP.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
+        "url": "https://www.wnp.pl/bezpieczenstwo/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad,1118622.html"
+      },
+      {
+        "outlet": "Radio Kraków",
+        "angle": "Depesza źródłowa",
+        "summary": "Byli prezesi Zakładów Mechanicznych w Tarnowie przed sądem. Prokuratura mówi o załatwianiu pracy, oskarżeni o politycznym ataku",
+        "url": "https://radiokrakow.pl/wiadomosci/tarnow/byli-prezesi-zakladow-mechanicznych-w-tarnowie-przed-sadem-prokuratura-mowi-o-zalatwianiu-pracy-oskarzeni-o-politycznym-ataku/187659"
+      }
+    ],
+    "sources": [
+      "Radio Kraków",
+      "WNP.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc",
+    "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
+    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmNkbi5wbC/9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc0ODczNDkvZmlsZXMv/dHJ6eW5hc3RhLWVtZXJ5dHVyYS1lbWVyeXR1cmEtZW1lcnl0dXJ5LWdvdG93a2/EtZW1lcnl0LXBpZW5pYWR6ZS1zZW5pb3ItMzg5NDc3ODYuanBnIiwidyI6Mzg0MH0",
+    "published_iso": "2026-11-13T05:54:48+01:00",
+    "display_date": "13.11.2026, 05:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Forsal.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Wychowywali dzieci w czasach, gdy nie mogli liczyć na takie świadczenia jak „babciowe” czy 800 plus. [Źródło: Forsal.pl]",
+          "Ze wszystkimi wydatkami – od szkolnych podręczników po ubrania i codzienne utrzymanie musieli radzić sobie sami. [Źródło: Forsal.pl]",
+          "To dlatego od kilku lat wraca pytanie czy państwo powinno w jakiś sposób docenić tych, którzy ponieśli koszty wychowania dzieci bez wsparcia z budżetu. [Źródło: Forsal.pl]",
+          "Powstała nawet propozycja specjalnego dodatku dla seniorów. [Źródło: Forsal.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Nawet 800 zł miesięcznie za każde wychowane dziecko – taki dodatek mieliby otrzymywać emeryci według pomysłu, który pojawił się w 2025 roku. Choć propozycja została niedawno odrzucona, sprawa regularnie powraca. Niewielu wie, że w uzasadnieniu petycji nie zabrakło ostrych politycznych odniesień, a także zaskakujących argumentów dotyczących Ukrainy i obcokrajowców. [Źródło: naTemat.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Forsal.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
+        "url": "https://forsal.pl/gospodarka/aktualnosci/artykuly/11280328,rodzice-doroslych-juz-dzieci-ktore-pracuja-tez-dostana-800-plus-za-ich-wychowanie-nie-bylo-dotad-tak-rewolucyjnej-zmiane-w-przepisach-decyzja-w-sprawie-tego-nowego-swiadczenia-juz-zapadla.html"
+      },
+      {
+        "outlet": "naTemat.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Projekt \"nowego 800 plus\" upadł. Niewielu wie, co w nim tak naprawdę było",
+        "url": "https://natemat.pl/675385,projekt-nowego-800-plus-upadl-niewielu-wie-co-w-nim-tak-naprawde-bylo"
+      }
+    ],
+    "sources": [
+      "Forsal.pl",
+      "naTemat.pl"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska/Gospodarka",
+    "seo_url": "/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
+    "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
+    "thumbnail_url": "https://comparic.pl/comparic.pl/wp-content/uploads/2026/08/hossa-bessa-wyniki-zyski-straty-AI-23423523235-freepik-cc-32325325-4-150x150.webp",
+    "published_iso": "2026-11-13T05:54:48+01:00",
+    "display_date": "13.11.2026, 05:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Gospodarka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Puls Biznesu"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Wall Street zakończyło czwartkową sesję wyraźnymi spadkami. [Źródło: Puls Biznesu]",
+          "Wszystkie główne indeksy zamknęły dzień na minusie, a gwałtowna wyprzedaż akcji Nvidii zaniepokoiła inwestorów po niespodziewanej rezygnacji prezesa spółki, Jensena Huanga. [Źródło: Puls Biznesu, Comparic.pl]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Nasdaq Composite wyszedł w czwartek na plus, a część inwestorów traktuje zmianę na szczycie spółki jako przejściowy problem, który nie zagrozi jej długoterminowym perspektywom. Akcje Nvidii, które przed sesją taniały nawet o 14%, odrobiły znaczną część strat i tracą już tylko około 5%.. [Źródło: Comparic.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Puls Biznesu",
+        "angle": "Depesza źródłowa",
+        "summary": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
+        "url": "https://www.pb.pl/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu-1270372"
+      },
+      {
+        "outlet": "Comparic.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Zwrot akcji na Wall Street! Nasdaq i S&P 500 na plusie, kurs Nvidii odbija",
+        "url": "https://comparic.pl/zwrot-akcji-na-wall-street-nasdaq-i-sp-500-na-plusie-kurs-nvidii-odbija/"
+      }
+    ],
+    "sources": [
+      "Comparic.pl",
+      "Puls Biznesu"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
+    "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/5d2c780f4fe38253436d3e2dfebcd019/krzysztof-szczerski-i-radoslaw-sikorski?t=crop:3840:1679:nowe:0:149.20691338901,resize:fill:600:300,enlarge:1",
@@ -65,7 +323,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -164,7 +422,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Swiat",
     "seo_url": "/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -229,7 +487,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Swiat",
     "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -295,7 +553,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Swiat",
     "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -369,7 +627,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -441,7 +699,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska",
     "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -515,7 +773,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
     "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
@@ -582,7 +840,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -664,7 +922,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -743,7 +1001,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -815,7 +1073,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -888,7 +1146,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -971,7 +1229,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -1037,7 +1295,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -1103,7 +1361,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -1162,7 +1420,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -1227,7 +1485,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -1293,7 +1551,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -1366,7 +1624,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -1440,7 +1698,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -1505,7 +1763,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -1569,7 +1827,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -1650,7 +1908,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -1723,7 +1981,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -1800,7 +2058,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -1873,7 +2131,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -1965,7 +2223,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -2045,7 +2303,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 33,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -2129,7 +2387,7 @@
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 34,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -2195,7 +2453,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 35,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -2246,7 +2504,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 36,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -2297,7 +2555,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 37,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -2348,7 +2606,7 @@
     "corrections": []
   },
   {
-    "id": 34,
+    "id": 38,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -2399,7 +2657,7 @@
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 39,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
