@@ -784,7 +784,6 @@ def _page_shell(
               id="searchInput"
               type="search"
               class="search-input"
-              placeholder="Szukaj tematów, źródeł…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />

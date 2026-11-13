@@ -299,6 +299,7 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
             home_doc = f.read()
         self.assertRegex(home_doc, r'href="styles\.css\?v=[0-9a-f]{8}"')
         self.assertRegex(home_doc, r'src="app\.js\?v=[0-9a-f]{8}"')
+        self.assertNotIn("Szukaj tematów", home_doc)
 
 
 if __name__ == "__main__":
