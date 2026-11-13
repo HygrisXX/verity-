@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://verity.pl/Sport/manchester-united-podal-nazwisko-nowego-trenera</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
+      <news:title>Manchester United podał nazwisko nowego trenera</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
+      <news:title>Twarda deklaracja Morawieckiego: Idziemy sami</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
+      <news:title>Reprezentacja na łasce Lewandowskiego. "Do Turcji jeździ się na wakacje"</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://verity.pl/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek-zatrzymany</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T14:11:13+01:00</news:publication_date>
+      <news:title>Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://verity.pl/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy</loc>
     <news:news>
       <news:publication>
