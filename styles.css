@@ -309,6 +309,7 @@ button { font-family: inherit; }
 .meter.ok { --m: var(--success); color: var(--success); }
 .meter.mid { --m: var(--warning); color: var(--warning); }
 .meter.low { --m: var(--danger); color: var(--danger); }
+.meter.neutral { color: var(--text-muted); font-weight: 600; }
 
 /* ---------- Widok artykułu ---------- */
 .back-link {
@@ -354,8 +355,12 @@ button { font-family: inherit; }
 .section-paragraph { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1rem, 1.5vw, 1.08rem); color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.8rem; }
 .cite-tag {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.68rem; font-weight: 600;
-  background: var(--accent-soft); color: var(--accent); padding: 0.05rem 0.3rem; border-radius: 0.25rem;
-  white-space: nowrap; vertical-align: 0.08em; margin: 0 0.1em;
+  background: var(--accent-soft); color: var(--accent); padding: 0.08rem 0.38rem; border-radius: 0.25rem;
+  white-space: nowrap; vertical-align: 0.08em; margin: 0 0.12em; text-decoration: none; display: inline-block;
+}
+a.cite-link:hover {
+  text-decoration: underline;
+  filter: brightness(0.95);
 }
 
 /* Porównanie ujęć – liczba kolumn zależy od liczby źródeł */
