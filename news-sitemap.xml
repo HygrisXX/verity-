@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T20:48:58+01:00</news:publication_date>
+      <news:title>Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/a7/98/1f/z33131687IHG,GERMANY-POLITICS-AFD-EUROPE.jpg</image:loc>
+      <image:title>Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/tyle-trzeba-zarabiac-na-3500-zl-emerytury-kobiety-maja-gorzej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T20:48:58+01:00</news:publication_date>
+      <news:title>Tyle trzeba zarabiać na 3500 zł emerytury. Kobiety mają gorzej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2RuLnB/sL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMDAwMDAwMDAwNz/cwMTcwMS9maWxlcy9rb211LXp1cy1kb3BsYWNpLWRvLWVtZXJ5d/HVyeS1taW5pbWFsbmVqLTM5MjMyMzM2LmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Tyle trzeba zarabiać na 3500 zł emerytury. Kobiety mają gorzej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T20:48:58+01:00</news:publication_date>
+      <news:title>Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/13/320x240px/zFaoMlKkDnKggSn4OsPusHPL4ThS840YsWJgh4Ie.jpbl.jpg</image:loc>
+      <image:title>Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/kreml-przejal-zachodni-biznes-miliony-rubli-na-sprzet-dla-armii/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T20:48:58+01:00</news:publication_date>
+      <news:title>Kreml przejął zachodni biznes. Miliony rubli na sprzęt dla armii</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/3dff1114ee68ba49b4d22b9c88c2d745/?t=crop:4000:1749:nowe:0:331.34282018111,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Kreml przejął zachodni biznes. Miliony rubli na sprzęt dla armii</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/</loc>
     <news:news>
       <news:publication>
