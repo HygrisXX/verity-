@@ -35,7 +35,10 @@ const MIME = {
 function startStaticServer() {
   return new Promise((resolve, reject) => {
     const server = http.createServer((req, res) => {
-      const reqPath = decodeURIComponent((req.url || '/').split('?')[0]);
+      let reqPath = decodeURIComponent((req.url || '/').split('?')[0]);
+      if (reqPath === '/verity-' || reqPath.startsWith('/verity-/')) {
+        reqPath = reqPath.slice('/verity-'.length) || '/';
+      }
       let fsPath = path.join(ROOT_DIR, reqPath.replace(/^\/+/, ''));
       if (!fsPath.startsWith(ROOT_DIR)) {
         res.writeHead(403);
@@ -196,14 +199,30 @@ async function run() {
   let browser = null;
 
   try {
-    // 1. Testy HTTP 200 / 404 na serwerze statycznym
+    // 1. Testy HTTP 200 / 404 na serwerze statycznym (wszystkie 23 działy w tym 16 województw)
     const routesToCheck = [
       ['/', 200],
       ['/Polska/', 200],
       ['/Polska/Gospodarka/', 200],
       ['/Polska/Polityka/', 200],
       ['/Polska/Energetyka/', 200],
-      ['/Polska/Poznan/', 200],
+      ['/Polska/Regiony/', 200],
+      ['/Polska/Regiony/Dolnoslaskie/', 200],
+      ['/Polska/Regiony/Kujawsko-Pomorskie/', 200],
+      ['/Polska/Regiony/Lubelskie/', 200],
+      ['/Polska/Regiony/Lubuskie/', 200],
+      ['/Polska/Regiony/Lodzkie/', 200],
+      ['/Polska/Regiony/Malopolskie/', 200],
+      ['/Polska/Regiony/Mazowieckie/', 200],
+      ['/Polska/Regiony/Opolskie/', 200],
+      ['/Polska/Regiony/Podkarpackie/', 200],
+      ['/Polska/Regiony/Podlaskie/', 200],
+      ['/Polska/Regiony/Pomorskie/', 200],
+      ['/Polska/Regiony/Slaskie/', 200],
+      ['/Polska/Regiony/Swietokrzyskie/', 200],
+      ['/Polska/Regiony/Warminsko-Mazurskie/', 200],
+      ['/Polska/Regiony/Wielkopolskie/', 200],
+      ['/Polska/Regiony/Zachodniopomorskie/', 200],
       ['/Swiat/', 200],
       ['/Sport/', 200],
       [`${sampleMulti.seo_url}/`, 200],
@@ -222,7 +241,7 @@ async function run() {
 
     browser = await launchChromium();
 
-    // 2. Desktop strona główna
+    // 2. Desktop strona główna + szuflada 16 województw
     await browser.goto(`${baseUrl}/`);
     const homeInfo = await browser.evalJs(`(() => ({
       title: document.title,
@@ -242,7 +261,91 @@ async function run() {
     assert(homeInfo.robots.includes('index'), `Zły meta robots na /: ${homeInfo.robots}`);
     assert(!homeInfo.badges.includes('Świat') && !homeInfo.badges.includes('Sport'), `Karty Świat/Sport nie powinny pojawiać się w dziale Polska (/): ${homeInfo.badges.join(', ')}`);
     await browser.screenshot('desktop_home.png');
-    console.log(`[PASS] Desktop strona główna (${homeInfo.cards} linków artykułów, czysta kategoria Polska, 0 overflow, \\u00A0 OK)`);
+
+    // Kliknięcie przycisku "16 woj." -> otwarcie szuflady #regionsDrawer na desktopie
+    await browser.evalJs(`document.getElementById('regionsToggleBtn').click()`);
+    await new Promise(r => setTimeout(r, 250));
+    const drawerInfo = await browser.evalJs(`(() => {
+      const drawer = document.getElementById('regionsDrawer');
+      const btn = document.getElementById('regionsToggleBtn');
+      const box = drawer.getBoundingClientRect();
+      const items = drawer.querySelectorAll('[data-region-link^="/Polska/Regiony/"]');
+      return {
+        isOpen: !drawer.classList.contains('hidden'),
+        ariaExpanded: btn.getAttribute('aria-expanded'),
+        voivCount: items.length,
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        rightOk: box.right <= window.innerWidth + 1 && box.left >= -1,
+        height: Math.round(box.height),
+      };
+    })()`);
+    assert(drawerInfo.isOpen && drawerInfo.ariaExpanded === 'true', 'Szuflada #regionsDrawer nie otworzyła się');
+    assert(drawerInfo.voivCount === 16, `Oczekiwano 16 linków województw w szufladzie, jest ${drawerInfo.voivCount}`);
+    assert(!drawerInfo.overflow && drawerInfo.rightOk, `Szuflada województw powoduje overflow na desktopie: ${JSON.stringify(drawerInfo)}`);
+    await browser.screenshot('desktop_regions_drawer.png');
+
+    // Nawigacja z szuflady do /Polska/Regiony/ (Wszystkie regiony)
+    await browser.evalJs(`document.querySelector('#regionsDrawer .regions-drawer-all').click()`);
+    await new Promise(r => setTimeout(r, 300));
+    const regionsPageInfo = await browser.evalJs(`(() => {
+      const drawer = document.getElementById('regionsDrawer');
+      const pills = document.querySelectorAll('.region-strip .region-pill');
+      const regChip = document.querySelector('.path-chip[data-path="/Polska/Regiony"]');
+      return {
+        pathname: location.pathname,
+        drawerClosed: drawer.classList.contains('hidden'),
+        h1: document.querySelector('h1')?.textContent || '',
+        pillsCount: pills.length,
+        cardsCount: document.querySelectorAll('.story-title-link').length,
+        regTabActive: Boolean(regChip && regChip.classList.contains('active')),
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+      };
+    })()`);
+    assert(regionsPageInfo.pathname.endsWith('/Polska/Regiony/'), `Niepoprawny URL hubu regionów: ${regionsPageInfo.pathname}`);
+    assert(regionsPageInfo.drawerClosed, 'Szuflada #regionsDrawer powinna zamknąć się po kliknięciu działu');
+    assert(regionsPageInfo.pillsCount === 17, `Oczekiwano 17 pigułek w .region-strip (Wszystkie + 16 woj.), jest ${regionsPageInfo.pillsCount}`);
+    assert(regionsPageInfo.regTabActive, 'Zakładka Regiony powinna być aktywna na /Polska/Regiony/');
+    assert(regionsPageInfo.cardsCount >= 5, `Oczekiwano artykułów regionalnych w /Polska/Regiony/, jest ${regionsPageInfo.cardsCount}`);
+    assert(!regionsPageInfo.overflow, 'Poziomy scroll na /Polska/Regiony/ desktop');
+    await browser.screenshot('desktop_region_page.png');
+
+    // Przejście do województwa z artykułami (Warmińsko-Mazurskie) i pustego województwa (Opolskie)
+    await browser.evalJs(`document.querySelector('.region-strip a[href*="Warminsko-Mazurskie"]')?.click()`);
+    await new Promise(r => setTimeout(r, 250));
+    const warmiaInfo = await browser.evalJs(`({
+      pathname: location.pathname,
+      h1: document.querySelector('h1')?.textContent || '',
+      activeTab: document.querySelector('.path-chip[data-path="/Polska/Regiony"]')?.classList.contains('active') || false,
+      activePill: document.querySelector('.region-strip .region-pill.active')?.textContent || '',
+      cards: document.querySelectorAll('.story-title-link').length,
+    })`);
+    assert(warmiaInfo.pathname.endsWith('/Polska/Regiony/Warminsko-Mazurskie/'), `Zły pathname dla Warmii i Mazur: ${warmiaInfo.pathname}`);
+    assert(warmiaInfo.activeTab && warmiaInfo.activePill.includes('Warmińsko-Mazurskie'), `Niespójne podświetlenie Warmii i Mazur: ${JSON.stringify(warmiaInfo)}`);
+    assert(warmiaInfo.cards >= 1, 'Warmińsko-Mazurskie powinno wyświetlać min. 1 opracowanie (Mrągowo)');
+
+    await browser.evalJs(`document.querySelector('.region-strip a[href*="/Opolskie/"]')?.click()`);
+    await new Promise(r => setTimeout(r, 250));
+    const opoleEmpty = await browser.evalJs(`({
+      pathname: location.pathname,
+      emptyText: document.querySelector('.empty-state')?.textContent || '',
+      backAllHref: document.querySelector('.empty-state .btn-outline')?.getAttribute('href') || '',
+    })`);
+    assert(opoleEmpty.pathname.endsWith('/Polska/Regiony/Opolskie/'), `Zły pathname dla Opolskiego: ${opoleEmpty.pathname}`);
+    assert(opoleEmpty.emptyText.includes('Nowa Trybuna Opolska') && opoleEmpty.backAllHref.includes('/Polska/Regiony/'), `Brak listy redakcji / linku powrotu w pustym województwie: ${JSON.stringify(opoleEmpty)}`);
+
+    // Test przekierowania History API dla legacy URL /Polska/Poznan/ -> /Polska/Regiony/Wielkopolskie/
+    await browser.goto(`${baseUrl}/Polska/Poznan/`);
+    const legacyRedirectInfo = await browser.evalJs(`({
+      pathname: location.pathname,
+      h1: document.querySelector('h1')?.textContent || '',
+      robots: document.querySelector('meta[name="robots"]')?.content || '',
+      bodyText: document.getElementById('articlesFeed')?.textContent || '',
+    })`);
+    assert(legacyRedirectInfo.pathname.endsWith('/Polska/Regiony/Wielkopolskie/'), `Legacy URL /Polska/Poznan/ nie przekierował: ${legacyRedirectInfo.pathname}`);
+    assert(!legacyRedirectInfo.bodyText.includes('Nie znaleziono strony (404)'), 'Legacy URL pokazał stronę 404 zamiast Wielkopolski');
+    assert(legacyRedirectInfo.robots.startsWith('index'), `Legacy redirect nie przywrócił robots=index: ${legacyRedirectInfo.robots}`);
+    await browser.goto(`${baseUrl}/`);
+    console.log(`[PASS] Desktop strona główna, szuflada 16 woj., pasek regionów i legacy redirect (${homeInfo.cards} kart, 0 overflow, \\u00A0 OK)`);
 
     // 3. Nawigacja SPA kliknięciem karty -> sprawdzenie History API, typografii, dropcapu, braku duplikatu leadu, JSON-LD, kopiowania linku, paska scrolla
     await browser.evalJs(`(() => {
@@ -331,7 +434,7 @@ async function run() {
     assert(searchInfo.h1.includes('Wyniki dla'), `Brak nagłówka wyników wyszukiwania: ${searchInfo.h1}`);
     console.log('[PASS] Bezpośrednie wejście SSR + wyszukiwarka noindex OK');
 
-    // 5. Test responsywności Mobile 390x844 i 360x780 (Android) + szerokość pola szukania
+    // 5. Test responsywności Mobile 390x844 i 360x780 (Android) + szuflada 16 woj. i pasek regionów
     await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
     await browser.goto(`${baseUrl}/`);
     const mobHome = await browser.evalJs(`(() => {
@@ -355,7 +458,39 @@ async function run() {
     assert(mobHome.brandSameRowAsTheme && mobHome.themeAboveSearch, `Zły układ mobilnego nagłówka: ${JSON.stringify(mobHome)}`);
     await browser.screenshot('mobile_home.png');
 
-    // Wąski ekran Android 360x780 w trybie ciemnym + widok artykułu z leadem bez miniatury (.no-thumb)
+    // Otwarcie szuflady 16 woj. na mobile 390px + strona /Polska/Regiony/
+    await browser.evalJs(`document.getElementById('regionsToggleBtn').click()`);
+    await new Promise(r => setTimeout(r, 250));
+    const mobDrawer = await browser.evalJs(`(() => {
+      const d = document.getElementById('regionsDrawer');
+      const box = d.getBoundingClientRect();
+      return {
+        open: !d.classList.contains('hidden'),
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        fitsWidth: box.left >= 0 && box.right <= window.innerWidth + 1,
+        itemsCount: d.querySelectorAll('[data-region-link^="/Polska/Regiony/"]').length,
+      };
+    })()`);
+    assert(mobDrawer.open && mobDrawer.itemsCount === 16 && !mobDrawer.overflow && mobDrawer.fitsWidth, `Problem szuflady na mobile: ${JSON.stringify(mobDrawer)}`);
+    await browser.screenshot('mobile_regions_drawer.png');
+
+    await browser.goto(`${baseUrl}/Polska/Regiony/`);
+    const mobRegions = await browser.evalJs(`(() => {
+      const strip = document.querySelector('.region-strip');
+      const pills = document.querySelectorAll('.region-strip .region-pill');
+      return {
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        sw: document.documentElement.scrollWidth,
+        cw: document.documentElement.clientWidth,
+        pillsCount: pills.length,
+        hasStrip: Boolean(strip),
+      };
+    })()`);
+    assert(!mobRegions.overflow, `Poziomy scroll na mobile (/Polska/Regiony/): ${mobRegions.sw} > ${mobRegions.cw}`);
+    assert(mobRegions.hasStrip && mobRegions.pillsCount === 17, 'Brak paska 16 województw na mobile');
+    await browser.screenshot('mobile_regions.png');
+
+    // Wąski ekran Android 360x780 w trybie ciemnym
     await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 360, height: 780, deviceScaleFactor: 3, mobile: true });
     await browser.goto(`${baseUrl}/`);
     await browser.evalJs('applyTheme("dark");');
@@ -401,16 +536,17 @@ async function run() {
     assert(!mobArt.overflow, `Poziomy scroll na mobile (artykuł): ${mobArt.sw} > ${mobArt.cw}`);
     await browser.screenshot('mobile_article.png');
 
-    const sampleRegional = articles.find(a => !['/Polska', '/Polska/Gospodarka', '/Polska/Polityka', '/Polska/Energetyka', '/Polska/Poznan', '/Swiat', '/Sport'].includes(a.path));
+    const sampleRegional = articles.find(a => (a.path || '').startsWith('/Polska/Regiony/'));
     if (sampleRegional) {
       await browser.goto(`${baseUrl}${sampleRegional.seo_url}/`);
       const regInfo = await browser.evalJs(`({
         backText: document.querySelector('.back-link')?.textContent?.trim() || '',
         backHref: document.querySelector('.back-link')?.getAttribute('href') || '',
+        regTabActive: document.querySelector('.path-chip[data-path="/Polska/Regiony"]')?.classList.contains('active') || false,
       })`);
-      assert(regInfo.backText.includes('Polska'), `Niepoprawny link powrotu dla regionalnego artykułu: ${regInfo.backText}`);
+      assert(regInfo.backHref.includes(sampleRegional.path + '/') && regInfo.regTabActive, `Niepoprawny link powrotu dla regionalnego artykułu: ${JSON.stringify(regInfo)}`);
     }
-    console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", czyste Świat=${mobSwiat.badges.length}, 0 overflow) OK`);
+    console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", regiony=16 woj., czyste Świat=${mobSwiat.badges.length}, 0 overflow) OK`);
 
     assert(browser.pageExceptions.length === 0, `Nieobsłużone wyjątki JS: ${browser.pageExceptions.join('; ')}`);
     assert(browser.consoleErrors.length === 0, `Błędy console.error: ${browser.consoleErrors.join('; ')}`);
@@ -425,3 +561,4 @@ run().catch(err => {
   console.error('[FAIL]', err);
   process.exit(1);
 });
+

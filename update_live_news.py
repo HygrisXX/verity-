@@ -27,6 +27,7 @@ import seo_builder  # noqa: E402
 
 MAX_TOTAL_ARTICLES = 300
 MAX_NEW_PER_RUN = 4
+MAX_REGIONAL_PER_RUN = 2
 ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne miniatury dla 100% spokoju prawnego
 
 LIVE_RSS_FEEDS = [
@@ -92,33 +93,33 @@ LIVE_RSS_FEEDS = [
     {"name": "Niedziela.pl", "url": "https://www.niedziela.pl/rss", "path": "/Polska"},
 
     # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
-    {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Poznan"},
-    {"name": "Głos Wielkopolski", "url": "https://gloswielkopolski.pl/rss", "path": "/Polska/Poznan", "group": "Polska Press"},
-    {"name": "Warszawa w Pigułce", "url": "https://warszawawpigulce.pl/feed/", "path": "/Polska/Warszawa"},
-    {"name": "Radio Kraków", "url": "https://www.radiokrakow.pl/rss.xml", "path": "/Polska/Krakow"},
-    {"name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/rss", "path": "/Polska/Krakow", "group": "Polska Press"},
-    {"name": "Gazeta Wrocławska", "url": "https://gazetawroclawska.pl/rss", "path": "/Polska/Wroclaw", "group": "Polska Press"},
-    {"name": "TVS Śląsk", "url": "https://tvs.pl/feed/", "path": "/Polska/Katowice"},
-    {"name": "Dziennik Zachodni", "url": "https://dziennikzachodni.pl/rss", "path": "/Polska/Katowice", "group": "Polska Press"},
-    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Gdansk"},
-    {"name": "Dziennik Bałtycki", "url": "https://dziennikbaltycki.pl/rss", "path": "/Polska/Gdansk", "group": "Polska Press"},
-    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Lodz"},
-    {"name": "Dziennik Łódzki", "url": "https://dzienniklodzki.pl/rss", "path": "/Polska/Lodz", "group": "Polska Press"},
-    {"name": "Głos Szczeciński", "url": "https://gs24.pl/rss", "path": "/Polska/Szczecin", "group": "Polska Press"},
-    {"name": "Radio PiK", "url": "https://www.radiopik.pl/rss.php", "path": "/Polska/Bydgoszcz"},
-    {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss", "path": "/Polska/Bydgoszcz", "group": "Polska Press"},
-    {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Lublin"},
-    {"name": "Kurier Lubelski", "url": "https://kurierlubelski.pl/rss", "path": "/Polska/Lublin", "group": "Polska Press"},
-    {"name": "Lublin112.pl", "url": "https://www.lublin112.pl/feed/", "path": "/Polska/Lublin"},
-    {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Rzeszow"},
-    {"name": "Nowiny24", "url": "https://nowiny24.pl/rss", "path": "/Polska/Rzeszow", "group": "Polska Press"},
-    {"name": "Kurier Poranny", "url": "https://poranny.pl/rss", "path": "/Polska/Bialystok", "group": "Polska Press"},
-    {"name": "Radio Olsztyn", "url": "https://radioolsztyn.pl/feed/", "path": "/Polska/Olsztyn"},
-    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/", "path": "/Polska/Lubuskie"},
-    {"name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/rss", "path": "/Polska/Lubuskie", "group": "Polska Press"},
-    {"name": "Radio Kielce", "url": "https://radiokielce.pl/feed/", "path": "/Polska/Kielce"},
-    {"name": "Echo Dnia Kielce", "url": "https://echodnia.eu/rss", "path": "/Polska/Kielce", "group": "Polska Press"},
-    {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss", "path": "/Polska/Opole", "group": "Polska Press"},
+    {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Regiony/Wielkopolskie"},
+    {"name": "Głos Wielkopolski", "url": "https://gloswielkopolski.pl/rss", "path": "/Polska/Regiony/Wielkopolskie", "group": "Polska Press"},
+    {"name": "Warszawa w Pigułce", "url": "https://warszawawpigulce.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
+    {"name": "Radio Kraków", "url": "https://www.radiokrakow.pl/rss.xml", "path": "/Polska/Regiony/Malopolskie"},
+    {"name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/rss", "path": "/Polska/Regiony/Malopolskie", "group": "Polska Press"},
+    {"name": "Gazeta Wrocławska", "url": "https://gazetawroclawska.pl/rss", "path": "/Polska/Regiony/Dolnoslaskie", "group": "Polska Press"},
+    {"name": "TVS Śląsk", "url": "https://tvs.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
+    {"name": "Dziennik Zachodni", "url": "https://dziennikzachodni.pl/rss", "path": "/Polska/Regiony/Slaskie", "group": "Polska Press"},
+    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Regiony/Pomorskie"},
+    {"name": "Dziennik Bałtycki", "url": "https://dziennikbaltycki.pl/rss", "path": "/Polska/Regiony/Pomorskie", "group": "Polska Press"},
+    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Regiony/Lodzkie"},
+    {"name": "Dziennik Łódzki", "url": "https://dzienniklodzki.pl/rss", "path": "/Polska/Regiony/Lodzkie", "group": "Polska Press"},
+    {"name": "Głos Szczeciński", "url": "https://gs24.pl/rss", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "Polska Press"},
+    {"name": "Radio PiK", "url": "https://www.radiopik.pl/rss.php", "path": "/Polska/Regiony/Kujawsko-Pomorskie"},
+    {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss", "path": "/Polska/Regiony/Kujawsko-Pomorskie", "group": "Polska Press"},
+    {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
+    {"name": "Kurier Lubelski", "url": "https://kurierlubelski.pl/rss", "path": "/Polska/Regiony/Lubelskie", "group": "Polska Press"},
+    {"name": "Lublin112.pl", "url": "https://www.lublin112.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
+    {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Regiony/Podkarpackie"},
+    {"name": "Nowiny24", "url": "https://nowiny24.pl/rss", "path": "/Polska/Regiony/Podkarpackie", "group": "Polska Press"},
+    {"name": "Kurier Poranny", "url": "https://poranny.pl/rss", "path": "/Polska/Regiony/Podlaskie", "group": "Polska Press"},
+    {"name": "Radio Olsztyn", "url": "https://radioolsztyn.pl/feed/", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
+    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
+    {"name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/rss", "path": "/Polska/Regiony/Lubuskie", "group": "Polska Press"},
+    {"name": "Radio Kielce", "url": "https://radiokielce.pl/feed/", "path": "/Polska/Regiony/Swietokrzyskie"},
+    {"name": "Echo Dnia Kielce", "url": "https://echodnia.eu/rss", "path": "/Polska/Regiony/Swietokrzyskie", "group": "Polska Press"},
+    {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss", "path": "/Polska/Regiony/Opolskie", "group": "Polska Press"},
 
     # --- Świat, Technologia, Cyberbezpieczeństwo, Kosmos ---
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/swiat.xml", "path": "/Swiat"},
@@ -335,7 +336,71 @@ def _parse_feed_xml(xml_raw: bytes):
             return ET.fromstring(text_clean.encode("utf-8"))
 
 
+def _norm_pl(text: str) -> str:
+    trans = str.maketrans("ąćęłńóśźż", "acelnoszz")
+    return (text or "").lower().translate(trans)
+
+
+_VOIVODESHIP_DISAMBIG = [
+    ("/Polska/Regiony/Lubelskie", _norm_pl(r"\b(?:tomaszow\w*\s+lubelsk\w*|opole\s+lubelsk\w*|janow\w*\s+lubelsk\w*|roztocz\w*)\b")),
+    ("/Polska/Regiony/Lodzkie", _norm_pl(r"\b(?:tomaszow\w*\s+mazowieck\w*|radomsk(?:o|u|a)\b|w\s+radomsku|z\s+radomska|powiat\w*\s+radomszcz\w*|raw\w+\s+mazowieck\w*)\b")),
+    ("/Polska/Regiony/Mazowieckie", _norm_pl(r"\b(?:ostrow\w*\s+mazowieck\w*|minsk\w*\s+mazowieck\w*|nowy\s+dwor\s+mazowieck\w*|nowym\s+dworze\s+mazowieck\w*|grodzisk\w*\s+mazowieck\w*|makow\w*\s+mazowieck\w*)\b")),
+    ("/Polska/Regiony/Wielkopolskie", _norm_pl(r"\b(?:ostrow\w*\s+wielkopolsk\w*|srod\w+\s+wielkopolsk\w*|grodzisk\w*\s+wielkopolsk\w*)\b")),
+    ("/Polska/Regiony/Dolnoslaskie", _norm_pl(r"\b(?:srod\w+\s+slask\w*|kamienn\w+\s+gor\w*|jeleni\w*\s+gor\w*)\b")),
+    ("/Polska/Regiony/Lubuskie", _norm_pl(r"\b(?:krosn\w*\s+odrzansk\w*|gorzow\w*\s+wielkopolsk\w*)\b")),
+    ("/Polska/Regiony/Podlaskie", _norm_pl(r"\b(?:bielsk\w*\s+podlask\w*|wysoki\w+\s+mazowieck\w*|powiat\w*\s+wysokomazowieck\w*|sokolow\w*\s+podlask\w*)\b")),
+    ("/Polska/Regiony/Slaskie", _norm_pl(r"\b(?:bielsk[oa]-bial\w*|bielsk(?:u|a|im)\s+bial\w*|tarnowsk\w*\s+gor\w*|wodzislaw\w*\s+slask\w*|rud\w+\s+slask\w*|piekar\w*\s+slask\w*|dabrow\w+\s+gornicz\w*)\b")),
+    ("/Polska/Regiony/Pomorskie", _norm_pl(r"\b(?:nowy\s+dwor\s+gdansk\w*|nowym\s+dworze\s+gdansk\w*|starogard\w*\s+gdansk\w*|pruszcz\w*\s+gdansk\w*)\b")),
+    ("/Polska/Regiony/Warminsko-Mazurskie", _norm_pl(r"\b(?:lidzbar\w*\s+warminsk\w*|now\w+\s+miasto\s+lubawsk\w*|nowym\s+miescie\s+lubawsk\w*)\b")),
+    ("/Polska/Regiony/Swietokrzyskie", _norm_pl(r"\b(?:kazimierz\w+\s+wielk\w*|ostrowiec\s+swietokrzysk\w*|ostrowc\w+\s+swietokrzysk\w*)\b")),
+]
+
+_VOIVODESHIP_MAIN = [
+    ("/Polska/Regiony/Dolnoslaskie", _norm_pl(r"\b(?:dolnoslask\w*|doln\w+\s+slask\w*|wroclaw\w*|walbrzych\w*|legnic\w*|lubin\w*|glogow\w*|zgorzel\w*|olesnic\w*|olaw\w*|boleslaw\w*|dzierzoniow\w*|swidnic\w*|klodzk\w*|trzebnic\w*|jawor(?:ze|a|em)?\b|luban\w*|zlotoryj\w*|polkowic\w*|karkonosz\w*|karpacz\w*|szklarsk\w+\s+poreb\w*)\b")),
+    ("/Polska/Regiony/Kujawsko-Pomorskie", _norm_pl(r"\b(?:kujawsko-pomorsk\w*|kujaw(?:y|ach|ami)\b|bydgoszcz\w*|bydgosk\w*|torun\w*|wloclaw\w*|grudziadz\w*|inowroclaw\w*|brodnic\w*|swieci(?:e|u|a)\b|znin\w*|chelmno|chelmnie|mogiln\w*|nakielsk\w*|rypin\w*|tuchol\w*|ciechocink\w*)\b")),
+    ("/Polska/Regiony/Lubelskie", _norm_pl(r"\b(?:lubelsk\w*|lubelszczyzn\w*|lublin\w*|zamosc\w*|zamojsk\w*|chelm(?:a|ie|em|sk\w*)?\b|bial\w+\s+podlask\w*|pulaw\w*|swidnik\w*|krasnik\w*|lukow\w*|bilgoraj\w*|lubartow\w*|hrubieszow\w*|krasnystaw\w*|leczn\w*|radzyn\w*|wlodaw\w*|parczew\w*|kazimierz\w*\s+doln\w*|naleczow\w*)\b")),
+    ("/Polska/Regiony/Lubuskie", _norm_pl(r"\b(?:lubusk\w*|zielon\w+\s+gor\w*|zielonogor\w*|gorzow\w*|now\w+\s+sol\w*|nowosolsk\w*|zary|zarach|zagan\w*|swiebodzin\w*|miedzyrzecz\w*|slubic\w*|sulechow\w*|wschow\w*|kozuchow\w*|gubin\w*)\b")),
+    ("/Polska/Regiony/Lodzkie", _norm_pl(r"\b(?:lodzk\w*|lodz\w*|lodzi\w*|piotrkow\w*|pabianic\w*|zgierz\w*|skierniewic\w*|belchatow\w*|zdunsk\w+\s+wol\w*|sieradz\w*|kutno|kutnie|kuten\w*|lowicz\w*|wielun\w*|opoczn\w*|leczyc\w*|poddebic\w*|pajeczn\w*|brzezin\w*|wieruszow\w*)\b")),
+    ("/Polska/Regiony/Malopolskie", _norm_pl(r"\b(?:malopolsk\w*|krakow\w*|tarnow\w*|now\w+\s+sacz\w*|sadec\w*|oswiecim\w*|chrzanow\w*|olkusz\w*|nowy\s+targ|nowotarsk\w*|zakopan\w*|tatr(?:y|ach|zansk\w*)|podhal\w*|bochni\w*|limanow\w*|myslenic\w*|gorlic\w*|brzesk(?:o|a|u|iem)|wadowic\w*|andrychow\w*|wieliczk\w*|niepolomic\w*|krynic\w*|miechow\w*|proszowic\w*)\b")),
+    ("/Polska/Regiony/Mazowieckie", _norm_pl(r"\b(?:mazowieck\w*|mazowsz\w*|warszawsk\w+\s+prag\w*|prag[aio]\s+(?:polnoc|poludnie)|pradze\s+(?:polnoc|poludnie)|mokotow\w*|zoliborz\w*|wilanow\w*|ursynow\w*|(?:na|z)\s+bielanach|bialolek\w*|targowk\w*|bemow\w*|na\s+ochocie|wawer\w*|rembertow\w*|radom(?:ia|iu|iem|sk[iaeo]\w*)?\b|plock\w*|siedlc\w*|siedlec\w*|ostrolek\w*|ostrolec\w*|ciechanow\w*|pruszkow\w*|legionow\w*|piaseczn\w*|wolomin\w*|sochaczew\w*|zyrardow\w*|mlaw\w*|plonsk\w*|wyszkow\w*|pultusk\w*|otwock\w*|garwolin\w*|grojec\w*|kozienic\w*|sierpc\w*|wegrow\w*|przysuch\w*|szydlowiec\w*|bialobrzeg\w*)\b")),
+    ("/Polska/Regiony/Opolskie", _norm_pl(r"\b(?:opolsk\w*|opolszczyzn\w*|opole|opol(?:a|u|em)\b|kedzierzyn\w*|nysa\b|(?:w|z|do|pod)\s+nysie|z\s+nysy|nysk\w*|kluczbork\w*|prudnik\w*|krapkowic\w*|namyslow\w*|glubczyc\w*|glucholaz\w*|(?:w|do|pod)\s+brzegu\b|z\s+brzegu\b)\b")),
+    ("/Polska/Regiony/Podkarpackie", _norm_pl(r"\b(?:podkarpack\w*|podkarpaci\w*|rzeszow\w*|przemysl\w*|stalow\w+\s+wol\w*|mielec\w*|mielc\w*|tarnobrzeg\w*|krosno|krosna|krosnie|krosnem|krosniensk\w*|debic\w*|sanok\w*|sanoc\w*|jasl\w*|jasielsk\w*|(?:w|do|pod)\s+jaroslawiu|z\s+jaroslawia|powiat\w*\s+jaroslawsk\w*|lancut\w*|przeworsk\w*|nizansk\w*|ropczyc\w*|kolbuszow\w*|lubaczow\w*|lezajsk\w*|ustrzyk\w*|bieszczad\w*)\b")),
+    ("/Polska/Regiony/Podlaskie", _norm_pl(r"\b(?:podlask\w*|podlasi\w*|bialystok\w*|bialymstok\w*|bialegostok\w*|suwalk\w*|lomz\w*|augustow\w*|zambrow\w*|grajew\w*|sokolsk\w*|hajnowk\w*|siemiatycz\w*|sejn\w*|moniek|monki|choroszcz\w*|suprasl\w*)\b")),
+    ("/Polska/Regiony/Pomorskie", _norm_pl(r"\b(?:pomorsk\w*|trojmiast\w*|trojmiesc\w*|gdansk\w*|gdyni\w*|sopot\w*|sopoc\w*|slupsk\w*|sycewic\w*|tczew\w*|wejherow\w*|rumi[ae]\b|w\s+redzie|starogard\w*|chojnic\w*|malbork\w*|malborsk\w*|kwidzyn\w*|lebork\w*|kartuz\w*|kartusk\w*|koscierz\w*|puck\w*|wladyslawow\w*|ustk[aei]\b|ustce|kaszub\w*|sztum\w*|czluchow\w*|bytow\w*)\b")),
+    ("/Polska/Regiony/Slaskie", _norm_pl(r"\b(?:slask\w*(?!\s+wroc)|gorn\w+\s+slask\w*|katowic\w*|czestochow\w*|sosnowi\w*|gliwic\w*|zabrz\w*|bytom\w*|rybnik\w*|tychy|tychach|chorzow\w*|jaworzn\w*|jastrzebi\w*|myslowic\w*|siemianowic\w*|zory|zorach|pszczyn\w*|bedzin\w*|cieszyn\w*|raciborz\w*|raciborsk\w*|lubliniec\w*|mikolow\w*|zywiec\w*|żywcz\w*|zawierci\w*|klobuck\w*|myszkow\w*|knurow\w*|wodzislaw\w*)\b")),
+    ("/Polska/Regiony/Swietokrzyskie", _norm_pl(r"\b(?:swietokrzysk\w*|kielc\w*|kieleck\w*|ostrowc\w*|starachowic\w*|skarzysk\w*|sandomierz\w*|sandomiersk\w*|busko|busku|jedrzejow\w*|wloszczow\w*|opatow\w*|staszow\w*|pinczow\w*|(?:w|do|pod)\s+konskich|z\s+konskich|powiat\w*\s+koneck\w*)\b")),
+    ("/Polska/Regiony/Warminsko-Mazurskie", _norm_pl(r"\b(?:warminsko-mazursk\w*|warmi[ia]\b|mazur(?:y|ach|ami|sk\w*)?\b|olsztyn\w*|elblag\w*|elblask\w*|elku\b|elka\b|elkiem\b|elk\b|mragow\w*|ilaw\w*|ostrod\w*|gizyck\w*|ketrzyn\w*|szczytno|szczytn\w*|bartoszyc\w*|dzialdow\w*|braniew\w*|oleck\w*|(?:w|do|pod)\s+piszu|z\s+pisza|powiat\w*\s+pisk\w*|goldap\w*|wegorzew\w*|morag\w*|nidzic\w*)\b")),
+    ("/Polska/Regiony/Wielkopolskie", _norm_pl(r"\b(?:wielkopolsk\w*|poznan\w*|kalisz\w*|kalisk\w*|konin\w*|koninsk\w*|(?:w|do|pod|kolo)\s+pil[ei]\b|z\s+pily\b|powiat\w*\s+pilsk\w*|leszn(?:o|a|ie|em)\b|leszczynsk\w*|gniezn\w*|gniezniensk\w*|swarzedz\w*|lubon\w*|wrzesni(?!c)\w*|jarocin\w*|krotoszyn\w*|koscian\w*|(?:w|do|pod)\s+turku\b|w\s+kole\b|powiat\w*\s+kolsk\w*|wagrow\w*|chodziez\w*|czarnkow\w*|szamotul\w*|nowy\s+tomysl|wolsztyn\w*|rawicz\w*|gostyn\w*|slupc\w*|pleszew\w*|ostrzeszow\w*|kepn\w*|obornik\w*)\b")),
+    ("/Polska/Regiony/Zachodniopomorskie", _norm_pl(r"\b(?:zachodniopomorsk\w*|pomorz\w+\s+zachodni\w*|szczecin\w*|koszalin\w*|stargard\w*|kolobrzeg\w*|kolobrzesk\w*|swinoujsci\w*|szczecinek\w*|szczecineck\w*|walcz\w*|waleck\w*|bialogard\w*|goleniow\w*|gryfic\w*|gryfin\w*|swidwin\w*|choszczn\w*|drawsk\w*|kamien\w*\s+pomorsk\w*|mysliborz\w*|pyrzyc\w*|slawno|slawiensk\w*|(?:w|do|pod)\s+policach|z\s+polic\b|powiat\w*\s+polick\w*|miedzyzdroj\w*|darlow\w*|wrzesnic\w*)\b")),
+]
+
+_NATIONAL_SCOPE_RE = re.compile(
+    _norm_pl(
+        r"\b(?:marsz\s+niepodleglosci|swieto\s+niepodleglosci|mswia\b|\bmsz\b|\bmon\b|\bmz\b|\bmf\b|\bmen\b|\bmap\b|"
+        r"kancelari\w*\s+premiera|kancelari\w*\s+prezydenta|trybunal\w*|sad\s+najwyzszy|naczelny\s+sad|"
+        r"polski\s+zwiazek|ogolnopolsk\w*|w\s+calej\s+polsce|przelomowy\s+wyrok|"
+        r"rakieta|ilr-33|bursztyn\s+2k|dlugie\s+weekendy|urlop)\b"
+    )
+)
+
+
+def _infer_voivodeship_path(title: str, description: str = "", link: str = "") -> str:
+    url_hint = re.sub(r"https?://[^/]+", "", (link or "").lower())
+    url_hint = re.sub(r"[-_/]+", " ", url_hint)
+    for chunk in (_norm_pl(f"{title or ''} {url_hint}"), _norm_pl(description or "")):
+        if not chunk.strip():
+            continue
+        for v_path, pat in _VOIVODESHIP_DISAMBIG:
+            if re.search(pat, chunk):
+                return v_path
+        for v_path, pat in _VOIVODESHIP_MAIN:
+            if re.search(pat, chunk):
+                return v_path
+    return ""
+
+
 def infer_category_path(default_path: str, link: str, title: str, description: str = "") -> str:
+    default_path = seo_builder.LEGACY_REGION_MAP.get(default_path, default_path)
     u = (link or "").lower()
     tl = (title or "").lower()
     tl_norm = _norm_pl(tl)
@@ -369,18 +434,21 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
     if default_path == "/Sport" and is_non_sport:
         default_path = "/Polska"
 
-    # 2. Wykrywanie wyraźnego polskiego kontekstu w tytule
+    # 2. Wykrywanie wyraźnego polskiego kontekstu w tytule (włącznie z województwami i miastami powiatowymi)
     pl_markers = _norm_pl(
         r"\b(?:polsk\w*|polak\w*|polac\w*|polk[aięąo]\b|warszaw\w*|krakow\w*|kraków|wrocław\w*|wroclaw\w*|"
         r"poznan\w*|poznań\w*|gdańsk\w*|gdansk\w*|szczecin\w*|lublin\w*|katowic\w*|łódź|lodz\w*|łodzi\w*|"
         r"białystok\w*|bialystok\w*|białegostok\w*|bialegostok\w*|rzeszow\w*|rzeszów|olsztyn\w*|bydgoszcz\w*|toruń\w*|torun\w*|"
-        r"kielc\w*|opol\w*|radom\w*|częstochow\w*|czestochow\w*|sosnowi\w*|gliwic\w*|zabrze|bytom\w*|bielsk\w*|"
+        r"kielc\w*|opol(?:e|a|u|em|sk\w*|szczyzn\w*)\b|radom\w*|częstochow\w*|czestochow\w*|sosnowi\w*|gliwic\w*|zabrze|bytom\w*|bielsk\w*|"
         r"rybnik\w*|tychy|tychach|elbląg\w*|elblag\w*|płock\w*|plock\w*|wałbrzych\w*|walbrzych\w*|włocław\w*|wloclaw\w*|"
         r"tarnow\w*|tarnów|koszalin\w*|kalisz\w*|legnic\w*|grudziądz\w*|grudziadz\w*|słupsk\w*|slupsk\w*|jaworzn\w*|"
         r"jastrzębi\w*|nowy\s+sącz|nowym\s+sączu|jeleni\w+\s+gór\w*|konin\w*|piotrkow\w*|piotrków|inowrocław\w*|"
-        r"lubin\w*|ostrow\w+\s+wielkopolsk\w*|suwałk\w*|suwalk\w*|gniezn\w*|głogow\w*|glogow\w*|chełm\w*|chelm\w*|"
+        r"lubin\w*|ostrow\w+\s+wielkopolsk\w*|ostrow\w+\s+mazowieck\w*|suwałk\w*|suwalk\w*|gniezn\w*|głogow\w*|glogow\w*|chełm\w*|chelm\w*|"
         r"zamość|zamosc\w*|przemyśl\w*|przemysl\w*|stalow\w+\s+wol\w*|mielec\w*|tomaszow\w*|leszn\w*|zgorzelc\w*|"
         r"świnoujści\w*|swinoujsci\w*|kołobrzeg\w*|kolobrzeg\w*|sopot\w*|gdyni\w*|podhale|zakopan\w*|tatr\w*|"
+        r"zielon\w+\s+gór\w*|zielonogór\w*|gorzow\w*|now\w+\s+sól|świdnic\w*|kłodzk\w*|trzebnic\w*|puław\w*|świdnik\w*|pabianic\w*|"
+        r"bełchatow\w*|oświęcim\w*|siedlc\w*|ciechanow\w*|pruszkow\w*|kędzierzyn\w*|dębic\w*|sanok\w*|łomż\w*|augustow\w*|"
+        r"wejherow\w*|chojnic\w*|malbork\w*|chorzow\w*|ostrowiec\w*|starachowic\w*|sandomierz\w*|iław\w*|ostród\w*|giżyck\w*|stargard\w*|sycewic\w*|wrześnic\w*|"
         r"bieszczad\w*|mazur\w*|śląsk\w*|slask\w*|wielkopolsk\w*|małopolsk\w*|malopolsk\w*|pomorz\w*|podlasi\w*|"
         r"podkarpaci\w*|mazowsz\w*|kujaw\w*|warmi\w*|lubuski\w*|świętokrzysk\w*|swietokrzysk\w*|dolnośląsk\w*|"
         r"zachodniopomorsk\w*|wisł[aąęy]|wisl[aae]|odr[aąęy]|bałtyk\w*|baltyk\w*|ostrołęk\w*|"
@@ -389,7 +457,7 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         r"morawieck\w*|ziobr\w*|romanowsk\w*|czarnek\w*|błaszczak\w*|blaszczak\w*|macierewicz\w*|giertych\w*|"
         r"biejat\w*|zandberg\w*|gawkowsk\w*|domańsk\w*|domansk\w*|hennig-klosk\w*|leszczyńsk\w*|leszczynsk\w*|"
         r"kierwińsk\w*|kierwinsk\w*|siemoniak\w*|nowack\w*|lubnauer\w*|szłapk\w*|szlapk\w*|nitras\w*|kropiwnick\w*|"
-        r"gibał\w*|gibal\w*|sutryk\w*|miszalsk\w*|zdanowsk\w*|krupow\w*|trzaskowsk\w*|korwin-piotrowsk\w*|zgorzelsk\w*|ociepa\b|krajewsk\w*|"
+        r"gibał\w*|gibal\w*|sutryk\w*|miszalsk\w*|zdanowsk\w*|krupow\w*|korwin-piotrowsk\w*|zgorzelsk\w*|ociepa\b|krajewsk\w*|"
         r"trójmiast\w*|trójmieśc\w*|trojmiast\w*|trojmiesc\w*|mrągow\w*|mragow\w*|telewizj\w*\s+republik\w*|\btv\s+republik\w*|"
         r"\bnfz\b|\bzus\b|\bkrus\b|\bgus\b|\bnbp\b|\bknf\b|\buokik\b|\bpkol\b|\bpge\b|\borlen\w*|\btauron\w*|\benea\b|"
         r"\bpko\b|\bpekao\b|\bpzu\b|\bkghm\b|\bpgnig\b|\blotos\w*|\bpkp\b|\bcpk\b|\bgddkia\b|\bpażp\b|\bpazp\b|\bkowr\b|"
@@ -434,9 +502,10 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
     if (has_foreign_title or has_foreign_url) and not has_pl:
         return "/Swiat"
 
-    # 4. Zachowaj ścieżki lokalne/miejskie (np. /Polska/Poznan, /Polska/Lublin, /Polska/Warszawa)
-    if default_path in LOCAL_PATHS and default_path != "/Polska/Energetyka":
-        return default_path
+    # 4. Zachowaj ścieżki regionalne (16 województw) i koryguj po wyraźnej lokalizacji z tytułu/URL
+    title_url_voiv = _infer_voivodeship_path(title, "", link)
+    if default_path in seo_builder.VOIVODESHIP_BY_PATH:
+        return title_url_voiv or default_path
 
     # 5. Energetyka (w kontekście polskim lub ogólnym krajowym)
     energy_url = any(seg in u for seg in ("/energetyka/", "/energia/", "/oze/", "wysokienapiecie.pl", "energetyka24.com"))
@@ -499,12 +568,21 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         return "/Polska/Polityka"
     if econ_kw or (econ_url and not pol_strong_kw):
         return "/Polska/Gospodarka"
-    if default_path in ("/Polska/Polityka", "/Polska/Gospodarka") and not pol_strong_kw and not pol_url and not econ_kw and not econ_url:
-        return "/Polska"
-    if default_path == "/Swiat" and (has_pl or not (has_foreign_title or has_foreign_url)):
-        return "/Polska"
 
-    return default_path
+    if default_path in ("/Polska/Polityka", "/Polska/Gospodarka") and not pol_strong_kw and not pol_url and not econ_kw and not econ_url:
+        fallback_path = "/Polska"
+    elif default_path == "/Swiat" and (has_pl or not (has_foreign_title or has_foreign_url)):
+        fallback_path = "/Polska"
+    else:
+        fallback_path = default_path
+
+    # 7. Lokalizacja wydarzeń regionalnych ze źródeł ogólnopolskich (16 województw) bez przenoszenia spraw stricte ogólnopolskich
+    if fallback_path == "/Polska" and not _NATIONAL_SCOPE_RE.search(tl_norm):
+        inferred_voiv = title_url_voiv or _infer_voivodeship_path(title, description, link)
+        if inferred_voiv:
+            return inferred_voiv
+
+    return fallback_path
 
 
 def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
@@ -608,11 +686,6 @@ _PL_SUFFIXES = (
 )
 
 
-def _norm_pl(text: str) -> str:
-    trans = str.maketrans("ąćęłńóśźż", "acelnoszz")
-    return (text or "").lower().translate(trans)
-
-
 def _stem_pl(word: str) -> str:
     if len(word) <= 4:
         return word
@@ -622,13 +695,7 @@ def _stem_pl(word: str) -> str:
     return word
 
 
-LOCAL_PATHS = {
-    "/Polska/Poznan", "/Polska/Warszawa", "/Polska/Krakow", "/Polska/Wroclaw",
-    "/Polska/Katowice", "/Polska/Gdansk", "/Polska/Lodz", "/Polska/Szczecin",
-    "/Polska/Bydgoszcz", "/Polska/Lublin", "/Polska/Rzeszow", "/Polska/Bialystok",
-    "/Polska/Olsztyn", "/Polska/Lubuskie", "/Polska/Kielce", "/Polska/Opole",
-    "/Polska/Energetyka",
-}
+LOCAL_PATHS = set(seo_builder.VOIVODESHIP_BY_PATH.keys()) | {"/Polska/Energetyka"}
 
 NICHE_OUTLETS = {
     "Farmer.pl", "PulsHR", "WysokieNapiecie.pl", "Energetyka24", "Elektrowóz.pl",
@@ -686,9 +753,13 @@ CITY_STEM_MAP = {
     "warszaw": "warszawa", "krakow": "krakow", "gdansk": "gdansk", "poznan": "poznan",
     "wroclaw": "wroclaw", "lodz": "lodz", "katowic": "katowice", "szczecin": "szczecin",
     "lublin": "lublin", "bydgoszcz": "bydgoszcz", "bialystok": "bialystok", "bialegostok": "bialystok",
-    "rzeszow": "rzeszow", "olsztyn": "olsztyn", "kielc": "kielce", "opol": "opole",
+    "rzeszow": "rzeszow", "olsztyn": "olsztyn", "kielc": "kielce", "opole": "opole", "opolu": "opole",
     "mragow": "mragowo", "torun": "torun", "gdyni": "gdynia", "sopot": "sopot",
     "tarnow": "tarnow", "chodziez": "chodziez", "slupsk": "slupsk",
+    "czestochow": "czestochowa", "radom": "radom", "plock": "plock", "wloclaw": "wloclawek",
+    "elblag": "elblag", "suwalk": "suwalki", "zamosc": "zamosc", "walbrzych": "walbrzych",
+    "legnic": "legnica", "koszalin": "koszalin", "kalisz": "kalisz", "ilaw": "ilawa",
+    "gizyck": "gizycko", "zakopan": "zakopane", "trzebnic": "trzebnica",
     "kijow": "kijow", "moskw": "moskwa", "berlin": "berlin", "paryz": "paryz",
     "rzym": "rzym", "madryt": "madryt", "helsink": "helsinki", "waszyngton": "waszyngton",
     "londyn": "londyn", "bruksel": "bruksela", "dublin": "dublin", "budapeszt": "budapeszt",
@@ -1468,8 +1539,17 @@ def _upgrade_existing_article(art: dict) -> dict | None:
     if not title:
         return None
 
-    old_path = OUTLET_DEFAULT_PATH.get(first_outlet) or art.get("path") or "/Polska"
-    new_path = infer_category_path(old_path, primary_url, title)
+    raw_old_path = OUTLET_DEFAULT_PATH.get(first_outlet) or art.get("path") or "/Polska"
+    old_path = seo_builder.LEGACY_REGION_MAP.get(raw_old_path, raw_old_path)
+
+    first_para_plain = ""
+    if art.get("full_sections"):
+        paras0 = art["full_sections"][0].get("paragraphs") or []
+        if paras0:
+            first_para_plain = _strip_all_citations(paras0[0])
+    geo_context_desc = f"{art.get('summary_lead') or ''} {first_para_plain}".strip()[:380]
+
+    new_path = infer_category_path(old_path, primary_url, title, geo_context_desc)
     # Jeśli artykuł miał główną perspektywę z RSS Sport lub sportową — skoryguj dział
     art["path"] = new_path
     art["seo_title"] = title
@@ -1492,7 +1572,8 @@ def _upgrade_existing_article(art: dict) -> dict | None:
         else:
             desc_parts = outlet_texts["exclusive"].get(out_name) or outlet_texts["all"].get(out_name) or []
         p_default = OUTLET_DEFAULT_PATH.get(out_name, new_path)
-        p_path = infer_category_path(p_default, p_url, p_title)
+        p_default = seo_builder.LEGACY_REGION_MAP.get(p_default, p_default)
+        p_path = infer_category_path(p_default, p_url, p_title, "\n".join(desc_parts)[:320])
         candidates.append({
             "outlet": out_name,
             "title": p_title,
@@ -1552,10 +1633,10 @@ def _upgrade_existing_article(art: dict) -> dict | None:
     sources = sorted(list({c["outlet"] for c in candidates}))
     primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
     lead_url = candidates[0]["link"] if candidates else primary_url
-    new_path = infer_category_path(old_path, lead_url, title)
+    new_path = infer_category_path(old_path, lead_url, title, geo_context_desc)
     art["path"] = new_path
 
-    # Egzekucja reguły 1 źródła: wyłącznie tematy lokalne lub niszowe
+    # Egzekucja reguły 1 źródła: wyłącznie tematy lokalne (16 województw / Energetyka) lub niszowe
     if len(sources) <= 1:
         if new_path not in LOCAL_PATHS and primary_outlet not in NICHE_OUTLETS:
             return None
@@ -1662,7 +1743,42 @@ def update_news_cycle(fetch_live: bool = True):
                         new_articles.append(art)
                         break
 
-        print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie.")
+        # Dedykowana pula regionalna (rotuje od województw z najmniejszą liczbą artykułów, bez głodzenia przez tematy ogólnopolskie)
+        reg_counts = {vp: 0 for vp in seo_builder.VOIVODESHIP_BY_PATH}
+        for ext in existing_articles + new_articles:
+            ep = ext.get("path") or ""
+            if ep in reg_counts:
+                reg_counts[ep] += 1
+
+        reg_candidates = []
+        for grp in clusters:
+            lead_it = grp[0]
+            inferred_p = infer_category_path(
+                lead_it.get("path") or "/Polska",
+                lead_it.get("link") or "",
+                lead_it.get("title") or "",
+                lead_it.get("description") or "",
+            )
+            if inferred_p not in seo_builder.VOIVODESHIP_BY_PATH:
+                continue
+            unique_groups = {it.get("group") or it["outlet"] for it in grp}
+            reg_candidates.append((reg_counts.get(inferred_p, 0), 0 if len(unique_groups) >= 2 else 1, inferred_p, grp))
+
+        reg_candidates.sort(key=lambda x: (x[0], x[1], -len(x[3][0].get("description") or "")))
+        added_reg = 0
+        added_reg_paths = set()
+        for _, _, cand_path, grp in reg_candidates:
+            if added_reg >= MAX_REGIONAL_PER_RUN:
+                break
+            if cand_path in added_reg_paths:
+                continue
+            if not is_already_covered(grp, existing_articles + new_articles):
+                art = build_article_from_group(grp, len(new_articles) + 1)
+                new_articles.append(art)
+                added_reg += 1
+                added_reg_paths.add(cand_path)
+
+        print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
 
     # 4. Połącz i posortuj chronologicznie (malejąco)
     combined = new_articles + existing_articles

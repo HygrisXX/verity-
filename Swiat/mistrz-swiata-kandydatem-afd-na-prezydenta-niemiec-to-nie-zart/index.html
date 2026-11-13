@@ -114,7 +114,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=420c7465" />
+  <link rel="stylesheet" href="../../styles.css?v=c9ec3948" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -172,11 +172,41 @@
         <a class="path-chip" data-path="/Polska/Gospodarka" href="../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
         <a class="path-chip" data-path="/Polska/Polityka" href="../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
         <a class="path-chip" data-path="/Polska/Energetyka" href="../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
-        <a class="path-chip" data-path="/Polska/Poznan" href="../../Polska/Poznan/" onclick="return selectPathLink(event, '/Polska/Poznan')"><span class="path-root">Polska / </span>Poznań</a>
+        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
         <span class="path-divider" aria-hidden="true">|</span>
         <a class="path-chip active" data-path="/Swiat" href="../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
       </nav>
+      <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="regions-drawer-all" data-region-link="/Polska/Regiony" href="../../Polska/Regiony/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Dolnoslaskie" href="../../Polska/Regiony/Dolnoslaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')"><span class="region-dot" style="--h:330" aria-hidden="true"></span><span>Dolnośląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Kujawsko-Pomorskie" href="../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')"><span class="region-dot" style="--h:195" aria-hidden="true"></span><span>Kujawsko-Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubelskie" href="../../Polska/Regiony/Lubelskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubelskie')"><span class="region-dot" style="--h:105" aria-hidden="true"></span><span>Lubelskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubuskie" href="../../Polska/Regiony/Lubuskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubuskie')"><span class="region-dot" style="--h:132" aria-hidden="true"></span><span>Lubuskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lodzkie" href="../../Polska/Regiony/Lodzkie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lodzkie')"><span class="region-dot" style="--h:25" aria-hidden="true"></span><span>Łódzkie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Malopolskie" href="../../Polska/Regiony/Malopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Malopolskie')"><span class="region-dot" style="--h:12" aria-hidden="true"></span><span>Małopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Mazowieckie" href="../../Polska/Regiony/Mazowieckie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Mazowieckie')"><span class="region-dot" style="--h:225" aria-hidden="true"></span><span>Mazowieckie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Opolskie" href="../../Polska/Regiony/Opolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Opolskie')"><span class="region-dot" style="--h:48" aria-hidden="true"></span><span>Opolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podkarpackie" href="../../Polska/Regiony/Podkarpackie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podkarpackie')"><span class="region-dot" style="--h:162" aria-hidden="true"></span><span>Podkarpackie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podlaskie" href="../../Polska/Regiony/Podlaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podlaskie')"><span class="region-dot" style="--h:145" aria-hidden="true"></span><span>Podlaskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Pomorskie" href="../../Polska/Regiony/Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Pomorskie')"><span class="region-dot" style="--h:200" aria-hidden="true"></span><span>Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Slaskie" href="../../Polska/Regiony/Slaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Slaskie')"><span class="region-dot" style="--h:245" aria-hidden="true"></span><span>Śląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Swietokrzyskie" href="../../Polska/Regiony/Swietokrzyskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')"><span class="region-dot" style="--h:310" aria-hidden="true"></span><span>Świętokrzyskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Warminsko-Mazurskie" href="../../Polska/Regiony/Warminsko-Mazurskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')"><span class="region-dot" style="--h:140" aria-hidden="true"></span><span>Warmińsko-Mazurskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Wielkopolskie" href="../../Polska/Regiony/Wielkopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')"><span class="region-dot" style="--h:350" aria-hidden="true"></span><span>Wielkopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Zachodniopomorskie" href="../../Polska/Regiony/Zachodniopomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')"><span class="region-dot" style="--h:188" aria-hidden="true"></span><span>Zachodniopomorskie</span></a>
+      </div>
+    </div>
     </div>
   </header>
 
@@ -347,6 +377,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Swiat/mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=9251a552"></script>
+  <script src="../../app.js?v=a5729768"></script>
 </body>
 </html>

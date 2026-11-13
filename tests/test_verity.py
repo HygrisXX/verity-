@@ -218,9 +218,20 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
     def test_category_pages_and_404_and_root_exist(self):
         self.assertTrue(os.path.isfile(os.path.join(ROOT_DIR, "index.html")))
         self.assertTrue(os.path.isfile(os.path.join(ROOT_DIR, "404.html")))
+        self.assertEqual(len(seo_builder.VOIVODESHIPS), 16)
+        self.assertEqual(len(seo_builder.CATEGORIES), 23)
         for cat_path, _, _ in seo_builder.CATEGORIES:
             cat_html = os.path.join(ROOT_DIR, cat_path.strip("/"), "index.html")
             self.assertTrue(os.path.isfile(cat_html), f"Brak strony kategorii: {cat_html}")
+
+        regions_hub = os.path.join(ROOT_DIR, "Polska", "Regiony", "index.html")
+        with open(regions_hub, "r", encoding="utf-8") as f:
+            reg_doc = f.read()
+        self.assertIn('id="regionsDrawer"', reg_doc)
+        self.assertIn('class="region-strip"', reg_doc)
+        for v_path, v_label, _, _, _, _ in seo_builder.VOIVODESHIPS:
+            self.assertIn(v_label, reg_doc)
+            self.assertIn(f'data-region-link="{v_path}"', reg_doc)
 
     def test_sitemaps_feed_and_robots_valid_xml(self):
         sitemap_path = os.path.join(ROOT_DIR, "sitemap.xml")
@@ -230,8 +241,11 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
 
         sm_root = ET.parse(sitemap_path).getroot()
         sm_locs = [el.text for el in sm_root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-        # Strona główna + 7 kategorii + wszystkie artykuły
+        # Strona główna + 23 działy (w tym /Polska/Regiony + 16 województw) + wszystkie artykuły
         self.assertGreaterEqual(len(sm_locs), len(self.articles) + len(seo_builder.CATEGORIES) + 1)
+        self.assertTrue(any(loc.endswith("/Polska/Regiony/") for loc in sm_locs))
+        for v_path, _, _, _, _, _ in seo_builder.VOIVODESHIPS:
+            self.assertTrue(any(loc.endswith(f"{v_path}/") for loc in sm_locs), f"Brak {v_path} w sitemap.xml")
 
         ns_root = ET.parse(news_path).getroot()
         ns_urls = ns_root.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url")
@@ -288,6 +302,19 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
             body_part = doc.split('id="articlesFeed"', 1)[-1]
             self.assertLessEqual(body_part.count(lead_nb), 1)
 
+        # Weryfikacja pełnych okruszków (VERITY -> Polska -> Regiony -> Województwo -> Artykuł) na artykule regionalnym
+        reg_art = next((a for a in self.articles if (a.get("path") or "").startswith("/Polska/Regiony/")), None)
+        self.assertIsNotNone(reg_art, "Brak artykułu regionalnego w bazie articles.json")
+        reg_html_file = os.path.join(ROOT_DIR, reg_art["seo_url"].lstrip("/"), "index.html")
+        with open(reg_html_file, "r", encoding="utf-8") as f:
+            reg_doc = f.read()
+        ld_match = re.search(r'<script id="dynamicJsonLd" type="application/ld\+json">\s*([\s\S]*?)\s*</script>', reg_doc)
+        self.assertIsNotNone(ld_match)
+        ld_parsed = json.loads(ld_match.group(1))
+        crumbs = ld_parsed[1]["itemListElement"]
+        crumb_names = [c["name"] for c in crumbs]
+        self.assertEqual(crumb_names[:4], ["VERITY", "Polska", "Regiony", seo_builder.VOIVODESHIP_LABELS[reg_art["path"]]])
+
     def test_editorial_filter_blocks_plus_minus_and_html_has_asset_cache_busting(self):
         self.assertTrue(
             uln.is_opinion_or_blacklisted(
@@ -313,12 +340,61 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
             ("/Polska/Polityka", "https://www.rp.pl/prawo-w-polsce/art45487551-zakaz-reklamy-aptek-zniesiony", "Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta", "/Polska/Polityka"),
             ("/Polska", "https://www.polsatnews.pl/wiadomosc/2026-11-12/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli", "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli", "/Polska/Gospodarka"),
             ("/Polska/Energetyka", "https://energetyka24.com/surowce/ropa/plonie-rafineria-w-wolgogradzie", "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce", "/Swiat"),
-            ("/Polska", "https://www.polsatnews.pl/wiadomosc/2026-11-13/slawa-upa-na-pomnikach-w-trojmiescie", '"Slawa UPA" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy', "/Polska"),
+            ("/Polska", "https://www.polsatnews.pl/wiadomosc/2026-11-13/slawa-upa-na-pomnikach-w-trojmiescie", '"Slawa UPA" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy', "/Polska/Regiony/Pomorskie"),
             ("/Polska/Polityka", "https://www.rp.pl/transport/art45487771-usa-wstrzymuja-wszystkie-starty", "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz", "/Swiat"),
         ]
         for def_path, url, title, expected in cases:
             with self.subTest(title=title, def_path=def_path):
                 self.assertEqual(uln.infer_category_path(def_path, url, title), expected)
+
+    def test_all_16_voivodeships_and_county_towns_classification(self):
+        regional_cases = [
+            ("/Polska", "https://example.pl/1", "Awarie wodociągów w Wałbrzychu i Legnicy. Trwa usuwanie skutków", "", "/Polska/Regiony/Dolnoslaskie"),
+            ("/Polska", "https://example.pl/2", "Rozbudowa węzła drogowego w Toruniu i Inowrocławiu", "", "/Polska/Regiony/Kujawsko-Pomorskie"),
+            ("/Polska", "https://example.pl/3", "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany", "Zdarzenie w powiecie Tomaszów Lubelski.", "/Polska/Regiony/Lubelskie"),
+            ("/Polska", "https://example.pl/4", "Nowa linia autobusowa połączy Gorzów Wielkopolski i Zieloną Górę", "", "/Polska/Regiony/Lubuskie"),
+            ("/Polska", "https://example.pl/5", "Poważny wypadek pod Tomaszowem Mazowieckim i Radomskiem", "", "/Polska/Regiony/Lodzkie"),
+            ("/Polska", "https://example.pl/6", "Remont linii kolejowej między Tarnowem a Nowym Sączem i Zakopanem", "", "/Polska/Regiony/Malopolskie"),
+            ("/Polska", "https://example.pl/7", "Modernizacja dróg w Radomiu, Płocku i Siedlcach w tym roku", "", "/Polska/Regiony/Mazowieckie"),
+            ("/Polska", "https://example.pl/8", "Most w Kędzierzynie-Koźlu i trasa w Nysie otwarte dla ruchu", "", "/Polska/Regiony/Opolskie"),
+            ("/Polska", "https://example.pl/9", "Utrudnienia i objazdy na drodze krajowej w Mielcu i Przemyślu", "", "/Polska/Regiony/Podkarpackie"),
+            ("/Polska", "https://example.pl/10", "Rozbudowa drogi z Suwałk do Bielska Podlaskiego na Podlasiu", "", "/Polska/Regiony/Podlaskie"),
+            ("/Polska", "https://example.pl/11", "Karambol na S6 z samego rana. Zderzyło się pięć samochodów", "Do kolizji doszło na wysokości Sycewic w powiecie słupskim.", "/Polska/Regiony/Pomorskie"),
+            ("/Polska", "https://example.pl/12", "Nowe autobusy wyjechały na ulice Częstochowy i Bielska-Białej", "", "/Polska/Regiony/Slaskie"),
+            ("/Polska", "https://example.pl/13", "Modernizacja szpitala w Ostrowcu Świętokrzyskim i Sandomierzu", "", "/Polska/Regiony/Swietokrzyskie"),
+            ("/Polska", "https://example.pl/14", "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa", "", "/Polska/Regiony/Warminsko-Mazurskie"),
+            ("/Polska", "https://example.pl/15", "Obwodnica Kalisza, Piły i Wrześni w planach na ten rok", "", "/Polska/Regiony/Wielkopolskie"),
+            ("/Polska", "https://example.pl/16", "Modernizacja nabrzeża w Koszalinie i Kołobrzegu oraz w miejscowości Wrześnica", "", "/Polska/Regiony/Zachodniopomorskie"),
+            # Rozróżnianie kolizji geograficznych między województwami, zachowanie regionu i zakres ogólnopolski
+            ("/Polska/Regiony/Wielkopolskie", "https://example.pl/17", "Wypadek na trasie pod Radomiem, korek na wylotówce", "", "/Polska/Regiony/Mazowieckie"),
+            ("/Polska/Regiony/Podkarpackie", "https://example.pl/17b", "Inwestycja w strefie ekonomicznej w Mielcu i Przemyślu", "", "/Polska/Regiony/Podkarpackie"),
+            ("/Polska", "https://example.pl/18", "Marsz Niepodległości w Warszawie zgromadził dziesiątki tysięcy osób", "", "/Polska"),
+            ("/Polska", "https://example.pl/19", "Przełomowy wyrok warszawskiego sądu w sprawie skradzionego głosu", "", "/Polska"),
+            ("/Polska", "https://example.pl/20", "Wypadek drogowy pod Ostrowem Wielkopolskim", "", "/Polska/Regiony/Wielkopolskie"),
+            ("/Polska", "https://example.pl/21", "Pożar hali pod Ostrowią Mazowiecką", "", "/Polska/Regiony/Mazowieckie"),
+        ]
+        found_voivs = set()
+        for def_path, url, title, desc, expected in regional_cases:
+            with self.subTest(title=title, expected=expected):
+                res = uln.infer_category_path(def_path, url, title, desc)
+                self.assertEqual(res, expected)
+                if expected.startswith("/Polska/Regiony/"):
+                    found_voivs.add(expected)
+        self.assertEqual(found_voivs, set(seo_builder.VOIVODESHIP_BY_PATH.keys()))
+
+        # Wszystkie 16 województw i Energetyka są lokalne (dopuszczają 1 źródło), polityka ogólnopolska nie jest
+        for v_path in seo_builder.VOIVODESHIP_BY_PATH:
+            self.assertTrue(uln.is_local_or_niche_item({"path": v_path, "outlet": "Lokalny Portal"}))
+        self.assertTrue(uln.is_local_or_niche_item({"path": "/Polska/Energetyka", "outlet": "PAP"}))
+        self.assertFalse(uln.is_local_or_niche_item({"path": "/Polska/Polityka", "outlet": "Polsat News"}))
+
+        # Wszystkie 16 województw muszą mieć co najmniej 1 dedykowany kanał RSS bez duplikatów URL
+        feed_urls = [f["url"] for f in uln.LIVE_RSS_FEEDS]
+        self.assertEqual(len(feed_urls), len(set(feed_urls)), "Wykryto duplikat URL w LIVE_RSS_FEEDS")
+        self.assertEqual(len(uln.LIVE_RSS_FEEDS), 99)
+        feed_voivs = {f["path"] for f in uln.LIVE_RSS_FEEDS if f["path"].startswith("/Polska/Regiony/")}
+        self.assertEqual(feed_voivs, set(seo_builder.VOIVODESHIP_BY_PATH.keys()))
+
 
     def test_category_url_prefix_and_feed_separation_integrity(self):
         valid_cat_paths = {p for p, _, _ in seo_builder.CATEGORIES}
@@ -329,12 +405,7 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
                 art["path"],
                 f"Niespójność path ({art['path']}) vs seo_url ({art['seo_url']}) w id={art['id']}",
             )
-            if art["path"] not in valid_cat_paths:
-                html_file = os.path.join(ROOT_DIR, art["seo_url"].lstrip("/"), "index.html")
-                with open(html_file, "r", encoding="utf-8") as f:
-                    art_doc = f.read()
-                self.assertIn("← Wróć do Polska", art_doc)
-                self.assertNotIn(f'"{art["path"]}/"', art_doc)
+            self.assertIn(art["path"], valid_cat_paths, f"Nieznana kategoria działu: {art['path']}")
 
         for fname in ("index.html", os.path.join("Polska", "index.html")):
             with open(os.path.join(ROOT_DIR, fname), "r", encoding="utf-8") as f:
@@ -352,3 +423,4 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

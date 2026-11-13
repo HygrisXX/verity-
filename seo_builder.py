@@ -13,12 +13,148 @@ import shutil
 import xml.sax.saxutils
 from datetime import datetime, timedelta, timezone
 
+VOIVODESHIPS = [
+    (
+        "/Polska/Regiony/Dolnoslaskie",
+        "Dolnośląskie",
+        "Dolny Śląsk (dolnośląskie)",
+        "Wiadomości z całego Dolnego Śląska: Wrocław, Wałbrzych, Legnica, Jelenia Góra, Lubin, Głogów, Zgorzelec i powiaty regionu.",
+        ["Gazeta Wrocławska"],
+        ["/Polska/Wroclaw"],
+    ),
+    (
+        "/Polska/Regiony/Kujawsko-Pomorskie",
+        "Kujawsko-Pomorskie",
+        "Kujawsko-pomorskie",
+        "Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice.",
+        ["Radio PiK", "Gazeta Pomorska"],
+        ["/Polska/Bydgoszcz"],
+    ),
+    (
+        "/Polska/Regiony/Lubelskie",
+        "Lubelskie",
+        "Lubelskie",
+        "Wydarzenia z całej Lubelszczyzny: Lublin, Zamość, Chełm, Biała Podlaska, Puławy, Tomaszów Lubelski i powiaty regionu.",
+        ["Radio Lublin", "Kurier Lubelski", "Lublin112.pl"],
+        ["/Polska/Lublin"],
+    ),
+    (
+        "/Polska/Regiony/Lubuskie",
+        "Lubuskie",
+        "Lubuskie",
+        "Wiadomości z województwa lubuskiego: Zielona Góra, Gorzów Wielkopolski, Nowa Sól, Żary, Świebodzin i cały region.",
+        ["Radio Zachód", "Gazeta Lubuska"],
+        ["/Polska/Lubuskie"],
+    ),
+    (
+        "/Polska/Regiony/Lodzkie",
+        "Łódzkie",
+        "Łódzkie",
+        "Informacje z całego województwa łódzkiego: Łódź, Piotrków Trybunalski, Tomaszów Mazowiecki, Bełchatów, Pabianice, Zgierz.",
+        ["Radio Łódź", "Dziennik Łódzki"],
+        ["/Polska/Lodz"],
+    ),
+    (
+        "/Polska/Regiony/Malopolskie",
+        "Małopolskie",
+        "Małopolska (małopolskie)",
+        "Wydarzenia z całej Małopolski: Kraków, Tarnów, Nowy Sącz, Zakopane, Podhale, Oświęcim i powiaty województwa.",
+        ["Radio Kraków", "Gazeta Krakowska"],
+        ["/Polska/Krakow"],
+    ),
+    (
+        "/Polska/Regiony/Mazowieckie",
+        "Mazowieckie",
+        "Mazowsze (mazowieckie)",
+        "Informacje z Warszawy i całego Mazowsza: Radom, Płock, Siedlce, Ostrołęka, Ciechanów, Pruszków i powiaty regionu.",
+        ["Warszawa w Pigułce"],
+        ["/Polska/Warszawa"],
+    ),
+    (
+        "/Polska/Regiony/Opolskie",
+        "Opolskie",
+        "Opolskie",
+        "Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa.",
+        ["Nowa Trybuna Opolska"],
+        ["/Polska/Opole"],
+    ),
+    (
+        "/Polska/Regiony/Podkarpackie",
+        "Podkarpackie",
+        "Podkarpacie (podkarpackie)",
+        "Informacje z całego Podkarpacia: Rzeszów, Przemyśl, Stalowa Wola, Mielec, Krosno, Bieszczady i powiaty regionu.",
+        ["Radio Rzeszów", "Nowiny24"],
+        ["/Polska/Rzeszow"],
+    ),
+    (
+        "/Polska/Regiony/Podlaskie",
+        "Podlaskie",
+        "Podlasie (podlaskie)",
+        "Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu.",
+        ["Kurier Poranny"],
+        ["/Polska/Bialystok"],
+    ),
+    (
+        "/Polska/Regiony/Pomorskie",
+        "Pomorskie",
+        "Pomorze (pomorskie)",
+        "Wiadomości z całego Pomorza: Gdańsk, Gdynia, Sopot, Trójmiasto, Słupsk, Tczew, Kaszuby i powiaty województwa.",
+        ["Radio Gdańsk", "Dziennik Bałtycki"],
+        ["/Polska/Gdansk"],
+    ),
+    (
+        "/Polska/Regiony/Slaskie",
+        "Śląskie",
+        "Śląsk (śląskie)",
+        "Informacje z całego województwa śląskiego: Katowice, Częstochowa, Sosnowiec, Gliwice, Bielsko-Biała, Rybnik, Tychy.",
+        ["TVS Śląsk", "Dziennik Zachodni"],
+        ["/Polska/Katowice"],
+    ),
+    (
+        "/Polska/Regiony/Swietokrzyskie",
+        "Świętokrzyskie",
+        "Świętokrzyskie",
+        "Wiadomości z całego województwa świętokrzyskiego: Kielce, Ostrowiec Świętokrzyski, Starachowice, Sandomierz i powiaty regionu.",
+        ["Radio Kielce", "Echo Dnia Kielce"],
+        ["/Polska/Kielce"],
+    ),
+    (
+        "/Polska/Regiony/Warminsko-Mazurskie",
+        "Warmińsko-Mazurskie",
+        "Warmia i Mazury",
+        "Informacje z Warmii i Mazur: Olsztyn, Elbląg, Ełk, Mrągowo, Iława, Ostróda, Giżycko i całe województwo.",
+        ["Radio Olsztyn"],
+        ["/Polska/Olsztyn"],
+    ),
+    (
+        "/Polska/Regiony/Wielkopolskie",
+        "Wielkopolskie",
+        "Wielkopolska (wielkopolskie)",
+        "Wiadomości z całej Wielkopolski: Poznań, Kalisz, Konin, Piła, Leszno, Gniezno, Ostrów Wielkopolski i powiaty regionu.",
+        ["ePoznan.pl", "Głos Wielkopolski"],
+        ["/Polska/Poznan"],
+    ),
+    (
+        "/Polska/Regiony/Zachodniopomorskie",
+        "Zachodniopomorskie",
+        "Pomorze Zachodnie",
+        "Informacje z Pomorza Zachodniego: Szczecin, Koszalin, Stargard, Kołobrzeg, Świnoujście i całe województwo.",
+        ["Głos Szczeciński"],
+        ["/Polska/Szczecin"],
+    ),
+]
+
+VOIVODESHIP_BY_PATH = {v[0]: v for v in VOIVODESHIPS}
+VOIVODESHIP_LABELS = {v[0]: v[1] for v in VOIVODESHIPS}
+LEGACY_REGION_MAP = {old_p: v[0] for v in VOIVODESHIPS for old_p in v[5]}
+
 CATEGORIES = [
     ("/Polska", "Polska — wszystkie działy", "Najważniejsze potwierdzone informacje z Polski — weryfikacja krzyżowa z 97 redakcji."),
     ("/Polska/Gospodarka", "Gospodarka i rynek", "Zweryfikowane informacje o gospodarce, finansach, podatkach, giełdzie i biznesie w Polsce."),
     ("/Polska/Polityka", "Polityka i prawo", "Fakty i decyzje legislacyjne z wielu źródeł, bez komentarzy publicystycznych."),
     ("/Polska/Energetyka", "Energetyka i klimat", "Ceny energii, transformacja energetyczna, OZE, gaz i rynek paliw w Polsce."),
-    ("/Polska/Poznan", "Poznań i Wielkopolska", "Najważniejsze informacje z Poznania i Wielkopolski — transport, inwestycje i wydarzenia lokalne."),
+    ("/Polska/Regiony", "Regiony Polski (16 województw)", "Najważniejsze wiadomości lokalne i regionalne ze wszystkich 16 województw Polski — nie tylko ze stolic regionów."),
+    *[(v[0], v[2], v[3]) for v in VOIVODESHIPS],
     ("/Swiat", "Świat i geopolityka", "Potwierdzone depesze ze świata, bezpieczeństwo międzynarodowe, technologie i cyberbezpieczeństwo."),
     ("/Sport", "Sport", "Wyniki, rozgrywki reprezentacji i najważniejsze wydarzenia sportowe w faktograficznym skrócie."),
 ]
@@ -27,6 +163,23 @@ KNOWN_HUES = {
     "gospodarka": 150,
     "polityka": 215,
     "energetyka": 38,
+    "regiony": 175,
+    "dolnoslaskie": 330,
+    "kujawsko-pomorskie": 195,
+    "lubelskie": 105,
+    "lubuskie": 132,
+    "lodzkie": 25,
+    "malopolskie": 12,
+    "mazowieckie": 225,
+    "opolskie": 48,
+    "podkarpackie": 162,
+    "podlaskie": 145,
+    "pomorskie": 200,
+    "slaskie": 245,
+    "swietokrzyskie": 310,
+    "warminsko-mazurskie": 140,
+    "wielkopolskie": 350,
+    "zachodniopomorskie": 188,
     "poznan": 350,
     "swiat": 265,
     "sport": 15,
@@ -67,20 +220,28 @@ def path_hue(path: str) -> int:
 
 
 def short_cat_label(path: str) -> str:
+    norm_p = LEGACY_REGION_MAP.get(path, path)
+    if norm_p in VOIVODESHIP_LABELS:
+        return VOIVODESHIP_LABELS[norm_p]
     pretty = {
         "Swiat": "Świat",
-        "Poznan": "Poznań",
-        "Krakow": "Kraków",
-        "Wroclaw": "Wrocław",
-        "Gdansk": "Gdańsk",
-        "Lodz": "Łódź",
-        "Bialystok": "Białystok",
-        "Rzeszow": "Rzeszów",
-        "Slask": "Śląsk",
+        "Regiony": "Regiony",
+        "Poznan": "Wielkopolskie",
+        "Krakow": "Małopolskie",
+        "Wroclaw": "Dolnośląskie",
+        "Gdansk": "Pomorskie",
+        "Lodz": "Łódzkie",
+        "Bialystok": "Podlaskie",
+        "Rzeszow": "Podkarpackie",
+        "Slaskie": "Śląskie",
+        "Swietokrzyskie": "Świętokrzyskie",
+        "Warminsko-Mazurskie": "Warmińsko-Mazurskie",
     }
-    parts = [pretty.get(p, p) for p in (path or "/Polska").split("/") if p]
+    parts = [pretty.get(p, p) for p in (norm_p or "/Polska").split("/") if p]
     if len(parts) <= 1:
         return parts[0] if parts else "Polska"
+    if parts[:2] == ["Polska", "Regiony"] and len(parts) > 2:
+        return " · ".join(parts[2:])
     return " · ".join(parts[1:])
 
 
@@ -216,7 +377,6 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
         ("/Polska/Gospodarka", "Gospodarka", "Polska / "),
         ("/Polska/Polityka", "Polityka", "Polska / "),
         ("/Polska/Energetyka", "Energetyka", "Polska / "),
-        ("/Polska/Poznan", "Poznań", "Polska / "),
     ]
     out = []
     for path, label, prefix in items:
@@ -227,6 +387,19 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
             f'<a class="{cls}" data-path="{html.escape(path, quote=True)}" '
             f'href="{href}" onclick="return selectPathLink(event, \'{html.escape(path, quote=True)}\')">{inner}</a>'
         )
+    reg_active = active_path == "/Polska/Regiony" or active_path.startswith("/Polska/Regiony/")
+    reg_cls = "path-chip active" if reg_active else "path-chip"
+    reg_href = html.escape(_rel_href(rel_root, "/Polska/Regiony"), quote=True)
+    out.append(
+        '<div class="path-region-group">'
+        f'<a class="{reg_cls}" data-path="/Polska/Regiony" href="{reg_href}" '
+        'onclick="return selectPathLink(event, \'/Polska/Regiony\')">'
+        '<span class="path-root">Polska / </span>Regiony</a>'
+        '<button type="button" id="regionsToggleBtn" class="regions-toggle" '
+        'onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" '
+        'title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button>'
+        '</div>'
+    )
     out.append('<span class="path-divider" aria-hidden="true">|</span>')
     for path, label in [("/Swiat", "Świat"), ("/Sport", "Sport")]:
         cls = "path-chip active" if path == active_path else "path-chip"
@@ -236,6 +409,38 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
             f'href="{href}" onclick="return selectPathLink(event, \'{html.escape(path, quote=True)}\')">{html.escape(label)}</a>'
         )
     return "\n        ".join(out)
+
+
+def _render_regions_drawer_html(rel_root: str, active_path: str = "/Polska") -> str:
+    all_href = html.escape(_rel_href(rel_root, "/Polska/Regiony"), quote=True)
+    all_cls = "regions-drawer-all active" if active_path == "/Polska/Regiony" else "regions-drawer-all"
+    items_html = []
+    for v_path, v_label, _, _, _, _ in VOIVODESHIPS:
+        href = html.escape(_rel_href(rel_root, v_path), quote=True)
+        cls = "region-drawer-item active" if active_path == v_path else "region-drawer-item"
+        hue = path_hue(v_path)
+        items_html.append(
+            f'<a class="{cls}" data-region-link="{html.escape(v_path, quote=True)}" '
+            f'href="{href}" onclick="toggleRegionsDrawer(false); return selectPathLink(event, \'{html.escape(v_path, quote=True)}\')">'
+            f'<span class="region-dot" style="--h:{hue}" aria-hidden="true"></span>'
+            f'<span>{html.escape(v_label)}</span></a>'
+        )
+    grid = "\n        ".join(items_html)
+    return f"""<div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="{all_cls}" data-region-link="/Polska/Regiony" href="{all_href}" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        {grid}
+      </div>
+    </div>"""
 
 
 def _render_card_ssr(art: dict, rel_root: str) -> str:
@@ -355,6 +560,36 @@ def _sort_articles_for_feed(items: list) -> list:
     )
 
 
+def _render_region_strip_ssr(articles: list, path: str, rel_root: str) -> str:
+    if path != "/Polska/Regiony" and path not in VOIVODESHIP_BY_PATH:
+        return ""
+    counts = {}
+    for a in articles:
+        ap = a.get("path") or ""
+        if ap.startswith("/Polska/Regiony/"):
+            counts[ap] = counts.get(ap, 0) + 1
+    total_reg = sum(counts.values())
+    all_href = html.escape(_rel_href(rel_root, "/Polska/Regiony"), quote=True)
+    all_cls = "region-pill active" if path == "/Polska/Regiony" else "region-pill"
+    pills = [
+        f'<a class="{all_cls}" href="{all_href}" onclick="return selectPathLink(event, \'/Polska/Regiony\')">Wszystkie <span class="region-pill-count">{total_reg}</span></a>'
+    ]
+    for v_path, v_label, _, _, _, _ in VOIVODESHIPS:
+        c = counts.get(v_path, 0)
+        href = html.escape(_rel_href(rel_root, v_path), quote=True)
+        cls = "region-pill"
+        if path == v_path:
+            cls += " active"
+        if c > 0:
+            cls += " has-items"
+        hue = path_hue(v_path)
+        pills.append(
+            f'<a class="{cls}" style="--h:{hue}" href="{href}" onclick="return selectPathLink(event, \'{html.escape(v_path, quote=True)}\')">'
+            f'{html.escape(v_label)}<span class="region-pill-count">{c}</span></a>'
+        )
+    return f'<nav class="region-strip" aria-label="Wybierz województwo">{"".join(pills)}</nav>'
+
+
 def render_feed_ssr(articles: list, path: str, rel_root: str) -> str:
     filtered = _sort_articles_for_feed(
         [a for a in articles if (a.get("path") or "").startswith(path)]
@@ -368,8 +603,21 @@ def render_feed_ssr(articles: list, path: str, rel_root: str) -> str:
         </div>
         <span>{count_articles_label(len(filtered))}</span>
       </div>"""
+    region_strip = _render_region_strip_ssr(articles, path, rel_root)
     if not filtered:
-        return heading + f'<div class="empty-state">Brak opracowań w dziale <strong>{html.escape(path)}</strong>.</div>'
+        if path in VOIVODESHIP_BY_PATH:
+            v_info = VOIVODESHIP_BY_PATH[path]
+            outlets_txt = html.escape(", ".join(v_info[4]))
+            all_reg_href = html.escape(_rel_href(rel_root, "/Polska/Regiony"), quote=True)
+            empty_box = (
+                f'<div class="empty-state">'
+                f'<p>Brak bieżących opracowań w dziale <strong>{html.escape(v_info[2])}</strong>.</p>'
+                f'<p class="empty-sub">Monitorowane redakcje w tym województwie: {outlets_txt}. Kolejne depesze ze stolicy i powiatów regionu pojawiają się w aktualizacjach cyklicznych.</p>'
+                f'<p style="margin-top:0.9rem"><a class="btn-outline" style="text-decoration:none;display:inline-block" href="{all_reg_href}" onclick="return selectPathLink(event, \'/Polska/Regiony\')">← Zobacz wiadomości ze wszystkich 16 województw</a></p>'
+                f'</div>'
+            )
+            return heading + region_strip + empty_box
+        return heading + region_strip + f'<div class="empty-state">Brak opracowań w dziale <strong>{html.escape(path)}</strong>.</div>'
 
     use_lead = len(filtered) >= 3
     lead = filtered[0] if use_lead else None
@@ -377,7 +625,7 @@ def render_feed_ssr(articles: list, path: str, rel_root: str) -> str:
     lead_html = _render_lead_ssr(lead, rel_root) if lead else ""
     cards_html = "\n".join(_render_card_ssr(a, rel_root) for a in rest)
     grid_cls = "cards-grid after-lead" if lead else "cards-grid"
-    return heading + lead_html + (f'<div class="{grid_cls}">{cards_html}</div>' if cards_html else "")
+    return heading + region_strip + lead_html + (f'<div class="{grid_cls}">{cards_html}</div>' if cards_html else "")
 
 
 def _reconcile_lead_and_first_para(art: dict) -> tuple:
@@ -657,7 +905,17 @@ def _build_news_article_jsonld(art: dict, site_base_url: str) -> list:
     cat_path = art.get("path") or "/Polska"
     parts = [p for p in cat_path.split("/") if p]
     valid_cats = {p for p, _, _ in CATEGORIES}
-    pretty_names = {"Polska": "Polska", "Swiat": "Świat", "Sport": "Sport", "Gospodarka": "Gospodarka", "Polityka": "Polityka", "Energetyka": "Energetyka", "Poznan": "Poznań"}
+    pretty_names = {
+        "Polska": "Polska",
+        "Swiat": "Świat",
+        "Sport": "Sport",
+        "Gospodarka": "Gospodarka",
+        "Polityka": "Polityka",
+        "Energetyka": "Energetyka",
+        "Regiony": "Regiony",
+        "Poznan": "Wielkopolskie",
+        **{v[0].split("/")[-1]: v[1] for v in VOIVODESHIPS},
+    }
     breadcrumbs = [
         {"@type": "ListItem", "position": 1, "name": "VERITY", "item": f"{site_base_url}/"},
     ]
@@ -819,6 +1077,7 @@ def _page_shell(
       <nav class="path-nav" aria-label="Kategorie tematyczne">
         {nav_html}
       </nav>
+      {_render_regions_drawer_html(rel_root, active_path)}
     </div>
   </header>
 
@@ -911,7 +1170,10 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {"@type": "ListItem", "position": idx, "name": label, "item": f"{site_base_url}{p}/"}
-                for idx, (p, label, _) in enumerate(CATEGORIES[:5], start=1)
+                for idx, (p, label, _) in enumerate(
+                    [c for c in CATEGORIES if c[0] in {"/Polska", "/Polska/Gospodarka", "/Polska/Polityka", "/Polska/Energetyka", "/Polska/Regiony", "/Swiat", "/Sport"}],
+                    start=1,
+                )
             ],
         },
         {

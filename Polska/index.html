@@ -55,7 +55,7 @@
       {
         "@type": "ListItem",
         "position": 4,
-        "url": "https://hygrisxx.github.io/verity-/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/",
+        "url": "https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/",
         "name": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy"
       },
       {
@@ -73,7 +73,7 @@
       {
         "@type": "ListItem",
         "position": 7,
-        "url": "https://hygrisxx.github.io/verity-/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/",
+        "url": "https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/",
         "name": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem"
       },
       {
@@ -97,7 +97,7 @@
       {
         "@type": "ListItem",
         "position": 11,
-        "url": "https://hygrisxx.github.io/verity-/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/",
+        "url": "https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/",
         "name": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem"
       },
       {
@@ -121,7 +121,7 @@
       {
         "@type": "ListItem",
         "position": 15,
-        "url": "https://hygrisxx.github.io/verity-/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/",
+        "url": "https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/",
         "name": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa"
       }
     ]
@@ -133,7 +133,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../styles.css?v=420c7465" />
+  <link rel="stylesheet" href="../styles.css?v=c9ec3948" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -191,11 +191,41 @@
         <a class="path-chip" data-path="/Polska/Gospodarka" href="../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
         <a class="path-chip" data-path="/Polska/Polityka" href="../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
         <a class="path-chip" data-path="/Polska/Energetyka" href="../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
-        <a class="path-chip" data-path="/Polska/Poznan" href="../Polska/Poznan/" onclick="return selectPathLink(event, '/Polska/Poznan')"><span class="path-root">Polska / </span>Poznań</a>
+        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
         <span class="path-divider" aria-hidden="true">|</span>
         <a class="path-chip" data-path="/Swiat" href="../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
       </nav>
+      <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="regions-drawer-all" data-region-link="/Polska/Regiony" href="../Polska/Regiony/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Dolnoslaskie" href="../Polska/Regiony/Dolnoslaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')"><span class="region-dot" style="--h:330" aria-hidden="true"></span><span>Dolnośląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Kujawsko-Pomorskie" href="../Polska/Regiony/Kujawsko-Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')"><span class="region-dot" style="--h:195" aria-hidden="true"></span><span>Kujawsko-Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubelskie" href="../Polska/Regiony/Lubelskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubelskie')"><span class="region-dot" style="--h:105" aria-hidden="true"></span><span>Lubelskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubuskie" href="../Polska/Regiony/Lubuskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubuskie')"><span class="region-dot" style="--h:132" aria-hidden="true"></span><span>Lubuskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lodzkie" href="../Polska/Regiony/Lodzkie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lodzkie')"><span class="region-dot" style="--h:25" aria-hidden="true"></span><span>Łódzkie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Malopolskie" href="../Polska/Regiony/Malopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Malopolskie')"><span class="region-dot" style="--h:12" aria-hidden="true"></span><span>Małopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Mazowieckie" href="../Polska/Regiony/Mazowieckie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Mazowieckie')"><span class="region-dot" style="--h:225" aria-hidden="true"></span><span>Mazowieckie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Opolskie" href="../Polska/Regiony/Opolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Opolskie')"><span class="region-dot" style="--h:48" aria-hidden="true"></span><span>Opolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podkarpackie" href="../Polska/Regiony/Podkarpackie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podkarpackie')"><span class="region-dot" style="--h:162" aria-hidden="true"></span><span>Podkarpackie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podlaskie" href="../Polska/Regiony/Podlaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podlaskie')"><span class="region-dot" style="--h:145" aria-hidden="true"></span><span>Podlaskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Pomorskie" href="../Polska/Regiony/Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Pomorskie')"><span class="region-dot" style="--h:200" aria-hidden="true"></span><span>Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Slaskie" href="../Polska/Regiony/Slaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Slaskie')"><span class="region-dot" style="--h:245" aria-hidden="true"></span><span>Śląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Swietokrzyskie" href="../Polska/Regiony/Swietokrzyskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')"><span class="region-dot" style="--h:310" aria-hidden="true"></span><span>Świętokrzyskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Warminsko-Mazurskie" href="../Polska/Regiony/Warminsko-Mazurskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')"><span class="region-dot" style="--h:140" aria-hidden="true"></span><span>Warmińsko-Mazurskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Wielkopolskie" href="../Polska/Regiony/Wielkopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')"><span class="region-dot" style="--h:350" aria-hidden="true"></span><span>Wielkopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Zachodniopomorskie" href="../Polska/Regiony/Zachodniopomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')"><span class="region-dot" style="--h:188" aria-hidden="true"></span><span>Zachodniopomorskie</span></a>
+      </div>
+    </div>
     </div>
   </header>
 
@@ -259,19 +289,19 @@
         </div>
       </div>
     </article>
-<article class="cat" style="--h:20" data-id="7">
+<article class="cat" style="--h:200" data-id="7">
       <div class="story-card">
-        <a class="card-media-link" href="../Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/" onclick="return openArticleLink(event, 7, '/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy')" tabindex="-1" aria-hidden="true">
+        <a class="card-media-link" href="../Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/" onclick="return openArticleLink(event, 7, '/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Pomorskie</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://ipla.pluscdn.pl/dituel/cp/35/354jmv74f83g2qj21thahhe4f6ionn98.jpg" alt="&quot;Slawa UPA&quot; na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 21:44</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/" onclick="return openArticleLink(event, 7, '/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy')">&quot;Slawa UPA&quot; na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy</a></h2>
+          <div class="story-top"><span class="cat-badge">Pomorskie</span><span class="story-date">13.11.2026, 21:44</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/" onclick="return openArticleLink(event, 7, '/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy')">&quot;Slawa UPA&quot; na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy</a></h2>
           <p class="story-lede">Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">5 redakcji</span><span class="chip" title="Kategoria">/Polska</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">5 redakcji</span><span class="chip" title="Kategoria">/Polska/Regiony/Pomorskie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>5 źródeł · 1 min</span></div>
         </div>
       </div>
@@ -310,19 +340,19 @@
         </div>
       </div>
     </article>
-<article class="cat" style="--h:20" data-id="13">
+<article class="cat" style="--h:12" data-id="13">
       <div class="story-card">
-        <a class="card-media-link" href="../Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/" onclick="return openArticleLink(event, 13, '/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem')" tabindex="-1" aria-hidden="true">
+        <a class="card-media-link" href="../Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/" onclick="return openArticleLink(event, 13, '/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Małopolskie</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://cdn.defence24.pl/2026/09/01/320x240px/NbBjKSxEiBC1K1BTZ5pOwhZrCAGOcVBs0DvzjOB8.13zc.jpg" alt="Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 19:50</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/" onclick="return openArticleLink(event, 13, '/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem')">Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem</a></h2>
+          <div class="story-top"><span class="cat-badge">Małopolskie</span><span class="story-date">13.11.2026, 19:50</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/" onclick="return openArticleLink(event, 13, '/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem')">Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem</a></h2>
           <p class="story-lede">Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z informacji krakowskiej Policji.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>3 źródła · 1 min</span></div>
         </div>
       </div>
@@ -378,19 +408,19 @@
         </div>
       </div>
     </article>
-<article class="cat" style="--h:20" data-id="20">
+<article class="cat" style="--h:12" data-id="20">
       <div class="story-card">
-        <a class="card-media-link" href="../Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/" onclick="return openArticleLink(event, 20, '/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura')" tabindex="-1" aria-hidden="true">
+        <a class="card-media-link" href="../Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/" onclick="return openArticleLink(event, 20, '/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Małopolskie</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg" alt="Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 18:46</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/" onclick="return openArticleLink(event, 20, '/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura')">Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem</a></h2>
+          <div class="story-top"><span class="cat-badge">Małopolskie</span><span class="story-date">13.11.2026, 18:46</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/" onclick="return openArticleLink(event, 20, '/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura')">Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem</a></h2>
           <p class="story-lede">Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>3 źródła · 1 min</span></div>
         </div>
       </div>
@@ -446,19 +476,19 @@
         </div>
       </div>
     </article>
-<article class="cat" style="--h:173" data-id="25">
+<article class="cat" style="--h:140" data-id="25">
       <div class="story-card">
-        <a class="card-media-link" href="../Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/" onclick="return openArticleLink(event, 25, '/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa')" tabindex="-1" aria-hidden="true">
+        <a class="card-media-link" href="../Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/" onclick="return openArticleLink(event, 25, '/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Olsztyn</span><span class="thumb-fallback-mark">V</span></div>
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Warmińsko-Mazurskie</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://radioolsztyn.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-13-104004.png" alt="Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Olsztyn</span><span class="story-date">13.11.2026, 16:48</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/" onclick="return openArticleLink(event, 25, '/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa')">Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa</a></h2>
+          <div class="story-top"><span class="cat-badge">Warmińsko-Mazurskie</span><span class="story-date">13.11.2026, 16:48</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/" onclick="return openArticleLink(event, 25, '/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa')">Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa</a></h2>
           <p class="story-lede">Syn zabił ojca w gminie Mrągowo. Prokuratura potwierdziła, że 30-letni mężczyzna usłyszał zarzut zabójstwa 64-latka.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">1 redakcja</span><span class="chip" title="Kategoria">/Polska/Olsztyn</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">1 redakcja</span><span class="chip" title="Kategoria">/Polska/Regiony/Warminsko-Mazurskie</span></div>
           <div class="story-foot"><span class="meter neutral">Temat lokalny/niszowy</span><span>1 źródło · 1 min</span></div>
         </div>
       </div>
@@ -514,6 +544,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/Polska";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../app.js?v=9251a552"></script>
+  <script src="../app.js?v=a5729768"></script>
 </body>
 </html>

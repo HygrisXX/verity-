@@ -400,12 +400,12 @@
   },
   {
     "id": 7,
-    "path": "/Polska",
-    "seo_url": "/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
+    "path": "/Polska/Regiony/Pomorskie",
+    "seo_url": "/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
     "seo_title": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy",
     "summary_lead": "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA.",
     "meta_description": "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego.",
-    "keywords": "Polska, Slawa, pomnikach, Trójmieście, 17-latka, Ukrainy",
+    "keywords": "Pomorskie, Slawa, pomnikach, Trójmieście, 17-latka, Ukrainy",
     "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/35/354jmv74f83g2qj21thahhe4f6ionn98.jpg",
     "published_iso": "2026-11-13T21:44:08+01:00",
     "display_date": "13.11.2026, 21:44",
@@ -419,7 +419,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Pomorskie"
       },
       {
         "label": "Główne źródło",
@@ -454,19 +454,19 @@
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "\"Slawa UPA\" na trójmiejskich pomnikach. Zatrzymano 17-latka",
         "url": "https://www.fakt.pl/wydarzenia/polska/trojmiasto/napisy-slawa-upa-na-pomnikach-w-gdansku-i-gdyni-17-latek-uslyszal-zarzuty/0vve7hp"
       },
       {
         "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Napis \"Slawa UPA\" na kilkunastu pomnikach w Polsce. Zarzuty dla 17-letniego Ukraińca",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198073,33131679,napis-slawa-upa-na-kilkunastu-pomnikach-w-polsce-zarzuty.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       },
       {
         "outlet": "Wyborcza.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Zarzuty dla 17-latka. Na polskich pomnikach umieścił napis \"Slawa UPA\"",
         "url": "https://wyborcza.pl/7,75398,33131706,zarzuty-dla-17-latka-na-polskich-pomnikach-umiescil-napis-slawa.html"
       },
@@ -837,12 +837,12 @@
   },
   {
     "id": 13,
-    "path": "/Polska",
-    "seo_url": "/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
     "seo_title": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem",
     "summary_lead": "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z informacji krakowskiej Policji. W zdarzeniu nikt nie został ranny.",
     "meta_description": "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z…",
-    "keywords": "Polska, Strzelał, Krakowie, Funkcjonariusze, odpowiedzieli, ogniem",
+    "keywords": "Malopolskie, Strzelał, Krakowie, Funkcjonariusze, odpowiedzieli, ogniem",
     "thumbnail_url": "https://cdn.defence24.pl/2026/09/01/320x240px/NbBjKSxEiBC1K1BTZ5pOwhZrCAGOcVBs0DvzjOB8.13zc.jpg",
     "published_iso": "2026-11-13T19:50:37+01:00",
     "display_date": "13.11.2026, 19:50",
@@ -856,7 +856,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -892,13 +892,13 @@
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Strzelał do policjantów w Krakowie. Ma kryminalną przeszłość. 39-latek usłyszał zarzuty",
         "url": "https://www.fakt.pl/wydarzenia/krakow-39-latek-strzelal-do-policjantow-prokuratura-przedstawila-mu-zarzuty/2g8njb6"
       },
       {
         "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Zarzuty dla mężczyzny, który strzelał z broni gazowej do policjantów w Krakowie. \"Jest recydywistą\"",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198072,33131581,zarzuty-dla-mezczyzny-ktory-strzelal-z-broni-gazowej-do-policjantow.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       }
@@ -1366,12 +1366,12 @@
   },
   {
     "id": 20,
-    "path": "/Polska",
-    "seo_url": "/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
     "seo_title": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem",
     "summary_lead": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
     "meta_description": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
-    "keywords": "Polska, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
+    "keywords": "Malopolskie, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
     "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg",
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
@@ -1385,7 +1385,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -1421,13 +1421,13 @@
       },
       {
         "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Wiadomo, kto doniósł na policjantów z Krakowa? Sam się pochwalił w sieci",
         "url": "https://blaskonline.pl/wiadomo-kto-doniosl-na-policjantow-z-krakowa-sam-sie-pochwalil-w-sieci/"
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Zatrzymali zamachowca w Krakowie. Teraz dostali odznaczenia. \"To nasi bohaterowie\"",
         "url": "https://www.fakt.pl/wydarzenia/polska/krakow/krakow-artur-moranski-i-jakub-kulik-nagrodzeni-za-odwage-podczas-zamachu/yn79cfn"
       }
@@ -1736,8 +1736,8 @@
   },
   {
     "id": 25,
-    "path": "/Polska/Olsztyn",
-    "seo_url": "/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
+    "path": "/Polska/Regiony/Warminsko-Mazurskie",
+    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
     "seo_title": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa",
     "thumbnail_url": "https://radioolsztyn.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-13-104004.png",
     "published_iso": "2026-11-13T16:48:28+01:00",
@@ -1752,7 +1752,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Olsztyn"
+        "val": "/Polska/Regiony/Warminsko-Mazurskie"
       },
       {
         "label": "Główne źródło",
@@ -1787,7 +1787,7 @@
     "corrections": [],
     "summary_lead": "Syn zabił ojca w gminie Mrągowo. Prokuratura potwierdziła, że 30-letni mężczyzna usłyszał zarzut zabójstwa 64-latka. Chodzi o tragedię, do której doszło we wtorek późnym popołudniem w miejscowości Krzywe.",
     "meta_description": "Syn zabił ojca w gminie Mrągowo. Prokuratura potwierdziła, że 30-letni mężczyzna usłyszał zarzut zabójstwa 64-latka.",
-    "keywords": "Olsztyn, Mrągowem, 30-latek, zabójstwa"
+    "keywords": "Warminsko-Mazurskie, Mrągowem, 30-latek, zabójstwa"
   },
   {
     "id": 26,
@@ -2469,8 +2469,8 @@
   },
   {
     "id": 35,
-    "path": "/Polska/Lublin",
-    "seo_url": "/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek",
+    "path": "/Polska/Regiony/Lubelskie",
+    "seo_url": "/Polska/Regiony/Lubelskie/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek",
     "seo_title": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
     "thumbnail_url": "https://www.lublin112.pl/wp-content/uploads/2026/11/61-677111.jpg",
     "published_iso": "2026-11-13T14:11:13+01:00",
@@ -2485,7 +2485,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Lublin"
+        "val": "/Polska/Regiony/Lubelskie"
       },
       {
         "label": "Główne źródło",
@@ -2519,7 +2519,7 @@
     "corrections": [],
     "summary_lead": "Dzielnicowi z Tomaszowa Lubelskiego zatrzymali 39-latka poszukiwanego do odbycia kary sześciu miesięcy pozbawienia wolności za niestosowanie się do sądowego zakazu prowadzenia pojazdów.",
     "meta_description": "Dzielnicowi z Tomaszowa Lubelskiego zatrzymali 39-latka poszukiwanego do odbycia kary sześciu miesięcy pozbawienia wolności za niestosowanie się do sądowego…",
-    "keywords": "Lublin, dożywotni, zakaz, prowadzenia, pojazdów, złamał, 39-latek"
+    "keywords": "Lubelskie, dożywotni, zakaz, prowadzenia, pojazdów, złamał, 39-latek"
   },
   {
     "id": 36,
@@ -3033,23 +3033,23 @@
   },
   {
     "id": 43,
-    "path": "/Polska",
-    "seo_url": "/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w",
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w",
     "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
     "thumbnail_url": "",
     "published_iso": "2026-11-13T11:50:05+01:00",
     "display_date": "13.11.2026, 11:50",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "3 redakcje"
+        "val": "2 redakcje"
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -3057,15 +3057,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
+        "val": "Potwierdzone (2 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (3 redakcje)",
+        "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar. [Źródło: Niedziela.pl, Radio Kielce, RadioMaryja.pl]"
+          "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar. [Źródło: Niedziela.pl, RadioMaryja.pl]"
         ]
       }
     ],
@@ -3077,27 +3077,20 @@
         "url": "https://www.niedziela.pl/artykul/129806/Stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitalach"
       },
       {
-        "outlet": "Radio Kielce",
-        "angle": "Doniesienie regionalne",
-        "summary": "Stan rannych w zamachu poprawia się, ale pozostają w szpitalach",
-        "url": "https://radiokielce.pl/1457434/stan-rannych-w-zamachu-poprawia-sie-ale-pozostaja-w-szpitalach/"
-      },
-      {
         "outlet": "RadioMaryja.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Kraków: stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
         "url": "https://www.radiomaryja.pl/informacje/krakow-stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w-szpitalach/"
       }
     ],
     "sources": [
       "Niedziela.pl",
-      "Radio Kielce",
       "RadioMaryja.pl"
     ],
     "corrections": [],
     "summary_lead": "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar.",
     "meta_description": "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach.",
-    "keywords": "Polska, Stan, rannych, zamachu, systematycznie, poprawia, pozostają"
+    "keywords": "Malopolskie, Stan, rannych, zamachu, systematycznie, poprawia, pozostają"
   },
   {
     "id": 44,
@@ -3798,8 +3791,8 @@
   },
   {
     "id": 53,
-    "path": "/Polska/Warszawa",
-    "seo_url": "/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra",
+    "path": "/Polska/Regiony/Mazowieckie",
+    "seo_url": "/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra",
     "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
     "thumbnail_url": "https://warszawawpigulce.pl/wp-content/uploads/2026/11/183-311357.webp",
     "published_iso": "2026-11-13T08:52:16+01:00",
@@ -3814,7 +3807,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Warszawa"
+        "val": "/Polska/Regiony/Mazowieckie"
       },
       {
         "label": "Główne źródło",
@@ -3870,12 +3863,12 @@
     "corrections": [],
     "summary_lead": "Na warszawskiej Pradze na idącego chodnikiem 49-latka spadł z dużej wysokości karabinek przypominający broń pneumatyczną. Mężczyzna z obrażeniami nogi trafił do szpitala. Policjanci szybko ustalili, z którego okna wyleciał przedmiot.",
     "meta_description": "Na warszawskiej Pradze na idącego chodnikiem 49-latka spadł z dużej wysokości karabinek przypominający broń pneumatyczną.",
-    "keywords": "Warszawa, Warszawska, Praga, wyrzucił, broń, okno, Karabinek"
+    "keywords": "Mazowieckie, Warszawska, Praga, wyrzucił, broń, okno, Karabinek"
   },
   {
     "id": 54,
-    "path": "/Polska",
-    "seo_url": "/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
+    "path": "/Polska/Regiony/Pomorskie",
+    "seo_url": "/Polska/Regiony/Pomorskie/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
     "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
     "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bc218166-c828-441f-9268-f2262949e228",
     "published_iso": "2026-11-13T08:52:16+01:00",
@@ -3890,7 +3883,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Pomorskie"
       },
       {
         "label": "Główne źródło",
@@ -3919,7 +3912,7 @@
       },
       {
         "outlet": "TVN24",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Karambol pod Słupskiem. Na S6 zderzyło się pięć aut, są ranni",
         "url": "https://tvn24.pl/trojmiasto/sycewice-karambol-pod-slupskiem-na-s6-zderzylo-sie-piec-aut-sa-ranni-st9336907?source=rss"
       }
@@ -3931,7 +3924,7 @@
     "corrections": [],
     "summary_lead": "Droga ekspresowa S6 w kierunku Gdańska została zablokowana po zderzeniu pięciu samochodów. Do wypadku doszło w piątek rano między węzłami Wrześnica i Sycewice.",
     "meta_description": "Droga ekspresowa S6 w kierunku Gdańska została zablokowana po zderzeniu pięciu samochodów.",
-    "keywords": "Polska, Karambol, samego, rana, Zderzyło, pięć, samochodów"
+    "keywords": "Pomorskie, Karambol, samego, rana, Zderzyło, pięć, samochodów"
   },
   {
     "id": 55,
@@ -4562,8 +4555,8 @@
   },
   {
     "id": 64,
-    "path": "/Polska",
-    "seo_url": "/Polska/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
     "thumbnail_url": "https://cdn.defence24.pl/2026/11/12/320x240px/YGLVZtKyBQetmWTZozuplxnaDWL6EzP7MhZ5DlmW.46kg.png",
     "published_iso": "2026-11-13T04:53:56+01:00",
@@ -4578,7 +4571,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -4612,7 +4605,7 @@
     "corrections": [],
     "summary_lead": "Policja zatrzymała już 11 osób podejrzewanych o publikowanie w internecie wpisów gloryfikujących sprawcę tragicznego ataku w Krakowie lub sugerujących możliwość kolejnych zamachów.",
     "meta_description": "Policja zatrzymała już 11 osób podejrzewanych o publikowanie w internecie wpisów gloryfikujących sprawcę tragicznego ataku w Krakowie lub sugerujących…",
-    "keywords": "Polska, Wychwalali, sprawcę, Krakowie"
+    "keywords": "Malopolskie, Wychwalali, sprawcę, Krakowie"
   },
   {
     "id": 65,

@@ -3,49 +3,145 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Poznan/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/</loc>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-13T22:45:42Z</lastmod>
+    <lastmod>2026-11-13T23:15:07Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -104,7 +200,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/</loc>
     <lastmod>2026-11-13T21:44:08+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -158,7 +254,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/</loc>
     <lastmod>2026-11-13T19:50:37+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -221,7 +317,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura/</loc>
     <lastmod>2026-11-13T18:46:12+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -263,7 +359,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/</loc>
     <lastmod>2026-11-13T16:48:28+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -353,7 +449,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Lublin/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek/</loc>
     <lastmod>2026-11-13T14:11:13+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -425,7 +521,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w/</loc>
     <lastmod>2026-11-13T11:50:05+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -512,7 +608,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra/</loc>
     <lastmod>2026-11-13T08:52:16+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -521,7 +617,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow/</loc>
     <lastmod>2026-11-13T08:52:16+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -611,7 +707,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych/</loc>
     <lastmod>2026-11-13T04:53:56+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>

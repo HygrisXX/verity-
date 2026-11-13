@@ -518,12 +518,12 @@ let articles = [
   },
   {
     "id": 7,
-    "path": "/Polska",
-    "seo_url": "/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
+    "path": "/Polska/Regiony/Pomorskie",
+    "seo_url": "/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
     "seo_title": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy",
     "summary_lead": "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA.",
     "meta_description": "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego.",
-    "keywords": "Polska, Slawa, pomnikach, Trójmieście, 17-latka, Ukrainy",
+    "keywords": "Pomorskie, Slawa, pomnikach, Trójmieście, 17-latka, Ukrainy",
     "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/35/354jmv74f83g2qj21thahhe4f6ionn98.jpg",
     "published_iso": "2026-11-13T21:44:08+01:00",
     "display_date": "13.11.2026, 21:44",
@@ -537,7 +537,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Pomorskie"
       },
       {
         "label": "Główne źródło",
@@ -572,19 +572,19 @@ let articles = [
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "\"Slawa UPA\" na trójmiejskich pomnikach. Zatrzymano 17-latka",
         "url": "https://www.fakt.pl/wydarzenia/polska/trojmiasto/napisy-slawa-upa-na-pomnikach-w-gdansku-i-gdyni-17-latek-uslyszal-zarzuty/0vve7hp"
       },
       {
         "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Napis \"Slawa UPA\" na kilkunastu pomnikach w Polsce. Zarzuty dla 17-letniego Ukraińca",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198073,33131679,napis-slawa-upa-na-kilkunastu-pomnikach-w-polsce-zarzuty.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       },
       {
         "outlet": "Wyborcza.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Zarzuty dla 17-latka. Na polskich pomnikach umieścił napis \"Slawa UPA\"",
         "url": "https://wyborcza.pl/7,75398,33131706,zarzuty-dla-17-latka-na-polskich-pomnikach-umiescil-napis-slawa.html"
       },
@@ -955,12 +955,12 @@ let articles = [
   },
   {
     "id": 13,
-    "path": "/Polska",
-    "seo_url": "/Polska/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
     "seo_title": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem",
     "summary_lead": "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z informacji krakowskiej Policji. W zdarzeniu nikt nie został ranny.",
     "meta_description": "Do strzałów ze strony mężczyzny poruszającego się z bronią i policjantów doszło w czwartek po godzinie 13 w pobliżu ul. Bieżanowskiej w Krakowie – wynika z…",
-    "keywords": "Polska, Strzelał, Krakowie, Funkcjonariusze, odpowiedzieli, ogniem",
+    "keywords": "Malopolskie, Strzelał, Krakowie, Funkcjonariusze, odpowiedzieli, ogniem",
     "thumbnail_url": "https://cdn.defence24.pl/2026/09/01/320x240px/NbBjKSxEiBC1K1BTZ5pOwhZrCAGOcVBs0DvzjOB8.13zc.jpg",
     "published_iso": "2026-11-13T19:50:37+01:00",
     "display_date": "13.11.2026, 19:50",
@@ -974,7 +974,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -1010,13 +1010,13 @@ let articles = [
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Strzelał do policjantów w Krakowie. Ma kryminalną przeszłość. 39-latek usłyszał zarzuty",
         "url": "https://www.fakt.pl/wydarzenia/krakow-39-latek-strzelal-do-policjantow-prokuratura-przedstawila-mu-zarzuty/2g8njb6"
       },
       {
         "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Zarzuty dla mężczyzny, który strzelał z broni gazowej do policjantów w Krakowie. \"Jest recydywistą\"",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198072,33131581,zarzuty-dla-mezczyzny-ktory-strzelal-z-broni-gazowej-do-policjantow.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       }
@@ -1484,12 +1484,12 @@ let articles = [
   },
   {
     "id": 20,
-    "path": "/Polska",
-    "seo_url": "/Polska/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
     "seo_title": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem",
     "summary_lead": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
     "meta_description": "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika – policjanta, który wraz z kolegą z patrolu zatrzymał w sobotę sprawcę zamachu w Krakowie.",
-    "keywords": "Polska, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
+    "keywords": "Malopolskie, Doniósł, policjanta, zatrzymał, zamachowca, Krakowie, Prokuratura",
     "thumbnail_url": "https://cdn.defence24.pl/2026/11/13/320x240px/jjs67nlqqbgiz913hpgez0rrkfy3uucljtnjt6xo.bwvd.jpg",
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
@@ -1503,7 +1503,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -1539,13 +1539,13 @@ let articles = [
       },
       {
         "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Wiadomo, kto doniósł na policjantów z Krakowa? Sam się pochwalił w sieci",
         "url": "https://blaskonline.pl/wiadomo-kto-doniosl-na-policjantow-z-krakowa-sam-sie-pochwalil-w-sieci/"
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Zatrzymali zamachowca w Krakowie. Teraz dostali odznaczenia. \"To nasi bohaterowie\"",
         "url": "https://www.fakt.pl/wydarzenia/polska/krakow/krakow-artur-moranski-i-jakub-kulik-nagrodzeni-za-odwage-podczas-zamachu/yn79cfn"
       }
@@ -1854,8 +1854,8 @@ let articles = [
   },
   {
     "id": 25,
-    "path": "/Polska/Olsztyn",
-    "seo_url": "/Polska/Olsztyn/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
+    "path": "/Polska/Regiony/Warminsko-Mazurskie",
+    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
     "seo_title": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa",
     "thumbnail_url": "https://radioolsztyn.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-13-104004.png",
     "published_iso": "2026-11-13T16:48:28+01:00",
@@ -1870,7 +1870,7 @@ let articles = [
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Olsztyn"
+        "val": "/Polska/Regiony/Warminsko-Mazurskie"
       },
       {
         "label": "Główne źródło",
@@ -1905,7 +1905,7 @@ let articles = [
     "corrections": [],
     "summary_lead": "Syn zabił ojca w gminie Mrągowo. Prokuratura potwierdziła, że 30-letni mężczyzna usłyszał zarzut zabójstwa 64-latka. Chodzi o tragedię, do której doszło we wtorek późnym popołudniem w miejscowości Krzywe.",
     "meta_description": "Syn zabił ojca w gminie Mrągowo. Prokuratura potwierdziła, że 30-letni mężczyzna usłyszał zarzut zabójstwa 64-latka.",
-    "keywords": "Olsztyn, Mrągowem, 30-latek, zabójstwa"
+    "keywords": "Warminsko-Mazurskie, Mrągowem, 30-latek, zabójstwa"
   },
   {
     "id": 26,
@@ -2281,12 +2281,53 @@ const CANONICAL_ORIGIN = (
   typeof window !== 'undefined' && typeof window.VERITY_CANONICAL_ORIGIN === 'string' && window.VERITY_CANONICAL_ORIGIN
 ) ? window.VERITY_CANONICAL_ORIGIN.replace(/\/+$/, '') : 'https://hygrisxx.github.io/verity-';
 
+const VOIVODESHIPS = [
+  { path: '/Polska/Regiony/Dolnoslaskie', label: 'Dolnośląskie', title: 'Dolny Śląsk (dolnośląskie)', desc: 'Wiadomości z całego Dolnego Śląska: Wrocław, Wałbrzych, Legnica, Jelenia Góra, Lubin, Głogów, Zgorzelec i powiaty regionu.', outlets: ['Gazeta Wrocławska'] },
+  { path: '/Polska/Regiony/Kujawsko-Pomorskie', label: 'Kujawsko-Pomorskie', title: 'Kujawsko-pomorskie', desc: 'Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice.', outlets: ['Radio PiK', 'Gazeta Pomorska'] },
+  { path: '/Polska/Regiony/Lubelskie', label: 'Lubelskie', title: 'Lubelskie', desc: 'Wydarzenia z całej Lubelszczyzny: Lublin, Zamość, Chełm, Biała Podlaska, Puławy, Tomaszów Lubelski i powiaty regionu.', outlets: ['Radio Lublin', 'Kurier Lubelski', 'Lublin112.pl'] },
+  { path: '/Polska/Regiony/Lubuskie', label: 'Lubuskie', title: 'Lubuskie', desc: 'Wiadomości z województwa lubuskiego: Zielona Góra, Gorzów Wielkopolski, Nowa Sól, Żary, Świebodzin i cały region.', outlets: ['Radio Zachód', 'Gazeta Lubuska'] },
+  { path: '/Polska/Regiony/Lodzkie', label: 'Łódzkie', title: 'Łódzkie', desc: 'Informacje z całego województwa łódzkiego: Łódź, Piotrków Trybunalski, Tomaszów Mazowiecki, Bełchatów, Pabianice, Zgierz.', outlets: ['Radio Łódź', 'Dziennik Łódzki'] },
+  { path: '/Polska/Regiony/Malopolskie', label: 'Małopolskie', title: 'Małopolska (małopolskie)', desc: 'Wydarzenia z całej Małopolski: Kraków, Tarnów, Nowy Sącz, Zakopane, Podhale, Oświęcim i powiaty województwa.', outlets: ['Radio Kraków', 'Gazeta Krakowska'] },
+  { path: '/Polska/Regiony/Mazowieckie', label: 'Mazowieckie', title: 'Mazowsze (mazowieckie)', desc: 'Informacje z Warszawy i całego Mazowsza: Radom, Płock, Siedlce, Ostrołęka, Ciechanów, Pruszków i powiaty regionu.', outlets: ['Warszawa w Pigułce'] },
+  { path: '/Polska/Regiony/Opolskie', label: 'Opolskie', title: 'Opolskie', desc: 'Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa.', outlets: ['Nowa Trybuna Opolska'] },
+  { path: '/Polska/Regiony/Podkarpackie', label: 'Podkarpackie', title: 'Podkarpacie (podkarpackie)', desc: 'Informacje z całego Podkarpacia: Rzeszów, Przemyśl, Stalowa Wola, Mielec, Krosno, Bieszczady i powiaty regionu.', outlets: ['Radio Rzeszów', 'Nowiny24'] },
+  { path: '/Polska/Regiony/Podlaskie', label: 'Podlaskie', title: 'Podlasie (podlaskie)', desc: 'Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu.', outlets: ['Kurier Poranny'] },
+  { path: '/Polska/Regiony/Pomorskie', label: 'Pomorskie', title: 'Pomorze (pomorskie)', desc: 'Wiadomości z całego Pomorza: Gdańsk, Gdynia, Sopot, Trójmiasto, Słupsk, Tczew, Kaszuby i powiaty województwa.', outlets: ['Radio Gdańsk', 'Dziennik Bałtycki'] },
+  { path: '/Polska/Regiony/Slaskie', label: 'Śląskie', title: 'Śląsk (śląskie)', desc: 'Informacje z całego województwa śląskiego: Katowice, Częstochowa, Sosnowiec, Gliwice, Bielsko-Biała, Rybnik, Tychy.', outlets: ['TVS Śląsk', 'Dziennik Zachodni'] },
+  { path: '/Polska/Regiony/Swietokrzyskie', label: 'Świętokrzyskie', title: 'Świętokrzyskie', desc: 'Wiadomości z całego województwa świętokrzyskiego: Kielce, Ostrowiec Świętokrzyski, Starachowice, Sandomierz i powiaty regionu.', outlets: ['Radio Kielce', 'Echo Dnia Kielce'] },
+  { path: '/Polska/Regiony/Warminsko-Mazurskie', label: 'Warmińsko-Mazurskie', title: 'Warmia i Mazury', desc: 'Informacje z Warmii i Mazur: Olsztyn, Elbląg, Ełk, Mrągowo, Iława, Ostróda, Giżycko i całe województwo.', outlets: ['Radio Olsztyn'] },
+  { path: '/Polska/Regiony/Wielkopolskie', label: 'Wielkopolskie', title: 'Wielkopolska (wielkopolskie)', desc: 'Wiadomości z całej Wielkopolski: Poznań, Kalisz, Konin, Piła, Leszno, Gniezno, Ostrów Wielkopolski i powiaty regionu.', outlets: ['ePoznan.pl', 'Głos Wielkopolski'] },
+  { path: '/Polska/Regiony/Zachodniopomorskie', label: 'Zachodniopomorskie', title: 'Pomorze Zachodnie', desc: 'Informacje z Pomorza Zachodniego: Szczecin, Koszalin, Stargard, Kołobrzeg, Świnoujście i całe województwo.', outlets: ['Głos Szczeciński'] }
+];
+
+const VOIVODESHIP_BY_PATH = Object.fromEntries(VOIVODESHIPS.map(v => [v.path, v]));
+const VOIVODESHIP_LABELS = Object.fromEntries(VOIVODESHIPS.map(v => [v.path, v.label]));
+const LEGACY_PATH_MAP = {
+  '/Polska/Wroclaw': '/Polska/Regiony/Dolnoslaskie',
+  '/Polska/Bydgoszcz': '/Polska/Regiony/Kujawsko-Pomorskie',
+  '/Polska/Lublin': '/Polska/Regiony/Lubelskie',
+  '/Polska/Lubuskie': '/Polska/Regiony/Lubuskie',
+  '/Polska/Lodz': '/Polska/Regiony/Lodzkie',
+  '/Polska/Krakow': '/Polska/Regiony/Malopolskie',
+  '/Polska/Warszawa': '/Polska/Regiony/Mazowieckie',
+  '/Polska/Opole': '/Polska/Regiony/Opolskie',
+  '/Polska/Rzeszow': '/Polska/Regiony/Podkarpackie',
+  '/Polska/Bialystok': '/Polska/Regiony/Podlaskie',
+  '/Polska/Gdansk': '/Polska/Regiony/Pomorskie',
+  '/Polska/Katowice': '/Polska/Regiony/Slaskie',
+  '/Polska/Kielce': '/Polska/Regiony/Swietokrzyskie',
+  '/Polska/Olsztyn': '/Polska/Regiony/Warminsko-Mazurskie',
+  '/Polska/Poznan': '/Polska/Regiony/Wielkopolskie',
+  '/Polska/Szczecin': '/Polska/Regiony/Zachodniopomorskie'
+};
+
 const PATH_TITLES = {
   '/Polska': 'Polska — wszystkie działy',
   '/Polska/Gospodarka': 'Gospodarka i rynek',
   '/Polska/Polityka': 'Polityka i prawo',
   '/Polska/Energetyka': 'Energetyka i klimat',
-  '/Polska/Poznan': 'Poznań i Wielkopolska',
+  '/Polska/Regiony': 'Regiony Polski (16 województw)',
+  ...Object.fromEntries(VOIVODESHIPS.map(v => [v.path, v.title])),
   '/Swiat': 'Świat i geopolityka',
   '/Sport': 'Sport'
 };
@@ -2296,7 +2337,8 @@ const PATH_DESCRIPTIONS = {
   '/Polska/Gospodarka': 'Zweryfikowane informacje o gospodarce, finansach, podatkach, giełdzie i biznesie w Polsce.',
   '/Polska/Polityka': 'Fakty i decyzje legislacyjne z wielu źródeł, bez komentarzy publicystycznych.',
   '/Polska/Energetyka': 'Ceny energii, transformacja energetyczna, OZE, gaz i rynek paliw w Polsce.',
-  '/Polska/Poznan': 'Najważniejsze informacje z Poznania i Wielkopolski — transport, inwestycje i wydarzenia lokalne.',
+  '/Polska/Regiony': 'Najważniejsze wiadomości lokalne i regionalne ze wszystkich 16 województw Polski — nie tylko ze stolic regionów.',
+  ...Object.fromEntries(VOIVODESHIPS.map(v => [v.path, v.desc])),
   '/Swiat': 'Potwierdzone depesze ze świata, bezpieczeństwo międzynarodowe, technologie i cyberbezpieczeństwo.',
   '/Sport': 'Wyniki, rozgrywki reprezentacji i najważniejsze wydarzenia sportowe w faktograficznym skrócie.'
 };
@@ -2384,7 +2426,32 @@ function articleHref(seoUrl) {
   return clean ? (ROOT_URL + clean + '/') : ROOT_URL;
 }
 
-const KNOWN_HUES = { gospodarka: 150, polityka: 215, energetyka: 38, poznan: 350, swiat: 265, sport: 15, prawo: 190 };
+const KNOWN_HUES = {
+  gospodarka: 150,
+  polityka: 215,
+  energetyka: 38,
+  regiony: 175,
+  dolnoslaskie: 330,
+  'kujawsko-pomorskie': 195,
+  lubelskie: 105,
+  lubuskie: 132,
+  lodzkie: 25,
+  malopolskie: 12,
+  mazowieckie: 225,
+  opolskie: 48,
+  podkarpackie: 162,
+  podlaskie: 145,
+  pomorskie: 200,
+  slaskie: 245,
+  swietokrzyskie: 310,
+  'warminsko-mazurskie': 140,
+  wielkopolskie: 350,
+  zachodniopomorskie: 188,
+  poznan: 350,
+  swiat: 265,
+  sport: 15,
+  prawo: 190
+};
 function pathHue(path) {
   const last = norm((path || '').split('/').filter(Boolean).pop() || '');
   if (KNOWN_HUES[last] !== undefined) return KNOWN_HUES[last];
@@ -2483,21 +2550,37 @@ function isModifiedClick(e) {
   return Boolean(e && (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || (typeof e.button === 'number' && e.button !== 0)));
 }
 
+function toggleRegionsDrawer(forceState) {
+  const drawer = document.getElementById('regionsDrawer');
+  const btn = document.getElementById('regionsToggleBtn');
+  if (!drawer) return;
+  const open = typeof forceState === 'boolean' ? forceState : drawer.classList.contains('hidden');
+  drawer.classList.toggle('hidden', !open);
+  if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
 function syncNavActive() {
   let activeBtn = null;
   document.querySelectorAll('.path-chip').forEach(btn => {
-    const isAct = btn.getAttribute('data-path') === currentPath;
+    const dp = btn.getAttribute('data-path');
+    const isAct = dp === currentPath || (dp === '/Polska/Regiony' && currentPath.startsWith('/Polska/Regiony/'));
     btn.classList.toggle('active', isAct);
     if (isAct) activeBtn = btn;
   });
-  if (activeBtn && activeBtn.parentElement) {
-    const nav = activeBtn.parentElement;
-    const left = activeBtn.offsetLeft - 12;
-    const right = activeBtn.offsetLeft + activeBtn.offsetWidth + 12;
-    if (left < nav.scrollLeft) {
-      nav.scrollLeft = Math.max(0, left);
-    } else if (right > nav.scrollLeft + nav.clientWidth) {
-      nav.scrollLeft = Math.max(0, right - nav.clientWidth);
+  document.querySelectorAll('#regionsDrawer [data-region-link]').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('data-region-link') === currentPath);
+  });
+  if (activeBtn) {
+    const nav = activeBtn.closest('.path-nav');
+    const chipGroup = activeBtn.closest('.path-region-group') || activeBtn;
+    if (nav) {
+      const left = chipGroup.offsetLeft - 12;
+      const right = chipGroup.offsetLeft + chipGroup.offsetWidth + 12;
+      if (left < nav.scrollLeft) {
+        nav.scrollLeft = Math.max(0, left);
+      } else if (right > nav.scrollLeft + nav.clientWidth) {
+        nav.scrollLeft = Math.max(0, right - nav.clientWidth);
+      }
     }
   }
 }
@@ -2507,6 +2590,10 @@ function syncStaticNavHrefs() {
   if (brand) brand.setAttribute('href', ROOT_URL);
   document.querySelectorAll('.path-chip[data-path]').forEach(a => {
     const p = a.getAttribute('data-path');
+    if (p) a.setAttribute('href', pathHref(p));
+  });
+  document.querySelectorAll('#regionsDrawer [data-region-link]').forEach(a => {
+    const p = a.getAttribute('data-region-link');
     if (p) a.setAttribute('href', pathHref(p));
   });
   document.querySelectorAll('.footer-links a').forEach(a => {
@@ -2533,7 +2620,10 @@ function resolveStateFromLocation() {
     relPath = pn.replace(/^\/+|\/+$/g, '').replace(/(?:^|\/)index\.html$/, '');
   }
 
-  const validCat = p => (p && PATH_TITLES[p]) ? p : '/Polska';
+  const validCat = p => {
+    const mapped = LEGACY_PATH_MAP[p] || p;
+    return (mapped && PATH_TITLES[mapped]) ? mapped : '/Polska';
+  };
 
   if (!relPath) {
     if (window.VERITY_INITIAL_ARTICLE_URL) {
@@ -2547,6 +2637,10 @@ function resolveStateFromLocation() {
   const slashRel = '/' + relPath;
   if (PATH_TITLES[slashRel]) {
     return { path: slashRel, articleId: null, notFound: false };
+  }
+  if (LEGACY_PATH_MAP[slashRel]) {
+    const mapped = LEGACY_PATH_MAP[slashRel];
+    return { path: mapped, articleId: null, notFound: false, recoveredUrl: pathHref(mapped) };
   }
 
   const exactArt = articles.find(a => a.seo_url === slashRel);
@@ -2582,11 +2676,13 @@ function openArticle(id, seoUrlOverride) {
   const published = articles.filter(a => a.status === 'AUTO_PUBLISHED');
   const art = published.find(a => a.id === id) || articles.find(a => a.id === id);
   if (!art) return;
+  toggleRegionsDrawer(false);
   if (activeArticleId === null && !isNotFoundState) {
     lastFeedHref = location.pathname;
   }
   activeArticleId = art.id;
-  currentPath = PATH_TITLES[art.path] ? art.path : currentPath;
+  const artPath = LEGACY_PATH_MAP[art.path] || art.path;
+  currentPath = PATH_TITLES[artPath] ? artPath : currentPath;
   isNotFoundState = false;
   syncNavActive();
   const targetUrl = articleHref(seoUrlOverride || art.seo_url);
@@ -2617,7 +2713,9 @@ function selectPathLink(event, p) {
 }
 
 function selectPath(p, toRootHome = false) {
-  currentPath = PATH_TITLES[p] ? p : '/Polska';
+  toggleRegionsDrawer(false);
+  const resolvedP = LEGACY_PATH_MAP[p] || p;
+  currentPath = PATH_TITLES[resolvedP] ? resolvedP : '/Polska';
   activeArticleId = null;
   isNotFoundState = false;
   syncNavActive();
@@ -2636,6 +2734,7 @@ function selectPath(p, toRootHome = false) {
 function closeArticle(event) {
   if (isModifiedClick(event)) return true;
   if (event && event.preventDefault) event.preventDefault();
+  toggleRegionsDrawer(false);
   activeArticleId = null;
   isNotFoundState = false;
   const targetUrl = lastFeedHref || pathHref(currentPath);
@@ -2653,6 +2752,7 @@ function closeArticle(event) {
 // NAWIGACJA I WYSZUKIWANIE
 // ===========================================================================
 function switchView(view) {
+  toggleRegionsDrawer(false);
   currentView = view;
   document.getElementById('viewPublic')?.classList.toggle('hidden', view !== 'public');
   document.getElementById('viewEditorial')?.classList.toggle('hidden', view !== 'editorial');
@@ -2796,8 +2896,18 @@ function syncSeoHead(openArt, published, query) {
     canUrl = `${CANONICAL_ORIGIN}${openArt.seo_url}/`;
     ogType = 'article';
     ogImg = openArt.thumbnail_url || '';
-    const parts = (openArt.path || '/Polska').split('/').filter(Boolean);
-    const prettyCrumb = { Polska: 'Polska', Swiat: 'Świat', Sport: 'Sport', Gospodarka: 'Gospodarka', Polityka: 'Polityka', Energetyka: 'Energetyka', Poznan: 'Poznań' };
+    const normArtPath = LEGACY_PATH_MAP[openArt.path] || openArt.path || '/Polska';
+    const parts = normArtPath.split('/').filter(Boolean);
+    const prettyCrumb = {
+      Polska: 'Polska',
+      Swiat: 'Świat',
+      Sport: 'Sport',
+      Gospodarka: 'Gospodarka',
+      Polityka: 'Polityka',
+      Energetyka: 'Energetyka',
+      Regiony: 'Regiony',
+      ...Object.fromEntries(VOIVODESHIPS.map(v => [v.path.split('/').pop(), v.label]))
+    };
     const crumbs = [{ '@type': 'ListItem', position: 1, name: 'VERITY', item: `${CANONICAL_ORIGIN}/` }];
     let acc = '';
     parts.forEach(p => {
@@ -2817,7 +2927,7 @@ function syncSeoHead(openArt, published, query) {
       dateModified: openArt.published_iso || '',
       inLanguage: 'pl',
       isAccessibleForFree: true,
-      articleSection: shortCatLabel(openArt.path || '/Polska'),
+      articleSection: shortCatLabel(normArtPath),
       author: { '@type': 'Organization', name: 'Zespół Redakcyjny VERITY', url: `${CANONICAL_ORIGIN}/` },
       publisher: { '@type': 'Organization', name: 'VERITY', url: `${CANONICAL_ORIGIN}/` }
     };
@@ -2911,7 +3021,7 @@ function renderPortal() {
         .filter(a => q ? true : (a.path || '').startsWith(currentPath))
         .filter(a => matchesStemQuery(a, q))
         .sort((a, b) => ((b.declickbait?.length ? 1 : 0) - (a.declickbait?.length ? 1 : 0)) || b.published_iso.localeCompare(a.published_iso));
-      renderFeed(list, q);
+      renderFeed(list, q, published);
     }
   }
   renderEditorialPanel(pendingArts);
@@ -2920,19 +3030,27 @@ function renderPortal() {
 }
 
 function shortCatLabel(path) {
+  const normP = LEGACY_PATH_MAP[path] || path;
+  if (VOIVODESHIP_LABELS[normP]) return VOIVODESHIP_LABELS[normP];
   const pretty = {
     Swiat: 'Świat',
-    Poznan: 'Poznań',
-    Krakow: 'Kraków',
-    Wroclaw: 'Wrocław',
-    Gdansk: 'Gdańsk',
-    Lodz: 'Łódź',
-    Bialystok: 'Białystok',
-    Rzeszow: 'Rzeszów',
-    Slask: 'Śląsk'
+    Regiony: 'Regiony',
+    Poznan: 'Wielkopolskie',
+    Krakow: 'Małopolskie',
+    Wroclaw: 'Dolnośląskie',
+    Gdansk: 'Pomorskie',
+    Lodz: 'Łódzkie',
+    Bialystok: 'Podlaskie',
+    Rzeszow: 'Podkarpackie',
+    Slaskie: 'Śląskie',
+    Swietokrzyskie: 'Świętokrzyskie',
+    'Warminsko-Mazurskie': 'Warmińsko-Mazurskie'
   };
-  const parts = (path || '/Polska').split('/').filter(Boolean).map(p => pretty[p] || p);
+  const parts = (normP || '/Polska').split('/').filter(Boolean).map(p => pretty[p] || p);
   if (parts.length <= 1) return parts[0] || 'Polska';
+  if (parts[0] === 'Polska' && parts[1] === 'Regiony' && parts.length > 2) {
+    return parts.slice(2).join(' · ');
+  }
   return parts.slice(1).join(' · ');
 }
 
@@ -2974,18 +3092,38 @@ function storyCardHtml(art) {
     </article>`;
 }
 
-function renderFeed(list, q) {
+function regionStripHtml(allPublished) {
+  if (currentPath !== '/Polska/Regiony' && !VOIVODESHIP_BY_PATH[currentPath]) return '';
+  const counts = {};
+  let totalReg = 0;
+  (allPublished || []).forEach(a => {
+    const ap = a.path || '';
+    if (ap.startsWith('/Polska/Regiony/')) {
+      counts[ap] = (counts[ap] || 0) + 1;
+      totalReg += 1;
+    }
+  });
+  const allHref = esc(pathHref('/Polska/Regiony'));
+  const allCls = currentPath === '/Polska/Regiony' ? 'region-pill active' : 'region-pill';
+  const pills = [
+    `<a class="${allCls}" href="${allHref}" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">${totalReg}</span></a>`
+  ];
+  VOIVODESHIPS.forEach(v => {
+    const c = counts[v.path] || 0;
+    let cls = 'region-pill';
+    if (currentPath === v.path) cls += ' active';
+    if (c > 0) cls += ' has-items';
+    pills.push(
+      `<a class="${cls}" style="--h:${pathHue(v.path)}" href="${esc(pathHref(v.path))}" onclick="return selectPathLink(event, '${esc(v.path)}')">` +
+      `${esc(v.label)}<span class="region-pill-count">${c}</span></a>`
+    );
+  });
+  return `<nav class="region-strip" aria-label="Wybierz województwo">${pills.join('')}</nav>`;
+}
+
+function renderFeed(list, q, allPublished = null) {
   const container = document.getElementById('articlesFeed');
   if (!container) return;
-
-  if (!list.length) {
-    container.innerHTML = `<div class="empty-state">${q ? `Brak opracowań dla zapytania „${esc(q)}”.` : `Brak opracowań w dziale <strong>${esc(currentPath)}</strong>.`}</div>`;
-    return;
-  }
-
-  const useLead = !q && list.length >= 3;
-  const lead = useLead ? list[0] : null;
-  const rest = useLead ? list.slice(1) : list;
 
   const crumbText = q ? 'Wszystkie działy' : currentPath;
   const titleText = q ? `Wyniki dla „${esc(q)}”` : esc(PATH_TITLES[currentPath] || currentPath);
@@ -2997,6 +3135,45 @@ function renderFeed(list, q) {
       </div>
       <span>${countArticlesLabel(list.length)}</span>
     </div>`;
+  const stripHtml = q ? '' : regionStripHtml(allPublished || articles.filter(a => a.status === 'AUTO_PUBLISHED'));
+
+  const syncStripScroll = () => {
+    const activePill = container.querySelector('.region-strip .region-pill.active');
+    if (activePill && activePill.parentElement) {
+      const strip = activePill.parentElement;
+      const pLeft = activePill.offsetLeft - 12;
+      const pRight = activePill.offsetLeft + activePill.offsetWidth + 12;
+      if (pLeft < strip.scrollLeft) strip.scrollLeft = Math.max(0, pLeft);
+      else if (pRight > strip.scrollLeft + strip.clientWidth) strip.scrollLeft = Math.max(0, pRight - strip.clientWidth);
+    }
+  };
+
+  if (!list.length) {
+    if (q) {
+      container.innerHTML = `<div class="empty-state">Brak opracowań dla zapytania „${esc(q)}”.</div>`;
+      return;
+    }
+    const vInfo = VOIVODESHIP_BY_PATH[currentPath];
+    if (vInfo) {
+      const outletsTxt = esc(vInfo.outlets.join(', '));
+      const allRegHref = esc(pathHref('/Polska/Regiony'));
+      container.innerHTML = heading + stripHtml +
+        `<div class="empty-state">` +
+        `<p>Brak bieżących opracowań w dziale <strong>${esc(vInfo.title)}</strong>.</p>` +
+        `<p class="empty-sub">Monitorowane redakcje w tym województwie: ${outletsTxt}. Kolejne depesze ze stolicy i powiatów regionu pojawiają się w aktualizacjach cyklicznych.</p>` +
+        `<p style="margin-top:0.9rem"><a class="btn-outline" style="text-decoration:none;display:inline-block" href="${allRegHref}" onclick="return selectPathLink(event, '/Polska/Regiony')">← Zobacz wiadomości ze wszystkich 16 województw</a></p>` +
+        `</div>`;
+      syncStripScroll();
+      return;
+    }
+    container.innerHTML = heading + stripHtml + `<div class="empty-state">Brak opracowań w dziale <strong>${esc(currentPath)}</strong>.</div>`;
+    syncStripScroll();
+    return;
+  }
+
+  const useLead = !q && list.length >= 3;
+  const lead = useLead ? list[0] : null;
+  const rest = useLead ? list.slice(1) : list;
 
   let leadHtml = '';
   if (lead) {
@@ -3024,8 +3201,9 @@ function renderFeed(list, q) {
     </article>`;
   }
 
-  container.innerHTML = heading + leadHtml +
+  container.innerHTML = heading + stripHtml + leadHtml +
     (rest.length ? `<div class="cards-grid${lead ? ' after-lead' : ''}">${rest.map(storyCardHtml).join('')}</div>` : '');
+  syncStripScroll();
 }
 
 function reconcileLeadAndFirstPara(art) {
@@ -3342,8 +3520,10 @@ function rejectArt(id) {
 }
 
 window.addEventListener('popstate', e => {
+  toggleRegionsDrawer(false);
   if (e.state && (e.state.path !== undefined || e.state.articleId !== undefined)) {
-    currentPath = PATH_TITLES[e.state.path] ? e.state.path : '/Polska';
+    const stP = LEGACY_PATH_MAP[e.state.path] || e.state.path;
+    currentPath = PATH_TITLES[stP] ? stP : '/Polska';
     activeArticleId = e.state.articleId ?? null;
     isNotFoundState = false;
   } else {
@@ -3378,18 +3558,36 @@ document.addEventListener('keydown', e => {
       si.focus();
       si.select();
     }
-  } else if (e.key === 'Escape' && document.activeElement && document.activeElement.id === 'searchInput') {
-    const si = document.getElementById('searchInput');
-    if (si && si.value) {
+  } else if (e.key === 'Escape') {
+    const drawer = document.getElementById('regionsDrawer');
+    if (drawer && !drawer.classList.contains('hidden')) {
       e.preventDefault();
-      clearSearch();
+      toggleRegionsDrawer(false);
+      return;
     }
+    if (document.activeElement && document.activeElement.id === 'searchInput') {
+      const si = document.getElementById('searchInput');
+      if (si && si.value) {
+        e.preventDefault();
+        clearSearch();
+      }
+    }
+  }
+});
+
+document.addEventListener('click', e => {
+  const drawer = document.getElementById('regionsDrawer');
+  const toggleBtn = document.getElementById('regionsToggleBtn');
+  if (!drawer || drawer.classList.contains('hidden')) return;
+  if (!drawer.contains(e.target) && (!toggleBtn || !toggleBtn.contains(e.target))) {
+    toggleRegionsDrawer(false);
   }
 });
 
 window.addEventListener('DOMContentLoaded', async () => {
   applyTheme(currentThemeMode);
   syncStaticNavHrefs();
+  articles = articles.map(a => ({ ...a, path: LEGACY_PATH_MAP[a.path] || a.path }));
   const dateEl = document.getElementById('todayDateLabel');
   if (dateEl) {
     try {
@@ -3407,6 +3605,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         if (fresh.length > 0) {
           articles = fresh.map((a, i) => {
             const srcs = a.sources || [];
+            const normP = LEGACY_PATH_MAP[a.path] || a.path;
             return {
               id: a.id || (i + 1),
               status: a.status || 'AUTO_PUBLISHED',
@@ -3420,6 +3619,7 @@ window.addEventListener('DOMContentLoaded', async () => {
               display_date: a.display_date || '',
               seo_url: a.seo_url || '',
               ...a,
+              path: normP,
               fact_agreement_pct: srcs.length >= 2 ? (a.fact_agreement_pct || 85) : null
             };
           });
@@ -3439,3 +3639,4 @@ window.addEventListener('DOMContentLoaded', async () => {
   syncNavActive();
   renderPortal();
 });
+

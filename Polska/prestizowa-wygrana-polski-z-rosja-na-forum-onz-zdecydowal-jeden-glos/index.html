@@ -105,7 +105,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=420c7465" />
+  <link rel="stylesheet" href="../../styles.css?v=c9ec3948" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -163,11 +163,41 @@
         <a class="path-chip" data-path="/Polska/Gospodarka" href="../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
         <a class="path-chip" data-path="/Polska/Polityka" href="../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
         <a class="path-chip" data-path="/Polska/Energetyka" href="../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
-        <a class="path-chip" data-path="/Polska/Poznan" href="../../Polska/Poznan/" onclick="return selectPathLink(event, '/Polska/Poznan')"><span class="path-root">Polska / </span>Poznań</a>
+        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
         <span class="path-divider" aria-hidden="true">|</span>
         <a class="path-chip" data-path="/Swiat" href="../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
       </nav>
+      <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="regions-drawer-all" data-region-link="/Polska/Regiony" href="../../Polska/Regiony/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Dolnoslaskie" href="../../Polska/Regiony/Dolnoslaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')"><span class="region-dot" style="--h:330" aria-hidden="true"></span><span>Dolnośląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Kujawsko-Pomorskie" href="../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')"><span class="region-dot" style="--h:195" aria-hidden="true"></span><span>Kujawsko-Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubelskie" href="../../Polska/Regiony/Lubelskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubelskie')"><span class="region-dot" style="--h:105" aria-hidden="true"></span><span>Lubelskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubuskie" href="../../Polska/Regiony/Lubuskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubuskie')"><span class="region-dot" style="--h:132" aria-hidden="true"></span><span>Lubuskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lodzkie" href="../../Polska/Regiony/Lodzkie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lodzkie')"><span class="region-dot" style="--h:25" aria-hidden="true"></span><span>Łódzkie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Malopolskie" href="../../Polska/Regiony/Malopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Malopolskie')"><span class="region-dot" style="--h:12" aria-hidden="true"></span><span>Małopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Mazowieckie" href="../../Polska/Regiony/Mazowieckie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Mazowieckie')"><span class="region-dot" style="--h:225" aria-hidden="true"></span><span>Mazowieckie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Opolskie" href="../../Polska/Regiony/Opolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Opolskie')"><span class="region-dot" style="--h:48" aria-hidden="true"></span><span>Opolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podkarpackie" href="../../Polska/Regiony/Podkarpackie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podkarpackie')"><span class="region-dot" style="--h:162" aria-hidden="true"></span><span>Podkarpackie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podlaskie" href="../../Polska/Regiony/Podlaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podlaskie')"><span class="region-dot" style="--h:145" aria-hidden="true"></span><span>Podlaskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Pomorskie" href="../../Polska/Regiony/Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Pomorskie')"><span class="region-dot" style="--h:200" aria-hidden="true"></span><span>Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Slaskie" href="../../Polska/Regiony/Slaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Slaskie')"><span class="region-dot" style="--h:245" aria-hidden="true"></span><span>Śląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Swietokrzyskie" href="../../Polska/Regiony/Swietokrzyskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')"><span class="region-dot" style="--h:310" aria-hidden="true"></span><span>Świętokrzyskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Warminsko-Mazurskie" href="../../Polska/Regiony/Warminsko-Mazurskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')"><span class="region-dot" style="--h:140" aria-hidden="true"></span><span>Warmińsko-Mazurskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Wielkopolskie" href="../../Polska/Regiony/Wielkopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')"><span class="region-dot" style="--h:350" aria-hidden="true"></span><span>Wielkopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Zachodniopomorskie" href="../../Polska/Regiony/Zachodniopomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')"><span class="region-dot" style="--h:188" aria-hidden="true"></span><span>Zachodniopomorskie</span></a>
+      </div>
+    </div>
     </div>
   </header>
 
@@ -260,23 +290,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.rp.pl/dyplomacja/art45483001-prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96452057/polska-pokonala-rosje-w-wyborach-do-wspolnej-jednostki-kontrolnej-onz-rosjanie-stracili-miejsce-po-60-latach" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
-      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:20" data-id="7">
-      <div class="story-card">
-        <a class="card-media-link" href="../../Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/" onclick="return openArticleLink(event, 7, '/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/35/354jmv74f83g2qj21thahhe4f6ionn98.jpg" alt="&quot;Slawa UPA&quot; na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
-          </div>
-        </a>
-        <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 21:44</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/" onclick="return openArticleLink(event, 7, '/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy')">&quot;Slawa UPA&quot; na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy</a></h2>
-          <p class="story-lede">Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">5 redakcji</span><span class="chip" title="Kategoria">/Polska</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>5 źródeł · 1 min</span></div>
-        </div>
-      </div>
-    </article><article class="cat" style="--h:20" data-id="11">
+      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:20" data-id="11">
       <div class="story-card">
         <a class="card-media-link" href="../../Polska/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot/" onclick="return openArticleLink(event, 11, '/Polska/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
@@ -290,6 +304,22 @@
           <p class="story-lede">Rakieta suborbitalna ILR-33 BURSZTYN 2K Łukasiewicz – Instytutu Lotnictwa zakończyła planowany lot w ramach listopadowych prób poligonowych projektu SUBCOM.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>2 źródła · 1 min</span></div>
+        </div>
+      </div>
+    </article><article class="cat" style="--h:20" data-id="17">
+      <div class="story-card">
+        <a class="card-media-link" href="../../Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza/" onclick="return openArticleLink(event, 17, '/Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza')" tabindex="-1" aria-hidden="true">
+          <div class="story-thumb-wrap">
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
+            <img src="https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp" alt="Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+          </div>
+        </a>
+        <div class="story-body">
+          <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">13.11.2026, 18:46</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza/" onclick="return openArticleLink(event, 17, '/Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza')">Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza</a></h2>
+          <p class="story-lede">Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa.</p>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">5 redakcji</span><span class="chip" title="Kategoria">/Polska</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>5 źródeł · 1 min</span></div>
         </div>
       </div>
     </article></div></section>
@@ -328,6 +358,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=9251a552"></script>
+  <script src="../../app.js?v=a5729768"></script>
 </body>
 </html>

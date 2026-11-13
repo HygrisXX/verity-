@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kujawsko-pomorskie — VERITY</title>
+  <meta name="description" content="Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="VERITY" />
+  <meta property="og:title" content="Kujawsko-pomorskie — VERITY" />
+  <meta property="og:description" content="Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice." />
+  <meta property="og:url" content="https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/" />
+  <meta property="og:image" content="https://i.gremicdn.pl/image/free/8fed8c026bcbd62bb0a535875d7e548f/?t=crop:5500:2403:nowe:0:63.951224461564,resize:fill:600:300,enlarge:1" />
+  <meta name="twitter:image" content="https://i.gremicdn.pl/image/free/8fed8c026bcbd62bb0a535875d7e548f/?t=crop:5500:2403:nowe:0:63.951224461564,resize:fill:600:300,enlarge:1" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kujawsko-pomorskie — VERITY" />
+  <meta name="twitter:description" content="Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice." />
+
+  <script id="dynamicJsonLd" type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Kujawsko-pomorskie — VERITY",
+    "description": "Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice.",
+    "url": "https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/",
+    "inLanguage": "pl"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": []
+  }
+]
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="VERITY RSS" href="../../../feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
+  <link rel="stylesheet" href="../../../styles.css?v=c9ec3948" />
+</head>
+<body>
+  <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+
+  <div class="top-utility">
+    <div class="container top-utility-inner">
+      <div class="top-utility-meta">
+        <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+      </div>
+      <div class="top-utility-actions">
+        <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
+          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <a class="brand" href="../../../" onclick="return selectPathLink(event, '/Polska')">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-title">VERITY</div>
+            <div class="brand-subtitle">Wieloźródłowa weryfikacja i synteza informacji</div>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <div class="search-box">
+            <input
+              id="searchInput"
+              type="search"
+              class="search-input"
+              oninput="handleSearchInput()"
+              aria-label="Wyszukaj artykuły"
+            />
+            <button id="clearSearchBtn" class="search-clear hidden" onclick="clearSearch()" title="Wyczyść">✕</button>
+          </div>
+
+          <div class="theme-switcher" role="group" aria-label="Wybór motywu kolorystycznego">
+            <button id="themeBtn_auto" class="theme-btn active" onclick="applyTheme('auto')" title="Automatycznie dopasuj do motywu urządzenia">Auto</button>
+            <button id="themeBtn_light" class="theme-btn" onclick="applyTheme('light')" title="Motyw jasny">Jasny</button>
+            <button id="themeBtn_dark" class="theme-btn" onclick="applyTheme('dark')" title="Motyw ciemny">Ciemny</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="path-nav" aria-label="Kategorie tematyczne">
+        <a class="path-chip" data-path="/Polska" href="../../../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+        <a class="path-chip" data-path="/Polska/Gospodarka" href="../../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
+        <a class="path-chip" data-path="/Polska/Polityka" href="../../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
+        <a class="path-chip" data-path="/Polska/Energetyka" href="../../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
+        <div class="path-region-group"><a class="path-chip active" data-path="/Polska/Regiony" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
+        <span class="path-divider" aria-hidden="true">|</span>
+        <a class="path-chip" data-path="/Swiat" href="../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+        <a class="path-chip" data-path="/Sport" href="../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+      </nav>
+      <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="regions-drawer-all" data-region-link="/Polska/Regiony" href="../../../Polska/Regiony/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Dolnoslaskie" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')"><span class="region-dot" style="--h:330" aria-hidden="true"></span><span>Dolnośląskie</span></a>
+        <a class="region-drawer-item active" data-region-link="/Polska/Regiony/Kujawsko-Pomorskie" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')"><span class="region-dot" style="--h:195" aria-hidden="true"></span><span>Kujawsko-Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubelskie" href="../../../Polska/Regiony/Lubelskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubelskie')"><span class="region-dot" style="--h:105" aria-hidden="true"></span><span>Lubelskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubuskie" href="../../../Polska/Regiony/Lubuskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubuskie')"><span class="region-dot" style="--h:132" aria-hidden="true"></span><span>Lubuskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lodzkie" href="../../../Polska/Regiony/Lodzkie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lodzkie')"><span class="region-dot" style="--h:25" aria-hidden="true"></span><span>Łódzkie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Malopolskie" href="../../../Polska/Regiony/Malopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Malopolskie')"><span class="region-dot" style="--h:12" aria-hidden="true"></span><span>Małopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Mazowieckie" href="../../../Polska/Regiony/Mazowieckie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Mazowieckie')"><span class="region-dot" style="--h:225" aria-hidden="true"></span><span>Mazowieckie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Opolskie" href="../../../Polska/Regiony/Opolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Opolskie')"><span class="region-dot" style="--h:48" aria-hidden="true"></span><span>Opolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podkarpackie" href="../../../Polska/Regiony/Podkarpackie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podkarpackie')"><span class="region-dot" style="--h:162" aria-hidden="true"></span><span>Podkarpackie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podlaskie" href="../../../Polska/Regiony/Podlaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podlaskie')"><span class="region-dot" style="--h:145" aria-hidden="true"></span><span>Podlaskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Pomorskie" href="../../../Polska/Regiony/Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Pomorskie')"><span class="region-dot" style="--h:200" aria-hidden="true"></span><span>Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Slaskie" href="../../../Polska/Regiony/Slaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Slaskie')"><span class="region-dot" style="--h:245" aria-hidden="true"></span><span>Śląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Swietokrzyskie" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')"><span class="region-dot" style="--h:310" aria-hidden="true"></span><span>Świętokrzyskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Warminsko-Mazurskie" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')"><span class="region-dot" style="--h:140" aria-hidden="true"></span><span>Warmińsko-Mazurskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Wielkopolskie" href="../../../Polska/Regiony/Wielkopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')"><span class="region-dot" style="--h:350" aria-hidden="true"></span><span>Wielkopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Zachodniopomorskie" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')"><span class="region-dot" style="--h:188" aria-hidden="true"></span><span>Zachodniopomorskie</span></a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section id="viewPublic">
+      <div id="articlesFeed" class="articles-stack">
+        <div class="feed-heading">
+        <div>
+          <span class="feed-crumb">/Polska/Regiony/Kujawsko-Pomorskie</span>
+          <h1>Kujawsko-pomorskie</h1>
+        </div>
+        <span>0 opracowań</span>
+      </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">9</span></a><a class="region-pill" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">0</span></a><a class="region-pill active" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">0</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">1</span></a><a class="region-pill" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">0</span></a><a class="region-pill" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">0</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">4</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">1</span></a><a class="region-pill" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">0</span></a><a class="region-pill" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">0</span></a><a class="region-pill" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">0</span></a><a class="region-pill has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">2</span></a><a class="region-pill" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">0</span></a><a class="region-pill" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">0</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">1</span></a><a class="region-pill" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">0</span></a><a class="region-pill" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">0</span></a></nav><div class="empty-state"><p>Brak bieżących opracowań w dziale <strong>Kujawsko-pomorskie</strong>.</p><p class="empty-sub">Monitorowane redakcje w tym województwie: Radio PiK, Gazeta Pomorska. Kolejne depesze ze stolicy i powiatów regionu pojawiają się w aktualizacjach cyklicznych.</p><p style="margin-top:0.9rem"><a class="btn-outline" style="text-decoration:none;display:inline-block" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">← Zobacz wiadomości ze wszystkich 16 województw</a></p></div>
+      </div>
+    </section>
+
+    <section id="viewEditorial" class="hidden">
+      <div class="editorial-head">
+        <div>
+          <h1>Kolejka Weryfikacji Redakcyjnej</h1>
+          <p>
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+          </p>
+        </div>
+        <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
+      </div>
+      <div id="editorialQueue" class="articles-stack"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>VERITY</strong>
+        <p>Wieloźródłowa weryfikacja faktów z 97 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
+        <a href="../../../sitemap.xml">Sitemap (XML)</a>
+        <a href="../../../feed.xml">Kanał RSS</a>
+        <a href="../../../robots.txt">robots.txt</a>
+        <a href="../../../articles.json">Dane (JSON)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_PATH="/Polska/Regiony/Kujawsko-Pomorskie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
+  <script src="../../../app.js?v=a5729768"></script>
+</body>
+</html>
