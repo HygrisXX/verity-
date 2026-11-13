@@ -1,6 +1,330 @@
 [
   {
     "id": 1,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w-psl",
+    "seo_title": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
+    "thumbnail_url": "https://i.gremicdn.pl/image/free/8fb2614f47b5f37589f98350f039858e/?t=crop:8192:3581:nowe:0:439.59310344828,resize:fill:600:300,enlarge:1",
+    "published_iso": "2026-11-13T08:52:16+01:00",
+    "display_date": "13.11.2026, 08:52",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 94,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "6 redakcji"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Rzeczpospolita"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (6 źródeł)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (6 redakcji)",
+        "paragraphs": [
+          "Wicemarszałek Sejmu Piotr Zgorzelski (PSL) poinformował, że do premiera trafiła dymisja wiceministra spraw zagranicznych Władysława Teofila Bartoszewskiego, któremu prokuratura postawiła zarzuty. [Źródło: Rzeczpospolita, RMF24, WP Wiadomości, Interia Wydarzenia, Dziennik.pl, Onet Wiadomości]",
+          "W rozmowie z TVN24 zaznaczył, że decyzja o przyszłości polityka w resorcie należy do szefa rządu. [Źródło: Rzeczpospolita]",
+          "Odniósł się również do doniesień o ewentualnym odwołaniu ministra rolnictwa Stefana Krajewskiego. [Źródło: Rzeczpospolita]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Bartoszewski w minionym tygodniu usłyszał zarzuty dotyczące m.in. przywłaszczenia ponad miliona funtów, 405 tys. euro i ponad 6,6 mln zł. [Źródło: WP Wiadomości]",
+          "Polityk prawdopodobnie odejdzie z MSZ, ale wszystko w rękach premiera - dodał przedstawiciel ludowców. [Źródło: Interia Wydarzenia]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Depesza źródłowa",
+        "summary": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
+        "url": "https://www.rp.pl/polityka/art45483361-dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w-psl"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Depesza źródłowa",
+        "summary": "Wicemarszałek Sejmu ujawnia. Dymisja Władysława Teofila Bartoszewskiego na biurku premiera",
+        "url": "https://www.rmf24.pl/fakty/polityka/news-wicemarszalek-sejmu-ujawnia-dymisja-wladyslawa-teofila-barto,nIdn,1025941"
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Wniosek o dymisję już na biurku Tuska. W tle miliony",
+        "url": "https://wiadomosci.wp.pl/wniosek-o-dymisje-juz-na-biurku-tuska-w-tle-miliony-7350503087577088a"
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Depesza źródłowa",
+        "summary": "Na horyzoncie roszady w rządzie. \"Dymisja leży na biurku premiera\"",
+        "url": "https://wydarzenia.interia.pl/kraj/news-na-horyzoncie-roszady-w-rzadzie-dymisja-lezy-na-biurku-premi,nId,23572912"
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Dymisja wiceszefa MSZ? \"Na biurku premiera jest już wniosek\"",
+        "url": "https://wiadomosci.dziennik.pl/polityka/artykuly/11344066,dymisja-wiceszefa-msz-na-biurku-premiera-jest-juz-wniosek.html"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Dymisja wiceszefa MSZ niemal pewna. \"Na biurku premiera jest już wniosek\"",
+        "url": "https://wiadomosci.onet.pl/kraj/dymisja-wladyslawa-teofila-bartoszewskiego-niemal-pewna-na-biurku-premiera-jest/8qr6ylj"
+      }
+    ],
+    "sources": [
+      "Dziennik.pl",
+      "Interia Wydarzenia",
+      "Onet Wiadomości",
+      "RMF24",
+      "Rzeczpospolita",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 2,
+    "path": "/Sport",
+    "seo_url": "/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna",
+    "seo_title": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
+    "thumbnail_url": "https://i.iplsc.com/-/000NIY7XVMHMOIJ5-C321.webp",
+    "published_iso": "2026-11-13T08:52:16+01:00",
+    "display_date": "13.11.2026, 08:52",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (4 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (4 redakcje)",
+        "paragraphs": [
+          "9 goli i 4 asysty w 19 meczach - z takim bilansem Robert Lewandowski zakończył sezon zasadniczy w MLS. [Źródło: Interia Sport, WP SportoweFakty, Sport.pl, Polsat Sport]",
+          "Przed 38-latkiem play-offy, w których Chicago Fire rozpocznie zmagania od starcia z Charlotte FC. [Źródło: Interia Sport]",
+          "Wcześniej jednak władze ligi postanowiły uhonorować wielu piłkarzy za ich osiągnięcia. [Źródło: Interia Sport, Sport.pl, Polsat Sport]",
+          "Polak w ich oczach nie zyskał uznania, a uznać nawet można, że został całkowicie pominięty. [Źródło: Interia Sport]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Robert Lewandowski nie znalazł się wśród piłkarzy nominowanych w żadnej z kategorii indywidualnych nagród MLS za sezon 2026. Zaskakujący może być brak Polaka w gronie kandydatów do tytułu Debiutanta Roku. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Depesza źródłowa",
+        "summary": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
+        "url": "https://sport.interia.pl/robert-lewandowski/news-robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostate,nId,23572836"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Depesza źródłowa",
+        "summary": "Podsumowali sezon w MLS. Lewandowski pominięty",
+        "url": "https://sportowefakty.wp.pl/pilka-nozna/1283947/podsumowali-sezon-w-mls-lewandowski-pominiety"
+      },
+      {
+        "outlet": "Sport.pl",
+        "angle": "Depesza źródłowa",
+        "summary": "Cios dla Lewandowskiego. Został pominięty przed władze MLS",
+        "url": "https://www.sport.pl/pilka/7,64946,33130386,cios-dla-lewandowskiego-zostal-pominiety-przed-wladze-mls.html"
+      },
+      {
+        "outlet": "Polsat Sport",
+        "angle": "Depesza źródłowa",
+        "summary": "Wiadomości nadeszły w nocy. Lewandowski pominięty",
+        "url": "https://www.polsatsport.pl/robert-lewandowski/2026-11-13/wiadomosci-nadeszly-w-nocy-lewandowski-pominiety/"
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "Polsat Sport",
+      "Sport.pl",
+      "WP SportoweFakty"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 3,
+    "path": "/Polska/Warszawa",
+    "seo_url": "/Polska/Warszawa/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto",
+    "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
+    "thumbnail_url": "https://warszawawpigulce.pl/wp-content/uploads/2026/11/183-311357.webp",
+    "published_iso": "2026-11-13T08:52:16+01:00",
+    "display_date": "13.11.2026, 08:52",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 94,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Warszawa"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Warszawa w Pigułce"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Na warszawskiej Pradze na idącego chodnikiem 49-latka spadł z dużej wysokości karabinek przypominający broń pneumatyczną. [Źródło: Warszawa w Pigułce, Interia Wydarzenia]",
+          "Mężczyzna z obrażeniami nogi trafił do szpitala. [Źródło: Warszawa w Pigułce]",
+          "Policjanci szybko ustalili, z którego okna wyleciał przedmiot. [Źródło: Warszawa w Pigułce]",
+          "Okazało się, że 30-latek, który go wyrzucił, miał tego dnia na koncie coś jeszcze, a cała historia skończyła się na ul. Ząbkowskiej. [Źródło: Warszawa w Pigułce, Interia Wydarzenia]",
+          "Ranny przechodzień sam zaalarmował […] Artykuł Warszawska Praga: wyrzucił broń przez okno. [Źródło: Warszawa w Pigułce]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "30-latek pod wpływem alkoholu wyrzucił z okna swojego mieszkania karabinek pneumatyczny, który następnie ranił 49-letniego przechodnia. Policja namierzyła podejrzane mieszkanie. W środku znaleziono pudełko ze śrutem i butle na sprężone powietrze. [Źródło: Interia Wydarzenia]",
+          "Pijany sprawca spowodował po drodze stłuczkę. [Źródło: TVP.info]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Warszawa w Pigułce",
+        "angle": "Depesza źródłowa",
+        "summary": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
+        "url": "https://warszawawpigulce.pl/wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto-na-przechodnia/"
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Depesza źródłowa",
+        "summary": "Wyrzucił karabinek przez okno i uciekł. Niebezpieczny incydent w Warszawie",
+        "url": "https://wydarzenia.interia.pl/mazowieckie/news-wyrzucil-karabinek-przez-okno-i-uciekl-niebezpieczny-incyden,nId,23572890"
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Depesza źródłowa",
+        "summary": "Wyrzucił przez okno karabinek i uciekł. Broń raniła przypadkową osobę",
+        "url": "https://www.tvp.info/96452334/pijany-30-latek-wyrzucil-z-mieszkania-na-siodmym-pietrze-na-pradze-polnoc-w-warszawie-karabinek-bron-spadla-na-przypadkowego-przechodnia-pijany-sprawca-uciekl-autem"
+      }
+    ],
+    "sources": [
+      "Interia Wydarzenia",
+      "TVP.info",
+      "Warszawa w Pigułce"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 4,
+    "path": "/Polska",
+    "seo_url": "/Polska/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
+    "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
+    "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bc218166-c828-441f-9268-f2262949e228",
+    "published_iso": "2026-11-13T08:52:16+01:00",
+    "display_date": "13.11.2026, 08:52",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WP Wiadomości"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Droga ekspresowa S6 w kierunku Gdańska została zablokowana po zderzeniu pięciu samochodów. [Źródło: WP Wiadomości, TVN24]",
+          "Do wypadku doszło w piątek rano między węzłami Wrześnica i Sycewice. [Źródło: WP Wiadomości]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Oba zdarzenia drogowe miały miejsce na pasie w kierunku Gdańska, na odcinku 300 metrów. W jednej kolizji brały udział dwa samochody osobowe, w drugiej trzy. Zablokowany jest jeden pas ruchu. Nie ma informacji o osobach poszkodowanych . Wiadomo, że utrudnienia mogą potrwać nawet 3 godziny. [Źródło: Radio PiK]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Depesza źródłowa",
+        "summary": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
+        "url": "https://wiadomosci.wp.pl/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow-7350512697305088a"
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Depesza źródłowa",
+        "summary": "Karambol pod Słupskiem. Na S6 zderzyło się pięć aut, są ranni",
+        "url": "https://tvn24.pl/trojmiasto/sycewice-karambol-pod-slupskiem-na-s6-zderzylo-sie-piec-aut-sa-ranni-st9336907?source=rss"
+      },
+      {
+        "outlet": "Radio PiK",
+        "angle": "Depesza źródłowa",
+        "summary": "Dwie kolizje na drodze S10 w Cielu. Zderzyło się w nich łącznie pięć samochodów [zdjęcia]",
+        "url": "https://www.radiopik.pl/40,143655,dwie-kolizje-na-drodze-s10-w-cielu-zderzylo-sie-"
+      }
+    ],
+    "sources": [
+      "Radio PiK",
+      "TVN24",
+      "WP Wiadomości"
+    ],
+    "corrections": []
+  },
+  {
+    "id": 5,
     "path": "/Polska",
     "seo_url": "/Polska/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy",
     "seo_title": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
@@ -81,7 +405,7 @@
     "corrections": []
   },
   {
-    "id": 2,
+    "id": 6,
     "path": "/Polska",
     "seo_url": "/Polska/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka-jednosc",
     "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
@@ -153,7 +477,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 7,
     "path": "/Polska/Warszawa",
     "seo_url": "/Polska/Warszawa/dzis-piatek-13-czy-13-listopada-naprawde-jest-pechowy-historia-tego-przesad",
     "seo_title": "Dziś piątek 13. Czy 13 listopada naprawdę jest pechowy? Historia tego przesądu jest dużo dziwniejsza, niż się wydaje",
@@ -228,7 +552,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 8,
     "path": "/Polska",
     "seo_url": "/Polska/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z-budzetu",
     "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
@@ -292,7 +616,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 9,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i-odz",
     "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
@@ -351,7 +675,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 10,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/prezes-aps-nie-ma-opoznien-w-programie-san-uruchomilismy-nowy-zaklad",
     "seo_title": "Prezes APS: Nie ma opóźnień w programie San. \"Uruchomiliśmy nowy zakład\"",
@@ -418,7 +742,7 @@
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 11,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach-jeszc",
     "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
@@ -485,7 +809,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 12,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -550,7 +874,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 13,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -615,7 +939,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 14,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -714,7 +1038,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 15,
     "path": "/Swiat",
     "seo_url": "/Swiat/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed-technologiczn",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -779,7 +1103,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 16,
     "path": "/Swiat",
     "seo_url": "/Swiat/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -845,7 +1169,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 17,
     "path": "/Swiat",
     "seo_url": "/Swiat/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do-prezydenta",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -919,7 +1243,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 18,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -991,7 +1315,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 19,
     "path": "/Polska",
     "seo_url": "/Polska/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od-scia",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -1065,7 +1389,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 20,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/dzis-spokojniej-ale-bryluje-lpp-kruk-i-orlen-dzien-na-gpw-10-listopada-2026",
     "seo_title": "Dziś spokojniej, ale bryluje LPP, Kruk i Orlen. Dzień na GPW 10 listopada 2026 r.",
@@ -1132,7 +1456,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 21,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i-spadaja",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -1214,7 +1538,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 22,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna-z-pr",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -1293,7 +1617,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 23,
     "path": "/Swiat",
     "seo_url": "/Swiat/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -1365,7 +1689,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 24,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -1438,7 +1762,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 25,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -1521,7 +1845,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 26,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin-pierw",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -1587,7 +1911,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 27,
     "path": "/Polska",
     "seo_url": "/Polska/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -1653,7 +1977,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 28,
     "path": "/Swiat",
     "seo_url": "/Swiat/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -1712,7 +2036,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 29,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -1777,7 +2101,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 30,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego-zol",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -1843,7 +2167,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 31,
     "path": "/Polska/Gdansk",
     "seo_url": "/Polska/Gdansk/rumunia-polska-na-zywo-14-11-2026-r-gdzie-ogladac-transmisje-w-tv-i-stream-",
     "seo_title": "Rumunia - Polska na żywo 14.11.2026 r. Gdzie oglądać transmisję w TV i stream? Wynik meczu, online, relacja, składy drużyn",
@@ -1916,7 +2240,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 32,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -1990,7 +2314,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 33,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -2055,7 +2379,7 @@
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 34,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -2119,7 +2443,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 35,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -2200,7 +2524,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 36,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -2273,7 +2597,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 37,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -2350,7 +2674,7 @@
     "corrections": []
   },
   {
-    "id": 34,
+    "id": 38,
     "path": "/Sport",
     "seo_url": "/Sport/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -2423,7 +2747,7 @@
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 39,
     "path": "/Polska",
     "seo_url": "/Polska/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -2515,7 +2839,7 @@
     "corrections": []
   },
   {
-    "id": 36,
+    "id": 40,
     "path": "/Polska",
     "seo_url": "/Polska/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -2595,7 +2919,7 @@
     "corrections": []
   },
   {
-    "id": 37,
+    "id": 41,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -2679,7 +3003,7 @@
     "corrections": []
   },
   {
-    "id": 38,
+    "id": 42,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -2745,7 +3069,7 @@
     "corrections": []
   },
   {
-    "id": 39,
+    "id": 43,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostro-ka-to-symbol-chorych-uk-ad-w-w-pa-stwowych-firmach",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -2796,7 +3120,7 @@
     "corrections": []
   },
   {
-    "id": 40,
+    "id": 44,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemys-energoch-onny-oze-szansa-na-finansowanie-inwestycji-w-zielon-energi",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -2847,7 +3171,7 @@
     "corrections": []
   },
   {
-    "id": 41,
+    "id": 45,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -2898,7 +3222,7 @@
     "corrections": []
   },
   {
-    "id": 42,
+    "id": 46,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -2949,7 +3273,7 @@
     "corrections": []
   },
   {
-    "id": 43,
+    "id": 47,
     "path": "/Polska",
     "seo_url": "/Polska/hegseth-odznaczy-o-nierza-kt-ry-udzieli-mu-reprymendy-na-cmentarzu",
     "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
