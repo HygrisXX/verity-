@@ -26,6 +26,7 @@ LIVE_RSS_FEEDS = [
     # --- Polityka, Prawo, Bezpieczeństwo ---
     {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss_main", "path": "/Polska/Polityka"},
     {"name": "Defence24", "url": "https://defence24.pl/feed", "path": "/Polska/Polityka"},
+    {"name": "InfoSecurity24", "url": "https://infosecurity24.pl/feed", "path": "/Polska/Polityka"},
     {"name": "Niezależna.pl", "url": "https://niezalezna.pl/feed/", "path": "/Polska/Polityka"},
     {"name": "Newsweek Polska", "url": "https://www.newsweek.pl/.feed", "path": "/Polska/Polityka"},
 
@@ -52,17 +53,33 @@ LIVE_RSS_FEEDS = [
     {"name": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "path": "/Polska"},
     {"name": "Gazeta.pl", "url": "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm", "path": "/Polska"},
 
-    # --- Polska Regionalna ---
+    # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
     {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Poznan"},
+    {"name": "Głos Wielkopolski", "url": "https://gloswielkopolski.pl/rss", "path": "/Polska/Poznan", "group": "Polska Press"},
     {"name": "Warszawa w Pigułce", "url": "https://warszawawpigulce.pl/feed/", "path": "/Polska/Warszawa"},
-    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Gdansk"},
-    {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Lublin"},
-    {"name": "Radio Kielce", "url": "https://radiokielce.pl/feed/", "path": "/Polska/Kielce"},
-    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Lodz"},
-    {"name": "Radio PiK", "url": "https://www.radiopik.pl/rss.php", "path": "/Polska/Bydgoszcz"},
-    {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Rzeszow"},
-    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/", "path": "/Polska/Lubuskie"},
+    {"name": "Radio Kraków", "url": "https://www.radiokrakow.pl/rss.xml", "path": "/Polska/Krakow"},
+    {"name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/rss", "path": "/Polska/Krakow", "group": "Polska Press"},
+    {"name": "Gazeta Wrocławska", "url": "https://gazetawroclawska.pl/rss", "path": "/Polska/Wroclaw", "group": "Polska Press"},
     {"name": "TVS Śląsk", "url": "https://tvs.pl/feed/", "path": "/Polska/Katowice"},
+    {"name": "Dziennik Zachodni", "url": "https://dziennikzachodni.pl/rss", "path": "/Polska/Katowice", "group": "Polska Press"},
+    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Gdansk"},
+    {"name": "Dziennik Bałtycki", "url": "https://dziennikbaltycki.pl/rss", "path": "/Polska/Gdansk", "group": "Polska Press"},
+    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Lodz"},
+    {"name": "Dziennik Łódzki", "url": "https://dzienniklodzki.pl/rss", "path": "/Polska/Lodz", "group": "Polska Press"},
+    {"name": "Głos Szczeciński", "url": "https://gs24.pl/rss", "path": "/Polska/Szczecin", "group": "Polska Press"},
+    {"name": "Radio PiK", "url": "https://www.radiopik.pl/rss.php", "path": "/Polska/Bydgoszcz"},
+    {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss", "path": "/Polska/Bydgoszcz", "group": "Polska Press"},
+    {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Lublin"},
+    {"name": "Kurier Lubelski", "url": "https://kurierlubelski.pl/rss", "path": "/Polska/Lublin", "group": "Polska Press"},
+    {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Rzeszow"},
+    {"name": "Nowiny24", "url": "https://nowiny24.pl/rss", "path": "/Polska/Rzeszow", "group": "Polska Press"},
+    {"name": "Kurier Poranny", "url": "https://poranny.pl/rss", "path": "/Polska/Bialystok", "group": "Polska Press"},
+    {"name": "Radio Olsztyn", "url": "https://radioolsztyn.pl/feed/", "path": "/Polska/Olsztyn"},
+    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/", "path": "/Polska/Lubuskie"},
+    {"name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/rss", "path": "/Polska/Lubuskie", "group": "Polska Press"},
+    {"name": "Radio Kielce", "url": "https://radiokielce.pl/feed/", "path": "/Polska/Kielce"},
+    {"name": "Echo Dnia Kielce", "url": "https://echodnia.eu/rss", "path": "/Polska/Kielce", "group": "Polska Press"},
+    {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss", "path": "/Polska/Opole", "group": "Polska Press"},
 
     # --- Świat, Technologia, Cyberbezpieczeństwo ---
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/swiat.xml", "path": "/Swiat"},
@@ -82,12 +99,12 @@ LIVE_RSS_FEEDS = [
     {"name": "RMF24 Sport", "url": "https://www.rmf24.pl/sport/feed", "path": "/Sport"},
 ]
 
-BLACKLIST = {"oko.press", "demagog.org.pl", "konkret24.tvn24.pl", "pravda.org.pl"}
+BLACKLIST = {"oko.press", "demagog.org.pl"}
 
 PREFERRED_PRIMARY_OUTLETS = {
     "Rzeczpospolita", "Bankier.pl", "Money.pl", "WNP.pl", "300Gospodarka",
-    "WysokieNapiecie.pl", "Energetyka24", "Defence24", "RMF24", "Polsat News",
-    "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
+    "WysokieNapiecie.pl", "Energetyka24", "Defence24", "InfoSecurity24",
+    "RMF24", "Polsat News", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
 }
 
 OPINION_MARKERS = [
@@ -140,14 +157,14 @@ def extract_thumbnail_from_item(item_elem, desc_raw: str) -> str:
             ):
                 return url.strip()
 
-    # 2. Sprawdź media:content / media:thumbnail
+    # 2. Sprawdź media:content / media:thumbnail (atrybut url lub tekst węzła)
     for child in item_elem.iter():
         tag = child.tag.split("}")[-1].lower()
         if tag in ("thumbnail", "content"):
-            url = child.get("url") or ""
+            url = (child.get("url") or child.text or "").strip()
             medium = (child.get("medium") or "").lower()
             if _is_valid_thumb(url) and (not medium or medium == "image"):
-                return url.strip()
+                return url
 
     # 3. Sprawdź <img> w opisie
     m = re.search(r'<img[^>]+src=["\'](https?://[^"\']+)["\']', desc_raw or "", re.IGNORECASE)
@@ -182,6 +199,8 @@ def _parse_feed_xml(xml_raw: bytes):
     except Exception:
         text_clean = xml_raw.decode("utf-8", errors="ignore")
         text_clean = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", text_clean)
+        if "<media:" in text_clean and "xmlns:media=" not in text_clean:
+            text_clean = re.sub(r"<rss\b", '<rss xmlns:media="http://search.yahoo.com/mrss/"', text_clean, count=1)
         try:
             return ET.fromstring(text_clean.encode("utf-8"))
         except Exception:
@@ -256,6 +275,7 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
 
             out.append({
                 "outlet": feed["name"],
+                "group": feed.get("group") or feed["name"],
                 "path": inferred_path,
                 "title": title,
                 "description": desc,
@@ -349,9 +369,11 @@ def cluster_similar_items(items: list) -> list:
         words_i = tokens_cache[i]
         group = [item]
         group_outlets = {item["outlet"]}
+        group_syndicates = {item.get("group") or item["outlet"]}
         used.add(i)
         for j in range(i + 1, len(items)):
-            if j in used or items[j]["outlet"] in group_outlets:
+            synd_j = items[j].get("group") or items[j]["outlet"]
+            if j in used or items[j]["outlet"] in group_outlets or synd_j in group_syndicates:
                 continue
             words_j = tokens_cache[j]
             if not words_i or not words_j:
@@ -361,13 +383,14 @@ def cluster_similar_items(items: list) -> list:
             if shared >= 3 or (shared >= 2 and overlap >= 0.35):
                 group.append(items[j])
                 group_outlets.add(items[j]["outlet"])
+                group_syndicates.add(synd_j)
                 used.add(j)
         clusters.append(group)
 
-    # Sortuj według wagi wydarzenia (liczba niezależnych redakcji, źródła faktograficzne, miniatura, treść)
+    # Sortuj według wagi wydarzenia (liczba niezależnych grup wydawniczych, źródła faktograficzne, miniatura, treść)
     def cluster_score(grp):
-        unique_outlets = {it["outlet"] for it in grp}
-        score = len(unique_outlets) * 10
+        unique_groups = {it.get("group") or it["outlet"] for it in grp}
+        score = len(unique_groups) * 10
         if any(it["outlet"] in PREFERRED_PRIMARY_OUTLETS for it in grp):
             score += 2
         if any(it.get("thumbnail") for it in grp):
