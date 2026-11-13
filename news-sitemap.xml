@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T19:50:37+01:00</news:publication_date>
+      <news:title>Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/09/01/320x240px/NbBjKSxEiBC1K1BTZ5pOwhZrCAGOcVBs0DvzjOB8.13zc.jpg</image:loc>
+      <image:title>Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zakaz-reklamy-aptek-zniesiony-ale-kary-beda-wyzsze-decyzja-prezydenta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T19:50:37+01:00</news:publication_date>
+      <news:title>Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/8376316cf12ee69552c15e62105094df/?t=crop:7360:3217:nowe:0:847,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/darowizny-dla-ofiar-zamachu-bez-podatku-jest-projekt-rozporzadzenia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T19:50:37+01:00</news:publication_date>
+      <news:title>Darowizny dla ofiar zamachu bez podatku. Jest projekt rozporządzenia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/13/n_97e8339b7d6f267229da7b750e9cba43510d22f2c7821e8715be40856bf34511_c.jpg?r=750,400</image:loc>
+      <image:title>Darowizny dla ofiar zamachu bez podatku. Jest projekt rozporządzenia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T19:50:37+01:00</news:publication_date>
+      <news:title>Odważne słowa debiutanta Urbana. To po to jest w kadrze. "Wyjdę i pokażę"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NCR1LRRID81JN-C321.webp</image:loc>
+      <image:title>Odważne słowa debiutanta Urbana. To po to jest w kadrze. "Wyjdę i pokażę"</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza/</loc>
     <news:news>
       <news:publication>
