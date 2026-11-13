@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/mirra-andriejewa-diana-sznajder-relacja-na-zywo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T21:44:09+01:00</news:publication_date>
+      <news:title>Mirra Andriejewa – Diana Sznajder [RELACJA NA ŻYWO]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.przegladsportowy.onet.pl/1/OWGk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8zOTY0NzY1NWI1YzE5Mjk5NDVkMWUwNTNlZThkZTJlOS5qcGeSlQMAzLHNFjDNDHuTBc0JYM0GQN4AAqEwB6ExBA</image:loc>
+      <image:title>Mirra Andriejewa – Diana Sznajder [RELACJA NA ŻYWO]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/starshield-ponownie-ograniczony-dla-ukrainy-zelenski-alarmuje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T21:44:09+01:00</news:publication_date>
+      <news:title>Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/03/31/320x240px/2dA1VoFwswU4nhhSIURUdY60uH3hsowpoY74ZRMI.btd7.jpg</image:loc>
+      <image:title>Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T21:44:08+01:00</news:publication_date>
+      <news:title>"Slawa UPA" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/35/354jmv74f83g2qj21thahhe4f6ionn98.jpg</image:loc>
+      <image:title>"Slawa UPA" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/tankowiec-uderzyl-w-statek-wycieczkowy-dramatyczna-akcja-ratunkowa-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T21:44:08+01:00</news:publication_date>
+      <news:title>Tankowiec uderzył w statek wycieczkowy. Dramatyczna akcja ratunkowa na Missisipi</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/qwRk9kuTURBXy83YTkzZjFiOC1hOTFkLTQ4NTQtYTRiMi04ZDFhMDFmMWU5M2EuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
+      <image:title>Tankowiec uderzył w statek wycieczkowy. Dramatyczna akcja ratunkowa na Missisipi</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart/</loc>
     <news:news>
       <news:publication>
