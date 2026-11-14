@@ -3,6 +3,133 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/nie-musisz-mierzyc-sie-z-kryzysem-sam-gdzie-szukac-pomocy-w-krakowie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:07+01:00</news:publication_date>
+      <news:title>Nie musisz mierzyć się z kryzysem sam. Gdzie szukać pomocy w Krakowie?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/filmopolis-fenomen-dokumentu-zobaczysz-wszystko-oraz-kino-samochodowe-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:07+01:00</news:publication_date>
+      <news:title>FILMOPOLIS: Fenomen dokumentu „Zobaczysz wszystko” oraz kino samochodowe w Zielonej Górze [WIDEO]</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/rewolucja-przy-budowie-s74-przez-kielce-rondo-turbinowe-zamiast-swiatel/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:07+01:00</news:publication_date>
+      <news:title>Rewolucja przy budowie S74 przez Kielce. Rondo turbinowe zamiast świateł i zamknięte ulice [MAPA]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/e/b/b/uid_ebb455f3a42a4cc6a2471fcbc618b633_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Rewolucja przy budowie S74 przez Kielce. Rondo turbinowe zamiast świateł i zamknięte ulice [MAPA]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/pozar-domu-w-gminie-wielopole-skrzynskie-cztery-osoby-stracily-dach-nad/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:06+01:00</news:publication_date>
+      <news:title>Pożar domu w gminie Wielopole Skrzyńskie. Cztery osoby straciły dach nad głową</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radio.rzeszow.pl/wp-content/uploads/2026/11/Messenger_creation_C0B75B0A-5049-4FA5-A961-80CC590B384A.jpeg</image:loc>
+      <image:title>Pożar domu w gminie Wielopole Skrzyńskie. Cztery osoby straciły dach nad głową</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/roboty-w-akcji-650-zawodnikow-i-setki-konstrukcji-na-xchallenge-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:06+01:00</news:publication_date>
+      <news:title>Roboty w akcji! 650 zawodników i setki konstrukcji na XChallenge w Jasionce</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s4.tvp.pl/images2/d/5/2/uid_d52b99ab0c1f4aa79190258f4107ba79_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Roboty w akcji! 650 zawodników i setki konstrukcji na XChallenge w Jasionce</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/krwawy-atak-na-zaporoze-ofiara-smiertelna-i-wielu-rannych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:06+01:00</news:publication_date>
+      <news:title>Krwawy atak na Zaporoże. Ofiara śmiertelna i wielu rannych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8f986877-4cb0-4dfa-a60f-12b8987c256a</image:loc>
+      <image:title>Krwawy atak na Zaporoże. Ofiara śmiertelna i wielu rannych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zle-przeliczyli-glosy-ponad-130-osob-z-zarzutami-po-wyborach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:05+01:00</news:publication_date>
+      <news:title>Źle przeliczyli głosy. Ponad 130 osób z zarzutami po wyborach prezydenckich</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/66/66yuhfqw5jz6951ymv2skenw8cquxce3.png</image:loc>
+      <image:title>Źle przeliczyli głosy. Ponad 130 osób z zarzutami po wyborach prezydenckich</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/potracil-pieszego-na-pasach-i-odjechal-szybko-zostal-namierzony/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:05+01:00</news:publication_date>
+      <news:title>Potrącił pieszego na pasach i odjechał. Szybko został namierzony</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s19.tvp.pl/images2/9/8/7/uid_98782f57b6cc4bdc81e9f7359607a6d5_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Potrącił pieszego na pasach i odjechał. Szybko został namierzony</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/niby-liga-narodow-a-przed-polakami-tak-naprawde-dwa-sparingi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T16:34:05+01:00</news:publication_date>
+      <news:title>Niby Liga Narodów, a przed Polakami tak naprawdę dwa sparingi</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/10/Przekiblujemy-w-Dywizji-B-kolejne-lata--scaled.jpg</image:loc>
+      <image:title>Niby Liga Narodów, a przed Polakami tak naprawdę dwa sparingi</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/plockie-systemy-obrony-powietrznej-przeniesione/</loc>
     <news:news>
       <news:publication>
@@ -1040,21 +1167,6 @@
     <image:image>
       <image:loc>https://gorzowianin.com/data/articles/org/30358.png</image:loc>
       <image:title>Kiedy otwarcie kawiarni w Przemysłówce? Wnętrze ozdobi odrestaurowany neon MCK</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tusk-nie-jest-w-stanie-pojac-weta-nawrockiego-to-jest-po-prostu-wstyd/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T05:44:34+01:00</news:publication_date>
-      <news:title>Tusk „nie jest w stanie pojąć” weta Nawrockiego. „To jest po prostu wstyd”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://panel.kaszuby24.pl/storage/v1/object/public/media/articles/prezydent-znow-zawetowal-ustawe-o-dsa-co-to-zmienia-dla-uzytkownika-internetu-1794660672728-kmrn6z.webp</image:loc>
-      <image:title>Tusk „nie jest w stanie pojąć” weta Nawrockiego. „To jest po prostu wstyd”</image:title>
     </image:image>
   </url>
   <url>
@@ -2570,6 +2682,10 @@
       <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
       <news:title>W Zielonkach pożegnano Dorotę Baran, jedną z ofiar zamachu na Rynku Głównym w Krakowie</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://s2.tvp.pl/images2/2/9/6/uid_2966c85a7fad4e47bfaa7baf30387b3b_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>W Zielonkach pożegnano Dorotę Baran, jedną z ofiar zamachu na Rynku Głównym w Krakowie</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi/</loc>
