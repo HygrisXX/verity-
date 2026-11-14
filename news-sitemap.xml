@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/duzy-remont-torowiska-wiele-linii-zmieni-trasy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T09:41:11+01:00</news:publication_date>
+      <news:title>Duży remont torowiska. Wiele linii zmieni trasy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/e/8/c/uid_e8c36cfa7ea34b40b31e442a8b70b151_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Duży remont torowiska. Wiele linii zmieni trasy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/jak-karmic-ptaki-by-im-nie-zaszkodzic-dokarmianie-ptakow-zima-nie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T09:41:11+01:00</news:publication_date>
+      <news:title>Jak karmić ptaki, by im nie zaszkodzić? Dokarmianie ptaków zimą. Nie zapominajmy o skrzydlatych przyjaciołach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/e7/6f/6021249eab8cf_o,size,640x400,q,71,h,7006cb.jpg</image:loc>
+      <image:title>Jak karmić ptaki, by im nie zaszkodzić? Dokarmianie ptaków zimą. Nie zapominajmy o skrzydlatych przyjaciołach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/ruszyla-baza-rodzin-potrzebujacych-pomocy-w-ramach-szlachetnej-paczki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T09:41:09+01:00</news:publication_date>
+      <news:title>Ruszyła baza rodzin potrzebujących pomocy w ramach Szlachetnej Paczki. Rodziny można wybierać do 11 grudnia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s16.tvp.pl/images2/f/5/f/uid_f5f4657d0601446c901b1d1fcf26d32d_width_1280_play_0_pos_0_gs_0_height_720.png</image:loc>
+      <image:title>Ruszyła baza rodzin potrzebujących pomocy w ramach Szlachetnej Paczki. Rodziny można wybierać do 11 grudnia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T09:41:09+01:00</news:publication_date>
+      <news:title>Rosyjskie żądania ws. wystąpienia Finlandii z NATO. "Po prostu oburzające"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg</image:loc>
+      <image:title>Rosyjskie żądania ws. wystąpienia Finlandii z NATO. "Po prostu oburzające"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/alarm-w-reprezentacji-polska-bez-lidera-na-mecz-z-rumunia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T09:41:09+01:00</news:publication_date>
+      <news:title>Alarm w reprezentacji! Polska bez lidera na mecz z Rumunią</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/9b/98/1f/z33130139IHG,Jan-Urban.jpg</image:loc>
+      <image:title>Alarm w reprezentacji! Polska bez lidera na mecz z Rumunią</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/mineli-piratow-i-rakiety-doplyneli-do-swinoujscia-pierwsza-taka-dostawa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T09:41:09+01:00</news:publication_date>
+      <news:title>Minęli piratów i rakiety, dopłynęli do Świnoujścia. Pierwsza taka dostawa od miesięcy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.wnp.pl/d/57/81/10/578110_r0_300.jpg</image:loc>
+      <image:title>Minęli piratów i rakiety, dopłynęli do Świnoujścia. Pierwsza taka dostawa od miesięcy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/co-robic-w-weekend-w-bydgoszczy-gesina-na-wyspie-mlynskiej-koncerty/</loc>
     <news:news>
       <news:publication>
@@ -1653,21 +1743,6 @@
     <image:image>
       <image:loc>https://comparic.pl/comparic.pl/wp-content/uploads/2026/08/hossa-bessa-wyniki-zyski-straty-AI-23423523235-freepik-cc-32325325-4-150x150.webp</image:loc>
       <image:title>Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T05:54:47+01:00</news:publication_date>
-      <news:title>Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LmluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMv/Rk9CMDAwMDAwMDAwMDAwNzU3Njc4Ny9maWxlcy9w/b2xpY2phLTM5MTM4Mjk0LnBuZyIsInciOjM4NDB9</image:loc>
-      <image:title>Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia</image:title>
     </image:image>
   </url>
   <url>
