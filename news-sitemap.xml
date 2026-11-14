@@ -3,6 +3,92 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/nowe-zarzuty-dla-34-latka-sledczy-odkryli-kolejne-przestepstwa-wobec/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T07:55:48+01:00</news:publication_date>
+      <news:title>Nowe zarzuty dla 34-latka. Śledczy odkryli kolejne przestępstwa wobec dzieci</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/zalane-v-lo-w-olsztynie-szkola-przechodzi-na-nauczanie-zdalne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T07:55:48+01:00</news:publication_date>
+      <news:title>Zalane V LO w Olsztynie. Szkoła przechodzi na nauczanie zdalne</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/lo5-kopia.png</image:loc>
+      <image:title>Zalane V LO w Olsztynie. Szkoła przechodzi na nauczanie zdalne</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/skandal-na-wegrzech-byly-minister-pomogl-przywiezc-z-rosji-haki-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T07:55:46+01:00</news:publication_date>
+      <news:title>Skandal na Węgrzech. Były minister pomógł przywieźć z Rosji haki na opozycję</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s12.tvp.pl/images2/2/c/9/uid_2c99cac0b4c14143a3f472d3958aec76_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Skandal na Węgrzech. Były minister pomógł przywieźć z Rosji haki na opozycję</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/to-juz-ostatnia-szansa-by-zwiedzic-prom-bursztyn-unity/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T07:55:46+01:00</news:publication_date>
+      <news:title>To już ostatnia szansa, by zwiedzić prom Bursztyn Unity</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-13_179456012910.jpg</image:loc>
+      <image:title>To już ostatnia szansa, by zwiedzić prom Bursztyn Unity</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/bliscy-karoliny-wrobel-wstrzasnieci-po-otrzymaniu-badan-dna-oczekuje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T07:55:46+01:00</news:publication_date>
+      <news:title>Bliscy Karoliny Wróbel wstrząśnięci po otrzymaniu badań DNA. "Oczekuję odrobiny szacunku"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/WNvk9kuTURBXy9iMGVhYzAxNC0zYTE4LTQwZGEtYjNkOC00ZTk4ZDBhODg0N2IuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
+      <image:title>Bliscy Karoliny Wróbel wstrząśnięci po otrzymaniu badań DNA. "Oczekuję odrobiny szacunku"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/ferie-zimowe-w-rzeszowie-ruszaja-zapisy-na-polkolonie-sa-dwa-turnusy-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T07:55:46+01:00</news:publication_date>
+      <news:title>Ferie zimowe w Rzeszowie. Ruszają zapisy na półkolonie. Są dwa turnusy i różne ceny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rzeszow-news.pl/wp-content/uploads/2026/11/zimowe-polkolonie-rdk2026-3.jpg</image:loc>
+      <image:title>Ferie zimowe w Rzeszowie. Ruszają zapisy na półkolonie. Są dwa turnusy i różne ceny</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/slupki-za-szlabanem-miasto-odgrodzilo-utwardzony-plac-przy-ul/</loc>
     <news:news>
       <news:publication>
@@ -641,21 +727,6 @@
     <image:image>
       <image:loc>https://s12.tvp.pl/images2/b/d/e/uid_bde5e7228a6847c08b336f6849f7e754_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
       <image:title>Nowe żądania Rosji. Także wobec Polski</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tusk-nie-jest-w-stanie-pojac-weta-nawrockiego-to-jest-po-prostu-wstyd/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T00:53:41+01:00</news:publication_date>
-      <news:title>Tusk „nie jest w stanie pojąć” weta Nawrockiego. „To jest po prostu wstyd”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s18.tvp.pl/images2/8/c/1/uid_8c1ebcd1c2ca455cb4751cb354330625_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-      <image:title>Tusk „nie jest w stanie pojąć” weta Nawrockiego. „To jest po prostu wstyd”</image:title>
     </image:image>
   </url>
   <url>
