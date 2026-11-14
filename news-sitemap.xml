@@ -3,6 +3,88 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/nie-tylko-kryzys-sportowy-w-kszo-1929-zarzad-wydal-oswiadczenie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T05:44:35+01:00</news:publication_date>
+      <news:title>Nie tylko kryzys sportowy w KSZO 1929? Zarząd wydał oświadczenie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/czy-bedzie-przelamanie-kszo-zagra-z-siarka-tarnobrzeg/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T05:44:35+01:00</news:publication_date>
+      <news:title>Czy będzie przełamanie? KSZO zagra z Siarką Tarnobrzeg</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/nie-bac-tuska-i-do-berlina-wypelniony-plac-popieral-dzialania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T05:44:34+01:00</news:publication_date>
+      <news:title>„Nie bać Tuska” i „do Berlina”. Wypełniony plac popierał działania prezydenta Nawrockiego – foto</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62820/179459104268200800__.jpg</image:loc>
+      <image:title>„Nie bać Tuska” i „do Berlina”. Wypełniony plac popierał działania prezydenta Nawrockiego – foto</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T05:44:34+01:00</news:publication_date>
+      <news:title>Policjanci zatrzymali do kontroli kierowcę samochodu dostawczego. Okazało się, że jechał na "podwójnym gazie"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://epoznan.pl/storage/gallery/143394/FPz2d5kY344mdxTZotdGLqiXlzResoF1_left4.jpg?1794587393</image:loc>
+      <image:title>Policjanci zatrzymali do kontroli kierowcę samochodu dostawczego. Okazało się, że jechał na "podwójnym gazie"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/kiedy-otwarcie-kawiarni-w-przemyslowce-wnetrze-ozdobi-odrestaurowany/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T05:44:34+01:00</news:publication_date>
+      <news:title>Kiedy otwarcie kawiarni w Przemysłówce? Wnętrze ozdobi odrestaurowany neon MCK</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://gorzowianin.com/data/articles/org/30358.png</image:loc>
+      <image:title>Kiedy otwarcie kawiarni w Przemysłówce? Wnętrze ozdobi odrestaurowany neon MCK</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-jest-zwyciezca-rozmow-w-abu-zabi-rosja-wykorzystala-trumpa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T05:44:33+01:00</news:publication_date>
+      <news:title>Putin jest zwycięzcą rozmów w Abu Zabi. "Rosja wykorzystała Trumpa"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/NrMk9kpTURBXy8xNjk5MjIwOGEzYWQ5YjM5YTg3ZWZjMTM3ZjlkNzViNy5qcGeRkwXMyMyF3gABoTAF</image:loc>
+      <image:title>Putin jest zwycięzcą rozmów w Abu Zabi. "Rosja wykorzystała Trumpa"</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/autostrada-a4-w-kierunku-wroclawia-calkowicie-zablokowana/</loc>
     <news:news>
       <news:publication>
@@ -836,21 +918,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NJ34XL08644A1-C321.webp</image:loc>
       <image:title>Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T18:46:12+01:00</news:publication_date>
-      <news:title>Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/an/anj1f1beu4zi915s5nrnnt2a6so295ts.jpg</image:loc>
-      <image:title>Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek</image:title>
     </image:image>
   </url>
   <url>
