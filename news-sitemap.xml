@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/najmniejsze-miasta-dolnego-slaska-perelki-ukryte-w-cieniu-wiekszych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T02:48:53+01:00</news:publication_date>
+      <news:title>Najmniejsze miasta Dolnego Śląska. Perełki ukryte w cieniu większych sąsiadów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/87/e6/6af76846e5fc7_o,size,640x400,q,71,h,7e0117.jpg</image:loc>
+      <image:title>Najmniejsze miasta Dolnego Śląska. Perełki ukryte w cieniu większych sąsiadów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/najglupsze-odpowiedzi-uczniow-i-blyskawiczne-riposty-nauczycieli-hity/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T02:48:53+01:00</news:publication_date>
+      <news:title>Najgłupsze odpowiedzi uczniów i błyskawiczne riposty nauczycieli. Hity sprawdzianów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/b2/0e/6aeee29104bb1_o,size,640x400,q,71,h,03dde8.jpg</image:loc>
+      <image:title>Najgłupsze odpowiedzi uczniów i błyskawiczne riposty nauczycieli. Hity sprawdzianów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T02:48:52+01:00</news:publication_date>
+      <news:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/nickype-electricity-7378856_1280.jpg</image:loc>
+      <image:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/polska-wies-w-ii-rp-bez-upiekszen-znachor-nie-pokazuje-calej-prawdy/</loc>
     <news:news>
       <news:publication>
@@ -509,21 +554,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T18:46:12+01:00</news:publication_date>
-      <news:title>Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s19.tvp.pl/images2/9/e/c/uid_9ec1edcc48194a0cb46efe8a77021934_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-      <image:title>Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek/</loc>
     <news:news>
       <news:publication>
@@ -566,21 +596,6 @@
     <image:image>
       <image:loc>https://rmf.rmffm.pl/news/attachments/3e/d8/zdjecie-ilustracyjne-636x421-3ed8a736.jpg</image:loc>
       <image:title>Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T16:48:28+01:00</news:publication_date>
-      <news:title>Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/536a0c4bebac2fcbe889c8b8e9f567df/?t=crop:1914:837:nowe:0:35.40926201399,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy</image:title>
     </image:image>
   </url>
   <url>
@@ -1027,21 +1042,6 @@
     <image:image>
       <image:loc>https://rmf.rmffm.pl/news/attachments/76/f9/zdjecie-ilustracyjne-636x421-76f937bc.jpg</image:loc>
       <image:title>Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T07:02:47+01:00</news:publication_date>
-      <news:title>Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ty/tykr6jjdwafsv7qq81gdb34he11x2smn.jpg</image:loc>
-      <image:title>Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy</image:title>
     </image:image>
   </url>
   <url>
