@@ -3,6 +3,122 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/podaj-dalej-anglojezyczny-tekst-o-faktach-dotyczacych-ataku-w-krakowie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:19+01:00</news:publication_date>
+      <news:title>Podaj dalej! Anglojęzyczny tekst o faktach dotyczących ataku w Krakowie i represji wobec TV Republika</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/14/n_2ed92001ba5261853454ab2e560c87be1a525122088b1bb233b6fcce5332078b_c.jpg?r=750,400</image:loc>
+      <image:title>Podaj dalej! Anglojęzyczny tekst o faktach dotyczących ataku w Krakowie i represji wobec TV Republika</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/slaski-tydzien-w-gliwicach-dziesiata-edycja-wydarzenia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:18+01:00</news:publication_date>
+      <news:title>Śląski Tydzień w Gliwicach. Dziesiąta edycja wydarzenia</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/sladami-kulisiewicza-wedrowki-ze-szkicownikiem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:18+01:00</news:publication_date>
+      <news:title>Śladami Kulisiewicza – wędrówki ze szkicownikiem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rc.fm/files/styles/thumbnail/public/artykul_kulturalny/168127/902237782_1187604817565493_8659604656694769708_n.jpeg?itok=zRWQK8DL</image:loc>
+      <image:title>Śladami Kulisiewicza – wędrówki ze szkicownikiem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/gigantyczna-kara-dla-meta-chodzi-o-niedozwolony-dostep-do-prywatnych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:16+01:00</news:publication_date>
+      <news:title>Gigantyczna kara dla Meta. Chodzi o niedozwolony dostęp do prywatnych plików</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ4EEAYXVLD3C-C321.webp</image:loc>
+      <image:title>Gigantyczna kara dla Meta. Chodzi o niedozwolony dostęp do prywatnych plików</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/zwyciestwo-widzewa-z-unia-skierniewice-w-sparingu-zdecydowal-jeden-gol/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:16+01:00</news:publication_date>
+      <news:title>Zwycięstwo Widzewa z Unią Skierniewice w sparingu. Zdecydował jeden gol</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/1/f/2/uid_1f2d32e2e67e4b87bafc5c43e90e7911_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Zwycięstwo Widzewa z Unią Skierniewice w sparingu. Zdecydował jeden gol</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/wypadek-na-s19-w-nienadowce-utrudnienia-w-ruchu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:16+01:00</news:publication_date>
+      <news:title>Wypadek na S19 w Nienadówce – utrudnienia w ruchu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s2.tvp.pl/images2/2/8/e/uid_28e7f2fadbe549ed87da00d847aa19aa_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Wypadek na S19 w Nienadówce – utrudnienia w ruchu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/fioletowy-listopad-w-bialymstoku-fundacja-mali-wojownicy-jednoczy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:16+01:00</news:publication_date>
+      <news:title>Fioletowy listopad w Białymstoku. Fundacja Mali Wojownicy jednoczy rodziny wcześniaków [WIDEO]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s4.tvp.pl/images2/d/6/e/uid_d6ecda4bbeec483787038e43e8f488ec_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Fioletowy listopad w Białymstoku. Fundacja Mali Wojownicy jednoczy rodziny wcześniaków [WIDEO]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/lukasz-zal-ze-zlota-zaba-za-zdjecia-do-filmu-ojczyzna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T20:33:15+01:00</news:publication_date>
+      <news:title>Łukasz Żal ze Złotą Żabą. Za zdjęcia do filmu „Ojczyzna”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s13.tvp.pl/images2/3/a/4/uid_3a488ff3a44c43a891f7848d68bcb7f2_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Łukasz Żal ze Złotą Żabą. Za zdjęcia do filmu „Ojczyzna”</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/wroclawski-klasyk-szuka-opiekuna-unikat-z-pafawagu-do-wziecia/</loc>
     <news:news>
       <news:publication>
