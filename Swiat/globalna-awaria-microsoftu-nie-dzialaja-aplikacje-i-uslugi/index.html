@@ -141,7 +141,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=c9ec3948" />
+  <link rel="stylesheet" href="../../styles.css?v=829cd5fc" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -261,17 +261,18 @@
           <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">6 redakcji</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Swiat</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Polsat News</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (6 źródeł)</div></div></div>
           
           
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="Polsat News" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Polsat News <span class="source-chip-count">(0)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Rzeczpospolita" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Rzeczpospolita <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="RMF24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">RMF24 <span class="source-chip-count">(0)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="TVN24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVN24 <span class="source-chip-count">(0)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="Onet Wiadomości" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Onet Wiadomości <span class="source-chip-count">(0)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="WP Wiadomości" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WP Wiadomości <span class="source-chip-count">(0)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section><h2 class="section-heading" id="sec_88_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph">Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. <a class="cite-tag cite-link" href="https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Rzeczpospolita">Rzeczpospolita ↗</a></p></section>
+            <section data-sec-idx="1"><h2 class="section-heading" id="sec_88_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Rzeczpospolita">Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. <a class="cite-tag cite-link" href="https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Rzeczpospolita">Rzeczpospolita ↗</a></p></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">Źródła: Onet Wiadomości, Polsat News, RMF24, Rzeczpospolita, TVN24, WP Wiadomości</span>
+              <span class="perspectives-sources">6 źródeł · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
-            <div class="perspectives-grid"><div class="perspective-col">
+            <div class="perspectives-grid"><div class="perspective-col" data-outlet="Polsat News">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">PN</span>
             <div>
@@ -280,8 +281,8 @@
             </div>
           </div>
           <p class="perspective-summary">Globalna awaria Microsoftu. Nie działają aplikacje i usługi</p>
-          <a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-12/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-12/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="Rzeczpospolita">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">RZ</span>
             <div>
@@ -290,8 +291,8 @@
             </div>
           </div>
           <p class="perspective-summary">Duża awaria usług Microsoft. Użytkownicy mają problemy z dostępem do e-mail</p>
-          <a class="perspective-link" href="https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://cyfrowa.rp.pl/globalne-interesy/art45482681-duza-awaria-uslug-microsoft-uzytkownicy-maja-problemy-z-dostepem-do-e-mail" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="RMF24">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">RM</span>
             <div>
@@ -300,8 +301,8 @@
             </div>
           </div>
           <p class="perspective-summary">Problemy z Microsoft 365. Nie działa wiele usług</p>
-          <a class="perspective-link" href="https://www.rmf24.pl/fakty/swiat/news-problemy-z-microsoft-365-nie-dziala-wiele-uslug,nIdn,1025918" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.rmf24.pl/fakty/swiat/news-problemy-z-microsoft-365-nie-dziala-wiele-uslug,nIdn,1025918" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="RMF24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="TVN24">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">TV</span>
             <div>
@@ -310,8 +311,8 @@
             </div>
           </div>
           <p class="perspective-summary">Wielka awaria Microsoftu. Outlook nie działa</p>
-          <a class="perspective-link" href="https://tvn24.pl/biznes/ze-swiata/awaria-microsoft-365-i-outlooka-dotknela-tysiace-uzytkownikow-st9336650?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/biznes/ze-swiata/awaria-microsoft-365-i-outlooka-dotknela-tysiace-uzytkownikow-st9336650?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col is-collapsed-persp" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">OW</span>
             <div>
@@ -320,8 +321,8 @@
             </div>
           </div>
           <p class="perspective-summary">Microsoft 365 z globalną awarią. Trwają prace nad przywróceniem usług dla klientów</p>
-          <a class="perspective-link" href="https://wiadomosci.onet.pl/swiat/microsoft-365-z-globalna-awaria-nie-dziala-teams-copilot-i-sharepoint/cypfejj" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/swiat/microsoft-365-z-globalna-awaria-nie-dziala-teams-copilot-i-sharepoint/cypfejj" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col is-collapsed-persp" data-outlet="WP Wiadomości">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">WW</span>
             <div>
@@ -330,8 +331,9 @@
             </div>
           </div>
           <p class="perspective-summary">Awaria usług Microsoft. Tysiące użytkowników zgłaszają problemy</p>
-          <a class="perspective-link" href="https://wiadomosci.wp.pl/awaria-uslug-microsoft-tysiace-uzytkownikow-zglaszaja-problemy-7350346787448832a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
+          <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/awaria-uslug-microsoft-tysiace-uzytkownikow-zglaszaja-problemy-7350346787448832a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
+            <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="6" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (6)</button></div>
           </div>
 
           
@@ -434,6 +436,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Swiat/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=a5729768"></script>
+  <script src="../../app.js?v=e716f4c7"></script>
 </body>
 </html>

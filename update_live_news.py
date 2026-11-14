@@ -1635,7 +1635,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
             "summary": polish_typography_clean(it["title"]),
             "url": it["link"],
         }
-        for idx, it in enumerate(ranked_group[:6])
+        for idx, it in enumerate(ranked_group[:10])
     ]
 
     metrics = _metrics_for_article(sources, art_path, primary["outlet"])
@@ -1776,7 +1776,7 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
             "summary": c["title"],
             "url": c.get("link") or "",
         }
-        for idx, c in enumerate(candidates[:6])
+        for idx, c in enumerate(candidates[:10])
     ]
     summary_lead, meta_desc, keywords = _build_meta_and_summary(title, new_secs, art_path, sources)
     art["summary_lead"] = summary_lead

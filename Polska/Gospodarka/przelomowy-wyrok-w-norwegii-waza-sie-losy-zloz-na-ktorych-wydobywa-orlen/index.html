@@ -111,7 +111,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=c9ec3948" />
+  <link rel="stylesheet" href="../../../styles.css?v=829cd5fc" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -231,17 +231,18 @@
           <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">2 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Gospodarka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Parkiet</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (2 źródła)</div></div></div>
           
           
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Parkiet" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Parkiet <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Energetyka24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Energetyka24 <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section><h2 class="section-heading" id="sec_8_0">Ustalenia wspólne (2 redakcje)</h2><p class="section-paragraph">Państwo norweskie miało nie dochować wymaganych warunków w ocenach skutków wydobycia. Na objętych wyrokiem polach koncesje ma Orlen. <a class="cite-tag cite-link" href="https://www.parkiet.com/surowce-i-paliwa/art45485951-przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Parkiet">Parkiet ↗</a></p></section><section><h2 class="section-heading" id="sec_8_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph">Orzeczenie dotyczy trzech strategicznych pól na Morzu Północnym, w tym złóż, w których udziały posiada polski Orlen. <a class="cite-tag cite-link" href="https://energetyka24.com/surowce/ropa/przelomowy-wyrok-w-norwegii-plany-wydobycia-ropy-i-gazu-bezprawne-co-ze-zlozami-orlenu" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Energetyka24">Energetyka24 ↗</a></p></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_8_0">Ustalenia wspólne (2 redakcje)</h2><p class="section-paragraph" data-outlets="Parkiet">Państwo norweskie miało nie dochować wymaganych warunków w ocenach skutków wydobycia. Na objętych wyrokiem polach koncesje ma Orlen. <a class="cite-tag cite-link" href="https://www.parkiet.com/surowce-i-paliwa/art45485951-przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Parkiet">Parkiet ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_8_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Energetyka24">Orzeczenie dotyczy trzech strategicznych pól na Morzu Północnym, w tym złóż, w których udziały posiada polski Orlen. <a class="cite-tag cite-link" href="https://energetyka24.com/surowce/ropa/przelomowy-wyrok-w-norwegii-plany-wydobycia-ropy-i-gazu-bezprawne-co-ze-zlozami-orlenu" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Energetyka24">Energetyka24 ↗</a></p></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">Źródła: Energetyka24, Parkiet</span>
+              <span class="perspectives-sources">2 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
-            <div class="perspectives-grid"><div class="perspective-col">
+            <div class="perspectives-grid"><div class="perspective-col" data-outlet="Parkiet">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">PA</span>
             <div>
@@ -250,8 +251,8 @@
             </div>
           </div>
           <p class="perspective-summary">Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen</p>
-          <a class="perspective-link" href="https://www.parkiet.com/surowce-i-paliwa/art45485951-przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.parkiet.com/surowce-i-paliwa/art45485951-przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Parkiet" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="Energetyka24">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">EN</span>
             <div>
@@ -260,8 +261,9 @@
             </div>
           </div>
           <p class="perspective-summary">Przełomowy wyrok w Norwegii: plany wydobycia ropy i gazu bezprawne. Co ze złożami Orlenu?</p>
-          <a class="perspective-link" href="https://energetyka24.com/surowce/ropa/przelomowy-wyrok-w-norwegii-plany-wydobycia-ropy-i-gazu-bezprawne-co-ze-zlozami-orlenu" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
+          <div class="perspective-actions"><a class="perspective-link" href="https://energetyka24.com/surowce/ropa/przelomowy-wyrok-w-norwegii-plany-wydobycia-ropy-i-gazu-bezprawne-co-ze-zlozami-orlenu" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Energetyka24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
+            
           </div>
 
           
@@ -364,6 +366,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Gospodarka/przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=a5729768"></script>
+  <script src="../../../app.js?v=e716f4c7"></script>
 </body>
 </html>

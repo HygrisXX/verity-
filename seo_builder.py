@@ -295,6 +295,30 @@ def format_citations_html(raw_text: str, perspectives: list) -> str:
     return re.sub(r"\[Źródło:\s*([^\]]+)\]", repl, escaped)
 
 
+def _extract_paragraph_outlets(raw_text: str, heading: str = "", fallback_sources: list = None) -> list:
+    outlets = []
+    seen = set()
+    for m in re.finditer(r"\[Źródło:\s*([^\]]+)\]", raw_text or ""):
+        for part in m.group(1).split(","):
+            name = part.strip()
+            if name and name not in seen:
+                seen.add(name)
+                outlets.append(name)
+    if not outlets and heading:
+        m_rel = re.match(r"^Relacja źródłowa\s*\(([^)]+)\)", heading.strip())
+        if m_rel:
+            name = m_rel.group(1).strip()
+            if name:
+                outlets.append(name)
+        elif heading.strip().startswith("Relacja źródłowa:"):
+            name = heading.strip().split(":", 1)[1].strip()
+            if name:
+                outlets.append(name)
+    if not outlets and fallback_sources and len(fallback_sources) == 1:
+        outlets.append(fallback_sources[0])
+    return outlets
+
+
 def reading_minutes(art: dict) -> int:
     words = " ".join(
         s.get("heading", "") + " " + " ".join(s.get("paragraphs", []))
@@ -730,7 +754,10 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
 
     secs_html_parts = []
     dropcap_applied = False
+    total_rendered_paras = 0
+    outlet_para_counts = {}
     for si, s in enumerate(secs):
+        sec_heading = s.get("heading") or ""
         p_htmls = []
         paras = s.get("paragraphs") or []
         for pi, p in enumerate(paras):
@@ -739,6 +766,7 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
                     continue
                 if first_para_override:
                     p = first_para_override
+            p_outlets = _extract_paragraph_outlets(p, sec_heading, srcs)
             plain_p = strip_citations(p)
             is_quote = bool(re.match(r"^\s*[—–-]\s+", plain_p))
             p_classes = ["section-paragraph"]
@@ -748,30 +776,89 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
             elif not dropcap_applied and re.match(r"^[A-ZĄĆĘŁŃÓŚŹŻ]", plain_p) and len(plain_p) >= 140:
                 p_classes.append("has-dropcap")
                 dropcap_applied = True
-            p_htmls.append(f'<p class="{" ".join(p_classes)}">{format_citations_html(p, persps)}</p>')
+            total_rendered_paras += 1
+            for o in p_outlets:
+                outlet_para_counts[o] = outlet_para_counts.get(o, 0) + 1
+            outlets_attr = f' data-outlets="{html.escape("|".join(p_outlets), quote=True)}"' if p_outlets else ""
+            p_htmls.append(f'<p class="{" ".join(p_classes)}"{outlets_attr}>{format_citations_html(p, persps)}</p>')
         if p_htmls:
             secs_html_parts.append(
-                f'<section><h2 class="section-heading" id="sec_{art["id"]}_{si}">{html.escape(s.get("heading",""))}</h2>{"".join(p_htmls)}</section>'
+                f'<section data-sec-idx="{si}"><h2 class="section-heading" id="sec_{art["id"]}_{si}">{html.escape(sec_heading)}</h2>{"".join(p_htmls)}</section>'
             )
 
-    persp_cols = []
+    ordered_outlets = []
+    seen_ordered_outlets = set()
     for p in persps:
+        o_name = (p.get("outlet") or "").strip()
+        if o_name and o_name not in seen_ordered_outlets:
+            seen_ordered_outlets.add(o_name)
+            ordered_outlets.append(o_name)
+    for o_name in srcs:
+        clean_o = (o_name or "").strip()
+        if clean_o and clean_o not in seen_ordered_outlets:
+            seen_ordered_outlets.add(clean_o)
+            ordered_outlets.append(clean_o)
+
+    source_filter_bar_html = ""
+    if len(srcs) >= 2 and total_rendered_paras > 0 and ordered_outlets:
+        filter_pills = [
+            f'<button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute(\'data-outlet-filter\'))">Wszystkie <span class="source-chip-count">({total_rendered_paras})</span></button>'
+        ]
+        for o_name in ordered_outlets:
+            cnt = outlet_para_counts.get(o_name, 0)
+            o_esc = html.escape(o_name, quote=True)
+            o_cls = "source-filter-chip is-zero-paras" if cnt == 0 else "source-filter-chip"
+            filter_pills.append(
+                f'<button type="button" class="{o_cls}" data-outlet-filter="{o_esc}" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute(\'data-outlet-filter\'))">{o_esc} <span class="source-chip-count">({cnt})</span></button>'
+            )
+        source_filter_bar_html = (
+            '<div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji">'
+            '<div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div>'
+            f'<div class="source-filter-pills">{"".join(filter_pills)}</div>'
+            '<div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div>'
+            '</div>'
+        )
+
+    persp_cols = []
+    for p_idx, p in enumerate(persps):
+        o_raw = (p.get("outlet") or "").strip()
+        o_esc = html.escape(o_raw, quote=True)
         link = (
             f'<a class="perspective-link" href="{html.escape(p["url"], quote=True)}" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>'
             if p.get("url")
             else ""
         )
-        persp_cols.append(f"""<div class="perspective-col">
+        filter_btn = (
+            f'<button type="button" class="perspective-filter-btn" data-outlet-btn="{o_esc}" onclick="setArticleOutletFilter(this.getAttribute(\'data-outlet-btn\'))">Wyróżnij w tekście</button>'
+            if len(srcs) >= 2 and o_raw
+            else ""
+        )
+        actions_html = f'<div class="perspective-actions">{link}{filter_btn}</div>' if (link or filter_btn) else ""
+        col_cls = "perspective-col is-collapsed-persp" if p_idx >= 4 else "perspective-col"
+        persp_cols.append(f"""<div class="{col_cls}" data-outlet="{o_esc}">
           <div class="perspective-head">
-            <span class="outlet-mono" aria-hidden="true">{html.escape(_outlet_monogram(p.get("outlet","")))}</span>
+            <span class="outlet-mono" aria-hidden="true">{html.escape(_outlet_monogram(o_raw))}</span>
             <div>
-              <div class="perspective-outlet">{html.escape(p.get("outlet",""))}</div>
+              <div class="perspective-outlet">{html.escape(o_raw)}</div>
               <div class="perspective-angle">{html.escape(p.get("angle") or "Depesza źródłowa")}</div>
             </div>
           </div>
           <p class="perspective-summary">{html.escape(pl_typography(p.get("summary","")))}</p>
-          {link}
+          {actions_html}
         </div>""")
+
+    persp_more_html = ""
+    if len(persp_cols) > 4:
+        persp_more_html = (
+            '<div class="perspectives-more-wrap">'
+            f'<button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="{len(persp_cols)}" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia ({len(persp_cols)})</button>'
+            '</div>'
+        )
+    persp_subtitle = (
+        f"{sources_label(len(srcs))} · kliknij wybraną, by wyróżnić jej ustalenia"
+        if len(srcs) >= 2
+        else f"Źródło: {html.escape(', '.join(srcs))}"
+    )
 
     corrs = art.get("corrections") or []
     corr_box_html = ""
@@ -837,6 +924,17 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
     canonical_full = f"{site_base_url}{art.get('seo_url', '')}/"
     canonical_esc = html.escape(canonical_full, quote=True)
 
+    perspectives_box_html = ""
+    if persp_cols:
+        perspectives_box_html = f"""<div class="perspectives-box">
+            <div class="perspectives-header">
+              <span class="perspectives-title">Kto jak to przedstawia?</span>
+              <span class="perspectives-sources">{persp_subtitle}</span>
+            </div>
+            <div class="perspectives-grid">{"".join(persp_cols)}</div>
+            {persp_more_html}
+          </div>"""
+
     return f"""<div class="cat" style="--h:{hue}">
       <a class="back-link" href="{back_href}" onclick="return selectPathLink(event, '{html.escape(back_cat, quote=True)}')">← Wróć do {back_label}</a>
       <div class="reader has-aside">
@@ -855,18 +953,13 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
           {facts_html}
           {admin_note_html}
           {declickbait_html}
+          {source_filter_bar_html}
 
           <div class="article-sections">
             {"".join(secs_html_parts)}
           </div>
 
-          {f'''<div class="perspectives-box">
-            <div class="perspectives-header">
-              <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">Źródła: {html.escape(", ".join(srcs))}</span>
-            </div>
-            <div class="perspectives-grid">{"".join(persp_cols)}</div>
-          </div>''' if persp_cols else ""}
+          {perspectives_box_html}
 
           {corr_box_html}
 

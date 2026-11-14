@@ -2365,6 +2365,7 @@ const ROOT_URL = (() => {
 let currentPath = '/Polska';
 let currentView = 'public';
 let activeArticleId = null;
+let activeOutletFilter = null;
 let isNotFoundState = Boolean(typeof window !== 'undefined' && window.VERITY_IS_404);
 let lastFeedHref = null;
 
@@ -2681,6 +2682,7 @@ function openArticle(id, seoUrlOverride) {
     lastFeedHref = location.pathname;
   }
   activeArticleId = art.id;
+  activeOutletFilter = null;
   const artPath = LEGACY_PATH_MAP[art.path] || art.path;
   currentPath = PATH_TITLES[artPath] ? artPath : currentPath;
   isNotFoundState = false;
@@ -2717,6 +2719,7 @@ function selectPath(p, toRootHome = false) {
   const resolvedP = LEGACY_PATH_MAP[p] || p;
   currentPath = PATH_TITLES[resolvedP] ? resolvedP : '/Polska';
   activeArticleId = null;
+  activeOutletFilter = null;
   isNotFoundState = false;
   syncNavActive();
   const targetUrl = toRootHome ? ROOT_URL : pathHref(currentPath);
@@ -2736,6 +2739,7 @@ function closeArticle(event) {
   if (event && event.preventDefault) event.preventDefault();
   toggleRegionsDrawer(false);
   activeArticleId = null;
+  activeOutletFilter = null;
   isNotFoundState = false;
   const targetUrl = lastFeedHref || pathHref(currentPath);
   if (location.protocol !== 'file:' && (location.pathname !== targetUrl || location.hash)) {
@@ -2763,6 +2767,7 @@ function switchView(view) {
 function handleSearchInput() {
   if (activeArticleId !== null) {
     activeArticleId = null;
+    activeOutletFilter = null;
     if (location.protocol !== 'file:') {
       try { history.replaceState({ path: currentPath, articleId: null }, '', pathHref(currentPath)); } catch (e) {}
     }
@@ -3257,6 +3262,143 @@ function reconcileLeadAndFirstPara(art) {
   return { showLede: true, summaryLead, skipFirstPara: false, firstParaOverride: firstRaw };
 }
 
+function extractParagraphOutlets(rawText, heading = '', fallbackSources = []) {
+  const outlets = [];
+  const seen = new Set();
+  const re = /\[Źródło:\s*([^\]]+)\]/g;
+  let m;
+  while ((m = re.exec(rawText || '')) !== null) {
+    m[1].split(',').forEach(part => {
+      const name = part.trim();
+      if (name && !seen.has(name)) {
+        seen.add(name);
+        outlets.push(name);
+      }
+    });
+  }
+  if (!outlets.length && heading) {
+    const hTrim = heading.trim();
+    const mRel = hTrim.match(/^Relacja źródłowa\s*\(([^)]+)\)/);
+    if (mRel && mRel[1].trim()) {
+      outlets.push(mRel[1].trim());
+    } else if (hTrim.startsWith('Relacja źródłowa:')) {
+      const name = hTrim.slice('Relacja źródłowa:'.length).trim();
+      if (name) outlets.push(name);
+    }
+  }
+  if (!outlets.length && Array.isArray(fallbackSources) && fallbackSources.length === 1) {
+    outlets.push(fallbackSources[0]);
+  }
+  return outlets;
+}
+
+function toggleAllPerspectives(targetEl, forceExpand) {
+  const box = (targetEl && targetEl.closest) ? targetEl.closest('.perspectives-box') : document.querySelector('.perspectives-box');
+  if (!box) return;
+  const expand = typeof forceExpand === 'boolean' ? forceExpand : !box.classList.contains('is-expanded');
+  box.classList.toggle('is-expanded', expand);
+  const btn = box.querySelector('.perspectives-expand-btn');
+  if (btn) {
+    const total = parseInt(btn.getAttribute('data-total') || '0', 10) || box.querySelectorAll('.perspective-col').length;
+    btn.setAttribute('aria-expanded', expand ? 'true' : 'false');
+    btn.textContent = expand ? 'Zwiń do 4 głównych ujęć' : `Pokaż wszystkie ujęcia (${total})`;
+  }
+}
+
+function setArticleOutletFilter(outlet) {
+  const cleanTarget = (outlet || '').trim();
+  const nextOutlet = (cleanTarget && activeOutletFilter === cleanTarget) ? null : (cleanTarget || null);
+  activeOutletFilter = nextOutlet;
+
+  const root = document.getElementById('articlesFeed') || document;
+  root.querySelectorAll('.source-filter-chip[data-outlet-filter]').forEach(btn => {
+    const val = (btn.getAttribute('data-outlet-filter') || '').trim();
+    const isAct = nextOutlet ? (val === nextOutlet) : (val === '');
+    btn.classList.toggle('active', isAct);
+    btn.setAttribute('aria-pressed', isAct ? 'true' : 'false');
+  });
+
+  const allParas = Array.from(root.querySelectorAll('.article-sections .section-paragraph'));
+  let matchCount = 0;
+  let firstMatchEl = null;
+
+  allParas.forEach(p => {
+    if (!nextOutlet) {
+      p.classList.remove('is-source-match', 'is-source-dimmed');
+      return;
+    }
+    const outlets = (p.getAttribute('data-outlets') || '')
+      .split('|')
+      .map(s => s.trim())
+      .filter(Boolean);
+    const isMatch = outlets.includes(nextOutlet);
+    p.classList.toggle('is-source-match', isMatch);
+    p.classList.toggle('is-source-dimmed', !isMatch);
+    if (isMatch) {
+      matchCount += 1;
+      if (!firstMatchEl) firstMatchEl = p;
+    }
+  });
+
+  root.querySelectorAll('.article-sections section').forEach(sec => {
+    if (!nextOutlet) {
+      sec.classList.remove('is-sec-dimmed');
+      return;
+    }
+    const hasMatch = Boolean(sec.querySelector('.section-paragraph.is-source-match'));
+    sec.classList.toggle('is-sec-dimmed', !hasMatch);
+  });
+
+  let activePerspCol = null;
+  root.querySelectorAll('.perspectives-grid .perspective-col[data-outlet]').forEach(col => {
+    const colOutlet = (col.getAttribute('data-outlet') || '').trim();
+    const isAct = Boolean(nextOutlet && colOutlet === nextOutlet);
+    col.classList.toggle('is-source-active', isAct);
+    if (isAct) activePerspCol = col;
+  });
+
+  if (activePerspCol && activePerspCol.classList.contains('is-collapsed-persp')) {
+    const box = activePerspCol.closest('.perspectives-box');
+    const expBtn = box && box.querySelector('.perspectives-expand-btn');
+    if (box && !box.classList.contains('is-expanded')) {
+      toggleAllPerspectives(expBtn || box, true);
+    }
+  }
+
+  root.querySelectorAll('.perspective-filter-btn[data-outlet-btn]').forEach(btn => {
+    const val = (btn.getAttribute('data-outlet-btn') || '').trim();
+    const isAct = Boolean(nextOutlet && val === nextOutlet);
+    btn.classList.toggle('active', isAct);
+    btn.setAttribute('aria-pressed', isAct ? 'true' : 'false');
+    btn.textContent = isAct ? '✓ Wyróżniono w tekście' : 'Wyróżnij w tekście';
+  });
+
+  const statusEl = document.getElementById('sourceFilterStatus');
+  if (statusEl) {
+    if (!nextOutlet) {
+      statusEl.classList.add('hidden');
+      statusEl.innerHTML = '';
+    } else {
+      statusEl.classList.remove('hidden');
+      const total = allParas.length;
+      const msg = matchCount > 0
+        ? `Filtr: <strong>${esc(nextOutlet)}</strong> · Wyróżniono ${matchCount} z ${total} akapitów`
+        : `Redakcja <strong>${esc(nextOutlet)}</strong> występuje w leadzie lub ujęciach poniżej (0 odrębnych akapitów w sekcjach)`;
+      statusEl.innerHTML = `<span class="source-filter-status-text">${msg}</span><button type="button" class="source-filter-reset" onclick="setArticleOutletFilter('')">Pokaż wszystkie</button>`;
+    }
+  }
+
+  if (nextOutlet) {
+    const anchor = firstMatchEl || root.querySelector('.source-filter-bar');
+    if (anchor && typeof anchor.getBoundingClientRect === 'function') {
+      const rect = anchor.getBoundingClientRect();
+      if (rect.top < 80 || rect.top > window.innerHeight - 90) {
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }
+}
+
 function renderArticleView(art, published) {
   const container = document.getElementById('articlesFeed');
   if (!container) return;
@@ -3269,7 +3411,9 @@ function renderArticleView(art, published) {
   }
   const others = related.length ? related : published.filter(a => a.id !== art.id).slice(0, 2);
 
-  const linked = (art.perspectives || []).filter(p => p.url);
+  const srcs = art.sources || [];
+  const persps = art.perspectives || [];
+  const linked = persps.filter(p => p.url);
   const uniqueLinks = [];
   linked.forEach(p => { if (!uniqueLinks.some(u => u.url === p.url)) uniqueLinks.push(p); });
 
@@ -3279,16 +3423,20 @@ function renderArticleView(art, published) {
 
   const ledeHtml = showLede
     ? `<p class="article-lede">${esc(plTypography(summaryLead))}</p>`
-    : `<p class="article-context-line">Synteza faktograficzna na podstawie ${sourcesLabel((art.sources || []).length)} · Bezpośrednie odnośniki do publikacji źródłowych poniżej.</p>`;
+    : `<p class="article-context-line">Synteza faktograficzna na podstawie ${sourcesLabel(srcs.length)} · Bezpośrednie odnośniki do publikacji źródłowych poniżej.</p>`;
 
   let dropcapApplied = false;
+  let totalRenderedParas = 0;
+  const outletParaCounts = {};
   const sectionsHtml = secs.map((sec, si) => {
+    const secHeading = sec.heading || '';
     const pHtmls = [];
     (sec.paragraphs || []).forEach((rawP, pi) => {
       if (si === 0 && pi === 0) {
         if (skipFirstPara) return;
         if (firstParaOverride) rawP = firstParaOverride;
       }
+      const pOutlets = extractParagraphOutlets(rawP, secHeading, srcs);
       let pText = decodeEntities(rawP);
       const plainP = plainText(pText);
       const isQuote = /^\s*[—–-]\s+/.test(plainP);
@@ -3300,15 +3448,52 @@ function renderArticleView(art, published) {
         pClasses.push('has-dropcap');
         dropcapApplied = true;
       }
-      pHtmls.push(`<p class="${pClasses.join(' ')}">${formatCitations(esc(plTypography(pText)), art.perspectives)}</p>`);
+      totalRenderedParas += 1;
+      pOutlets.forEach(o => { outletParaCounts[o] = (outletParaCounts[o] || 0) + 1; });
+      const outletsAttr = pOutlets.length ? ` data-outlets="${esc(pOutlets.join('|'))}"` : '';
+      pHtmls.push(`<p class="${pClasses.join(' ')}"${outletsAttr}>${formatCitations(esc(plTypography(pText)), persps)}</p>`);
     });
     if (!pHtmls.length) return '';
     return `
-      <section>
-        <h2 class="section-heading" id="sec_${art.id}_${si}">${esc(sec.heading)}</h2>
+      <section data-sec-idx="${si}">
+        <h2 class="section-heading" id="sec_${art.id}_${si}">${esc(secHeading)}</h2>
         ${pHtmls.join('')}
       </section>`;
   }).join('');
+
+  const orderedOutlets = [];
+  const seenOrdered = new Set();
+  persps.forEach(p => {
+    const oName = (p.outlet || '').trim();
+    if (oName && !seenOrdered.has(oName)) {
+      seenOrdered.add(oName);
+      orderedOutlets.push(oName);
+    }
+  });
+  srcs.forEach(oName => {
+    const cleanO = (oName || '').trim();
+    if (cleanO && !seenOrdered.has(cleanO)) {
+      seenOrdered.add(cleanO);
+      orderedOutlets.push(cleanO);
+    }
+  });
+
+  const sourceFilterBarHtml = (srcs.length >= 2 && totalRenderedParas > 0 && orderedOutlets.length) ? `
+    <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji">
+      <div class="source-filter-head">
+        <span class="source-filter-label">Filtruj wg redakcji</span>
+        <span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span>
+      </div>
+      <div class="source-filter-pills">
+        <button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(${totalRenderedParas})</span></button>
+        ${orderedOutlets.map(oName => {
+          const cnt = outletParaCounts[oName] || 0;
+          const cls = cnt === 0 ? 'source-filter-chip is-zero-paras' : 'source-filter-chip';
+          return `<button type="button" class="${cls}" data-outlet-filter="${esc(oName)}" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">${esc(oName)} <span class="source-chip-count">(${cnt})</span></button>`;
+        }).join('')}
+      </div>
+      <div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div>
+    </div>` : '';
 
   const heroThumb = art.thumbnail_url ? `
     <div class="article-hero-wrap">
@@ -3316,11 +3501,11 @@ function renderArticleView(art, published) {
       <img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
     </div>` : '';
 
-  const asideVerifHtml = (art.sources.length >= 2 && art.fact_agreement_pct != null)
+  const asideVerifHtml = (srcs.length >= 2 && art.fact_agreement_pct != null)
     ? `
       <div class="aside-card">
         <div class="aside-title">Zgodność danych</div>
-        <div class="big-meter meter ${meterClass(art.fact_agreement_pct)}">${art.fact_agreement_pct}%<small>${sourcesLabel(art.sources.length)}</small></div>
+        <div class="big-meter meter ${meterClass(art.fact_agreement_pct)}">${art.fact_agreement_pct}%<small>${sourcesLabel(srcs.length)}</small></div>
         <div class="meter-bar wide"><span class="meter-fill" style="width:${art.fact_agreement_pct}%"></span></div>
       </div>`
     : `
@@ -3334,6 +3519,9 @@ function renderArticleView(art, published) {
 
   const backTarget = lastFeedHref || pathHref(currentPath);
   const canonicalFull = `${CANONICAL_ORIGIN}${art.seo_url}/`;
+  const perspSubtitle = srcs.length >= 2
+    ? `${sourcesLabel(srcs.length)} · kliknij wybraną, by wyróżnić jej ustalenia`
+    : `Źródło: ${srcs.map(esc).join(', ')}`;
 
   container.innerHTML = `
     <div ${catAttr(art)}>
@@ -3369,30 +3557,45 @@ function renderArticleView(art, published) {
                 </div>`).join('')}
             </div>` : ''}
 
+          ${sourceFilterBarHtml}
+
           <div class="article-sections">
             ${sectionsHtml}
           </div>
 
-          ${(art.perspectives || []).length ? `
+          ${persps.length ? `
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">Źródła: ${art.sources.map(esc).join(', ')}</span>
+              <span class="perspectives-sources">${perspSubtitle}</span>
             </div>
             <div class="perspectives-grid">
-              ${art.perspectives.map(p => `
-                <div class="perspective-col">
+              ${persps.map((p, pIdx) => {
+                const oRaw = (p.outlet || '').trim();
+                const link = p.url ? `<a class="perspective-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>` : '';
+                const filterBtn = (srcs.length >= 2 && oRaw)
+                  ? `<button type="button" class="perspective-filter-btn" data-outlet-btn="${esc(oRaw)}" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button>`
+                  : '';
+                const actionsHtml = (link || filterBtn) ? `<div class="perspective-actions">${link}${filterBtn}</div>` : '';
+                const colCls = pIdx >= 4 ? 'perspective-col is-collapsed-persp' : 'perspective-col';
+                return `
+                <div class="${colCls}" data-outlet="${esc(oRaw)}">
                   <div class="perspective-head">
-                    <span class="outlet-mono" aria-hidden="true">${esc(outletMonogram(p.outlet))}</span>
+                    <span class="outlet-mono" aria-hidden="true">${esc(outletMonogram(oRaw))}</span>
                     <div>
-                      <div class="perspective-outlet">${esc(p.outlet)}</div>
+                      <div class="perspective-outlet">${esc(oRaw)}</div>
                       <div class="perspective-angle">${esc(p.angle || 'Depesza źródłowa')}</div>
                     </div>
                   </div>
                   <p class="perspective-summary">${esc(plTypography(p.summary))}</p>
-                  ${p.url ? `<a class="perspective-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>` : ''}
-                </div>`).join('')}
+                  ${actionsHtml}
+                </div>`;
+              }).join('')}
             </div>
+            ${persps.length > 4 ? `
+              <div class="perspectives-more-wrap">
+                <button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="${persps.length}" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (${persps.length})</button>
+              </div>` : ''}
           </div>` : ''}
 
           ${art.corrections && art.corrections.length ? `
@@ -3521,6 +3724,7 @@ function rejectArt(id) {
 
 window.addEventListener('popstate', e => {
   toggleRegionsDrawer(false);
+  activeOutletFilter = null;
   if (e.state && (e.state.path !== undefined || e.state.articleId !== undefined)) {
     const stP = LEGACY_PATH_MAP[e.state.path] || e.state.path;
     currentPath = PATH_TITLES[stP] ? stP : '/Polska';
@@ -3541,6 +3745,7 @@ window.addEventListener('hashchange', () => {
   const mHash = (location.hash || '').match(/^#\/a\/(\d+)/);
   if (mHash) {
     activeArticleId = parseInt(mHash[1], 10);
+    activeOutletFilter = null;
     isNotFoundState = false;
     renderPortal();
     window.scrollTo({ top: 0 });
@@ -3570,7 +3775,12 @@ document.addEventListener('keydown', e => {
       if (si && si.value) {
         e.preventDefault();
         clearSearch();
+        return;
       }
+    }
+    if (activeOutletFilter) {
+      e.preventDefault();
+      setArticleOutletFilter('');
     }
   }
 });

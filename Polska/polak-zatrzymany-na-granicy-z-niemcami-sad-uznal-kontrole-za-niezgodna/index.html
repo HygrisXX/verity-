@@ -123,7 +123,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=c9ec3948" />
+  <link rel="stylesheet" href="../../styles.css?v=829cd5fc" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -243,17 +243,18 @@
           <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">4 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Bankier.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (4 źródła)</div></div></div>
           
           
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="Bankier.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Bankier.pl <span class="source-chip-count">(0)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="RMF24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">RMF24 <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip is-zero-paras" data-outlet-filter="Business Insider PL" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Business Insider PL <span class="source-chip-count">(0)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="TVP.info" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVP.info <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section><h2 class="section-heading" id="sec_72_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph">Sąd zdecydował po skardze Polaka i Niemca <a class="cite-tag cite-link" href="https://www.rmf24.pl/fakty/swiat/news-niemieckie-kontrole-na-granicy-z-polska-sad-zdecydowal-po-sk,nIdn,1025907" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: RMF24">RMF24 ↗</a></p><p class="section-paragraph">Na razie wyrok jest nieprawomocny. <a class="cite-tag cite-link" href="https://www.tvp.info/96442415/sad-w-dreznie-nie-mial-watpliwosci-ze-kontrole-na-granicach-z-polska-i-czechami-byly-niezgodne-z-prawem" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVP.info">TVP.info ↗</a></p></section>
+            <section data-sec-idx="1"><h2 class="section-heading" id="sec_72_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="RMF24">Sąd zdecydował po skardze Polaka i Niemca <a class="cite-tag cite-link" href="https://www.rmf24.pl/fakty/swiat/news-niemieckie-kontrole-na-granicy-z-polska-sad-zdecydowal-po-sk,nIdn,1025907" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: RMF24">RMF24 ↗</a></p><p class="section-paragraph" data-outlets="TVP.info">Na razie wyrok jest nieprawomocny. <a class="cite-tag cite-link" href="https://www.tvp.info/96442415/sad-w-dreznie-nie-mial-watpliwosci-ze-kontrole-na-granicach-z-polska-i-czechami-byly-niezgodne-z-prawem" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVP.info">TVP.info ↗</a></p></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">Źródła: Bankier.pl, Business Insider PL, RMF24, TVP.info</span>
+              <span class="perspectives-sources">4 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
-            <div class="perspectives-grid"><div class="perspective-col">
+            <div class="perspectives-grid"><div class="perspective-col" data-outlet="Bankier.pl">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">BP</span>
             <div>
@@ -262,8 +263,8 @@
             </div>
           </div>
           <p class="perspective-summary">Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem</p>
-          <a class="perspective-link" href="https://www.bankier.pl/wiadomosc/Polak-zatrzymany-na-granicy-z-Niemcami-Sad-uznal-kontrole-za-niezgodna-z-prawem-9228045.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.bankier.pl/wiadomosc/Polak-zatrzymany-na-granicy-z-Niemcami-Sad-uznal-kontrole-za-niezgodna-z-prawem-9228045.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Bankier.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="RMF24">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">RM</span>
             <div>
@@ -272,8 +273,8 @@
             </div>
           </div>
           <p class="perspective-summary">Niemieckie kontrole na granicy z Polską. Sąd zdecydował po skardze Polaka i Niemca</p>
-          <a class="perspective-link" href="https://www.rmf24.pl/fakty/swiat/news-niemieckie-kontrole-na-granicy-z-polska-sad-zdecydowal-po-sk,nIdn,1025907" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.rmf24.pl/fakty/swiat/news-niemieckie-kontrole-na-granicy-z-polska-sad-zdecydowal-po-sk,nIdn,1025907" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="RMF24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="Business Insider PL">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">BI</span>
             <div>
@@ -282,8 +283,8 @@
             </div>
           </div>
           <p class="perspective-summary">Niemieckie kontrole na granicy z Polską. Sąd: niezgodne z prawem</p>
-          <a class="perspective-link" href="https://businessinsider.com.pl/prawo/kontrole-na-granicy-z-niemcami-sad-niezgodne-z-prawem/brj3b8w" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
-        </div><div class="perspective-col">
+          <div class="perspective-actions"><a class="perspective-link" href="https://businessinsider.com.pl/prawo/kontrole-na-granicy-z-niemcami-sad-niezgodne-z-prawem/brj3b8w" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Business Insider PL" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col" data-outlet="TVP.info">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">TI</span>
             <div>
@@ -292,8 +293,9 @@
             </div>
           </div>
           <p class="perspective-summary">Sąd: Niemieckie kontrole na granicach z Polską bezprawne</p>
-          <a class="perspective-link" href="https://www.tvp.info/96442415/sad-w-dreznie-nie-mial-watpliwosci-ze-kontrole-na-granicach-z-polska-i-czechami-byly-niezgodne-z-prawem" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96442415/sad-w-dreznie-nie-mial-watpliwosci-ze-kontrole-na-granicach-z-polska-i-czechami-byly-niezgodne-z-prawem" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
+            
           </div>
 
           
@@ -396,6 +398,6 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=a5729768"></script>
+  <script src="../../app.js?v=e716f4c7"></script>
 </body>
 </html>

@@ -536,6 +536,42 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
         deduped = uln.deduplicate_existing_articles([art_nawrocki_apteki, art_nawrocki_dsa])
         self.assertEqual(len(deduped), 2)
 
+    def test_source_filter_bar_and_perspectives_collapsing_in_ssr(self):
+        self.assertEqual(
+            seo_builder._extract_paragraph_outlets("Tekst [Źródło: TVN24, PAP]", "", ["TVN24", "PAP"]),
+            ["TVN24", "PAP"],
+        )
+        self.assertEqual(
+            seo_builder._extract_paragraph_outlets("Tekst bez tagu", "Relacja źródłowa (Radio Olsztyn)", ["Radio Olsztyn"]),
+            ["Radio Olsztyn"],
+        )
+
+        multi_art = next((a for a in self.articles if len(a.get("sources") or []) >= 2), None)
+        self.assertIsNotNone(multi_art)
+        multi_html_path = os.path.join(ROOT_DIR, multi_art["seo_url"].lstrip("/"), "index.html")
+        with open(multi_html_path, "r", encoding="utf-8") as f:
+            multi_doc = f.read()
+        self.assertIn('class="source-filter-bar"', multi_doc)
+        self.assertIn('data-outlet-filter="', multi_doc)
+        self.assertIn('data-outlets="', multi_doc)
+        self.assertIn('class="perspective-filter-btn"', multi_doc)
+
+        rich_art = next((a for a in self.articles if len(a.get("perspectives") or []) > 4), None)
+        self.assertIsNotNone(rich_art, "Brak artykułu z >4 perspektywami do testu zwijania listy")
+        rich_html_path = os.path.join(ROOT_DIR, rich_art["seo_url"].lstrip("/"), "index.html")
+        with open(rich_html_path, "r", encoding="utf-8") as f:
+            rich_doc = f.read()
+        self.assertIn("is-collapsed-persp", rich_doc)
+        self.assertIn('class="perspectives-expand-btn"', rich_doc)
+
+        single_art = next((a for a in self.articles if len(a.get("sources") or []) == 1), None)
+        self.assertIsNotNone(single_art)
+        single_html_path = os.path.join(ROOT_DIR, single_art["seo_url"].lstrip("/"), "index.html")
+        with open(single_html_path, "r", encoding="utf-8") as f:
+            single_doc = f.read()
+        self.assertNotIn('class="source-filter-bar"', single_doc)
+        self.assertNotIn('class="perspectives-expand-btn"', single_doc)
+
 
 if __name__ == "__main__":
     unittest.main()

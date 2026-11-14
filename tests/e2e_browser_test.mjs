@@ -191,7 +191,11 @@ function assert(cond, msg) {
 
 async function run() {
   const articles = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'articles.json'), 'utf8'));
-  const sampleMulti = articles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2) || articles[0];
+  const sampleRichMulti = articles.find(a => (a.perspectives || []).length >= 5 && (a.full_sections || []).length >= 2)
+    || articles.find(a => (a.perspectives || []).length >= 5)
+    || articles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2)
+    || articles[0];
+  const sampleMulti = articles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2) || sampleRichMulti;
   const sampleSingle = articles.find(a => (a.sources || []).length === 1) || articles[1];
 
   const { server, port } = await startStaticServer();
@@ -405,6 +409,86 @@ async function run() {
     await browser.evalJs('applyTheme("light");');
     console.log(`[PASS] Desktop artykuł SPA + SEO JSON-LD + pasek czytania (${artInfo.pathname})`);
 
+    // 3b. Test klikalnego filtra źródeł i zwijania długich list perspektyw na bogatym artykule
+    await browser.goto(`${baseUrl}${sampleRichMulti.seo_url}/`);
+    const richBefore = await browser.evalJs(`(() => {
+      const chips = Array.from(document.querySelectorAll('.source-filter-chip[data-outlet-filter]'));
+      const nonZero = chips.filter(c => {
+        const val = c.getAttribute('data-outlet-filter') || '';
+        const cntMatch = (c.textContent || '').match(/\\((\\d+)\\)/);
+        return val && (!cntMatch || parseInt(cntMatch[1], 10) > 0);
+      });
+      const collapsed = Array.from(document.querySelectorAll('.perspective-col.is-collapsed-persp'));
+      const expBtn = document.querySelector('.perspectives-expand-btn');
+      return {
+        hasBar: Boolean(document.querySelector('.source-filter-bar')),
+        chipsCount: chips.length,
+        targetOutlet: nonZero.length ? nonZero[nonZero.length - 1].getAttribute('data-outlet-filter') : '',
+        perspTotal: document.querySelectorAll('.perspective-col').length,
+        collapsedCount: collapsed.length,
+        collapsedHidden: collapsed.every(el => getComputedStyle(el).display === 'none'),
+        hasExpandBtn: Boolean(expBtn),
+      };
+    })()`);
+    assert(richBefore.hasBar && richBefore.chipsCount >= 3 && richBefore.targetOutlet, `Brak paska filtrowania źródeł w ${sampleRichMulti.seo_url}: ${JSON.stringify(richBefore)}`);
+    if (richBefore.perspTotal > 4) {
+      assert(richBefore.collapsedCount === richBefore.perspTotal - 4 && richBefore.collapsedHidden && richBefore.hasExpandBtn, `Długa lista perspektyw nie została zwinięta: ${JSON.stringify(richBefore)}`);
+    }
+
+    // Kliknięcie pigułki redakcji -> wyróżnienie akapitów + przygaszenie pozostałych + baner statusu + podświetlenie karty
+    await browser.evalJs(`document.querySelector('.source-filter-chip[data-outlet-filter="' + ${JSON.stringify(richBefore.targetOutlet)}.replace(/"/g, '\\\\"') + '"]')?.click()`);
+    await new Promise(r => setTimeout(r, 200));
+    const filteredState = await browser.evalJs(`(() => {
+      const status = document.getElementById('sourceFilterStatus');
+      const matches = document.querySelectorAll('.section-paragraph.is-source-match').length;
+      const dimmed = document.querySelectorAll('.section-paragraph.is-source-dimmed').length;
+      const activeCol = document.querySelector('.perspective-col.is-source-active');
+      return {
+        statusVisible: Boolean(status && !status.classList.contains('hidden')),
+        statusText: status?.textContent || '',
+        matches,
+        dimmed,
+        activeOutlet: activeCol?.getAttribute('data-outlet') || '',
+        activeVisible: activeCol ? getComputedStyle(activeCol).display !== 'none' : false,
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+      };
+    })()`);
+    assert(filteredState.statusVisible && filteredState.statusText.includes(richBefore.targetOutlet), `Baner statusu filtra nie wyświetlił ${richBefore.targetOutlet}: ${JSON.stringify(filteredState)}`);
+    assert(filteredState.matches >= 1, `Brak wyróżnionych akapitów dla ${richBefore.targetOutlet}`);
+    assert(filteredState.activeOutlet === richBefore.targetOutlet && filteredState.activeVisible, `Karta perspektywy nie została podświetlona/rozwinięta: ${JSON.stringify(filteredState)}`);
+    assert(!filteredState.overflow, 'Poziomy scroll po przefiltrowaniu artykułu na desktopie');
+    await browser.screenshot('desktop_article_filtered.png');
+
+    // Reset filtra kliknięciem "Pokaż wszystkie" oraz test przycisku zwijania/rozwijania ujęć
+    await browser.evalJs(`document.querySelector('.source-filter-reset')?.click()`);
+    await new Promise(r => setTimeout(r, 150));
+    const resetState = await browser.evalJs(`(() => {
+      const status = document.getElementById('sourceFilterStatus');
+      return {
+        statusHidden: Boolean(!status || status.classList.contains('hidden')),
+        matches: document.querySelectorAll('.section-paragraph.is-source-match').length,
+        dimmed: document.querySelectorAll('.section-paragraph.is-source-dimmed').length,
+      };
+    })()`);
+    assert(resetState.statusHidden && resetState.matches === 0 && resetState.dimmed === 0, `Reset filtra nie wyczyścił stanu: ${JSON.stringify(resetState)}`);
+
+    if (richBefore.hasExpandBtn) {
+      await browser.evalJs(`(() => {
+        const box = document.querySelector('.perspectives-box');
+        const btn = document.querySelector('.perspectives-expand-btn');
+        if (box && box.classList.contains('is-expanded') && btn) btn.click(); // wróć do zwiniętych jeśli rozwinął się automatycznie
+      })()`);
+      await new Promise(r => setTimeout(r, 100));
+      await browser.evalJs(`document.querySelector('.perspectives-expand-btn')?.click()`);
+      await new Promise(r => setTimeout(r, 100));
+      const expAfter = await browser.evalJs(`({
+        expanded: document.querySelector('.perspectives-box')?.classList.contains('is-expanded') || false,
+        allVisible: Array.from(document.querySelectorAll('.perspective-col')).every(el => getComputedStyle(el).display !== 'none'),
+      })`);
+      assert(expAfter.expanded && expAfter.allVisible, `Rozwijanie wszystkich perspektyw nie zadziałało: ${JSON.stringify(expAfter)}`);
+    }
+    console.log(`[PASS] Desktop filtr źródeł (${richBefore.targetOutlet}: ${filteredState.matches} akapitów) + zwijanie/rozwijanie perspektyw (${richBefore.perspTotal} kart) OK`);
+
     // 4. Test bezpośredniego wejścia na stronę artykułu SSR + kliknięcie powrotu + wyszukiwarka (noindex)
     await browser.goto(`${baseUrl}${sampleSingle.seo_url}/`);
     const ssrInfo = await browser.evalJs(`(() => {
@@ -531,9 +615,21 @@ async function run() {
     assert(!mobSwiat.hasRocket, 'Dział Świat nie powinien zawierać artykułu o polskiej rakiecie ILR-33');
     await browser.screenshot('mobile_swiat.png');
 
-    await browser.goto(`${baseUrl}${sampleMulti.seo_url}/`);
-    const mobArt = await browser.evalJs('({ overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth })');
-    assert(!mobArt.overflow, `Poziomy scroll na mobile (artykuł): ${mobArt.sw} > ${mobArt.cw}`);
+    await browser.goto(`${baseUrl}${sampleRichMulti.seo_url}/`);
+    await browser.evalJs(`(() => {
+      const chip = document.querySelectorAll('.source-filter-chip[data-outlet-filter]')[1];
+      if (chip) chip.click();
+    })()`);
+    await new Promise(r => setTimeout(r, 200));
+    const mobArt = await browser.evalJs(`({
+      overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+      sw: document.documentElement.scrollWidth,
+      cw: document.documentElement.clientWidth,
+      hasFilterBar: Boolean(document.querySelector('.source-filter-bar')),
+      hasMatch: document.querySelectorAll('.section-paragraph.is-source-match').length >= 1,
+    })`);
+    assert(!mobArt.overflow, `Poziomy scroll na mobile (artykuł z filtrem): ${mobArt.sw} > ${mobArt.cw}`);
+    assert(mobArt.hasFilterBar, 'Brak paska filtrowania źródeł na mobile');
     await browser.screenshot('mobile_article.png');
 
     const sampleRegional = articles.find(a => (a.path || '').startsWith('/Polska/Regiony/'));
