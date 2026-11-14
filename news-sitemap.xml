@@ -3,6 +3,122 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/wroclawski-klasyk-szuka-opiekuna-unikat-z-pafawagu-do-wziecia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:10+01:00</news:publication_date>
+      <news:title>Wrocławski klasyk szuka opiekuna. Unikat z Pafawagu do wzięcia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1151495/main/ed72-pociagi-ezt-pafawag-.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
+      <image:title>Wrocławski klasyk szuka opiekuna. Unikat z Pafawagu do wzięcia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/smiertelny-wypadek-na-drodze-w-sobotce/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:10+01:00</news:publication_date>
+      <news:title>Śmiertelny wypadek na drodze w Sobótce</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/tajemnice-lasu-marysienka-kiedys-bylo-to-gwarne-miejsce-dzisiaj-zostaly/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:10+01:00</news:publication_date>
+      <news:title>Tajemnice lasu Marysieńka. Kiedyś było to gwarne miejsce, dzisiaj zostały ruiny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/fb/6d/646c978460faa_o,size,640x400,q,71,h,f6dfb0.jpg</image:loc>
+      <image:title>Tajemnice lasu Marysieńka. Kiedyś było to gwarne miejsce, dzisiaj zostały ruiny</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/spontanicznosc-w-wierze-czyli-forum-ogien-z-nieba-w-szczecinie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:09+01:00</news:publication_date>
+      <news:title>"Spontaniczność w wierze", czyli Forum Ogień z Nieba w Szczecinie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-14_179467621410.jpg</image:loc>
+      <image:title>"Spontaniczność w wierze", czyli Forum Ogień z Nieba w Szczecinie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:09+01:00</news:publication_date>
+      <news:title>Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/14/n_0ee5dbda7510dde52c3045cf10a2b8a4b29d9a623cb021380e267b244340ff2b_c.jpg?r=750,400</image:loc>
+      <image:title>Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/zaginal-strazak-z-mragowa-zaslynal-z-zawodow-schwarzeneggera/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:09+01:00</news:publication_date>
+      <news:title>Zaginął strażak z Mrągowa. Zasłynął z zawodów Schwarzeneggera</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/33cb8eed-9cae-48bc-873f-0cc4083bd135</image:loc>
+      <image:title>Zaginął strażak z Mrągowa. Zasłynął z zawodów Schwarzeneggera</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/20-kilometrow-kolejki-do-granicy-w-dorohusku-w-chelmie-utworzono-strefe/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:09+01:00</news:publication_date>
+      <news:title>20 kilometrów kolejki do granicy w Dorohusku. W Chełmie utworzono strefę buforową</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/905453994_1812496979869450_4619855430794871271_n.jpg</image:loc>
+      <image:title>20 kilometrów kolejki do granicy w Dorohusku. W Chełmie utworzono strefę buforową</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/transparent-polskich-kibicow-w-bukareszcie-wykracza-poza-sport/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T19:38:08+01:00</news:publication_date>
+      <news:title>Transparent polskich kibiców w Bukareszcie. Wykracza poza sport</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/kibice-bukareszt-flaga.jpeg</image:loc>
+      <image:title>Transparent polskich kibiców w Bukareszcie. Wykracza poza sport</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/grozny-wypadek-na-autostradzie-a2-droga-w-kierunku-warszawy-zablokowana/</loc>
     <news:news>
       <news:publication>
