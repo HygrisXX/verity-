@@ -3,6 +3,73 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/olsztynski-szpital-zmieni-wyglad-po-zmroku-za-ta-akcja-kryje-sie-wazne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T23:30:17+01:00</news:publication_date>
+      <news:title>Olsztyński szpital zmieni wygląd po zmroku. Za tą akcją kryje się ważne przesłanie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/katowice-szykuja-sie-na-zime-5300-ton-soli-i-118-pojazdow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T23:30:17+01:00</news:publication_date>
+      <news:title>Katowice szykują się na zimę. 5300 ton soli i 118 pojazdów</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/pilanie-nie-wiedza-jak-sie-zachowac-w-razie-ataku/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T23:30:17+01:00</news:publication_date>
+      <news:title>Pilanie nie wiedzą jak się zachować w razie ataku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.asta24.pl/files/thumbs/REDAKCJA/Ludzie/mezczyzna%20z%20bronia%20dluga_zagrozenie.jpg/555_245_crop.jpg?ts=1794573727&amp;amp;pn=rss</image:loc>
+      <image:title>Pilanie nie wiedzą jak się zachować w razie ataku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/polska-ma-surowce-na-paliwo-lotnicze-przyszlosci-a-fabryk-nie-stawia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T23:30:15+01:00</news:publication_date>
+      <news:title>Polska ma surowce na paliwo lotnicze przyszłości, a fabryk nie stawia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/01/pexels-nik-oak-173187900-19390228.jpg</image:loc>
+      <image:title>Polska ma surowce na paliwo lotnicze przyszłości, a fabryk nie stawia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/media-usa-zmieniaja-plany-w-sprawie-wojsk-w-europie-ujawniono-szczegoly/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T23:30:14+01:00</news:publication_date>
+      <news:title>Media: USA zmieniają plany w sprawie wojsk w Europie. Ujawniono szczegóły</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ4WMEG337SDF-C321.webp</image:loc>
+      <image:title>Media: USA zmieniają plany w sprawie wojsk w Europie. Ujawniono szczegóły</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/moznowladcy-ktorzy-rzadzili-na-pomorzu-przez-wieki-tyle-zostalo-z-ich/</loc>
     <news:news>
       <news:publication>
@@ -651,21 +718,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVubmlrLml/uY2RuLnBsL2R6aWVubmlrL2RvY3VtZW50cy9GT0IwMDAwMDAwMDAwMD/A3NzAxOTQyL2ZpbGVzL2tyYWtvd3NjeS1kb3JvemthcnplLXdyYWNha/mEtbmEtcnluZWstZ2xvd255LTM5MzE4MzgwLmpwZyIsInciOjM4NDB9</image:loc>
       <image:title>Krakowscy dorożkarze wracają na Rynek Główny. "Nie damy się sterroryzować"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/polskie-radary-na-wojnie-z-rosyjskimi-dronami-ukraina-uruchomila-ich/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:30:23+01:00</news:publication_date>
-      <news:title>Polskie radary na wojnie z rosyjskimi dronami. Ukraina uruchomiła ich serwis</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/02/320x240px/qMjKeMxxsZH7JY7ozpU1qDfwEQuFEoZx2hbSoVi4.lszj.jpg</image:loc>
-      <image:title>Polskie radary na wojnie z rosyjskimi dronami. Ukraina uruchomiła ich serwis</image:title>
     </image:image>
   </url>
   <url>
@@ -1983,21 +2035,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-7268385-gliwice-ph8620718/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach "podpisali się" zmarli</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/starship-czeka-na-kolejny-lot-ten-moment-misji-spacex-bedzie-przelomowy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T03:44:54+01:00</news:publication_date>
-      <news:title>Starship czeka na kolejny lot. Ten moment misji SpaceX będzie przełomowy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/tvnmeteo/najnowsze/cdn-zdjecie-starship-przed-piatkowym-startem-ph9337674/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Starship czeka na kolejny lot. Ten moment misji SpaceX będzie przełomowy</image:title>
     </image:image>
   </url>
   <url>
