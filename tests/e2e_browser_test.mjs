@@ -11,13 +11,28 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { spawn } from 'node:child_process';
+import { spawn, execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const SCREENSHOT_DIR = process.argv[2] ? path.resolve(process.argv[2]) : path.join(os.tmpdir(), 'verity_e2e_shots');
 fs.mkdirSync(SCREENSHOT_DIR, { recursive: true });
+
+function resolveChromeBinary() {
+  const envBin = process.env.CHROME_BIN || process.env.CHROME_PATH || process.env.CHROMIUM_BIN;
+  if (envBin && fs.existsSync(envBin)) return envBin;
+  for (const name of ['chromium', 'chromium-browser', 'google-chrome', 'google-chrome-stable']) {
+    try {
+      const resolved = execFileSync('which', [name], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+      if (resolved) return resolved;
+    } catch {}
+  }
+  for (const absPath of ['/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable']) {
+    if (fs.existsSync(absPath)) return absPath;
+  }
+  throw new Error('Nie znaleziono binarki Chromium/Google Chrome (ustaw CHROME_BIN lub zainstaluj chromium/google-chrome).');
+}
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -76,7 +91,8 @@ function httpGetDirect(urlStr) {
 
 async function launchChromium() {
   const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'verity-chr-'));
-  const proc = spawn('chromium', [
+  const chromeBin = resolveChromeBinary();
+  const proc = spawn(chromeBin, [
     '--headless=new',
     '--no-sandbox',
     '--disable-gpu',

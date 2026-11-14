@@ -223,6 +223,7 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
     def test_category_pages_and_404_and_root_exist(self):
         self.assertTrue(os.path.isfile(os.path.join(ROOT_DIR, "index.html")))
         self.assertTrue(os.path.isfile(os.path.join(ROOT_DIR, "404.html")))
+        self.assertTrue(os.path.isfile(os.path.join(ROOT_DIR, ".nojekyll")))
         self.assertEqual(len(seo_builder.VOIVODESHIPS), 16)
         self.assertEqual(len(seo_builder.CATEGORIES), 23)
         for cat_path, _, _ in seo_builder.CATEGORIES:

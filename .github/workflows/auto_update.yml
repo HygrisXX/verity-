@@ -8,23 +8,31 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: verity-main-update
+  cancel-in-progress: false
+
 jobs:
   fetch-and-synthesize:
     runs-on: ubuntu-latest
     steps:
       - name: Pobierz kod portalu VERITY
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Ustaw środowisko Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Pobierz najnowsze wiadomości z polskich kanałów RSS
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          python3 update_live_news.py
+          PYTHONDONTWRITEBYTECODE=1 python3 update_live_news.py
+
+      - name: Zweryfikuj integralność testami jednostkowymi przed publikacją
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p "test_*.py" -v
 
       - name: Zapisz zaktualizowane artykuły na stronie (GitHub Pages)
         run: |
@@ -32,5 +40,9 @@ jobs:
             git config user.name "VerityBot"
             git config user.email "bot@verity.pl"
             git add -A articles.json news-sitemap.xml sitemap.xml feed.xml robots.txt index.html 404.html Polska Swiat Sport
-            git diff --staged --quiet || (git commit -m "Automatyczna aktualizacja artykułów RSS" && git push)
+            if ! git diff --staged --quiet; then
+              git commit -m "Automatyczna aktualizacja artykułów RSS"
+              git pull --rebase origin main || { git rebase --abort || true; exit 1; }
+              git push origin main
+            fi
           fi

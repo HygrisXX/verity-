@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Node / JS
+node_modules/
+
+# Env & local secrets
+.env
+.env.*
+
+# Test screenshots & temporary artifacts
+e2e_shots*/
+verity_e2e_shots*/
+_tmp*/
+
+# OS / editors
+.DS_Store
+Thumbs.db
