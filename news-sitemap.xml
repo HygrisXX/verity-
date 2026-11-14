@@ -3,6 +3,92 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/fuxi-alex-i-inni-humanoidy-dla-armii-masowo-pojawia-sie-na-polu-bitwy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T10:37:22+01:00</news:publication_date>
+      <news:title>Fuxi, Alex i inni. Humanoidy dla armii. „Masowo pojawią się na polu bitwy”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s13.tvp.pl/images2/3/a/0/uid_3a0e29f4b8854130bc09cd712d5be003_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Fuxi, Alex i inni. Humanoidy dla armii. „Masowo pojawią się na polu bitwy”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/biel-i-czerwien-dominowala-na-ostrowieckich-biegach-niepodleglosci/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T10:37:22+01:00</news:publication_date>
+      <news:title>Biel i czerwień dominowała na Ostrowieckich Biegach Niepodległości</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/zla-wiadomosc-od-2027-roku-czesc-seniorow-straci-14-emeryture/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T10:37:20+01:00</news:publication_date>
+      <news:title>Zła wiadomość. Od 2027 roku część seniorów straci 14. emeryturę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.pulshr.pl/i/14/10/22/141022_r2_620.jpg</image:loc>
+      <image:title>Zła wiadomość. Od 2027 roku część seniorów straci 14. emeryturę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nowa-oplata-za-telewizory-laptopy-i-smartfony-zmiany-w-przepisach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T10:37:20+01:00</news:publication_date>
+      <news:title>Nowa opłata za telewizory, laptopy i smartfony. Zmiany w przepisach weszły w życie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.pulshr.pl/i/14/10/56/141056_r2_620.jpg</image:loc>
+      <image:title>Nowa opłata za telewizory, laptopy i smartfony. Zmiany w przepisach weszły w życie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/odra-atakuje-w-usa-dziesiec-ofiar-smiertelnych-i-ponad-5400-zakazen/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T10:37:20+01:00</news:publication_date>
+      <news:title>Odra atakuje w USA. Dziesięć ofiar śmiertelnych i ponad 5400 zakażeń</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-d3h8rk-odra-jest-wirusowa-choroba-zakazna-ph4754507/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Odra atakuje w USA. Dziesięć ofiar śmiertelnych i ponad 5400 zakażeń</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/nato-za-donbas-zelenski-ujawnil-propozycje-amerykanow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T10:37:19+01:00</news:publication_date>
+      <news:title>NATO za Donbas. Zełenski ujawnił propozycję Amerykanów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/5k/5k1tnew339jwfk14gcb3xp3qeg83fa42.jpg</image:loc>
+      <image:title>NATO za Donbas. Zełenski ujawnił propozycję Amerykanów</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/duzy-remont-torowiska-wiele-linii-zmieni-trasy/</loc>
     <news:news>
       <news:publication>
