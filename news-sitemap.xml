@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T03:44:55+01:00</news:publication_date>
+      <news:title>Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/tragiczny-wypadek-goscim-strzelce-krajenskie.jpg</image:loc>
+      <image:title>Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/jedz-lostroznie-ruszyla-akcja-przypominajaca-kierowcom-o-zagrozeniu-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T03:44:55+01:00</news:publication_date>
+      <news:title>„Jedź ŁOŚtrożnie”. Ruszyła akcja przypominająca kierowcom o zagrożeniu na drogach [WIDEO]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/c/2/f/uid_c2f4522c71c446cba1377cb27a104bd4_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>„Jedź ŁOŚtrożnie”. Ruszyła akcja przypominająca kierowcom o zagrożeniu na drogach [WIDEO]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T03:44:54+01:00</news:publication_date>
+      <news:title>Rząd szykuje na 2027 rok zamrożenie cen gazu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2022/09/rachunki_energia_ogrzewanie_efektywnosc.x63527.jpg</image:loc>
+      <image:title>Rząd szykuje na 2027 rok zamrożenie cen gazu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T03:44:54+01:00</news:publication_date>
+      <news:title>Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach "podpisali się" zmarli</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-7268385-gliwice-ph8620718/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach "podpisali się" zmarli</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/starship-czeka-na-kolejny-lot-ten-moment-misji-spacex-bedzie-przelomowy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T03:44:54+01:00</news:publication_date>
+      <news:title>Starship czeka na kolejny lot. Ten moment misji SpaceX będzie przełomowy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/tvnmeteo/najnowsze/cdn-zdjecie-starship-przed-piatkowym-startem-ph9337674/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Starship czeka na kolejny lot. Ten moment misji SpaceX będzie przełomowy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/ciezarowka-przewrocila-sie-na-a2-utrudnienia-w-strone-lodzi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T03:44:54+01:00</news:publication_date>
+      <news:title>Ciężarówka przewróciła się na A2. Utrudnienia w stronę Łodzi</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/1/9/8/uid_1980fa38ce174fdc9c9763e8328f8142_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Ciężarówka przewróciła się na A2. Utrudnienia w stronę Łodzi</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zadzwonil-na-112-i-powiedzial-ze-zabil-czlowieka-powod-jego-telefonu/</loc>
     <news:news>
       <news:publication>
