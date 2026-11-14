@@ -113,10 +113,10 @@
     "id": 3,
     "path": "/Swiat",
     "seo_url": "/Swiat/loty-samolotow-wstrzymane-w-calych-usa-pierwsze-informacje",
-    "seo_title": "Loty samolotów wstrzymane w całych USA. Pierwsze informacje",
-    "summary_lead": "Amerykańska Federalna Administracja Lotnictwa wstrzymała starty samolotów w całym kraju z powodów bezpieczeństwa.",
-    "meta_description": "Amerykańska Federalna Administracja Lotnictwa wstrzymała starty samolotów w całym kraju z powodów bezpieczeństwa.",
-    "keywords": "Swiat, Loty, samolotów, wstrzymane, całych, Pierwsze, informacje",
+    "seo_title": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
+    "summary_lead": "FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku. Władze zapewniają, że to nie był cyberatak.",
+    "meta_description": "FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności.",
+    "keywords": "Swiat, wstrzymują, wszystkie, starty, samolotów, wydała, nadzwyczajny",
     "thumbnail_url": "https://i.iplsc.com/-/000NJ3FNFV7B181G-C321.webp",
     "published_iso": "2026-11-13T23:37:51+01:00",
     "display_date": "13.11.2026, 23:37",
@@ -126,7 +126,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -134,32 +134,46 @@
       },
       {
         "label": "Główne źródło",
-        "val": "Interia Wydarzenia"
+        "val": "Rzeczpospolita"
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Amerykańska Federalna Administracja Lotnictwa wstrzymała starty samolotów w całym kraju z powodów bezpieczeństwa. Sekretarz transportu Stanów Zjednoczonych Sean Duffy poinformował, że decyzję podjęto \"w związku z problemem komunikacyjnym, który dotknął wszystkie Centra Kontroli Ruchu Lotniczego\". [Źródło: Interia Wydarzenia, TVN24, WP Wiadomości, Niedziela.pl]"
+          "FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku. Władze zapewniają, że to nie był cyberatak. [Źródło: Rzeczpospolita]",
+          "Powodem są problemy z systemami kontroli ruchu lotniczego. Amerykańska Federalna Administracja Lotnictwa wstrzymała starty samolotów w całym kraju z powodów bezpieczeństwa. [Źródło: Interia Wydarzenia, WP Wiadomości, Niedziela.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
+          "Bezprecedensowe utrudnienia w amerykańskim ruchu lotniczym. Amerykańskie służby powołały się na wyjątkowe okoliczności i względy bezpieczeństwa. [Źródło: Warszawa w Pigułce]",
           "\"Loty międzynarodowe będą rozporządzane indywidualnie\" – przekazano. Przyczyną utrudnień są problemy techniczne. Według pierwszych informacji nie spowodował ich cyberatak. [Źródło: TVN24]"
         ]
       }
     ],
     "perspectives": [
       {
-        "outlet": "Interia Wydarzenia",
+        "outlet": "Rzeczpospolita",
         "angle": "Relacja wiodąca",
+        "summary": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
+        "url": "https://www.rp.pl/transport/art45487771-usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz"
+      },
+      {
+        "outlet": "Warszawa w Pigułce",
+        "angle": "Doniesienie regionalne",
+        "summary": "PILNE! USA wstrzymały starty samolotów w całym kraju. Nadzwyczajna decyzja FAA. Co z lotami z Warszawy?",
+        "url": "https://warszawawpigulce.pl/pilne-usa-wstrzymaly-starty-samolotow-w-calym-kraju-nadzwyczajna-decyzja-faa-co-z-lotami-z-warszawy/"
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Relacja uzupełniająca",
         "summary": "Loty samolotów wstrzymane w całych USA. Pierwsze informacje",
         "url": "https://wydarzenia.interia.pl/zagranica/news-loty-samolotow-wstrzymane-w-calych-usa-pierwsze-informacje,nId,23573373"
       },
@@ -185,8 +199,10 @@
     "sources": [
       "Interia Wydarzenia",
       "Niedziela.pl",
+      "Rzeczpospolita",
       "TVN24",
-      "WP Wiadomości"
+      "WP Wiadomości",
+      "Warszawa w Pigułce"
     ],
     "corrections": []
   },
@@ -228,7 +244,7 @@
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
           "Tragiczny karambol na drodze ekspresowej S12/S17 w województwie lubelskim. W piątek (13 listopada 2026 r.) wieczorem w rejonie Janówka zderzyło się sześć pojazdów, w tym dwa wojskowe samochody ciężarowe. Jedna osoba zginęła, a poszkodowanych przetransportowały do szpitala dwa śmigłowce LPR. [Źródło: Fakt.pl, Onet Wiadomości]",
-          "Według informacji dostępnych na godz. 22.00 droga w jest zablokowana – policja apeluje o korzystanie z wyznaczonych objazdów. W miejscowości Janówek (powiat świdnicki) na S12 doszło do zderzenia kilku samochodów. [Źródło: Fakt.pl, TVN24, Onet Wiadomości]"
+          "Według informacji dostępnych na godz. 22.00 droga w jest zablokowana – policja apeluje o korzystanie z wyznaczonych objazdów. W miejscowości Janówek (powiat świdnicki) na S12 doszło do zderzenia kilku samochodów. [Źródło: Fakt.pl, Onet Wiadomości]"
         ]
       },
       {
@@ -267,17 +283,17 @@
   },
   {
     "id": 5,
-    "path": "/Polska",
-    "seo_url": "/Polska/piotr-kusznieruk-wykluczony-z-nowej-lewicy-mial-razaco-naruszyc-statut",
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/piotr-kusznieruk-wykluczony-z-nowej-lewicy-mial-razaco-naruszyc-statut",
     "seo_title": "Piotr Kusznieruk wykluczony z Nowej Lewicy. Miał \"rażąco naruszyć statut\"",
     "summary_lead": "Piotr Kusznieruk został zawieszony w prawach i obowiązkach członka Partii Nowej Lewicy – poinformował w piątek rzecznik ugrupowania Łukasz Michnik.",
     "meta_description": "Piotr Kusznieruk został zawieszony w prawach i obowiązkach członka Partii Nowej Lewicy – poinformował w piątek rzecznik ugrupowania Łukasz Michnik.",
-    "keywords": "Polska, Piotr, Kusznieruk, wykluczony, Nowej, Lewicy, rażąco",
+    "keywords": "Polityka, Piotr, Kusznieruk, wykluczony, Nowej, Lewicy, rażąco",
     "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/39/39dah9c3uzbocabcchi6opv5ewqfbs7x.jpg",
     "published_iso": "2026-11-13T23:37:51+01:00",
     "display_date": "13.11.2026, 23:37",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -286,7 +302,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Polityka"
       },
       {
         "label": "Główne źródło",
@@ -302,7 +318,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Piotr Kusznieruk został zawieszony w prawach i obowiązkach członka Partii Nowej Lewicy – poinformował w piątek rzecznik ugrupowania Łukasz Michnik. Jak wskazał decyzję podjął przewodniczący Włodzimierz Czarzasty z powodu rażącego naruszenia statutu. [Źródło: Polsat News, Wyborcza.pl]"
+          "Piotr Kusznieruk został zawieszony w prawach i obowiązkach członka Partii Nowej Lewicy – poinformował w piątek rzecznik ugrupowania Łukasz Michnik. Jak wskazał decyzję podjął przewodniczący Włodzimierz Czarzasty z powodu rażącego naruszenia statutu. [Źródło: Polsat News]"
         ]
       },
       {
@@ -344,7 +360,7 @@
     "published_iso": "2026-11-13T23:37:51+01:00",
     "display_date": "13.11.2026, 23:37",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -369,8 +385,8 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Reprezentacja Grecji w rozgrywkach Ligi Narodów UEFA w sezonie 26/27 pokazywała się pierwotnie od naprawdę dobrej strony, stawiając się nie tylko Serbii, ale też uznawanym za faworytów grupy Niemcom i Holendrom. W rewanżu z \"Oranje\", który odbył się 13 listopada, Grekom jednak jakby wyczerpało się paliwo – skończyło się tu absolutnym pogromem. [Źródło: Interia Sport, Polsat Sport]",
-          "Podopieczni Xaviego Hernandeza wygrali 7:0 (5:0), a jednym z bohaterów potyczki został Tijani Reijnders, autor hat-tricka. [Źródło: Interia Sport, Polsat Sport]"
+          "Reprezentacja Grecji w rozgrywkach Ligi Narodów UEFA w sezonie 26/27 pokazywała się pierwotnie od naprawdę dobrej strony, stawiając się nie tylko Serbii, ale też uznawanym za faworytów grupy Niemcom i Holendrom. W rewanżu z \"Oranje\", który odbył się 13 listopada, Grekom jednak jakby wyczerpało się paliwo – skończyło się tu absolutnym pogromem. [Źródło: Interia Sport]",
+          "Podopieczni Xaviego Hernandeza wygrali 7:0 (5:0), a jednym z bohaterów potyczki został Tijani Reijnders, autor hat-tricka. [Źródło: Interia Sport]"
         ]
       },
       {
@@ -402,74 +418,6 @@
   },
   {
     "id": 7,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz",
-    "seo_title": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
-    "summary_lead": "USA wstrzymują starty samolotów w całym kraju. FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku.",
-    "meta_description": "USA wstrzymują starty samolotów w całym kraju. FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności.",
-    "keywords": "Swiat, wstrzymują, wszystkie, starty, samolotów, wydała, nadzwyczajny",
-    "thumbnail_url": "https://i.gremicdn.pl/image/free/8fed8c026bcbd62bb0a535875d7e548f/?t=crop:5500:2403:nowe:0:63.951224461564,resize:fill:600:300,enlarge:1",
-    "published_iso": "2026-11-13T22:40:25+01:00",
-    "display_date": "13.11.2026, 22:40",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Swiat"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Rzeczpospolita"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "USA wstrzymują starty samolotów w całym kraju. FAA wydała nadzwyczajny nakaz w związku z rozległą awarią systemów łączności. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku. [Źródło: Rzeczpospolita]",
-          "Władze zapewniają, że to nie był cyberatak. [Źródło: Rzeczpospolita]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Bezprecedensowe utrudnienia w amerykańskim ruchu lotniczym. Powodem są problemy z systemami kontroli ruchu lotniczego. Amerykańskie służby powołały się na wyjątkowe okoliczności i względy bezpieczeństwa. [Źródło: Warszawa w Pigułce]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja wiodąca",
-        "summary": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
-        "url": "https://www.rp.pl/transport/art45487771-usa-wstrzymuja-wszystkie-starty-samolotow-faa-wydala-nadzwyczajny-nakaz"
-      },
-      {
-        "outlet": "Warszawa w Pigułce",
-        "angle": "Doniesienie regionalne",
-        "summary": "PILNE! USA wstrzymały starty samolotów w całym kraju. Nadzwyczajna decyzja FAA. Co z lotami z Warszawy?",
-        "url": "https://warszawawpigulce.pl/pilne-usa-wstrzymaly-starty-samolotow-w-calym-kraju-nadzwyczajna-decyzja-faa-co-z-lotami-z-warszawy/"
-      }
-    ],
-    "sources": [
-      "Rzeczpospolita",
-      "Warszawa w Pigułce"
-    ],
-    "corrections": []
-  },
-  {
-    "id": 8,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/odbudowa-ukrainy-za-setki-miliardow-dolarow-polska-chce-byc-przy-stole",
     "seo_title": "Odbudowa Ukrainy za setki miliardów dolarów. Polska chce być przy stole",
@@ -537,7 +485,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 8,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen",
     "seo_title": "Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen",
@@ -604,7 +552,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 9,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pracownik-telewizji-republika-uslyszal-zarzut-minister-potwierdza",
     "seo_title": "Pracownik Telewizji Republika usłyszał zarzut. Minister potwierdza",
@@ -665,7 +613,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 10,
     "path": "/Sport",
     "seo_url": "/Sport/mirra-andriejewa-diana-sznajder-relacja-na-zywo",
     "seo_title": "Mirra Andriejewa – Diana Sznajder [RELACJA NA ŻYWO]",
@@ -739,7 +687,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 11,
     "path": "/Swiat",
     "seo_url": "/Swiat/starshield-ponownie-ograniczony-dla-ukrainy-zelenski-alarmuje",
     "seo_title": "Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje",
@@ -800,7 +748,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 12,
     "path": "/Polska/Regiony/Pomorskie",
     "seo_url": "/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
     "seo_title": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy",
@@ -888,7 +836,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 13,
     "path": "/Swiat",
     "seo_url": "/Swiat/tankowiec-uderzyl-w-statek-wycieczkowy-dramatyczna-akcja-ratunkowa-na",
     "seo_title": "Tankowiec uderzył w statek wycieczkowy. Dramatyczna akcja ratunkowa na Missisipi",
@@ -971,7 +919,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 14,
     "path": "/Swiat",
     "seo_url": "/Swiat/mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart",
     "seo_title": "Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart",
@@ -1047,7 +995,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 15,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/tyle-trzeba-zarabiac-na-3500-zl-emerytury-kobiety-maja-gorzej",
     "seo_title": "Tyle trzeba zarabiać na 3500 zł emerytury. Kobiety mają gorzej",
@@ -1114,7 +1062,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 16,
     "path": "/Polska",
     "seo_url": "/Polska/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot",
     "seo_title": "Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot",
@@ -1176,7 +1124,7 @@
     "corrections": []
   },
   {
-    "id": 18,
+    "id": 17,
     "path": "/Swiat",
     "seo_url": "/Swiat/kreml-przejal-zachodni-biznes-miliony-rubli-na-sprzet-dla-armii",
     "seo_title": "Kreml przejął zachodni biznes. Miliony rubli na sprzęt dla armii",
@@ -1237,7 +1185,7 @@
     "corrections": []
   },
   {
-    "id": 19,
+    "id": 18,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
     "seo_title": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem",
@@ -1312,7 +1260,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 19,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zakaz-reklamy-aptek-zniesiony-ale-kary-beda-wyzsze-decyzja-prezydenta",
     "seo_title": "Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta",
@@ -1386,7 +1334,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 20,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/darowizny-dla-ofiar-zamachu-bez-podatku-jest-projekt-rozporzadzenia",
     "seo_title": "Darowizny dla ofiar zamachu bez podatku. Jest projekt rozporządzenia",
@@ -1461,7 +1409,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 21,
     "path": "/Sport",
     "seo_url": "/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze",
     "seo_title": "Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"",
@@ -1537,7 +1485,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 22,
     "path": "/Polska",
     "seo_url": "/Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza",
     "seo_title": "Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza",
@@ -1620,7 +1568,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 23,
     "path": "/Swiat",
     "seo_url": "/Swiat/kreml-zazadal-wyjscia-finlandii-z-nato-helsinki-reaguja-na-doniesienia",
     "seo_title": "Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia",
@@ -1631,12 +1579,12 @@
     "published_iso": "2026-11-13T18:46:12+01:00",
     "display_date": "13.11.2026, 18:46",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 94,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "3 redakcje"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -1648,15 +1596,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (3 redakcje)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku. [Źródło: TVP.info]",
+          "Według niemieckiej gazety, rosyjska propozycja w sprawie „nowego ładu bezpieczeństwa w Europie” zakłada m.in. wycofanie się sił NATO w Estonii, na Łotwie i Litwie oraz wyjście z Sojuszu Finlandii, która wstąpiła do niego w 2023 roku. [Źródło: TVP.info, Dziennik.pl]",
           "Wśród swoich warunków wymienił też przejęcie całego Donbasu, w tym części obwodów donieckiego i ługańskiego, które obecnie znajdują się pod kontrolą Kijowa. Ponadto Ukraina miałaby przyjąć status państwa niezaangażowanego i zrzec się planów przystąpienia do NATO, przy czym opcja członkostwa w Unii Europejskiej pozostałaby otwarta. [Źródło: TVP.info]",
           "Według rosyjskiego planu porty w Odessie i Mikołajowie zostałyby zdemilitaryzowane, aby Ukraina nie mogła wykorzystywać ich jako baz morskich. Propozycja zawiera również zapisy dotyczące swobody żeglugi na Morzu Czarnym i Bałtyckim. Według „Bilda” żądania Moskwy dotyczą także Mołdawii. [Źródło: TVP.info]"
         ]
@@ -1664,8 +1612,9 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Według niemieckiego dziennika \"Bild\" takie kwestie miały znaleźć się na stole podczas negocjacji pokojowych w Abu Zabi. Helsinki stanowczo odrzucają rosyjskie żądania. [Źródło: WP Wiadomości]",
-          "W zamian miałaby wycofać broń jądrową z Białorusi. [Źródło: Kresy.pl]"
+          "Według niemieckiego dziennika \"Bild\" takie kwestie miały znaleźć się na stole podczas negocjacji pokojowych w Abu Zabi. [Źródło: WP Wiadomości]",
+          "W zamian miałaby wycofać broń jądrową z Białorusi. [Źródło: Kresy.pl]",
+          "Rosja o tym wie – stwierdził i nazwał postulaty Rosjan oburzającymi. [Źródło: Polsat News]"
         ]
       }
     ],
@@ -1687,17 +1636,31 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Media: Rosja chce wspólnie z USA ustalić nowy porządek w Europie. Finlandia poza NATO, Mołdawia państwem federalnym",
         "url": "https://kresy.pl/wydarzenia/media-rosja-chce-wspolnie-z-usa-ustalic-nowy-porzadek-w-europie-finlandia-poza-nato-moldawia-panstwem-federalnym/"
+      },
+      {
+        "outlet": "Polsat News",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Rosyjskie żądania ws. wystąpienia Finlandii z NATO. \"Po prostu oburzające\"",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/finlandia-reaguje-na-zadania-rosji-po-prostu-oburzajace/"
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Rosja przedstawiła żądania w sprawie NATO. \"To jest po prostu oburzające\"",
+        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11344321,rosja-przedstawila-zadania-w-sprawie-nato-to-jest-po-prostu-oburzaja.html"
       }
     ],
     "sources": [
+      "Dziennik.pl",
       "Kresy.pl",
+      "Polsat News",
       "TVP.info",
       "WP Wiadomości"
     ],
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 24,
     "path": "/Swiat",
     "seo_url": "/Swiat/negocjacje-z-udzialem-europy-czy-bez-jest-dwuglos-rosja-stawia-warunek",
     "seo_title": "Negocjacje z udziałem Europy czy bez? Jest dwugłos, Rosja stawia warunek",
@@ -1766,7 +1729,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 25,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/doniosl-na-policjanta-ktory-zatrzymal-zamachowca-w-krakowie-prokuratura",
     "seo_title": "Doniósł na policjanta, który zatrzymał zamachowca w Krakowie. Prokuratura zajmie się zawiadomieniem",
@@ -1841,7 +1804,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 26,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci",
     "seo_title": "Autopay celem cyberataku. Chodzi o dane dotyczące płatności",
@@ -1908,70 +1871,7 @@
     "keywords": "Gospodarka, Autopay, cyberataku, dane, płatności"
   },
   {
-    "id": 28,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace",
-    "seo_title": "Rosyjskie żądania ws. wystąpienia Finlandii z NATO. \"Po prostu oburzające\"",
-    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/kk/kkgwe64iadork5obpp6x44eayzdp66in.jpg",
-    "published_iso": "2026-11-13T17:46:33+01:00",
-    "display_date": "13.11.2026, 17:46",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Swiat"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Polsat News"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Fiński minister obrony Antti Hakkanen stanowczo zareagował na doniesienia o żądaniach przedstawicieli Rosji podczas rozmów pokojowych w Abu Zabi, którzy mieli się domagać m.in. wystąpienia Finlandii z NATO. [Źródło: Polsat News, Dziennik.pl]",
-          "— Takie sprawy w żadnym wypadku nie podlegają negocjacjom. [Źródło: Polsat News]",
-          "Rosja o tym wie – stwierdził i nazwał postulaty Rosjan oburzającymi. [Źródło: Polsat News]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja wiodąca",
-        "summary": "Rosyjskie żądania ws. wystąpienia Finlandii z NATO. \"Po prostu oburzające\"",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-13/finlandia-reaguje-na-zadania-rosji-po-prostu-oburzajace/"
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Rosja przedstawiła żądania w sprawie NATO. \"To jest po prostu oburzające\"",
-        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11344321,rosja-przedstawila-zadania-w-sprawie-nato-to-jest-po-prostu-oburzaja.html"
-      }
-    ],
-    "sources": [
-      "Dziennik.pl",
-      "Polsat News"
-    ],
-    "corrections": [],
-    "summary_lead": "Fiński minister obrony Antti Hakkanen stanowczo zareagował na doniesienia o żądaniach przedstawicieli Rosji podczas rozmów pokojowych w Abu Zabi, którzy mieli się domagać m.in. wystąpienia Finlandii z NATO.",
-    "meta_description": "Fiński minister obrony Antti Hakkanen stanowczo zareagował na doniesienia o żądaniach przedstawicieli Rosji podczas rozmów pokojowych w Abu Zabi, którzy…",
-    "keywords": "Swiat, Rosyjskie, żądania, Finlandii, NATO"
-  },
-  {
-    "id": 29,
+    "id": 27,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets",
     "seo_title": "Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS",
@@ -2004,7 +1904,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Europejski przemysł otrzyma dodatkowe uprawnienia do emisji dwutlenku węgla. Oznacza to, że nie zostanie obciążony 10 mld euro. [Źródło: Business Insider PL]"
+          "Europejski przemysł otrzyma dodatkowe uprawnienia do emisji dwutlenku węgla. Oznacza to, że nie zostanie obciążony 10 mld euro. [Źródło: RMF24]"
         ]
       },
       {
@@ -2038,7 +1938,7 @@
     "keywords": "Gospodarka, Miliardy, euro, oszczędności, przemysłu, zwiększa, pulę"
   },
   {
-    "id": 30,
+    "id": 28,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/nielegalne-tresci-mialy-znikac-z-internetu-szybciej-nawrocki-zawetowal",
     "seo_title": "Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy",
@@ -2136,7 +2036,7 @@
     "keywords": "Polityka, Nielegalne, treści, internetu, Nawrocki, zawetował"
   },
   {
-    "id": 31,
+    "id": 29,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
     "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
     "seo_title": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa",
@@ -2191,7 +2091,7 @@
     "keywords": "Warminsko-Mazurskie, Mrągowem, 30-latek, zabójstwa"
   },
   {
-    "id": 32,
+    "id": 30,
     "path": "/Swiat",
     "seo_url": "/Swiat/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin",
     "seo_title": "Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin",
@@ -2258,7 +2158,7 @@
     "keywords": "Swiat, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin"
   },
   {
-    "id": 33,
+    "id": 31,
     "path": "/Polska",
     "seo_url": "/Polska/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym",
     "seo_title": "Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?",
@@ -2325,7 +2225,7 @@
     "keywords": "Polska, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym"
   },
   {
-    "id": 34,
+    "id": 32,
     "path": "/Polska",
     "seo_url": "/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu",
     "seo_title": "AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu",
@@ -2333,7 +2233,7 @@
     "published_iso": "2026-11-13T15:43:30+01:00",
     "display_date": "13.11.2026, 15:43",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "metrics": [
       {
@@ -2358,7 +2258,7 @@
       {
         "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "Sąd ocenił, że wygenerowane treści mają charakter deepfake i zasądził ich usunięcie, a także zadośćuczynienie oraz przeprosiny dla lektora. Sprawa przed Wydziałem Własności Intelektualnej warszawskiego SO toczyła się od końca stycznia. [Źródło: Radio Zachód]"
+          "Sąd ocenił, że wygenerowane treści mają charakter deepfake i zasądził ich usunięcie, a także zadośćuczynienie oraz przeprosiny dla lektora. Sprawa przed Wydziałem Własności Intelektualnej warszawskiego SO toczyła się od końca stycznia. [Źródło: RMF24, Radio Zachód]"
         ]
       },
       {
@@ -2415,7 +2315,7 @@
     "keywords": "Polska, wygenerowała, głos, lektora, warszawskiego"
   },
   {
-    "id": 35,
+    "id": 33,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw",
     "seo_title": "Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw",
@@ -2490,7 +2390,7 @@
     "keywords": "Polityka, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych"
   },
   {
-    "id": 36,
+    "id": 34,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie",
     "seo_title": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\"",
@@ -2498,12 +2398,12 @@
     "published_iso": "2026-11-13T15:43:30+01:00",
     "display_date": "13.11.2026, 15:43",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
+    "fact_agreement_pct": 98,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -2515,17 +2415,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej opozycji w wyborach do Sejmu. [Źródło: Polsat News]",
+          "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej opozycji w wyborach do Sejmu. [Źródło: Polsat News, RMF24, Business Insider PL, Onet Wiadomości]",
           "— Idziemy oczywiście sami do wyborów. (...) Nie chcesz Tuska, nie chcesz Brauna, wybierz Rozwój Plus. [Źródło: Polsat News]",
-          "To jest nasze podejście do wyborów – zadeklarował były premier. [Źródło: Polsat News]"
+          "To jest nasze podejście do wyborów – zadeklarował były premier. Ocenił jednocześnie, że na polskiej prawicy nie ma obecnie hegemona, tak jak to było kiedyś. [Źródło: Polsat News, RMF24, Business Insider PL, Onet Wiadomości]"
         ]
       },
       {
@@ -2547,11 +2447,32 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Morawiecki odpowiada na postulat Kaczyńskiego. \"My mamy zupełnie inne podejście\"",
         "url": "https://niezalezna.pl/polityka/morawiecki-odpowiada-na-postulat-kaczynskiego-my-mamy-zupelnie-inne-podejscie/584096"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Twarda deklaracja Morawieckiego: Idziemy sami",
+        "url": "https://www.rmf24.pl/fakty/polityka/news-twarda-deklaracja-morawieckiego-idziemy-sami,nIdn,1026013"
+      },
+      {
+        "outlet": "Business Insider PL",
+        "angle": "Perspektywa rynkowa",
+        "summary": "\"Idziemy sami\". Mateusz Morawiecki deklaruje",
+        "url": "https://businessinsider.com.pl/wiadomosci/widze-te-zachety-mateusz-morawiecki-nie-chce-startowac-z-pis/ht1fq8x"
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Mateusz Morawiecki nie chce iść do wyborów z PiS. Zamierza być alternatywą dla dwóch partii",
+        "url": "https://wiadomosci.onet.pl/kraj/ugrupowanie-morawieckiego-pojdzie-z-pis-do-wyborow-jasna-deklaracja/yhcyegm"
       }
     ],
     "sources": [
+      "Business Insider PL",
       "Niezależna.pl",
-      "Polsat News"
+      "Onet Wiadomości",
+      "Polsat News",
+      "RMF24"
     ],
     "corrections": [],
     "summary_lead": "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej opozycji w wyborach do Sejmu.",
@@ -2559,7 +2480,7 @@
     "keywords": "Polityka, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne"
   },
   {
-    "id": 37,
+    "id": 35,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty",
     "seo_title": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
@@ -2626,7 +2547,7 @@
     "keywords": "Gospodarka, Burger, Drwala, wraca, McDonald, Cena, premiera"
   },
   {
-    "id": 38,
+    "id": 36,
     "path": "/Sport",
     "seo_url": "/Sport/manchester-united-podal-nazwisko-nowego-trenera",
     "seo_title": "Manchester United podał nazwisko nowego trenera",
@@ -2634,7 +2555,7 @@
     "published_iso": "2026-11-13T14:11:13+01:00",
     "display_date": "13.11.2026, 14:11",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "metrics": [
       {
@@ -2659,7 +2580,7 @@
       {
         "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United. Argentyńczyk pracuje obecnie jako selekcjoner reprezentacji USA, a na Wyspy Brytyjskie przeniesie się tuż po przerwie reprezentacyjnej. [Źródło: Interia Sport]"
+          "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United. Argentyńczyk pracuje obecnie jako selekcjoner reprezentacji USA, a na Wyspy Brytyjskie przeniesie się tuż po przerwie reprezentacyjnej. [Źródło: RMF24, Interia Sport, WP SportoweFakty]"
         ]
       },
       {
@@ -2667,8 +2588,7 @@
         "paragraphs": [
           "Zmiana szkoleniowca Czerwonych Diabłów nastąpiła po najsłabszym od czterech dekad początku sezonu. [Źródło: Polsat Sport]",
           "W piątek (13 listopada) klub poinformował, że zawarł porozumienie z argentyńskim szkoleniowcem. Cała transakcja – według relacji brytyjskich mediów – będzie \"Czerwone Diabły\" słono kosztować. [Źródło: Sport.pl]",
-          "Argentyńczyk miał umowę z narodową kadrą do 2030 r. [Źródło: Przegląd Sportowy]",
-          "Argentyńczyk rozpocznie pracę 18 listopada po zakończeniu obowiązków przy reprezentacji USA. [Źródło: WP SportoweFakty]"
+          "Argentyńczyk miał umowę z narodową kadrą do 2030 r. [Źródło: Przegląd Sportowy]"
         ]
       }
     ],
@@ -2724,75 +2644,7 @@
     "keywords": "Sport, Manchester, United, podał, nazwisko, nowego, trenera"
   },
   {
-    "id": 39,
-    "path": "/Polska/Polityka",
-    "seo_url": "/Polska/Polityka/twarda-deklaracja-morawieckiego-idziemy-sami",
-    "seo_title": "Twarda deklaracja Morawieckiego: Idziemy sami",
-    "thumbnail_url": "https://rmf.rmffm.pl/news/attachments/ab/7d/prezes-stowarzyszenia-rozwoj-plus-mateusz-morawiecki-przemawia-podczas-poznanskiego-kongresu-gospodarczego-636x421-ab7d060b.jpg",
-    "published_iso": "2026-11-13T14:11:13+01:00",
-    "display_date": "13.11.2026, 14:11",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Polityka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "RMF24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Idziemy do wyborów sami — zadeklarował w Poznaniu lider Rozwoju Plus oraz były premier Mateusz Morawiecki. Ocenił jednocześnie, że na polskiej prawicy nie ma obecnie hegemona, tak jak to było kiedyś. [Źródło: Business Insider PL, Onet Wiadomości]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "RMF24",
-        "angle": "Relacja wiodąca",
-        "summary": "Twarda deklaracja Morawieckiego: Idziemy sami",
-        "url": "https://www.rmf24.pl/fakty/polityka/news-twarda-deklaracja-morawieckiego-idziemy-sami,nIdn,1026013"
-      },
-      {
-        "outlet": "Business Insider PL",
-        "angle": "Perspektywa rynkowa",
-        "summary": "\"Idziemy sami\". Mateusz Morawiecki deklaruje",
-        "url": "https://businessinsider.com.pl/wiadomosci/widze-te-zachety-mateusz-morawiecki-nie-chce-startowac-z-pis/ht1fq8x"
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Mateusz Morawiecki nie chce iść do wyborów z PiS. Zamierza być alternatywą dla dwóch partii",
-        "url": "https://wiadomosci.onet.pl/kraj/ugrupowanie-morawieckiego-pojdzie-z-pis-do-wyborow-jasna-deklaracja/yhcyegm"
-      }
-    ],
-    "sources": [
-      "Business Insider PL",
-      "Onet Wiadomości",
-      "RMF24"
-    ],
-    "corrections": [],
-    "summary_lead": "Idziemy do wyborów sami — zadeklarował w Poznaniu lider Rozwoju Plus oraz były premier Mateusz Morawiecki. Ocenił jednocześnie, że na polskiej prawicy nie ma obecnie hegemona, tak jak to było kiedyś.",
-    "meta_description": "Idziemy do wyborów sami — zadeklarował w Poznaniu lider Rozwoju Plus oraz były premier Mateusz Morawiecki.",
-    "keywords": "Polityka, Twarda, deklaracja, Morawieckiego, Idziemy, sami"
-  },
-  {
-    "id": 40,
+    "id": 37,
     "path": "/Sport",
     "seo_url": "/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje",
     "seo_title": "Reprezentacja na łasce Lewandowskiego. \"Do Turcji jeździ się na wakacje\"",
@@ -2869,7 +2721,7 @@
     "keywords": "Sport, Reprezentacja, łasce, Lewandowskiego, Turcji, jeździ, wakacje"
   },
   {
-    "id": 41,
+    "id": 38,
     "path": "/Polska/Regiony/Lubelskie",
     "seo_url": "/Polska/Regiony/Lubelskie/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek",
     "seo_title": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
@@ -2923,7 +2775,7 @@
     "keywords": "Lubelskie, dożywotni, zakaz, prowadzenia, pojazdów, złamał, 39-latek"
   },
   {
-    "id": 42,
+    "id": 39,
     "path": "/Sport",
     "seo_url": "/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy",
     "seo_title": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
@@ -2998,7 +2850,7 @@
     "keywords": "Sport, Ależ, debiut, Polki, Pucharze, podium, Decydowały"
   },
   {
-    "id": 43,
+    "id": 40,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma",
     "seo_title": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
@@ -3066,7 +2918,7 @@
     "keywords": "Energetyka, Spór, podatek, zysków, Orlen, Lietuva, Minister"
   },
   {
-    "id": 44,
+    "id": 41,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem",
     "seo_title": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
@@ -3133,7 +2985,7 @@
     "keywords": "Swiat, Trump, odsuwa, Vance, wojna, negocjacje, Iranem"
   },
   {
-    "id": 45,
+    "id": 42,
     "path": "/Swiat",
     "seo_url": "/Swiat/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja",
     "seo_title": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
@@ -3187,7 +3039,7 @@
     "keywords": "Swiat, Płonie, rafineria, Wołgogradzie, Ukraińskie, znacząco, zmniejszają"
   },
   {
-    "id": 46,
+    "id": 43,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek",
     "seo_title": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
@@ -3284,7 +3136,7 @@
     "keywords": "Energetyka, zapłacisz, paliwo, weekend, taniej"
   },
   {
-    "id": 47,
+    "id": 44,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln",
     "seo_title": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
@@ -3358,7 +3210,7 @@
     "keywords": "Polityka, Łukasz, Gibała, pilną, prośbą, Donalda, Tuska"
   },
   {
-    "id": 48,
+    "id": 45,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/rece-precz-od-republiki-atak-na-biuro-posla-ko",
     "seo_title": "„Ręce precz od Republiki”. Atak na biuro posła KO",
@@ -3366,7 +3218,7 @@
     "published_iso": "2026-11-13T11:50:05+01:00",
     "display_date": "13.11.2026, 11:50",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 94,
     "admin_note": "",
     "metrics": [
       {
@@ -3391,7 +3243,7 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Nieznani sprawcy pomalowali farbą filię biura poselskiego Michała Jarosa w Trzebnicy. Na witrynach i elewacji budynku pojawiły się hasła odnoszące się do Telewizji Republika i premiera Donalda Tuska. [Źródło: WP Wiadomości]"
+          "Nieznani sprawcy pomalowali farbą filię biura poselskiego Michała Jarosa w Trzebnicy. Na witrynach i elewacji budynku pojawiły się hasła odnoszące się do Telewizji Republika i premiera Donalda Tuska. [Źródło: RMF24, WP Wiadomości]"
         ]
       },
       {
@@ -3433,7 +3285,7 @@
     "keywords": "Polityka, Ręce, precz, Republiki, biuro, posła"
   },
   {
-    "id": 49,
+    "id": 46,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w",
     "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
@@ -3494,7 +3346,7 @@
     "keywords": "Malopolskie, Stan, rannych, zamachu, systematycznie, poprawia, pozostają"
   },
   {
-    "id": 50,
+    "id": 47,
     "path": "/Swiat",
     "seo_url": "/Swiat/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do",
     "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
@@ -3583,7 +3435,7 @@
     "keywords": "Swiat, Cyberatak, Niemczech, producenta, dronów, hakerzy, trafili"
   },
   {
-    "id": 51,
+    "id": 48,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
     "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
@@ -3665,7 +3517,7 @@
     "keywords": "Gospodarka, wzrosły, ceny, dane, inflacji"
   },
   {
-    "id": 52,
+    "id": 49,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira",
     "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
@@ -3727,7 +3579,7 @@
     "keywords": "Gospodarka, Przelewy, natychmiastowe, rekordy, Express, Elixira, BlueCash"
   },
   {
-    "id": 53,
+    "id": 50,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w",
     "seo_title": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
@@ -3794,7 +3646,7 @@
     "keywords": "Gospodarka, Blik, Płacę, Później, opcją, Bank, Millennium"
   },
   {
-    "id": 54,
+    "id": 51,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026",
     "seo_title": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
@@ -3869,7 +3721,7 @@
     "keywords": "Gospodarka, Cena, euro, dolara, franka, Kursy, walut"
   },
   {
-    "id": 55,
+    "id": 52,
     "path": "/Swiat",
     "seo_url": "/Swiat/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego",
     "seo_title": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
@@ -3944,7 +3796,7 @@
     "keywords": "Swiat, Eksplozja, auta, Moskwie, pokładzie, postać, otoczenia"
   },
   {
-    "id": 56,
+    "id": 53,
     "path": "/Swiat",
     "seo_url": "/Swiat/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army",
     "seo_title": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
@@ -4012,7 +3864,7 @@
     "keywords": "Swiat, Pracował, NATO, szpiegował, rzecz, Rosji, Podpułkownika"
   },
   {
-    "id": 57,
+    "id": 54,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w",
     "seo_title": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
@@ -4109,7 +3961,7 @@
     "keywords": "Polityka, Dymisja, wiceministra, biurku, premiera, Zgorzelski, komentuje"
   },
   {
-    "id": 58,
+    "id": 55,
     "path": "/Sport",
     "seo_url": "/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna",
     "seo_title": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
@@ -4191,7 +4043,7 @@
     "keywords": "Sport, Robert, Lewandowski, pominięty, ogłasza, ostateczna"
   },
   {
-    "id": 59,
+    "id": 56,
     "path": "/Polska/Regiony/Mazowieckie",
     "seo_url": "/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra",
     "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
@@ -4267,7 +4119,7 @@
     "keywords": "Mazowieckie, Warszawska, Praga, wyrzucił, broń, okno, Karabinek"
   },
   {
-    "id": 60,
+    "id": 57,
     "path": "/Polska/Regiony/Pomorskie",
     "seo_url": "/Polska/Regiony/Pomorskie/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
     "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
@@ -4328,7 +4180,7 @@
     "keywords": "Pomorskie, Karambol, samego, rana, Zderzyło, pięć, samochodów"
   },
   {
-    "id": 61,
+    "id": 58,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z",
     "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
@@ -4361,14 +4213,13 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Jak informuje „Rzeczpospolita”, w ubiegłym roku firmy Eli Lilly i Novo Nordisk, producenci odpowiednio Mounjaro i Wegovy, przekazały lekarzom oraz organizacjom ochrony zdrowia łącznie około 25 mln zł. Kolejne 9 mln zł przeznaczono na wynagrodzenia dla przedstawicieli środowiska medycznego za świadczone usługi. [Źródło: TVP.info]",
-          "Dane te nie uwzględniają m.in. kosztów finansowania udziału lekarzy w konferencjach. [Źródło: TVP.info]"
+          "Jak informuje „Rzeczpospolita”, w ubiegłym roku firmy Eli Lilly i Novo Nordisk, producenci odpowiednio Mounjaro i Wegovy, przekazały lekarzom oraz organizacjom ochrony zdrowia łącznie około 25 mln zł. Kolejne 9 mln zł przeznaczono na… [Źródło: RMF24]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Wsparcie kampanii społecznych i inicjatyw edukacyjnych Środki pochodzące od producentów wspierają również kampanie społeczne i inicjatywy edukacyjne poświęcone leczeniu otyłości. W wydarzeniach organizowanych na ten temat, także na terenie parlamentu, uczestniczą podmioty finansowane przez koncerny farmaceutyczne. [Źródło: TVP.info]"
+          "Dane te nie uwzględniają m.in. kosztów finansowania udziału lekarzy w konferencjach. Wsparcie kampanii społecznych i inicjatyw edukacyjnych Środki pochodzące od producentów wspierają również kampanie społeczne i inicjatywy edukacyjne poświęcone leczeniu otyłości. W wydarzeniach organizowanych na ten temat, także na terenie parlamentu, uczestniczą podmioty finansowane przez koncerny farmaceutyczne. [Źródło: TVP.info]"
         ]
       }
     ],
@@ -4396,7 +4247,7 @@
     "keywords": "Gospodarka, Otyłość, kosztuje, miliardy, złotych, Producenci, leków"
   },
   {
-    "id": 62,
+    "id": 59,
     "path": "/Swiat",
     "seo_url": "/Swiat/decyzja-po-kolejnej-rundzie-negocjacji-jest-zgoda-rosji-i-ukrainy",
     "seo_title": "Decyzja po kolejnej rundzie negocjacji. Jest zgoda Rosji i Ukrainy",
@@ -4479,7 +4330,7 @@
     "keywords": "Swiat, kolejnej, rundzie, negocjacji, zgoda, Rosji, Ukrainy"
   },
   {
-    "id": 63,
+    "id": 60,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka",
     "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
@@ -4512,13 +4363,13 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Jan Grabiec został zapytany przez Justynę Dobrosz-Oracz o to, czy spodziewał się, że prezydent odrzuci zaproszenie premiera do jego domu w Sopocie. Szef KPRM stwierdził, że prezydent „Może się jeszcze nawróci i znajdzie czas na to, żeby porozmawiać z premierem o sprawach ważnych dla Polski”. [Źródło: TVP.info]"
+          "Jan Grabiec został zapytany przez Justynę Dobrosz-Oracz o to, czy spodziewał się, że prezydent odrzuci zaproszenie premiera do jego domu w Sopocie. [Źródło: RMF24]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "To strategia „im gorzej w Polsce, tym lepiej dla nich” – Mam wrażenie, że „wszystko już pojechało” po tamtej stronie: PiS-u, prezydenta Nawrockiego i Konfederacji. W polskim systemie prawnym kampanie prezydenckie finansowane są przez główne partie polityczne. Prezydent może trochę pohasać, ale nie za daleko i na koniec musi pilnować linii partii – podkreślił polityk. [Źródło: TVP.info]",
+          "Szef KPRM stwierdził, że prezydent „Może się jeszcze nawróci i znajdzie czas na to, żeby porozmawiać z premierem o sprawach ważnych dla Polski”. To strategia „im gorzej w Polsce, tym lepiej dla nich” – Mam wrażenie, że „wszystko już pojechało” po tamtej stronie: PiS-u, prezydenta Nawrockiego i Konfederacji. W polskim systemie prawnym kampanie prezydenckie finansowane są przez główne partie polityczne. [Źródło: TVP.info]",
           "Premier wyciąga opłatek, ale nie wyciąga ręki do porozumienia w sprawie Trybunału Konstytucyjnego. Donald Tusk zaprasza prezydenta Karola Nawrockiego na przedświąteczne spotkanie, ale sam nie zamierza wycofać się z działań wokół Trybunału. Dla opozycji to wyłącznie czysta zagrywka polityczna premiera. [Źródło: RadioMaryja.pl]"
         ]
       }
@@ -4554,7 +4405,7 @@
     "keywords": "Polityka, spotkaniem, Tuska, Nawrockiego, Ociepa, byle, jaką"
   },
   {
-    "id": 64,
+    "id": 61,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/800-plus-dla-rodzicow-doroslych-juz-dzieci-takiej-zmiany-w-przepisach",
     "seo_title": "800 plus dla rodziców dorosłych już dzieci. Takiej zmiany w przepisach jeszcze nie było. Zapadła decyzja w sprawie nowego świadczenia",
@@ -4622,7 +4473,7 @@
     "keywords": "Gospodarka, plus, rodziców, dorosłych, dzieci, Takiej, zmiany"
   },
   {
-    "id": 65,
+    "id": 62,
     "path": "/Swiat",
     "seo_url": "/Swiat/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -4689,7 +4540,7 @@
     "keywords": "Swiat, Nvidia, ciągnie, Wall, Street, Alphabet, korzysta"
   },
   {
-    "id": 66,
+    "id": 63,
     "path": "/Polska",
     "seo_url": "/Polska/zapomogi-dla-policjantow-rannych-w-krakowie-mswia-potwierdza-wsparcie-i",
     "seo_title": "Zapomogi dla policjantów rannych w Krakowie. MSWiA potwierdza wsparcie i odznaczenia",
@@ -4750,7 +4601,7 @@
     "keywords": "Polska, Zapomogi, rannych, Krakowie, MSWiA, potwierdza, wsparcie"
   },
   {
-    "id": 67,
+    "id": 64,
     "path": "/Polska",
     "seo_url": "/Polska/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -4819,7 +4670,7 @@
     "keywords": "Polska, Prestiżowa, wygrana, Rosją, forum, Zdecydował, jeden"
   },
   {
-    "id": 68,
+    "id": 65,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -4887,7 +4738,7 @@
     "keywords": "Energetyka, Rząd, szykuje, zamrożenie, gazu"
   },
   {
-    "id": 69,
+    "id": 66,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -4955,7 +4806,7 @@
     "keywords": "Polityka, Prezydent, proponuje, fundusz, Trójmorza, ostrzega, technologiczną"
   },
   {
-    "id": 70,
+    "id": 67,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -5009,7 +4860,7 @@
     "keywords": "Malopolskie, Wychwalali, sprawcę, Krakowie"
   },
   {
-    "id": 71,
+    "id": 68,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -5085,7 +4936,7 @@
     "keywords": "Polityka, Miliony, dzieciaków, prześladowane, sieci, Gawkowski, apeluje"
   },
   {
-    "id": 72,
+    "id": 69,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -5118,13 +4969,13 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "— Kuba radzi sobie bardzo słabo. [Źródło: WP Wiadomości]",
-          "To w zasadzie upadłe miejsce – powiedział. [Źródło: WP Wiadomości]"
+          "— Kuba radzi sobie bardzo słabo. [Źródło: RMF24]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
+          "To w zasadzie upadłe miejsce – powiedział. [Źródło: WP Wiadomości]",
           "Określił Kubę jako państwo upadłe. [Źródło: Onet Wiadomości]"
         ]
       }
@@ -5160,7 +5011,7 @@
     "keywords": "Swiat, Trump, mówi, użyciu, siły, wobec, Kuby"
   },
   {
-    "id": 73,
+    "id": 70,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -5236,7 +5087,7 @@
     "keywords": "Polityka, Wspólna, lista, prawicy, Sejmu, Poseł, Konfederacji"
   },
   {
-    "id": 74,
+    "id": 71,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -5321,7 +5172,7 @@
     "keywords": "Gospodarka, Akcje, Allegro, najdroższe, pięciu, umowa, InPostem"
   },
   {
-    "id": 75,
+    "id": 72,
     "path": "/Polska",
     "seo_url": "/Polska/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -5403,7 +5254,7 @@
     "keywords": "Polska, granicy, Niemcami, uznał, kontrolę, niezgodną, prawem"
   },
   {
-    "id": 76,
+    "id": 73,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -5477,7 +5328,7 @@
     "keywords": "Gospodarka, Pfizer, zablokował, aktywa, PAŻP, Brukseli"
   },
   {
-    "id": 77,
+    "id": 74,
     "path": "/Swiat",
     "seo_url": "/Swiat/koniec-ery-jensena-huanga-szef-nvidii-odchodzi-w-cieniu-skandalu",
     "seo_title": "Koniec ery Jensena Huanga. Szef Nvidii odchodzi w cieniu skandalu",
@@ -5552,7 +5403,7 @@
     "keywords": "Swiat, Jensena, Huanga, Szef, Nvidii, odchodzi, cieniu"
   },
   {
-    "id": 78,
+    "id": 75,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -5636,7 +5487,7 @@
     "keywords": "Swiat, Strzelanina, pobliżu, Białego, Domu, żyją, dwie"
   },
   {
-    "id": 79,
+    "id": 76,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -5698,7 +5549,7 @@
     "keywords": "Polityka, Proces, Karola, Nawrockiego, dziennikarzami, Onetu, wyznaczył"
   },
   {
-    "id": 80,
+    "id": 77,
     "path": "/Swiat",
     "seo_url": "/Swiat/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -5766,7 +5617,7 @@
     "keywords": "Swiat, Orban, wejdzie, aresztu, spotkania, bratem"
   },
   {
-    "id": 81,
+    "id": 78,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -5827,7 +5678,7 @@
     "keywords": "Polityka, Czarzasty, zwrócił, prezydenta, Padły, słowa, juncie"
   },
   {
-    "id": 82,
+    "id": 79,
     "path": "/Swiat",
     "seo_url": "/Swiat/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -5835,7 +5686,7 @@
     "published_iso": "2026-11-13T02:09:05+01:00",
     "display_date": "13.11.2026, 02:09",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
@@ -5860,13 +5711,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Wielka Brytania jest pierwszym państwem na świecie, które objęło sankcjami wszystkie 10 największych koncernów naftowych Rosji. Londyn ogłosił dziś nowy pakiet ograniczeń w odpowiedzi na „ciągłe barbarzyństwo Rosji”. [Źródło: Rzeczpospolita]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Ambasadorowie państw członkowskich przy UE uzgodnili objęcie sankcjami 145 podmiotów i osób związanych z rosyjskim systemem finansowym, tzw. flotą cieni oraz kampaniami dezinformacyjnymi. [Źródło: Energetyka24]"
+          "Wielka Brytania jest pierwszym państwem na świecie, które objęło sankcjami wszystkie 10 największych koncernów naftowych Rosji. Londyn ogłosił dziś nowy pakiet ograniczeń w odpowiedzi na „ciągłe barbarzyństwo Rosji”. [Źródło: Rzeczpospolita, Energetyka24]"
         ]
       }
     ],
@@ -5894,7 +5739,7 @@
     "keywords": "Swiat, Londyn, uderza, Rosję, nowymi, sankcjami"
   },
   {
-    "id": 83,
+    "id": 80,
     "path": "/Swiat",
     "seo_url": "/Swiat/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -5902,12 +5747,12 @@
     "published_iso": "2026-11-13T02:09:05+01:00",
     "display_date": "13.11.2026, 02:09",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
+    "fact_agreement_pct": 98,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -5919,21 +5764,22 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "W środę, 11 listopada, na cmentarzu w Arlington pojawił się Pete Hegseth, składający kwiaty na Grobie Nieznanego Żołnierza. Niestety, nie wszyscy potrafili zachować należytą powagę. Musiał interweniować wartownik. [Źródło: Defence24]"
+          "W środę, 11 listopada, na cmentarzu w Arlington pojawił się Pete Hegseth, składający kwiaty na Grobie Nieznanego Żołnierza. Niestety, nie wszyscy potrafili zachować należytą powagę. Musiał interweniować wartownik. [Źródło: Defence24, RMF24]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Sekretarz obrony USA Pete Hegseth odznaczył starszego szeregowego Thomasa Iglesiasa medalem pochwalnym. [Źródło: Onet Wiadomości]"
+          "Sekretarz obrony USA Pete Hegseth odznaczył starszego szeregowego Thomasa Iglesiasa medalem pochwalnym. [Źródło: Onet Wiadomości]",
+          "Strażnik przepisowo zareagował na głośny śmiech grupy, przypominając o obowiązku zachowania ciszy i oddania szacunku. [Źródło: Polsat News]"
         ]
       }
     ],
@@ -5949,11 +5795,25 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Pete Hegseth upomniany przez żołnierza. Szeregowy otrzymał medal",
         "url": "https://wiadomosci.onet.pl/swiat/zolnierz-upomnial-petea-hegsetha-sekretarz-obrony-usa-wreczyl-mu-medal/874e89y"
+      },
+      {
+        "outlet": "RMF24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-hegseth-odznaczyl-zolnierza-ktory-udzielil-mu-reprymendy-na-,nIdn,1025914"
+      },
+      {
+        "outlet": "Polsat News",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Hegseth odznaczył żołnierza, który zrugał jego delegację. \"Dobra robota\"",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/hegseth-oznaczyl-zolnierza-ktory-upomnial-jego-delegacje-dobra-robota/"
       }
     ],
     "sources": [
       "Defence24",
-      "Onet Wiadomości"
+      "Onet Wiadomości",
+      "Polsat News",
+      "RMF24"
     ],
     "corrections": [],
     "summary_lead": "W środę, 11 listopada, na cmentarzu w Arlington pojawił się Pete Hegseth, składający kwiaty na Grobie Nieznanego Żołnierza. Niestety, nie wszyscy potrafili zachować należytą powagę. Musiał interweniować wartownik.",
@@ -5961,7 +5821,7 @@
     "keywords": "Swiat, Pete, Hegseth, upomniany, wartownika, przy, Grobie"
   },
   {
-    "id": 84,
+    "id": 81,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -6036,7 +5896,7 @@
     "keywords": "Sport, Anglia, awansowała, ćwierćfinału, Ligi, Narodów"
   },
   {
-    "id": 85,
+    "id": 82,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -6103,7 +5963,7 @@
     "keywords": "Gospodarka, Firma, doradcy, ministra, lupą, Krajewski, sprawdza"
   },
   {
-    "id": 86,
+    "id": 83,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -6170,7 +6030,7 @@
     "keywords": "Sport, Święto, Mediolanie, Włosi, lepsi, Francuzów, Lidze"
   },
   {
-    "id": 87,
+    "id": 84,
     "path": "/Polska",
     "seo_url": "/Polska/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -6245,7 +6105,7 @@
     "keywords": "Polska, Marsz, Niepodległości, przeszedł, ulicami, Warszawy"
   },
   {
-    "id": 88,
+    "id": 85,
     "path": "/Polska",
     "seo_url": "/Polska/zelenski-spotkal-sie-w-dublinie-z-przywodcami-13-panstw-w-tym-polski",
     "seo_title": "Zełenski spotkał się w Dublinie z przywódcami 13 państw, w tym Polski",
@@ -6320,7 +6180,7 @@
     "keywords": "Polska, Zełenski, spotkał, Dublinie, przywódcami, państw"
   },
   {
-    "id": 89,
+    "id": 86,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -6396,7 +6256,7 @@
     "keywords": "Sport, Drakońskie, kary, derbach, Krakowa, Komisja, Ligi"
   },
   {
-    "id": 90,
+    "id": 87,
     "path": "/Polska",
     "seo_url": "/Polska/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -6472,7 +6332,7 @@
     "keywords": "Polska, Związek, Strzelectwa, reaguje, zamach, Krakowie"
   },
   {
-    "id": 91,
+    "id": 88,
     "path": "/Swiat",
     "seo_url": "/Swiat/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -6567,7 +6427,7 @@
     "keywords": "Swiat, Globalna, awaria, Microsoftu, działają, aplikacje, usługi"
   },
   {
-    "id": 92,
+    "id": 89,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -6600,7 +6460,7 @@
       {
         "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Portal ponownie przywołuje przy tym wypowiedzi Anny Kanigowskiej, dawnej opiekunki seniora. Nie wspomina jednak, że kobieta została prawomocnie skazana za oszustwo na trzy lata pozbawienia wolności i w lipcu trafiła do aresztu śledczego. [Źródło: Niezależna.pl]"
+          "Portal ponownie przywołuje przy tym wypowiedzi Anny Kanigowskiej, dawnej opiekunki seniora. Nie wspomina jednak, że kobieta została prawomocnie skazana za oszustwo na trzy lata pozbawienia wolności i w lipcu trafiła do aresztu… [Źródło: RMF24]"
         ]
       },
       {
@@ -6650,7 +6510,7 @@
     "keywords": "Polityka, Prokuratura, chce, przesłuchać, Nawrockiego, Pismo, kancelarii"
   },
   {
-    "id": 93,
+    "id": 90,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -6734,7 +6594,7 @@
     "keywords": "Sport, Lekarz, przy, Kostiuk, zaraz, Gauff, Finals"
   },
   {
-    "id": 94,
+    "id": 91,
     "path": "/Polska",
     "seo_url": "/Polska/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -6802,7 +6662,7 @@
     "keywords": "Polska, Ukraina, zacieśnią, współpracę, Kijowie, powołano, radę"
   },
   {
-    "id": 95,
+    "id": 92,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostroleka-to-symbol-chorych-ukladow-w-panstwowych",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -6857,7 +6717,7 @@
     "keywords": "Energetyka, Elektrowni, Ostrołęka, symbol, chorych, układów, państwowych"
   },
   {
-    "id": 96,
+    "id": 93,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemysl-energochlonny-oze-szansa-na-finansowanie-inwestycji-w-zielona",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -6913,7 +6773,7 @@
     "keywords": "Energetyka, Przemysł, energochłonny, Szansa, finansowanie, inwestycji, zieloną"
   },
   {
-    "id": 97,
+    "id": 94,
     "path": "/Swiat",
     "seo_url": "/Swiat/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -6969,7 +6829,7 @@
     "keywords": "Swiat, Saudi, Aramco, zarabia, krocie, pomimo, wojny"
   },
   {
-    "id": 98,
+    "id": 95,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -7023,71 +6883,5 @@
     "summary_lead": "Zdaniem ekspertów z think tanku Forum Energii, ograniczenia w produkcji OZE wynikają m.in. z jej niedopasowania do zapotrzebowania i niedostatecznej elastyczności systemu.",
     "meta_description": "Zdaniem ekspertów z think tanku Forum Energii, ograniczenia w produkcji OZE wynikają m.in. z jej niedopasowania do zapotrzebowania i niedostatecznej…",
     "keywords": "Energetyka, miesiąc, wyprodukowano, agregacja, temu, zaradzi"
-  },
-  {
-    "id": 99,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/hegseth-odznaczyl-zolnierza-ktory-udzielil-mu-reprymendy-na-cmentarzu",
-    "seo_title": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
-    "published_iso": "2026-11-13T00:47:13+01:00",
-    "display_date": "13.11.2026, 00:47",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Swiat"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "RMF24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Pete Hegseth odznaczył szeregowego Thomasa Iglesiasa, który zrugał delegację z szefem Pentagonu wizytującą Cmentarz Narodowy w Arlington. Strażnik przepisowo zareagował na głośny śmiech grupy, przypominając o obowiązku zachowania ciszy i oddania szacunku. [Źródło: Polsat News]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Dobra robota, starszy szeregowy! – napisał Hegseth w mediach społecznościowych. [Źródło: Polsat News]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "RMF24",
-        "angle": "Relacja wiodąca",
-        "summary": "Hegseth odznaczył żołnierza, który udzielił mu reprymendy na cmentarzu",
-        "url": "https://www.rmf24.pl/fakty/swiat/news-hegseth-odznaczyl-zolnierza-ktory-udzielil-mu-reprymendy-na-,nIdn,1025914"
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Hegseth odznaczył żołnierza, który zrugał jego delegację. \"Dobra robota\"",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-12/hegseth-oznaczyl-zolnierza-ktory-upomnial-jego-delegacje-dobra-robota/"
-      }
-    ],
-    "sources": [
-      "Polsat News",
-      "RMF24"
-    ],
-    "corrections": [],
-    "summary_lead": "Pete Hegseth odznaczył szeregowego Thomasa Iglesiasa, który zrugał delegację z szefem Pentagonu wizytującą Cmentarz Narodowy w Arlington.",
-    "meta_description": "Pete Hegseth odznaczył szeregowego Thomasa Iglesiasa, który zrugał delegację z szefem Pentagonu wizytującą Cmentarz Narodowy w Arlington.",
-    "keywords": "Swiat, Hegseth, odznaczył, żołnierza, udzielił, reprymendy, cmentarzu"
   }
 ]

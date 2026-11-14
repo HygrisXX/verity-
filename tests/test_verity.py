@@ -420,7 +420,124 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
         self.assertNotIn("polska rakieta", swiat_feed.lower())
         self.assertNotIn("/Polska/", swiat_feed)
 
+    def test_short_acronyms_and_verbal_stem_equivalents(self):
+        t_faa_1 = uln.tokenize_title("Loty samolotów wstrzymane w całych USA. Pierwsze informacje")
+        t_faa_2 = uln.tokenize_title("USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz")
+        self.assertIn("usa", t_faa_1 & t_faa_2)
+        self.assertIn("wstrzym", t_faa_1 & t_faa_2)
+        self.assertIn("samolot", t_faa_1 & t_faa_2)
+        self.assertIn("lot", t_faa_1)
+        self.assertIn("faa", t_faa_2)
+
+        t_fin_1 = uln.tokenize_title("Kreml zażądał wyjścia Finlandii z NATO? Helsinki reagują na doniesienia")
+        t_fin_2 = uln.tokenize_title('Rosyjskie żądania ws. wystąpienia Finlandii z NATO. "Po prostu oburzające"')
+        self.assertTrue({"rosj", "zadan", "finland", "nato"}.issubset(t_fin_1 & t_fin_2))
+
+        t_heg_1 = uln.tokenize_title("Pete Hegseth upomniany przez żołnierza. Szeregowy otrzymał medal")
+        t_heg_2 = uln.tokenize_title("Szeregowy upomniał sekretarza wojny USA. Hegseth właśnie go odznaczył")
+        self.assertTrue({"hegseth", "upomn", "szeregow"}.issubset(t_heg_1 & t_heg_2))
+
+        res_lewica = uln.infer_category_path(
+            "/Polska",
+            "https://www.polsatnews.pl/wiadomosc/kusznieruk/",
+            'Piotr Kusznieruk wykluczony z Nowej Lewicy. Miał "rażąco naruszyć statut"',
+            "",
+        )
+        self.assertEqual(res_lewica, "/Polska/Polityka")
+
+    def test_deduplication_and_source_merging_without_false_merges(self):
+        art_faa_a = uln.build_article_from_group(
+            [
+                {
+                    "outlet": "Interia Wydarzenia",
+                    "group": "Interia",
+                    "path": "/Swiat",
+                    "title": "Loty samolotów wstrzymane w całych USA. Pierwsze informacje",
+                    "description": "Federalna Administracja Lotnictwa FAA wstrzymała starty samolotów w całych Stanach Zjednoczonych z powodu awarii systemu.",
+                    "link": "https://wydarzenia.interia.pl/zagranica/news-loty-usa,nId,1",
+                    "thumbnail": "",
+                },
+                {
+                    "outlet": "TVN24",
+                    "group": "TVN24",
+                    "path": "/Swiat",
+                    "title": "Paraliż lotniczy w USA. Loty samolotów wstrzymane",
+                    "description": "Wszystkie starty samolotów w USA zostały wstrzymane decyzją nadzoru lotniczego FAA.",
+                    "link": "https://tvn24.pl/swiat/usa-loty-1",
+                    "thumbnail": "",
+                },
+            ],
+            1,
+        )
+        orig_url = art_faa_a["seo_url"]
+
+        new_cluster_faa = [
+            {
+                "outlet": "Rzeczpospolita",
+                "group": "Gremi Media",
+                "path": "/Swiat",
+                "title": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
+                "description": "Amerykańska agencja FAA wydała nakaz wstrzymania startów samolotów na lotniskach w USA.",
+                "link": "https://www.rp.pl/swiat/art1",
+                "thumbnail": "",
+            }
+        ]
+        matched = uln.find_matching_existing_article(new_cluster_faa, [art_faa_a])
+        self.assertIsNotNone(matched)
+        merged_ok = uln.merge_cluster_into_article(matched, new_cluster_faa)
+        self.assertTrue(merged_ok)
+        self.assertEqual(matched["seo_url"], orig_url)
+        self.assertIn("Rzeczpospolita", matched["sources"])
+        self.assertEqual(len(matched["sources"]), 3)
+
+        # Dwa różne wydarzenia o tym samym polityku (np. dwie różne ustawy prezydenta) NIE mogą zostać sklejone
+        art_nawrocki_apteki = uln.build_article_from_group(
+            [
+                {
+                    "outlet": "Rzeczpospolita",
+                    "path": "/Polska/Polityka",
+                    "title": "Prezydent Karol Nawrocki podpisał ustawę o zakazie reklamy aptek",
+                    "description": "Nowelizacja prawa farmaceutycznego podwyższa kary za nielegalną reklamę aptek w Polsce.",
+                    "link": "https://rp.pl/apteki",
+                    "thumbnail": "",
+                },
+                {
+                    "outlet": "RMF24",
+                    "path": "/Polska/Polityka",
+                    "title": "Ustawa apteczna z podpisem prezydenta Nawrockiego",
+                    "description": "Karol Nawrocki podpisał nowelizację prawa farmaceutycznego dotyczącą reklamowania aptek.",
+                    "link": "https://rmf24.pl/apteki",
+                    "thumbnail": "",
+                },
+            ],
+            2,
+        )
+        art_nawrocki_dsa = uln.build_article_from_group(
+            [
+                {
+                    "outlet": "Polsat News",
+                    "path": "/Polska/Polityka",
+                    "title": "Prezydent Karol Nawrocki zawetował ustawę o blokowaniu nielegalnych treści w internecie",
+                    "description": "Weto prezydenta dotyczy wdrożenia unijnego aktu o usługach cyfrowych DSA oraz uprawnień UKE.",
+                    "link": "https://polsatnews.pl/dsa",
+                    "thumbnail": "",
+                },
+                {
+                    "outlet": "Onet Wiadomości",
+                    "path": "/Polska/Polityka",
+                    "title": "Ustawa o usługach cyfrowych zawetowana przez prezydenta Nawrockiego",
+                    "description": "Karol Nawrocki sprzeciwił się przepisom o usuwaniu treści z internetu przez urzędników.",
+                    "link": "https://onet.pl/dsa",
+                    "thumbnail": "",
+                },
+            ],
+            3,
+        )
+        deduped = uln.deduplicate_existing_articles([art_nawrocki_apteki, art_nawrocki_dsa])
+        self.assertEqual(len(deduped), 2)
+
 
 if __name__ == "__main__":
     unittest.main()
+
 

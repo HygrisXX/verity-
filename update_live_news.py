@@ -457,7 +457,7 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         r"morawieck\w*|ziobr\w*|romanowsk\w*|czarnek\w*|błaszczak\w*|blaszczak\w*|macierewicz\w*|giertych\w*|"
         r"biejat\w*|zandberg\w*|gawkowsk\w*|domańsk\w*|domansk\w*|hennig-klosk\w*|leszczyńsk\w*|leszczynsk\w*|"
         r"kierwińsk\w*|kierwinsk\w*|siemoniak\w*|nowack\w*|lubnauer\w*|szłapk\w*|szlapk\w*|nitras\w*|kropiwnick\w*|"
-        r"gibał\w*|gibal\w*|sutryk\w*|miszalsk\w*|zdanowsk\w*|krupow\w*|korwin-piotrowsk\w*|zgorzelsk\w*|ociepa\b|krajewsk\w*|"
+        r"gibał\w*|gibal\w*|sutryk\w*|miszalsk\w*|zdanowsk\w*|krupow\w*|korwin-piotrowsk\w*|zgorzelsk\w*|ociepa\b|krajewsk\w*|kusznieruk\w*|lewic\w*|"
         r"trójmiast\w*|trójmieśc\w*|trojmiast\w*|trojmiesc\w*|mrągow\w*|mragow\w*|telewizj\w*\s+republik\w*|\btv\s+republik\w*|"
         r"\bnfz\b|\bzus\b|\bkrus\b|\bgus\b|\bnbp\b|\bknf\b|\buokik\b|\bpkol\b|\bpge\b|\borlen\w*|\btauron\w*|\benea\b|"
         r"\bpko\b|\bpekao\b|\bpzu\b|\bkghm\b|\bpgnig\b|\blotos\w*|\bpkp\b|\bcpk\b|\bgddkia\b|\bpażp\b|\bpazp\b|\bkowr\b|"
@@ -555,7 +555,9 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
                 r"koalicj\w*|opozycj\w*|pos(?:eł|ła|łowie|elsk)\w*|ustaw\w*|wet[oa]\b|zawetowa\w*|ułaskawi\w*|"
                 r"ziobr\w*|tusk\w*|nawrock\w*|kaczyńsk\w*|kaczynsk\w*|czarzast\w*|hołown\w*|holown\w*|mentzen\w*|"
                 r"sikorsk\w*|kosiniak\w*|gawkowsk\w*|żurek\w*|zurek\w*|morawieck\w*|duda\b|dudy\b|dudzie\b|"
-                r"trzaskowsk\w*|biejat\w*|zandberg\w*|konfederacj\w*|lewica|prawic\w*|\bpis\b|\bpsl\b|sonda[zż]\w*|wybor(?:y|ów|ach|cze|czy)\b|"
+                r"trzaskowsk\w*|biejat\w*|zandberg\w*|kusznieruk\w*|konfederacj\w*|lewic\w*|now\w+\s+lewic\w*|trzeci\w+\s+drog\w*|polsk\w+\s+2050|partii\s+razem|rozwoj\w*\s+plus|prawic\w*|\bpis\b|\bpsl\b|"
+                r"wyklucz\w*\s+z\s+(?:partii|nowej\s+lewicy|lewicy|pis|ko|psl|konfederacji|polski\s+2050)|statut\w*\s+partii|"
+                r"sonda[zż]\w*|wybor(?:y|ów|ach|cze|czy)\b|"
                 r"referend\w*|komisj\w*\s+śledcz|immunitet\w*|orzeczeni\w*\s+tk\b|\btk\b|\bkrs\b|kancelari\w*\s+prezydent|"
                 r"decyzj\w*\s+prezydent|prezydent\w*\s+(?:polski|rp|proponuj\w*|podpis\w*|zawetow\w*|wetuj\w*|oglos\w*|powol\w*))\b"
             ),
@@ -674,25 +676,90 @@ def fetch_rss_items(max_per_feed: int = 12) -> list:
     return items
 
 
+SHORT_KEY_TOKENS = {
+    "usa", "faa", "onz", "ue", "krs", "tk", "sn", "nsa", "nik", "nbp", "rpp",
+    "gus", "pkb", "vat", "pit", "cit", "zus", "nfz", "pge", "oze", "cpk", "pkp",
+    "mon", "msz", "abw", "cba", "pis", "psl", "sld", "afd", "fbi", "cia", "who",
+    "mfw", "gpw", "wig", "ets", "dsa", "ai", "wta", "atp", "mls", "nba",
+    "lot", "gaz", "s6", "s7", "s8", "s12", "s17", "s19", "a1", "a2", "a4",
+}
+
 _PL_SUFFIXES = (
     "iejszymi", "iejszych", "iejszym", "iejszej", "iejsza", "iejsze",
     "owskiego", "owskiemu", "owskich", "owskimi", "owskim", "owskiej", "owska", "owski",
     "skiego", "skiemu", "skich", "skimi", "skim", "skiej", "ska", "ski",
     "aniami", "aniach", "aniom", "aniem", "ania", "aniu", "anie",
     "eniami", "eniach", "eniom", "eniem", "enia", "eniu", "enie",
+    "ujacych", "ujacymi", "ujacego", "ujacej", "ujacym", "ujacy", "ujaca", "ujace",
+    "owanych", "owanymi", "owanego", "owanej", "owanym", "owany", "owana", "owane",
+    "owali", "owaly", "owano", "owala", "owal",
     "iami", "iach", "iemu", "iego", "imi", "ich", "iej",
     "ami", "ach", "owi", "omu", "emu", "ego", "iom", "iem", "om", "ow",
-    "ie", "iu", "em", "a", "u", "y", "i", "e", "o",
+    "uja", "ie", "iu", "em", "a", "u", "y", "i", "e", "o",
 )
+
+STEM_EQUIVALENTS = {
+    "kreml": "rosj",
+    "rosyjsk": "rosj",
+    "rosyj": "rosj",
+    "rosjan": "rosj",
+    "ukrainsk": "ukrain",
+    "amerykansk": "usa",
+    "amerykan": "usa",
+    "ameryk": "usa",
+    "niemieck": "niemc",
+    "francusk": "francj",
+    "brytyjsk": "brytani",
+    "chinsk": "chin",
+    "finsk": "finland",
+    "finlandi": "finland",
+    "iransk": "iran",
+    "izraelsk": "izrael",
+    "kubansk": "kuba",
+    "wegiers": "wegr",
+    "wegier": "wegr",
+    "zazadal": "zadan",
+    "zazadala": "zadan",
+    "zazadano": "zadan",
+    "zazad": "zadan",
+    "zadani": "zadan",
+    "zada": "zadan",
+    "zadal": "zadan",
+    "wstrzymuj": "wstrzym",
+    "wstrzyman": "wstrzym",
+    "wstrzymal": "wstrzym",
+    "upomnian": "upomn",
+    "upomnial": "upomn",
+    "upomniel": "upomn",
+    "upomnien": "upomn",
+    "upomni": "upomn",
+    "odznaczyl": "odznacz",
+    "odznaczon": "odznacz",
+    "zadeklarow": "deklaracj",
+    "deklaruj": "deklaracj",
+    "loty": "lot",
+    "lotow": "lot",
+    "lotom": "lot",
+    "lotach": "lot",
+    "lotami": "lot",
+    "lotu": "lot",
+    "locie": "lot",
+    "lotem": "lot",
+}
 
 
 def _stem_pl(word: str) -> str:
-    if len(word) <= 4:
+    if word in STEM_EQUIVALENTS:
+        return STEM_EQUIVALENTS[word]
+    if word in SHORT_KEY_TOKENS:
         return word
-    for suf in _PL_SUFFIXES:
-        if word.endswith(suf) and (len(word) - len(suf)) >= 4:
-            return word[:-len(suf)]
-    return word
+    res = word
+    if len(word) > 4:
+        for suf in _PL_SUFFIXES:
+            if word.endswith(suf) and (len(word) - len(suf)) >= 4:
+                res = word[:-len(suf)]
+                break
+    return STEM_EQUIVALENTS.get(res, res)
 
 
 LOCAL_PATHS = set(seo_builder.VOIVODESHIP_BY_PATH.keys()) | {"/Polska/Energetyka"}
@@ -793,13 +860,15 @@ def is_local_or_niche_item(item: dict) -> bool:
 
 
 def tokenize_title(title: str) -> set:
-    words = re.findall(r"[a-z0-9]{4,}", _norm_pl(title))
+    words = re.findall(r"[a-z0-9]{2,}", _norm_pl(title))
     stems = set()
     for w in words:
         if w in STOP_WORDS_PL or w.isdigit():
             continue
+        if len(w) < 4 and w not in SHORT_KEY_TOKENS:
+            continue
         s = _stem_pl(w)
-        if s not in STOP_WORDS_PL and len(s) >= 4:
+        if s not in STOP_WORDS_PL and (len(s) >= 4 or s in SHORT_KEY_TOKENS):
             stems.add(s)
     return stems
 
@@ -1384,24 +1453,120 @@ def cluster_similar_items(items: list) -> list:
     return clusters
 
 
-def is_already_covered(group: list, existing_articles: list) -> bool:
-    candidate_title = group[0]["title"]
-    cand_titles_tokens = [tokenize_title(it["title"]) for it in group if it.get("title")]
-    cand_links = {it.get("link", "").strip() for it in group if it.get("link")}
+GENERIC_TOPIC_TOKENS = {
+    "prezydent", "premier", "minister", "minist", "rzad", "sejm", "senat",
+    "ustaw", "przepis", "nowelizacj", "projekt", "uchwal", "koalicj", "opozycj",
+    "part", "wybor", "glosow", "polityk", "polityczn", "kandydat",
+    "karol", "nawrock", "donald", "tusk", "trump", "biden", "putin", "zelensk", "wolodymyr",
+    "polsk", "rosj", "ukrain", "usa", "niemc", "francj", "chin", "europ", "europejsk",
+    "panstw", "kraj", "swiat", "miasto", "powiat", "gmin", "region", "wojewodztw",
+    "informacj", "pierwsz", "kolejn", "wazn", "piln", "oficjaln",
+    "decyzj", "spraw", "stanowisk", "komentarz", "odpowiedz", "pytan", "rozmow",
+    "spotkan", "konferencj", "apel", "protest", "akcj", "sluzb", "prokuratur",
+    "onet", "tvn24", "rmf24", "polsat", "interi", "rzeczpospolit", "dziennik", "gazet",
+}
+
+
+def _article_token_profile(art: dict) -> dict:
+    title = art.get("seo_title") or ""
+    lead_toks = tokenize_title(title)
+    persp_titles = [p.get("summary") or "" for p in (art.get("perspectives") or []) if p.get("summary")]
+    persp_toks = set().union(*(tokenize_title(pt) for pt in persp_titles), lead_toks) if persp_titles else set(lead_toks)
+    body_parts = [art.get("summary_lead") or ""]
+    for s in art.get("full_sections") or []:
+        for p in s.get("paragraphs") or []:
+            body_parts.append(_strip_all_citations(p))
+    body_toks = tokenize_title(" ".join(body_parts)) | persp_toks
+    links = {p.get("url", "").strip() for p in (art.get("perspectives") or []) if p.get("url", "").strip()}
+    slug = (art.get("seo_url", "").split("/")[-1] or "")[:60]
+    _, countries = _extract_geo_entities(title)
+    return {
+        "lead_toks": lead_toks,
+        "persp_toks": persp_toks,
+        "body_toks": body_toks,
+        "links": links,
+        "slug": slug,
+        "countries": countries,
+    }
+
+
+def _are_articles_same_event(art_a: dict, art_b: dict, prof_a: dict | None = None, prof_b: dict | None = None) -> bool:
+    pa = prof_a or _article_token_profile(art_a)
+    pb = prof_b or _article_token_profile(art_b)
+
+    if pa["links"] and pb["links"] and (pa["links"] & pb["links"]):
+        return True
+    if pa["slug"] and pb["slug"] and len(pa["slug"]) >= 12 and pa["slug"] == pb["slug"]:
+        return True
+
+    stub_a = {"title": art_a.get("seo_title", ""), "description": art_a.get("summary_lead", ""), "path": art_a.get("path", "/Polska")}
+    stub_b = {"title": art_b.get("seo_title", ""), "description": art_b.get("summary_lead", ""), "path": art_b.get("path", "/Polska")}
+    if has_cluster_conflict(stub_a, stub_b):
+        return False
+
+    diff_countries = (pa["countries"] ^ pb["countries"]) - {"usa", "rosja", "ukraina"}
+    if diff_countries:
+        return False
+
+    la, lb = pa["lead_toks"], pb["lead_toks"]
+    if not la or not lb:
+        return False
+
+    sh_l = la & lb
+    sp_l = sh_l - GENERIC_TOPIC_TOKENS
+    sh_p = pa["persp_toks"] & pb["persp_toks"]
+    sp_p = sh_p - GENERIC_TOPIC_TOKENS
+    sh_b = pa["body_toks"] & pb["body_toks"]
+    sp_b = sh_b - GENERIC_TOPIC_TOKENS
+
+    ov_l = len(sh_l) / max(1, min(len(la), len(lb)))
+    ov_b = len(sh_b) / max(1, min(len(pa["body_toks"]), len(pb["body_toks"])))
+
+    c1 = len(sh_l) >= 3 and len(sp_l) >= 2 and (ov_l >= 0.42 or len(sp_b) >= 4)
+    c2 = len(sh_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 9 and ov_b >= 0.29
+    return bool(c1 or c2)
+
+
+def find_matching_existing_article(group: list, existing_articles: list) -> dict | None:
+    if not group or not existing_articles:
+        return None
+    candidate_title = group[0].get("title") or ""
+    cand_lead_toks = tokenize_title(candidate_title)
+    cand_titles_tokens = [tokenize_title(it.get("title") or "") for it in group if it.get("title")]
+    cand_persp_toks = set().union(*cand_titles_tokens, cand_lead_toks) if cand_titles_tokens else set(cand_lead_toks)
+    cand_body_toks = tokenize_title(" ".join((it.get("title") or "") + " " + (it.get("description") or "") for it in group)) | cand_persp_toks
+    cand_links = {it.get("link", "").strip() for it in group if it.get("link", "").strip()}
     cand_slug = _make_clean_slug(candidate_title)[:60]
+    _, cand_countries = _extract_geo_entities(candidate_title)
 
     for art in existing_articles:
-        existing_links = {p.get("url", "").strip() for p in art.get("perspectives", []) if p.get("url")}
-        if cand_links and existing_links and (cand_links & existing_links):
-            return True
+        prof = _article_token_profile(art)
+        if cand_links and prof["links"] and (cand_links & prof["links"]):
+            return art
+        if cand_slug and prof["slug"] and len(cand_slug) >= 12 and cand_slug == prof["slug"]:
+            return art
 
-        e_slug = (art.get("seo_url", "").split("/")[-1] or "")[:60]
-        if cand_slug and e_slug and cand_slug == e_slug:
-            return True
-
-        ext_stub = {"title": art.get("seo_title", ""), "description": "", "path": art.get("path", "/Polska")}
+        ext_stub = {"title": art.get("seo_title", ""), "description": art.get("summary_lead", ""), "path": art.get("path", "/Polska")}
         if has_cluster_conflict(group[0], ext_stub):
             continue
+
+        diff_countries = (cand_countries ^ prof["countries"]) - {"usa", "rosja", "ukraina"}
+        if diff_countries:
+            continue
+
+        sh_l = cand_lead_toks & prof["lead_toks"]
+        sp_l = sh_l - GENERIC_TOPIC_TOKENS
+        sh_p = cand_persp_toks & prof["persp_toks"]
+        sp_p = sh_p - GENERIC_TOPIC_TOKENS
+        sh_b = cand_body_toks & prof["body_toks"]
+        sp_b = sh_b - GENERIC_TOPIC_TOKENS
+        ov_l = len(sh_l) / max(1, min(len(cand_lead_toks), len(prof["lead_toks"])))
+        ov_b = len(sh_b) / max(1, min(len(cand_body_toks), len(prof["body_toks"])))
+
+        if len(sh_l) >= 3 and len(sp_l) >= 2 and (ov_l >= 0.42 or len(sp_b) >= 4):
+            return art
+        if len(sh_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 6 and ov_b >= 0.29:
+            return art
 
         ext_titles = [art.get("seo_title", "")] + [p.get("summary", "") for p in art.get("perspectives", [])]
         for et in ext_titles:
@@ -1411,11 +1576,16 @@ def is_already_covered(group: list, existing_articles: list) -> bool:
             for c_words in cand_titles_tokens:
                 if not c_words:
                     continue
-                sh = len(c_words & e_words)
-                overlap = sh / max(1, min(len(c_words), len(e_words)))
-                if sh >= 3 or (sh >= 2 and overlap >= 0.48):
-                    return True
-    return False
+                sh = c_words & e_words
+                sp = sh - GENERIC_TOPIC_TOKENS
+                overlap = len(sh) / max(1, min(len(c_words), len(e_words)))
+                if (len(sh) >= 3 and len(sp) >= 2) or (len(sh) >= 2 and len(sp) >= 1 and overlap >= 0.48 and len(sp_b) >= 4):
+                    return art
+    return None
+
+
+def is_already_covered(group: list, existing_articles: list) -> bool:
+    return find_matching_existing_article(group, existing_articles) is not None
 
 
 def _metrics_for_article(sources: list, path: str, primary_outlet: str) -> list:
@@ -1502,6 +1672,8 @@ def _reconstruct_outlet_texts(art: dict) -> dict:
         explicit_single = ""
         if heading.startswith("Relacja źródłowa:"):
             explicit_single = heading.replace("Relacja źródłowa:", "").strip()
+        elif heading.startswith("Relacja źródłowa (") and heading.endswith(")"):
+            explicit_single = heading[len("Relacja źródłowa ("):-1].strip()
         for raw_p in s.get("paragraphs") or []:
             m = re.search(r"\[Źródło:\s*([^\]]+)\]\s*$", raw_p)
             plain_p = _strip_all_citations(raw_p)
@@ -1518,6 +1690,223 @@ def _reconstruct_outlet_texts(art: dict) -> dict:
             if len(outlets) == 1:
                 by_outlet_excl.setdefault(outlets[0], []).append(plain_p)
     return {"exclusive": by_outlet_excl, "all": by_outlet_all}
+
+
+def _extract_candidates_from_article(art: dict) -> list:
+    title = polish_typography_clean(art.get("seo_title") or "")
+    persps = list(art.get("perspectives") or [])
+    new_path = art.get("path") or "/Polska"
+    outlet_texts = _reconstruct_outlet_texts(art)
+    candidates = []
+    seen_outlets = set()
+    for idx_p, p in enumerate(persps):
+        out_name = (p.get("outlet") or "").strip()
+        p_title = polish_typography_clean(p.get("summary") or title)
+        p_url = (p.get("url") or "").strip()
+        if not out_name or out_name in seen_outlets:
+            continue
+        if idx_p > 0 and (is_opinion_or_blacklisted(p_title, p_url) or re.search(r"\bmemy\b", p_title, re.IGNORECASE)):
+            continue
+        seen_outlets.add(out_name)
+        if idx_p == 0:
+            desc_parts = outlet_texts["all"].get(out_name) or ([art.get("summary_lead")] if art.get("summary_lead") else [])
+        else:
+            desc_parts = outlet_texts["exclusive"].get(out_name) or outlet_texts["all"].get(out_name) or []
+        p_default = OUTLET_DEFAULT_PATH.get(out_name, new_path)
+        p_default = seo_builder.LEGACY_REGION_MAP.get(p_default, p_default)
+        p_path = infer_category_path(p_default, p_url, p_title, "\n".join(desc_parts)[:320])
+        candidates.append({
+            "outlet": out_name,
+            "title": p_title,
+            "description": "\n".join(desc_parts),
+            "link": p_url,
+            "path": p_path,
+            "is_orig_primary": (idx_p == 0),
+        })
+
+    for out_name in art.get("sources") or []:
+        if out_name in seen_outlets:
+            continue
+        seen_outlets.add(out_name)
+        desc_parts = outlet_texts["all"].get(out_name) or []
+        candidates.append({
+            "outlet": out_name,
+            "title": title,
+            "description": "\n".join(desc_parts),
+            "link": "",
+            "path": new_path,
+            "is_orig_primary": (len(candidates) == 0),
+        })
+    return candidates
+
+
+def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: bool = False):
+    title = polish_typography_clean(art.get("seo_title") or (candidates[0]["title"] if candidates else ""))
+    art_path = art.get("path") or "/Polska"
+    sources = sorted(list({c["outlet"] for c in candidates if c.get("outlet")}))
+    primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
+
+    if not preserve_seo_url:
+        old_seo = art.get("seo_url") or ""
+        old_cat = old_seo.rsplit("/", 1)[0] if "/" in old_seo else ""
+        old_slug = old_seo.split("/")[-1] if old_seo else ""
+        new_slug = _make_clean_slug(title)
+        if not old_seo or old_cat != art_path or len(old_slug) >= 74:
+            art["seo_url"] = f"{art_path}/{new_slug}"
+
+    ranked_for_synth = [
+        {
+            "outlet": c["outlet"],
+            "title": c["title"],
+            "description": c.get("description") or c["title"],
+            "link": c.get("link") or "",
+            "path": art_path,
+        }
+        for c in candidates
+    ]
+
+    new_secs, new_pct = synthesize_article_sections(ranked_for_synth, title)
+    art["full_sections"] = new_secs
+    art["fact_agreement_pct"] = new_pct
+    art["sources"] = sources
+    art["perspectives"] = [
+        {
+            "outlet": c["outlet"],
+            "angle": _contextual_angle(c["outlet"], c["title"], art_path, idx == 0),
+            "summary": c["title"],
+            "url": c.get("link") or "",
+        }
+        for idx, c in enumerate(candidates[:6])
+    ]
+    summary_lead, meta_desc, keywords = _build_meta_and_summary(title, new_secs, art_path, sources)
+    art["summary_lead"] = summary_lead
+    art["meta_description"] = meta_desc
+    art["keywords"] = keywords
+    art["metrics"] = _metrics_for_article(sources, art_path, primary_outlet)
+
+
+def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
+    """
+    Dopisuje nowe redakcje i perspektywy z klastra RSS do już opublikowanego artykułu
+    o tym samym wydarzeniu (z zachowaniem istniejącego seo_url).
+    """
+    if not existing_art or not group:
+        return False
+
+    candidates = _extract_candidates_from_article(existing_art)
+    by_outlet = {c["outlet"]: c for c in candidates if c.get("outlet")}
+    anchor = candidates[0] if candidates else {
+        "title": existing_art.get("seo_title") or "",
+        "description": existing_art.get("summary_lead") or "",
+        "path": existing_art.get("path") or "/Polska",
+    }
+
+    added_any = False
+    for it in group:
+        out_name = (it.get("outlet") or "").strip()
+        if not out_name:
+            continue
+        it_title = polish_typography_clean(it.get("title") or "")
+        it_link = (it.get("link") or "").strip()
+        it_desc = clean_desc_text(it.get("description") or "", article_title=it_title)
+        if is_opinion_or_blacklisted(it_title, it_link):
+            continue
+        if has_cluster_conflict(anchor, it):
+            continue
+        if out_name in by_outlet:
+            existing_c = by_outlet[out_name]
+            if not existing_c.get("link") and it_link:
+                existing_c["link"] = it_link
+                added_any = True
+            if len(it_desc) > len(existing_c.get("description") or "") + 40:
+                existing_c["description"] = it_desc
+                added_any = True
+            continue
+
+        new_cand = {
+            "outlet": out_name,
+            "title": it_title or existing_art.get("seo_title") or "",
+            "description": it_desc,
+            "link": it_link,
+            "path": it.get("path") or existing_art.get("path") or "/Polska",
+            "is_orig_primary": False,
+        }
+        candidates.append(new_cand)
+        by_outlet[out_name] = new_cand
+        added_any = True
+        if ENABLE_THUMBNAILS and not existing_art.get("thumbnail_url") and it.get("thumbnail"):
+            existing_art["thumbnail_url"] = it["thumbnail"]
+
+    if added_any:
+        _apply_candidates_to_article(existing_art, candidates, preserve_seo_url=True)
+    return added_any
+
+
+def deduplicate_existing_articles(articles: list) -> list:
+    """
+    Scala zduplikowane artykuły o tym samym wydarzeniu w bazie articles.json,
+    łącząc ich redakcje, perspektywy i sekcje faktograficzne.
+    """
+    if len(articles) <= 1:
+        return articles
+
+    profiles = [_article_token_profile(a) for a in articles]
+    merged_indices = set()
+    result = []
+
+    for i, art_a in enumerate(articles):
+        if i in merged_indices:
+            continue
+        prof_a = profiles[i]
+        for j in range(i + 1, len(articles)):
+            if j in merged_indices:
+                continue
+            art_b = articles[j]
+            prof_b = profiles[j]
+            if not _are_articles_same_event(art_a, art_b, prof_a, prof_b):
+                continue
+
+            # Scal art_b do art_a
+            cands_a = _extract_candidates_from_article(art_a)
+            cands_b = _extract_candidates_from_article(art_b)
+
+            # Jeśli tytuł art_a zawiera ogólnik „Pierwsze informacje”, a art_b ma konkretny tytuł z preferowanej redakcji, przejmij lepszy tytuł
+            title_a = art_a.get("seo_title") or ""
+            title_b = art_b.get("seo_title") or ""
+            if re.search(r"\bpierwsze\s+informacje\b", title_a, re.IGNORECASE) and not re.search(r"\bpierwsze\s+informacje\b", title_b, re.IGNORECASE):
+                art_a["seo_title"] = title_b
+                if cands_b:
+                    cands_a, cands_b = cands_b, cands_a
+
+            by_outlet = {c["outlet"]: c for c in cands_a if c.get("outlet")}
+            for cb in cands_b:
+                out_name = cb.get("outlet") or ""
+                if not out_name:
+                    continue
+                if out_name not in by_outlet:
+                    cands_a.append(cb)
+                    by_outlet[out_name] = cb
+                else:
+                    existing_c = by_outlet[out_name]
+                    if not existing_c.get("link") and cb.get("link"):
+                        existing_c["link"] = cb["link"]
+                    if len(cb.get("description") or "") > len(existing_c.get("description") or ""):
+                        existing_c["description"] = cb["description"]
+
+            if not art_a.get("thumbnail_url") and art_b.get("thumbnail_url"):
+                art_a["thumbnail_url"] = art_b["thumbnail_url"]
+            if (art_b.get("published_iso") or "") > (art_a.get("published_iso") or ""):
+                art_a["published_iso"] = art_b["published_iso"]
+                art_a["display_date"] = art_b.get("display_date") or art_a.get("display_date")
+
+            _apply_candidates_to_article(art_a, cands_a, preserve_seo_url=True)
+            prof_a = _article_token_profile(art_a)
+            profiles[i] = prof_a
+            merged_indices.add(j)
+
+        result.append(art_a)
+
+    return result
 
 
 def _upgrade_existing_article(art: dict) -> dict | None:
@@ -1554,49 +1943,13 @@ def _upgrade_existing_article(art: dict) -> dict | None:
     art["path"] = new_path
     art["seo_title"] = title
 
-    outlet_texts = _reconstruct_outlet_texts(art)
-    # Zbuduj kandydatów z perspektyw (odfiltrowując opinie/memy)
-    candidates = []
-    seen_outlets = set()
-    for idx_p, p in enumerate(persps):
-        out_name = (p.get("outlet") or "").strip()
-        p_title = polish_typography_clean(p.get("summary") or title)
-        p_url = (p.get("url") or "").strip()
-        if not out_name or out_name in seen_outlets:
-            continue
-        if idx_p > 0 and (is_opinion_or_blacklisted(p_title, p_url) or re.search(r"\bmemy\b", p_title, re.IGNORECASE)):
-            continue
-        seen_outlets.add(out_name)
-        if idx_p == 0:
-            desc_parts = outlet_texts["all"].get(out_name) or []
-        else:
-            desc_parts = outlet_texts["exclusive"].get(out_name) or outlet_texts["all"].get(out_name) or []
-        p_default = OUTLET_DEFAULT_PATH.get(out_name, new_path)
-        p_default = seo_builder.LEGACY_REGION_MAP.get(p_default, p_default)
-        p_path = infer_category_path(p_default, p_url, p_title, "\n".join(desc_parts)[:320])
-        candidates.append({
-            "outlet": out_name,
-            "title": p_title,
-            "description": "\n".join(desc_parts),
-            "link": p_url,
-            "path": p_path,
-            "is_orig_primary": (idx_p == 0),
-        })
-
-    if not candidates:
-        for out_name in art.get("sources") or []:
-            desc_parts = outlet_texts["all"].get(out_name) or []
-            candidates.append({
-                "outlet": out_name,
-                "title": title,
-                "description": "\n".join(desc_parts),
-                "link": "",
-                "path": new_path,
-                "is_orig_primary": (len(candidates) == 0),
-            })
+    candidates = _extract_candidates_from_article(art)
 
     # Wykryj i odetnij błędnie sklejone perspektywy niezgodne z tematem głównym
-    GEO_ONLY_SHARED = {"rosyjsk", "ukrainsk", "amerykansk", "niemieck", "francusk", "chinsk", "iransk", "izraelsk", "hiszpani", "niemc", "rosja", "ukrain"}
+    GEO_ONLY_SHARED = {
+        "rosj", "rosyjsk", "ukrain", "ukrainsk", "usa", "amerykansk", "niemc", "niemieck",
+        "francj", "francusk", "chin", "chinsk", "finland", "iransk", "iran", "izrael", "izraelsk", "hiszpani", "rosja",
+    }
     if len(candidates) >= 2:
         anchor = candidates[0]
         kept = [anchor]
@@ -1641,46 +1994,7 @@ def _upgrade_existing_article(art: dict) -> dict | None:
         if new_path not in LOCAL_PATHS and primary_outlet not in NICHE_OUTLETS:
             return None
 
-    # Odśwież czysty slug (szczególnie jeśli był ucięty w pół słowa lub zmieniła się ścieżka działu)
-    old_seo = art.get("seo_url") or ""
-    old_cat = old_seo.rsplit("/", 1)[0] if "/" in old_seo else ""
-    old_slug = old_seo.split("/")[-1] if old_seo else ""
-    new_slug = _make_clean_slug(title)
-    if not old_seo or old_cat != new_path or len(old_slug) >= 74:
-        art["seo_url"] = f"{new_path}/{new_slug}"
-
-    # Przebuduj treść przez ulepszony syntezator
-    ranked_for_synth = []
-    for c in candidates:
-        ranked_for_synth.append({
-            "outlet": c["outlet"],
-            "title": c["title"],
-            "description": c["description"] or c["title"],
-            "link": c["link"],
-            "path": new_path,
-        })
-
-    new_secs, new_pct = synthesize_article_sections(ranked_for_synth, title)
-    art["full_sections"] = new_secs
-    art["fact_agreement_pct"] = new_pct
-    art["sources"] = sources
-
-    art["perspectives"] = [
-        {
-            "outlet": c["outlet"],
-            "angle": _contextual_angle(c["outlet"], c["title"], new_path, idx == 0),
-            "summary": c["title"],
-            "url": c["link"],
-        }
-        for idx, c in enumerate(candidates[:6])
-    ]
-
-    summary_lead, meta_desc, keywords = _build_meta_and_summary(title, new_secs, new_path, sources)
-    art["summary_lead"] = summary_lead
-    art["meta_description"] = meta_desc
-    art["keywords"] = keywords
-
-    art["metrics"] = _metrics_for_article(sources, new_path, primary_outlet)
+    _apply_candidates_to_article(art, candidates, preserve_seo_url=False)
     return art
 
 
@@ -1700,7 +2014,7 @@ def update_news_cycle(fetch_live: bool = True):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     articles_path = os.path.join(base_dir, "articles.json")
 
-    # 1. Wczytaj i oczyść istniejące artykuły
+    # 1. Wczytaj, oczyść i zdeduplikuj istniejące artykuły
     existing_articles = []
     if os.path.exists(articles_path):
         try:
@@ -1716,11 +2030,26 @@ def update_news_cycle(fetch_live: bool = True):
         except Exception as e:
             print(f"[WARN] Błąd odczytu {articles_path}: {e}")
 
+    before_dedup = len(existing_articles)
+    existing_articles = deduplicate_existing_articles(existing_articles)
+    if len(existing_articles) < before_dedup:
+        print(f"[DEDUP] Scalono {before_dedup - len(existing_articles)} zduplikowanych artykułów o tych samych wydarzeniach.")
+
     new_articles = []
     if fetch_live:
         print("Pobieranie wiadomości z polskich kanałów RSS...")
         raw_items = fetch_rss_items()
         clusters = cluster_similar_items(raw_items) if raw_items else []
+
+        # Najpierw dopisz nowe źródła/perspektywy do już opublikowanych artykułów
+        enriched_count = 0
+        for grp in clusters:
+            matched_existing = find_matching_existing_article(grp, existing_articles)
+            if matched_existing is not None:
+                if merge_cluster_into_article(matched_existing, grp):
+                    enriched_count += 1
+        if enriched_count:
+            print(f"[MERGE] Dopisano nowe źródła do {enriched_count} istniejących artykułów.")
 
         for grp in clusters:
             if len(new_articles) >= MAX_NEW_PER_RUN:
@@ -1728,9 +2057,12 @@ def update_news_cycle(fetch_live: bool = True):
             unique_groups = {it.get("group") or it["outlet"] for it in grp}
             if len(unique_groups) < 2:
                 continue
-            if not is_already_covered(grp, existing_articles + new_articles):
-                art = build_article_from_group(grp, len(new_articles) + 1)
-                new_articles.append(art)
+            matched = find_matching_existing_article(grp, existing_articles + new_articles)
+            if matched is not None:
+                merge_cluster_into_article(matched, grp)
+                continue
+            art = build_article_from_group(grp, len(new_articles) + 1)
+            new_articles.append(art)
 
         if len(new_articles) < MAX_NEW_PER_RUN:
             for grp in clusters:
@@ -1772,11 +2104,14 @@ def update_news_cycle(fetch_live: bool = True):
                 break
             if cand_path in added_reg_paths:
                 continue
-            if not is_already_covered(grp, existing_articles + new_articles):
-                art = build_article_from_group(grp, len(new_articles) + 1)
-                new_articles.append(art)
-                added_reg += 1
-                added_reg_paths.add(cand_path)
+            matched = find_matching_existing_article(grp, existing_articles + new_articles)
+            if matched is not None:
+                merge_cluster_into_article(matched, grp)
+                continue
+            art = build_article_from_group(grp, len(new_articles) + 1)
+            new_articles.append(art)
+            added_reg += 1
+            added_reg_paths.add(cand_path)
 
         print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
 
