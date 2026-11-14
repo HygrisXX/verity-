@@ -1285,7 +1285,331 @@ class TestCycleQualityTelemetry(unittest.TestCase):
             self.assertLess(cycle_out.index("[SEO] mock"), cycle_out.index("=== PODSUMOWANIE JAKOŚCIOWE CYKLU ==="))
 
 
+class TestStage3HardeningAndAntiChaining(unittest.TestCase):
+    def test_polskapress_legacy_archive_and_betting_clickbait_filters(self):
+        self.assertTrue(
+            uln.is_opinion_or_blacklisted(
+                "Zwykły tytuł informacyjny z archiwum",
+                "https://dziennikbaltycki.pl/test/ar/c7-1234567",
+            )
+        )
+        self.assertFalse(
+            uln.is_opinion_or_blacklisted(
+                "Nowy odcinek trasy ekspresowej w regionie oddany do użytku",
+                "https://dziennikbaltycki.pl/test/ar/c2-19150907",
+            )
+        )
+        for bad_title in (
+            "Polska - Holandia: kurs 50.0 i freebet 300 zł na mecz",
+            "Bonusy bukmacherskie bez depozytu na Ligę Narodów",
+            "Jak karmić ptaki zimą? Poradnik dla każdego",
+            "Najgłupsze odpowiedzi uczniów i hity sprawdzianów",
+            "Polska wieś w II RP na archiwalnych fotografiach",
+        ):
+            with self.subTest(bad_title=bad_title):
+                self.assertTrue(uln.is_opinion_or_blacklisted(bad_title, "https://example.pl/art"))
+
+    def test_voivodeship_homonyms_and_weighted_multi_region_disambiguation(self):
+        # Homonimy słownikowe vs nazwy miast
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/1", "Lokalny przemysł chemiczny zwiększa eksport", ""),
+            "/Polska/Gospodarka",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Swiat", "https://example.pl/swiat/1b", "Chiński przemysł motoryzacyjny bije rekordy", ""),
+            "/Swiat",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/2", "Utrudnienia i objazdy na drodze w Przemyślu", ""),
+            "/Polska/Regiony/Podkarpackie",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/3", "Szpital walczy o kontrakt na oddział ratunkowy", ""),
+            "/Polska",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/4", "Remont dworca kolejowego w Wałczu", ""),
+            "/Polska/Regiony/Zachodniopomorskie",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/5", "Największy teleskop na świecie rozpoczął pracę", ""),
+            "/Polska",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/6", "Nowy most w Świeciu gotowy przed terminem", ""),
+            "/Polska/Regiony/Kujawsko-Pomorskie",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/7", "Nowe przepisy wejdą w życie od września", ""),
+            "/Polska",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/8", "Września ma nowy przystanek autobusowy", ""),
+            "/Polska/Regiony/Wielkopolskie",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/9", "Skarb zakopany w lesie odnaleziony przez leśników", ""),
+            "/Polska",
+        )
+        self.assertEqual(
+            uln.infer_category_path("/Polska", "https://example.pl/10", "Rekord turystów w Zakopanem podczas weekendu", ""),
+            "/Polska/Regiony/Malopolskie",
+        )
+        # "Od razu" nie może być mylone z rzeką Odrą
+        self.assertEqual(
+            uln.infer_category_path("/Swiat", "https://example.pl/swiat/1", "Trump od razu odpowiedział na propozycję", ""),
+            "/Swiat",
+        )
+        # İzmir (wieloznakowe İ po _norm_pl) nie może przesuwać indeksów dla _VOIVODESHIP_RAW_MAIN
+        self.assertEqual(
+            uln._infer_voivodeship_path("İzmir i współpraca z Przemyślem", "", "https://example.pl/a"),
+            "/Polska/Regiony/Podkarpackie",
+        )
+
+        # Ważona punktacja wielu województw w opisie (np. Gdańsk + Sycewice vs Wrześnica -> Pomorskie 2:1)
+        self.assertEqual(
+            uln._infer_voivodeship_path(
+                "Karambol pięciu aut na trasie ekspresowej S6",
+                "Policjanci z Gdańska i służby w Sycewicach pracują na miejscu wypadku niedaleko Wrześnicy.",
+                "https://example.pl/s6",
+            ),
+            "/Polska/Regiony/Pomorskie",
+        )
+        # Remis 1:1 dwóch województw w opisie (w tym z _VOIVODESHIP_DISAMBIG) -> brak jednoznacznego regionu ("")
+        self.assertEqual(
+            uln._infer_voivodeship_path(
+                "Wspólna kontrola transportu drogowego",
+                "Inspektorzy z Ostrowca Świętokrzyskiego oraz Wielkopolski sprawdzili ciężarówki.",
+                "https://example.pl/kontrola",
+            ),
+            "",
+        )
+
+        # Trybunał Konstytucyjny z kanału regionalnego -> /Polska/Polityka, ale sejmik województwa zostaje w regionie
+        self.assertEqual(
+            uln.infer_category_path(
+                "/Polska/Regiony/Malopolskie",
+                "https://radiokrakow.pl/aktualnosci/tk",
+                "Prezes Trybunału Konstytucyjnego zawiadamia prokuraturę",
+                "W Krakowie odbyła się konferencja prasowa.",
+            ),
+            "/Polska/Polityka",
+        )
+        self.assertEqual(
+            uln.infer_category_path(
+                "/Polska/Regiony/Wielkopolskie",
+                "https://radiopoznan.fm/sejmik",
+                "Sejmik przyjął nowy plan wsparcia dla gmin regionu",
+                "Radni głosowali w Poznaniu.",
+            ),
+            "/Polska/Regiony/Wielkopolskie",
+        )
+        # Segment /prawo/ w URL (np. Infor.pl) bez słów politycznych nie może wymuszać /Polska/Polityka
+        self.assertEqual(
+            uln.infer_category_path(
+                "/Polska",
+                "https://www.infor.pl/prawo/gmina/123,Nowe-zasady-segregacji-odpadow.html",
+                "Nowe zasady odbioru odpadów w gminach od przyszłego miesiąca",
+                "",
+            ),
+            "/Polska",
+        )
+
+    def test_sport_discipline_and_cluster_conflict_guards(self):
+        self.assertEqual(uln._sport_discipline("Dramatyczny tie-break w tenisie kobiet na turnieju WTA"), "tenis")
+        self.assertEqual(uln._sport_discipline("PlusLiga: siatkówka na najwyższym poziomie i wygrana w 5 setach"), "siatkowka")
+        self.assertEqual(uln._sport_discipline("Mecz reprezentacji w Lidze Narodów UEFA: piękna bramka"), "pilka")
+        self.assertEqual(uln._sport_discipline("Bank naliczył wyższe odsetki od kredytu mieszkaniowego"), "")
+
+        crypto = {
+            "title": "Bitcoin bije kolejny rekord cenowy na światowych giełdach",
+            "description": "Kryptowaluty i BTC zyskują po decyzjach inwestorów instytucjonalnych.",
+            "path": "/Polska/Gospodarka",
+        }
+        fx_nbp = {
+            "title": "Kursy walut NBP i decyzja RPP w sprawie stóp procentowych",
+            "description": "Złoty umacnia się wobec euro i dolara po komunikacie banku centralnego.",
+            "path": "/Polska/Gospodarka",
+        }
+        self.assertTrue(uln.has_cluster_conflict(crypto, fx_nbp))
+
+        shelter = {
+            "title": "Ruszyła wielka zbiórka darów dla potrzebujących przed zimą",
+            "description": "Schronisko dla zwierząt apeluje o karmę dla psiaków i kociaków.",
+            "path": "/Polska",
+        }
+        paczka = {
+            "title": "Ruszyła wielka zbiórka darów dla potrzebujących przed zimą",
+            "description": "Wolontariusze Szlachetnej Paczki otworzyli bazę rodzin w całym kraju.",
+            "path": "/Polska",
+        }
+        self.assertTrue(uln.has_cluster_conflict(shelter, paczka))
+
+        road_s6 = {
+            "title": "Poważny karambol pięciu samochodów rano. Duże utrudnienia",
+            "description": "Zablokowana jest droga ekspresowa S6 na odcinku nadmorskim.",
+            "path": "/Polska",
+        }
+        road_s7 = {
+            "title": "Poważny karambol pięciu samochodów rano. Duże utrudnienia",
+            "description": "Zablokowana jest droga ekspresowa S7 na odcinku południowym.",
+            "path": "/Polska",
+        }
+        self.assertTrue(uln.has_cluster_conflict(road_s6, road_s7))
+
+    def test_sentence_splitting_ranks_and_incomplete_trailing_fragment_drop(self):
+        raw = (
+            "Jak przekazała st. post. Anna Kowalska z komendy powiatowej, asp. szt. Jan Nowak oraz ks. Piotr "
+            "i mec. Wiśniewski zabezpieczyli nagrania z monitoringu miejskiego na miejscu zdarzenia. "
+            "Z kolei rzecznik prasowy komendy wojewódzkiej st"
+        )
+        sents = uln.split_sentences_pl(raw)
+        self.assertEqual(len(sents), 1)
+        self.assertIn("st. post. Anna Kowalska", sents[0])
+        self.assertIn("asp. szt. Jan Nowak", sents[0])
+        self.assertIn("ks. Piotr", sents[0])
+        self.assertIn("mec. Wiśniewski", sents[0])
+
+    def test_anti_chaining_p0_repair_and_cluster_recovery(self):
+        # 1. Opinia odrzucona w perspectives nie może wrócić przez pętlę po art["sources"]
+        art_with_opinion = {
+            "id": 901,
+            "path": "/Polska/Polityka",
+            "seo_title": "Sejm uchwalił nowelizację ustawy budżetowej na kolejny rok",
+            "summary_lead": "Posłowie przyjęli ustawę budżetową większością głosów podczas piątkowego posiedzenia.",
+            "full_sections": [
+                {
+                    "heading": "Ustalenia wspólne",
+                    "paragraphs": [
+                        "Posłowie przyjęli ustawę budżetową większością głosów podczas piątkowego posiedzenia Sejmu. [Źródło: PAP, Rzeczpospolita]"
+                    ],
+                }
+            ],
+            "perspectives": [
+                {"outlet": "PAP", "summary": "Sejm uchwalił nowelizację ustawy budżetowej na kolejny rok", "url": "https://pap.pl/budzet"},
+                {"outlet": "Rzeczpospolita", "summary": "[Felieton] Dlaczego ten budżet to błąd", "url": "https://rp.pl/opinie/budzet"},
+            ],
+            "sources": ["PAP", "Rzeczpospolita"],
+        }
+        cands = uln._extract_candidates_from_article(art_with_opinion)
+        self.assertEqual([c["outlet"] for c in cands], ["PAP"])
+
+        # 2. Naprawa niespójnego P[0] względem sekcji wiodącej S0 oraz odzyskanie odrzuconego podklastra (>=2 źródła)
+        mixed_art = {
+            "id": 902,
+            "path": "/Sport",
+            "seo_url": "/Sport/wta-finals-sabalenka-wygrywa-w-dwuch-setach",
+            "seo_title": "WTA Finals: Aryna Sabalenka wygrywa w dwóch setach w turnieju tenisowym",
+            "summary_lead": "Reprezentacja Polski w piłce nożnej zremisowała z Portugalią w Lidze Narodów UEFA po bramce w końcówce.",
+            "published_iso": "2026-11-14T05:00:00+01:00",
+            "display_date": "14.11.2026, 05:00",
+            "full_sections": [
+                {
+                    "heading": "Ustalenia wspólne",
+                    "paragraphs": [
+                        "Reprezentacja Polski w piłce nożnej zremisowała z Portugalią w Lidze Narodów UEFA po bramce w końcówce spotkania. [Źródło: Sport.pl, Polsat Sport]"
+                    ],
+                },
+                {
+                    "heading": "Dodatkowe szczegóły",
+                    "paragraphs": [
+                        "Aryna Sabalenka pokonała rywalkę w dwóch setach podczas turnieju tenisowego WTA Finals. [Źródło: Przegląd Sportowy, Interia Sport]"
+                    ],
+                },
+            ],
+            "perspectives": [
+                {"outlet": "Przegląd Sportowy", "summary": "WTA Finals: Aryna Sabalenka wygrywa w dwóch setach w turnieju tenisowym", "url": "https://ps.pl/tenis1"},
+                {"outlet": "Interia Sport", "summary": "Turniej tenisowy WTA Finals: zwycięstwo Aryny Sabalenki w dwóch setach", "url": "https://interia.pl/tenis2"},
+                {"outlet": "Sport.pl", "summary": "Liga Narodów UEFA: reprezentacja Polski w piłce nożnej zremisowała z Portugalią", "url": "https://sport.pl/pilka1"},
+                {"outlet": "Polsat Sport", "summary": "Piłka nożna, Liga Narodów UEFA: Polska zremisowała z Portugalią po bramce", "url": "https://polsatsport.pl/pilka2"},
+            ],
+            "sources": ["Interia Sport", "Polsat Sport", "Przegląd Sportowy", "Sport.pl"],
+        }
+        rejected_out = []
+        upgraded = uln._upgrade_existing_article(mixed_art, rejected_out=rejected_out)
+        self.assertIsNotNone(upgraded)
+        self.assertEqual(set(upgraded["sources"]), {"Polsat Sport", "Sport.pl"})
+        self.assertIn("Liga Narodów UEFA", upgraded["seo_title"])
+        self.assertEqual({r["outlet"] for r in rejected_out}, {"Przegląd Sportowy", "Interia Sport"})
+
+        for r in rejected_out:
+            r["group"] = r["outlet"]
+            r["description"] = r.get("excl_description") or r.get("description") or r["title"]
+        rec_clusters = uln.cluster_similar_items(rejected_out)
+        self.assertEqual(len(rec_clusters), 1)
+        self.assertEqual(len(rec_clusters[0]), 2)
+
+    def test_urlopen_with_retry_handles_429_and_closes_error_stream(self):
+        import urllib.error
+        from unittest import mock
+
+        closed = []
+
+        def make_http_err(code):
+            err = urllib.error.HTTPError("https://example.pl/rss", code, "Too Many Requests", {}, None)
+            err.close = lambda: closed.append(code)
+            return err
+
+        with mock.patch("urllib.request.urlopen", side_effect=[make_http_err(429), make_http_err(503), "OK_RESP"]) as m_open, \
+             mock.patch("time.sleep"):
+            res = uln._urlopen_with_retry("https://example.pl/rss", timeout=5)
+            self.assertEqual(res, "OK_RESP")
+            self.assertEqual(m_open.call_count, 3)
+            self.assertEqual(closed, [429, 503])
+
+    def test_github_step_summary_markdown_and_oserror_resilience(self):
+        import contextlib
+        import io
+        import tempfile
+        from unittest import mock
+
+        sample = [
+            {"path": "/Polska/Regiony/Pomorskie", "sources": ["Radio Gdańsk", "TVP3 Gdańsk"]},
+            {"path": "/Polska/Gospodarka", "sources": ["PAP", "Bankier.pl"]},
+        ]
+        md = uln.format_cycle_summary_markdown(sample)
+        self.assertIn("## VERITY — Podsumowanie jakościowe cyklu", md)
+        self.assertIn("| `/Polska/Regiony` | 1 | 1/1 | 100.0% |", md)
+        self.assertIn("| Pomorskie | `/Polska/Regiony/Pomorskie` | 1 | 1/1 |", md)
+
+        with tempfile.NamedTemporaryFile("w+", encoding="utf-8", delete=False) as tf:
+            summary_file = tf.name
+        try:
+            out_buf = io.StringIO()
+            with mock.patch.dict(os.environ, {"GITHUB_STEP_SUMMARY": summary_file}), \
+                 contextlib.redirect_stdout(out_buf):
+                uln.print_cycle_summary(sample)
+            self.assertEqual(out_buf.getvalue().strip(), uln.format_cycle_summary(sample).strip())
+            with open(summary_file, "r", encoding="utf-8") as f:
+                written_md = f.read()
+            self.assertIn("## VERITY — Podsumowanie jakościowe cyklu", written_md)
+        finally:
+            if os.path.exists(summary_file):
+                os.remove(summary_file)
+
+        # Błąd zapisu GITHUB_STEP_SUMMARY trafia wyłącznie na stderr, a nie zmienia stdout
+        out_buf2 = io.StringIO()
+        err_buf2 = io.StringIO()
+        with mock.patch.dict(os.environ, {"GITHUB_STEP_SUMMARY": "/nonexistent_dir_verity_test/summary.md"}), \
+             contextlib.redirect_stdout(out_buf2), \
+             contextlib.redirect_stderr(err_buf2):
+            uln.print_cycle_summary(sample)
+        self.assertEqual(out_buf2.getvalue().strip(), uln.format_cycle_summary(sample).strip())
+        self.assertIn("[WARN]", err_buf2.getvalue())
+
+    def test_app_js_no_embedded_articles_and_security_accessibility_invariants(self):
+        app_js_path = os.path.join(ROOT_DIR, "app.js")
+        with open(app_js_path, "r", encoding="utf-8") as f:
+            js_code = f.read()
+        self.assertLess(len(js_code.encode("utf-8")), 95_000)
+        self.assertIn("let articles = [];", js_code)
+        self.assertIn(".replace(/'/g, '&#39;')", js_code)
+        self.assertIn("document.getElementById('regionsToggleBtn')?.focus()", js_code)
+        self.assertIn("loadedFromRemote", js_code)
+
+
 if __name__ == "__main__":
     unittest.main()
+
 
 

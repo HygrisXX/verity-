@@ -304,6 +304,21 @@ async function run() {
     assert(!drawerInfo.overflow && drawerInfo.rightOk, `Szuflada województw powoduje overflow na desktopie: ${JSON.stringify(drawerInfo)}`);
     await browser.screenshot('desktop_regions_drawer.png');
 
+    // Escape zamyka szufladę województw i przywraca fokus na przycisk #regionsToggleBtn
+    await browser.cdp('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });
+    await new Promise(r => setTimeout(r, 150));
+    const drawerEscInfo = await browser.evalJs(`({
+      isClosed: document.getElementById('regionsDrawer')?.classList.contains('hidden') || false,
+      ariaExpanded: document.getElementById('regionsToggleBtn')?.getAttribute('aria-expanded'),
+      activeId: document.activeElement?.id || '',
+    })`);
+    assert(
+      drawerEscInfo.isClosed && drawerEscInfo.ariaExpanded === 'false' && drawerEscInfo.activeId === 'regionsToggleBtn',
+      `Escape nie zamknął szuflady lub nie przywrócił fokusu na #regionsToggleBtn: ${JSON.stringify(drawerEscInfo)}`
+    );
+    await browser.evalJs(`document.getElementById('regionsToggleBtn').click()`);
+    await new Promise(r => setTimeout(r, 150));
+
     // Nawigacja z szuflady do /Polska/Regiony/ (Wszystkie regiony)
     await browser.evalJs(`document.querySelector('#regionsDrawer .regions-drawer-all').click()`);
     await new Promise(r => setTimeout(r, 300));
@@ -675,6 +690,45 @@ async function run() {
       assert(regInfo.backHref.includes(sampleRegional.path + '/') && regInfo.regTabActive, `Niepoprawny link powrotu dla regionalnego artykułu: ${JSON.stringify(regInfo)}`);
     }
     console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", regiony=16 woj., czyste Świat=${mobSwiat.badges.length}, 0 overflow) OK`);
+
+    // 9. Offline SSR (file://): zachowanie pre-renderowanej treści przy braku fetch('articles.json')
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+    const fileHomeUrl = `file://${path.join(ROOT_DIR, 'index.html')}`;
+    await browser.goto(fileHomeUrl);
+    await new Promise(r => setTimeout(r, 250));
+    const fileHome = await browser.evalJs(`({
+      cardsCount: document.querySelectorAll('#articlesFeed .story-title-link').length,
+      activePolska: Boolean(document.querySelector('.path-chip[data-path="/Polska"]')?.classList.contains('active')),
+      feedLen: (document.getElementById('articlesFeed')?.innerHTML || '').length,
+    })`);
+    assert(fileHome.cardsCount >= 10, `SSR file:// index.html powinien zachować artykuły, jest ${fileHome.cardsCount}`);
+    assert(fileHome.activePolska, 'SSR file:// index.html powinien mieć aktywny dział /Polska');
+
+    await browser.evalJs(`document.getElementById('themeBtn_dark')?.click()`);
+    await new Promise(r => setTimeout(r, 120));
+    const fileThemeAfter = await browser.evalJs(`document.documentElement.getAttribute('data-theme')`);
+    assert(fileThemeAfter === 'dark', `Przełącznik motywu nie działa na file:// (jest ${fileThemeAfter})`);
+    await browser.evalJs(`document.getElementById('themeBtn_auto')?.click()`);
+
+    // Kliknięcie aktywnego działu .path-chip[data-path="/Polska"] na file:// nie może wyczyścić pre-renderowanego feedu
+    await browser.evalJs(`document.querySelector('.path-chip[data-path="/Polska"]').click()`);
+    await new Promise(r => setTimeout(r, 300));
+    const fileAfterNav = await browser.evalJs(`({
+      href: location.href,
+      cardsCount: document.querySelectorAll('#articlesFeed .story-title-link').length,
+    })`);
+    assert(fileAfterNav.href.startsWith('file://') && fileAfterNav.cardsCount >= 10, `Kliknięcie .path-chip na file:// zepsuło SSR: ${JSON.stringify(fileAfterNav)}`);
+
+    const fileSingleUrl = `file://${path.join(ROOT_DIR, sampleSingle.seo_url.replace(/^\/+/, ''), 'index.html')}`;
+    await browser.goto(fileSingleUrl);
+    await new Promise(r => setTimeout(r, 250));
+    const fileSingle = await browser.evalJs(`({
+      h1: document.querySelector('h1.article-title')?.textContent?.trim() || '',
+      parasCount: document.querySelectorAll('.section-paragraph').length,
+    })`);
+    assert(fileSingle.h1.length >= 10, `SSR file:// artykułu nie zachował tytułu H1`);
+    assert(fileSingle.parasCount >= 1, `SSR file:// artykułu nie zachował akapitów (jest ${fileSingle.parasCount})`);
+    console.log(`[PASS] Offline file:// SSR (homeCards=${fileHome.cardsCount}, singleParas=${fileSingle.parasCount}, navCards=${fileAfterNav.cardsCount}) OK`);
 
     assert(browser.pageExceptions.length === 0, `Nieobsłużone wyjątki JS: ${browser.pageExceptions.join('; ')}`);
     assert(browser.consoleErrors.length === 0, `Błędy console.error: ${browser.consoleErrors.join('; ')}`);

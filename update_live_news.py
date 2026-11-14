@@ -266,6 +266,18 @@ OPINION_MARKERS = [
     r"\bpalce\s+lizać\b",
     r"\bciasto\s+bez\s+pieczenia\b",
     r"®",
+    r"\bfreebet\b",
+    r"\bkurs\s+\d+(?:[.,]\d+)?\b",
+    r"\bbonus(?:y|ów)?\s+bukmachersk\w*\b",
+    r"\bza\s+choćby\s+(?:jednego\s+)?gola\b",
+    r"\bjak\s+karmić\b",
+    r"\bnajgłupsze\s+odpowiedzi\b",
+    r"\bnajmniejsze\s+miasta\b",
+    r"\barchiwalne\s+zdjęcia\b",
+    r"\bhity\s+sprawdzianów\b",
+    r"\bpolska\s+wieś\s+w\s+ii\s+rp\b",
+    r"\bw\s+2009\s+roku\b",
+    r"\btak\s+mieszka\b",
 ]
 
 EDITORIAL_URL_SEGMENTS = (
@@ -274,7 +286,10 @@ EDITORIAL_URL_SEGMENTS = (
     "/porady/", "/gwiazdy/", "/plotki/", "/transmisje/",
     "/plus-minus/", "/kultura/", "/film/", "/muzyka/", "/ksiazki/", "/recenzje/", "/rozrywka/", "/styl-zycia/",
     "/kuchnia/", "/gotowanie/", "/przepisy/", "/uroda/", "/moda/",
+    "/bukmacherzy/", "/bonusy-bukmacherskie/", "/zaklady-bukmacherskie/", "/typy-bukmacherskie/",
 )
+
+_LEGACY_POLSKAPRESS_RE = re.compile(r"/ar/c\d+-[1-9]\d{4,6}(?:[/?#]|$)")
 
 
 def _unescape_all(raw: str) -> str:
@@ -403,6 +418,8 @@ def is_opinion_or_blacklisted(title: str, link: str) -> bool:
     for seg in EDITORIAL_URL_SEGMENTS:
         if seg in lower_link:
             return True
+    if _LEGACY_POLSKAPRESS_RE.search(lower_link):
+        return True
     combined = (title or "").lower()
     for pat in OPINION_MARKERS:
         if re.search(pat, combined):
@@ -472,47 +489,117 @@ _VOIVODESHIP_DISAMBIG = [
     ("/Polska/Regiony/Swietokrzyskie", _norm_pl(r"\b(?:kazimierz\w+\s+wielk\w*|ostrowiec\s+swietokrzysk\w*|ostrowc\w+\s+swietokrzysk\w*)\b")),
 ]
 
+_VOIVODESHIP_RAW_MAIN = [
+    ("/Polska/Regiony/Podkarpackie", r"(?<![A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ])(?:Przemyśl\b|[Pp]rzemyśl(?:a|owi|em|u)\b|[Pp]rzemysk(?:i|a|ie|iego|iej|im|ich|u)?\b)"),
+    ("/Polska/Regiony/Zachodniopomorskie", r"(?<![A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ])(?:Wałcz\b|[Ww]ałcz(?:a|u|em|owi)\b|[Ww]ałeck\w*\b)"),
+    ("/Polska/Regiony/Kujawsko-Pomorskie", r"(?<![A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ])(?:(?:[Ww]|[Ww]e|[Pp]od|[Dd]o|[Zz]|[Zz]e|[Kk]oło)\s+Świeci(?:u|e|a)\b|Świeciu\b|[Pp]owiat\w*\s+[Śś]wieck\w*)"),
+    ("/Polska/Regiony/Wielkopolskie", r"(?<![A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ])Wrześni[aęą]\b"),
+]
+
 _VOIVODESHIP_MAIN = [
-    ("/Polska/Regiony/Dolnoslaskie", _norm_pl(r"\b(?:dolnoslask\w*|doln\w+\s+slask\w*|wroclaw\w*|walbrzych\w*|legnic\w*|lubin\w*|glogow\w*|zgorzel\w*|olesnic\w*|olaw\w*|boleslaw\w*|dzierzoniow\w*|swidnic\w*|klodzk\w*|trzebnic\w*|jawor(?:ze|a|em)?\b|luban\w*|zlotoryj\w*|polkowic\w*|karkonosz\w*|karpacz\w*|szklarsk\w+\s+poreb\w*)\b")),
-    ("/Polska/Regiony/Kujawsko-Pomorskie", _norm_pl(r"\b(?:kujawsko-pomorsk\w*|kujaw(?:y|ach|ami)\b|bydgoszcz\w*|bydgosk\w*|torun\w*|wloclaw\w*|grudziadz\w*|inowroclaw\w*|brodnic\w*|swieci(?:e|u|a)\b|znin\w*|chelmno|chelmnie|mogiln\w*|nakielsk\w*|rypin\w*|tuchol\w*|ciechocink\w*)\b")),
+    ("/Polska/Regiony/Dolnoslaskie", _norm_pl(r"\b(?:dolnoslask\w*|doln\w+\s+slask\w*|wroclaw\w*|walbrzych\w*|legnic\w*|lubin\w*|glogow\w*|zgorzelec\b|zgorzelc\w*|zgorzeleck\w*|olesnic\w*|olaw\w*|boleslawiec\b|boleslawc\w*|boleslawieck\w*|dzierzoniow\w*|swidnic(?:a|y|e|o)\b|swidnica24\b|klodzk\w*|trzebnic\w*|jawor(?:ze|a|em)?\b|luban\w*|zlotoryj\w*|polkowic\w*|karkonosz\w*|karpacz\w*|szklarsk\w+\s+poreb\w*)\b")),
+    ("/Polska/Regiony/Kujawsko-Pomorskie", _norm_pl(r"\b(?:kujawsko-pomorsk\w*|kujaw(?:y|ach|ami)\b|bydgoszcz\w*|bydgosk\w*|torun\w*|wloclaw\w*|grudziadz\w*|inowroclaw\w*|brodnic\w*|(?:w|we|pod|do|z|ze|kolo)\s+swieci(?:u|a)\b|powiat\w*\s+swieck\w*|znin\w*|chelmno|chelmnie|mogiln\w*|nakielsk\w*|rypin\w*|tuchol\w*|ciechocink\w*)\b")),
     ("/Polska/Regiony/Lubelskie", _norm_pl(r"\b(?:lubelsk\w*|lubelszczyzn\w*|lublin\w*|zamosc\w*|zamojsk\w*|chelm(?:a|ie|em|sk\w*)?\b|bial\w+\s+podlask\w*|pulaw\w*|swidnik\w*|krasnik\w*|lukow\w*|bilgoraj\w*|lubartow\w*|hrubieszow\w*|krasnystaw\w*|leczn\w*|radzyn\w*|wlodaw\w*|parczew\w*|kazimierz\w*\s+doln\w*|naleczow\w*)\b")),
     ("/Polska/Regiony/Lubuskie", _norm_pl(r"\b(?:lubusk\w*|zielon\w+\s+gor\w*|zielonogor\w*|gorzow\w*|now\w+\s+sol\w*|nowosolsk\w*|zary|zarach|zagan\w*|swiebodzin\w*|miedzyrzecz\w*|slubic\w*|sulechow\w*|wschow\w*|kozuchow\w*|gubin\w*)\b")),
     ("/Polska/Regiony/Lodzkie", _norm_pl(r"\b(?:lodzk\w*|lodz\w*|lodzi\w*|piotrkow\w*|pabianic\w*|zgierz\w*|skierniewic\w*|belchatow\w*|zdunsk\w+\s+wol\w*|sieradz\w*|kutno|kutnie|kuten\w*|lowicz\w*|wielun\w*|opoczn\w*|leczyc\w*|poddebic\w*|pajeczn\w*|brzezin\w*|wieruszow\w*)\b")),
-    ("/Polska/Regiony/Malopolskie", _norm_pl(r"\b(?:malopolsk\w*|krakow\w*|tarnow\w*|now\w+\s+sacz\w*|sadec\w*|oswiecim\w*|chrzanow\w*|olkusz\w*|nowy\s+targ|nowotarsk\w*|zakopan\w*|tatr(?:y|ach|zansk\w*)|podhal\w*|bochni\w*|limanow\w*|myslenic\w*|gorlic\w*|brzesk(?:o|a|u|iem)|wadowic\w*|andrychow\w*|wieliczk\w*|niepolomic\w*|krynic\w*|miechow\w*|proszowic\w*)\b")),
-    ("/Polska/Regiony/Mazowieckie", _norm_pl(r"\b(?:mazowieck\w*|mazowsz\w*|warszawsk\w+\s+prag\w*|prag[aio]\s+(?:polnoc|poludnie)|pradze\s+(?:polnoc|poludnie)|mokotow\w*|zoliborz\w*|wilanow\w*|ursynow\w*|(?:na|z)\s+bielanach|bialolek\w*|targowk\w*|bemow\w*|na\s+ochocie|wawer\w*|rembertow\w*|radom(?:ia|iu|iem|sk[iaeo]\w*)?\b|plock\w*|siedlc\w*|siedlec\w*|ostrolek\w*|ostrolec\w*|ciechanow\w*|pruszkow\w*|legionow\w*|piaseczn\w*|wolomin\w*|sochaczew\w*|zyrardow\w*|mlaw\w*|plonsk\w*|wyszkow\w*|pultusk\w*|otwock\w*|garwolin\w*|grojec\w*|kozienic\w*|sierpc\w*|wegrow\w*|przysuch\w*|szydlowiec\w*|bialobrzeg\w*)\b")),
+    ("/Polska/Regiony/Malopolskie", _norm_pl(r"\b(?:malopolsk\w*|krakow\w*|tarnow\w*|now\w+\s+sacz\w*|sadec\w*|oswiecim\w*|chrzanow\w*|olkusz\w*|nowy\s+targ|nowotarsk\w*|zakopan(?:e|ego|emu|ym|em)\b|tatr(?:y|ach|zansk\w*)|podhal\w*|bochni\w*|limanow\w*|myslenic\w*|gorlic\w*|brzesk(?:o|a|u|iem)|wadowic\w*|andrychow\w*|wieliczk\w*|niepolomic\w*|krynic\w*|miechow\w*|proszowic\w*)\b")),
+    ("/Polska/Regiony/Mazowieckie", _norm_pl(r"\b(?:mazowieck\w*|mazowsz\w*|warszawsk\w+\s+prag\w*|prag[aio]\s+(?:polnoc|poludnie)|pradze\s+(?:polnoc|poludnie)|mokotow\w*|zoliborz\w*|wilanow\w*|ursynow\w*|(?:na|z)\s+bielanach|bialolek\w*|targowk\w*|bemow\w*|na\s+ochocie|(?:w|na|z|do)\s+wawrze\b|(?:z|do)\s+wawra\b|dzielnic\w*\s+wawer\b|wawersk\w*|rembertow\w*|radom(?:ia|iu|iem|sk[iaeo]\w*)?\b|plock\w*|siedlc\w*|siedlec\w*|ostrolek\w*|ostrolec\w*|ciechanow\w*|pruszkow\w*|legionow\w*|piaseczn\w*|wolomin\w*|sochaczew\w*|zyrardow\w*|mlaw\w*|plonsk\w*|wyszkow\w*|pultusk\w*|otwock\w*|garwolin\w*|grojec\w*|kozienic\w*|sierpc\w*|wegrow\w*|przysuch\w*|szydlowiec\w*|bialobrzeg\w*)\b")),
     ("/Polska/Regiony/Opolskie", _norm_pl(r"\b(?:opolsk\w*|opolszczyzn\w*|opole|opol(?:a|u|em)\b|kedzierzyn\w*|nysa\b|(?:w|z|do|pod)\s+nysie|z\s+nysy|nysk\w*|kluczbork\w*|prudnik\w*|krapkowic\w*|namyslow\w*|glubczyc\w*|glucholaz\w*|(?:w|do|pod)\s+brzegu\b|z\s+brzegu\b)\b")),
-    ("/Polska/Regiony/Podkarpackie", _norm_pl(r"\b(?:podkarpack\w*|podkarpaci\w*|rzeszow\w*|przemysl\w*|stalow\w+\s+wol\w*|mielec\w*|mielc\w*|tarnobrzeg\w*|krosno|krosna|krosnie|krosnem|krosniensk\w*|debic\w*|sanok\w*|sanoc\w*|jasl\w*|jasielsk\w*|(?:w|do|pod)\s+jaroslawiu|z\s+jaroslawia|powiat\w*\s+jaroslawsk\w*|lancut\w*|przeworsk\w*|nizansk\w*|ropczyc\w*|kolbuszow\w*|lubaczow\w*|lezajsk\w*|ustrzyk\w*|bieszczad\w*)\b")),
+    ("/Polska/Regiony/Podkarpackie", _norm_pl(r"\b(?:podkarpack\w*|podkarpaci\w*|rzeszow\w*|przemysk(?:i|a|ie|iego|iej|im|ich|u)?\b|(?:w|we|pod|do|z|ze)\s+przemysl(?:u|a|em)?\b|stalow\w+\s+wol\w*|mielec\w*|mielc\w*|tarnobrzeg\w*|krosno|krosna|krosnie|krosnem|krosniensk\w*|debic\w*|sanok\w*|sanoc\w*|jasl\w*|jasielsk\w*|(?:w|do|pod)\s+jaroslawiu|z\s+jaroslawia|powiat\w*\s+jaroslawsk\w*|lancut\w*|przeworsk\w*|nizansk\w*|ropczyc\w*|kolbuszow\w*|lubaczow\w*|lezajsk\w*|ustrzyk\w*|bieszczad\w*)\b")),
     ("/Polska/Regiony/Podlaskie", _norm_pl(r"\b(?:podlask\w*|podlasi\w*|bialystok\w*|bialymstok\w*|bialegostok\w*|suwalk\w*|lomz\w*|augustow\w*|zambrow\w*|grajew\w*|sokolsk\w*|hajnowk\w*|siemiatycz\w*|sejn\w*|moniek|monki|choroszcz\w*|suprasl\w*)\b")),
     ("/Polska/Regiony/Pomorskie", _norm_pl(r"\b(?:pomorsk\w*|trojmiast\w*|trojmiesc\w*|gdansk\w*|gdyni\w*|sopot\w*|sopoc\w*|slupsk\w*|sycewic\w*|tczew\w*|wejherow\w*|rumi[ae]\b|w\s+redzie|starogard\w*|chojnic\w*|malbork\w*|malborsk\w*|kwidzyn\w*|lebork\w*|kartuz\w*|kartusk\w*|koscierz\w*|puck\w*|wladyslawow\w*|ustk[aei]\b|ustce|kaszub\w*|sztum\w*|czluchow\w*|bytow\w*)\b")),
     ("/Polska/Regiony/Slaskie", _norm_pl(r"\b(?:slask\w*(?!\s+wroc)|gorn\w+\s+slask\w*|katowic\w*|czestochow\w*|sosnowi\w*|gliwic\w*|zabrz\w*|bytom\w*|rybnik\w*|tychy|tychach|chorzow\w*|jaworzn\w*|jastrzebi\w*|myslowic\w*|siemianowic\w*|zory|zorach|pszczyn\w*|bedzin\w*|cieszyn\w*|raciborz\w*|raciborsk\w*|lubliniec\w*|mikolow\w*|zywiec\w*|żywcz\w*|zawierci\w*|klobuck\w*|myszkow\w*|knurow\w*|wodzislaw\w*)\b")),
     ("/Polska/Regiony/Swietokrzyskie", _norm_pl(r"\b(?:swietokrzysk\w*|kielc\w*|kieleck\w*|ostrowc\w*|starachowic\w*|skarzysk\w*|sandomierz\w*|sandomiersk\w*|busko|busku|jedrzejow\w*|wloszczow\w*|opatow\w*|staszow\w*|pinczow\w*|(?:w|do|pod)\s+konskich|z\s+konskich|powiat\w*\s+koneck\w*)\b")),
     ("/Polska/Regiony/Warminsko-Mazurskie", _norm_pl(r"\b(?:warminsko-mazursk\w*|warmi[ia]\b|mazur(?:y|ach|ami|sk\w*)?\b|olsztyn\w*|elblag\w*|elblask\w*|elku\b|elka\b|elkiem\b|elk\b|mragow\w*|ilaw\w*|ostrod\w*|gizyck\w*|ketrzyn\w*|szczytno|szczytn\w*|bartoszyc\w*|dzialdow\w*|braniew\w*|oleck\w*|(?:w|do|pod)\s+piszu|z\s+pisza|powiat\w*\s+pisk\w*|goldap\w*|wegorzew\w*|morag\w*|nidzic\w*)\b")),
-    ("/Polska/Regiony/Wielkopolskie", _norm_pl(r"\b(?:wielkopolsk\w*|poznan\w*|kalisz\w*|kalisk\w*|konin\w*|koninsk\w*|(?:w|do|pod|kolo)\s+pil[ei]\b|z\s+pily\b|powiat\w*\s+pilsk\w*|leszn(?:o|a|ie|em)\b|leszczynsk\w*|gniezn\w*|gniezniensk\w*|swarzedz\w*|lubon\w*|wrzesni(?!c)\w*|jarocin\w*|krotoszyn\w*|koscian\w*|(?:w|do|pod)\s+turku\b|w\s+kole\b|powiat\w*\s+kolsk\w*|wagrow\w*|chodziez\w*|czarnkow\w*|szamotul\w*|nowy\s+tomysl|wolsztyn\w*|rawicz\w*|gostyn\w*|slupc\w*|pleszew\w*|ostrzeszow\w*|kepn\w*|obornik\w*)\b")),
-    ("/Polska/Regiony/Zachodniopomorskie", _norm_pl(r"\b(?:zachodniopomorsk\w*|pomorz\w+\s+zachodni\w*|szczecin\w*|koszalin\w*|stargard\w*|kolobrzeg\w*|kolobrzesk\w*|swinoujsci\w*|szczecinek\w*|szczecineck\w*|walcz\w*|waleck\w*|bialogard\w*|goleniow\w*|gryfic\w*|gryfin\w*|swidwin\w*|choszczn\w*|drawsk\w*|kamien\w*\s+pomorsk\w*|mysliborz\w*|pyrzyc\w*|slawno|slawiensk\w*|(?:w|do|pod)\s+policach|z\s+polic\b|powiat\w*\s+polick\w*|miedzyzdroj\w*|darlow\w*|wrzesnic\w*)\b")),
+    ("/Polska/Regiony/Wielkopolskie", _norm_pl(r"\b(?:wielkopolsk\w*|poznan\w*|kalisz\w*|kalisk\w*|konin\w*|koninsk\w*|(?:w|do|pod|kolo)\s+pil[ei]\b|z\s+pily\b|powiat\w*\s+pilsk\w*|leszn(?:o|a|ie|em)\b|leszczynsk\w*|gniezn\w*|gniezniensk\w*|swarzedz\w*|lubon\w*|wrzesinsk\w*|wrzesni\b|wrzesnie\b|(?:miasto|gmin\w*|powiat\w*|obwodnic\w*|kolo)\s+wrzesni[ae]?\b|jarocin\w*|krotoszyn\w*|koscian\w*|(?:w|do|pod)\s+turku\b|w\s+kole\b|powiat\w*\s+kolsk\w*|wagrow\w*|chodziez\w*|czarnkow\w*|szamotul\w*|nowy\s+tomysl|wolsztyn\w*|rawicz\w*|gostyn\w*|slupc\w*|pleszew\w*|ostrzeszow\w*|kepn\w*|obornik\w*)\b")),
+    ("/Polska/Regiony/Zachodniopomorskie", _norm_pl(r"\b(?:zachodniopomorsk\w*|pomorz\w+\s+zachodni\w*|szczecin\w*|koszalin\w*|stargard\w*|kolobrzeg\w*|kolobrzesk\w*|swinoujsci\w*|szczecinek\w*|szczecineck\w*|(?:w|we|pod|do|z|ze|kolo)\s+walcz(?:u|a|em)?\b|waleck\w*|bialogard\w*|goleniow\w*|gryfic\w*|gryfin\w*|swidwin\w*|choszczn\w*|drawsk\w*|kamien\w*\s+pomorsk\w*|mysliborz\w*|pyrzyc\w*|slawno|slawiensk\w*|(?:w|do|pod)\s+policach|z\s+polic\b|powiat\w*\s+polick\w*|miedzyzdroj\w*|darlow\w*|wrzesnic\w*)\b")),
 ]
 
 _NATIONAL_SCOPE_RE = re.compile(
     _norm_pl(
         r"\b(?:marsz\s+niepodleglosci|swieto\s+niepodleglosci|mswia\b|\bmsz\b|\bmon\b|\bmz\b|\bmf\b|\bmen\b|\bmap\b|"
         r"kancelari\w*\s+premiera|kancelari\w*\s+prezydenta|trybunal\w*|sad\s+najwyzszy|naczelny\s+sad|"
-        r"polski\s+zwiazek|ogolnopolsk\w*|w\s+calej\s+polsce|przelomowy\s+wyrok|"
+        r"polski\s+zwiazek|ogolnopolsk\w*|w\s+calej\s+polsce|w\s+polsce|w\s+warszawie|ulic\w*\s+warszawy|przelomowy\s+wyrok|"
         r"rakieta|ilr-33|bursztyn\s+2k|dlugie\s+weekendy|urlop)\b"
     )
 )
 
 
+def _span_overlaps(span: tuple, spans_list: list) -> bool:
+    s0, e0 = span
+    return any(s0 < e1 and s1 < e0 for s1, e1 in spans_list)
+
+
 def _infer_voivodeship_path(title: str, description: str = "", link: str = "") -> str:
     url_hint = re.sub(r"https?://[^/]+", "", (link or "").lower())
     url_hint = re.sub(r"[-_/]+", " ", url_hint)
-    for chunk in (_norm_pl(f"{title or ''} {url_hint}"), _norm_pl(description or "")):
+    for raw_c, is_desc in ((f"{title or ''} {url_hint}", False), ((description or "")[:340], True)):
+        if not (raw_c or "").strip():
+            continue
+        norm_parts = []
+        raw_to_norm_span = []
+        cur_norm_pos = 0
+        for ch in raw_c:
+            nch = _norm_pl(ch)
+            norm_parts.append(nch)
+            nlen = len(nch)
+            raw_to_norm_span.append((cur_norm_pos, cur_norm_pos + nlen))
+            cur_norm_pos += nlen
+        chunk = "".join(norm_parts)
         if not chunk.strip():
             continue
+
+        claimed_spans = []
+        disambig_hits = []
         for v_path, pat in _VOIVODESHIP_DISAMBIG:
-            if re.search(pat, chunk):
-                return v_path
+            for m in re.finditer(pat, chunk):
+                span = (m.start(), m.end())
+                if not _span_overlaps(span, claimed_spans):
+                    claimed_spans.append(span)
+                    disambig_hits.append(v_path)
+
+        if not is_desc and disambig_hits:
+            return disambig_hits[0]
+
+        seen_spans = list(claimed_spans)
+        main_hits = []
+        for v_path, pat in _VOIVODESHIP_RAW_MAIN:
+            for m in re.finditer(pat, raw_c):
+                if m.start() >= len(raw_to_norm_span) or m.end() <= m.start():
+                    continue
+                n_span = (
+                    raw_to_norm_span[m.start()][0],
+                    raw_to_norm_span[m.end() - 1][1],
+                )
+                if n_span[1] > n_span[0] and not _span_overlaps(n_span, seen_spans):
+                    seen_spans.append(n_span)
+                    main_hits.append(v_path)
+
         for v_path, pat in _VOIVODESHIP_MAIN:
-            if re.search(pat, chunk):
-                return v_path
+            for m in re.finditer(pat, chunk):
+                span = (m.start(), m.end())
+                if not _span_overlaps(span, seen_spans):
+                    seen_spans.append(span)
+                    main_hits.append(v_path)
+
+        if not is_desc:
+            if main_hits:
+                return main_hits[0]
+            continue
+
+        all_hits = disambig_hits + main_hits
+        if all_hits:
+            counts = {}
+            for vp in all_hits:
+                counts[vp] = counts.get(vp, 0) + 1
+            if len(counts) == 1:
+                return next(iter(counts))
+            if len(counts) >= 3:
+                return ""
+            ranked = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+            if ranked[0][1] > ranked[1][1]:
+                return ranked[0][0]
+            return ""
     return ""
 
 
@@ -749,7 +836,7 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
 
     # 2. Wykrywanie wyraźnego polskiego kontekstu w tytule (włącznie z województwami i miastami powiatowymi)
     pl_markers = _norm_pl(
-        r"\b(?:polsk\w*|polak\w*|polac\w*|polk[aięąo]\b|warszaw\w*|krakow\w*|kraków|wrocław\w*|wroclaw\w*|"
+        r"\b(?:polsc\w*|polsk\w*|polak\w*|polac\w*|polk[aięąo]\b|warszaw\w*|krakow\w*|kraków|wrocław\w*|wroclaw\w*|"
         r"poznan\w*|poznań\w*|gdańsk\w*|gdansk\w*|szczecin\w*|lublin\w*|katowic\w*|łódź|lodz\w*|łodzi\w*|"
         r"białystok\w*|bialystok\w*|białegostok\w*|bialegostok\w*|rzeszow\w*|rzeszów|olsztyn\w*|bydgoszcz\w*|toruń\w*|torun\w*|"
         r"kielc\w*|opol(?:e|a|u|em|sk\w*|szczyzn\w*)\b|radom\w*|częstochow\w*|czestochow\w*|sosnowi\w*|gliwic\w*|zabrze|bytom\w*|bielsk\w*|"
@@ -757,14 +844,14 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         r"tarnow\w*|tarnów|koszalin\w*|kalisz\w*|legnic\w*|grudziądz\w*|grudziadz\w*|słupsk\w*|slupsk\w*|jaworzn\w*|"
         r"jastrzębi\w*|nowy\s+sącz|nowym\s+sączu|jeleni\w+\s+gór\w*|konin\w*|piotrkow\w*|piotrków|inowrocław\w*|"
         r"lubin\w*|ostrow\w+\s+wielkopolsk\w*|ostrow\w+\s+mazowieck\w*|suwałk\w*|suwalk\w*|gniezn\w*|głogow\w*|glogow\w*|chełm\w*|chelm\w*|"
-        r"zamość|zamosc\w*|przemyśl\w*|przemysl\w*|stalow\w+\s+wol\w*|mielec\w*|tomaszow\w*|leszn\w*|zgorzelc\w*|"
-        r"świnoujści\w*|swinoujsci\w*|kołobrzeg\w*|kolobrzeg\w*|sopot\w*|gdyni\w*|podhale|zakopan\w*|tatr\w*|"
-        r"zielon\w+\s+gór\w*|zielonogór\w*|gorzow\w*|now\w+\s+sól|świdnic\w*|kłodzk\w*|trzebnic\w*|puław\w*|świdnik\w*|pabianic\w*|"
+        r"zamość|zamosc\w*|przemysk(?:i|a|ie|iego|iej|im|ich|u)?\b|(?:w|we|pod|do|z|ze)\s+przemysl(?:u|a|em)?\b|stalow\w+\s+wol\w*|mielec\w*|tomaszow\w*|leszn\w*|zgorzelc\w*|"
+        r"świnoujści\w*|swinoujsci\w*|kołobrzeg\w*|kolobrzeg\w*|sopot\w*|gdyni\w*|podhale|zakopan(?:e|ego|emu|ym|em)\b|tatr\w*|"
+        r"zielon\w+\s+gór\w*|zielonogór\w*|gorzow\w*|now\w+\s+sól|świdnic(?:a|y|e|o)\b|świdnica24\b|kłodzk\w*|trzebnic\w*|puław\w*|świdnik\w*|pabianic\w*|"
         r"bełchatow\w*|oświęcim\w*|siedlc\w*|ciechanow\w*|pruszkow\w*|kędzierzyn\w*|dębic\w*|sanok\w*|łomż\w*|augustow\w*|"
         r"wejherow\w*|chojnic\w*|malbork\w*|chorzow\w*|ostrowiec\w*|starachowic\w*|sandomierz\w*|iław\w*|ostród\w*|giżyck\w*|stargard\w*|sycewic\w*|wrześnic\w*|"
         r"bieszczad\w*|mazur\w*|śląsk\w*|slask\w*|wielkopolsk\w*|małopolsk\w*|malopolsk\w*|pomorz\w*|podlasi\w*|"
         r"podkarpaci\w*|mazowsz\w*|kujaw\w*|warmi\w*|lubuski\w*|świętokrzysk\w*|swietokrzysk\w*|dolnośląsk\w*|"
-        r"zachodniopomorsk\w*|wisł[aąęy]|wisl[aae]|odr[aąęy]|bałtyk\w*|baltyk\w*|ostrołęk\w*|"
+        r"zachodniopomorsk\w*|wisł[aąęy]|wisl[aae]|(?:rzek\w*\s+odr\w*|na\s+odrze|nad\s+odra|do\s+odry|dorzecz\w*\s+odry)|bałtyk\w*|baltyk\w*|ostrołęk\w*|"
         r"sejm\w*|senat\w*|tusk\w*|nawrock\w*|kaczyńsk\w*|kaczynsk\w*|trzaskowsk\w*|czarzast\w*|hołown\w*|holown\w*|"
         r"mentzen\w*|bosak\w*|kosiniak\w*|sikorsk\w*|bodnar\w*|żurek\w*|zurek\w*|duda\b|dudy\b|dudzie\b|dudę\b|"
         r"morawieck\w*|ziobr\w*|romanowsk\w*|czarnek\w*|błaszczak\w*|blaszczak\w*|macierewicz\w*|giertych\w*|"
@@ -778,7 +865,12 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         r"\babw\b|\bcba\b|\bsop\b|\bmon\b|\bmsz\b|\bmswia\b|\bmen\b|\bmz\b|\bmf\b|\bmap\b|"
         r"allegro\w*|inpost\w*|autopay\w*|blik\w*|złot(?:y|ych|ego|ówki|owki)\b|\bpln\b|\bzł\b|trójmorz\w*|trojmorz\w*|ilr-33|bursztyn\s+2k)\b"
     )
-    has_pl = bool(re.search(pl_markers, tl_norm))
+    title_url_voiv = _infer_voivodeship_path(title, "", link)
+    has_pl = bool(
+        re.search(pl_markers, tl_norm)
+        or re.search(r"(?<![A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ])[Pp]rzemyśl(?:a|owi|em|u)?\b", title or "")
+        or title_url_voiv
+    )
 
     # 3. Wykrywanie wyraźnego kontekstu zagranicznego / międzynarodowego / BigTech
     foreign_kw = _norm_pl(
@@ -815,10 +907,16 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
     if (has_foreign_title or has_foreign_url) and not has_pl:
         return "/Swiat"
 
-    # 4. Zachowaj ścieżki regionalne (16 województw) i koryguj po wyraźnej lokalizacji z tytułu/URL
-    title_url_voiv = _infer_voivodeship_path(title, "", link)
+    # 4. Zachowaj ścieżki regionalne (16 województw) i koryguj po wyraźnej lokalizacji z tytułu/URL lub ogólnopolskiej polityce
     if default_path in seo_builder.VOIVODESHIP_BY_PATH:
-        return title_url_voiv or default_path
+        if title_url_voiv:
+            return title_url_voiv
+        if re.search(
+            r"\b(?:trybunal\w*\s+konstytucyjn\w*|sejm(?:u|ie|owi|em|owy\w*)?|senat(?:u|owi|em|cie)?|komisj\w*\s+sledcz\w*|orzeczeni\w*\s+tk\b|wet[oa]\b|zawetowa\w*)\b",
+            tl_norm,
+        ):
+            return "/Polska/Polityka"
+        return default_path
 
     # 5. Energetyka (w kontekście polskim lub ogólnym krajowym)
     energy_url = any(seg in u for seg in ("/energetyka/", "/energia/", "/oze/", "wysokienapiecie.pl", "energetyka24.com"))
@@ -864,20 +962,20 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
     pol_strong_kw = bool(
         re.search(
             _norm_pl(
-                r"\b(?:sejm\w*|senat\w*|trybuna[lł]\w*\s+konstytucyjn|konstytucj\w*|rząd\w*|premier\w*|wiceminist\w*|minist(?:er|ra|erstw)\w*|"
+                r"\b(?:sejm\w*|senat\w*|trybuna[lł]\w*\s+konstytucyjn\w*|konstytucj\w*|rząd\w*|premier\w*|wiceminist\w*|minist(?:er|ra|erstw)\w*|"
                 r"koalicj\w*|opozycj\w*|pos(?:eł|ła|łowie|elsk)\w*|ustaw\w*|wet[oa]\b|zawetowa\w*|ułaskawi\w*|"
                 r"ziobr\w*|tusk\w*|nawrock\w*|kaczyńsk\w*|kaczynsk\w*|czarzast\w*|hołown\w*|holown\w*|mentzen\w*|"
                 r"sikorsk\w*|kosiniak\w*|gawkowsk\w*|żurek\w*|zurek\w*|morawieck\w*|duda\b|dudy\b|dudzie\b|"
                 r"trzaskowsk\w*|biejat\w*|zandberg\w*|kusznieruk\w*|konfederacj\w*|lewic\w*|now\w+\s+lewic\w*|trzeci\w+\s+drog\w*|polsk\w+\s+2050|partii\s+razem|rozwoj\w*\s+plus|prawic\w*|\bpis\b|\bpsl\b|"
                 r"wyklucz\w*\s+z\s+(?:partii|nowej\s+lewicy|lewicy|pis|ko|psl|konfederacji|polski\s+2050)|statut\w*\s+partii|"
                 r"sonda[zż]\w*|wybor(?:y|ów|ach|cze|czy)\b|"
-                r"referend\w*|komisj\w*\s+śledcz|immunitet\w*|orzeczeni\w*\s+tk\b|\btk\b|\bkrs\b|kancelari\w*\s+prezydent|"
-                r"decyzj\w*\s+prezydent|prezydent\w*\s+(?:polski|rp|proponuj\w*|podpis\w*|zawetow\w*|wetuj\w*|oglos\w*|powol\w*))\b"
+                r"referend\w*|komisj\w*\s+śledcz\w*|immunitet\w*|orzeczeni\w*\s+tk\b|\btk\b|\bkrs\b|kancelari\w*\s+prezydent\w*|"
+                r"decyzj\w*\s+prezydent\w*|prezydent\w*\s+(?:polski|rp|proponuj\w*|podpis\w*|zawetow\w*|wetuj\w*|oglos\w*|powol\w*))\b"
             ),
             tl_norm,
         )
     )
-    pol_url = any(seg in u for seg in ("/polityka/", "/wybory/", "/sejm/", "/rząd/", "/rzad/", "/prawo-w-polsce/", "/prawo/"))
+    pol_url = any(seg in u for seg in ("/polityka/", "/wybory/", "/sejm/", "/rząd/", "/rzad/", "/prawo-w-polsce/"))
 
     if (pol_strong_kw or pol_url) and not econ_kw:
         return "/Polska/Polityka"
@@ -893,7 +991,7 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
 
     # 7. Lokalizacja wydarzeń regionalnych ze źródeł ogólnopolskich (16 województw) bez przenoszenia spraw stricte ogólnopolskich
     if fallback_path == "/Polska" and not _NATIONAL_SCOPE_RE.search(tl_norm):
-        inferred_voiv = title_url_voiv or _infer_voivodeship_path(title, description, link)
+        inferred_voiv = title_url_voiv or _infer_voivodeship_path(title, (description or "")[:340], link)
         if inferred_voiv:
             return inferred_voiv
 
@@ -971,14 +1069,14 @@ _TVP3_SKIP_BLOCKS = {
 }
 
 
-def _urlopen_with_retry(req, timeout: int = 12, retries: int = 1):
+def _urlopen_with_retry(req, timeout: int = 12, retries: int = 2):
     last_exc = None
     for attempt in range(retries + 1):
         try:
             return urllib.request.urlopen(req, timeout=timeout)
         except urllib.error.HTTPError as e:
             last_exc = e
-            if e.code in (502, 503, 504) and attempt < retries:
+            if e.code in (429, 502, 503, 504) and attempt < retries:
                 try:
                     e.close()
                 except Exception:
@@ -1081,7 +1179,7 @@ def _fetch_tvp3_sgdata_feed(feed: dict, max_per_feed: int = 12) -> tuple:
     }
     try:
         req = urllib.request.Request(feed["url"], headers=headers)
-        with _urlopen_with_retry(req, timeout=12, retries=1) as resp:
+        with _urlopen_with_retry(req, timeout=12, retries=2) as resp:
             raw_bytes = _read_response_bytes(resp, max_bytes=950_000)
         html_text = raw_bytes.decode("utf-8", errors="ignore")
         out = _parse_tvp3_items_from_html(html_text, feed, max_per_feed=max_per_feed)
@@ -1106,7 +1204,7 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
     out = []
     try:
         req = urllib.request.Request(feed["url"], headers=headers)
-        with _urlopen_with_retry(req, timeout=12, retries=1) as resp:
+        with _urlopen_with_retry(req, timeout=12, retries=2) as resp:
             xml_raw = _read_response_bytes(resp, max_bytes=420_000)
 
         root = _parse_feed_xml(xml_raw)
@@ -1296,6 +1394,7 @@ STEM_EQUIVALENTS = {
     "wstrzymuj": "wstrzym",
     "wstrzyman": "wstrzym",
     "wstrzymal": "wstrzym",
+    "wstrzymac": "wstrzym",
     "upomnian": "upomn",
     "upomnial": "upomn",
     "upomniel": "upomn",
@@ -1313,6 +1412,31 @@ STEM_EQUIVALENTS = {
     "lotu": "lot",
     "locie": "lot",
     "lotem": "lot",
+    "przywoz": "przywiez",
+    "przywiozl": "przywiez",
+    "przywozil": "przywiez",
+    "przywozic": "przywiez",
+    "andriejewej": "andriejew",
+    "andriejewa": "andriejew",
+    "negocjacyjnym": "negocj",
+    "negocjacyjn": "negocj",
+    "negocjujac": "negocj",
+    "negocjacj": "negocj",
+    "negocjow": "negocj",
+    "negocjuj": "negocj",
+    "lesi": "lasy",
+    "lesie": "lasy",
+    "lasach": "lasy",
+    "lasu": "lasy",
+    "lasem": "lasy",
+    "zawetowal": "weto",
+    "zawetow": "weto",
+    "wet": "weto",
+    "weta": "weto",
+    "wetem": "weto",
+    "ujawnia": "ujawn",
+    "ujawnil": "ujawn",
+    "ujawni": "ujawn",
 }
 
 
@@ -1383,6 +1507,9 @@ STOP_WORDS_PL = {
     "szczegoly", "dramat", "tragedia", "incydent", "zdarzenie", "sytuacja", "procent", "tysiac", "milion", "miliard",
     "uslyszal", "uslyszala", "uslyszeli", "wczesniej", "wczesn", "liczb", "tego", "tych", "duzo", "naprawde", "naprawd", "stron",
     "zelen", "podpis", "zlec", "ministr", "stan", "stol", "przy",
+    "bylo", "byla", "byli", "byl", "jeszcze", "taki", "takiej", "takiego",
+    "czegos", "coraz", "wiekszy", "wieksza", "wieksze", "wiadomosc", "wiadomosci",
+    "moga", "miec", "ruszyl", "rusza", "ruszyla", "czekaja", "czeka",
 }
 
 CITY_STEM_MAP = {
@@ -1399,19 +1526,20 @@ CITY_STEM_MAP = {
     "kijow": "kijow", "moskw": "moskwa", "berlin": "berlin", "paryz": "paryz",
     "rzym": "rzym", "madryt": "madryt", "helsink": "helsinki", "waszyngton": "waszyngton",
     "londyn": "londyn", "bruksel": "bruksela", "dublin": "dublin", "budapeszt": "budapeszt",
-    "abu": "abuzabi", "zabi": "abuzabi", "wolograd": "wolgograd", "wolgograd": "wolgograd",
+    "wolograd": "wolgograd", "wolgograd": "wolgograd",
 }
 
 COUNTRY_STEM_MAP = {
     "ukrain": "ukraina", "rosja": "rosja", "rosyj": "rosja",
-    "niemc": "niemcy", "niemie": "niemcy", "bundeswehr": "niemcy",
-    "francj": "francja", "francu": "francja",
-    "wloch": "wlochy", "wlosk": "wlochy", "hiszpan": "hiszpania",
+    "niemc": "niemcy", "niemiec": "niemcy", "bundeswehr": "niemcy",
+    "francj": "francja", "francu": "francja", "francuz": "francja",
+    "wloch": "wlochy", "wlosk": "wlochy", "wlosz": "wlochy", "hiszpan": "hiszpania",
     "finland": "finlandia", "finsk": "finlandia", "chiny": "chiny", "chins": "chiny",
     "tajwan": "tajwan", "iran": "iran", "izrael": "izrael",
-    "stany": "usa", "stanow": "usa", "ameryk": "usa", "usa": "usa",
-    "kuba": "kuba", "kuban": "kuba", "wegr": "wegry", "wegier": "wegry",
-    "brytani": "brytania", "turcj": "turcja", "rumuni": "rumunia",
+    "ameryk": "usa", "usa": "usa",
+    "kuba": "kuba", "kuban": "kuba", "wegr": "wegry", "wegier": "wegry", "wegiers": "wegry", "orban": "wegry",
+    "brytani": "brytania", "angli": "anglia", "angiel": "anglia",
+    "chorwacj": "chorwacja", "chorwac": "chorwacja", "turcj": "turcja", "rumuni": "rumunia",
 }
 
 CITY_TO_COUNTRY = {
@@ -1443,9 +1571,14 @@ def tokenize_title(title: str) -> set:
 
 
 def _extract_geo_entities(text: str) -> tuple:
-    words = re.findall(r"[a-z]{3,}", _norm_pl(text))
+    norm_t = _norm_pl(text)
+    words = re.findall(r"[a-z]{3,}", norm_t)
     cities = set()
     countries = set()
+    if re.search(r"\babu\s+zabi\b", norm_t):
+        cities.add("abuzabi")
+    if re.search(r"\bstan(?:y|ow|ach|om|ami|em)?\s+zjednoczon\w*\b", norm_t):
+        countries.add("usa")
     for w in words:
         if w.startswith(("bialy", "bialeg", "biale", "bialej", "bialym", "biala")):
             continue
@@ -1469,16 +1602,24 @@ def _extract_age_or_count(title: str) -> set:
     return set(re.findall(r"\b(\d{1,3})\s*(?:-?lat(?:ek|ka|kowie)?|os[óo]b|osoby|zabitych|rannych|zatrzymanych)\b", title or "", flags=re.IGNORECASE))
 
 
+_UE_UEFA_FOOTBALL_RE = re.compile(
+    r"\b(?:pilk\w+\s+nozn\w*|liga\s+narodow\s+uefa|uefa|fifa|ekstraklasa|lewandowsk\w*|zielinsk\w*|oranje|hat-trick\w*|bramk\w*|selekcjoner\w*)\b"
+)
+
+
 def _sport_discipline(text: str) -> str:
     low = _norm_pl(text or "")
-    if any(k in low for k in ("tenis", "wta", "atp", "swiatek", "sabalenk", "hurkacz", "set")):
+    has_uefa = bool(_UE_UEFA_FOOTBALL_RE.search(low))
+    if any(k in low for k in ("tenis", "wta", "atp", "swiatek", "sabalenk", "hurkacz")):
         return "tenis"
-    if any(k in low for k in ("pilka nozn", "liga narodow", "liga mistrzow", "ekstraklasa", "lewandowski", "bramk", "reprezentacj")):
+    if not has_uefa and any(k in low for k in ("siatkow", "siatkarsk", "plusliga", "tauron lig", "fivb", "tie-break")):
+        return "siatkowka"
+    if not has_uefa and re.search(r"\bset(?:y|ach|em|ow|a)?\b", low):
+        return "tenis"
+    if has_uefa or any(k in low for k in ("pilka nozn", "liga narodow", "liga mistrzow", "ekstraklasa", "lewandowski", "bramk", "reprezentacj")):
         return "pilka"
     if any(k in low for k in ("pilka reczn", "szczypiorn", "superliga")):
         return "reczna"
-    if any(k in low for k in ("siatkow", "plusliga")):
-        return "siatkowka"
     if any(k in low for k in ("koszykow", "nba")):
         return "koszykowka"
     if any(k in low for k in ("skoki", "narciars")):
@@ -1492,6 +1633,10 @@ _FUEL_PRICE_RE = re.compile(
 _GAS_TARIFF_RE = re.compile(
     r"\b(?:gaz\w*\s+ziemn\w*|mwh|zamrozeni\w*\s+cen\s+gazu|taryf\w*\s+gazow\w*|pgnig)\b"
 )
+_CRYPTO_RE = re.compile(r"\b(?:bitcoin\w*|btc|kryptowalut\w*|ethereum|eth\b|altcoin\w*|blockchain\w*)\b")
+_FX_BANK_RE = re.compile(r"\b(?:kurs(?:y|ow)?\s+(?:euro|dolara|franka|funta|walut)|nbp\b|rpp\b|stopy\s+procentow\w*|zloty\s+(?:umacnia|traci)|eur/pln|usd/pln)\b")
+_PET_SHELTER_RE = re.compile(r"\b(?:psiak\w*|kociak\w*|schronisk\w*\s+dla\s+zwierz|zwierzeta\s+ze?\s+schronisk)\b")
+_PACZKA_RE = re.compile(r"\bszlachetn\w*\s+paczk\w*\b")
 
 
 def has_cluster_conflict(item_a: dict, item_b: dict) -> bool:
@@ -1523,8 +1668,11 @@ def has_cluster_conflict(item_a: dict, item_b: dict) -> bool:
         if not (city_a or city_b):
             return True
 
-    roads_a = set(re.findall(r"\b(?:[sa]\d{1,2}|dk\d{1,3})\b", _norm_pl(ta)))
-    roads_b = set(re.findall(r"\b(?:[sa]\d{1,2}|dk\d{1,3})\b", _norm_pl(tb)))
+    norm_a = _norm_pl(ta + " " + (item_a.get("description") or "")[:240])
+    norm_b = _norm_pl(tb + " " + (item_b.get("description") or "")[:240])
+
+    roads_a = set(re.findall(r"\b(?:[sa]\d{1,2}|dk\d{1,3})\b", norm_a))
+    roads_b = set(re.findall(r"\b(?:[sa]\d{1,2}|dk\d{1,3})\b", norm_b))
     if roads_a and roads_b and not (roads_a & roads_b):
         return True
 
@@ -1533,14 +1681,26 @@ def has_cluster_conflict(item_a: dict, item_b: dict) -> bool:
     if ca and cb and not (ca & cb):
         return True
 
-    norm_a = _norm_pl(ta + " " + (item_a.get("description") or "")[:220])
-    norm_b = _norm_pl(tb + " " + (item_b.get("description") or "")[:220])
     is_fuel_a = bool(_FUEL_PRICE_RE.search(norm_a))
     is_gas_a = bool(_GAS_TARIFF_RE.search(norm_a))
     is_fuel_b = bool(_FUEL_PRICE_RE.search(norm_b))
     is_gas_b = bool(_GAS_TARIFF_RE.search(norm_b))
     if (is_fuel_a and not is_gas_a and is_gas_b and not is_fuel_b) or (
         is_gas_a and not is_fuel_a and is_fuel_b and not is_gas_b
+    ):
+        return True
+
+    is_crypto_a, is_fx_a = bool(_CRYPTO_RE.search(norm_a)), bool(_FX_BANK_RE.search(norm_a))
+    is_crypto_b, is_fx_b = bool(_CRYPTO_RE.search(norm_b)), bool(_FX_BANK_RE.search(norm_b))
+    if (is_crypto_a and not is_fx_a and is_fx_b and not is_crypto_b) or (
+        is_fx_a and not is_crypto_a and is_crypto_b and not is_fx_b
+    ):
+        return True
+
+    is_pet_a, is_pacz_a = bool(_PET_SHELTER_RE.search(norm_a)), bool(_PACZKA_RE.search(norm_a))
+    is_pet_b, is_pacz_b = bool(_PET_SHELTER_RE.search(norm_b)), bool(_PACZKA_RE.search(norm_b))
+    if (is_pet_a and not is_pacz_a and is_pacz_b and not is_pet_b) or (
+        is_pacz_a and not is_pet_a and is_pet_b and not is_pacz_b
     ):
         return True
 
@@ -1629,9 +1789,16 @@ def split_sentences_pl(text: str, article_title: str = "") -> list:
     raw_lines = [ln.strip() for ln in t.split("\n") if ln.strip()]
     out = []
     for ln in raw_lines:
+        # Chroń wielowyrazowe stopnie służbowe (st. post., asp. szt., sierż. szt.) przed rozbiciem zdania
+        ln = re.sub(
+            r"\b((?:st\.\s+post|asp\.\s+szt|sierż\.\s+szt))\.\s+",
+            lambda m: m.group(1).replace(".", "<DOT>") + "<DOT> ",
+            ln,
+            flags=re.IGNORECASE,
+        )
         # Chroń skróty niekończące zdania; skróty typu r., tys., mln, mld, proc., zł chroń tylko gdy nie poprzedzają Wielkiej Litery
         protected = re.sub(
-            r"\b(m\.in|np|ok|godz|ust|art|pkt|tzw|hab|dr|prof|inż|gen|płk|kpt|św|im|ul|al|pl|woj|pow|gm|nr|tel|red|fot|pt|ws|dz\.u)\.\s+",
+            r"\b(m\.in|np|ok|godz|ust|art|pkt|tzw|hab|dr|prof|inż|gen|płk|ppłk|mjr|kpt|kpr|szer|chor|st|asp|kom|podkom|nadkom|insp|podinsp|sierż|mł|bryg|ks|mec|św|im|ul|al|pl|woj|pow|gm|nr|tel|red|fot|pt|ws|dz\.u)\.\s+",
             r"\1<DOT> ",
             ln,
             flags=re.IGNORECASE,
@@ -1652,7 +1819,7 @@ def split_sentences_pl(text: str, article_title: str = "") -> list:
         protected = re.sub(r"\b([A-ZŚĆŹŻŁÓ])\.\s+", r"\1<DOT> ", protected)
         parts = re.split(r"(?<=[.!?])\s+(?=(?:[A-ZŚĆŹŻŁÓ0-9„\"]|[—–-]\s*[A-ZŚĆŹŻŁÓ„\"])|$)", protected)
 
-        for p in parts:
+        for idx_p, p in enumerate(parts):
             s = p.replace("<DOT>", ".").strip()
             s = re.sub(r"^(?:19|20)\d{2}\s+r\.\s+(?=[A-ZĄĆĘŁŃÓŚŹŻ])", "", s)
             if not s or len(s) < 28:
@@ -1665,8 +1832,10 @@ def split_sentences_pl(text: str, article_title: str = "") -> list:
             # Odrzuć krótkie pytania retoryczne/clickbaitowe
             if s.endswith("?") and len(s) < 115 and re.match(r"^(?:jak|kiedy|gdzie|czy|co|ile|kto|dlaczego|lepiej)\b", low):
                 continue
-            # Odrzuć ewidentnie ucięte w pół słowa wielokropki
+            # Odrzuć ewidentnie ucięte w pół słowa wielokropki oraz niedomknięte fragmenty na końcu depeszy
             if s.endswith(("…", "[…]")) and len(s) < 90:
+                continue
+            if idx_p == len(parts) - 1 and out and len(s) < 90 and not s.endswith((".", "!", "?", "…", '"', "”", "»", ")")):
                 continue
             out.append(polish_typography_clean(s))
 
@@ -2023,14 +2192,20 @@ def cluster_similar_items(items: list) -> list:
             words_j = title_tokens_cache[j]
             if not words_i or not words_j:
                 continue
-            shared = len(words_i & words_j)
+            com = words_i & words_j
+            shared = len(com)
             if shared < 2:
                 continue
             if has_cluster_conflict(item, items[j]):
                 continue
+            sp = len(com - GENERIC_TOPIC_TOKENS)
             overlap = shared / max(1, min(len(words_i), len(words_j)))
             desc_shared = len((words_i | desc_i) & (words_j | desc_tokens_cache[j]))
-            if shared >= 3 or (shared >= 2 and overlap >= 0.45 and desc_shared >= 5):
+            if (
+                shared >= 3
+                or (shared >= 2 and overlap >= 0.45 and desc_shared >= 5)
+                or (shared >= 2 and sp >= 2 and overlap >= 0.60 and desc_shared >= 4)
+            ):
                 group.append(items[j])
                 group_outlets.add(items[j]["outlet"])
                 group_syndicates.add(synd_j)
@@ -2062,9 +2237,12 @@ GENERIC_TOPIC_TOKENS = {
     "decyzj", "spraw", "stanowisk", "komentarz", "odpowiedz", "pytan", "rozmow",
     "spotkan", "konferencj", "apel", "protest", "akcj", "sluzb", "prokuratur",
     "onet", "tvn24", "rmf24", "polsat", "interi", "rzeczpospolit", "dziennik", "gazet",
+    "probl", "szykuj", "czesc", "klamk", "zapadl", "zart", "duz", "mog", "proc", "wzrosl", "wzrost",
 }
 
 _ARTICLE_PROFILE_CACHE = {}
+
+_KRK_BROAD = {"krakow", "zamach", "tragedi", "rynk", "wydarz", "sobote", "sobot", "wielk"}
 
 
 def _article_token_profile(art: dict) -> dict:
@@ -2127,27 +2305,50 @@ def _are_articles_same_event(art_a: dict, art_b: dict, prof_a: dict | None = Non
     if has_cluster_conflict(stub_a, stub_b):
         return False
 
-    diff_countries = (pa["countries"] ^ pb["countries"]) - {"usa", "rosja", "ukraina"}
-    if diff_countries:
-        return False
-
     la, lb = pa["lead_toks"], pb["lead_toks"]
     if not la or not lb:
         return False
 
     sh_l = la & lb
     sp_l = sh_l - GENERIC_TOPIC_TOKENS
+    ov_l = len(sh_l) / max(1, min(len(la), len(lb)))
+
+    ca_ext = pa["countries"] - {"usa", "rosja", "ukraina"}
+    cb_ext = pb["countries"] - {"usa", "rosja", "ukraina"}
+    if ca_ext and cb_ext and not (ca_ext & cb_ext):
+        return False
+    if (ca_ext ^ cb_ext) and not (len(sp_l) >= 2 and ov_l >= 0.42):
+        return False
+
     sh_p = pa["persp_toks"] & pb["persp_toks"]
     sp_p = sh_p - GENERIC_TOPIC_TOKENS
     sh_b = pa["body_toks"] & pb["body_toks"]
     sp_b = sh_b - GENERIC_TOPIC_TOKENS
-
-    ov_l = len(sh_l) / max(1, min(len(la), len(lb)))
     ov_b = len(sh_b) / max(1, min(len(pa["body_toks"]), len(pb["body_toks"])))
 
     c1 = len(sh_l) >= 3 and len(sp_l) >= 2 and (ov_l >= 0.42 or len(sp_b) >= 4)
+    c1_b = (
+        len(sh_l) >= 3
+        and len(sp_l) >= 1
+        and ov_l >= 0.50
+        and len(sp_b) >= 3
+        and art_a.get("path") == art_b.get("path")
+    )
     c2 = len(sh_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 9 and ov_b >= 0.29
-    return bool(c1 or c2)
+
+    ca_cities, _ = _extract_geo_entities((art_a.get("seo_title") or "") + " " + (art_a.get("summary_lead") or "")[:180])
+    cb_cities, _ = _extract_geo_entities((art_b.get("seo_title") or "") + " " + (art_b.get("summary_lead") or "")[:180])
+    ca_nums = _extract_age_or_count((art_a.get("seo_title") or "") + " " + (art_a.get("summary_lead") or "")[:180])
+    cb_nums = _extract_age_or_count((art_b.get("seo_title") or "") + " " + (art_b.get("summary_lead") or "")[:180])
+    shared_cities = ca_cities & cb_cities
+    sp_b_noncity = sp_b - (ca_cities | cb_cities)
+    c3 = bool(
+        shared_cities
+        and (ca_nums & cb_nums)
+        and len(sp_b_noncity) >= 3
+        and not ("krakow" in shared_cities and len(sp_b - _KRK_BROAD) < 2)
+    )
+    return bool(c1 or c1_b or c2 or c3)
 
 
 def find_matching_existing_article(group: list, existing_articles: list) -> dict | None:
@@ -2177,16 +2378,23 @@ def find_matching_existing_article(group: list, existing_articles: list) -> dict
         if has_cluster_conflict(group[0], ext_stub):
             continue
 
-        diff_countries = (cand_countries ^ prof["countries"]) - {"usa", "rosja", "ukraina"}
-        if diff_countries:
+        if not cand_lead_toks or not prof["lead_toks"]:
             continue
 
         sh_l = cand_lead_toks & prof["lead_toks"]
         sp_l = sh_l - GENERIC_TOPIC_TOKENS
+        ov_l = len(sh_l) / max(1, min(len(cand_lead_toks), len(prof["lead_toks"])))
+
+        ca_ext = cand_countries - {"usa", "rosja", "ukraina"}
+        cb_ext = prof["countries"] - {"usa", "rosja", "ukraina"}
+        if ca_ext and cb_ext and not (ca_ext & cb_ext):
+            continue
+        if (ca_ext ^ cb_ext) and not (len(sp_l) >= 2 and ov_l >= 0.42):
+            continue
+
         sp_p = sh_p - GENERIC_TOPIC_TOKENS
         sh_b = cand_body_toks & prof["body_toks"]
         sp_b = sh_b - GENERIC_TOPIC_TOKENS
-        ov_l = len(sh_l) / max(1, min(len(cand_lead_toks), len(prof["lead_toks"])))
         ov_b = len(sh_b) / max(1, min(len(cand_body_toks), len(prof["body_toks"])))
 
         if len(sh_l) >= 3 and len(sp_l) >= 2 and (ov_l >= 0.42 or len(sp_b) >= 4):
@@ -2246,6 +2454,10 @@ def build_article_from_group(group: list, art_id: int) -> dict:
 
     clean_title = polish_typography_clean(primary["title"])
     art_path = infer_category_path(primary["path"], primary.get("link", ""), clean_title, primary.get("description", ""))
+    if art_path == "/Polska" and len(ranked_group) >= 2:
+        combined_titles = " ".join(it.get("title") or "" for it in ranked_group)
+        if infer_category_path("/Polska", "", combined_titles, "") == "/Swiat":
+            art_path = "/Swiat"
     slug = _make_clean_slug(clean_title)
     sections, fact_agreement_pct = synthesize_article_sections(ranked_group, clean_title)
     summary_lead, meta_description, keywords = _build_meta_and_summary(clean_title, sections, art_path, sources)
@@ -2328,14 +2540,16 @@ def _extract_candidates_from_article(art: dict) -> list:
         if not out_name or out_name in seen_outlets:
             continue
         if idx_p > 0 and (is_opinion_or_blacklisted(p_title, p_url) or re.search(r"\bmemy\b", p_title, re.IGNORECASE)):
+            seen_outlets.add(out_name)
             continue
         seen_outlets.add(out_name)
         excl_parts = outlet_texts["exclusive"].get(out_name) or []
+        all_parts = outlet_texts["all"].get(out_name) or []
         if idx_p == 0:
-            desc_parts = outlet_texts["all"].get(out_name) or ([art.get("summary_lead")] if art.get("summary_lead") else [])
+            desc_parts = all_parts or ([art.get("summary_lead")] if art.get("summary_lead") else [])
         else:
-            desc_parts = excl_parts or outlet_texts["all"].get(out_name) or []
-        p_default = OUTLET_DEFAULT_PATH.get(out_name, new_path)
+            desc_parts = all_parts or excl_parts
+        p_default = OUTLET_DEFAULT_PATH.get(out_name) or ("/Polska" if new_path in seo_builder.VOIVODESHIP_BY_PATH else new_path)
         p_default = seo_builder.LEGACY_REGION_MAP.get(p_default, p_default)
         p_path = infer_category_path(p_default, p_url, p_title, "\n".join(desc_parts)[:320])
         candidates.append({
@@ -2353,7 +2567,7 @@ def _extract_candidates_from_article(art: dict) -> list:
             continue
         seen_outlets.add(out_name)
         excl_parts = outlet_texts["exclusive"].get(out_name) or []
-        desc_parts = excl_parts or outlet_texts["all"].get(out_name) or []
+        desc_parts = outlet_texts["all"].get(out_name) or excl_parts or []
         candidates.append({
             "outlet": out_name,
             "title": title,
@@ -2536,86 +2750,287 @@ def deduplicate_existing_articles(articles: list) -> list:
     return result
 
 
-def _upgrade_existing_article(art: dict) -> dict | None:
+_ALIEN_RULES = [
+    (re.compile(r"\b(?:microsoft\w*|downdetector\w*|crowdstrike\w*)\b"), re.compile(r"\b(?:downdetector|7,4\s*mln|74\s*krajach|koncern\s+microsoft|produktami\s+microsoft)\b")),
+    (re.compile(r"\b(?:faa|lotnisk\w*|samolot\w*|start[oy]|lot[uyw]|kontrol\w*\s+ruchu\s+lotnicz\w*)\b"), re.compile(r"\b(?:faa|zakaz\w*\s+start|kontrol\w*\s+ruchu\s+lotnicz)\b")),
+    (re.compile(r"\b(?:trybunal\w*|swieczkowsk\w*|budynk\w*\s+tk|tk)\b"), re.compile(r"\b(?:swieczkowsk|trybunal\w*\s+konstytucyjn|blokad\w*\s+kont\s+instytucji)\b")),
+    (re.compile(r"\b(?:800\s*plus|swiadczen\w*)\b"), re.compile(r"\b(?:800\s*plus)\b")),
+    (re.compile(r"\b(?:ogork\w*|warzyw\w*|rolnic\w*|import\w*)\b"), re.compile(r"\b(?:ogork\w*\s+z\s+rosj|tysiace\s+ton\s+ogork|sprowadzono\s+ponad\s+6,8\s*tys)\b")),
+    (re.compile(r"\b(?:shenzhen|apec|trojstronn\w*|xi\s+jinping\w*)\b"), re.compile(r"\b(?:szczyt\w*\s+apec|w\s+shenzhen|redukcji\s+arsenalu\s+jadrowego)\b")),
+    (re.compile(r"\b(?:roztocz\w*|krasnik\w*|tras\w*\s+pieszo\w*)\b"), re.compile(r"\b(?:rowerowe\s+roztocze|tras\w*\s+pieszo-rowerowych)\b")),
+]
+
+
+def _clean_sentences_against_anchor(raw_text: str, anchor_norm: str, anchor_core_toks: set, rejected_cands: list) -> str:
+    if not raw_text:
+        return ""
+    sents = split_sentences_pl(raw_text)
+    if not sents:
+        return raw_text
+    rej_sets = []
+    for rc in rejected_cands:
+        rs = tokenize_title(rc["title"] + " " + (rc.get("excl_description") or "")[:240]) - GENERIC_TOPIC_TOKENS - anchor_core_toks
+        if len(rs) >= 2:
+            rej_sets.append(rs)
+    kept_s = []
+    for s in sents:
+        s_norm = _norm_pl(s)
+        alien = False
+        for art_re, sent_re in _ALIEN_RULES:
+            if sent_re.search(s_norm) and not art_re.search(anchor_norm):
+                alien = True
+                break
+        if alien:
+            continue
+        s_toks = tokenize_title(s) - GENERIC_TOPIC_TOKENS
+        if s_toks and not (s_toks & anchor_core_toks):
+            for rs in rej_sets:
+                if len(s_toks & rs) >= 2:
+                    alien = True
+                    break
+        if not alien:
+            kept_s.append(s)
+    return "\n".join(kept_s)
+
+
+def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> dict | None:
     """
     Czyści i przebudowuje istniejące artykuły w bazie:
-    - Odrzuca artykuły SEO-spam (transmisje 'gdzie oglądać', memy, quizy, horoskopy).
-    - Rozdziela błędnie sklejone klastry wielotematowe z wcześniejszych wersji (np. różne miasta/dyscypliny/daty).
+    - Odrzuca artykuły SEO-spam (transmisje 'gdzie oglądać', memy, quizy, horoskopy, archiwa Polska Press).
+    - Naprawia niespójny nagłówek P[0] względem treści sekcji wiodącej i odcina błędnie doklejone wątki (bez chainingu).
+    - Usuwa obce zdania z akapitów i zwraca odrzucone perspektywy przez `rejected_out` do ponownego zgrupowania.
     - Egzekwuje regułę min. 2 źródeł dla ogólnopolskich (1 źródło tylko dla lokalnych/niszowych bez %).
-    - Usuwa stopki WordPress, śmieci Drupala, podwójne encje HTML, urwane […] i powtórzenia między sekcjami.
-    - Dzieli wielkie ściany tekstu na spójne akapity oraz wylicza summary_lead, meta_description i keywords.
     """
     title = polish_typography_clean(art.get("seo_title") or "")
     persps = list(art.get("perspectives") or [])
     primary_url = persps[0].get("url", "") if persps else ""
     first_outlet = (persps[0].get("outlet") or "").strip() if persps else ""
 
-    if is_opinion_or_blacklisted(title, primary_url):
-        return None
-    if not title:
+    if is_opinion_or_blacklisted(title, primary_url) or not title:
         return None
 
     raw_old_path = OUTLET_DEFAULT_PATH.get(first_outlet) or art.get("path") or "/Polska"
     old_path = seo_builder.LEGACY_REGION_MAP.get(raw_old_path, raw_old_path)
 
-    first_para_plain = ""
+    s0_paras = []
+    s0_shared_outlets = set()
+    s0_p0_outs = set()
     if art.get("full_sections"):
-        paras0 = art["full_sections"][0].get("paragraphs") or []
-        if paras0:
-            first_para_plain = _strip_all_citations(paras0[0])
-    geo_context_desc = f"{art.get('summary_lead') or ''} {first_para_plain}".strip()[:380]
+        for p in art["full_sections"][0].get("paragraphs") or []:
+            m_src = re.search(r"\[Źródło:\s*([^\]]+)\]\s*$", p)
+            pl = _strip_all_citations(p)
+            if pl:
+                p_outs = {o.strip() for o in m_src.group(1).split(",") if o.strip()} if m_src else set()
+                s0_paras.append((pl, p_outs))
+                if len(s0_paras) == 1:
+                    s0_shared_outlets |= p_outs
+                    s0_p0_outs = set(p_outs)
 
+    first_para_plain = s0_paras[0][0] if s0_paras else ""
+    s0_plain_all = [x[0] for x in s0_paras]
+
+    candidates = _extract_candidates_from_article(art)
+    if len(candidates) >= 2 and s0_plain_all:
+        s0_text = " ".join(s0_plain_all)
+        s0_all_toks = tokenize_title(s0_text)
+        s0_spec = s0_all_toks - GENERIC_TOPIC_TOKENS
+        p0_tit = candidates[0]["title"]
+        p0_all_toks = tokenize_title(p0_tit)
+        p0_spec = p0_all_toks - GENERIC_TOPIC_TOKENS
+        other_titles_spec = set().union(*(tokenize_title(c["title"]) - GENERIC_TOPIC_TOKENS for c in candidates[1:]))
+        d_title = _sport_discipline(p0_tit)
+        d_s0 = _sport_discipline(s0_text)
+        p0_mismatch = (d_title and d_s0 and d_title != d_s0) or (
+            len(p0_all_toks & s0_all_toks) == 0
+            and len(p0_spec & other_titles_spec) == 0
+            and any(len((tokenize_title(c["title"]) - GENERIC_TOPIC_TOKENS) & s0_spec) >= 2 for c in candidates[1:])
+        )
+        if p0_mismatch:
+            def _s0_fit(c):
+                c_spec = tokenize_title(c["title"]) - GENERIC_TOPIC_TOKENS
+                c_disc = _sport_discipline(c["title"] + " " + c.get("link", ""))
+                disc_ok = 1 if (not d_s0 or not c_disc or c_disc == d_s0) else 0
+                pref = 1 if c["outlet"] in PREFERRED_PRIMARY_OUTLETS else 0
+                return (disc_ok, len(c_spec & s0_spec), pref)
+
+            best_c = max(candidates[1:], key=_s0_fit)
+            if _s0_fit(best_c)[1] >= 1:
+                old_p0 = candidates[0]
+                rest_c = [old_p0] + [c for c in candidates[1:] if c is not best_c]
+                best_c = dict(best_c)
+                if s0_text and (len(best_c.get("description") or "") < len(s0_text)):
+                    best_c["description"] = s0_text + "\n" + (best_c.get("description") or "")
+                candidates = [best_c] + rest_c
+                title = polish_typography_clean(best_c["title"])
+                primary_url = best_c.get("link") or ""
+                first_outlet = best_c.get("outlet") or ""
+                raw_old_path = OUTLET_DEFAULT_PATH.get(first_outlet) or art.get("path") or "/Polska"
+                old_path = seo_builder.LEGACY_REGION_MAP.get(raw_old_path, raw_old_path)
+
+    geo_context_desc = (first_para_plain or art.get("summary_lead") or "")[:340]
     new_path = infer_category_path(old_path, primary_url, title, geo_context_desc)
-    # Jeśli artykuł miał główną perspektywę z RSS Sport lub sportową — skoryguj dział
     art["path"] = new_path
     art["seo_title"] = title
 
-    candidates = _extract_candidates_from_article(art)
-
-    # Wykryj i odetnij błędnie sklejone perspektywy niezgodne z tematem głównym
-    GEO_ONLY_SHARED = {
-        "rosj", "rosyjsk", "ukrain", "ukrainsk", "usa", "amerykansk", "niemc", "niemieck",
-        "francj", "francusk", "chin", "chinsk", "finland", "iransk", "iran", "izrael", "izraelsk", "hiszpani", "rosja",
-    }
+    rejected = []
     if len(candidates) >= 2:
-        anchor = candidates[0]
+        anchor = dict(candidates[0])
+        anc_title_toks = tokenize_title(anchor["title"])
+        anc_title_spec = anc_title_toks - GENERIC_TOPIC_TOKENS
+        anc_t_norm = _norm_pl(anchor["title"])
+
+        clean_anc_sents = []
+        s0_first_toks = set()
+        if s0_paras:
+            p0_sents = split_sentences_pl(s0_paras[0][0])
+            for s in p0_sents:
+                s_norm = _norm_pl(s)
+                if any(sent_re.search(s_norm) and not art_re.search(anc_t_norm) for art_re, sent_re in _ALIEN_RULES):
+                    continue
+                clean_anc_sents.append(s)
+                s0_first_toks |= (tokenize_title(s) - GENERIC_TOPIC_TOKENS)
+            core_anc_spec = anc_title_spec | s0_first_toks
+            core_anc_all = anc_title_toks | s0_first_toks
+            for para_txt, para_outs in s0_paras[1:]:
+                has_anc_cite = anchor["outlet"] in para_outs
+                is_exclusive_anc = has_anc_cite and len(para_outs) == 1
+                para_sents_ok = []
+                para_shares_core = False
+                para_has_alien = False
+                anc_plus_so_far = anc_t_norm + " " + _norm_pl(" ".join(clean_anc_sents))
+                for s in split_sentences_pl(para_txt):
+                    s_norm = _norm_pl(s)
+                    if any(sent_re.search(s_norm) and not art_re.search(anc_plus_so_far) for art_re, sent_re in _ALIEN_RULES):
+                        para_has_alien = True
+                        continue
+                    s_toks = tokenize_title(s)
+                    s_hits_core = bool((s_toks - GENERIC_TOPIC_TOKENS) & core_anc_spec)
+                    if s_hits_core:
+                        para_shares_core = True
+                    para_sents_ok.append((s, s_hits_core, bool(s_toks & core_anc_all)))
+                co_cited_anchor = has_anc_cite and not para_has_alien and len(para_outs & s0_p0_outs) >= 3
+                for s, s_hits_core, s_hits_all in para_sents_ok:
+                    is_anc_quote = is_exclusive_anc and not para_has_alien and s.startswith(("—", "–"))
+                    if s_hits_core or (is_exclusive_anc and s_hits_all) or is_anc_quote or (has_anc_cite and para_shares_core) or co_cited_anchor:
+                        clean_anc_sents.append(s)
+
+        if not clean_anc_sents:
+            for idx_s, s in enumerate(split_sentences_pl(anchor.get("description") or "")):
+                s_norm = _norm_pl(s)
+                if any(sent_re.search(s_norm) and not art_re.search(anc_t_norm) for art_re, sent_re in _ALIEN_RULES):
+                    continue
+                if idx_s == 0 or ((tokenize_title(s) - GENERIC_TOPIC_TOKENS) & anc_title_spec):
+                    clean_anc_sents.append(s)
+
+        anc_clean_desc = "\n".join(clean_anc_sents) if clean_anc_sents else (art.get("summary_lead") or "")
+        anchor["description"] = anc_clean_desc
+        a_title_toks = tokenize_title(anchor["title"])
+        a_all_toks = tokenize_title(anchor["title"] + " " + anc_clean_desc)
+        a_spec_all = a_all_toks - GENERIC_TOPIC_TOKENS
+        a_cities_lead, _ = _extract_geo_entities(anchor["title"] + " " + anc_clean_desc[:220])
+        a_def = OUTLET_DEFAULT_PATH.get(anchor["outlet"]) or ("/Polska" if new_path in seo_builder.VOIVODESHIP_BY_PATH else new_path)
+        a_def = seo_builder.LEGACY_REGION_MAP.get(a_def, a_def)
+        anchor["path"] = infer_category_path(a_def, anchor.get("link") or "", anchor["title"], anc_clean_desc[:320])
+
         kept = [anchor]
+        GEO_ONLY_SHARED = {
+            "rosj", "rosyjsk", "ukrain", "ukrainsk", "usa", "amerykansk", "niemc", "niemieck",
+            "francj", "francusk", "chin", "chinsk", "finland", "iransk", "iran", "izrael", "izraelsk", "hiszpani", "rosja",
+        }
         for cand in candidates[1:]:
-            if has_cluster_conflict(anchor, cand):
-                continue
-            c_title_toks = tokenize_title(cand["title"])
+            cand = dict(cand)
+            c_def = OUTLET_DEFAULT_PATH.get(cand["outlet"]) or ("/Polska" if new_path in seo_builder.VOIVODESHIP_BY_PATH else new_path)
+            c_def = seo_builder.LEGACY_REGION_MAP.get(c_def, c_def)
             c_excl_desc = cand.get("excl_description") or ""
+            cand["path"] = infer_category_path(c_def, cand.get("link") or "", cand["title"], c_excl_desc[:320])
+
+            c_title_toks = tokenize_title(cand["title"])
             c_all_toks = tokenize_title(cand["title"] + " " + c_excl_desc)
+            c_spec_all = c_all_toks - GENERIC_TOPIC_TOKENS
             c_cities_lead, _ = _extract_geo_entities(cand["title"] + " " + c_excl_desc[:220])
-            compatible = False
-            for idx_k, k in enumerate(kept):
-                if has_cluster_conflict(k, cand):
-                    compatible = False
-                    break
-                k_title_toks = tokenize_title(k["title"])
-                k_desc_use = k["description"] if idx_k == 0 else (k.get("excl_description") or "")
-                k_all_toks = tokenize_title(k["title"] + " " + k_desc_use)
-                k_cities_lead, _ = _extract_geo_entities(k["title"] + " " + k_desc_use[:220])
-                common_t = c_title_toks & k_title_toks
-                non_geo_common_t = common_t - GEO_ONLY_SHARED
-                sh_t = len(common_t)
-                ov_t = sh_t / max(1, min(len(c_title_toks), len(k_title_toks)))
-                sh_all = len(c_all_toks & k_all_toks)
-                if sh_t < 3 and c_cities_lead and k_cities_lead and not (c_cities_lead & k_cities_lead):
+
+            common_t = c_title_toks & a_title_toks
+            non_geo_common_t = common_t - GEO_ONLY_SHARED
+            sh_t = len(common_t)
+            ov_t = sh_t / max(1, min(len(c_title_toks), len(a_title_toks)))
+            sh_all = len(c_all_toks & a_all_toks)
+            sp_all = len(c_spec_all & a_spec_all)
+            ct_in_aa = c_title_toks & a_all_toks
+            ct_spec_in_aa = (c_title_toks - GENERIC_TOPIC_TOKENS) & a_spec_all
+
+            if has_cluster_conflict(anchor, cand):
+                strong_same_title = (
+                    sh_t >= 4
+                    and len(common_t - GENERIC_TOPIC_TOKENS) >= 4
+                    and c_excl_desc == ""
+                    and anchor["path"] in seo_builder.VOIVODESHIP_BY_PATH
+                    and cand["path"] == "/Swiat"
+                )
+                if not strong_same_title:
+                    rejected.append(cand)
                     continue
-                if len(non_geo_common_t) == 0 and sh_t <= 2 and sh_all < 5:
-                    continue
-                if sh_t >= 3 or (sh_t >= 2 and ov_t >= 0.30) or (sh_t >= 1 and sh_all >= 4) or (sh_all >= 5 and ov_t >= 0.15):
-                    compatible = True
-                    break
-            if compatible:
+
+            co_cited_match = (
+                c_excl_desc == ""
+                and cand["outlet"] in s0_shared_outlets
+                and sp_all >= 1
+                and len(ct_in_aa) >= 2
+            )
+            bi_shared_match = (
+                cand["outlet"] in s0_shared_outlets
+                and sh_t >= 2
+                and len(non_geo_common_t) >= 1
+                and sp_all >= 1
+                and ov_t >= 0.25
+            )
+
+            ok = True
+            if sh_t < 3 and c_cities_lead and a_cities_lead and not (c_cities_lead & a_cities_lead):
+                ok = False
+            elif sp_all == 0:
+                ok = False
+            elif not co_cited_match and len(non_geo_common_t) == 0 and sh_t <= 2 and len(ct_spec_in_aa) < 2 and sh_all < 4:
+                ok = False
+            elif (c_cities_lead & a_cities_lead) and (c_spec_all & a_spec_all) <= _KRK_BROAD and sp_all < 3:
+                ok = False
+            elif not (
+                sh_t >= 3
+                or (sh_t >= 2 and ov_t >= 0.25 and sp_all >= 2)
+                or bi_shared_match
+                or (len(ct_in_aa) >= 3 and len(ct_spec_in_aa) >= 2)
+                or (sh_t >= 1 and sp_all >= 2 and sh_all >= 4 and ov_t >= 0.12)
+                or (sh_t >= 1 and len(non_geo_common_t) >= 1 and len(ct_in_aa) >= 2 and len(ct_spec_in_aa) >= 2)
+                or co_cited_match
+            ):
+                if not (sh_t >= 1 and sh_all >= 5 and len(ct_in_aa) >= 2):
+                    ok = False
+
+            if ok:
                 kept.append(cand)
+            else:
+                rejected.append(cand)
+
+        if rejected_out is not None and rejected:
+            rejected_out.extend(rejected)
+
+        kept_title_norm = _norm_pl(" ".join(c["title"] for c in kept) + " " + anc_clean_desc[:300])
+        kept_core_toks = tokenize_title(" ".join(c["title"] for c in kept) + " " + anc_clean_desc[:260]) - GENERIC_TOPIC_TOKENS
+        for c in kept:
+            if c.get("description"):
+                c["description"] = _clean_sentences_against_anchor(c["description"], kept_title_norm, kept_core_toks, rejected)
+            if c.get("excl_description"):
+                c["excl_description"] = _clean_sentences_against_anchor(c["excl_description"], kept_title_norm, kept_core_toks, rejected)
         candidates = kept
 
     sources = sorted(list({c["outlet"] for c in candidates}))
     primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
     lead_url = candidates[0]["link"] if candidates else primary_url
-    new_path = infer_category_path(old_path, lead_url, title, geo_context_desc)
+    geo_context_final = ((candidates[0].get("description") or "") if candidates else geo_context_desc)[:340]
+    new_path = infer_category_path(old_path, lead_url, title, geo_context_final)
+    if new_path == "/Polska" and len(candidates) >= 2:
+        combined_titles = " ".join(c.get("title") or "" for c in candidates)
+        if infer_category_path("/Polska", "", combined_titles, "") == "/Swiat":
+            new_path = "/Swiat"
     art["path"] = new_path
 
     # Egzekucja reguły 1 źródła: wyłącznie tematy lokalne (16 województw / Energetyka) lub niszowe
@@ -2797,10 +3212,79 @@ def format_cycle_summary(articles_or_stats: list | dict) -> str:
     return "\n".join(lines)
 
 
+def format_cycle_summary_markdown(articles_or_stats: list | dict) -> str:
+    """Formatuje podsumowanie jakościowe cyklu jako tabelę Markdown (np. dla GITHUB_STEP_SUMMARY)."""
+    stats = (
+        articles_or_stats
+        if isinstance(articles_or_stats, dict) and "voivodeships" in articles_or_stats
+        else summarize_cycle_quality(articles_or_stats)
+    )
+    total = stats["total"]
+    multi_c = stats["multi_source_count"]
+    multi_p = stats["multi_source_pct"]
+    single_c = stats["single_source_count"]
+    single_p = stats["single_source_pct"]
+    zero_c = stats["zero_source_count"]
+    cov = stats["voivodeships_covered"]
+    v_tot_regions = stats["voivodeships_total"]
+
+    lines = [
+        "## VERITY — Podsumowanie jakościowe cyklu",
+        "",
+        f"- **Łącznie artykułów:** {total}",
+        f"- **Wieloźródłowe (>=2):** {multi_c}/{total} ({multi_p:.1f}%) | **1-źródłowe:** {single_c}/{total} ({single_p:.1f}%)",
+        f"- **Pokrycie województw:** {cov}/{v_tot_regions}",
+    ]
+    if zero_c:
+        lines.append(f"- **Bez źródeł:** {zero_c}/{total}")
+
+    lines.extend([
+        "",
+        "### Rozkład po działach",
+        "",
+        "| Dział | Artykuły | Wieloźródłowe | Udział |",
+        "| --- | ---: | ---: | ---: |",
+    ])
+    for sec, s_data in stats["sections"].items():
+        s_tot = s_data["total"]
+        s_multi = s_data["multi_source"]
+        s_pct = s_data["multi_source_pct"]
+        lines.append(f"| `{sec}` | {s_tot} | {s_multi}/{s_tot} | {s_pct:.1f}% |")
+    for u_sec in sorted(stats["unexpected_sections"]):
+        u_data = stats["unexpected_sections"][u_sec]
+        u_tot = u_data["total"]
+        u_multi = u_data["multi_source"]
+        u_pct = u_data["multi_source_pct"]
+        lines.append(f"| `{u_sec}` *(inny dział)* | {u_tot} | {u_multi}/{u_tot} | {u_pct:.1f}% |")
+
+    lines.extend([
+        "",
+        f"### Pokrycie {v_tot_regions} województw ({cov}/{v_tot_regions})",
+        "",
+        "| Województwo | Ścieżka | Artykuły | Wieloźródłowe |",
+        "| --- | --- | ---: | ---: |",
+    ])
+    for v_path, v_data in stats["voivodeships"].items():
+        v_tot = v_data["total"]
+        v_multi = v_data["multi_source"]
+        v_label = v_data["label"]
+        status_str = "BRAK" if v_tot == 0 else f"{v_multi}/{v_tot}"
+        lines.append(f"| {v_label} | `{v_path}` | {v_tot} | {status_str} |")
+
+    return "\n".join(lines) + "\n"
+
+
 def print_cycle_summary(articles: list) -> dict:
-    """Wypisuje podsumowanie jakościowe cyklu na stdout i zwraca statystyki."""
+    """Wypisuje podsumowanie jakościowe cyklu na stdout (i opcjonalnie GITHUB_STEP_SUMMARY) i zwraca statystyki."""
     stats = summarize_cycle_quality(articles)
     print("\n" + format_cycle_summary(stats))
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY", "").strip()
+    if summary_path:
+        try:
+            with open(summary_path, "a", encoding="utf-8") as sf:
+                sf.write("\n" + format_cycle_summary_markdown(stats))
+        except OSError as e:
+            print(f"[WARN] Nie udało się zapisać GITHUB_STEP_SUMMARY ({summary_path}): {e}", file=sys.stderr)
     return stats
 
 
@@ -2808,8 +3292,9 @@ def update_news_cycle(fetch_live: bool = True):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     articles_path = os.path.join(base_dir, "articles.json")
 
-    # 1. Wczytaj, oczyść i zdeduplikuj istniejące artykuły
+    # 1. Wczytaj, oczyść, rozbij błędnie sklejone klastry i zdeduplikuj istniejące artykuły
     existing_articles = []
+    rejected_pool = []
     if os.path.exists(articles_path):
         try:
             with open(articles_path, "r", encoding="utf-8") as f:
@@ -2818,11 +3303,41 @@ def update_news_cycle(fetch_live: bool = True):
                     for a in loaded:
                         if (a.get("published_iso") or "")[:10] < "2026-11-13":
                             continue
-                        upgraded = _upgrade_existing_article(a)
+                        rej_local = []
+                        upgraded = _upgrade_existing_article(a, rejected_out=rej_local)
+                        for r in rej_local:
+                            r["_orig_id"] = a.get("id")
+                            r["_pub_iso"] = a.get("published_iso") or ""
+                            r["_disp_date"] = a.get("display_date") or ""
+                            r["group"] = r.get("outlet") or ""
+                            r["description"] = r.get("excl_description") or r.get("description") or r.get("title") or ""
+                            rejected_pool.append(r)
                         if upgraded is not None:
                             existing_articles.append(upgraded)
         except Exception as e:
             print(f"[WARN] Błąd odczytu {articles_path}: {e}")
+
+    recovered_count = 0
+    if rejected_pool:
+        rec_clusters = cluster_similar_items(rejected_pool)
+        for grp in rec_clusters:
+            u_groups = {it.get("group") or it["outlet"] for it in grp}
+            if len(u_groups) < 2:
+                continue
+            rec_art = build_article_from_group(grp, 9000 + recovered_count)
+            latest_iso = max((it.get("_pub_iso") or "" for it in grp), default="")
+            latest_disp = next(
+                (it.get("_disp_date") for it in grp if it.get("_pub_iso") == latest_iso and it.get("_disp_date")),
+                "",
+            )
+            if latest_iso:
+                rec_art["published_iso"] = latest_iso
+                if latest_disp:
+                    rec_art["display_date"] = latest_disp
+            existing_articles.append(rec_art)
+            recovered_count += 1
+    if recovered_count:
+        print(f"[SPLIT-RECOVER] Odzyskano {recovered_count} wieloźródłowych tematów z rozdzielonych klastrów.")
 
     before_dedup = len(existing_articles)
     existing_articles = deduplicate_existing_articles(existing_articles)
@@ -2911,8 +3426,10 @@ def update_news_cycle(fetch_live: bool = True):
 
         print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
 
-    # 4. Połącz i posortuj chronologicznie (malejąco)
-    combined = new_articles + existing_articles
+    # 4. Połącz, ustabilizuj po scaleniach i posortuj chronologicznie (malejąco)
+    combined = [u for a in (new_articles + existing_articles) if (u := _upgrade_existing_article(a)) is not None]
+    combined = deduplicate_existing_articles(combined)
+    combined = [u for a in combined if (u := _upgrade_existing_article(a)) is not None]
     combined.sort(key=lambda a: (1 if (a.get("declickbait") or []) else 0, a.get("published_iso") or ""), reverse=True)
     combined = combined[:MAX_TOTAL_ARTICLES]
 
