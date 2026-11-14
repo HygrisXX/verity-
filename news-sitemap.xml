@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/autostrada-a4-w-kierunku-wroclawia-calkowicie-zablokowana/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T04:47:04+01:00</news:publication_date>
+      <news:title>Autostrada A4 w kierunku Wrocławia całkowicie zablokowana</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/1/b/d/uid_1bd4df46a2ef46ec9887597367c3cac5_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Autostrada A4 w kierunku Wrocławia całkowicie zablokowana</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/podwyzki-za-smieci-wstrzymane/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T04:47:04+01:00</news:publication_date>
+      <news:title>Podwyżki za śmieci wstrzymane?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.asta24.pl/files/thumbs/REDAKCJA/Ekologia/Smieci/kubly%20na%20smieci_26.png/555_245_crop.png?ts=1792740137&amp;amp;pn=rss</image:loc>
+      <image:title>Podwyżki za śmieci wstrzymane?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/od-14-listopada-kierowcy-zaplaca-ponad-30-proc-wiecej-drozeje-wazne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
+      <news:title>Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/1c712d44209d10df8d4b419cf0cee489/?t=resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/jak-przeciwdzialac-przemocy-wobec-dzieci/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
+      <news:title>Jak przeciwdziałać przemocy wobec dzieci</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/1/a/f/uid_1afa74d57aa64a93a37305a3006f6a97_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Jak przeciwdziałać przemocy wobec dzieci</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/rzeczpospolita-swoich-bohaterow-bedzie-bronic-ostra-reakcja-wojewody-po/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
+      <news:title>„Rzeczpospolita swoich bohaterów będzie bronić”. Ostra reakcja wojewody po zawiadomieniu do prokuratury</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62818/179455929115825700__.png</image:loc>
+      <image:title>„Rzeczpospolita swoich bohaterów będzie bronić”. Ostra reakcja wojewody po zawiadomieniu do prokuratury</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/koniec-z-nudnymi-zasilaczami-corsair-pokazal-przezroczysty-model-shift/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
+      <news:title>Koniec z nudnymi zasilaczami? Corsair pokazał przezroczysty model Shift Crystal</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/5d23da9c-2d71-412a-9903-9c3447d2fa42</image:loc>
+      <image:title>Koniec z nudnymi zasilaczami? Corsair pokazał przezroczysty model Shift Crystal</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna/</loc>
     <news:news>
       <news:publication>
