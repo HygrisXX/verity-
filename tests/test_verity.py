@@ -156,6 +156,101 @@ class TestClusteringAndConflictGuards(unittest.TestCase):
         b = {"title": "Bundeswehra otrzymuje dodatkowe fundusze na nowy sprzęt", "description": "", "path": "/Swiat"}
         self.assertFalse(uln.has_cluster_conflict(a, b))
 
+    def test_podwojnym_gazie_different_voivodeships_conflict_and_do_not_cluster(self):
+        epoznan_title = 'Policjanci zatrzymali do kontroli kierowcę samochodu dostawczego. Okazało się, że jechał na "podwójnym gazie"'
+        epoznan_desc = "Do zatrzymania doszło w czwartek w Wólce (powiat słupecki)."
+        epoznan_url = "https://epoznan.pl/news-news-181940-policjanci_zatrzymali_do_kontroli_kierowce_samochodu_dostawczego_okazalo_sie_ze_jechal_na_podwojnym_gazie?rss=1"
+        epoznan = {
+            "outlet": "ePoznan.pl",
+            "group": "ePoznan.pl",
+            "title": epoznan_title,
+            "description": epoznan_desc,
+            "link": epoznan_url,
+            "path": uln.infer_category_path("/Polska/Regiony/Wielkopolskie", epoznan_url, epoznan_title, epoznan_desc),
+        }
+
+        lublin_title = "Prowadził auto na podwójnym gazie. Zatrzymał go świadek"
+        lublin_desc = "Pijany 57-latek kierujący autem osobowym został zatrzymany dzięki interwencji świadka w miejscowości Hubinek."
+        lublin_url = "https://radio.lublin.pl/2026/11/prowadzil-auto-na-podwojnym-gazie-zatrzymal-go-swiadek/"
+        lublin = {
+            "outlet": "Radio Lublin",
+            "group": "Radio Lublin",
+            "title": lublin_title,
+            "description": lublin_desc,
+            "link": lublin_url,
+            "path": uln.infer_category_path("/Polska/Regiony/Lubelskie", lublin_url, lublin_title, lublin_desc),
+        }
+
+        self.assertEqual(epoznan["path"], "/Polska/Regiony/Wielkopolskie")
+        self.assertEqual(lublin["path"], "/Polska/Regiony/Lubelskie")
+        self.assertTrue(uln.has_cluster_conflict(epoznan, lublin))
+        self.assertEqual(len(uln.cluster_similar_items([epoznan, lublin])), 2)
+
+    def test_sentence_start_medical_gauze_different_voivodeships_conflict_and_do_not_cluster(self):
+        cases = [
+            (
+                "medical_gauze",
+                "Gazę medyczną wycofano z obrotu. Komunikat GIF",
+                "Hurtownie wycofują wskazaną serię opatrunków z obrotu.",
+                "gaza-medyczna-wycofana",
+            ),
+            (
+                "pressurized_gas",
+                "Gazie pod ciśnieniem nie wolno zostawiać w nagrzanym aucie",
+                "Straż pożarna przypomina o zasadach bezpieczeństwa podczas upałów.",
+                "gazie-pod-cisnieniem-w-aucie",
+            ),
+            (
+                "gauze_locative_opatrunkowa",
+                "Informacje o Gazie opatrunkowej z hurtowni",
+                "Inspektorat sprawdza komunikaty dotyczące dostaw opatrunków.",
+                "informacje-o-gazie-opatrunkowej",
+            ),
+            (
+                "municipal_sewer_gas",
+                "W mieście gazy z kanalizacji wywołały ewakuację",
+                "Strażacy zabezpieczyli studzienki i sprawdzili stężenie oparów.",
+                "w-miescie-gazy-z-kanalizacji",
+            ),
+            (
+                "hospital_gauze_appeal",
+                "Szpital apeluje o gazę dla pacjentów",
+                "Placówka prosi darczyńców o podstawowe materiały opatrunkowe.",
+                "szpital-apeluje-o-gaze",
+            ),
+            (
+                "title_case_lub",
+                "Zakup Gazy lub Bandaży na Oddział",
+                "Dyrekcja placówki ogłosiła przetarg na środki opatrunkowe.",
+                "zakup-gazy-lub-bandazy",
+            ),
+        ]
+        for label, title, desc, slug in cases:
+            with self.subTest(case=label):
+                rzeszow_url = f"https://radio.rzeszow.pl/wiadomosci/{slug}"
+                rzeszow = {
+                    "outlet": "Radio Rzeszów",
+                    "group": "Radio Rzeszów",
+                    "title": title,
+                    "description": desc,
+                    "link": rzeszow_url,
+                    "path": uln.infer_category_path("/Polska/Regiony/Podkarpackie", rzeszow_url, title, desc),
+                }
+                kielce_url = f"https://radiokielce.pl/wiadomosci/{slug}"
+                kielce = {
+                    "outlet": "Radio Kielce",
+                    "group": "Radio Kielce",
+                    "title": title,
+                    "description": desc,
+                    "link": kielce_url,
+                    "path": uln.infer_category_path("/Polska/Regiony/Swietokrzyskie", kielce_url, title, desc),
+                }
+
+                self.assertEqual(rzeszow["path"], "/Polska/Regiony/Podkarpackie")
+                self.assertEqual(kielce["path"], "/Polska/Regiony/Swietokrzyskie")
+                self.assertTrue(uln.has_cluster_conflict(rzeszow, kielce))
+                self.assertEqual(len(uln.cluster_similar_items([rzeszow, kielce])), 2)
+
 
 class TestGeneratedArtifactsIntegrity(unittest.TestCase):
     @classmethod
@@ -429,6 +524,21 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
         self.assertNotIn("ILR-33", swiat_feed)
         self.assertNotIn("polska rakieta", swiat_feed.lower())
         self.assertNotIn("/Polska/", swiat_feed)
+        self.assertNotIn("podwójnym gazie", swiat_feed.lower())
+        self.assertNotIn("policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego", swiat_feed)
+        self.assertFalse(
+            os.path.exists(
+                os.path.join(
+                    ROOT_DIR,
+                    "Swiat",
+                    "policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego",
+                    "index.html",
+                )
+            )
+        )
+        for art in self.articles:
+            if art.get("path") == "/Swiat":
+                self.assertNotIn("podwójnym gazie", (art.get("seo_title") or "").lower())
 
     def test_short_acronyms_and_verbal_stem_equivalents(self):
         t_faa_1 = uln.tokenize_title("Loty samolotów wstrzymane w całych USA. Pierwsze informacje")
@@ -723,6 +833,456 @@ class TestParsersAndRegressionGuards(unittest.TestCase):
         cleaned_jetpack = uln.clean_html_for_synthesis(jetpack_raw, "Test")
         self.assertEqual(cleaned_jetpack, "Szokujące zgłoszenie postawiło na nogi służby w całym regionie.")
         self.assertNotIn("data-large-file", uln.strip_html(jetpack_raw))
+
+    def test_gaza_mideast_vs_polish_gas_alcohol_and_gauze_classification(self):
+        mideast_cases = [
+            ("/Polska", "https://example.pl/g1", "Sytuacja w Strefie Gazy jest dramatyczna", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g2", "Strefa Gazy pod ostrzałem", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g3", "Sektor Gazy w ruinie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g4", "Walki w Gazie przybierają na sile", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g5", "Atak w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g6", "Kryzys w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g7", "Nowe naloty na Gazę", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g8", "Pomoc humanitarna dotarła do Gazy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g9", "Wyjechali z Gazy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g10", "Gaza pod blokadą", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g11", "W Gazie brakuje wody pitnej", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g12", "Dzieci w Gazie potrzebują leków", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g13", "Gaza: rozejm nadal niepewny", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g14", "WALKI W GAZIE PRZYBIERAJĄ NA SILE", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g15", "Szpital w Gazie bez opatrunków i bandaży", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g16", "W Gazie brakuje leków i gazy opatrunkowej", "", "/Swiat"),
+            ("/Polska/Regiony/Mazowieckie", "https://example.pl/g16b", "W Gazie brakuje leków i gazy opatrunkowej", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g17", "Szpital w Gazie: kończy się jałowa gaza i bandaże", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g18", "Po ataku w Gazie konwój wiózł gazę opatrunkową", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g19", "W Gazie spłonęło auto na gazie po uderzeniu rakiety", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g20", "Lekarze w Gazie alarmują: brakuje gazy opatrunkowej", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g21", "W Gazie zabrakło gazy opatrunkowej w szpitalach", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g22", "Walki w Gazie i gazy łzawiące", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g23", "Brakuje gazy opatrunkowej w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g24", "İzmir: W Gazie zabrakło gazy opatrunkowej", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g25", "KONIEC WALK W GAZIE", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g26", "SYTUACJA W GAZIE CORAZ TRUDNIEJSZA", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g27", "POMOC DO GAZY NIE DOCIERA", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g28", "W MIEŚCIE GAZA BRAKUJE WODY", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g29", "W Gazie Brakuje Leków", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g30", "PILNE: W Gazie Dramat Mieszkańców", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g31", "Gazy i Zachodniego Brzegu dotyczy nowy plan pokojowy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g32", "Gaza — nowe ustalenia o losie zakładników", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g33", "Gaza – sytuacja bez zmian od tygodnia", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g34", "Gaza nadal bez dostępu do czystej wody", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g35", "Gaza po wojnie potrzebuje odbudowy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g36", "Gaza apeluje o pomoc", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g37", "KRYZYS HUMANITARNY W GAZIE", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g38", "W GAZIE ZGINĘŁO 20 OSÓB", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g39", "SZPITAL W GAZIE POD OSTRZAŁEM", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g40", "Dramat W Gazie Trwa", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g41", "Raport UNRWA z Gazy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g42", "Życie w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g43", "Głód w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g44", "Uchodźcy z Gazy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g45", "WIDEO: Życie w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g46", "PILNE: Droga do Gazy", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g47", "Dziennikarz: Prawda o Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g48", "Co po Gazie? Nowy plan pokojowy dla regionu", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g49", "Po Gazie potrzebna jest odbudowa całego regionu", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g50", "Rośnie ciśnienie polityczne na rozejm w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g51", "Wysokie ciśnienie dyplomatyczne po atakach w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g52", "Ciśnienie na rozejm po walkach w Gazie", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g53", "Αθήνας: W Gazie brakuje gazy opatrunkowej", "", "/Swiat"),
+            ("/Polska", "https://example.pl/g54", "Zamówił dla Gazy transport wody", "", "/Swiat"),
+        ]
+        for def_path, url, title, desc, expected in mideast_cases:
+            with self.subTest(kind="mideast", title=title):
+                self.assertEqual(uln.infer_category_path(def_path, url, title, desc), expected)
+
+        polish_non_swiat_cases = [
+            (
+                "/Polska/Regiony/Wielkopolskie",
+                "https://epoznan.pl/news-news-181940-policjanci_zatrzymali_do_kontroli_kierowce_samochodu_dostawczego_okazalo_sie_ze_jechal_na_podwojnym_gazie?rss=1",
+                'Policjanci zatrzymali do kontroli kierowcę samochodu dostawczego. Okazało się, że jechał na "podwójnym gazie"',
+                "Do zatrzymania doszło w czwartek w Wólce (powiat słupecki).",
+                "/Polska/Regiony/Wielkopolskie",
+            ),
+            (
+                "/Polska/Regiony/Lubelskie",
+                "https://radio.lublin.pl/2026/11/prowadzil-auto-na-podwojnym-gazie-zatrzymal-go-swiadek/",
+                "Prowadził auto na podwójnym gazie. Zatrzymał go świadek",
+                "",
+                "/Polska/Regiony/Lubelskie",
+            ),
+            ("/Polska", "https://example.pl/p3", "Kierowca jechał na gazie i spowodował kolizję", "", "/Polska"),
+            ("/Polska", "https://example.pl/p4", "W gazie ziemnym wykryto zanieczyszczenia", "", "/Polska"),
+            ("/Polska", "https://example.pl/p5", "W gazie łupkowym znaleziono nowe złoża", "", "/Polska"),
+            ("/Polska", "https://example.pl/p6", "W gazie pieprzowym był silny składnik", "", "/Polska"),
+            ("/Polska", "https://example.pl/p7", "Stężenie metanu w gazie", "", "/Polska"),
+            ("/Polska", "https://example.pl/p8", "Rozpuszczone w gazie cząsteczki", "", "/Polska"),
+            ("/Polska", "https://example.pl/p9", "Gaza opatrunkowa w apteczce", "", "/Polska"),
+            ("/Polska", "https://example.pl/p10", "Jałowa gaza na ranę", "", "/Polska"),
+            ("/Polska", "https://example.pl/p11", "Auto na gazie z instalacją LPG", "", "/Polska"),
+            ("/Polska", "https://example.pl/p12", "Gazy cieplarniane przyspieszają ocieplenie", "", "/Polska"),
+            ("/Polska", "https://example.pl/p13", "KIEROWCA JECHAŁ NA PODWÓJNYM GAZIE", "", "/Polska"),
+            ("/Polska", "https://example.pl/p14", "STĘŻENIE METANU W GAZIE", "", "/Polska"),
+            ("/Polska", "https://example.pl/p15", "Gazę medyczną wycofano z obrotu. Komunikat GIF", "", "/Polska"),
+            ("/Polska", "https://example.pl/p16", "Gazą i bandażem opatrzono poszkodowanego na miejscu wypadku", "", "/Polska"),
+            ("/Polska", "https://example.pl/p17", "Gazę chłonną trudno kupić po fali wykupów w aptekach", "", "/Polska"),
+            ("/Polska", "https://example.pl/p18", "Gazę do opatrywania ran trudno kupić w hurtowni", "", "/Polska"),
+            ("/Polska", "https://example.pl/p19", "Gazie pod ciśnieniem nie wolno przewozić w bagażniku", "", "/Polska"),
+            ("/Polska", "https://example.pl/p20", "Gazie używanym przy spawaniu poświęcono nowe przepisy", "", "/Polska"),
+            ("/Polska", "https://example.pl/p21", "Nowa Gaza do Opatrywania Ran", "", "/Polska"),
+            ("/Polska", "https://example.pl/p22", "Kierowca po Gazie Zatrzymany Przez Patrol", "", "/Polska"),
+            ("/Polska", "https://example.pl/p23", "Zatrzymany na „podwójnym” Gazie wjechał do rowu", "", "/Polska"),
+            ("/Polska", "https://example.pl/p24", "Cena Gazy w aptece wzrosła", "", "/Polska/Gospodarka"),
+            ("/Polska", "https://example.pl/p25", "Gazą z apteki opatrzyli ranę", "", "/Polska"),
+            ("/Polska", "https://example.pl/p26", "Kierowca jechał na tzw. podwójnym gazie", "", "/Polska"),
+            ("/Polska", "https://example.pl/p27", "W mieście gazy cieplarniane przekroczyły normę", "", "/Polska"),
+            ("/Polska", "https://example.pl/p28", "W SZPITALU BRAKUJE GAZY", "", "/Polska"),
+            ("/Polska", "https://example.pl/p29", "İzmir: Gazę medyczną wycofano z obrotu", "", "/Polska"),
+            ("/Polska", "https://example.pl/p30", "W mieście gazy z kanalizacji wywołały ewakuację", "", "/Polska"),
+            ("/Polska", "https://example.pl/p31", "Na terenie miasta gazy wybuchły w kotłowni", "", "/Polska"),
+            ("/Polska", "https://example.pl/p32", "W MIEŚCIE GAZY Z KANALIZACJI WYWOŁAŁY EWAKUACJĘ", "", "/Polska"),
+            ("/Polska", "https://example.pl/p33", "Szpital apeluje o gazę dla pacjentów", "", "/Polska"),
+            ("/Polska", "https://example.pl/p34", "Szpital czeka na gazę z hurtowni", "", "/Polska"),
+            ("/Polska", "https://example.pl/p35", "Szpital Apeluje o Gazę dla Pacjentów", "", "/Polska"),
+            ("/Polska", "https://example.pl/p36", "Lekarze proszą o gazę dla oddziału ratunkowego", "", "/Polska"),
+            ("/Polska", "https://example.pl/p37", "Mieszkańcy wykupili zapasy gazy w sklepach", "", "/Polska/Gospodarka"),
+            ("/Polska", "https://example.pl/p38", "Informacje o Gazie opatrunkowej z hurtowni", "", "/Polska"),
+            ("/Polska", "https://example.pl/p39", "Informacje o Gazie medycznej w raportach GIF", "", "/Polska"),
+            ("/Polska", "https://example.pl/p40", "Zakup Gazy lub Bandaży na Oddział", "", "/Polska"),
+            ("/Polska", "https://example.pl/p41", "Dostawa Gazy oraz Opatrunków", "", "/Polska"),
+            ("/Polska", "https://example.pl/p42", "PILNE: Zakup Gazy oraz Bandaży na Oddział", "", "/Polska"),
+            ("/Polska", "https://example.pl/p43", "Dostawa 500 rolek Gazy do hurtowni", "", "/Polska"),
+            ("/Polska", "https://example.pl/p44", "Został tylko kawałek Gazy na półce", "", "/Polska"),
+            ("/Polska", "https://example.pl/p45", "“Gazę do celów medycznych wycofano”", "", "/Polska"),
+            ("/Polska", "https://example.pl/p46", "Auto na gazie — Gazę kupił na stacji", "", "/Polska"),
+            ("/Polska", "https://example.pl/p47", "W gazie nie ma wody ani siarkowodoru", "", "/Polska"),
+        ]
+        for def_path, url, title, desc, expected in polish_non_swiat_cases:
+            with self.subTest(kind="polish_gas", title=title):
+                got = uln.infer_category_path(def_path, url, title, desc)
+                self.assertNotEqual(got, "/Swiat")
+                self.assertEqual(got, expected)
+
+    def test_tvp3_directory_data_and_feed_volume_configuration(self):
+        directory_payload = {
+            "title": "Aktualności",
+            "params": {"type": None, "title": None, "order": "release_date_long,-1"},
+            "vortal_id": 434300,
+            "items_total_count": 60549,
+            "items_per_page": 20,
+            "items_page": 1,
+            "items": [
+                {
+                    "id": 96457890,
+                    "title": " &bdquo;Remont mostu&rdquo; w Opolu &amp; okolicy przyspiesza",
+                    "url": "/96457890/remont-mostu-w-opolu",
+                    "lead": "Drogowcy zakończyli kluczowy etap prac w Kędzierzynie-Koźlu &amp; Nysie na Opolszczyźnie.",
+                    "image": {"url": "https://s10.tvp.pl/images2/opole-most.jpg"},
+                    "breadcrumbs": [{"title": "Inne", "url": "/1701243/inne"}],
+                    "playable": False,
+                },
+                {
+                    "id": 96463305,
+                    "title": "Wiadomość bez leada powinna zostać bezpiecznie pominięta",
+                    "url": "/96463305/bez-leada",
+                    "lead": None,
+                    "image": {"url": "https://s4.tvp.pl/images2/brak-leada.jpg"},
+                },
+                {
+                    "id": 96469999,
+                    "title": "Wpis z TVP Info mimo obecności w katalogu",
+                    "url": "https://www.tvp.info/96469999/ogolnopolski",
+                    "lead": "Ten materiał pochodzi z tvp.info i musi zostać odfiltrowany przez parser TVP3.",
+                },
+                {
+                    "id": 96463345,
+                    "title": "Pech ma swoje święto, a przesądy wciąż w modzie",
+                    "url": "/96463345/przesady-horoskop",
+                    "lead": "Długi opis materiału rozrywkowego, który powinien odpaść na filtrze opinii i rozrywki.",
+                },
+                {
+                    "id": 96455888,
+                    "title": "Bezpłatne badania w Opolu bez prawidłowej miniatury",
+                    "url": "/96455888/badania-opole",
+                    "lead": "Opolski oddział NFZ zaprasza mieszkańców regionu na bezpłatne konsultacje profilaktyczne.",
+                    "image": {"url": "https://opole.tvp.pl/favicon.ico"},
+                },
+            ],
+        }
+        html_dir = f"<html><script>window.__directoryData = {json.dumps(directory_payload)};</script></html>"
+        feed_dir = {
+            "name": "TVP3 Opole",
+            "url": "https://opole.tvp.pl/38939592/aktualnosci",
+            "path": "/Polska/Regiony/Opolskie",
+            "group": "TVP3",
+            "source_type": "tvp3_sgdata",
+        }
+        items_dir = uln._parse_tvp3_items_from_html(html_dir, feed_dir)
+        self.assertEqual(len(items_dir), 2)
+        self.assertEqual(items_dir[0]["title"], "„Remont mostu” w Opolu & okolicy przyspiesza")
+        self.assertEqual(items_dir[0]["link"], "https://opole.tvp.pl/96457890/remont-mostu-w-opolu")
+        self.assertEqual(
+            items_dir[0]["description"],
+            "Drogowcy zakończyli kluczowy etap prac w Kędzierzynie-Koźlu & Nysie na Opolszczyźnie.",
+        )
+        self.assertEqual(items_dir[0]["thumbnail"], "https://s10.tvp.pl/images2/opole-most.jpg")
+        self.assertEqual(items_dir[0]["pub_date"], "")
+        self.assertEqual(items_dir[0]["path"], "/Polska/Regiony/Opolskie")
+        self.assertEqual(items_dir[1]["link"], "https://opole.tvp.pl/96455888/badania-opole")
+        self.assertEqual(items_dir[1]["thumbnail"], "")
+
+        # Blok z _TVP3_SKIP_BLOCKS musi być pominięty również w formacie __directoryData
+        skip_payload = {
+            "title": "POGODA",
+            "params": {"title": None},
+            "items": [
+                {
+                    "title": "Prognoza pogody na jutro rano dla całego regionu",
+                    "url": "/999/pogoda",
+                    "lead": "Szczegółowy opis prognozy pogody na jutrzejszy dzień o odpowiedniej długości.",
+                }
+            ],
+        }
+        self.assertEqual(
+            uln._parse_tvp3_items_from_html(
+                f"<html><script>window.__directoryData = {json.dumps(skip_payload)};</script></html>",
+                feed_dir,
+            ),
+            [],
+        )
+        with self.assertRaises(ValueError):
+            uln._parse_tvp3_items_from_html("<html><script>window.__other = {};</script></html>", feed_dir)
+
+        # Weryfikacja skonfigurowanych kanałów i limitów publikacji z Etapu 2
+        feeds_by_name = {f["name"]: f for f in uln.LIVE_RSS_FEEDS}
+        self.assertEqual(feeds_by_name["TVP3 Opole"]["url"], "https://opole.tvp.pl/38939592/aktualnosci")
+        self.assertEqual(feeds_by_name["TVP3 Opole"].get("source_type"), "tvp3_sgdata")
+        self.assertEqual(feeds_by_name["Kurier Poranny"]["url"], "https://poranny.pl/rss/wiadomosci.xml")
+        self.assertEqual(uln.MAX_NEW_PER_RUN, 6)
+        self.assertEqual(uln.MAX_REGIONAL_PER_RUN, 3)
+
+    def test_tvp3_null_stub_falls_through_to_next_marker(self):
+        feed_dir = {
+            "name": "TVP3 Opole",
+            "url": "https://opole.tvp.pl/38939592/aktualnosci",
+            "path": "/Polska/Regiony/Opolskie",
+            "group": "TVP3",
+            "source_type": "tvp3_sgdata",
+        }
+        directory_payload = {
+            "title": "Aktualności",
+            "items": [
+                {
+                    "title": "Remont mostu w Opolu przyspiesza w tym tygodniu",
+                    "url": "/96457890/remont-mostu-w-opolu",
+                    "lead": "Drogowcy zakończyli kluczowy etap prac w Kędzierzynie-Koźlu na Opolszczyźnie.",
+                    "image": {"url": "https://s10.tvp.pl/images2/opole-most.jpg"},
+                }
+            ],
+        }
+        html_null_dir = (
+            "<html><script>window.__sgData = null; window.__newsData = false; "
+            f"window.__directoryData = {json.dumps(directory_payload)};</script></html>"
+        )
+        items_dir = uln._parse_tvp3_items_from_html(html_null_dir, feed_dir)
+        self.assertEqual(len(items_dir), 1)
+        self.assertEqual(items_dir[0]["link"], "https://opole.tvp.pl/96457890/remont-mostu-w-opolu")
+
+        news_payload = [
+            {
+                "params": {"title": "Region"},
+                "items": [
+                    {
+                        "title": "Modernizacja linii kolejowej pod Opolem przyspiesza",
+                        "url": "/123/kolej-opole",
+                        "lead": "Inwestor zakończył główny etap wymiany torów na trasie w województwie opolskim.",
+                    }
+                ],
+            }
+        ]
+        html_null_news = (
+            f"<html><script>window.__sgData = null; window.__newsData = {json.dumps(news_payload)};</script></html>"
+        )
+        items_news = uln._parse_tvp3_items_from_html(html_null_news, feed_dir)
+        self.assertEqual(len(items_news), 1)
+        self.assertEqual(items_news[0]["link"], "https://opole.tvp.pl/123/kolej-opole")
+
+        for html_stub in (
+            "<html><script>window.__sgData = null;</script></html>",
+            "<html><script>window.__sgData = false;</script></html>",
+            "<html><script>window.__sgData = 0;</script></html>",
+            '<html><script>window.__sgData = "stub";</script></html>',
+            "<html><script>window.__sgData = null; window.__directoryData = null;</script></html>",
+        ):
+            with self.subTest(html_stub=html_stub):
+                with self.assertRaises(ValueError):
+                    uln._parse_tvp3_items_from_html(html_stub, feed_dir)
+
+
+class TestCycleQualityTelemetry(unittest.TestCase):
+    def test_summarize_and_format_empty_list(self):
+        stats = uln.summarize_cycle_quality([])
+        self.assertEqual(stats["total"], 0)
+        self.assertEqual(stats["multi_source_count"], 0)
+        self.assertEqual(stats["multi_source_pct"], 0.0)
+        self.assertEqual(stats["single_source_count"], 0)
+        self.assertEqual(stats["single_source_pct"], 0.0)
+        self.assertEqual(stats["zero_source_count"], 0)
+        self.assertEqual(stats["voivodeships_covered"], 0)
+        self.assertEqual(stats["voivodeships_total"], 16)
+        self.assertEqual(len(stats["empty_voivodeships"]), 16)
+        self.assertEqual(stats["unexpected_sections"], {})
+        for sec in uln.CANONICAL_SUMMARY_SECTIONS:
+            self.assertEqual(stats["sections"][sec]["total"], 0)
+            self.assertEqual(stats["sections"][sec]["multi_source_pct"], 0.0)
+
+        txt = uln.format_cycle_summary([])
+        self.assertTrue(txt.startswith("=== PODSUMOWANIE JAKOŚCIOWE CYKLU ==="))
+        self.assertIn("Łącznie artykułów: 0", txt)
+        self.assertIn("Wieloźródłowe (>=2): 0/0 (0.0%) | 1-źródłowe: 0/0 (0.0%)", txt)
+        self.assertIn("--- POKRYCIE 16 WOJEWÓDZTW (0/16) ---", txt)
+        for v_path, v_label, _, _, _, _ in seo_builder.VOIVODESHIPS:
+            self.assertIn(f"{v_path}", txt)
+            self.assertIn(f"0 art. (BRAK) [{v_label}]", txt)
+
+    def test_mixed_sections_multi_source_math_and_unexpected_paths(self):
+        sample = [
+            {"path": "/Polska", "sources": ["PAP", "TVN24"]},
+            {"path": "/Polska/Gospodarka", "sources": ["Bankier.pl", "Money.pl", "PAP"]},
+            {"path": "/Polska/Polityka", "sources": ["Rzeczpospolita", "Polsat News"]},
+            {"path": "/Polska/Energetyka", "sources": ["Energetyka24", "PAP"]},
+            {"path": "/Polska/Energetyka", "sources": ["WysokieNapiecie.pl"]},
+            {"path": "/Polska/Regiony/Dolnoslaskie", "sources": ["Gazeta Wrocławska", "Radio Wrocław"]},
+            {"path": "/Polska/Regiony/Opolskie", "sources": ["Nowa Trybuna Opolska"]},
+            {"path": "/Swiat", "sources": ["Polsat News", "TVN24"]},
+            {"path": "/Sport", "sources": ["Sport.pl", "Przegląd Sportowy"]},
+        ]
+        stats = uln.summarize_cycle_quality(sample)
+        self.assertEqual(stats["total"], 9)
+        self.assertEqual(stats["multi_source_count"], 7)
+        self.assertEqual(stats["multi_source_pct"], 77.8)
+        self.assertEqual(stats["single_source_count"], 2)
+        self.assertEqual(stats["single_source_pct"], 22.2)
+
+        self.assertEqual(stats["sections"]["/Polska"]["total"], 1)
+        self.assertEqual(stats["sections"]["/Polska/Energetyka"]["total"], 2)
+        self.assertEqual(stats["sections"]["/Polska/Energetyka"]["multi_source"], 1)
+        self.assertEqual(stats["sections"]["/Polska/Energetyka"]["multi_source_pct"], 50.0)
+        self.assertEqual(stats["sections"]["/Polska/Regiony"]["total"], 2)
+        self.assertEqual(stats["sections"]["/Polska/Regiony"]["multi_source"], 1)
+        self.assertEqual(stats["sections"]["/Polska/Regiony"]["multi_source_pct"], 50.0)
+
+        with_unexpected = sample + [
+            {"path": "/Polska/Kultura", "sources": ["PAP", "Onet"]},
+            {"path": "", "sources": ["PAP"]},
+        ]
+        u_stats = uln.summarize_cycle_quality(with_unexpected)
+        self.assertEqual(u_stats["total"], 11)
+        self.assertEqual(u_stats["unexpected_sections"]["/Polska/Kultura"]["total"], 1)
+        self.assertEqual(u_stats["unexpected_sections"]["(brak)"]["total"], 1)
+        u_txt = uln.format_cycle_summary(u_stats)
+        self.assertIn("/Polska/Kultura", u_txt)
+        self.assertIn("(brak)", u_txt)
+        self.assertIn("[inny dział]", u_txt)
+
+    def test_all_16_voivodeships_canonical_order_and_zero_counts(self):
+        partial = [
+            {"path": "/Polska/Regiony/Dolnoslaskie", "sources": ["Gazeta Wrocławska", "Radio Wrocław"]},
+            {"path": "/Polska/Regiony/Dolnoslaskie", "sources": ["TVP3 Wrocław"]},
+            {"path": "/Polska/Regiony/Zachodniopomorskie", "sources": ["Radio Szczecin"]},
+        ]
+        stats = uln.summarize_cycle_quality(partial)
+        expected_order = [v[0] for v in seo_builder.VOIVODESHIPS]
+        self.assertEqual(list(stats["voivodeships"].keys()), expected_order)
+        self.assertEqual(stats["voivodeships_covered"], 2)
+        self.assertEqual(len(stats["empty_voivodeships"]), 14)
+        self.assertEqual(stats["voivodeships"]["/Polska/Regiony/Dolnoslaskie"]["total"], 2)
+        self.assertEqual(stats["voivodeships"]["/Polska/Regiony/Dolnoslaskie"]["multi_source"], 1)
+        self.assertEqual(stats["voivodeships"]["/Polska/Regiony/Mazowieckie"]["total"], 0)
+
+        txt = uln.format_cycle_summary(partial)
+        self.assertIn("--- POKRYCIE 16 WOJEWÓDZTW (2/16) ---", txt)
+        positions = [txt.index(vp) for vp in expected_order]
+        self.assertEqual(positions, sorted(positions))
+        for empty_vp in stats["empty_voivodeships"]:
+            label = seo_builder.VOIVODESHIP_LABELS[empty_vp]
+            self.assertIn(f"0 art. (BRAK) [{label}]", txt)
+
+        full = [{"path": vp, "sources": ["A", "B"]} for vp in expected_order]
+        full_stats = uln.summarize_cycle_quality(full)
+        self.assertEqual(full_stats["voivodeships_covered"], 16)
+        self.assertEqual(full_stats["empty_voivodeships"], [])
+        self.assertIn("--- POKRYCIE 16 WOJEWÓDZTW (16/16) ---", uln.format_cycle_summary(full_stats))
+
+    def test_stdout_emission_and_update_news_cycle_call_site(self):
+        import contextlib
+        import io
+        import tempfile
+        from unittest import mock
+
+        sample = [
+            {"path": "/Polska/Regiony/Opolskie", "sources": ["Nowa Trybuna Opolska", "TVP3 Opole"]},
+            {"path": "/Polska/Energetyka", "sources": ["WysokieNapiecie.pl"]},
+        ]
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            ret = uln.print_cycle_summary(sample)
+        out = buf.getvalue()
+        self.assertEqual(ret, uln.summarize_cycle_quality(sample))
+        self.assertEqual(out.strip(), uln.format_cycle_summary(sample).strip())
+
+        sample_db = [
+            {
+                "id": 1,
+                "path": "/Polska/Regiony/Opolskie",
+                "seo_url": "/Polska/Regiony/Opolskie/nowa-inwestycja-drogowa-w-opolu",
+                "seo_title": "Nowa inwestycja drogowa w Opolu przyspiesza",
+                "summary_lead": "Prace na kluczowej trasie w stolicy województwa opolskiego wkroczyły w kolejny etap.",
+                "meta_description": "Prace na kluczowej trasie w stolicy województwa opolskiego wkroczyły w kolejny etap.",
+                "keywords": "Opolskie, Opole, droga",
+                "thumbnail_url": "",
+                "published_iso": "2026-11-14T05:00:00+01:00",
+                "display_date": "14.11.2026, 05:00",
+                "status": "AUTO_PUBLISHED",
+                "fact_agreement_pct": None,
+                "admin_note": "",
+                "metrics": [],
+                "declickbait": [],
+                "full_sections": [
+                    {
+                        "heading": "Relacja źródłowa (Nowa Trybuna Opolska)",
+                        "paragraphs": [
+                            "Prace na kluczowej trasie w stolicy województwa opolskiego wkroczyły w kolejny etap według drogowców. [Źródło: Nowa Trybuna Opolska]"
+                        ],
+                    }
+                ],
+                "perspectives": [
+                    {
+                        "outlet": "Nowa Trybuna Opolska",
+                        "angle": "Doniesienie regionalne",
+                        "summary": "Nowa inwestycja drogowa w Opolu przyspiesza",
+                        "url": "https://nto.pl/test-opole",
+                    }
+                ],
+                "sources": ["Nowa Trybuna Opolska"],
+                "corrections": [],
+            }
+        ]
+        with tempfile.TemporaryDirectory() as tmpdir:
+            with open(os.path.join(tmpdir, "articles.json"), "w", encoding="utf-8") as f:
+                json.dump(sample_db, f, ensure_ascii=False)
+            cycle_buf = io.StringIO()
+            with mock.patch.object(uln, "__file__", os.path.join(tmpdir, "update_live_news.py")), \
+                 mock.patch.object(seo_builder, "build_all_seo_artifacts", side_effect=lambda *_: print("[SEO] mock")), \
+                 contextlib.redirect_stdout(cycle_buf):
+                uln.update_news_cycle(fetch_live=False)
+            cycle_out = cycle_buf.getvalue()
+            self.assertIn("[SUKCES]", cycle_out)
+            self.assertIn("[SEO] mock", cycle_out)
+            self.assertIn("=== PODSUMOWANIE JAKOŚCIOWE CYKLU ===", cycle_out)
+            self.assertIn("--- POKRYCIE 16 WOJEWÓDZTW (1/16) ---", cycle_out)
+            self.assertLess(cycle_out.index("[SUKCES]"), cycle_out.index("[SEO] mock"))
+            self.assertLess(cycle_out.index("[SEO] mock"), cycle_out.index("=== PODSUMOWANIE JAKOŚCIOWE CYKLU ==="))
 
 
 if __name__ == "__main__":

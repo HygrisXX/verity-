@@ -31,8 +31,8 @@ if _THIS_DIR not in sys.path:
 import seo_builder  # noqa: E402
 
 MAX_TOTAL_ARTICLES = 300
-MAX_NEW_PER_RUN = 4
-MAX_REGIONAL_PER_RUN = 2
+MAX_NEW_PER_RUN = 6
+MAX_REGIONAL_PER_RUN = 3
 ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne miniatury dla 100% spokoju prawnego
 
 LIVE_RSS_FEEDS = [
@@ -97,6 +97,7 @@ LIVE_RSS_FEEDS = [
     {"name": "Niedziela.pl", "url": "https://www.niedziela.pl/rss", "path": "/Polska"},
 
     # --- Polska Lokalna i Regionalna (wszystkie 16 województw: TVP3, Polskie Radio, prasa powiatowa) ---
+    # Uwaga: Gazeta Wrocławska, Dziennik Łódzki i Dziennik Zachodni pozostają na /rss (4-5 depesz) — alternatywne /rss/*.xml zwracają HTTP 403 (Cloudflare).
     # Dolnośląskie (5)
     {"name": "Gazeta Wrocławska", "url": "https://gazetawroclawska.pl/rss", "path": "/Polska/Regiony/Dolnoslaskie", "group": "Polska Press"},
     {"name": "Radio Wrocław", "url": "https://www.radiowroclaw.pl/articles/rss", "path": "/Polska/Regiony/Dolnoslaskie"},
@@ -141,7 +142,7 @@ LIVE_RSS_FEEDS = [
     {"name": "CoZaDzień.pl", "url": "https://www.cozadzien.pl/rss/articles/pl", "path": "/Polska/Regiony/Mazowieckie"},
     # Opolskie (4)
     {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Opolskie", "group": "Polska Press"},
-    {"name": "TVP3 Opole", "url": "https://opole.tvp.pl/", "path": "/Polska/Regiony/Opolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "TVP3 Opole", "url": "https://opole.tvp.pl/38939592/aktualnosci", "path": "/Polska/Regiony/Opolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
     {"name": "Opolska360.pl", "url": "https://opolska360.pl/feed", "path": "/Polska/Regiony/Opolskie"},
     {"name": "CzasNaOpole.pl", "url": "https://czasnaopole.pl/feed/", "path": "/Polska/Regiony/Opolskie"},
     # Podkarpackie (4)
@@ -150,7 +151,7 @@ LIVE_RSS_FEEDS = [
     {"name": "TVP3 Rzeszów", "url": "https://rzeszow.tvp.pl/", "path": "/Polska/Regiony/Podkarpackie", "group": "TVP3", "source_type": "tvp3_sgdata"},
     {"name": "Rzeszow-News.pl", "url": "https://rzeszow-news.pl/feed/", "path": "/Polska/Regiony/Podkarpackie"},
     # Podlaskie (5)
-    {"name": "Kurier Poranny", "url": "https://poranny.pl/rss", "path": "/Polska/Regiony/Podlaskie", "group": "Polska Press"},
+    {"name": "Kurier Poranny", "url": "https://poranny.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Podlaskie", "group": "Polska Press"},
     {"name": "Radio Białystok", "url": "https://www.radio.bialystok.pl/rss", "path": "/Polska/Regiony/Podlaskie"},
     {"name": "TVP3 Białystok", "url": "https://bialystok.tvp.pl/", "path": "/Polska/Regiony/Podlaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
     {"name": "Suwałki24.pl", "url": "https://www.suwalki24.pl/rss", "path": "/Polska/Regiony/Podlaskie"},
@@ -515,6 +516,202 @@ def _infer_voivodeship_path(title: str, description: str = "", link: str = "") -
     return ""
 
 
+_Q_CHARS = "\"„'”»«“‘’"
+
+_GAZA_PLACE_MULTI_RE = re.compile(
+    r"\b(?:stref\w+\s+gaz[yae]|sektor\w*\s+gaz[yae]|"
+    r"gaz(?:[yae]|ie)\s+i\s+(?:(?:na|w)\s+)?zachodni\w+\s+brzeg\w*)\b"
+)
+
+_GAZA_CITY_PLACE_RE = re.compile(
+    r"\b(?:miast\w+|miescie)\s+gaz(?:[yae]|ie)\b"
+)
+
+_GAZA_EXCLUDE_PHRASE_RE = re.compile(
+    r"\b(?:"
+    r"podwojn\w*\s+[" + _Q_CHARS + r"]?gazie\b|"
+    r"na\s+(?:tzw\.\s+)?[" + _Q_CHARS + r"]?(?:(?:podwojn\w*|lekk\w*|mal\w*|duz\w*|woln\w*|mocn\w*|sredn\w*|wysok\w*)(?:[" + _Q_CHARS + r"]?\s+|\s*[" + _Q_CHARS + r"]\s*))?[" + _Q_CHARS + r"]?gazie\b|"
+    r"po\s+(?:tzw\.\s+)?[" + _Q_CHARS + r"]?(?:podwojn\w*|lekk\w*|mal\w*|duz\w*|woln\w*|mocn\w*|sredn\w*|wysok\w*)(?:[" + _Q_CHARS + r"]?\s+|\s*[" + _Q_CHARS + r"]\s*)[" + _Q_CHARS + r"]?gazie\b|"
+    r"(?:kierowc\w*|pijan\w*|nietrzezw\w*|zatrzyman\w*|jechal\w*|prowadzil\w*|wjechal\w*|uderzyl\w*|spowodow\w*|byl\w*|jest)\s+(?:\w+\s+){0,2}po\s+[" + _Q_CHARS + r"]?gazie\b|"
+    r"(?:w\s+)?gazie\s+(?:ziemn\w*|lupkow\w*|pieprzow\w*|lzawiac\w*|rozwesel\w*|spalin\w*|szlachet\w*|cieplarnian\w*|"
+    r"ciekl\w*|techniczn\w*|miejsk\w*|kopalnian\w*|koksownicz\w*|wylotow\w*|syntezow\w*|musztardow\w*|bojow\w*|"
+    r"drazniac\w*|toksyczn\w*|trujac\w*|paln\w*|wybuchow\w*|sprezon\w*|skroplon\w*|przemyslow\w*|lpg|cng)\b|"
+    r"gaz(?:ie|e|y|a|u)\s+pod\s+cisnieni\w*\b|"
+    r"gazie\s+uzywanym\s+przy\b|"
+    r"gaz(?:[aeuy]|ie)\s+(?:opatrunk\w*|jalow\w*|niejalow\w*|steryln\w*|baweln\w*|wiskozow\w*|higroskopijn\w*|"
+    r"medyczn\w*|chlonn\w*|chirurgiczn\w*|serowarsk\w*|mlynarsk\w*|introligatorsk\w*|"
+    r"do\s+ran\b|do\s+opatrywania|do\s+celow\s+medyczn\w*|na\s+ran[ey]\b|(?:w|z|do)\s+apte(?:c|k)\w*)\b|"
+    r"gaz[aeuy]\s+i\s+bandaz\w*\b|bandaz\w*\s+i\s+gaz[aeuy]\b|"
+    r"(?:w|z|do)\s+apte(?:c|k)\w*\s+(?:\w+\s+){0,2}gaz(?:[aeuy]|ie)\b|"
+    r"(?:opatrunk\w*|jalow\w*|niejalow\w*|steryln\w*|baweln\w*|wiskozow\w*|medyczn\w*|chlonn\w*|chirurgiczn\w*|"
+    r"kompres\w*\s+z|opatrun\w*\s+z|tampon\w*\s+z)\s+gaz(?:[aeuy]|ie)\b|"
+    r"(?:rol(?:k\w*|ek)|kawal(?:k\w*|ek)|metr\w*|opakow\w*|pacz(?:k\w*|ek))\s+(?:z\s+)?gaz[aeuy]\b|"
+    r"(?:zapas\w*|kupil\w*|kupic|sprzed\w*|zamow\w*)\s+(?:tani\w*\s+|now\w*\s+|czyst\w*\s+|bial\w*\s+)?gaz[aeuy]\b|"
+    r"gaz[aeuy]\s+(?:kupil\w*|kupic|sprzed\w*|zamow\w*)\b|"
+    r"gazy\s+(?:cieplarnian\w*|spalinow\w*|lzawiac\w*|szlachet\w*|bojow\w*|wybuchow\w*|techniczn\w*|jelitow\w*|wylotow\w*|"
+    r"ziemn\w*|lupkow\w*|paln\w*|trujac\w*|drazniac\w*|toksyczn\w*|przemyslow\w*|kopalnian\w*|koksownicz\w*|syntezow\w*|rozwesel\w*|pieprzow\w*)\b|"
+    r"(?:instalacj\w*|auto|autem|samochod\w*|silnik\w*|kuchenk\w*|ogrzew\w*|gotowani\w*|jazda|jechal\w*|prowadzil\w*)\s+(?:\w+\s+){0,2}na\s+gazie\b"
+    r")"
+)
+
+_GAZA_CHEM_BEFORE_RE = re.compile(
+    r"\b(?:stezeni\w*|rozpuszczon\w*|czasteczk\w*|czastk\w*|molekul\w*|dyfuzj\w*|absorpcj\w*|"
+    r"wilgotnosc\w*|metan\w*|etan\w*|propan\w*|butan\w*|wodor\w*|helu?\b|neon\w*|argon\w*|amoniak\w*|siarkowodor\w*|dwutlen\w*)\b"
+    r"[^.!?:;\n]{0,60}\bw\s+gazie\b"
+    r"|"
+    r"\bcisnieni\w*(?:\s+(?:czastkow\w*|parcjaln\w*|statyczn\w*|dynamiczn\w*|osmotyczn\w*|hydrostatyczn\w*|atmosferyczn\w*|par[ay]?\b|gazu|robocz\w*|wlotow\w*|wylotow\w*))?\s+w\s+gazie\b"
+    r"|"
+    r"\bw\s+gazie\b[^.!?:;\n]{0,60}\b(?:metan\w*|etan\w*|propan\w*|butan\w*|wodor\w*|helu?\b|neon\w*|argon\w*|amoniak\w*|siarkowodor\w*|dwutlen\w*|czasteczk\w*|molekul\w*)\b"
+)
+
+_GAZA_MIDEAST_PROX_RE = re.compile(
+    r"\b(?:"
+    r"(?:nalot\w*|ostrzel\w*|ostrzal\w*|bombardow\w*|ofensyw\w*|starci\w*|rozejm\w*|zawieszeni\w*\s+broni|"
+    r"pomoc\w*\s+humanitarn\w*(?:\s+\w+){0,2}|ewakuacj\w*(?:\s+\w+){0,2}|"
+    r"atak\w*|wojn\w*|katastrof\w*\s+humanitarn\w*(?:\s+\w+){0,2})\s+"
+    r"(?:w\s+gazie|na\s+gaze|do\s+gazy|z\s+gazy|wokol\s+gazy|dla\s+gazy)|"
+    r"(?:blokad\w*|oblez\w*|ludobojstw\w*)\s+(?:w\s+gazie|na\s+gaze|do\s+gazy|z\s+gazy|wokol\s+gazy|gazy)|"
+    r"(?:walk\w*|koniec\s+walk)\s+(?:\w+\s+){0,2}(?:w\s+gazie|na\s+gaze|o\s+gaze|z\s+gazy|wokol\s+gazy)|"
+    r"(?:konwoj\w*|kryzys\w*|szpital\w*|sytuacj\w*|pomoc\w*|dramat\w*|ludnosc\w*|cywil\w*|"
+    r"lekarz\w*|medyc\w*|dziec\w*|uchodzc\w*|czerwon\w+\s+krzyz\w*|lekarz\w*\s+bez\s+granic)\s+(?:\w+\s+){0,2}"
+    r"(?:w\s+gazie|do\s+gazy|z\s+gazy|dla\s+gazy|nad\s+gaza|wokol\s+gazy)|"
+    r"(?:mieszkanc\w*|zakladnik\w*)\s+(?:\w+\s+){0,2}(?:w\s+gazie|do\s+gazy|z\s+gazy|wokol\s+gazy|gazy)|"
+    r"(?:zginel\w*|zginal\w*|zginie|rannych|zabitych|ofiar\w*)\s+(?:\w+\s+){0,2}(?:w\s+gazie|na\s+gaze|z\s+gazy)|"
+    r"(?:brak\b|brakuj\w*|zabrak\w*|nie\s+ma)\s+(?:\w+\s+){0,2}(?:wod\w*|lek\w*|lekarstw\w*|zywnosc\w*|prad\w*|pomoc\w*|paliw\w*|jedzeni\w*|opieki)\s+(?:\w+\s+){0,1}w\s+gazie|"
+    r"(?:w\s+gazie|na\s+gaze)\s+(?:\w+\s+){0,3}(?:zginel\w*|zginal\w*|zginie|rannych|zabitych|ofiar\w*)|"
+    r"(?:w\s+gazie|na\s+gaze)\s+(?:\w+\s+){0,2}(?:dramat\w*|nalot\w*|ostrzal\w*|ostrzel\w*|walk\w*|starci\w*|bombardow\w*|ofensyw\w*|"
+    r"ewakuacj\w*|blokad\w*|atak\w*|kryzys\w*|wojn\w*|oblez\w*|ludobojstw\w*|katastrof\w*|"
+    r"(?:brak\b|brakuj\w*|zabrak\w*|nie\s+ma)\s+(?:\w+\s+){0,2}(?:wod\w*|lek\w*|lekarstw\w*|zywnosc\w*|prad\w*|pomoc\w*|paliw\w*|jedzeni\w*|szpital\w*|miejsc\w*|opieki|opatrunk\w*))|"
+    r"gaz[ae]\s+(?:(?:nadal|wciaz|znow\w*)\s+)?(?:pod\s+(?:blokad\w*|ostrzal\w*|okupacj\w*)|w\s+(?:ruin\w*|ogni\w*|stanie\s+wojn\w*)|"
+    r"bez\s+(?:dostep\w*\s+do\s+(?:\w+\s+){0,2})?(?:prad\w*|wod\w*|lek\w*|lekarstw\w*|zywnosc\w*|pomocy|paliw\w*|opieki)|"
+    r"po\s+wojn\w*|apeluj\w*|potrzebuj\w*\s+(?:odbudow\w*|pomoc\w*|wsparci\w*|wod\w*|lek\w*)|plonie|gloduje|krwawi|walczy)|"
+    r"gazie\s+grozi\s+(?:glod\w*|katastrof\w*|epidemi\w*|kryzys\w*|zaglad\w*|blokad\w*)|"
+    r"gaz[ae]\s*[:–—-]\s*[^.!?]{0,60}\b(?:rozejm\w*|zawieszeni\w*\s+broni|ofiar\w*|nalot\w*|ostrzal\w*|ostrzel\w*|blokad\w*|ewakuacj\w*|"
+    r"katastrof\w*|humanitarn\w*|wojn\w*|kryzys\w*|konflikt\w*|ustaleni\w*|zakladnik\w*|odbudow\w*|sytuacj\w*|bez\s+zmian|"
+    r"nadal\s+bez|koniec\s+walk|brak\b|brakuj\w*|zabrak\w*|pomoc\w*|dramat\w*|mieszkanc\w*|zginel\w*|zginal\w*)|"
+    r"(?:izrael\w*|hamas\w*|netanjahu|palestyn\w*|rafah\b)[^.!?]{0,60}\b(?:w\s+gazie|na\s+gaze|do\s+gazy|z\s+gazy|gaza\b|gazy\b)|"
+    r"(?:w\s+gazie|na\s+gaze|do\s+gazy|z\s+gazy|gaza\b|gazy\b)[^.!?]{0,60}\b(?:izrael\w*|hamas\w*|netanjahu|palestyn\w*|rafah\b)"
+    r")\b"
+)
+
+_GAZ_TOKEN_NORM_RE = re.compile(r"\bgaz(?:a|y|ie|e)\b")
+_CLAUSE_SPLIT_RE = re.compile(r"[:.!?;…|]+|\s+[—–-]\s+")
+
+_TITLE_CASE_MINOR_WORDS = frozenset({
+    "w", "we", "na", "do", "z", "ze", "po", "o", "i", "a",
+    "od", "za", "u", "ku", "nad", "pod", "bez", "przy", "przez", "przed", "dla",
+    "lub", "oraz", "czy", "ani", "jak", "ale", "mimo", "bo", "niż",
+})
+
+
+def _mask_gaza_exclusions(raw: str, tl_norm: str) -> tuple:
+    tl_chars = list(tl_norm)
+    raw_chars = list(raw)
+    for pat in (_GAZA_EXCLUDE_PHRASE_RE, _GAZA_CHEM_BEFORE_RE):
+        for m in pat.finditer(tl_norm):
+            for idx in range(m.start(), m.end()):
+                tl_chars[idx] = " "
+    if len(raw) == len(tl_norm) and tl_norm == _norm_pl(raw):
+        for idx, ch in enumerate(tl_chars):
+            if ch == " " and raw_chars[idx] != " ":
+                raw_chars[idx] = " "
+        norm_to_raw = None
+    else:
+        norm_parts = []
+        norm_to_raw = []
+        for r_idx, ch in enumerate(raw):
+            nch = _norm_pl(ch)
+            norm_parts.append(nch)
+            norm_to_raw.extend([r_idx] * len(nch))
+        raw_norm = "".join(norm_parts)
+        for pat in (_GAZA_EXCLUDE_PHRASE_RE, _GAZA_CHEM_BEFORE_RE):
+            for m in pat.finditer(raw_norm):
+                for idx in range(m.start(), m.end()):
+                    raw_chars[norm_to_raw[idx]] = " "
+        if raw_norm != tl_norm:
+            norm_to_raw = None
+    return "".join(raw_chars), "".join(tl_chars), norm_to_raw
+
+
+def _get_clause_at(text: str, pos: int) -> str:
+    start = 0
+    for sep in _CLAUSE_SPLIT_RE.finditer(text):
+        if sep.end() <= pos:
+            start = sep.end()
+        elif sep.start() >= pos:
+            return text[start:sep.start()]
+    return text[start:]
+
+
+def _clause_is_title_case(clause_text: str) -> bool:
+    c_words = re.findall(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]+", clause_text)
+    if len(c_words) < 3:
+        return False
+    tail_words = c_words[1:]
+    lower_non_minor = [w for w in tail_words if w[0].islower() and w.lower() not in _TITLE_CASE_MINOR_WORDS]
+    title_tail_count = sum(1 for w in tail_words if w[0].isupper() and not (len(w) >= 2 and w.isupper()))
+    return not lower_non_minor and title_tail_count >= 2
+
+
+def _match_passes_gaz_case(match: re.Match, raw_masked: str, tl_masked: str, norm_to_raw, disallow_allcaps_plural: bool = False) -> bool:
+    seg = tl_masked[match.start():match.end()]
+    matched_any = False
+    for gm in _GAZ_TOKEN_NORM_RE.finditer(seg):
+        matched_any = True
+        n_idx = match.start() + gm.start()
+        if norm_to_raw is None:
+            r_idx = n_idx if len(raw_masked) == len(tl_masked) else -1
+        else:
+            r_idx = norm_to_raw[n_idx] if n_idx < len(norm_to_raw) else -1
+        if not (0 <= r_idx < len(raw_masked)):
+            return True
+        clause = _get_clause_at(raw_masked, r_idx)
+        clause_all_caps = clause == clause.upper() and clause != clause.lower()
+        if clause_all_caps:
+            if disallow_allcaps_plural and gm.group(0) == "gazy":
+                continue
+            return True
+        tok_m = re.match(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]+", raw_masked[r_idx:])
+        raw_tok = tok_m.group(0) if tok_m else ""
+        if raw_tok and raw_tok[0] == "G" and (len(raw_tok) == 1 or raw_tok[1:].islower()):
+            return True
+    return not matched_any
+
+
+def _is_gaza_middle_east_title(title: str, tl_norm: str) -> bool:
+    raw = title or ""
+    tl_norm = tl_norm if tl_norm else _norm_pl(raw)
+    if not raw and not tl_norm:
+        return False
+    raw_masked, tl_masked, norm_to_raw = _mask_gaza_exclusions(raw, tl_norm)
+
+    if _GAZA_PLACE_MULTI_RE.search(tl_masked):
+        return True
+    for cm in _GAZA_CITY_PLACE_RE.finditer(tl_masked):
+        if _match_passes_gaz_case(cm, raw_masked, tl_masked, norm_to_raw, disallow_allcaps_plural=True):
+            return True
+    for pm in _GAZA_MIDEAST_PROX_RE.finditer(tl_masked):
+        if _match_passes_gaz_case(pm, raw_masked, tl_masked, norm_to_raw, disallow_allcaps_plural=False):
+            return True
+
+    if raw_masked == raw_masked.upper() and raw_masked != raw_masked.lower():
+        return False
+
+    for m in re.finditer(r"\b(Gaz(?:a|y|ie|ę|ą))\b", raw_masked):
+        pos = m.start()
+        tok = m.group(1)
+        clause = _get_clause_at(raw_masked, pos)
+        if _clause_is_title_case(clause):
+            continue
+        prefix = raw_masked[:pos]
+        at_sent_start = (pos == 0) or bool(re.search(r"(?:^|[.!?…]\s+|:\s+)[" + _Q_CHARS + r"(\u2014–-]*\s*$", prefix))
+        if not at_sent_start:
+            return True
+        if tok == "Gaza" and re.match(r"^\s*:", raw_masked[m.end():]):
+            return True
+    return False
+
+
 def infer_category_path(default_path: str, link: str, title: str, description: str = "") -> str:
     default_path = seo_builder.LEGACY_REGION_MAP.get(default_path, default_path)
     u = (link or "").lower()
@@ -604,7 +801,7 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         r"czech\w*|czesk\w*|praga|pradze|słowacj\w*|slowacj\w*|bratysław\w*|fico\b|rumuni\w*|bukareszt\w*|bułgari\w*|bulgari\w*|"
         r"litw\w*|litewsk\w*|wiln\w*|łotw\w*|lotw\w*|ryga|rydze|estoni\w*|tallin\w*|białoru\w*|bialoru\w*|mińsk\w*|minsk\w*|łukaszenk\w*|lukaszenk\w*|"
         r"mołdawi\w*|moldawi\w*|gruzj\w*|tbilisi|armeni\w*|azerbejdżan\w*|"
-        r"izrael\w*|netanjahu|stref\w+\s+gazy|gaza\b|gazie|hamas\w*|hezbollah\w*|liban\w*|beirut\w*|"
+        r"izrael\w*|netanjahu|stref\w+\s+gaz[yae]|sektor\w*\s+gaz[yae]|hamas\w*|hezbollah\w*|liban\w*|beirut\w*|"
         r"iran\w*|irańsk\w*|iransk\w*|teheran\w*|syri\w*|damaszk\w*|turcj\w*|tureck\w*|ankar\w*|erdogan\w*|jemen\w*|"
         r"arabi\w+\s+saudyjsk\w*|saudi\s+aramco|zjednoczone\s+emiraty|abu\s+zabi|dubaj\w*|katar\w*|rijad\w*|"
         r"indi\w*|indyjsk\w*|japoni\w*|japońsk\w*|japonsk\w*|tokio|kore\w+\s+północn\w*|kore\w+\s+południow\w*|seul\w*|pjongjang\w*|filipin\w*|indonezj\w*|"
@@ -612,7 +809,7 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
         r"\bnato\b|\bonz\b|\bwho\b|\bmfw\b|\bopec\b|komisj\w+\s+europejsk\w*|parlament\w+\s+europejsk\w*|rad\w+\s+europejsk\w*|"
         r"nvidi\w*|jensen\w+\s+huang\w*|microsoft\w*|apple\b|google\b|meta\b|openai\b|chatgpt\b|spacex\w*|boeing\w*|airbus\w*)\b"
     )
-    has_foreign_title = bool(re.search(foreign_kw, tl_norm))
+    has_foreign_title = bool(re.search(foreign_kw, tl_norm)) or _is_gaza_middle_east_title(title, tl_norm)
     has_foreign_url = any(seg in u for seg in ("/swiat/", "/fakty/swiat/", "/ze-swiata/", "/zagranica/", "/za-granica/"))
 
     if (has_foreign_title or has_foreign_url) and not has_pl:
@@ -782,6 +979,10 @@ def _urlopen_with_retry(req, timeout: int = 12, retries: int = 1):
         except urllib.error.HTTPError as e:
             last_exc = e
             if e.code in (502, 503, 504) and attempt < retries:
+                try:
+                    e.close()
+                except Exception:
+                    pass
                 time.sleep(0.4)
                 continue
             raise
@@ -796,7 +997,7 @@ def _urlopen_with_retry(req, timeout: int = 12, retries: int = 1):
 
 def _parse_tvp3_items_from_html(html_text: str, feed: dict, max_per_feed: int = 12) -> list:
     payload = None
-    for marker in ("window.__sgData", "window.__newsData"):
+    for marker in ("window.__sgData", "window.__newsData", "window.__directoryData"):
         pos = html_text.find(marker)
         if pos != -1:
             eq = html_text.find("=", pos)
@@ -804,9 +1005,11 @@ def _parse_tvp3_items_from_html(html_text: str, feed: dict, max_per_feed: int = 
                 raw_slice = html_text[eq + 1 :].lstrip()
                 if raw_slice:
                     payload, _ = json.JSONDecoder().raw_decode(raw_slice)
-                    break
+                    if isinstance(payload, (list, dict)):
+                        break
+                    payload = None
     if payload is None:
-        raise ValueError("Brak window.__sgData / window.__newsData")
+        raise ValueError("Brak window.__sgData / window.__newsData / window.__directoryData")
 
     nodes = payload if isinstance(payload, list) else ([payload] if isinstance(payload, dict) else [])
     out = []
@@ -884,6 +1087,11 @@ def _fetch_tvp3_sgdata_feed(feed: dict, max_per_feed: int = 12) -> tuple:
         out = _parse_tvp3_items_from_html(html_text, feed, max_per_feed=max_per_feed)
         return feed["name"], out, None
     except Exception as e:
+        try:
+            if hasattr(e, "close"):
+                e.close()
+        except Exception:
+            pass
         return feed["name"], [], e
 
 
@@ -959,6 +1167,11 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
                 break
         return feed["name"], out, None
     except Exception as e:
+        try:
+            if hasattr(e, "close"):
+                e.close()
+        except Exception:
+            pass
         return feed["name"], [], e
 
 
@@ -2426,6 +2639,171 @@ def _ensure_unique_seo_urls(articles: list):
         a["seo_url"] = url
 
 
+CANONICAL_SUMMARY_SECTIONS = (
+    "/Polska",
+    "/Polska/Gospodarka",
+    "/Polska/Polityka",
+    "/Polska/Energetyka",
+    "/Polska/Regiony",
+    "/Swiat",
+    "/Sport",
+)
+
+
+def summarize_cycle_quality(articles: list) -> dict:
+    """Wylicza statystyki jakościowe cyklu: wieloźródłowość, działy i 16 województw."""
+    items = list(articles or [])
+    total = len(items)
+    multi_count = 0
+    single_count = 0
+    zero_count = 0
+
+    sections = {
+        sec: {"total": 0, "multi_source": 0, "single_source": 0}
+        for sec in CANONICAL_SUMMARY_SECTIONS
+    }
+    unexpected_sections = {}
+
+    voivodeships = {
+        v_path: {
+            "label": v_label,
+            "total": 0,
+            "multi_source": 0,
+            "single_source": 0,
+        }
+        for v_path, v_label, _, _, _, _ in seo_builder.VOIVODESHIPS
+    }
+
+    for art in items:
+        srcs = art.get("sources") or []
+        n_src = len(srcs)
+        is_multi = n_src >= 2
+        is_single = n_src == 1
+        if is_multi:
+            multi_count += 1
+        elif is_single:
+            single_count += 1
+        else:
+            zero_count += 1
+
+        raw_path = (art.get("path") or "").strip()
+        if raw_path in voivodeships:
+            sec_bucket = sections["/Polska/Regiony"]
+            v_bucket = voivodeships[raw_path]
+            v_bucket["total"] += 1
+            if is_multi:
+                v_bucket["multi_source"] += 1
+            elif is_single:
+                v_bucket["single_source"] += 1
+        elif raw_path in sections:
+            sec_bucket = sections[raw_path]
+        else:
+            sec_key = raw_path or "(brak)"
+            sec_bucket = unexpected_sections.setdefault(
+                sec_key, {"total": 0, "multi_source": 0, "single_source": 0}
+            )
+
+        sec_bucket["total"] += 1
+        if is_multi:
+            sec_bucket["multi_source"] += 1
+        elif is_single:
+            sec_bucket["single_source"] += 1
+
+    def _pct(count: int, denom: int) -> float:
+        return round((count / denom) * 100.0, 1) if denom > 0 else 0.0
+
+    for sec_data in list(sections.values()) + list(unexpected_sections.values()):
+        sec_data["multi_source_pct"] = _pct(sec_data["multi_source"], sec_data["total"])
+
+    for v_data in voivodeships.values():
+        v_data["multi_source_pct"] = _pct(v_data["multi_source"], v_data["total"])
+
+    covered_voivodeships = sum(1 for v in voivodeships.values() if v["total"] > 0)
+    empty_voivodeships = [vp for vp, v in voivodeships.items() if v["total"] == 0]
+
+    return {
+        "total": total,
+        "multi_source_count": multi_count,
+        "multi_source_pct": _pct(multi_count, total),
+        "single_source_count": single_count,
+        "single_source_pct": _pct(single_count, total),
+        "zero_source_count": zero_count,
+        "sections": sections,
+        "unexpected_sections": unexpected_sections,
+        "voivodeships": voivodeships,
+        "voivodeships_covered": covered_voivodeships,
+        "voivodeships_total": len(seo_builder.VOIVODESHIPS),
+        "empty_voivodeships": empty_voivodeships,
+    }
+
+
+def format_cycle_summary(articles_or_stats: list | dict) -> str:
+    """Formatuje deterministyczne podsumowanie jakościowe cyklu w stylu audit_feeds."""
+    stats = (
+        articles_or_stats
+        if isinstance(articles_or_stats, dict) and "voivodeships" in articles_or_stats
+        else summarize_cycle_quality(articles_or_stats)
+    )
+    total = stats["total"]
+    multi_c = stats["multi_source_count"]
+    multi_p = stats["multi_source_pct"]
+    single_c = stats["single_source_count"]
+    single_p = stats["single_source_pct"]
+    zero_c = stats["zero_source_count"]
+
+    lines = [
+        "=== PODSUMOWANIE JAKOŚCIOWE CYKLU ===",
+        f"Łącznie artykułów: {total}",
+    ]
+    sources_line = (
+        f"Wieloźródłowe (>=2): {multi_c}/{total} ({multi_p:.1f}%) | "
+        f"1-źródłowe: {single_c}/{total} ({single_p:.1f}%)"
+    )
+    if zero_c:
+        sources_line += f" | Bez źródeł: {zero_c}/{total}"
+    lines.append(sources_line)
+
+    lines.append("")
+    lines.append("--- ROZKŁAD PO DZIAŁACH ---")
+    for sec, s_data in stats["sections"].items():
+        s_tot = s_data["total"]
+        s_multi = s_data["multi_source"]
+        s_pct = s_data["multi_source_pct"]
+        lines.append(f"  {sec:<21s}{s_tot:>3d} art. (wieloźródłowe: {s_multi}/{s_tot}, {s_pct:.1f}%)")
+    for u_sec in sorted(stats["unexpected_sections"]):
+        u_data = stats["unexpected_sections"][u_sec]
+        u_tot = u_data["total"]
+        u_multi = u_data["multi_source"]
+        u_pct = u_data["multi_source_pct"]
+        lines.append(
+            f"  {u_sec:<21s}{u_tot:>3d} art. (wieloźródłowe: {u_multi}/{u_tot}, {u_pct:.1f}%) [inny dział]"
+        )
+
+    lines.append("")
+    cov = stats["voivodeships_covered"]
+    v_tot_regions = stats["voivodeships_total"]
+    lines.append(f"--- POKRYCIE 16 WOJEWÓDZTW ({cov}/{v_tot_regions}) ---")
+    for v_path, v_data in stats["voivodeships"].items():
+        v_tot = v_data["total"]
+        v_multi = v_data["multi_source"]
+        v_label = v_data["label"]
+        if v_tot == 0:
+            lines.append(f"  {v_path:<37s}{v_tot:>3d} art. (BRAK) [{v_label}]")
+        else:
+            lines.append(
+                f"  {v_path:<37s}{v_tot:>3d} art. (wieloźródłowe: {v_multi}/{v_tot}) [{v_label}]"
+            )
+
+    return "\n".join(lines)
+
+
+def print_cycle_summary(articles: list) -> dict:
+    """Wypisuje podsumowanie jakościowe cyklu na stdout i zwraca statystyki."""
+    stats = summarize_cycle_quality(articles)
+    print("\n" + format_cycle_summary(stats))
+    return stats
+
+
 def update_news_cycle(fetch_live: bool = True):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     articles_path = os.path.join(base_dir, "articles.json")
@@ -2549,6 +2927,9 @@ def update_news_cycle(fetch_live: bool = True):
 
     # 7. Wygeneruj całą infrastrukturę SEO (statyczne HTML, sitemap.xml, news-sitemap.xml, feed.xml, robots.txt, 404.html)
     seo_builder.build_all_seo_artifacts(base_dir, combined)
+
+    # 8. Wypisz podsumowanie jakościowe cyklu (wieloźródłowość, działy, 16 województw)
+    print_cycle_summary(combined)
 
 
 if __name__ == "__main__":

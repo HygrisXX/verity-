@@ -3,21 +3,6 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/fuxi-alex-i-inni-humanoidy-dla-armii-masowo-pojawia-sie-na-polu-bitwy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T10:37:22+01:00</news:publication_date>
-      <news:title>Fuxi, Alex i inni. Humanoidy dla armii. „Masowo pojawią się na polu bitwy”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s13.tvp.pl/images2/3/a/0/uid_3a0e29f4b8854130bc09cd712d5be003_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-      <image:title>Fuxi, Alex i inni. Humanoidy dla armii. „Masowo pojawią się na polu bitwy”</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/biel-i-czerwien-dominowala-na-ostrowieckich-biegach-niepodleglosci/</loc>
     <news:news>
       <news:publication>
@@ -254,21 +239,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/kluczowy-pilkarz-nie-zagra-z-rumunia-urban-ma-zagwozdke/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T08:45:28+01:00</news:publication_date>
-      <news:title>Kluczowy piłkarz nie zagra z Rumunią! Urban ma zagwozdkę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/AxVzbM0j-Jan-Urban-scaled.jpg</image:loc>
-      <image:title>Kluczowy piłkarz nie zagra z Rumunią! Urban ma zagwozdkę</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/nowe-zarzuty-dla-34-latka-sledczy-odkryli-kolejne-przestepstwa-wobec/</loc>
     <news:news>
       <news:publication>
@@ -486,7 +456,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>

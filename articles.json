@@ -1,62 +1,6 @@
 [
   {
     "id": 1,
-    "path": "/Polska/Regiony/Dolnoslaskie",
-    "seo_url": "/Polska/Regiony/Dolnoslaskie/fuxi-alex-i-inni-humanoidy-dla-armii-masowo-pojawia-sie-na-polu-bitwy",
-    "seo_title": "Fuxi, Alex i inni. Humanoidy dla armii. „Masowo pojawią się na polu bitwy”",
-    "summary_lead": "Dotychczas sytuacje takie zdarzały się tylko w filmach science fiction. Przy obecnym tempie rozwoju nowoczesnych technologii wojskowe humanoidy są już niemal na wyciągnięcie ręki.",
-    "meta_description": "Dotychczas sytuacje takie zdarzały się tylko w filmach science fiction. Przy obecnym tempie rozwoju nowoczesnych technologii wojskowe humanoidy są już niemal…",
-    "keywords": "Dolnoslaskie, Fuxi, Alex, inni, Humanoidy, armii, Masowo",
-    "thumbnail_url": "https://s13.tvp.pl/images2/3/a/0/uid_3a0e29f4b8854130bc09cd712d5be003_width_1280_play_0_pos_0_gs_0_height_720.jpg",
-    "published_iso": "2026-11-14T10:37:22+01:00",
-    "display_date": "14.11.2026, 10:37",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Dolnoslaskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "TVP.info"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (TVP.info)",
-        "paragraphs": [
-          "Dotychczas sytuacje takie zdarzały się tylko w filmach science fiction. Przy obecnym tempie rozwoju nowoczesnych technologii wojskowe humanoidy są już niemal na wyciągnięcie ręki. Zdecydowanie więcej mówi się jednak o „cywilnych” odmianach robotów, które coraz lepiej radzą sobie z codziennymi ludzkimi czynnościami, a nawet uczestniczą w turniejach sportów walki dla maszyn.",
-          "Były minister obrony Ukrainy Mychajło Fedorow podczas wrześniowej konferencji IT Arena we Lwowie przedstawił program „Armia Robotów”. Jego celem jest stworzenie robotów humanoidalnych, które mogłyby wykonywać część zadań ukraińskiej piechoty.",
-          "Projekt zakłada, że w ciągu sześciu miesięcy od uruchomienia programu – czyli w okolicach marca 2027 roku – uzyskany zostanie pierwszy potwierdzony pozytywny efekt działań bojowych robota humanoidalnego. [Źródło: TVP.info]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "TVP.info",
-        "angle": "Relacja wiodąca",
-        "summary": "Fuxi, Alex i inni. Humanoidy dla armii. „Masowo pojawią się na polu bitwy”",
-        "url": "https://www.tvp.info/96454621/humanoidy-wkraczaja-do-czolowych-armii-amerykanie-uruchomili-program-xtechhumanoid-w-chinach-nad-robotami-dla-wojska-pracuja-osrodki-norinco-i-nudt-ukraincy-chca-je-wykorzystac-w-wojnie-przeciw-rosji"
-      }
-    ],
-    "sources": [
-      "TVP.info"
-    ],
-    "corrections": []
-  },
-  {
-    "id": 2,
     "path": "/Polska/Regiony/Swietokrzyskie",
     "seo_url": "/Polska/Regiony/Swietokrzyskie/biel-i-czerwien-dominowala-na-ostrowieckich-biegach-niepodleglosci",
     "seo_title": "Biel i czerwień dominowała na Ostrowieckich Biegach Niepodległości",
@@ -110,7 +54,7 @@
     "corrections": []
   },
   {
-    "id": 3,
+    "id": 2,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/zla-wiadomosc-od-2027-roku-czesc-seniorow-straci-14-emeryture",
     "seo_title": "Zła wiadomość. Od 2027 roku część seniorów straci 14. emeryturę",
@@ -177,7 +121,7 @@
     "corrections": []
   },
   {
-    "id": 4,
+    "id": 3,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/nowa-oplata-za-telewizory-laptopy-i-smartfony-zmiany-w-przepisach",
     "seo_title": "Nowa opłata za telewizory, laptopy i smartfony. Zmiany w przepisach weszły w życie",
@@ -244,7 +188,7 @@
     "corrections": []
   },
   {
-    "id": 5,
+    "id": 4,
     "path": "/Polska",
     "seo_url": "/Polska/odra-atakuje-w-usa-dziesiec-ofiar-smiertelnych-i-ponad-5400-zakazen",
     "seo_title": "Odra atakuje w USA. Dziesięć ofiar śmiertelnych i ponad 5400 zakażeń",
@@ -255,7 +199,7 @@
     "published_iso": "2026-11-14T10:37:20+01:00",
     "display_date": "14.11.2026, 10:37",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -280,7 +224,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Jak podała amerykańska stacja ABC News, kolejne śmiertelne przypadki odry odnotowano w stanach Wisconsin i Pensylwania. Zwiększyło to łączną liczbę zgonów z powodu tej choroby w USA w 2026 roku do 10 przypadków. [Źródło: TVN24, Interia Wydarzenia]"
+          "Jak podała amerykańska stacja ABC News, kolejne śmiertelne przypadki odry odnotowano w stanach Wisconsin i Pensylwania. Zwiększyło to łączną liczbę zgonów z powodu tej choroby w USA w 2026 roku do 10 przypadków. [Źródło: TVN24]"
         ]
       },
       {
@@ -311,7 +255,7 @@
     "corrections": []
   },
   {
-    "id": 6,
+    "id": 5,
     "path": "/Swiat",
     "seo_url": "/Swiat/nato-za-donbas-zelenski-ujawnil-propozycje-amerykanow",
     "seo_title": "NATO za Donbas. Zełenski ujawnił propozycję Amerykanów",
@@ -322,12 +266,12 @@
     "published_iso": "2026-11-14T10:37:19+01:00",
     "display_date": "14.11.2026, 10:37",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "11 redakcji"
+        "val": "10 redakcji"
       },
       {
         "label": "Kategoria",
@@ -339,23 +283,22 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (11 źródeł)"
+        "val": "Potwierdzone (10 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (11 redakcji)",
+        "heading": "Ustalenia wspólne (10 redakcji)",
         "paragraphs": [
-          "— Amerykanie postawili pytanie: Czy jeśli Ukraina będzie w NATO, wycofa się z Donbasu? [Źródło: Polsat News, Forsal.pl, TVN24, Rzeczpospolita, Puls Biznesu, TVP.info, Interia Wydarzenia, Gazeta.pl, naTemat.pl, Onet Wiadomości, WP Wiadomości]",
-          "Taka propozycja pojawiła się po raz pierwszy – powiedział dziennikarzom Wołodymyr Zełenski. Zaznaczył on, że Ukraina nie wycofuje się i nie oddaje swoich ziem terrorystom. W ostatnich dniach w Abu Zabi toczyły się trójstronne rozmowy dotyczące zakończenia trwającej od paru lat wojny. [Źródło: Polsat News, TVP.info]",
+          "— Amerykanie postawili pytanie: Czy jeśli Ukraina będzie w NATO, wycofa się z Donbasu? [Źródło: Polsat News, Forsal.pl, TVN24, Rzeczpospolita, Puls Biznesu, Gazeta.pl, naTemat.pl, Onet Wiadomości, WP Wiadomości]",
+          "Taka propozycja pojawiła się po raz pierwszy – powiedział dziennikarzom Wołodymyr Zełenski. Zaznaczył on, że Ukraina nie wycofuje się i nie oddaje swoich ziem terrorystom. W ostatnich dniach w Abu Zabi toczyły się trójstronne rozmowy dotyczące zakończenia trwającej od paru lat wojny. [Źródło: Polsat News]",
           "Ukraina omawia z partnerami kompleksowy pakiet gwarancji bezpieczeństwa, nie przedstawiono jednak konkretnej propozycji – dodał. [Źródło: Forsal.pl, TVN24]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Jego wypowiedź cytują liczne media, w tym agencja Interfax-Ukraina. „NYT” opisał złożony przez Rosjan w Abu Zabi dokument, tzw. non-paper, w którym Kreml nieoficjalnie przedstawił swoje żądania powojennej „architektury bezpieczeństwa” w Europie. Takiego spotkania jeszcze nie było [Źródło: TVP.info]",
           "Jednocześnie przekazał, że zwrócił się do przywódców europejskich, by wyznaczyli osobę, która będzie reprezentować Europę w kolejnej rundzie rozmów pokojowych z Moskwą. [Źródło: Interia Wydarzenia]"
         ]
       }
@@ -390,12 +333,6 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Zełenski: USA wysuwają propozycję NATO dla Ukrainy w zamian za Donbas",
         "url": "https://www.pb.pl/zelenski-usa-wysuwaja-propozycje-nato-dla-ukrainy-w-zamian-za-donbas-1270427"
-      },
-      {
-        "outlet": "TVP.info",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Wejście do NATO, ale nie za darmo. Kontrowersyjna propozycja dla Ukrainy",
-        "url": "https://www.tvp.info/96476328/prezydent-ukrainy-zdradzil-ze-usa-po-raz-pierwszy-dopuscily-mozliwosc-przystapienia-jego-kraju-do-nato-ale-w-zamian-za-wycofanie-sie-z-donbasu-wielokrotnie-mowilem-ze-ukraina-nie-wycofuje-sie-i-nie-oddaje-swoich-ziem-terrorystom-przypomnial-zelenski"
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -437,14 +374,13 @@
       "Puls Biznesu",
       "Rzeczpospolita",
       "TVN24",
-      "TVP.info",
       "WP Wiadomości",
       "naTemat.pl"
     ],
     "corrections": []
   },
   {
-    "id": 7,
+    "id": 6,
     "path": "/Polska/Regiony/Wielkopolskie",
     "seo_url": "/Polska/Regiony/Wielkopolskie/duzy-remont-torowiska-wiele-linii-zmieni-trasy",
     "seo_title": "Duży remont torowiska. Wiele linii zmieni trasy",
@@ -511,7 +447,7 @@
     "corrections": []
   },
   {
-    "id": 8,
+    "id": 7,
     "path": "/Polska/Regiony/Lubelskie",
     "seo_url": "/Polska/Regiony/Lubelskie/jak-karmic-ptaki-by-im-nie-zaszkodzic-dokarmianie-ptakow-zima-nie",
     "seo_title": "Jak karmić ptaki, by im nie zaszkodzić? Dokarmianie ptaków zimą. Nie zapominajmy o skrzydlatych przyjaciołach",
@@ -566,7 +502,7 @@
     "corrections": []
   },
   {
-    "id": 9,
+    "id": 8,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/ruszyla-baza-rodzin-potrzebujacych-pomocy-w-ramach-szlachetnej-paczki",
     "seo_title": "Ruszyła baza rodzin potrzebujących pomocy w ramach Szlachetnej Paczki. Rodziny można wybierać do 11 grudnia",
@@ -582,7 +518,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "16 redakcji"
+        "val": "15 redakcji"
       },
       {
         "label": "Kategoria",
@@ -594,15 +530,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (16 źródeł)"
+        "val": "Potwierdzone (15 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (16 redakcji)",
+        "heading": "Ustalenia wspólne (15 redakcji)",
         "paragraphs": [
-          "Szlachetna Paczka uruchomiła w sobotę bazę rodzin, które potrzebują pomocy. Prezenty trafią do potrzebujących w „weekend cudów” – 12 i 13 grudnia. Na wsparcie czeka prawie 11 tys. rodzin. [Źródło: Infor.pl, Radio Lublin, Radio Kraków, Radio Kielce, TVN24, Radio PiK, TVP3 Rzeszów, Radio Białystok]",
+          "Szlachetna Paczka uruchomiła w sobotę bazę rodzin, które potrzebują pomocy. Prezenty trafią do potrzebujących w „weekend cudów” – 12 i 13 grudnia. Na wsparcie czeka prawie 11 tys. rodzin. [Źródło: Infor.pl, Radio Lublin, Radio Kraków, Radio Kielce, TVN24, Radio Białystok, TVP3 Rzeszów]",
           "Chętnie mają czas do 11 grudnia. [Źródło: Infor.pl]",
           "— Nasza pomoc jest nie do zastąpienia – powiedziała Joanna Sadzik, prezes stowarzyszenia Wiosna organizującego doroczną akcję. [Źródło: Infor.pl]",
           "W bazie znajdą się informacje o sytuacji życiowej poszczególnych rodzin oraz ich najważniejszych potrzebach. Można wybierać te, którym chce się pomóc. Uroczyste otwarcie bazy rodzin 26. edycji odbyło się w budynku Wydziału Chemii Uniwersytetu Jagiellońskiego na Ruczaju w Krakowie. [Źródło: Infor.pl, Radio Kielce, TVN24]"
@@ -618,8 +554,7 @@
           "Organizatorzy akcji zwracają uwagę na codzienne problemy osób żyjących w ubóstwie i zachęcają do zaangażowania się w pomoc. [Źródło: TVP3 Kraków]",
           "Akcja obejmuje również woj. łódzkie. [Źródło: TVP3 Łódź]",
           "Pani Ewelina każdego dnia dźwiga swojego syna, by choć trochę rozruszać jego przykurczone mięśnie. Na specjalistyczny podnośnik ich nie stać. Krzesło służy im za drążek rehabilitacyjny, a dywan za matę. [Źródło: Radio PiK]",
-          "Wśród zapowiedzianych gości znaleźli się między innymi sportowcy Robert Korzeniowski i Sofia Ennaoui, aktorzy Lidia Bogaczówna i Mateusz Janicki, a także muzycy Magda Steczkowska i Wiktor Waligóra. [Źródło: TVS Śląsk]",
-          "Dotarliśmy do unikatowych, starych zdjęć pokazujących jak kilkadziesiąt lat temu wyglądały miasta w Kujawsko-Pomorskiem. Są zarówno fotografie sprzed wojny, jak i z czasów PRL. Możemy zobaczyć m.in. centra miasta, tereny rekreacyjne, akweny wodne, uzdrowiska, zabytki i fabryki. [Źródło: Gazeta Pomorska]"
+          "Wśród zapowiedzianych gości znaleźli się między innymi sportowcy Robert Korzeniowski i Sofia Ennaoui, aktorzy Lidia Bogaczówna i Mateusz Janicki, a także muzycy Magda Steczkowska i Wiktor Waligóra. [Źródło: TVS Śląsk]"
         ]
       }
     ],
@@ -709,12 +644,6 @@
         "url": "https://tvs.pl/rusza-szlachetna-paczka-2026-dzis-otwarcie-bazy-rodzin/"
       },
       {
-        "outlet": "Gazeta Pomorska",
-        "angle": "Doniesienie regionalne",
-        "summary": "Archiwalne zdjęcia miast w województwie kujawsko-pomorskim przed wojną i w PRL-u",
-        "url": "https://pomorska.pl/archiwalne-zdjecia-miast-w-wojewodztwie-kujawskopomorskim-przed-wojna-i-w-prlu/ar/c1-17993977"
-      },
-      {
         "outlet": "TVP3 Rzeszów",
         "angle": "Doniesienie regionalne",
         "summary": "Szlachetna Paczka uruchomiła bazę rodzin potrzebujących pomocy",
@@ -722,7 +651,6 @@
       }
     ],
     "sources": [
-      "Gazeta Pomorska",
       "Infor.pl",
       "Onet Wiadomości",
       "Radio Białystok",
@@ -742,7 +670,7 @@
     "corrections": []
   },
   {
-    "id": 10,
+    "id": 9,
     "path": "/Swiat",
     "seo_url": "/Swiat/rosyjskie-zadania-ws-wystapienia-finlandii-z-nato-po-prostu-oburzajace",
     "seo_title": "Rosyjskie żądania ws. wystąpienia Finlandii z NATO. \"Po prostu oburzające\"",
@@ -819,7 +747,7 @@
     "corrections": []
   },
   {
-    "id": 11,
+    "id": 10,
     "path": "/Sport",
     "seo_url": "/Sport/alarm-w-reprezentacji-polska-bez-lidera-na-mecz-z-rumunia",
     "seo_title": "Alarm w reprezentacji! Polska bez lidera na mecz z Rumunią",
@@ -830,7 +758,7 @@
     "published_iso": "2026-11-14T09:41:09+01:00",
     "display_date": "14.11.2026, 09:41",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "metrics": [
       {
@@ -855,8 +783,8 @@
       {
         "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Reprezentacja Polski w sobotni wieczór zmierzy się w Bukareszcie z Rumunią w piątej kolejce Ligi Narodów. Niestety wszystko wskazuje na to, że będzie musiała sobie radzić bez jednej ze swoich gwiazd. Na stronie UEFA pojawiła się właśnie 23-osoba kadra na to spotkanie. [Źródło: Sport.pl, Weszło.com]",
-          "Okazuje się brakuje w niej lidera reprezentacji. Piotr Zieliński nie zagra w meczu z Rumunią. [Źródło: Sport.pl, Polsat Sport, Weszło.com]"
+          "Reprezentacja Polski w sobotni wieczór zmierzy się w Bukareszcie z Rumunią w piątej kolejce Ligi Narodów. Niestety wszystko wskazuje na to, że będzie musiała sobie radzić bez jednej ze swoich gwiazd. Na stronie UEFA pojawiła się właśnie 23-osoba kadra na to spotkanie. [Źródło: Sport.pl]",
+          "Okazuje się brakuje w niej lidera reprezentacji. Piotr Zieliński nie zagra w meczu z Rumunią. [Źródło: Sport.pl]"
         ]
       },
       {
@@ -919,7 +847,7 @@
     "corrections": []
   },
   {
-    "id": 12,
+    "id": 11,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/mineli-piratow-i-rakiety-doplyneli-do-swinoujscia-pierwsza-taka-dostawa",
     "seo_title": "Minęli piratów i rakiety, dopłynęli do Świnoujścia. Pierwsza taka dostawa od miesięcy",
@@ -930,7 +858,7 @@
     "published_iso": "2026-11-14T09:41:09+01:00",
     "display_date": "14.11.2026, 09:41",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -955,7 +883,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Do Świnoujścia przypłynął niecodzienny ładunek LNG. To pierwsza od ponad siedmiu miesięcy dostawa skroplonego gazu, jaka dotarła do nas z Kataru. Co więcej, metanowiec przypłynął do nas bardzo nietypową obecnie trasą, a jego rejs trwał rekordowo długo. [Źródło: WNP.pl, Radio Szczecin]"
+          "Do Świnoujścia przypłynął niecodzienny ładunek LNG. To pierwsza od ponad siedmiu miesięcy dostawa skroplonego gazu, jaka dotarła do nas z Kataru. Co więcej, metanowiec przypłynął do nas bardzo nietypową obecnie trasą, a jego rejs trwał rekordowo długo. [Źródło: WNP.pl]"
         ]
       },
       {
@@ -986,7 +914,7 @@
     "corrections": []
   },
   {
-    "id": 13,
+    "id": 12,
     "path": "/Polska/Regiony/Kujawsko-Pomorskie",
     "seo_url": "/Polska/Regiony/Kujawsko-Pomorskie/co-robic-w-weekend-w-bydgoszczy-gesina-na-wyspie-mlynskiej-koncerty",
     "seo_title": "Co robić w weekend w Bydgoszczy? Gęsina na Wyspie Młyńskiej, koncerty, mecze i spacery (13-15 listopada)",
@@ -997,7 +925,7 @@
     "published_iso": "2026-11-14T08:45:29+01:00",
     "display_date": "14.11.2026, 08:45",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -1022,7 +950,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "W weekend od 13 do 15 listopada w Bydgoszczy na mieszkańców czeka ponad dwadzieścia wydarzeń kulturalnych, sportowych i rekreacyjnych. Przez trzy dni na Wyspie Młyńskiej potrwa Jarmark Świętomarciński z regionalną gęsiną, a w Bydgoskim Centrum Targowo-Wystawienniczym odbędą się mistrzostwa świata w tańcach latynoamerykańskich. [Źródło: TVP3 Bydgoszcz, Radio PiK]",
+          "W weekend od 13 do 15 listopada w Bydgoszczy na mieszkańców czeka ponad dwadzieścia wydarzeń kulturalnych, sportowych i rekreacyjnych. Przez trzy dni na Wyspie Młyńskiej potrwa Jarmark Świętomarciński z regionalną gęsiną, a w Bydgoskim Centrum Targowo-Wystawienniczym odbędą się mistrzostwa świata w tańcach latynoamerykańskich. [Źródło: TVP3 Bydgoszcz]",
           "W programie znalazły się także mecz koszykarzy Astorii, koncerty z utworami Zbigniewa Wodeckiego i Andrzeja Zauchy oraz spacery z przewodnikami. [Źródło: TVP3 Bydgoszcz]"
         ]
       },
@@ -1056,7 +984,7 @@
     "corrections": []
   },
   {
-    "id": 14,
+    "id": 13,
     "path": "/Polska/Regiony/Podlaskie",
     "seo_url": "/Polska/Regiony/Podlaskie/szpital-psychiatryczny-w-suwalkach-swietuje-35-lecie-zaprezentowal-nowe",
     "seo_title": "Szpital Psychiatryczny w Suwałkach świętuje 35-lecie. Zaprezentował nowe inwestycje [WIDEO]",
@@ -1117,7 +1045,7 @@
     "corrections": []
   },
   {
-    "id": 15,
+    "id": 14,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow",
     "seo_title": "Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych",
@@ -1185,7 +1113,7 @@
     "corrections": []
   },
   {
-    "id": 16,
+    "id": 15,
     "path": "/Polska/Regiony/Mazowieckie",
     "seo_url": "/Polska/Regiony/Mazowieckie/narkotyki-trzymal-w-szafce-pracowniczej",
     "seo_title": "Narkotyki trzymał w szafce pracowniczej",
@@ -1196,7 +1124,7 @@
     "published_iso": "2026-11-14T08:45:28+01:00",
     "display_date": "14.11.2026, 08:45",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -1221,7 +1149,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Narkotyki warte prawie 7,5 tysiąca złotych policjanci znaleźli w szafce pracowniczej oraz mieszkaniu 44-latka. Grozi mu do 15 lat pozbawienia wolności. [Źródło: TVN24, PetroNews.pl]"
+          "Narkotyki warte prawie 7,5 tysiąca złotych policjanci znaleźli w szafce pracowniczej oraz mieszkaniu 44-latka. Grozi mu do 15 lat pozbawienia wolności. [Źródło: TVN24]"
         ]
       },
       {
@@ -1252,7 +1180,7 @@
     "corrections": []
   },
   {
-    "id": 17,
+    "id": 16,
     "path": "/Polska/Regiony/Lodzkie",
     "seo_url": "/Polska/Regiony/Lodzkie/tragiczny-wypadek-na-pasach-nie-zyje-znana-dzialaczka-ochotniczej",
     "seo_title": "Tragiczny wypadek na pasach. Nie żyje znana działaczka ochotniczej straży, ranny były komendant",
@@ -1288,8 +1216,8 @@
       {
         "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Tragiczny wypadek w Spale (Łódzkie). 55-letni kierowca potrącił przechodzące przez przejście dla pieszych dwie osoby. Kobieta zginęła na miejscu, mężczyzna został ranny. [Źródło: TVN24, Radio Łódź, o2.pl, TVP3 Łódź]",
-          "Jak informuje Komenda Wojewódzka Państwowej Straży Pożarnej w Łodzi, zmarła to Małgorzata Pawlik – dyrektorka zarządu wojewódzkiego związku Ochotniczej Straży Pożarnej. Poszkodowany został też były komendant powiatowy państwowej straży w Opocznie, Dariusz Polański. Kobieta zmarła mimo prowadzonej reanimacji, a drugi z poszkodowanych trafił do szpitala. [Źródło: TVN24, Radio Łódź, o2.pl, TVP3 Łódź]"
+          "Tragiczny wypadek w Spale (Łódzkie). 55-letni kierowca potrącił przechodzące przez przejście dla pieszych dwie osoby. Kobieta zginęła na miejscu, mężczyzna został ranny. [Źródło: TVN24, Radio Łódź, o2.pl]",
+          "Jak informuje Komenda Wojewódzka Państwowej Straży Pożarnej w Łodzi, zmarła to Małgorzata Pawlik – dyrektorka zarządu wojewódzkiego związku Ochotniczej Straży Pożarnej. Poszkodowany został też były komendant powiatowy państwowej straży w Opocznie, Dariusz Polański. Kobieta zmarła mimo prowadzonej reanimacji, a drugi z poszkodowanych trafił do szpitala. [Źródło: TVN24, Radio Łódź, o2.pl]"
         ]
       },
       {
@@ -1334,75 +1262,7 @@
     "corrections": []
   },
   {
-    "id": 18,
-    "path": "/Sport",
-    "seo_url": "/Sport/kluczowy-pilkarz-nie-zagra-z-rumunia-urban-ma-zagwozdke",
-    "seo_title": "Kluczowy piłkarz nie zagra z Rumunią! Urban ma zagwozdkę",
-    "summary_lead": "Piotr Zieliński, bo o nim mowa, znalazł się poza kadrą zgłoszoną na to starcie, czego dowiedzieliśmy się z oficjalnej strony internetowej UEFA. Zawodnika Interu Mediolan brakuje na liście pomocników.",
-    "meta_description": "Piotr Zieliński, bo o nim mowa, znalazł się poza kadrą zgłoszoną na to starcie, czego dowiedzieliśmy się z oficjalnej strony internetowej UEFA.",
-    "keywords": "Sport, Kluczowy, piłkarz, zagra, Rumunią, Urban, zagwozdkę",
-    "thumbnail_url": "https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/AxVzbM0j-Jan-Urban-scaled.jpg",
-    "published_iso": "2026-11-14T08:45:28+01:00",
-    "display_date": "14.11.2026, 08:45",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Sport"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Weszło.com"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Piotr Zieliński, bo o nim mowa, znalazł się poza kadrą zgłoszoną na to starcie, czego dowiedzieliśmy się z oficjalnej strony internetowej UEFA. Zawodnika Interu Mediolan brakuje na liście pomocników. Absencja Piotra Zielińskiego nie jest jednak niespodzianką, ponieważ już w przeddzień meczu media informowały o nieobecności tego piłkarza na treningu. [Źródło: Weszło.com]",
-          "Na ostatniej konferencji prasowej Jan Urban miał jeszcze nadzieję, że lider naszej kadry upora się z przeziębieniem i zdoła pomóc kadrze w starciu z Rumunią. Jest duża poprawa, no ale zobaczymy. Na pewno jutro będę wiedział więcej – mówił trener Biało-Czerwonych. [Źródło: Weszło.com]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Jeden z filarów reprezentacji Polski nabawił się przeziębienia, które uniemożliwiło mu występ. To spory problem dla selekcjonera Jana Urbana, który musi znaleźć zastępcę dla czołowego pomocnika. [Źródło: Polsat Sport]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Weszło.com",
-        "angle": "Relacja wiodąca",
-        "summary": "Kluczowy piłkarz nie zagra z Rumunią! Urban ma zagwozdkę",
-        "url": "https://weszlo.com/kluczowy-zawodnik-nie-zagra-z-rumunia-urban-ma-problem"
-      },
-      {
-        "outlet": "Polsat Sport",
-        "angle": "Relacja sportowa",
-        "summary": "Gwiazdor nie zagra z Rumunią! Problemy Jana Urbana tuż przed meczem",
-        "url": "https://www.polsatsport.pl/wiadomosc/2026-11-14/gwiazdor-nie-zagra-z-rumunia-problemy-jana-urbana-tuz-przed-meczem/"
-      }
-    ],
-    "sources": [
-      "Polsat Sport",
-      "Weszło.com"
-    ],
-    "corrections": []
-  },
-  {
-    "id": 19,
+    "id": 17,
     "path": "/Polska/Regiony/Opolskie",
     "seo_url": "/Polska/Regiony/Opolskie/nowe-zarzuty-dla-34-latka-sledczy-odkryli-kolejne-przestepstwa-wobec",
     "seo_title": "Nowe zarzuty dla 34-latka. Śledczy odkryli kolejne przestępstwa wobec dzieci",
@@ -1458,7 +1318,7 @@
     "corrections": []
   },
   {
-    "id": 20,
+    "id": 18,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
     "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/zalane-v-lo-w-olsztynie-szkola-przechodzi-na-nauczanie-zdalne",
     "seo_title": "Zalane V LO w Olsztynie. Szkoła przechodzi na nauczanie zdalne",
@@ -1469,7 +1329,7 @@
     "published_iso": "2026-11-14T07:55:48+01:00",
     "display_date": "14.11.2026, 07:55",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
@@ -1494,8 +1354,8 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Około 800 uczniów i pracowników V Liceum Ogólnokształcącego w Olsztynie musi przygotować się na naukę i pracę poza szkolnym budynkiem. Po awarii instalacji wodnej placówka została zalana, a Powiatowy Inspektor Nadzoru Budowlanego wyłączył ją z użytkowania. Skala zniszczeń jest poważna. [Źródło: Radio Olsztyn, TVP3 Olsztyn, TKO Olsztyn]",
-          "Woda przedostała się z drugiego piętra aż do piwnic. [Źródło: Radio Olsztyn, TKO Olsztyn]"
+          "Około 800 uczniów i pracowników V Liceum Ogólnokształcącego w Olsztynie musi przygotować się na naukę i pracę poza szkolnym budynkiem. Po awarii instalacji wodnej placówka została zalana, a Powiatowy Inspektor Nadzoru Budowlanego wyłączył ją z użytkowania. Skala zniszczeń jest poważna. [Źródło: Radio Olsztyn]",
+          "Woda przedostała się z drugiego piętra aż do piwnic. [Źródło: Radio Olsztyn]"
         ]
       },
       {
@@ -1534,7 +1394,7 @@
     "corrections": []
   },
   {
-    "id": 21,
+    "id": 19,
     "path": "/Swiat",
     "seo_url": "/Swiat/skandal-na-wegrzech-byly-minister-pomogl-przywiezc-z-rosji-haki-na",
     "seo_title": "Skandal na Węgrzech. Były minister pomógł przywieźć z Rosji haki na opozycję",
@@ -1603,7 +1463,7 @@
     "corrections": []
   },
   {
-    "id": 22,
+    "id": 20,
     "path": "/Polska/Regiony/Zachodniopomorskie",
     "seo_url": "/Polska/Regiony/Zachodniopomorskie/to-juz-ostatnia-szansa-by-zwiedzic-prom-bursztyn-unity",
     "seo_title": "To już ostatnia szansa, by zwiedzić prom Bursztyn Unity",
@@ -1614,7 +1474,7 @@
     "published_iso": "2026-11-14T07:55:46+01:00",
     "display_date": "14.11.2026, 07:55",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -1639,7 +1499,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Ostatni dzwonek, by zwiedzić prom Bursztyn Unity. W niedzielę jednostka wypłynie ze Szczecina w rejs techniczny do Szwecji. Mieszkańcy od godziny 10 w sobotę będą mogli zwiedzić statek bez wcześniej zarezerwowanych wejściówek. [Źródło: Radio Szczecin, TVP3 Szczecin]",
+          "Ostatni dzwonek, by zwiedzić prom Bursztyn Unity. W niedzielę jednostka wypłynie ze Szczecina w rejs techniczny do Szwecji. Mieszkańcy od godziny 10 w sobotę będą mogli zwiedzić statek bez wcześniej zarezerwowanych wejściówek. [Źródło: Radio Szczecin]",
           "Spacery po pokładzie odbywały się od środy i jak na razie – odwiedzający byli bardzo zadowoleni. Nawet przestronnie bym powiedziała. Wielkość, jego ogrom robi wrażenie. [Źródło: Radio Szczecin]"
         ]
       },
@@ -1671,7 +1531,7 @@
     "corrections": []
   },
   {
-    "id": 23,
+    "id": 21,
     "path": "/Polska/Regiony/Slaskie",
     "seo_url": "/Polska/Regiony/Slaskie/bliscy-karoliny-wrobel-wstrzasnieci-po-otrzymaniu-badan-dna-oczekuje",
     "seo_title": "Bliscy Karoliny Wróbel wstrząśnięci po otrzymaniu badań DNA. \"Oczekuję odrobiny szacunku\"",
@@ -1740,7 +1600,7 @@
     "corrections": []
   },
   {
-    "id": 24,
+    "id": 22,
     "path": "/Polska/Regiony/Podkarpackie",
     "seo_url": "/Polska/Regiony/Podkarpackie/ferie-zimowe-w-rzeszowie-ruszaja-zapisy-na-polkolonie-sa-dwa-turnusy-i",
     "seo_title": "Ferie zimowe w Rzeszowie. Ruszają zapisy na półkolonie. Są dwa turnusy i różne ceny",
@@ -1751,7 +1611,7 @@
     "published_iso": "2026-11-14T07:55:46+01:00",
     "display_date": "14.11.2026, 07:55",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -1776,7 +1636,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Zimowa przerwa od szkoły zbliża się wielkimi krokami, a rodzice już mogą planować, jak zorganizować dzieciom wolny czas. Rzeszowski Dom Kultury przygotował półkolonie w 14 filiach na terenie miasta, a zainteresowani muszą pamiętać o konkretnej dacie rozpoczęcia zapisów. Do wyboru będą dwa turnusy, ale różnice w cenach mogą mieć spore znaczenie dla domowego budżetu. [Źródło: Rzeszow-News.pl, Radio Rzeszów]"
+          "Zimowa przerwa od szkoły zbliża się wielkimi krokami, a rodzice już mogą planować, jak zorganizować dzieciom wolny czas. Rzeszowski Dom Kultury przygotował półkolonie w 14 filiach na terenie miasta, a zainteresowani muszą pamiętać o konkretnej dacie rozpoczęcia zapisów. Do wyboru będą dwa turnusy, ale różnice w cenach mogą mieć spore znaczenie dla domowego budżetu. [Źródło: Rzeszow-News.pl]"
         ]
       },
       {
@@ -1807,7 +1667,7 @@
     "corrections": []
   },
   {
-    "id": 25,
+    "id": 23,
     "path": "/Polska/Regiony/Zachodniopomorskie",
     "seo_url": "/Polska/Regiony/Zachodniopomorskie/slupki-za-szlabanem-miasto-odgrodzilo-utwardzony-plac-przy-ul",
     "seo_title": "Słupki za szlabanem – miasto odgrodziło utwardzony plac przy ul. Niemierzyńskiej [WIDEO, ZDJĘCIA]",
@@ -1863,7 +1723,7 @@
     "corrections": []
   },
   {
-    "id": 26,
+    "id": 24,
     "path": "/Polska/Regiony/Mazowieckie",
     "seo_url": "/Polska/Regiony/Mazowieckie/bcu-w-pionkach-stawia-na-rozwoj-w-poniedzialek-ogolnopolska-konferencja",
     "seo_title": "BCU w Pionkach stawia na rozwój. W poniedziałek ogólnopolska konferencja",
@@ -1918,7 +1778,7 @@
     "corrections": []
   },
   {
-    "id": 27,
+    "id": 25,
     "path": "/Polska",
     "seo_url": "/Polska/nfz-liczba-pacjentow-z-cukrzyca-wzrosla-o-27-6-proc-w-dziewiec-lat",
     "seo_title": "NFZ: liczba pacjentów z cukrzycą wzrosła o 27,6 proc. w dziewięć lat; choruje coraz więcej dzieci",
@@ -1929,7 +1789,7 @@
     "published_iso": "2026-11-14T06:51:12+01:00",
     "display_date": "14.11.2026, 06:51",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
@@ -1954,7 +1814,7 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Liczba dorosłych pacjentów z rozpoznaną cukrzycą wzrosła w Polsce w ciągu dziewięciu lat o 27,6 proc. i w 2025 r. sięgnęła 3,46 mln — poinformował Narodowy Fundusz Zdrowia w w serwisie X. [Źródło: Medonet.pl, TVS Śląsk]"
+          "Liczba dorosłych pacjentów z rozpoznaną cukrzycą wzrosła w Polsce w ciągu dziewięciu lat o 27,6 proc. i w 2025 r. sięgnęła 3,46 mln — poinformował Narodowy Fundusz Zdrowia w w serwisie X. [Źródło: Medonet.pl]"
         ]
       },
       {
@@ -1993,7 +1853,7 @@
     "corrections": []
   },
   {
-    "id": 28,
+    "id": 26,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/kariera-schodzi-na-drugi-plan-miliony-polakow-maja-coraz-wiekszy-problem",
     "seo_title": "Kariera schodzi na drugi plan. Miliony Polaków mają coraz większy problem",
@@ -2060,7 +1920,7 @@
     "corrections": []
   },
   {
-    "id": 29,
+    "id": 27,
     "path": "/Polska",
     "seo_url": "/Polska/nadchodza-rewolucyjne-zmiany-w-pogrzebach-i-na-cmentarzach-czegos",
     "seo_title": "Nadchodzą rewolucyjne zmiany w pogrzebach i na cmentarzach. Czegoś takiego do tej pory Polsce jeszcze nie było",
@@ -2071,12 +1931,12 @@
     "published_iso": "2026-11-14T06:51:12+01:00",
     "display_date": "14.11.2026, 06:51",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "12 redakcji"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -2088,28 +1948,23 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (12 źródeł)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (12 redakcji)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
           "Ludzkich prochów nie trzeba będzie przechowywać w urnie? Można je będzie rozsypać na przykład w przydomowym ogrodzie, lesie lub parku? Szykuje się jeszcze rewolucja na cmentarzach. [Źródło: Forsal.pl]",
-          "Chodzi o miliony złotych do zwrotu. Spotkanie odbędzie się na marginesie szczytu APEC w Shenzen i będzie poświęcone kwestii broni jądrowej. Trump uważa, że może to doprowadzić do zawarcia nowego porozumienia między największymi państwami, które dysponują bronią jądrową. [Źródło: Forsal.pl, Rzeczpospolita, Bankier.pl, Energetyka24, Polsat News, Interia Wydarzenia, TVN24, Kresy.pl]",
-          "Wśród tematów rozmowy ma być m. in. redukcja zbrojeń nuklearnych. [Źródło: Bankier.pl, Polsat News]"
+          "Chodzi o miliony złotych do zwrotu. Spotkanie odbędzie się na marginesie szczytu APEC w Shenzen i będzie poświęcone kwestii broni jądrowej. Trump uważa, że może to doprowadzić do zawarcia nowego porozumienia między największymi państwami, które dysponują bronią jądrową. [Źródło: Forsal.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Prawie cztery i pół kilometra nowych tras pieszo-rowerowych powstanie na Roztoczu. Inwestycja obejmie dwa odcinki wzdłuż dróg wojewódzkich nr 849 i 853 na terenie Józefowa i Długiego Kąta. Koszt budowy przekroczy 7 milionów złotych. [Źródło: Radio Lublin]",
-          "— Prezydent dał jasno do zrozumienia, że omówi m.in. kwestię redukcji broni jądrowej na świecie. [Źródło: TVP.info]",
-          "Do rozmów przywódców trzech mocarstw ma dojść 19 listopada, przy okazji szczytu Współpracy Gospodarczej Azji i Pacyfiku w Shenzhen — informuje Bloomberg. [Źródło: Business Insider PL]",
-          "Z Kraśnika aż pod polsko-ukraińską granicę będzie można dojechać nową, bezpieczną trasą rowerową. Rusza projekt „Rowerowe Roztocze”, a dziś podpisano pierwszą umowę z wykonawcą. Niebawem rozpoczną się prace w miejscowościach Józefów i Długi Kąt. [Źródło: TVP3 Lublin]",
-          "Wołodymyr Zełenski wyraża się optymistycznie o ostatnich negocjacjach. [Źródło: Energetyka24]",
-          "Wśród poruszanych tematów ma znaleźć się kwestia redukcji arsenału jądrowego na świecie. W podróży do Azji Trumpowi będzie towarzyszył Elon Musk. [Źródło: Interia Wydarzenia]"
+          "— Prezydent dał jasno do zrozumienia, że omówi m.in. kwestię redukcji broni jądrowej na świecie. [Źródło: TVP.info]"
         ]
       }
     ],
@@ -2131,80 +1986,17 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Trzy mocarstwa, trzej przywódcy. Takiego spotkania jeszcze nie było",
         "url": "https://www.tvp.info/96475731/prezydent-usa-donald-trump-spotka-sie-z-przywodca-chin-xi-jinpingiem-i-prezydentem-rosji-wladimirem-putinem-na-marginesie-szczytu-apec-w-chinach"
-      },
-      {
-        "outlet": "Business Insider PL",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Szykuje się spotkanie przywódców trzech mocarstw. Biały Dom potwierdza",
-        "url": "https://businessinsider.com.pl/gospodarka/donald-trump-spotka-sie-z-wladimirem-putinem-i-xi-jinpingiem-kluczowe-rozmowy-w/pbrf1xf"
-      },
-      {
-        "outlet": "TVP3 Lublin",
-        "angle": "Doniesienie regionalne",
-        "summary": "Rowerem z Kraśnika do granicy z Ukrainą. Rusza projekt „Rowerowe Roztocze”",
-        "url": "https://lublin.tvp.pl/96461125/rowerem-z-krasnika-do-granicy-z-ukraina-rusza-projekt-rowerowe-roztocze"
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Będzie spotkanie Trump–Putin–Xi. Politycy zajmą się kwestią broni jądrowej",
-        "url": "https://www.rp.pl/dyplomacja/art45488021-bedzie-spotkanie-trump-putin-xi-politycy-zajma-sie-kwestia-broni-jadrowej"
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Historyczne spotkanie Trumpa, Putina i Xi. Głównym tematem redukcja broni jądrowej",
-        "url": "https://www.bankier.pl/wiadomosc/Historyczne-spotkanie-Trumpa-Putina-i-Xi-Glownym-tematem-redukcja-broni-jadrowej-9228850.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
-      },
-      {
-        "outlet": "Energetyka24",
-        "angle": "Kontekst sektorowy",
-        "summary": "Wysłannicy Trumpa po spotkaniu z Putinem. Co przekażą Zełenskiemu?",
-        "url": "https://energetyka24.com/polityka/wydarzenia/wyslannicy-trumpa-po-spotkaniu-z-putinem-co-przekaza-zelenskiemu"
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Donald Trump spotka się z Xi i Putinem. Biały Dom potwierdza, jest termin",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-14/donald-trump-spotka-sie-z-xi-i-putinem-bialy-dom-potwierdza-jest-termin/"
-      },
-      {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Spotkanie Trump-Xi-Putin. Podano datę i miejsce, Biały Dom o szczegółach",
-        "url": "https://wydarzenia.interia.pl/zagranica/news-spotkanie-trump-xi-putin-podano-date-i-miejsce-bialy-dom-o-s,nId,23573382"
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Biały Dom: Donald Trump spotka się z Xi i Władimirem Putinem w Shenzhen",
-        "url": "https://tvn24.pl/swiat/bialy-dom-donald-trump-spotka-sie-z-xi-jinpingiem-i-wladimierem-putinem-w-czwartek-w-shenzhen-st9338638?source=rss"
-      },
-      {
-        "outlet": "Kresy.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Wysłannicy Trumpa spotkali się z Putinem",
-        "url": "https://kresy.pl/wydarzenia/wyslannicy-trumpa-spotkali-sie-z-putinem/"
       }
     ],
     "sources": [
-      "Bankier.pl",
-      "Business Insider PL",
-      "Energetyka24",
       "Forsal.pl",
-      "Interia Wydarzenia",
-      "Kresy.pl",
-      "Polsat News",
       "Radio Lublin",
-      "Rzeczpospolita",
-      "TVN24",
-      "TVP.info",
-      "TVP3 Lublin"
+      "TVP.info"
     ],
     "corrections": []
   },
   {
-    "id": 30,
+    "id": 28,
     "path": "/Polska",
     "seo_url": "/Polska/kolejni-pacjenci-moga-miec-duzy-problem-czyli-nowy-incydent-w-branzy",
     "seo_title": "Kolejni pacjenci mogą mieć duży problem, czyli nowy incydent w branży medycznej…",
@@ -2273,7 +2065,7 @@
     "corrections": []
   },
   {
-    "id": 31,
+    "id": 29,
     "path": "/Polska/Regiony/Swietokrzyskie",
     "seo_url": "/Polska/Regiony/Swietokrzyskie/nie-tylko-kryzys-sportowy-w-kszo-1929-zarzad-wydal-oswiadczenie",
     "seo_title": "Nie tylko kryzys sportowy w KSZO 1929? Zarząd wydał oświadczenie",
@@ -2330,7 +2122,7 @@
     "corrections": []
   },
   {
-    "id": 32,
+    "id": 30,
     "path": "/Polska/Regiony/Podkarpackie",
     "seo_url": "/Polska/Regiony/Podkarpackie/czy-bedzie-przelamanie-kszo-zagra-z-siarka-tarnobrzeg",
     "seo_title": "Czy będzie przełamanie? KSZO zagra z Siarką Tarnobrzeg",
@@ -2393,7 +2185,7 @@
     "corrections": []
   },
   {
-    "id": 33,
+    "id": 31,
     "path": "/Polska/Regiony/Slaskie",
     "seo_url": "/Polska/Regiony/Slaskie/nie-bac-tuska-i-do-berlina-wypelniony-plac-popieral-dzialania",
     "seo_title": "„Nie bać Tuska” i „do Berlina”. Wypełniony plac popierał działania prezydenta Nawrockiego – foto",
@@ -2431,7 +2223,7 @@
         "paragraphs": [
           "W piątkowy wieczór na placu Bolesława Chrobrego w Bielsku-Białej odbył się wiec poparcia dla prezydenta Karola Nawrockiego. W manifestacji wzięło udział kilkaset osób, w tym przedstawiciele Klubów „Gazety Polskiej”. Skandowano hasła „Nie bać Tuska”, a tak [Źródło: Bielsko.biala.pl, Bankier.pl, RadioMaryja.pl, CyberDefence24, Niebezpiecznik, Puls Biznesu, Rzeczpospolita, WP Wiadomości]",
           "Ochrona dzieci przed internetowymi przestępcami powinna łączyć ponad politycznymi podziałami – ocenił premier Donald Tusk. Celem rządowej nowelizacji było wdrożenie europejskiego Aktu o usługach cyfrowych (DSA). [Źródło: Bielsko.biala.pl, Gazeta.pl, Dziennik.pl, naTemat.pl, RadioMaryja.pl, CyberDefence24, Niebezpiecznik, Puls Biznesu, Rzeczpospolita]",
-          "Chodzi o nowe procedury, dzięki którym możliwe byłoby szybkie wydawanie nakazów ograniczających dostęp do treści naruszających prawo w internecie, przy jednoczesnym poszanowaniu praw użytkowników sieci. Polska jest jedynym państwem Unii Europejskiej, które nie ma koordynatora DSA uprawnionego do blokowania nielegalnych treści. [Źródło: Gazeta.pl, Dziennik.pl, TVP.info, Bankier.pl, RadioMaryja.pl, CyberDefence24, Niebezpiecznik, Puls Biznesu, Rzeczpospolita, Infor.pl]",
+          "Chodzi o nowe procedury, dzięki którym możliwe byłoby szybkie wydawanie nakazów ograniczających dostęp do treści naruszających prawo w internecie, przy jednoczesnym poszanowaniu praw użytkowników sieci. Polska jest jedynym państwem Unii Europejskiej, które nie ma koordynatora DSA uprawnionego do blokowania nielegalnych treści. [Źródło: Gazeta.pl, Dziennik.pl, TVP.info, Bankier.pl, RadioMaryja.pl, CyberDefence24, Niebezpiecznik, Puls Biznesu, Rzeczpospolita]",
           "Zdaniem premiera „szczególnie” w kontekście zdarzeń z ostatnich miesięcy, chronienie młodych ludzi przed „złem w internecie, przed nienawiścią, przed agresją, przestępcami w internecie” wydawało się dla niego „czymś tak oczywistym”. [Źródło: naTemat.pl, RadioMaryja.pl, CyberDefence24]"
         ]
       },
@@ -2612,27 +2404,27 @@
     "corrections": []
   },
   {
-    "id": 34,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego",
+    "id": 32,
+    "path": "/Polska/Regiony/Wielkopolskie",
+    "seo_url": "/Polska/Regiony/Wielkopolskie/policjanci-zatrzymali-do-kontroli-kierowce-samochodu-dostawczego",
     "seo_title": "Policjanci zatrzymali do kontroli kierowcę samochodu dostawczego. Okazało się, że jechał na \"podwójnym gazie\"",
     "summary_lead": "Do zatrzymania doszło w czwartek w Wólce (powiat słupecki).",
-    "meta_description": "Do zatrzymania doszło w czwartek w Wólce (powiat słupecki). Pijany 57-latek kierujący autem osobowym został zatrzymany dzięki interwencji świadka.",
-    "keywords": "Swiat, zatrzymali, kontroli, kierowcę, samochodu, dostawczego, Okazało",
+    "meta_description": "Do zatrzymania doszło w czwartek w Wólce (powiat słupecki).",
+    "keywords": "Wielkopolskie, zatrzymali, kontroli, kierowcę, samochodu, dostawczego, Okazało",
     "thumbnail_url": "https://epoznan.pl/storage/gallery/143394/FPz2d5kY344mdxTZotdGLqiXlzResoF1_left4.jpg?1794587393",
     "published_iso": "2026-11-14T05:44:34+01:00",
     "display_date": "14.11.2026, 05:44",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
+    "fact_agreement_pct": null,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "1 redakcja"
       },
       {
         "label": "Kategoria",
-        "val": "/Swiat"
+        "val": "/Polska/Regiony/Wielkopolskie"
       },
       {
         "label": "Główne źródło",
@@ -2640,21 +2432,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "1 źródło (lokalne/niszowe)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Relacja źródłowa (ePoznan.pl)",
         "paragraphs": [
           "Do zatrzymania doszło w czwartek w Wólce (powiat słupecki). [Źródło: ePoznan.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Pijany 57-latek kierujący autem osobowym został zatrzymany dzięki interwencji świadka. W czwartek (12.11) około godziny 22:00 dyżurny tomaszowskiej komendy otrzymał zgłoszenie dotyczące obywatelskiego ujęcia nietrzeźwego kierującego w miejscowości Hubinek. 57-letni kierujący Oplem, mieszkaniec gminy Ulhówek w organizmie miał 2 promile alkoholu. [Źródło: Radio Lublin]"
         ]
       }
     ],
@@ -2664,22 +2450,15 @@
         "angle": "Relacja wiodąca",
         "summary": "Policjanci zatrzymali do kontroli kierowcę samochodu dostawczego. Okazało się, że jechał na \"podwójnym gazie\"",
         "url": "https://epoznan.pl/news-news-181940-policjanci_zatrzymali_do_kontroli_kierowce_samochodu_dostawczego_okazalo_sie_ze_jechal_na_podwojnym_gazie?rss=1"
-      },
-      {
-        "outlet": "Radio Lublin",
-        "angle": "Doniesienie regionalne",
-        "summary": "Prowadził auto na podwójnym gazie. Zatrzymał go świadek",
-        "url": "https://radio.lublin.pl/2026/11/prowadzil-auto-na-podwojnym-gazie-zatrzymal-go-swiadek/"
       }
     ],
     "sources": [
-      "Radio Lublin",
       "ePoznan.pl"
     ],
     "corrections": []
   },
   {
-    "id": 35,
+    "id": 33,
     "path": "/Polska/Regiony/Lubuskie",
     "seo_url": "/Polska/Regiony/Lubuskie/kiedy-otwarcie-kawiarni-w-przemyslowce-wnetrze-ozdobi-odrestaurowany",
     "seo_title": "Kiedy otwarcie kawiarni w Przemysłówce? Wnętrze ozdobi odrestaurowany neon MCK",
@@ -2740,7 +2519,7 @@
     "corrections": []
   },
   {
-    "id": 36,
+    "id": 34,
     "path": "/Swiat",
     "seo_url": "/Swiat/putin-jest-zwyciezca-rozmow-w-abu-zabi-rosja-wykorzystala-trumpa",
     "seo_title": "Putin jest zwycięzcą rozmów w Abu Zabi. \"Rosja wykorzystała Trumpa\"",
@@ -2776,7 +2555,7 @@
       {
         "heading": "Ustalenia wspólne (11 redakcji)",
         "paragraphs": [
-          "Donald Trump wciąż uważa, że rozmawiając z Władimirem Putinem, coś osiągnie. Jared Kushner i Steve Witkoff sądzą, że mogą na tym zarobić mnóstwo pieniędzy. Wszystkie rosyjsko-amerykańskie interesy się tu zbiegają. [Źródło: Newsweek Polska, Kresy.pl, Rzeczpospolita, Polsat News, Interia Wydarzenia, TVN24, RadioMaryja.pl, Bankier.pl, Energetyka24]",
+          "Donald Trump wciąż uważa, że rozmawiając z Władimirem Putinem, coś osiągnie. Jared Kushner i Steve Witkoff sądzą, że mogą na tym zarobić mnóstwo pieniędzy. Wszystkie rosyjsko-amerykańskie interesy się tu zbiegają. [Źródło: Newsweek Polska, Kresy.pl, Rzeczpospolita, Polsat News, TVN24, RadioMaryja.pl, Bankier.pl]",
           "I wszystkim to wychodzi na dobre. Z wyjątkiem Ukrainy i Europy — mówi Keir Giles, znawca Rosji i doradca NATO. Biały Dom nie przedstawił szczegółowej agendy trójstronnego spotkania. [Źródło: Newsweek Polska, Kresy.pl]",
           "Według zapowiedzi amerykański polityk nie zamierza poruszać tematu wojny w Ukrainie. Wcześniej o niektórych postulatach Putina pisał \"Bild\". [Źródło: Polsat News, RadioMaryja.pl, Bankier.pl]"
         ]
@@ -2875,7 +2654,7 @@
     "corrections": []
   },
   {
-    "id": 37,
+    "id": 35,
     "path": "/Polska/Regiony/Dolnoslaskie",
     "seo_url": "/Polska/Regiony/Dolnoslaskie/autostrada-a4-w-kierunku-wroclawia-calkowicie-zablokowana",
     "seo_title": "Autostrada A4 w kierunku Wrocławia całkowicie zablokowana",
@@ -2886,7 +2665,7 @@
     "published_iso": "2026-11-14T04:47:04+01:00",
     "display_date": "14.11.2026, 04:47",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -2911,7 +2690,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Poważne utrudnienia czekają na kierowców jadących autostradą A4 od węzła Mikołajowice w kierunku Wrocławia. Z powodu wycieku substancji ropopochodnej z pojazdu ciężarowego droga jest całkowicie zablokowana. [Źródło: TVP3 Wrocław, Radio Wrocław]"
+          "Poważne utrudnienia czekają na kierowców jadących autostradą A4 od węzła Mikołajowice w kierunku Wrocławia. Z powodu wycieku substancji ropopochodnej z pojazdu ciężarowego droga jest całkowicie zablokowana. [Źródło: TVP3 Wrocław]"
         ]
       },
       {
@@ -2942,7 +2721,7 @@
     "corrections": []
   },
   {
-    "id": 38,
+    "id": 36,
     "path": "/Polska/Regiony/Wielkopolskie",
     "seo_url": "/Polska/Regiony/Wielkopolskie/podwyzki-za-smieci-wstrzymane",
     "seo_title": "Podwyżki za śmieci wstrzymane?",
@@ -2998,7 +2777,7 @@
     "corrections": []
   },
   {
-    "id": 39,
+    "id": 37,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/od-14-listopada-kierowcy-zaplaca-ponad-30-proc-wiecej-drozeje-wazne",
     "seo_title": "Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie",
@@ -3065,7 +2844,7 @@
     "corrections": []
   },
   {
-    "id": 40,
+    "id": 38,
     "path": "/Polska/Regiony/Pomorskie",
     "seo_url": "/Polska/Regiony/Pomorskie/jak-przeciwdzialac-przemocy-wobec-dzieci",
     "seo_title": "Jak przeciwdziałać przemocy wobec dzieci",
@@ -3076,7 +2855,7 @@
     "published_iso": "2026-11-14T04:47:03+01:00",
     "display_date": "14.11.2026, 04:47",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -3101,7 +2880,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "„Usłyszeć, ochronić, wesprzeć, czyli standardy ochrony małoletnich”. Na Uniwersytecie Gdańskim przedstawiciele policji oraz fundacji, które zajmują się opieką nad krzywdzonymi dziećmi rozmawiali dzisiaj o przeciwdziałaniu przemocy. Gdańskie forum poświęcone było między innymi temu jak w szukać rozwiązań i interweniować w kryzysach. [Źródło: TVP3 Gdańsk, Radio Gdańsk]",
+          "„Usłyszeć, ochronić, wesprzeć, czyli standardy ochrony małoletnich”. Na Uniwersytecie Gdańskim przedstawiciele policji oraz fundacji, które zajmują się opieką nad krzywdzonymi dziećmi rozmawiali dzisiaj o przeciwdziałaniu przemocy. Gdańskie forum poświęcone było między innymi temu jak w szukać rozwiązań i interweniować w kryzysach. [Źródło: TVP3 Gdańsk]",
           "To współpraca wiele instytucji i służb ma zapewnić najmłodszym bezpieczeństwo. [Źródło: TVP3 Gdańsk]"
         ]
       },
@@ -3133,7 +2912,7 @@
     "corrections": []
   },
   {
-    "id": 41,
+    "id": 39,
     "path": "/Polska/Regiony/Slaskie",
     "seo_url": "/Polska/Regiony/Slaskie/rzeczpospolita-swoich-bohaterow-bedzie-bronic-ostra-reakcja-wojewody-po",
     "seo_title": "„Rzeczpospolita swoich bohaterów będzie bronić”. Ostra reakcja wojewody po zawiadomieniu do prokuratury",
@@ -3200,7 +2979,7 @@
     "corrections": []
   },
   {
-    "id": 42,
+    "id": 40,
     "path": "/Polska",
     "seo_url": "/Polska/koniec-z-nudnymi-zasilaczami-corsair-pokazal-przezroczysty-model-shift",
     "seo_title": "Koniec z nudnymi zasilaczami? Corsair pokazał przezroczysty model Shift Crystal",
@@ -3268,7 +3047,7 @@
     "corrections": []
   },
   {
-    "id": 43,
+    "id": 41,
     "path": "/Polska/Regiony/Lubuskie",
     "seo_url": "/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna",
     "seo_title": "Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna",
@@ -3330,7 +3109,7 @@
     "corrections": []
   },
   {
-    "id": 44,
+    "id": 42,
     "path": "/Polska/Regiony/Podlaskie",
     "seo_url": "/Polska/Regiony/Podlaskie/jedz-lostroznie-ruszyla-akcja-przypominajaca-kierowcom-o-zagrozeniu-na",
     "seo_title": "„Jedź ŁOŚtrożnie”. Ruszyła akcja przypominająca kierowcom o zagrożeniu na drogach [WIDEO]",
@@ -3341,7 +3120,7 @@
     "published_iso": "2026-11-14T03:44:55+01:00",
     "display_date": "14.11.2026, 03:44",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -3366,7 +3145,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Jesienią wzrasta ryzyko spotkania dzikich zwierząt na drogach. W związku z okresem migracji łosi policjanci i pracownicy Biebrzańskiego Parku Narodowego przypominali kierowcom o konieczności zachowania ostrożności na Carskiej Drodze, nazywanej również „łosiostradą”. [Źródło: TVP3 Białystok, Radio Białystok]"
+          "Jesienią wzrasta ryzyko spotkania dzikich zwierząt na drogach. W związku z okresem migracji łosi policjanci i pracownicy Biebrzańskiego Parku Narodowego przypominali kierowcom o konieczności zachowania ostrożności na Carskiej Drodze, nazywanej również „łosiostradą”. [Źródło: TVP3 Białystok]"
         ]
       },
       {
@@ -3397,7 +3176,7 @@
     "corrections": []
   },
   {
-    "id": 45,
+    "id": 43,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/rzad-szykuje-na-2027-rok-zamrozenie-cen-gazu",
     "seo_title": "Rząd szykuje na 2027 rok zamrożenie cen gazu",
@@ -3433,7 +3212,7 @@
       {
         "heading": "Ustalenia wspólne (8 redakcji)",
         "paragraphs": [
-          "Ministerstwo Energii planuje w 2027 roku zamrożenie na poziomie 197,27 zł za MWh cen gazu dla odbiorców uprawnionych do korzystania z taryf. Resort opublikował założenia odpowiedniej ustawy. Zgodnie z obecnymi regulacjami taryfowanie miałoby zniknąć z końcem 2027 roku. [Źródło: WysokieNapiecie.pl, Bankier.pl, TVN24, Business Insider PL, Subiektywnie o Finansach]",
+          "Ministerstwo Energii planuje w 2027 roku zamrożenie na poziomie 197,27 zł za MWh cen gazu dla odbiorców uprawnionych do korzystania z taryf. Resort opublikował założenia odpowiedniej ustawy. Zgodnie z obecnymi regulacjami taryfowanie miałoby zniknąć z końcem 2027 roku. [Źródło: WysokieNapiecie.pl, Bankier.pl, TVN24]",
           "Według ministra Miłosza Motyki koszt interwencji ma wynieść ok. 6 mld zł. W założeniach jako jedno ze źródeł finansowania wskazuje się ekstra daninę – 10% przychodów niektórych podmiotów importujących gaz. Z tej daniny zwolnieni będą mniejsi importerzy, posiadający przepustowości na wejściach do systemu poniżej 10% łącznej przepustowości tych punktów. [Źródło: WysokieNapiecie.pl]",
           "Na pewno największym płatnikiem będzie Orlen. [Źródło: WysokieNapiecie.pl]"
         ]
@@ -3512,7 +3291,7 @@
     "corrections": []
   },
   {
-    "id": 46,
+    "id": 44,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach",
     "seo_title": "Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach \"podpisali się\" zmarli",
@@ -3579,7 +3358,7 @@
     "corrections": []
   },
   {
-    "id": 47,
+    "id": 45,
     "path": "/Swiat",
     "seo_url": "/Swiat/starship-czeka-na-kolejny-lot-ten-moment-misji-spacex-bedzie-przelomowy",
     "seo_title": "Starship czeka na kolejny lot. Ten moment misji SpaceX będzie przełomowy",
@@ -3654,7 +3433,7 @@
     "corrections": []
   },
   {
-    "id": 48,
+    "id": 46,
     "path": "/Polska/Regiony/Lodzkie",
     "seo_url": "/Polska/Regiony/Lodzkie/ciezarowka-przewrocila-sie-na-a2-utrudnienia-w-strone-lodzi",
     "seo_title": "Ciężarówka przewróciła się na A2. Utrudnienia w stronę Łodzi",
@@ -3721,7 +3500,7 @@
     "corrections": []
   },
   {
-    "id": 49,
+    "id": 47,
     "path": "/Polska/Regiony/Lubuskie",
     "seo_url": "/Polska/Regiony/Lubuskie/zadzwonil-na-112-i-powiedzial-ze-zabil-czlowieka-powod-jego-telefonu",
     "seo_title": "Zadzwonił na 112 i powiedział, że zabił człowieka. Powód jego telefonu wbija w fotel",
@@ -3789,7 +3568,7 @@
     "corrections": []
   },
   {
-    "id": 50,
+    "id": 48,
     "path": "/Polska/Regiony/Lodzkie",
     "seo_url": "/Polska/Regiony/Lodzkie/ukradli-puszke-z-napiwkami-wpadli-juz-nastepnego-dnia-grozi-im-do-8-lat",
     "seo_title": "Ukradli puszkę z napiwkami. Wpadli już następnego dnia, grozi im do 8 lat więzienia",
@@ -3856,7 +3635,7 @@
     "corrections": []
   },
   {
-    "id": 51,
+    "id": 49,
     "path": "/Polska/Regiony/Podlaskie",
     "seo_url": "/Polska/Regiony/Podlaskie/symfonia-lomzynska-z-maestro-maksymiukiem",
     "seo_title": "Symfonia łomżyńska z maestro Maksymiukiem",
@@ -3867,7 +3646,7 @@
     "published_iso": "2026-11-14T03:03:31+01:00",
     "display_date": "14.11.2026, 03:03",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -3892,7 +3671,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Światowe prawykonanie Symfonii łomżyńskiej na orkiestrę smyczkową i fortepian Jerzego Maksymiuka było głównym punktem kolejnego koncertu Filharmonii Kameralnej im. Witolda Lutosławskiego. Kompozytor nie tylko poprowadził orkiestrę, ale też zasiadł za fortepianem, a do tego podkreślał, że łomżyńscy muzycy są jedną z wiodących orkiestr kameralnych. [Źródło: 4Lomza.pl, TVP3 Białystok]",
+          "Światowe prawykonanie Symfonii łomżyńskiej na orkiestrę smyczkową i fortepian Jerzego Maksymiuka było głównym punktem kolejnego koncertu Filharmonii Kameralnej im. Witolda Lutosławskiego. Kompozytor nie tylko poprowadził orkiestrę, ale też zasiadł za fortepianem, a do tego podkreślał, że łomżyńscy muzycy są jedną z wiodących orkiestr kameralnych. [Źródło: 4Lomza.pl]",
           "Koncert miał też młode bohaterki: skrzypaczkę Sofię Wadzicką, dyrygentkę Barbarę Siciarek oraz flecistkę Klarę Żebrowską, która rozpoczęła Symfonię łomżyńską. [Źródło: 4Lomza.pl]"
         ]
       },
@@ -3924,7 +3703,7 @@
     "corrections": []
   },
   {
-    "id": 52,
+    "id": 50,
     "path": "/Polska/Regiony/Opolskie",
     "seo_url": "/Polska/Regiony/Opolskie/ukradli-kosmetyki-za-5-tys-zl-przy-jednym-z-zatrzymanych-policjanci",
     "seo_title": "Ukradli kosmetyki za 5 tys. zł. Przy jednym z zatrzymanych policjanci znaleźli amfetaminę",
@@ -3979,7 +3758,7 @@
     "corrections": []
   },
   {
-    "id": 53,
+    "id": 51,
     "path": "/Polska",
     "seo_url": "/Polska/bral-lapowki-i-zdradzal-tajemnice-sledztwa-byly-policjant-z-aktem",
     "seo_title": "Brał łapówki i zdradzał tajemnice śledztwa? Były policjant z aktem oskarżenia",
@@ -4041,7 +3820,7 @@
     "corrections": []
   },
   {
-    "id": 54,
+    "id": 52,
     "path": "/Polska/Regiony/Kujawsko-Pomorskie",
     "seo_url": "/Polska/Regiony/Kujawsko-Pomorskie/laboratorium-narkotyku-zombie-pod-inowroclawiem-zdecydowana-akcja-cbsp",
     "seo_title": "Laboratorium „narkotyku zombie” pod Inowrocławiem. Zdecydowana akcja CBŚP",
@@ -4110,7 +3889,7 @@
     "corrections": []
   },
   {
-    "id": 55,
+    "id": 53,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
     "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/rodzinny-dramat-30-latek-podejrzany-o-zabojstwo-ojca",
     "seo_title": "Rodzinny dramat. 30-latek podejrzany o zabójstwo ojca",
@@ -4177,7 +3956,7 @@
     "corrections": []
   },
   {
-    "id": 56,
+    "id": 54,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/ile-zarabia-policjant-przed-26-rokiem-zycia-i-pozniej-praca-w-policji-w",
     "seo_title": "Ile zarabia policjant przed 26. rokiem życia i później? Praca w policji w 2026 r. Na jakie dodatki można liczyć?",
@@ -4244,7 +4023,7 @@
     "corrections": []
   },
   {
-    "id": 57,
+    "id": 55,
     "path": "/Polska/Regiony/Dolnoslaskie",
     "seo_url": "/Polska/Regiony/Dolnoslaskie/najmniejsze-miasta-dolnego-slaska-perelki-ukryte-w-cieniu-wiekszych",
     "seo_title": "Najmniejsze miasta Dolnego Śląska. Perełki ukryte w cieniu większych sąsiadów",
@@ -4299,7 +4078,7 @@
     "corrections": []
   },
   {
-    "id": 58,
+    "id": 56,
     "path": "/Polska/Regiony/Zachodniopomorskie",
     "seo_url": "/Polska/Regiony/Zachodniopomorskie/najglupsze-odpowiedzi-uczniow-i-blyskawiczne-riposty-nauczycieli-hity",
     "seo_title": "Najgłupsze odpowiedzi uczniów i błyskawiczne riposty nauczycieli. Hity sprawdzianów",
@@ -4354,7 +4133,7 @@
     "corrections": []
   },
   {
-    "id": 59,
+    "id": 57,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty",
     "seo_title": "Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?",
@@ -4411,7 +4190,7 @@
     "corrections": []
   },
   {
-    "id": 60,
+    "id": 58,
     "path": "/Polska/Regiony/Wielkopolskie",
     "seo_url": "/Polska/Regiony/Wielkopolskie/polska-wies-w-ii-rp-bez-upiekszen-znachor-nie-pokazuje-calej-prawdy",
     "seo_title": "Polska wieś w II RP bez upiększeń. „Znachor” nie pokazuje całej prawdy",
@@ -4466,7 +4245,7 @@
     "corrections": []
   },
   {
-    "id": 61,
+    "id": 59,
     "path": "/Polska",
     "seo_url": "/Polska/snieg-mroz-i-silny-wiatr-pogoda-na-weekend-zaskoczy-kierowcow",
     "seo_title": "Śnieg, mróz i silny wiatr. Pogoda na weekend zaskoczy kierowców",
@@ -4477,12 +4256,12 @@
     "published_iso": "2026-11-14T01:58:52+01:00",
     "display_date": "14.11.2026, 01:58",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -4494,15 +4273,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Przed nami chłodny i wietrzny weekend. W nocy z piątku na sobotę temperatura spadnie poniżej zera, a na południu pojawią się opady śniegu i oblodzenia. W górach wiatr rozpędzi się nawet do 80 km/h, powodując zawieje śnieżne. [Źródło: WP Wiadomości, 4Lomza.pl, TVP3 Łódź]",
+          "Przed nami chłodny i wietrzny weekend. W nocy z piątku na sobotę temperatura spadnie poniżej zera, a na południu pojawią się opady śniegu i oblodzenia. W górach wiatr rozpędzi się nawet do 80 km/h, powodując zawieje śnieżne. [Źródło: WP Wiadomości]",
           "Niedziela przyniesie słońce, ale poranek będzie mroźny. [Źródło: WP Wiadomości]"
         ]
       },
@@ -4511,8 +4290,7 @@
         "paragraphs": [
           "Nadchodzący weekend na Pomorzu przyniesie wymagające warunki na drogach, dlatego kierowcy powinni zachować szczególną ostrożność. Jazdę utrudnią przede wszystkim przelotne opady deszczu ze śniegiem oraz gęste mgły. Lokalnie osadzą szadź i ograniczą widzialność nawet do 200 m – informuje IMGW. [Źródło: Radio Gdańsk]",
           "W poniedziałek wrócą chmury i prawdopodobieństwo opadów. [Źródło: 4Lomza.pl]",
-          "Silny wiatr i oblodzenia – z taką aurą w najbliższych dniach muszą i będą musieli mierzyć się mieszkańcy wybrzeża. Podmuchy do nawet 80 kilometrów na godzinę wdzierać się będą także w głąb lądu – na północy Pomorza Zachodniego. [Źródło: Radio Szczecin]",
-          "Synoptycy prognozują także marznące mgły, które miejscami mogą ograniczać widzialność do 300 metrów. [Źródło: TVP3 Łódź]"
+          "Silny wiatr i oblodzenia – z taką aurą w najbliższych dniach muszą i będą musieli mierzyć się mieszkańcy wybrzeża. Podmuchy do nawet 80 kilometrów na godzinę wdzierać się będą także w głąb lądu – na północy Pomorza Zachodniego. [Źródło: Radio Szczecin]"
         ]
       }
     ],
@@ -4540,25 +4318,18 @@
         "angle": "Doniesienie regionalne",
         "summary": "Załamanie pogody na wybrzeżu – idzie silny wiatr",
         "url": "https://radioszczecin.pl/1,513724"
-      },
-      {
-        "outlet": "TVP3 Łódź",
-        "angle": "Doniesienie regionalne",
-        "summary": "Pogoda na weekend w Łódzkiem. IMGW ostrzega przed mgłami i przymrozkami",
-        "url": "https://lodz.tvp.pl/pogoda-na-weekend-w-lodzkiem-mgly-przymrozki,96457389"
       }
     ],
     "sources": [
       "4Lomza.pl",
       "Radio Gdańsk",
       "Radio Szczecin",
-      "TVP3 Łódź",
       "WP Wiadomości"
     ],
     "corrections": []
   },
   {
-    "id": 62,
+    "id": 60,
     "path": "/Sport",
     "seo_url": "/Sport/siatkarski-nokaut-w-polskiej-lidze-olbrzymi-awans-w-tabeli",
     "seo_title": "Siatkarski nokaut w polskiej lidze. Olbrzymi awans w tabeli",
@@ -4634,7 +4405,7 @@
     "corrections": []
   },
   {
-    "id": 63,
+    "id": 61,
     "path": "/Sport",
     "seo_url": "/Sport/aryna-sabalenka-elina-switolina-relacja-na-zywo",
     "seo_title": "Aryna Sabalenka – Elina Switolina [RELACJA NA ŻYWO]",
@@ -4645,7 +4416,7 @@
     "published_iso": "2026-11-14T01:58:52+01:00",
     "display_date": "14.11.2026, 01:58",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "metrics": [
       {
@@ -4670,7 +4441,7 @@
       {
         "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "\"Po raz kolejny Sabalenka wyglądała na kruchą\" — tak francuski portal Tennis Majors podsumował porażkę Białorusinki z Eliną Switoliną w WTA Finals. Wiceliderka rankingu przegrała 3:6, 6:3, 1:6 i odpadła po fazie grupowej. Zagraniczne media nie mają dla niej litości, a niektóre wskazują, gdzie ich zdaniem leży problem. [Źródło: Przegląd Sportowy, Polsat Sport]"
+          "\"Po raz kolejny Sabalenka wyglądała na kruchą\" — tak francuski portal Tennis Majors podsumował porażkę Białorusinki z Eliną Switoliną w WTA Finals. Wiceliderka rankingu przegrała 3:6, 6:3, 1:6 i odpadła po fazie grupowej. Zagraniczne media nie mają dla niej litości, a niektóre wskazują, gdzie ich zdaniem leży problem. [Źródło: Przegląd Sportowy]"
         ]
       },
       {
@@ -4725,7 +4496,7 @@
     "corrections": []
   },
   {
-    "id": 64,
+    "id": 62,
     "path": "/Swiat",
     "seo_url": "/Swiat/ukrainski-system-walki-elektronicznej-mial-powstrzymac-rosyjskie",
     "seo_title": "Ukraiński system walki elektronicznej miał powstrzymać rosyjskie rakiety Oresznik",
@@ -4792,7 +4563,7 @@
     "corrections": []
   },
   {
-    "id": 65,
+    "id": 63,
     "path": "/Polska/Regiony/Swietokrzyskie",
     "seo_url": "/Polska/Regiony/Swietokrzyskie/pijany-kierowca-doprowadzil-do-kolizji-kilku-aut",
     "seo_title": "Pijany kierowca doprowadził do kolizji kilku aut",
@@ -4848,7 +4619,7 @@
     "corrections": []
   },
   {
-    "id": 66,
+    "id": 64,
     "path": "/Polska/Regiony/Podkarpackie",
     "seo_url": "/Polska/Regiony/Podkarpackie/wykorzystywali-maloletnich-do-nielegalnych-zbiorek-charytatywnych",
     "seo_title": "Wykorzystywali małoletnich do nielegalnych zbiórek charytatywnych",
@@ -4903,7 +4674,7 @@
     "corrections": []
   },
   {
-    "id": 67,
+    "id": 65,
     "path": "/Swiat",
     "seo_url": "/Swiat/niepokojacy-incydent-w-bazie-usa-drony-nad-jednym-z-najwazniejszych",
     "seo_title": "Niepokojący incydent w bazie USA. Drony nad jednym z najważniejszych obiektów NATO",
@@ -4979,7 +4750,7 @@
     "corrections": []
   },
   {
-    "id": 68,
+    "id": 66,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-odsuwa-vance-a-od-polityki-zagranicznej-powodem-masowa-korupcja-w",
     "seo_title": "Trump odsuwa Vance’a od polityki zagranicznej. Powodem „masowa korupcja” w stanach Demokratów",
@@ -5046,7 +4817,7 @@
     "corrections": []
   },
   {
-    "id": 69,
+    "id": 67,
     "path": "/Polska/Regiony/Slaskie",
     "seo_url": "/Polska/Regiony/Slaskie/dwie-kobiety-uratowane-z-plonacego-budynku-przestroga-na-zime",
     "seo_title": "Dwie kobiety uratowane z płonącego budynku. Przestroga na zimę",
@@ -5101,7 +4872,7 @@
     "corrections": []
   },
   {
-    "id": 70,
+    "id": 68,
     "path": "/Polska/Regiony/Kujawsko-Pomorskie",
     "seo_url": "/Polska/Regiony/Kujawsko-Pomorskie/konflikt-w-miejskiej-spolce-dyrektorka-bydgoskiego-zoo-zlozyla",
     "seo_title": "Konflikt w miejskiej spółce. Dyrektorka bydgoskiego zoo złożyła wypowiedzenie z pracy",
@@ -5156,7 +4927,7 @@
     "corrections": []
   },
   {
-    "id": 71,
+    "id": 69,
     "path": "/Swiat",
     "seo_url": "/Swiat/loty-samolotow-wstrzymane-w-calych-usa-pierwsze-informacje",
     "seo_title": "USA wstrzymują wszystkie starty samolotów. FAA wydała nadzwyczajny nakaz",
@@ -5192,7 +4963,7 @@
       {
         "heading": "Ustalenia wspólne (22 redakcji)",
         "paragraphs": [
-          "Nadzwyczajna sytuacja na amerykańskich lotniskach. FAA wstrzymała starty samolotów w całych Stanach Zjednoczonych z powodu rozległej awarii łączności. Do końca dnia zaplanowano jeszcze ponad 30 tys. startów i lądowań. [Źródło: Rzeczpospolita, Interia Wydarzenia, WP Wiadomości, Niedziela.pl, Fakt.pl, Forsal.pl, Polsat News, Onet Wiadomości, Radio Lublin, Defence24, Gazeta.pl, Puls Biznesu, TVN24, Bankier.pl]",
+          "Nadzwyczajna sytuacja na amerykańskich lotniskach. FAA wstrzymała starty samolotów w całych Stanach Zjednoczonych z powodu rozległej awarii łączności. Do końca dnia zaplanowano jeszcze ponad 30 tys. startów i lądowań. [Źródło: Rzeczpospolita, Interia Wydarzenia, WP Wiadomości, Niedziela.pl, Fakt.pl, Forsal.pl, Polsat News, Onet Wiadomości, Radio Lublin, Bankier.pl, Defence24, Gazeta.pl]",
           "Nie wiadomo, kiedy ruch lotniczy wróci do normy. Według NBC News to dopiero drugi taki przypadek od zamachów terrorystycznych z 11 września 2001 roku. Władze zapewniają, że to nie był cyberatak. [Źródło: Rzeczpospolita, Interia Wydarzenia, WP Wiadomości, Niedziela.pl, Fakt.pl, Polsat News, Onet Wiadomości]",
           "Bezprecedensowe utrudnienia w amerykańskim ruchu lotniczym. Amerykańskie służby powołały się na wyjątkowe okoliczności i względy bezpieczeństwa. [Źródło: Interia Wydarzenia, Fakt.pl]"
         ]
@@ -5373,7 +5144,7 @@
     "corrections": []
   },
   {
-    "id": 72,
+    "id": 70,
     "path": "/Polska/Regiony/Lubelskie",
     "seo_url": "/Polska/Regiony/Lubelskie/tragiczny-karambol-z-udzialem-wojskowych-ciezarowek-zadzialal-efekt",
     "seo_title": "Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał \"efekt domina\". Troje dzieci w szpitalu",
@@ -5409,9 +5180,9 @@
       {
         "heading": "Ustalenia wspólne (8 redakcji)",
         "paragraphs": [
-          "Tragiczny karambol na drodze ekspresowej S12/S17 w województwie lubelskim. W piątek (13 listopada 2026 r.) wieczorem w rejonie Janówka zderzyło się sześć pojazdów, w tym dwa wojskowe samochody ciężarowe. Jedna osoba zginęła, a poszkodowanych przetransportowały do szpitala dwa śmigłowce LPR. [Źródło: Fakt.pl, Onet Wiadomości, TVP3 Lublin, TVP.info]",
-          "Według informacji dostępnych na godz. 22.00 droga w jest zablokowana – policja apeluje o korzystanie z wyznaczonych objazdów. W miejscowości Janówek (powiat świdnicki) na S12 doszło do zderzenia kilku samochodów. Według wstępnych ustaleń kierowca ciężarówki nie wyhamował przed zwężeniem i zmiażdżył osobówkę. [Źródło: Fakt.pl, TVN24, Onet Wiadomości, Polsat News, TVP.info, Lublin112.pl]",
-          "Zablokowany jest ruch w kierunku Chełma i Zamościa. Na miejscu trwa akcja służb ratunkowych, w której uczestniczą dwa śmigłowce Lotniczego Pogotowia Ratunkowego. [Źródło: Radio Lublin, TVP3 Lublin, TVP.info]"
+          "Tragiczny karambol na drodze ekspresowej S12/S17 w województwie lubelskim. W piątek (13 listopada 2026 r.) wieczorem w rejonie Janówka zderzyło się sześć pojazdów, w tym dwa wojskowe samochody ciężarowe. Jedna osoba zginęła, a poszkodowanych przetransportowały do szpitala dwa śmigłowce LPR. [Źródło: Fakt.pl, Onet Wiadomości, TVP3 Lublin]",
+          "Według informacji dostępnych na godz. 22.00 droga w jest zablokowana – policja apeluje o korzystanie z wyznaczonych objazdów. W miejscowości Janówek (powiat świdnicki) na S12 doszło do zderzenia kilku samochodów. Według wstępnych ustaleń kierowca ciężarówki nie wyhamował przed zwężeniem i zmiażdżył osobówkę. [Źródło: Fakt.pl, TVN24, Onet Wiadomości]",
+          "Zablokowany jest ruch w kierunku Chełma i Zamościa. Na miejscu trwa akcja służb ratunkowych, w której uczestniczą dwa śmigłowce Lotniczego Pogotowia Ratunkowego. [Źródło: Radio Lublin, TVP3 Lublin]"
         ]
       },
       {
@@ -5486,7 +5257,7 @@
     "corrections": []
   },
   {
-    "id": 73,
+    "id": 71,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/piotr-kusznieruk-wykluczony-z-nowej-lewicy-mial-razaco-naruszyc-statut",
     "seo_title": "Piotr Kusznieruk wykluczony z Nowej Lewicy. Miał \"rażąco naruszyć statut\"",
@@ -5522,7 +5293,7 @@
       {
         "heading": "Ustalenia wspólne (9 redakcji)",
         "paragraphs": [
-          "Piotr Kusznieruk został zawieszony w prawach i obowiązkach członka Partii Nowej Lewicy – poinformował w piątek rzecznik ugrupowania Łukasz Michnik. Jak wskazał decyzję podjął przewodniczący Włodzimierz Czarzasty z powodu rażącego naruszenia statutu. Jak dodał, wniosek o wykluczenie polityka został skierowany do sądu partyjnego. [Źródło: Polsat News, Wyborcza.pl, Dziennik.pl, WP Wiadomości, Gazeta.pl, Rzeczpospolita]",
+          "Piotr Kusznieruk został zawieszony w prawach i obowiązkach członka Partii Nowej Lewicy – poinformował w piątek rzecznik ugrupowania Łukasz Michnik. Jak wskazał decyzję podjął przewodniczący Włodzimierz Czarzasty z powodu rażącego naruszenia statutu. Jak dodał, wniosek o wykluczenie polityka został skierowany do sądu partyjnego. [Źródło: Polsat News, Dziennik.pl, WP Wiadomości, Gazeta.pl, Rzeczpospolita]",
           "Kusznieruk stwierdził, że chodzi o jego \"wypowiedzi w zakresie Trybunału Konstytucyjnego\". [Źródło: Interia Wydarzenia, Rzeczpospolita]"
         ]
       },
@@ -5607,7 +5378,7 @@
     "corrections": []
   },
   {
-    "id": 74,
+    "id": 72,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/odbudowa-ukrainy-za-setki-miliardow-dolarow-polska-chce-byc-przy-stole",
     "seo_title": "Odbudowa Ukrainy za setki miliardów dolarów. Polska chce być przy stole",
@@ -5675,7 +5446,7 @@
     "corrections": []
   },
   {
-    "id": 75,
+    "id": 73,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelomowy-wyrok-w-norwegii-waza-sie-losy-zloz-na-ktorych-wydobywa-orlen",
     "seo_title": "Przełomowy wyrok w Norwegii. Ważą się losy złóż, na których wydobywa Orlen",
@@ -5686,7 +5457,7 @@
     "published_iso": "2026-11-13T22:40:25+01:00",
     "display_date": "13.11.2026, 22:40",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
@@ -5711,7 +5482,7 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Norweski Sąd Najwyższy orzekł, że plany zagospodarowania i wydobycia ropy i gazu na części norweskiego szelfu zostały zatwierdzone niezgodnie z prawem. Państwo norweskie miało nie dochować wymaganych warunków w ocenach skutków wydobycia. Na objętych wyrokiem polach koncesje ma Orlen. [Źródło: Parkiet, Energetyka24]"
+          "Norweski Sąd Najwyższy orzekł, że plany zagospodarowania i wydobycia ropy i gazu na części norweskiego szelfu zostały zatwierdzone niezgodnie z prawem. Państwo norweskie miało nie dochować wymaganych warunków w ocenach skutków wydobycia. Na objętych wyrokiem polach koncesje ma Orlen. [Źródło: Parkiet]"
         ]
       },
       {
@@ -5750,7 +5521,7 @@
     "corrections": []
   },
   {
-    "id": 76,
+    "id": 74,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/pracownik-telewizji-republika-uslyszal-zarzut-minister-potwierdza",
     "seo_title": "Pracownik Telewizji Republika usłyszał zarzut. Minister potwierdza",
@@ -5876,7 +5647,7 @@
     "corrections": []
   },
   {
-    "id": 77,
+    "id": 75,
     "path": "/Sport",
     "seo_url": "/Sport/mirra-andriejewa-diana-sznajder-relacja-na-zywo",
     "seo_title": "Mirra Andriejewa – Diana Sznajder [RELACJA NA ŻYWO]",
@@ -5965,7 +5736,7 @@
     "corrections": []
   },
   {
-    "id": 78,
+    "id": 76,
     "path": "/Swiat",
     "seo_url": "/Swiat/starshield-ponownie-ograniczony-dla-ukrainy-zelenski-alarmuje",
     "seo_title": "Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje",
@@ -5976,7 +5747,7 @@
     "published_iso": "2026-11-13T21:44:09+01:00",
     "display_date": "13.11.2026, 21:44",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 94,
     "admin_note": "",
     "metrics": [
       {
@@ -6001,8 +5772,8 @@
       {
         "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "Wojska ukraińskie odnotowują poważne zakłócenia w działaniu systemu wojskowej łączności satelitarnej Starshield; utrudnia to walkę z rosyjskimi dronami odrzutowymi i ułatwia Kremlowi zabijanie cywilów – oświadczył w czwartek prezydent Ukrainy Wołodymyr Zełenski. [Źródło: Space24, WP Wiadomości, Onet Wiadomości, Interia Wydarzenia]",
-          "— Niestety nadal obowiązują ograniczenia prędkości wzdłuż całej linii frontu i na czasowo okupowanym terytorium Ukrainy. [Źródło: Space24, Interia Wydarzenia]"
+          "Wojska ukraińskie odnotowują poważne zakłócenia w działaniu systemu wojskowej łączności satelitarnej Starshield; utrudnia to walkę z rosyjskimi dronami odrzutowymi i ułatwia Kremlowi zabijanie cywilów – oświadczył w czwartek prezydent Ukrainy Wołodymyr Zełenski. [Źródło: Space24, WP Wiadomości, Onet Wiadomości]",
+          "— Niestety nadal obowiązują ograniczenia prędkości wzdłuż całej linii frontu i na czasowo okupowanym terytorium Ukrainy. [Źródło: Space24]"
         ]
       },
       {
@@ -6055,7 +5826,7 @@
     "corrections": []
   },
   {
-    "id": 79,
+    "id": 77,
     "path": "/Polska/Regiony/Pomorskie",
     "seo_url": "/Polska/Regiony/Pomorskie/slawa-upa-na-pomnikach-w-trojmiescie-zatrzymano-17-latka-z-ukrainy",
     "seo_title": "\"Slawa UPA\" na pomnikach w Trójmieście. Zatrzymano 17-latka z Ukrainy",
@@ -6091,7 +5862,7 @@
       {
         "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA. Zastosowano wobec niego dozór policyjny oraz zakaz opuszczania kraju. [Źródło: Polsat News, Fakt.pl, Wyborcza.pl, Radio Gdańsk]"
+          "Obywatel Ukrainy został zatrzymany i usłyszał zarzuty związane z niszczeniem pomników i propagowaniem ustroju totalitarnego. 17-latek na siedmiu pomnikach w Trójmieście napisał Slawa UPA. Zastosowano wobec niego dozór policyjny oraz zakaz opuszczania kraju. [Źródło: Polsat News, Wyborcza.pl, Radio Gdańsk]"
         ]
       },
       {
@@ -6136,7 +5907,7 @@
     "corrections": []
   },
   {
-    "id": 80,
+    "id": 78,
     "path": "/Swiat",
     "seo_url": "/Swiat/tankowiec-uderzyl-w-statek-wycieczkowy-dramatyczna-akcja-ratunkowa-na",
     "seo_title": "Tankowiec uderzył w statek wycieczkowy. Dramatyczna akcja ratunkowa na Missisipi",
@@ -6172,8 +5943,8 @@
       {
         "heading": "Ustalenia wspólne (9 redakcji)",
         "paragraphs": [
-          "Trwa dramatyczna akcja ratunkowa na rzece Missisipi w Nowym Orleanie. W piątek (13 listopada) 160-metrowy tankowiec uderzył w zacumowany przy brzegu statek wycieczkowy. Według wstępnych informacji na pokładzie znajdowało się do 150 osób, w tym pasażerowie i członkowie załogi. [Źródło: Fakt.pl, TVN24, WP Wiadomości, Gazeta.pl]",
-          "Na razie nie ma informacji o ofiarach śmiertelnych. W porcie w amerykańskim Nowym Orleanie doszło do zderzenia tankowca ze statkiem wycieczkowym \"American Heritage\". Pasażerowie w pośpiechu próbowali opuścić pokład, a dziesiątki osób wpadły do wody. [Źródło: Fakt.pl, Onet Wiadomości, WP Wiadomości, Gazeta.pl, TVN24]"
+          "Trwa dramatyczna akcja ratunkowa na rzece Missisipi w Nowym Orleanie. W piątek (13 listopada) 160-metrowy tankowiec uderzył w zacumowany przy brzegu statek wycieczkowy. Według wstępnych informacji na pokładzie znajdowało się do 150 osób, w tym pasażerowie i członkowie załogi. [Źródło: Fakt.pl, WP Wiadomości, Gazeta.pl]",
+          "Na razie nie ma informacji o ofiarach śmiertelnych. W porcie w amerykańskim Nowym Orleanie doszło do zderzenia tankowca ze statkiem wycieczkowym \"American Heritage\". Pasażerowie w pośpiechu próbowali opuścić pokład, a dziesiątki osób wpadły do wody. [Źródło: Fakt.pl, Onet Wiadomości, WP Wiadomości, Gazeta.pl]"
         ]
       },
       {
@@ -6257,7 +6028,7 @@
     "corrections": []
   },
   {
-    "id": 81,
+    "id": 79,
     "path": "/Swiat",
     "seo_url": "/Swiat/mistrz-swiata-kandydatem-afd-na-prezydenta-niemiec-to-nie-zart",
     "seo_title": "Mistrz świata kandydatem AfD na prezydenta Niemiec. To nie żart",
@@ -6357,7 +6128,7 @@
     "corrections": []
   },
   {
-    "id": 82,
+    "id": 80,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/tyle-trzeba-zarabiac-na-3500-zl-emerytury-kobiety-maja-gorzej",
     "seo_title": "Tyle trzeba zarabiać na 3500 zł emerytury. Kobiety mają gorzej",
@@ -6368,7 +6139,7 @@
     "published_iso": "2026-11-13T20:48:58+01:00",
     "display_date": "13.11.2026, 20:48",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -6393,7 +6164,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Marzysz o spokojnej jesieni życia i emeryturze na poziomie przynajmniej 3500 zł? Choć dla wielu osób to kwota pozwalająca zaledwie na pokrycie podstawowych rachunków, wypracowanie jej w polskim systemie wymaga zarobków znacznie powyżej krajowej średniej. Sprawdzamy aktualne wyliczenia – różnice między kobietami a mężczyznami są ogromne. [Źródło: GazetaPrawna.pl (DGP), WP Finanse]"
+          "Marzysz o spokojnej jesieni życia i emeryturze na poziomie przynajmniej 3500 zł? Choć dla wielu osób to kwota pozwalająca zaledwie na pokrycie podstawowych rachunków, wypracowanie jej w polskim systemie wymaga zarobków znacznie powyżej krajowej średniej. Sprawdzamy aktualne wyliczenia – różnice między kobietami a mężczyznami są ogromne. [Źródło: GazetaPrawna.pl (DGP)]"
         ]
       },
       {
@@ -6424,7 +6195,7 @@
     "corrections": []
   },
   {
-    "id": 83,
+    "id": 81,
     "path": "/Polska",
     "seo_url": "/Polska/polska-rakieta-ilr-33-bursztyn-2k-zaliczyla-udany-lot",
     "seo_title": "Polska rakieta ILR-33 BURSZTYN 2K zaliczyła udany lot",
@@ -6486,7 +6257,7 @@
     "corrections": []
   },
   {
-    "id": 84,
+    "id": 82,
     "path": "/Swiat",
     "seo_url": "/Swiat/kreml-przejal-zachodni-biznes-miliony-rubli-na-sprzet-dla-armii",
     "seo_title": "Kreml przejął zachodni biznes. Miliony rubli na sprzęt dla armii",
@@ -6547,7 +6318,7 @@
     "corrections": []
   },
   {
-    "id": 85,
+    "id": 83,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/strzelal-do-policjantow-w-krakowie-funkcjonariusze-odpowiedzieli-ogniem",
     "seo_title": "Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem",
@@ -6637,7 +6408,7 @@
     "corrections": []
   },
   {
-    "id": 86,
+    "id": 84,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/zakaz-reklamy-aptek-zniesiony-ale-kary-beda-wyzsze-decyzja-prezydenta",
     "seo_title": "Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta",
@@ -6711,7 +6482,7 @@
     "corrections": []
   },
   {
-    "id": 87,
+    "id": 85,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/darowizny-dla-ofiar-zamachu-bez-podatku-jest-projekt-rozporzadzenia",
     "seo_title": "Darowizny dla ofiar zamachu bez podatku. Jest projekt rozporządzenia",
@@ -6727,7 +6498,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "13 redakcji"
+        "val": "12 redakcji"
       },
       {
         "label": "Kategoria",
@@ -6739,15 +6510,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (13 źródeł)"
+        "val": "Potwierdzone (12 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (13 redakcji)",
+        "heading": "Ustalenia wspólne (12 redakcji)",
         "paragraphs": [
-          "Ministerstwo Finansów przygotowało projekt rozporządzenia dotyczącego zaniechania poboru podatku od spadków i darowizn w związku z zamachem w Krakowie. Nowe przepisy mają objąć osoby ranne w ataku z 7 listopada oraz rodziny zabitych, w tym bliskich ofiar z Ostrowca Świętokrzyskiego. Zwolnienie będzie dotyczyć darowizn przekazanych do końca 2027 roku. [Źródło: Niezależna.pl, Radio Kraków, Rzeczpospolita, Biznes Interia, Gazeta.pl, TVP.info, TVN24, Radio Ostrowiec]",
+          "Ministerstwo Finansów przygotowało projekt rozporządzenia dotyczącego zaniechania poboru podatku od spadków i darowizn w związku z zamachem w Krakowie. Nowe przepisy mają objąć osoby ranne w ataku z 7 listopada oraz rodziny zabitych, w tym bliskich ofiar z Ostrowca Świętokrzyskiego. Zwolnienie będzie dotyczyć darowizn przekazanych do końca 2027 roku. [Źródło: Niezależna.pl, Radio Kraków, Rzeczpospolita, Biznes Interia, Gazeta.pl, TVP.info, TVN24]",
           "Projekt opublikowano w piątek na stronach Rządowego Centrum Legislacji. Rozporządzenie ma wejść w życie dzień po ogłoszeniu. Resort chce także wydłużyć okres składania zeznania o darowiznach. [Źródło: Niezależna.pl, Biznes Interia]"
         ]
       },
@@ -6834,12 +6605,6 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Darowizny na rzecz ofiar ataku w Krakowie. Ministerstwo podjęło działania",
         "url": "https://tvn24.pl/biznes/z-kraju/atak-w-krakowie-darowizny-na-rzecz-ofiar-ataku-w-krakowie-oraz-ich-krewnych-beda-zwolnione-z-podatku-projekt-rozporzadzenia-ministerstwa-finansow-st9338536?source=rss"
-      },
-      {
-        "outlet": "Radio Ostrowiec",
-        "angle": "Doniesienie regionalne",
-        "summary": "Mieszkańcy Ostrowca Świętokrzyskiego organizują marsz w hołdzie ofiarom zamachowca",
-        "url": "https://radioostrowiec.pl/2026/11/13/mieszkancy-ostrowca-swietokrzyskiego-organizuja-marsz-w-holdzie-ofiarom-zamachowca/"
       }
     ],
     "sources": [
@@ -6852,7 +6617,6 @@
       "Kultura Liberalna",
       "Niezależna.pl",
       "Radio Kraków",
-      "Radio Ostrowiec",
       "Rzeczpospolita",
       "TVN24",
       "TVP.info"
@@ -6860,7 +6624,7 @@
     "corrections": []
   },
   {
-    "id": 88,
+    "id": 86,
     "path": "/Sport",
     "seo_url": "/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze",
     "seo_title": "Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"",
@@ -6936,7 +6700,7 @@
     "corrections": []
   },
   {
-    "id": 89,
+    "id": 87,
     "path": "/Polska",
     "seo_url": "/Polska/polska-wsrod-panstw-negocjujacych-w-sprawie-wojny-rosji-bruksela-oglasza",
     "seo_title": "Polska wśród państw negocjujących w sprawie wojny Rosji. Bruksela ogłasza",
@@ -6972,18 +6736,18 @@
       {
         "heading": "Ustalenia wspólne (12 redakcji)",
         "paragraphs": [
-          "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa. Jak dodał, oprócz naszego kraju w rozmowach udział wezmą: Francja, Niemcy, Wielka Brytania i Włochy oraz instytucje Unii Europejskiej. [Źródło: Interia Wydarzenia, Onet Wiadomości, TVN24, WP Wiadomości, Wyborcza.pl, Radio Kielce, Gazeta.pl, Radio PiK]",
-          "— Polska będzie w tym formacie odgrywała kluczową rolę – wskazał premier Donald Tusk. [Źródło: Interia Wydarzenia, Onet Wiadomości, TVN24, Wyborcza.pl, Radio PiK]"
+          "Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciw Ukrainie – poinformował szef Rady Europejskiej Antonio Costa. Jak dodał, oprócz naszego kraju w rozmowach udział wezmą: Francja, Niemcy, Wielka Brytania i Włochy oraz instytucje Unii Europejskiej. [Źródło: Interia Wydarzenia, Onet Wiadomości, TVN24, WP Wiadomości, Wyborcza.pl, Radio Kielce, Gazeta.pl]",
+          "— Polska będzie w tym formacie odgrywała kluczową rolę – wskazał premier Donald Tusk. [Źródło: Interia Wydarzenia, Onet Wiadomości, TVN24, Wyborcza.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "— Kiedy zrozumiemy prawdziwe intencje Europejczyków i chęć wniesienia wkładu w proces pokojowy, będziemy mogli podjąć decyzję o prowadzeniu rozmów w rozszerzonym formacie – w ten sposób Dmitrij Pieskow skomentował doniesienia o udziale przedstawicieli Starego Kontynentu w negocjacjach na temat wojny w Ukrainie. [Źródło: Dziennik.pl]",
+          "— Kiedy zrozumiemy prawdziwe intencje Europejczyków i chęć wniesienia wkładu w proces pokojowy, będziemy mogli podjąć decyzję o prowadzeniu rozmów w rozszerzonym formacie – w ten sposób Dmitrij Pieskow skomentował doniesienia o udziale przedstawicieli Starego Kontynentu w negocjacjach na temat wojny w Ukrainie.",
+          "— Stawką jest pokój w Ukrainie i bezpieczeństwo Polski i całej Europy. [Źródło: Dziennik.pl]",
           "Nie jest to przesądzone, bo dystansuje się od tego Kreml. [Źródło: RadioMaryja.pl]",
           "Ostrzegł, że Władimir Putin zamierza „wykończyć tej zimy Ukrainę”. Ostro skrytykował też prezydenta Karola Nawrockiego za weto wobec ustawy o bezpieczeństwie dzieci w internecie. [Źródło: Rzeczpospolita]",
           "To nasz czas” – napisał szef polskiego rządu w mediach społecznościowych. [Źródło: Warszawa w Pigułce]",
-          "— Stawką jest pokój w Ukrainie i bezpieczeństwo Polski i całej Europy.",
           "Costa odrzucił zarzut, że reprezentacja europejska jest zbyt liczna. Spójrzmy np. na zespół prezydenta (USA) Donalda Trumpa: mamy tam dwie, nie jedną osobę. [Źródło: Radio PiK]"
         ]
       }
@@ -7079,7 +6843,7 @@
     "corrections": []
   },
   {
-    "id": 90,
+    "id": 88,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/autopay-celem-cyberataku-chodzi-o-dane-dotyczace-platnosci",
     "seo_title": "Autopay celem cyberataku. Chodzi o dane dotyczące płatności",
@@ -7112,8 +6876,7 @@
       {
         "heading": "Ustalenia wspólne (7 redakcji)",
         "paragraphs": [
-          "Autopay poinformowało o cyberataku, do którego doszło 11 listopada. Nieuprawnione osoby uzyskały dostęp do infrastruktury spółki i części danych związanych z przetwarzanymi płatnościami. Firma nie wyklucza, że informacje mogły zostać skopiowane lub wykorzystane, dlatego ostrzega klientów i zaleca im sprawdzanie historii transakcji. [Źródło: Puls Biznesu, WNP.pl, Lublin112.pl, Telepolis.pl, Sekurak]",
-          "Zdarzenie zostało zgłoszone do UODO, KNF i na policję Napisano, że wszystkie osoby, których to może dotyczyć, są informowane o tym bezpośrednio. Co prawda, do tej pory, nie potwierdzono żadnego skopiowania, ani wykorzystania danych, ale – jak to w tego typu przypadkach bywa – nie można tego całkowicie wykluczyć. [Źródło: Cashless.pl, Telepolis.pl, Sekurak]"
+          "Autopay poinformowało o cyberataku, do którego doszło 11 listopada. Nieuprawnione osoby uzyskały dostęp do infrastruktury spółki i części danych związanych z przetwarzanymi płatnościami. Firma nie wyklucza, że informacje mogły zostać skopiowane lub wykorzystane, dlatego ostrzega klientów i zaleca im sprawdzanie historii transakcji. [Źródło: Puls Biznesu, WNP.pl, Lublin112.pl]"
         ]
       },
       {
@@ -7121,6 +6884,7 @@
         "paragraphs": [
           "Przeczytajcie także: Pierwsze szczegóły nowego konta Flow [Źródło: Cashless.pl]",
           "Z tego też powodu, firma postanowiła wydać oficjalne ostrzeżenie. Komunikat został wydany głównie po to, aby ograniczyć ryzyko i pokazać, jakie konkretne kroki podjąć, jeśli zauważymy niepokojące transakcje na naszym koncie. Pozostałe osoby, zostały powiadomione za pośrednictwem komunikatu, zamieszczonego na stronie Autopay. [Źródło: Telepolis.pl]",
+          "Zdarzenie zostało zgłoszone do UODO, KNF i na policję Napisano, że wszystkie osoby, których to może dotyczyć, są informowane o tym bezpośrednio. Co prawda, do tej pory, nie potwierdzono żadnego skopiowania, ani wykorzystania danych, ale – jak to w tego typu przypadkach bywa – nie można tego całkowicie wykluczyć. [Źródło: Sekurak]",
           "FELG Dent, firma dostarczająca oprogramowanie do gabinetów stomatologicznych, została zhackowana. Tym razem za atakiem nie stoi Fingerprint (który ma na swoim koncie ataki na MyDr, Medyc i Fakturownię), a grupa, która nazywa się mianem “Horus”. [Źródło: Niebezpiecznik]"
         ]
       }
@@ -7184,7 +6948,7 @@
     "keywords": "Gospodarka, Autopay, cyberataku, dane, płatności"
   },
   {
-    "id": 91,
+    "id": 89,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets",
     "seo_title": "Miliardy euro oszczędności dla przemysłu. UE zwiększa pulę uprawnień ETS",
@@ -7251,7 +7015,7 @@
     "keywords": "Gospodarka, Miliardy, euro, oszczędności, przemysłu, zwiększa, pulę"
   },
   {
-    "id": 92,
+    "id": 90,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
     "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa",
     "seo_title": "Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa",
@@ -7306,7 +7070,7 @@
     "keywords": "Warminsko-Mazurskie, Mrągowem, 30-latek, zabójstwa"
   },
   {
-    "id": 93,
+    "id": 91,
     "path": "/Swiat",
     "seo_url": "/Swiat/ponad-100-okretow-wokol-tajwanu-nieogloszone-manewry-chin",
     "seo_title": "Ponad 100 okrętów wokół Tajwanu. Nieogłoszone manewry Chin",
@@ -7373,7 +7137,7 @@
     "keywords": "Swiat, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin"
   },
   {
-    "id": 94,
+    "id": 92,
     "path": "/Polska",
     "seo_url": "/Polska/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym",
     "seo_title": "Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?",
@@ -7447,7 +7211,7 @@
     "keywords": "Polska, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym"
   },
   {
-    "id": 95,
+    "id": 93,
     "path": "/Polska",
     "seo_url": "/Polska/ai-wygenerowala-glos-lektora-przelomowy-wyrok-warszawskiego-sadu",
     "seo_title": "AI wygenerowała głos lektora. Przełomowy wyrok warszawskiego sądu",
@@ -7544,7 +7308,7 @@
     "keywords": "Polska, wygenerowała, głos, lektora, warszawskiego"
   },
   {
-    "id": 96,
+    "id": 94,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/oswiadczenie-korwin-piotrowskiej-tk-przeglada-sto-najpilniejszych-spraw",
     "seo_title": "Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw",
@@ -7579,7 +7343,7 @@
         "paragraphs": [
           "— Przeglądamy wszystkie sprawy w Trybunale. [Źródło: TVP.info]",
           "Najpierw wzięliśmy sto najstarszych spraw. To są sprawy, które wpłynęły między 2013 rokiem a 2021. W bardzo wielu tych sprawach prawie od siedmiu lat niepodejmowane są żadne czynności – opowiada na nagraniu sędzia. [Źródło: TVP.info, Interia Wydarzenia]",
-          "Poinformowała także, że odmówiła przyjęcia wniosku prokuratury w sprawie uchylenia immunitetu Bogdana Święczkowskiego z powodu braków formalnych. [Źródło: Onet Wiadomości, Gazeta.pl, Rzeczpospolita, Interia Wydarzenia, GazetaPrawna.pl (DGP), WP Wiadomości]"
+          "Poinformowała także, że odmówiła przyjęcia wniosku prokuratury w sprawie uchylenia immunitetu Bogdana Święczkowskiego z powodu braków formalnych. [Źródło: Onet Wiadomości, Gazeta.pl, Rzeczpospolita, Interia Wydarzenia, WP Wiadomości]"
         ]
       },
       {
@@ -7648,7 +7412,7 @@
     "keywords": "Polityka, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych"
   },
   {
-    "id": 97,
+    "id": 95,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie",
     "seo_title": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\"",
@@ -7746,7 +7510,7 @@
     "keywords": "Polityka, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne"
   },
   {
-    "id": 98,
+    "id": 96,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/burger-drwala-wraca-do-mcdonald-s-cena-bez-zmian-premiera-pelnej-oferty",
     "seo_title": "Burger Drwala wraca do McDonald‘s. Cena bez zmian, premiera pełnej oferty w Kielcach",
@@ -7813,7 +7577,7 @@
     "keywords": "Gospodarka, Burger, Drwala, wraca, McDonald, Cena, premiera"
   },
   {
-    "id": 99,
+    "id": 97,
     "path": "/Sport",
     "seo_url": "/Sport/manchester-united-podal-nazwisko-nowego-trenera",
     "seo_title": "Manchester United podał nazwisko nowego trenera",
@@ -7910,7 +7674,7 @@
     "keywords": "Sport, Manchester, United, podał, nazwisko, nowego, trenera"
   },
   {
-    "id": 100,
+    "id": 98,
     "path": "/Sport",
     "seo_url": "/Sport/reprezentacja-na-lasce-lewandowskiego-do-turcji-jezdzi-sie-na-wakacje",
     "seo_title": "Reprezentacja na łasce Lewandowskiego. \"Do Turcji jeździ się na wakacje\"",
@@ -7987,7 +7751,7 @@
     "keywords": "Sport, Reprezentacja, łasce, Lewandowskiego, Turcji, jeździ, wakacje"
   },
   {
-    "id": 101,
+    "id": 99,
     "path": "/Polska/Regiony/Lubelskie",
     "seo_url": "/Polska/Regiony/Lubelskie/mial-dozywotni-zakaz-prowadzenia-pojazdow-ale-go-zlamal-39-latek",
     "seo_title": "Miał dożywotni zakaz prowadzenia pojazdów, ale go złamał. 39-latek zatrzymany przez policjantów",
@@ -8041,7 +7805,7 @@
     "keywords": "Lubelskie, dożywotni, zakaz, prowadzenia, pojazdów, złamał, 39-latek"
   },
   {
-    "id": 102,
+    "id": 100,
     "path": "/Sport",
     "seo_url": "/Sport/alez-debiut-polki-w-pucharze-swiata-jest-podium-decydowaly-setne-sekundy",
     "seo_title": "Ależ debiut Polki w Pucharze Świata. Jest podium. Decydowały setne sekundy",
@@ -8117,7 +7881,7 @@
     "keywords": "Sport, Ależ, debiut, Polki, Pucharze, podium, Decydowały"
   },
   {
-    "id": 103,
+    "id": 101,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/spor-o-podatek-od-zyskow-orlen-lietuva-minister-motyka-spolka-ma",
     "seo_title": "Spór o podatek od zysków Orlen Lietuva. Minister Motyka: spółka ma nadzwyczajne straty",
@@ -8192,7 +7956,7 @@
     "keywords": "Energetyka, Spór, podatek, zysków, Orlen, Lietuva, Minister"
   },
   {
-    "id": 104,
+    "id": 102,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-odsuwa-j-v-vance-a-w-tle-wojna-i-negocjacje-z-iranem",
     "seo_title": "Trump odsuwa J.V. Vance'a. W tle wojna i negocjacje z Iranem",
@@ -8200,7 +7964,7 @@
     "published_iso": "2026-11-13T12:56:54+01:00",
     "display_date": "13.11.2026, 12:56",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "metrics": [
       {
@@ -8225,7 +7989,7 @@
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Prezydent USA Donald Trump opublikował post, w którym opisał swoją wizję dalszej przyszłości J.D. Vance’a w swojej administracji. Wiceprezydent od teraz ma się skupić wyłącznie na polityce krajowej i zrezygnować z angażowania się w amerykańską politykę zagraniczną. J.D. Vance wskazał wojnę z Iranem jako powód porażki Republikanów w wyborach śródokresowych. [Źródło: Defence24, Kresy.pl]"
+          "Prezydent USA Donald Trump opublikował post, w którym opisał swoją wizję dalszej przyszłości J.D. Vance’a w swojej administracji. Wiceprezydent od teraz ma się skupić wyłącznie na polityce krajowej i zrezygnować z angażowania się w amerykańską politykę zagraniczną. J.D. Vance wskazał wojnę z Iranem jako powód porażki Republikanów w wyborach śródokresowych. [Źródło: Defence24]"
         ]
       },
       {
@@ -8267,7 +8031,7 @@
     "keywords": "Swiat, Trump, odsuwa, Vance, wojna, negocjacje, Iranem"
   },
   {
-    "id": 105,
+    "id": 103,
     "path": "/Swiat",
     "seo_url": "/Swiat/plonie-rafineria-w-wolgogradzie-ukrainskie-ataki-znaczaco-zmniejszaja",
     "seo_title": "Płonie rafineria w Wołgogradzie. Ukraińskie ataki znacząco zmniejszają rosyjskie moce",
@@ -8321,7 +8085,7 @@
     "keywords": "Swiat, Płonie, rafineria, Wołgogradzie, Ukraińskie, znacząco, zmniejszają"
   },
   {
-    "id": 106,
+    "id": 104,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/ile-zaplacisz-za-paliwo-w-weekend-bedzie-taniej-niz-w-piatek",
     "seo_title": "Ile zapłacisz za paliwo w weekend? Będzie taniej niż w piątek",
@@ -8354,7 +8118,7 @@
       {
         "heading": "Ustalenia wspólne (12 redakcji)",
         "paragraphs": [
-          "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł – wynika z piątkowego obwieszczenia Ministra Energii. Ceny maksymalne tych paliw będą więc niższe niż w piątek. Kierowców czeka zmiana układu cen przy dystrybutorach i to bardzo dobra wiadomość. [Źródło: Energetyka24, Rzeczpospolita, TVN24, TVP3 Wrocław, TVP3 Katowice, Auto Świat]"
+          "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł – wynika z piątkowego obwieszczenia Ministra Energii. Ceny maksymalne tych paliw będą więc niższe niż w piątek. Kierowców czeka zmiana układu cen przy dystrybutorach i to bardzo dobra wiadomość. [Źródło: Energetyka24, Rzeczpospolita, TVN24, TVP3 Wrocław]"
         ]
       },
       {
@@ -8465,7 +8229,7 @@
     "keywords": "Energetyka, zapłacisz, paliwo, weekend, taniej"
   },
   {
-    "id": 107,
+    "id": 105,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/lukasz-gibala-z-pilna-prosba-do-donalda-tuska-padla-kwota-10-mln",
     "seo_title": "Łukasz Gibała z \"pilną prośbą\" do Donalda Tuska. Padła kwota 10 mln",
@@ -8539,7 +8303,7 @@
     "keywords": "Polityka, Łukasz, Gibała, pilną, prośbą, Donalda, Tuska"
   },
   {
-    "id": 108,
+    "id": 106,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/rece-precz-od-republiki-atak-na-biuro-posla-ko",
     "seo_title": "„Ręce precz od Republiki”. Atak na biuro posła KO",
@@ -8622,7 +8386,7 @@
     "keywords": "Polityka, Ręce, precz, Republiki, biuro, posła"
   },
   {
-    "id": 109,
+    "id": 107,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/stan-rannych-w-zamachu-systematycznie-sie-poprawia-ale-pozostaja-w",
     "seo_title": "Stan rannych w zamachu systematycznie się poprawia, ale pozostają w szpitalach",
@@ -8655,7 +8419,7 @@
       {
         "heading": "Ustalenia wspólne (9 redakcji)",
         "paragraphs": [
-          "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar. Policjanci ranni podczas sobotniego ataku w Krakowie otrzymają zapomogi w wysokości po 100 tysięcy złotych oraz pełne pokrycie kosztów rehabilitacji – potwierdziło MSWiA. [Źródło: Niedziela.pl, RadioMaryja.pl, TVP3 Kraków, WP Wiadomości, InfoSecurity24]"
+          "11 rannych w tragicznym ataku w Krakowie pozostaje w pięciu krakowskich szpitalach. Ich stan systematycznie się poprawia – przekazał w piątek rano wojewoda małopolski Krzysztof Jan Klęczar. Policjanci ranni podczas sobotniego ataku w Krakowie otrzymają zapomogi w wysokości po 100 tysięcy złotych oraz pełne pokrycie kosztów rehabilitacji – potwierdziło MSWiA. [Źródło: Niedziela.pl, RadioMaryja.pl, TVP3 Kraków, InfoSecurity24]"
         ]
       },
       {
@@ -8742,7 +8506,7 @@
     "keywords": "Malopolskie, rannych, zamachu, systematycznie, poprawia, pozostają, szpitalach"
   },
   {
-    "id": 110,
+    "id": 108,
     "path": "/Swiat",
     "seo_url": "/Swiat/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do",
     "seo_title": "Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii",
@@ -8844,7 +8608,7 @@
     "keywords": "Swiat, Cyberatak, Niemczech, producenta, dronów, hakerzy, trafili"
   },
   {
-    "id": 111,
+    "id": 109,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
     "seo_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
@@ -8942,7 +8706,7 @@
     "keywords": "Gospodarka, wzrosły, ceny, dane, inflacji"
   },
   {
-    "id": 112,
+    "id": 110,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira",
     "seo_title": "Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości",
@@ -9004,7 +8768,7 @@
     "keywords": "Gospodarka, Przelewy, natychmiastowe, rekordy, Express, Elixira, BlueCash"
   },
   {
-    "id": 113,
+    "id": 111,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w",
     "seo_title": "Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych",
@@ -9012,7 +8776,7 @@
     "published_iso": "2026-11-13T10:54:04+01:00",
     "display_date": "13.11.2026, 10:54",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
@@ -9037,7 +8801,7 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni. Bank Millennium wprowadził jako pierwszy na rynku możliwość rozkładania takich transakcji na miesięczne raty. Z rozwiązania mogą korzystać zarówno dotychczasowi, jak i nowi użytkownicy. [Źródło: MamStartup.pl, Cashless.pl]"
+          "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni. Bank Millennium wprowadził jako pierwszy na rynku możliwość rozkładania takich transakcji na miesięczne raty. Z rozwiązania mogą korzystać zarówno dotychczasowi, jak i nowi użytkownicy. [Źródło: MamStartup.pl]"
         ]
       },
       {
@@ -9071,7 +8835,7 @@
     "keywords": "Gospodarka, Blik, Płacę, Później, opcją, Bank, Millennium"
   },
   {
-    "id": 114,
+    "id": 112,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/cena-euro-dolara-i-franka-kursy-walut-13-11-2026",
     "seo_title": "Cena euro, dolara i franka. Kursy walut 13.11.2026",
@@ -9162,7 +8926,7 @@
     "keywords": "Gospodarka, Cena, euro, dolara, franka, Kursy, walut"
   },
   {
-    "id": 115,
+    "id": 113,
     "path": "/Swiat",
     "seo_url": "/Swiat/eksplozja-auta-w-moskwie-na-pokladzie-postac-z-otoczenia-bylego",
     "seo_title": "Eksplozja auta w Moskwie. Na pokładzie postać z otoczenia byłego premiera Ukrainy",
@@ -9244,7 +9008,7 @@
     "keywords": "Swiat, Eksplozja, auta, Moskwie, pokładzie, postać, otoczenia"
   },
   {
-    "id": 116,
+    "id": 114,
     "path": "/Swiat",
     "seo_url": "/Swiat/pracowal-w-nato-i-szpiegowal-na-rzecz-rosji-podpulkownika-us-army",
     "seo_title": "Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii",
@@ -9312,7 +9076,7 @@
     "keywords": "Swiat, Pracował, NATO, szpiegował, rzecz, Rosji, Podpułkownika"
   },
   {
-    "id": 117,
+    "id": 115,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w",
     "seo_title": "Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL",
@@ -9417,7 +9181,7 @@
     "keywords": "Polityka, Dymisja, wiceministra, biurku, premiera, Zgorzelski, komentuje"
   },
   {
-    "id": 118,
+    "id": 116,
     "path": "/Sport",
     "seo_url": "/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna",
     "seo_title": "Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna",
@@ -9499,7 +9263,7 @@
     "keywords": "Sport, Robert, Lewandowski, pominięty, ogłasza, ostateczna"
   },
   {
-    "id": 119,
+    "id": 117,
     "path": "/Polska/Regiony/Mazowieckie",
     "seo_url": "/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra",
     "seo_title": "Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia",
@@ -9583,7 +9347,7 @@
     "keywords": "Mazowieckie, Warszawska, Praga, wyrzucił, broń, okno, Karabinek"
   },
   {
-    "id": 120,
+    "id": 118,
     "path": "/Polska/Regiony/Pomorskie",
     "seo_url": "/Polska/Regiony/Pomorskie/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow",
     "seo_title": "Karambol na S6 z samego rana. Zderzyło się pięć samochodów",
@@ -9665,7 +9429,7 @@
     "keywords": "Pomorskie, Karambol, samego, rana, Zderzyło, pięć, samochodów"
   },
   {
-    "id": 121,
+    "id": 119,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/otylosc-kosztuje-miliardy-zlotych-producenci-lekow-chca-pieniedzy-z",
     "seo_title": "Otyłość kosztuje miliardy złotych. Producenci leków chcą pieniędzy z budżetu państwa",
@@ -9732,7 +9496,7 @@
     "keywords": "Gospodarka, Otyłość, kosztuje, miliardy, złotych, Producenci, leków"
   },
   {
-    "id": 122,
+    "id": 120,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/co-ze-spotkaniem-tuska-i-nawrockiego-ociepa-nie-chodzi-o-byle-jaka",
     "seo_title": "Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność",
@@ -9807,7 +9571,7 @@
     "keywords": "Polityka, spotkaniem, Tuska, Nawrockiego, Ociepa, byle, jaką"
   },
   {
-    "id": 123,
+    "id": 121,
     "path": "/Swiat",
     "seo_url": "/Swiat/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu",
     "seo_title": "Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu",
@@ -9840,7 +9604,7 @@
       {
         "heading": "Ustalenia wspólne (12 redakcji)",
         "paragraphs": [
-          "Piątkowa sesja na Wall Street zakończyła się spadkami głównych indeksów. Nastroje inwestorów pogorszyły się w związku z nasilającą się wyprzedażą akcji Nvidii oraz nowymi danymi wskazującymi na utrzymywanie się wysokiej inflacji w USA. Akcje Nvidii, które przed sesją taniały nawet o 14%, odrobiły znaczną część strat i tracą już tylko około 5%.. [Źródło: Puls Biznesu, TVN24, Newsweek Polska, MamStartup.pl]"
+          "Piątkowa sesja na Wall Street zakończyła się spadkami głównych indeksów. Nastroje inwestorów pogorszyły się w związku z nasilającą się wyprzedażą akcji Nvidii oraz nowymi danymi wskazującymi na utrzymywanie się wysokiej inflacji w USA. Akcje Nvidii, które przed sesją taniały nawet o 14%, odrobiły znaczną część strat i tracą już tylko około 5%.. [Źródło: Puls Biznesu, Newsweek Polska]"
         ]
       },
       {
@@ -9954,7 +9718,7 @@
     "keywords": "Swiat, Nvidia, ciągnie, Wall, Street, Alphabet, korzysta"
   },
   {
-    "id": 124,
+    "id": 122,
     "path": "/Polska",
     "seo_url": "/Polska/prestizowa-wygrana-polski-z-rosja-na-forum-onz-zdecydowal-jeden-glos",
     "seo_title": "Prestiżowa wygrana Polski z Rosją na forum ONZ. Zdecydował jeden głos",
@@ -10023,7 +9787,7 @@
     "keywords": "Polska, Prestiżowa, wygrana, Rosją, forum, Zdecydował, jeden"
   },
   {
-    "id": 125,
+    "id": 123,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prezydent-proponuje-fundusz-ai-dla-trojmorza-i-ostrzega-przed",
     "seo_title": "Prezydent proponuje fundusz AI dla Trójmorza i ostrzega przed technologiczną zależnością",
@@ -10091,7 +9855,7 @@
     "keywords": "Polityka, Prezydent, proponuje, fundusz, Trójmorza, ostrzega, technologiczną"
   },
   {
-    "id": 126,
+    "id": 124,
     "path": "/Polska/Regiony/Malopolskie",
     "seo_url": "/Polska/Regiony/Malopolskie/wychwalali-sprawce-ataku-w-krakowie-11-osob-zatrzymanych",
     "seo_title": "Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych",
@@ -10145,7 +9909,7 @@
     "keywords": "Malopolskie, Wychwalali, sprawcę, Krakowie"
   },
   {
-    "id": 127,
+    "id": 125,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/miliony-dzieciakow-sa-przesladowane-w-sieci-gawkowski-apeluje-do",
     "seo_title": "„Miliony dzieciaków są prześladowane w sieci”. Gawkowski apeluje do prezydenta ws. głośnej ustawy",
@@ -10227,7 +9991,7 @@
     "keywords": "Polityka, Miliony, dzieciaków, prześladowane, sieci, Gawkowski, apeluje"
   },
   {
-    "id": 128,
+    "id": 126,
     "path": "/Swiat",
     "seo_url": "/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe",
     "seo_title": "Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”",
@@ -10302,7 +10066,7 @@
     "keywords": "Swiat, Trump, mówi, użyciu, siły, wobec, Kuby"
   },
   {
-    "id": 129,
+    "id": 127,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od",
     "seo_title": "Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany",
@@ -10315,7 +10079,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "8 redakcji"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -10327,25 +10091,23 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (8 źródeł)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (8 redakcji)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
           "Jak na razie to są tylko takie hasełka rzucone do kamery, a nie było nigdy żadnej poważnej próby budowania takiej listy – powiedział w \"Kropce nad i\" poseł Konfederacji Michał Wawer. Jego zdaniem \"nie ma takiego planu\", aby ugrupowanie startowało w wyborach parlamentarnych na jednej liście z PiS i partią Brauna, jak chciałby Jarosław Kaczyński. [Źródło: TVN24, Wyborcza.pl]",
-          "Magdalena Biejat z Lewicy przyznała, że nie dziwią jej słowa prezesa PiS. I są tego skutki – aż 41 proc. wyborców PiS dopuszcza wspólną listę z Konfederacją Korony Polskiej, partią antyeuropejską, antysemicką, ksenofobiczną i proputinowską. [Źródło: TVN24, Wyborcza.pl, Dziennik.pl, Niezależna.pl]",
-          "Gdyby ugrupowania prawicowe wystartowały w wyborach jako Zjednoczona Prawica, uzyskałyby 46,6 proc. głosów – wynika z opublikowanego w sobotę sondażu United Surveys by IBRiS dla Wirtualnej Polski. Z kolei dla bloku Koalicji 15 X zadeklarowano 41,3 proc. poparcia. [Źródło: Gazeta.pl, TVP3 Kielce]"
+          "Magdalena Biejat z Lewicy przyznała, że nie dziwią jej słowa prezesa PiS. I są tego skutki – aż 41 proc. wyborców PiS dopuszcza wspólną listę z Konfederacją Korony Polskiej, partią antyeuropejską, antysemicką, ksenofobiczną i proputinowską. [Źródło: TVN24, Wyborcza.pl, Dziennik.pl, Niezależna.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Tymczasem liderzy pozostałych ugrupowań deklarują samodzielny start w przyszłorocznych wyborach do Sejmu. [Źródło: RadioMaryja.pl]",
-          "Eksperci ostrzegają, że taki ruch grozi zdemobilizowaniem części prawicowego elektoratu. [Źródło: WP Wiadomości]",
-          "Według symulacji podziału mandatów szeroki blok prawicowy uzyskałby samodzielną większość w Sejmie. [Źródło: TVP3 Kielce]"
+          "Eksperci ostrzegają, że taki ruch grozi zdemobilizowaniem części prawicowego elektoratu. [Źródło: WP Wiadomości]"
         ]
       }
     ],
@@ -10385,27 +10147,13 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Kaczyński dał propozycję jednej listy prawicy. W sondażu Polacy pokazali, co o tym myślą",
         "url": "https://niezalezna.pl/polityka/kaczynski-rzucil-propozycje-jednej-listy-prawicy-w-sondazu-polacy-pokazali-co-o-tym-mysla/584138"
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Sondaż z dwoma blokami korzystny dla PiS i Konfederacji. Politolodzy: To się nie uda",
-        "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33131797,sondaz-z-dwoma-blokami-korzystny-dla-pis-i-konfederacji-politolodzy.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
-      },
-      {
-        "outlet": "TVP3 Kielce",
-        "angle": "Doniesienie regionalne",
-        "summary": "Tak mógłby wyglądać nowy Sejm. Sondaż wskazuje, kto mógłby samodzielnie rządzić",
-        "url": "https://kielce.tvp.pl/96475814/sondaz-united-surveys-zjednoczona-prawica-z-wiekszoscia"
       }
     ],
     "sources": [
       "Dziennik.pl",
-      "Gazeta.pl",
       "Niezależna.pl",
       "RadioMaryja.pl",
       "TVN24",
-      "TVP3 Kielce",
       "WP Wiadomości",
       "Wyborcza.pl"
     ],
@@ -10415,7 +10163,7 @@
     "keywords": "Polityka, Wspólna, lista, prawicy, Sejmu, Poseł, Konfederacji"
   },
   {
-    "id": 130,
+    "id": 128,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i",
     "seo_title": "Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform",
@@ -10500,7 +10248,7 @@
     "keywords": "Gospodarka, Akcje, Allegro, najdroższe, pięciu, umowa, InPostem"
   },
   {
-    "id": 131,
+    "id": 129,
     "path": "/Polska",
     "seo_url": "/Polska/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna",
     "seo_title": "Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem",
@@ -10582,7 +10330,7 @@
     "keywords": "Polska, granicy, Niemcami, uznał, kontrolę, niezgodną, prawem"
   },
   {
-    "id": 132,
+    "id": 130,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli",
     "seo_title": "Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli",
@@ -10656,7 +10404,7 @@
     "keywords": "Gospodarka, Pfizer, zablokował, aktywa, PAŻP, Brukseli"
   },
   {
-    "id": 133,
+    "id": 131,
     "path": "/Swiat",
     "seo_url": "/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby",
     "seo_title": "Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby",
@@ -10740,7 +10488,7 @@
     "keywords": "Swiat, Strzelanina, pobliżu, Białego, Domu, żyją, dwie"
   },
   {
-    "id": 134,
+    "id": 132,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin",
     "seo_title": "Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy",
@@ -10809,7 +10557,7 @@
     "keywords": "Polityka, Proces, Karola, Nawrockiego, dziennikarzami, Onetu, wyznaczył"
   },
   {
-    "id": 135,
+    "id": 133,
     "path": "/Swiat",
     "seo_url": "/Swiat/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem",
     "seo_title": "Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem",
@@ -10877,7 +10625,7 @@
     "keywords": "Swiat, Orban, wejdzie, aresztu, spotkania, bratem"
   },
   {
-    "id": 136,
+    "id": 134,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej",
     "seo_title": "Czarzasty zwrócił się do prezydenta. Padły słowa o \"juncie wojskowej\"",
@@ -10938,7 +10686,7 @@
     "keywords": "Polityka, Czarzasty, zwrócił, prezydenta, Padły, słowa, juncie"
   },
   {
-    "id": 137,
+    "id": 135,
     "path": "/Swiat",
     "seo_url": "/Swiat/londyn-uderza-w-rosje-nowymi-sankcjami",
     "seo_title": "Londyn uderza w Rosję nowymi sankcjami",
@@ -10999,7 +10747,7 @@
     "keywords": "Swiat, Londyn, uderza, Rosję, nowymi, sankcjami"
   },
   {
-    "id": 138,
+    "id": 136,
     "path": "/Swiat",
     "seo_url": "/Swiat/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego",
     "seo_title": "Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza",
@@ -11089,7 +10837,7 @@
     "keywords": "Swiat, Pete, Hegseth, upomniany, wartownika, Grobie, Nieznanego"
   },
   {
-    "id": 139,
+    "id": 137,
     "path": "/Sport",
     "seo_url": "/Sport/anglia-awansowala-do-cwiercfinalu-ligi-narodow",
     "seo_title": "Anglia awansowała do ćwierćfinału Ligi Narodów",
@@ -11164,7 +10912,7 @@
     "keywords": "Sport, Anglia, awansowała, ćwierćfinału, Ligi, Narodów"
   },
   {
-    "id": 140,
+    "id": 138,
     "path": "/Polska/Gospodarka",
     "seo_url": "/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr",
     "seo_title": "Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR",
@@ -11231,7 +10979,7 @@
     "keywords": "Gospodarka, Firma, doradcy, ministra, lupą, Krajewski, sprawdza"
   },
   {
-    "id": 141,
+    "id": 139,
     "path": "/Sport",
     "seo_url": "/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow",
     "seo_title": "Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów",
@@ -11298,7 +11046,7 @@
     "keywords": "Sport, Święto, Mediolanie, Włosi, lepsi, Francuzów, Lidze"
   },
   {
-    "id": 142,
+    "id": 140,
     "path": "/Polska",
     "seo_url": "/Polska/marsz-niepodleglosci-przeszedl-ulicami-warszawy",
     "seo_title": "Marsz Niepodległości przeszedł ulicami Warszawy",
@@ -11373,7 +11121,7 @@
     "keywords": "Polska, Marsz, Niepodległości, przeszedł, ulicami, Warszawy"
   },
   {
-    "id": 143,
+    "id": 141,
     "path": "/Sport",
     "seo_url": "/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci",
     "seo_title": "Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości",
@@ -11449,7 +11197,7 @@
     "keywords": "Sport, Drakońskie, kary, derbach, Krakowa, Komisja, Ligi"
   },
   {
-    "id": 144,
+    "id": 142,
     "path": "/Polska",
     "seo_url": "/Polska/polski-zwiazek-strzelectwa-reaguje-na-zamach-w-krakowie",
     "seo_title": "Polski Związek Strzelectwa reaguje na zamach w Krakowie",
@@ -11533,7 +11281,7 @@
     "keywords": "Polska, Związek, Strzelectwa, reaguje, zamach, Krakowie"
   },
   {
-    "id": 145,
+    "id": 143,
     "path": "/Swiat",
     "seo_url": "/Swiat/globalna-awaria-microsoftu-nie-dzialaja-aplikacje-i-uslugi",
     "seo_title": "Globalna awaria Microsoftu. Nie działają aplikacje i usługi",
@@ -11566,8 +11314,7 @@
       {
         "heading": "Ustalenia wspólne (28 redakcji)",
         "paragraphs": [
-          "Microsoft potwierdził, że awaria usług odnotowana w pierwszej kolejności w regionie Ameryki Północnej rozlała się na cały świat. Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. Firma wskazała na problemy z serwerami i przekazała, że trwające niemal dobę zakłócenia stopniowo ustępują. [Źródło: Polsat News, Rzeczpospolita, RMF24, TVN24, Onet Wiadomości, WP Wiadomości, Puls Biznesu, Bankier.pl, CyberDefence24, Dziennik.pl, Interia Wydarzenia, Forsal.pl, TVP3 Kielce, RadioMaryja.pl]",
-          "W Japonii skutki problemów z Outlookiem, Teams i innymi narzędziami były szczególnie widoczne. [Źródło: Antyweb.pl, Infor.pl, Instalki.pl, naTemat.pl]"
+          "Microsoft potwierdził, że awaria usług odnotowana w pierwszej kolejności w regionie Ameryki Północnej rozlała się na cały świat. Wielu użytkowników ma problemy z dostępem do swoich kont e-mail, a także napotyka błędy podczas korzystania z innych aplikacji. Firma wskazała na problemy z serwerami i przekazała, że trwające niemal dobę zakłócenia stopniowo ustępują. [Źródło: Polsat News, Rzeczpospolita, RMF24, TVN24, Onet Wiadomości, WP Wiadomości, Puls Biznesu, Bankier.pl, CyberDefence24, Dziennik.pl, Interia Wydarzenia, Forsal.pl, TVP3 Kielce, RadioMaryja.pl]"
         ]
       },
       {
@@ -11579,6 +11326,7 @@
           "To lokalnie niezwykle popularne narzędzia, bez których pracownicy nie mogli zrobić dosłownie NIC. Dlatego w dobie kryzysu sięgnęli po rozwiązania, z których w kontekście Japonii od lat śmieje się cały świat – że wciąż jeszcze są w użytku. [Źródło: Antyweb.pl]",
           "Inni skarżą się w memach, że muszą pracować. [Źródło: Biznes Interia]",
           "Microsoft poinformował, że wszystkie jego produkty znów działają, a wielka awaria została usunięta. Błąd pojawił się podczas modernizacji przepustowości sieci. Bloomberg odnotowuje, że zakłócenia dotknęły m.in. szpitali, policji oraz uczestników rynków finansowych. [Źródło: Business Insider PL]",
+          "W Japonii skutki problemów z Outlookiem, Teams i innymi narzędziami były szczególnie widoczne. [Źródło: Infor.pl]",
           "Według danych cytowanych przez Reutersa serwis Downdetector odnotował ponad 7,4 mln zgłoszeń. Microsoft zapewnia, że sytuacja stopniowo wraca do normy. [Źródło: Niezależna.pl]",
           "Przykładowo, Outlook służy do obsługi poczty elektronicznej, Teams do komunikacji, a SharePoint do współpracy i zarządzania dokumentami. [Źródło: PurePC]",
           "Pomimo upływu czasu, nie udało się ich zażegnać. [Źródło: Tabletowo.pl]",
@@ -11795,7 +11543,7 @@
     "keywords": "Swiat, Globalna, awaria, Microsoftu, działają, aplikacje, usługi"
   },
   {
-    "id": 146,
+    "id": 144,
     "path": "/Polska/Polityka",
     "seo_url": "/Polska/Polityka/prokuratura-chce-przesluchac-nawrockiego-pismo-do-kancelarii-prezydenta",
     "seo_title": "Prokuratura chce przesłuchać Nawrockiego. Pismo do kancelarii prezydenta",
@@ -11894,7 +11642,7 @@
     "keywords": "Polityka, Prokuratura, chce, przesłuchać, Nawrockiego, Pismo, kancelarii"
   },
   {
-    "id": 147,
+    "id": 145,
     "path": "/Sport",
     "seo_url": "/Sport/lekarz-przy-kostiuk-zaraz-przy-gauff-dramat-w-wta-finals-powrot-z-1-5",
     "seo_title": "Lekarz przy Kostiuk, zaraz przy Gauff. Dramat w WTA Finals. Powrót z 1:5",
@@ -11978,7 +11726,7 @@
     "keywords": "Sport, Lekarz, Kostiuk, zaraz, Gauff, Finals, Powrót"
   },
   {
-    "id": 148,
+    "id": 146,
     "path": "/Polska",
     "seo_url": "/Polska/polska-i-ukraina-zaciesnia-wspolprace-w-kijowie-powolano-nowa-rade",
     "seo_title": "Polska i Ukraina zacieśnią współpracę? W Kijowie powołano nową radę",
@@ -12046,7 +11794,7 @@
     "keywords": "Polska, Ukraina, zacieśnią, współpracę, Kijowie, powołano, radę"
   },
   {
-    "id": 149,
+    "id": 147,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/sprawa-elektrowni-ostroleka-to-symbol-chorych-ukladow-w-panstwowych",
     "seo_title": "Sprawa Elektrowni Ostrołęka to symbol chorych układów w państwowych firmach",
@@ -12101,7 +11849,7 @@
     "keywords": "Energetyka, Elektrowni, Ostrołęka, symbol, chorych, układów, państwowych"
   },
   {
-    "id": 150,
+    "id": 148,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/przemysl-energochlonny-oze-szansa-na-finansowanie-inwestycji-w-zielona",
     "seo_title": "„Przemysł energochłonny – OZE”. Szansa na finansowanie inwestycji w zieloną energię dla przedsiębiorstw",
@@ -12157,7 +11905,7 @@
     "keywords": "Energetyka, Przemysł, energochłonny, Szansa, finansowanie, inwestycji, zieloną"
   },
   {
-    "id": 151,
+    "id": 149,
     "path": "/Swiat",
     "seo_url": "/Swiat/saudi-aramco-zarabia-krocie-pomimo-wojny-w-zatoce-perskiej",
     "seo_title": "Saudi Aramco zarabia krocie pomimo wojny w Zatoce Perskiej",
@@ -12213,7 +11961,7 @@
     "keywords": "Swiat, Saudi, Aramco, zarabia, krocie, pomimo, wojny"
   },
   {
-    "id": 152,
+    "id": 150,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/w-miesi-c-nie-wyprodukowano-126-gwh-z-oze-czy-agregacja-temu-zaradzi",
     "seo_title": "W miesiąc nie wyprodukowano 126 GWh z OZE. Czy agregacja temu zaradzi?",
@@ -12247,8 +11995,7 @@
         "heading": "Relacja źródłowa (WysokieNapiecie.pl)",
         "paragraphs": [
           "Zdaniem ekspertów z think tanku Forum Energii, ograniczenia w produkcji OZE wynikają m.in. z jej niedopasowania do zapotrzebowania i niedostatecznej elastyczności systemu. I tu coraz większego znaczenia nabierają nie tylko magazyny energii, lecz także agregacja elastyczności, usługi bilansujące oraz aktywne zarządzanie generacją rozproszoną.",
-          "Dla właścicieli odpowiednio wyposażonych instalacji może to oznaczać nowe możliwości uzyskiwania przychodów z już posiadanych aktywów energetycznych. System nie zawsze jest w stanie odebrać całą dostępną produkcję Jednocześnie PSE wprowadzały nierynkowe ograniczenia generacji przez 197 godzin w ciągu 25 dni.",
-          "Ograniczenia objęły 69,7 GWh potencjalnej produkcji z wielkoskalowych instalacji fotowoltaicznych i 56,4 GWh z farm wiatrowych. [Źródło: WysokieNapiecie.pl]"
+          "Dla właścicieli odpowiednio wyposażonych instalacji może to oznaczać nowe możliwości uzyskiwania przychodów z już posiadanych aktywów energetycznych. Ograniczenia objęły 69,7 GWh potencjalnej produkcji z wielkoskalowych instalacji fotowoltaicznych i 56,4 GWh z farm wiatrowych. [Źródło: WysokieNapiecie.pl]"
         ]
       }
     ],
