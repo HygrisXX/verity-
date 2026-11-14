@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/pijany-kierowca-doprowadzil-do-kolizji-kilku-aut/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:53:43+01:00</news:publication_date>
+      <news:title>Pijany kierowca doprowadził do kolizji kilku aut</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/04/CO-NA-DROGACH-RADIO-KIELCE-2.jpg</image:loc>
+      <image:title>Pijany kierowca doprowadził do kolizji kilku aut</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/wykorzystywali-maloletnich-do-nielegalnych-zbiorek-charytatywnych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:53:43+01:00</news:publication_date>
+      <news:title>Wykorzystywali małoletnich do nielegalnych zbiórek charytatywnych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://player.radio.rzeszow.pl/media/podcasty/wieczor-z-kryminalem/cover.png</image:loc>
+      <image:title>Wykorzystywali małoletnich do nielegalnych zbiórek charytatywnych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/nowe-zadania-rosji-takze-wobec-polski/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:53:42+01:00</news:publication_date>
+      <news:title>Nowe żądania Rosji. Także wobec Polski</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s12.tvp.pl/images2/b/d/e/uid_bde5e7228a6847c08b336f6849f7e754_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Nowe żądania Rosji. Także wobec Polski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tusk-nie-jest-w-stanie-pojac-weta-nawrockiego-to-jest-po-prostu-wstyd/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:53:41+01:00</news:publication_date>
+      <news:title>Tusk „nie jest w stanie pojąć” weta Nawrockiego. „To jest po prostu wstyd”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s18.tvp.pl/images2/8/c/1/uid_8c1ebcd1c2ca455cb4751cb354330625_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Tusk „nie jest w stanie pojąć” weta Nawrockiego. „To jest po prostu wstyd”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/niepokojacy-incydent-w-bazie-usa-drony-nad-jednym-z-najwazniejszych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:53:41+01:00</news:publication_date>
+      <news:title>Niepokojący incydent w bazie USA. Drony nad jednym z najważniejszych obiektów NATO</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/1bb804b94934a034dcf28fc84ce822dd/?t=crop:5855:2560:nowe:5.7402293354135E-13:731.24348755672,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Niepokojący incydent w bazie USA. Drony nad jednym z najważniejszych obiektów NATO</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-odsuwa-vance-a-od-polityki-zagranicznej-powodem-masowa-korupcja-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:53:41+01:00</news:publication_date>
+      <news:title>Trump odsuwa Vance’a od polityki zagranicznej. Powodem „masowa korupcja” w stanach Demokratów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2025/02/14/320x240px/H2Fx7kw53GVwjOAFd0CuxKe1f3UqLxciM9CyBe10.sbs6.jpg</image:loc>
+      <image:title>Trump odsuwa Vance’a od polityki zagranicznej. Powodem „masowa korupcja” w stanach Demokratów</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/dwie-kobiety-uratowane-z-plonacego-budynku-przestroga-na-zime/</loc>
     <news:news>
       <news:publication>
@@ -383,6 +473,10 @@
       <news:publication_date>2026-11-13T17:46:33+01:00</news:publication_date>
       <news:title>Autopay celem cyberataku. Chodzi o dane dotyczące płatności</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://pliki.wnp.pl/d/57/83/72/578372_r0_300.jpg</image:loc>
+      <image:title>Autopay celem cyberataku. Chodzi o dane dotyczące płatności</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/miliardy-euro-oszczednosci-dla-przemyslu-ue-zwieksza-pule-uprawnien-ets/</loc>
