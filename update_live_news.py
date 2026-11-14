@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS i Atom.
+VERITY - Skrypt produkcyjny pobierający artykuły z polskich kanałów RSS, Atom i TVP3.
 - Ograniczenie bazy testowej do maksymalnie 300 artykułów (kolejka krocząca).
-- Zapis do 4 najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu).
+- Zapis najważniejszych wydarzeń na godzinę (selekcja według liczby niezależnych redakcji i wagi tematu + rotacja 16 województw).
 - Pobieranie oficjalnych miniatur ze źródeł (enclosure / media:content / img).
-- Równoległe pobieranie z 99 zweryfikowanych kanałów (97 redakcji: ogólnopolskie, gospodarcze, specjalistyczne, regionalne z 16 województw, świat, sport).
-- Aktualizacja articles.json oraz news-sitemap.xml.
+- Równoległe pobieranie ze 153 zweryfikowanych kanałów (151 unikalnych redakcji: ogólnopolskie, gospodarcze, specjalistyczne, 16 oddziałów TVP3, rozgłośnie regionalne Polskiego Radia, media powiatowe w 16 województwach, świat, sport).
+- Tryby: domyślna aktualizacja, --rebuild-only, --audit-feeds.
+- Aktualizacja articles.json oraz pełnej infrastruktury SEO.
 """
 
 import concurrent.futures
@@ -14,9 +15,13 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 import xml.sax.saxutils
+import zlib
 from datetime import datetime
 
 _THIS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -50,12 +55,12 @@ LIVE_RSS_FEEDS = [
     {"name": "Business Insider PL", "url": "https://businessinsider.com.pl/.feed", "path": "/Polska/Gospodarka"},
     {"name": "Forbes Polska", "url": "https://www.forbes.pl/.feed", "path": "/Polska/Gospodarka"},
     {"name": "PulsHR", "url": "https://www.pulshr.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
-    {"name": "Farmer.pl", "url": "https://www.farmer.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
+    {"name": "Farmer.pl", "url": "https://www.farmer.pl/rss/fakty.xml", "path": "/Polska/Gospodarka"},
     {"name": "Forsal.pl", "url": "https://forsal.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
     {"name": "Puls Biznesu", "url": "https://www.pb.pl/rss/najnowsze.xml", "path": "/Polska/Gospodarka"},
     {"name": "Parkiet", "url": "https://www.parkiet.com/rss_main", "path": "/Polska/Gospodarka", "group": "Gremi Media"},
     {"name": "XYZ.pl", "url": "https://xyz.pl/feed", "path": "/Polska/Gospodarka"},
-    {"name": "Bezprawnik.pl", "url": "https://bezprawnik.pl/feed/", "path": "/Polska/Gospodarka"},
+    {"name": "Legalis.pl", "url": "https://legalis.pl/feed/", "path": "/Polska/Gospodarka"},
     {"name": "Infor.pl", "url": "https://www.infor.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
     {"name": "Cashless.pl", "url": "https://www.cashless.pl/rss", "path": "/Polska/Gospodarka"},
     {"name": "Comparic.pl", "url": "https://comparic.pl/feed/", "path": "/Polska/Gospodarka"},
@@ -71,8 +76,7 @@ LIVE_RSS_FEEDS = [
     {"name": "Energetyka24", "url": "https://energetyka24.com/feed", "path": "/Polska/Energetyka", "group": "Defence24"},
     {"name": "Elektrowóz.pl", "url": "https://elektrowoz.pl/feed/", "path": "/Polska/Energetyka"},
 
-    # --- Wydarzenia Ogólnopolskie, Zdrowie, Motoryzacja (pełne spektrum redakcji) ---
-    {"name": "RMF24", "url": "https://www.rmf24.pl/feed", "path": "/Polska"},
+    # --- Wydarzenia Ogólnopolskie, Zdrowie, Motoryzacja ---
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/wszystkie.xml", "path": "/Polska"},
     {"name": "Interia Wydarzenia", "url": "https://wydarzenia.interia.pl/feed", "path": "/Polska", "group": "Interia"},
     {"name": "WP Wiadomości", "url": "https://wiadomosci.wp.pl/rss.xml", "path": "/Polska", "group": "Wirtualna Polska"},
@@ -92,34 +96,102 @@ LIVE_RSS_FEEDS = [
     {"name": "Medonet.pl", "url": "https://www.medonet.pl/.feed", "path": "/Polska"},
     {"name": "Niedziela.pl", "url": "https://www.niedziela.pl/rss", "path": "/Polska"},
 
-    # --- Polska Lokalna i Regionalna (wszystkie 16 województw) ---
-    {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Regiony/Wielkopolskie"},
-    {"name": "Głos Wielkopolski", "url": "https://gloswielkopolski.pl/rss", "path": "/Polska/Regiony/Wielkopolskie", "group": "Polska Press"},
-    {"name": "Warszawa w Pigułce", "url": "https://warszawawpigulce.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
-    {"name": "Radio Kraków", "url": "https://www.radiokrakow.pl/rss.xml", "path": "/Polska/Regiony/Malopolskie"},
-    {"name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/rss", "path": "/Polska/Regiony/Malopolskie", "group": "Polska Press"},
+    # --- Polska Lokalna i Regionalna (wszystkie 16 województw: TVP3, Polskie Radio, prasa powiatowa) ---
+    # Dolnośląskie (5)
     {"name": "Gazeta Wrocławska", "url": "https://gazetawroclawska.pl/rss", "path": "/Polska/Regiony/Dolnoslaskie", "group": "Polska Press"},
-    {"name": "TVS Śląsk", "url": "https://tvs.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
-    {"name": "Dziennik Zachodni", "url": "https://dziennikzachodni.pl/rss", "path": "/Polska/Regiony/Slaskie", "group": "Polska Press"},
-    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Regiony/Pomorskie"},
-    {"name": "Dziennik Bałtycki", "url": "https://dziennikbaltycki.pl/rss", "path": "/Polska/Regiony/Pomorskie", "group": "Polska Press"},
-    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Regiony/Lodzkie"},
-    {"name": "Dziennik Łódzki", "url": "https://dzienniklodzki.pl/rss", "path": "/Polska/Regiony/Lodzkie", "group": "Polska Press"},
-    {"name": "Głos Szczeciński", "url": "https://gs24.pl/rss", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "Polska Press"},
+    {"name": "Radio Wrocław", "url": "https://www.radiowroclaw.pl/articles/rss", "path": "/Polska/Regiony/Dolnoslaskie"},
+    {"name": "TVP3 Wrocław", "url": "https://wroclaw.tvp.pl/", "path": "/Polska/Regiony/Dolnoslaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Wroclaw.pl", "url": "https://www.wroclaw.pl/dla-mieszkanca/rss/", "path": "/Polska/Regiony/Dolnoslaskie"},
+    {"name": "Świdnica24.pl", "url": "https://swidnica24.pl/feed/", "path": "/Polska/Regiony/Dolnoslaskie"},
+    # Kujawsko-Pomorskie (4)
     {"name": "Radio PiK", "url": "https://www.radiopik.pl/rss.php", "path": "/Polska/Regiony/Kujawsko-Pomorskie"},
-    {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss", "path": "/Polska/Regiony/Kujawsko-Pomorskie", "group": "Polska Press"},
+    {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Kujawsko-Pomorskie", "group": "Polska Press"},
+    {"name": "TVP3 Bydgoszcz", "url": "https://bydgoszcz.tvp.pl/", "path": "/Polska/Regiony/Kujawsko-Pomorskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "TylkoTorun.pl", "url": "https://tylkotorun.pl/feed/", "path": "/Polska/Regiony/Kujawsko-Pomorskie"},
+    # Lubelskie (5)
     {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
     {"name": "Kurier Lubelski", "url": "https://kurierlubelski.pl/rss", "path": "/Polska/Regiony/Lubelskie", "group": "Polska Press"},
     {"name": "Lublin112.pl", "url": "https://www.lublin112.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
+    {"name": "TVP3 Lublin", "url": "https://lublin.tvp.pl/", "path": "/Polska/Regiony/Lubelskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Radio Impuls", "url": "https://radioimpuls.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
+    # Lubuskie (7)
+    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/?paged=1", "path": "/Polska/Regiony/Lubuskie"},
+    {"name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Lubuskie", "group": "Polska Press"},
+    {"name": "TVP3 Gorzów", "url": "https://gorzow.tvp.pl/", "path": "/Polska/Regiony/Lubuskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Gorzowianin.com", "url": "https://gorzowianin.com/feed/", "path": "/Polska/Regiony/Lubuskie"},
+    {"name": "NewsLubuski.pl", "url": "https://newslubuski.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
+    {"name": "Radio Index", "url": "https://wzielonej.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
+    {"name": "Pościgi.pl", "url": "https://poscigi.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
+    # Łódzkie (4)
+    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Regiony/Lodzkie"},
+    {"name": "Dziennik Łódzki", "url": "https://dzienniklodzki.pl/rss", "path": "/Polska/Regiony/Lodzkie", "group": "Polska Press"},
+    {"name": "TVP3 Łódź", "url": "https://lodz.tvp.pl/", "path": "/Polska/Regiony/Lodzkie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Radio ZW", "url": "https://radiozw.com.pl/feed/", "path": "/Polska/Regiony/Lodzkie"},
+    # Małopolskie (5)
+    {"name": "Radio Kraków", "url": "https://www.radiokrakow.pl/rss.xml", "path": "/Polska/Regiony/Malopolskie"},
+    {"name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/rss", "path": "/Polska/Regiony/Malopolskie", "group": "Polska Press"},
+    {"name": "TVP3 Kraków", "url": "https://krakow.tvp.pl/", "path": "/Polska/Regiony/Malopolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Podhale24.pl", "url": "https://podhale24.pl/rss", "path": "/Polska/Regiony/Malopolskie"},
+    {"name": "Bochnianin.pl", "url": "https://www.bochnianin.pl/feed/", "path": "/Polska/Regiony/Malopolskie"},
+    # Mazowieckie (5)
+    {"name": "Warszawa w Pigułce", "url": "https://warszawawpigulce.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
+    {"name": "TVP3 Warszawa", "url": "https://warszawa.tvp.pl/", "path": "/Polska/Regiony/Mazowieckie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Radio Kolor", "url": "https://radiokolor.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
+    {"name": "PetroNews.pl", "url": "https://petronews.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
+    {"name": "CoZaDzień.pl", "url": "https://www.cozadzien.pl/rss/articles/pl", "path": "/Polska/Regiony/Mazowieckie"},
+    # Opolskie (4)
+    {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Opolskie", "group": "Polska Press"},
+    {"name": "TVP3 Opole", "url": "https://opole.tvp.pl/", "path": "/Polska/Regiony/Opolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Opolska360.pl", "url": "https://opolska360.pl/feed", "path": "/Polska/Regiony/Opolskie"},
+    {"name": "CzasNaOpole.pl", "url": "https://czasnaopole.pl/feed/", "path": "/Polska/Regiony/Opolskie"},
+    # Podkarpackie (4)
     {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Regiony/Podkarpackie"},
-    {"name": "Nowiny24", "url": "https://nowiny24.pl/rss", "path": "/Polska/Regiony/Podkarpackie", "group": "Polska Press"},
+    {"name": "Nowiny24", "url": "https://nowiny24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Podkarpackie", "group": "Polska Press"},
+    {"name": "TVP3 Rzeszów", "url": "https://rzeszow.tvp.pl/", "path": "/Polska/Regiony/Podkarpackie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Rzeszow-News.pl", "url": "https://rzeszow-news.pl/feed/", "path": "/Polska/Regiony/Podkarpackie"},
+    # Podlaskie (5)
     {"name": "Kurier Poranny", "url": "https://poranny.pl/rss", "path": "/Polska/Regiony/Podlaskie", "group": "Polska Press"},
-    {"name": "Radio Olsztyn", "url": "https://radioolsztyn.pl/feed/", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
-    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
-    {"name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/rss", "path": "/Polska/Regiony/Lubuskie", "group": "Polska Press"},
+    {"name": "Radio Białystok", "url": "https://www.radio.bialystok.pl/rss", "path": "/Polska/Regiony/Podlaskie"},
+    {"name": "TVP3 Białystok", "url": "https://bialystok.tvp.pl/", "path": "/Polska/Regiony/Podlaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Suwałki24.pl", "url": "https://www.suwalki24.pl/rss", "path": "/Polska/Regiony/Podlaskie"},
+    {"name": "4Lomza.pl", "url": "https://feeds.feedburner.com/4lomza.pl", "path": "/Polska/Regiony/Podlaskie"},
+    # Pomorskie (5)
+    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Regiony/Pomorskie"},
+    {"name": "Dziennik Bałtycki", "url": "https://dziennikbaltycki.pl/rss", "path": "/Polska/Regiony/Pomorskie", "group": "Polska Press"},
+    {"name": "TVP3 Gdańsk", "url": "https://gdansk.tvp.pl/", "path": "/Polska/Regiony/Pomorskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "GP24.pl", "url": "https://gp24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Pomorskie", "group": "Polska Press"},
+    {"name": "Kaszuby24.pl", "url": "https://kaszuby24.pl/feed/", "path": "/Polska/Regiony/Pomorskie"},
+    # Śląskie (7)
+    {"name": "TVS Śląsk", "url": "https://tvs.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
+    {"name": "Dziennik Zachodni", "url": "https://dziennikzachodni.pl/rss", "path": "/Polska/Regiony/Slaskie", "group": "Polska Press"},
+    {"name": "TVP3 Katowice", "url": "https://katowice.tvp.pl/", "path": "/Polska/Regiony/Slaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Radio 90", "url": "https://www.radio90.pl/feed", "path": "/Polska/Regiony/Slaskie"},
+    {"name": "Radio Piekary", "url": "https://radiopiekary.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
+    {"name": "Bielsko.biala.pl", "url": "https://bielsko.biala.pl/aktualnosci.xml", "path": "/Polska/Regiony/Slaskie"},
+    {"name": "Beskidzka24.pl", "url": "https://beskidzka24.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
+    # Świętokrzyskie (4)
     {"name": "Radio Kielce", "url": "https://radiokielce.pl/feed/", "path": "/Polska/Regiony/Swietokrzyskie"},
     {"name": "Echo Dnia Kielce", "url": "https://echodnia.eu/rss", "path": "/Polska/Regiony/Swietokrzyskie", "group": "Polska Press"},
-    {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss", "path": "/Polska/Regiony/Opolskie", "group": "Polska Press"},
+    {"name": "TVP3 Kielce", "url": "https://kielce.tvp.pl/", "path": "/Polska/Regiony/Swietokrzyskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Radio Ostrowiec", "url": "https://radioostrowiec.pl/feed/", "path": "/Polska/Regiony/Swietokrzyskie"},
+    # Warmińsko-Mazurskie (5)
+    {"name": "Radio Olsztyn", "url": "https://radioolsztyn.pl/feed/", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
+    {"name": "TVP3 Olsztyn", "url": "https://olsztyn.tvp.pl/", "path": "/Polska/Regiony/Warminsko-Mazurskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "TKO Olsztyn", "url": "https://tko.pl/feed/", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
+    {"name": "PortEl.pl", "url": "https://www.portel.pl/rss", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
+    {"name": "info.elblag.pl", "url": "https://info.elblag.pl/rss.xml", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
+    # Wielkopolskie (6)
+    {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Regiony/Wielkopolskie"},
+    {"name": "Głos Wielkopolski", "url": "https://gloswielkopolski.pl/rss", "path": "/Polska/Regiony/Wielkopolskie", "group": "Polska Press"},
+    {"name": "Radio Poznań", "url": "https://radiopoznan.fm/rss/informacje", "path": "/Polska/Regiony/Wielkopolskie"},
+    {"name": "TVP3 Poznań", "url": "https://poznan.tvp.pl/", "path": "/Polska/Regiony/Wielkopolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "Asta24.pl", "url": "https://www.asta24.pl/feed", "path": "/Polska/Regiony/Wielkopolskie"},
+    {"name": "rc.fm", "url": "https://www.rc.fm/rss.xml", "path": "/Polska/Regiony/Wielkopolskie"},
+    # Zachodniopomorskie (4)
+    {"name": "Głos Szczeciński", "url": "https://gs24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "Polska Press"},
+    {"name": "Radio Szczecin", "url": "https://radioszczecin.pl/rss.php", "path": "/Polska/Regiony/Zachodniopomorskie"},
+    {"name": "TVP3 Szczecin", "url": "https://szczecin.tvp.pl/", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
+    {"name": "GK24.pl", "url": "https://gk24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "Polska Press"},
 
     # --- Świat, Technologia, Cyberbezpieczeństwo, Kosmos ---
     {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/swiat.xml", "path": "/Swiat"},
@@ -128,7 +200,9 @@ LIVE_RSS_FEEDS = [
     {"name": "Sekurak", "url": "https://sekurak.pl/feed/", "path": "/Polska"},
     {"name": "CHIP.pl", "url": "https://www.chip.pl/feed", "path": "/Polska"},
     {"name": "PurePC", "url": "https://www.purepc.pl/rss.xml", "path": "/Polska"},
-    {"name": "Spider's Web", "url": "https://spidersweb.pl/feed", "path": "/Polska"},
+    {"name": "Telepolis.pl", "url": "https://www.telepolis.pl/rss", "path": "/Polska"},
+    {"name": "Benchmark.pl", "url": "https://www.benchmark.pl/rss/aktualnosci-pliki.xml", "path": "/Polska"},
+    {"name": "Instalki.pl", "url": "https://www.instalki.pl/feed/", "path": "/Polska"},
     {"name": "CyberDefence24", "url": "https://cyberdefence24.pl/feed", "path": "/Polska", "group": "Defence24"},
     {"name": "Space24", "url": "https://space24.pl/feed", "path": "/Polska", "group": "Defence24"},
     {"name": "Komputer Świat", "url": "https://www.komputerswiat.pl/.feed", "path": "/Polska"},
@@ -142,7 +216,8 @@ LIVE_RSS_FEEDS = [
     {"name": "Interia Sport", "url": "https://sport.interia.pl/feed", "path": "/Sport", "group": "Interia"},
     {"name": "Polsat Sport", "url": "https://www.polsatsport.pl/rss/wszystkie.xml", "path": "/Sport"},
     {"name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/rss.xml", "path": "/Sport", "group": "Wirtualna Polska"},
-    {"name": "RMF24 Sport", "url": "https://www.rmf24.pl/sport/feed", "path": "/Sport"},
+    {"name": "Weszło.com", "url": "https://weszlo.com/feed/", "path": "/Sport"},
+    {"name": "Gol24.pl", "url": "https://gol24.pl/rss", "path": "/Sport", "group": "Polska Press"},
 ]
 
 OUTLET_DEFAULT_PATH = {}
@@ -155,9 +230,9 @@ BLACKLIST = {"oko.press", "demagog.org.pl"}
 PREFERRED_PRIMARY_OUTLETS = {
     "Rzeczpospolita", "Bankier.pl", "Money.pl", "WNP.pl", "300Gospodarka",
     "WysokieNapiecie.pl", "Energetyka24", "Defence24", "InfoSecurity24",
-    "RMF24", "Polsat News", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
+    "Polsat News", "TVN24", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
     "GazetaPrawna.pl (DGP)", "Forsal.pl", "Puls Biznesu", "Parkiet", "XYZ.pl",
-    "CyberDefence24", "Space24", "Infor.pl", "Wiadomości Handlowe",
+    "Legalis.pl", "CyberDefence24", "Space24", "Infor.pl", "Wiadomości Handlowe",
 }
 
 OPINION_MARKERS = [
@@ -167,7 +242,8 @@ OPINION_MARKERS = [
     r"\bnieoficjalnie\b",
     r"\bnaszym zdaniem\b",
     r"\bhoroskop\b",
-    r"\bwyniki lotto\b",
+    r"\bwyniki\s+(?:lotto|eurojackpot|multi\s+multi)\b",
+    r"\beurojackpot\b",
     r"\bszczęśliwe liczby\b",
     r"\bkrzyżówk",
     r"\bquiz\b",
@@ -183,6 +259,11 @@ OPINION_MARKERS = [
     r"\bstream\s+online\b",
     r"\bmem(?:y|ów)\b",
     r"\bprzesąd",
+    r"\bprzepis(?:y)?\s+na\b",
+    r"\bnaleśnik",
+    r"\bnie\s+jadłeś\b",
+    r"\bpalce\s+lizać\b",
+    r"\bciasto\s+bez\s+pieczenia\b",
     r"®",
 ]
 
@@ -191,6 +272,7 @@ EDITORIAL_URL_SEGMENTS = (
     "/horoskop/", "/horoskopy/", "/quiz/", "/lotto/", "/galerie/",
     "/porady/", "/gwiazdy/", "/plotki/", "/transmisje/",
     "/plus-minus/", "/kultura/", "/film/", "/muzyka/", "/ksiazki/", "/recenzje/", "/rozrywka/", "/styl-zycia/",
+    "/kuchnia/", "/gotowanie/", "/przepisy/", "/uroda/", "/moda/",
 )
 
 
@@ -204,18 +286,21 @@ def _unescape_all(raw: str) -> str:
     return txt.replace("\xa0", " ").replace("\u200b", "").replace("\ufeff", "")
 
 
+_HTML_TAG_RE = re.compile(r"</?[A-Za-z!][^<>\"']*(?:\"[^\"]*\"[^<>\"']*|'[^']*'[^<>\"']*)*>")
+
+
 def strip_html(raw: str) -> str:
-    unescaped = _unescape_all(raw)
-    unescaped = re.sub(r"<(script|style|noscript)\b[^>]*>[\s\S]*?</\1>", " ", unescaped, flags=re.IGNORECASE)
-    text = re.sub(r"<[^>]+>", " ", unescaped)
-    return re.sub(r"\s+", " ", text).strip()
+    txt = re.sub(r"<(script|style|noscript)\b[^>]*>[\s\S]*?</\1>", " ", raw or "", flags=re.IGNORECASE)
+    txt = _HTML_TAG_RE.sub(" ", txt)
+    unescaped = _unescape_all(txt)
+    if "<" in unescaped:
+        unescaped = re.sub(r"<(script|style|noscript)\b[^>]*>[\s\S]*?</\1>", " ", unescaped, flags=re.IGNORECASE)
+        unescaped = _HTML_TAG_RE.sub(" ", unescaped)
+        unescaped = re.sub(r"<[^>]+>", " ", unescaped)
+    return re.sub(r"\s+", " ", unescaped).strip()
 
 
-def clean_html_for_synthesis(raw: str, article_title: str = "") -> str:
-    """Czyści surowy HTML z RSS/Atom przed podziałem na zdania (usuwa stopki WP, śmieci Drupal, sklejenia nagłówków)."""
-    t = _unescape_all(raw)
-    if not t:
-        return ""
+def _clean_html_pass(t: str, norm_title: str) -> str:
     t = re.sub(r"<(script|style|noscript|figure|figcaption|iframe|svg)\b[^>]*>[\s\S]*?</\1>", " ", t, flags=re.IGNORECASE)
 
     # Usuń stopki WordPressa w HTML
@@ -240,24 +325,35 @@ def clean_html_for_synthesis(raw: str, article_title: str = "") -> str:
     )
     t = re.sub(r"<div[^>]+field__label[^>]*>\s*Treść\s*</div>", " ", t, flags=re.IGNORECASE)
 
-    # Obsługa nagłówków h1-h6: krótkie śródtytuły bez kropki usuń (lub zakończ nową linią), by nie sklejały się z tekstem
-    norm_title = _norm_pl(re.sub(r"\W+", " ", article_title or "")).strip()
-
     def _handle_heading(m):
-        inner = re.sub(r"<[^>]+>", " ", m.group(1))
+        inner = _HTML_TAG_RE.sub(" ", m.group(1))
+        inner = re.sub(r"<[^>]+>", " ", inner)
         inner = re.sub(r"\s+", " ", inner).strip()
         if not inner:
             return "\n"
         if norm_title and _norm_pl(re.sub(r"\W+", " ", inner)).strip() == norm_title:
             return "\n"
-        # Krótki śródtytuł bez kropki końcowej bywa etykietą lub początkiem innej sekcji newslettera
         if len(inner) < 75 and not inner.endswith((".", "!", "?")):
             return "\n"
         return f"\n{inner}\n"
 
     t = re.sub(r"<h[1-6]\b[^>]*>([\s\S]*?)</h[1-6]>", _handle_heading, t, flags=re.IGNORECASE)
     t = re.sub(r"<(?:br|/p|/div|/li|/blockquote|/tr|/section)\b[^>]*>", "\n", t, flags=re.IGNORECASE)
+    t = _HTML_TAG_RE.sub(" ", t)
     t = re.sub(r"<[^>]+>", " ", t)
+    return t
+
+
+def clean_html_for_synthesis(raw: str, article_title: str = "") -> str:
+    """Czyści surowy HTML z RSS/Atom przed podziałem na zdania (usuwa stopki WP, śmieci Drupal, sklejenia nagłówków)."""
+    if not raw or not raw.strip():
+        return ""
+    norm_title = _norm_pl(re.sub(r"\W+", " ", article_title or "")).strip()
+    t = _clean_html_pass(raw, norm_title)
+    t = _unescape_all(t)
+    if "<" in t:
+        t = _clean_html_pass(t, norm_title)
+    t = re.sub(r"<[^>]*$", " ", t)
     return clean_desc_text(t, article_title=article_title)
 
 
@@ -317,18 +413,38 @@ def _local_tag(elem) -> str:
     return elem.tag.split("}")[-1].lower()
 
 
+def _close_truncated_xml(text_clean: str) -> str:
+    low = text_clean.lower()
+    if ("<rss" in low or "<rdf:rdf" in low) and "</rss>" not in low and "</rdf:rdf>" not in low:
+        end_tag = "</rdf:rdf>" if "<rdf:rdf" in low else "</channel></rss>"
+        pos = low.rfind("</item>")
+        if pos != -1:
+            base = text_clean[: pos + len("</item>")]
+            if end_tag == "</channel></rss>" and "</channel>" in base.lower():
+                return base + "</rss>"
+            return base + end_tag
+    if "<feed" in low and "</feed>" not in low:
+        pos = low.rfind("</entry>")
+        if pos != -1:
+            return text_clean[: pos + len("</entry>")] + "</feed>"
+    return text_clean
+
+
 def _parse_feed_xml(xml_raw: bytes):
+    stripped = xml_raw[3:] if xml_raw.startswith(b"\xef\xbb\xbf") else xml_raw
+    stripped = stripped.lstrip()
     try:
-        return ET.fromstring(xml_raw)
+        return ET.fromstring(stripped)
     except Exception:
-        text_clean = xml_raw.decode("utf-8", errors="ignore")
+        text_clean = stripped.decode("utf-8", errors="ignore").lstrip("\ufeff \t\r\n")
         text_clean = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD]", "", text_clean)
+        text_clean = _close_truncated_xml(text_clean)
         if "<media:" in text_clean and "xmlns:media=" not in text_clean:
-            text_clean = re.sub(r"<rss\b", '<rss xmlns:media="http://search.yahoo.com/mrss/"', text_clean, count=1)
+            text_clean = re.sub(r"<(rss|feed)\b", r'<\1 xmlns:media="http://search.yahoo.com/mrss/"', text_clean, count=1)
         if "<content:" in text_clean and "xmlns:content=" not in text_clean:
-            text_clean = re.sub(r"<rss\b", '<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"', text_clean, count=1)
+            text_clean = re.sub(r"<(rss|feed)\b", r'<\1 xmlns:content="http://purl.org/rss/1.0/modules/content/"', text_clean, count=1)
         if "<dc:" in text_clean and "xmlns:dc=" not in text_clean:
-            text_clean = re.sub(r"<rss\b", '<rss xmlns:dc="http://purl.org/dc/elements/1.1/"', text_clean, count=1)
+            text_clean = re.sub(r"<(rss|feed)\b", r'<\1 xmlns:dc="http://purl.org/dc/elements/1.1/"', text_clean, count=1)
         try:
             return ET.fromstring(text_clean.encode("utf-8"))
         except Exception:
@@ -587,13 +703,203 @@ def infer_category_path(default_path: str, link: str, title: str, description: s
     return fallback_path
 
 
+def _read_response_bytes(resp, max_bytes: int = 420_000) -> bytes:
+    encoding = (resp.headers.get("Content-Encoding") or "").strip().lower()
+    raw_chunks = []
+    decomp_chunks = []
+    decomp_len = 0
+    decomp = None
+    first_chunk = True
+
+    if encoding == "gzip":
+        decomp = zlib.decompressobj(16 + zlib.MAX_WBITS)
+    elif encoding == "deflate":
+        decomp = zlib.decompressobj(zlib.MAX_WBITS)
+
+    while decomp_len < max_bytes:
+        chunk = resp.read(16384)
+        if not chunk:
+            break
+        if first_chunk:
+            first_chunk = False
+            if not encoding and chunk.startswith(b"\x1f\x8b"):
+                decomp = zlib.decompressobj(16 + zlib.MAX_WBITS)
+        if decomp is not None:
+            try:
+                out = decomp.decompress(chunk)
+            except zlib.error:
+                if encoding == "deflate" and not raw_chunks:
+                    decomp = zlib.decompressobj(-zlib.MAX_WBITS)
+                    try:
+                        out = decomp.decompress(chunk)
+                    except zlib.error:
+                        out = chunk
+                        decomp = None
+                else:
+                    out = b""
+                    if not raw_chunks:
+                        decomp = None
+                        out = chunk
+            raw_chunks.append(chunk)
+            if out:
+                decomp_chunks.append(out)
+                decomp_len += len(out)
+        else:
+            decomp_chunks.append(chunk)
+            decomp_len += len(chunk)
+
+    if decomp is not None:
+        try:
+            tail = decomp.flush()
+            if tail:
+                decomp_chunks.append(tail)
+        except zlib.error:
+            pass
+
+    data = b"".join(decomp_chunks)
+    if len(data) > max_bytes:
+        data = data[:max_bytes]
+    return data
+
+
+_TVP3_SKIP_BLOCKS = {
+    "ZOBACZ KONIECZNIE",
+    "ZOBACZ INNE NASZE PROGRAMY",
+    "INNE",
+    "PATRONATY",
+    "GALERIE",
+    "NAJNOWSZE Z PORTALU TVP.INFO",
+    "PROGRAMY",
+    "POGODA",
+}
+
+
+def _urlopen_with_retry(req, timeout: int = 12, retries: int = 1):
+    last_exc = None
+    for attempt in range(retries + 1):
+        try:
+            return urllib.request.urlopen(req, timeout=timeout)
+        except urllib.error.HTTPError as e:
+            last_exc = e
+            if e.code in (502, 503, 504) and attempt < retries:
+                time.sleep(0.4)
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last_exc = e
+            if attempt < retries:
+                time.sleep(0.4)
+                continue
+            raise
+    raise last_exc  # pragma: no cover
+
+
+def _parse_tvp3_items_from_html(html_text: str, feed: dict, max_per_feed: int = 12) -> list:
+    payload = None
+    for marker in ("window.__sgData", "window.__newsData"):
+        pos = html_text.find(marker)
+        if pos != -1:
+            eq = html_text.find("=", pos)
+            if eq != -1:
+                raw_slice = html_text[eq + 1 :].lstrip()
+                if raw_slice:
+                    payload, _ = json.JSONDecoder().raw_decode(raw_slice)
+                    break
+    if payload is None:
+        raise ValueError("Brak window.__sgData / window.__newsData")
+
+    nodes = payload if isinstance(payload, list) else ([payload] if isinstance(payload, dict) else [])
+    out = []
+    seen_links = set()
+
+    def _walk(blocks, parent_title: str = ""):
+        for blk in blocks:
+            if len(out) >= max_per_feed:
+                return
+            if not isinstance(blk, dict):
+                continue
+            bt = ((blk.get("params") or {}).get("title") or blk.get("title") or parent_title or "").strip().upper()
+            if bt in _TVP3_SKIP_BLOCKS:
+                continue
+            for it in blk.get("items") or []:
+                if len(out) >= max_per_feed:
+                    return
+                if not isinstance(it, dict):
+                    continue
+                if "items" in it and "title" not in it:
+                    _walk([it], bt)
+                    continue
+
+                title = strip_html(it.get("title") or "")
+                raw_url = (it.get("url") or "").strip()
+                if not title or not raw_url:
+                    continue
+                link = urllib.parse.urljoin(feed["url"], raw_url)
+                low_link = link.lower()
+                if "tvp.info" in low_link or "vod.tvp.pl" in low_link:
+                    continue
+                if link in seen_links:
+                    continue
+
+                raw_lead = (it.get("lead") or "").strip()[:7000]
+                desc = clean_html_for_synthesis(raw_lead, title)
+                if len(desc) < 30:
+                    continue
+                if is_opinion_or_blacklisted(title, link):
+                    continue
+
+                seen_links.add(link)
+                img_obj = it.get("image")
+                thumb = (img_obj.get("url") or "").strip() if isinstance(img_obj, dict) else ""
+                if not (ENABLE_THUMBNAILS and _is_valid_thumb(thumb)):
+                    thumb = ""
+
+                pub_date = str(it.get("publication_start") or it.get("release_date") or "").strip()
+                inferred_path = infer_category_path(feed["path"], link, title, desc)
+                out.append({
+                    "outlet": feed["name"],
+                    "group": feed.get("group") or feed["name"],
+                    "path": inferred_path,
+                    "title": title,
+                    "description": desc,
+                    "link": link,
+                    "pub_date": pub_date,
+                    "thumbnail": thumb,
+                })
+
+    _walk(nodes)
+    return out
+
+
+def _fetch_tvp3_sgdata_feed(feed: dict, max_per_feed: int = 12) -> tuple:
+    headers = {
+        "User-Agent": "VerityBot/1.0 (+https://hygrisxx.github.io/verity-/)",
+        "Accept-Encoding": "gzip, deflate",
+    }
+    try:
+        req = urllib.request.Request(feed["url"], headers=headers)
+        with _urlopen_with_retry(req, timeout=12, retries=1) as resp:
+            raw_bytes = _read_response_bytes(resp, max_bytes=950_000)
+        html_text = raw_bytes.decode("utf-8", errors="ignore")
+        out = _parse_tvp3_items_from_html(html_text, feed, max_per_feed=max_per_feed)
+        return feed["name"], out, None
+    except Exception as e:
+        return feed["name"], [], e
+
+
 def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
-    headers = {"User-Agent": "VerityBot/1.0 (+https://hygrisxx.github.io/verity-/)"}
+    if feed.get("source_type") == "tvp3_sgdata":
+        return _fetch_tvp3_sgdata_feed(feed, max_per_feed=max_per_feed)
+
+    headers = {
+        "User-Agent": "VerityBot/1.0 (+https://hygrisxx.github.io/verity-/)",
+        "Accept-Encoding": "gzip, deflate",
+    }
     out = []
     try:
         req = urllib.request.Request(feed["url"], headers=headers)
-        with urllib.request.urlopen(req, timeout=14) as resp:
-            xml_raw = resp.read()
+        with _urlopen_with_retry(req, timeout=12, retries=1) as resp:
+            xml_raw = _read_response_bytes(resp, max_bytes=420_000)
 
         root = _parse_feed_xml(xml_raw)
         is_atom = _local_tag(root) == "feed"
@@ -612,9 +918,9 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
                 if t == "title" and not title:
                     title = strip_html(txt)
                 elif t in ("description", "summary") and not raw_desc:
-                    raw_desc = txt
+                    raw_desc = txt[:7000]
                 elif t in ("encoded", "content") and not raw_content:
-                    raw_content = txt
+                    raw_content = txt[:7000]
                 elif t == "link":
                     href = (ch.get("href") or "").strip()
                     rel = (ch.get("rel") or "alternate").strip().lower()
@@ -625,6 +931,7 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
                 elif t in ("pubdate", "updated", "published") and not pub_date:
                     pub_date = (ch.text or "").strip()
 
+            link = urllib.parse.urljoin(feed["url"], link) if link else ""
             clean_desc = clean_html_for_synthesis(raw_desc, title)
             clean_cont = clean_html_for_synthesis(raw_content, title) if raw_content else ""
             desc = clean_desc if len(clean_desc) >= 60 else (clean_cont or clean_desc)
@@ -658,7 +965,7 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
 def fetch_rss_items(max_per_feed: int = 12) -> list:
     items = []
     seen_keys = set()
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         results = executor.map(lambda f: _fetch_single_feed(f, max_per_feed), LIVE_RSS_FEEDS)
         for name, feed_items, err in results:
             if err is not None:
@@ -674,6 +981,54 @@ def fetch_rss_items(max_per_feed: int = 12) -> list:
                 added += 1
             print(f"[OK] Pobrano {added} depesz z: {name}")
     return items
+
+
+def audit_feeds(max_per_feed: int = 12) -> int:
+    unique_outlets = len({f["name"] for f in LIVE_RSS_FEEDS})
+    print(f"[AUDYT] Testowanie {len(LIVE_RSS_FEEDS)} kanałów ({unique_outlets} unikalnych redakcji)...")
+    t0 = time.time()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=24) as executor:
+        results = list(executor.map(lambda f: _fetch_single_feed(f, max_per_feed), LIVE_RSS_FEEDS))
+    elapsed = time.time() - t0
+
+    ok_count = 0
+    empty_feeds = []
+    err_feeds = []
+    voiv_stats = {vp: [] for vp in seo_builder.VOIVODESHIP_BY_PATH}
+
+    for feed, (_, feed_items, err) in zip(LIVE_RSS_FEEDS, results):
+        fpath = feed["path"]
+        if err is not None:
+            err_feeds.append((feed, str(err)))
+        elif not feed_items:
+            empty_feeds.append(feed)
+        else:
+            ok_count += 1
+            if fpath in voiv_stats:
+                voiv_stats[fpath].append(f"{feed['name']} ({len(feed_items)})")
+
+    print(f"\n=== PODSUMOWANIE AUDYTU KANAŁÓW ({elapsed:.1f}s) ===")
+    print(f"Łącznie kanałów: {len(LIVE_RSS_FEEDS)} | Unikalnych redakcji: {unique_outlets}")
+    print(f"OK (>0 depesz):  {ok_count}")
+    print(f"EMPTY (0 dep.):  {len(empty_feeds)}")
+    print(f"ERR (błąd HTTP): {len(err_feeds)}")
+
+    if err_feeds or empty_feeds:
+        print("\n--- KANAŁY WYMAGAJĄCE UWAGI (ERR / EMPTY) ---")
+        for f, msg in err_feeds:
+            print(f"[ERR] {f['name']} ({f['path']}) -> {f['url']} | {msg}")
+        for f in empty_feeds:
+            print(f"[EMPTY] {f['name']} ({f['path']}) -> {f['url']}")
+
+    print("\n--- POKRYCIE 16 WOJEWÓDZTW ---")
+    voiv_totals = {vp: sum(1 for f in LIVE_RSS_FEEDS if f["path"] == vp) for vp in seo_builder.VOIVODESHIP_BY_PATH}
+    for v_path, _, _, _, _, _ in seo_builder.VOIVODESHIPS:
+        ok_list = voiv_stats.get(v_path, [])
+        tot = voiv_totals.get(v_path, 0)
+        summary = ", ".join(ok_list) if ok_list else "BRAK"
+        print(f"  {v_path:<37s}{len(ok_list)}/{tot} OK -> {summary}")
+
+    return 0 if (not err_feeds and not empty_feeds) else 1
 
 
 SHORT_KEY_TOKENS = {
@@ -814,6 +1169,7 @@ STOP_WORDS_PL = {
     "mezczyzna", "mezczyzn", "kobieta", "kobiety", "ludzi", "ludzie", "pilne", "oficjalnie", "wiadomo",
     "szczegoly", "dramat", "tragedia", "incydent", "zdarzenie", "sytuacja", "procent", "tysiac", "milion", "miliard",
     "uslyszal", "uslyszala", "uslyszeli", "wczesniej", "wczesn", "liczb", "tego", "tych", "duzo", "naprawde", "naprawd", "stron",
+    "zelen", "podpis", "zlec", "ministr", "stan", "stol", "przy",
 }
 
 CITY_STEM_MAP = {
@@ -917,11 +1273,21 @@ def _sport_discipline(text: str) -> str:
     return ""
 
 
+_FUEL_PRICE_RE = re.compile(
+    r"\b(?:pb95|pb98|benzyn\w*|diesel\w*|olej\w*\s+napedow\w*|oleju\s+napedowego|lpg|autogaz\w*|stacj\w*\s+paliw)\b"
+)
+_GAS_TARIFF_RE = re.compile(
+    r"\b(?:gaz\w*\s+ziemn\w*|mwh|zamrozeni\w*\s+cen\s+gazu|taryf\w*\s+gazow\w*|pgnig)\b"
+)
+
+
 def has_cluster_conflict(item_a: dict, item_b: dict) -> bool:
     """Blokuje błędne sklejenia tematów o różnych miastach/krajach, dyscyplinach lub osobach."""
     pa = item_a.get("path") or ""
     pb = item_b.get("path") or ""
     if (pa == "/Sport") != (pb == "/Sport"):
+        return True
+    if (pa == "/Swiat" and pb.startswith("/Polska/Regiony/")) or (pb == "/Swiat" and pa.startswith("/Polska/Regiony/")):
         return True
 
     ta = item_a.get("title") or ""
@@ -954,6 +1320,17 @@ def has_cluster_conflict(item_a: dict, item_b: dict) -> bool:
     if ca and cb and not (ca & cb):
         return True
 
+    norm_a = _norm_pl(ta + " " + (item_a.get("description") or "")[:220])
+    norm_b = _norm_pl(tb + " " + (item_b.get("description") or "")[:220])
+    is_fuel_a = bool(_FUEL_PRICE_RE.search(norm_a))
+    is_gas_a = bool(_GAS_TARIFF_RE.search(norm_a))
+    is_fuel_b = bool(_FUEL_PRICE_RE.search(norm_b))
+    is_gas_b = bool(_GAS_TARIFF_RE.search(norm_b))
+    if (is_fuel_a and not is_gas_a and is_gas_b and not is_fuel_b) or (
+        is_gas_a and not is_fuel_a and is_fuel_b and not is_gas_b
+    ):
+        return True
+
     return False
 
 
@@ -971,6 +1348,12 @@ def polish_typography_clean(text: str) -> str:
 def clean_desc_text(text: str, article_title: str = "") -> str:
     t = _unescape_all(text or "").strip()
     t = re.sub(r"\s*\[Źródło:[^\]]+\]\s*$", "", t)
+    t = re.sub(
+        r'(?:^|\s)["\']?\s*(?:data-(?:image|orig|large|medium|permalink|attachment)[a-z-]*|srcset|sizes)\s*=[^\n]*?/>\s*',
+        " ",
+        t,
+        flags=re.IGNORECASE,
+    )
 
     # Wycinanie metadanych Drupalowych (np. StrefaInwestorów) ze spłaszczonego opisu
     t = re.sub(r"^.*?\bKanał\s+Strefa\s+Inwestorów\b.*?\bTreść\s+", "", t, flags=re.IGNORECASE | re.DOTALL)
@@ -1100,15 +1483,15 @@ def _contextual_angle(outlet: str, title: str, path: str, is_primary: bool) -> s
         if outlet in {"WysokieNapiecie.pl", "Energetyka24", "Elektrowóz.pl", "Farmer.pl", "Defence24", "InfoSecurity24", "CyberDefence24", "Space24"}:
             return "Analiza sektorowa"
         return "Relacja wiodąca"
-    if path in LOCAL_PATHS or outlet in {"ePoznan.pl", "Lublin112.pl", "Warszawa w Pigułce", "TVS Śląsk", "Nowiny24", "Nowa Trybuna Opolska"} or outlet.startswith(("Radio ", "Gazeta ", "Dziennik ", "Kurier ", "Głos ", "Echo ")):
+    if path in LOCAL_PATHS or outlet in {"ePoznan.pl", "Lublin112.pl", "Warszawa w Pigułce", "TVS Śląsk", "Nowiny24", "Nowa Trybuna Opolska"} or outlet.startswith(("Radio ", "Gazeta ", "Dziennik ", "Kurier ", "Głos ", "Echo ", "TVP3 ")):
         return "Doniesienie regionalne"
-    if outlet in {"Bankier.pl", "Money.pl", "Puls Biznesu", "Parkiet", "XYZ.pl", "300Gospodarka", "Forsal.pl", "Infor.pl", "Bezprawnik.pl", "Cashless.pl", "Comparic.pl", "StrefaInwestorów.pl", "Business Insider PL", "Forbes Polska", "Subiektywnie o Finansach", "MamStartup.pl", "Wiadomości Handlowe", "WP Finanse", "Biznes Interia", "GazetaPrawna.pl (DGP)"}:
+    if outlet in {"Bankier.pl", "Money.pl", "Puls Biznesu", "Parkiet", "XYZ.pl", "300Gospodarka", "Forsal.pl", "Legalis.pl", "Infor.pl", "Bezprawnik.pl", "Cashless.pl", "Comparic.pl", "StrefaInwestorów.pl", "Business Insider PL", "Forbes Polska", "Subiektywnie o Finansach", "MamStartup.pl", "Wiadomości Handlowe", "WP Finanse", "Biznes Interia", "GazetaPrawna.pl (DGP)"}:
         return "Perspektywa rynkowa"
-    if outlet in {"Niebezpiecznik", "Sekurak", "CyberDefence24", "CHIP.pl", "PurePC", "Spider's Web", "Komputer Świat", "Antyweb.pl", "Tabletowo.pl", "Space24"}:
+    if outlet in {"Niebezpiecznik", "Sekurak", "CyberDefence24", "CHIP.pl", "PurePC", "Telepolis.pl", "Benchmark.pl", "Instalki.pl", "Spider's Web", "Komputer Świat", "Antyweb.pl", "Tabletowo.pl", "Space24"}:
         return "Kontekst technologiczny"
     if outlet in {"WysokieNapiecie.pl", "Energetyka24", "Elektrowóz.pl"}:
         return "Kontekst sektorowy"
-    if path == "/Sport" or outlet in {"Sport.pl", "Przegląd Sportowy", "Interia Sport", "Polsat Sport", "WP SportoweFakty", "RMF24 Sport"}:
+    if path == "/Sport" or outlet in {"Sport.pl", "Przegląd Sportowy", "Interia Sport", "Polsat Sport", "WP SportoweFakty", "Weszło.com", "Gol24.pl", "RMF24 Sport"}:
         return "Relacja sportowa"
     return "Relacja uzupełniająca"
 
@@ -1424,12 +1807,14 @@ def cluster_similar_items(items: list) -> list:
             synd_j = items[j].get("group") or items[j]["outlet"]
             if j in used or items[j]["outlet"] in group_outlets or synd_j in group_syndicates:
                 continue
-            if has_cluster_conflict(item, items[j]):
-                continue
             words_j = title_tokens_cache[j]
             if not words_i or not words_j:
                 continue
             shared = len(words_i & words_j)
+            if shared < 2:
+                continue
+            if has_cluster_conflict(item, items[j]):
+                continue
             overlap = shared / max(1, min(len(words_i), len(words_j)))
             desc_shared = len((words_i | desc_i) & (words_j | desc_tokens_cache[j]))
             if shared >= 3 or (shared >= 2 and overlap >= 0.45 and desc_shared >= 5):
@@ -1454,24 +1839,28 @@ def cluster_similar_items(items: list) -> list:
 
 
 GENERIC_TOPIC_TOKENS = {
-    "prezydent", "premier", "minister", "minist", "rzad", "sejm", "senat",
+    "prezydent", "premier", "minister", "minist", "ministr", "rzad", "sejm", "senat",
     "ustaw", "przepis", "nowelizacj", "projekt", "uchwal", "koalicj", "opozycj",
-    "part", "wybor", "glosow", "polityk", "polityczn", "kandydat",
-    "karol", "nawrock", "donald", "tusk", "trump", "biden", "putin", "zelensk", "wolodymyr",
+    "part", "wybor", "glosow", "polityk", "polityczn", "kandydat", "podpis", "zlec",
+    "karol", "nawrock", "donald", "tusk", "trump", "biden", "putin", "zelensk", "zelen", "wolodymyr",
     "polsk", "rosj", "ukrain", "usa", "niemc", "francj", "chin", "europ", "europejsk",
-    "panstw", "kraj", "swiat", "miasto", "powiat", "gmin", "region", "wojewodztw",
+    "panstw", "kraj", "swiat", "miasto", "powiat", "gmin", "region", "wojewodztw", "stan", "stol", "przy",
     "informacj", "pierwsz", "kolejn", "wazn", "piln", "oficjaln",
     "decyzj", "spraw", "stanowisk", "komentarz", "odpowiedz", "pytan", "rozmow",
     "spotkan", "konferencj", "apel", "protest", "akcj", "sluzb", "prokuratur",
     "onet", "tvn24", "rmf24", "polsat", "interi", "rzeczpospolit", "dziennik", "gazet",
 }
 
+_ARTICLE_PROFILE_CACHE = {}
+
 
 def _article_token_profile(art: dict) -> dict:
     title = art.get("seo_title") or ""
     lead_toks = tokenize_title(title)
     persp_titles = [p.get("summary") or "" for p in (art.get("perspectives") or []) if p.get("summary")]
-    persp_toks = set().union(*(tokenize_title(pt) for pt in persp_titles), lead_toks) if persp_titles else set(lead_toks)
+    persp_title_toks = [tokenize_title(pt) for pt in persp_titles]
+    persp_toks = set().union(*persp_title_toks, lead_toks) if persp_title_toks else set(lead_toks)
+    title_toks_list = [toks for toks in ([lead_toks] + persp_title_toks) if toks]
     body_parts = [art.get("summary_lead") or ""]
     for s in art.get("full_sections") or []:
         for p in s.get("paragraphs") or []:
@@ -1483,6 +1872,7 @@ def _article_token_profile(art: dict) -> dict:
     return {
         "lead_toks": lead_toks,
         "persp_toks": persp_toks,
+        "title_toks_list": title_toks_list,
         "body_toks": body_toks,
         "links": links,
         "slug": slug,
@@ -1490,9 +1880,29 @@ def _article_token_profile(art: dict) -> dict:
     }
 
 
+def _get_article_profile(art: dict) -> dict:
+    aid = id(art)
+    sig = (
+        art.get("seo_title"),
+        art.get("seo_url"),
+        tuple(art.get("sources") or ()),
+        len(art.get("perspectives") or ()),
+        len(art.get("full_sections") or ()),
+        art.get("summary_lead"),
+    )
+    cached = _ARTICLE_PROFILE_CACHE.get(aid)
+    if cached is not None and cached[0] == sig:
+        return cached[1]
+    if len(_ARTICLE_PROFILE_CACHE) > 2000:
+        _ARTICLE_PROFILE_CACHE.clear()
+    prof = _article_token_profile(art)
+    _ARTICLE_PROFILE_CACHE[aid] = (sig, prof)
+    return prof
+
+
 def _are_articles_same_event(art_a: dict, art_b: dict, prof_a: dict | None = None, prof_b: dict | None = None) -> bool:
-    pa = prof_a or _article_token_profile(art_a)
-    pb = prof_b or _article_token_profile(art_b)
+    pa = prof_a or _get_article_profile(art_a)
+    pb = prof_b or _get_article_profile(art_b)
 
     if pa["links"] and pb["links"] and (pa["links"] & pb["links"]):
         return True
@@ -1540,11 +1950,15 @@ def find_matching_existing_article(group: list, existing_articles: list) -> dict
     _, cand_countries = _extract_geo_entities(candidate_title)
 
     for art in existing_articles:
-        prof = _article_token_profile(art)
+        prof = _get_article_profile(art)
         if cand_links and prof["links"] and (cand_links & prof["links"]):
             return art
         if cand_slug and prof["slug"] and len(cand_slug) >= 12 and cand_slug == prof["slug"]:
             return art
+
+        sh_p = cand_persp_toks & prof["persp_toks"]
+        if len(sh_p) < 2:
+            continue
 
         ext_stub = {"title": art.get("seo_title", ""), "description": art.get("summary_lead", ""), "path": art.get("path", "/Polska")}
         if has_cluster_conflict(group[0], ext_stub):
@@ -1556,7 +1970,6 @@ def find_matching_existing_article(group: list, existing_articles: list) -> dict
 
         sh_l = cand_lead_toks & prof["lead_toks"]
         sp_l = sh_l - GENERIC_TOPIC_TOKENS
-        sh_p = cand_persp_toks & prof["persp_toks"]
         sp_p = sh_p - GENERIC_TOPIC_TOKENS
         sh_b = cand_body_toks & prof["body_toks"]
         sp_b = sh_b - GENERIC_TOPIC_TOKENS
@@ -1568,11 +1981,7 @@ def find_matching_existing_article(group: list, existing_articles: list) -> dict
         if len(sh_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 6 and ov_b >= 0.29:
             return art
 
-        ext_titles = [art.get("seo_title", "")] + [p.get("summary", "") for p in art.get("perspectives", [])]
-        for et in ext_titles:
-            e_words = tokenize_title(et)
-            if not e_words:
-                continue
+        for e_words in prof["title_toks_list"]:
             for c_words in cand_titles_tokens:
                 if not c_words:
                     continue
@@ -1635,7 +2044,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
             "summary": polish_typography_clean(it["title"]),
             "url": it["link"],
         }
-        for idx, it in enumerate(ranked_group[:10])
+        for idx, it in enumerate(ranked_group)
     ]
 
     metrics = _metrics_for_article(sources, art_path, primary["outlet"])
@@ -1708,10 +2117,11 @@ def _extract_candidates_from_article(art: dict) -> list:
         if idx_p > 0 and (is_opinion_or_blacklisted(p_title, p_url) or re.search(r"\bmemy\b", p_title, re.IGNORECASE)):
             continue
         seen_outlets.add(out_name)
+        excl_parts = outlet_texts["exclusive"].get(out_name) or []
         if idx_p == 0:
             desc_parts = outlet_texts["all"].get(out_name) or ([art.get("summary_lead")] if art.get("summary_lead") else [])
         else:
-            desc_parts = outlet_texts["exclusive"].get(out_name) or outlet_texts["all"].get(out_name) or []
+            desc_parts = excl_parts or outlet_texts["all"].get(out_name) or []
         p_default = OUTLET_DEFAULT_PATH.get(out_name, new_path)
         p_default = seo_builder.LEGACY_REGION_MAP.get(p_default, p_default)
         p_path = infer_category_path(p_default, p_url, p_title, "\n".join(desc_parts)[:320])
@@ -1719,6 +2129,7 @@ def _extract_candidates_from_article(art: dict) -> list:
             "outlet": out_name,
             "title": p_title,
             "description": "\n".join(desc_parts),
+            "excl_description": "\n".join(excl_parts),
             "link": p_url,
             "path": p_path,
             "is_orig_primary": (idx_p == 0),
@@ -1728,11 +2139,13 @@ def _extract_candidates_from_article(art: dict) -> list:
         if out_name in seen_outlets:
             continue
         seen_outlets.add(out_name)
-        desc_parts = outlet_texts["all"].get(out_name) or []
+        excl_parts = outlet_texts["exclusive"].get(out_name) or []
+        desc_parts = excl_parts or outlet_texts["all"].get(out_name) or []
         candidates.append({
             "outlet": out_name,
             "title": title,
             "description": "\n".join(desc_parts),
+            "excl_description": "\n".join(excl_parts),
             "link": "",
             "path": new_path,
             "is_orig_primary": (len(candidates) == 0),
@@ -1776,13 +2189,14 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
             "summary": c["title"],
             "url": c.get("link") or "",
         }
-        for idx, c in enumerate(candidates[:10])
+        for idx, c in enumerate(candidates)
     ]
     summary_lead, meta_desc, keywords = _build_meta_and_summary(title, new_secs, art_path, sources)
     art["summary_lead"] = summary_lead
     art["meta_description"] = meta_desc
     art["keywords"] = keywords
     art["metrics"] = _metrics_for_article(sources, art_path, primary_outlet)
+    _ARTICLE_PROFILE_CACHE.pop(id(art), None)
 
 
 def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
@@ -1957,16 +2371,18 @@ def _upgrade_existing_article(art: dict) -> dict | None:
             if has_cluster_conflict(anchor, cand):
                 continue
             c_title_toks = tokenize_title(cand["title"])
-            c_all_toks = tokenize_title(cand["title"] + " " + cand["description"])
-            c_cities_lead, _ = _extract_geo_entities(cand["title"] + " " + cand["description"][:220])
+            c_excl_desc = cand.get("excl_description") or ""
+            c_all_toks = tokenize_title(cand["title"] + " " + c_excl_desc)
+            c_cities_lead, _ = _extract_geo_entities(cand["title"] + " " + c_excl_desc[:220])
             compatible = False
-            for k in kept:
+            for idx_k, k in enumerate(kept):
                 if has_cluster_conflict(k, cand):
                     compatible = False
                     break
                 k_title_toks = tokenize_title(k["title"])
-                k_all_toks = tokenize_title(k["title"] + " " + k["description"])
-                k_cities_lead, _ = _extract_geo_entities(k["title"] + " " + k["description"][:220])
+                k_desc_use = k["description"] if idx_k == 0 else (k.get("excl_description") or "")
+                k_all_toks = tokenize_title(k["title"] + " " + k_desc_use)
+                k_cities_lead, _ = _extract_geo_entities(k["title"] + " " + k_desc_use[:220])
                 common_t = c_title_toks & k_title_toks
                 non_geo_common_t = common_t - GEO_ONLY_SHARED
                 sh_t = len(common_t)
@@ -2075,7 +2491,7 @@ def update_news_cycle(fetch_live: bool = True):
                         new_articles.append(art)
                         break
 
-        # Dedykowana pula regionalna (rotuje od województw z najmniejszą liczbą artykułów, bez głodzenia przez tematy ogólnopolskie)
+        # Dedykowana pula regionalna (priorytetowo wypełnia województwa z 0 artykułów, dalej rotuje od najmniej licznych)
         reg_counts = {vp: 0 for vp in seo_builder.VOIVODESHIP_BY_PATH}
         for ext in existing_articles + new_articles:
             ep = ext.get("path") or ""
@@ -2100,9 +2516,10 @@ def update_news_cycle(fetch_live: bool = True):
         added_reg = 0
         added_reg_paths = set()
         for _, _, cand_path, grp in reg_candidates:
-            if added_reg >= MAX_REGIONAL_PER_RUN:
-                break
             if cand_path in added_reg_paths:
+                continue
+            is_empty_region = reg_counts.get(cand_path, 0) == 0
+            if not is_empty_region and added_reg >= MAX_REGIONAL_PER_RUN:
                 continue
             matched = find_matching_existing_article(grp, existing_articles + new_articles)
             if matched is not None:
@@ -2110,6 +2527,7 @@ def update_news_cycle(fetch_live: bool = True):
                 continue
             art = build_article_from_group(grp, len(new_articles) + 1)
             new_articles.append(art)
+            reg_counts[cand_path] = reg_counts.get(cand_path, 0) + 1
             added_reg += 1
             added_reg_paths.add(cand_path)
 
@@ -2134,6 +2552,8 @@ def update_news_cycle(fetch_live: bool = True):
 
 
 if __name__ == "__main__":
+    if "--audit-feeds" in sys.argv:
+        sys.exit(audit_feeds())
     no_fetch = "--rebuild-only" in sys.argv
     update_news_cycle(fetch_live=not no_fetch)
 

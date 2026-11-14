@@ -2282,22 +2282,22 @@ const CANONICAL_ORIGIN = (
 ) ? window.VERITY_CANONICAL_ORIGIN.replace(/\/+$/, '') : 'https://hygrisxx.github.io/verity-';
 
 const VOIVODESHIPS = [
-  { path: '/Polska/Regiony/Dolnoslaskie', label: 'Dolnośląskie', title: 'Dolny Śląsk (dolnośląskie)', desc: 'Wiadomości z całego Dolnego Śląska: Wrocław, Wałbrzych, Legnica, Jelenia Góra, Lubin, Głogów, Zgorzelec i powiaty regionu.', outlets: ['Gazeta Wrocławska'] },
-  { path: '/Polska/Regiony/Kujawsko-Pomorskie', label: 'Kujawsko-Pomorskie', title: 'Kujawsko-pomorskie', desc: 'Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice.', outlets: ['Radio PiK', 'Gazeta Pomorska'] },
-  { path: '/Polska/Regiony/Lubelskie', label: 'Lubelskie', title: 'Lubelskie', desc: 'Wydarzenia z całej Lubelszczyzny: Lublin, Zamość, Chełm, Biała Podlaska, Puławy, Tomaszów Lubelski i powiaty regionu.', outlets: ['Radio Lublin', 'Kurier Lubelski', 'Lublin112.pl'] },
-  { path: '/Polska/Regiony/Lubuskie', label: 'Lubuskie', title: 'Lubuskie', desc: 'Wiadomości z województwa lubuskiego: Zielona Góra, Gorzów Wielkopolski, Nowa Sól, Żary, Świebodzin i cały region.', outlets: ['Radio Zachód', 'Gazeta Lubuska'] },
-  { path: '/Polska/Regiony/Lodzkie', label: 'Łódzkie', title: 'Łódzkie', desc: 'Informacje z całego województwa łódzkiego: Łódź, Piotrków Trybunalski, Tomaszów Mazowiecki, Bełchatów, Pabianice, Zgierz.', outlets: ['Radio Łódź', 'Dziennik Łódzki'] },
-  { path: '/Polska/Regiony/Malopolskie', label: 'Małopolskie', title: 'Małopolska (małopolskie)', desc: 'Wydarzenia z całej Małopolski: Kraków, Tarnów, Nowy Sącz, Zakopane, Podhale, Oświęcim i powiaty województwa.', outlets: ['Radio Kraków', 'Gazeta Krakowska'] },
-  { path: '/Polska/Regiony/Mazowieckie', label: 'Mazowieckie', title: 'Mazowsze (mazowieckie)', desc: 'Informacje z Warszawy i całego Mazowsza: Radom, Płock, Siedlce, Ostrołęka, Ciechanów, Pruszków i powiaty regionu.', outlets: ['Warszawa w Pigułce'] },
-  { path: '/Polska/Regiony/Opolskie', label: 'Opolskie', title: 'Opolskie', desc: 'Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa.', outlets: ['Nowa Trybuna Opolska'] },
-  { path: '/Polska/Regiony/Podkarpackie', label: 'Podkarpackie', title: 'Podkarpacie (podkarpackie)', desc: 'Informacje z całego Podkarpacia: Rzeszów, Przemyśl, Stalowa Wola, Mielec, Krosno, Bieszczady i powiaty regionu.', outlets: ['Radio Rzeszów', 'Nowiny24'] },
-  { path: '/Polska/Regiony/Podlaskie', label: 'Podlaskie', title: 'Podlasie (podlaskie)', desc: 'Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu.', outlets: ['Kurier Poranny'] },
-  { path: '/Polska/Regiony/Pomorskie', label: 'Pomorskie', title: 'Pomorze (pomorskie)', desc: 'Wiadomości z całego Pomorza: Gdańsk, Gdynia, Sopot, Trójmiasto, Słupsk, Tczew, Kaszuby i powiaty województwa.', outlets: ['Radio Gdańsk', 'Dziennik Bałtycki'] },
-  { path: '/Polska/Regiony/Slaskie', label: 'Śląskie', title: 'Śląsk (śląskie)', desc: 'Informacje z całego województwa śląskiego: Katowice, Częstochowa, Sosnowiec, Gliwice, Bielsko-Biała, Rybnik, Tychy.', outlets: ['TVS Śląsk', 'Dziennik Zachodni'] },
-  { path: '/Polska/Regiony/Swietokrzyskie', label: 'Świętokrzyskie', title: 'Świętokrzyskie', desc: 'Wiadomości z całego województwa świętokrzyskiego: Kielce, Ostrowiec Świętokrzyski, Starachowice, Sandomierz i powiaty regionu.', outlets: ['Radio Kielce', 'Echo Dnia Kielce'] },
-  { path: '/Polska/Regiony/Warminsko-Mazurskie', label: 'Warmińsko-Mazurskie', title: 'Warmia i Mazury', desc: 'Informacje z Warmii i Mazur: Olsztyn, Elbląg, Ełk, Mrągowo, Iława, Ostróda, Giżycko i całe województwo.', outlets: ['Radio Olsztyn'] },
-  { path: '/Polska/Regiony/Wielkopolskie', label: 'Wielkopolskie', title: 'Wielkopolska (wielkopolskie)', desc: 'Wiadomości z całej Wielkopolski: Poznań, Kalisz, Konin, Piła, Leszno, Gniezno, Ostrów Wielkopolski i powiaty regionu.', outlets: ['ePoznan.pl', 'Głos Wielkopolski'] },
-  { path: '/Polska/Regiony/Zachodniopomorskie', label: 'Zachodniopomorskie', title: 'Pomorze Zachodnie', desc: 'Informacje z Pomorza Zachodniego: Szczecin, Koszalin, Stargard, Kołobrzeg, Świnoujście i całe województwo.', outlets: ['Głos Szczeciński'] }
+  { path: '/Polska/Regiony/Dolnoslaskie', label: 'Dolnośląskie', title: 'Dolny Śląsk (dolnośląskie)', desc: 'Wiadomości z całego Dolnego Śląska: Wrocław, Wałbrzych, Legnica, Jelenia Góra, Lubin, Głogów, Zgorzelec i powiaty regionu.', outlets: ['Gazeta Wrocławska', 'Radio Wrocław', 'TVP3 Wrocław', 'Wroclaw.pl', 'Świdnica24.pl'] },
+  { path: '/Polska/Regiony/Kujawsko-Pomorskie', label: 'Kujawsko-Pomorskie', title: 'Kujawsko-pomorskie', desc: 'Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice.', outlets: ['Radio PiK', 'Gazeta Pomorska', 'TVP3 Bydgoszcz', 'TylkoTorun.pl'] },
+  { path: '/Polska/Regiony/Lubelskie', label: 'Lubelskie', title: 'Lubelskie', desc: 'Wydarzenia z całej Lubelszczyzny: Lublin, Zamość, Chełm, Biała Podlaska, Puławy, Tomaszów Lubelski i powiaty regionu.', outlets: ['Radio Lublin', 'Kurier Lubelski', 'Lublin112.pl', 'TVP3 Lublin', 'Radio Impuls'] },
+  { path: '/Polska/Regiony/Lubuskie', label: 'Lubuskie', title: 'Lubuskie', desc: 'Wiadomości z województwa lubuskiego: Zielona Góra, Gorzów Wielkopolski, Nowa Sól, Żary, Świebodzin i cały region.', outlets: ['Radio Zachód', 'Gazeta Lubuska', 'TVP3 Gorzów', 'Gorzowianin.com', 'NewsLubuski.pl', 'Radio Index', 'Pościgi.pl'] },
+  { path: '/Polska/Regiony/Lodzkie', label: 'Łódzkie', title: 'Łódzkie', desc: 'Informacje z całego województwa łódzkiego: Łódź, Piotrków Trybunalski, Tomaszów Mazowiecki, Bełchatów, Pabianice, Zgierz.', outlets: ['Radio Łódź', 'Dziennik Łódzki', 'TVP3 Łódź', 'Radio ZW'] },
+  { path: '/Polska/Regiony/Malopolskie', label: 'Małopolskie', title: 'Małopolska (małopolskie)', desc: 'Wydarzenia z całej Małopolski: Kraków, Tarnów, Nowy Sącz, Zakopane, Podhale, Oświęcim i powiaty województwa.', outlets: ['Radio Kraków', 'Gazeta Krakowska', 'TVP3 Kraków', 'Podhale24.pl', 'Bochnianin.pl'] },
+  { path: '/Polska/Regiony/Mazowieckie', label: 'Mazowieckie', title: 'Mazowsze (mazowieckie)', desc: 'Informacje z Warszawy i całego Mazowsza: Radom, Płock, Siedlce, Ostrołęka, Ciechanów, Pruszków i powiaty regionu.', outlets: ['Warszawa w Pigułce', 'TVP3 Warszawa', 'Radio Kolor', 'PetroNews.pl', 'CoZaDzień.pl'] },
+  { path: '/Polska/Regiony/Opolskie', label: 'Opolskie', title: 'Opolskie', desc: 'Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa.', outlets: ['Nowa Trybuna Opolska', 'TVP3 Opole', 'Opolska360.pl', 'CzasNaOpole.pl'] },
+  { path: '/Polska/Regiony/Podkarpackie', label: 'Podkarpackie', title: 'Podkarpacie (podkarpackie)', desc: 'Informacje z całego Podkarpacia: Rzeszów, Przemyśl, Stalowa Wola, Mielec, Krosno, Bieszczady i powiaty regionu.', outlets: ['Radio Rzeszów', 'Nowiny24', 'TVP3 Rzeszów', 'Rzeszow-News.pl'] },
+  { path: '/Polska/Regiony/Podlaskie', label: 'Podlaskie', title: 'Podlasie (podlaskie)', desc: 'Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu.', outlets: ['Kurier Poranny', 'Radio Białystok', 'TVP3 Białystok', 'Suwałki24.pl', '4Lomza.pl'] },
+  { path: '/Polska/Regiony/Pomorskie', label: 'Pomorskie', title: 'Pomorze (pomorskie)', desc: 'Wiadomości z całego Pomorza: Gdańsk, Gdynia, Sopot, Trójmiasto, Słupsk, Tczew, Kaszuby i powiaty województwa.', outlets: ['Radio Gdańsk', 'Dziennik Bałtycki', 'TVP3 Gdańsk', 'GP24.pl', 'Kaszuby24.pl'] },
+  { path: '/Polska/Regiony/Slaskie', label: 'Śląskie', title: 'Śląsk (śląskie)', desc: 'Informacje z całego województwa śląskiego: Katowice, Częstochowa, Sosnowiec, Gliwice, Bielsko-Biała, Rybnik, Tychy.', outlets: ['TVS Śląsk', 'Dziennik Zachodni', 'TVP3 Katowice', 'Radio 90', 'Radio Piekary', 'Bielsko.biala.pl', 'Beskidzka24.pl'] },
+  { path: '/Polska/Regiony/Swietokrzyskie', label: 'Świętokrzyskie', title: 'Świętokrzyskie', desc: 'Wiadomości z całego województwa świętokrzyskiego: Kielce, Ostrowiec Świętokrzyski, Starachowice, Sandomierz i powiaty regionu.', outlets: ['Radio Kielce', 'Echo Dnia Kielce', 'TVP3 Kielce', 'Radio Ostrowiec'] },
+  { path: '/Polska/Regiony/Warminsko-Mazurskie', label: 'Warmińsko-Mazurskie', title: 'Warmia i Mazury', desc: 'Informacje z Warmii i Mazur: Olsztyn, Elbląg, Ełk, Mrągowo, Iława, Ostróda, Giżycko i całe województwo.', outlets: ['Radio Olsztyn', 'TVP3 Olsztyn', 'TKO Olsztyn', 'PortEl.pl', 'info.elblag.pl'] },
+  { path: '/Polska/Regiony/Wielkopolskie', label: 'Wielkopolskie', title: 'Wielkopolska (wielkopolskie)', desc: 'Wiadomości z całej Wielkopolski: Poznań, Kalisz, Konin, Piła, Leszno, Gniezno, Ostrów Wielkopolski i powiaty regionu.', outlets: ['ePoznan.pl', 'Głos Wielkopolski', 'Radio Poznań', 'TVP3 Poznań', 'Asta24.pl', 'rc.fm'] },
+  { path: '/Polska/Regiony/Zachodniopomorskie', label: 'Zachodniopomorskie', title: 'Pomorze Zachodnie', desc: 'Informacje z Pomorza Zachodniego: Szczecin, Koszalin, Stargard, Kołobrzeg, Świnoujście i całe województwo.', outlets: ['Głos Szczeciński', 'Radio Szczecin', 'TVP3 Szczecin', 'GK24.pl'] }
 ];
 
 const VOIVODESHIP_BY_PATH = Object.fromEntries(VOIVODESHIPS.map(v => [v.path, v]));
@@ -2333,7 +2333,7 @@ const PATH_TITLES = {
 };
 
 const PATH_DESCRIPTIONS = {
-  '/Polska': 'Najważniejsze potwierdzone informacje z Polski — weryfikacja krzyżowa z 97 redakcji.',
+  '/Polska': 'Najważniejsze potwierdzone informacje z Polski — weryfikacja krzyżowa z 151 redakcji.',
   '/Polska/Gospodarka': 'Zweryfikowane informacje o gospodarce, finansach, podatkach, giełdzie i biznesie w Polsce.',
   '/Polska/Polityka': 'Fakty i decyzje legislacyjne z wielu źródeł, bez komentarzy publicystycznych.',
   '/Polska/Energetyka': 'Ceny energii, transformacja energetyczna, OZE, gaz i rynek paliw w Polsce.',
@@ -2953,7 +2953,7 @@ function syncSeoHead(openArt, published, query) {
       ? 'Strona nie została znaleziona — VERITY'
       : (isRootHome ? 'VERITY – Wieloźródłowa Weryfikacja i Synteza Informacji' : `${catTitle} — VERITY`);
     desc = isRootHome
-      ? 'Wieloźródłowa weryfikacja i synteza informacji z 97 redakcji ogólnopolskich, regionalnych (16 województw) i branżowych. Pełna treść faktograficzna, zero clickbaitu, bezpośrednie linki do źródeł.'
+      ? 'Wieloźródłowa weryfikacja i synteza informacji z 151 redakcji ogólnopolskich, regionalnych (16 województw) i branżowych. Pełna treść faktograficzna, zero clickbaitu, bezpośrednie linki do źródeł.'
       : (PATH_DESCRIPTIONS[currentPath] || PATH_DESCRIPTIONS['/Polska']);
     canUrl = isRootHome ? `${CANONICAL_ORIGIN}/` : `${CANONICAL_ORIGIN}${currentPath}/`;
     ogType = 'website';

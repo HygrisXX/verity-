@@ -19,7 +19,7 @@ VOIVODESHIPS = [
         "Dolnośląskie",
         "Dolny Śląsk (dolnośląskie)",
         "Wiadomości z całego Dolnego Śląska: Wrocław, Wałbrzych, Legnica, Jelenia Góra, Lubin, Głogów, Zgorzelec i powiaty regionu.",
-        ["Gazeta Wrocławska"],
+        ["Gazeta Wrocławska", "Radio Wrocław", "TVP3 Wrocław", "Wroclaw.pl", "Świdnica24.pl"],
         ["/Polska/Wroclaw"],
     ),
     (
@@ -27,7 +27,7 @@ VOIVODESHIPS = [
         "Kujawsko-Pomorskie",
         "Kujawsko-pomorskie",
         "Informacje z województwa kujawsko-pomorskiego: Bydgoszcz, Toruń, Włocławek, Grudziądz, Inowrocław i okolice.",
-        ["Radio PiK", "Gazeta Pomorska"],
+        ["Radio PiK", "Gazeta Pomorska", "TVP3 Bydgoszcz", "TylkoTorun.pl"],
         ["/Polska/Bydgoszcz"],
     ),
     (
@@ -35,7 +35,7 @@ VOIVODESHIPS = [
         "Lubelskie",
         "Lubelskie",
         "Wydarzenia z całej Lubelszczyzny: Lublin, Zamość, Chełm, Biała Podlaska, Puławy, Tomaszów Lubelski i powiaty regionu.",
-        ["Radio Lublin", "Kurier Lubelski", "Lublin112.pl"],
+        ["Radio Lublin", "Kurier Lubelski", "Lublin112.pl", "TVP3 Lublin", "Radio Impuls"],
         ["/Polska/Lublin"],
     ),
     (
@@ -43,7 +43,7 @@ VOIVODESHIPS = [
         "Lubuskie",
         "Lubuskie",
         "Wiadomości z województwa lubuskiego: Zielona Góra, Gorzów Wielkopolski, Nowa Sól, Żary, Świebodzin i cały region.",
-        ["Radio Zachód", "Gazeta Lubuska"],
+        ["Radio Zachód", "Gazeta Lubuska", "TVP3 Gorzów", "Gorzowianin.com", "NewsLubuski.pl", "Radio Index", "Pościgi.pl"],
         ["/Polska/Lubuskie"],
     ),
     (
@@ -51,7 +51,7 @@ VOIVODESHIPS = [
         "Łódzkie",
         "Łódzkie",
         "Informacje z całego województwa łódzkiego: Łódź, Piotrków Trybunalski, Tomaszów Mazowiecki, Bełchatów, Pabianice, Zgierz.",
-        ["Radio Łódź", "Dziennik Łódzki"],
+        ["Radio Łódź", "Dziennik Łódzki", "TVP3 Łódź", "Radio ZW"],
         ["/Polska/Lodz"],
     ),
     (
@@ -59,7 +59,7 @@ VOIVODESHIPS = [
         "Małopolskie",
         "Małopolska (małopolskie)",
         "Wydarzenia z całej Małopolski: Kraków, Tarnów, Nowy Sącz, Zakopane, Podhale, Oświęcim i powiaty województwa.",
-        ["Radio Kraków", "Gazeta Krakowska"],
+        ["Radio Kraków", "Gazeta Krakowska", "TVP3 Kraków", "Podhale24.pl", "Bochnianin.pl"],
         ["/Polska/Krakow"],
     ),
     (
@@ -67,7 +67,7 @@ VOIVODESHIPS = [
         "Mazowieckie",
         "Mazowsze (mazowieckie)",
         "Informacje z Warszawy i całego Mazowsza: Radom, Płock, Siedlce, Ostrołęka, Ciechanów, Pruszków i powiaty regionu.",
-        ["Warszawa w Pigułce"],
+        ["Warszawa w Pigułce", "TVP3 Warszawa", "Radio Kolor", "PetroNews.pl", "CoZaDzień.pl"],
         ["/Polska/Warszawa"],
     ),
     (
@@ -75,7 +75,7 @@ VOIVODESHIPS = [
         "Opolskie",
         "Opolskie",
         "Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa.",
-        ["Nowa Trybuna Opolska"],
+        ["Nowa Trybuna Opolska", "TVP3 Opole", "Opolska360.pl", "CzasNaOpole.pl"],
         ["/Polska/Opole"],
     ),
     (
@@ -83,7 +83,7 @@ VOIVODESHIPS = [
         "Podkarpackie",
         "Podkarpacie (podkarpackie)",
         "Informacje z całego Podkarpacia: Rzeszów, Przemyśl, Stalowa Wola, Mielec, Krosno, Bieszczady i powiaty regionu.",
-        ["Radio Rzeszów", "Nowiny24"],
+        ["Radio Rzeszów", "Nowiny24", "TVP3 Rzeszów", "Rzeszow-News.pl"],
         ["/Polska/Rzeszow"],
     ),
     (
@@ -91,7 +91,7 @@ VOIVODESHIPS = [
         "Podlaskie",
         "Podlasie (podlaskie)",
         "Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu.",
-        ["Kurier Poranny"],
+        ["Kurier Poranny", "Radio Białystok", "TVP3 Białystok", "Suwałki24.pl", "4Lomza.pl"],
         ["/Polska/Bialystok"],
     ),
     (
@@ -99,7 +99,7 @@ VOIVODESHIPS = [
         "Pomorskie",
         "Pomorze (pomorskie)",
         "Wiadomości z całego Pomorza: Gdańsk, Gdynia, Sopot, Trójmiasto, Słupsk, Tczew, Kaszuby i powiaty województwa.",
-        ["Radio Gdańsk", "Dziennik Bałtycki"],
+        ["Radio Gdańsk", "Dziennik Bałtycki", "TVP3 Gdańsk", "GP24.pl", "Kaszuby24.pl"],
         ["/Polska/Gdansk"],
     ),
     (
@@ -107,7 +107,7 @@ VOIVODESHIPS = [
         "Śląskie",
         "Śląsk (śląskie)",
         "Informacje z całego województwa śląskiego: Katowice, Częstochowa, Sosnowiec, Gliwice, Bielsko-Biała, Rybnik, Tychy.",
-        ["TVS Śląsk", "Dziennik Zachodni"],
+        ["TVS Śląsk", "Dziennik Zachodni", "TVP3 Katowice", "Radio 90", "Radio Piekary", "Bielsko.biala.pl", "Beskidzka24.pl"],
         ["/Polska/Katowice"],
     ),
     (
@@ -115,7 +115,7 @@ VOIVODESHIPS = [
         "Świętokrzyskie",
         "Świętokrzyskie",
         "Wiadomości z całego województwa świętokrzyskiego: Kielce, Ostrowiec Świętokrzyski, Starachowice, Sandomierz i powiaty regionu.",
-        ["Radio Kielce", "Echo Dnia Kielce"],
+        ["Radio Kielce", "Echo Dnia Kielce", "TVP3 Kielce", "Radio Ostrowiec"],
         ["/Polska/Kielce"],
     ),
     (
@@ -123,7 +123,7 @@ VOIVODESHIPS = [
         "Warmińsko-Mazurskie",
         "Warmia i Mazury",
         "Informacje z Warmii i Mazur: Olsztyn, Elbląg, Ełk, Mrągowo, Iława, Ostróda, Giżycko i całe województwo.",
-        ["Radio Olsztyn"],
+        ["Radio Olsztyn", "TVP3 Olsztyn", "TKO Olsztyn", "PortEl.pl", "info.elblag.pl"],
         ["/Polska/Olsztyn"],
     ),
     (
@@ -131,7 +131,7 @@ VOIVODESHIPS = [
         "Wielkopolskie",
         "Wielkopolska (wielkopolskie)",
         "Wiadomości z całej Wielkopolski: Poznań, Kalisz, Konin, Piła, Leszno, Gniezno, Ostrów Wielkopolski i powiaty regionu.",
-        ["ePoznan.pl", "Głos Wielkopolski"],
+        ["ePoznan.pl", "Głos Wielkopolski", "Radio Poznań", "TVP3 Poznań", "Asta24.pl", "rc.fm"],
         ["/Polska/Poznan"],
     ),
     (
@@ -139,7 +139,7 @@ VOIVODESHIPS = [
         "Zachodniopomorskie",
         "Pomorze Zachodnie",
         "Informacje z Pomorza Zachodniego: Szczecin, Koszalin, Stargard, Kołobrzeg, Świnoujście i całe województwo.",
-        ["Głos Szczeciński"],
+        ["Głos Szczeciński", "Radio Szczecin", "TVP3 Szczecin", "GK24.pl"],
         ["/Polska/Szczecin"],
     ),
 ]
@@ -149,7 +149,7 @@ VOIVODESHIP_LABELS = {v[0]: v[1] for v in VOIVODESHIPS}
 LEGACY_REGION_MAP = {old_p: v[0] for v in VOIVODESHIPS for old_p in v[5]}
 
 CATEGORIES = [
-    ("/Polska", "Polska — wszystkie działy", "Najważniejsze potwierdzone informacje z Polski — weryfikacja krzyżowa z 97 redakcji."),
+    ("/Polska", "Polska — wszystkie działy", "Najważniejsze potwierdzone informacje z Polski — weryfikacja krzyżowa z 151 redakcji."),
     ("/Polska/Gospodarka", "Gospodarka i rynek", "Zweryfikowane informacje o gospodarce, finansach, podatkach, giełdzie i biznesie w Polsce."),
     ("/Polska/Polityka", "Polityka i prawo", "Fakty i decyzje legislacyjne z wielu źródeł, bez komentarzy publicystycznych."),
     ("/Polska/Energetyka", "Energetyka i klimat", "Ceny energii, transformacja energetyczna, OZE, gaz i rynek paliw w Polsce."),
@@ -1124,7 +1124,7 @@ def _page_shell(
       <div class="top-utility-meta">
         <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
-        <span class="top-hide-sm">Weryfikacja z 97 redakcji</span>
+        <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
@@ -1199,7 +1199,7 @@ def _page_shell(
     <div class="container footer-inner">
       <div class="footer-brand">
         <strong>VERITY</strong>
-        <p>Wieloźródłowa weryfikacja faktów z 97 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
+        <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
         <a href="{html.escape(rel_root, quote=True)}news-sitemap.xml">Mapa Google News (XML)</a>
@@ -1256,7 +1256,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             "@type": "WebSite",
             "name": "VERITY",
             "url": f"{site_base_url}/",
-            "description": "Wieloźródłowa weryfikacja i synteza informacji z 97 redakcji w Polsce.",
+            "description": "Wieloźródłowa weryfikacja i synteza informacji z 151 redakcji w Polsce.",
         },
         {
             "@context": "https://schema.org",
@@ -1287,7 +1287,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     first_thumb = next((a.get("thumbnail_url") for a in published if a.get("thumbnail_url")), "")
     home_html = _page_shell(
         title="VERITY – Wieloźródłowa Weryfikacja i Synteza Informacji",
-        description="Wieloźródłowa weryfikacja i synteza informacji z 97 redakcji ogólnopolskich, regionalnych (16 województw) i branżowych. Pełna treść faktograficzna, zero clickbaitu, bezpośrednie linki do źródeł.",
+        description="Wieloźródłowa weryfikacja i synteza informacji z 151 redakcji ogólnopolskich, regionalnych (16 województw) i branżowych. Pełna treść faktograficzna, zero clickbaitu, bezpośrednie linki do źródeł.",
         canonical_url=f"{site_base_url}/",
         og_type="website",
         og_image=first_thumb,
@@ -1508,7 +1508,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         "    <title>VERITY – Wieloźródłowa Weryfikacja Faktów</title>",
         f"    <link>{xml.sax.saxutils.escape(site_base_url + '/')}</link>",
         f'    <atom:link href="{xml.sax.saxutils.escape(site_base_url + "/feed.xml")}" rel="self" type="application/rss+xml" />',
-        "    <description>Synteza faktograficzna z 97 redakcji w Polsce bez clickbaitu i powtórzeń.</description>",
+        "    <description>Synteza faktograficzna z 151 redakcji w Polsce bez clickbaitu i powtórzeń.</description>",
         "    <language>pl</language>",
     ]
     for a in published[:30]:

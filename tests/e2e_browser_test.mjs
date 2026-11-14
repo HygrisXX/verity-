@@ -313,7 +313,16 @@ async function run() {
     assert(!regionsPageInfo.overflow, 'Poziomy scroll na /Polska/Regiony/ desktop');
     await browser.screenshot('desktop_region_page.png');
 
-    // Przejście do województwa z artykułami (Warmińsko-Mazurskie) i pustego województwa (Opolskie)
+    // Przejście do województw (Warmińsko-Mazurskie i Opolskie) oraz kontrola pokrycia 16/16 województw
+    const stripSummary = await browser.evalJs(`(() => {
+      const pills = Array.from(document.querySelectorAll('.region-strip a[href*="/Polska/Regiony/"]'))
+        .filter(a => !a.getAttribute('href').endsWith('/Polska/Regiony/'));
+      const nonEmpty = pills.filter(a => a.classList.contains('has-items')).length;
+      const zeroPill = pills.find(a => !a.classList.contains('has-items'));
+      return { pillTotal: pills.length, nonEmpty, zeroHref: zeroPill ? zeroPill.getAttribute('href') : '' };
+    })()`);
+    assert(stripSummary.pillTotal === 16, `Oczekiwano 16 pigułek województw, jest ${stripSummary.pillTotal}`);
+
     await browser.evalJs(`document.querySelector('.region-strip a[href*="Warminsko-Mazurskie"]')?.click()`);
     await new Promise(r => setTimeout(r, 250));
     const warmiaInfo = await browser.evalJs(`({
@@ -325,17 +334,24 @@ async function run() {
     })`);
     assert(warmiaInfo.pathname.endsWith('/Polska/Regiony/Warminsko-Mazurskie/'), `Zły pathname dla Warmii i Mazur: ${warmiaInfo.pathname}`);
     assert(warmiaInfo.activeTab && warmiaInfo.activePill.includes('Warmińsko-Mazurskie'), `Niespójne podświetlenie Warmii i Mazur: ${JSON.stringify(warmiaInfo)}`);
-    assert(warmiaInfo.cards >= 1, 'Warmińsko-Mazurskie powinno wyświetlać min. 1 opracowanie (Mrągowo)');
+    assert(warmiaInfo.cards >= 1, 'Warmińsko-Mazurskie powinno wyświetlać min. 1 opracowanie');
 
     await browser.evalJs(`document.querySelector('.region-strip a[href*="/Opolskie/"]')?.click()`);
     await new Promise(r => setTimeout(r, 250));
-    const opoleEmpty = await browser.evalJs(`({
+    const opoleInfo = await browser.evalJs(`({
       pathname: location.pathname,
+      cards: document.querySelectorAll('.story-title-link').length,
+      activePill: document.querySelector('.region-strip .region-pill.active')?.textContent || '',
       emptyText: document.querySelector('.empty-state')?.textContent || '',
       backAllHref: document.querySelector('.empty-state .btn-outline')?.getAttribute('href') || '',
     })`);
-    assert(opoleEmpty.pathname.endsWith('/Polska/Regiony/Opolskie/'), `Zły pathname dla Opolskiego: ${opoleEmpty.pathname}`);
-    assert(opoleEmpty.emptyText.includes('Nowa Trybuna Opolska') && opoleEmpty.backAllHref.includes('/Polska/Regiony/'), `Brak listy redakcji / linku powrotu w pustym województwie: ${JSON.stringify(opoleEmpty)}`);
+    assert(opoleInfo.pathname.endsWith('/Polska/Regiony/Opolskie/'), `Zły pathname dla Opolskiego: ${opoleInfo.pathname}`);
+    assert(opoleInfo.activePill.includes('Opolskie'), `Pigułka Opolskie nie jest aktywna: ${JSON.stringify(opoleInfo)}`);
+    if (opoleInfo.cards === 0) {
+      assert(opoleInfo.emptyText.includes('Nowa Trybuna Opolska') && opoleInfo.backAllHref.includes('/Polska/Regiony/'), `Brak listy redakcji / linku powrotu w pustym województwie: ${JSON.stringify(opoleInfo)}`);
+    } else {
+      assert(opoleInfo.cards >= 1 && stripSummary.nonEmpty === 16, `Oczekiwano pokrycia 16/16 województw: nonEmpty=${stripSummary.nonEmpty}, cards=${opoleInfo.cards}`);
+    }
 
     // Test przekierowania History API dla legacy URL /Polska/Poznan/ -> /Polska/Regiony/Wielkopolskie/
     await browser.goto(`${baseUrl}/Polska/Poznan/`);

@@ -168,7 +168,10 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
         self.assertGreater(len(self.articles), 20)
         seen_urls = set()
         entity_re = re.compile(r"&(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);")
-        junk_re = re.compile(r"(?:The post\s|appeared first on|pochodzi z serwisu|Kanał Strefa Inwestorów)", re.IGNORECASE)
+        junk_re = re.compile(
+            r"(?:The post\s|appeared first on|pochodzi z serwisu|Kanał Strefa Inwestorów|data-image-(?:caption|description)=|data-large-file=|srcset=)",
+            re.IGNORECASE,
+        )
 
         for art in self.articles:
             aid = art["id"]
@@ -178,7 +181,9 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
             seen_urls.add(seo_url)
 
             self.assertTrue(art.get("seo_title"), f"Brak seo_title w id={aid}")
-            self.assertTrue(art.get("summary_lead"), f"Brak summary_lead w id={aid}")
+            lead = art.get("summary_lead") or ""
+            self.assertTrue(lead, f"Brak summary_lead w id={aid}")
+            self.assertFalse(junk_re.search(lead), f"Wyciek znaczników HTML w summary_lead id={aid}: {lead[:120]}")
             meta = art.get("meta_description") or ""
             self.assertTrue(40 <= len(meta) <= 165, f"Nieoptymalna długość meta_description ({len(meta)}) w id={aid}")
             self.assertTrue(art.get("keywords"), f"Brak keywords w id={aid}")
@@ -388,10 +393,14 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
         self.assertTrue(uln.is_local_or_niche_item({"path": "/Polska/Energetyka", "outlet": "PAP"}))
         self.assertFalse(uln.is_local_or_niche_item({"path": "/Polska/Polityka", "outlet": "Polsat News"}))
 
-        # Wszystkie 16 województw muszą mieć co najmniej 1 dedykowany kanał RSS bez duplikatów URL
+        # Wszystkie 16 województw muszą mieć dedykowane kanały RSS i TVP3 bez duplikatów URL
         feed_urls = [f["url"] for f in uln.LIVE_RSS_FEEDS]
         self.assertEqual(len(feed_urls), len(set(feed_urls)), "Wykryto duplikat URL w LIVE_RSS_FEEDS")
-        self.assertEqual(len(uln.LIVE_RSS_FEEDS), 99)
+        self.assertEqual(len(uln.LIVE_RSS_FEEDS), 153)
+        self.assertEqual(len({f["name"] for f in uln.LIVE_RSS_FEEDS}), 151)
+        tvp3_feeds = [f for f in uln.LIVE_RSS_FEEDS if f.get("source_type") == "tvp3_sgdata"]
+        self.assertEqual(len(tvp3_feeds), 16)
+        self.assertEqual({f["path"] for f in tvp3_feeds}, set(seo_builder.VOIVODESHIP_BY_PATH.keys()))
         feed_voivs = {f["path"] for f in uln.LIVE_RSS_FEEDS if f["path"].startswith("/Polska/Regiony/")}
         self.assertEqual(feed_voivs, set(seo_builder.VOIVODESHIP_BY_PATH.keys()))
 
@@ -571,6 +580,148 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
             single_doc = f.read()
         self.assertNotIn('class="source-filter-bar"', single_doc)
         self.assertNotIn('class="perspectives-expand-btn"', single_doc)
+
+
+class TestParsersAndRegressionGuards(unittest.TestCase):
+    def test_swiat_vs_regiony_and_fuel_vs_gas_conflict_guards(self):
+        swiat = {"title": "Wybory w regionie budzą ogromne emocje", "description": "Głosowanie za granicą", "path": "/Swiat"}
+        region = {"title": "Wybory w regionie budzą ogromne emocje", "description": "Głosowanie lokalne", "path": "/Polska/Regiony/Wielkopolskie"}
+        self.assertTrue(uln.has_cluster_conflict(swiat, region))
+
+        fuel = {
+            "title": "Ceny paliw ostro w górę na stacjach w całej Polsce",
+            "description": "Benzyna Pb95 i olej napędowy diesel drożeją piąty dzień z rzędu.",
+            "path": "/Polska/Gospodarka",
+        }
+        gas = {
+            "title": "Ceny w górę od nowego roku. Rząd analizuje taryfy",
+            "description": "Zamrożenie cen gazu ziemnego i rozliczenia za MWh mogą obciążyć odbiorców PGNiG.",
+            "path": "/Polska/Energetyka",
+        }
+        self.assertTrue(uln.has_cluster_conflict(fuel, gas))
+
+    def test_tvp3_sgdata_and_newsdata_filtering_and_urljoin(self):
+        fake_sg = [
+            None,
+            {
+                "params": {"title": "Aktualności z regionu"},
+                "items": [
+                    None,
+                    {
+                        "items": [
+                            {
+                                "title": "Nowy most nad Wartą w Poznaniu otwarty dla kierowców",
+                                "url": "/96460001/nowy-most-nad-warta",
+                                "lead": "Przeprawa przez rzekę Wartę została uroczyście otwarta dla samochodów i rowerzystów.",
+                                "image": {"url": "https://s1.tvp.pl/images2/most.jpg"},
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Krótka zapowiedź bez treści",
+                        "url": "/96460002/krotki",
+                        "lead": "Za krótki opis",
+                    },
+                    {
+                        "title": "Ogólnopolski skrót dnia z TVP Info",
+                        "url": "https://www.tvp.info/96469999/skrot-dnia",
+                        "lead": "Ten wpis pochodzi z portalu tvp.info i musi zostać odfiltrowany jako ogólnopolski.",
+                    },
+                ],
+            },
+            {
+                "params": {"title": "NAJNOWSZE Z PORTALU TVP.INFO"},
+                "items": [
+                    {
+                        "title": "Promocyjny materiał z bloku TVP.INFO",
+                        "url": "/96460003/promo",
+                        "lead": "Ten materiał nie powinien trafić do depesz regionalnych mimo lokalnego URL.",
+                    }
+                ],
+            },
+            {
+                "params": {"title": "ZOBACZ KONIECZNIE"},
+                "items": [
+                    {
+                        "title": "Program rozrywkowy do obejrzenia",
+                        "url": "/96460004/program",
+                        "lead": "Ten materiał znajduje się w bloku promocyjnym i musi zostać pominięty.",
+                    }
+                ],
+            },
+        ]
+        html_doc = f'<html><script>window.__sgData = {json.dumps(fake_sg)};</script></html>'
+        feed = {"name": "TVP3 Poznań", "url": "https://poznan.tvp.pl/", "path": "/Polska/Regiony/Wielkopolskie", "group": "TVP3", "source_type": "tvp3_sgdata"}
+        items = uln._parse_tvp3_items_from_html(html_doc, feed)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["link"], "https://poznan.tvp.pl/96460001/nowy-most-nad-warta")
+        self.assertEqual(items[0]["thumbnail"], "https://s1.tvp.pl/images2/most.jpg")
+
+        html_newsdata = '<html><script>window.__newsData = [{"params":{"title":"Region"},"items":[{"title":"Modernizacja linii kolejowej pod Opolem przyspiesza","url":"/123/kolej-opole","lead":"Inwestor zakończył główny etap wymiany torów na trasie w województwie opolskim."}]}];</script></html>'
+        feed_op = {"name": "TVP3 Opole", "url": "https://opole.tvp.pl/", "path": "/Polska/Regiony/Opolskie", "group": "TVP3", "source_type": "tvp3_sgdata"}
+        items_op = uln._parse_tvp3_items_from_html(html_newsdata, feed_op)
+        self.assertEqual(len(items_op), 1)
+        self.assertEqual(items_op[0]["link"], "https://opole.tvp.pl/123/kolej-opole")
+
+    def test_leading_whitespace_truncated_xml_gzip_and_over10_perspectives(self):
+        import io
+        import zlib
+
+        raw_xml = (
+            '\n  \ufeff<?xml version="1.0" encoding="utf-8"?>\n'
+            "<rss><channel><title>rc.fm</title>"
+            "<item><title>Nowe autobusy miejskie w Kaliszu</title>"
+            "<link>https://www.rc.fm/news/autobusy-kalisz</link>"
+            "<description>Miasto zakupiło pięć nowych pojazdów niskoemisyjnych do obsługi linii podmiejskich.</description>"
+            "</item><item><title>Urwany wpis"
+        ).encode("utf-8")
+
+        comp = zlib.compressobj(6, zlib.DEFLATED, 16 + zlib.MAX_WBITS)
+        gz_bytes = comp.compress(raw_xml) + comp.flush()
+
+        class _FakeResp:
+            def __init__(self, data, enc="gzip"):
+                self._bio = io.BytesIO(data)
+                self.headers = {"Content-Encoding": enc}
+
+            def read(self, n=-1):
+                return self._bio.read(n)
+
+        decoded = uln._read_response_bytes(_FakeResp(gz_bytes), max_bytes=420_000)
+        root = uln._parse_feed_xml(decoded)
+        parsed_items = [el for el in root.iter() if uln._local_tag(el) == "item"]
+        self.assertEqual(len(parsed_items), 1)
+
+        atom_unbound = b'<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Gorzow test</title><media:content url="https://example.pl/img.jpg"/></entry></feed>'
+        atom_root = uln._parse_feed_xml(atom_unbound)
+        atom_entries = [el for el in atom_root.iter() if uln._local_tag(el) == "entry"]
+        self.assertEqual(len(atom_entries), 1)
+
+        group = [
+            {
+                "outlet": f"Redakcja {i}",
+                "group": f"Redakcja {i}",
+                "path": "/Polska",
+                "title": f"Ważna decyzja gospodarcza rządu w Warszawie nr {i}",
+                "description": f"Ministerstwo przedstawiło kompleksowy projekt zmian regulacyjnych w tym roku nr {i}.",
+                "link": f"https://example{i}.pl/news",
+                "thumbnail": "",
+            }
+            for i in range(1, 13)
+        ]
+        art = uln.build_article_from_group(group, 1)
+        self.assertEqual(len(art["sources"]), 12)
+        self.assertEqual(len(art["perspectives"]), 12)
+        self.assertEqual(len(art["perspectives"]), len(art["sources"]))
+
+        jetpack_raw = (
+            '<p><img src="https://example.pl/img.jpg" data-image-description="&lt;p&gt;bulaje 4555666&lt;/p&gt;\n" '
+            'data-image-caption="" data-large-file="https://i0.wp.com/example.pl/img.jpg?fit=696%2C464&amp;ssl=1" /></p>\n'
+            '<p>Szokujące zgłoszenie postawiło na nogi służby w całym regionie.</p>'
+        )
+        cleaned_jetpack = uln.clean_html_for_synthesis(jetpack_raw, "Test")
+        self.assertEqual(cleaned_jetpack, "Szokujące zgłoszenie postawiło na nogi służby w całym regionie.")
+        self.assertNotIn("data-large-file", uln.strip_html(jetpack_raw))
 
 
 if __name__ == "__main__":
