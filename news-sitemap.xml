@@ -3,6 +3,133 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/piatek-trzynastego-tak-to-juz-dzisiaj-faktycznie-pechowy-dzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:43+01:00</news:publication_date>
+      <news:title>Piątek trzynastego – tak to już dzisiaj. Faktycznie pechowy dzień?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/srodkowy-palec-w-gorze-podczas-duzej-imprezy-sprawa-trafila-do-sadu-nie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:43+01:00</news:publication_date>
+      <news:title>Środkowy palec w górze podczas dużej imprezy. Sprawa trafiła do sądu: „Nie może być przyzwolenia na obrażanie”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://swidnica24.pl/wp-content/uploads/2026/11/alexandra_koch-thumbs-down-6110175_1280.jpg</image:loc>
+      <image:title>Środkowy palec w górze podczas dużej imprezy. Sprawa trafiła do sądu: „Nie może być przyzwolenia na obrażanie”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:42+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/wypadek-na-przejsciu-tramwaj-potracil-pieszego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:40+01:00</news:publication_date>
+      <news:title>Wypadek na przejściu. Tramwaj potrącił pieszego</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/5/5/0/uid_550f2dfc632d46ca9a3419882966abc6_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Wypadek na przejściu. Tramwaj potrącił pieszego</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/bohater-z-krakowa-odnaleziony-odwiedzil-lokalne-liceum/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:39+01:00</news:publication_date>
+      <news:title>Bohater z Krakowa odnaleziony. Odwiedził lokalne liceum</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/5118a921-77ba-431d-8141-a1346892a35d</image:loc>
+      <image:title>Bohater z Krakowa odnaleziony. Odwiedził lokalne liceum</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/zatrzymywal-auta-i-przechodniow-w-starachowicach-w-reku-trzymal/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:38+01:00</news:publication_date>
+      <news:title>Zatrzymywał auta i przechodniów w Starachowicach. W ręku trzymał przedmiot przypominający broń</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s4.tvp.pl/images2/d/5/8/uid_d5838aadb97840969e6689f71d02ad64_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Zatrzymywał auta i przechodniów w Starachowicach. W ręku trzymał przedmiot przypominający broń</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/polscy-pilkarze-zignorowali-dziennikarzy-tylko-dwa-wyjatki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:37+01:00</news:publication_date>
+      <news:title>Polscy piłkarze zignorowali dziennikarzy. Tylko dwa wyjątki</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6af962d359f9f4_58903339.jpg</image:loc>
+      <image:title>Polscy piłkarze zignorowali dziennikarzy. Tylko dwa wyjątki</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/duzy-pozar-pod-krakowem-ranna-druhna-osp/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:35+01:00</news:publication_date>
+      <news:title>Duży pożar pod Krakowem. Ranna druhna OSP</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/o4/o4scyiutoitn3pui9y278dyezyhuqpid.jpg</image:loc>
+      <image:title>Duży pożar pod Krakowem. Ranna druhna OSP</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-towers-nie-powstana-w-belgradzie-serbia-zrywa-umowe-z-zieciem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:02:17+01:00</news:publication_date>
+      <news:title>„Trump Towers” nie powstaną w Belgradzie. Serbia zrywa umowę z zięciem Trumpa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/e00cba536b644455af01fa8ff787fc57/?t=crop:5191:2269:nowe:0:595,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>„Trump Towers” nie powstaną w Belgradzie. Serbia zrywa umowę z zięciem Trumpa</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/nieobecnosc-ktora-sporo-kosztuje-brak-odczytu-podzielnikow-moze/</loc>
     <news:news>
       <news:publication>
@@ -3577,66 +3704,6 @@
     <image:image>
       <image:loc>https://cdn.defence24.pl/2026/09/22/320x240px/IiLUUjKK7gS1SRXVVQHfvzAS533Rs3p1wfV8Qyxw.zxla.jpg</image:loc>
       <image:title>Pracował w NATO i szpiegował na rzecz Rosji? Podpułkownika US Army zatrzymano w Wielkiej Brytanii</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/dymisja-wiceministra-na-biurku-premiera-zgorzelski-komentuje-sytuacje-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
-      <news:title>Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/8fb2614f47b5f37589f98350f039858e/?t=crop:8192:3581:nowe:0:439.59310344828,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Dymisja wiceministra na biurku premiera. Zgorzelski komentuje sytuację w PSL</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/robert-lewandowski-pominiety-mls-oglasza-decyzja-jest-ostateczna/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
-      <news:title>Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NIY7XVMHMOIJ5-C321.webp</image:loc>
-      <image:title>Robert Lewandowski pominięty, MLS ogłasza. Decyzja jest ostateczna</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
-      <news:title>Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/183-311357.webp</image:loc>
-      <image:title>Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/karambol-na-s6-z-samego-rana-zderzylo-sie-piec-samochodow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T08:52:16+01:00</news:publication_date>
-      <news:title>Karambol na S6 z samego rana. Zderzyło się pięć samochodów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bc218166-c828-441f-9268-f2262949e228</image:loc>
-      <image:title>Karambol na S6 z samego rana. Zderzyło się pięć samochodów</image:title>
     </image:image>
   </url>
 </urlset>
