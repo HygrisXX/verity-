@@ -6,8 +6,8 @@ VERITY to w pełni statyczny portal informacyjny łączący automatyczny agregat
 - `update_live_news.py` – wielowątkowy silnik pobierający depesze ze **153 kanałów** RSS/Atom/HTML (**151 unikalnych redakcji** ogólnopolskich, branżowych i regionalnych we wszystkich **16 województwach**, w tym 16 oddziałów regionalnych TVP3 przez `source_type: "tvp3_sgdata"` z ekstrakcją `window.__sgData` / `window.__newsData` / `window.__directoryData`). Wykonuje filtrowanie treści (clickbait, opinie, hazard/typy, archiwalne linki), klasyfikację tematyczną i geograficzną, klastrowanie z ochroną przed fałszywymi skojarzeniami (`has_cluster_conflict`), syntezę sekcji bez duplikowania zdań, deduplikację i czyszczenie starszych wpisów (`articles.json`) oraz raportowanie metryk cyklu (`print_cycle_summary`, `GITHUB_STEP_SUMMARY`).
 - `seo_builder.py` – deterministyczny generator infrastruktury statycznej dla **23 działów** (`/Polska`, `/Polska/Gospodarka`, `/Polska/Polityka`, `/Polska/Energetyka`, `/Polska/Regiony`, **16 województw** `/Polska/Regiony/<Wojewodztwo>`, `/Swiat`, `/Sport`) i wszystkich artykułów z `articles.json`. Tworzy strony HTML z polską typografią (`\u00A0`), danymi strukturalnymi JSON-LD (`NewsArticle`, `BreadcrumbList`, `CollectionPage`, `WebSite`), `sitemap.xml`, `news-sitemap.xml`, `feed.xml`, `robots.txt` oraz `404.html`.
 - `index.html`, `app.js`, `styles.css` – warstwa frontendowa z hydratacją z `articles.json` (bez gigantycznej tablicy artykułów osadzonej w `app.js`), obsługą `file://` SSR, polskim stemmerem w wyszukiwarce, szufladą 16 województw (`#regionsDrawer` z obsługą klawisza `Escape`), paskiem filtrowania akapitów według źródła (`.source-filter-bar`), zwijaniem kart perspektyw powyżej 4 redakcji oraz przełącznikiem motywu (`Auto / Jasny / Ciemny`).
-- `articles.json` – bieżąca baza oczyszczonych i zdeduplikowanych opracowań.
-- `tests/` – pakiet testów jednostkowych i regresyjnych (`tests/test_verity.py`) oraz testów przeglądarkowych E2E w bezgłowym Chromium przez CDP (`tests/e2e_browser_test.mjs`).
+- `articles.json` – bieżąca baza oczyszczonych i zdeduplikowanych opracowań (limit bufora kroczącego: `MAX_TOTAL_ARTICLES = 300`).
+- `tests/` – pakiet testów jednostkowych i regresyjnych (`tests/test_verity.py`), testów przeglądarkowych E2E w bezgłowym Chromium przez CDP (`tests/e2e_browser_test.mjs`) oraz smoke testu produkcji (`tests/smoke_live.py`).
 - `.github/workflows/auto_update.yml` i `.github/workflows/tests.yml` – harmonogram cyklicznej aktualizacji (co godzinę) oraz automatyczne testy CI (Unit + E2E) dla każdego pusha i PR na gałęzi `main`.
 
 ## Przydatne polecenia lokalne
@@ -30,6 +30,10 @@ VERITY to w pełni statyczny portal informacyjny łączący automatyczny agregat
 - Uruchomienie testów przeglądarkowych E2E (Node.js + bezgłowy Chromium / Chrome):
   ```bash
   node tests/e2e_browser_test.mjs
+  ```
+- Smoke test wdrożenia na GitHub Pages (`https://hygrisxx.github.io/verity-/`):
+  ```bash
+  python3 tests/smoke_live.py
   ```
 
 ## Konfiguracja i wdrożenie (GitHub Pages)

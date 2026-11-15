@@ -261,6 +261,11 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
 
     def test_articles_json_quality_and_seo_fields(self):
         self.assertGreater(len(self.articles), 20)
+        self.assertLessEqual(
+            len(self.articles),
+            uln.MAX_TOTAL_ARTICLES,
+            f"Przekroczono limit bufora MAX_TOTAL_ARTICLES={uln.MAX_TOTAL_ARTICLES}",
+        )
         seen_urls = set()
         entity_re = re.compile(r"&(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);")
         junk_re = re.compile(
