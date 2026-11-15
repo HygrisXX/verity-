@@ -1277,6 +1277,226 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
         return feed["name"], [], e
 
 
+_TITLE_HOOK_RE = re.compile(
+    r"(?:\?|pow[oó]d|dlaczego|oto\s|zaskakuj|tajemnic|prawda\s|nie\s+bez|co\s+dalej|wyszło\s+na\s+jaw|"
+    r"wiadomo\s+już|ujawn|szok|sprawdź|dlatego|kluczow|niezwykł|wskazał|tłumaczy|wyjaśnia|drugi\s+powód)",
+    re.IGNORECASE,
+)
+_BOILERPLATE_PARA_RE = re.compile(
+    r"(?:cookies?|RODO|polityk[aęi]\s+prywatności|regulamin|wszelkie\s+prawa\s+zastrzeżone|zaloguj\s+się|"
+    r"subskryb|prenumerat|wykup\s+dostęp|masz\s+już\s+konto|dalsza\s+część\s+artykułu|czytaj\s+(?:też|również|także|więcej)|"
+    r"zobacz\s+(?:też|również|także)|materiał\s+sponsorowany|reklama|udostępnij\s+artykuł)",
+    re.IGNORECASE,
+)
+
+
+def _extract_article_body_from_html(html_text: str, url: str, title: str, fallback_desc: str = "") -> str:
+    """Wyciąga czystą treść redakcyjną ze strony artykułu (TVP3 __newsData, JSON-LD articleBody lub akapity <article>/<main>)."""
+    if not html_text:
+        return ""
+
+    anchor_toks = tokenize_title((title or "") + " " + (fallback_desc or ""))
+    candidates = []
+
+    # 1. TVP3: pełna struktura artykułu z window.__newsData
+    if ".tvp.pl" in (url or "").lower():
+        m_tvp = re.search(r"window\.__newsData\s*=\s*", html_text)
+        if m_tvp:
+            try:
+                obj, _ = json.JSONDecoder().raw_decode(html_text[m_tvp.end():].lstrip())
+                if isinstance(obj, dict):
+                    parts = []
+                    if obj.get("text_paragraph_lead"):
+                        parts.append(str(obj["text_paragraph_lead"]))
+                    for blk in (obj.get("text_paragraph_standard") or []):
+                        if isinstance(blk, dict) and blk.get("text"):
+                            parts.append(str(blk["text"]))
+                    if parts:
+                        candidates.append("\n".join(parts))
+            except Exception:
+                pass
+
+    # 2. JSON-LD articleBody (w tym wewnątrz @graph)
+    for jm in re.finditer(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html_text, re.S | re.I):
+        try:
+            data = json.loads(jm.group(1).strip())
+            stack = list(data) if isinstance(data, list) else [data]
+            while stack:
+                cur = stack.pop(0)
+                if not isinstance(cur, dict):
+                    continue
+                body = cur.get("articleBody")
+                if isinstance(body, str) and len(body.strip()) >= 120:
+                    candidates.append(body)
+                if isinstance(cur.get("@graph"), list):
+                    stack.extend(cur["@graph"])
+        except Exception:
+            continue
+
+    # 3. Akapity <p> z głównego kontenera <article> / <main> (po wycięciu nawigacji/stopek/komentarzy)
+    scope = html_text
+    m_art = re.search(r"<article\b[^>]*>(.*?)</article>", html_text, re.S | re.I)
+    if m_art and len(m_art.group(1)) >= 300:
+        scope = m_art.group(1)
+    else:
+        m_main = re.search(r"<main\b[^>]*>(.*?)</main>", html_text, re.S | re.I)
+        if m_main and len(m_main.group(1)) >= 300:
+            scope = m_main.group(1)
+
+    scope = re.sub(r"<!--.*?-->", " ", scope, flags=re.S)
+    scope = re.sub(r"<(script|style|nav|header|footer|aside|noscript|form)[^>]*>.*?</\1>", " ", scope, flags=re.S | re.I)
+    paras = []
+    for pm in re.finditer(r"<p\b[^>]*>(.*?)</p>", scope, re.S | re.I):
+        p_txt = clean_html_for_synthesis(pm.group(1), "")
+        if len(p_txt) < 45 or len(p_txt.split()) < 6:
+            continue
+        if _BOILERPLATE_PARA_RE.search(p_txt):
+            continue
+        if re.match(r"^(?:fot\.|źródło:|czytaj też:|zobacz:)", p_txt, re.I):
+            continue
+        paras.append(p_txt)
+    if paras:
+        candidates.append(" ".join(paras))
+
+    best_clean = ""
+    for raw_cand in candidates:
+        cleaned = clean_html_for_synthesis(raw_cand, title)
+        if len(cleaned) < 120:
+            continue
+        cand_toks = tokenize_title(cleaned[:1400])
+        if anchor_toks:
+            shared = len(cand_toks & anchor_toks)
+            min_req = 1 if len(anchor_toks) <= 3 else 2
+            if shared < min_req:
+                continue
+        if len(cleaned) > len(best_clean):
+            best_clean = cleaned
+    return best_clean[:16000]
+
+
+def _needs_url_enrichment(title: str, desc: str) -> bool:
+    dlen = len((desc or "").strip())
+    if dlen < 520:
+        return True
+    if dlen < 850 and _TITLE_HOOK_RE.search(title or ""):
+        return True
+    return False
+
+
+def _fetch_enriched_description(url: str, title: str, fallback_desc: str = "") -> str:
+    if not url or not url.startswith(("http://", "https://")):
+        return ""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+        "Accept-Encoding": "gzip, deflate",
+    }
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with _urlopen_with_retry(req, timeout=8, retries=1) as resp:
+            raw_bytes = _read_response_bytes(resp, max_bytes=550_000)
+        html_text = raw_bytes.decode("utf-8", errors="ignore")
+        return _extract_article_body_from_html(html_text, url, title, fallback_desc)
+    except Exception as e:
+        try:
+            if hasattr(e, "close"):
+                e.close()
+        except Exception:
+            pass
+        return ""
+
+
+def _enrich_group_from_urls(group: list) -> int:
+    """Dociąga pełną treść ze stron źródłowych dla źródeł z krótkim urywkiem RSS w wybranym klastrze."""
+    targets = [
+        it for it in (group or [])
+        if it.get("link") and _needs_url_enrichment(it.get("title") or "", it.get("description") or "")
+    ]
+    if not targets:
+        return 0
+
+    updated = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(6, len(targets))) as executor:
+        futures = {
+            executor.submit(_fetch_enriched_description, it["link"], it.get("title") or "", it.get("description") or ""): it
+            for it in targets
+        }
+        for fut, it in futures.items():
+            try:
+                enriched = fut.result()
+            except Exception:
+                enriched = ""
+            cur_desc = it.get("description") or ""
+            if enriched and len(enriched) > len(cur_desc) + 120:
+                it["description"] = enriched
+                updated += 1
+    return updated
+
+
+def _enrich_existing_thin_articles(articles: list, max_articles: int = 24) -> int:
+    """Stopniowo uzupełnia istniejące artykuły z krótką treścią (np. 1-zdaniowe zajawki RSS) na podstawie linków źródeł."""
+    thin = []
+    for art in articles:
+        if art.get("_url_enriched"):
+            continue
+        plain_len = sum(
+            len(_strip_all_citations(p))
+            for sec in (art.get("full_sections") or [])
+            for p in (sec.get("paragraphs") or [])
+        )
+        title = art.get("seo_title") or ""
+        if plain_len < 480 or (plain_len < 750 and _TITLE_HOOK_RE.search(title)):
+            has_url = any((p.get("url") or "").startswith(("http://", "https://")) for p in (art.get("perspectives") or []))
+            if has_url:
+                thin.append((plain_len, art))
+
+    if not thin:
+        return 0
+    thin.sort(key=lambda x: x[0])
+    chosen = [art for _, art in thin[:max_articles]]
+
+    work_items = []
+    art_cands = {}
+    for art in chosen:
+        cands = _extract_candidates_from_article(art)
+        art_cands[id(art)] = (art, cands)
+        for c in cands:
+            if c.get("link") and _needs_url_enrichment(c.get("title") or art.get("seo_title") or "", c.get("description") or ""):
+                work_items.append((art, c))
+
+    if not work_items:
+        return 0
+
+    enriched_arts = set()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {
+            executor.submit(
+                _fetch_enriched_description,
+                c["link"],
+                c.get("title") or art.get("seo_title") or "",
+                c.get("description") or "",
+            ): (art, c)
+            for art, c in work_items
+        }
+        for fut, (art, c) in futures.items():
+            try:
+                enriched = fut.result()
+            except Exception:
+                enriched = ""
+            cur_desc = c.get("description") or ""
+            if enriched and len(enriched) > len(cur_desc) + 120:
+                c["description"] = enriched
+                enriched_arts.add(id(art))
+
+    for art_id in enriched_arts:
+        art, cands = art_cands[art_id]
+        _apply_candidates_to_article(art, cands, preserve_seo_url=True)
+        art["_url_enriched"] = True
+
+    for art, _ in art_cands.values():
+        art.pop("_url_enriched", None)
+    return len(enriched_arts)
+
+
 def fetch_rss_items(max_per_feed: int = 12) -> list:
     items = []
     seen_keys = set()
@@ -2098,14 +2318,14 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
         else:
             last_pos = len(sents)
 
-        # Dla dłuższych tekstów jednego źródła dobierz do 2 zdań wyjaśniających przyczynę/konsekwencję
-        # z dalszej części depeszy, jeśli obcięcie nastąpiło przed wyjaśnieniem zapowiedzianym w tytule.
-        if is_single_source_group and last_pos < len(sents):
+        # Dla dłuższych tekstów źródła wiodącego (1- i wieloźródłowych) dobierz do 2 zdań wyjaśniających
+        # przyczynę/konsekwencję z dalszej części depeszy, jeśli obcięcie nastąpiło przed wyjaśnieniem.
+        if idx_it == 0 and last_pos < len(sents):
             taken_texts = {f["text"] for f in facts}
             covered_toks = set().union(*(f["tokens"] for f in facts)) if facts else set()
             uncovered_title = title_tokens - covered_toks
             rescued = []
-            for tail_s in sents[last_pos:]:
+            for tail_idx, tail_s in enumerate(sents[last_pos:]):
                 if tail_s in taken_texts or len(tail_s) < 45 or not tail_s.endswith((".", "!", "?")):
                     continue
                 t_toks = tokenize_title(tail_s)
@@ -2121,9 +2341,12 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
                     score_tail += 3
                 score_tail += len(t_toks & uncovered_title) * 2
                 if score_tail >= 3:
-                    rescued.append((score_tail, tail_s, t_toks))
-            for _, tail_s, t_toks in rescued[:2]:
-                if taken_chars + len(tail_s) > 2300:
+                    rescued.append((score_tail, tail_idx, tail_s, t_toks))
+            top_rescued = sorted(rescued, key=lambda x: (-x[0], x[1]))[:2]
+            top_rescued.sort(key=lambda x: x[1])
+            max_tail_chars = 2300 if is_single_source_group else 1450
+            for _, _, tail_s, t_toks in top_rescued:
+                if taken_chars + len(tail_s) > max_tail_chars:
                     break
                 facts.append({
                     "text": tail_s,
@@ -2175,7 +2398,7 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
             core_facts = extra_facts[:move_n]
             extra_facts = extra_facts[move_n:]
 
-        core_facts = core_facts[:8]
+        core_facts = core_facts[:10]
         core_paras = _group_sentences_to_paragraphs(core_facts, max_chars=390, max_sents=3)
 
         heading_main = (
@@ -3443,6 +3666,7 @@ def update_news_cycle(fetch_live: bool = True):
             if matched is not None:
                 merge_cluster_into_article(matched, grp)
                 continue
+            _enrich_group_from_urls(grp)
             art = build_article_from_group(grp, len(new_articles) + 1)
             new_articles.append(art)
 
@@ -3453,7 +3677,11 @@ def update_news_cycle(fetch_live: bool = True):
                 unique_groups = {it.get("group") or it["outlet"] for it in grp}
                 if len(unique_groups) == 1 and is_local_or_niche_item(grp[0]):
                     if not is_already_covered(grp, existing_articles + new_articles):
+                        _enrich_group_from_urls(grp)
                         art = build_article_from_group(grp, len(new_articles) + 1)
+                        plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
+                        if plain_len < 160:
+                            continue
                         new_articles.append(art)
                         break
 
@@ -3491,11 +3719,19 @@ def update_news_cycle(fetch_live: bool = True):
             if matched is not None:
                 merge_cluster_into_article(matched, grp)
                 continue
+            _enrich_group_from_urls(grp)
             art = build_article_from_group(grp, len(new_articles) + 1)
+            plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
+            if len(art.get("sources") or []) <= 1 and plain_len < (80 if is_empty_region else 160):
+                continue
             new_articles.append(art)
             reg_counts[cand_path] = reg_counts.get(cand_path, 0) + 1
             added_reg += 1
             added_reg_paths.add(cand_path)
+
+        enriched_thin = _enrich_existing_thin_articles(existing_articles, max_articles=30)
+        if enriched_thin:
+            print(f"[ENRICH] Uzupełniono pełną treść ze stron źródłowych dla {enriched_thin} krótkich artykułów.")
 
         print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
 

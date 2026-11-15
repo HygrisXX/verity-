@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/perkusisci-behemoth-necrophagist-i-bestial-raids-zagraja-w-swidnicy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:38:00+01:00</news:publication_date>
+      <news:title>Perkusiści Behemoth, Necrophagist i Bestial Raids zagrają w Świdnicy. Drummers From Hell Festival 2026 nadciąg</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://swidnica24.pl/wp-content/uploads/2026/11/Behemoth-koncert-w-Spodku-w-Katowicach-26-pazdziernik-2026-fot.-Agnieszka-Nowicka.jpg</image:loc>
+      <image:title>Perkusiści Behemoth, Necrophagist i Bestial Raids zagrają w Świdnicy. Drummers From Hell Festival 2026 nadciąg</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/ornat-na-boze-narodzenie-dla-mlodego-ksiedza-nowoczesnosc-w-tradycyjnym/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:38:00+01:00</news:publication_date>
+      <news:title>Ornat na Boże Narodzenie dla młodego księdza: nowoczesność w tradycyjnym wydaniu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/ornat-bozonarodzeniowy.jpg</image:loc>
+      <image:title>Ornat na Boże Narodzenie dla młodego księdza: nowoczesność w tradycyjnym wydaniu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/nowa-sciezka-rowerowa-za-ponad-7-mln-zl-budzi-kontrowersje-zarzadca/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:38:00+01:00</news:publication_date>
+      <news:title>Nowa ścieżka rowerowa za ponad 7 mln zł budzi kontrowersje. Zarządca drogi wyjaśnia, skąd problem z poboczem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+      <image:title>Nowa ścieżka rowerowa za ponad 7 mln zł budzi kontrowersje. Zarządca drogi wyjaśnia, skąd problem z poboczem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/najwiekszy-park-handlowy-w-regionie-rusza-w-sanoku-ma-23-tys-mkw-gla/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:37:59+01:00</news:publication_date>
+      <news:title>Największy park handlowy w regionie rusza w Sanoku. Ma 23 tys. mkw. GLA</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821329.webp</image:loc>
+      <image:title>Największy park handlowy w regionie rusza w Sanoku. Ma 23 tys. mkw. GLA</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/trzymasz-w-domu-lub-mieszkaniu-urzad-skarbowy-moze-nalozyc-na-ciebie/</loc>
     <news:news>
       <news:publication>
@@ -2873,21 +2933,6 @@
     <image:image>
       <image:loc>https://cdn.defence24.pl/2026/09/01/320x240px/NbBjKSxEiBC1K1BTZ5pOwhZrCAGOcVBs0DvzjOB8.13zc.jpg</image:loc>
       <image:title>Strzelał do policjantów w Krakowie. Funkcjonariusze odpowiedzieli ogniem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zakaz-reklamy-aptek-zniesiony-ale-kary-beda-wyzsze-decyzja-prezydenta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T19:50:37+01:00</news:publication_date>
-      <news:title>Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/8376316cf12ee69552c15e62105094df/?t=crop:7360:3217:nowe:0:847,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Zakaz reklamy aptek zniesiony, ale kary będą wyższe. Decyzja prezydenta</image:title>
     </image:image>
   </url>
   <url>

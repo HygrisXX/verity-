@@ -1701,6 +1701,79 @@ class TestStage3HardeningAndAntiChaining(unittest.TestCase):
         self.assertEqual(len(items), 1)
         self.assertIn("głównym powodem zmiany strategii", items[0]["description"])
 
+    def test_extract_article_body_from_html_sources_and_guards(self):
+        # 1. TVP3 __newsData JSON
+        tvp_html = (
+            '<html><head><title>Test</title></head><body><script>window.__newsData = '
+            + json.dumps({
+                "text_paragraph_lead": "35-latka sięgnęła po siekierę podczas spotkania z byłym partnerem.",
+                "text_paragraph_standard": [
+                    {"text": "<p>Kobieta rozbiła szybę w aucie i usłyszała zarzuty zniszczenia mienia oraz gróźb karalnych.</p>"}
+                ],
+            }, ensure_ascii=False)
+            + ';</script></body></html>'
+        )
+        tvp_body = uln._extract_article_body_from_html(
+            tvp_html,
+            "https://poznan.tvp.pl/12345/siekiera",
+            "Przyszła do byłego partnera z siekierą",
+        )
+        self.assertIn("rozbiła szybę w aucie", tvp_body)
+
+        # 2. JSON-LD krótkie (lub z innego tematu) vs pełne <article><p>...</p></article> + filtr cookie/paywall
+        html_page = """
+        <html><head>
+        <script type="application/ld+json">{"@type":"NewsArticle","articleBody":"Zarząd Spółki ABC opublikował zupełnie inny raport kwartalny bez związku z tym tematem."}</script>
+        </head><body>
+        <nav><p>Menu nawigacyjne serwisu i linki do wszystkich kategorii redakcyjnych.</p></nav>
+        <article>
+          <p>Prezydent USA Donald Trump oświadczył w wywiadzie, że chce rozwiązać sprawę Kuby jeszcze przed końcem swojej kadencji.</p>
+          <p>W rozmowie zaznaczył, że nie wyklucza użycia siły, ponieważ uważa sytuację gospodarczą na wyspie za krytyczną i wymagającą stanowczych działań.</p>
+          <p>Wykup dostęp do pełnej prenumeraty i zaakceptuj politykę prywatności oraz pliki cookies.</p>
+        </article>
+        </body></html>
+        """
+        extracted = uln._extract_article_body_from_html(
+            html_page,
+            "https://example.pl/trump-kuba",
+            "Trump mówi o użyciu siły wobec Kuby",
+            "Krótki wstęp",
+        )
+        self.assertIn("nie wyklucza użycia siły", extracted)
+        self.assertNotIn("Spółki ABC", extracted)
+        self.assertNotIn("politykę prywatności", extracted)
+        self.assertNotIn("Menu nawigacyjne", extracted)
+
+        # 3. _enrich_existing_thin_articles wzbogaca krótki artykuł i poprawnie sprząta znacznik tymczasowy
+        from unittest import mock
+
+        thin_art = {
+            "id": 123456,
+            "path": "/Polska/Regiony/Wielkopolskie",
+            "seo_url": "/Polska/Regiony/Wielkopolskie/kierowca-na-podwojnym-gazie",
+            "seo_title": "Kierowca zatrzymany na podwójnym gazie. Zaskakujący finał kontroli",
+            "summary_lead": "Do zatrzymania doszło w czwartek w Wólce.",
+            "meta_description": "Do zatrzymania doszło w czwartek w Wólce.",
+            "keywords": "Wielkopolskie, kierowca",
+            "sources": ["ePoznan.pl"],
+            "perspectives": [{"outlet": "ePoznan.pl", "angle": "Wątek lokalny", "summary": "Kierowca zatrzymany", "url": "https://epoznan.pl/test-123"}],
+            "full_sections": [{"heading": "Relacja źródłowa (ePoznan.pl)", "paragraphs": ["Do zatrzymania doszło w czwartek w Wólce. [Źródło: ePoznan.pl]"]}],
+            "metrics": [],
+            "declickbait": [],
+            "corrections": [],
+        }
+        rich_body = (
+            "Do zatrzymania doszło w czwartek w Wólce w powiecie słupeckim podczas rutynowej kontroli drogowej. "
+            "Badanie alkomatem wykazało, że kierowca miał prawie 3 promile alkoholu w organizmie i zakaz prowadzenia pojazdów. "
+            "Policjanci zatrzymali mu prawo jazdy oraz zabezpieczyli samochód na parkingu strzeżonym. "
+            "Mężczyzna odpowie przed sądem za jazdę w stanie nietrzeźwości oraz złamanie sądowego zakazu."
+        )
+        with mock.patch.object(uln, "_fetch_enriched_description", return_value=rich_body):
+            enriched_n = uln._enrich_existing_thin_articles([thin_art], max_articles=5)
+        self.assertEqual(enriched_n, 1)
+        self.assertNotIn("_url_enriched", thin_art)
+        self.assertIn("prawie 3 promile", " ".join(thin_art["full_sections"][0]["paragraphs"]))
+
 
 if __name__ == "__main__":
     unittest.main()
