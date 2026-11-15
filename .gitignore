@@ -19,6 +19,7 @@ node_modules/
 e2e_shots*/
 verity_e2e_shots*/
 _tmp*/
+feeds_health.json
 
 # OS / editors
 .DS_Store

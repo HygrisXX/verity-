@@ -579,7 +579,7 @@ def _render_lead_ssr(lead: dict, rel_root: str) -> str:
 def _sort_articles_for_feed(items: list) -> list:
     return sorted(
         items,
-        key=lambda a: (1 if (a.get("declickbait") or []) else 0, a.get("published_iso") or ""),
+        key=lambda a: a.get("published_iso") or "",
         reverse=True,
     )
 

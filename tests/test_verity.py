@@ -1775,6 +1775,220 @@ class TestStage3HardeningAndAntiChaining(unittest.TestCase):
         self.assertIn("prawie 3 promile", " ".join(thin_art["full_sections"][0]["paragraphs"]))
 
 
+class TestStage5AntiClickbaitBalanceAndQualityGate(unittest.TestCase):
+    def test_anti_clickbait_neutralization_declickbait_and_no_feed_pinning(self):
+        group = [
+            {
+                "outlet": "o2.pl",
+                "group": "Wirtualna Polska",
+                "path": "/Swiat",
+                "title": "PILNE: Zaskakujące zachowanie pilota na pokładzie samolotu. Nie uwierzysz, co zrobił [WIDEO]",
+                "description": "Załoga samolotu podjęła decyzję o lądowaniu awaryjnym z powodu usterki technicznej w kabinie pilotów.",
+                "link": "https://o2.pl/pilot-1",
+                "thumbnail": "",
+            },
+            {
+                "outlet": "Polsat News",
+                "group": "Polsat News",
+                "path": "/Swiat",
+                "title": "Awaryjne lądowanie samolotu pasażerskiego po usterce technicznej w kokpicie",
+                "description": "Samolot bezpiecznie wylądował na lotnisku zapasowym, a pasażerom zapewniono nocleg.",
+                "link": "https://polsatnews.pl/pilot-1",
+                "thumbnail": "",
+            },
+        ]
+        art = uln.build_article_from_group(group, 501)
+        self.assertFalse(uln._is_clickbait_title(art["seo_title"]))
+        self.assertNotIn("[WIDEO]", art["seo_title"])
+        self.assertTrue(art["declickbait"], "Powinno zapisać co najmniej jeden wpis declickbait")
+        dc0 = art["declickbait"][0]
+        self.assertEqual(set(dc0.keys()), {"outlet", "original", "fact"})
+        self.assertEqual(dc0["outlet"], "o2.pl")
+        self.assertIn("Nie uwierzysz", dc0["original"])
+
+        neutral = uln._neutralize_clickbait_title("PILNE! Szokujący wzrost cen paliw. Powód wbija w fotel!")
+        self.assertNotIn("PILNE", neutral)
+        self.assertNotIn("wbija w fotel", neutral.lower())
+        self.assertNotIn("szokujący", neutral.lower())
+
+        # Chronologia musi być czysta bez przypinania starszego artykułu z declickbait nad nowszym
+        older_dc = {"id": 1, "published_iso": "2026-11-15T08:00:00+01:00", "declickbait": [dc0]}
+        newer_clean = {"id": 2, "published_iso": "2026-11-15T10:00:00+01:00", "declickbait": []}
+        sorted_feed = seo_builder._sort_articles_for_feed([older_dc, newer_clean])
+        self.assertEqual([a["id"] for a in sorted_feed], [2, 1])
+
+    def test_spam_cta_and_bare_ellipsis_cleanup(self):
+        for title, url in (
+            ("Biedronka rozdaje sprzęt AGD za grosze w aplikacji mobilnej", "https://example.pl/promocje/1"),
+            ("Ekspert radzi jak wybielać zęby domowymi sposobami", "https://example.pl/poradniki/zeby"),
+            ("Materiał partnerski: najlepsze kredyty gotówkowe jesieni", "https://example.pl/art"),
+        ):
+            with self.subTest(title=title):
+                self.assertTrue(uln.is_opinion_or_blacklisted(title, url))
+
+        raw_cta = (
+            "Gość porannej audycji mówił o nowym budżecie samorządu dla szkół średnich. "
+            "ABY ODSŁUCHAĆ ROZMOWĘ, KLIKNIJ NA ZDJĘCIE POWYŻEJ. "
+            "Samorząd zwiększy nakłady o 12 mln zł w przyszłym roku. Dalsza część wypowiedzi dostępna w materiale..."
+        )
+        cleaned = uln.clean_desc_text(raw_cta, "Budżet samorządu")
+        self.assertNotIn("ABY ODSŁUCHAĆ", cleaned.upper())
+        self.assertNotIn("KLIKNIJ NA ZDJĘCIE", cleaned.upper())
+        self.assertFalse(cleaned.endswith("..."))
+        self.assertTrue(cleaned.endswith("roku."))
+
+    def test_merge_non_oscillation_and_corrections_log(self):
+        long_p1 = (
+            "Premier ogłosił pakiet inwestycji infrastrukturalnych o wartości 18 mld zł na rozbudowę dróg ekspresowych i kolei regionalnych. "
+            "Program obejmuje modernizację dziesięciu głównych węzłów transportowych oraz budowę nowych obwodnic miejskich w całym kraju. "
+            "Finansowanie inwestycji ma pochodzić ze środków budżetowych oraz funduszy europejskich przewidzianych na kolejną dekadę."
+        )
+        long_p2 = (
+            "Ministerstwo Infrastruktury potwierdziło, że pierwsze przetargi zostaną ogłoszone jeszcze przed końcem bieżącego kwartału. "
+            "Według resortu priorytetem jest połączenie średnich ośrodków powiatowych z siecią szybkiej kolei oraz poprawa bezpieczeństwa ruchu."
+        )
+        group = [
+            {
+                "outlet": "PAP",
+                "group": "PAP",
+                "path": "/Polska/Gospodarka",
+                "title": "Rząd ogłasza pakiet inwestycji transportowych za 18 mld zł",
+                "description": long_p1,
+                "link": "https://pap.pl/inwestycje-18mld",
+                "thumbnail": "",
+            },
+            {
+                "outlet": "Money.pl",
+                "group": "Wirtualna Polska",
+                "path": "/Polska/Gospodarka",
+                "title": "Nowy program inwestycji drogowych i kolejowych za 18 mld zł",
+                "description": long_p2,
+                "link": "https://money.pl/inwestycje-18mld",
+                "thumbnail": "",
+            },
+        ]
+        art = uln.build_article_from_group(group, 101)
+
+        # Ponowne zobaczenie tej samej już bogatej redakcji (PAP) z dłuższym tekstem nie wywołuje zbędnego przeliczenia
+        reseen_pap = [{
+            "outlet": "PAP",
+            "group": "PAP",
+            "path": "/Polska/Gospodarka",
+            "title": "Rząd ogłasza pakiet inwestycji transportowych za 18 mld zł",
+            "description": long_p1 + " Dodatkowe zdanie testowe przekraczające próg 80 znaków w opisie z kanału RSS dla sprawdzenia stabilności.",
+            "link": "https://pap.pl/inwestycje-18mld",
+        }]
+        self.assertFalse(uln.merge_cluster_into_article(art, reseen_pap))
+        self.assertEqual(art["corrections"], [])
+
+        # Dopisanie nowej redakcji zapisuje corrections ze schematem UI
+        new_outlet = [{
+            "outlet": "Bankier.pl",
+            "group": "Bonnier",
+            "path": "/Polska/Gospodarka",
+            "title": "Pakiet 18 mld zł na drogi i kolej przyjęty przez rząd",
+            "description": "Rząd przeznaczy 18 mld zł na nowe linie kolejowe i obwodnice w całym kraju.",
+            "link": "https://bankier.pl/inwestycje-18mld",
+        }]
+        self.assertTrue(uln.merge_cluster_into_article(art, new_outlet))
+        self.assertIn("Bankier.pl", art["sources"])
+        self.assertEqual(len(art["corrections"]), 1)
+        self.assertEqual(set(art["corrections"][0].keys()), {"claim_text", "evidence_url"})
+        self.assertIn("Bankier.pl", art["corrections"][0]["claim_text"])
+        self.assertEqual(art["corrections"][0]["evidence_url"], "https://bankier.pl/inwestycje-18mld")
+
+    def test_trim_articles_with_balance_and_quality_gate_and_feeds_health(self):
+        import tempfile
+
+        sample = []
+        # 160 wieloźródłowych ogólnopolskich
+        for i in range(160):
+            sample.append({
+                "id": 1000 + i,
+                "path": "/Polska/Gospodarka",
+                "seo_url": f"/Polska/Gospodarka/multi-{i}",
+                "seo_title": f"Inwestycja gospodarcza nr {i}",
+                "summary_lead": "Szczegółowy opis inwestycji gospodarczej w Polsce.",
+                "published_iso": f"2026-11-15T{10 + (i // 60):02d}:{i % 60:02d}:00+01:00",
+                "sources": ["PAP", "Bankier.pl"],
+                "fact_agreement_pct": 88,
+                "full_sections": [{"heading": "Ustalenia", "paragraphs": ["Szczegółowy opis inwestycji gospodarczej w Polsce. [Źródło: PAP, Bankier.pl]"]}],
+                "perspectives": [{"outlet": "PAP", "angle": "Relacja wiodąca", "summary": "Tytuł", "url": "https://pap.pl/1"}],
+            })
+        # Każde z 16 województw: 2 wieloźródłowe + 8 jednoźródłowych
+        vid = 2000
+        for v_path, _, _, _, _, _ in seo_builder.VOIVODESHIPS:
+            for k in range(2):
+                sample.append({
+                    "id": vid,
+                    "path": v_path,
+                    "seo_url": f"{v_path}/multi-{k}",
+                    "seo_title": f"Wydarzenie regionalne {k}",
+                    "summary_lead": "Opis wydarzenia regionalnego potwierdzony przez dwie redakcje.",
+                    "published_iso": f"2026-11-15T09:{vid % 60:02d}:00+01:00",
+                    "sources": ["Radio Regionalne", "TVP3"],
+                    "fact_agreement_pct": 85,
+                    "full_sections": [{"heading": "Ustalenia", "paragraphs": ["Opis wydarzenia regionalnego potwierdzony przez dwie redakcje. [Źródło: Radio Regionalne, TVP3]"]}],
+                    "perspectives": [{"outlet": "TVP3", "angle": "Doniesienie regionalne", "summary": "Tytuł", "url": "https://tvp.pl/1"}],
+                })
+                vid += 1
+            for k in range(8):
+                sample.append({
+                    "id": vid,
+                    "path": v_path,
+                    "seo_url": f"{v_path}/single-{k}",
+                    "seo_title": f"Lokalna informacja {k}",
+                    "summary_lead": "Lokalna informacja ze sprawdzonego źródła samorządowego.",
+                    "published_iso": f"2026-11-14T{k:02d}:00:00+01:00",
+                    "sources": ["TVP3"],
+                    "fact_agreement_pct": None,
+                    "full_sections": [{"heading": "Relacja źródłowa (TVP3)", "paragraphs": ["Lokalna informacja ze sprawdzonego źródła samorządowego. [Źródło: TVP3]"]}],
+                    "perspectives": [{"outlet": "TVP3", "angle": "Doniesienie regionalne", "summary": "Tytuł", "url": "https://tvp.pl/2"}],
+                })
+                vid += 1
+
+        balanced = uln._trim_articles_with_balance(sample, max_total=uln.MAX_TOTAL_ARTICLES)
+        stats = uln.summarize_cycle_quality(balanced)
+        self.assertEqual(stats["voivodeships_covered"], 16)
+        self.assertGreaterEqual(stats["multi_source_pct"], 80.0)
+        for vp, vd in stats["voivodeships"].items():
+            self.assertGreaterEqual(vd["total"], 5, f"Województwo {vp} spadło poniżej 5 artykułów")
+
+        ok, errs = uln.run_quality_gate(balanced)
+        self.assertTrue(ok, f"Quality gate nie przeszedł na zbalansowanym zestawie: {errs}")
+
+        bad_only_single = [a for a in balanced if len(a["sources"]) == 1]
+        ok_bad, errs_bad = uln.run_quality_gate(bad_only_single)
+        self.assertFalse(ok_bad)
+        self.assertTrue(any("wieloźródłowych" in e for e in errs_bad))
+
+        # Test zapisu feeds_health.json i licznika consecutive_failures
+        with tempfile.TemporaryDirectory() as tmpdir:
+            hp = os.path.join(tmpdir, "feeds_health.json")
+            feed_ok = {"name": "FeedA", "path": "/Polska", "url": "https://example.pl/a.xml"}
+            feed_err = {"name": "FeedB", "path": "/Swiat", "url": "https://example.pl/b.xml"}
+            rep1 = uln._update_feeds_health_report(
+                [(feed_ok, [{"title": "x"}], None), (feed_err, [], RuntimeError("HTTP 500"))],
+                health_path=hp,
+            )
+            self.assertEqual(rep1["ok_count"], 1)
+            self.assertEqual(rep1["err_count"], 1)
+            rep2 = uln._update_feeds_health_report(
+                [(feed_ok, [], None), (feed_err, [], RuntimeError("HTTP 500"))],
+                health_path=hp,
+            )
+            by_name2 = {f["name"]: f for f in rep2["feeds"]}
+            self.assertEqual(by_name2["FeedA"]["consecutive_failures"], 1)
+            self.assertEqual(by_name2["FeedB"]["consecutive_failures"], 2)
+            rep3 = uln._update_feeds_health_report(
+                [(feed_ok, [{"title": "x"}], None), (feed_err, [{"title": "y"}], None)],
+                health_path=hp,
+            )
+            by_name3 = {f["name"]: f for f in rep3["feeds"]}
+            self.assertEqual(by_name3["FeedA"]["consecutive_failures"], 0)
+            self.assertEqual(by_name3["FeedB"]["consecutive_failures"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()
 

@@ -33,6 +33,7 @@ import seo_builder  # noqa: E402
 MAX_TOTAL_ARTICLES = 300
 MAX_NEW_PER_RUN = 6
 MAX_REGIONAL_PER_RUN = 3
+REGIONAL_SATURATION_CAP = 6
 ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne miniatury dla 100% spokoju prawnego
 
 LIVE_RSS_FEEDS = [
@@ -253,8 +254,9 @@ OPINION_MARKERS = [
     r"\bnie uwierzysz\b",
     r"\bten trik\b",
     r"\bpromocj[ae]\b",
-    r"\bmateriał sponsorowany\b",
-    r"\bartykuł sponsorowany\b",
+    r"\bmateriał\s+(?:sponsorowan\w*|partner\w*)\b",
+    r"\bartykuł\s+(?:sponsorowan\w*|partner\w*)\b",
+    r"\btekst\s+sponsorowany\b",
     r"\bgdzie oglądać\b",
     r"\btransmisj[aę]\s+w\s+tv\b",
     r"\bstream\s+online\b",
@@ -278,12 +280,19 @@ OPINION_MARKERS = [
     r"\bpolska\s+wieś\s+w\s+ii\s+rp\b",
     r"\bw\s+2009\s+roku\b",
     r"\btak\s+mieszka\b",
+    r"\bjak\s+(?:bezpiecznie\s+)?wybiela[ćc]\s+z[eę]b",
+    r"\bco\s+warto\s+wiedzie[ćc]\s+o\s+zabiegu\b",
+    r"\bczy\s+jedno\s+piwo\b",
+    r"\brozdaje\s+[\w\s]{1,25}\s+w\s+aplikacji\b",
+    r"\bkod(?:y|em)?\s+rabatow",
+    r"\bgazetka\s+promocyjna\b",
 ]
 
 EDITORIAL_URL_SEGMENTS = (
     "/opinie/", "/felietony/", "/komentarze/", "/blogi/",
     "/horoskop/", "/horoskopy/", "/quiz/", "/lotto/", "/galerie/",
-    "/porady/", "/gwiazdy/", "/plotki/", "/transmisje/",
+    "/porady/", "/poradniki/", "/zdrowie-i-uroda/", "/konkursy/", "/promocje/",
+    "/gwiazdy/", "/plotki/", "/transmisje/",
     "/plus-minus/", "/kultura/", "/film/", "/muzyka/", "/ksiazki/", "/recenzje/", "/rozrywka/", "/styl-zycia/",
     "/kuchnia/", "/gotowanie/", "/przepisy/", "/uroda/", "/moda/",
     "/bukmacherzy/", "/bonusy-bukmacherskie/", "/zaklady-bukmacherskie/", "/typy-bukmacherskie/",
@@ -1518,7 +1527,65 @@ def fetch_rss_items(max_per_feed: int = 12) -> list:
     return items
 
 
-def audit_feeds(max_per_feed: int = 12) -> int:
+def _update_feeds_health_report(results_rows: list, health_path: str | None = None) -> dict:
+    path = health_path or os.path.join(_THIS_DIR, "feeds_health.json")
+    prev_failures = {}
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as hf:
+                old = json.load(hf)
+            for row in old.get("feeds") or []:
+                key = (row.get("name") or "", row.get("url") or "")
+                prev_failures[key] = int(row.get("consecutive_failures") or 0)
+        except Exception:
+            prev_failures = {}
+
+    entries = []
+    ok_c = empty_c = err_c = 0
+    for feed, feed_items, err in results_rows:
+        key = (feed["name"], feed["url"])
+        if err is not None:
+            status = "ERR"
+            err_c += 1
+            consec = prev_failures.get(key, 0) + 1
+            msg = str(err)[:200]
+        elif not feed_items:
+            status = "EMPTY"
+            empty_c += 1
+            consec = prev_failures.get(key, 0) + 1
+            msg = ""
+        else:
+            status = "OK"
+            ok_c += 1
+            consec = 0
+            msg = ""
+        entries.append({
+            "name": feed["name"],
+            "path": feed["path"],
+            "url": feed["url"],
+            "status": status,
+            "items_count": len(feed_items),
+            "consecutive_failures": consec,
+            "error": msg,
+        })
+
+    report = {
+        "checked_iso": datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00"),
+        "total_feeds": len(entries),
+        "ok_count": ok_c,
+        "empty_count": empty_c,
+        "err_count": err_c,
+        "feeds": entries,
+    }
+    try:
+        with open(path, "w", encoding="utf-8") as hf:
+            json.dump(report, hf, ensure_ascii=False, indent=2)
+    except OSError as exc:
+        print(f"[WARN] Nie udało się zapisać {path}: {exc}", file=sys.stderr)
+    return report
+
+
+def audit_feeds(max_per_feed: int = 12, health_path: str | None = None) -> int:
     unique_outlets = len({f["name"] for f in LIVE_RSS_FEEDS})
     print(f"[AUDYT] Testowanie {len(LIVE_RSS_FEEDS)} kanałów ({unique_outlets} unikalnych redakcji)...")
     t0 = time.time()
@@ -1530,8 +1597,10 @@ def audit_feeds(max_per_feed: int = 12) -> int:
     empty_feeds = []
     err_feeds = []
     voiv_stats = {vp: [] for vp in seo_builder.VOIVODESHIP_BY_PATH}
+    health_rows = []
 
     for feed, (_, feed_items, err) in zip(LIVE_RSS_FEEDS, results):
+        health_rows.append((feed, feed_items, err))
         fpath = feed["path"]
         if err is not None:
             err_feeds.append((feed, str(err)))
@@ -1541,6 +1610,8 @@ def audit_feeds(max_per_feed: int = 12) -> int:
             ok_count += 1
             if fpath in voiv_stats:
                 voiv_stats[fpath].append(f"{feed['name']} ({len(feed_items)})")
+
+    _update_feeds_health_report(health_rows, health_path=health_path)
 
     print(f"\n=== PODSUMOWANIE AUDYTU KANAŁÓW ({elapsed:.1f}s) ===")
     print(f"Łącznie kanałów: {len(LIVE_RSS_FEEDS)} | Unikalnych redakcji: {unique_outlets}")
@@ -1707,7 +1778,137 @@ TEASER_SENTENCE_PATTERNS = (
     r"^dramatyczne sceny rozegrały się\b",
     r"^dramatyczne wydarzenia rozegrały się\b",
     r"^nieprawdopodobne sceny\b",
+    r"\bw\s+naszej\s+galerii\s+znajdziecie\b",
+    r"^materiał\s+wideo\s+przedstawia\b",
+    r"^nagranie\s+zostało\s+dodane\s+w\s+celach\s+informacyjnych\b",
+    r"\b(?:aby\s+odsłuchać\s+rozmowę|kliknij\s+na\s+zdjęcie\s+powyżej)\b",
 )
+
+_TITLE_MEDIA_TAG_RE = re.compile(
+    r"\s*\[(?:WIDEO|VIDEO|ZDJĘCIA|GALERIA|AUDIO|FOTO)\]\s*",
+    re.IGNORECASE,
+)
+
+_CLICKBAIT_TITLE_RE = re.compile(
+    r"(?:"
+    r"\bwbija\s+w\s+fotel\b|\bnie\s+uwierzysz\b|\bopadn[aą]\s+ci\s+szcz[eę]k|"
+    r"\btylko\s+u\s+nas\b|\bhit\s+internetu\b|\bprawda\s+wysz[łl]a\s+na\s+jaw\b|\bwysz[łl]o\s+na\s+jaw\b|"
+    r"\bszokuj[aą]c[aeyio]\w*\b|\bw\s+szoku\b|\bzaskakuj[aą]c[aeyio]\w*\b|"
+    r"\bchwyta\s+za\s+serce\b|\btrzymasz\s+w\s+domu\b|\bgigantyczn\w+\s+podatek\b|"
+    r"(?:^|\s)(?:pilne|uwaga)[!:]|\bczy\s+o\s+co\s*\?|\boto\s+(?:powód|prawda|dlaczego)\b|"
+    r"\bnie\s+bez\s+powodu\b|\bco\s+zrobił[a]?\s+\w+\?"
+    r")",
+    re.IGNORECASE,
+)
+
+
+def _clean_title_artifacts(title: str) -> str:
+    t = polish_typography_clean(title or "")
+    t = _TITLE_MEDIA_TAG_RE.sub(" ", t)
+    t = re.sub(r"\s{2,}", " ", t).strip()
+    if t.endswith(("...", "…")) and len(t) >= 24:
+        t_no_ellip = re.sub(r"[\s,.]*(?:\.\.\.|…)+$", "", t).strip()
+        if len(t_no_ellip) >= 18:
+            t = t_no_ellip
+    return t
+
+
+def _is_clickbait_title(title: str) -> bool:
+    return bool(_CLICKBAIT_TITLE_RE.search(title or ""))
+
+
+def _neutralize_clickbait_title(title: str) -> str:
+    t = _clean_title_artifacts(title)
+    if not t:
+        return ""
+    # 1. Usuń prefiksy krzykliwe/zaczepne
+    t = re.sub(r"^(?:pilne|uwaga)\s*[!:]\s*", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"^trzymasz\s+w\s+domu(?:\s+lub\s+mieszkaniu)?\s*\?\s*", "", t, flags=re.IGNORECASE)
+    # 2. Usuń sufiksy clickbaitowe po kropce/myślniku/dwukropku
+    t = re.sub(
+        r"(?:\.\s*|\s+[–—-]\s*|:\s*)(?:powód\s+(?:jego|jej)?\s*\w*\s*wbija\s+w\s+fotel|powód\s+chwyta\s+za\s+serce|nie\s+uwierzysz[^.!]*|opadną\s+ci\s+szczęki[^.!]*)\s*[!.]*$",
+        "",
+        t,
+        flags=re.IGNORECASE,
+    )
+    t = re.sub(r"(?:\.\s*|\s+[–—-]\s*)zaskakujące\s+zachowanie\s+[^.!]*$", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"\s+czy\s+o\s+co\s*\?$", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"\bzałogi\s+w\s+szoku,\s*", "", t, flags=re.IGNORECASE)
+    # 3. Zastąp/usuń przymiotniki czysto sensacyjne
+    t = re.sub(r"\bszokując(?:y|a|e|ego|ej|ych)\s+", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"\bzaskakując(?:y|a|e|ego|ej|ych)\s+", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"\bgigantyczny\s+(podatek)\b", r"wysoki \1", t, flags=re.IGNORECASE)
+    t = re.sub(r"\s{2,}", " ", t).strip(" .,:;–—-")
+    if t:
+        t = t[0].upper() + t[1:]
+    return polish_typography_clean(t) if len(t) >= 16 else _clean_title_artifacts(title)
+
+
+_CAUSAL_RE = re.compile(
+    r"\b(?:pow[oó]d|powodem|dlaczego|przyczyn\w*|skutk\w*|ponieważ|dlatego|oznacza|wyjaśn\w*|argument\w*|nadwyżk\w*|drugi\w*|sił[ayę]\s+wyższ\w*)\b",
+    re.IGNORECASE,
+)
+
+
+def _extract_factual_payoff(summary_lead: str, sections: list, fallback_title: str) -> str:
+    for sec in (sections or []):
+        for p in (sec.get("paragraphs") or []):
+            plain = _strip_all_citations(p).strip()
+            for s in split_sentences_pl(plain):
+                if _CAUSAL_RE.search(s) and 35 <= len(s) <= 210:
+                    return s
+    lead = (summary_lead or "").strip()
+    if lead and len(lead) >= 30:
+        return lead[:200]
+    return fallback_title
+
+
+def _build_declickbait_entries(
+    chosen_title: str,
+    raw_primary_title: str,
+    items_or_persps: list,
+    summary_lead: str = "",
+    sections: list | None = None,
+) -> list:
+    entries = []
+    seen_orig = set()
+    clean_chosen = _clean_title_artifacts(chosen_title)
+
+    # Sprawdź tytuł źródła wiodącego, jeśli sam wymagał neutralizacji
+    raw_prim_clean = _clean_title_artifacts(raw_primary_title)
+    if _is_clickbait_title(raw_prim_clean) and raw_prim_clean.lower() != clean_chosen.lower():
+        prim_outlet = ""
+        if items_or_persps:
+            prim_outlet = items_or_persps[0].get("outlet") or ""
+        fact_txt = clean_chosen
+        if clean_chosen.lower() in raw_prim_clean.lower():
+            payoff = _extract_factual_payoff(summary_lead, sections or [], clean_chosen)
+            if payoff and payoff.lower() != clean_chosen.lower():
+                fact_txt = payoff
+        entries.append({
+            "outlet": prim_outlet or "Źródło główne",
+            "original": raw_prim_clean,
+            "fact": fact_txt,
+        })
+        seen_orig.add(raw_prim_clean.lower())
+
+    # Sprawdź także clickbaitowe tytuły pozostałych redakcji w klastrze
+    for it in (items_or_persps or []):
+        orig_t = _clean_title_artifacts(it.get("title") or it.get("summary") or "")
+        outlet = (it.get("outlet") or "").strip()
+        if not orig_t or not outlet or orig_t.lower() in seen_orig:
+            continue
+        if _is_clickbait_title(orig_t) and orig_t.lower() != clean_chosen.lower():
+            entries.append({
+                "outlet": outlet,
+                "original": orig_t,
+                "fact": clean_chosen,
+            })
+            seen_orig.add(orig_t.lower())
+        if len(entries) >= 3:
+            break
+
+    return entries
 
 STOP_WORDS_PL = {
     "polsce", "polska", "polski", "polskie", "polskich", "polskiego", "polsk", "polak", "polacy",
@@ -1991,15 +2192,21 @@ def clean_desc_text(text: str, article_title: str = "") -> str:
     t = re.sub(r",?\s*o czym (?:mogliście przeczytać|informowaliśmy|pisaliśmy) tutaj\s*\.?", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\s*Więcej szczegółów (?:wkrótce|podamy niebawem|w materiale)\.?", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\s*Sprawdzaj wynik na żywo i online!?", "", t, flags=re.IGNORECASE)
+    t = re.sub(
+        r"\b(?:ABY\s+ODSŁUCHAĆ\s+ROZMOWĘ(?:,\s*)?)?KLIKNIJ\s+(?:NA\s+ZDJĘCIE\s+POWYŻEJ|TUTAJ\s+ABY\s+ODSŁUCHAĆ)[.!:\s]*",
+        " ",
+        t,
+        flags=re.IGNORECASE,
+    )
 
-    # Usuń ucięty koniec z […] lub [...] (lub urwane zdanie przed nim) jeśli wcześniej są pełne zdania
-    m_ellip = re.search(r"\[\s*(?:\.\.\.|…)\s*\]\s*$", t)
+    # Usuń ucięty koniec z […], [...] lub gołym wielokropkiem … / ... (do poprzedniego pełnego zdania)
+    m_ellip = re.search(r"(?:\[\s*(?:\.\.\.|…)\s*\]|(?:\.\.\.|…))\s*$", t)
     if m_ellip:
         before = t[:m_ellip.start()].rstrip()
         last_stop = max(before.rfind(". "), before.rfind("! "), before.rfind("? "))
         if last_stop >= 50:
             t = before[:last_stop + 1]
-        else:
+        elif m_ellip.group(0).lstrip().startswith("["):
             t = before + "…"
 
     return polish_typography_clean(t)
@@ -2244,10 +2451,6 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
     facts = []  # [{"text": str, "tokens": set, "nums": set, "outlets": list, "is_primary": bool}]
 
     is_single_source_group = len({it["outlet"] for it in ranked_group}) == 1
-    _CAUSAL_RE = re.compile(
-        r"\b(?:pow[oó]d|powodem|dlaczego|przyczyn\w*|skutk\w*|ponieważ|dlatego|oznacza|wyjaśn\w*|argument\w*|nadwyżk\w*|drugi\w*|sił[ayę]\s+wyższ\w*)\b",
-        re.IGNORECASE,
-    )
 
     for idx_it, it in enumerate(ranked_group):
         outlet = it["outlet"]
@@ -2723,6 +2926,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
 
     def item_rank(it):
         return (
+            0 if _is_clickbait_title(it.get("title", "")) else 1,
             1 if it["outlet"] in PREFERRED_PRIMARY_OUTLETS else 0,
             1 if (ENABLE_THUMBNAILS and it.get("thumbnail")) else 0,
             len(it.get("description", "")),
@@ -2733,7 +2937,12 @@ def build_article_from_group(group: list, art_id: int) -> dict:
     thumbnail_url = next((it["thumbnail"] for it in ranked_group if it.get("thumbnail")), "") if ENABLE_THUMBNAILS else ""
     sources = sorted(list({it["outlet"] for it in ranked_group}))
 
-    clean_title = polish_typography_clean(primary["title"])
+    raw_primary_title = polish_typography_clean(primary["title"])
+    clean_title = (
+        _neutralize_clickbait_title(raw_primary_title)
+        if _is_clickbait_title(raw_primary_title)
+        else _clean_title_artifacts(raw_primary_title)
+    )
     art_path = infer_category_path(primary["path"], primary.get("link", ""), clean_title, primary.get("description", ""))
     if art_path == "/Polska" and len(ranked_group) >= 2:
         combined_titles = " ".join(it.get("title") or "" for it in ranked_group)
@@ -2742,6 +2951,9 @@ def build_article_from_group(group: list, art_id: int) -> dict:
     slug = _make_clean_slug(clean_title)
     sections, fact_agreement_pct = synthesize_article_sections(ranked_group, clean_title)
     summary_lead, meta_description, keywords = _build_meta_and_summary(clean_title, sections, art_path, sources)
+    declickbait = _build_declickbait_entries(
+        clean_title, raw_primary_title, ranked_group, summary_lead=summary_lead, sections=sections
+    )
 
     perspectives = [
         {
@@ -2770,7 +2982,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
         "fact_agreement_pct": fact_agreement_pct,
         "admin_note": "",
         "metrics": metrics,
-        "declickbait": [],
+        "declickbait": declickbait,
         "full_sections": sections,
         "perspectives": perspectives,
         "sources": sources,
@@ -2862,7 +3074,16 @@ def _extract_candidates_from_article(art: dict) -> list:
 
 
 def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: bool = False):
-    title = polish_typography_clean(art.get("seo_title") or (candidates[0]["title"] if candidates else ""))
+    raw_title = polish_typography_clean(art.get("seo_title") or (candidates[0]["title"] if candidates else ""))
+    title = _neutralize_clickbait_title(raw_title) if _is_clickbait_title(raw_title) else _clean_title_artifacts(raw_title)
+    if _is_clickbait_title(raw_title) and len(candidates) >= 2:
+        raw_toks = tokenize_title(raw_title) - GENERIC_TOPIC_TOKENS
+        for c in candidates:
+            ct = _clean_title_artifacts(c.get("title") or "")
+            if ct and not _is_clickbait_title(ct) and len((tokenize_title(ct) - GENERIC_TOPIC_TOKENS) & raw_toks) >= 2:
+                title = ct
+                break
+    art["seo_title"] = title
     art_path = art.get("path") or "/Polska"
     sources = sorted(list({c["outlet"] for c in candidates if c.get("outlet")}))
     primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
@@ -2904,6 +3125,15 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
     art["meta_description"] = meta_desc
     art["keywords"] = keywords
     art["metrics"] = _metrics_for_article(sources, art_path, primary_outlet)
+
+    merged_dc = list(art.get("declickbait") or [])
+    seen_dc = {(d.get("original") or "").strip().lower() for d in merged_dc}
+    for dc in _build_declickbait_entries(title, raw_title, candidates, summary_lead=summary_lead, sections=new_secs):
+        key = (dc.get("original") or "").strip().lower()
+        if key and key not in seen_dc:
+            merged_dc.append(dc)
+            seen_dc.add(key)
+    art["declickbait"] = merged_dc[:3]
     _ARTICLE_PROFILE_CACHE.pop(id(art), None)
 
 
@@ -2922,8 +3152,14 @@ def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
         "description": existing_art.get("summary_lead") or "",
         "path": existing_art.get("path") or "/Polska",
     }
+    cur_plain_len = sum(
+        len(_strip_all_citations(p))
+        for sec in (existing_art.get("full_sections") or [])
+        for p in (sec.get("paragraphs") or [])
+    )
 
     added_any = False
+    newly_added_outlets = []
     for it in group:
         out_name = (it.get("outlet") or "").strip()
         if not out_name:
@@ -2940,7 +3176,9 @@ def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
             if not existing_c.get("link") and it_link:
                 existing_c["link"] = it_link
                 added_any = True
-            if len(it_desc) > len(existing_c.get("description") or "") + 40:
+            existing_dlen = len(existing_c.get("description") or "")
+            # Nie przeliczaj ponownie artykułu co godzinę, jeśli to źródło i artykuł mają już pełną treść
+            if (existing_dlen < 120 or cur_plain_len < 480) and len(it_desc) > existing_dlen + 80:
                 existing_c["description"] = it_desc
                 added_any = True
             continue
@@ -2955,12 +3193,24 @@ def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
         }
         candidates.append(new_cand)
         by_outlet[out_name] = new_cand
+        newly_added_outlets.append((out_name, it_link))
         added_any = True
         if ENABLE_THUMBNAILS and not existing_art.get("thumbnail_url") and it.get("thumbnail"):
             existing_art["thumbnail_url"] = it["thumbnail"]
 
     if added_any:
         _apply_candidates_to_article(existing_art, candidates, preserve_seo_url=True)
+        if newly_added_outlets:
+            corrs = list(existing_art.get("corrections") or [])
+            seen_urls = {(c.get("evidence_url") or "").strip() for c in corrs if c.get("evidence_url")}
+            seen_claims = {(c.get("claim_text") or "").strip() for c in corrs}
+            for new_out, new_url in newly_added_outlets:
+                claim = f"Dopisano źródło: {new_out} (aktualizacja wieloźródłowa)"
+                if new_url and new_url not in seen_urls and claim not in seen_claims:
+                    corrs.append({"claim_text": claim, "evidence_url": new_url})
+                    seen_urls.add(new_url)
+                    seen_claims.add(claim)
+            existing_art["corrections"] = corrs[-5:]
     return added_any
 
 
@@ -3584,7 +3834,165 @@ def print_cycle_summary(articles: list) -> dict:
     return stats
 
 
-def update_news_cycle(fetch_live: bool = True):
+def _trim_articles_with_balance(articles: list, max_total: int = MAX_TOTAL_ARTICLES) -> list:
+    """
+    Sortuje bazę chronologicznie (malejąco) i balansuje udział działów regionalnych/niszowych:
+    - Każde z 16 województw zachowuje wszystkie artykuły wieloźródłowe oraz maks. max(2, 5 - multi)
+      najnowszych artykułów 1-źródłowych (chroni min. 5 artykułów w regionie, utrzymując >=80% wieloźródłowości).
+    - /Polska/Energetyka zachowuje maks. 3 najnowsze artykuły 1-źródłowe.
+    """
+    ordered = sorted(list(articles or []), key=lambda a: a.get("published_iso") or "", reverse=True)
+    if not ordered:
+        return []
+
+    voiv_paths = set(seo_builder.VOIVODESHIP_BY_PATH.keys())
+    reg_multi = {vp: 0 for vp in voiv_paths}
+    for a in ordered:
+        p = a.get("path") or ""
+        if p in voiv_paths and len(a.get("sources") or []) >= 2:
+            reg_multi[p] += 1
+
+    reg_single_cap = {vp: max(2, 5 - reg_multi[vp]) for vp in voiv_paths}
+    reg_single_seen = {vp: 0 for vp in voiv_paths}
+    energ_single_seen = 0
+
+    balanced = []
+    for a in ordered:
+        p = a.get("path") or ""
+        is_single = len(a.get("sources") or []) <= 1
+        if p in voiv_paths and is_single:
+            if reg_single_seen[p] >= reg_single_cap[p]:
+                continue
+            reg_single_seen[p] += 1
+        elif p == "/Polska/Energetyka" and is_single:
+            if energ_single_seen >= 3:
+                continue
+            energ_single_seen += 1
+        balanced.append(a)
+
+    if len(balanced) <= max_total:
+        return balanced
+
+    protected_ids = set()
+    v_kept_counts = {vp: 0 for vp in voiv_paths}
+    for a in balanced:
+        p = a.get("path") or ""
+        if p in voiv_paths and v_kept_counts[p] < 5:
+            protected_ids.add(id(a))
+            v_kept_counts[p] += 1
+
+    excess = len(balanced) - max_total
+    drop_indices = set()
+    for idx in range(len(balanced) - 1, -1, -1):
+        if excess <= 0:
+            break
+        a = balanced[idx]
+        if id(a) in protected_ids:
+            continue
+        if len(a.get("sources") or []) <= 1:
+            drop_indices.add(idx)
+            excess -= 1
+    for idx in range(len(balanced) - 1, -1, -1):
+        if excess <= 0:
+            break
+        if idx in drop_indices or id(balanced[idx]) in protected_ids:
+            continue
+        drop_indices.add(idx)
+        excess -= 1
+    for idx in range(len(balanced) - 1, -1, -1):
+        if excess <= 0:
+            break
+        if idx not in drop_indices:
+            drop_indices.add(idx)
+            excess -= 1
+
+    return [a for idx, a in enumerate(balanced) if idx not in drop_indices]
+
+
+def run_quality_gate(
+    articles: list,
+    min_multi_pct: float = 78.0,
+    min_voivodeships: int = 16,
+    max_para_chars: int = 650,
+) -> tuple:
+    """Weryfikuje twarde progi jakościowe i czystość HTML/CTA bazy artykułów."""
+    items = list(articles or [])
+    errors = []
+    if not items:
+        return False, ["Baza artykułów jest pusta (0 wpisów)."]
+
+    stats = summarize_cycle_quality(items)
+    if stats["multi_source_pct"] < min_multi_pct:
+        errors.append(
+            f"Udział wieloźródłowych {stats['multi_source_pct']:.1f}% < wymaganego progu {min_multi_pct:.1f}%."
+        )
+    if stats["voivodeships_covered"] < min_voivodeships:
+        errors.append(
+            f"Pokrycie województw {stats['voivodeships_covered']}/{stats['voivodeships_total']} < {min_voivodeships}."
+        )
+    if stats["zero_source_count"] > 0:
+        errors.append(f"Wykryto {stats['zero_source_count']} artykułów bez źródeł.")
+
+    entity_re = re.compile(r"&(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);")
+    cta_re = re.compile(r"(?:ABY\s+ODSŁUCHAĆ\s+ROZMOWĘ|KLIKNIJ\s+NA\s+ZDJĘCIE\s+POWYŻEJ)", re.IGNORECASE)
+    html_tag_re = re.compile(r"</?(?:p|div|span|img|a|br|script|style|iframe)\b", re.IGNORECASE)
+    seen_urls = set()
+
+    for art in items:
+        aid = art.get("id", "?")
+        seo_url = (art.get("seo_url") or "").strip()
+        seo_title = (art.get("seo_title") or "").strip()
+        lead = (art.get("summary_lead") or "").strip()
+        srcs = art.get("sources") or []
+        secs = art.get("full_sections") or []
+        persps = art.get("perspectives") or []
+        primary_url = persps[0].get("url", "") if persps else ""
+
+        if not seo_url or not seo_url.startswith("/"):
+            errors.append(f"Niepoprawny seo_url w id={aid}.")
+        elif seo_url in seen_urls:
+            errors.append(f"Duplikat seo_url: {seo_url}.")
+        seen_urls.add(seo_url)
+
+        if not seo_title:
+            errors.append(f"Brak seo_title w id={aid}.")
+        elif is_opinion_or_blacklisted(seo_title, primary_url):
+            errors.append(f"Niedozwolony materiał opiniowy/spamowy w id={aid}: {seo_title[:80]}")
+
+        if not lead:
+            errors.append(f"Brak summary_lead w id={aid}.")
+
+        if len(srcs) <= 1:
+            if art.get("fact_agreement_pct") is not None:
+                errors.append(f"Artykuł 1-źródłowy ma niezerowy procent zgodności w id={aid}.")
+            if art.get("path") not in LOCAL_PATHS and not (srcs and srcs[0] in NICHE_OUTLETS):
+                errors.append(f"1-źródłowy spoza lokalnych/niszowych w id={aid}: {art.get('path')} ({srcs})")
+        else:
+            pct = art.get("fact_agreement_pct")
+            if pct is None or not (75 <= pct <= 99):
+                errors.append(f"Niepoprawny fact_agreement_pct={pct} w id={aid}.")
+
+        if not secs:
+            errors.append(f"Puste full_sections w id={aid}.")
+
+        for field_val in (seo_title, lead):
+            if entity_re.search(field_val) or cta_re.search(field_val) or html_tag_re.search(field_val):
+                errors.append(f"Nieoczyszczony szum HTML/CTA w nagłówku/leadzie id={aid}.")
+                break
+
+        for s in secs:
+            for p in (s.get("paragraphs") or []):
+                if entity_re.search(p) or cta_re.search(p) or html_tag_re.search(p):
+                    errors.append(f"Nieoczyszczony szum HTML/CTA w treści id={aid}.")
+                    break
+                if len(_strip_all_citations(p)) > max_para_chars:
+                    errors.append(f"Zbyt długi akapit (>{max_para_chars} zn.) w id={aid}.")
+                    break
+
+    return (len(errors) == 0), errors
+
+
+def update_news_cycle(fetch_live: bool = True, quality_gate: bool = False) -> bool:
     base_dir = os.path.dirname(os.path.abspath(__file__))
     articles_path = os.path.join(base_dir, "articles.json")
 
@@ -3641,6 +4049,7 @@ def update_news_cycle(fetch_live: bool = True):
         print(f"[DEDUP] Scalono {before_dedup - len(existing_articles)} zduplikowanych artykułów o tych samych wydarzeniach.")
 
     new_articles = []
+    touched_ids = set()
     if fetch_live:
         print("Pobieranie wiadomości z polskich kanałów RSS...")
         raw_items = fetch_rss_items()
@@ -3652,6 +4061,7 @@ def update_news_cycle(fetch_live: bool = True):
             matched_existing = find_matching_existing_article(grp, existing_articles)
             if matched_existing is not None:
                 if merge_cluster_into_article(matched_existing, grp):
+                    touched_ids.add(id(matched_existing))
                     enriched_count += 1
         if enriched_count:
             print(f"[MERGE] Dopisano nowe źródła do {enriched_count} istniejących artykułów.")
@@ -3664,34 +4074,55 @@ def update_news_cycle(fetch_live: bool = True):
                 continue
             matched = find_matching_existing_article(grp, existing_articles + new_articles)
             if matched is not None:
-                merge_cluster_into_article(matched, grp)
+                if merge_cluster_into_article(matched, grp):
+                    touched_ids.add(id(matched))
                 continue
             _enrich_group_from_urls(grp)
             art = build_article_from_group(grp, len(new_articles) + 1)
             new_articles.append(art)
+            touched_ids.add(id(art))
 
-        if len(new_articles) < MAX_NEW_PER_RUN:
-            for grp in clusters:
-                if len(new_articles) >= MAX_NEW_PER_RUN:
-                    break
-                unique_groups = {it.get("group") or it["outlet"] for it in grp}
-                if len(unique_groups) == 1 and is_local_or_niche_item(grp[0]):
-                    if not is_already_covered(grp, existing_articles + new_articles):
-                        _enrich_group_from_urls(grp)
-                        art = build_article_from_group(grp, len(new_articles) + 1)
-                        plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
-                        if plain_len < 160:
-                            continue
-                        new_articles.append(art)
-                        break
-
-        # Dedykowana pula regionalna (priorytetowo wypełnia województwa z 0 artykułów, dalej rotuje od najmniej licznych)
         reg_counts = {vp: 0 for vp in seo_builder.VOIVODESHIP_BY_PATH}
         for ext in existing_articles + new_articles:
             ep = ext.get("path") or ""
             if ep in reg_counts:
                 reg_counts[ep] += 1
 
+        if len(new_articles) < MAX_NEW_PER_RUN:
+            energ_single_cnt = sum(
+                1 for ext in (existing_articles + new_articles)
+                if (ext.get("path") or "") == "/Polska/Energetyka" and len(ext.get("sources") or []) <= 1
+            )
+            for grp in clusters:
+                if len(new_articles) >= MAX_NEW_PER_RUN:
+                    break
+                unique_groups = {it.get("group") or it["outlet"] for it in grp}
+                if len(unique_groups) == 1 and is_local_or_niche_item(grp[0]):
+                    lead_it = grp[0]
+                    cand_p = infer_category_path(
+                        lead_it.get("path") or "/Polska",
+                        lead_it.get("link") or "",
+                        lead_it.get("title") or "",
+                        lead_it.get("description") or "",
+                    )
+                    if cand_p in reg_counts and reg_counts[cand_p] >= REGIONAL_SATURATION_CAP:
+                        continue
+                    if cand_p == "/Polska/Energetyka" and energ_single_cnt >= 3:
+                        continue
+                    if not is_already_covered(grp, existing_articles + new_articles):
+                        _enrich_group_from_urls(grp)
+                        art = build_article_from_group(grp, len(new_articles) + 1)
+                        plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
+                        min_req = 600 if cand_p == "/Polska/Energetyka" else 160
+                        if plain_len < min_req:
+                            continue
+                        new_articles.append(art)
+                        touched_ids.add(id(art))
+                        if cand_p in reg_counts:
+                            reg_counts[cand_p] += 1
+                        break
+
+        # Dedykowana pula regionalna (priorytetowo wypełnia województwa z 0 artykułów, dalej rotuje od najmniej licznych)
         reg_candidates = []
         for grp in clusters:
             lead_it = grp[0]
@@ -3712,12 +4143,17 @@ def update_news_cycle(fetch_live: bool = True):
         for _, _, cand_path, grp in reg_candidates:
             if cand_path in added_reg_paths:
                 continue
+            unique_groups = {it.get("group") or it["outlet"] for it in grp}
+            is_single_reg = len(unique_groups) <= 1
             is_empty_region = reg_counts.get(cand_path, 0) == 0
+            if is_single_reg and reg_counts.get(cand_path, 0) >= REGIONAL_SATURATION_CAP:
+                continue
             if not is_empty_region and added_reg >= MAX_REGIONAL_PER_RUN:
                 continue
             matched = find_matching_existing_article(grp, existing_articles + new_articles)
             if matched is not None:
-                merge_cluster_into_article(matched, grp)
+                if merge_cluster_into_article(matched, grp):
+                    touched_ids.add(id(matched))
                 continue
             _enrich_group_from_urls(grp)
             art = build_article_from_group(grp, len(new_articles) + 1)
@@ -3725,6 +4161,7 @@ def update_news_cycle(fetch_live: bool = True):
             if len(art.get("sources") or []) <= 1 and plain_len < (80 if is_empty_region else 160):
                 continue
             new_articles.append(art)
+            touched_ids.add(id(art))
             reg_counts[cand_path] = reg_counts.get(cand_path, 0) + 1
             added_reg += 1
             added_reg_paths.add(cand_path)
@@ -3735,12 +4172,16 @@ def update_news_cycle(fetch_live: bool = True):
 
         print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
 
-    # 4. Połącz, ustabilizuj po scaleniach i posortuj chronologicznie (malejąco)
-    combined = [u for a in (new_articles + existing_articles) if (u := _upgrade_existing_article(a)) is not None]
+    # 4. Połącz, zdeduplikuj i zbalansuj chronologicznie (malejąco, bez przypinania declickbait)
+    combined = new_articles + existing_articles
+    before_step4_dedup = len(combined)
     combined = deduplicate_existing_articles(combined)
-    combined = [u for a in combined if (u := _upgrade_existing_article(a)) is not None]
-    combined.sort(key=lambda a: (1 if (a.get("declickbait") or []) else 0, a.get("published_iso") or ""), reverse=True)
-    combined = combined[:MAX_TOTAL_ARTICLES]
+    if len(combined) < before_step4_dedup:
+        combined = [
+            a if id(a) in touched_ids else (u if (u := _upgrade_existing_article(a)) is not None else a)
+            for a in combined
+        ]
+    combined = _trim_articles_with_balance(combined, MAX_TOTAL_ARTICLES)
 
     _ensure_unique_seo_urls(combined)
     _assign_stable_ids(combined)
@@ -3754,13 +4195,41 @@ def update_news_cycle(fetch_live: bool = True):
     seo_builder.build_all_seo_artifacts(base_dir, combined)
 
     # 8. Wypisz podsumowanie jakościowe cyklu (wieloźródłowość, działy, 16 województw)
-    print_cycle_summary(combined)
+    stats = print_cycle_summary(combined)
+
+    if quality_gate:
+        ok, errs = run_quality_gate(combined)
+        if not ok:
+            print("\n[QUALITY-GATE] FAIL:", file=sys.stderr)
+            for err in errs:
+                print(f"  - {err}", file=sys.stderr)
+            return False
+        print(
+            f"\n[QUALITY-GATE] PASS: {stats['multi_source_pct']:.1f}% wieloźródłowych, "
+            f"{stats['voivodeships_covered']}/{stats['voivodeships_total']} województw."
+        )
+    return True
 
 
 if __name__ == "__main__":
     if "--audit-feeds" in sys.argv:
         sys.exit(audit_feeds())
+    if "--check-only" in sys.argv:
+        articles_json_path = os.path.join(_THIS_DIR, "articles.json")
+        with open(articles_json_path, "r", encoding="utf-8") as af:
+            loaded_arts = json.load(af)
+        print_cycle_summary(loaded_arts)
+        ok, errs = run_quality_gate(loaded_arts)
+        if not ok:
+            print("\n[QUALITY-GATE] FAIL:", file=sys.stderr)
+            for err in errs:
+                print(f"  - {err}", file=sys.stderr)
+            sys.exit(1)
+        print("\n[QUALITY-GATE] PASS")
+        sys.exit(0)
     no_fetch = "--rebuild-only" in sys.argv
-    update_news_cycle(fetch_live=not no_fetch)
+    enforce_gate = "--quality-gate" in sys.argv
+    passed = update_news_cycle(fetch_live=not no_fetch, quality_gate=enforce_gate)
+    sys.exit(0 if passed else 1)
 
 
