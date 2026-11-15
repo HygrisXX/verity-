@@ -3,6 +3,133 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/rzeszow-dobija-do-200-tysiecy-mieszkancow-stawka-pozycja-miasta-na-tle/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:24+01:00</news:publication_date>
+      <news:title>Rzeszów dobija do 200 tysięcy mieszkańców. Stawką pozycja miasta na tle kraju</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/zabojstwo-w-powiecie-olsztynskim-sledczy-ujawnili-jak-mial-zginac-59/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:24+01:00</news:publication_date>
+      <news:title>Zabójstwo w powiecie olsztyńskim. Śledczy ujawnili, jak miał zginąć 59-latek</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/110-lat-temu-zmarl-henryk-sienkiewicz-pierwszy-polski-noblista/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:24+01:00</news:publication_date>
+      <news:title>110 lat temu zmarł Henryk Sienkiewicz. Pierwszy polski noblista</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/b11658d3d2fb1550134d77b51bf04b58_xl-150x150.jpg</image:loc>
+      <image:title>110 lat temu zmarł Henryk Sienkiewicz. Pierwszy polski noblista</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/marszalek-calbecki-oglasza-w-toruniu-beda-szkolenia-artylerii/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:21+01:00</news:publication_date>
+      <news:title>Marszałek Całbecki ogłasza: w Toruniu będą szkolenia artylerii</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tylkotorun.pl/wp-content/uploads/2022/10/312801680_421133893540294_3107813880118065204_n-600x400.jpg</image:loc>
+      <image:title>Marszałek Całbecki ogłasza: w Toruniu będą szkolenia artylerii</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/nie-zyje-jeden-z-dowodcow-hamasu-odegral-kluczowa-role-w-ataku-z-2023-r/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:20+01:00</news:publication_date>
+      <news:title>Nie żyje jeden z dowódców Hamasu. Odegrał kluczową rolę w ataku z 2023 r.</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ5C1UHX9GI9P-C321.webp</image:loc>
+      <image:title>Nie żyje jeden z dowódców Hamasu. Odegrał kluczową rolę w ataku z 2023 r.</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/darmowe-badania-juz-dla-dwudziestolatkow-oto-kto-moze-skorzystac/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:19+01:00</news:publication_date>
+      <news:title>Darmowe badania już dla dwudziestolatków. Oto kto może skorzystać</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/1e354a7e-4e5d-4b83-bb91-98dd020bec25</image:loc>
+      <image:title>Darmowe badania już dla dwudziestolatków. Oto kto może skorzystać</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/odsetki-znamy-z-inwestowaniem-gorzej-pie-sprawdzil-wiedze-finansowa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:18+01:00</news:publication_date>
+      <news:title>Odsetki znamy, z inwestowaniem gorzej. PIE sprawdził wiedzę finansową Polaków</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/jakub-zerdzicki-frzQjfeBI_c-unsplash.jpg</image:loc>
+      <image:title>Odsetki znamy, z inwestowaniem gorzej. PIE sprawdził wiedzę finansową Polaków</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/tragiczny-wypadek-na-podhalu-nie-zyje-dwoch-mezczyzn/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:17+01:00</news:publication_date>
+      <news:title>Tragiczny wypadek na Podhalu. Nie żyje dwóch mężczyzn</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJ5DGB3G2XL63-C321.webp</image:loc>
+      <image:title>Tragiczny wypadek na Podhalu. Nie żyje dwóch mężczyzn</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo-niepokojace/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T10:41:15+01:00</news:publication_date>
+      <news:title>W miejscu poszukiwań Emilii Koprowskiej odnaleziono ciało. Niepokojące informacje z Darłowa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/oaek9kuTURBXy9iMjQxMDIzZi1lOGI2LTQxNjgtOTdhNi00YTU4MTRkYTQ0ZWQuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
+      <image:title>W miejscu poszukiwań Emilii Koprowskiej odnaleziono ciało. Niepokojące informacje z Darłowa</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/100-ciekawych-miejsc-ktore-warto-zobaczyc-w-wojewodztwie-podlaskim/</loc>
     <news:news>
       <news:publication>
@@ -363,21 +490,6 @@
     <image:image>
       <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6af962d359f9f4_58903339.jpg</image:loc>
       <image:title>Polscy piłkarze zignorowali dziennikarzy. Tylko dwa wyjątki</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/duzy-pozar-pod-krakowem-ranna-druhna-osp/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-15T08:02:35+01:00</news:publication_date>
-      <news:title>Duży pożar pod Krakowem. Ranna druhna OSP</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/o4/o4scyiutoitn3pui9y278dyezyhuqpid.jpg</image:loc>
-      <image:title>Duży pożar pod Krakowem. Ranna druhna OSP</image:title>
     </image:image>
   </url>
   <url>
@@ -1066,6 +1178,10 @@
       <news:publication_date>2026-11-14T23:30:17+01:00</news:publication_date>
       <news:title>Olsztyński szpital zmieni wygląd po zmroku. Za tą akcją kryje się ważne przesłanie</news:title>
     </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2019/11/AdobeStock_101846844.jpeg</image:loc>
+      <image:title>Olsztyński szpital zmieni wygląd po zmroku. Za tą akcją kryje się ważne przesłanie</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/katowice-szykuja-sie-na-zime-5300-ton-soli-i-118-pojazdow/</loc>
@@ -3850,66 +3966,6 @@
     <image:image>
       <image:loc>https://rmf.rmffm.pl/news/attachments/6b/5a/michal-jaros-fot-636x421-6b5af87c.jpg</image:loc>
       <image:title>„Ręce precz od Republiki”. Atak na biuro posła KO</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
-      <news:title>Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/60e3dd06e527c52f1f3e1a8d52db7605/dron-rozpoznawczy-vector?t=crop:4349:1901:nowe:0:129,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
-      <news:title>Jak bardzo wzrosły ceny? Są nowe dane o inflacji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvc/nNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQj/AwMDAwMDAwMDAwMDc3MDE1NDcvZmlsZXMvc3VwZXJtYXJ/rZXQtemFrdXB5LTM5MzA4MzM0LmpwZyIsInciOjM4NDB9</image:loc>
-      <image:title>Jak bardzo wzrosły ceny? Są nowe dane o inflacji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/przelewy-natychmiastowe-w-ii-kw-2026-kolejne-rekordy-express-elixira/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
-      <news:title>Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cashless.86eccc8cd4d75212496aabd35095cfe4.eu.r2.cloudflarestorage.com/system/uploads/ckeditor/pictures/3417/content_kir.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Credential=3b14ef0c715f100a6ab42ce1213f28b0%2F20261109%2Fauto%2Fs3%2Faws4_request&amp;amp;X-Amz-Date=20261109T000000Z&amp;amp;X-Amz-Expires=604800&amp;amp;X-Amz-SignedHeaders=host&amp;amp;X-Amz-Signature=44b18807085014473919410b46f412b0996c489c3a96d45ef84011e8a9ad4ae6</image:loc>
-      <image:title>Przelewy natychmiastowe w II kw. 2026: kolejne rekordy Express Elixira, BlueCash z wzrostem wartości</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/blik-place-pozniej-z-opcja-rat-bank-millennium-otwiera-nowy-rozdzial-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T10:54:04+01:00</news:publication_date>
-      <news:title>Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://mamstartup.pl/wp-content/uploads/2023/02/blik.jpg</image:loc>
-      <image:title>Blik Płacę Później z opcją rat. Bank Millennium otwiera nowy rozdział w płatnościach odroczonych</image:title>
     </image:image>
   </url>
 </urlset>
