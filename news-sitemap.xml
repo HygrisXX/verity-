@@ -3,6 +3,77 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/woda-z-automatu-za-60-groszy-czy-jest-lepsza-od-kranowki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T05:50:42+01:00</news:publication_date>
+      <news:title>Woda z automatu za 60 groszy. Czy jest lepsza od kranówki?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://4lomza.pl/foto/2026/11/261113182610_2.jpg</image:loc>
+      <image:title>Woda z automatu za 60 groszy. Czy jest lepsza od kranówki?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/matka-chrzestna-promu-przyznaje-co-bylo-najtrudniejsze/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T05:50:41+01:00</news:publication_date>
+      <news:title>Matka chrzestna promu przyznaje, co było najtrudniejsze</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-13_179456109010.jpg</image:loc>
+      <image:title>Matka chrzestna promu przyznaje, co było najtrudniejsze</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/wloclawski-zaklad-radioterapii-dziala-bez-zaklocen-bydgoskie-centrum/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T05:50:41+01:00</news:publication_date>
+      <news:title>Włocławski Zakład Radioterapii działa bez zakłóceń. Bydgoskie Centrum Onkologii to potwierdza</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/kupuj-trzymaj-sprzedaj-rekomendacje-dla-akcji-z-gpw-46-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T05:50:38+01:00</news:publication_date>
+      <news:title>Kupuj, trzymaj, sprzedaj. Rekomendacje dla akcji z GPW 46/2026</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://comparic.pl/comparic.pl/wp-content/uploads/2026/09/insiderzy-inside-trading-gpw-AI-32423423-hossa-freepik-cc-43534-150x150.webp</image:loc>
+      <image:title>Kupuj, trzymaj, sprzedaj. Rekomendacje dla akcji z GPW 46/2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/top-10-tygodnia-allegro-i-inpost-koncza-spor-powrot-piotra-i-pawla/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T05:50:38+01:00</news:publication_date>
+      <news:title>TOP 10 Tygodnia: Allegro i InPost kończą spór, powrót Piotra i Pawła, premie w Stokrotce, a Dino celuje w 800 </news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821324.png</image:loc>
+      <image:title>TOP 10 Tygodnia: Allegro i InPost kończą spór, powrót Piotra i Pawła, premie w Stokrotce, a Dino celuje w 800 </image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wielka-inwestycja-pkp-intercity-w-lublinie-coraz-blizej-wplynelo/</loc>
     <news:news>
       <news:publication>
@@ -2887,21 +2958,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/starshield-ponownie-ograniczony-dla-ukrainy-zelenski-alarmuje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T21:44:09+01:00</news:publication_date>
-      <news:title>Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/03/31/320x240px/2dA1VoFwswU4nhhSIURUdY60uH3hsowpoY74ZRMI.btd7.jpg</image:loc>
-      <image:title>Starshield ponownie ograniczony dla Ukrainy. Zełeński alarmuje</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/tankowiec-uderzyl-w-statek-wycieczkowy-dramatyczna-akcja-ratunkowa-na/</loc>
     <news:news>
       <news:publication>
@@ -3484,21 +3540,6 @@
     <image:image>
       <image:loc>https://rmf.rmffm.pl/news/attachments/02/4a/marcin-ociepa-fot-636x421-024a8b49.jpg</image:loc>
       <image:title>Co ze spotkaniem Tuska i Nawrockiego? Ociepa: Nie chodzi o byle jaką jedność</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/nvidia-ciagnie-wall-street-w-dol-alphabet-korzysta-na-zamieszaniu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T05:54:48+01:00</news:publication_date>
-      <news:title>Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://comparic.pl/comparic.pl/wp-content/uploads/2026/08/hossa-bessa-wyniki-zyski-straty-AI-23423523235-freepik-cc-32325325-4-150x150.webp</image:loc>
-      <image:title>Nvidia ciągnie Wall Street w dół. Alphabet korzysta na zamieszaniu</image:title>
     </image:image>
   </url>
 </urlset>
