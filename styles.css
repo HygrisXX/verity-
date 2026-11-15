@@ -864,7 +864,24 @@ a.cite-link:hover { background: var(--accent); color: var(--on-accent); text-dec
   .source-filter-pills { gap: 0.34rem; }
   .source-filter-chip { padding: 0.28rem 0.58rem; font-size: 0.73rem; }
   .perspectives-expand-btn { width: 100%; }
+  .feed-load-more-btn { width: 100%; max-width: 320px; justify-content: center; }
 }
+
+.feed-load-more-wrap {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.65rem;
+  margin-top: 1.25rem; padding: 1.25rem 0.5rem 0.25rem;
+  border-top: 1px solid var(--border-color); text-align: center;
+}
+.feed-load-more-meta {
+  font-size: 0.78rem; color: var(--text-muted); font-variant-numeric: tabular-nums;
+}
+.feed-load-more-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--bg-surface); border: 1px solid var(--border-strong); color: var(--text-main);
+  padding: 0.52rem 1.2rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; cursor: pointer;
+  box-shadow: var(--shadow-sm); transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.feed-load-more-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 
 @media (max-width: 390px) {
   .brand-title { font-size: 1.2rem; }
@@ -876,7 +893,7 @@ a.cite-link:hover { background: var(--accent); color: var(--on-accent); text-dec
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
 @media print {
-  .reading-progress, .site-header, .top-utility, .site-footer, .article-aside, .back-link, .article-footer, .related, .source-filter-bar, .perspectives-more-wrap, .perspective-filter-btn { display: none !important; }
+  .reading-progress, .site-header, .top-utility, .site-footer, .article-aside, .back-link, .article-footer, .related, .source-filter-bar, .perspectives-more-wrap, .perspective-filter-btn, .feed-load-more-wrap { display: none !important; }
   .perspectives-box:not(.is-expanded) .perspective-col.is-collapsed-persp { display: flex !important; }
   body { background: #fff; color: #000; }
   .article-main { border: none; box-shadow: none; padding: 0; }

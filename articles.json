@@ -55,7 +55,8 @@
     "sources": [
       "Radio Kolor"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:31+01:00"
   },
   {
     "id": 1933936596,
@@ -113,7 +114,8 @@
     "sources": [
       "CzasNaOpole.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:31+01:00"
   },
   {
     "id": 387481035,
@@ -170,7 +172,8 @@
     "sources": [
       "NewsLubuski.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:31+01:00"
   },
   {
     "id": 1880535750,
@@ -184,7 +187,7 @@
     "published_iso": "2026-11-15T21:34:28+01:00",
     "display_date": "15.11.2026, 21:34",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "metrics": [
       {
@@ -210,8 +213,7 @@
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
           "Reprezentacja Polski w 2026 roku rozegra jeszcze jedno spotkanie. Już w najbliższy wtorek we Wrocławiu Biało-Czerwoni zmierzą się ze Szwecją. Będzie to okazja do rewanżu za dwie tegoroczne porażki – 2:3 w marcu w finale baraży i 1:3 we wrześniu w Lidze Narodów. [Źródło: Sport.pl, Polsat Sport]",
-          "Jan Urban może mieć problemy z wyborem składu na to spotkanie. Obrońca po starciu z Danielem Birligeą nabawił się wstrząśnienia mózgu. Napastnik reprezentacji Rumunii za to zdarzenie nie otrzymał nawet żółtej kartki, choć sędzia Sebastian Gishamer doskonale widział całą sytuację. [Źródło: Sport.pl, Polsat Sport]",
-          "Cash ironicznie skomentował to w mediach społecznościowych. [Źródło: Sport.pl]"
+          "Jan Urban może mieć problemy z wyborem składu na to spotkanie. Obrońca po starciu z Danielem Birligeą nabawił się wstrząśnienia mózgu. Napastnik reprezentacji Rumunii za to zdarzenie nie otrzymał nawet żółtej kartki, choć sędzia Sebastian Gishamer doskonale widział całą sytuację. [Źródło: Sport.pl, Polsat Sport]"
         ]
       },
       {
@@ -239,7 +241,8 @@
       "Polsat Sport",
       "Sport.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:28+01:00"
   },
   {
     "id": 200691542,
@@ -253,7 +256,7 @@
     "published_iso": "2026-11-15T21:34:28+01:00",
     "display_date": "15.11.2026, 21:34",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "metrics": [
       {
@@ -310,78 +313,8 @@
       "WP Wiadomości",
       "Wyborcza.pl"
     ],
-    "corrections": []
-  },
-  {
-    "id": 382222469,
-    "path": "/Sport",
-    "seo_url": "/Sport/rosjanie-wykluczeni-z-ms-jest-ostateczne-potwierdzenie",
-    "seo_title": "Rosjanie wykluczeni z MŚ. Jest ostateczne potwierdzenie",
-    "summary_lead": "Hokejowa reprezentacja Rosji nie wystąpi w mistrzostwach świata juniorów U-20, które na przełomie roku zostaną rozegrane w Kanadzie — informuje w niedzielnym komunikacie Międzynarodowa Federacja Hokeja na Lodzie (IIHF).",
-    "meta_description": "Hokejowa reprezentacja Rosji nie wystąpi w mistrzostwach świata juniorów U-20, które na przełomie roku zostaną rozegrane w Kanadzie — informuje w niedzielnym…",
-    "keywords": "Sport, Rosjanie, wykluczeni, ostateczne, potwierdzenie",
-    "thumbnail_url": "https://cdn.przegladsportowy.onet.pl/1/6JRk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy83ZTk2ZDZmYjQ5YzRiOGFhZTU2NWU0Zjg2MWJiNzM5NC5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE",
-    "published_iso": "2026-11-15T21:34:27+01:00",
-    "display_date": "15.11.2026, 21:34",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Sport"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Przegląd Sportowy"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Hokejowa reprezentacja Rosji nie wystąpi w mistrzostwach świata juniorów U-20, które na przełomie roku zostaną rozegrane w Kanadzie — informuje w niedzielnym komunikacie Międzynarodowa Federacja Hokeja na Lodzie (IIHF). Dokument wyjaśnia, że rosyjska ekipa nie będzie mogła wystąpić ze względu na stanowisko rządu Kanady i oficjalnie ogłoszone przez niego ograniczenia. [Źródło: Przegląd Sportowy]",
-          "MŚJ w hokeju bez reprezentacji Rosji \"Po dokładnej ocenie wykonalności alternatywnych rozwiązań Rada IIHF zdecydowała, że Kanada pozostanie gospodarzem, a turniej odbędzie się w dniach 26 grudnia 2026 r.-5 stycznia 2027 r. w Edmonton i Red Deer. Wszystkie uczestniczące reprezentacje narodowe zostały poinformowane\" — czytamy w komunikacie IIHF. [Źródło: Przegląd Sportowy]",
-          "Pod koniec listopada Trybunał Arbitrażowy ds. Sportu (CAS) w Lozannie orzekł, że rosyjskie drużyny muszą zostać dopuszczone do udziału w wydarzeniach organizowanych przez Międzynarodową Federację Hokeja na Lodzie (IIHF), w tym do udziału w mistrzostwach świata. CAS uchylił tym samym decyzje IIHF. [Źródło: Przegląd Sportowy]",
-          "Od tego czasu federacja wielokrotnie przedłużała zakaz — ostatni raz w styczniu bieżącego roku, argumentując to względami bezpieczeństwa. [Źródło: Przegląd Sportowy]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Kulisy podjęcia tej decyzji opisał Radosław Leniarski. W swoim tekście opisał m.in. że Trybunał utracił swoją wiarygodność i bezstronność, gdyż decyzję w sprawie podejmowali sędziowie dopiero co zaproszeni do Rosji.",
-          "\" CAS wyjaśniał potem, że zarzuty wobec Palermo i Selima są bezpodstawne, gdyż obaj arbitrzy wyjechali do Moskwy przed wyznaczeniem ich do rosyjskiej sprawy, a udział w kongresie był aktywnością niezwiązaną z pracą w Trybunale \". [Źródło: Sport.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Przegląd Sportowy",
-        "angle": "Relacja wiodąca",
-        "summary": "Rosjanie wykluczeni z MŚ. Jest ostateczne potwierdzenie",
-        "url": "https://przegladsportowy.onet.pl/hokej-na-lodzie/rosjanie-wykluczeni-z-ms-jest-ostateczne-potwierdzenie/t8pc9ez"
-      },
-      {
-        "outlet": "Sport.pl",
-        "angle": "Relacja sportowa",
-        "summary": "Jest ostateczna decyzja ws. występu Rosji na MŚ!",
-        "url": "https://www.sport.pl/hokej/7,64952,33133218,jest-ostateczna-decyzja-ws-wystepu-rosji-na-ms.html"
-      }
-    ],
-    "sources": [
-      "Przegląd Sportowy",
-      "Sport.pl"
-    ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:28+01:00"
   },
   {
     "id": 1698204158,
@@ -395,7 +328,7 @@
     "published_iso": "2026-11-15T21:34:25+01:00",
     "display_date": "15.11.2026, 21:34",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 88,
     "admin_note": "",
     "metrics": [
       {
@@ -420,16 +353,13 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "15.11.2026 22:03 Kłęby dymu unoszą się z pożarów w rafinerii ropy naftowej w Rosji – zdjęcie archiwalne – To nasza uzasadniona odpowiedź na odmowę Rosji w kwestii deeskalacji oraz jej ataki na ukraińską infrastrukturę energetyczną – dodał Zełenski. [Źródło: Rzeczpospolita, WP Wiadomości]",
-          "W wieczornym przemówieniu wideo prezydent Ukrainy przekazał, że naczelny dowódca Sił Zbrojnych Ukrainy Mychajło Drapaty złożył mu w niedzielę raport na temat ukraińskich uderzeń dalekiego zasięgu. Przekazał też, że w październiku w wyniku działań wojennych Rosja poniosła ogromne straty w ludziach – ponad 50 000 zabitych i rannych. [Źródło: Rzeczpospolita, WP Wiadomości]",
-          "Ukraińskie drony dalekiego zasięgu zaatakowały węzeł naftowy Samara w środkowej Rosji w pobliżu miejscowości Proswiet w obwodzie samarskim – poinfo... Według Zełenskiego Rosja wybiera jeden region jako cel i przez kilka dni koncentruje ataki na jego systemie energetycznym. Zaznaczył, że od początku września najwięcej uderzeń i trafień odnotowano w obwodzie dniepropietrowskim – 131. [Źródło: Rzeczpospolita, WP Wiadomości]"
+          "15.11.2026 22:03 Kłęby dymu unoszą się z pożarów w rafinerii ropy naftowej w Rosji – zdjęcie archiwalne – To nasza uzasadniona odpowiedź na odmowę Rosji w kwestii deeskalacji oraz jej ataki na ukraińską infrastrukturę energetyczną – dodał Zełenski. [Źródło: Rzeczpospolita, WP Wiadomości]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "— Obecnie niemal każdego dnia odnosimy kolejne sukcesy.",
-          "Łącznie do tej pory unieruchomiliśmy już ponad 55 proc. rosyjskich mocy przerobowych w sektorze rafineryjnym. Kolejne 125 ataków przeprowadzono na obwód kijowski, a ponad 100 trafień odnotowano w obwodach żytomierskim i sumskim. [Źródło: WP Wiadomości]"
+          "Ukraińskie drony dalekiego zasięgu zaatakowały węzeł naftowy Samara w środkowej Rosji w pobliżu miejscowości Proswiet w obwodzie samarskim – poinfo... [Źródło: WP Wiadomości]"
         ]
       }
     ],
@@ -451,7 +381,8 @@
       "Rzeczpospolita",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:25+01:00"
   },
   {
     "id": 1335334824,
@@ -520,7 +451,8 @@
       "Radio Rzeszów",
       "Rzeszow-News.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:24+01:00"
   },
   {
     "id": 1496905778,
@@ -561,15 +493,14 @@
         "paragraphs": [
           "15.11.2026 22:22 Prezydent USA Donald Trump I sekretarz generalny NATO Mark Rutte podczas szczytu w Ankarze NATO nie zorganizuje w 2027 r. szczytu przywódców w Albanii, choć Tirana została wcześniej wskazana jako gospodarz. Jak informuje Associated Press (AP), Sojusz ogranicza również liczbę spotkań ministerialnych. [Źródło: Rzeczpospolita, Polsat News, Kresy.pl]",
           "Zmiany następują w czasie napięć dotyczących wydatków obronnych, wojny w Ukrainie i konfliktu z Iranem. Premier Albanii Edi Rama potwierdził, że spotkanie nie odbędzie się w przyszłym roku. Państwa NATO nie uzgodniły jeszcze terminu kolejnego szczytu, ale 2027 r. jest wykluczony. [Źródło: Rzeczpospolita, Polsat News, Kresy.pl]",
-          "Jeśli przywódcy zbiorą się w 2028 r., gospodarzem będzie Tirana. Sekretarz generalny NATO Mark Rutte podkreślił w rozmowie z AP, że szczyty są organizowane wtedy, gdy są potrzebne. Jednoznaczne stanowisko Emmanuela Macrona Agencja zwróciła uwagę, że ministrowie obrony państw Sojuszu zazwyczaj spotykają się w październiku, a w tym roku takie rozmowy się nie odbyły. [Źródło: Rzeczpospolita, Kresy.pl, Polsat News]"
+          "Jeśli przywódcy zbiorą się w 2028 r., gospodarzem będzie Tirana. Sekretarz generalny NATO Mark Rutte podkreślił w rozmowie z AP, że szczyty są organizowane wtedy, gdy są potrzebne. Jednoznaczne stanowisko Emmanuela Macrona Agencja zwróciła uwagę, że ministrowie obrony państw Sojuszu zazwyczaj spotykają się w październiku, a w tym roku takie rozmowy się nie odbyły. [Źródło: Rzeczpospolita, Polsat News, Kresy.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Planowany szczyt w Albanii uwypukla wyzwania stojące przed sojuszem. Albania została wyznaczona na gospodarza przyszłorocznego szczytu w 2025 r., jednak jej nazwa została usunięta z lipcowej deklaracji szczytu – czytamy.",
           "Rosja właśnie tego chce AP podkreśla, że niektórzy sojusznicy zarzucają władzom w Tiranie, że nie przeznaczają odpowiednich środków na obronność, dlatego są niechętni wobec organizacji przez Albanię tak ważnego wydarzenia. [Źródło: Polsat News]",
-          "Jak podała w niedzielę agencja Associated Press, decyzja zapadła w czasie narastających rozbieżności między członkami Sojuszu w sprawach bezpieczeństwa i polityki obronnej. Organizujemy je wtedy, gdy są potrzebne” – powiedział, zaznaczając, że kolejne spotkanie przywódców odbędzie się, kiedy pojawi się taka konieczność. Ograniczenia obejmą także spotkania ministerialne. [Źródło: Kresy.pl]"
+          "Planowany szczyt w Albanii uwypukla wyzwania stojące przed sojuszem. Albania została wyznaczona na gospodarza przyszłorocznego szczytu w 2025 r., jednak jej nazwa została usunięta z lipcowej deklaracji szczytu – czytamy. Jak podała w niedzielę agencja Associated Press, decyzja zapadła w czasie narastających rozbieżności między członkami Sojuszu w sprawach bezpieczeństwa i polityki obronnej. [Źródło: Kresy.pl]"
         ]
       }
     ],
@@ -598,7 +529,8 @@
       "Polsat News",
       "Rzeczpospolita"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T21:34:23+01:00"
   },
   {
     "id": 798768767,
@@ -656,7 +588,8 @@
     "sources": [
       "Warszawa w Pigułce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:36:03+01:00"
   },
   {
     "id": 798973058,
@@ -717,7 +650,8 @@
     "sources": [
       "Opolska360.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:36:03+01:00"
   },
   {
     "id": 1320632664,
@@ -775,7 +709,8 @@
     "sources": [
       "Świdnica24.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:36:03+01:00"
   },
   {
     "id": 1067394793,
@@ -844,7 +779,8 @@
       "RadioMaryja.pl",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:36:01+01:00"
   },
   {
     "id": 24267526,
@@ -913,7 +849,8 @@
       "TVN24",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:36:00+01:00"
   },
   {
     "id": 553699852,
@@ -996,7 +933,8 @@
         "claim_text": "Dopisano źródło: Warszawa w Pigułce (aktualizacja wieloźródłowa)",
         "evidence_url": "https://warszawawpigulce.pl/pieniadze-moga-zniknac-z-emerytury-jeszcze-przed-wyplata-zus-wyjasnia-kiedy-ma-do-tego-prawo/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T20:35:59+01:00"
   },
   {
     "id": 532252928,
@@ -1078,7 +1016,8 @@
         "claim_text": "Dopisano źródło: CyberDefence24 (aktualizacja wieloźródłowa)",
         "evidence_url": "https://cyberdefence24.pl/cyberbezpieczenstwo/problemy-z-teamsami-outlookiem-copilotem-i-innymi-uslugami-microsoftu-co-sie-dzieje"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T20:35:58+01:00"
   },
   {
     "id": 637414399,
@@ -1160,7 +1099,8 @@
         "claim_text": "Dopisano źródło: RadioMaryja.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.radiomaryja.pl/kosciol/papiez-leon-xiv-kontynuuje-podroz-apostolska-po-ameryce-poludniowej/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T20:35:58+01:00"
   },
   {
     "id": 798410679,
@@ -1264,7 +1204,8 @@
         "claim_text": "Dopisano źródło: TVP3 Kielce (aktualizacja wieloźródłowa)",
         "evidence_url": "https://kielce.tvp.pl/96492416/korytkow-zderzenie-ciezarowki-z-osobowka-dw728-zablokowana"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T20:35:56+01:00"
   },
   {
     "id": 667556615,
@@ -1333,7 +1274,8 @@
       "Beskidzka24.pl",
       "Bielsko.biala.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:24+01:00"
   },
   {
     "id": 105255457,
@@ -1402,7 +1344,8 @@
       "Radio Łódź",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:23+01:00"
   },
   {
     "id": 1754468358,
@@ -1471,7 +1414,8 @@
       "Radio Olsztyn",
       "TKO Olsztyn"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:23+01:00"
   },
   {
     "id": 1666547912,
@@ -1539,7 +1483,8 @@
       "Opolska360.pl",
       "TVP3 Opole"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:21+01:00"
   },
   {
     "id": 1171249366,
@@ -1623,7 +1568,8 @@
         "claim_text": "Dopisano źródło: Biznes Interia (aktualizacja wieloźródłowa)",
         "evidence_url": "https://biznes.interia.pl/gospodarka/news-kolejne-zagrozenie-dla-swiatowego-handlu-kluczowy-szlak-pod,nId,23573671"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T20:14:20+01:00"
   },
   {
     "id": 999004279,
@@ -1692,7 +1638,8 @@
       "Lublin112.pl",
       "Radio Lublin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:20+01:00"
   },
   {
     "id": 758387202,
@@ -1762,7 +1709,8 @@
       "Lublin112.pl",
       "Pościgi.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:20+01:00"
   },
   {
     "id": 137113931,
@@ -1832,7 +1780,8 @@
       "Lublin112.pl",
       "TVN24"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T20:14:19+01:00"
   },
   {
     "id": 1182564518,
@@ -1986,7 +1935,8 @@
         "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.tvp.info/96495532/tatry-turysta-spadl-z-okolic-wierzcholka-zoltej-turni"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T20:14:18+01:00"
   },
   {
     "id": 108791576,
@@ -2044,7 +1994,8 @@
     "sources": [
       "Rzeszow-News.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:24+01:00"
   },
   {
     "id": 2058958194,
@@ -2102,7 +2053,8 @@
     "sources": [
       "TKO Olsztyn"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:24+01:00"
   },
   {
     "id": 164786524,
@@ -2159,7 +2111,8 @@
     "sources": [
       "Radio Zachód"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:24+01:00"
   },
   {
     "id": 1098063463,
@@ -2229,7 +2182,8 @@
       "Radio PiK",
       "TylkoTorun.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:21+01:00"
   },
   {
     "id": 25587263,
@@ -2298,7 +2252,8 @@
       "Interia Wydarzenia",
       "TVP.info"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:20+01:00"
   },
   {
     "id": 1622493498,
@@ -2367,7 +2322,8 @@
       "Radio Kielce",
       "WP Finanse"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:19+01:00"
   },
   {
     "id": 1194297735,
@@ -2436,7 +2392,8 @@
       "300Gospodarka",
       "Biznes Interia"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T10:41:18+01:00"
   },
   {
     "id": 104361451,
@@ -2530,7 +2487,8 @@
         "claim_text": "Dopisano źródło: TVP3 Kraków (aktualizacja wieloźródłowa)",
         "evidence_url": "https://krakow.tvp.pl/96491808/obidowa-2-mezczyzn-zginelo-pod-przewroconym-traktorem"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T10:41:17+01:00"
   },
   {
     "id": 234329824,
@@ -2694,7 +2652,8 @@
         "claim_text": "Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wiadomosci.wp.pl/zwloki-w-poblizu-darlowa-estonia-zamyka-granice-z-rosja-skrot-dnia-7351356002965536a"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T10:41:15+01:00"
   },
   {
     "id": 696093826,
@@ -2751,7 +2710,8 @@
     "sources": [
       "Kurier Poranny"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:36+01:00"
   },
   {
     "id": 1160951413,
@@ -2809,7 +2769,8 @@
     "sources": [
       "Warszawa w Pigułce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:36+01:00"
   },
   {
     "id": 1412491922,
@@ -2867,7 +2828,8 @@
     "sources": [
       "Opolska360.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:36+01:00"
   },
   {
     "id": 762889578,
@@ -2936,7 +2898,8 @@
       "Radio 90",
       "TVP3 Katowice"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:33+01:00"
   },
   {
     "id": 521366597,
@@ -3005,7 +2968,8 @@
       "Radio 90",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:32+01:00"
   },
   {
     "id": 1667418350,
@@ -3098,7 +3062,8 @@
       "Radio Gdańsk",
       "TVP3 Gdańsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:32+01:00"
   },
   {
     "id": 499053985,
@@ -3169,7 +3134,8 @@
       "Fakt.pl",
       "o2.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T09:44:31+01:00"
   },
   {
     "id": 518591212,
@@ -3252,7 +3218,8 @@
         "claim_text": "Dopisano źródło: TVP3 Lublin (aktualizacja wieloźródłowa)",
         "evidence_url": "https://lublin.tvp.pl/96492353/dzien-otwartych-drzwi-w-muzeum-zamoyskich-w-kozlowce-bezplatne-zwiedzanie-palacu-i-liczne-atrakcje-dla-odwiedzajacych"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T09:44:30+01:00"
   },
   {
     "id": 1891602308,
@@ -3358,7 +3325,8 @@
         "claim_text": "Dopisano źródło: Bankier.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.bankier.pl/wiadomosc/Plynely-z-wylaczona-nawigacja-i-wpadly-na-miny-Plona-dwa-tankowce-w-ciesninie-Ormuz-9228996.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T09:44:29+01:00"
   },
   {
     "id": 525187306,
@@ -3416,7 +3384,8 @@
     "sources": [
       "Radio Gdańsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:55:08+01:00"
   },
   {
     "id": 1024259760,
@@ -3474,7 +3443,8 @@
     "sources": [
       "rc.fm"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:55:08+01:00"
   },
   {
     "id": 951991263,
@@ -3565,7 +3535,8 @@
         "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
         "evidence_url": "https://sport.rp.pl/pilka-nozna/art45491081-liga-narodow-mecz-ze-szwecja-bedzie-dla-pilkarzy-jana-urbana-proba-charakteru"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T08:55:06+01:00"
   },
   {
     "id": 152446197,
@@ -3634,7 +3605,8 @@
       "Radio PiK",
       "TVP3 Bydgoszcz"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:55:05+01:00"
   },
   {
     "id": 1346894675,
@@ -3704,7 +3676,8 @@
       "GazetaPrawna.pl (DGP)",
       "TVP3 Wrocław"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:55:04+01:00"
   },
   {
     "id": 1355890298,
@@ -3805,7 +3778,8 @@
         "claim_text": "Dopisano źródło: Wirtualnemedia.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.wirtualnemedia.pl/ponad-polowa-polakow-zle-ocenia-relacje-republiki-z-zamachu,7351251072272384a"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T08:55:02+01:00"
   },
   {
     "id": 24360004,
@@ -3875,7 +3849,8 @@
       "Forsal.pl",
       "Onet Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:55:02+01:00"
   },
   {
     "id": 1820514052,
@@ -4001,7 +3976,8 @@
         "claim_text": "Dopisano źródło: TVP3 Warszawa (aktualizacja wieloźródłowa)",
         "evidence_url": "https://warszawa.tvp.pl/96491108/akt-terroru-na-torach-w-powiecie-garwolinskim-jest-raport-komisji"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T08:55:00+01:00"
   },
   {
     "id": 1501533340,
@@ -4059,7 +4035,8 @@
     "sources": [
       "Radio Piekary"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:02:43+01:00"
   },
   {
     "id": 1035651566,
@@ -4117,7 +4094,8 @@
     "sources": [
       "Świdnica24.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:02:43+01:00"
   },
   {
     "id": 1313282134,
@@ -4185,7 +4163,8 @@
       "Radio Szczecin",
       "TVP3 Szczecin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:02:40+01:00"
   },
   {
     "id": 1393413229,
@@ -4267,7 +4246,8 @@
         "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.tvp.info/96494819/krakow-patrick-cichym-bohaterem-o-kulach-ratowal-rannego-policjanta"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T08:02:39+01:00"
   },
   {
     "id": 223266399,
@@ -4337,7 +4317,8 @@
       "Radio Kielce",
       "TVP3 Kielce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:02:38+01:00"
   },
   {
     "id": 210679832,
@@ -4406,7 +4387,8 @@
       "WP SportoweFakty",
       "Weszło.com"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T08:02:37+01:00"
   },
   {
     "id": 1546097249,
@@ -4541,7 +4523,8 @@
         "claim_text": "Dopisano źródło: Kresy.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://kresy.pl/wydarzenia/serbia-rezygnuje-z-inwestycji-ziecia-trumpa-luksusowy-kompleks-nie-powstanie/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T08:02:17+01:00"
   },
   {
     "id": 1638036394,
@@ -4601,7 +4584,8 @@
     "sources": [
       "Rzeszow-News.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T06:56:30+01:00"
   },
   {
     "id": 1738630502,
@@ -4659,7 +4643,8 @@
     "sources": [
       "TKO Olsztyn"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T06:56:30+01:00"
   },
   {
     "id": 863896100,
@@ -4726,7 +4711,8 @@
       "Radio Łódź",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T06:56:28+01:00"
   },
   {
     "id": 1012056429,
@@ -4745,7 +4731,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "15 redakcji"
+        "val": "14 redakcji"
       },
       {
         "label": "Kategoria",
@@ -4757,13 +4743,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (15 źródeł)"
+        "val": "Potwierdzone (14 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (15 redakcji)",
+        "heading": "Ustalenia wspólne (14 redakcji)",
         "paragraphs": [
           "Obchodzimy X Światowy Dzień Ubogich pod hasłem „Pan jest ucieczką ubogiego”. W wielu diecezjach zorganizowano spotkania dla osób doświadczających różnych form ubóstwa i wykluczenia. [Źródło: RadioMaryja.pl, Radio Rzeszów, Niedziela.pl, Radio Lublin, Opolska360.pl, CzasNaOpole.pl, Radio Gdańsk, TVP3 Gdańsk, Rzeszow-News.pl, TVP3 Lublin, TVP3 Kraków, Radio Poznań, Radio Łódź, TVP3 Szczecin]",
           "W specjalnym orędziu na X Światowy Dzień Ubogich papież Leon XIV przypomniał, że ubodzy zajmują szczególne miejsce w życiu Kościoła, a stosunek do nich staje się sprawdzianem autentyczności chrześcijańskiego życia. Papież zwrócił uwagę, że we współczesnym świecie narasta niesprawiedliwość społeczna, korupcja i różne formy wykluczenia. [Źródło: RadioMaryja.pl, Radio Rzeszów, CzasNaOpole.pl, TVP3 Gdańsk]",
@@ -4782,8 +4768,7 @@
           "Trzeba jeszcze dostrzec człowieka. W związku z coraz niższymi temperaturami, przy sopockiej jadłodajni uruchomiony został także zimowy punkt interwencyjny. [Źródło: TVP3 Gdańsk]",
           "Przypomnijmy, że na Rzeszów News niejednokrotnie pisaliśmy o pomocy, jakiej udziela Caritas przy różnego rodzaju potrzebach: Caritas Diecezji Rzeszowskiej zebrał blisko milion złotych dla powodzian. [Źródło: Rzeszow-News.pl]",
           "Wcześniej w łódzkiej archikatedrze odprawiono uroczystą mszę świętą. Potrzebujący mogli również skorzystać z pomocy organizacji i specjalistów. [Źródło: Radio Łódź]",
-          "W parafii pod wezwaniem św. Jana Chrzciciela w Myśliborzu po mszy wolontariusze rozdawali paczki oraz ciepłą zupę przygotowaną przez Koło Gospodyń Wiejskich. Ale pomoc drugiemu człowiekowi można i warto ofiarować każdego dnia, choć szczególnie istotna jest właśnie teraz, w okresie zimowym. [Źródło: TVP3 Szczecin]",
-          "Przychodzą na świat przed terminem, często ważą zaledwie kilkaset gramów. Średnio co dziesiąte dziecko na świecie to wcześniak. Dla nich pierwsze chwile życia wiążą się z walką o każdy oddech i gram. [Źródło: TVP3 Katowice]"
+          "W parafii pod wezwaniem św. Jana Chrzciciela w Myśliborzu po mszy wolontariusze rozdawali paczki oraz ciepłą zupę przygotowaną przez Koło Gospodyń Wiejskich. Ale pomoc drugiemu człowiekowi można i warto ofiarować każdego dnia, choć szczególnie istotna jest właśnie teraz, w okresie zimowym. [Źródło: TVP3 Szczecin]"
         ]
       }
     ],
@@ -4871,12 +4856,6 @@
         "angle": "Doniesienie regionalne",
         "summary": "Ciepła zupa na zimne dni. Pomoc dla potrzebujących [WIDEO]",
         "url": "https://szczecin.tvp.pl/96493317/swiatowy-dzien-ubogich-2026-w-mysliborzu-parafia-sw-jana-chrzciciela-rozdawala-paczki-i-ciepla-zupe-potrzebujacym"
-      },
-      {
-        "outlet": "TVP3 Katowice",
-        "angle": "Doniesienie regionalne",
-        "summary": "Walka o każdy dzień. Szpitale obchodzą Światowy Dzień Wcześniaka",
-        "url": "https://katowice.tvp.pl/96493581/walka-o-kazdy-dzien-szpitale-obchodza-swiatowy-dzien-wczesniaka"
       }
     ],
     "sources": [
@@ -4891,7 +4870,6 @@
       "RadioMaryja.pl",
       "Rzeszow-News.pl",
       "TVP3 Gdańsk",
-      "TVP3 Katowice",
       "TVP3 Kraków",
       "TVP3 Lublin",
       "TVP3 Szczecin"
@@ -4917,7 +4895,8 @@
         "claim_text": "Dopisano źródło: TVP3 Katowice (aktualizacja wieloźródłowa)",
         "evidence_url": "https://katowice.tvp.pl/96493581/walka-o-kazdy-dzien-szpitale-obchodza-swiatowy-dzien-wczesniaka"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T06:56:27+01:00"
   },
   {
     "id": 1735234658,
@@ -4936,7 +4915,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "9 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -4948,18 +4927,18 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (9 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (9 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
           "Kilkadziesiąt tysięcy Portugalczyków protestowało w sobotę przeciwko rosnącym cenom mieszkań i coraz wyższym czynszom. Demonstracje odbyły się w 32 miastach. Zarzucali rządowi premiera Luisa Montenegro, że nie prowadzi polityki mieszkaniowej, która odpowiadałaby potrzebom Portugalczyków. [Źródło: Niezależna.pl, WP Wiadomości, Interia Wydarzenia]",
           "Trwa 24-godzinny strajk generalny w Hiszpanii. Zarzewiem – ceny mieszkań Największe manifestacje odbyły się w Lizbonie i Porto. Uczestnicy protestu zapowiedzieli kolejne manifestacje. [Źródło: Niezależna.pl, WP Wiadomości, Interia Wydarzenia]",
-          "W obronie mediów publicznych w niedzielę w Pradze manifestowało, zdaniem organizatorów, od 350 tys. do 450 tys. osób – mogło być to największe zgromadzenie w historii Republiki Czeskiej. Manifestanci domagali się wycofania z parlamentu projektu ustawo o likwidacji abonamentu, co ich zdaniem zagraża niezależności mediów publicznych. [Źródło: Onet Wiadomości, Gazeta.pl, Bankier.pl, Wyborcza.pl, Rzeczpospolita, TVP.info]",
-          "Zdaniem protestujących ten plan zakłada uzależnienie Czeskiej Telewizji i Czeskiego Radia od budżetu państwa, sprawi, że przestaną one być niezależne. Lider Miliona Chwil Mikulasz Minarz podkreślił, że protest skierowany jest przeciwko siłowemu stylowi sprawowania rządów przez premiera Andreja Babisza. [Źródło: Gazeta.pl, Bankier.pl, Wyborcza.pl]"
+          "Lider Miliona Chwil Mikulasz Minarz podkreślił, że protest skierowany jest przeciwko siłowemu stylowi sprawowania rządów przez premiera Andreja Babisza. W obronie mediów publicznych w niedzielę w Pradze manifestowało, zdaniem organizatorów, od 350 tys. do 450 tys. osób – mogło być to największe zgromadzenie w historii Republiki Czeskiej. [Źródło: Niezależna.pl, Onet Wiadomości, Gazeta.pl]",
+          "Manifestanci domagali się wycofania z parlamentu projektu ustawo o likwidacji abonamentu, co ich zdaniem zagraża niezależności mediów publicznych. [Źródło: Onet Wiadomości, Gazeta.pl]"
         ]
       },
       {
@@ -4967,7 +4946,7 @@
         "paragraphs": [
           "Uczestnicy demonstracji skandowali m.in. \"Precz ze spekulacją!\", \"Chcemy żyć godnie!\" oraz \"Każdy ma prawo do domu\". W portugalskiej stolicy kilkuset demonstrantów rozbiło późnym wieczorem namioty przy placu Restauradores, pomimo obowiązujących zakazów. [Źródło: WP Wiadomości]",
           "Demonstracje przebiegły pokojowo. [Źródło: Interia Wydarzenia]",
-          "Demonstrację zwołaną przez inicjatywę Milion Chwil dla Demokracji nazwano „Nigdy więcej 4.36”. Głosowanie przeprowadzono, mimo że na głos w debacie czekało jeszcze 65 posłów. Zdaniem protestujących zmiany prowadzą do upaństwowienia publicznych nadawców i zagrażają ich niezależności. [Źródło: Bankier.pl]"
+          "Zdaniem protestujących ten plan zakłada uzależnienie Czeskiej Telewizji i Czeskiego Radia od budżetu państwa, sprawi, że przestaną one być niezależne. [Źródło: Gazeta.pl]"
         ]
       }
     ],
@@ -5001,42 +4980,14 @@
         "angle": "Relacja uzupełniająca",
         "summary": "\"Największa demonstracja od 1989 roku\". Czesi protestują przeciwko polityce \"4:36\"",
         "url": "https://wiadomosci.gazeta.pl/swiat/7,198075,33133012,najwieksza-demonstracja-od-1989-roku-czesi-protestuja-przeciwko.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Kilkaset tysięcy osób protestowało w Pradze w obronie mediów publicznych",
-        "url": "https://www.bankier.pl/wiadomosc/Kilkaset-tysiecy-osob-protestowalo-w-Pradze-w-obronie-mediow-publicznych-9229092.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
-      },
-      {
-        "outlet": "Wyborcza.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Wielka demonstracja w Pradze. Czesi protestuj w obronie mediów publicznych i przeciwko polityce \"4:36\"",
-        "url": "https://wyborcza.pl/7,75399,33133070,wielka-demonstracja-w-pradze-czesi-protestuj-w-obronie-mediow.html"
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Czesi bronią abonamentu RTV. Rekordowa liczba protestujących w Pradze",
-        "url": "https://www.rp.pl/swiat/art45491431-czesi-bronia-abonamentu-rtv-rekordowa-liczba-protestujacych-w-pradze"
-      },
-      {
-        "outlet": "TVP.info",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Setki tysięcy Czechów protestowało w obronie mediów publicznych",
-        "url": "https://www.tvp.info/96494516/setki-tysiecy-czechow-protestowalo-w-obronie-mediow-publicznych"
       }
     ],
     "sources": [
-      "Bankier.pl",
       "Gazeta.pl",
       "Interia Wydarzenia",
       "Niezależna.pl",
       "Onet Wiadomości",
-      "Rzeczpospolita",
-      "TVP.info",
-      "WP Wiadomości",
-      "Wyborcza.pl"
+      "WP Wiadomości"
     ],
     "corrections": [
       {
@@ -5059,7 +5010,83 @@
         "claim_text": "Dopisano źródło: Bankier.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.bankier.pl/wiadomosc/Kilkaset-tysiecy-osob-protestowalo-w-Pradze-w-obronie-mediow-publicznych-9229092.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T06:56:26+01:00"
+  },
+  {
+    "id": 1841359791,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/kilkaset-tysiecy-osob-protestowalo-w-pradze-w-obronie-mediow-publicznych",
+    "seo_title": "Kilkaset tysięcy osób protestowało w Pradze w obronie mediów publicznych",
+    "summary_lead": "Demonstrację zwołaną przez inicjatywę Milion Chwil dla Demokracji nazwano „Nigdy więcej 4.36”. Głosowanie przeprowadzono, mimo że na głos w debacie czekało jeszcze 65 posłów.",
+    "meta_description": "Demonstrację zwołaną przez inicjatywę Milion Chwil dla Demokracji nazwano „Nigdy więcej 4.36”.",
+    "keywords": "Swiat, Kilkaset, tysięcy, protestowało, Pradze, obronie, mediów",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-15T06:56:26+01:00",
+    "updated_iso": "2026-11-15T21:59:58+01:00",
+    "display_date": "15.11.2026, 06:56",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Bankier.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "Demonstrację zwołaną przez inicjatywę Milion Chwil dla Demokracji nazwano „Nigdy więcej 4.36”. Głosowanie przeprowadzono, mimo że na głos w debacie czekało jeszcze 65 posłów. Zdaniem protestujących zmiany prowadzą do upaństwowienia publicznych nadawców i zagrażają ich niezależności. [Źródło: Bankier.pl, Wyborcza.pl, TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Zdaniem protestujących ten plan zakłada uzależnienie Czeskiej Telewizji i Czeskiego Radia od budżetu państwa, sprawi, że przestaną one być niezależne. Lider Miliona Chwil Mikulasz Minarz podkreślił, że protest skierowany jest przeciwko siłowemu stylowi sprawowania rządów przez premiera Andreja Babisza. [Źródło: Wyborcza.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Raport rynkowy",
+        "summary": "Kilkaset tysięcy osób protestowało w Pradze w obronie mediów publicznych",
+        "url": "https://www.bankier.pl/wiadomosc/Kilkaset-tysiecy-osob-protestowalo-w-Pradze-w-obronie-mediow-publicznych-9229092.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      },
+      {
+        "outlet": "Wyborcza.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Wielka demonstracja w Pradze. Czesi protestuj w obronie mediów publicznych i przeciwko polityce \"4:36\"",
+        "url": "https://wyborcza.pl/7,75399,33133070,wielka-demonstracja-w-pradze-czesi-protestuj-w-obronie-mediow.html"
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Setki tysięcy Czechów protestowało w obronie mediów publicznych",
+        "url": "https://www.tvp.info/96494516/setki-tysiecy-czechow-protestowalo-w-obronie-mediow-publicznych"
+      }
+    ],
+    "sources": [
+      "Bankier.pl",
+      "TVP.info",
+      "Wyborcza.pl"
+    ],
+    "corrections": []
   },
   {
     "id": 1534020513,
@@ -5127,7 +5154,8 @@
       "Polsat News",
       "TVN24"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T06:56:25+01:00"
   },
   {
     "id": 1595211852,
@@ -5204,7 +5232,8 @@
       "Polsat News",
       "Radio Lublin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T06:56:24+01:00"
   },
   {
     "id": 874182641,
@@ -5281,7 +5310,8 @@
       "Kresy.pl",
       "Wyborcza.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T06:56:23+01:00"
   },
   {
     "id": 275901353,
@@ -5341,7 +5371,8 @@
     "sources": [
       "4Lomza.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T05:50:42+01:00"
   },
   {
     "id": 513031325,
@@ -5399,7 +5430,8 @@
     "sources": [
       "Radio Szczecin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T05:50:41+01:00"
   },
   {
     "id": 763152270,
@@ -5455,7 +5487,8 @@
     "sources": [
       "Radio PiK"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T05:50:41+01:00"
   },
   {
     "id": 1235608324,
@@ -5525,7 +5558,8 @@
       "Comparic.pl",
       "Puls Biznesu"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T05:50:38+01:00"
   },
   {
     "id": 1441422537,
@@ -5582,7 +5616,8 @@
     "sources": [
       "Wiadomości Handlowe"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T05:50:38+01:00"
   },
   {
     "id": 912284791,
@@ -5639,7 +5674,8 @@
     "sources": [
       "Lublin112.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:52:15+01:00"
   },
   {
     "id": 994486150,
@@ -5698,7 +5734,8 @@
     "sources": [
       "Radio Gdańsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:52:15+01:00"
   },
   {
     "id": 725243641,
@@ -5756,7 +5793,8 @@
     "sources": [
       "Radio Kielce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:52:15+01:00"
   },
   {
     "id": 758501391,
@@ -5814,7 +5852,8 @@
     "sources": [
       "Wiadomości Handlowe"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:52:13+01:00"
   },
   {
     "id": 1739673944,
@@ -5872,7 +5911,8 @@
     "sources": [
       "Świdnica24.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:38:00+01:00"
   },
   {
     "id": 413354089,
@@ -5930,7 +5970,8 @@
     "sources": [
       "Radio ZW"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:38:00+01:00"
   },
   {
     "id": 550599931,
@@ -5999,7 +6040,8 @@
       "Rzeszow-News.pl",
       "Wiadomości Handlowe"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T04:37:59+01:00"
   },
   {
     "id": 1204755226,
@@ -6080,7 +6122,8 @@
         "claim_text": "Dopisano źródło: Polsat News (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.polsatnews.pl/wiadomosc/2026-11-15/zamach-na-trumpa-niepokojace-doniesienia-wywiadow/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-15T04:25:23+01:00"
   },
   {
     "id": 958906707,
@@ -6137,7 +6180,8 @@
     "sources": [
       "TVS Śląsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T03:48:21+01:00"
   },
   {
     "id": 260620591,
@@ -6195,7 +6239,8 @@
     "sources": [
       "rc.fm"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T03:48:21+01:00"
   },
   {
     "id": 2028415519,
@@ -6253,7 +6298,8 @@
     "sources": [
       "WysokieNapiecie.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T03:48:19+01:00"
   },
   {
     "id": 1127639210,
@@ -6312,7 +6358,8 @@
     "sources": [
       "Radio Ostrowiec"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T02:50:41+01:00"
   },
   {
     "id": 1377937724,
@@ -6367,7 +6414,8 @@
     "sources": [
       "Kurier Lubelski"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T02:50:41+01:00"
   },
   {
     "id": 1291944296,
@@ -6425,7 +6473,8 @@
     "sources": [
       "WysokieNapiecie.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T02:50:39+01:00"
   },
   {
     "id": 2146640872,
@@ -6482,7 +6531,8 @@
     "sources": [
       "Forsal.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T01:58:54+01:00"
   },
   {
     "id": 52989365,
@@ -6542,7 +6592,8 @@
     "sources": [
       "Radio Szczecin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T00:52:45+01:00"
   },
   {
     "id": 1259897359,
@@ -6618,7 +6669,8 @@
       "Polsat Sport",
       "Przegląd Sportowy"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T00:52:42+01:00"
   },
   {
     "id": 1347901644,
@@ -6774,7 +6826,8 @@
       "WP SportoweFakty",
       "Weszło.com"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T00:52:41+01:00"
   },
   {
     "id": 624973899,
@@ -6875,7 +6928,8 @@
       "WP SportoweFakty",
       "Weszło.com"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-15T00:52:41+01:00"
   },
   {
     "id": 749832494,
@@ -6944,7 +6998,8 @@
       "Radio Olsztyn",
       "TKO Olsztyn"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T23:30:17+01:00"
   },
   {
     "id": 1179665540,
@@ -7085,7 +7140,8 @@
       "WP Wiadomości",
       "Wyborcza.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T23:30:14+01:00"
   },
   {
     "id": 1411481017,
@@ -7154,7 +7210,8 @@
       "Radio Białystok",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T22:32:20+01:00"
   },
   {
     "id": 471431246,
@@ -7263,7 +7320,8 @@
       "Radio PiK",
       "TVP.info"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T22:32:19+01:00"
   },
   {
     "id": 1584196504,
@@ -7398,7 +7456,8 @@
       "TVN24",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T22:32:19+01:00"
   },
   {
     "id": 456216574,
@@ -7481,7 +7540,8 @@
       "Polsat News",
       "naTemat.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T22:32:19+01:00"
   },
   {
     "id": 1063365776,
@@ -7500,7 +7560,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "8 redakcji"
+        "val": "7 redakcji"
       },
       {
         "label": "Kategoria",
@@ -7512,13 +7572,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (8 źródeł)"
+        "val": "Potwierdzone (7 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (8 redakcji)",
+        "heading": "Ustalenia wspólne (7 redakcji)",
         "paragraphs": [
           "Ukraińska firma Global Saling zorganizowała lokalne naprawy i obsługę radarów polskich systemów antydronowych SKYctrl. Zaplecze ma skracać czas przywracania sprawności urządzeniom wykorzystywanym przez ukraińskie siły obrony. Rosyjskie drony zaatakowały obiekt ukraińskiego Naftogazu – poinformowała agencja Reutera, powołując się na bezpośrednie wiadomości od spółki. [Źródło: Interia Wydarzenia, Kresy.pl, Rzeczpospolita, Onet Wiadomości, Niezależna.pl, Defence24]",
           "W wyniku uderzenia doszło do pożaru. Koncern zapewnił, że w wyniku ataku nie ucierpiała żadna osoba postronna. Skutecznie zaatakowano stację produkcyjno-dyspozytorską \"Samara\". [Źródło: Interia Wydarzenia, Kresy.pl, Rzeczpospolita, Onet Wiadomości]",
@@ -7530,8 +7590,7 @@
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "W ciągu ostatniego tygodnia obiekty Naftogazu były celem uderzeń niemal każdego dnia. Atak doprowadził do wybuchu pożaru. [Źródło: Kresy.pl]",
-          "— Premier Kristrún Frostadóttir wskazywała, że Islandia raczej nie utworzy regularnych sił zbrojnych za jej życia – mówi o2.pl Tomasz Zduńczyk, ekspert PISM. [Źródło: o2.pl]",
-          "Premier Rumunii Luca Niculescu poinformował o ataku dronów na trzy statki handlowe w pobliżu delty Dunaju. Do zdarzeń doszło w sobotę wieczorem. Według szefa rumuńskiego rządu incydenty pokazują pogarszającą się sytuację bezpieczeństwa w regionie, związana z wojną Rosji przeciwko Ukrainie. [Źródło: WP Wiadomości]"
+          "— Premier Kristrún Frostadóttir wskazywała, że Islandia raczej nie utworzy regularnych sił zbrojnych za jej życia – mówi o2.pl Tomasz Zduńczyk, ekspert PISM. [Źródło: o2.pl]"
         ]
       }
     ],
@@ -7577,12 +7636,6 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Kluczowy punkt na mapie. Państwo bez stałej armii czuje oddech Rosji",
         "url": "https://www.o2.pl/informacje/kluczowy-punkt-na-mapie-panstwo-bez-stalej-armii-czuje-oddech-rosji-7348015435729376a"
-      },
-      {
-        "outlet": "WP Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Atak na statki na Morzu Czarnym. Trzy jednostki trafione",
-        "url": "https://wiadomosci.wp.pl/atak-na-statki-na-morzu-czarnym-trzy-jednostki-trafione-7351390139136000a"
       }
     ],
     "sources": [
@@ -7592,7 +7645,6 @@
       "Niezależna.pl",
       "Onet Wiadomości",
       "Rzeczpospolita",
-      "WP Wiadomości",
       "o2.pl"
     ],
     "corrections": [
@@ -7600,7 +7652,8 @@
         "claim_text": "Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wiadomosci.wp.pl/atak-na-statki-na-morzu-czarnym-trzy-jednostki-trafione-7351390139136000a"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T22:32:19+01:00"
   },
   {
     "id": 253758646,
@@ -7619,7 +7672,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "24 redakcji"
+        "val": "22 redakcji"
       },
       {
         "label": "Kategoria",
@@ -7631,13 +7684,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (24 źródeł)"
+        "val": "Potwierdzone (22 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (24 redakcji)",
+        "heading": "Ustalenia wspólne (22 redakcji)",
         "paragraphs": [
           "Po jego śmierci okazało się, że pochodził z Kraśnika na Lubelszczyźnie i tutaj sobotniego popołudnia 14 listopada został pochowany. Polski Związek Piłki Nożnej wystąpił do UEFA z prośbą o możliwość upamiętnienia ofiar zamachu w Krakowie. Najnowsze informacje ws. otoczki meczu Ligi Narodów przeciwko Szwecji podał Sekretarz Generalny PZPN Łukasz Wachowski. [Źródło: Przegląd Sportowy, Sport.pl, Fakt.pl, WP SportoweFakty, Radio Kraków, Niezależna.pl, Polsat News, Radio PiK, TVP3 Kraków, TVP3 Rzeszów, Interia Wydarzenia, Radio Lublin, Onet Wiadomości, WP Wiadomości, TVP.info]",
           "Jedną z ofiar dramatycznej strzelaniny, do której doszło 7 listopada na Rynku Głównym w Krakowie, był 55-letni Robert. Mężczyzna przez wiele lat pomagał kupcom handlującym w centrum Krakowa. Dorożkarze wracają w sobotę do pracy na Rynek Główny w Krakowie. [Źródło: Przegląd Sportowy, Fakt.pl, Dziennik.pl, o2.pl, Niezależna.pl, Polsat News, TVP3 Kraków, TVP3 Rzeszów, Interia Wydarzenia, Radio Lublin, Onet Wiadomości, WP Wiadomości, TVP.info]",
@@ -7663,9 +7716,7 @@
           "Narodzenia NMP pożegnano 47-letnią kobietę, która była m.in. wolontariuszką Szlachetnej Paczki. W uroczystościach uczestniczyli rodzina, przyjaciele, władze samorządowe oraz mieszkańcy miasta. Podczas mszy świętej żałobnej ksiądz Tomasz Rusyn zwrócił uwagę na nagły charakter śmierci zmarłej i przypomniał o jej zaangażowaniu w akcje pomocowe. [Źródło: Rzeszow-News.pl]",
           "Urna z jej prochami spocznie na miejscowym cmentarzu komunalnym – informuje \"Super Express\". [Źródło: WP Wiadomości]",
           "Rzecznik wojewody małopolskiego Maksymilian Kosowski powiedział, że sytuacja osób rannych nie różni się od stanu komunikowanego w piątek. Tydzień po tragedii Kraków wraca do normalnego funkcjonowania, chociaż pamięć o strzelaninie pozostaje żywa. W miejscach, gdzie zginęły ofiary napastnika, płoną znicze, przechodnie się zatrzymują i modlą. [Źródło: TVP.info]",
-          "Równo tydzień po szokującym zamachu w Krakowie reprezentacja Polski zmierzyła się w Bukareszcie z Rumunią w meczu 5. kolejki fazy grupowej Dywizji B Ligi Narodów. W drugiej połowie rumuńscy kibice za bramką Biało-Czerwonych wywiesili transparent ze słowami wparcia po tragicznych wydarzeniach w Polsce. [Źródło: Gazeta Krakowska]",
-          "\"Ani jeden policjant Komendy Miejskiej Policji w Krakowie nie został delegowany do Warszawy\" – poinformowała małopolska policja. To odpowiedź na zarzuty, że wysłanie krakowskich funkcjonariuszy między innymi w rejon Trybunału Konstytucyjnego w Warszawie miało negatywny wpływ na bezpieczeństwo w Krakowie. [Źródło: Gazeta.pl]",
-          "Ranni policjanci, którzy ucierpieli w trakcie zamachu na krakowskim rynku, otrzymają po 100 tysięcy złotych zapomogi. Funkcjonariusze mogą także liczyć na dalsze wsparcie ze strony Policji i MSWiA, w tym pomoc w pokryciu kosztów rehabilitacji. [Źródło: InfoSecurity24]"
+          "Równo tydzień po szokującym zamachu w Krakowie reprezentacja Polski zmierzyła się w Bukareszcie z Rumunią w meczu 5. kolejki fazy grupowej Dywizji B Ligi Narodów. W drugiej połowie rumuńscy kibice za bramką Biało-Czerwonych wywiesili transparent ze słowami wparcia po tragicznych wydarzeniach w Polsce. [Źródło: Gazeta Krakowska]"
         ]
       }
     ],
@@ -7801,26 +7852,12 @@
         "angle": "Doniesienie regionalne",
         "summary": "Rumuńscy kibice ze wsparciem po zamachu w Polsce. \"Modlimy się za Kraków\"",
         "url": "https://gazetakrakowska.pl/rumunscy-kibice-ze-wsparciem-po-zamachu-w-polsce-modlimy-sie-za-krakow/ar/c2-19150955"
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Małopolska policja prostuje doniesienia wokół zamachu w Krakowie. \"Prosimy o niewprowadzanie w błąd\"",
-        "url": "https://wiadomosci.gazeta.pl/polska/7,198072,33133124,malopolska-policja-prostuje-doniesienia-wokol-zamachu-w-krakowie.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
-      },
-      {
-        "outlet": "InfoSecurity24",
-        "angle": "Doniesienie regionalne",
-        "summary": "Po 100 tys. zł dla rannych policjantów z Krakowa. MSWiA zapowiada dalszą pomoc",
-        "url": "https://infosecurity24.pl/sluzby-mundurowe/policja/po-100-tys-zl-dla-rannych-policjantow-z-krakowa-mswia-zapowiada-dalsza-pomoc"
       }
     ],
     "sources": [
       "Dziennik.pl",
       "Fakt.pl",
       "Gazeta Krakowska",
-      "Gazeta.pl",
-      "InfoSecurity24",
       "Interia Wydarzenia",
       "Niezależna.pl",
       "Onet Wiadomości",
@@ -7862,7 +7899,8 @@
         "claim_text": "Dopisano źródło: Infor.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.infor.pl/twoje-pieniadze/swiadczenia/7701929,gmina-zaplaci-za-pogrzeb-zmarlego-i-to-niezaleznie-od-7-tys-zl-zasilk.html"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T21:31:10+01:00"
   },
   {
     "id": 1461773558,
@@ -7930,7 +7968,8 @@
       "Radio PiK",
       "TVP3 Kraków"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T21:31:09+01:00"
   },
   {
     "id": 300472646,
@@ -7997,7 +8036,8 @@
       "Interia Sport",
       "Przegląd Sportowy"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T21:31:09+01:00"
   },
   {
     "id": 1690051930,
@@ -8066,7 +8106,8 @@
       "Radio Kielce",
       "TVP3 Kielce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T21:31:09+01:00"
   },
   {
     "id": 402571078,
@@ -8137,7 +8178,8 @@
       "Antyweb.pl",
       "CHIP.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T21:31:09+01:00"
   },
   {
     "id": 1427053953,
@@ -8192,7 +8234,8 @@
     "sources": [
       "Niezależna.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T20:33:19+01:00"
   },
   {
     "id": 1164048340,
@@ -8261,7 +8304,8 @@
       "Biznes Interia",
       "Kresy.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T20:33:16+01:00"
   },
   {
     "id": 1165161528,
@@ -8329,7 +8373,8 @@
       "Radio Łódź",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T20:33:16+01:00"
   },
   {
     "id": 121059446,
@@ -8396,7 +8441,8 @@
       "Radio Rzeszów",
       "TVP3 Rzeszów"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T20:33:16+01:00"
   },
   {
     "id": 1934291176,
@@ -8465,7 +8511,8 @@
       "Radio Białystok",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T20:33:16+01:00"
   },
   {
     "id": 1555047792,
@@ -8555,7 +8602,8 @@
         "claim_text": "Dopisano źródło: TVN24 (aktualizacja wieloźródłowa)",
         "evidence_url": "https://tvn24.pl/kultura-i-styl/zlota-zaba-dla-lukasza-zala-za-zdjecia-do-ojczyzny-pawla-pawlikowskiego-st9340289?source=rss"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T20:33:15+01:00"
   },
   {
     "id": 2089334480,
@@ -8626,7 +8674,8 @@
       "Radio Szczecin",
       "TVP3 Szczecin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T19:38:09+01:00"
   },
   {
     "id": 513911660,
@@ -8706,7 +8755,8 @@
       "Onet Wiadomości",
       "Polsat News"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T19:38:09+01:00"
   },
   {
     "id": 1048558660,
@@ -8782,7 +8832,8 @@
       "Radio Olsztyn",
       "o2.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T19:38:09+01:00"
   },
   {
     "id": 101442567,
@@ -8865,7 +8916,8 @@
         "claim_text": "Dopisano źródło: TVP3 Lublin (aktualizacja wieloźródłowa)",
         "evidence_url": "https://lublin.tvp.pl/96492177/ponad-20-kilometrowa-kolejka-ciezarowek-do-przejscia-w-dorohusku-wprowadzono-strefe-buforowa-w-chelmie"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T19:38:09+01:00"
   },
   {
     "id": 282931951,
@@ -8935,7 +8987,8 @@
       "WP SportoweFakty",
       "Weszło.com"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T19:38:08+01:00"
   },
   {
     "id": 1339030045,
@@ -9011,7 +9064,8 @@
       "Radio Poznań",
       "TVP3 Poznań"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T18:36:39+01:00"
   },
   {
     "id": 578259320,
@@ -9214,7 +9268,8 @@
         "claim_text": "Dopisano źródło: TVP3 Poznań (aktualizacja wieloźródłowa)",
         "evidence_url": "https://poznan.tvp.pl/96492200/nowe-przepisy-drogowe-na-przejazdach-kolejowych-zatrzymania-prawa-jazdy-policja"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T18:36:38+01:00"
   },
   {
     "id": 347277346,
@@ -9291,7 +9346,8 @@
       "TVP.info",
       "TVP3 Bydgoszcz"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T18:36:38+01:00"
   },
   {
     "id": 395358144,
@@ -9369,7 +9425,8 @@
       "TVP3 Szczecin",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T18:36:38+01:00"
   },
   {
     "id": 635714565,
@@ -9438,7 +9495,8 @@
       "Radio Index",
       "Radio Zachód"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T18:36:38+01:00"
   },
   {
     "id": 208588260,
@@ -9505,7 +9563,8 @@
       "Antyweb.pl",
       "Komputer Świat"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T18:36:38+01:00"
   },
   {
     "id": 1155002972,
@@ -9574,7 +9633,8 @@
       "Radio Białystok",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T17:30:26+01:00"
   },
   {
     "id": 15920566,
@@ -9655,7 +9715,8 @@
         "claim_text": "Dopisano źródło: Radio Olsztyn (aktualizacja wieloźródłowa)",
         "evidence_url": "https://radioolsztyn.pl/pomoc-pod-olsztynskim-mlynem-akcja-potrwa-do-wielkanocy/01901398"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T17:30:26+01:00"
   },
   {
     "id": 1994553892,
@@ -9723,7 +9784,8 @@
       "Dziennik.pl",
       "TVP3 Kraków"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T17:30:24+01:00"
   },
   {
     "id": 566440433,
@@ -9791,7 +9853,8 @@
       "Farmer.pl",
       "Forsal.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T17:30:23+01:00"
   },
   {
     "id": 332539808,
@@ -9868,7 +9931,8 @@
       "TVP.info",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T17:30:23+01:00"
   },
   {
     "id": 2127365566,
@@ -9948,7 +10012,8 @@
         "claim_text": "Dopisano źródło: Farmer.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.farmer.pl/fakty/drozszy-gaz-moze-kosztowac-azoty-700-mln-zl-w-pol-roku-analityk-zmienia-rekomendacje,187153.html"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T17:30:23+01:00"
   },
   {
     "id": 1348925765,
@@ -10003,7 +10068,8 @@
     "sources": [
       "Radio Kraków"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T16:34:07+01:00"
   },
   {
     "id": 1187329338,
@@ -10093,7 +10159,8 @@
         "claim_text": "Dopisano źródło: naTemat.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://natemat.pl/675637,strazacy-apeluja-po-wybuchu-groznego-pozaru-robimy-to-praktycznie-codziennie"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T16:34:06+01:00"
   },
   {
     "id": 165354890,
@@ -10163,7 +10230,8 @@
       "Radio Rzeszów",
       "TVP3 Rzeszów"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T16:34:06+01:00"
   },
   {
     "id": 796175197,
@@ -10231,7 +10299,8 @@
       "Onet Wiadomości",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T16:34:06+01:00"
   },
   {
     "id": 318388892,
@@ -10314,7 +10383,8 @@
       "Polsat News",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T16:34:05+01:00"
   },
   {
     "id": 1155496325,
@@ -10382,7 +10452,8 @@
       "TVP.info",
       "TVP3 Katowice"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T16:34:05+01:00"
   },
   {
     "id": 1068422482,
@@ -10444,7 +10515,8 @@
       "Polsat Sport",
       "Weszło.com"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T16:34:05+01:00"
   },
   {
     "id": 226395385,
@@ -10520,7 +10592,8 @@
       "Wiadomości Handlowe",
       "naTemat.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T15:32:31+01:00"
   },
   {
     "id": 1353710287,
@@ -10597,7 +10670,8 @@
       "Onet Wiadomości",
       "Polsat News"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T15:32:31+01:00"
   },
   {
     "id": 469061333,
@@ -10684,7 +10758,8 @@
       "WP SportoweFakty",
       "Weszło.com"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T15:32:31+01:00"
   },
   {
     "id": 2016377355,
@@ -10759,7 +10834,8 @@
       "Rzeszow-News.pl",
       "TVP3 Rzeszów"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T15:32:31+01:00"
   },
   {
     "id": 506983631,
@@ -10829,7 +10905,8 @@
       "Onet Wiadomości",
       "RadioMaryja.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T15:32:31+01:00"
   },
   {
     "id": 404004167,
@@ -10936,7 +11013,8 @@
       "TVP3 Gdańsk",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T15:32:30+01:00"
   },
   {
     "id": 260348473,
@@ -11010,7 +11088,8 @@
       "TVP3 Poznań",
       "ePoznan.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T14:39:05+01:00"
   },
   {
     "id": 723747974,
@@ -11029,7 +11108,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "6 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -11041,13 +11120,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (6 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
           "Komisarz Częstochowy Łukasz Pabiś zdecyduje, czy od 1 stycznia 2027 r. w mieście zacznie obowiązywać opłata miejscowa, nazywana w lokalnej debacie \"pielgrzymkową\". Wcześniej chce poznać opinie mieszkańców oraz przedstawicieli branży hotelarskiej i turystycznej. Budżet Częstochowy wzbogaciłby się dzięki niej o dodatkowe 1,5 mln zł. [Źródło: WP Wiadomości, Fakt.pl, TVP3 Katowice, TVN24, Polsat News]",
           "— W Częstochowie od wielu lat toczy się dyskusja na temat wprowadzenia opłaty lokalnej. [Źródło: WP Wiadomości, Fakt.pl]",
@@ -11059,8 +11138,7 @@
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "To może wywołać kontrowersje. Nasze miasto każdego roku odwiedzają pielgrzymi i turyści z całej Polski oraz świata, dlatego temat dodatkowych wpływów związanych z ruchem turystycznym wielokrotnie pojawiał się w debacie publicznej. (...) Nie chcę jednak rozstrzygać tak ważnej kwestii bez wysłuchania mieszkańców i przedsiębiorców. [Źródło: Fakt.pl]",
-          "Nie klimatyczna, nie uzdrowiskowa – od początku roku miasta będą mogły wprowadzić opłatę miejscową bez względu na czystość powietrza. Teraz jej pobieranie będzie możliwe, a pochylenie się nad projektem obiecuje komisarz miasta, Łukasz Pabiś. [Źródło: TVP3 Katowice]",
-          "Utrzymanie więźniów w Polsce kosztuje coraz więcej. Jak wynika z danych przekazanych WP przez Centralny Zarząd Służby Więziennej, na koniec października 2026 r. w polskich jednostkach penitencjarnych przebywało 70 191 osób. Koszty ich utrzymania znacząco rosną – w 2025 r. było to aż 5,8 mld zł, czyli prawie 7 tys. zł miesięcznie. [Źródło: WNP.pl]"
+          "Nie klimatyczna, nie uzdrowiskowa – od początku roku miasta będą mogły wprowadzić opłatę miejscową bez względu na czystość powietrza. Teraz jej pobieranie będzie możliwe, a pochylenie się nad projektem obiecuje komisarz miasta, Łukasz Pabiś. [Źródło: TVP3 Katowice]"
         ]
       }
     ],
@@ -11094,12 +11172,6 @@
         "angle": "Doniesienie regionalne",
         "summary": "\"Podatek od pielgrzymów\" w Częstochowie? Padła konkretna kwota",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-15/podatek-od-pielgrzymow-w-czestochowie-wzbogacilibysmy-sie-o-15-miliona-zlotych/"
-      },
-      {
-        "outlet": "WNP.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Tyle kosztuje utrzymanie jednego więźnia. Padła konkretna kwota",
-        "url": "https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html"
       }
     ],
     "sources": [
@@ -11107,7 +11179,6 @@
       "Polsat News",
       "TVN24",
       "TVP3 Katowice",
-      "WNP.pl",
       "WP Wiadomości"
     ],
     "corrections": [
@@ -11115,7 +11186,8 @@
         "claim_text": "Dopisano źródło: WNP.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T14:39:03+01:00"
   },
   {
     "id": 1560522331,
@@ -11134,7 +11206,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "28 redakcji"
+        "val": "27 redakcji"
       },
       {
         "label": "Kategoria",
@@ -11146,19 +11218,18 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (28 źródeł)"
+        "val": "Potwierdzone (27 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (28 redakcji)",
+        "heading": "Ustalenia wspólne (27 redakcji)",
         "paragraphs": [
           "W piątkowy wieczór na placu Bolesława Chrobrego w Bielsku-Białej odbył się wiec poparcia dla prezydenta Karola Nawrockiego. W manifestacji wzięło udział kilkaset osób, w tym przedstawiciele Klubów „Gazety Polskiej”. Ochrona dzieci przed internetowymi przestępcami powinna łączyć ponad politycznymi podziałami – ocenił premier Donald Tusk. [Źródło: TVP.info, Onet Wiadomości, WP Wiadomości, Interia Wydarzenia, TVN24, Gazeta.pl, Dziennik.pl, CyberDefence24, Puls Biznesu, Rzeczpospolita, GazetaPrawna.pl (DGP), Business Insider PL, Infor.pl, Kaszuby24.pl, RadioMaryja.pl, Wyborcza.pl, Radio Zachód, Bankier.pl, Radio Lublin, XYZ.pl, Niezależna.pl, MamStartup.pl, Bielsko.biala.pl, Beskidzka24.pl, Kresy.pl]",
-          "Celem rządowej nowelizacji było wdrożenie europejskiego Aktu o usługach cyfrowych (DSA). Chodzi o nowe procedury, dzięki którym możliwe byłoby szybkie wydawanie nakazów ograniczających dostęp do treści naruszających prawo w internecie, przy jednoczesnym poszanowaniu praw użytkowników sieci. [Źródło: TVP.info, Gazeta.pl, CyberDefence24, naTemat.pl, Puls Biznesu, Rzeczpospolita, RadioMaryja.pl, Wyborcza.pl, Radio Zachód, Bankier.pl, XYZ.pl, Bielsko.biala.pl, Niebezpiecznik]",
+          "Celem rządowej nowelizacji było wdrożenie europejskiego Aktu o usługach cyfrowych (DSA). Chodzi o nowe procedury, dzięki którym możliwe byłoby szybkie wydawanie nakazów ograniczających dostęp do treści naruszających prawo w internecie, przy jednoczesnym poszanowaniu praw użytkowników sieci. [Źródło: TVP.info, Gazeta.pl, CyberDefence24, naTemat.pl, Puls Biznesu, Rzeczpospolita, RadioMaryja.pl, Wyborcza.pl, Radio Zachód, Bankier.pl, XYZ.pl, Bielsko.biala.pl]",
           "Polska jest jedynym państwem Unii Europejskiej, które nie ma koordynatora DSA uprawnionego do blokowania nielegalnych treści. „Z prezydenckiego weta zadowoleni są hejterzy, rosyjskie farmy trolli, pedofile, ekstremalni nihiliści i lobbyści. Ofiarami tego weta są polskie dzieci, rodzice, bezpieczeństwo wszystkich obywateli. [Źródło: TVP.info, Onet Wiadomości, WP Wiadomości, Interia Wydarzenia, TVN24, Gazeta.pl, Dziennik.pl, CyberDefence24, Puls Biznesu, Rzeczpospolita, Infor.pl, Kaszuby24.pl, RadioMaryja.pl, Wyborcza.pl, Radio Zachód, Bankier.pl, Bielsko.biala.pl]",
-          "„Tego nie da się w żaden sposób usprawiedliwić” – napisał Donald Tusk na X. W wideo zamieszczonym w swoich mediach społecznościowych Karol Nawrocki wyjaśnił, że odrzucił przepisy, bo dawałaby one urzędnikom władzę cenzorską. [Źródło: Radio Zachód, Beskidzka24.pl]",
-          "Z powodu niedawnych ataków nożowników w polskich szkołach, 8 października pod głosowanie w Sejmie trafiła (po raz kolejny) nowelizacja ustawy o świadczeniu usług drogą elektroniczną. [Źródło: Bankier.pl, Niebezpiecznik]"
+          "„Tego nie da się w żaden sposób usprawiedliwić” – napisał Donald Tusk na X. W wideo zamieszczonym w swoich mediach społecznościowych Karol Nawrocki wyjaśnił, że odrzucił przepisy, bo dawałaby one urzędnikom władzę cenzorską. [Źródło: Radio Zachód, Beskidzka24.pl]"
         ]
       },
       {
@@ -11172,13 +11243,13 @@
           "Wyjaśniamy, co miało się zmienić i co dalej. [Źródło: Kaszuby24.pl]",
           "Zdaniem premiera „szczególnie” w kontekście zdarzeń z ostatnich miesięcy, chronienie młodych ludzi przed „złem w internecie, przed nienawiścią, przed agresją, przestępcami w internecie” wydawało się dla niego „czymś tak oczywistym”. [Źródło: RadioMaryja.pl]",
           "Jego zdaniem, ustawa zawierała rozwiązania nieproporcjonalne względem chronionych wartości i byłaby nadużyciem władzy rządu. [Źródło: Radio Zachód]",
+          "Z powodu niedawnych ataków nożowników w polskich szkołach, 8 października pod głosowanie w Sejmie trafiła (po raz kolejny) nowelizacja ustawy o świadczeniu usług drogą elektroniczną. [Źródło: Bankier.pl]",
           "Przybyli tu na premierę widowiska teatralno-muzycznego „Pan Tadeusz”. Spektakl w Centrum Spotkania Kultur w Lublinie oglądał też między innymi szef prezydenckiego Biura Polityki Międzynarodowej Marcin Przydacz. Spektakl to prawdziwie monumentalne widowisko. [Źródło: Radio Lublin]",
           "W tym celu publikuje „Czarną księgę”, która przedstawia skalę cyberprzemocy wobec najmłodszych. Doświadcza jej w Polsce aż 39 proc. młodych. [Źródło: XYZ.pl]",
           "\"Wystarczyło napisać dobre prawo\" – skomentował prezydencki minister Paweł Szefernaker. Postawą premiera oburzeni są też politycy opozycji. [Źródło: Niezależna.pl]",
           "Nie brakowało biało-czerwonych flag, politycznych transparentów i głośnych okrzyków skierowanych przeciwko obecnemu rządowi. Uczestnicy spotkania przyjechali nie tylko z Bielska-Białej. Podczas wydarzenia prowadzący zachęcali zgromadzonych do przedstawiania się i wskazywania miejscowości, z których dotarli na plac. [Źródło: Beskidzka24.pl]",
           "Pałac Prezydencki odpowiada, że premier wykorzystuje ochronę najmłodszych do politycznego szantażu i wzbudzania strachu. [Źródło: Kresy.pl]",
-          "Już w niemal wszystkich krajach Unii Europejskiej rozmawia się dziś o uregulowaniu dostępu dzieci do internetu. Pomysłów jest wiele, ale wszystkie obarczone są tą samą wadą: ignorowaniem tego, że to nie tylko nastolatki i dzieci są zagrożone szkodliwymi treściami i uzależniającymi interfejsami. [Źródło: Kultura Liberalna]",
-          "Choć ustawę poddano pod głosowanie w wyniku poruszających społeczeństwo ataków w szkołach, to wbrew krążącym po internecie opiniom, ta ustawa nie powstała ani jako reakcja na ataki nożowników, ani jako “wdrażanie DSA”. A czy wprowadza ona cenzurę internetu? To już ocenicie sami po lekturze poniższych akapitów. [Źródło: Niebezpiecznik]"
+          "Już w niemal wszystkich krajach Unii Europejskiej rozmawia się dziś o uregulowaniu dostępu dzieci do internetu. Pomysłów jest wiele, ale wszystkie obarczone są tą samą wadą: ignorowaniem tego, że to nie tylko nastolatki i dzieci są zagrożone szkodliwymi treściami i uzależniającymi interfejsami. [Źródło: Kultura Liberalna]"
         ]
       }
     ],
@@ -11344,12 +11415,6 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Pozabierać im te telefony! KIDS Act i zakazanie dzieciom mediów społecznościowych nie poprawi naszego internetu",
         "url": "https://kulturaliberalna.pl/2026/11/13/magierska-kids-act-i-zakazanie-dzieciom-mediow-spolecznosciowych-nie-poprawi-naszego-internetu/"
-      },
-      {
-        "outlet": "Niebezpiecznik",
-        "angle": "Kontekst technologiczny",
-        "summary": "Sejm przyjął ustawę o blokowaniu treści przez UKE. Czy to oznacza cenzurę internetu?",
-        "url": "https://niebezpiecznik.pl/post/sejm-przyjal-ustawe-o-blokowaniu-tresci-przez-uke-czy-to-oznacza-cenzure-internetu/"
       }
     ],
     "sources": [
@@ -11367,7 +11432,6 @@
       "Kresy.pl",
       "Kultura Liberalna",
       "MamStartup.pl",
-      "Niebezpiecznik",
       "Niezależna.pl",
       "Onet Wiadomości",
       "Puls Biznesu",
@@ -11387,7 +11451,8 @@
         "claim_text": "Dopisano źródło: Niebezpiecznik (aktualizacja wieloźródłowa)",
         "evidence_url": "https://niebezpiecznik.pl/post/sejm-przyjal-ustawe-o-blokowaniu-tresci-przez-uke-czy-to-oznacza-cenzure-internetu/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T14:39:03+01:00"
   },
   {
     "id": 710645113,
@@ -11509,7 +11574,8 @@
         "claim_text": "Dopisano źródło: TVP3 Łódź (aktualizacja wieloźródłowa)",
         "evidence_url": "https://lodz.tvp.pl/96490864/-adwent-2026-kiedy-sie-zaczyna-ile-trwa-niedziele-roraty"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T14:39:03+01:00"
   },
   {
     "id": 2025205480,
@@ -11578,7 +11644,8 @@
       "Radio Łódź",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T14:39:03+01:00"
   },
   {
     "id": 384570320,
@@ -11647,7 +11714,8 @@
       "Defence24",
       "Kresy.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T14:39:02+01:00"
   },
   {
     "id": 1181247522,
@@ -11845,7 +11913,8 @@
         "claim_text": "Dopisano źródło: TVP3 Rzeszów (aktualizacja wieloźródłowa)",
         "evidence_url": "https://rzeszow.tvp.pl/96489998/silny-wiatr-na-podkarpaciu-imgw-ostrzega-mieszkancow-szesciu-powiatow"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T13:46:53+01:00"
   },
   {
     "id": 134046872,
@@ -11919,7 +11988,8 @@
       "Radio Lublin",
       "RadioMaryja.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T13:46:53+01:00"
   },
   {
     "id": 746675037,
@@ -12025,7 +12095,8 @@
       "TVP3 Katowice",
       "Wyborcza.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T13:46:52+01:00"
   },
   {
     "id": 1283362099,
@@ -12120,7 +12191,8 @@
         "claim_text": "Dopisano źródło: Wirtualnemedia.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.wirtualnemedia.pl/prezenty-dla-mezczyzn-na-black-friday-co-warto-kupic-z-wyprzedzeniem,7351257272391712a"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T13:46:52+01:00"
   },
   {
     "id": 85798393,
@@ -12220,7 +12292,8 @@
       "TVP3 Bydgoszcz",
       "WNP.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T13:46:52+01:00"
   },
   {
     "id": 2020119229,
@@ -12319,7 +12392,8 @@
       "TVN24",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T13:46:52+01:00"
   },
   {
     "id": 373553613,
@@ -12420,7 +12494,8 @@
         "claim_text": "Dopisano źródło: Pościgi.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://poscigi.pl/swidnik-zniszczenie-flag-panstwowych-pomnik-45-latek/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T12:41:15+01:00"
   },
   {
     "id": 184458636,
@@ -12489,7 +12564,8 @@
       "Radio Gdańsk",
       "info.elblag.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T12:41:15+01:00"
   },
   {
     "id": 2058038249,
@@ -12552,7 +12628,8 @@
       "Radio Łódź",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T12:41:15+01:00"
   },
   {
     "id": 1783631949,
@@ -12629,7 +12706,8 @@
       "TVP3 Wrocław",
       "Wroclaw.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T12:41:14+01:00"
   },
   {
     "id": 524574109,
@@ -12686,7 +12764,8 @@
     "sources": [
       "TVP3 Bydgoszcz"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T12:41:14+01:00"
   },
   {
     "id": 1356080067,
@@ -12826,7 +12905,8 @@
       "TVP.info",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T12:41:13+01:00"
   },
   {
     "id": 1553265739,
@@ -13001,7 +13081,8 @@
         "claim_text": "Dopisano źródło: Warszawa w Pigułce (aktualizacja wieloźródłowa)",
         "evidence_url": "https://warszawawpigulce.pl/100-lat-pomnika-chopina-w-warszawie-historia-wysadzonego-symbolu-i-ratowania-gipsowych-odlewow/"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T12:41:13+01:00"
   },
   {
     "id": 761033356,
@@ -13069,7 +13150,8 @@
       "Business Insider PL",
       "Wirtualnemedia.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T12:41:13+01:00"
   },
   {
     "id": 863276756,
@@ -13136,7 +13218,8 @@
       "Radio Szczecin",
       "TVP3 Szczecin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T11:32:14+01:00"
   },
   {
     "id": 1144291633,
@@ -13204,7 +13287,8 @@
       "Opolska360.pl",
       "TVP3 Opole"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T11:32:13+01:00"
   },
   {
     "id": 1805303607,
@@ -13281,7 +13365,8 @@
       "Interia Sport",
       "Przegląd Sportowy"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T11:32:12+01:00"
   },
   {
     "id": 2123691135,
@@ -13356,7 +13441,8 @@
       "Kaszuby24.pl",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T11:32:12+01:00"
   },
   {
     "id": 1720064192,
@@ -13432,7 +13518,8 @@
         "claim_text": "Dopisano źródło: TVP3 Kielce (aktualizacja wieloźródłowa)",
         "evidence_url": "https://kielce.tvp.pl/96490901/bieg-niepodleglosci-kielce-2026-zwyciezcy-i-okolo-tysiaca-uczestnikow"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T10:37:22+01:00"
   },
   {
     "id": 1384632736,
@@ -13508,7 +13595,8 @@
       "Tabletowo.pl",
       "Wiadomości Handlowe"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T10:37:20+01:00"
   },
   {
     "id": 822737419,
@@ -13591,7 +13679,8 @@
       "TVN24",
       "TVP.info"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T10:37:20+01:00"
   },
   {
     "id": 93513926,
@@ -13794,7 +13883,8 @@
       "Wyborcza.pl",
       "naTemat.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T10:37:19+01:00"
   },
   {
     "id": 775122142,
@@ -13863,7 +13953,8 @@
       "Radio Poznań",
       "TVP3 Poznań"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T09:41:11+01:00"
   },
   {
     "id": 393656939,
@@ -14113,7 +14204,8 @@
       "TVS Śląsk",
       "Świdnica24.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T09:41:09+01:00"
   },
   {
     "id": 131950057,
@@ -14199,7 +14291,8 @@
       "Kresy.pl",
       "Polsat News"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T09:41:09+01:00"
   },
   {
     "id": 511324360,
@@ -14266,7 +14359,8 @@
       "Radio Szczecin",
       "WNP.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T09:41:09+01:00"
   },
   {
     "id": 1822534216,
@@ -14336,7 +14430,8 @@
       "Radio PiK",
       "TVP3 Bydgoszcz"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T08:45:29+01:00"
   },
   {
     "id": 1940126383,
@@ -14405,7 +14500,8 @@
       "Suwałki24.pl",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T08:45:29+01:00"
   },
   {
     "id": 1257236645,
@@ -14419,12 +14515,12 @@
     "published_iso": "2026-11-14T08:45:28+01:00",
     "display_date": "14.11.2026, 08:45",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 86,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "3 redakcje"
+        "val": "2 redakcje"
       },
       {
         "label": "Kategoria",
@@ -14436,13 +14532,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
+        "val": "Potwierdzone (2 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (3 redakcje)",
+        "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
           "Polska pozostaje jedną z szybciej rozwijających się gospodarek Europy, ale rosnące zadłużenie i wysokie deficyty rodzą pytania o trwałość tego wzrostu. Już poprzednia edycja Indeksu Wiarygodności Ekonomicznej Polski wskazywała na poważne problemy finansów publicznych. [Źródło: Money.pl]",
           "Prof. Jerzy Hausner ostrzegał niedawno na łamach money.pl, że finansowanie wzrostu długiem nie musi przekładać się na zwiększenie przyszłego potencjału gospodarki. Odpowiedzi przyniesie piąta edycja Indeksu, której premiera odbędzie się 17 listopada podczas Open Eyes Economy Summit 2026 w Krakowie. [Źródło: Money.pl]"
@@ -14451,8 +14547,7 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Wigilia miała zapewnić pracownikom więcej odpoczynku i czasu z rodziną. Tymczasem tegoroczne święta mogą okazać się dla części zatrudnionych wyjątkowo wyczerpujące. Przedświąteczne plany pracodawców budzą sprzeciw związkowców, a nietypowy układ kalendarza sprawi, że skutki odczują zarówno pracownicy, jak i klienci. [Źródło: Forsal.pl]",
-          "1 stycznia (Nowy Rok) w 2027 roku przypada w piątek. Dzięki temu – wielu pracowników czeka długi weekend noworoczny. Okazuje się jednak, że istnieje sposób, aby weekend ten rozpocząć już w czwartek 31 grudnia 2026 r. (w Sylwestra), który również może być dniem wolnym od pracy i to bez konieczności wykorzystywania urlopu wypoczynkowego. [Źródło: Infor.pl]"
+          "Wigilia miała zapewnić pracownikom więcej odpoczynku i czasu z rodziną. Tymczasem tegoroczne święta mogą okazać się dla części zatrudnionych wyjątkowo wyczerpujące. Przedświąteczne plany pracodawców budzą sprzeciw związkowców, a nietypowy układ kalendarza sprawi, że skutki odczują zarówno pracownicy, jak i klienci. [Źródło: Forsal.pl]"
         ]
       }
     ],
@@ -14468,17 +14563,10 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Wigilia 24 grudnia 2026 r. miała być dniem wolnym od pracy. Sejm zmienił przepisy, ale pracownicy mogą zapłacić za to wysoką cenę",
         "url": "https://forsal.pl/gospodarka/aktualnosci/artykuly/11344432,wigilia-24-grudnia-2026-r-miala-byc-dniem-wolnym-od-pracy-sejm-zmienil-przepisy-ale-pracownicy-moga-zaplacic-za-to-wysoka-cene.html"
-      },
-      {
-        "outlet": "Infor.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "31 grudnia 2026 r. (Sylwester) dniem wolnym od pracy – aż 4 dni wolnego z rzędu, długi weekend bez wykorzystywania urlopu wypoczynkowego",
-        "url": "https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html"
       }
     ],
     "sources": [
       "Forsal.pl",
-      "Infor.pl",
       "Money.pl"
     ],
     "corrections": [
@@ -14486,7 +14574,8 @@
         "claim_text": "Dopisano źródło: Infor.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T08:45:28+01:00"
   },
   {
     "id": 250367812,
@@ -14554,7 +14643,8 @@
       "PetroNews.pl",
       "TVN24"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T08:45:28+01:00"
   },
   {
     "id": 1796401617,
@@ -14643,7 +14733,8 @@
       "TVP3 Łódź",
       "o2.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T08:45:28+01:00"
   },
   {
     "id": 682577743,
@@ -14718,7 +14809,8 @@
       "TKO Olsztyn",
       "TVP3 Olsztyn"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T07:55:48+01:00"
   },
   {
     "id": 971532530,
@@ -14787,7 +14879,8 @@
       "Dziennik.pl",
       "TVP.info"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T07:55:46+01:00"
   },
   {
     "id": 1944602973,
@@ -14870,7 +14963,8 @@
         "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T07:55:46+01:00"
   },
   {
     "id": 940038079,
@@ -14939,7 +15033,8 @@
       "Fakt.pl",
       "o2.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T07:55:46+01:00"
   },
   {
     "id": 836125404,
@@ -15006,7 +15101,8 @@
       "Radio Rzeszów",
       "Rzeszow-News.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T07:55:46+01:00"
   },
   {
     "id": 772742728,
@@ -15081,7 +15177,8 @@
       "TVP3 Szczecin",
       "TVS Śląsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 64871907,
@@ -15139,7 +15236,8 @@
     "sources": [
       "PulsHR"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 1044515573,
@@ -15198,7 +15296,8 @@
     "sources": [
       "Niebezpiecznik"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 1422551039,
@@ -15217,7 +15316,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "11 redakcji"
+        "val": "10 redakcji"
       },
       {
         "label": "Kategoria",
@@ -15229,17 +15328,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (11 źródeł)"
+        "val": "Potwierdzone (10 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (11 redakcji)",
+        "heading": "Ustalenia wspólne (10 redakcji)",
         "paragraphs": [
-          "Donald Trump wciąż uważa, że rozmawiając z Władimirem Putinem, coś osiągnie. Jared Kushner i Steve Witkoff sądzą, że mogą na tym zarobić mnóstwo pieniędzy. Wszystkie rosyjsko-amerykańskie interesy się tu zbiegają. [Źródło: Newsweek Polska, TVN24, Kresy.pl, RadioMaryja.pl, Bankier.pl, Energetyka24, Polsat News, Gazeta.pl, WP Wiadomości, Interia Wydarzenia, Defence24]",
-          "Uważa, że jej rozprzestrzenianie się jest bardzo niebezpieczne – powiedziała rzeczniczka Białego Domu Olivia Wales. Jak powiedzieli wysocy rangą przedstawiciele Białego Domu, Trump zamierza podczas spotkania poruszyć temat wojny w Iranie, lecz nie planuje omawiać sprawy Ukrainy, uważając to za „niestosowne” w obliczu tego, że Chiny nie biorą udziału w negocjacjach w związku z tym konfliktem. [Źródło: Newsweek Polska, RadioMaryja.pl, Bankier.pl, Defence24]",
-          "Informację o dacie rozmów potwierdził również Kreml. [Źródło: Newsweek Polska, TVN24, Defence24]"
+          "Donald Trump wciąż uważa, że rozmawiając z Władimirem Putinem, coś osiągnie. Jared Kushner i Steve Witkoff sądzą, że mogą na tym zarobić mnóstwo pieniędzy. Wszystkie rosyjsko-amerykańskie interesy się tu zbiegają. [Źródło: Newsweek Polska, TVN24, Kresy.pl, RadioMaryja.pl, Bankier.pl, Energetyka24, Polsat News, Gazeta.pl, WP Wiadomości, Interia Wydarzenia]",
+          "Uważa, że jej rozprzestrzenianie się jest bardzo niebezpieczne – powiedziała rzeczniczka Białego Domu Olivia Wales. Jak powiedzieli wysocy rangą przedstawiciele Białego Domu, Trump zamierza podczas spotkania poruszyć temat wojny w Iranie, lecz nie planuje omawiać sprawy Ukrainy, uważając to za „niestosowne” w obliczu tego, że Chiny nie biorą udziału w negocjacjach w związku z tym konfliktem. [Źródło: Newsweek Polska, RadioMaryja.pl, Bankier.pl]",
+          "Informację o dacie rozmów potwierdził również Kreml. [Źródło: Newsweek Polska, TVN24]"
         ]
       },
       {
@@ -15249,8 +15348,7 @@
           "Wcześniej o niektórych postulatach Putina pisał \"Bild\". [Źródło: RadioMaryja.pl]",
           "Wołodymyr Zełenski wyraża się optymistycznie o ostatnich negocjacjach. [Źródło: Energetyka24]",
           "Biały Dom przekazał jednak, że nie przewidziano osobnego spotkania prezydentów USA i Rosji. [Źródło: Polsat News]",
-          "Przywódca Stanów Zjednoczonych chce również porozmawiać o wojnie w Iranie. Zbliżające się wielkimi krokami spotkanie nazywane jest \"nową Jałtą\". AFP przekazała, że prezydent Ukrainy bije na alarm, twierdząc, że może dojść do \"podziału stref wpływów\". [Źródło: Interia Wydarzenia]",
-          "Jednym z tematów ma być ograniczenie światowych arsenałów nuklearnych. Według amerykańskich urzędników nie należy jednak oczekiwać zawarcia konkretnego porozumienia. [Źródło: Defence24]"
+          "Przywódca Stanów Zjednoczonych chce również porozmawiać o wojnie w Iranie. Zbliżające się wielkimi krokami spotkanie nazywane jest \"nową Jałtą\". AFP przekazała, że prezydent Ukrainy bije na alarm, twierdząc, że może dojść do \"podziału stref wpływów\". [Źródło: Interia Wydarzenia]"
         ]
       }
     ],
@@ -15314,17 +15412,10 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Jest potwierdzenie oraz data. Trump, Putin i Xi spotkają się",
         "url": "https://wydarzenia.interia.pl/zagranica/news-kreml-potwierdza-trojstronne-spotkanie-putina-trumpa-i-xi-pa,nId,23573541"
-      },
-      {
-        "outlet": "Defence24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Trump, Putin i Xi spotkają się w Chinach. Rozmowy o kontroli zbrojeń nuklearnych",
-        "url": "https://defence24.pl/geopolityka/trump-putin-i-xi-spotkaja-sie-w-chinach-rozmowy-o-kontroli-zbrojen-nuklearnych"
       }
     ],
     "sources": [
       "Bankier.pl",
-      "Defence24",
       "Energetyka24",
       "Gazeta.pl",
       "Interia Wydarzenia",
@@ -15340,7 +15431,8 @@
         "claim_text": "Dopisano źródło: Defence24 (aktualizacja wieloźródłowa)",
         "evidence_url": "https://defence24.pl/geopolityka/trump-putin-i-xi-spotkaja-sie-w-chinach-rozmowy-o-kontroli-zbrojen-nuklearnych"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 381066513,
@@ -15409,7 +15501,8 @@
       "Radio Lublin",
       "TVP3 Lublin"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 211568800,
@@ -15479,7 +15572,8 @@
       "Business Insider PL",
       "TVP.info"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 983008741,
@@ -15547,7 +15641,8 @@
       "Biznes Interia",
       "Kresy.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T06:51:12+01:00"
   },
   {
     "id": 366784656,
@@ -15618,7 +15713,8 @@
       "Radio Kielce",
       "Radio Ostrowiec"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T05:44:35+01:00"
   },
   {
     "id": 1246628351,
@@ -15688,7 +15784,8 @@
       "Gorzowianin.com",
       "TVP3 Gorzów"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T05:44:34+01:00"
   },
   {
     "id": 282419778,
@@ -15756,7 +15853,8 @@
       "Radio Wrocław",
       "TVP3 Wrocław"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T04:47:04+01:00"
   },
   {
     "id": 2074076069,
@@ -15823,7 +15921,8 @@
       "Rzeczpospolita",
       "Warszawa w Pigułce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T04:47:03+01:00"
   },
   {
     "id": 33274688,
@@ -15893,7 +15992,8 @@
       "Radio Gdańsk",
       "TVP3 Gdańsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T04:47:03+01:00"
   },
   {
     "id": 568847206,
@@ -15960,7 +16060,8 @@
       "Beskidzka24.pl",
       "Bielsko.biala.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T04:47:03+01:00"
   },
   {
     "id": 1639221189,
@@ -16029,7 +16130,8 @@
       "Benchmark.pl",
       "PurePC"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T04:47:03+01:00"
   },
   {
     "id": 2016162074,
@@ -16105,7 +16207,8 @@
       "Pościgi.pl",
       "TVP.info"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:44:55+01:00"
   },
   {
     "id": 1144691448,
@@ -16174,7 +16277,8 @@
       "Radio Białystok",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:44:55+01:00"
   },
   {
     "id": 1066112801,
@@ -16281,7 +16385,8 @@
       "Subiektywnie o Finansach",
       "WysokieNapiecie.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:44:54+01:00"
   },
   {
     "id": 31889682,
@@ -16350,7 +16455,8 @@
       "TVN24",
       "TVP3 Katowice"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:44:54+01:00"
   },
   {
     "id": 1542421036,
@@ -16417,7 +16523,8 @@
       "Radio Kolor",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:44:54+01:00"
   },
   {
     "id": 1119200833,
@@ -16486,7 +16593,8 @@
       "Radio Łódź",
       "TVP3 Łódź"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:03:31+01:00"
   },
   {
     "id": 1309476896,
@@ -16554,7 +16662,8 @@
       "4Lomza.pl",
       "TVP3 Białystok"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:03:31+01:00"
   },
   {
     "id": 66221531,
@@ -16623,7 +16732,8 @@
       "InfoSecurity24",
       "TVP3 Warszawa"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:03:30+01:00"
   },
   {
     "id": 2001223503,
@@ -16692,7 +16802,8 @@
       "TVP.info",
       "TVP3 Bydgoszcz"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:03:30+01:00"
   },
   {
     "id": 726740448,
@@ -16767,7 +16878,8 @@
       "TKO Olsztyn",
       "TVP3 Olsztyn"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:03:30+01:00"
   },
   {
     "id": 926787194,
@@ -16836,7 +16948,8 @@
       "Infor.pl",
       "Radio Poznań"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T03:03:30+01:00"
   },
   {
     "id": 450789715,
@@ -16928,7 +17041,8 @@
       "TVP3 Katowice",
       "WP Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T01:58:52+01:00"
   },
   {
     "id": 568465837,
@@ -17049,7 +17163,8 @@
         "claim_text": "Dopisano źródło: Niezależna.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://niezalezna.pl/sport/tenis/sabalenka-wpisana-na-liste-wrogow-ukrainy-skandal-w-polfinale-wta-finals/584217"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-14T01:58:52+01:00"
   },
   {
     "id": 247102451,
@@ -17118,7 +17233,8 @@
       "Business Insider PL",
       "Space24"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T01:58:51+01:00"
   },
   {
     "id": 1941928142,
@@ -17201,7 +17317,8 @@
       "WP Wiadomości",
       "Warszawa w Pigułce"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T00:53:41+01:00"
   },
   {
     "id": 483945046,
@@ -17288,7 +17405,8 @@
       "Kresy.pl",
       "Onet Wiadomości"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-14T00:53:41+01:00"
   },
   {
     "id": 1651392149,
@@ -17356,7 +17474,8 @@
       "TVP3 Katowice",
       "TVS Śląsk"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T23:37:52+01:00"
   },
   {
     "id": 1825540018,
@@ -17578,7 +17697,8 @@
       "Wyborcza.pl",
       "naTemat.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T23:37:51+01:00"
   },
   {
     "id": 541287021,
@@ -17713,7 +17833,8 @@
         "claim_text": "Dopisano źródło: Niezależna.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://niezalezna.pl/polska/karambol-na-s12-zakonczyl-sie-smiercia-30-latki/584229"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-13T23:37:51+01:00"
   },
   {
     "id": 736053131,
@@ -17837,7 +17958,8 @@
         "claim_text": "Dopisano źródło: Radio Wrocław (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.radiowroclaw.pl/articles/view/165614"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-13T23:37:51+01:00"
   },
   {
     "id": 814134826,
@@ -17928,7 +18050,8 @@
       "Kresy.pl",
       "RadioMaryja.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T23:37:51+01:00"
   },
   {
     "id": 1936967961,
@@ -17996,7 +18119,8 @@
       "RadioMaryja.pl",
       "WNP.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T22:40:25+01:00"
   },
   {
     "id": 253279733,
@@ -18086,7 +18210,8 @@
       "Kresy.pl",
       "Parkiet"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T22:40:25+01:00"
   },
   {
     "id": 213998475,
@@ -18203,7 +18328,8 @@
       "WP Wiadomości",
       "naTemat.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T22:40:25+01:00"
   },
   {
     "id": 359551059,
@@ -18292,7 +18418,8 @@
       "Sport.pl",
       "WP SportoweFakty"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T21:44:09+01:00"
   },
   {
     "id": 1960873498,
@@ -18413,7 +18540,8 @@
       "WP Wiadomości",
       "Wyborcza.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T21:44:08+01:00"
   },
   {
     "id": 1082217521,
@@ -18535,7 +18663,8 @@
       "Sport.pl",
       "WP SportoweFakty"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T20:48:58+01:00"
   },
   {
     "id": 1622858036,
@@ -18602,7 +18731,8 @@
       "GazetaPrawna.pl (DGP)",
       "WP Finanse"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T20:48:58+01:00"
   },
   {
     "id": 1190989013,
@@ -18681,7 +18811,8 @@
       "RadioMaryja.pl",
       "Space24"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T20:48:58+01:00"
   },
   {
     "id": 1860026832,
@@ -18700,7 +18831,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "13 redakcji"
+        "val": "12 redakcji"
       },
       {
         "label": "Kategoria",
@@ -18712,18 +18843,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (13 źródeł)"
+        "val": "Potwierdzone (12 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (13 redakcji)",
+        "heading": "Ustalenia wspólne (12 redakcji)",
         "paragraphs": [
           "13.11.2026 20:17 Rosja od 2023 r. przejmuje pod tymczasowy zarząd aktywa przedsiębiorstw pochodzących z tzw. „państw nieprzyjaznych”. Działania te stanowią odwet za sankcje nałożone na Moskwę w związku z jej agresją na Ukrainę. Od września tego roku Kreml wyraźnie zintensyfikował przejmowanie zagranicznych aktywów. [Źródło: Rzeczpospolita, Business Insider PL, Niezależna.pl, Polsat News, Interia Wydarzenia, WP Wiadomości, TVN24, Wyborcza.pl, RadioMaryja.pl, Radio Zachód, Warszawa w Pigułce, Kresy.pl]",
-          "Polska znalazła się w gronie państw, które będą uczestniczyć w rozmowach dotyczących zakończenia rosyjskiej agresji na Ukrainę. Niedługo po przejęciu kontroli nad przedsiębiorstwem nowy zarząd przekazał 600 mln rubli, czyli około 7,24 mln dolarów, na potrzeby rosyjskiej armii. Estonia zamyka granice z Rosją. [Źródło: Rzeczpospolita, Business Insider PL, Niezależna.pl, Polsat News, Interia Wydarzenia, WP Wiadomości, TVN24, Wyborcza.pl, RadioMaryja.pl, Radio Zachód, Warszawa w Pigułce, Kresy.pl, Gazeta.pl]",
-          "W związku z incydentem zatrzymano osiem osób. Jak wskazał na platformie X, jest to odpowiedź na próbę podpalenia estońskiej fabryki dronów Threod Systems zleconą przez rosyjski wywiad wojskowy GRU. Estońska Służba Bezpieczeństwa Wewnętrznego (KAPO) poinformowała, że celem było wywołanie eksplozji. [Źródło: Rzeczpospolita, Niezależna.pl, Polsat News, Interia Wydarzenia, WP Wiadomości, Wyborcza.pl, Radio Zachód, Warszawa w Pigułce, Kresy.pl]",
-          "Szef MSZ Ukrainy Andrij Sybiha wyraził w niedzielę pełną solidarność z Tallinem. [Źródło: WP Wiadomości, Gazeta.pl]"
+          "Polska znalazła się w gronie państw, które będą uczestniczyć w rozmowach dotyczących zakończenia rosyjskiej agresji na Ukrainę. Niedługo po przejęciu kontroli nad przedsiębiorstwem nowy zarząd przekazał 600 mln rubli, czyli około 7,24 mln dolarów, na potrzeby rosyjskiej armii. Estonia zamyka granice z Rosją. [Źródło: Rzeczpospolita, Business Insider PL, Niezależna.pl, Polsat News, Interia Wydarzenia, WP Wiadomości, TVN24, Wyborcza.pl, RadioMaryja.pl, Radio Zachód, Warszawa w Pigułce, Kresy.pl]",
+          "W związku z incydentem zatrzymano osiem osób. Jak wskazał na platformie X, jest to odpowiedź na próbę podpalenia estońskiej fabryki dronów Threod Systems zleconą przez rosyjski wywiad wojskowy GRU. Estońska Służba Bezpieczeństwa Wewnętrznego (KAPO) poinformowała, że celem było wywołanie eksplozji. [Źródło: Rzeczpospolita, Niezależna.pl, Polsat News, Interia Wydarzenia, WP Wiadomości, Wyborcza.pl, Radio Zachód, Warszawa w Pigułce, Kresy.pl]"
         ]
       },
       {
@@ -18732,6 +18862,7 @@
           "W listopadzie podobny los spotkał rosyjskie oddziały japońskiego producenta wyrobów tytoniowych Japan Tobacco. Decyzja ta spotkała się z protestem władz Japonii. Agencja Bloomberg ustaliła, że zarządcy przejętych firm wpłacają pieniądze na zakup sprzętu dla rosyjskich żołnierzy. [Źródło: Business Insider PL]",
           "Granice mają zostać zamknięte 1 grudnia. [Źródło: Niezależna.pl]",
           "\"Wrogie działania przeciwko Estonii nie pozostaną bez odpowiedzi\" – podkreślił Tsahkna. [Źródło: Interia Wydarzenia]",
+          "Szef MSZ Ukrainy Andrij Sybiha wyraził w niedzielę pełną solidarność z Tallinem. [Źródło: WP Wiadomości]",
           "Minister wskazał też, od kiedy decyzja zacznie obowiązywać. Wcześniej premier tego kraju przekazał informacje o próbie sabotażu w firmie z sektora zbrojeniowego. [Źródło: TVN24]",
           "— napisał na X Tsahkna, dodając, że zamknięcie granicy ograniczy zdolność Rosji do prowadzenia wrogiej działalności oraz wzmocni wysiłki na rzecz przeciwdziałania omijaniu sankcji. [Źródło: Radio Zachód]",
           "Alarmujące wydarzenia w państwie należącym do NATO. Premier Estonii mówi o szerszej kampanii rosyjskich działań hybrydowych przeciwko Europie. Sprawa ma znaczenie także dla bezpieczeństwa wschodniej flanki NATO, do której należy Polska. [Źródło: Warszawa w Pigułce]",
@@ -18811,17 +18942,10 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Rosyjski wywiad miał zlecić atak na zakłady zbrojeniowe. Estonia zamyka granicę",
         "url": "https://kresy.pl/wydarzenia/rosyjski-wywiad-mial-zlecic-atak-na-zaklady-zbrojeniowe-estonia-zamyka-granice/"
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Estonia zamknie wszystkie przejścia graniczne z Rosją. Premier: Nie damy się zastraszyć",
-        "url": "https://wiadomosci.gazeta.pl/swiat/7,198075,33133086,estonia-zamknie-wszystkie-przejscia-graniczne-z-rosja-premier.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       }
     ],
     "sources": [
       "Business Insider PL",
-      "Gazeta.pl",
       "Interia Wydarzenia",
       "Kresy.pl",
       "Niezależna.pl",
@@ -18855,7 +18979,8 @@
         "claim_text": "Dopisano źródło: Gazeta.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wiadomosci.gazeta.pl/swiat/7,198075,33133086,estonia-zamknie-wszystkie-przejscia-graniczne-z-rosja-premier.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
       }
-    ]
+    ],
+    "updated_iso": "2026-11-13T20:48:58+01:00"
   },
   {
     "id": 1471270563,
@@ -18945,7 +19070,8 @@
       "Interia Wydarzenia",
       "TVP3 Kraków"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T19:50:37+01:00"
   },
   {
     "id": 420195128,
@@ -19112,7 +19238,8 @@
       "TVP3 Kielce",
       "o2.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T19:50:37+01:00"
   },
   {
     "id": 553367566,
@@ -19188,7 +19315,8 @@
       "Sport.pl",
       "WP SportoweFakty"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T19:50:37+01:00"
   },
   {
     "id": 483819504,
@@ -19345,7 +19473,8 @@
       "Warszawa w Pigułce",
       "Wyborcza.pl"
     ],
-    "corrections": []
+    "corrections": [],
+    "updated_iso": "2026-11-13T18:46:12+01:00"
   },
   {
     "id": 633686438,
@@ -19361,7 +19490,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "12 redakcji"
+        "val": "10 redakcji"
       },
       {
         "label": "Kategoria",
@@ -19373,29 +19502,27 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (12 źródeł)"
+        "val": "Potwierdzone (10 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (12 redakcji)",
+        "heading": "Ustalenia wspólne (10 redakcji)",
         "paragraphs": [
           "Autopay poinformowało o cyberataku, do którego doszło 11 listopada. Nieuprawnione osoby uzyskały dostęp do infrastruktury spółki i części danych związanych z przetwarzanymi płatnościami. Firma nie wyklucza, że informacje mogły zostać skopiowane lub wykorzystane, dlatego ostrzega klientów i zaleca im sprawdzanie historii transakcji. [Źródło: Puls Biznesu, Cashless.pl, WNP.pl, Lublin112.pl, Telepolis.pl, Sekurak, GazetaPrawna.pl (DGP), Bankier.pl, Kresy.pl, Biznes Interia]",
           "Przeczytajcie także: Pierwsze szczegóły nowego konta Flow Dodała, że zdarzenie zostało zgłoszone do Urzędu Ochrony Danych Osobowych, na policję oraz do CSIRT KNF – zespołu reagowania na incydenty bezpieczeństwa komputerowego działającego przy Komisji Nadzoru Finansowego. [Źródło: Puls Biznesu, Cashless.pl, Telepolis.pl]",
-          "Co prawda, do tej pory, nie potwierdzono żadnego skopiowania, ani wykorzystania danych, ale – jak to w tego typu przypadkach bywa – nie można tego całkowicie wykluczyć. FELG Dent, firma dostarczająca oprogramowanie do gabinetów stomatologicznych, została zhackowana. [Źródło: Puls Biznesu, Cashless.pl, Telepolis.pl, Sekurak, GazetaPrawna.pl (DGP), Bankier.pl, Biznes Interia, Niebezpiecznik]",
+          "Co prawda, do tej pory, nie potwierdzono żadnego skopiowania, ani wykorzystania danych, ale – jak to w tego typu przypadkach bywa – nie można tego całkowicie wykluczyć. FELG Dent, firma dostarczająca oprogramowanie do gabinetów stomatologicznych, została zhackowana. [Źródło: Puls Biznesu, Cashless.pl, Telepolis.pl, Sekurak, GazetaPrawna.pl (DGP), Bankier.pl, Biznes Interia]",
           "— Niezwłocznie po wykryciu zdarzenia zablokowaliśmy nieuprawniony dostęp, zabezpieczyliśmy system i wdrożyliśmy dodatkowe mechanizmy monitorowania – napisała firma Autopay w komunikacie. [Źródło: Puls Biznesu, Cashless.pl, Kresy.pl]",
-          "Jestesmy niezalezni nazywamy sie Horus pokazalismy slabosc kolejnego programu gabinetowego ktory odpowiadal za trzymanie danych polakow (…) w nasze rece wpadly nastepujace dane z felgdent[.]com: 1 200 000 recept — PESEL, dane osobowe, lek, odpłatność, lekarz wystawiający dokumentacja wizyt, e-ZLA, tabele eWUŚ, pliki i zdjęcia z paneli. [Źródło: Cashless.pl, Bankier.pl, Niebezpiecznik]",
-          "Zdarzenie zostało zgłoszone do UODO, KNF i na policję Napisano, że wszystkie osoby, których to może dotyczyć, są informowane o tym bezpośrednio. (Tu atakujący przesłali nam dane na temat kilku pacjentów, w tym osób o nazwisku Braun, Ibisz, Mentzen, Palikot oraz przykłady kilku recept na leki psychotropowe kolejnych pacjentów) [Źródło: Bankier.pl, Niebezpiecznik]"
+          "Jestesmy niezalezni nazywamy sie Horus pokazalismy slabosc kolejnego programu gabinetowego ktory odpowiadal za trzymanie danych polakow (…) w nasze rece wpadly nastepujace dane z felgdent[.]com: 1 200 000 recept — PESEL, dane osobowe, lek, odpłatność, lekarz wystawiający dokumentacja wizyt, e-ZLA, tabele eWUŚ, pliki i zdjęcia z paneli. [Źródło: Cashless.pl, Bankier.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Z tego też powodu, firma postanowiła wydać oficjalne ostrzeżenie. Pozostałe osoby, zostały powiadomione za pośrednictwem komunikatu, zamieszczonego na stronie Autopay. [Źródło: Telepolis.pl]",
-          "Tym razem za atakiem nie stoi Fingerprint (który ma na swoim koncie ataki na MyDr, Medyc i Fakturownię ), a grupa, która nazywa się mianem “Horus”. Wielu z lekarzy z specializacja stomatologiczna wystawialo recepty na leki psychtropowe/stymulanty jesli chcecie otrzymac ich liste i co przepisywali prosimy o kontakt udostepnimy te dane zeby mozna bylo pozbyc sie pseudo lekarzy ktorzy doprowadzaja do smierci ludzi [Źródło: Bankier.pl]",
-          "Atakujący twierdzą, że bazę danych pobrali 9 września wykorzystując podatność IDOR Cross Tenant PID enum i że (w przeciwieństwie do fingerprinta) szantażowali zaatakowaną firmę. [Źródło: Niebezpiecznik]",
-          "Popularna platforma płatności internetowych Autopay została zaatakowana przez hakerów. Patrząc na szczegóły dot. złamania zabezpieczeń, źle to wygląda. Przeczytaj pełny artykuł tutaj: Autopay zhakowane. [Źródło: Tabletowo.pl]"
+          "Zdarzenie zostało zgłoszone do UODO, KNF i na policję Napisano, że wszystkie osoby, których to może dotyczyć, są informowane o tym bezpośrednio. (Tu atakujący przesłali nam dane na temat kilku pacjentów, w tym osób o nazwisku Braun, Ibisz, Mentzen, Palikot oraz przykłady kilku recept na leki psychotropowe kolejnych pacjentów)",
+          "Wielu z lekarzy z specializacja stomatologiczna wystawialo recepty na leki psychtropowe/stymulanty jesli chcecie otrzymac ich liste i co przepisywali prosimy o kontakt udostepnimy te dane zeby mozna bylo pozbyc sie pseudo lekarzy ktorzy doprowadzaja do smierci ludzi [Źródło: Bankier.pl]"
         ]
       }
     ],
@@ -19459,18 +19586,6 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Cyberatak na znaną firmę. Klienci powinni zachować ostrożność",
         "url": "https://biznes.interia.pl/gospodarka/news-cyberatak-na-autopay-klienci-powinni-zachowac-ostroznosc,nId,23573695"
-      },
-      {
-        "outlet": "Niebezpiecznik",
-        "angle": "Kontekst technologiczny",
-        "summary": "Kolejny wyciek danych, tym razem 2 500 000 pacjentów",
-        "url": "https://niebezpiecznik.pl/post/kolejny-wyciek-danych-tym-razem-2-500-000-pacjentow/"
-      },
-      {
-        "outlet": "Tabletowo.pl",
-        "angle": "Kontekst technologiczny",
-        "summary": "Autopay zhakowane. Atak źle wróży na przyszłość",
-        "url": "https://www.tabletowo.pl/autopay-zhakowane-atak-zle-wrozy-na-przyszlosc/"
       }
     ],
     "sources": [
@@ -19480,10 +19595,8 @@
       "GazetaPrawna.pl (DGP)",
       "Kresy.pl",
       "Lublin112.pl",
-      "Niebezpiecznik",
       "Puls Biznesu",
       "Sekurak",
-      "Tabletowo.pl",
       "Telepolis.pl",
       "WNP.pl"
     ],
@@ -19511,7 +19624,8 @@
     ],
     "summary_lead": "Autopay poinformowało o cyberataku, do którego doszło 11 listopada. Nieuprawnione osoby uzyskały dostęp do infrastruktury spółki i części danych związanych z przetwarzanymi płatnościami.",
     "meta_description": "Autopay poinformowało o cyberataku, do którego doszło 11 listopada. Nieuprawnione osoby uzyskały dostęp do infrastruktury spółki i części danych związanych z…",
-    "keywords": "Gospodarka, Autopay, cyberataku, dane, płatności"
+    "keywords": "Gospodarka, Autopay, cyberataku, dane, płatności",
+    "updated_iso": "2026-11-13T17:46:33+01:00"
   },
   {
     "id": 1804137971,
@@ -19586,7 +19700,8 @@
     "corrections": [],
     "summary_lead": "Europejski przemysł otrzyma dodatkowe uprawnienia do emisji dwutlenku węgla. Oznacza to, że nie zostanie obciążony 10 mld euro.",
     "meta_description": "Europejski przemysł otrzyma dodatkowe uprawnienia do emisji dwutlenku węgla. Oznacza to, że nie zostanie obciążony 10 mld euro.",
-    "keywords": "Gospodarka, Miliardy, euro, oszczędności, przemysłu, zwiększa, pulę"
+    "keywords": "Gospodarka, Miliardy, euro, oszczędności, przemysłu, zwiększa, pulę",
+    "updated_iso": "2026-11-13T17:46:33+01:00"
   },
   {
     "id": 2067092977,
@@ -19654,7 +19769,8 @@
     "corrections": [],
     "summary_lead": "„To ciche ćwiczenia i w efekcie ciche zastraszanie. To tak, jakby rabuś ukrywał broń w kieszeni płaszcza z lufą wycelowaną w kasjera.",
     "meta_description": "„To ciche ćwiczenia i w efekcie ciche zastraszanie. To tak, jakby rabuś ukrywał broń w kieszeni płaszcza z lufą wycelowaną w kasjera.",
-    "keywords": "Swiat, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin"
+    "keywords": "Swiat, okrętów, wokół, Tajwanu, Nieogłoszone, manewry, Chin",
+    "updated_iso": "2026-11-13T16:48:28+01:00"
   },
   {
     "id": 1099373364,
@@ -19732,7 +19848,8 @@
     "corrections": [],
     "summary_lead": "Katalog dni ustawowo wolnych od pracy określa ustawa z 18 stycznia 1951 r. o dniach wolnych od pracy. Są to: Pierwsza okazja do dłuższego odpoczynku pojawi się już na początku 2027 roku.",
     "meta_description": "Katalog dni ustawowo wolnych od pracy określa ustawa z 18 stycznia 1951 r. o dniach wolnych od pracy.",
-    "keywords": "Polska, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym"
+    "keywords": "Polska, Długie, weekendy, zaplanować, urlop, przyszłym, kalendarzowym",
+    "updated_iso": "2026-11-13T16:48:28+01:00"
   },
   {
     "id": 297527792,
@@ -19829,7 +19946,8 @@
     "corrections": [],
     "summary_lead": "Sąd ocenił, że wygenerowane treści mają charakter deepfake i zasądził ich usunięcie, a także zadośćuczynienie oraz przeprosiny dla lektora. Sprawa przed Wydziałem Własności Intelektualnej warszawskiego SO toczyła się od końca stycznia.",
     "meta_description": "Sąd ocenił, że wygenerowane treści mają charakter deepfake i zasądził ich usunięcie, a także zadośćuczynienie oraz przeprosiny dla lektora.",
-    "keywords": "Polska, wygenerowała, głos, lektora, warszawskiego"
+    "keywords": "Polska, wygenerowała, głos, lektora, warszawskiego",
+    "updated_iso": "2026-11-13T15:43:30+01:00"
   },
   {
     "id": 160739937,
@@ -19933,7 +20051,8 @@
     "corrections": [],
     "summary_lead": "— Przeglądamy wszystkie sprawy w Trybunale.",
     "meta_description": "— Przeglądamy wszystkie sprawy w Trybunale. Poinformowała także, że odmówiła przyjęcia wniosku prokuratury w sprawie uchylenia immunitetu Bogdana…",
-    "keywords": "Polityka, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych"
+    "keywords": "Polityka, Oświadczenie, Korwin-Piotrowskiej, przegląda, najpilniejszych",
+    "updated_iso": "2026-11-13T15:43:30+01:00"
   },
   {
     "id": 1309434478,
@@ -20036,7 +20155,8 @@
     "corrections": [],
     "summary_lead": "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej opozycji w wyborach do Sejmu.",
     "meta_description": "Mateusz Morawiecki skomentował słowa Jarosława Kaczyńskiego, który podczas Marszu Niepodległości zapowiedział starania o stworzenie jednej listy prawicowej…",
-    "keywords": "Polityka, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne"
+    "keywords": "Polityka, Morawiecki, kluczowej, wyborów, Mamy, zupełnie, inne",
+    "updated_iso": "2026-11-13T15:43:30+01:00"
   },
   {
     "id": 630899041,
@@ -20106,7 +20226,8 @@
     "corrections": [],
     "summary_lead": "Skala biznesu McDonald’s w Polsce Sezonowy powrót Burgera Drwala to dla polskiego oddziału McDonald‘s jeden z kluczowych momentów w kalendarzu biznesowym, generujący co roku skokowy wzrost ruchu w restauracjach.",
     "meta_description": "Skala biznesu McDonald’s w Polsce Sezonowy powrót Burgera Drwala to dla polskiego oddziału McDonald‘s jeden z kluczowych momentów w kalendarzu biznesowym…",
-    "keywords": "Gospodarka, Burger, Drwala, wraca, McDonald, Cena, premiera"
+    "keywords": "Gospodarka, Burger, Drwala, wraca, McDonald, Cena, premiera",
+    "updated_iso": "2026-11-13T15:43:30+01:00"
   },
   {
     "id": 185822819,
@@ -20203,7 +20324,8 @@
     "corrections": [],
     "summary_lead": "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United. Argentyńczyk pracuje obecnie jako selekcjoner reprezentacji USA, a na Wyspy Brytyjskie przeniesie się tuż po przerwie reprezentacyjnej.",
     "meta_description": "Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United.",
-    "keywords": "Sport, Manchester, United, podał, nazwisko, nowego, trenera"
+    "keywords": "Sport, Manchester, United, podał, nazwisko, nowego, trenera",
+    "updated_iso": "2026-11-13T14:11:13+01:00"
   },
   {
     "id": 191191880,
@@ -20287,7 +20409,8 @@
     "corrections": [],
     "summary_lead": "— 50 procent kadry jest do wymiany – mówi były napastnik reprezentacji Polski Paweł Kryszałowicz przed meczem z Rumunią.",
     "meta_description": "— 50 procent kadry jest do wymiany – mówi były napastnik reprezentacji Polski Paweł Kryszałowicz przed meczem z Rumunią.",
-    "keywords": "Sport, Reprezentacja, łasce, Lewandowskiego, Turcji, jeździ, wakacje"
+    "keywords": "Sport, Reprezentacja, łasce, Lewandowskiego, Turcji, jeździ, wakacje",
+    "updated_iso": "2026-11-13T14:11:13+01:00"
   },
   {
     "id": 914762660,
@@ -20377,7 +20500,8 @@
     "corrections": [],
     "summary_lead": "Trwa Puchar Świata w łyżwiarstwie szybkim. Polscy kibice duże nadzieje wiążą m.in. z Damianem Żurkiem, który znalazł się na listach startowych na 500 i 1000 metrów. Polak był blisko podium na dystansie kilometra.",
     "meta_description": "Trwa Puchar Świata w łyżwiarstwie szybkim. Polscy kibice duże nadzieje wiążą m.in. z Damianem Żurkiem, który znalazł się na listach startowych na 500 i 1000…",
-    "keywords": "Sport, Ależ, debiut, Polki, Pucharze, podium, Decydowały"
+    "keywords": "Sport, Ależ, debiut, Polki, Pucharze, podium, Decydowały",
+    "updated_iso": "2026-11-13T12:56:54+01:00"
   },
   {
     "id": 1965361698,
@@ -20462,7 +20586,8 @@
     "corrections": [],
     "summary_lead": "Minister energii odniósł się do argumentów wcześniej prezentowanych przez władze Orlenu, w tym prezesa Ireneusza Fąfarę.",
     "meta_description": "Minister energii odniósł się do argumentów wcześniej prezentowanych przez władze Orlenu, w tym prezesa Ireneusza Fąfarę.",
-    "keywords": "Energetyka, Spór, podatek, zysków, Orlen, Lietuva, Minister"
+    "keywords": "Energetyka, Spór, podatek, zysków, Orlen, Lietuva, Minister",
+    "updated_iso": "2026-11-13T12:56:54+01:00"
   },
   {
     "id": 1559147250,
@@ -20518,7 +20643,8 @@
     "corrections": [],
     "summary_lead": "To jeden z dziesięciu największych tego typu zakładów w Rosji. Jest on w stanie przetwarzać ok. 14 mln ton surowca rocznie, co stanowi ok. 5% całkowitego wolumeny ropy przetwarzanej w kraju.",
     "meta_description": "To jeden z dziesięciu największych tego typu zakładów w Rosji. Jest on w stanie przetwarzać ok. 14 mln ton surowca rocznie, co stanowi ok. 5% całkowitego…",
-    "keywords": "Swiat, Płonie, rafineria, Wołgogradzie, Ukraińskie, znacząco, zmniejszają"
+    "keywords": "Swiat, Płonie, rafineria, Wołgogradzie, Ukraińskie, znacząco, zmniejszają",
+    "updated_iso": "2026-11-13T12:56:54+01:00"
   },
   {
     "id": 1953868958,
@@ -20662,7 +20788,8 @@
     "corrections": [],
     "summary_lead": "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł – wynika z piątkowego obwieszczenia Ministra Energii.",
     "meta_description": "W najbliższą sobotę, niedzielę i poniedziałek litr benzyny 95 będzie kosztował nie więcej niż 6,02 zł, benzyny 98 – 6,66 zł, a oleju napędowego – 7,52 zł –…",
-    "keywords": "Energetyka, zapłacisz, paliwo, weekend, taniej"
+    "keywords": "Energetyka, zapłacisz, paliwo, weekend, taniej",
+    "updated_iso": "2026-11-13T11:50:05+01:00"
   },
   {
     "id": 381088255,
@@ -20739,7 +20866,8 @@
     "corrections": [],
     "summary_lead": "Zwróciłem się do premiera Donalda Tuska z pilną prośbą o przyznanie z budżetu państwa 10 mln zł – przekazał prezydent Krakowa Łukasz Gibała na platformie X.",
     "meta_description": "Zwróciłem się do premiera Donalda Tuska z pilną prośbą o przyznanie z budżetu państwa 10 mln zł – przekazał prezydent Krakowa Łukasz Gibała na platformie X.",
-    "keywords": "Polityka, Łukasz, Gibała, pilną, prośbą, Donalda, Tuska"
+    "keywords": "Polityka, Łukasz, Gibała, pilną, prośbą, Donalda, Tuska",
+    "updated_iso": "2026-11-13T11:50:05+01:00"
   },
   {
     "id": 1404964962,
@@ -20827,7 +20955,8 @@
     "corrections": [],
     "summary_lead": "Na szybach i ścianach budynku pojawiły się napisy „Ręce precz od Republiki” oraz „Tusk precz”, wykonane czarną farbą. Zniszczenia są widoczne zarówno na oknach, jak i elewacji.",
     "meta_description": "Na szybach i ścianach budynku pojawiły się napisy „Ręce precz od Republiki” oraz „Tusk precz”, wykonane czarną farbą.",
-    "keywords": "Polityka, Ręce, precz, Republiki, biuro, posła"
+    "keywords": "Polityka, Ręce, precz, Republiki, biuro, posła",
+    "updated_iso": "2026-11-13T11:50:05+01:00"
   },
   {
     "id": 1277665972,
@@ -20933,7 +21062,8 @@
     "corrections": [],
     "summary_lead": "13.11.2026 11:00 Sprawcy cyberataku włamali się do sieci firmowych producenta i przemycili na wewnętrzne serwery program, który podszywał się pod legalną aktualizację oprogramowania do misji QBase.",
     "meta_description": "13.11.2026 11:00 Sprawcy cyberataku włamali się do sieci firmowych producenta i przemycili na wewnętrzne serwery program, który podszywał się pod legalną…",
-    "keywords": "Swiat, Cyberatak, Niemczech, producenta, dronów, hakerzy, trafili"
+    "keywords": "Swiat, Cyberatak, Niemczech, producenta, dronów, hakerzy, trafili",
+    "updated_iso": "2026-11-13T10:54:04+01:00"
   },
   {
     "id": 1392756724,
@@ -21040,7 +21170,8 @@
     "corrections": [],
     "summary_lead": "Ceny towarów i usług konsumpcyjnych w październiku wzrosły rdr o 3,5 proc., a w porównaniu z poprzednim miesiącem spadły o 0,4 proc. – podał Główny Urząd Statystyczny.",
     "meta_description": "Ceny towarów i usług konsumpcyjnych w październiku wzrosły rdr o 3,5 proc., a w porównaniu z poprzednim miesiącem spadły o 0,4 proc. – podał Główny Urząd…",
-    "keywords": "Gospodarka, wzrosły, ceny, dane, inflacji"
+    "keywords": "Gospodarka, wzrosły, ceny, dane, inflacji",
+    "updated_iso": "2026-11-13T10:54:04+01:00"
   },
   {
     "id": 1791714960,
@@ -21109,7 +21240,8 @@
     "corrections": [],
     "summary_lead": "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował analizy dotyczące cyklicznie monitorowanych przez bank centralny danych…",
     "meta_description": "W przypadku Express Elixira przelewy na telefon Blik stanowiły 82 proc. liczby i 28 proc. wartości rozliczeń w systemie Narodowy Bank Polski opublikował…",
-    "keywords": "Gospodarka, Przelewy, natychmiastowe, rekordy, Express, Elixira, BlueCash"
+    "keywords": "Gospodarka, Przelewy, natychmiastowe, rekordy, Express, Elixira, BlueCash",
+    "updated_iso": "2026-11-13T10:54:04+01:00"
   },
   {
     "id": 1397787222,
@@ -21176,7 +21308,8 @@
     "corrections": [],
     "summary_lead": "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni. Bank Millennium wprowadził jako pierwszy na rynku możliwość rozkładania takich transakcji na miesięczne raty.",
     "meta_description": "Usługa Blik Płacę Później przestaje być wyłącznie narzędziem do jednorazowego odraczania płatności o 30 dni.",
-    "keywords": "Gospodarka, Blik, Płacę, Później, opcją, Bank, Millennium"
+    "keywords": "Gospodarka, Blik, Płacę, Później, opcją, Bank, Millennium",
+    "updated_iso": "2026-11-13T10:54:04+01:00"
   },
   {
     "id": 2101976617,
@@ -21259,7 +21392,8 @@
     "corrections": [],
     "summary_lead": "Dziś Główny Urząd Statystyczny opublikował nowe dane o PKB i inflacji, ale zdaniem analityków informacje te raczej nie będą istotnym wsparciem dla krajowej waluty.",
     "meta_description": "Dziś Główny Urząd Statystyczny opublikował nowe dane o PKB i inflacji, ale zdaniem analityków informacje te raczej nie będą istotnym wsparciem dla krajowej…",
-    "keywords": "Gospodarka, Cena, euro, dolara, franka, Kursy, walut"
+    "keywords": "Gospodarka, Cena, euro, dolara, franka, Kursy, walut",
+    "updated_iso": "2026-11-13T09:54:25+01:00"
   },
   {
     "id": 1022353335,
@@ -21345,7 +21479,8 @@
     "corrections": [],
     "summary_lead": "Były rzecznik prasowy dawnego premiera Ukrainy Mykoły Azarowa ucierpiał w wyniku wybuchu samochodu w Moskwie – podają rosyjskie media. Mężczyzna przetransportowany został do szpitala.",
     "meta_description": "Były rzecznik prasowy dawnego premiera Ukrainy Mykoły Azarowa ucierpiał w wyniku wybuchu samochodu w Moskwie – podają rosyjskie media.",
-    "keywords": "Swiat, Eksplozja, auta, Moskwie, pokładzie, postać, otoczenia"
+    "keywords": "Swiat, Eksplozja, auta, Moskwie, pokładzie, postać, otoczenia",
+    "updated_iso": "2026-11-13T09:54:25+01:00"
   },
   {
     "id": 1747776666,
@@ -21423,7 +21558,8 @@
     "corrections": [],
     "summary_lead": "Jak podała londyńska policja metropolitalna 41-letniego wojskowego zatrzymano 10 listopada w pobliżu Gloucester.",
     "meta_description": "Jak podała londyńska policja metropolitalna 41-letniego wojskowego zatrzymano 10 listopada w pobliżu Gloucester.",
-    "keywords": "Swiat, Pracował, NATO, szpiegował, rzecz, Rosji, Podpułkownika"
+    "keywords": "Swiat, Pracował, NATO, szpiegował, rzecz, Rosji, Podpułkownika",
+    "updated_iso": "2026-11-13T09:54:25+01:00"
   },
   {
     "id": 792557016,
@@ -21527,7 +21663,8 @@
     "corrections": [],
     "summary_lead": "Wicemarszałek Sejmu Piotr Zgorzelski (PSL) poinformował, że do premiera trafiła dymisja wiceministra spraw zagranicznych Władysława Teofila Bartoszewskiego, któremu prokuratura postawiła zarzuty.",
     "meta_description": "Wicemarszałek Sejmu Piotr Zgorzelski (PSL) poinformował, że do premiera trafiła dymisja wiceministra spraw zagranicznych Władysława Teofila Bartoszewskiego…",
-    "keywords": "Polityka, Dymisja, wiceministra, biurku, premiera, Zgorzelski, komentuje"
+    "keywords": "Polityka, Dymisja, wiceministra, biurku, premiera, Zgorzelski, komentuje",
+    "updated_iso": "2026-11-13T08:52:16+01:00"
   },
   {
     "id": 1246065176,
@@ -21613,7 +21750,8 @@
     "corrections": [],
     "summary_lead": "9 goli i 4 asysty w 19 meczach – z takim bilansem Robert Lewandowski zakończył sezon zasadniczy w MLS. Przed 38-latkiem play-offy, w których Chicago Fire rozpocznie zmagania od starcia z Charlotte FC.",
     "meta_description": "9 goli i 4 asysty w 19 meczach – z takim bilansem Robert Lewandowski zakończył sezon zasadniczy w MLS.",
-    "keywords": "Sport, Robert, Lewandowski, pominięty, ogłasza, ostateczna"
+    "keywords": "Sport, Robert, Lewandowski, pominięty, ogłasza, ostateczna",
+    "updated_iso": "2026-11-13T08:52:16+01:00"
   },
   {
     "id": 1360753066,
@@ -21697,7 +21835,8 @@
     "corrections": [],
     "summary_lead": "Na warszawskiej Pradze na idącego chodnikiem 49-latka spadł z dużej wysokości karabinek przypominający broń pneumatyczną. Mężczyzna z obrażeniami nogi trafił do szpitala. Policjanci szybko ustalili, z którego okna wyleciał przedmiot.",
     "meta_description": "Na warszawskiej Pradze na idącego chodnikiem 49-latka spadł z dużej wysokości karabinek przypominający broń pneumatyczną.",
-    "keywords": "Mazowieckie, Warszawska, Praga, wyrzucił, broń, okno, Karabinek"
+    "keywords": "Mazowieckie, Warszawska, Praga, wyrzucił, broń, okno, Karabinek",
+    "updated_iso": "2026-11-13T08:52:16+01:00"
   },
   {
     "id": 1950223679,
@@ -21784,7 +21923,8 @@
     "corrections": [],
     "summary_lead": "Droga ekspresowa S6 w kierunku Gdańska została zablokowana po zderzeniu pięciu samochodów. Do wypadku doszło w piątek rano między węzłami Wrześnica i Sycewice.",
     "meta_description": "Droga ekspresowa S6 w kierunku Gdańska została zablokowana po zderzeniu pięciu samochodów.",
-    "keywords": "Pomorskie, Karambol, samego, rana, Zderzyło, pięć, samochodów"
+    "keywords": "Pomorskie, Karambol, samego, rana, Zderzyło, pięć, samochodów",
+    "updated_iso": "2026-11-13T08:52:16+01:00"
   },
   {
     "id": 814602991,
@@ -21859,7 +21999,8 @@
     "corrections": [],
     "summary_lead": "Jak informuje „Rzeczpospolita”, w ubiegłym roku firmy Eli Lilly i Novo Nordisk, producenci odpowiednio Mounjaro i Wegovy, przekazały lekarzom oraz organizacjom ochrony zdrowia łącznie około 25 mln zł. Wsparcie kampanii społecznych i…",
     "meta_description": "Jak informuje „Rzeczpospolita”, w ubiegłym roku firmy Eli Lilly i Novo Nordisk, producenci odpowiednio Mounjaro i Wegovy, przekazały lekarzom oraz…",
-    "keywords": "Gospodarka, Otyłość, kosztuje, miliardy, złotych, Producenci, leków"
+    "keywords": "Gospodarka, Otyłość, kosztuje, miliardy, złotych, Producenci, leków",
+    "updated_iso": "2026-11-13T07:02:48+01:00"
   },
   {
     "id": 1380603753,
@@ -21934,7 +22075,8 @@
     "corrections": [],
     "summary_lead": "Jan Grabiec został zapytany przez Justynę Dobrosz-Oracz o to, czy spodziewał się, że prezydent odrzuci zaproszenie premiera do jego domu w Sopocie.",
     "meta_description": "Jan Grabiec został zapytany przez Justynę Dobrosz-Oracz o to, czy spodziewał się, że prezydent odrzuci zaproszenie premiera do jego domu w Sopocie.",
-    "keywords": "Polityka, spotkaniem, Tuska, Nawrockiego, Ociepa, byle, jaką"
+    "keywords": "Polityka, spotkaniem, Tuska, Nawrockiego, Ociepa, byle, jaką",
+    "updated_iso": "2026-11-13T07:02:47+01:00"
   },
   {
     "id": 703973940,
@@ -22090,7 +22232,8 @@
     "corrections": [],
     "summary_lead": "Piątkowa sesja na Wall Street zakończyła się spadkami głównych indeksów. Nastroje inwestorów pogorszyły się w związku z nasilającą się wyprzedażą akcji Nvidii oraz nowymi danymi wskazującymi na utrzymywanie się wysokiej inflacji w USA.",
     "meta_description": "Piątkowa sesja na Wall Street zakończyła się spadkami głównych indeksów.",
-    "keywords": "Swiat, Nvidia, ciągnie, Wall, Street, Alphabet, korzysta"
+    "keywords": "Swiat, Nvidia, ciągnie, Wall, Street, Alphabet, korzysta",
+    "updated_iso": "2026-11-13T05:54:48+01:00"
   },
   {
     "id": 2091959762,
@@ -22159,7 +22302,8 @@
     "corrections": [],
     "summary_lead": "Polska została wybrana, kosztem Rosji, do Wspólnej Jednostki Kontrolnej (Joint Inspection Unit, JIU), jedynego niezależnego zewnętrznego organu nadzoru obejmującego cały system Narodów Zjednoczonych.",
     "meta_description": "Polska została wybrana, kosztem Rosji, do Wspólnej Jednostki Kontrolnej (Joint Inspection Unit, JIU), jedynego niezależnego zewnętrznego organu nadzoru…",
-    "keywords": "Polska, Prestiżowa, wygrana, Rosją, forum, Zdecydował, jeden"
+    "keywords": "Polska, Prestiżowa, wygrana, Rosją, forum, Zdecydował, jeden",
+    "updated_iso": "2026-11-13T04:53:56+01:00"
   },
   {
     "id": 1733840834,
@@ -22227,7 +22371,8 @@
     "corrections": [],
     "summary_lead": "Wspólny fundusz inwestycyjny dla sztucznej inteligencji, rozwój infrastruktury obliczeniowej i ograniczenie zależności od zagranicznych dostawców technologii – Prezydent RP Karol Nawrocki przedstawił w Poznaniu swoją wizję cyfrowej…",
     "meta_description": "Wspólny fundusz inwestycyjny dla sztucznej inteligencji, rozwój infrastruktury obliczeniowej i ograniczenie zależności od zagranicznych dostawców technologii…",
-    "keywords": "Polityka, Prezydent, proponuje, fundusz, Trójmorza, ostrzega, technologiczną"
+    "keywords": "Polityka, Prezydent, proponuje, fundusz, Trójmorza, ostrzega, technologiczną",
+    "updated_iso": "2026-11-13T04:53:56+01:00"
   },
   {
     "id": 1288501520,
@@ -22319,7 +22464,8 @@
     ],
     "summary_lead": "Trump został zapytany przez konserwatywnego komentatora Hugh Hewitta, czy w razie potrzeby użyłby siły, by — jak ujął to prowadzący — „wyzwolić Kubę”. Prezydent odpowiedział twierdząco. Tak, chcę załatwić sprawę Kuby, zanim odejdę.",
     "meta_description": "Trump został zapytany przez konserwatywnego komentatora Hugh Hewitta, czy w razie potrzeby użyłby siły, by — jak ujął to prowadzący — „wyzwolić Kubę”.",
-    "keywords": "Swiat, Trump, mówi, użyciu, siły, wobec, Kuby"
+    "keywords": "Swiat, Trump, mówi, użyciu, siły, wobec, Kuby",
+    "updated_iso": "2026-11-13T03:48:54+01:00"
   },
   {
     "id": 655251422,
@@ -22447,7 +22593,8 @@
     "corrections": [],
     "summary_lead": "Jak na razie to są tylko takie hasełka rzucone do kamery, a nie było nigdy żadnej poważnej próby budowania takiej listy – powiedział w \"Kropce nad i\" poseł Konfederacji Michał Wawer.",
     "meta_description": "Jak na razie to są tylko takie hasełka rzucone do kamery, a nie było nigdy żadnej poważnej próby budowania takiej listy – powiedział w \"Kropce nad i\" poseł…",
-    "keywords": "Polityka, Wspólna, lista, prawicy, Sejmu, Poseł, Konfederacji"
+    "keywords": "Polityka, Wspólna, lista, prawicy, Sejmu, Poseł, Konfederacji",
+    "updated_iso": "2026-11-13T03:48:54+01:00"
   },
   {
     "id": 1805515232,
@@ -22532,7 +22679,8 @@
     "corrections": [],
     "summary_lead": "Lider e-commerce rośnie dwukrotnie szybciej niż sprzedaż detaliczna w Polsce. Kolejny raz podwyższa prognozę wyników m.in. dzięki porozumieniu z kluczowym partnerem logistycznym.",
     "meta_description": "Lider e-commerce rośnie dwukrotnie szybciej niż sprzedaż detaliczna w Polsce.",
-    "keywords": "Gospodarka, Akcje, Allegro, najdroższe, pięciu, umowa, InPostem"
+    "keywords": "Gospodarka, Akcje, Allegro, najdroższe, pięciu, umowa, InPostem",
+    "updated_iso": "2026-11-13T02:45:35+01:00"
   },
   {
     "id": 1575506329,
@@ -22619,7 +22767,8 @@
     "corrections": [],
     "summary_lead": "Kontrole graniczne zarządzone przez niemieckie ministerstwo spraw wewnętrznych na granicach z Polską i Czechami były niezgodne z prawem – orzekł w czwartek sąd administracyjny w Dreźnie. Tym samym sąd przyznał rację dwóm skarżącym.",
     "meta_description": "Kontrole graniczne zarządzone przez niemieckie ministerstwo spraw wewnętrznych na granicach z Polską i Czechami były niezgodne z prawem – orzekł w czwartek…",
-    "keywords": "Polska, granicy, Niemcami, uznał, kontrolę, niezgodną, prawem"
+    "keywords": "Polska, granicy, Niemcami, uznał, kontrolę, niezgodną, prawem",
+    "updated_iso": "2026-11-13T02:45:35+01:00"
   },
   {
     "id": 393436657,
@@ -22693,7 +22842,8 @@
     "corrections": [],
     "summary_lead": "Sąd Pierwszej Instancji w Brukseli wydał korzystny wyrok dla strony polskiej w sprawie zajęcia opłat trasowych należnych Polskiej Agencji Żeglugi Powietrznej (PAŻP), pobieranych za pośrednictwem EUROCONTROL – podało w czwartek…",
     "meta_description": "Sąd Pierwszej Instancji w Brukseli wydał korzystny wyrok dla strony polskiej w sprawie zajęcia opłat trasowych należnych Polskiej Agencji Żeglugi Powietrznej…",
-    "keywords": "Gospodarka, Pfizer, zablokował, aktywa, PAŻP, Brukseli"
+    "keywords": "Gospodarka, Pfizer, zablokował, aktywa, PAŻP, Brukseli",
+    "updated_iso": "2026-11-13T02:45:35+01:00"
   },
   {
     "id": 398969318,
@@ -22784,7 +22934,8 @@
     "corrections": [],
     "summary_lead": "W Waszyngtonie, niespełna dwa kilometry od Białego Domu, uzbrojony napastnik zabarykadował się w jednym z budynków. Policja przekazała, że w wyniku strzelaniny zginęła jedna osoba, a cztery zostały ranne.",
     "meta_description": "W Waszyngtonie, niespełna dwa kilometry od Białego Domu, uzbrojony napastnik zabarykadował się w jednym z budynków.",
-    "keywords": "Swiat, Strzelanina, pobliżu, Białego, Domu, żyją, dwie"
+    "keywords": "Swiat, Strzelanina, pobliżu, Białego, Domu, żyją, dwie",
+    "updated_iso": "2026-11-13T02:15:03+01:00"
   },
   {
     "id": 369586555,
@@ -22861,7 +23012,8 @@
     "corrections": [],
     "summary_lead": "Nie było pojednania za zamkniętymi drzwiami warszawskiego sądu. Rusza głośny proces karny z prywatnego aktu oskarżenia, który prezydent Karol Nawrocki skierował przeciwko dziennikarzom Onetu – Andrzejowi Stankiewiczowi i Jackowi…",
     "meta_description": "Nie było pojednania za zamkniętymi drzwiami warszawskiego sądu. Rusza głośny proces karny z prywatnego aktu oskarżenia, który prezydent Karol Nawrocki…",
-    "keywords": "Polityka, Proces, Karola, Nawrockiego, dziennikarzami, Onetu, wyznaczył"
+    "keywords": "Polityka, Proces, Karola, Nawrockiego, dziennikarzami, Onetu, wyznaczył",
+    "updated_iso": "2026-11-13T02:15:03+01:00"
   },
   {
     "id": 1674486764,
@@ -22929,7 +23081,8 @@
     "corrections": [],
     "summary_lead": "— Nie chcę dawać mediom powodów do satysfakcji, gdy zobaczą, że wchodzę do aresztu – oświadczył Viktor Orban w czwartkowym wywiadzie dla internetowego kanału „Ultrahang”.",
     "meta_description": "— Nie chcę dawać mediom powodów do satysfakcji, gdy zobaczą, że wchodzę do aresztu – oświadczył Viktor Orban w czwartkowym wywiadzie dla internetowego kanału…",
-    "keywords": "Swiat, Orban, wejdzie, aresztu, spotkania, bratem"
+    "keywords": "Swiat, Orban, wejdzie, aresztu, spotkania, bratem",
+    "updated_iso": "2026-11-13T02:15:03+01:00"
   },
   {
     "id": 27323164,
@@ -22999,6 +23152,7 @@
     "corrections": [],
     "summary_lead": "Uprzejmie informuję panie prezydencie, że junta wojskowa nie jest charakterystyczna dla naszego kraju w czasach demokratycznych – zwrócił się do głowy państwa marszałek Sejmu Włodzimierz Czarzasty.",
     "meta_description": "Uprzejmie informuję panie prezydencie, że junta wojskowa nie jest charakterystyczna dla naszego kraju w czasach demokratycznych – zwrócił się do głowy…",
-    "keywords": "Polityka, Czarzasty, zwrócił, prezydenta, Padły, słowa, juncie"
+    "keywords": "Polityka, Czarzasty, zwrócił, prezydenta, Padły, słowa, juncie",
+    "updated_iso": "2026-11-13T02:09:05+01:00"
   }
 ]

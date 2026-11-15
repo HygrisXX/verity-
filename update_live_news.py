@@ -1499,6 +1499,7 @@ def _enrich_existing_thin_articles(articles: list, max_articles: int = 24) -> in
     for art_id in enriched_arts:
         art, cands = art_cands[art_id]
         _apply_candidates_to_article(art, cands, preserve_seo_url=True)
+        art["updated_iso"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
         art["_url_enriched"] = True
 
     for art, _ in art_cands.values():
@@ -2986,6 +2987,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
         "keywords": keywords,
         "thumbnail_url": thumbnail_url,
         "published_iso": now_iso,
+        "updated_iso": now_iso,
         "display_date": now_display,
         "status": "AUTO_PUBLISHED",
         "fact_agreement_pct": fact_agreement_pct,
@@ -3579,6 +3581,8 @@ def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> di
             return None
 
     _apply_candidates_to_article(art, candidates, preserve_seo_url=False)
+    if not art.get("updated_iso") and art.get("published_iso"):
+        art["updated_iso"] = art["published_iso"]
     return art
 
 

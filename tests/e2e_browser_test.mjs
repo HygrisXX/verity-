@@ -45,6 +45,7 @@ const MIME = {
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml',
+  '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
 function startStaticServer() {
@@ -250,6 +251,16 @@ async function run() {
       ['/sitemap.xml', 200],
       ['/news-sitemap.xml', 200],
       ['/feed.xml', 200],
+      ['/Polska/feed.xml', 200],
+      ['/Polska/Gospodarka/feed.xml', 200],
+      ['/Swiat/feed.xml', 200],
+      ['/Sport/feed.xml', 200],
+      ['/articles-index.json', 200],
+      ['/manifest.webmanifest', 200],
+      ['/sw.js', 200],
+      ['/icon.svg', 200],
+      ['/icon-192.png', 200],
+      ['/icon-512.png', 200],
       ['/robots.txt', 200],
       ['/nieistniejacy-adres-test-404/', 404],
     ];
@@ -261,7 +272,7 @@ async function run() {
 
     browser = await launchChromium();
 
-    // 2. Desktop strona główna + szuflada 16 województw
+    // 2. Desktop strona główna + stronicowanie podczas przewijania + szuflada 16 województw
     await browser.goto(`${baseUrl}/`);
     const homeInfo = await browser.evalJs(`(() => ({
       title: document.title,
@@ -273,13 +284,30 @@ async function run() {
       hasNbsp: document.getElementById('articlesFeed').textContent.includes('\\u00A0'),
       robots: document.querySelector('meta[name="robots"]')?.content || '',
       canonical: document.querySelector('link[rel="canonical"]')?.href || '',
+      hasManifest: Boolean(document.querySelector('link[rel="manifest"]')),
+      hasSectionRss: Boolean(document.querySelector('link[rel="alternate"][href*="Polska/feed.xml"]')),
+      hasLoadMoreBtn: Boolean(document.getElementById('loadMoreBtn')),
+      pagerMeta: document.querySelector('.feed-load-more-meta')?.textContent || '',
       badges: Array.from(document.querySelectorAll('#articlesFeed .story-top .cat-badge')).map(b => b.textContent.trim()),
     }))()`);
-    assert(homeInfo.cards >= 10, `Za mało kart na stronie głównej: ${homeInfo.cards}`);
+    assert(homeInfo.cards === 13, `Oczekiwano startowej porcji 13 kart (1 lead + 12 kart), jest ${homeInfo.cards}`);
+    assert(homeInfo.hasManifest && homeInfo.hasSectionRss, `Brak tagów PWA manifest lub RSS działu: ${JSON.stringify(homeInfo)}`);
+    assert(homeInfo.hasLoadMoreBtn && homeInfo.pagerMeta.includes('Wyświetlono 13'), `Brak kontrolki stronicowania przy starcie: ${JSON.stringify(homeInfo)}`);
     assert(!homeInfo.overflow, `Poziomy scroll na desktopie (/): ${homeInfo.scrollW} > ${homeInfo.clientW}`);
     assert(homeInfo.hasNbsp, 'Brak niełamliwych spacji \\u00A0 na stronie głównej');
     assert(homeInfo.robots.includes('index'), `Zły meta robots na /: ${homeInfo.robots}`);
     assert(!homeInfo.badges.includes('Świat') && !homeInfo.badges.includes('Sport'), `Karty Świat/Sport nie powinny pojawiać się w dziale Polska (/): ${homeInfo.badges.join(', ')}`);
+
+    // Przewinięcie w dół wywołuje automatyczne doładowanie kolejnej porcji (IntersectionObserver)
+    await browser.evalJs(`document.getElementById('feedLoadMoreWrap')?.scrollIntoView({ behavior: 'instant' })`);
+    await new Promise(r => setTimeout(r, 350));
+    const scrolledFeedInfo = await browser.evalJs(`({
+      cardsAfterScroll: document.querySelectorAll('.story-title-link').length,
+      pagerMeta: document.querySelector('.feed-load-more-meta')?.textContent || '',
+    })`);
+    assert(scrolledFeedInfo.cardsAfterScroll >= 25, `Przewijanie powinno automatycznie doładować kolejną porcję artykułów (było ${homeInfo.cards}, jest ${scrolledFeedInfo.cardsAfterScroll})`);
+    await browser.evalJs(`window.scrollTo(0, 0)`);
+    await new Promise(r => setTimeout(r, 150));
     await browser.screenshot('desktop_home.png');
 
     // Kliknięcie przycisku "16 woj." -> otwarcie szuflady #regionsDrawer na desktopie

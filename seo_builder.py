@@ -12,6 +12,7 @@ import re
 import shutil
 import xml.sax.saxutils
 from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 
 VOIVODESHIPS = [
     (
@@ -645,11 +646,18 @@ def render_feed_ssr(articles: list, path: str, rel_root: str) -> str:
 
     use_lead = len(filtered) >= 3
     lead = filtered[0] if use_lead else None
-    rest = filtered[1:16] if use_lead else filtered[:15]
+    rest = filtered[1:13] if use_lead else filtered[:12]
+    shown_count = (1 if lead else 0) + len(rest)
     lead_html = _render_lead_ssr(lead, rel_root) if lead else ""
     cards_html = "\n".join(_render_card_ssr(a, rel_root) for a in rest)
     grid_cls = "cards-grid after-lead" if lead else "cards-grid"
-    return heading + region_strip + lead_html + (f'<div class="{grid_cls}">{cards_html}</div>' if cards_html else "")
+    grid_html = f'<div id="feedGrid" class="{grid_cls}">{cards_html}</div>' if cards_html else ""
+    pager_note = (
+        f'<div class="feed-load-more-wrap"><div class="feed-load-more-meta">Wyświetlono {shown_count} z {len(filtered)} opracowań · przewiń w dół, aby wczytać kolejne</div></div>'
+        if len(filtered) > shown_count
+        else ""
+    )
+    return heading + region_strip + lead_html + grid_html + pager_note
 
 
 def _reconcile_lead_and_first_para(art: dict) -> tuple:
@@ -675,8 +683,10 @@ def _reconcile_lead_and_first_para(art: dict) -> tuple:
 
     if summary_lead.endswith("…"):
         prefix_no_ellip = summary_lead[:-1].rstrip()
-        if first_plain.startswith(prefix_no_ellip) and len(first_plain) <= 340:
-            return True, first_plain, True, ""
+        if prefix_no_ellip and first_plain.startswith(prefix_no_ellip):
+            if len(first_plain) <= 450:
+                return True, first_plain, True, ""
+            return False, "", False, first_raw
 
     if norm_l and norm_p and (
         norm_p == norm_l
@@ -1036,7 +1046,7 @@ def _build_news_article_jsonld(art: dict, site_base_url: str) -> list:
         "headline": (art.get("seo_title") or "")[:110],
         "description": art.get("meta_description") or article_lede(art, 160),
         "datePublished": art.get("published_iso") or "",
-        "dateModified": art.get("published_iso") or "",
+        "dateModified": art.get("updated_iso") or art.get("published_iso") or "",
         "inLanguage": "pl",
         "isAccessibleForFree": True,
         "articleSection": short_cat_label(cat_path),
@@ -1072,6 +1082,8 @@ def _page_shell(
     robots_content: str = "index, follow, max-image-preview:large, max-snippet:-1",
     css_ver: str = "1",
     js_ver: str = "1",
+    section_rss_rel: str = "",
+    section_rss_title: str = "",
 ) -> str:
     safe_title = html.escape(title, quote=True)
     safe_desc = html.escape(description, quote=True)
@@ -1085,6 +1097,11 @@ def _page_shell(
     tw_card = "summary_large_image" if safe_img else "summary"
     ld_json_str = json.dumps(json_ld_obj, ensure_ascii=False, indent=2).replace("</", "<\\/")
     nav_html = _render_nav_html(rel_root, active_path)
+    sec_rss_tag = (
+        f'\n  <link rel="alternate" type="application/rss+xml" title="{html.escape(section_rss_title or "VERITY RSS", quote=True)}" href="{html.escape(rel_root + section_rss_rel, quote=True)}" />'
+        if section_rss_rel
+        else ""
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="pl">
@@ -1094,6 +1111,10 @@ def _page_shell(
   <title>{safe_title}</title>
   <meta name="description" content="{safe_desc}" />
   <meta name="robots" content="{html.escape(robots_content, quote=True)}" />
+  <meta name="theme-color" content="#151b28" />
+  <link rel="icon" type="image/svg+xml" href="{html.escape(rel_root, quote=True)}icon.svg" />
+  <link rel="apple-touch-icon" href="{html.escape(rel_root, quote=True)}icon-192.png" />
+  <link rel="manifest" href="{html.escape(rel_root, quote=True)}manifest.webmanifest" />
   <link rel="canonical" href="{safe_can}" />
 {extra_meta_html}
   <meta property="og:type" content="{html.escape(og_type, quote=True)}" />
@@ -1110,7 +1131,7 @@ def _page_shell(
 {ld_json_str}
   </script>
 
-  <link rel="alternate" type="application/rss+xml" title="VERITY RSS" href="{html.escape(rel_root, quote=True)}feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="VERITY RSS" href="{html.escape(rel_root, quote=True)}feed.xml" />{sec_rss_tag}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
@@ -1232,6 +1253,97 @@ def _asset_hash(path: str) -> str:
         return "1"
 
 
+MAIN_RSS_SECTIONS = (
+    ("/Polska", "Polska"),
+    ("/Polska/Gospodarka", "Gospodarka i rynek"),
+    ("/Polska/Polityka", "Polityka i prawo"),
+    ("/Polska/Energetyka", "Energetyka i klimat"),
+    ("/Polska/Regiony", "Regiony Polski (16 województw)"),
+    ("/Swiat", "Świat i geopolityka"),
+    ("/Sport", "Sport"),
+)
+MAIN_RSS_SECTION_MAP = dict(MAIN_RSS_SECTIONS)
+
+
+def _iso_to_rfc2822(iso_str: str) -> str:
+    raw = (iso_str or "").strip()
+    if not raw:
+        return ""
+    try:
+        dt = datetime.fromisoformat(raw)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone(timedelta(hours=1)))
+        return format_datetime(dt)
+    except Exception:
+        return ""
+
+
+def _section_rss_for_path(cat_path: str) -> tuple:
+    p = LEGACY_REGION_MAP.get(cat_path or "", cat_path or "/Polska")
+    if p in MAIN_RSS_SECTION_MAP:
+        return f"{p.strip('/')}/feed.xml", f"VERITY — {MAIN_RSS_SECTION_MAP[p]} (RSS)"
+    if p.startswith("/Polska/Regiony/"):
+        return "Polska/Regiony/feed.xml", f"VERITY — {MAIN_RSS_SECTION_MAP['/Polska/Regiony']} (RSS)"
+    if p.startswith("/Polska/"):
+        return "Polska/feed.xml", f"VERITY — {MAIN_RSS_SECTION_MAP['/Polska']} (RSS)"
+    return "", ""
+
+
+def build_articles_index(articles: list) -> list:
+    """Buduje lekki indeks artykułów (bez full_sections i perspectives) do szybkiego startu SPA."""
+    index_items = []
+    for a in articles or []:
+        index_items.append({
+            "id": a.get("id"),
+            "path": a.get("path") or "/Polska",
+            "seo_url": a.get("seo_url") or "",
+            "seo_title": a.get("seo_title") or "",
+            "summary_lead": a.get("summary_lead") or article_lede(a, 240),
+            "meta_description": a.get("meta_description") or "",
+            "keywords": a.get("keywords") or "",
+            "thumbnail_url": a.get("thumbnail_url") or "",
+            "published_iso": a.get("published_iso") or "",
+            "updated_iso": a.get("updated_iso") or a.get("published_iso") or "",
+            "display_date": a.get("display_date") or "",
+            "status": a.get("status") or "AUTO_PUBLISHED",
+            "fact_agreement_pct": a.get("fact_agreement_pct"),
+            "metrics": (a.get("metrics") or [])[:3],
+            "sources": a.get("sources") or [],
+            "declickbait": a.get("declickbait") or [],
+            "reading_minutes": reading_minutes(a),
+        })
+    return index_items
+
+
+def _build_rss_xml(title: str, page_link: str, self_url: str, description: str, items: list, site_base_url: str) -> str:
+    rss_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+        "  <channel>",
+        f"    <title>{xml.sax.saxutils.escape(title)}</title>",
+        f"    <link>{xml.sax.saxutils.escape(page_link)}</link>",
+        f'    <atom:link href="{xml.sax.saxutils.escape(self_url)}" rel="self" type="application/rss+xml" />',
+        f"    <description>{xml.sax.saxutils.escape(description)}</description>",
+        "    <language>pl</language>",
+    ]
+    for a in items[:30]:
+        link_esc = xml.sax.saxutils.escape(f"{site_base_url}{a['seo_url']}/")
+        desc = a.get("meta_description") or article_lede(a, 200)
+        pub_rfc = _iso_to_rfc2822(a.get("published_iso") or "")
+        rss_lines.extend([
+            "    <item>",
+            f"      <title>{xml.sax.saxutils.escape(a['seo_title'])}</title>",
+            f"      <link>{link_esc}</link>",
+            f'      <guid isPermaLink="true">{link_esc}</guid>',
+            f"      <category>{xml.sax.saxutils.escape(short_cat_label(a.get('path','/Polska')))}</category>",
+            *(["      <pubDate>" + xml.sax.saxutils.escape(pub_rfc) + "</pubDate>"] if pub_rfc else []),
+            f"      <description>{xml.sax.saxutils.escape(desc)}</description>",
+            "    </item>",
+        ])
+    rss_lines.extend(["  </channel>", "</rss>\n"])
+    return "\n".join(rss_lines)
+
+
 def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = None):
     if not site_base_url:
         site_base_url = detect_site_base_url(base_dir)
@@ -1249,7 +1361,12 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         if os.path.isdir(full):
             shutil.rmtree(full)
 
-    # 2. Główny index.html (z wstępnie wyrenderowaną listą 15 najnowszych artykułów dla botów i natychmiastowego LCP)
+    # 1b. Lekki indeks articles-index.json do szybkiego startu SPA i odroczonego ładowania treści
+    index_items = build_articles_index(articles)
+    with open(os.path.join(base_dir, "articles-index.json"), "w", encoding="utf-8") as f:
+        json.dump(index_items, f, ensure_ascii=False, separators=(",", ":"))
+
+    # 2. Główny index.html (z wstępnie wyrenderowaną listą najnowszych artykułów dla botów i natychmiastowego LCP)
     home_ld = [
         {
             "@context": "https://schema.org",
@@ -1298,6 +1415,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         init_script_vars=f'window.VERITY_BASE="";window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
         css_ver=css_ver,
         js_ver=js_ver,
+        section_rss_rel="Polska/feed.xml",
+        section_rss_title="VERITY — Polska (RSS)",
     )
     with open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(home_html)
@@ -1332,6 +1451,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
                 ],
             },
         ]
+        sec_rss_rel, sec_rss_title = _section_rss_for_path(cat_path)
         cat_html = _page_shell(
             title=f"{cat_title} — VERITY",
             description=cat_desc,
@@ -1345,6 +1465,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             init_script_vars=f'window.VERITY_BASE={json.dumps(rel_root)};window.VERITY_INITIAL_PATH={json.dumps(cat_path)};window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
             css_ver=css_ver,
             js_ver=js_ver,
+            section_rss_rel=sec_rss_rel,
+            section_rss_title=sec_rss_title,
         )
         _write_file(os.path.join(base_dir, rel_dir, "index.html"), cat_html)
 
@@ -1359,13 +1481,16 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         rel_root = "../" * len(parts)
         cat_path = art.get("path") or "/Polska"
         meta_desc = art.get("meta_description") or article_lede(art, 158)
+        mod_iso = art.get("updated_iso") or art.get("published_iso") or ""
         extra_meta = (
             f'  <meta property="article:published_time" content="{html.escape(art.get("published_iso") or "", quote=True)}" />\n'
+            f'  <meta property="article:modified_time" content="{html.escape(mod_iso, quote=True)}" />\n'
             f'  <meta property="article:section" content="{html.escape(short_cat_label(cat_path), quote=True)}" />\n'
         )
         if art.get("keywords"):
             extra_meta += f'  <meta name="news_keywords" content="{html.escape(art["keywords"], quote=True)}" />\n'
 
+        sec_rss_rel, sec_rss_title = _section_rss_for_path(cat_path)
         art_html = _page_shell(
             title=f"{art['seo_title']} — VERITY",
             description=meta_desc,
@@ -1384,6 +1509,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             ),
             css_ver=css_ver,
             js_ver=js_ver,
+            section_rss_rel=sec_rss_rel,
+            section_rss_title=sec_rss_title,
         )
         _write_file(os.path.join(base_dir, seo_url, "index.html"), art_html)
 
@@ -1393,7 +1520,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     root_abs_prefix = (parsed_base.path.rstrip("/") + "/") if parsed_base.path.strip("/") else "/"
     not_found_html = _page_shell(
         title="Strona nie została znaleziona — VERITY",
-        description="Wybrany adres nie istnieje lub został przeniesiony. Skorzystaj z wyszukiwarki VERITY lub wróć do najnowszych wiadomości.",
+        description="Wybrany adres nie istnieje lub został przeniony. Skorzystaj z wyszukiwarki VERITY lub wróć do najnowszych wiadomości.",
         canonical_url=f"{site_base_url}/",
         og_type="website",
         og_image="",
@@ -1411,6 +1538,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
 
     # 6. news-sitemap.xml (standard Google News: ostatnie 48h, max 1000 URL-i + <image:image>)
     now_dt = datetime.now(timezone.utc)
+    now_fallback_iso = now_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     recent_arts = []
     for a in published:
         iso_s = (a.get("published_iso") or "").strip()
@@ -1459,33 +1587,46 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     with open(os.path.join(base_dir, "news-sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(news_lines))
 
-    # 7. Pełna mapa witryny sitemap.xml (strona główna + działy + wszystkie artykuły)
+    # 7. Pełna mapa witryny sitemap.xml (rzeczywisty updated_iso dla artykułów i deterministyczny lastmod dla działów)
+    root_lastmod = max(
+        ((a.get("updated_iso") or a.get("published_iso") or "") for a in published),
+        default="",
+    ) or now_fallback_iso
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
         '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
         "  <url>",
         f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/')}</loc>",
-        f"    <lastmod>{now_dt.strftime('%Y-%m-%dT%H:%M:%SZ')}</lastmod>",
+        f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
         "    <changefreq>hourly</changefreq>",
         "    <priority>1.0</priority>",
         "  </url>",
     ]
     for cat_path, _, _ in CATEGORIES:
+        cat_lastmod = max(
+            (
+                (a.get("updated_iso") or a.get("published_iso") or "")
+                for a in published
+                if (a.get("path") or "").startswith(cat_path)
+            ),
+            default="",
+        ) or root_lastmod
         sitemap_lines.extend([
             "  <url>",
             f"    <loc>{xml.sax.saxutils.escape(f'{site_base_url}{cat_path}/')}</loc>",
-            f"    <lastmod>{now_dt.strftime('%Y-%m-%dT%H:%M:%SZ')}</lastmod>",
+            f"    <lastmod>{xml.sax.saxutils.escape(cat_lastmod)}</lastmod>",
             "    <changefreq>hourly</changefreq>",
             "    <priority>0.9</priority>",
             "  </url>",
         ])
     for a in published:
         loc = xml.sax.saxutils.escape(f"{site_base_url}{a['seo_url']}/")
+        art_lastmod = a.get("updated_iso") or a.get("published_iso") or root_lastmod
         sitemap_lines.extend([
             "  <url>",
             f"    <loc>{loc}</loc>",
-            f"    <lastmod>{xml.sax.saxutils.escape(a['published_iso'])}</lastmod>",
+            f"    <lastmod>{xml.sax.saxutils.escape(art_lastmod)}</lastmod>",
             "    <changefreq>daily</changefreq>",
             "    <priority>0.8</priority>",
         ])
@@ -1500,32 +1641,31 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     with open(os.path.join(base_dir, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(sitemap_lines))
 
-    # 8. Kanał RSS feed.xml
-    rss_lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
-        "  <channel>",
-        "    <title>VERITY – Wieloźródłowa Weryfikacja Faktów</title>",
-        f"    <link>{xml.sax.saxutils.escape(site_base_url + '/')}</link>",
-        f'    <atom:link href="{xml.sax.saxutils.escape(site_base_url + "/feed.xml")}" rel="self" type="application/rss+xml" />',
-        "    <description>Synteza faktograficzna z 151 redakcji w Polsce bez clickbaitu i powtórzeń.</description>",
-        "    <language>pl</language>",
-    ]
-    for a in published[:30]:
-        link_esc = xml.sax.saxutils.escape(f"{site_base_url}{a['seo_url']}/")
-        desc = a.get("meta_description") or article_lede(a, 200)
-        rss_lines.extend([
-            "    <item>",
-            f"      <title>{xml.sax.saxutils.escape(a['seo_title'])}</title>",
-            f"      <link>{link_esc}</link>",
-            f'      <guid isPermaLink="true">{link_esc}</guid>',
-            f"      <category>{xml.sax.saxutils.escape(short_cat_label(a.get('path','/Polska')))}</category>",
-            f"      <description>{xml.sax.saxutils.escape(desc)}</description>",
-            "    </item>",
-        ])
-    rss_lines.extend(["  </channel>", "</rss>\n"])
+    # 8. Kanał RSS feed.xml (główny) oraz dedykowane kanały RSS głównych działów
+    root_rss = _build_rss_xml(
+        title="VERITY – Wieloźródłowa Weryfikacja Faktów",
+        page_link=f"{site_base_url}/",
+        self_url=f"{site_base_url}/feed.xml",
+        description="Synteza faktograficzna z 151 redakcji w Polsce bez clickbaitu i powtórzeń.",
+        items=published,
+        site_base_url=site_base_url,
+    )
     with open(os.path.join(base_dir, "feed.xml"), "w", encoding="utf-8") as f:
-        f.write("\n".join(rss_lines))
+        f.write(root_rss)
+
+    cat_desc_map = {p: d for p, _, d in CATEGORIES}
+    for sec_path, sec_label in MAIN_RSS_SECTIONS:
+        sec_items = [a for a in published if (a.get("path") or "").startswith(sec_path)]
+        sec_rel = sec_path.strip("/")
+        sec_rss = _build_rss_xml(
+            title=f"VERITY – {sec_label}",
+            page_link=f"{site_base_url}{sec_path}/",
+            self_url=f"{site_base_url}{sec_path}/feed.xml",
+            description=cat_desc_map.get(sec_path) or "Zweryfikowane informacje działu w portalu VERITY.",
+            items=sec_items,
+            site_base_url=site_base_url,
+        )
+        _write_file(os.path.join(base_dir, sec_rel, "feed.xml"), sec_rss)
 
     # 9. robots.txt
     robots_txt = (
@@ -1537,4 +1677,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     with open(os.path.join(base_dir, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(robots_txt)
 
-    print(f"[SEO] Wygenerowano strony HTML ({len(written_urls)} artykułów + {len(CATEGORIES)} działów), sitemap.xml, news-sitemap.xml, feed.xml, robots.txt, 404.html")
+    print(
+        f"[SEO] Wygenerowano strony HTML ({len(written_urls)} artykułów + {len(CATEGORIES)} działów), "
+        f"articles-index.json, sitemap.xml, news-sitemap.xml, feed.xml (+{len(MAIN_RSS_SECTIONS)} działowych RSS), robots.txt, 404.html"
+    )

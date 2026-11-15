@@ -210,6 +210,15 @@ let activeOutletFilter = null;
 let isNotFoundState = Boolean(typeof window !== 'undefined' && window.VERITY_IS_404);
 let lastFeedHref = null;
 
+const FEED_BATCH_SIZE = 12;
+let articlesLoadedFull = false;
+let fullArticlesPromise = null;
+let feedObserver = null;
+let feedRestItems = [];
+let feedRenderedCount = 0;
+let feedTotalCount = 0;
+let feedHasLead = false;
+
 // ===========================================================================
 // NARZĘDZIA, TYPOGRAFIA POLSKA I ROUTING SEO
 // ===========================================================================
@@ -348,6 +357,9 @@ function articleLede(art, max = 240) {
 }
 
 function readingMinutes(art) {
+  if (!(art.full_sections && art.full_sections.length) && art.reading_minutes) {
+    return art.reading_minutes;
+  }
   const words = (art.full_sections || [])
     .map(s => (s.heading || '') + ' ' + (s.paragraphs || []).join(' '))
     .join(' ')
@@ -634,6 +646,11 @@ function switchView(view) {
   document.getElementById('viewPublic')?.classList.toggle('hidden', view !== 'public');
   document.getElementById('viewEditorial')?.classList.toggle('hidden', view !== 'editorial');
   window.scrollTo({ top: 0 });
+  if (view === 'editorial' && !articlesLoadedFull && typeof ensureFullArticlesLoaded === 'function') {
+    ensureFullArticlesLoaded().then(ok => {
+      if (ok && currentView === 'editorial') renderPortal();
+    });
+  }
   renderPortal();
 }
 
@@ -650,6 +667,12 @@ function handleSearchInput() {
     currentView = 'public';
     document.getElementById('viewPublic')?.classList.remove('hidden');
     document.getElementById('viewEditorial')?.classList.add('hidden');
+  }
+  const curQ = (document.getElementById('searchInput')?.value || '').trim();
+  if (curQ && !articlesLoadedFull && typeof ensureFullArticlesLoaded === 'function') {
+    ensureFullArticlesLoaded().then(ok => {
+      if (ok && (document.getElementById('searchInput')?.value || '').trim()) renderPortal();
+    });
   }
   renderPortal();
 }
@@ -802,7 +825,7 @@ function syncSeoHead(openArt, published, query) {
       headline: (openArt.seo_title || '').slice(0, 110),
       description: desc,
       datePublished: openArt.published_iso || '',
-      dateModified: openArt.published_iso || '',
+      dateModified: openArt.updated_iso || openArt.published_iso || '',
       inLanguage: 'pl',
       isAccessibleForFree: true,
       articleSection: shortCatLabel(normArtPath),
@@ -875,6 +898,7 @@ function syncSeoHead(openArt, published, query) {
 // RENDER
 // ===========================================================================
 function renderPortal() {
+  disconnectFeedObserver();
   const q = (document.getElementById('searchInput')?.value || '').trim();
   const clearBtn = document.getElementById('clearSearchBtn');
   if (clearBtn) clearBtn.classList.toggle('hidden', !q);
@@ -888,7 +912,23 @@ function renderPortal() {
 
   if (currentView === 'public') {
     if (openArt) {
-      renderArticleView(openArt, published);
+      if (openArt._isIndexOnly && !articlesLoadedFull) {
+        if (typeof ensureFullArticlesLoaded === 'function') {
+          ensureFullArticlesLoaded().then(ok => {
+            if (ok && activeArticleId === openArt.id && currentView === 'public') renderPortal();
+          });
+        }
+        const ssrMatchesOpen = Boolean(
+          typeof window !== 'undefined' &&
+          window.VERITY_INITIAL_ARTICLE_URL === openArt.seo_url &&
+          document.querySelector('#articlesFeed .article-main')
+        );
+        if (!ssrMatchesOpen) {
+          renderArticleView(openArt, published);
+        }
+      } else {
+        renderArticleView(openArt, published);
+      }
     } else if (isNotFoundState && !q) {
       const container = document.getElementById('articlesFeed');
       if (container) {
@@ -999,7 +1039,66 @@ function regionStripHtml(allPublished) {
   return `<nav class="region-strip" aria-label="Wybierz województwo">${pills.join('')}</nav>`;
 }
 
+function disconnectFeedObserver() {
+  if (feedObserver) {
+    try { feedObserver.disconnect(); } catch (e) {}
+    feedObserver = null;
+  }
+}
+
+function updateFeedPagerUi() {
+  const wrap = document.getElementById('feedLoadMoreWrap');
+  if (!wrap) return;
+  const shown = (feedHasLead ? 1 : 0) + feedRenderedCount;
+  if (feedRenderedCount < feedRestItems.length) {
+    wrap.classList.remove('hidden');
+    wrap.innerHTML = `<div class="feed-load-more-meta">Wyświetlono ${shown} z ${feedTotalCount} opracowań</div>` +
+      `<button type="button" id="loadMoreBtn" class="feed-load-more-btn" onclick="loadMoreFeedItems()">Wczytaj kolejne opracowania</button>`;
+  } else if (feedTotalCount > FEED_BATCH_SIZE + (feedHasLead ? 1 : 0)) {
+    wrap.classList.remove('hidden');
+    wrap.innerHTML = `<div class="feed-load-more-meta">Wyświetlono wszystkie ${feedTotalCount} opracowań</div>`;
+  } else {
+    wrap.classList.add('hidden');
+    wrap.innerHTML = '';
+  }
+}
+
+function loadMoreFeedItems() {
+  const grid = document.getElementById('feedGrid');
+  if (!grid || feedRenderedCount >= feedRestItems.length) {
+    disconnectFeedObserver();
+    updateFeedPagerUi();
+    return;
+  }
+  const nextSlice = feedRestItems.slice(feedRenderedCount, feedRenderedCount + FEED_BATCH_SIZE);
+  if (!nextSlice.length) {
+    disconnectFeedObserver();
+    updateFeedPagerUi();
+    return;
+  }
+  grid.insertAdjacentHTML('beforeend', nextSlice.map(storyCardHtml).join(''));
+  feedRenderedCount += nextSlice.length;
+  updateFeedPagerUi();
+  if (feedRenderedCount >= feedRestItems.length) {
+    disconnectFeedObserver();
+  }
+}
+
+function attachFeedObserver() {
+  disconnectFeedObserver();
+  if (feedRenderedCount >= feedRestItems.length) return;
+  const wrap = document.getElementById('feedLoadMoreWrap');
+  if (!wrap || typeof IntersectionObserver === 'undefined') return;
+  feedObserver = new IntersectionObserver(entries => {
+    if (entries.some(e => e.isIntersecting)) {
+      loadMoreFeedItems();
+    }
+  }, { rootMargin: '420px 0px', threshold: 0.01 });
+  feedObserver.observe(wrap);
+}
+
 function renderFeed(list, q, allPublished = null) {
+  disconnectFeedObserver();
   const container = document.getElementById('articlesFeed');
   if (!container) return;
 
@@ -1027,6 +1126,10 @@ function renderFeed(list, q, allPublished = null) {
   };
 
   if (!list.length) {
+    feedRestItems = [];
+    feedRenderedCount = 0;
+    feedTotalCount = 0;
+    feedHasLead = false;
     if (q) {
       container.innerHTML = `<div class="empty-state">Brak opracowań dla zapytania „${esc(q)}”.</div>`;
       return;
@@ -1052,6 +1155,12 @@ function renderFeed(list, q, allPublished = null) {
   const useLead = !q && list.length >= 3;
   const lead = useLead ? list[0] : null;
   const rest = useLead ? list.slice(1) : list;
+  const initialRest = rest.slice(0, FEED_BATCH_SIZE);
+
+  feedHasLead = Boolean(lead);
+  feedRestItems = rest;
+  feedRenderedCount = initialRest.length;
+  feedTotalCount = list.length;
 
   let leadHtml = '';
   if (lead) {
@@ -1080,7 +1189,10 @@ function renderFeed(list, q, allPublished = null) {
   }
 
   container.innerHTML = heading + stripHtml + leadHtml +
-    (rest.length ? `<div class="cards-grid${lead ? ' after-lead' : ''}">${rest.map(storyCardHtml).join('')}</div>` : '');
+    (initialRest.length ? `<div id="feedGrid" class="cards-grid${lead ? ' after-lead' : ''}">${initialRest.map(storyCardHtml).join('')}</div>` : '') +
+    `<div id="feedLoadMoreWrap" class="feed-load-more-wrap hidden"></div>`;
+  updateFeedPagerUi();
+  attachFeedObserver();
   syncStripScroll();
 }
 
@@ -1111,8 +1223,11 @@ function reconcileLeadAndFirstPara(art) {
 
   if (summaryLead.endsWith('…')) {
     const prefixNoEllip = summaryLead.slice(0, -1).trimEnd();
-    if (firstPlain.startsWith(prefixNoEllip) && firstPlain.length <= 340) {
-      return { showLede: true, summaryLead: firstPlain, skipFirstPara: true, firstParaOverride: '' };
+    if (prefixNoEllip && firstPlain.startsWith(prefixNoEllip)) {
+      if (firstPlain.length <= 450) {
+        return { showLede: true, summaryLead: firstPlain, skipFirstPara: true, firstParaOverride: '' };
+      }
+      return { showLede: false, summaryLead: '', skipFirstPara: false, firstParaOverride: firstRaw };
     }
   }
 
@@ -1433,7 +1548,9 @@ function renderArticleView(art, published) {
           ${sourceFilterBarHtml}
 
           <div class="article-sections">
-            ${sectionsHtml}
+            ${(art._isIndexOnly && !articlesLoadedFull && !secs.length)
+              ? '<div class="callout">Wczytywanie pełnej treści opracowania i perspektyw redakcji…</div>'
+              : sectionsHtml}
           </div>
 
           ${persps.length ? `
@@ -1668,6 +1785,53 @@ document.addEventListener('click', e => {
   }
 });
 
+function normalizeArticleRecord(a, i, isIndexOnly = false) {
+  const srcs = a.sources || [];
+  const normP = LEGACY_PATH_MAP[a.path] || a.path;
+  return {
+    id: a.id || (i + 1),
+    status: a.status || 'AUTO_PUBLISHED',
+    admin_note: a.admin_note || '',
+    metrics: a.metrics || [],
+    declickbait: a.declickbait || [],
+    perspectives: a.perspectives || [],
+    sources: srcs,
+    corrections: a.corrections || [],
+    full_sections: a.full_sections || [],
+    display_date: a.display_date || '',
+    seo_url: a.seo_url || '',
+    ...a,
+    path: normP,
+    fact_agreement_pct: srcs.length >= 2 ? (a.fact_agreement_pct || 85) : null,
+    _isIndexOnly: Boolean(isIndexOnly)
+  };
+}
+
+function ensureFullArticlesLoaded() {
+  if (articlesLoadedFull) return Promise.resolve(true);
+  if (fullArticlesPromise) return fullArticlesPromise;
+  fullArticlesPromise = (async () => {
+    try {
+      const resp = await fetch(resolveAsset('articles.json'), { cache: 'no-store' });
+      if (resp.ok) {
+        const liveData = await resp.json();
+        if (Array.isArray(liveData) && liveData.length > 0) {
+          const fresh = liveData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
+          if (fresh.length > 0) {
+            articles = fresh.map((a, i) => normalizeArticleRecord(a, i, false));
+            articlesLoadedFull = true;
+            return true;
+          }
+        }
+      }
+    } catch (e) {}
+    return false;
+  })().finally(() => {
+    if (!articlesLoadedFull) fullArticlesPromise = null;
+  });
+  return fullArticlesPromise;
+}
+
 window.addEventListener('DOMContentLoaded', async () => {
   applyTheme(currentThemeMode);
   syncStaticNavHrefs();
@@ -1680,41 +1844,34 @@ window.addEventListener('DOMContentLoaded', async () => {
       }).format(new Date());
     } catch (e) {}
   }
+
+  if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator &&
+      (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+    navigator.serviceWorker.register(resolveAsset('sw.js')).catch(() => {});
+  }
+
   let loadedFromRemote = false;
+  let loadedFromIndexOnly = false;
   try {
-    const resp = await fetch(resolveAsset('articles.json'), { cache: 'no-store' });
-    if (resp.ok) {
-      const liveData = await resp.json();
-      if (Array.isArray(liveData) && liveData.length > 0) {
-        const fresh = liveData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
+    const idxResp = await fetch(resolveAsset('articles-index.json'), { cache: 'no-store' });
+    if (idxResp.ok) {
+      const idxData = await idxResp.json();
+      if (Array.isArray(idxData) && idxData.length > 0) {
+        const fresh = idxData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
         if (fresh.length > 0) {
           loadedFromRemote = true;
-          articles = fresh.map((a, i) => {
-            const srcs = a.sources || [];
-            const normP = LEGACY_PATH_MAP[a.path] || a.path;
-            return {
-              id: a.id || (i + 1),
-              status: a.status || 'AUTO_PUBLISHED',
-              admin_note: a.admin_note || '',
-              metrics: a.metrics || [],
-              declickbait: a.declickbait || [],
-              perspectives: a.perspectives || [],
-              sources: srcs,
-              corrections: a.corrections || [],
-              full_sections: a.full_sections || [],
-              display_date: a.display_date || '',
-              seo_url: a.seo_url || '',
-              ...a,
-              path: normP,
-              fact_agreement_pct: srcs.length >= 2 ? (a.fact_agreement_pct || 85) : null
-            };
-          });
+          loadedFromIndexOnly = true;
+          articles = fresh.map((a, i) => normalizeArticleRecord(a, i, true));
         }
       }
     }
-  } catch (e) {
-    // Używa danych SSR przy braku dostępu do articles.json (np. file://)
+  } catch (e) {}
+
+  if (!loadedFromRemote) {
+    const okFull = await ensureFullArticlesLoaded();
+    if (okFull) loadedFromRemote = true;
   }
+
   if (!loadedFromRemote && articles.length === 0) {
     const feedEl = document.getElementById('articlesFeed');
     if (feedEl && feedEl.children.length > 0) {
@@ -1736,6 +1893,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       return;
     }
   }
+
   const initSt = resolveStateFromLocation();
   currentPath = initSt.path;
   activeArticleId = initSt.articleId;
@@ -1745,6 +1903,25 @@ window.addEventListener('DOMContentLoaded', async () => {
   }
   syncNavActive();
   renderPortal();
+
+  if (loadedFromIndexOnly && !articlesLoadedFull) {
+    const triggerPreload = () => {
+      ensureFullArticlesLoaded().then(ok => {
+        if (!ok) return;
+        const badgeEl = document.getElementById('pendingBadge');
+        if (badgeEl) badgeEl.textContent = articles.filter(a => a.status === 'PENDING_ADMIN').length;
+        const hasSearch = Boolean((document.getElementById('searchInput')?.value || '').trim());
+        if (activeArticleId !== null || currentView === 'editorial' || hasSearch) {
+          renderPortal();
+        }
+      });
+    };
+    if (typeof requestIdleCallback === 'function') {
+      requestIdleCallback(triggerPreload, { timeout: 1500 });
+    } else {
+      setTimeout(triggerPreload, 150);
+    }
+  }
 });
 
 

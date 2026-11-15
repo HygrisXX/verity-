@@ -66,8 +66,25 @@ def run_smoke(base_url: str) -> None:
     multi_count = sum(1 for a in articles if len(set(a.get("sources") or [])) >= 2)
     print(f"[PASS] articles.json OK ({len(articles)} artykułów, {multi_count} wieloźródłowych, 16/16 woj.)")
 
-    # 3. Artefakty SEO/XML/404
-    for rel in ("robots.txt", "sitemap.xml", "news-sitemap.xml", "feed.xml", "404.html"):
+    # 2b. Lekki indeks i zasoby PWA
+    st_idx, _, raw_idx = fetch(f"{base}/articles-index.json")
+    assert_true(st_idx == 200, f"articles-index.json zwrócił HTTP {st_idx}")
+    idx_data = json.loads(raw_idx.decode("utf-8"))
+    assert_true(isinstance(idx_data, list) and len(idx_data) == len(articles), "Rozbieżność liczby wpisów w articles-index.json")
+    assert_true(len(raw_idx) < len(raw_arts) * 0.4, "articles-index.json jest zbyt duży względem articles.json")
+
+    st_man, _, raw_man = fetch(f"{base}/manifest.webmanifest")
+    assert_true(st_man == 200, f"manifest.webmanifest zwrócił HTTP {st_man}")
+    man_json = json.loads(raw_man.decode("utf-8"))
+    assert_true(man_json.get("short_name") == "VERITY", "Niepoprawny manifest.webmanifest")
+
+    for pwa_rel in ("sw.js", "icon.svg", "icon-192.png", "icon-512.png"):
+        st_p, _, raw_p = fetch(f"{base}/{pwa_rel}")
+        assert_true(st_p == 200 and len(raw_p) > 0, f"{pwa_rel} zwrócił HTTP {st_p}")
+    print("[PASS] articles-index.json + PWA (manifest, sw.js, ikony) OK")
+
+    # 3. Artefakty SEO/XML/404 oraz kanały RSS działów
+    for rel in ("robots.txt", "sitemap.xml", "news-sitemap.xml", "feed.xml", "Polska/feed.xml", "Swiat/feed.xml", "Sport/feed.xml", "404.html"):
         st, _, raw = fetch(f"{base}/{rel}")
         assert_true(st == 200, f"{rel} zwrócił HTTP {st}")
         txt = raw.decode("utf-8", errors="replace")
@@ -75,7 +92,7 @@ def run_smoke(base_url: str) -> None:
             ET.fromstring(txt)
         elif rel == "robots.txt":
             assert_true(f"Sitemap: {base}/sitemap.xml" in txt, "robots.txt nie wskazuje sitemap.xml")
-    print("[PASS] robots.txt, sitemap.xml, news-sitemap.xml, feed.xml, 404.html OK")
+    print("[PASS] robots.txt, sitemap.xml, news-sitemap.xml, feed.xml (+działowe), 404.html OK")
 
     # 4. Próbka 3 stron artykułów (najnowszy, ogólnopolski/sportowy/światowy oraz regionalny)
     samples = [articles[0]]

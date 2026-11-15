@@ -2000,6 +2000,128 @@ class TestStage5AntiClickbaitBalanceAndQualityGate(unittest.TestCase):
             self.assertEqual(by_name3["FeedB"]["consecutive_failures"], 0)
 
 
+class TestStage6FastBootPwaSectionRssAndScrollPaging(unittest.TestCase):
+    def test_articles_index_compact_schema_and_reading_minutes(self):
+        with open(os.path.join(ROOT_DIR, "articles.json"), "rb") as f:
+            full_bytes = f.read()
+        with open(os.path.join(ROOT_DIR, "articles-index.json"), "rb") as f:
+            idx_bytes = f.read()
+
+        self.assertLess(
+            len(idx_bytes),
+            len(full_bytes) * 0.35,
+            f"articles-index.json ({len(idx_bytes)} B) powinien stanowić < 35% rozmiaru articles.json ({len(full_bytes)} B)",
+        )
+        full_data = json.loads(full_bytes.decode("utf-8"))
+        idx_data = json.loads(idx_bytes.decode("utf-8"))
+        self.assertEqual(len(idx_data), len(full_data))
+        for item in idx_data[:25]:
+            self.assertNotIn("full_sections", item)
+            self.assertNotIn("perspectives", item)
+            self.assertIn("reading_minutes", item)
+            self.assertGreaterEqual(item["reading_minutes"], 1)
+            self.assertTrue(item.get("updated_iso"))
+            self.assertTrue(item.get("seo_url"))
+
+    def test_pwa_assets_manifest_sw_and_html_head_tags(self):
+        for fname in ("icon.svg", "icon-192.png", "icon-512.png", "manifest.webmanifest", "sw.js"):
+            p = os.path.join(ROOT_DIR, fname)
+            self.assertTrue(os.path.isfile(p) and os.path.getsize(p) > 0, f"Brak lub pusty plik PWA: {fname}")
+
+        with open(os.path.join(ROOT_DIR, "manifest.webmanifest"), "r", encoding="utf-8") as f:
+            manifest = json.load(f)
+        self.assertEqual(manifest.get("start_url"), "./")
+        self.assertEqual(manifest.get("display"), "standalone")
+        icons = manifest.get("icons") or []
+        self.assertGreaterEqual(len(icons), 3)
+        for ic in icons:
+            self.assertFalse(str(ic.get("src", "")).startswith("/"), "Ścieżki ikon w manifeście powinny być względne")
+
+        with open(os.path.join(ROOT_DIR, "index.html"), "r", encoding="utf-8") as f:
+            home_html = f.read()
+        self.assertIn('<meta name="theme-color" content="#151b28"', home_html)
+        self.assertIn('rel="manifest" href="manifest.webmanifest"', home_html)
+        self.assertIn('href="Polska/feed.xml"', home_html)
+
+        with open(os.path.join(ROOT_DIR, "Swiat", "index.html"), "r", encoding="utf-8") as f:
+            swiat_html = f.read()
+        self.assertIn('href="../manifest.webmanifest"', swiat_html)
+        self.assertIn('href="../Swiat/feed.xml"', swiat_html)
+
+    def test_section_rss_feeds_and_rfc2822_pubdate(self):
+        import xml.etree.ElementTree as ET
+
+        for rel in ["feed.xml"] + [f"{sec.strip('/')}/feed.xml" for sec, _ in seo_builder.MAIN_RSS_SECTIONS]:
+            fpath = os.path.join(ROOT_DIR, rel)
+            self.assertTrue(os.path.isfile(fpath), f"Brak kanału RSS działu: {rel}")
+            with open(fpath, "r", encoding="utf-8") as f:
+                xml_txt = f.read()
+            root = ET.fromstring(xml_txt)
+            items = root.findall("./channel/item")
+            self.assertGreater(len(items), 0, f"Kanał RSS {rel} jest pusty")
+            self.assertIsNotNone(items[0].find("pubDate"), f"Brak elementu <pubDate> w {rel}")
+
+    def test_updated_iso_propagation_and_ssr_feed_batch_limit(self):
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            sample = {
+                "id": 9999,
+                "path": "/Polska/Gospodarka",
+                "seo_url": "/Polska/Gospodarka/test-lastmod",
+                "seo_title": "Test aktualizacji znacznika czasu lastmod",
+                "summary_lead": "Opis testowego artykułu z oznaczeniem updated_iso dla mapy witryny.",
+                "published_iso": "2026-11-14T08:00:00+01:00",
+                "updated_iso": "2026-11-15T19:45:00+01:00",
+                "display_date": "14 listopada 2026",
+                "status": "AUTO_PUBLISHED",
+                "sources": ["PAP", "Bankier.pl"],
+                "fact_agreement_pct": 90,
+                "full_sections": [
+                    {"heading": "Ustalenia", "paragraphs": ["Pierwszy akapit testowy. [Źródło: PAP, Bankier.pl]"]}
+                ],
+                "perspectives": [
+                    {"outlet": "PAP", "angle": "Relacja wiodąca", "summary": "Tytuł", "url": "https://pap.pl/1"},
+                    {"outlet": "Bankier.pl", "angle": "Dane", "summary": "Tytuł 2", "url": "https://bankier.pl/2"},
+                ],
+            }
+            with open(os.path.join(tmpdir, "styles.css"), "w", encoding="utf-8") as f:
+                f.write("body{}")
+            with open(os.path.join(tmpdir, "app.js"), "w", encoding="utf-8") as f:
+                f.write("let articles=[];")
+            seo_builder.build_all_seo_artifacts(tmpdir, [sample], site_base_url="https://example.pl")
+
+            with open(os.path.join(tmpdir, "sitemap.xml"), "r", encoding="utf-8") as f:
+                sm_txt = f.read()
+            self.assertIn("<lastmod>2026-11-15T19:45:00+01:00</lastmod>", sm_txt)
+
+            art_html_path = os.path.join(tmpdir, "Polska", "Gospodarka", "test-lastmod", "index.html")
+            with open(art_html_path, "r", encoding="utf-8") as f:
+                art_html = f.read()
+            self.assertIn('property="article:modified_time" content="2026-11-15T19:45:00+01:00"', art_html)
+            self.assertIn('"dateModified": "2026-11-15T19:45:00+01:00"', art_html)
+
+            # Sprawdzenie limitu SSR (1 lead + 12 kart) na dużym zbiorze
+            with open(os.path.join(ROOT_DIR, "index.html"), "r", encoding="utf-8") as f:
+                home_html = f.read()
+            ssr_feed = home_html.split('id="articlesFeed"', 1)[-1].split("</section>", 1)[0]
+            self.assertEqual(ssr_feed.count('class="story-title-link"'), 13)
+            self.assertIn('class="feed-load-more-wrap"', ssr_feed)
+
+    def test_app_js_stage6_scroll_and_pwa_invariants(self):
+        with open(os.path.join(ROOT_DIR, "app.js"), "r", encoding="utf-8") as f:
+            js_code = f.read()
+        self.assertLess(len(js_code.encode("utf-8")), 95_000)
+        for token in (
+            "FEED_BATCH_SIZE = 12",
+            "IntersectionObserver",
+            "articles-index.json",
+            "ensureFullArticlesLoaded",
+            "navigator.serviceWorker.register",
+        ):
+            self.assertIn(token, js_code)
+
+
 if __name__ == "__main__":
     unittest.main()
 
