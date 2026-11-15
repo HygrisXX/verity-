@@ -3,6 +3,58 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wlostow-w-powiecie-opatowskim-stawia-na-drony/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T02:50:41+01:00</news:publication_date>
+      <news:title>Włostów w powiecie opatowskim stawia na drony</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/luksusowe-zycie-bossow-i-gangsterow-nawet-dzis-robi-wrazenie-prywatne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T02:50:41+01:00</news:publication_date>
+      <news:title>Luksusowe życie bossów i gangsterów nawet dziś robi wrażenie. Prywatne zdjęcia polskich mafiosów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/ee/dc/641c1df9297ff_o,size,640x400,q,71,h,3f4258.jpg</image:loc>
+      <image:title>Luksusowe życie bossów i gangsterów nawet dziś robi wrażenie. Prywatne zdjęcia polskich mafiosów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/pijany-kierowca-mercedesa-uderzyl-w-inne-auto-pojechal-z-bolem-reki-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T02:50:41+01:00</news:publication_date>
+      <news:title>Pijany kierowca Mercedesa uderzył w inne auto. Pojechał z bólem ręki na SOR</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/mercedes-cla-eq-350-zaimponowal-w-tescie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T02:50:39+01:00</news:publication_date>
+      <news:title>Mercedes CLA EQ 350 zaimponował w teście</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/mercedes-cla-350-eq-35-test-ev-ice-zasieg-jelenia.x63527.jpg</image:loc>
+      <image:title>Mercedes CLA EQ 350 zaimponował w teście</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zmiany-na-szczytach-plockiej-lewicy-jest-nowy-przewodniczacy/</loc>
     <news:news>
       <news:publication>
@@ -3272,36 +3324,6 @@
     <image:image>
       <image:loc>https://cdn.defence24.pl/2026/11/12/320x240px/YGLVZtKyBQetmWTZozuplxnaDWL6EzP7MhZ5DlmW.46kg.png</image:loc>
       <image:title>Wychwalali sprawcę ataku w Krakowie. 11 osób zatrzymanych</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-mowi-o-uzyciu-sily-wobec-kuby-chce-zalatwic-te-sprawe/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
-      <news:title>Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://rmf.rmffm.pl/news/attachments/3c/68/getty-afp-636x421-3c686a20.jpg</image:loc>
-      <image:title>Trump mówi o użyciu siły wobec Kuby. „Chcę załatwić tę sprawę”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/wspolna-lista-prawicy-do-sejmu-posel-konfederacji-w-pis-sie-miotaja-od/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T03:48:54+01:00</news:publication_date>
-      <news:title>Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-magdalena-biejat-i-michal-wawer-ph9336588/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany</image:title>
     </image:image>
   </url>
 </urlset>
