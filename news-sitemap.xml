@@ -3,6 +3,58 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/kamienica-w-centrum-olsztyna-przejdzie-metamorfoze-mieszkancy-mieli/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T03:48:21+01:00</news:publication_date>
+      <news:title>Kamienica w centrum Olsztyna przejdzie metamorfozę. Mieszkańcy mieli wyjątkowy pomysł</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/bezplatne-badania-stop-dla-diabetykow-w-bytomiu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T03:48:21+01:00</news:publication_date>
+      <news:title>Bezpłatne badania stóp dla diabetyków w Bytomiu</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/po-niespodzianke-w-poznaniu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T03:48:21+01:00</news:publication_date>
+      <news:title>Po niespodziankę w Poznaniu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rc.fm/files/styles/thumbnail/public/artykul_sportowy/168129/po_niespodzianke_w_poznaniu.jpg?itok=NjBK2Hxf</image:loc>
+      <image:title>Po niespodziankę w Poznaniu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/orlen-zerwal-pierwszy-kontrakt-z-katarem-gaz-i-tak-nie-plynal-ale/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T03:48:19+01:00</news:publication_date>
+      <news:title>Orlen zerwał pierwszy kontrakt z Katarem. Gaz i tak nie płynął, ale istniał też drugi powód</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/Gazowiec-LNG-o-zachodzie-slonca.x63527.png</image:loc>
+      <image:title>Orlen zerwał pierwszy kontrakt z Katarem. Gaz i tak nie płynął, ale istniał też drugi powód</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wlostow-w-powiecie-opatowskim-stawia-na-drony/</loc>
     <news:news>
       <news:publication>
