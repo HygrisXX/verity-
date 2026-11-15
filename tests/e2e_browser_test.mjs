@@ -107,7 +107,10 @@ async function launchChromium() {
 
   const wsBrowserUrl = await new Promise((resolve, reject) => {
     let buf = '';
-    const timer = setTimeout(() => reject(new Error('Chromium startup timeout')), 12000);
+    const timer = setTimeout(() => {
+      try { proc.kill('SIGKILL'); } catch {}
+      reject(new Error(`Chromium startup timeout after 30s (${chromeBin}): ${buf.slice(-400)}`));
+    }, 30000);
     proc.stderr.on('data', d => {
       buf += d.toString();
       const m = buf.match(/DevTools listening on (ws:\/\/[^\s]+)/);
