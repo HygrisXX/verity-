@@ -3,6 +3,62 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zmiany-na-szczytach-plockiej-lewicy-jest-nowy-przewodniczacy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T01:58:56+01:00</news:publication_date>
+      <news:title>Zmiany na szczytach płockiej Lewicy. Jest nowy przewodniczący!</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/polska-diaspora-technologiczna-wroclaw-ma-w-niej-silna-reprezentacje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T01:58:56+01:00</news:publication_date>
+      <news:title>Polska diaspora technologiczna. Wrocław ma w niej silną reprezentację</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn-portal.img.wroclaw.pl/przedsiebiorczy-wroclaw/files/news/1150349/main/polish-tech-minds-michal-karbowiak-polacy-w-usa_3.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
+      <image:title>Polska diaspora technologiczna. Wrocław ma w niej silną reprezentację</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/od-centrum-slupska-na-zachod-zobaczcie-ulice-tuwima-na-dawnych-zdjeciach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T01:58:56+01:00</news:publication_date>
+      <news:title>Od centrum Słupska na zachód. Zobaczcie ulicę Tuwima na dawnych zdjęciach!</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/3f/b5/5c1ccbf4d3aa7_o,size,640x400,q,71,h,046f79.jpg</image:loc>
+      <image:title>Od centrum Słupska na zachód. Zobaczcie ulicę Tuwima na dawnych zdjęciach!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/wyrok-tk-mozna-z-sadu-wyjsc-z-300-000-zl-za-slupy-wodociagi-gazociagi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T01:58:54+01:00</news:publication_date>
+      <news:title>Wyrok TK: Można z sądu wyjść z 300 000 zł za słupy, wodociągi, gazociągi na działkach. Choć częściej będzie 30</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljL/WZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbn/RzL0ZPQjAwMDAwMDAwMDAwMDc2OTczMTgvZmlsZXM/vcG9kd3l6a2ktMzkyMDE2NzguanBnIiwidyI6Mzg0MH0</image:loc>
+      <image:title>Wyrok TK: Można z sądu wyjść z 300 000 zł za słupy, wodociągi, gazociągi na działkach. Choć częściej będzie 30</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/wczesniakiem-zostaje-sie-do-konca-zycia-wideo-zdjecia/</loc>
     <news:news>
       <news:publication>
@@ -2308,21 +2364,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/siatkarski-nokaut-w-polskiej-lidze-olbrzymi-awans-w-tabeli/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T01:58:52+01:00</news:publication_date>
-      <news:title>Pogrom w Lidze Narodów! Triumf Holendrów 7:0</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJ3EEJK8EETX7-C321.webp</image:loc>
-      <image:title>Pogrom w Lidze Narodów! Triumf Holendrów 7:0</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/aryna-sabalenka-elina-switolina-relacja-na-zywo/</loc>
     <news:news>
       <news:publication>
@@ -3261,212 +3302,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-magdalena-biejat-i-michal-wawer-ph9336588/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Wspólna lista prawicy do Sejmu? Poseł Konfederacji: w PiS się miotają od ściany do ściany</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/akcje-allegro-najdrozsze-od-pieciu-lat-rekordowa-umowa-z-inpostem-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
-      <news:title>Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://xyz.pl/wp-content/uploads/2025/11/Marcin-Kusmierz-31-1024x683.jpg</image:loc>
-      <image:title>Akcje Allegro najdroższe od pięciu lat. Rekordowa umowa z InPostem i spadający udział chińskich platform</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/polak-zatrzymany-na-granicy-z-niemcami-sad-uznal-kontrole-za-niezgodna/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
-      <news:title>Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/7/7/74273ac3a6bade-948-568-22-67-2977-1786.jpg</image:loc>
-      <image:title>Polak zatrzymany na granicy z Niemcami. Sąd uznał kontrolę za niezgodną z prawem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/pfizer-zablokowal-aktywa-pazp-jest-decyzja-sadu-w-brukseli/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:45:35+01:00</news:publication_date>
-      <news:title>Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/i8/i863auieegx7hveejr3kdgurg56nmwr3.png</image:loc>
-      <image:title>Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/strzelanina-w-poblizu-bialego-domu-nie-zyja-dwie-osoby/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:15:03+01:00</news:publication_date>
-      <news:title>Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/rn/rnzzpncwrp5znv5me3vgzpgir6a6eniz.jpg</image:loc>
-      <image:title>Strzelanina w pobliżu Białego Domu. Nie żyją dwie osoby</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/proces-karola-nawrockiego-z-dziennikarzami-onetu-sad-wyznaczyl-termin/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:15:03+01:00</news:publication_date>
-      <news:title>Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLm/luY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9C/MDAwMDAwMDAwMDAwNzY4NTA2MS9maWxlcy9rYXJvbC/1uYXdyb2NraS0zOTI4ODEyOC5qcGciLCJ3IjozODQwfQ</image:loc>
-      <image:title>Proces Karola Nawrockiego z dziennikarzami Onetu. Sąd wyznaczył termin pierwszej rozprawy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/orban-nie-wejdzie-do-aresztu-nie-bedzie-spotkania-z-bratem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:15:03+01:00</news:publication_date>
-      <news:title>Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s17.tvp.pl/images2/7/6/9/uid_769c2f2a7d6d4a5eb957c2347f35e53b_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-      <image:title>Orban nie wejdzie do aresztu. Nie będzie spotkania z bratem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/czarzasty-zwrocil-sie-do-prezydenta-padly-slowa-o-juncie-wojskowej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:09:05+01:00</news:publication_date>
-      <news:title>Czarzasty zwrócił się do prezydenta. Padły słowa o "juncie wojskowej"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ab/abrqn92yues5874dkwks9mtuu2n41kg5.jpeg</image:loc>
-      <image:title>Czarzasty zwrócił się do prezydenta. Padły słowa o "juncie wojskowej"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/londyn-uderza-w-rosje-nowymi-sankcjami/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:09:05+01:00</news:publication_date>
-      <news:title>Londyn uderza w Rosję nowymi sankcjami</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/00f95ff87545b147bc9b1873b968094e/?t=crop:3588:1569:nowe:0:412,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Londyn uderza w Rosję nowymi sankcjami</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/pete-hegseth-upomniany-przez-wartownika-incydent-przy-grobie-nieznanego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:09:05+01:00</news:publication_date>
-      <news:title>Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/10/30/320x240px/gHGeUG4pB8PXPFfvpBrhVYVEVoZ2lI8mLItru5gI.canx.jpg</image:loc>
-      <image:title>Pete Hegseth upomniany przez wartownika. Incydent przy Grobie Nieznanego Żołnierza</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/firma-doradcy-ministra-pod-lupa-krajewski-sprawdza-zlecenia-kowr/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
-      <news:title>Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/0/0/f07732967f063f-948-568-96-68-1281-768.jpg</image:loc>
-      <image:title>Firma doradcy ministra pod lupą. Krajewski sprawdza zlecenia KOWR</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/swieto-w-mediolanie-wlosi-lepsi-od-francuzow-w-lidze-narodow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
-      <news:title>Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/a258dcfef370f32215637e0f9992ba76/?t=crop:4822:2108:nowe:0:0,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Święto w Mediolanie. Włosi lepsi od Francuzów w Lidze Narodów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/donnarumma-narozrabial-w-hicie-ligi-narodow-kompani-dokonali-odwetu-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T02:00:23+01:00</news:publication_date>
-      <news:title>Donnarumma narozrabiał w hicie Ligi Narodów. Kompani dokonali odwetu na Francji</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/marsz-niepodleglosci-przeszedl-ulicami-warszawy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
-      <news:title>Marsz Niepodległości przeszedł ulicami Warszawy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/11/320x240px/uVqURYXosrYoYBsAxtLsaSuxlq4NGEMhoipgkmcX.al5q.jpg</image:loc>
-      <image:title>Marsz Niepodległości przeszedł ulicami Warszawy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/drakonskie-kary-po-derbach-krakowa-komisja-ligi-nie-miala-litosci/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T01:57:27+01:00</news:publication_date>
-      <news:title>Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NIXOF14I6FKLA-C321.webp</image:loc>
-      <image:title>Drakońskie kary po derbach Krakowa. Komisja Ligi nie miała litości</image:title>
     </image:image>
   </url>
 </urlset>
