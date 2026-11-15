@@ -1224,9 +1224,9 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
                 if t == "title" and not title:
                     title = strip_html(txt)
                 elif t in ("description", "summary") and not raw_desc:
-                    raw_desc = txt[:7000]
+                    raw_desc = txt[:24000]
                 elif t in ("encoded", "content") and not raw_content:
-                    raw_content = txt[:7000]
+                    raw_content = txt[:24000]
                 elif t == "link":
                     href = (ch.get("href") or "").strip()
                     rel = (ch.get("rel") or "alternate").strip().lower()
@@ -1240,8 +1240,12 @@ def _fetch_single_feed(feed: dict, max_per_feed: int = 12) -> tuple:
             link = urllib.parse.urljoin(feed["url"], link) if link else ""
             clean_desc = clean_html_for_synthesis(raw_desc, title)
             clean_cont = clean_html_for_synthesis(raw_content, title) if raw_content else ""
-            desc = clean_desc if len(clean_desc) >= 60 else (clean_cont or clean_desc)
-            best_raw = raw_desc if len(clean_desc) >= 60 else (raw_content or raw_desc)
+            if clean_cont and (len(clean_desc) < 60 or len(clean_cont) >= len(clean_desc) + 80):
+                desc = clean_cont
+                best_raw = raw_content
+            else:
+                desc = clean_desc if len(clean_desc) >= 60 else (clean_cont or clean_desc)
+                best_raw = raw_desc if len(clean_desc) >= 60 else (raw_content or raw_desc)
 
             if not title or len(desc) < 30 or not link:
                 continue
@@ -2019,16 +2023,25 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
     title_tokens = tokenize_title(primary_title)
     facts = []  # [{"text": str, "tokens": set, "nums": set, "outlets": list, "is_primary": bool}]
 
+    is_single_source_group = len({it["outlet"] for it in ranked_group}) == 1
+    _CAUSAL_RE = re.compile(
+        r"\b(?:pow[oó]d|powodem|dlaczego|przyczyn\w*|skutk\w*|ponieważ|dlatego|oznacza|wyjaśn\w*|argument\w*|nadwyżk\w*|drugi\w*|sił[ayę]\s+wyższ\w*)\b",
+        re.IGNORECASE,
+    )
+
     for idx_it, it in enumerate(ranked_group):
         outlet = it["outlet"]
         desc_clean = clean_desc_text(it.get("description") or "", article_title=it.get("title") or primary_title)
         sents = split_sentences_pl(desc_clean, article_title=it.get("title") or primary_title)
 
-        # Limit na pojedyncze źródło: maks. 6 zdań i ~900 znaków (chroni przed całymi newsletterami)
+        max_sents_src = 11 if is_single_source_group else 7
+        max_chars_src = 1850 if is_single_source_group else 1100
         taken_chars = 0
         taken_count = 0
-        for s in sents:
-            if taken_count >= 6 or (taken_count >= 2 and taken_chars + len(s) > 900):
+        last_pos = 0
+        for pos, s in enumerate(sents):
+            last_pos = pos
+            if taken_count >= max_sents_src or (taken_count >= 2 and taken_chars + len(s) > max_chars_src):
                 break
             s_tokens = tokenize_title(s)
             if not s_tokens:
@@ -2043,13 +2056,20 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
             for f in facts:
                 shared = len(s_tokens & f["tokens"])
                 overlap = shared / max(1, min(len(s_tokens), len(f["tokens"])))
-                if shared >= 3 or (shared >= 2 and overlap >= 0.40):
-                    if outlet not in f["outlets"]:
+                same_outlet = outlet in f["outlets"]
+                if same_outlet:
+                    # W ramach tego samego źródła pomijaj wyłącznie niemal identyczne powtórzenia,
+                    # a nie kolejne zdania rozwijające ten sam temat (np. podające powód decyzji).
+                    is_dup = overlap >= 0.72 or (shared >= 6 and overlap >= 0.58)
+                else:
+                    is_dup = shared >= 3 or (shared >= 2 and overlap >= 0.40)
+                if is_dup:
+                    if not same_outlet:
                         f["outlets"].append(outlet)
                     f["tokens"] |= s_tokens
                     new_nums = s_nums - f["nums"]
                     f["nums"] |= s_nums
-                    if new_nums and shared < 5 and idx_it > 0:
+                    if not same_outlet and new_nums and shared < 5 and idx_it > 0:
                         matched = False
                     else:
                         matched = True
@@ -2075,6 +2095,44 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
                 })
                 taken_chars += len(s)
                 taken_count += 1
+        else:
+            last_pos = len(sents)
+
+        # Dla dłuższych tekstów jednego źródła dobierz do 2 zdań wyjaśniających przyczynę/konsekwencję
+        # z dalszej części depeszy, jeśli obcięcie nastąpiło przed wyjaśnieniem zapowiedzianym w tytule.
+        if is_single_source_group and last_pos < len(sents):
+            taken_texts = {f["text"] for f in facts}
+            covered_toks = set().union(*(f["tokens"] for f in facts)) if facts else set()
+            uncovered_title = title_tokens - covered_toks
+            rescued = []
+            for tail_s in sents[last_pos:]:
+                if tail_s in taken_texts or len(tail_s) < 45 or not tail_s.endswith((".", "!", "?")):
+                    continue
+                t_toks = tokenize_title(tail_s)
+                if not t_toks:
+                    continue
+                if any(
+                    (len(t_toks & f["tokens"]) / max(1, min(len(t_toks), len(f["tokens"])))) >= 0.72
+                    for f in facts
+                ):
+                    continue
+                score_tail = 0
+                if _CAUSAL_RE.search(tail_s):
+                    score_tail += 3
+                score_tail += len(t_toks & uncovered_title) * 2
+                if score_tail >= 3:
+                    rescued.append((score_tail, tail_s, t_toks))
+            for _, tail_s, t_toks in rescued[:2]:
+                if taken_chars + len(tail_s) > 2300:
+                    break
+                facts.append({
+                    "text": tail_s,
+                    "tokens": set(t_toks),
+                    "nums": set(re.findall(r"\b\d+(?:[.,]\d+)?\b", tail_s)),
+                    "outlets": [outlet],
+                    "is_primary": True,
+                })
+                taken_chars += len(tail_s)
 
     unique_outlets = list({it["outlet"] for it in ranked_group})
     num_sources = len(unique_outlets)
@@ -2083,10 +2141,10 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
     if num_sources == 1:
         only_outlet = ranked_group[0]["outlet"]
         if facts:
-            paras = _group_sentences_to_paragraphs(facts[:6], max_chars=380, max_sents=3, single_source_outlet=only_outlet)
+            paras = _group_sentences_to_paragraphs(facts[:13], max_chars=420, max_sents=3, single_source_outlet=only_outlet)
         else:
             joined = clean_desc_text(ranked_group[0].get("description") or primary_title, article_title=primary_title)
-            paras = [f"{joined[:800].strip()} [Źródło: {only_outlet}]"]
+            paras = [f"{joined[:1200].strip()} [Źródło: {only_outlet}]"]
         sections = [{
             "heading": f"Relacja źródłowa ({only_outlet})",
             "paragraphs": paras,
@@ -3049,9 +3107,24 @@ def _ensure_unique_seo_urls(articles: list):
         if not url:
             url = f"{a.get('path', '/Polska')}/{_make_clean_slug(a.get('seo_title', 'artykul'))}"
         if url in used:
-            url = f"{url}-{a['id']}"
+            suffix = 2
+            while f"{url}-{suffix}" in used:
+                suffix += 1
+            url = f"{url}-{suffix}"
         used.add(url)
         a["seo_url"] = url
+
+
+def _assign_stable_ids(articles: list):
+    """Nadaje stabilne dodatnie ID wyliczone deterministycznie z seo_url, aby nowe wpisy nie przesuwały ID istniejących stron."""
+    used_ids = set()
+    for a in articles:
+        key = (a.get("seo_url") or a.get("seo_title") or "verity").encode("utf-8")
+        aid = (zlib.crc32(key) & 0x7FFFFFFF) or 1
+        while aid in used_ids:
+            aid = (aid % 0x7FFFFFFF) + 1
+        used_ids.add(aid)
+        a["id"] = aid
 
 
 CANONICAL_SUMMARY_SECTIONS = (
@@ -3433,9 +3506,8 @@ def update_news_cycle(fetch_live: bool = True):
     combined.sort(key=lambda a: (1 if (a.get("declickbait") or []) else 0, a.get("published_iso") or ""), reverse=True)
     combined = combined[:MAX_TOTAL_ARTICLES]
 
-    for idx, a in enumerate(combined, start=1):
-        a["id"] = idx
     _ensure_unique_seo_urls(combined)
+    _assign_stable_ids(combined)
 
     # 6. Zapisz articles.json
     with open(articles_path, "w", encoding="utf-8") as f:

@@ -1612,9 +1612,99 @@ class TestStage3HardeningAndAntiChaining(unittest.TestCase):
         self.assertIn("document.getElementById('regionsToggleBtn')?.focus()", js_code)
         self.assertIn("loadedFromRemote", js_code)
 
+    def test_stable_ids_preserved_when_new_articles_prepended(self):
+        base_articles = [
+            {"seo_url": "/Polska/Gospodarka/pierwszy-artykul", "seo_title": "Pierwszy artykuł"},
+            {"seo_url": "/Polska/Energetyka/drugi-artykul", "seo_title": "Drugi artykuł"},
+            {"seo_url": "/Sport/trzeci-artykul", "seo_title": "Trzeci artykuł"},
+        ]
+        uln._ensure_unique_seo_urls(base_articles)
+        uln._assign_stable_ids(base_articles)
+        orig_ids = {a["seo_url"]: a["id"] for a in base_articles}
+        self.assertEqual(len(set(orig_ids.values())), 3)
+        self.assertTrue(all(isinstance(v, int) and v > 0 for v in orig_ids.values()))
+
+        # Dodanie nowego artykułu na początek nie może zmienić ID istniejących wpisów
+        with_new = [{"seo_url": "/Swiat/nowy-artykul-na-gorze", "seo_title": "Nowy artykuł"}] + [
+            dict(a) for a in base_articles
+        ]
+        uln._ensure_unique_seo_urls(with_new)
+        uln._assign_stable_ids(with_new)
+        for a in with_new[1:]:
+            self.assertEqual(a["id"], orig_ids[a["seo_url"]])
+
+    def test_intra_source_explanatory_sentences_not_dropped_and_tail_rescued(self):
+        long_desc = (
+            "10 listopada Orlen poinformował o wypowiedzeniu jednej z dwóch umów długoterminowych na dostawy LNG z QatarEnergy. "
+            "Kontrakt obejmował milion ton LNG rocznie i miał obowiązywać do 2034 roku. "
+            "Szacowana wartość umowy w 2026 roku wynosiła 570 mln euro, czyli 2,5 mld zł. "
+            "Umowę zawarł jeszcze PGNiG w 2009 roku przed budową terminalu w Świnoujściu. "
+            "Dostawy rozpoczęły się w 2016 roku. "
+            "Według komunikatu Orlen skorzystał z prawa do wypowiedzenia umowy z powodu utrzymującej się siły wyższej, skutkującej brakiem dostaw. "
+            "Kontrakt pozostanie w mocy przez 60 dni od złożenia wypowiedzenia. "
+            "Średnia cena gazu z kontraktu wynosiła 37,25 euro za MWh w przeliczeniu na 2026 rok. "
+            "Analitycy zwracają uwagę na wysoki współczynnik indeksacji wynoszący 16 proc. ceny ropy Brent. "
+            "Nowsze kontrakty na rynku stosują niższe wskaźniki indeksacji bliższe 12,5 proc. "
+            "Bieżąca cena spot w Europie wzrosła przejściowo z powodu napięć na Bliskim Wschodzie. "
+            "Spółka analizowała również długoterminowe prognozy podaży surowca w kolejnej dekadzie. "
+            "Najprostsza odpowiedź na pytanie o powód decyzji wskazuje na brak fizycznych dostaw, ale istniał też drugi powód ekonomiczny. "
+            "Po 2029 roku na globalnym rynku LNG pojawi się nadwyżka podaży i ceny mogą wyraźnie spaść."
+        )
+        group = [{
+            "outlet": "WysokieNapiecie.pl",
+            "title": "Orlen zerwał pierwszy kontrakt z Katarem. Gaz i tak nie płynął, ale istniał też drugi powód",
+            "description": long_desc,
+            "link": "https://wysokienapiecie.pl/test-orlen",
+            "path": "/Polska/Energetyka",
+        }]
+        secs, pct = uln.synthesize_article_sections(group, group[0]["title"])
+        self.assertIsNone(pct)
+        full_text = " ".join(secs[0]["paragraphs"])
+        # Zdanie z przyczyną (siła wyższa) ma 4 wspólne słowa z 1. zdaniem, ale NIE może zostać wycięte
+        self.assertIn("siły wyższej", full_text)
+        # Dalsze zdania z drugim powodem muszą znaleźć się w treści artykułu
+        self.assertIn("nadwyżka podaży", full_text)
+
+    def test_rss_prefers_richer_content_encoded_over_short_description_teaser(self):
+        import io
+        from unittest import mock
+
+        rss_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TestFeed</title>
+    <item>
+      <title>Spółka zmienia strategię dostaw energii od nowego kwartału</title>
+      <link>https://example.com/artykul-1</link>
+      <description>Krótki wstęp redakcyjny mający ponad sześćdziesiąt znaków, ale bez głównego wyjaśnienia decyzji zarządu.</description>
+      <content:encoded><![CDATA[<p>Krótki wstęp redakcyjny mający ponad sześćdziesiąt znaków.</p><p>Zarząd wyjaśnił, że głównym powodem zmiany strategii była rosnąca niestabilność cen gazu oraz nowe regulacje unijne obowiązujące od stycznia.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>""".encode("utf-8")
+
+        class _FakeResp(io.BytesIO):
+            def __init__(self, payload):
+                super().__init__(payload)
+                self.headers = {}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+        with mock.patch.object(uln, "_urlopen_with_retry", return_value=_FakeResp(rss_xml)):
+            _, items, err = uln._fetch_single_feed(
+                {"name": "TestOutlet", "url": "https://example.com/rss.xml", "path": "/Polska/Energetyka"}
+            )
+        self.assertIsNone(err)
+        self.assertEqual(len(items), 1)
+        self.assertIn("głównym powodem zmiany strategii", items[0]["description"])
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
 
