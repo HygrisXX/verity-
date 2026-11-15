@@ -3,6 +3,62 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wielka-inwestycja-pkp-intercity-w-lublinie-coraz-blizej-wplynelo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:52:15+01:00</news:publication_date>
+      <news:title>Wielka inwestycja PKP Intercity w Lublinie coraz bliżej. Wpłynęło dziesięć ofert</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/07/143a64.jpg</image:loc>
+      <image:title>Wielka inwestycja PKP Intercity w Lublinie coraz bliżej. Wpłynęło dziesięć ofert</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/uniwersytet-gdanski-wyrozniony-we-florencji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:52:15+01:00</news:publication_date>
+      <news:title>Uniwersytet Gdański wyróżniony we Florencji</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/jedna-siedziba-zamiast-dwoch-dla-miejskiej-jednostki-w-busku-zdroju/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:52:15+01:00</news:publication_date>
+      <news:title>Jedna siedziba, zamiast dwóch dla miejskiej jednostki w Busku-Zdroju</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/04/REPORTAZ-W-RADIU-KIELCE.jpg</image:loc>
+      <image:title>Jedna siedziba, zamiast dwóch dla miejskiej jednostki w Busku-Zdroju</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/duza-siec-wprowadza-migajace-etykiety-cenowe-klient-latwiej-znajdzie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T04:52:13+01:00</news:publication_date>
+      <news:title>Duża sieć wprowadza… migające etykiety cenowe. Klient łatwiej znajdzie produkt</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821328.webp</image:loc>
+      <image:title>Duża sieć wprowadza… migające etykiety cenowe. Klient łatwiej znajdzie produkt</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/perkusisci-behemoth-necrophagist-i-bestial-raids-zagraja-w-swidnicy/</loc>
     <news:news>
       <news:publication>
