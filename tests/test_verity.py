@@ -1837,6 +1837,17 @@ class TestStage5AntiClickbaitBalanceAndQualityGate(unittest.TestCase):
         self.assertFalse(cleaned.endswith("..."))
         self.assertTrue(cleaned.endswith("roku."))
 
+        wp_trunc = "Pracowników traktują jak drugi sort. The post Kulisy samorządu: Zajęci nikczemnością first appeared on"
+        cleaned_wp = uln.clean_desc_text(wp_trunc, "Kulisy samorządu")
+        self.assertEqual(cleaned_wp, "Pracowników traktują jak drugi sort.")
+
+        wp_title_only = (
+            "Przyjęcie sprawy wymagało opłaty w wysokości 1000 złotych. "
+            "Środkowy palec w górze. Sprawa trafiła do sądu first appeared on Swidnica24.pl – wydarzenia."
+        )
+        cleaned_wp2 = uln.clean_desc_text(wp_title_only, "Środkowy palec w górze. Sprawa trafiła do sądu")
+        self.assertEqual(cleaned_wp2, "Przyjęcie sprawy wymagało opłaty w wysokości 1000 złotych.")
+
     def test_merge_non_oscillation_and_corrections_log(self):
         long_p1 = (
             "Premier ogłosił pakiet inwestycji infrastrukturalnych o wartości 18 mld zł na rozbudowę dróg ekspresowych i kolei regionalnych. "

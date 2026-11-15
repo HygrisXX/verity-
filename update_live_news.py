@@ -2168,21 +2168,30 @@ def clean_desc_text(text: str, article_title: str = "") -> str:
         if len(clean_title) >= 15 and t.lower().startswith(clean_title.lower()):
             t = t[len(clean_title):].lstrip(" .:-–—\n")
 
-    # Wycinanie śmieci WordPress / zachęt kliknięcia (również ucięte ogony typu '[…] The post ...')
+    # Wycinanie śmieci WordPress / zachęt kliknięcia (również ucięte ogony typu '[…] The post ...' i '<Tytuł> first appeared on ...')
     t = re.sub(
-        r"\s*(?:\[?\s*(?:\.\.\.|…)\s*\]?\s*)?(?:Artykuł|Wpis|The post)\s+.{0,260}?(?:pochodzi z serwisu|appeared first on)\s+.*$",
+        r"\s*(?:\[?\s*(?:\.\.\.|…)\s*\]?\s*)?(?:Artykuł|Wpis|The post)\s+.{0,260}?(?:pochodzi z serwisu|(?:first\s+)?appeared(?:\s+first)?\s+on)(?:\s+.*)?$",
         "",
         t,
         flags=re.IGNORECASE | re.DOTALL,
     )
+    if article_title:
+        clean_title = article_title.strip().rstrip(".!?")
+        if len(clean_title) >= 15:
+            t = re.sub(
+                r"\s*" + re.escape(clean_title) + r"[.!?\"”'»\s]{0,6}(?:pochodzi z serwisu|(?:first\s+)?appeared(?:\s+first)?\s+on)(?:\s+.*)?$",
+                "",
+                t,
+                flags=re.IGNORECASE | re.DOTALL,
+            )
     t = re.sub(
         r"\s*\[\s*(?:\.\.\.|…)\s*\]\s*(?:Artykuł|Wpis|The post)\b.*$",
         "",
         t,
         flags=re.IGNORECASE | re.DOTALL,
     )
-    t = re.sub(r"\s*pochodzi z serwisu\s+.*$", "", t, flags=re.IGNORECASE | re.DOTALL)
-    t = re.sub(r"\s*appeared first on\s+.*$", "", t, flags=re.IGNORECASE | re.DOTALL)
+    t = re.sub(r"\s*[^\n.!?]{0,220}\bpochodzi z serwisu(?:\s+.*)?$", "", t, flags=re.IGNORECASE | re.DOTALL)
+    t = re.sub(r"\s*[^\n.!?]{0,220}\b(?:first\s+)?appeared(?:\s+first)?\s+on(?:\s+.*)?$", "", t, flags=re.IGNORECASE | re.DOTALL)
     t = re.sub(
         r"\s*(?:Zobacz także|Zobacz też|Czytaj także|Czytaj również|Zobacz również|Więcej na temat|Przeczytaj także|Obejrzyj także|Sprawdź też|Materiał wideo|Zobacz wideo)\s*:.*$",
         "",
@@ -3934,7 +3943,10 @@ def run_quality_gate(
         errors.append(f"Wykryto {stats['zero_source_count']} artykułów bez źródeł.")
 
     entity_re = re.compile(r"&(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);")
-    cta_re = re.compile(r"(?:ABY\s+ODSŁUCHAĆ\s+ROZMOWĘ|KLIKNIJ\s+NA\s+ZDJĘCIE\s+POWYŻEJ)", re.IGNORECASE)
+    cta_re = re.compile(
+        r"(?:ABY\s+ODSŁUCHAĆ\s+ROZMOWĘ|KLIKNIJ\s+NA\s+ZDJĘCIE\s+POWYŻEJ|\bThe\s+post\s|\b(?:first\s+appeared|appeared\s+first)\s+on\b|\bpochodzi\s+z\s+serwisu\b)",
+        re.IGNORECASE,
+    )
     html_tag_re = re.compile(r"</?(?:p|div|span|img|a|br|script|style|iframe)\b", re.IGNORECASE)
     seen_urls = set()
 
