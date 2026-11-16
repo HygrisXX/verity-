@@ -3,13 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:26+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:26+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/</loc>
-    <lastmod>2026-11-16T14:58:19+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:18+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -33,13 +33,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:26+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/</loc>
-    <lastmod>2026-11-16T14:58:22+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:24+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -63,25 +63,25 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:26+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:19+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/</loc>
-    <lastmod>2026-11-16T14:58:22+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:24+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/</loc>
-    <lastmod>2026-11-16T14:58:23+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:24+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -144,6 +144,87 @@
     <lastmod>2026-11-16T06:03:40+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/kamizelki-kuloodporne-i-inny-sprzet-dla-strazy-miejskiej-wroclawia/</loc>
+    <lastmod>2026-11-16T16:41:24+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1150280/main/sm-sprzet-gra.png?imgeng=/w_1200/h_800/m_cropbox</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zajecia-zdalne-w-szkole-kiedy-dyrektor-moze-je-zarzadzic-wystarcza-dwa/</loc>
+    <lastmod>2026-11-16T16:41:24+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2025/12/Szkola-krzesla-sala.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/rozpoczecie-trasy-srednicowej-i-remont-stadionu-zuzlowego-opole-ma/</loc>
+    <lastmod>2026-11-16T16:41:24+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/dochody.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/robert-pattinson-nowym-jamesem-bondem-z-peleryny-batmana-prosto-w/</loc>
+    <lastmod>2026-11-16T16:41:21+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://m.natemat.pl/robert-pattinson-jako-james-bond-ud8ngrbc-1500x0x0x0.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/intel-szykuje-procesory-z-256-rdzeniami-to-dopiero-poczatek/</loc>
+    <lastmod>2026-11-16T16:41:20+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/ad1dbf7e-6209-40ff-92c9-8e3987f6956e</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/w-krakowie-powstanie-siedziba-dowodztwa-wojsk-medycznych-szef-mon-podal/</loc>
+    <lastmod>2026-11-16T16:41:19+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/147d970f0e5066fbdba7f6d13881111a_xl-150x150.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/nie-chce-juz-dluzej-blagac-tusk-zwrocil-sie-do-prezydenta/</loc>
+    <lastmod>2026-11-16T16:41:18+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-donald-tusk-ph9341862/alternates/LANDSCAPE_1280</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/polska-przedluza-zawieszenie-prawa-do-azylu-jest-komunikat-mswia/</loc>
+    <lastmod>2026-11-16T16:41:17+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljL/WZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbn/RzL0ZPQjAwMDAwMDAwMDAwMDc3MDY1NjYvZmlsZXM/vZ3JhbmljYS0zOTMyMDQwMi5qcGciLCJ3IjozODQwfQ</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/milosz-kleczek-i-michal-rachon-z-zarzutami-dot-wejscia-do-budynku/</loc>
+    <lastmod>2026-11-16T16:41:15+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/0d2d3e006da8117ea7287d085c2c1491/milosz-kleczek?t=resize:fill:600:300,enlarge:1</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/zolta-i-czerwona-kartka-w-pilce-noznej-co-oznaczaja/</loc>
@@ -237,15 +318,6 @@
     <lastmod>2026-11-16T11:16:40+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/rzad-radzi-przygotowac-sie-na-72-godziny-zrobilismy-liste-i/</loc>
-    <lastmod>2026-11-16T11:16:40+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/10/Spizarka-zapasy-kuchnia.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/intel-pozwany-przez-akcjonariuszy-inwestorzy-zarzucaja-spolce-ukrywanie/</loc>
@@ -383,15 +455,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/kiedy-chemia-zaskakuje/</loc>
-    <lastmod>2026-11-16T06:03:43+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://czasnaopole.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-12-143646.png</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/przelom-po-latach-oczekiwania-tramwaje-z-gorzowa-widac-juz-w-mapach/</loc>
     <lastmod>2026-11-16T06:03:43+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -506,15 +569,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://s4.tvp.pl/images2/4/2/8/uid_4282b0be624a4f46bc231d72ab580b1f_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/malopolska-policja-prostuje-doniesienia-wokol-zamachu-w-krakowie/</loc>
-    <lastmod>2026-11-16T02:52:05+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/4b/99/1f/z33133131IHG,Policja-w-Krakowie.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1044,7 +1098,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
+    <lastmod>2026-11-16T16:41:26+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1067,15 +1121,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://files.niezalezna.tech/images/upload/2026/11/15/n_d96d68de0936d4c50ab37915062e4c8ad00da9197ca37ec5182454f582d29c7b_c.jpg?r=750,400</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/ukraina-w-nato-emmanuel-macron-chodzi-o-bezpieczenstwo-nas-wszystkich/</loc>
-    <lastmod>2026-11-15T06:56:25+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-emmanuel-macron-ph9303289/alternates/LANDSCAPE_1280</image:loc>
     </image:image>
   </url>
   <url>
@@ -1220,33 +1265,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/luksusowe-zycie-bossow-i-gangsterow-nawet-dzis-robi-wrazenie-prywatne/</loc>
-    <lastmod>2026-11-15T02:50:41+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/ee/dc/641c1df9297ff_o,size,640x400,q,71,h,3f4258.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/mercedes-cla-eq-350-zaimponowal-w-tescie/</loc>
-    <lastmod>2026-11-15T02:50:39+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/mercedes-cla-350-eq-35-test-ev-ice-zasieg-jelenia.x63527.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/wyrok-tk-mozna-z-sadu-wyjsc-z-300-000-zl-za-slupy-wodociagi-gazociagi/</loc>
-    <lastmod>2026-11-15T01:58:54+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljL/WZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbn/RzL0ZPQjAwMDAwMDAwMDAwMDc2OTczMTgvZmlsZXM/vcG9kd3l6a2ktMzkyMDE2NzguanBnIiwidyI6Mzg0MH0</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/wczesniakiem-zostaje-sie-do-konca-zycia-wideo-zdjecia/</loc>
     <lastmod>2026-11-15T00:52:45+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -1379,15 +1397,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://konto.chip.pl/wp-content/uploads/2026/11/ss-united-states.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/podaj-dalej-anglojezyczny-tekst-o-faktach-dotyczacych-ataku-w-krakowie/</loc>
-    <lastmod>2026-11-14T20:33:19+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/14/n_2ed92001ba5261853454ab2e560c87be1a525122088b1bb233b6fcce5332078b_c.jpg?r=750,400</image:loc>
     </image:image>
   </url>
   <url>
@@ -1578,12 +1587,6 @@
     <image:image>
       <image:loc>https://comparic.pl/comparic.pl/wp-content/uploads/2026/11/najnowsze-komunikaty-AI-2342355-gpw-150x150.webp</image:loc>
     </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/nie-musisz-mierzyc-sie-z-kryzysem-sam-gdzie-szukac-pomocy-w-krakowie/</loc>
-    <lastmod>2026-11-16T14:58:24+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/pozar-domu-w-gminie-wielopole-skrzynskie-cztery-osoby-stracily-dach-nad/</loc>
