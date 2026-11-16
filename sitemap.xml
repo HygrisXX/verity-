@@ -3,13 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-15T21:59:58+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-15T21:34:31+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -33,13 +33,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-15T21:34:31+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/</loc>
-    <lastmod>2026-11-15T20:36:03+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:50+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/</loc>
-    <lastmod>2026-11-15T20:14:20+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -63,25 +63,25 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-15T20:14:23+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/</loc>
-    <lastmod>2026-11-15T20:14:18+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/</loc>
-    <lastmod>2026-11-15T21:34:31+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:50+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/</loc>
-    <lastmod>2026-11-15T21:34:31+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:49+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -105,7 +105,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/</loc>
-    <lastmod>2026-11-15T20:14:24+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:46+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -135,15 +135,93 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-15T21:59:58+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-15T21:34:28+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:47+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/z-warszawy-do-gdanska-w-2-godz-18-min-nowy-rozklad-pkp-intercity-dla/</loc>
+    <lastmod>2026-11-16T01:11:50+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2025/01/7d542a49-291c-4df8-9521-a61146af8e02.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/kino-ktore-laczy-festiwal-integracja-ty-i-ja-zawita-do-swidnicy/</loc>
+    <lastmod>2026-11-16T01:11:50+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://swidnica24.pl/wp-content/uploads/2026/05/wyroznienie-na-FilmON-w-Krakowie-2026-fot.-WTZ-w-Mokrzeszowie-5.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <lastmod>2026-11-16T01:11:49+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/wlosi-rozbici-w-hicie-ligi-narodow-oto-komplet-niedzielnych-wynikow/</loc>
+    <lastmod>2026-11-16T01:11:47+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/0f/99/1f/z33133327IHG,Belgia---Wlochy.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/z-ostatniej-chwili-demolka-na-bystrzanskiej-bmw-stracilo-kolo-do/</loc>
+    <lastmod>2026-11-16T01:11:46+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62837/179478607587936900__.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/piaty-odblaskowy-spacer-w-zemborzycach-mieszkancy-znow-wyszli-na-drogi/</loc>
+    <lastmod>2026-11-16T01:11:45+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145r9.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/drony-uderzyly-w-trzy-statki-u-wybrzezy-panstwa-nato-rumunia-poderwala/</loc>
+    <lastmod>2026-11-16T01:11:45+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/08/Pilne.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/co-dalej-z-koncesja-dla-tv-republika-i-wpolsce24-nsa-podal-przewidywany/</loc>
+    <lastmod>2026-11-16T01:11:44+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljL/mluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk/9CMDAwMDAwMDAwMDAwNzcwMjA0Ny9maWxlcy90di1/yZXB1Ymxpa2EtMzkzMTgxMjYuanBnIiwidyI6Mzg0MH0</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/nieudana-misja-rakiety-vulcan-centaur-amazon-stracil-40-satelitow/</loc>
+    <lastmod>2026-11-16T01:11:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/82d31c2f2214967b81a79fdeb5752142/?t=crop:4000:1749:nowe:0:726,resize:fill:600:300,enlarge:1</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zakonczenie-sezonu-na-torze-sluzewiec-koncerty-i-premiery-teatralne-oto/</loc>
@@ -458,24 +536,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/miliony-urzadzen-w-polsce-wysyla-dane-z-naszych-domow-gdzie-indziej/</loc>
-    <lastmod>2026-11-15T09:44:36+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/09/82d3bb59-cf94-48b7-b5fb-f9659ff83f7c.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/leo-baeck-rabin-ktory-rozslawil-opole-w-swiecie/</loc>
-    <lastmod>2026-11-15T09:44:36+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/1794292325_Koncert-piesni-synagogalnych.png</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc/</loc>
     <lastmod>2026-11-15T09:44:33+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -675,7 +735,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/</loc>
-    <lastmod>2026-11-15T06:56:28+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -699,12 +759,6 @@
     <image:image>
       <image:loc>https://files.niezalezna.tech/images/upload/2026/11/15/n_d96d68de0936d4c50ab37915062e4c8ad00da9197ca37ec5182454f582d29c7b_c.jpg?r=750,400</image:loc>
     </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/kilkaset-tysiecy-osob-protestowalo-w-pradze-w-obronie-mediow-publicznych/</loc>
-    <lastmod>2026-11-15T21:59:58+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/ukraina-w-nato-emmanuel-macron-chodzi-o-bezpieczenstwo-nas-wszystkich/</loc>
@@ -806,15 +860,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821328.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/perkusisci-behemoth-necrophagist-i-bestial-raids-zagraja-w-swidnicy/</loc>
-    <lastmod>2026-11-15T04:38:00+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://swidnica24.pl/wp-content/uploads/2026/11/Behemoth-koncert-w-Spodku-w-Katowicach-26-pazdziernik-2026-fot.-Agnieszka-Nowicka.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1254,7 +1299,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/nie-musisz-mierzyc-sie-z-kryzysem-sam-gdzie-szukac-pomocy-w-krakowie/</loc>
-    <lastmod>2026-11-14T16:34:07+01:00</lastmod>
+    <lastmod>2026-11-16T01:11:51+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
