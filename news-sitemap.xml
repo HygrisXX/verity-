@@ -3,6 +3,77 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/jesienna-trasa-lewicy-w-opolu-prezydentowi-myli-sie-demokracja-z/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T04:04:31+01:00</news:publication_date>
+      <news:title>Jesienna Trasa Lewicy w Opolu. „Prezydentowi myli się demokracja z monarchią”</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/sparta-rozbila-rywalki-leszno-wygralo-w-lancucie-podsumowanie-8-kolejki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T04:04:31+01:00</news:publication_date>
+      <news:title>Sparta rozbiła rywalki, Leszno wygrało w Łańcucie. Podsumowanie 8. kolejki 1 Ligi Kobiet</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bochnianin.pl/wp-content/uploads/2026/10/AZS-Uniwersytet-Warszawski.jpg</image:loc>
+      <image:title>Sparta rozbiła rywalki, Leszno wygrało w Łańcucie. Podsumowanie 8. kolejki 1 Ligi Kobiet</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/kto-bedzie-placil-podatek-zmiana-definicji-budynku-i-nowe-stawki-w-2027/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T04:04:30+01:00</news:publication_date>
+      <news:title>Kto będzie płacił podatek? Zmiana definicji budynku i nowe stawki w 2027 roku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/09/Pieniadze-wplata-zlotowki.webp</image:loc>
+      <image:title>Kto będzie płacił podatek? Zmiana definicji budynku i nowe stawki w 2027 roku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/biedronka-zyskuje-przewage-ktorej-nie-daja-glovo-i-uber-eats-ekspert/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T04:04:28+01:00</news:publication_date>
+      <news:title>Biedronka zyskuje przewagę, której nie dają Glovo i Uber Eats. Ekspert wyjaśnia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/15/10821188.webp</image:loc>
+      <image:title>Biedronka zyskuje przewagę, której nie dają Glovo i Uber Eats. Ekspert wyjaśnia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-xi-i-putin-szykuja-historyczne-spotkanie-stawka-handel-wojny-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T04:04:27+01:00</news:publication_date>
+      <news:title>Trump, Xi i Putin szykują historyczne spotkanie. Stawką handel, wojny i globalne wpływy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://xyz.pl/wp-content/uploads/2026/11/GettyImages-2304662514-1024x683.jpg</image:loc>
+      <image:title>Trump, Xi i Putin szykują historyczne spotkanie. Stawką handel, wojny i globalne wpływy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/leo-baeck-rabin-ktory-rozslawil-opole-w-swiecie/</loc>
     <news:news>
       <news:publication>
@@ -266,32 +337,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/82d31c2f2214967b81a79fdeb5752142/?t=crop:4000:1749:nowe:0:726,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Nieudana misja rakiety Vulcan Centaur. Amazon stracił 40 satelitów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zakonczenie-sezonu-na-torze-sluzewiec-koncerty-i-premiery-teatralne-oto/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-15T21:34:31+01:00</news:publication_date>
-      <news:title>Zakończenie sezonu na Torze Służewiec, koncerty i premiery teatralne. Oto przegląd najciekawszych atrakcji na </news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/kiedy-chemia-zaskakuje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-15T21:34:31+01:00</news:publication_date>
-      <news:title>Kiedy chemia zaskakuje</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://czasnaopole.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-12-143646.png</image:loc>
-      <image:title>Kiedy chemia zaskakuje</image:title>
     </image:image>
   </url>
   <url>
@@ -1358,21 +1403,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/po-niespodzianke-w-poznaniu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-15T03:48:21+01:00</news:publication_date>
-      <news:title>Po niespodziankę w Poznaniu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://rc.fm/files/styles/thumbnail/public/artykul_sportowy/168129/po_niespodzianke_w_poznaniu.jpg?itok=NjBK2Hxf</image:loc>
-      <image:title>Po niespodziankę w Poznaniu</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/orlen-zerwal-pierwszy-kontrakt-z-katarem-gaz-i-tak-nie-plynal-ale/</loc>
     <news:news>
       <news:publication>
@@ -1741,21 +1771,6 @@
     <image:image>
       <image:loc>https://s2.tvp.pl/images2/2/8/e/uid_28e7f2fadbe549ed87da00d847aa19aa_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
       <image:title>Wypadek na S19 w Nienadówce – utrudnienia w ruchu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/fioletowy-listopad-w-bialymstoku-fundacja-mali-wojownicy-jednoczy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T20:33:16+01:00</news:publication_date>
-      <news:title>Fioletowy listopad w Białymstoku. Fundacja Mali Wojownicy jednoczy rodziny wcześniaków</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s4.tvp.pl/images2/d/6/e/uid_d6ecda4bbeec483787038e43e8f488ec_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Fioletowy listopad w Białymstoku. Fundacja Mali Wojownicy jednoczy rodziny wcześniaków</image:title>
     </image:image>
   </url>
   <url>
@@ -2962,81 +2977,6 @@
     <image:image>
       <image:loc>https://gorzowianin.com/data/articles/org/30358.png</image:loc>
       <image:title>Kiedy otwarcie kawiarni w Przemysłówce? Wnętrze ozdobi odrestaurowany neon MCK</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/autostrada-a4-w-kierunku-wroclawia-calkowicie-zablokowana/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T04:47:04+01:00</news:publication_date>
-      <news:title>Autostrada A4 w kierunku Wrocławia całkowicie zablokowana</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s1.tvp.pl/images2/1/b/d/uid_1bd4df46a2ef46ec9887597367c3cac5_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Autostrada A4 w kierunku Wrocławia całkowicie zablokowana</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/od-14-listopada-kierowcy-zaplaca-ponad-30-proc-wiecej-drozeje-wazne/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
-      <news:title>Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/1c712d44209d10df8d4b419cf0cee489/?t=resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/jak-przeciwdzialac-przemocy-wobec-dzieci/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
-      <news:title>Jak przeciwdziałać przemocy wobec dzieci</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s1.tvp.pl/images2/1/a/f/uid_1afa74d57aa64a93a37305a3006f6a97_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Jak przeciwdziałać przemocy wobec dzieci</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/rzeczpospolita-swoich-bohaterow-bedzie-bronic-ostra-reakcja-wojewody-po/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
-      <news:title>„Rzeczpospolita swoich bohaterów będzie bronić”. Ostra reakcja wojewody po zawiadomieniu do prokuratury</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62818/179455929115825700__.png</image:loc>
-      <image:title>„Rzeczpospolita swoich bohaterów będzie bronić”. Ostra reakcja wojewody po zawiadomieniu do prokuratury</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/koniec-z-nudnymi-zasilaczami-corsair-pokazal-przezroczysty-model-shift/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T04:47:03+01:00</news:publication_date>
-      <news:title>Koniec z nudnymi zasilaczami? Corsair pokazał przezroczysty model Shift Crystal</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/5d23da9c-2d71-412a-9903-9c3447d2fa42</image:loc>
-      <image:title>Koniec z nudnymi zasilaczami? Corsair pokazał przezroczysty model Shift Crystal</image:title>
     </image:image>
   </url>
 </urlset>
