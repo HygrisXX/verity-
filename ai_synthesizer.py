@@ -40,7 +40,15 @@ _STOP_FOCUS = {
 }
 
 _CLICKBAIT_GUARD_RE = re.compile(
-    r"(?:\bszok\b|\bpilne\b|\bzobacz\b|\bnie\s+uwierzysz\b|\bniesamowite\b|\bmakabra\b|\btragedia\b|!!|\?\?)",
+    r"(?:"
+    r"\bszok\w*\b|\bpilne\b|\bzobacz\b|\bnie\s+uwierzysz\b|\bniesamowit\w*\b|\bmakabra\b|\btragedia\b|"
+    r"\bprosty\s+trik\b|\bmo[żz]e\s+zaskoczy[ćc]\b|\bjedn[aą]\s+rzecz\b|\bwystarczy\s+sprawdzi[ćc]\b|"
+    r"\boto\s+(?:pow[oó]d|prawda|dlaczego|kto|mistrzyni\w*|mistrz\w*|komplet|wyniki|sk[łl]ad|lista)\b|"
+    r"\bzag[łl]osuj\s+w\s+sondzie\b|\bsprawd[źz]\s+wyniki\b|\bpodaj\s+dalej\b|\bz\s+ostatniej\s+chwili\b|"
+    r"\bekspert\s+wyja[śs]nia\b|\bwykracza\s+poza\s+sport\b|\bto\s+powiedzia[łl][a]?\s+o\b|\bwiadomo,\s+co\s+z\b|"
+    r"\bwszyscy\s+m[oó]wi[aą]\s+o\b|[–—-]\s*(?:foto|wideo|video)\s*$|"
+    r"!!|\?\?"
+    r")",
     re.IGNORECASE,
 )
 

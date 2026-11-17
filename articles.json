@@ -1,12 +1,12 @@
 [
   {
-    "id": 1933936596,
+    "id": 2142223671,
     "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/kiedy-chemia-zaskakuje",
-    "seo_title": "Kiedy chemia zaskakuje",
+    "seo_url": "/Polska/Regiony/Opolskie/nieudane-eksperymenty-i-dwa-lata-pracy-doprowadzily-do-odkrycia-ktore",
+    "seo_title": "Nieudane eksperymenty i dwa lata pracy doprowadziły do odkrycia, które zainteresowało świat nauki",
     "summary_lead": "Nieudane eksperymenty i dwa lata pracy doprowadziły do odkrycia, które zainteresowało świat nauki. O kulisach badań nad cząsteczką 2,7-diazapirenu, jej niezwykłych właściwościach i potencjalnych zastosowaniach w nowoczesnej…",
     "meta_description": "Nieudane eksperymenty i dwa lata pracy doprowadziły do odkrycia, które zainteresowało świat nauki.",
-    "keywords": "Opolskie, chemia, zaskakuje",
+    "keywords": "Opolskie, Nieudane, eksperymenty, pracy, doprowadziły, odkrycia, zainteresowało",
     "thumbnail_url": "https://czasnaopole.pl/wp-content/uploads/2026/11/Zrzut-ekranu-2026-11-12-143646.png",
     "published_iso": "2026-11-16T06:03:43+01:00",
     "updated_iso": "2026-11-16T06:03:43+01:00",
@@ -32,7 +32,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "CzasNaOpole.pl",
+        "original": "Kiedy chemia zaskakuje",
+        "fact": "Nieudane eksperymenty i dwa lata pracy doprowadziły do odkrycia, które zainteresowało świat nauki"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (CzasNaOpole.pl)",
@@ -154,13 +160,13 @@
     ]
   },
   {
-    "id": 354123906,
+    "id": 97932764,
     "path": "/Polska/Regiony/Mazowieckie",
-    "seo_url": "/Polska/Regiony/Mazowieckie/rachunki-za-prad-moga-byc-nizsze-wystarczy-sprawdzic-jedna-rzecz-w-domu",
-    "seo_title": "Rachunki za prąd mogą być niższe. Wystarczy sprawdzić jedną rzecz w domu. Ten prosty trik może zaskoczyć",
+    "seo_url": "/Polska/Regiony/Mazowieckie/warto-sprawdzic-ile-pradu-pobieraja-urzadzenia-nawet-wtedy-gdy-pozornie",
+    "seo_title": "Warto sprawdzić, ile prądu pobierają urządzenia nawet wtedy, gdy pozornie są wyłączone",
     "summary_lead": "Rachunki za energię elektryczną potrafią zaskoczyć, szczególnie jesienią i zimą, kiedy częściej korzystamy z oświetlenia i urządzeń elektrycznych.",
     "meta_description": "Rachunki za energię elektryczną potrafią zaskoczyć, szczególnie jesienią i zimą, kiedy częściej korzystamy z oświetlenia i urządzeń elektrycznych.",
-    "keywords": "Mazowieckie, Rachunki, prąd, niższe, Wystarczy, sprawdzić, jedną",
+    "keywords": "Mazowieckie, Warto, sprawdzić, prądu, pobierają, urządzenia, nawet",
     "thumbnail_url": "https://warszawawpigulce.pl/wp-content/uploads/2026/03/Student-pieniadze-uczelnia.webp",
     "published_iso": "2026-11-16T06:03:42+01:00",
     "updated_iso": "2026-11-16T06:03:42+01:00",
@@ -186,7 +192,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Warszawa w Pigułce",
+        "original": "Rachunki za prąd mogą być niższe. Wystarczy sprawdzić jedną rzecz w domu. Ten prosty trik może zaskoczyć",
+        "fact": "Warto sprawdzić, ile prądu pobierają urządzenia nawet wtedy, gdy pozornie są wyłączone"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (Warszawa w Pigułce)",
@@ -1034,13 +1046,13 @@
     ]
   },
   {
-    "id": 1122198450,
+    "id": 2047297198,
     "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/biedronka-zyskuje-przewage-ktorej-nie-daja-glovo-i-uber-eats-ekspert",
-    "seo_title": "Biedronka zyskuje przewagę, której nie dają Glovo i Uber Eats. Ekspert wyjaśnia",
+    "seo_url": "/Polska/Gospodarka/biedronka-uruchomila-wlasna-aplikacje-biek-do-zakupow-online-z-dostawa",
+    "seo_title": "Biedronka uruchomiła własną aplikację Biek do zakupów online z dostawą do domu",
     "summary_lead": "Biedronka uruchomiła własną aplikację Biek do zakupów online z dostawą do domu. Usługa działa na początek w 16 miastach, a jej oferta obejmuje ponad 3000 produktów w cenach odpowiadających regularnym cenom w sklepach stacjonarnych.",
     "meta_description": "Biedronka uruchomiła własną aplikację Biek do zakupów online z dostawą do domu.",
-    "keywords": "Gospodarka, Biedronka, zyskuje, przewagę, której, dają, Glovo",
+    "keywords": "Gospodarka, Biedronka, uruchomiła, własną, aplikację, Biek, zakupów",
     "thumbnail_url": "https://static.wiadomoscihandlowe.pl/images/2026/11/15/10821188.webp",
     "published_iso": "2026-11-16T04:04:28+01:00",
     "updated_iso": "2026-11-16T04:04:28+01:00",
@@ -1066,7 +1078,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Wiadomości Handlowe",
+        "original": "Biedronka zyskuje przewagę, której nie dają Glovo i Uber Eats. Ekspert wyjaśnia",
+        "fact": "Biedronka uruchomiła własną aplikację Biek do zakupów online z dostawą do domu"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (Wiadomości Handlowe)",
@@ -1579,10 +1597,10 @@
     ]
   },
   {
-    "id": 949753750,
+    "id": 1397454224,
     "path": "/Polska/Regiony/Malopolskie",
-    "seo_url": "/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci",
-    "seo_title": "Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni (2026 r.)",
+    "seo_url": "/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos",
+    "seo_title": "Msza św. za zamachowca. Były krakowski radny zabrał głos",
     "summary_lead": "Łukasz Wantuch, były krakowski radny, odniósł się w mediach społecznościowych do planowanej mszy świętej za duszę Michała O., zamachowca z Rynku Głównego, oraz jego rodzinę. \"Jest to dla mnie trochę szokujące\" – napisał.",
     "meta_description": "Łukasz Wantuch, były krakowski radny, odniósł się w mediach społecznościowych do planowanej mszy świętej za duszę Michała O., zamachowca z Rynku Głównego…",
     "keywords": "Malopolskie, Msza, zamachowca, Były, krakowski, radny, zabrał",
@@ -1616,6 +1634,16 @@
         "outlet": "Fakt.pl",
         "original": "\"Msza św. za śp. Michała Oksińskiego i zmarłych z rodziny\". Były krakowski radny: trochę szokujące",
         "fact": "Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni"
+      },
+      {
+        "outlet": "o2.pl",
+        "original": "Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni (2026 r.)",
+        "fact": "Łukasz Wantuch, były krakowski radny, odniósł się w mediach społecznościowych do planowanej mszy"
+      },
+      {
+        "outlet": "o2.pl",
+        "original": "Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni",
+        "fact": "Msza św. za zamachowca. Były krakowski radny zabrał głos"
       }
     ],
     "full_sections": [
@@ -1665,7 +1693,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci?",
+        "q": "Co wiadomo w sprawie: Msza św. za zamachowca. Były krakowski radny zabrał głos?",
         "a": "Jego wpis wywołał podzielone reakcje internautów."
       },
       {
@@ -2280,13 +2308,13 @@
     ]
   },
   {
-    "id": 804289781,
+    "id": 902376308,
     "path": "/Sport",
-    "seo_url": "/Sport/oto-mistrzyni-wta-finals-w-drodze-po-tytul-nie-stracila-seta",
-    "seo_title": "Oto mistrzyni WTA Finals! W drodze po tytuł nie straciła seta",
+    "seo_url": "/Sport/final-wta-finals-rozstrzygniety-tytul-bez-straty-seta",
+    "seo_title": "Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta",
     "summary_lead": "WTA Finals kończy sezon w tenisowej elicie kobiet. Od początku tegorocznej edycji brylowała debiutująca w zmaganiach Mirra Andriejewa (3. WTA), która w drodze do finał u wygrała wszystkie cztery mecze.",
     "meta_description": "WTA Finals kończy sezon w tenisowej elicie kobiet. Od początku tegorocznej edycji brylowała debiutująca w zmaganiach Mirra Andriejewa (3.",
-    "keywords": "Sport, mistrzyni, Finals, drodze, tytuł, straciła, seta",
+    "keywords": "Sport, Finał, Finals, rozstrzygnięty, Tytuł, straty, seta",
     "thumbnail_url": "https://bi.im-g.pl/im/2c/99/1f/z33133356IHG,WTA-Finals-Indian-Wells--Elina-Switolina---Mirra-A.jpg",
     "published_iso": "2026-11-16T02:52:01+01:00",
     "updated_iso": "2026-11-16T02:52:01+01:00",
@@ -2312,7 +2340,23 @@
         "val": "Potwierdzone (5 źródeł)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Sport.pl",
+        "original": "Oto mistrzyni WTA Finals! W drodze po tytuł nie straciła seta",
+        "fact": "Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta"
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "original": "Wielki rewanż w finale. Oto mistrzynie debla WTA Finals",
+        "fact": "Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta"
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "original": "Mirra Andriejewa wygrała WTA Finals. Ale i tak wszyscy mówią o Arynie Sabalence",
+        "fact": "Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (5 redakcji)",
@@ -2399,7 +2443,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Oto mistrzyni WTA Finals! W drodze po tytuł nie straciła seta?",
+        "q": "Co wiadomo w sprawie: Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta?",
         "a": "W tym grupowy z Eliną Switoliną (6."
       },
       {
@@ -2489,13 +2533,13 @@
     ]
   },
   {
-    "id": 1000648561,
+    "id": 985890614,
     "path": "/Sport",
-    "seo_url": "/Sport/wlosi-rozbici-w-hicie-ligi-narodow-oto-komplet-niedzielnych-wynikow",
-    "seo_title": "Włosi rozbici w hicie Ligi Narodów. Oto komplet niedzielnych wyników",
+    "seo_url": "/Sport/piec-goli-w-hicie-ligi-narodow-gigant-traci-awans-wielka-zmiana-na-czele",
+    "seo_title": "Pięć goli w hicie Ligi Narodów. Gigant traci awans, wielka zmiana na czele",
     "summary_lead": "Niedziela była kolejnym dniem pełnym emocji w Lidze Narodów. Wieczorem rozegrane zostały cztery bardzo ciekawe spotkania w dywizji A.",
     "meta_description": "Niedziela była kolejnym dniem pełnym emocji w Lidze Narodów. Wieczorem rozegrane zostały cztery bardzo ciekawe spotkania w dywizji A.",
-    "keywords": "Sport, Włosi, rozbici, hicie, Ligi, Narodów, komplet",
+    "keywords": "Sport, Pięć, goli, hicie, Ligi, Narodów, Gigant",
     "thumbnail_url": "https://bi.im-g.pl/im/0f/99/1f/z33133327IHG,Belgia---Wlochy.jpg",
     "published_iso": "2026-11-16T01:11:47+01:00",
     "updated_iso": "2026-11-16T01:11:47+01:00",
@@ -2521,7 +2565,13 @@
         "val": "Potwierdzone (2 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Sport.pl",
+        "original": "Włosi rozbici w hicie Ligi Narodów. Oto komplet niedzielnych wyników",
+        "fact": "Pięć goli w hicie Ligi Narodów. Gigant traci awans, wielka zmiana na czele"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
@@ -2569,7 +2619,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Włosi rozbici w hicie Ligi Narodów. Oto komplet niedzielnych wyników?",
+        "q": "Co wiadomo w sprawie: Pięć goli w hicie Ligi Narodów. Gigant traci awans, wielka zmiana na czele?",
         "a": "Na pierwszy plan wysuwało się oczywiście spotkanie, które jawiło się jako rewanż za finał Euro 2024: Hiszpanii z Anglią."
       },
       {
@@ -2583,13 +2633,13 @@
     ]
   },
   {
-    "id": 1803898778,
+    "id": 1270369654,
     "path": "/Polska/Regiony/Slaskie",
-    "seo_url": "/Polska/Regiony/Slaskie/z-ostatniej-chwili-demolka-na-bystrzanskiej-bmw-stracilo-kolo-do",
-    "seo_title": "Z ostatniej chwili: Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby! – foto",
+    "seo_url": "/Polska/Regiony/Slaskie/demolka-na-bystrzanskiej-bmw-stracilo-kolo-do-szpitala-odwieziono-trzy",
+    "seo_title": "Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby",
     "summary_lead": "Zgłoszenie zdarzenia wpłynęło z WCPR o godz. 22.17.",
     "meta_description": "Zgłoszenie zdarzenia wpłynęło z WCPR o godz. 22.17. — Zostaliśmy wysłani do zdarzenia drogowego z udziałem dwóch samochodów osobowych.",
-    "keywords": "Slaskie, ostatniej, chwili, Demolka, Bystrzańskiej, straciło, koło",
+    "keywords": "Slaskie, Demolka, Bystrzańskiej, straciło, koło, szpitala, odwieziono",
     "thumbnail_url": "https://bielsko.biala.pl/userfiles/aktualnosci/62837/179478607587936900__.jpg",
     "published_iso": "2026-11-16T01:11:46+01:00",
     "updated_iso": "2026-11-16T01:11:46+01:00",
@@ -2615,7 +2665,18 @@
         "val": "Potwierdzone (2 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Bielsko.biala.pl",
+        "original": "Z ostatniej chwili: Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby!",
+        "fact": "Zgłoszenie zdarzenia wpłynęło z WCPR o godz. 22.17"
+      },
+      {
+        "outlet": "Beskidzka24.pl",
+        "original": "Z ostatniej chwili: Demolka na Bystrzańskiej. Do szpitala odwieziono trzy osoby!",
+        "fact": "Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
@@ -2664,7 +2725,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Z ostatniej chwili: Demolka na Bystrzańskiej, BMW straciło koło. Do?",
+        "q": "Co wiadomo w sprawie: Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy?",
         "a": "— Zostaliśmy wysłani do zdarzenia drogowego z udziałem dwóch samochodów osobowych."
       },
       {
@@ -5668,13 +5729,13 @@
     ]
   },
   {
-    "id": 1622493498,
+    "id": 463159280,
     "path": "/Polska",
-    "seo_url": "/Polska/darmowe-badania-juz-dla-dwudziestolatkow-oto-kto-moze-skorzystac",
-    "seo_title": "Darmowe badania już dla dwudziestolatków. Oto kto może skorzystać (64 lat)",
+    "seo_url": "/Polska/program-moje-zdrowie-finansowany-przez-nfz-umozliwia-polakom-wykonanie",
+    "seo_title": "Program \"Moje Zdrowie\" finansowany przez NFZ umożliwia Polakom wykonanie bilansu zdrowia",
     "summary_lead": "Program \"Moje Zdrowie\" finansowany przez NFZ umożliwia Polakom wykonanie bilansu zdrowia bez skierowania już od 20. roku życia.",
     "meta_description": "Program \"Moje Zdrowie\" finansowany przez NFZ umożliwia Polakom wykonanie bilansu zdrowia bez skierowania już od 20. roku życia.",
-    "keywords": "Polska, Darmowe, badania, dwudziestolatków, skorzystać",
+    "keywords": "Polska, Program, Moje, Zdrowie, finansowany, umożliwia, Polakom",
     "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/1e354a7e-4e5d-4b83-bb91-98dd020bec25",
     "published_iso": "2026-11-15T10:41:19+01:00",
     "display_date": "15.11.2026, 10:41",
@@ -5699,7 +5760,18 @@
         "val": "Potwierdzone (2 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "WP Finanse",
+        "original": "Darmowe badania już dla dwudziestolatków. Oto kto może skorzystać (64 lat)",
+        "fact": "Program \"Moje Zdrowie\" finansowany przez NFZ umożliwia Polakom wykonanie bilansu zdrowia"
+      },
+      {
+        "outlet": "WP Finanse",
+        "original": "Darmowe badania już dla dwudziestolatków. Oto kto może skorzystać",
+        "fact": "Program \"Moje Zdrowie\" finansowany przez NFZ umożliwia Polakom wykonanie bilansu zdrowia"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
@@ -5748,7 +5820,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Darmowe badania już dla dwudziestolatków. Oto kto może skorzystać (64 lat)?",
+        "q": "Co wiadomo w sprawie: Program \"Moje Zdrowie\" finansowany przez NFZ umożliwia Polakom wykonanie?",
         "a": "To odpowiedź na wycofanie programu Profilaktyka 40 plus i szansa na wczesne wykrycie groźnych chorób, które przez lata rozwijają się bez objawów."
       },
       {
@@ -6186,80 +6258,6 @@
     ]
   },
   {
-    "id": 696093826,
-    "path": "/Polska/Regiony/Podlaskie",
-    "seo_url": "/Polska/Regiony/Podlaskie/100-ciekawych-miejsc-ktore-warto-zobaczyc-w-wojewodztwie-podlaskim",
-    "seo_title": "100 ciekawych miejsc, które warto zobaczyć w województwie podlaskim. Najciekawsze atrakcje turystyczne na Podlasiu i Suwalszczyźnie",
-    "summary_lead": "Czasem, gdy odwiedza nas rodzina czy znajomi z kraju zastanawiamy się, co pokazać im w naszym województwie. Pałac Branickich, ale co dalej?",
-    "meta_description": "Czasem, gdy odwiedza nas rodzina czy znajomi z kraju zastanawiamy się, co pokazać im w naszym województwie. Pałac Branickich, ale co dalej?",
-    "keywords": "Podlaskie, ciekawych, miejsc, warto, zobaczyć, województwie, podlaskim",
-    "thumbnail_url": "https://d-pt.ppstatic.pl/kadry/k/r/1/9a/75/6af2c4b35b407_o,size,640x400,q,71,h,a9329e.jpg",
-    "published_iso": "2026-11-15T09:44:36+01:00",
-    "display_date": "15.11.2026, 09:44",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Podlaskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Kurier Poranny"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Kurier Poranny)",
-        "paragraphs": [
-          "Czasem, gdy odwiedza nas rodzina czy znajomi z kraju zastanawiamy się, co pokazać im w naszym województwie. Pałac Branickich, ale co dalej? Ilością zamków nikomu nie zaimponujemy, bo mamy jeden (w Tykocinie), no może półtora (jeśli liczyć wspaniały Kasztelik Korona Podlasia).",
-          "Nie mamy się jednak czego wstydzić, bo jeżeli poznamy ich historię, a przede wszystkim opowieści pasjonatów, którzy te wspaniałe budowle stworzyli, dojdziemy do wniosku, że to unikaty na skalę europejską! Czym województwo podlaskie może zachwycić turystów? Jest znane w kraju z pięknych krajobrazów, dziewiczej w wielu miejscach przyrody i pięknych prawosławnych świątyń.",
-          "Wybraliśmy dla was aż 100 ciekawych miejsc na Podlasiu i Suwalszczyźnie, które warto odwiedzić. Trwa majówka, więc najazd turystów na województwo podlaskie trwa w najlepsze. Nic dziwnego, mamy tu wiele ciekawych miejsc i wież widokowych z których można zrobić wspaniałe zdjęcia.",
-          "Macie ochotę na wycieczkę z dreszczykiem? W województwie podlaskim nie brakuje klimatycznych miejsc. [Źródło: Kurier Poranny]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Kurier Poranny",
-        "angle": "Relacja wiodąca",
-        "summary": "100 ciekawych miejsc, które warto zobaczyć w województwie podlaskim. Najciekawsze atrakcje turystyczne na Podlasiu i Suwalszczyźnie",
-        "url": "https://poranny.pl/100-ciekawych-miejsc-ktore-warto-zobaczyc-w-wojewodztwie-podlaskim-najciekawsze-atrakcje-turystyczne-na-podlasiu-i/ar/c1-17260597"
-      }
-    ],
-    "sources": [
-      "Kurier Poranny"
-    ],
-    "corrections": [],
-    "updated_iso": "2026-11-15T09:44:36+01:00",
-    "zero_trust_reason": "",
-    "impact": {
-      "audience": "Mieszkańcy Podlasia",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: 100 ciekawych miejsc, które warto zobaczyć w województwie podlaskim.?",
-        "a": "Czasem, gdy odwiedza nas rodzina czy znajomi z kraju zastanawiamy się, co pokazać im w naszym województwie. Pałac Branickich, ale co dalej?"
-      },
-      {
-        "q": "Kogo dotyczy i jaki jest status tej sprawy?",
-        "a": "Sprawa dotyczy: Mieszkańcy Podlasia. Obszar tematyczny: Sprawy lokalne i samorząd. Obecny status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
     "id": 762889578,
     "path": "/Polska/Regiony/Slaskie",
     "seo_url": "/Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc",
@@ -6451,7 +6449,7 @@
     "id": 1667418350,
     "path": "/Polska/Regiony/Pomorskie",
     "seo_url": "/Polska/Regiony/Pomorskie/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni",
-    "seo_title": "Nocny pożar pustostanu w Lęborku. Dwaj strażacy zostali ranni [AKTUALIZACJA]",
+    "seo_title": "Nocny pożar pustostanu w Lęborku. Dwaj strażacy zostali ranni",
     "summary_lead": "Sześć zastępów OSP i cztery zastępy straży pożarnej walczyło z pożarem pustostanu na terenie Lęborka. W czasie działań gaśniczych dwoje strażaków odniosło obrażenia.",
     "meta_description": "Sześć zastępów OSP i cztery zastępy straży pożarnej walczyło z pożarem pustostanu na terenie Lęborka.",
     "keywords": "Pomorskie, Nocny, pożar, pustostanu, Lęborku, Dwaj, strażacy",
@@ -6992,13 +6990,13 @@
     ]
   },
   {
-    "id": 1024259760,
+    "id": 246753600,
     "path": "/Polska/Regiony/Wielkopolskie",
-    "seo_url": "/Polska/Regiony/Wielkopolskie/wraca-ulubieniec-kibicow",
-    "seo_title": "Wraca ulubieniec kibiców",
+    "seo_url": "/Polska/Regiony/Wielkopolskie/dziki-warszawa-z-quanem-jacksonem-ulubiencem-ostrowskich-kibicow",
+    "seo_title": "Dziki Warszawa – z Quanem Jacksonem – ulubieńcem ostrowskich kibiców",
     "summary_lead": "Dziki Warszawa – z Quanem Jacksonem – ulubieńcem ostrowskich kibiców, który w poprzednim sezonie czarował swoją grą w Stali – będą kolejnym rywalem drużyny trenera Andrzeja Urbana.",
     "meta_description": "Dziki Warszawa – z Quanem Jacksonem – ulubieńcem ostrowskich kibiców, który w poprzednim sezonie czarował swoją grą w Stali – będą kolejnym rywalem drużyny…",
-    "keywords": "Wielkopolskie, Wraca, ulubieniec, kibiców",
+    "keywords": "Wielkopolskie, Dziki, Warszawa, Quanem, Jacksonem, ulubieńcem, ostrowskich",
     "thumbnail_url": "https://rc.fm/files/styles/thumbnail/public/artykul_sportowy/168128/wraca_ulubieniec_kibicow.jpg?itok=7M3q3r8m",
     "published_iso": "2026-11-15T08:55:08+01:00",
     "display_date": "15.11.2026, 08:55",
@@ -7023,7 +7021,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "rc.fm",
+        "original": "Wraca ulubieniec kibiców",
+        "fact": "Dziki Warszawa – z Quanem Jacksonem – ulubieńcem ostrowskich kibiców"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (rc.fm)",
@@ -7067,13 +7071,13 @@
     ]
   },
   {
-    "id": 951991263,
+    "id": 272852162,
     "path": "/Sport",
-    "seo_url": "/Sport/kto-za-jana-urbana-w-reprezentacji-polski-zaglosuj-w-sondzie-i-sprawdz",
-    "seo_title": "Kto za Jana Urbana w reprezentacji Polski? Zagłosuj w sondzie i sprawdź wyniki",
+    "seo_url": "/Sport/liga-narodow-mecz-ze-szwecja-bedzie-dla-pilkarzy-jana-urbana-proba",
+    "seo_title": "Liga Narodów. Mecz ze Szwecją będzie dla piłkarzy Jana Urbana próbą charakteru",
     "summary_lead": "Marzyliśmy, by po spadku z Dywizji A reprezentacja Polski szynko wróciła do elity. Równym rywalem miała być tylko Szwecja, jednak rzeczywistość okazała się brutalna.",
     "meta_description": "Marzyliśmy, by po spadku z Dywizji A reprezentacja Polski szynko wróciła do elity.",
-    "keywords": "Sport, Jana, Urbana, reprezentacji, Zagłosuj, sondzie",
+    "keywords": "Sport, Liga, Narodów, Szwecją, piłkarzy, Jana, Urbana",
     "thumbnail_url": "https://d-pt.ppstatic.pl/kadry/k/r/1/fc/5c/6af95b5168180_o,size,640x400,q,71,h,e61539.jpg",
     "published_iso": "2026-11-15T08:55:06+01:00",
     "display_date": "15.11.2026, 08:55",
@@ -7098,7 +7102,13 @@
         "val": "Potwierdzone (4 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Gol24.pl",
+        "original": "Kto za Jana Urbana w reprezentacji Polski? Zagłosuj w sondzie i sprawdź wyniki",
+        "fact": "Liga Narodów. Mecz ze Szwecją będzie dla piłkarzy Jana Urbana próbą charakteru"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (4 redakcje)",
@@ -7106,7 +7116,7 @@
           "Marzyliśmy, by po spadku z Dywizji A reprezentacja Polski szynko wróciła do elity. Równym rywalem miała być tylko Szwecja, jednak rzeczywistość okazała się brutalna. Biało-Czerwoni przegrali na wyjeździe nie tylko ze wspomnianą Szwecją, ale także z Rumunią oraz Bośnią i Hercegowiną. [Źródło: Gol24.pl]",
           "Ponadto u siebie z tymi ostatnimi zaledwie zremisowali i w konsekwencji przed ostatnim meczem fazy grupowej została im wyłącznie walka o utrzymanie 3. miejsca w tabeli, które daje gwarancję utrzymania w Dywizji B. – Wiem, co się dzieje w przestrzeni medialnej. [Źródło: Gol24.pl, Przegląd Sportowy]",
           "Jeśli naszym celem było awansować do dywizji A i ten cel nie został osiągnięty, to decyzje będą, jakie będą, choć nie było takiego celu. Ale chcieliśmy oczywiście powalczyć o drugie miejsce, które daje baraże. Tak się niestety nie stało – powiedział po przegranym 1:2 z Rumunią w Bukareszcie selekcjoner Jan Urban. [Źródło: Gol24.pl]",
-          "Nadchodzący mecz w Lidze Narodów ze Szwecją powinien być ostatnim występem reprezentacji Polski pod wodzą Jana Urbana. [Źródło: Weszło.com, Rzeczpospolita]"
+          "Nadchodzący mecz w Lidze Narodów ze Szwecją powinien być ostatnim występem reprezentacji Polski pod wodzą Jana Urbana. [Źródło: Gol24.pl, Weszło.com, Rzeczpospolita]"
         ]
       },
       {
@@ -7173,7 +7183,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Kto za Jana Urbana w reprezentacji Polski? Zagłosuj w sondzie i sprawdź?",
+        "q": "Co wiadomo w sprawie: Liga Narodów. Mecz ze Szwecją będzie dla piłkarzy Jana Urbana próbą?",
         "a": "Biało-Czerwoni przegrali na wyjeździe nie tylko ze wspomnianą Szwecją, ale także z Rumunią oraz Bośnią i Hercegowiną."
       },
       {
@@ -7800,85 +7810,6 @@
     ]
   },
   {
-    "id": 1501533340,
-    "path": "/Polska/Regiony/Slaskie",
-    "seo_url": "/Polska/Regiony/Slaskie/piatek-trzynastego-tak-to-juz-dzisiaj-faktycznie-pechowy-dzien",
-    "seo_title": "Piątek trzynastego – tak to już dzisiaj. Faktycznie pechowy dzień?",
-    "summary_lead": "Czarny kot przebiegający drogę, rozbite lustro, rozsypana sól i oczywiście… dzisiaj mamy piątek trzynastego!",
-    "meta_description": "Czarny kot przebiegający drogę, rozbite lustro, rozsypana sól i oczywiście… dzisiaj mamy piątek trzynastego!",
-    "keywords": "Slaskie, dzisiaj, Faktycznie, pechowy",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-15T08:02:43+01:00",
-    "display_date": "15.11.2026, 08:02",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Slaskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Radio Piekary"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Radio Piekary)",
-        "paragraphs": [
-          "Czarny kot przebiegający drogę, rozbite lustro, rozsypana sól i oczywiście… dzisiaj mamy piątek trzynastego! Dla jednych to zwykły dzień w kalendarzu, dla innych data, w której lepiej nie podejmować ważnych decyzji, nie planować podróży, a nawet nie wychodzić z domu. Piątek trzynastego od lat rozpala wyobraźnię, inspiruje twórców horrorów i staje się pretekstem do przypominania sobie najbardziej znanych przesądów.",
-          "Choć nie ma naukowych dowodów na to, że ta data przynosi nieszczęście, strach przed nią ma nawet swoją nazwę. Skąd wziął się piątek trzynastego? Co ciekawe, sam piątek i liczba trzynaście przez długi czas funkcjonowały jako dwa osobne symbole pecha.",
-          "Dopiero z czasem połączono je w jedną wyjątkowo złowrogą datę. W tradycji chrześcijańskiej piątek kojarzony jest z męką i śmiercią Jezusa Chrystusa. Z kolei trzynastka zyskała złą sławę między innymi za sprawą Ostatniej Wieczerzy, podczas której przy stole zasiadało trzynastu uczestników.",
-          "Trzynastym miał być Judasz, kojarzony ze zdradą. Wśród historycznych wydarzeń przywoływanych w kontekście tej daty znajduje się również 13 października 1307 roku. Nie oznacza to jednak, że każda osoba unikająca piątku trzynastego cierpi na fobię.",
-          "Z badania przeprowadzonego przez Centrum Badania Opinii Społecznej (CBOS) w lipcu 2018 roku wynika, że aż 85 proc. dorosłych Polaków wierzy w przesądy, praktykuje związane z nimi zwyczaje lub robi jedno i drugie. [Źródło: Radio Piekary]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Radio Piekary",
-        "angle": "Relacja wiodąca",
-        "summary": "Piątek trzynastego – tak to już dzisiaj. Faktycznie pechowy dzień?",
-        "url": "https://radiopiekary.pl/piatek-trzynastego-tak-to-juz-dzisiaj-faktycznie-pechowy-dzien"
-      }
-    ],
-    "sources": [
-      "Radio Piekary"
-    ],
-    "corrections": [],
-    "updated_iso": "2026-11-15T08:02:43+01:00",
-    "zero_trust_reason": "",
-    "impact": {
-      "audience": "Mieszkańcy Śląska",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Piątek trzynastego – tak to już dzisiaj. Faktycznie pechowy dzień?",
-        "a": "Czarny kot przebiegający drogę, rozbite lustro, rozsypana sól i oczywiście… dzisiaj mamy piątek trzynastego!"
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Z badania przeprowadzonego przez Centrum Badania Opinii Społecznej (CBOS) w lipcu 2018 roku wynika, że aż 85 proc. dorosłych Polaków wierzy w przesądy, praktykuje związane z nimi zwyczaje lub robi jedno i drugie."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Śląska (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
     "id": 1313282134,
     "path": "/Polska/Regiony/Zachodniopomorskie",
     "seo_url": "/Polska/Regiony/Zachodniopomorskie/wypadek-na-przejsciu-tramwaj-potracil-pieszego",
@@ -7910,7 +7841,13 @@
         "val": "Potwierdzone (2 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Radio Szczecin",
+        "original": "Tramwaj potrącił pieszego",
+        "fact": "Wypadek na przejściu. Tramwaj potrącił pieszego"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
@@ -9512,23 +9449,23 @@
     ]
   },
   {
-    "id": 513031325,
+    "id": 1090213370,
     "path": "/Polska/Regiony/Zachodniopomorskie",
-    "seo_url": "/Polska/Regiony/Zachodniopomorskie/matka-chrzestna-promu-przyznaje-co-bylo-najtrudniejsze",
-    "seo_title": "Matka chrzestna promu przyznaje, co było najtrudniejsze",
-    "summary_lead": "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom Bursztyn Unity. Tego dnia odbyła się wielka ceremonia.",
-    "meta_description": "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom Bursztyn Unity.",
-    "keywords": "Zachodniopomorskie, Matka, chrzestna, promu, przyznaje, najtrudniejsze",
+    "seo_url": "/Polska/Regiony/Zachodniopomorskie/do-macierzystego-portu-szczecin-zawital-najnowoczesniejszy-polski-prom",
+    "seo_title": "Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom Bursztyn Unity",
+    "summary_lead": "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Tego dnia odbyła się wielka ceremonia. Udział w niej wziął premier Donald Tusk, szef resortu infrastruktury Dariusz Klimczak i jeden z jego zastępców Arkadiusz Marchewka a…",
+    "meta_description": "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Tego dnia odbyła się wielka ceremonia.",
+    "keywords": "Zachodniopomorskie, macierzystego, portu, Szczecin, zawitał, najnowocześniejszy, prom",
     "thumbnail_url": "https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-13_179456109010.jpg",
     "published_iso": "2026-11-15T05:50:41+01:00",
     "display_date": "15.11.2026, 05:50",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "1 redakcja"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -9540,19 +9477,32 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Radio Szczecin",
+        "original": "Matka chrzestna promu przyznaje, co było najtrudniejsze",
+        "fact": "Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom Bursztyn Unity"
+      }
+    ],
     "full_sections": [
       {
-        "heading": "Relacja źródłowa (Radio Szczecin)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom Bursztyn Unity. Tego dnia odbyła się wielka ceremonia.",
-          "Udział w niej wziął premier Donald Tusk, szef resortu infrastruktury Dariusz Klimczak i jeden z jego zastępców Arkadiusz Marchewka a także liczni parlamentarzyści. Była też oczywiście matka chrzestna. Zofia Gałka w rozmowie z Radiem Szczecin przyznała, że wydarzenie to było dla niej wyjątkowe i na długo zapisze się w jej pamięci.",
-          "— Moment niezwykle ważny, wzruszający i bardzo się cieszę, że nastąpił w Szczecinie.",
-          "To jeszcze dodatkowo wzmacnia moje wzruszenie, moje zadowolenie, że mogłam uczestniczyć w tak niezwykle istotnej chwili – powiedziała Gałka. Wieloletnia pracownica i menedżerka związana od kilkudziesięciu lat z Polską Żeglugą Morską dodała, że najtrudniejsze było odpowiednie rozbicie butelki szampana.",
-          "— To może wygląda prosto, ale wymaga odpowiedniego przygotowania. [Źródło: Radio Szczecin]"
+          "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Tego dnia odbyła się wielka ceremonia. Udział w niej wziął premier Donald Tusk, szef resortu infrastruktury Dariusz Klimczak i jeden z jego zastępców Arkadiusz Marchewka a także liczni parlamentarzyści. [Źródło: Radio Szczecin]",
+          "Była też oczywiście matka chrzestna. Zofia Gałka w rozmowie z Radiem Szczecin przyznała, że wydarzenie to było dla niej wyjątkowe i na długo zapisze się w jej pamięci. [Źródło: Radio Szczecin]",
+          "— Moment niezwykle ważny, wzruszający i bardzo się cieszę, że nastąpił w Szczecinie. [Źródło: Radio Szczecin]",
+          "To jeszcze dodatkowo wzmacnia moje wzruszenie, moje zadowolenie, że mogłam uczestniczyć w tak niezwykle istotnej chwili – powiedziała Gałka. Bez biletów, bez zapisów, za to z gwarancją wrażeń. Punktualnie o godz. 10 w sobotę prom Bursztyn Unity otworzył się dla zwiedzających. [Źródło: Radio Szczecin, TVP3 Szczecin, TVP.info]",
+          "To ostatnia okazja, by zobaczyć jednostkę, nim wypłynie w rejs techniczny do Szwecji. [Źródło: TVP3 Szczecin, TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Mieszkańcy od godziny 10 w sobotę będą mogli zwiedzić statek bez wcześniej zarezerwowanych wejściówek. W ramach dnia otwartego, który potrwa od godz. 10:00 do 16:00, będzie można wejść na pokład bez wcześniejszej rezerwacji i posiadania wejściówki. [Źródło: TVP3 Szczecin]",
+          "Nowoczesny prom typu ro-pax (do przewozu ładunków kołowych i pasażerów) pojawił się przy Wałach Chrobrego w Szczecinie 9 listopada. W dniu Narodowego Święta Niepodległości odbył się chrzest jednostki. Przez kolejne trzy dni mieszkańcy Szczecina i regionu mogli wejść na pokład promu. [Źródło: TVP.info]"
         ]
       }
     ],
@@ -9561,11 +9511,31 @@
         "outlet": "Radio Szczecin",
         "angle": "Relacja wiodąca",
         "summary": "Matka chrzestna promu przyznaje, co było najtrudniejsze",
-        "url": "https://radioszczecin.pl/1,513701"
+        "url": "https://radioszczecin.pl/1,513701",
+        "focus": "Wyróżnia własne wątki i pojęcia: Matka, przyznaje, najtrudniejsze.",
+        "omits": "Pomija kontekst (techniczny, Mieszkańcy, jednostkę) rozwijany w TVP3 Szczecin, TVP.info."
+      },
+      {
+        "outlet": "TVP3 Szczecin",
+        "angle": "Doniesienie regionalne",
+        "summary": "Bursztyn Unity zaprasza na pokład. Ostatnia szansa na zwiedzanie",
+        "url": "https://szczecin.tvp.pl/96464927/bursztyn-unity-do-zwiedzania-w-szczecinie-ostatni-dzien-otwarty",
+        "focus": "Wyróżnia własne wątki i pojęcia: zaprasza, szansa, godziny.",
+        "omits": "Pomija kontekst (chrzestna, listopada, Szczecin) rozwijany w Radio Szczecin, TVP.info."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Doniesienie regionalne",
+        "summary": "Prom Bursztyn Unity wypłynął w morze. Wkrótce regularne rejsy",
+        "url": "https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie",
+        "focus": "Wyróżnia własne wątki i pojęcia: wypłynął, morze, Wkrótce.",
+        "omits": "Pomija kontekst (najnowocześniejszy, parlamentarzyści, kilkudziesięciu) rozwijany w Radio Szczecin."
       }
     ],
     "sources": [
-      "Radio Szczecin"
+      "Radio Szczecin",
+      "TVP.info",
+      "TVP3 Szczecin"
     ],
     "corrections": [],
     "updated_iso": "2026-11-15T05:50:41+01:00",
@@ -9573,16 +9543,20 @@
     "impact": {
       "audience": "Mieszkańcy Pomorza Zachodniego",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Matka chrzestna promu przyznaje, co było najtrudniejsze?",
-        "a": "Nie milkną echa po historycznym wydarzeniu z 11 listopada. Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom Bursztyn Unity. Tego dnia odbyła się wielka ceremonia."
+        "q": "Co wiadomo w sprawie: Do macierzystego portu Szczecin zawitał najnowocześniejszy polski prom?",
+        "a": "Udział w niej wziął premier Donald Tusk, szef resortu infrastruktury Dariusz Klimczak i jeden z jego zastępców Arkadiusz Marchewka a także liczni parlamentarzyści."
       },
       {
-        "q": "Kogo dotyczy i jaki jest status tej sprawy?",
-        "a": "Sprawa dotyczy: Mieszkańcy Pomorza Zachodniego. Obszar tematyczny: Sprawy lokalne i samorząd. Obecny status: Doniesienie lokalne / branżowe."
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Zofia Gałka w rozmowie z Radiem Szczecin przyznała, że wydarzenie to było dla niej wyjątkowe i na długo zapisze się w jej pamięci."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Pomorza Zachodniego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -10066,13 +10040,13 @@
     ]
   },
   {
-    "id": 758501391,
+    "id": 281838930,
     "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/duza-siec-wprowadza-migajace-etykiety-cenowe-klient-latwiej-znajdzie",
-    "seo_title": "Duża sieć wprowadza… migające etykiety cenowe. Klient łatwiej znajdzie produkt",
+    "seo_url": "/Polska/Gospodarka/brytyjski-detalista-wprowadzil-rozwiazanie",
+    "seo_title": "Brytyjski detalista wprowadził rozwiązanie",
     "summary_lead": "Brytyjski detalista wprowadził rozwiązanie, które łączy aplikację mobilną z infrastrukturą elektronicznych etykiet cenowych na sali sprzedaży.",
     "meta_description": "Brytyjski detalista wprowadził rozwiązanie, które łączy aplikację mobilną z infrastrukturą elektronicznych etykiet cenowych na sali sprzedaży.",
-    "keywords": "Gospodarka, Duża, sieć, wprowadza, migające, etykiety, cenowe",
+    "keywords": "Gospodarka, Brytyjski, detalista, wprowadził, rozwiązanie",
     "thumbnail_url": "https://static.wiadomoscihandlowe.pl/images/2026/11/13/10821328.webp",
     "published_iso": "2026-11-15T04:52:13+01:00",
     "display_date": "15.11.2026, 04:52",
@@ -10097,7 +10071,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Wiadomości Handlowe",
+        "original": "Duża sieć wprowadza… migające etykiety cenowe. Klient łatwiej znajdzie produkt",
+        "fact": "Brytyjski detalista wprowadził rozwiązanie"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (Wiadomości Handlowe)",
@@ -10651,78 +10631,6 @@
     ]
   },
   {
-    "id": 1377937724,
-    "path": "/Polska/Regiony/Lubelskie",
-    "seo_url": "/Polska/Regiony/Lubelskie/luksusowe-zycie-bossow-i-gangsterow-nawet-dzis-robi-wrazenie-prywatne",
-    "seo_title": "Luksusowe życie bossów i gangsterów nawet dziś robi wrażenie. Prywatne zdjęcia polskich mafiosów",
-    "summary_lead": "Wszyscy, którzy pamiętają lata 90. wiedzą, że gangsterzy byli wtedy królami życia – mieli pieniądze, wpływy i możliwości, o których inni mogliby tylko pomarzyć.",
-    "meta_description": "Wszyscy, którzy pamiętają lata 90. wiedzą, że gangsterzy byli wtedy królami życia – mieli pieniądze, wpływy i możliwości, o których inni mogliby tylko…",
-    "keywords": "Lubelskie, Luksusowe, bossów, gangsterów, nawet, robi, wrażenie",
-    "thumbnail_url": "https://d-pt.ppstatic.pl/kadry/k/r/1/ee/dc/641c1df9297ff_o,size,640x400,q,71,h,3f4258.jpg",
-    "published_iso": "2026-11-15T02:50:41+01:00",
-    "display_date": "15.11.2026, 02:50",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Lubelskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Kurier Lubelski"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Kurier Lubelski)",
-        "paragraphs": [
-          "Wszyscy, którzy pamiętają lata 90. wiedzą, że gangsterzy byli wtedy królami życia – mieli pieniądze, wpływy i możliwości, o których inni mogliby tylko pomarzyć. Dzięki haraczom, przemytowi narkotyków, korumpowaniu polityków i innym tego typu procederom byli w stanie utrzymać taki poziom życia, który do dzisiaj robi wrażenie.",
-          "Piękne kobiety, absurdalnie drogie jak na tamte czasy samochody, luksusowe, pięknie położone rezydencje z basenami... Kulisy tej hermetycznej rzeczywistości ujawnił na zdjęciach Jarosław S. pseudonim Masa, jeden z kluczowych świadków w procesach Pruszkowa. [Źródło: Kurier Lubelski]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Kurier Lubelski",
-        "angle": "Relacja wiodąca",
-        "summary": "Luksusowe życie bossów i gangsterów nawet dziś robi wrażenie. Prywatne zdjęcia polskich mafiosów",
-        "url": "https://kurierlubelski.pl/luksusowe-zycie-bossow-i-gangsterow-nawet-dzis-robi-wrazenie-prywatne-zdjecia-polskich-mafiosow/ar/c11-17396069"
-      }
-    ],
-    "sources": [
-      "Kurier Lubelski"
-    ],
-    "corrections": [],
-    "updated_iso": "2026-11-15T02:50:41+01:00",
-    "zero_trust_reason": "",
-    "impact": {
-      "audience": "Mieszkańcy Lubelszczyzny",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Luksusowe życie bossów i gangsterów nawet dziś robi wrażenie. Prywatne?",
-        "a": "Wszyscy, którzy pamiętają lata 90. wiedzą, że gangsterzy byli wtedy królami życia – mieli pieniądze, wpływy i możliwości, o których inni mogliby tylko pomarzyć."
-      },
-      {
-        "q": "Kogo dotyczy i jaki jest status tej sprawy?",
-        "a": "Sprawa dotyczy: Mieszkańcy Lubelszczyzny. Obszar tematyczny: Sprawy lokalne i samorząd. Obecny status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
     "id": 1291944296,
     "path": "/Polska/Energetyka",
     "seo_url": "/Polska/Energetyka/mercedes-cla-eq-350-zaimponowal-w-tescie",
@@ -10879,7 +10787,7 @@
     "id": 52989365,
     "path": "/Polska/Regiony/Zachodniopomorskie",
     "seo_url": "/Polska/Regiony/Zachodniopomorskie/wczesniakiem-zostaje-sie-do-konca-zycia-wideo-zdjecia",
-    "seo_title": "\"Wcześniakiem zostaje się do końca życia\" [WIDEO, ZDJĘCIA]",
+    "seo_title": "\"Wcześniakiem zostaje się do końca życia\"",
     "summary_lead": "Dzień pełen emocji, ekspertów i rodzinnych atrakcji. Szczecińska Enea Arena zamieniła się w centrum wsparcia dla wcześniaków. W sobotę odbywa się tam VIII Pomorzańskie Spotkanie z okazji Światowego Dnia Wcześniaka.",
     "meta_description": "Dzień pełen emocji, ekspertów i rodzinnych atrakcji. Szczecińska Enea Arena zamieniła się w centrum wsparcia dla wcześniaków.",
     "keywords": "Zachodniopomorskie, Wcześniakiem, zostaje, końca",
@@ -11056,13 +10964,13 @@
     ]
   },
   {
-    "id": 1347901644,
+    "id": 1608125883,
     "path": "/Sport",
-    "seo_url": "/Sport/urban-przemowil-po-porazce-z-rumunia-to-powiedzial-o-przyszlosci-w",
-    "seo_title": "Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze",
+    "seo_url": "/Sport/rumunia-polska-2-1-katastrofa-w-bukareszcie-elita-ligi-narodow-nie-dla",
+    "seo_title": "Rumunia – Polska 2:1. Katastrofa w Bukareszcie, elita Ligi Narodów nie dla Polaków",
     "summary_lead": "Znamy składy na przedostatni mecz reprezentacji Polski w fazie grupowej Ligi Narodów 2026/27! Nasza kadra musi wygrać na wyjeździe z Rumunią, by zachować jakiekolwiek szanse na awans do Dywizji A, a co najmniej zremisować, by nie…",
     "meta_description": "Znamy składy na przedostatni mecz reprezentacji Polski w fazie grupowej Ligi Narodów 2026/27!",
-    "keywords": "Sport, Urban, przemówił, porażce, Rumunią, powiedział, przyszłości",
+    "keywords": "Sport, Rumunia, Katastrofa, Bukareszcie, elita, Ligi, Narodów",
     "thumbnail_url": "https://i.iplsc.com/-/000NJ4XQ8K78J4V3-C321.webp",
     "published_iso": "2026-11-15T00:52:41+01:00",
     "display_date": "15.11.2026, 00:52",
@@ -11087,7 +10995,18 @@
         "val": "Potwierdzone (13 źródeł)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Interia Sport",
+        "original": "Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze",
+        "fact": "Rumunia – Polska 2:1. Katastrofa w Bukareszcie, elita Ligi Narodów nie dla Polaków"
+      },
+      {
+        "outlet": "Sport.pl",
+        "original": "Urban stawia na absolutnych debiutantów! Oto skład na mecz z Rumunią",
+        "fact": "Rumunia – Polska 2:1. Katastrofa w Bukareszcie, elita Ligi Narodów nie dla Polaków"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (13 redakcji)",
@@ -11121,7 +11040,7 @@
         "summary": "Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze",
         "url": "https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-urban-przemowil-przed-kamera-po-porazce-z-rumunia-tak-odpowi,nId,23573570",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (Rumunii, Zielińskiego, Piłkarska) rozwijany w WP SportoweFakty, Niezależna.pl."
+        "omits": "Pomija kontekst (Biało-czerwonych, zajmujący, korzystne) rozwijany w Niezależna.pl, Radio Kraków."
       },
       {
         "outlet": "Polsat Sport",
@@ -11145,7 +11064,7 @@
         "summary": "Urban stawia na absolutnych debiutantów! Oto skład na mecz z Rumunią",
         "url": "https://www.sport.pl/pilka/7,65037,33132066,urban-stawia-na-absolutnych-debiutantow-oto-sklad-na-mecz-z.html",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (muszą, Biało-czerwoni, pierwszym) rozwijany w Interia Sport, Przegląd Sportowy."
+        "omits": "Pomija kontekst (muszą, pierwszym, kompromitujących) rozwijany w Interia Sport, Przegląd Sportowy."
       },
       {
         "outlet": "Przegląd Sportowy",
@@ -11169,7 +11088,7 @@
         "summary": "Kluczowy piłkarz nie zagra z Rumunią! Urban ma zagwozdkę",
         "url": "https://weszlo.com/kluczowy-zawodnik-nie-zagra-z-rumunia-urban-ma-problem",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (Biało-czerwoni, zajmujący, korzystne) rozwijany w Interia Sport, Niezależna.pl."
+        "omits": "Pomija kontekst (Biało-czerwonych, zajmujący, korzystne) rozwijany w Niezależna.pl, Radio Kraków."
       },
       {
         "outlet": "Radio Kraków",
@@ -11245,7 +11164,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze?",
+        "q": "Co wiadomo w sprawie: Rumunia – Polska 2:1. Katastrofa w Bukareszcie, elita Ligi Narodów nie?",
         "a": "Nasza kadra musi wygrać na wyjeździe z Rumunią, by zachować jakiekolwiek szanse na awans do Dywizji A, a co najmniej zremisować, by nie groził nam już spadek do C."
       },
       {
@@ -11255,25 +11174,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (13 źródeł)."
-      }
-    ],
-    "dossier_title": "Urbana · kadrze",
-    "dossier_count": 2,
-    "dossier_index": 2,
-    "dossier_items": [
-      {
-        "id": 553367566,
-        "seo_url": "/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze",
-        "seo_title": "Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"",
-        "display_date": "13.11.2026, 19:50",
-        "published_iso": "2026-11-13T19:50:37+01:00"
-      },
-      {
-        "id": 1347901644,
-        "seo_url": "/Sport/urban-przemowil-po-porazce-z-rumunia-to-powiedzial-o-przyszlosci-w",
-        "seo_title": "Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze",
-        "display_date": "15.11.2026, 00:52",
-        "published_iso": "2026-11-15T00:52:41+01:00"
       }
     ]
   },
@@ -11412,13 +11312,13 @@
     ]
   },
   {
-    "id": 749832494,
+    "id": 867835294,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
-    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/olsztynski-szpital-zmieni-wyglad-po-zmroku-za-ta-akcja-kryje-sie-wazne",
-    "seo_title": "Olsztyński szpital zmieni wygląd po zmroku. Za tą akcją kryje się ważne przesłanie",
+    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/fioletowe-swiatlo-dla-wczesniakow-olsztynski-szpital-wlacza-sie-w",
+    "seo_title": "Fioletowe światło dla wcześniaków. Olsztyński szpital włącza się w obchody",
     "summary_lead": "Już w najbliższą niedzielę, 15 listopada, jeden z olsztyńskich szpitali zmieni swój wygląd po zmroku. Na jego elewacji pojawi się niezwykła iluminacja, za którą kryje się ważne przesłanie.",
     "meta_description": "Już w najbliższą niedzielę, 15 listopada, jeden z olsztyńskich szpitali zmieni swój wygląd po zmroku.",
-    "keywords": "Warminsko-Mazurskie, Olsztyński, szpital, zmieni, wygląd, zmroku, akcją",
+    "keywords": "Warminsko-Mazurskie, Fioletowe, światło, wcześniaków, Olsztyński, szpital, włącza",
     "thumbnail_url": "https://radioolsztyn.pl/wp-content/uploads/2019/11/AdobeStock_101846844.jpeg",
     "published_iso": "2026-11-14T23:30:17+01:00",
     "display_date": "14.11.2026, 23:30",
@@ -11443,7 +11343,13 @@
         "val": "Potwierdzone (2 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "TKO Olsztyn",
+        "original": "Olsztyński szpital zmieni wygląd po zmroku. Za tą akcją kryje się ważne przesłanie",
+        "fact": "Fioletowe światło dla wcześniaków. Olsztyński szpital włącza się w obchody"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
@@ -11492,7 +11398,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Olsztyński szpital zmieni wygląd po zmroku. Za tą akcją kryje się ważne?",
+        "q": "Co wiadomo w sprawie: Fioletowe światło dla wcześniaków. Olsztyński szpital włącza się w obchody?",
         "a": "To symbol solidarności z najmniejszymi pacjentami, którzy od pierwszych chwil życia muszą mierzyć się z ogromnymi wyzwaniami."
       },
       {
@@ -12780,13 +12686,13 @@
     ]
   },
   {
-    "id": 1427053953,
+    "id": 914600475,
     "path": "/Polska/Regiony/Malopolskie",
-    "seo_url": "/Polska/Regiony/Malopolskie/podaj-dalej-anglojezyczny-tekst-o-faktach-dotyczacych-ataku-w-krakowie",
-    "seo_title": "Podaj dalej! Anglojęzyczny tekst o faktach dotyczących ataku w Krakowie i represji wobec TV Republika",
+    "seo_url": "/Polska/Regiony/Malopolskie/anglojezyczny-tekst-o-faktach-dotyczacych-ataku-w-krakowie-i-represji",
+    "seo_title": "Anglojęzyczny tekst o faktach dotyczących ataku w Krakowie i represji wobec TV Republika",
     "summary_lead": "W zagranicznych mediach – w tym w serwisach takich jak Reuters czy Associated Press – szybko po tragedii w Krakowie zaczęły pojawiać się niepotwierdzone sugestie szefa MSWiA Marcina Kierwińskiego o możliwych skrajnie prawicowych…",
     "meta_description": "W zagranicznych mediach – w tym w serwisach takich jak Reuters czy Associated Press – szybko po tragedii w Krakowie zaczęły pojawiać się niepotwierdzone…",
-    "keywords": "Malopolskie, Podaj, dalej, Anglojęzyczny, tekst, faktach, Krakowie",
+    "keywords": "Malopolskie, Anglojęzyczny, tekst, faktach, Krakowie, represji, wobec",
     "thumbnail_url": "https://files.niezalezna.tech/images/upload/2026/11/14/n_2ed92001ba5261853454ab2e560c87be1a525122088b1bb233b6fcce5332078b_c.jpg?r=750,400",
     "published_iso": "2026-11-14T20:33:19+01:00",
     "display_date": "14.11.2026, 20:33",
@@ -12811,7 +12717,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Niezależna.pl",
+        "original": "Podaj dalej! Anglojęzyczny tekst o faktach dotyczących ataku w Krakowie i represji wobec TV Republika",
+        "fact": "W zagranicznych mediach – w tym w serwisach takich jak Reuters czy Associated Press"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (Niezależna.pl)",
@@ -13666,13 +13578,13 @@
     ]
   },
   {
-    "id": 282931951,
+    "id": 1038164944,
     "path": "/Sport",
-    "seo_url": "/Sport/transparent-polskich-kibicow-w-bukareszcie-wykracza-poza-sport",
-    "seo_title": "Transparent polskich kibiców w Bukareszcie. Wykracza poza sport",
+    "seo_url": "/Sport/przejmujacy-transparent-polskich-kibicow-w-bukareszcie-sektor-gosci",
+    "seo_title": "Przejmujący transparent polskich kibiców w Bukareszcie. Sektor gości pękał w szwach",
     "summary_lead": "Podczas meczu Rumunia – Polska w Bukareszcie nie zabraknie także naszych kibiców. Poza klasycznymi biało-czerwonymi flagami z nazwami miast i miasteczek pojawił się również większy transparent dotyczący bieżącej sytuacji…",
     "meta_description": "Podczas meczu Rumunia – Polska w Bukareszcie nie zabraknie także naszych kibiców.",
-    "keywords": "Sport, Transparent, kibiców, Bukareszcie, Wykracza, poza",
+    "keywords": "Sport, Przejmujący, transparent, kibiców, Bukareszcie, Sektor, gości",
     "thumbnail_url": "https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/kibice-bukareszt-flaga.jpeg",
     "published_iso": "2026-11-14T19:38:08+01:00",
     "display_date": "14.11.2026, 19:38",
@@ -13697,7 +13609,13 @@
         "val": "Potwierdzone (3 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Weszło.com",
+        "original": "Transparent polskich kibiców w Bukareszcie. Wykracza poza sport",
+        "fact": "Przejmujący transparent polskich kibiców w Bukareszcie. Sektor gości pękał w szwach"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (3 redakcje)",
@@ -13749,7 +13667,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Transparent polskich kibiców w Bukareszcie. Wykracza poza sport?",
+        "q": "Co wiadomo w sprawie: Przejmujący transparent polskich kibiców w Bukareszcie. Sektor gości?",
         "a": "Poza klasycznymi biało-czerwonymi flagami z nazwami miast i miasteczek pojawił się również większy transparent dotyczący bieżącej sytuacji społeczno-politycznej."
       },
       {
@@ -14611,13 +14529,13 @@
     ]
   },
   {
-    "id": 15920566,
+    "id": 812770941,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
-    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/w-olsztynie-rusza-wyjatkowa-akcja-powod-chwyta-za-serce",
-    "seo_title": "W Olsztynie rusza wyjątkowa akcja",
+    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/pomoc-pod-olsztynskim-mlynem-akcja-potrwa-do-wielkanocy",
+    "seo_title": "Pomoc pod olsztyńskim młynem. Akcja potrwa do Wielkanocy",
     "summary_lead": "Są takie miejsca, w których zwykły gest potrafi znaczyć więcej niż tysiąc słów. W Olsztynie ponownie rozpoczyna się inicjatywa, dzięki której osoby znajdujące się w trudnej sytuacji życiowej będą mogły liczyć na ciepły posiłek, pomoc…",
     "meta_description": "Są takie miejsca, w których zwykły gest potrafi znaczyć więcej niż tysiąc słów.",
-    "keywords": "Warminsko-Mazurskie, Olsztynie, wyjątkowa, akcja",
+    "keywords": "Warminsko-Mazurskie, Pomoc, olsztyńskim, młynem, Akcja, potrwa, Wielkanocy",
     "thumbnail_url": "https://radioolsztyn.pl/wp-content/uploads/2026/11/20261115_IMG_7926.jpg",
     "published_iso": "2026-11-14T17:30:26+01:00",
     "display_date": "14.11.2026, 17:30",
@@ -14647,6 +14565,11 @@
         "outlet": "TKO Olsztyn",
         "original": "W Olsztynie rusza wyjątkowa akcja. Powód chwyta za serce",
         "fact": "Wspólna rozmowa, zainteresowanie drugim człowiekiem i zwykła obecność mają być równie ważne jak przygotowane posiłki."
+      },
+      {
+        "outlet": "TKO Olsztyn",
+        "original": "W Olsztynie rusza wyjątkowa akcja",
+        "fact": "Pomoc pod olsztyńskim młynem. Akcja potrwa do Wielkanocy"
       }
     ],
     "full_sections": [
@@ -14703,7 +14626,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: W Olsztynie rusza wyjątkowa akcja?",
+        "q": "Co wiadomo w sprawie: Pomoc pod olsztyńskim młynem. Akcja potrwa do Wielkanocy?",
         "a": "W Olsztynie ponownie rozpoczyna się inicjatywa, dzięki której osoby znajdujące się w trudnej sytuacji życiowej będą mogły liczyć na ciepły posiłek, pomoc i odrobinę ludzkiej życzliwości."
       },
       {
@@ -18459,10 +18382,10 @@
     "id": 1783631949,
     "path": "/Polska/Regiony/Dolnoslaskie",
     "seo_url": "/Polska/Regiony/Dolnoslaskie/dolnoslaski-kongres-kobiet-14-listopada-we-wroclawiu-program",
-    "seo_title": "Dolnośląski Kongres Kobiet 14 listopada we Wrocławiu [PROGRAM] (1700 za)",
+    "seo_title": "Dolnośląski Kongres Kobiet 14 listopada we Wrocławiu (1700 za)",
     "summary_lead": "Ponad 1700 zarejestrowało się do udziału w wydarzeniach podczas 6. We Wrocławskim Centrum Kongresowym spotkały się parlamentarzystki, aktywistki społeczne, przedstawicielki organizacji społecznych, samorządów, biznesu i nauki.",
     "meta_description": "Ponad 1700 zarejestrowało się do udziału w wydarzeniach podczas 6. We Wrocławskim Centrum Kongresowym spotkały się parlamentarzystki, aktywistki społeczne…",
-    "keywords": "Dolnoslaskie, Dolnośląski, Kongres, Kobiet, Wrocławiu, PROGRAM",
+    "keywords": "Dolnoslaskie, Dolnośląski, Kongres, Kobiet, Wrocławiu",
     "thumbnail_url": "https://cdn-portal.img.wroclaw.pl/beta2/files/news/1143411/main/dolnoslaski-kongres-kobiet-2.jpg?imgeng=/w_1200/h_800/m_cropbox",
     "published_iso": "2026-11-14T12:41:14+01:00",
     "display_date": "14.11.2026, 12:41",
@@ -18546,7 +18469,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Dolnośląski Kongres Kobiet 14 listopada we Wrocławiu [PROGRAM] (1700 za)?",
+        "q": "Co wiadomo w sprawie: Dolnośląski Kongres Kobiet 14 listopada we Wrocławiu (1700 za)?",
         "a": "— Potrzebujemy więcej kobiet w polityce, ponieważ kobietom łatwiej się porozumieć – mówiły uczestniczki debaty otwierającej 6."
       },
       {
@@ -19315,110 +19238,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
-      }
-    ]
-  },
-  {
-    "id": 1805303607,
-    "path": "/Sport",
-    "seo_url": "/Sport/urban-podjal-decyzje-ws-skladu-problem-polakow-wiadomo-co-z-zielinskim",
-    "seo_title": "Urban podjął decyzję ws. składu. Problem Polaków. Wiadomo, co z Zielińskim",
-    "summary_lead": "Na kilka godzin przed pierwszym gwizdkiem w meczu Rumunia – Polska Jan Urban podjął ważną decyzję ws. składu na to spotkanie. Selekcjoner musiał wykreślić z kadry jednego piłkarza.",
-    "meta_description": "Na kilka godzin przed pierwszym gwizdkiem w meczu Rumunia – Polska Jan Urban podjął ważną decyzję ws. składu na to spotkanie.",
-    "keywords": "Sport, Urban, podjął, decyzję, składu, Problem, Polaków",
-    "thumbnail_url": "https://i.iplsc.com/-/000NJ3QXC5O27SH0-C321.webp",
-    "published_iso": "2026-11-14T11:32:12+01:00",
-    "display_date": "14.11.2026, 11:32",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Sport"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Interia Sport"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Na kilka godzin przed pierwszym gwizdkiem w meczu Rumunia – Polska Jan Urban podjął ważną decyzję ws. składu na to spotkanie. Selekcjoner musiał wykreślić z kadry jednego piłkarza. Niepewna była obecność m.in. Piotra Zielińskiego, który w ostatnich dniach zmagał się z przeziębieniem. [Źródło: Interia Sport]",
-          "Na stronie UEFA pojawiło się już oficjalne potwierdzenie kadry meczowej na spotkanie w Bukareszcie. [Źródło: Interia Sport]",
-          "— No nie można dopuścić, żeby zawodnik stał bez krycia przy stałym fragmencie gry — mówi po porażce z Rumunią 1:2 Jan Urban. [Źródło: Interia Sport, Gol24.pl, Przegląd Sportowy]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Selekcjoner Jan Urban miał nie lada ból głowy przed meczem 5. kolejki Ligi Narodów z Rumunią. Ostatecznie na liście meczowej pomocnik Interu Mediolan się nie znalazł. [Źródło: Gol24.pl]",
-          "Selekcjoner po meczu zwraca uwagę m.in. na rumuńskie boisko oraz już mówi, jak przygotowuje się do eliminacji Euro 2028. [Źródło: Przegląd Sportowy]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Interia Sport",
-        "angle": "Relacja wiodąca",
-        "summary": "Urban podjął decyzję ws. składu. Problem Polaków. Wiadomo, co z Zielińskim",
-        "url": "https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-godziny-do-meczu-z-rumunia-urban-podjal-decyzje-ws-skladu-wi,nId,23573388",
-        "focus": "Wyróżnia własne wątki i pojęcia: składu, Problem, Polaków.",
-        "omits": "Pomija wyliczenia (2028) przytaczane przez Przegląd Sportowy."
-      },
-      {
-        "outlet": "Gol24.pl",
-        "angle": "Relacja sportowa",
-        "summary": "Selekcjoner Urban podjął ważną decyzję przed meczem z Rumunią. Odesłał lidera na trybuny",
-        "url": "https://gol24.pl/selekcjoner-urban-podjal-wazna-decyzje-przed-meczem-z-rumunia-odeslal-lidera-na-trybuny/ar/c2-19150907",
-        "focus": "Wyróżnia własne wątki i pojęcia: meczem, Odesłał, lidera.",
-        "omits": "Pomija wyliczenia (2028) przytaczane przez Przegląd Sportowy."
-      },
-      {
-        "outlet": "Przegląd Sportowy",
-        "angle": "Relacja sportowa",
-        "summary": "Jan Urban podjął decyzję w sprawie pracy w reprezentacji Polski. Ogłosił w TVP",
-        "url": "https://przegladsportowy.onet.pl/pilka-nozna/liga-narodow/jan-urban-podjal-decyzje-ws-pracy-w-reprezentacji-polski-oglosil-w-tvp/05yjql6",
-        "focus": "Eksponuje dane (2028) oraz wątki: pracy, reprezentacji.",
-        "omits": "Pomija kontekst (meczowej, ważną, przeziębieniem) rozwijany w Interia Sport, Gol24.pl."
-      }
-    ],
-    "sources": [
-      "Gol24.pl",
-      "Interia Sport",
-      "Przegląd Sportowy"
-    ],
-    "corrections": [],
-    "updated_iso": "2026-11-14T11:32:12+01:00",
-    "zero_trust_reason": "",
-    "impact": {
-      "audience": "Kibice i środowisko sportowe",
-      "scope": "Sport i rozgrywki",
-      "status": "Potwierdzone (3 źródła)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Urban podjął decyzję ws. składu. Problem Polaków. Wiadomo, co z Zielińskim?",
-        "a": "Piotra Zielińskiego, który w ostatnich dniach zmagał się z przeziębieniem."
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Selekcjoner po meczu zwraca uwagę m.in. na rumuńskie boisko oraz już mówi, jak przygotowuje się do eliminacji Euro 2028."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -21467,116 +21286,6 @@
     ]
   },
   {
-    "id": 1944602973,
-    "path": "/Polska/Regiony/Zachodniopomorskie",
-    "seo_url": "/Polska/Regiony/Zachodniopomorskie/to-juz-ostatnia-szansa-by-zwiedzic-prom-bursztyn-unity",
-    "seo_title": "To już ostatnia szansa, by zwiedzić prom Bursztyn Unity",
-    "summary_lead": "Bez biletów, bez zapisów, za to z gwarancją wrażeń. Punktualnie o godz. 10 w sobotę prom Bursztyn Unity otworzył się dla zwiedzających. To ostatnia okazja, by zobaczyć jednostkę, nim wypłynie w rejs techniczny do Szwecji.",
-    "meta_description": "Bez biletów, bez zapisów, za to z gwarancją wrażeń. Punktualnie o godz. 10 w sobotę prom Bursztyn Unity otworzył się dla zwiedzających.",
-    "keywords": "Zachodniopomorskie, ostatnia, szansa, zwiedzić, prom, Bursztyn, Unity",
-    "thumbnail_url": "https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-13_179456012910.jpg",
-    "published_iso": "2026-11-14T07:55:46+01:00",
-    "display_date": "14.11.2026, 07:55",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Zachodniopomorskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Radio Szczecin"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Bez biletów, bez zapisów, za to z gwarancją wrażeń. Punktualnie o godz. 10 w sobotę prom Bursztyn Unity otworzył się dla zwiedzających. To ostatnia okazja, by zobaczyć jednostkę, nim wypłynie w rejs techniczny do Szwecji. [Źródło: Radio Szczecin, TVP3 Szczecin, TVP.info]",
-          "— Stoimy tak z godzinkę już. [Źródło: Radio Szczecin]",
-          "— Po czwartej rano wyjechaliśmy z Ostrowa Wielkopolskiego, no i tutaj przyszliśmy, tak półtorej godziny stoimy. [Źródło: Radio Szczecin]",
-          "— Przyjechaliśmy specjalnie, dlatego, że dzisiaj pociągi są za darmo i wejście do Bursztynu jest za darmo, i dlatego przyjechaliśmy z radością. [Źródło: Radio Szczecin]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Mieszkańcy od godziny 10 w sobotę będą mogli zwiedzić statek bez wcześniej zarezerwowanych wejściówek. W ramach dnia otwartego, który potrwa od godz. 10:00 do 16:00, będzie można wejść na pokład bez wcześniejszej rezerwacji i posiadania wejściówki. [Źródło: TVP3 Szczecin]",
-          "Nowoczesny prom typu ro-pax (do przewozu ładunków kołowych i pasażerów) pojawił się przy Wałach Chrobrego w Szczecinie 9 listopada. W dniu Narodowego Święta Niepodległości odbył się chrzest jednostki. Przez kolejne trzy dni mieszkańcy Szczecina i regionu mogli wejść na pokład promu. [Źródło: TVP.info]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Radio Szczecin",
-        "angle": "Relacja wiodąca",
-        "summary": "To już ostatnia szansa, by zwiedzić prom Bursztyn Unity",
-        "url": "https://radioszczecin.pl/1,513698",
-        "focus": "Wyróżnia własne wątki i pojęcia: Stoimy, godzinkę, czwartej.",
-        "omits": "Pomija kontekst (Mieszkańcy, pokład, mogli) rozwijany w TVP3 Szczecin, TVP.info."
-      },
-      {
-        "outlet": "TVP3 Szczecin",
-        "angle": "Doniesienie regionalne",
-        "summary": "Bursztyn Unity zaprasza na pokład. Ostatnia szansa na zwiedzanie",
-        "url": "https://szczecin.tvp.pl/96464927/bursztyn-unity-do-zwiedzania-w-szczecinie-ostatni-dzien-otwarty",
-        "focus": "Wyróżnia własne wątki i pojęcia: zaprasza, statek, wcześniej.",
-        "omits": "Pomija kontekst (Wielkopolskiego, Przyjechaliśmy, Niepodległości) rozwijany w Radio Szczecin, TVP.info."
-      },
-      {
-        "outlet": "TVP.info",
-        "angle": "Doniesienie regionalne",
-        "summary": "Prom Bursztyn Unity wypłynął w morze. Wkrótce regularne rejsy",
-        "url": "https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie",
-        "focus": "Wyróżnia własne wątki i pojęcia: wypłynął, morze, Wkrótce.",
-        "omits": "Pomija kontekst (zwiedzić, godziny, szansa) rozwijany w Radio Szczecin, TVP3 Szczecin."
-      }
-    ],
-    "sources": [
-      "Radio Szczecin",
-      "TVP.info",
-      "TVP3 Szczecin"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie"
-      }
-    ],
-    "updated_iso": "2026-11-14T07:55:46+01:00",
-    "zero_trust_reason": "",
-    "impact": {
-      "audience": "Mieszkańcy Pomorza Zachodniego",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (3 źródła)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: To już ostatnia szansa, by zwiedzić prom Bursztyn Unity?",
-        "a": "— Po czwartej rano wyjechaliśmy z Ostrowa Wielkopolskiego, no i tutaj przyszliśmy, tak półtorej godziny stoimy."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "— Przyjechaliśmy specjalnie, dlatego, że dzisiaj pociągi są za darmo i wejście do Bursztynu jest za darmo, i dlatego przyjechaliśmy z radością."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Pomorza Zachodniego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
-      }
-    ]
-  },
-  {
     "id": 940038079,
     "path": "/Polska/Regiony/Slaskie",
     "seo_url": "/Polska/Regiony/Slaskie/bliscy-karoliny-wrobel-wstrzasnieci-po-otrzymaniu-badan-dna-oczekuje",
@@ -21865,13 +21574,13 @@
     ]
   },
   {
-    "id": 64871907,
+    "id": 1354685343,
     "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/kariera-schodzi-na-drugi-plan-miliony-polakow-maja-coraz-wiekszy-problem",
-    "seo_title": "Kariera schodzi na drugi plan. Miliony Polaków mają coraz większy problem",
+    "seo_url": "/Polska/Gospodarka/laczenie-pracy-z-obowiazkami-opiekunczymi-staje-sie-coraz-wiekszym",
+    "seo_title": "Łączenie pracy z obowiązkami opiekuńczymi staje się coraz większym wyzwaniem dla Polaków",
     "summary_lead": "Łączenie pracy z obowiązkami opiekuńczymi staje się coraz większym wyzwaniem dla Polaków. W 2025 roku dotyczyło prawie 7,3 mln pracujących osób.",
     "meta_description": "Łączenie pracy z obowiązkami opiekuńczymi staje się coraz większym wyzwaniem dla Polaków. W 2025 roku dotyczyło prawie 7,3 mln pracujących osób.",
-    "keywords": "Gospodarka, Kariera, schodzi, drugi, plan, Miliony, Polaków",
+    "keywords": "Gospodarka, Łączenie, pracy, obowiązkami, opiekuńczymi, staje, większym",
     "thumbnail_url": "https://pliki.pulshr.pl/i/14/10/53/141053_r2_620.jpg",
     "published_iso": "2026-11-14T06:51:12+01:00",
     "display_date": "14.11.2026, 06:51",
@@ -21896,7 +21605,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "PulsHR",
+        "original": "Kariera schodzi na drugi plan. Miliony Polaków mają coraz większy problem",
+        "fact": "Łączenie pracy z obowiązkami opiekuńczymi staje się coraz większym wyzwaniem dla Polaków"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (PulsHR)",
@@ -21944,13 +21659,13 @@
     ]
   },
   {
-    "id": 1044515573,
+    "id": 1606590186,
     "path": "/Polska",
-    "seo_url": "/Polska/kolejni-pacjenci-moga-miec-duzy-problem-czyli-nowy-incydent-w-branzy",
-    "seo_title": "Kolejni pacjenci mogą mieć duży problem, czyli nowy incydent w branży medycznej",
+    "seo_url": "/Polska/kolejny-dostawca-oprogramowania-dla-polskich-placowek-medycznych-firma",
+    "seo_title": "Kolejny dostawca oprogramowania dla polskich placówek medycznych — firma IQ Dental",
     "summary_lead": "Pewnie Was to nie zdziwi, ale kolejny dostawca oprogramowania dla polskich placówek medycznych — firma IQ Dental — poinformowała obsługiwane przez siebie kliniki, że dane osobowe ich pacjentów i “dane dotyczące wizyt” mogły zostać…",
     "meta_description": "Pewnie Was to nie zdziwi, ale kolejny dostawca oprogramowania dla polskich placówek medycznych — firma IQ Dental — poinformowała obsługiwane przez siebie…",
-    "keywords": "Polska, Kolejni, pacjenci, duży, problem, czyli, branży",
+    "keywords": "Polska, dostawca, oprogramowania, placówek, medycznych, firma, Dental",
     "thumbnail_url": "https://niebezpiecznik.pl/wp-content/uploads/2026/10/iq_dental_kv-150x150.jpg",
     "published_iso": "2026-11-14T06:51:12+01:00",
     "display_date": "14.11.2026, 06:51",
@@ -21975,7 +21690,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Niebezpiecznik",
+        "original": "Kolejni pacjenci mogą mieć duży problem, czyli nowy incydent w branży medycznej",
+        "fact": "Kolejny dostawca oprogramowania dla polskich placówek medycznych — firma IQ Dental"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (Niebezpiecznik)",
@@ -22491,13 +22212,13 @@
     ]
   },
   {
-    "id": 2074076069,
+    "id": 279252034,
     "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/od-14-listopada-kierowcy-zaplaca-ponad-30-proc-wiecej-drozeje-wazne",
-    "seo_title": "Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie",
+    "seo_url": "/Polska/Gospodarka/od-14-listopada-drozeja-badania-psychologiczne-kierowcow",
+    "seo_title": "Od 14 listopada drożeją badania psychologiczne kierowców",
     "summary_lead": "14.11.2026 05:17 Od 14 listopada drożeją badania psychologiczne kierowców Mowa o rozporządzeniu Abonament RTV nie jest obowiązkowy dla wszystkich.",
     "meta_description": "14.11.2026 05:17 Od 14 listopada drożeją badania psychologiczne kierowców Mowa o rozporządzeniu Abonament RTV nie jest obowiązkowy dla wszystkich.",
-    "keywords": "Gospodarka, kierowcy, zapłacą, proc, Drożeje, ważne, badanie",
+    "keywords": "Gospodarka, drożeją, badania, psychologiczne, kierowców",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/1c712d44209d10df8d4b419cf0cee489/?t=resize:fill:600:300,enlarge:1",
     "published_iso": "2026-11-14T04:47:03+01:00",
     "display_date": "14.11.2026, 04:47",
@@ -22522,7 +22243,18 @@
         "val": "Potwierdzone (2 źródła)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "Rzeczpospolita",
+        "original": "Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne badanie",
+        "fact": "Od 14 listopada drożeją badania psychologiczne kierowców"
+      },
+      {
+        "outlet": "Warszawa w Pigułce",
+        "original": "Od soboty kierowcy zapłacą aż o 33 proc. więcej. Nowe przepisy obowiązują także na Mazowszu. Jest wyjątek",
+        "fact": "Od 14 listopada drożeją badania psychologiczne kierowców"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
@@ -22569,7 +22301,7 @@
     },
     "seo_faq": [
       {
-        "q": "Co wiadomo w sprawie: Od 14 listopada kierowcy zapłacą ponad 30 proc. więcej. Drożeje ważne?",
+        "q": "Co wiadomo w sprawie: Od 14 listopada drożeją badania psychologiczne kierowców?",
         "a": "Z opłat zwolniona jest część osób, w tym m.in. psychologiczne kierowców, nazywane popularnie psychotestami. orzeczenia i odwoła się od decyzji. podkreślić, jest jednak stawką maksymalną określoną przez resort."
       },
       {
@@ -27018,25 +26750,6 @@
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (3 źródła)."
       }
-    ],
-    "dossier_title": "Urbana · kadrze",
-    "dossier_count": 2,
-    "dossier_index": 1,
-    "dossier_items": [
-      {
-        "id": 553367566,
-        "seo_url": "/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze",
-        "seo_title": "Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"",
-        "display_date": "13.11.2026, 19:50",
-        "published_iso": "2026-11-13T19:50:37+01:00"
-      },
-      {
-        "id": 1347901644,
-        "seo_url": "/Sport/urban-przemowil-po-porazce-z-rumunia-to-powiedzial-o-przyszlosci-w",
-        "seo_title": "Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze",
-        "display_date": "15.11.2026, 00:52",
-        "published_iso": "2026-11-15T00:52:41+01:00"
-      }
     ]
   },
   {
@@ -29395,6 +29108,11 @@
         "outlet": "Wiadomości Handlowe",
         "original": "Zaskakujące dane GUS o cenach żywności. Warzywa drożeją, mięso w dół",
         "fact": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji"
+      },
+      {
+        "outlet": "Biznes Interia",
+        "original": "Wiadomo, co z cenami w październiku. GUS podał nowe dane o inflacji",
+        "fact": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji (3,5 proc.)"
       }
     ],
     "full_sections": [

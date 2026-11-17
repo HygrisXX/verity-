@@ -291,6 +291,9 @@ OPINION_MARKERS = [
     r"\brozdaje\s+[\w\s]{1,25}\s+w\s+aplikacji\b",
     r"\bkod(?:y|em)?\s+rabatow",
     r"\bgazetka\s+promocyjna\b",
+    r"\b\d+\s+(?:ciekawych|najciekawszych|najlepszych)\s+miejsc\b",
+    r"\bprywatne\s+zdj[eę]cia\b",
+    r"\bpi[aą]tek\s+trzynastego\b.*\bpechow",
 ]
 
 EDITORIAL_URL_SEGMENTS = (
@@ -1791,7 +1794,8 @@ TEASER_SENTENCE_PATTERNS = (
 )
 
 _TITLE_MEDIA_TAG_RE = re.compile(
-    r"\s*\[(?:WIDEO|VIDEO|ZDJĘCIA|GALERIA|AUDIO|FOTO)\]\s*",
+    r"\s*\[(?:WIDEO|VIDEO|ZDJĘCIA|GALERIA|AUDIO|FOTO|AKTUALIZACJA|PROGRAM|SONDA|TYLKO\s+U\s+NAS)\b[^\]]*\]\s*"
+    r"|\s+[–—-]\s*(?:foto|wideo|video|galeria|zdj[eę]cia)\s*$",
     re.IGNORECASE,
 )
 
@@ -1801,11 +1805,55 @@ _CLICKBAIT_TITLE_RE = re.compile(
     r"\btylko\s+u\s+nas\b|\bhit\s+internetu\b|\bprawda\s+wysz[łl]a\s+na\s+jaw\b|\bwysz[łl]o\s+na\s+jaw\b|"
     r"\bszokuj[aą]c[aeyio]\w*\b|\bw\s+szoku\b|\bzaskakuj[aą]c[aeyio]\w*\b|"
     r"\bchwyta\s+za\s+serce\b|\btrzymasz\s+w\s+domu\b|\bgigantyczn\w+\s+podatek\b|"
-    r"(?:^|\s)(?:pilne|uwaga)[!:]|\bczy\s+o\s+co\s*\?|\boto\s+(?:powód|prawda|dlaczego)\b|"
-    r"\bnie\s+bez\s+powodu\b|\bco\s+zrobił[a]?\s+\w+\?"
+    r"(?:^|\s)(?:pilne|uwaga|z\s+ostatniej\s+chwili|podaj\s+dalej)\s*[!:]|"
+    r"\bczy\s+o\s+co\s*\?|\bnie\s+bez\s+powodu\b|\bco\s+zrobił[a]?\s+\w+\?|"
+    r"\b(?:ten|jeden|taki)\s+(?:prosty|genialny|niesamowity|sekretny|jedyny)\s+(?:trik|spos[oó]b|myk|patent|szczeg[oó][łl])\b|"
+    r"\b(?:prosty|genialny)\s+(?:trik|patent)\b|"
+    r"\bmo[żz]e\s+zaskoczy[ćc]\b|\bb[eę]dziesz\s+zaskoczon\w*\b|"
+    r"\bzaskoczy[ćc]\s+(?:ka[żz]dego|polak[oó]w|kierowc[oó]w|widz[oó]w|kibic[oó]w)\b|"
+    r"\bnie\s+zgadniesz\b|\bma[łl]o\s+kto\s+(?:wie|pami[eę]ta)\b|\bkto\s+by\s+pomy[śs]la[łl]\b|"
+    r"\bnikt\s+si[eę]\s+tego\s+nie\s+spodziewa[łl]\b|"
+    r"\bwystarczy\s+(?:sprawdzi[ćc]|zrobi[ćc]|zmieni[ćc]|klikn[aą][ćc]|doda[ćc]|kilka|jedna|jeden)\b|"
+    r"\bjedn[aą]\s+rzecz\b|\bjeden\s+(?:szczeg[oó][łl]|trik|spos[oó]b|krok)\b|"
+    r"\boto\s+(?:pow[oó]d|prawda|dlaczego|kto|mistrzyni\w*|mistrz\w*|komplet|wyniki|sk[łl]ad|lista|jak)\b|"
+    r"\bzag[łl]osuj\s+w\s+sondzie\b|\bsprawd[źz]\s+wyniki\b|"
+    r"\bnie\s+przegap\b|\bkoniecznie\s+sprawd[źz]\b|\bmusisz\s+to\s+wiedzie[ćc]\b|"
+    r"\bwszyscy\s+m[oó]wi[aą]\s+o\b|\binternauci\s+podzieleni\b|\bburza\s+w\s+sieci\b|\bwywo[łl]a[łl]o\s+burz[eę]\b|"
+    r"\b(?:zobacz|sprawd[źz])\s+(?:jak|dlaczego|co|kto)\b|"
+    r"\bwykracza\s+poza\s+sport\b|\bkryje\s+si[eę]\s+wa[żz]ne\s+przes[łl]anie\b|"
+    r"\bto\s+powiedzia[łl][a]?\s+o\b|\bekspert\s+wyja[śs]nia\b|\bwiadomo,\s+co\s+z\b|"
+    r"\bwyj[aą]tkow[aey]\s+akcj[aęe]\b|\bdro[żz]eje\s+wa[żz]ne\s+badanie\b|"
+    r"\bmog[aą]\s+mie[ćc]\s+du[żz]y\s+problem\b|\bmaj[aą]\s+coraz\s+wi[eę]kszy\s+problem\b|"
+    r"\bprzyznaje,\s+co\s+by[łl]o\s+najtrudniejsze\b|\bwraca\s+ulubieniec\s+kibic[oó]w\b|"
+    r"\bkiedy\s+\w+\s+zaskakuje\b|\bfaktycznie\s+pechowy\s+dzie[ńn]\b|"
+    r"\brobi\s+wra[żz]enie\b|\bwarto\s+zobaczy[ćc]\b|\bklient\s+[łl]atwiej\s+znajdzie\s+produkt\b|"
+    r"\bjest\s+wyj[aą]tek\s*$|"
+    r"(?:^|\s)[–—-]\s*(?:foto|wideo|video|galeria|zdj[eę]cia)\s*$"
     r")",
     re.IGNORECASE,
 )
+
+_CLICKBAIT_TEASER_SENTENCE_RE = re.compile(
+    r"(?:"
+    r"wystarczy\s+(?:sprawdzi[ćc]|zrobi[ćc]|zmieni[ćc]|klikn[aą][ćc]|doda[ćc]|jedna|jeden)|"
+    r"(?:ten|jeden|taki)\s+(?:prosty|genialny|niesamowity|sekretny|jedyny)\s+(?:trik|spos[oó]b|myk|patent|szczeg[oó][łl])|"
+    r"mo[żz]e\s+zaskoczy[ćc]|b[eę]dziesz\s+zaskoczon\w*|nie\s+uwierzysz|opadn[aą]\s+ci\s+szcz[eę]ki|"
+    r"wbija\s+w\s+fotel|chwyta\s+za\s+serce|nie\s+zgadniesz|ma[łl]o\s+kto\s+wie|"
+    r"oto\s+(?:pow[oó]d|prawda|dlaczego|kto|komplet|wyniki|sk[łl]ad|lista|jak)\b|"
+    r"zag[łl]osuj\s+w\s+sondzie|sprawd[źz]\s+wyniki|nie\s+przegap|koniecznie\s+sprawd[źz]|"
+    r"wszyscy\s+m[oó]wi[aą]\s+o|wykracza\s+poza\s+sport|kryje\s+si[eę]\s+wa[żz]ne\s+przes[łl]anie|"
+    r"to\s+powiedzia[łl][a]?\s+o\b|ekspert\s+wyja[śs]nia|wiadomo,\s+co\s+z\b|"
+    r"dro[żz]eje\s+wa[żz]ne\s+badanie|coraz\s+wi[eę]kszy\s+problem|"
+    r"faktycznie\s+pechowy\s+dzie[ńn]|internauci\s+podzieleni|burza\s+w\s+sieci|"
+    r"zaskakuj[aą]ce\s+zachowanie|czy\s+o\s+co\s*\?|\bjest\s+wyj[aą]tek\b"
+    r")",
+    re.IGNORECASE,
+)
+
+_VAGUE_REMAINDER_TOKENS = {
+    "rachunki", "prad", "nizsze", "przewage", "problem", "kariera",
+    "akcja", "wyjatkowa", "chemia", "ulubieniec", "najtrudniejsze",
+}
 
 
 def _clean_title_artifacts(title: str) -> str:
@@ -1819,18 +1867,197 @@ def _clean_title_artifacts(title: str) -> str:
     return t
 
 
+def _is_vague_teaser_title(title: str) -> bool:
+    t = _clean_title_artifacts(title)
+    if not t or len(t) < 12:
+        return bool(t)
+    words = re.findall(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9-]+", t)
+    if len(words) <= 3 and len(t) <= 28 and not re.search(r"\d", t):
+        has_late_proper = any(len(w) >= 2 and w[0].isupper() for w in words[1:])
+        if not has_late_proper:
+            return True
+    return False
+
+
 def _is_clickbait_title(title: str) -> bool:
-    return bool(_CLICKBAIT_TITLE_RE.search(title or ""))
+    return bool(_CLICKBAIT_TITLE_RE.search(title or "")) or _is_vague_teaser_title(title or "")
 
 
-def _neutralize_clickbait_title(title: str) -> str:
+def _body_sentences_for_title(summary_lead: str, sections: list | None) -> list:
+    raw_chunks = []
+    for sec in (sections or [])[:2]:
+        for p in (sec.get("paragraphs") or [])[:5]:
+            plain = _strip_all_citations(p).strip()
+            if plain:
+                raw_chunks.append(plain)
+    if summary_lead:
+        raw_chunks.append(_strip_all_citations(summary_lead).strip())
+
+    out = []
+    seen = set()
+    for chunk in raw_chunks:
+        chunk_clean = re.sub(r"^\d{2}\.\d{2}\.\d{4}(?:\s+\d{2}:\d{2})?\s+", "", chunk).strip()
+        chunk_clean = re.sub(r"\s+(?=Mowa\s+o\s+)", ". ", chunk_clean)
+        for s in split_sentences_pl(chunk_clean):
+            s = re.sub(
+                r"^(?:Pewnie\s+Was\s+to\s+nie\s+zdziwi,\s+ale|Tymczasem|Jak\s+si[eę]\s+okazuje,|Nie\s+milkn[aą]\s+echa[^.]*\.)\s*",
+                "",
+                s,
+                flags=re.IGNORECASE,
+            ).strip()
+            if not s or len(s) < 28:
+                continue
+            key = s.lower()
+            if key not in seen:
+                seen.add(key)
+                out.append(s)
+    return out
+
+
+def _trim_sentence_as_title(sent: str, max_len: int = 104) -> str:
+    s = re.sub(r"\s+", " ", (sent or "").strip()).rstrip(" .;")
+    if not s:
+        return ""
+    if len(s) <= max_len:
+        return s[0].upper() + s[1:]
+    dangling = {
+        "w", "z", "o", "i", "a", "na", "do", "od", "po", "za", "dla", "bez",
+        "pod", "nad", "przeciw", "wobec", "między", "przez", "przed", "przy",
+        "oraz", "że", "który", "która", "które", "których", "gdzie", "gdy",
+        "aby", "żeby", "jak", "jako", "czyli", "lub",
+    }
+    best = ""
+    for sep in (", ", " – ", " — ", " - ", "; "):
+        idx = 38
+        while True:
+            pos = s.find(sep, idx)
+            if pos == -1 or pos > max_len:
+                break
+            cand = s[:pos].strip(" ,–—-;")
+            last_w = (cand.split()[-1].lower() if cand.split() else "")
+            if 36 <= len(cand) <= max_len and last_w not in dangling:
+                best = cand
+            idx = pos + len(sep)
+        if best:
+            break
+    if not best:
+        cut = s[:max_len].rsplit(" ", 1)[0].strip(" ,–—-;")
+        words = cut.split()
+        while len(words) > 4 and words[-1].lower() in dangling:
+            words.pop()
+        best = " ".join(words)
+    return (best[0].upper() + best[1:]) if best else ""
+
+
+def _extract_informative_title_from_body(summary_lead: str, sections: list | None, fallback_title: str) -> str:
+    sents = _body_sentences_for_title(summary_lead, sections)
+    if not sents:
+        return fallback_title
+
+    fb_toks = tokenize_title(fallback_title) - GENERIC_TOPIC_TOKENS
+    fluff_sent_re = re.compile(
+        r"(?:\bpotrafi[aą]\s+zaskoczy[ćc]\b|\bna\s+czym[śs]\s+zupe[łl]nie\s+innym\b|"
+        r"\bwspomnian\w+\b|\bnie\s+milkn[aą]\s+echa\b|\btajemn\w*\b|\bzagadk\w*\b|"
+        r"\bpyta[łl]\s+nas\b|\bjakie\s+to\s+by[łl]o\s+uczucie\b|\bdlatego\s+praca\b|"
+        r"\bza\s+kt[oó]r[aą]\s+kryje\s+si[eę]\b|\bpierwsz\w+\s+ok[łl]adk\w*\b|"
+        r"wielka\s+ceremonia|nie\s+brakuje\s+emocji|"
+        r"\bcz[eę]sto\s+zastanawiamy\b|\bgdzie\s+rzeczywi[śs]cie\s+uciekaj[aą]\b)",
+        re.IGNORECASE,
+    )
+    bad_start_re = re.compile(r"^(?:[—–\-„\"]|To\s+odpowied[źz]|To\s+tak\s+zwany|Jednak\b|Ale\b|Czy\b|Co\s+ciekawe|Warto\s+pami[eę]ta[ćc])", re.IGNORECASE)
+    awkward_end_re = re.compile(r"(?:\bwynika|\bgodz\.\s*\d+(?::\d+)?|\bradiu[A-Z0-9_.-]+)$", re.IGNORECASE)
+
+    best_score = -999.0
+    best_title = ""
+    for idx, raw_s in enumerate(sents):
+        if raw_s.endswith("?"):
+            continue
+        if _CLICKBAIT_TITLE_RE.search(raw_s) or _CLICKBAIT_TEASER_SENTENCE_RE.search(raw_s):
+            continue
+        if fluff_sent_re.search(raw_s):
+            continue
+        if any(re.search(pat, raw_s, re.IGNORECASE) for pat in TEASER_SENTENCE_PATTERNS):
+            continue
+        if bad_start_re.match(raw_s):
+            continue
+
+        cand = _trim_sentence_as_title(raw_s, max_len=104)
+        if not cand or len(cand) < 28 or _is_clickbait_title(cand):
+            continue
+        c_norm = _norm_pl(cand)
+        if any(vt in c_norm for vt in ("wyjatkowa akcja", "duzy problem", "coraz wiekszy problem", "wazne badanie")):
+            continue
+
+        score = 0.0
+        if 42 <= len(cand) <= 98:
+            score += 5.0
+        elif 32 <= len(cand) <= 104:
+            score += 3.0
+        if idx == 0:
+            score += 6.0
+        elif idx == 1:
+            score += 3.0
+        elif idx <= 3:
+            score += 1.0
+        if re.search(r"\d", cand):
+            score += 2.5
+        c_words = re.findall(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9-]+", cand)
+        proper_mid = sum(1 for w in c_words[1:] if len(w) >= 3 and w[0].isupper())
+        score += min(3.0, proper_mid * 1.2)
+        c_toks = tokenize_title(cand) - GENERIC_TOPIC_TOKENS
+        score += min(5.0, len(c_toks & fb_toks) * 1.5)
+        if any(re.search(p, c_norm) for p in (r"\bwatomierz", r"\bpobieraj", r"\baplikacj", r"\bwyciek", r"\bdrozeja", r"\bodkryc", r"\bdiazapiren", r"\bokladk", r"\blaczenie pracy", r"\bwygral", r"\bpuchar", r"\brumuni")):
+            score += 3.0
+        if awkward_end_re.search(cand):
+            score -= 8.0
+        if cand.startswith(("Dzięki ", "Do nieuprawnionego ", "Po ostatniej przegranej ")):
+            score -= 6.0
+        if score > best_score:
+            best_score = score
+            best_title = cand
+
+    return best_title or fallback_title
+
+
+def _needs_factual_body_payoff(orig_title: str, candidate_title: str) -> bool:
+    if not candidate_title:
+        return True
+    if _is_clickbait_title(candidate_title):
+        return True
+    c_clean = _clean_title_artifacts(candidate_title)
+    words = re.findall(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9-]+", c_clean)
+    if len(c_clean) < 24 or len(words) <= 3:
+        return True
+    orig_clean = _clean_title_artifacts(orig_title)
+    if re.search(r"\bdro[żz]eje\s+wa[żz]ne\s+badanie\b", orig_clean, re.IGNORECASE) and "psycholog" not in c_clean.lower():
+        return True
+    orig_sents = [x.strip() for x in re.split(r"[.!?]+", orig_clean) if x.strip()]
+    cand_sents = [x.strip() for x in re.split(r"[.!?]+", c_clean) if x.strip()]
+    removed_clause = len(cand_sents) < len(orig_sents) or len(c_clean) <= len(orig_clean) - 18
+    if c_clean.endswith("?") and re.search(r"\bsondzie\b|\bkto\b|\bco\b", c_clean, re.IGNORECASE):
+        return True
+    if removed_clause and (len(words) <= 5 or len(c_clean) <= 40):
+        c_norm_toks = {_norm_pl(w) for w in words}
+        if (c_norm_toks & _VAGUE_REMAINDER_TOKENS) or not re.search(r"\d", c_clean):
+            return True
+    # Catch partially stripped curiosity-gap clauses that lack concrete payoff
+    if re.search(r"\b(?:zyskuje przewag[eę]|schodzi na drugi plan|maj[aą] coraz wi[eę]kszy problem|przyznaje,\s+co\s+by[łl]o|rusza\s+wyj[aą]tkowa\s+akcja)\b", c_clean, re.IGNORECASE):
+        return True
+    return False
+
+
+def _neutralize_clickbait_title(
+    title: str,
+    summary_lead: str = "",
+    sections: list | None = None,
+) -> str:
     t = _clean_title_artifacts(title)
     if not t:
         return ""
     # 1. Usuń prefiksy krzykliwe/zaczepne
-    t = re.sub(r"^(?:pilne|uwaga)\s*[!:]\s*", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"^(?:pilne|uwaga|z\s+ostatniej\s+chwili|podaj\s+dalej)\s*[!:]\s*", "", t, flags=re.IGNORECASE)
     t = re.sub(r"^trzymasz\s+w\s+domu(?:\s+lub\s+mieszkaniu)?\s*\?\s*", "", t, flags=re.IGNORECASE)
-    # 2. Usuń sufiksy clickbaitowe po kropce/myślniku/dwukropku
+    # 2. Usuń sufiksy i całe zdania zaczepne/clickbaitowe
     t = re.sub(
         r"(?:\.\s*|\s+[–—-]\s*|:\s*)(?:powód\s+(?:jego|jej)?\s*\w*\s*wbija\s+w\s+fotel|powód\s+chwyta\s+za\s+serce|nie\s+uwierzysz[^.!]*|opadną\s+ci\s+szczęki[^.!]*)\s*[!.]*$",
         "",
@@ -1840,14 +2067,36 @@ def _neutralize_clickbait_title(title: str) -> str:
     t = re.sub(r"(?:\.\s*|\s+[–—-]\s*)zaskakujące\s+zachowanie\s+[^.!]*$", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\s+czy\s+o\s+co\s*\?$", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\bzałogi\s+w\s+szoku,\s*", "", t, flags=re.IGNORECASE)
+
+    # Odfiltruj pojedyncze zdania/klauzule zawierające clickbaitowy teaser
+    parts = [p.strip() for p in re.split(r"(?<=[.!?])\s+", t) if p.strip()]
+    if len(parts) >= 2:
+        kept_parts = [p for p in parts if not _CLICKBAIT_TEASER_SENTENCE_RE.search(p)]
+        if kept_parts:
+            t = " ".join(kept_parts)
+
+    # Usuń wiodące zaczepki typu "Oto mistrzyni WTA Finals! " -> zostaw bez "Oto " albo sprawdź treść
+    t = re.sub(r"^oto\s+(?:mistrzyni|mistrz|powód|prawda|dlaczego|komplet|wyniki|skład|lista)\b[:\s]*", "", t, flags=re.IGNORECASE)
+    t = re.sub(r",?\s*czyli\s+nowy\s+incydent\b", "", t, flags=re.IGNORECASE)
+
     # 3. Zastąp/usuń przymiotniki czysto sensacyjne
     t = re.sub(r"\bszokując(?:y|a|e|ego|ej|ych)\s+", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\bzaskakując(?:y|a|e|ego|ej|ych)\s+", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\bgigantyczny\s+(podatek)\b", r"wysoki \1", t, flags=re.IGNORECASE)
+    t = re.sub(r"\s*!\s*$", "", t)
     t = re.sub(r"\s{2,}", " ", t).strip(" .,:;–—-")
     if t:
         t = t[0].upper() + t[1:]
-    return polish_typography_clean(t) if len(t) >= 16 else _clean_title_artifacts(title)
+
+    base_out = polish_typography_clean(t) if len(t) >= 16 else _clean_title_artifacts(title)
+
+    # 4. Jeśli po odcięciu haczyka tytuł nadal jest niepełny/ogólnikowy, dobierz konkretny fakt z treści artykułu
+    if (sections or summary_lead) and _needs_factual_body_payoff(title, base_out):
+        body_title = _extract_informative_title_from_body(summary_lead, sections, base_out)
+        if body_title and not _is_clickbait_title(body_title):
+            return polish_typography_clean(body_title)
+
+    return base_out
 
 
 _CAUSAL_RE = re.compile(
@@ -1863,6 +2112,9 @@ def _extract_factual_payoff(summary_lead: str, sections: list, fallback_title: s
             for s in split_sentences_pl(plain):
                 if _CAUSAL_RE.search(s) and 35 <= len(s) <= 210:
                     return s
+    body_title = _extract_informative_title_from_body(summary_lead, sections, fallback_title)
+    if body_title and body_title.lower() != fallback_title.lower():
+        return body_title
     lead = (summary_lead or "").strip()
     if lead and len(lead) >= 30:
         return lead[:200]
@@ -1882,7 +2134,7 @@ def _build_declickbait_entries(
 
     # Sprawdź tytuł źródła wiodącego, jeśli sam wymagał neutralizacji
     raw_prim_clean = _clean_title_artifacts(raw_primary_title)
-    if _is_clickbait_title(raw_prim_clean) and raw_prim_clean.lower() != clean_chosen.lower():
+    if (_is_clickbait_title(raw_prim_clean) or _CLICKBAIT_TEASER_SENTENCE_RE.search(raw_prim_clean)) and raw_prim_clean.lower() != clean_chosen.lower():
         prim_outlet = ""
         if items_or_persps:
             prim_outlet = items_or_persps[0].get("outlet") or ""
@@ -1904,7 +2156,7 @@ def _build_declickbait_entries(
         outlet = (it.get("outlet") or "").strip()
         if not orig_t or not outlet or orig_t.lower() in seen_orig:
             continue
-        if _is_clickbait_title(orig_t) and orig_t.lower() != clean_chosen.lower():
+        if (_is_clickbait_title(orig_t) or _CLICKBAIT_TEASER_SENTENCE_RE.search(orig_t)) and orig_t.lower() != clean_chosen.lower():
             entries.append({
                 "outlet": outlet,
                 "original": orig_t,
@@ -3538,6 +3790,45 @@ def _extract_candidates_from_article(art: dict) -> list:
     return candidates
 
 
+def _pick_best_non_clickbait_candidate(
+    candidates: list,
+    raw_title: str,
+    orig_c0_title: str = "",
+    summary_lead: str = "",
+) -> str:
+    if len(candidates) < 2:
+        return ""
+    scope_toks = (
+        (tokenize_title(raw_title) | tokenize_title(orig_c0_title) | tokenize_title(summary_lead[:240]))
+        - GENERIC_TOPIC_TOKENS
+    )
+    lead_toks = tokenize_title(summary_lead[:240]) - GENERIC_TOPIC_TOKENS
+    best_key = None
+    best_title = ""
+    for c in candidates:
+        ct = _clean_title_artifacts(c.get("title") or "")
+        if not ct or _is_clickbait_title(ct) or "[RELACJA" in ct.upper():
+            continue
+        if is_opinion_or_blacklisted(ct, c.get("link") or ""):
+            continue
+        ct_spec = tokenize_title(ct) - GENERIC_TOPIC_TOKENS
+        if len(ct_spec & scope_toks) < 2:
+            continue
+        if lead_toks and len(ct_spec & lead_toks) == 0 and len(ct_spec & (tokenize_title(raw_title) - GENERIC_TOPIC_TOKENS)) < 3:
+            continue
+        rk = (
+            1 if (c.get("outlet") or "") in PREFERRED_PRIMARY_OUTLETS else 0,
+            0 if ct.endswith("?") else 1,
+            1 if re.search(r"\d", ct) else 0,
+            len(ct_spec & lead_toks),
+            len(ct),
+        )
+        if best_key is None or rk > best_key:
+            best_key = rk
+            best_title = ct
+    return best_title
+
+
 def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: bool = False):
     prev_persp_by_outlet = {
         (p.get("outlet") or "").strip(): p
@@ -3545,14 +3836,26 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
         if isinstance(p, dict) and p.get("outlet")
     }
     raw_title = polish_typography_clean(art.get("seo_title") or (candidates[0]["title"] if candidates else ""))
-    title = _neutralize_clickbait_title(raw_title) if _is_clickbait_title(raw_title) else _clean_title_artifacts(raw_title)
-    if _is_clickbait_title(raw_title) and len(candidates) >= 2:
-        raw_toks = tokenize_title(raw_title) - GENERIC_TOPIC_TOKENS
-        for c in candidates:
-            ct = _clean_title_artifacts(c.get("title") or "")
-            if ct and not _is_clickbait_title(ct) and len((tokenize_title(ct) - GENERIC_TOPIC_TOKENS) & raw_toks) >= 2:
-                title = ct
-                break
+    orig_c0_title = polish_typography_clean(candidates[0]["title"]) if candidates else ""
+    orig_lead = polish_typography_clean(art.get("summary_lead") or "")
+    raw_is_cb = _is_clickbait_title(raw_title)
+    c0_partial_match = bool(
+        orig_c0_title
+        and _is_clickbait_title(orig_c0_title)
+        and raw_title.lower() in orig_c0_title.lower()
+    )
+    needs_declickbait = raw_is_cb or c0_partial_match
+
+    title = _neutralize_clickbait_title(raw_title) if raw_is_cb else _clean_title_artifacts(raw_title)
+    replaced_from_cluster = False
+    if needs_declickbait and len(candidates) >= 2:
+        cand_best = _pick_best_non_clickbait_candidate(
+            candidates, raw_title, orig_c0_title=orig_c0_title, summary_lead=orig_lead
+        )
+        if cand_best:
+            title = cand_best
+            replaced_from_cluster = True
+
     art_path = art.get("path") or "/Polska"
     sources = sorted(list({c["outlet"] for c in candidates if c.get("outlet")}))
     primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
@@ -3569,6 +3872,13 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
     ]
 
     new_secs, new_pct = synthesize_article_sections(ranked_for_synth, title)
+    if needs_declickbait and not replaced_from_cluster:
+        src_for_cb = orig_c0_title if c0_partial_match else raw_title
+        if _needs_factual_body_payoff(src_for_cb, title):
+            refined = _neutralize_clickbait_title(src_for_cb, summary_lead=orig_lead, sections=new_secs)
+            if refined and not _is_clickbait_title(refined):
+                title = refined
+
     was_ai_same_sources = bool(art.get("ai_synthesized") and int(art.get("ai_source_count") or 0) == len(sources))
     if len(candidates) >= 2 and not was_ai_same_sources:
         title = polish_typography_clean(
@@ -3581,7 +3891,7 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
         old_cat = old_seo.rsplit("/", 1)[0] if "/" in old_seo else ""
         old_slug = old_seo.split("/")[-1] if old_seo else ""
         new_slug = _make_clean_slug(title)
-        if not old_seo or old_cat != art_path or len(old_slug) >= 74:
+        if not old_seo or old_cat != art_path or len(old_slug) >= 74 or (needs_declickbait and new_slug and new_slug != old_slug):
             art["seo_url"] = f"{art_path}/{new_slug}"
 
     art["full_sections"] = new_secs
@@ -3623,10 +3933,15 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
         use_gemini=(None if _ACTIVE_COST_GUARD is not None else False) if len(sources) >= 2 else False,
     )
 
+    final_title = art.get("seo_title") or title
     merged_dc = list(art.get("declickbait") or [])
+    if needs_declickbait and final_title != raw_title:
+        for d in merged_dc:
+            if (d.get("fact") or "").strip().lower() == raw_title.strip().lower():
+                d["fact"] = final_title
     seen_dc = {(d.get("original") or "").strip().lower() for d in merged_dc}
     for dc in _build_declickbait_entries(
-        art.get("seo_title") or title, raw_title, candidates,
+        final_title, raw_title, candidates,
         summary_lead=art.get("summary_lead") or summary_lead, sections=new_secs,
     ):
         key = (dc.get("original") or "").strip().lower()

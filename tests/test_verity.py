@@ -1819,6 +1819,71 @@ class TestStage5AntiClickbaitBalanceAndQualityGate(unittest.TestCase):
         sorted_feed = seo_builder._sort_articles_for_feed([older_dc, newer_clean])
         self.assertEqual([a["id"] for a in sorted_feed], [2, 1])
 
+    def test_polish_curiosity_gap_and_body_payoff_declickbait(self):
+        # 1. Jednoźródłowy artykuł z "Ten prosty trik może zaskoczyć" i "Wystarczy sprawdzić jedną rzecz"
+        trik_group = [
+            {
+                "outlet": "Warszawa w Pigułce",
+                "group": "Warszawa w Pigułce",
+                "path": "/Polska/Regiony/Mazowieckie",
+                "title": "Rachunki za prąd mogą być niższe. Wystarczy sprawdzić jedną rzecz w domu. Ten prosty trik może zaskoczyć",
+                "description": (
+                    "Rachunki za energię elektryczną potrafią zaskoczyć, szczególnie jesienią i zimą. "
+                    "Warto sprawdzić, ile prądu pobierają urządzenia nawet wtedy, gdy pozornie są wyłączone. "
+                    "Niewielki watomierz może ujawnić sprzęt, który przez całą dobę zużywa energię w trybie czuwania."
+                ),
+                "link": "https://warszawawpigulce.pl/prad-watomierz",
+                "thumbnail": "",
+            }
+        ]
+        trik_art = uln.build_article_from_group(trik_group, 502)
+        self.assertFalse(uln._is_clickbait_title(trik_art["seo_title"]))
+        self.assertNotIn("trik", trik_art["seo_title"].lower())
+        self.assertNotIn("zaskocz", trik_art["seo_title"].lower())
+        self.assertNotIn("jedną rzecz", trik_art["seo_title"].lower())
+        self.assertTrue(trik_art["declickbait"])
+        self.assertIn("Ten prosty trik może zaskoczyć", trik_art["declickbait"][0]["original"])
+
+        # 2. Klaster wieloźródłowy odrzuca "Oto mistrzyni..." i "Zagłosuj w sondzie..."
+        wta_group = [
+            {
+                "outlet": "Sport.pl",
+                "group": "Agora",
+                "path": "/Sport",
+                "title": "Oto mistrzyni WTA Finals! W drodze po tytuł nie straciła seta",
+                "description": "Finał turnieju WTA Finals rozstrzygnął się w dwóch setach bez straty seta przez zwyciężczynię.",
+                "link": "https://sport.pl/wta",
+                "thumbnail": "",
+            },
+            {
+                "outlet": "Polsat Sport",
+                "group": "Polsat",
+                "path": "/Sport",
+                "title": "Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta",
+                "description": "Polsat Sport informuje o triumfie w finale WTA Finals bez straty seta.",
+                "link": "https://polsatsport.pl/wta",
+                "thumbnail": "",
+            },
+        ]
+        wta_art = uln.build_article_from_group(wta_group, 503)
+        self.assertFalse(uln._is_clickbait_title(wta_art["seo_title"]))
+        self.assertNotIn("Oto mistrzyni", wta_art["seo_title"])
+        self.assertTrue(any("Oto mistrzyni" in dc["original"] for dc in wta_art["declickbait"]))
+
+        # 3. "Z ostatniej chwili: ... – foto" i "Zagłosuj w sondzie i sprawdź wyniki"
+        photo_neutral = uln._neutralize_clickbait_title(
+            "Z ostatniej chwili: Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby! – foto"
+        )
+        self.assertNotIn("Z ostatniej chwili", photo_neutral)
+        self.assertNotIn("foto", photo_neutral.lower())
+        self.assertIn("Demolka na Bystrzańskiej", photo_neutral)
+
+        self.assertTrue(uln._is_clickbait_title("Kto za Jana Urbana w reprezentacji Polski? Zagłosuj w sondzie i sprawdź wyniki"))
+        self.assertTrue(uln._is_clickbait_title("Kiedy chemia zaskakuje"))
+        self.assertTrue(uln._is_clickbait_title("Wraca ulubieniec kibiców"))
+        self.assertTrue(uln.is_opinion_or_blacklisted("100 ciekawych miejsc, które warto zobaczyć w województwie podlaskim", ""))
+        self.assertTrue(uln.is_opinion_or_blacklisted("Prywatne zdjęcia polskich mafiosów", ""))
+
     def test_spam_cta_and_bare_ellipsis_cleanup(self):
         for title, url in (
             ("Biedronka rozdaje sprzęt AGD za grosze w aplikacji mobilnej", "https://example.pl/promocje/1"),
