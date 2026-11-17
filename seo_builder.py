@@ -1400,7 +1400,7 @@ def _render_moderation_ssr(rel_root: str) -> str:
       </section>
       <section id="moderationRegistryMount" class="mod-card">
         <h2 class="mod-section-title">Ostatnie jawne wpisy w rejestrze</h2>
-        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu w trybie serwera (`server.py` / docelowo Supabase).</p>
+        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu przy aktywnym serwerze VERITY.</p>
         <div class="mod-table-wrap">
           <table class="mod-table">
             <thead>

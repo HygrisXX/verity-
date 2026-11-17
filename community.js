@@ -201,7 +201,7 @@
     if (!body) return;
     if (!state.backendAvailable) {
       body.innerHTML = `
-        <p class="mod-desc">Jesteś w trybie statycznym (offline / GitHub Pages). Konta użytkowników, czat live SSE oraz głosy działają po uruchomieniu <code>python3 server.py</code> (lub docelowo na Supabase).</p>
+        <p class="mod-desc">Jesteś w trybie statycznym (tylko do odczytu). Konta użytkowników, czat live oraz głosy działają przy aktywnym serwerze VERITY.</p>
         <div style="margin-top:0.9rem;display:flex;justify-content:flex-end">
           <button type="button" class="btn-outline" onclick="window.VERITY_COMMUNITY.closeAuthModal()">Zamknij</button>
         </div>
@@ -232,7 +232,7 @@
       <form id="verityLoginForm" onsubmit="return window.VERITY_COMMUNITY.submitLogin(event)" class="auth-form-stack">
         <label class="queue-label" for="authHandleInput">Wybierz swój @Nick (3–24 znaki):</label>
         <input id="authHandleInput" type="text" class="text-input" placeholder="np. @Czytelnik_PL" required minlength="3" maxlength="24" />
-        <label class="queue-label" for="authDemoAgeSelect">Symulacja stażu konta (prototyp przed Supabase):</label>
+        <label class="queue-label" for="authDemoAgeSelect">Symulacja stażu konta (tryb testowy):</label>
         <select id="authDemoAgeSelect" class="text-input">
           <option value="0">Świeże konto (0 dni stażu)</option>
           <option value="60">Stały czytelnik (60 dni stażu)</option>
@@ -325,7 +325,7 @@
     if (statusBanner) {
       if (!state.backendAvailable) {
         statusBanner.className = 'chat-status-banner is-offline';
-        statusBanner.innerHTML = 'Tryb statyczny (GitHub Pages): Czat live SSE i zapis działają po uruchomieniu <code>server.py</code> (lub docelowo Supabase).';
+        statusBanner.innerHTML = 'Tryb statyczny (tylko do odczytu): czat live działa przy aktywnym serwerze VERITY.';
       } else if (state.user) {
         statusBanner.className = 'chat-status-banner is-user';
         statusBanner.innerHTML = `Zalogowany jako <strong>${esc(state.user.handle)}</strong> · pełny czat aktywny`;
@@ -574,7 +574,7 @@
       : `<div class="chat-empty">Brak wpisów użytkowników w ścieżce <strong>${esc(curPath)}</strong>.</div>`;
 
     const composerHtml = !state.backendAvailable
-      ? `<div class="comm-readonly-note">Tryb statyczny: wpisy społeczności wymagają aktywnego backendu <code>server.py</code> (docelowo Supabase).</div>`
+      ? `<div class="comm-readonly-note">Tryb statyczny: dodawanie wpisów społeczności wymaga aktywnego serwera VERITY.</div>`
       : (state.user
         ? `<form class="comm-composer" onsubmit="return window.VERITY_COMMUNITY.submitCommunityPost(event)">
             <div class="comm-composer-row">
@@ -761,7 +761,7 @@
       : '<span class="comm-vote-note">Każdy zalogowany użytkownik = 1 głos (cichy filtr Anty-Discord w tle)</span>';
 
     const commentsListHtml = !state.backendAvailable
-      ? '<div class="chat-empty">Dyskusja i komentarze chronologiczne (bez ocen +/-) wymagają aktywnego backendu <code>server.py</code> (docelowo Supabase).</div>'
+      ? '<div class="chat-empty">Dyskusja i komentarze chronologiczne (bez ocen +/-) są dostępne przy aktywnym serwerze VERITY.</div>'
       : (state.comments.length
         ? state.comments.map(c => `
           <div class="comm-comment-card" data-comment-id="${c.id}">

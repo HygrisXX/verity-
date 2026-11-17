@@ -2,8 +2,7 @@
 """
 VERITY — Warstwa społeczności, czatu live, ważonego głosowania i rejestru moderacji (SQLite).
 
-Zaprojektowane pod migrację 1:1 na Supabase Postgres / Cloudflare D1:
-- Czyste repozytorium SQL bez zależności zewnętrznych (tylko stdlib `sqlite3`).
+- Czyste repozytorium SQL bez zależności zewnętrznych (wyłącznie wbudowany moduł `sqlite3`):
 - Hybrydowy model dostępu:
   * Goście: czytanie wszystkiego + czat live w trybie slow-mode bez linków.
   * Zalogowani (1-klik rejestracja bez hasła): szybszy czat, wpisy w 2. kolumnie `/Polska/...`,
