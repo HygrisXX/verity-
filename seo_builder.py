@@ -1202,7 +1202,7 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
             f'</details>'
             for idx, fq in enumerate(seo_faq)
         )
-        faq_html = f'<section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2>{faq_items_html}</section>'
+        faq_html = f'<section class="faq-box" aria-label="Pytania i odpowiedzi">{faq_items_html}</section>'
 
     ai_badge_html = '<span class="ai-badge">Synteza AI Zero-Trust</span>' if art.get("ai_synthesized") else ""
 

@@ -1475,7 +1475,7 @@ function renderArticleView(art, published) {
 
   const faqList = (art.seo_faq || []).filter(f => f && f.q && f.a);
   const faqHtml = faqList.length
-    ? `<section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2>${faqList.map((f, idx) => `<details class="faq-item"${idx === 0 ? ' open' : ''}><summary class="faq-q">${esc(plTypography(f.q))}</summary><div class="faq-a">${esc(plTypography(f.a))}</div></details>`).join('')}</section>`
+    ? `<section class="faq-box" aria-label="Pytania i odpowiedzi">${faqList.map((f, idx) => `<details class="faq-item"${idx === 0 ? ' open' : ''}><summary class="faq-q">${esc(plTypography(f.q))}</summary><div class="faq-a">${esc(plTypography(f.a))}</div></details>`).join('')}</section>`
     : '';
 
   container.innerHTML = `<div ${catAttr(art)}>` +
