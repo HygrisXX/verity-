@@ -264,6 +264,36 @@
         "item": "https://hygrisxx.github.io/verity-/Swiat/nato-za-donbas-zelenski-ujawnil-propozycje-amerykanow/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: NATO za Donbas. Zełenski ujawnił propozycję Amerykanów?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taka propozycja pojawiła się po raz pierwszy – powiedział dziennikarzom Wołodymyr Zełenski."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Od piątku zakłócenia dotknęły ponad 20 tys. lotów."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Zapowiedź / Etap propozycji."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -273,7 +303,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -288,8 +318,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -379,11 +415,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Świat</span>
+              
               <time datetime="2026-11-14T10:37:19+01:00">14.11.2026, 10:37</time>
               <span>2 minuty czytania</span>
             </div>
             <h1 class="article-title">NATO za Donbas. Zełenski ujawnił propozycję Amerykanów</h1>
             <p class="article-lede">— Amerykanie postawili pytanie: Czy jeśli Ukraina będzie w NATO, wycofa się z Donbasu?</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Opinia publiczna i dyplomacja</span><span class="impact-pill"><strong>Obszar:</strong> Świat i bezpieczeństwo</span><span class="impact-pill"><strong>Status:</strong> Zapowiedź / Etap propozycji</span></div>
+            <div class="dossier-banner"><span class="dossier-badge">Akta Sprawy</span><span class="dossier-title-txt">Donbas · NATO (1/2)</span><a class="dossier-jump" href="#timeline">Oś czasu tematu ↓</a></div>
           </header>
 
           <div class="article-hero-wrap">
@@ -413,6 +452,7 @@
             </div>
           </div>
           <p class="perspective-summary">NATO za Donbas. Zełenski ujawnił propozycję Amerykanów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja wiodąca).</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-14/ukraina-w-nato-przelomowa-propozycja-amerykanow/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Forsal.pl">
           <div class="perspective-head">
@@ -423,6 +463,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zełenski: USA zaoferowały Ukrainie członkostwo w NATO w zamian za wycofanie się z Donbasu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://forsal.pl/swiat/aktualnosci/artykuly/11344467,zelenski-usa-zaoferowaly-ukrainie-czlonkostwo-w-nato-w-zamian-za-wycofanie-sie-z-donbasu.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Forsal.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVN24">
           <div class="perspective-head">
@@ -433,6 +474,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wołodymyr Zełenski: USA zaproponowały Ukrainie członkostwo w NATO. Jest warunek</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Czerwone, napisy, Slava.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/swiat/wolodymyr-zelenski-usa-zaproponowaly-ukrainie-czlonkostwo-w-nato-pod-warunkiem-wycofania-sie-z-donbasu-st9338822?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Rzeczpospolita">
           <div class="perspective-head">
@@ -443,6 +485,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ukraina w NATO w zamian za rezygnację z Donbasu. Zełenski o propozycji USA</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (20 tys.) oraz wątki: rezygnację, Poważna.</div><div><strong>Pomija:</strong> Pomija kontekst (postawili, pytanie, wycofa) rozwijany w Polsat News, Forsal.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/dyplomacja/art45488151-ukraina-w-nato-w-zamian-za-rezygnacje-z-donbasu-zelenski-o-propozycji-usa" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Puls Biznesu">
           <div class="perspective-head">
@@ -453,6 +496,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zełenski: USA wysuwają propozycję NATO dla Ukrainy w zamian za Donbas</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wysuwają.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.pb.pl/zelenski-usa-wysuwaja-propozycje-nato-dla-ukrainy-w-zamian-za-donbas-1270427" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Puls Biznesu" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Interia Wydarzenia">
           <div class="perspective-head">
@@ -463,6 +507,7 @@
             </div>
           </div>
           <p class="perspective-summary">Nietypowa propozycja USA dla Ukrainy. Zełenski ujawnia</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Nietypowa, Jednocześnie, przekazał.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wydarzenia.interia.pl/ukraina-rosja/news-nietypowa-propozycja-usa-dla-ukrainy-zelenski-ujawnia,nId,23573422" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Wydarzenia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Gazeta.pl">
           <div class="perspective-head">
@@ -473,6 +518,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zełenski: USA zaoferowały Ukrainie członkostwo w NATO w zamian za wycofanie się z Donbasu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: mowy, uznania, okupowanych.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.gazeta.pl/swiat/7,198077,33131908,zelenski-usa-zaoferowaly-ukrainie-czlonkostwo-w-nato-w-zamian.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Gazeta.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="naTemat.pl">
           <div class="perspective-head">
@@ -483,6 +529,7 @@
             </div>
           </div>
           <p class="perspective-summary">USA mają ofertę dla Ukrainy ws. członkostwa w NATO. Zełenski odkrył karty</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: odkrył, karty.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://natemat.pl/675577,usa-maja-oferte-dla-ukrainy-ws-czlonkostwa-w-nato-zelenski-odkryl-karty" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="naTemat.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -493,6 +540,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wołodymyr Zełenski o przełomowej propozycji USA dla Ukrainy. &quot;Za wycofanie się z Donbasu&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: przełomowej.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/swiat/wolodymyr-zelenski-o-przelomowej-propozycji-usa-dla-ukrainy-za-wycofanie-sie-z/6tx3ncz" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -503,6 +551,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ukraina w NATO? Zełenski ujawnił propozycję USA</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: natychmiast, stała, szeroko.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/ukraina-w-nato-zelenski-ujawnil-propozycje-usa-7350881905371168a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Defence24">
           <div class="perspective-head">
@@ -513,6 +562,7 @@
             </div>
           </div>
           <p class="perspective-summary">NATO za Donbas? USA z propozycją dla Ukrainy</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Kijów, musi, zgodzić.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/nato-za-donbas-usa-z-propozycja-dla-ukrainy" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Defence24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Niezależna.pl">
           <div class="perspective-head">
@@ -523,6 +573,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zełenski: USA zaproponowały Ukrainie przystąpienie do NATO w zamian za wyjście z Donbasu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wyjście.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://niezalezna.pl/swiat/zelenski-usa-zaproponowaly-ukrainie-przystapienie-do-nato-w-zamian-za-wyjscie-z-donbasu/584147" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Niezależna.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Business Insider PL">
           <div class="perspective-head">
@@ -533,6 +584,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wejście do NATO w zamian za terytoria. Nowa oferta USA dla Ukrainy</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: oferta, świadczyć, zmianie.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://businessinsider.com.pl/wiadomosci/waszyngton-rozwaza-nowa-strategie-wobec-ukrainy-donbas-w-zamian-za-nato/j52x8qy" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Business Insider PL" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Wyborcza.pl">
           <div class="perspective-head">
@@ -543,6 +595,7 @@
             </div>
           </div>
           <p class="perspective-summary">Członkostwo w NATO w zamian za wycofanie się z Donbasu. Taką propozycję USA złożyły Ukrainie</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: złożyły.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wyborcza.pl/7,75399,33131917,czlonkostwo-w-nato-w-zamian-za-wycofanie-sie-z-donbasu-taka.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wyborcza.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="GazetaPrawna.pl (DGP)">
           <div class="perspective-head">
@@ -553,6 +606,7 @@
             </div>
           </div>
           <p class="perspective-summary">USA mają ofertę dla Ukrainy ws. członkostwa w NATO? Wołodymyr Zełenski przedstawił szczegóły</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.gazetaprawna.pl/wiadomosci/swiat/artykuly/11344473,usa-maja-oferte-dla-ukrainy-ws-czlonkostwa-w-nato-wolodymyr-zelenski-przedstawil-szczegoly.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="GazetaPrawna.pl (DGP)" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Dziennik.pl">
           <div class="perspective-head">
@@ -563,6 +617,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zełenski ogłasza amerykańską propozycję dla Ukrainy. Tego jeszcze nie było</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: ogłasza, Trwają, konfliktu.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.dziennik.pl/swiat/artykuly/11344466,zelenski-oglasza-amerykanska-propozycje-dla-ukrainy-tego-jeszcze-nie-bylo.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Dziennik.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Bankier.pl">
           <div class="perspective-head">
@@ -573,6 +628,7 @@
             </div>
           </div>
           <p class="perspective-summary">USA po raz pierwszy zapytały Ukrainę o wejście do NATO w zamian za wycofanie z Donbasu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zapytały, Ukrainę.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.bankier.pl/wiadomosc/Zelenski-USA-po-raz-pierwszy-zaproponowaly-Ukrainie-mozliwosc-wejscia-do-NATO-w-zamian-za-wycofanie-sie-z-Donbasu-opis-9228918.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Bankier.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Radio Zachód">
           <div class="perspective-head">
@@ -583,6 +639,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zełenski: Amerykanie zaproponowali przystąpienie do NATO w zamian za oddanie Rosjanom Donbasu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: oddanie, Rosjanom.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://zachod.pl/1590400/zelenski-amerykanie-zaproponowali-przystapienie-do-nato-w-zamian-za-oddanie-rosjanom-donbasu/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Zachód" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -593,6 +650,7 @@
             </div>
           </div>
           <p class="perspective-summary">USA sondują, czy Ukraina odda Donbas w zamian za członkostwo w NATO</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: sondują, odda.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96479492/usa-sonduja-czy-ukraina-odda-donbas-w-zamian-za-czlonkostwo-w-nato" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Kresy.pl">
           <div class="perspective-head">
@@ -603,10 +661,12 @@
             </div>
           </div>
           <p class="perspective-summary">USA proponują Ukrainie członkostwo w NATO w zamian za Donbas. Zełenski ujawnia szczegóły</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: proponują, zapowiada, konsultacje.</div><div><strong>Pomija:</strong> Pomija wyliczenia (20 tys.) przytaczane przez Rzeczpospolita.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://kresy.pl/wydarzenia/usa-proponuja-ukrainie-czlonkostwo-w-nato-w-zamian-za-donbas-zelenski-ujawnia-szczegoly/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Kresy.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="20" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (20)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: NATO za Donbas. Zełenski ujawnił propozycję Amerykanów?</summary><div class="faq-a">Taka propozycja pojawiła się po raz pierwszy – powiedział dziennikarzom Wołodymyr Zełenski.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Od piątku zakłócenia dotknęły ponad 20 tys. lotów.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Zapowiedź / Etap propozycji.</div></details></section>
 
           
 
@@ -640,6 +700,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-14/ukraina-w-nato-przelomowa-propozycja-amerykanow/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li><li><a href="https://forsal.pl/swiat/aktualnosci/artykuly/11344467,zelenski-usa-zaoferowaly-ukrainie-czlonkostwo-w-nato-w-zamian-za-wycofanie-sie-z-donbasu.html" target="_blank" rel="noopener noreferrer"><span>Forsal.pl</span><span>↗</span></a></li><li><a href="https://tvn24.pl/swiat/wolodymyr-zelenski-usa-zaproponowaly-ukrainie-czlonkostwo-w-nato-pod-warunkiem-wycofania-sie-z-donbasu-st9338822?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://www.rp.pl/dyplomacja/art45488151-ukraina-w-nato-w-zamian-za-rezygnacje-z-donbasu-zelenski-o-propozycji-usa" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://www.pb.pl/zelenski-usa-wysuwaja-propozycje-nato-dla-ukrainy-w-zamian-za-donbas-1270427" target="_blank" rel="noopener noreferrer"><span>Puls Biznesu</span><span>↗</span></a></li><li><a href="https://wydarzenia.interia.pl/ukraina-rosja/news-nietypowa-propozycja-usa-dla-ukrainy-zelenski-ujawnia,nId,23573422" target="_blank" rel="noopener noreferrer"><span>Interia Wydarzenia</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/swiat/7,198077,33131908,zelenski-usa-zaoferowaly-ukrainie-czlonkostwo-w-nato-w-zamian.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://natemat.pl/675577,usa-maja-oferte-dla-ukrainy-ws-czlonkostwa-w-nato-zelenski-odkryl-karty" target="_blank" rel="noopener noreferrer"><span>naTemat.pl</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/swiat/wolodymyr-zelenski-o-przelomowej-propozycji-usa-dla-ukrainy-za-wycofanie-sie-z/6tx3ncz" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/ukraina-w-nato-zelenski-ujawnil-propozycje-usa-7350881905371168a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li><li><a href="https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/nato-za-donbas-usa-z-propozycja-dla-ukrainy" target="_blank" rel="noopener noreferrer"><span>Defence24</span><span>↗</span></a></li><li><a href="https://niezalezna.pl/swiat/zelenski-usa-zaproponowaly-ukrainie-przystapienie-do-nato-w-zamian-za-wyjscie-z-donbasu/584147" target="_blank" rel="noopener noreferrer"><span>Niezależna.pl</span><span>↗</span></a></li><li><a href="https://businessinsider.com.pl/wiadomosci/waszyngton-rozwaza-nowa-strategie-wobec-ukrainy-donbas-w-zamian-za-nato/j52x8qy" target="_blank" rel="noopener noreferrer"><span>Business Insider PL</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75399,33131917,czlonkostwo-w-nato-w-zamian-za-wycofanie-sie-z-donbasu-taka.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li><li><a href="https://www.gazetaprawna.pl/wiadomosci/swiat/artykuly/11344473,usa-maja-oferte-dla-ukrainy-ws-czlonkostwa-w-nato-wolodymyr-zelenski-przedstawil-szczegoly.html" target="_blank" rel="noopener noreferrer"><span>GazetaPrawna.pl (DGP)</span><span>↗</span></a></li><li><a href="https://wiadomosci.dziennik.pl/swiat/artykuly/11344466,zelenski-oglasza-amerykanska-propozycje-dla-ukrainy-tego-jeszcze-nie-bylo.html" target="_blank" rel="noopener noreferrer"><span>Dziennik.pl</span><span>↗</span></a></li><li><a href="https://www.bankier.pl/wiadomosc/Zelenski-USA-po-raz-pierwszy-zaproponowaly-Ukrainie-mozliwosc-wejscia-do-NATO-w-zamian-za-wycofanie-sie-z-Donbasu-opis-9228918.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer"><span>Bankier.pl</span><span>↗</span></a></li><li><a href="https://zachod.pl/1590400/zelenski-amerykanie-zaproponowali-przystapienie-do-nato-w-zamian-za-oddanie-rosjanom-donbasu/" target="_blank" rel="noopener noreferrer"><span>Radio Zachód</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96479492/usa-sonduja-czy-ukraina-odda-donbas-w-zamian-za-czlonkostwo-w-nato" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li><li><a href="https://kresy.pl/wydarzenia/usa-proponuja-ukrainie-czlonkostwo-w-nato-w-zamian-za-donbas-zelenski-ujawnia-szczegoly/" target="_blank" rel="noopener noreferrer"><span>Kresy.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      <section id="timeline" class="dossier-timeline" aria-label="Oś czasu sprawy"><div class="timeline-head"><span class="dossier-badge">Akta Sprawy · Oś czasu</span><h2>Donbas · NATO</h2><span class="timeline-meta">Etap 1 z 2</span></div><ol class="timeline-list"><li class="timeline-item is-current"><div class="timeline-date">14.11.2026, 10:37</div><span class="timeline-link">NATO za Donbas. Zełenski ujawnił propozycję Amerykanów</span><span class="timeline-now">Czytasz teraz</span></li><li class="timeline-item"><div class="timeline-date">15.11.2026, 20:36</div><a class="timeline-link" href="../../Swiat/ukraina-w-nato-w-zamian-za-donbas-pomysl-kuriozalny/" onclick="return openArticleLink(event, 1067394793, '/Swiat/ukraina-w-nato-w-zamian-za-donbas-pomysl-kuriozalny')">Członkowstwo Ukrainy w NATO w zamian za Donbas?</a></li></ol></section>
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:265" data-id="619313495">
       <div class="story-card">
         <a class="card-media-link" href="../../Swiat/trzeci-lotniskowiec-usa-dotarl-na-bliski-wschod-w-tle-napiecia-z-iranem/" onclick="return openArticleLink(event, 619313495, '/Swiat/trzeci-lotniskowiec-usa-dotarl-na-bliski-wschod-w-tle-napiecia-z-iranem')" tabindex="-1" aria-hidden="true">
@@ -661,15 +722,15 @@
         <a class="card-media-link" href="../../Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/" onclick="return openArticleLink(event, 1537415576, '/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Świat</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg" alt="Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg" alt="Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Świat</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/" onclick="return openArticleLink(event, 1537415576, '/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde')">Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/" onclick="return openArticleLink(event, 1537415576, '/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde')">Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)</a></h2>
           <p class="story-lede">Ponad 1,6 mln żołnierzy, zabitych i rannych, straciła Rosja od początku inwazji na Ukrainę w 2022 roku – podał w niedzielę ukraiński minister spraw zagranicznych Andrij Sybiha.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Swiat</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:88%"></span></span>88% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article></div></section>
@@ -682,7 +743,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -698,6 +759,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -708,6 +770,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Swiat/nato-za-donbas-zelenski-ujawnil-propozycje-amerykanow";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

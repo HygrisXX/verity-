@@ -211,12 +211,16 @@ function assert(cond, msg) {
 
 async function run() {
   const articles = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'articles.json'), 'utf8'));
-  const sampleRichMulti = articles.find(a => (a.perspectives || []).length >= 5 && (a.full_sections || []).length >= 2)
-    || articles.find(a => (a.perspectives || []).length >= 5)
-    || articles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2)
-    || articles[0];
-  const sampleMulti = articles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2) || sampleRichMulti;
-  const sampleSingle = articles.find(a => (a.sources || []).length === 1) || articles[1];
+  const publishedArticles = articles.filter(a => (a.status || 'AUTO_PUBLISHED') === 'AUTO_PUBLISHED');
+  const pendingArticles = articles.filter(a => a.status === 'PENDING_ADMIN');
+  const sampleRichMulti = publishedArticles.find(a => (a.perspectives || []).length >= 5 && (a.full_sections || []).length >= 2)
+    || publishedArticles.find(a => (a.perspectives || []).length >= 5)
+    || publishedArticles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2)
+    || publishedArticles[0];
+  const sampleMulti = publishedArticles.find(a => (a.sources || []).length >= 2 && (a.full_sections || []).length >= 2) || sampleRichMulti;
+  const sampleSingle = publishedArticles.find(a => (a.sources || []).length === 1) || publishedArticles[1];
+  const sampleDossier = publishedArticles.find(a => (a.dossier_items || []).length >= 2);
+  const sampleNoThumb = publishedArticles.find(a => !a.thumbnail_url);
 
   const { server, port } = await startStaticServer();
   const baseUrl = `http://127.0.0.1:${port}`;
@@ -249,6 +253,8 @@ async function run() {
       ['/Polska/Regiony/Zachodniopomorskie/', 200],
       ['/Swiat/', 200],
       ['/Sport/', 200],
+      ['/moderacja/', 200],
+      ['/community.js', 200],
       [`${sampleMulti.seo_url}/`, 200],
       [`${sampleSingle.seo_url}/`, 200],
       ['/sitemap.xml', 200],
@@ -498,6 +504,7 @@ async function run() {
       });
       const collapsed = Array.from(document.querySelectorAll('.perspective-col.is-collapsed-persp'));
       const expBtn = document.querySelector('.perspectives-expand-btn');
+      const diffs = Array.from(document.querySelectorAll('.perspective-diff')).map(el => el.textContent.trim());
       return {
         hasBar: Boolean(document.querySelector('.source-filter-bar')),
         chipsCount: chips.length,
@@ -506,9 +513,13 @@ async function run() {
         collapsedCount: collapsed.length,
         collapsedHidden: collapsed.every(el => getComputedStyle(el).display === 'none'),
         hasExpandBtn: Boolean(expBtn),
+        diffCount: diffs.length,
+        diffsHaveEksponuje: diffs.some(t => t.includes('Eksponuje:')),
+        diffsHavePomija: diffs.some(t => t.includes('Pomija:')),
       };
     })()`);
     assert(richBefore.hasBar && richBefore.chipsCount >= 3 && richBefore.targetOutlet, `Brak paska filtrowania źródeł w ${sampleRichMulti.seo_url}: ${JSON.stringify(richBefore)}`);
+    assert(richBefore.diffCount >= 2 && richBefore.diffsHaveEksponuje && richBefore.diffsHavePomija, `Brak analizy porównawczej Eksponuje/Pomija w ramce perspektyw: ${JSON.stringify(richBefore)}`);
     if (richBefore.perspTotal > 4) {
       assert(richBefore.collapsedCount === richBefore.perspTotal - 4 && richBefore.collapsedHidden && richBefore.hasExpandBtn, `Długa lista perspektyw nie została zwinięta: ${JSON.stringify(richBefore)}`);
     }
@@ -612,11 +623,16 @@ async function run() {
         topH: topBar ? Math.round(topBar.height) : 0,
         brandSameRowAsTheme: Boolean(brandBox && themeBox && Math.abs(brandBox.top - themeBox.top) < 20),
         themeAboveSearch: Boolean(themeBox && si && themeBox.bottom <= si.top + 2),
+        shortLabelsVisible: Boolean(
+          getComputedStyle(document.querySelector('#liveChatBtn .btn-label-short')).display !== 'none'
+          && getComputedStyle(document.querySelector('.top-utility-actions .btn-label-short')).display !== 'none'
+        ),
       };
     })()`);
     assert(!mobHome.overflow, `Poziomy scroll na mobile (/): ${mobHome.sw} > ${mobHome.cw}`);
     assert(mobHome.searchW >= 300, `Za wąskie pole szukania na mobile 390px: ${mobHome.searchW}px`);
     assert(mobHome.topH <= 38, `Pasek top-utility na mobile powinien mieścić się w 1 linii (wysokość=${mobHome.topH}px)`);
+    assert(mobHome.shortLabelsVisible, 'Krótkie etykiety (Czat / Kolejka) są ukryte na mobile 390px!');
     assert(mobHome.brandSameRowAsTheme && mobHome.themeAboveSearch, `Zły układ mobilnego nagłówka: ${JSON.stringify(mobHome)}`);
     await browser.screenshot('mobile_home.png');
 
@@ -710,7 +726,7 @@ async function run() {
     assert(mobArt.hasFilterBar, 'Brak paska filtrowania źródeł na mobile');
     await browser.screenshot('mobile_article.png');
 
-    const sampleRegional = articles.find(a => (a.path || '').startsWith('/Polska/Regiony/'));
+    const sampleRegional = publishedArticles.find(a => (a.path || '').startsWith('/Polska/Regiony/'));
     if (sampleRegional) {
       await browser.goto(`${baseUrl}${sampleRegional.seo_url}/`);
       const regInfo = await browser.evalJs(`({
@@ -721,6 +737,171 @@ async function run() {
       assert(regInfo.backHref.includes(sampleRegional.path + '/') && regInfo.regTabActive, `Niepoprawny link powrotu dla regionalnego artykułu: ${JSON.stringify(regInfo)}`);
     }
     console.log(`[PASS] Mobile 390px i 360px (szukanie=${mobHome.searchW}px/${mob360.searchW}px, topBar=${mobHome.topH}px, tab="${mobSwiat.activeLabel}", regiony=16 woj., czyste Świat=${mobSwiat.badges.length}, 0 overflow) OK`);
+
+    // 8b. Kolejka redakcyjna (Zero-Trust) i „Pokaż dowód!” z trwałym zapisem po odświeżeniu
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+    await browser.goto(`${baseUrl}/`);
+    const badgeBefore = await browser.evalJs(`parseInt(document.getElementById('pendingBadge')?.textContent || '0', 10)`);
+    assert(badgeBefore >= 1, `Oczekiwano niezerowej liczby spraw w Kolejce redakcyjnej (jest ${badgeBefore})`);
+    await browser.evalJs(`document.querySelector('.queue-btn').click()`);
+    await new Promise(r => setTimeout(r, 300));
+    const edInfo = await browser.evalJs(`(() => {
+      const qCard = document.querySelector('[data-queue-art]');
+      const artId = qCard ? parseInt(qCard.getAttribute('data-queue-art'), 10) : 0;
+      const corrCard = document.querySelector('[data-corr-id]');
+      return {
+        hasQueueCard: Boolean(qCard),
+        artId,
+        hasReason: Boolean(document.querySelector('.queue-reason')),
+        hasCorrCard: Boolean(corrCard),
+      };
+    })()`);
+    assert(edInfo.hasQueueCard && edInfo.hasReason, `Brak wstrzymanego artykułu Zero-Trust w kolejce redakcyjnej: ${JSON.stringify(edInfo)}`);
+    assert(edInfo.hasCorrCard, 'Brak oczekującego zgłoszenia czytelnika w kolejce redakcyjnej');
+
+    const testAdminNote = 'E2E Test: Nota redakcyjna zatwierdzona na podstawie danych URE.';
+    await browser.evalJs(`(() => {
+      const inp = document.getElementById('adminNoteInput_${edInfo.artId}');
+      inp.value = ${JSON.stringify(testAdminNote)};
+      document.querySelector('[data-queue-art="${edInfo.artId}"] .btn-primary').click();
+    })()`);
+    await new Promise(r => setTimeout(r, 300));
+
+    // Otwórz stronę ponownie (pełny reload) -> sprawdź, czy zatwierdzony artykuł i nota przetrwały
+    const approvedArt = pendingArticles.find(a => a.id === edInfo.artId) || pendingArticles[0];
+    if (approvedArt) {
+      await browser.goto(`${baseUrl}${approvedArt.seo_url}/`);
+      const afterApprove = await browser.evalJs(`({
+        badgeAfter: parseInt(document.getElementById('pendingBadge')?.textContent || '0', 10),
+        warnText: document.querySelector('.callout-warn')?.textContent || '',
+      })`);
+      assert(afterApprove.badgeAfter === badgeBefore - 1, `Licznik kolejki powinien spaść po akceptacji (${badgeBefore} -> ${afterApprove.badgeAfter})`);
+      assert(afterApprove.warnText.includes(testAdminNote), `Zatwierdzona nota redakcyjna nie przetrwała odświeżenia strony: ${afterApprove.warnText}`);
+    }
+
+    // Formularz „Pokaż dowód!”: odrzucenie czarnej listy i trwałe zapisanie dowodu
+    await browser.goto(`${baseUrl}${sampleMulti.seo_url}/`);
+    await browser.evalJs(`(() => {
+      document.querySelector('button[onclick^="toggleCorr("]')?.click();
+      document.getElementById('corrClaim_${sampleMulti.id}').value = 'Sprawdzam poprawność danych liczbowych w raporcie bankowym.';
+      document.getElementById('corrUrl_${sampleMulti.id}').value = 'https://demagog.org.pl/wypowiedzi/test-blokady';
+      submitCorr(${sampleMulti.id});
+    })()`);
+    await new Promise(r => setTimeout(r, 150));
+    const blMsg = await browser.evalJs(`document.getElementById('corrMsg_${sampleMulti.id}')?.textContent || ''`);
+    assert(blMsg.includes('czarnej liście Zero-Trust'), `Brak blokady czarnej listy w formularzu korekt: ${blMsg}`);
+
+    const testClaim = 'Raport źródłowy potwierdza dokładną wartość wskaźnika za cały kwartał.';
+    const testUrl = 'https://www.nbp.pl/statystyka-test-e2e-2026';
+    await browser.evalJs(`(() => {
+      document.getElementById('corrClaim_${sampleMulti.id}').value = ${JSON.stringify(testClaim)};
+      document.getElementById('corrUrl_${sampleMulti.id}').value = ${JSON.stringify(testUrl)};
+      submitCorr(${sampleMulti.id});
+    })()`);
+    await new Promise(r => setTimeout(r, 250));
+    await browser.goto(`${baseUrl}${sampleMulti.seo_url}/`);
+    const corrReloaded = await browser.evalJs(`({
+      successText: document.querySelector('.callout-success')?.textContent || '',
+      hasLink: Boolean(document.querySelector('.callout-success a[href="${testUrl}"]')),
+    })`);
+    assert(corrReloaded.successText.includes(testClaim) && corrReloaded.hasLink, `Zgłoszenie korekty nie przetrwało przeładowania strony: ${JSON.stringify(corrReloaded)}`);
+    await browser.evalJs(`try { localStorage.removeItem('verity_editorial_state_v1'); } catch (e) {}`);
+    console.log(`[PASS] Kolejka Zero-Trust (badge ${badgeBefore} -> ${badgeBefore - 1}) oraz formularz „Pokaż dowód!” przetrwały pełne przeładowanie strony OK`);
+
+    // 8c. Rozszerzenia SEO/tematyczne: pigułki „Kogo dotyczy”, FAQPage + akordeon, Akta Sprawy oraz karta OG 1200x630
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+    await browser.goto(`${baseUrl}${sampleMulti.seo_url}/`);
+    const faqImpactInfo = await browser.evalJs(`(() => {
+      const ld = JSON.parse(document.getElementById('dynamicJsonLd').textContent || '[]');
+      const ldTypes = Array.isArray(ld) ? ld.map(x => x['@type']) : [ld['@type']];
+      const faqItems = Array.from(document.querySelectorAll('.faq-box .faq-item'));
+      const secondSummary = faqItems[1]?.querySelector('.faq-q');
+      const wasOpen = Boolean(faqItems[1]?.open);
+      if (secondSummary) secondSummary.click();
+      return {
+        impactPills: document.querySelectorAll('.impact-strip .impact-pill').length,
+        faqCount: faqItems.length,
+        firstOpen: Boolean(faqItems[0]?.open),
+        secondToggledOpen: Boolean(faqItems[1]?.open) && !wasOpen,
+        hasFaqLd: ldTypes.includes('FAQPage'),
+      };
+    })()`);
+    assert(faqImpactInfo.impactPills === 3, `Oczekiwano 3 pigułek .impact-pill, jest ${faqImpactInfo.impactPills}`);
+    assert(faqImpactInfo.faqCount >= 2 && faqImpactInfo.firstOpen && faqImpactInfo.hasFaqLd, `Brak sekcji FAQ lub JSON-LD FAQPage: ${JSON.stringify(faqImpactInfo)}`);
+    if (faqImpactInfo.faqCount >= 2) {
+      assert(faqImpactInfo.secondToggledOpen, 'Kliknięcie 2. pytania FAQ nie otworzyło <details>');
+    }
+
+    if (sampleDossier) {
+      await browser.goto(`${baseUrl}${sampleDossier.seo_url}/`);
+      const dosDesk = await browser.evalJs(`({
+        hasBanner: Boolean(document.querySelector('.dossier-banner')),
+        jumpHref: document.querySelector('.dossier-jump')?.getAttribute('href') || '',
+        timelineItems: document.querySelectorAll('#timeline.dossier-timeline .timeline-item').length,
+        curItems: document.querySelectorAll('#timeline.dossier-timeline .timeline-item.is-current').length,
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+      })`);
+      assert(
+        dosDesk.hasBanner && dosDesk.jumpHref === '#timeline' && dosDesk.timelineItems >= 2 && dosDesk.curItems === 1 && !dosDesk.overflow,
+        `Błąd Akta Sprawy na desktopie: ${JSON.stringify(dosDesk)}`
+      );
+      await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
+      await new Promise(r => setTimeout(r, 150));
+      const dosMobOverflow = await browser.evalJs(`document.documentElement.scrollWidth > document.documentElement.clientWidth`);
+      assert(!dosMobOverflow, 'Poziomy scroll na mobile w widoku artykułu z Akta Sprawy');
+      await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+    }
+
+    if (sampleNoThumb) {
+      await browser.goto(`${baseUrl}${sampleNoThumb.seo_url}/`);
+      const ogUrl = await browser.evalJs(`document.querySelector('meta[property="og:image"]')?.getAttribute('content') || ''`);
+      assert(ogUrl.endsWith(`/og/${sampleNoThumb.id}.png`), `Artykuł bez miniatury powinien wskazywać /og/${sampleNoThumb.id}.png w og:image, jest: ${ogUrl}`);
+      const ogResp = await httpGetDirect(`${baseUrl}/og/${sampleNoThumb.id}.png`);
+      assert(ogResp.status === 200 && ogResp.body.slice(1, 4) === 'PNG', `Brak wygenerowanego /og/${sampleNoThumb.id}.png (HTTP ${ogResp.status})`);
+    }
+    console.log(`[PASS] Sekcja C: Pigułki wpływu (${faqImpactInfo.impactPills}), FAQPage + akordeon (${faqImpactInfo.faqCount}), Akta Sprawy (${Boolean(sampleDossier)}), karta OG PNG (${Boolean(sampleNoThumb)}) OK`);
+
+    // 8d. Sekcja D (tryb statyczny): /moderacja/ SSR + taryfikator §1.1–§2.3 + szuflada czatu live + widok 2-kolumnowy
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+    await browser.goto(`${baseUrl}/moderacja/`);
+    const modStatic = await browser.evalJs(`({
+      pathname: location.pathname,
+      h1: document.querySelector('h1')?.textContent || '',
+      tariffRows: document.querySelectorAll('.mod-card table tbody tr').length,
+      logRows: document.querySelectorAll('#moderationLogBody tr').length,
+      overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+    })`);
+    assert(
+      modStatic.pathname.endsWith('/moderacja/') && modStatic.h1.includes('Rejestr Moderacji') && modStatic.tariffRows >= 8 && !modStatic.overflow,
+      `Błąd strony statycznej /moderacja/: ${JSON.stringify(modStatic)}`
+    );
+
+    await browser.goto(`${baseUrl}/`);
+    await browser.evalJs(`document.getElementById('liveChatBtn')?.click()`);
+    await new Promise(r => setTimeout(r, 200));
+    const chatStatic = await browser.evalJs(`({
+      open: !document.getElementById('verityChatDrawer')?.classList.contains('hidden'),
+      bannerText: document.getElementById('chatStatusBanner')?.textContent || '',
+      overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+    })`);
+    assert(chatStatic.open && chatStatic.bannerText.includes('Tryb statyczny') && !chatStatic.overflow, `Błąd szuflady czatu w trybie statycznym: ${JSON.stringify(chatStatic)}`);
+    await browser.cdp('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });
+    await new Promise(r => setTimeout(r, 120));
+    const chatEscClosed = await browser.evalJs(`document.getElementById('verityChatDrawer')?.classList.contains('hidden') || false`);
+    assert(chatEscClosed, 'Escape nie zamknął szuflady czatu live');
+
+    await browser.evalJs(`document.getElementById('toggleSplitCommunityBtn')?.click()`);
+    await new Promise(r => setTimeout(r, 200));
+    const splitStatic = await browser.evalJs(`({
+      isSplit: document.getElementById('viewPublic')?.classList.contains('is-split-community') || false,
+      hasSideCol: Boolean(document.getElementById('communitySideColumn')),
+      sideTitle: document.querySelector('#communitySideColumn h2')?.textContent || '',
+      overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+    })`);
+    assert(splitStatic.isSplit && splitStatic.hasSideCol && splitStatic.sideTitle.includes('Swobodna Aktywność Ludzi') && !splitStatic.overflow, `Błąd widoku 2-kolumnowego (statyczny): ${JSON.stringify(splitStatic)}`);
+    await browser.screenshot('desktop_split_community.png');
+    await browser.evalJs(`try { localStorage.removeItem('verity_feed_layout_mode'); } catch (e) {}`);
+    console.log(`[PASS] Sekcja D (tryb statyczny): /moderacja/ (log=${modStatic.logRows}), czat live, widok 2-kolumnowy OK`);
 
     // 9. Offline SSR (file://): zachowanie pre-renderowanej treści przy braku fetch('articles.json')
     await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
@@ -760,6 +941,156 @@ async function run() {
     assert(fileSingle.h1.length >= 10, `SSR file:// artykułu nie zachował tytułu H1`);
     assert(fileSingle.parasCount >= 1, `SSR file:// artykułu nie zachował akapitów (jest ${fileSingle.parasCount})`);
     console.log(`[PASS] Offline file:// SSR (homeCards=${fileHome.cardsCount}, singleParas=${fileSingle.parasCount}, navCards=${fileAfterNav.cardsCount}) OK`);
+
+    // 10. Full-stack test (python3 server.py + tymczasowa baza SQLite): Czat live SSE, logowanie 1-klik, 2. kolumna, ▲ głos, komentarze, /moderacja/
+    const tmpDbDir = fs.mkdtempSync(path.join(os.tmpdir(), 'verity-e2e-db-'));
+    const tmpDbPath = path.join(tmpDbDir, 'community_e2e.db');
+    const apiPort = await new Promise((res, rej) => {
+      const s = http.createServer();
+      s.listen(0, '127.0.0.1', () => {
+        const p = s.address().port;
+        s.close(() => res(p));
+      });
+      s.on('error', rej);
+    });
+    const srvProc = spawn('python3', [
+      'server.py', '--host', '127.0.0.1', '--port', String(apiPort), '--no-seo-rebuild', '--db', tmpDbPath,
+    ], {
+      cwd: ROOT_DIR,
+      env: { ...process.env, VERITY_QUIET_SERVER: '1', PYTHONDONTWRITEBYTECODE: '1' },
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+    const apiBaseUrl = `http://127.0.0.1:${apiPort}`;
+
+    try {
+      let srvReady = false;
+      for (let i = 0; i < 30; i++) {
+        try {
+          const r = await httpGetDirect(`${apiBaseUrl}/api/community/bootstrap?path=/Polska`);
+          if (r.status === 200) { srvReady = true; break; }
+        } catch {}
+        await new Promise(r => setTimeout(r, 150));
+      }
+      assert(srvReady, `Serwer server.py nie uruchomił się na porcie ${apiPort}`);
+
+      await browser.goto(`${apiBaseUrl}/`);
+      await browser.evalJs(`try { localStorage.removeItem('verity_session_token'); localStorage.removeItem('verity_feed_layout_mode'); } catch (e) {}`);
+      await browser.goto(`${apiBaseUrl}/`);
+
+      // Gość: otwiera czat live, próba linku zablokowana, zwykła wiadomość przechodzi i uruchamia slow-mode
+      await browser.evalJs(`document.getElementById('liveChatBtn').click()`);
+      await new Promise(r => setTimeout(r, 300));
+      await browser.evalJs(`(() => {
+        document.getElementById('chatTextInput').value = 'Sprawdź https://example.com';
+        document.getElementById('chatSendForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 200));
+      const guestUrlBlock = await browser.evalJs(`document.getElementById('chatFormHint')?.textContent || ''`);
+      assert(guestUrlBlock.includes('nie mogą wysyłać linków URL'), `Brak blokady linków dla gościa: ${guestUrlBlock}`);
+
+      const guestMsg = 'Pozdrowienia od gościa E2E!';
+      await browser.evalJs(`(() => {
+        document.getElementById('chatTextInput').value = ${JSON.stringify(guestMsg)};
+        document.getElementById('chatSendForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 350));
+      const guestSent = await browser.evalJs(`({
+        msgsText: document.getElementById('chatMessagesList')?.textContent || '',
+        sendDisabled: Boolean(document.getElementById('chatSendBtn')?.disabled),
+        btnLabel: document.getElementById('chatSendBtn')?.textContent || '',
+      })`);
+      assert(guestSent.msgsText.includes(guestMsg) && guestSent.sendDisabled && guestSent.btnLabel.endsWith('s'), `Gość slow-mode nie zadziałał: ${JSON.stringify(guestSent)}`);
+
+      // Logowanie 1-klik -> odblokowuje czat z linkami, 2. kolumnę, głosowanie i komentarze
+      await browser.evalJs(`document.getElementById('authAccountBtn').click()`);
+      await new Promise(r => setTimeout(r, 200));
+      await browser.evalJs(`(() => {
+        document.getElementById('authHandleInput').value = '@E2E_Tester';
+        document.getElementById('authDemoAgeSelect').value = '60';
+        document.getElementById('verityLoginForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 400));
+      const authDone = await browser.evalJs(`({
+        pillText: document.getElementById('authAccountBtn')?.textContent?.trim() || '',
+        loggedClass: document.getElementById('authAccountBtn')?.classList.contains('is-logged') || false,
+      })`);
+      assert(authDone.pillText === '@E2E_Tester' && authDone.loggedClass, `Logowanie 1-klik nie zaktualizowało pigułki konta: ${JSON.stringify(authDone)}`);
+
+      const userChatUrlMsg = 'Link zalogowanego: https://stat.gov.pl';
+      await browser.evalJs(`(() => {
+        document.getElementById('chatTextInput').value = ${JSON.stringify(userChatUrlMsg)};
+        document.getElementById('chatSendForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 350));
+      const userChatDone = await browser.evalJs(`document.getElementById('chatMessagesList')?.textContent || ''`);
+      assert(userChatDone.includes(userChatUrlMsg), 'Zalogowany użytkownik powinien móc wysłać wiadomość z linkiem na czacie');
+
+      // 2. kolumna: Swobodna Aktywność Ludzi -> dodanie wpisu i trwałość po przeładowaniu
+      await browser.evalJs(`document.getElementById('toggleSplitCommunityBtn').click()`);
+      await new Promise(r => setTimeout(r, 250));
+      const commPostTxt = 'Analiza społecznościowa E2E w dziale Polska — budżet i inwestycje.';
+      await browser.evalJs(`(() => {
+        document.getElementById('commPostText').value = ${JSON.stringify(commPostTxt)};
+        document.querySelector('.comm-composer').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 350));
+      await browser.goto(`${apiBaseUrl}/`);
+      const sidePersisted = await browser.evalJs(`document.getElementById('communitySideColumn')?.textContent || ''`);
+      assert(sidePersisted.includes(commPostTxt) && sidePersisted.includes('@E2E_Tester'), 'Wpis w 2. kolumnie nie przetrwał pełnego reloadu strony');
+
+      // Artykuł: głos ▲ Podbij (bez ujawniania surowych wag!) + komentarze chronologiczne #1 i cytat #2 (bez +/-)
+      await browser.goto(`${apiBaseUrl}${sampleMulti.seo_url}/`);
+      await browser.evalJs(`document.getElementById('upvoteTopicBtn').click()`);
+      await new Promise(r => setTimeout(r, 300));
+      const c1Txt = 'Pierwszy argument chronologiczny oparty na raporcie GUS.';
+      const c2Txt = 'Drugi argument cytujący poprzednią wypowiedź.';
+      await browser.evalJs(`(() => {
+        document.getElementById('commentTextarea').value = ${JSON.stringify(c1Txt)};
+        document.querySelector('.comm-comment-form').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 350));
+      await browser.evalJs(`document.querySelector('.comm-comment-actions button')?.click()`);
+      await new Promise(r => setTimeout(r, 150));
+      await browser.evalJs(`(() => {
+        document.getElementById('commentTextarea').value = ${JSON.stringify(c2Txt)};
+        document.querySelector('.comm-comment-form').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      })()`);
+      await new Promise(r => setTimeout(r, 350));
+
+      await browser.goto(`${apiBaseUrl}${sampleMulti.seo_url}/`);
+      const artCommReloaded = await browser.evalJs(`(() => {
+        const wrap = document.getElementById('verityArticleCommunity');
+        const txt = wrap?.textContent || '';
+        return {
+          voteCount: parseInt(document.getElementById('upvoteTopicCount')?.textContent || '0', 10),
+          votedCls: document.getElementById('upvoteTopicBtn')?.classList.contains('is-voted') || false,
+          commentCards: document.querySelectorAll('.comm-comment-card').length,
+          quotesCount: document.querySelectorAll('.comm-quote-box').length,
+          txt,
+          exposesRawWeight: /raw_weight|0\.2x|1\.5x/i.test(txt),
+        };
+      })()`);
+      assert(artCommReloaded.voteCount >= 1 && artCommReloaded.votedCls, `Głos ▲ Podbij nie przetrwał reloadu: ${JSON.stringify(artCommReloaded)}`);
+      assert(!artCommReloaded.exposesRawWeight, 'UI nie może ujawniać wewnętrznych mnożników wagi głosu!');
+      assert(artCommReloaded.commentCards >= 2 && artCommReloaded.quotesCount >= 1 && artCommReloaded.txt.includes('#1') && artCommReloaded.txt.includes('#2'), `Komentarze chronologiczne / cytat nie przetrwały reloadu: ${JSON.stringify(artCommReloaded)}`);
+
+      // /moderacja/: sprawdzenie wpisu po ukaraniu przez API
+      await browser.evalJs(`fetch('/api/admin/moderation/punish', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ account_handle: '@E2E_ModeracjaTest', content_excerpt: 'Spam komercyjny z testu E2E', tariff_code: '§1.1', outcome: 'PUNISHED' })
+      })`);
+      await new Promise(r => setTimeout(r, 250));
+      await browser.goto(`${apiBaseUrl}/moderacja/`);
+      const modLiveText = await browser.evalJs(`document.getElementById('moderationLogBody')?.textContent || ''`);
+      assert(modLiveText.includes('@E2E_ModeracjaTest') && modLiveText.includes('§1.1'), `Publiczny Rejestr /moderacja/ nie załadował żywego wpisu z SQLite: ${modLiveText}`);
+
+      await browser.evalJs(`try { localStorage.removeItem('verity_session_token'); localStorage.removeItem('verity_feed_layout_mode'); } catch (e) {}`);
+      console.log(`[PASS] Full-stack Section D (server.py + SQLite + SSE chat + 1-klik @E2E_Tester + 2-col + ▲ głos + #1/#2 komentarze + /moderacja/) OK`);
+    } finally {
+      try { srvProc.kill('SIGTERM'); } catch {}
+      try { fs.rmSync(tmpDbDir, { recursive: true, force: true }); } catch {}
+    }
 
     assert(browser.pageExceptions.length === 0, `Nieobsłużone wyjątki JS: ${browser.pageExceptions.join('; ')}`);
     assert(browser.consoleErrors.length === 0, `Błędy console.error: ${browser.consoleErrors.join('; ')}`);

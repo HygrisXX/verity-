@@ -195,6 +195,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/smiertelny-wypadek-w-tatrach-turysta-zasypany-przez-lawine-w-rejonie/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Śmiertelny wypadek w Tatrach. Turysta zasypany przez lawinę w rejonie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Turysta poinformował, że z deską śnieżną z okolic wierzchołka Żółtej Turni do Doliny Pańszczycy spadł jego towarzysz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "\"Na miejsce wypadku natychmiast skierowano śmigłowiec z załogą."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy Małopolski (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -204,7 +234,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -219,8 +249,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -310,11 +346,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Małopolskie</span>
+              
               <time datetime="2026-11-15T20:14:18+01:00">15.11.2026, 20:14</time>
               <span>2 minuty czytania</span>
             </div>
             <h1 class="article-title">Śmiertelny wypadek w Tatrach. Turysta zasypany przez lawinę w rejonie Żółtej Turni</h1>
             <p class="article-lede">Według informacji przekazanych przez TOPR zgłoszenie wpłynęło do ratowników o godzinie 11.45 od kolegi poszkodowanego.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy Małopolski</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Zdarzenie i utrudnienia</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -344,6 +383,7 @@
             </div>
           </div>
           <p class="perspective-summary">Śmiertelny wypadek w Tatrach. Turysta zasypany przez lawinę w rejonie Żółtej Turni</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: lawinę.</div><div><strong>Pomija:</strong> Pomija kontekst (Mężczyzna, Tragedia, doszło) rozwijany w Radio PiK, TVP3 Kraków.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/polska/smiertelny-wypadek-w-tatrach-turysta-zasypany-przez-lawine-w-rejonie-zoltej-turni-st9340437?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Zachód">
           <div class="perspective-head">
@@ -354,6 +394,7 @@
             </div>
           </div>
           <p class="perspective-summary">Dwa śmiertelne wypadki w Tatrach [AKTUALIZACJA]</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wypadki, AKTUALIZACJA, Jedna.</div><div><strong>Pomija:</strong> Pomija kontekst (plecak, śniegu, powierzchnią) rozwijany w TVN24, Radio PiK.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://zachod.pl/1590911/wypadek-smiertelny-w-tatrach/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Zachód" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio PiK">
           <div class="perspective-head">
@@ -364,6 +405,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragedia w Tatrach. Mężczyzna spadł z okolic wierzchołka Żółtej Turni do Doliny Pańszczycy</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: drugiego, samego, poleciała.</div><div><strong>Pomija:</strong> Pomija kontekst (Śmiertelny, wypadek, rejonie) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.radiopik.pl/40,143738,tragedia-w-tatrach-mezczyzna-spadl-z-okolic-wier" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio PiK" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Kraków">
           <div class="perspective-head">
@@ -374,6 +416,7 @@
             </div>
           </div>
           <p class="perspective-summary">Turysta zginął pod lawiną w rejonie Żółtej Turni w Tatrach</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: odkopali, turystę, pomoc.</div><div><strong>Pomija:</strong> Pomija kontekst (lawinowego, stwierdzili, obowiązuje) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radiokrakow.pl/wiadomosci/zakopane/tragiczny-wypadek-w-tatrach-turysta-zginal-pod-lawina-w-rejonie-zoltej-turni/187756" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Kraków" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Podhale24.pl">
           <div class="perspective-head">
@@ -384,6 +427,7 @@
             </div>
           </div>
           <p class="perspective-summary">Śmiertelny wypadek lawinowy w Tatrach</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: niedzielne, południe.</div><div><strong>Pomija:</strong> Pomija kontekst (zginął, stwierdzili, obowiązuje) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="http://www.podhale24.pl/aktualnosci/artykul/119332/Smiertelny_wypadek_lawinowy_w_Tatrach_.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Podhale24.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP3 Kraków">
           <div class="perspective-head">
@@ -394,6 +438,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny wypadek w Tatrach. Lawina porwała snowboardzistę</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: porwała, snowboardzistę, całkowicie.</div><div><strong>Pomija:</strong> Pomija kontekst (zginął, lawinowego, stwierdzili) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://krakow.tvp.pl/96495156/smiertelny-wypadek-lawinowy-w-tatrach-pod-zolta-turnia" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Kraków" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Rzeczpospolita">
           <div class="perspective-head">
@@ -404,6 +449,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragedia w słowackich Tatrach. Nie żyje 25-letni Polak. Zginął podczas wyprawy na Gerlach</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wyprawy.</div><div><strong>Pomija:</strong> Pomija kontekst (poinformował, spadł, przekazanych) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/wypadki/art45491481-tragedia-w-slowackich-tatrach-nie-zyje-25-letni-polak-zginal-podczas-wyprawy-na-gerlach" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Interia Wydarzenia">
           <div class="perspective-head">
@@ -414,6 +460,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragedia w słowackich Tatrach. Nie żyje Polak, spadł z około 100 metrów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Górskie, Pogotowie, Ratunkowe.</div><div><strong>Pomija:</strong> Pomija kontekst (wypadku, przekazanych, wierzchołka) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wydarzenia.interia.pl/zagranica/news-tragedia-w-slowackich-tatrach-nie-zyje-polak-spadl-z-okolo-1,nId,23573734" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Wydarzenia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Fakt.pl">
           <div class="perspective-head">
@@ -424,6 +471,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny &quot;wypadek lawinowy&quot; w Tatrach. Ze śniegu wystawał tylko plecak...</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wystawał.</div><div><strong>Pomija:</strong> Pomija kontekst (poinformował, wypadku, spadł) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.fakt.pl/wydarzenia/polska/tragedia-pod-zolta-turnia-turysta-zginal-w-lawinie/m19d5f5" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Fakt.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -434,6 +482,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tatry. Turysta spadł z okolic wierzchołka Żółtej Turni</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Tatry, Wysokich, Horska.</div><div><strong>Pomija:</strong> Pomija kontekst (lawinowego, stwierdzili, obowiązuje) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96495532/tatry-turysta-spadl-z-okolic-wierzcholka-zoltej-turni" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -444,10 +493,12 @@
             </div>
           </div>
           <p class="perspective-summary">Śmiertelna lawina w Tatrach. W rejonie Żółtej Turni zginął turysta</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wydobyli, spod.</div><div><strong>Pomija:</strong> Pomija kontekst (lawinowego, stwierdzili, obowiązuje) rozwijany w TVN24, Radio Zachód.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/smiertelna-lawina-w-tatrach-w-rejonie-zoltej-turni-zginal-turysta-7351428617615360a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="11" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (11)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Śmiertelny wypadek w Tatrach. Turysta zasypany przez lawinę w rejonie?</summary><div class="faq-a">Turysta poinformował, że z deską śnieżną z okolic wierzchołka Żółtej Turni do Doliny Pańszczycy spadł jego towarzysz.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">&quot;Na miejsce wypadku natychmiast skierowano śmigłowiec z załogą.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy Małopolski (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia.</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (5):</strong><div>• Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa) (<a href="https://www.rp.pl/wypadki/art45491481-tragedia-w-slowackich-tatrach-nie-zyje-25-letni-polak-zginal-podczas-wyprawy-na-gerlach" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Interia Wydarzenia (aktualizacja wieloźródłowa) (<a href="https://wydarzenia.interia.pl/zagranica/news-tragedia-w-slowackich-tatrach-nie-zyje-polak-spadl-z-okolo-1,nId,23573734" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Fakt.pl (aktualizacja wieloźródłowa) (<a href="https://www.fakt.pl/wydarzenia/polska/tragedia-pod-zolta-turnia-turysta-zginal-w-lawinie/m19d5f5" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: TVP.info (aktualizacja wieloźródłowa) (<a href="https://www.tvp.info/96495532/tatry-turysta-spadl-z-okolic-wierzcholka-zoltej-turni" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.wp.pl/smiertelna-lawina-w-tatrach-w-rejonie-zoltej-turni-zginal-turysta-7351428617615360a" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -481,17 +532,18 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://tvn24.pl/polska/smiertelny-wypadek-w-tatrach-turysta-zasypany-przez-lawine-w-rejonie-zoltej-turni-st9340437?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://zachod.pl/1590911/wypadek-smiertelny-w-tatrach/" target="_blank" rel="noopener noreferrer"><span>Radio Zachód</span><span>↗</span></a></li><li><a href="https://www.radiopik.pl/40,143738,tragedia-w-tatrach-mezczyzna-spadl-z-okolic-wier" target="_blank" rel="noopener noreferrer"><span>Radio PiK</span><span>↗</span></a></li><li><a href="https://radiokrakow.pl/wiadomosci/zakopane/tragiczny-wypadek-w-tatrach-turysta-zginal-pod-lawina-w-rejonie-zoltej-turni/187756" target="_blank" rel="noopener noreferrer"><span>Radio Kraków</span><span>↗</span></a></li><li><a href="http://www.podhale24.pl/aktualnosci/artykul/119332/Smiertelny_wypadek_lawinowy_w_Tatrach_.html" target="_blank" rel="noopener noreferrer"><span>Podhale24.pl</span><span>↗</span></a></li><li><a href="https://krakow.tvp.pl/96495156/smiertelny-wypadek-lawinowy-w-tatrach-pod-zolta-turnia" target="_blank" rel="noopener noreferrer"><span>TVP3 Kraków</span><span>↗</span></a></li><li><a href="https://www.rp.pl/wypadki/art45491481-tragedia-w-slowackich-tatrach-nie-zyje-25-letni-polak-zginal-podczas-wyprawy-na-gerlach" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://wydarzenia.interia.pl/zagranica/news-tragedia-w-slowackich-tatrach-nie-zyje-polak-spadl-z-okolo-1,nId,23573734" target="_blank" rel="noopener noreferrer"><span>Interia Wydarzenia</span><span>↗</span></a></li><li><a href="https://www.fakt.pl/wydarzenia/polska/tragedia-pod-zolta-turnia-turysta-zginal-w-lawinie/m19d5f5" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96495532/tatry-turysta-spadl-z-okolic-wierzcholka-zoltej-turni" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/smiertelna-lawina-w-tatrach-w-rejonie-zoltej-turni-zginal-turysta-7351428617615360a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:12" data-id="949753750">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci/" onclick="return openArticleLink(event, 949753750, '/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Małopolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/3d206c7b-de10-41ca-a406-d32442d0cb03" alt="Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/3d206c7b-de10-41ca-a406-d32442d0cb03" alt="Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni (2026 r.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Małopolskie</span><span class="story-date">16.11.2026, 02:52</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci/" onclick="return openArticleLink(event, 949753750, '/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci')">Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci/" onclick="return openArticleLink(event, 949753750, '/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos-internauci')">Msza św. za zamachowca. Były krakowski radny zabrał głos. Internauci podzieleni (2026 r.)</a></h2>
           <p class="story-lede">Łukasz Wantuch, były krakowski radny, odniósł się w mediach społecznościowych do planowanej mszy świętej za duszę Michała O., zamachowca z Rynku Głównego, oraz jego rodzinę.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
@@ -509,8 +561,8 @@
           <div class="story-top"><span class="cat-badge">Małopolskie</span><span class="story-date">16.11.2026, 02:52</span></div>
           <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Malopolskie/malopolska-policja-prostuje-doniesienia-wokol-zamachu-w-krakowie/" onclick="return openArticleLink(event, 1339136984, '/Polska/Regiony/Malopolskie/malopolska-policja-prostuje-doniesienia-wokol-zamachu-w-krakowie')">Małopolska policja prostuje doniesienia wokół zamachu w Krakowie. &quot;Prosimy o niewprowadzanie w błąd&quot;</a></h2>
           <p class="story-lede">W ostatnim czasie część mediów oraz politycy opozycji twierdzili, że do Warszawy wysłano 141 krakowskich policjantów, co miało osłabić siły prewencji w dniu ataku na Rynku Głównym w Krakowie 7…</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">29 redakcji</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>29 źródeł · 4 min</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">21 redakcji</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>21 źródeł · 4 min</span></div>
         </div>
       </div>
     </article></div></section>
@@ -523,7 +575,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -539,6 +591,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -549,6 +602,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Malopolskie/smiertelny-wypadek-w-tatrach-turysta-zasypany-przez-lawine-w-rejonie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

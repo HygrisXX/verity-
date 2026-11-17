@@ -141,6 +141,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Nocny pożar pustostanu w Lęborku. Dwaj strażacy zostali ranni?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Informację o nocnym pożarze w Lęborku, jako pierwsze zamieściło na Facebooku OSP Lębork."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Druhowie dołączyli do posta również nagranie pokazujące walkę z żywiołem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy Pomorza (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -150,7 +180,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -165,8 +195,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -256,11 +292,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Pomorskie</span>
+              
               <time datetime="2026-11-15T09:44:32+01:00">15.11.2026, 09:44</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Nocny pożar pustostanu w Lęborku. Dwaj strażacy zostali ranni [AKTUALIZACJA]</h1>
             <p class="article-lede">Sześć zastępów OSP i cztery zastępy straży pożarnej walczyło z pożarem pustostanu na terenie Lęborka. W czasie działań gaśniczych dwoje strażaków odniosło obrażenia.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy Pomorza</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Zdarzenie i utrudnienia</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -290,6 +329,7 @@
             </div>
           </div>
           <p class="perspective-summary">Nocny pożar pustostanu w Lęborku. Dwaj strażacy zostali ranni [AKTUALIZACJA]</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Nocny, AKTUALIZACJA.</div><div><strong>Pomija:</strong> Pomija kontekst (akcji, Wielki, Poszkodowani) rozwijany w Radio Gdańsk, Fakt.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://gdansk.tvp.pl/96475570/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni-aktualizacja" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Gdańsk" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Gdańsk">
           <div class="perspective-head">
@@ -300,6 +340,7 @@
             </div>
           </div>
           <p class="perspective-summary">Strażacy w akcji. Trzy nocne pożary na Pomorzu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Trzy, nocne, pożary.</div><div><strong>Pomija:</strong> Pomija kontekst (Ochotniczych, Pożarnych, druhna) rozwijany w TVP3 Gdańsk, Fakt.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radiogdansk.pl/wiadomosci/region/2026/11/15/pomorscy-strazacy-w-akcji-trzy-nocne-pozary/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Gdańsk" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Fakt.pl">
           <div class="perspective-head">
@@ -310,6 +351,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wielki pożar warsztatu samochodowego pod Krakowem. W akcji strażacy z całej okolicy</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: całej, okolicy, Ogień.</div><div><strong>Pomija:</strong> Pomija kontekst (Krzywoustego, pokazujące, dołączyli) rozwijany w TVP3 Gdańsk, Interia Wydarzenia.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.fakt.pl/wydarzenia/polska/krakow/wielki-pozar-w-giebultowie-pod-krakowem-w-akcji-strazacy-z-calej-okolicy/s92dr6b" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Fakt.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Interia Wydarzenia">
           <div class="perspective-head">
@@ -320,6 +362,7 @@
             </div>
           </div>
           <p class="perspective-summary">Rozległy pożar pod Krakowem. Problemy podczas akcji, ranna druhna OSP</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Problemy, ranna, opanowano.</div><div><strong>Pomija:</strong> Pomija kontekst (zostali, Wielki, ranni) rozwijany w TVP3 Gdańsk, Radio Gdańsk.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wydarzenia.interia.pl/malopolskie/news-rozlegly-pozar-pod-krakowem-problemy-podczas-akcji-ranna-dru,nId,23573594" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Wydarzenia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -330,10 +373,12 @@
             </div>
           </div>
           <p class="perspective-summary">Wielki pożar hali w Lęborku. Dwaj strażacy ranni w czasie akcji</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: hali.</div><div><strong>Pomija:</strong> Pomija kontekst (samochodowego, prowadzonych, Giebułtowie) rozwijany w TVP3 Gdańsk, Radio Gdańsk.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/trojmiasto/wielki-pozar-hali-w-leborku-dwaj-strazacy-ranni-w-czasie-akcji/7l72tvk" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="5" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (5)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Nocny pożar pustostanu w Lęborku. Dwaj strażacy zostali ranni?</summary><div class="faq-a">Informację o nocnym pożarze w Lęborku, jako pierwsze zamieściło na Facebooku OSP Lębork.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Druhowie dołączyli do posta również nagranie pokazujące walkę z żywiołem.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy Pomorza (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia.</div></details></section>
 
           
 
@@ -367,6 +412,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://gdansk.tvp.pl/96475570/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni-aktualizacja" target="_blank" rel="noopener noreferrer"><span>TVP3 Gdańsk</span><span>↗</span></a></li><li><a href="https://radiogdansk.pl/wiadomosci/region/2026/11/15/pomorscy-strazacy-w-akcji-trzy-nocne-pozary/" target="_blank" rel="noopener noreferrer"><span>Radio Gdańsk</span><span>↗</span></a></li><li><a href="https://www.fakt.pl/wydarzenia/polska/krakow/wielki-pozar-w-giebultowie-pod-krakowem-w-akcji-strazacy-z-calej-okolicy/s92dr6b" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li><li><a href="https://wydarzenia.interia.pl/malopolskie/news-rozlegly-pozar-pod-krakowem-problemy-podczas-akcji-ranna-dru,nId,23573594" target="_blank" rel="noopener noreferrer"><span>Interia Wydarzenia</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/trojmiasto/wielki-pozar-hali-w-leborku-dwaj-strazacy-ranni-w-czasie-akcji/7l72tvk" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:200" data-id="525187306">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Pomorskie/aktorka-maja-komorowska-o-chrzescijanskich-wartosciach/" onclick="return openArticleLink(event, 525187306, '/Polska/Regiony/Pomorskie/aktorka-maja-komorowska-o-chrzescijanskich-wartosciach')" tabindex="-1" aria-hidden="true">
@@ -409,7 +455,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -425,6 +471,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -435,6 +482,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Pomorskie/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

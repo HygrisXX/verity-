@@ -111,6 +111,36 @@
         "item": "https://hygrisxx.github.io/verity-/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Odważne słowa debiutanta Urbana. To po to jest w kadrze. \"Wyjdę i pokażę\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kadra Jana Urbana w piątek udała się do Bukaresztu, gdzie odbyła się oficjalna przedmeczowa konferencja prasowa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "W niej poza selekcjonerem kadry udział wziął również debiutant, Bartosz Mazurek."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (3 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -120,7 +150,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -135,8 +165,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -226,11 +262,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Sport</span>
+              
               <time datetime="2026-11-13T19:50:37+01:00">13.11.2026, 19:50</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Odważne słowa debiutanta Urbana. To po to jest w kadrze. &quot;Wyjdę i pokażę&quot;</h1>
             <p class="article-lede">Już w sobotę o godz. 20:45 piłkarska reprezentacja Polski zmierzy się z Rumunią w ramach 5. kolejki Dywizji B Ligi Narodów.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Kibice i środowisko sportowe</span><span class="impact-pill"><strong>Obszar:</strong> Sport i rozgrywki</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (3 źródła)</span></div>
+            <div class="dossier-banner"><span class="dossier-badge">Akta Sprawy</span><span class="dossier-title-txt">Urbana · kadrze (1/2)</span><a class="dossier-jump" href="#timeline">Oś czasu tematu ↓</a></div>
           </header>
 
           <div class="article-hero-wrap">
@@ -260,6 +299,7 @@
             </div>
           </div>
           <p class="perspective-summary">Odważne słowa debiutanta Urbana. To po to jest w kadrze. &quot;Wyjdę i pokażę&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Odważne, słowa, Wyjdę.</div><div><strong>Pomija:</strong> Pomija kontekst (Urban, bezpieczeństwem, kwalifikacjach) rozwijany w Sport.pl, WP SportoweFakty.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-debiutant-urbana-powiedzial-wprost-to-po-to-jest-w-kadrze-wy,nId,23573309" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Sport" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Sport.pl">
           <div class="perspective-head">
@@ -270,6 +310,7 @@
             </div>
           </div>
           <p class="perspective-summary">&quot;Rok temu zepsułem karnego w III lidze&quot;. Debiutant w kadrze Urbana mówi wprost</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zepsułem, mówi, wprost.</div><div><strong>Pomija:</strong> Pomija kontekst (bezpieczeństwem, gospodarzom, abstrakcję) rozwijany w WP SportoweFakty.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.sport.pl/pilka/7,65037,33131592,rok-temu-zepsulem-karnego-w-iii-lidze-debiutant-w-kadrze.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Sport.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="WP SportoweFakty">
           <div class="perspective-head">
@@ -280,10 +321,12 @@
             </div>
           </div>
           <p class="perspective-summary">Rok temu grał w III lidze, teraz czeka na debiut w kadrze. &quot;Uznałbym to za abstrakcję&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: grał, teraz, czeka.</div><div><strong>Pomija:</strong> Pomija kontekst (selekcjonerem, przedmeczowa, konferencja) rozwijany w Interia Sport, Sport.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://sportowefakty.wp.pl/pilka-nozna/1284033/kadrowicz-byl-szczery-do-bolu-uznalbym-to-za-abstrakcje" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP SportoweFakty" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Odważne słowa debiutanta Urbana. To po to jest w kadrze. &quot;Wyjdę i pokażę&quot;?</summary><div class="faq-a">Kadra Jana Urbana w piątek udała się do Bukaresztu, gdzie odbyła się oficjalna przedmeczowa konferencja prasowa.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">W niej poza selekcjonerem kadry udział wziął również debiutant, Bartosz Mazurek.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (3 źródła).</div></details></section>
 
           
 
@@ -317,20 +360,21 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-debiutant-urbana-powiedzial-wprost-to-po-to-jest-w-kadrze-wy,nId,23573309" target="_blank" rel="noopener noreferrer"><span>Interia Sport</span><span>↗</span></a></li><li><a href="https://www.sport.pl/pilka/7,65037,33131592,rok-temu-zepsulem-karnego-w-iii-lidze-debiutant-w-kadrze.html" target="_blank" rel="noopener noreferrer"><span>Sport.pl</span><span>↗</span></a></li><li><a href="https://sportowefakty.wp.pl/pilka-nozna/1284033/kadrowicz-byl-szczery-do-bolu-uznalbym-to-za-abstrakcje" target="_blank" rel="noopener noreferrer"><span>WP SportoweFakty</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      <section id="timeline" class="dossier-timeline" aria-label="Oś czasu sprawy"><div class="timeline-head"><span class="dossier-badge">Akta Sprawy · Oś czasu</span><h2>Urbana · kadrze</h2><span class="timeline-meta">Etap 1 z 2</span></div><ol class="timeline-list"><li class="timeline-item is-current"><div class="timeline-date">13.11.2026, 19:50</div><span class="timeline-link">Odważne słowa debiutanta Urbana. To po to jest w kadrze. &quot;Wyjdę i pokażę&quot;</span><span class="timeline-now">Czytasz teraz</span></li><li class="timeline-item"><div class="timeline-date">15.11.2026, 00:52</div><a class="timeline-link" href="../../Sport/urban-przemowil-po-porazce-z-rumunia-to-powiedzial-o-przyszlosci-w/" onclick="return openArticleLink(event, 1347901644, '/Sport/urban-przemowil-po-porazce-z-rumunia-to-powiedzial-o-przyszlosci-w')">Urban przemówił po porażce z Rumunią. To powiedział o przyszłości w kadrze</a></li></ol></section>
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:15" data-id="1215463584">
       <div class="story-card">
         <a class="card-media-link" href="../../Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/" onclick="return openArticleLink(event, 1215463584, '/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afa823eadd334_39038489.jfif" alt="Polak bohaterem Superpucharu Włoch. Nie zapomną mu tego" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afa823eadd334_39038489.jfif" alt="Było już 0:2 i 15:19 w trzecim secie! Perugia odwróciła losy meczu o Superpuchar Włoch" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Sport</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/" onclick="return openArticleLink(event, 1215463584, '/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego')">Polak bohaterem Superpucharu Włoch. Nie zapomną mu tego</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/" onclick="return openArticleLink(event, 1215463584, '/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego')">Było już 0:2 i 15:19 w trzecim secie! Perugia odwróciła losy meczu o Superpuchar Włoch</a></h2>
           <p class="story-lede">Kamil Semeniuk zdobył 16 punktów, a Sir Susa Scai Perugia pokonała Cucine Lube Civitanova 3:2 w finale Superpucharu Włoch. Polski przyjmujący odegrał kluczową rolę w odwróceniu losów spotkania.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Sport</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article><article class="cat" style="--h:15" data-id="1534437874">
@@ -359,7 +403,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -375,6 +419,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -385,6 +430,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Sport/odwazne-slowa-debiutanta-urbana-to-po-to-jest-w-kadrze-wyjde-i-pokaze";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

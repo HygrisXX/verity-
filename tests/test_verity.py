@@ -16,6 +16,7 @@ if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
 import seo_builder
+import ai_synthesizer
 import update_live_news as uln
 
 
@@ -347,8 +348,9 @@ class TestGeneratedArtifactsIntegrity(unittest.TestCase):
 
         sm_root = ET.parse(sitemap_path).getroot()
         sm_locs = [el.text for el in sm_root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-        # Strona główna + 23 działy (w tym /Polska/Regiony + 16 województw) + wszystkie artykuły
-        self.assertGreaterEqual(len(sm_locs), len(self.articles) + len(seo_builder.CATEGORIES) + 1)
+        published_arts = [a for a in self.articles if a.get("status", "AUTO_PUBLISHED") == "AUTO_PUBLISHED"]
+        # Strona główna + 23 działy (w tym /Polska/Regiony + 16 województw) + opublikowane artykuły
+        self.assertGreaterEqual(len(sm_locs), len(published_arts) + len(seo_builder.CATEGORIES) + 1)
         self.assertTrue(any(loc.endswith("/Polska/Regiony/") for loc in sm_locs))
         for v_path, _, _, _, _, _ in seo_builder.VOIVODESHIPS:
             self.assertTrue(any(loc.endswith(f"{v_path}/") for loc in sm_locs), f"Brak {v_path} w sitemap.xml")
@@ -2120,6 +2122,969 @@ class TestStage6FastBootPwaSectionRssAndScrollPaging(unittest.TestCase):
             "navigator.serviceWorker.register",
         ):
             self.assertIn(token, js_code)
+
+
+class TestStage7ZeroTrustEditorialQueueAndEvidenceSystem(unittest.TestCase):
+    def test_zero_trust_classification_and_evidence_validation(self):
+        dispute_art = {
+            "id": 101,
+            "path": "/Polska/Energetyka",
+            "seo_url": "/Polska/Energetyka/test-spor-rządowy",
+            "seo_title": "Rząd zapowiada zamrożenie cen gazu na 2027 r., choć URE i ekonomiści ostrzegają przed kosztem 6 mld zł",
+            "summary_lead": "Ministerstwo zapowiada utrzymanie taryfy, podczas gdy dane rynkowe wskazują na wysokie koszty rekompensat.",
+            "sources": ["WNP.pl", "Bankier.pl"],
+            "perspectives": [],
+            "full_sections": [],
+        }
+        status, reason, note = uln.evaluate_zero_trust_article(dispute_art)
+        self.assertEqual(status, "PENDING_ADMIN")
+        self.assertTrue(reason.startswith("Wstrzymano (Zero-Trust)"))
+        self.assertTrue(len(note) >= 20)
+
+        normal_art = {
+            "id": 102,
+            "path": "/Sport",
+            "seo_url": "/Sport/mecz-reprezentacji",
+            "seo_title": "Wygrana reprezentacji Polski w eliminacjach",
+            "summary_lead": "Reprezentacja wygrała spotkanie wyjazdowe 2:0.",
+            "sources": ["Sport.pl", "Polsat Sport"],
+            "perspectives": [],
+            "full_sections": [],
+        }
+        st2, _, _ = uln.evaluate_zero_trust_article(normal_art)
+        self.assertEqual(st2, "AUTO_PUBLISHED")
+
+        # Walidacja linków „Pokaż dowód!”
+        ok_bad_url, msg_bad_url = uln.validate_evidence_submission("Poprawny długi opis korekty.", "ftp://invalid.pl")
+        self.assertFalse(ok_bad_url)
+        self.assertIn("URL", msg_bad_url)
+
+        ok_bl, msg_bl = uln.validate_evidence_submission(
+            "Poprawny długi opis korekty faktu.", "https://demagog.org.pl/wypowiedzi/test"
+        )
+        self.assertFalse(ok_bl)
+        self.assertIn("Zero-Trust", msg_bl)
+
+        ok_short, _ = uln.validate_evidence_submission("Za krótko", "https://www.nbp.pl/statystyka")
+        self.assertFalse(ok_short)
+
+        ok_valid, _ = uln.validate_evidence_submission(
+            "Oficjalny komunikat NBP potwierdza korektę wskaźnika za III kwartał.",
+            "https://nbp.pl/statystyka-i-sprawozdawczosc/inflacja/",
+        )
+        self.assertTrue(ok_valid)
+
+    def test_editorial_persistence_and_server_http_api(self):
+        import shutil
+        import tempfile
+        import threading
+        import urllib.error
+        import urllib.request
+        import server as verity_server
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            sample_articles = [
+                {
+                    "id": 5001,
+                    "path": "/Polska/Energetyka",
+                    "seo_url": "/Polska/Energetyka/test-zamrozenie-gazu",
+                    "seo_title": "Rząd zapowiada zamrożenie taryf gazu, ekonomiści i URE ostrzegają przed deficytem",
+                    "summary_lead": "Spór resortu i ekspertów w sprawie kosztów rekompensat na rynku gazu.",
+                    "published_iso": "2026-11-15T18:00:00+01:00",
+                    "updated_iso": "2026-11-15T18:00:00+01:00",
+                    "display_date": "15.11.2026, 18:00",
+                    "status": "PENDING_ADMIN",
+                    "admin_note": "",
+                    "zero_trust_reason": "Rozbieżność między komunikatem rządu a wyliczeniami URE.",
+                    "sources": ["WNP.pl", "Bankier.pl"],
+                    "fact_agreement_pct": 84,
+                    "corrections": [],
+                    "full_sections": [{"heading": "Ustalenia", "paragraphs": ["Resort oraz ekonomiści przedstawili rozbieżne wyliczenia. [Źródło: WNP.pl, Bankier.pl]"]}],
+                    "perspectives": [
+                        {"outlet": "WNP.pl", "angle": "Komunikat", "summary": "Taryfa", "url": "https://wnp.pl/1"},
+                        {"outlet": "Bankier.pl", "angle": "Rynek", "summary": "Koszty", "url": "https://bankier.pl/1"},
+                    ],
+                },
+                {
+                    "id": 5002,
+                    "path": "/Polska/Gospodarka",
+                    "seo_url": "/Polska/Gospodarka/test-inflacja-gus",
+                    "seo_title": "GUS publikuje końcowy odczyt inflacji za październik",
+                    "summary_lead": "Ostateczne dane GUS potwierdzają stabilizację cen żywności i paliw.",
+                    "published_iso": "2026-11-15T19:00:00+01:00",
+                    "updated_iso": "2026-11-15T19:00:00+01:00",
+                    "display_date": "15.11.2026, 19:00",
+                    "status": "AUTO_PUBLISHED",
+                    "admin_note": "",
+                    "sources": ["PAP", "Money.pl"],
+                    "fact_agreement_pct": 92,
+                    "corrections": [],
+                    "full_sections": [{"heading": "Dane", "paragraphs": ["Odczyt roczny wyniósł 2,8 proc. [Źródło: PAP, Money.pl]"]}],
+                    "perspectives": [
+                        {"outlet": "PAP", "angle": "Depesza", "summary": "GUS", "url": "https://pap.pl/1"},
+                        {"outlet": "Money.pl", "angle": "Analiza", "summary": "Ceny", "url": "https://money.pl/1"},
+                    ],
+                },
+            ]
+            with open(os.path.join(tmpdir, "articles.json"), "w", encoding="utf-8") as f:
+                json.dump(sample_articles, f, ensure_ascii=False, indent=2)
+            for fname in ("styles.css", "app.js"):
+                shutil.copyfile(os.path.join(ROOT_DIR, fname), os.path.join(tmpdir, fname))
+
+            os.environ["VERITY_QUIET_SERVER"] = "1"
+            old_tok = os.environ.pop("VERITY_ADMIN_TOKEN", None)
+            srv = verity_server.create_server(directory=tmpdir, host="127.0.0.1", port=0, rebuild_seo_on_write=False)
+            t = threading.Thread(target=srv.serve_forever, daemon=True)
+            t.start()
+            port = srv.server_address[1]
+            base = f"http://127.0.0.1:{port}"
+
+            def req_json(path, method="GET", body=None, headers=None):
+                hdrs = dict(headers or {})
+                data_bytes = None
+                if body is not None:
+                    data_bytes = json.dumps(body).encode("utf-8")
+                    hdrs["Content-Type"] = "application/json"
+                r = urllib.request.Request(base + path, data=data_bytes, method=method, headers=hdrs)
+                try:
+                    with urllib.request.urlopen(r, timeout=5) as resp:
+                        return resp.status, json.loads(resp.read().decode("utf-8"))
+                except urllib.error.HTTPError as he:
+                    return he.code, json.loads(he.read().decode("utf-8"))
+
+            try:
+                st, d0 = req_json("/api/editorial-state")
+                self.assertEqual(st, 200)
+                self.assertEqual(d0["pending_articles"], 1)
+
+                # Odrzucenie czarnej listy przez API korekt
+                st_bl, d_bl = req_json("/api/corrections", "POST", {
+                    "article_id": 5002,
+                    "claim_text": "Sprawdźmy ten wskaźnik w bazie źródłowej GUS.",
+                    "evidence_url": "https://oko.press/test-artykul",
+                })
+                self.assertEqual(st_bl, 400)
+                self.assertFalse(d_bl["ok"])
+
+                # Zapis poprawnej korekty czytelnika
+                st_c, d_c = req_json("/api/corrections", "POST", {
+                    "article_id": 5002,
+                    "claim_text": "Szczegółowa tabela GUS podaje dokładny odczyt 2,8 proc. r/r.",
+                    "evidence_url": "https://stat.gov.pl/obszary-tematyczne/ceny-handel/",
+                })
+                self.assertEqual(st_c, 200)
+                self.assertTrue(d_c["ok"])
+                corr_id = d_c["correction"]["id"]
+
+                # Zatwierdzenie artykułu z notą redakcyjną
+                st_a, d_a = req_json("/api/admin/approve-article", "POST", {
+                    "article_id": 5001,
+                    "admin_note": "Zweryfikowano w taryfie URE i projekcie ustawy.",
+                })
+                self.assertEqual(st_a, 200)
+                self.assertEqual(d_a["article"]["status"], "AUTO_PUBLISHED")
+
+                # Moderacja korekty (potwierdzenie dowodu)
+                st_m, d_m = req_json("/api/admin/moderate-correction", "POST", {
+                    "correction_id": corr_id,
+                    "action": "approve",
+                })
+                self.assertEqual(st_m, 200)
+                self.assertEqual(d_m["correction"]["status"], "APPROVED")
+
+                # Symulacja kolejnego cyklu RSS (apply_editorial_state_to_articles pamięta decyzję i dowód!)
+                with open(os.path.join(tmpdir, "articles.json"), "r", encoding="utf-8") as f:
+                    reloaded_arts = json.load(f)
+                self.assertEqual(reloaded_arts[1]["corrections"][0].keys(), {"claim_text", "evidence_url"})
+                reloaded_arts[0]["status"] = "PENDING_ADMIN"
+                reloaded_arts[0]["admin_note"] = ""
+                reloaded_arts[1]["corrections"] = []
+                persisted_state = uln.load_editorial_state(tmpdir)
+                after_cycle = uln.apply_editorial_state_to_articles(reloaded_arts, persisted_state, base_dir=tmpdir)
+                self.assertEqual(after_cycle[0]["status"], "AUTO_PUBLISHED")
+                self.assertIn("taryfie URE", after_cycle[0]["admin_note"])
+                self.assertEqual(len(after_cycle[1]["corrections"]), 1)
+
+                # Egzekwowanie opcjonalnego tokena Admina
+                os.environ["VERITY_ADMIN_TOKEN"] = "sekret-verity"
+                st_unauth, _ = req_json("/api/admin/reject-article", "POST", {"article_id": 5002})
+                self.assertEqual(st_unauth, 401)
+                st_auth, _ = req_json(
+                    "/api/admin/reject-article",
+                    "POST",
+                    {"article_id": 5002},
+                    headers={"X-Admin-Token": "sekret-verity"},
+                )
+                self.assertEqual(st_auth, 200)
+            finally:
+                srv.shutdown()
+                srv.server_close()
+                if old_tok is not None:
+                    os.environ["VERITY_ADMIN_TOKEN"] = old_tok
+                else:
+                    os.environ.pop("VERITY_ADMIN_TOKEN", None)
+
+
+class TestStage8AiSynthesizerCostGuardAndComparativePerspectives(unittest.TestCase):
+    def test_deterministic_comparative_perspectives_and_seo_title_enrichment(self):
+        group = [
+            {
+                "outlet": "PAP",
+                "title": "Sejm przyjął nowelizację ustawy energetycznej",
+                "description": (
+                    "Posłowie przegłosowali w piątek nowelizację ustawy o wsparciu odbiorców energii elektrycznej. "
+                    "W głosowaniu oddano głosy zgodnie z rekomendacją komisji sejmowej."
+                ),
+                "link": "https://pap.pl/sejm-energetyka",
+                "path": "/Polska/Energetyka",
+            },
+            {
+                "outlet": "Bankier.pl",
+                "title": "Sejm przyjął ustawę o cenach prądu: 234 za, koszt wsparcia to 6,2 mld zł",
+                "description": (
+                    "Za przyjęciem ustawy głosowało 234 posłów, przeciw było 190 parlamentarzystów. "
+                    "Resort finansów szacuje maksymalny koszt mechanizmu na 6,2 mld zł w budżecie."
+                ),
+                "link": "https://bankier.pl/sejm-energetyka",
+                "path": "/Polska/Energetyka",
+            },
+        ]
+        art = uln.build_article_from_group(group, 701)
+        # Deterministyczne wzbogacenie seo_title przejęło konkretne liczby (234 za / 6,2 mld zł)
+        self.assertIn("234", art["seo_title"])
+        self.assertIn("6,2 mld zł", art["seo_title"])
+        # Analiza porównawcza Eksponuje / Pomija zachowuje oryginalne summary/url
+        persps = art["perspectives"]
+        self.assertEqual(len(persps), 2)
+        by_out = {p["outlet"]: p for p in persps}
+        self.assertEqual(by_out["PAP"]["summary"], "Sejm przyjął nowelizację ustawy energetycznej")
+        self.assertEqual(by_out["PAP"]["url"], "https://pap.pl/sejm-energetyka")
+        self.assertIn("234", by_out["PAP"].get("omits", ""))
+        self.assertTrue(any(k in by_out["Bankier.pl"].get("focus", "") for k in ("234", "6,2")))
+        self.assertTrue(len(by_out["Bankier.pl"].get("omits", "")) >= 15)
+
+        # Wzbogacanie samego tytułu z akapitu sekcji, gdy żaden nagłówek nie miał liczby
+        enriched = ai_synthesizer.enrich_seo_title_deterministic(
+            "Nowe taryfy na rynku ciepła",
+            [{"outlet": "WNP.pl", "title": "Nowe taryfy na rynku ciepła"}],
+            [{"heading": "Dane", "paragraphs": ["Maksymalna stawka wzrośnie o 14 proc. od stycznia. [Źródło: WNP.pl]"]}],
+        )
+        self.assertIn("14 proc.", enriched)
+
+    def test_compress_cost_guard_and_zero_trust_llm_validation(self):
+        import io
+        import tempfile
+        from unittest import mock
+
+        group = [
+            {
+                "outlet": "PAP",
+                "title": "RPP utrzymała stopy procentowe na poziomie 5,75 proc.",
+                "description": (
+                    "Rada Polityki Pieniężnej zdecydowała w środę o utrzymaniu stopy referencyjnej 5,75 proc. "
+                    "Zdanie piąte: długi opis szumu reklamowego. Zdanie czwarte."
+                ),
+                "link": "https://pap.pl/rpp-575",
+                "path": "/Polska/Gospodarka",
+            },
+            {
+                "outlet": "Money.pl",
+                "title": "Decyzja RPP w sprawie stóp i prognoza inflacji 3,1 proc.",
+                "description": (
+                    "Ekonomiści ankietowani przed posiedzeniem spodziewali się inflacji 3,1 proc. "
+                    "Prezes NBP omówi projekcję na konferencji."
+                ),
+                "link": "https://money.pl/rpp-prognoza",
+                "path": "/Polska/Gospodarka",
+            },
+        ]
+        compressed = ai_synthesizer.compress_cluster_for_llm(group, [], max_chars=900)
+        self.assertEqual(len(compressed["sources"]), 2)
+
+        # 1. Walidacja Zero-Trust odrzuca zmyśloną liczbę (999 mld) oraz clickbait, ale przepuszcza liczby ze źródeł
+        bad_llm_out = {
+            "seo_title": "SZOK! RPP zmienia stopy o 999 proc.!!",
+            "summary_lead": "RPP podniosła stopy i dodała 999 mld zł programu wsparcia dla banków.",
+            "meta_description": "Rada Polityki Pieniężnej podjęła decyzję o utrzymaniu stopy referencyjnej na poziomie 5,75 proc. według NBP.",
+            "perspectives": [
+                {
+                    "outlet": "PAP",
+                    "angle": "Fakty RPP",
+                    "focus": "Eksponuje decyzję RPP o utrzymaniu stopy 5,75 proc.",
+                    "omits": "Pomija zmyśloną kwotę 999 mld zł spoza depeszy.",
+                }
+            ],
+        }
+        val_bad = ai_synthesizer._validate_zero_trust_llm_output(
+            bad_llm_out,
+            compressed,
+            [{"outlet": "PAP", "angle": "Depesza", "summary": "Tytuł", "url": "https://pap.pl/rpp-575"}],
+            fallback_title="RPP utrzymała stopy na poziomie 5,75 proc.",
+        )
+        # Zmyślone seo_title i summary_lead z 999 odrzucone
+        self.assertEqual(val_bad["seo_title"], "RPP utrzymała stopy na poziomie 5,75 proc.")
+        self.assertNotIn("summary_lead", val_bad)
+        # Meta z prawdziwym 5,75 proc. przeszło
+        self.assertIn("5,75 proc.", val_bad["meta_description"])
+        # Focus z 5,75 przeszedł, ale omits z 999 odrzucony
+        self.assertIn("5,75", val_bad["perspectives"][0]["focus"])
+        self.assertNotIn("omits", val_bad["perspectives"][0])
+
+        # 2. GeminiCostGuard + pełne wywołanie enhance_article_narrative_and_seo z mockiem HTTP
+        with tempfile.TemporaryDirectory() as tmpdir:
+            budget_file = os.path.join(tmpdir, "gemini_budget.json")
+            guard = ai_synthesizer.GeminiCostGuard(budget_path=budget_file, max_calls_per_run=1, max_daily_calls=5)
+            art = uln.build_article_from_group(group, 702)
+
+            good_gemini_resp = json.dumps({
+                "candidates": [{
+                    "content": {
+                        "parts": [{
+                            "text": json.dumps({
+                                "seo_title": "RPP utrzymuje stopy na poziomie 5,75 proc. przy prognozie inflacji 3,1 proc.",
+                                "summary_lead": "Rada Polityki Pieniężnej utrzymała stopę referencyjną 5,75 proc., podczas gdy ekonomiści szacują inflację na 3,1 proc.",
+                                "meta_description": "RPP utrzymała stopę referencyjną 5,75 proc. Sprawdź porównanie depesz PAP i Money.pl na temat inflacji 3,1 proc.",
+                                "perspectives": [
+                                    {
+                                        "outlet": "PAP",
+                                        "angle": "Komunikat RPP",
+                                        "focus": "Eksponuje oficjalną decyzję RPP o utrzymaniu stopy 5,75 proc.",
+                                        "omits": "Pomija ankietową prognozę inflacji 3,1 proc. opisaną przez Money.pl.",
+                                    },
+                                    {
+                                        "outlet": "Money.pl",
+                                        "angle": "Rynek i prognozy",
+                                        "focus": "Akcentuje oczekiwania ekonomistów wobec inflacji 3,1 proc. i konferencję NBP.",
+                                        "omits": "Pomija bezpośrednie brzmienie komunikatu RPP z depeszy PAP.",
+                                    },
+                                ],
+                            })
+                        }]
+                    }
+                }]
+            }).encode("utf-8")
+
+            class _FakeResp(io.BytesIO):
+                def __enter__(self):
+                    return self
+                def __exit__(self, *args):
+                    return False
+
+            with mock.patch("ai_synthesizer.urllib.request.urlopen", return_value=_FakeResp(good_gemini_resp)) as mocked_open:
+                ai_synthesizer.enhance_article_narrative_and_seo(
+                    art, group, cost_guard=guard, use_gemini=True, api_key="fake-free-tier-key"
+                )
+                self.assertEqual(mocked_open.call_count, 1)
+                self.assertTrue(art.get("ai_synthesized"))
+                self.assertIn("3,1 proc.", art["seo_title"])
+                self.assertEqual(guard.calls_this_run, 1)
+                self.assertEqual(guard.state["daily_calls"], 1)
+                # Drugie wywołanie w tym samym cyklu zostaje zatrzymane przez GeminiCostGuard (max_calls_per_run=1)
+                art2 = uln.build_article_from_group(group, 703)
+                ai_synthesizer.enhance_article_narrative_and_seo(
+                    art2, group, cost_guard=guard, use_gemini=True, api_key="fake-free-tier-key"
+                )
+                self.assertEqual(mocked_open.call_count, 1)
+                self.assertFalse(art2.get("ai_synthesized", False))
+
+            # Sprawdzenie trwałego zapisu licznika w gemini_budget.json
+            reloaded_guard = ai_synthesizer.GeminiCostGuard(budget_path=budget_file, max_calls_per_run=6, max_daily_calls=5)
+            self.assertEqual(reloaded_guard.state["daily_calls"], 1)
+
+
+class TestStage9SeoFaqDossierOgAndIndexNow(unittest.TestCase):
+    def test_impact_pills_and_deterministic_seo_faq_with_zero_trust(self):
+        art = {
+            "id": 9101,
+            "path": "/Polska/Gospodarka",
+            "seo_url": "/Polska/Gospodarka/ksef-obowiazek-przedsiebiorcy",
+            "seo_title": "Nowe terminy KSeF dla przedsiębiorców wchodzą w życie w 2026 r.",
+            "summary_lead": "Ministerstwo Finansów potwierdziło harmonogram wdrożenia KSeF dla podatników VAT.",
+            "sources": ["PAP", "Bankier.pl"],
+            "fact_agreement_pct": 91,
+            "full_sections": [
+                {
+                    "heading": "Harmonogram",
+                    "paragraphs": [
+                        "Ministerstwo Finansów potwierdziło harmonogram wdrożenia KSeF dla podatników VAT. [Źródło: PAP]",
+                        "Od 1 lutego 2026 r. system obejmie firmy o obrotach powyżej 200 mln zł, a kolejne podmioty dołączą w kwietniu. [Źródło: PAP, Bankier.pl]",
+                    ],
+                }
+            ],
+        }
+        impact = ai_synthesizer.extract_article_impact(art)
+        self.assertEqual(impact["audience"], "Przedsiębiorcy i podatnicy")
+        self.assertEqual(impact["scope"], "Portfel, podatki i rynek")
+        self.assertTrue(len(impact["status"]) >= 8)
+
+        faq = ai_synthesizer.generate_seo_faq_deterministic(art, art["full_sections"], impact=impact)
+        self.assertGreaterEqual(len(faq), 2)
+        self.assertLessEqual(len(faq), 3)
+        for item in faq:
+            self.assertTrue(item["q"].endswith("?"))
+            self.assertNotIn("[Źródło:", item["a"])
+            self.assertNotIn("<", item["a"])
+            self.assertNotIn("&quot;", item["a"])
+        self.assertTrue(any("200 mln" in item["a"] or "1 lutego 2026" in item["a"] for item in faq))
+
+        # Walidacja Zero-Trust dla FAQPage od Gemini: zmyślona liczba odrzucona, liczba ze źródła zaakceptowana
+        compressed = {
+            "sources": [{"outlet": "PAP", "title": art["seo_title"], "excerpt": "System obejmie firmy powyżej 200 mln zł w 2026 r."}]
+        }
+        val = ai_synthesizer._validate_zero_trust_llm_output(
+            {
+                "seo_title": "Obowiązek KSeF dla firm powyżej 200 mln zł w 2026 r.",
+                "seo_faq": [
+                    {"q": "Kiedy rusza KSeF dla największych firm?", "a": "W 2026 r. system obejmie przedsiębiorstwa z obrotem powyżej 200 mln zł."},
+                    {"q": "Jaka będzie kara finansowa za błąd?", "a": "Przepisy przewidują automatyczną grzywnę w wysokości 999 tys. zł."},
+                    {"q": "Kogo dotyczy pierwszy etap zmian?", "a": "Zmiany obejmują podatników i przedsiębiorców raportujących faktury."},
+                ],
+            },
+            compressed,
+            [{"outlet": "PAP", "angle": "Fakty", "summary": "Tytuł", "url": "https://pap.pl/ksef"}],
+            fallback_title=art["seo_title"],
+        )
+        valid_faq = val.get("seo_faq") or []
+        self.assertEqual(len(valid_faq), 2)
+        self.assertFalse(any("999" in f["a"] for f in valid_faq))
+
+    def test_dossier_timeline_clustering_and_conflict_guards(self):
+        items = [
+            {
+                "id": 1,
+                "path": "/Polska/Gospodarka",
+                "seo_url": "/Polska/Gospodarka/projekt-ksef-komisja-sejmowa",
+                "seo_title": "Komisja sejmowa omawia projekt KSeF dla przedsiębiorców",
+                "summary_lead": "Projekt nowelizacji KSeF trafił pod obrady sejmowej komisji finansów.",
+                "published_iso": "2026-11-12T10:00:00+01:00",
+                "display_date": "12.11.2026, 10:00",
+            },
+            {
+                "id": 2,
+                "path": "/Polska/Gospodarka",
+                "seo_url": "/Polska/Gospodarka/sejm-przyjmuje-ksef-zmiany",
+                "seo_title": "Sejm przegłosował zmiany w systemie KSeF dla przedsiębiorców",
+                "summary_lead": "Posłowie przyjęli nowelizację KSeF w sprawie faktur elektronicznych.",
+                "published_iso": "2026-11-14T15:00:00+01:00",
+                "display_date": "14.11.2026, 15:00",
+            },
+            # Inna droga / inne miasto nie może się skleić w Akta Sprawy
+            {
+                "id": 3,
+                "path": "/Polska/Regiony/Wielkopolskie",
+                "seo_url": "/Polska/Regiony/Wielkopolskie/karambol-na-a2-poznan",
+                "seo_title": "Utrudnienia na autostradzie A2 w okolicach Poznania po zderzeniu ciężarówek",
+                "summary_lead": "Służby zablokowały pas ruchu na A2 pod Poznaniem.",
+                "published_iso": "2026-11-14T12:00:00+01:00",
+                "display_date": "14.11.2026, 12:00",
+            },
+            {
+                "id": 4,
+                "path": "/Polska/Regiony/Malopolskie",
+                "seo_url": "/Polska/Regiony/Malopolskie/utrudnienia-a4-krakow",
+                "seo_title": "Utrudnienia na autostradzie A4 w okolicach Krakowa po zderzeniu ciężarówek",
+                "summary_lead": "Korki na obwodnicy A4 w Krakowie.",
+                "published_iso": "2026-11-14T14:00:00+01:00",
+                "display_date": "14.11.2026, 14:00",
+            },
+            # Różne dyscypliny w /Sport nie mogą się skleić
+            {
+                "id": 5,
+                "path": "/Sport",
+                "seo_url": "/Sport/polska-tenis-wta-swiatek-awans",
+                "seo_title": "Awans Polki do półfinału turnieju WTA w tenisie",
+                "summary_lead": "Tenisistka wygrała mecz ćwierćfinałowy WTA.",
+                "published_iso": "2026-11-14T16:00:00+01:00",
+                "display_date": "14.11.2026, 16:00",
+            },
+            {
+                "id": 6,
+                "path": "/Sport",
+                "seo_url": "/Sport/polska-ekstraklasa-pilka-awans",
+                "seo_title": "Awans klubu w tabeli Ekstraklasy w piłce nożnej",
+                "summary_lead": "Piłkarska drużyna awansowała po wygranym meczu.",
+                "published_iso": "2026-11-14T18:00:00+01:00",
+                "display_date": "14.11.2026, 18:00",
+            },
+        ]
+        clusters = ai_synthesizer.assign_dossier_timelines(items)
+        self.assertEqual(clusters, 1)
+        self.assertEqual(items[0]["dossier_count"], 2)
+        self.assertEqual(items[0]["dossier_index"], 1)
+        self.assertEqual(items[1]["dossier_index"], 2)
+        self.assertEqual([x["id"] for x in items[0]["dossier_items"]], [1, 2])
+        self.assertNotIn("dossier_items", items[2])
+        self.assertNotIn("dossier_items", items[3])
+        self.assertNotIn("dossier_items", items[4])
+        self.assertNotIn("dossier_items", items[5])
+
+    def test_og_card_png_fallback_ssr_faq_impact_dossier_and_indexnow(self):
+        import io
+        import shutil
+        import struct
+        import tempfile
+        from unittest import mock
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            # CNAME -> własna domena
+            with open(os.path.join(tmpdir, "CNAME"), "w", encoding="utf-8") as f:
+                f.write("verity.pl\n")
+            self.assertEqual(seo_builder.detect_site_base_url(tmpdir), "https://verity.pl")
+
+            # Stary plik w og/, który powinien zostać usunięty przy przebudowie
+            og_dir = os.path.join(tmpdir, "og")
+            os.makedirs(og_dir, exist_ok=True)
+            stale_og = os.path.join(og_dir, "999999.png")
+            with open(stale_og, "wb") as f:
+                f.write(b"stale")
+
+            # Test zarówno ścieżki Pillow jak i czystego fallbacku PNG 1200x630
+            fb_png = os.path.join(tmpdir, "fallback_og_test.png")
+            seo_builder._write_fallback_og_png(fb_png, 1200, 630, (42, 118, 210))
+            with open(fb_png, "rb") as f:
+                raw_fb = f.read()
+            self.assertEqual(raw_fb[:8], b"\x89PNG\r\n\x1a\n")
+            self.assertEqual(struct.unpack(">II", raw_fb[16:24]), (1200, 630))
+
+            for fname in ("styles.css", "app.js"):
+                shutil.copyfile(os.path.join(ROOT_DIR, fname), os.path.join(tmpdir, fname))
+
+            from datetime import datetime, timedelta, timezone
+            _now_t = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=1)))
+            _ts_1 = (_now_t - timedelta(hours=6)).replace(microsecond=0).isoformat()
+            _ts_2 = (_now_t - timedelta(hours=2)).replace(microsecond=0).isoformat()
+            sample_arts = [
+                {
+                    "id": 8101,
+                    "path": "/Polska/Energetyka",
+                    "seo_url": "/Polska/Energetyka/test-taryfa-gazu-etap-1",
+                    "seo_title": "URE analizuje taryfy gazu na 2027 r.",
+                    "summary_lead": "Prezes URE rozpoczął analizę wniosków taryfowych dla odbiorców indywidualnych.",
+                    "published_iso": _ts_1,
+                    "updated_iso": _ts_1,
+                    "display_date": (_now_t - timedelta(hours=6)).strftime("%d.%m.%Y, %H:%M"),
+                    "status": "AUTO_PUBLISHED",
+                    "sources": ["PAP", "WNP.pl"],
+                    "fact_agreement_pct": 89,
+                    "thumbnail_url": "",
+                    "impact": {
+                        "audience": "Gospodarstwa domowe i konsumenci",
+                        "scope": "Energia i rachunki",
+                        "status": "Potwierdzone (2 źródła)",
+                    },
+                    "seo_faq": [
+                        {"q": "Kogo dotyczą analizowane taryfy gazu?", "a": "Wnioski obejmują gospodarstwa domowe korzystające z taryf regulowanych przez URE."},
+                        {"q": "Ile redakcji potwierdziło informację?", "a": "Ustalenia potwierdziły 2 redakcje: PAP oraz WNP.pl."},
+                    ],
+                    "full_sections": [
+                        {"heading": "Ustalenia", "paragraphs": ["Urząd Regulacji Energetyki analizuje wnioski taryfowe spółek obrotu. [Źródło: PAP, WNP.pl]"]}
+                    ],
+                    "perspectives": [
+                        {"outlet": "PAP", "angle": "Komunikat", "summary": "Wnioski w URE", "focus": "Eksponuje tryb analizy URE.", "omits": "Pomija prognozy rynkowe.", "url": "https://pap.pl/ure-1"},
+                        {"outlet": "WNP.pl", "angle": "Rynek", "summary": "Taryfy 2027", "focus": "Eksponuje koszty zakupu.", "omits": "Pomija harmonogram decyzji.", "url": "https://wnp.pl/ure-2"},
+                    ],
+                },
+                {
+                    "id": 8102,
+                    "path": "/Polska/Energetyka",
+                    "seo_url": "/Polska/Energetyka/test-taryfa-gazu-etap-2",
+                    "seo_title": "URE zatwierdziło nową taryfę gazu dla odbiorców",
+                    "summary_lead": "Nowa taryfa gazu obowiązuje odbiorców indywidualnych po decyzji URE.",
+                    "published_iso": _ts_2,
+                    "updated_iso": _ts_2,
+                    "display_date": (_now_t - timedelta(hours=2)).strftime("%d.%m.%Y, %H:%M"),
+                    "status": "AUTO_PUBLISHED",
+                    "sources": ["PAP", "Bankier.pl"],
+                    "fact_agreement_pct": 92,
+                    "thumbnail_url": "https://example.pl/zdjecie-ure.jpg",
+                    "impact": {
+                        "audience": "Gospodarstwa domowe i konsumenci",
+                        "scope": "Energia i rachunki",
+                        "status": "Wchodzi w życie / Obowiązuje",
+                    },
+                    "seo_faq": [
+                        {"q": "Co zmieniła decyzja URE?", "a": "Urząd zatwierdził taryfę regulowaną dla gospodarstw domowych."},
+                        {"q": "Skąd pochodzą dane?", "a": "Informację potwierdziły PAP i Bankier.pl."},
+                    ],
+                    "full_sections": [
+                        {"heading": "Decyzja", "paragraphs": ["Prezes URE wydał decyzję taryfową na kolejny okres. [Źródło: PAP, Bankier.pl]"]}
+                    ],
+                    "perspectives": [
+                        {"outlet": "PAP", "angle": "Decyzja", "summary": "Taryfa URE", "url": "https://pap.pl/ure-ok"},
+                        {"outlet": "Bankier.pl", "angle": "Koszty", "summary": "Rachunki", "url": "https://bankier.pl/ure-ok"},
+                    ],
+                },
+            ]
+            # Połącz oba artykuły w Akta Sprawy
+            dossier_items = [
+                {
+                    "id": a["id"],
+                    "seo_url": a["seo_url"],
+                    "seo_title": a["seo_title"],
+                    "display_date": a["display_date"],
+                    "published_iso": a["published_iso"],
+                }
+                for a in sample_arts
+            ]
+            for idx, a in enumerate(sample_arts, start=1):
+                a["dossier_title"] = "Taryfa · Gazu · URE"
+                a["dossier_count"] = 2
+                a["dossier_index"] = idx
+                a["dossier_items"] = dossier_items
+
+            seo_builder.build_all_seo_artifacts(tmpdir, sample_arts, site_base_url="https://verity.pl")
+
+            # Stary plik usunięty, karta 8101 wygenerowana 1200x630, dla 8102 (z thumbnail_url) nie tworzona
+            self.assertFalse(os.path.exists(stale_og))
+            og_8101 = os.path.join(og_dir, "8101.png")
+            self.assertTrue(os.path.isfile(og_8101))
+            self.assertFalse(os.path.exists(os.path.join(og_dir, "8102.png")))
+            with open(og_8101, "rb") as f:
+                hdr = f.read(24)
+            self.assertEqual(hdr[:8], b"\x89PNG\r\n\x1a\n")
+            self.assertEqual(struct.unpack(">II", hdr[16:24]), (1200, 630))
+
+            # Sprawdzenie SSR HTML artykułu bez miniatury
+            art_html_path = os.path.join(tmpdir, "Polska", "Energetyka", "test-taryfa-gazu-etap-1", "index.html")
+            with open(art_html_path, "r", encoding="utf-8") as f:
+                art_html = f.read()
+            self.assertIn('property="og:image" content="https://verity.pl/og/8101.png"', art_html)
+            self.assertIn('property="og:image:width" content="1200"', art_html)
+            self.assertIn('property="og:image:height" content="630"', art_html)
+            self.assertIn('name="twitter:image" content="https://verity.pl/og/8101.png"', art_html)
+            self.assertIn('"@type": "FAQPage"', art_html)
+            self.assertIn('class="impact-strip"', art_html)
+            self.assertIn('class="dossier-banner"', art_html)
+            self.assertIn('id="timeline" class="dossier-timeline"', art_html)
+            self.assertIn('class="faq-box"', art_html)
+
+            # Mapa witryny zawiera kartę OG i obraz
+            with open(os.path.join(tmpdir, "sitemap.xml"), "r", encoding="utf-8") as f:
+                sm_txt = f.read()
+            with open(os.path.join(tmpdir, "news-sitemap.xml"), "r", encoding="utf-8") as f:
+                nsm_txt = f.read()
+            self.assertIn("<image:loc>https://verity.pl/og/8101.png</image:loc>", sm_txt)
+            self.assertIn("<image:loc>https://verity.pl/og/8101.png</image:loc>", nsm_txt)
+
+            # Plik klucza IndexNow + test submit_indexnow_urls z mockiem HTTP
+            inow_key = seo_builder.get_indexnow_key()
+            key_file = os.path.join(tmpdir, f"{inow_key}.txt")
+            self.assertTrue(os.path.isfile(key_file))
+            with open(key_file, "r", encoding="utf-8") as f:
+                self.assertEqual(f.read().strip(), inow_key)
+
+            captured_req = {}
+
+            class _FakeInowResp(io.BytesIO):
+                status = 200
+                def __enter__(self):
+                    return self
+                def __exit__(self, *args):
+                    return False
+
+            def _fake_urlopen(req, timeout=10):
+                captured_req["url"] = req.full_url
+                captured_req["body"] = json.loads(req.data.decode("utf-8"))
+                return _FakeInowResp(b"ok")
+
+            with mock.patch("seo_builder.urllib.request.urlopen", side_effect=_fake_urlopen):
+                ok_inow, msg_inow = seo_builder.submit_indexnow_urls(tmpdir, articles=sample_arts)
+            self.assertTrue(ok_inow, msg_inow)
+            self.assertEqual(captured_req["body"]["host"], "verity.pl")
+            self.assertEqual(captured_req["body"]["keyLocation"], f"https://verity.pl/{inow_key}.txt")
+            self.assertIn("https://verity.pl/Polska/Energetyka/test-taryfa-gazu-etap-1/", captured_req["body"]["urlList"])
+
+
+class TestStage10CommunityChatWeightsAndModeration(unittest.TestCase):
+    def test_silent_vote_weight_and_anti_discord_filters(self):
+        import community_db as cdb
+        from datetime import datetime, timedelta, timezone
+
+        now = datetime(2026, 11, 16, 12, 0, 0, tzinfo=timezone.utc)
+        w_trusted = cdb.calculate_silent_vote_weight(
+            account_created_iso=(now - timedelta(days=500)).isoformat(),
+            is_trusted=True,
+            read_seconds=60,
+            cluster_voters_count=1,
+            from_external_referrer=False,
+            now_dt=now,
+        )
+        w_new_brigade = cdb.calculate_silent_vote_weight(
+            account_created_iso=(now - timedelta(days=1)).isoformat(),
+            is_trusted=False,
+            read_seconds=4,
+            cluster_voters_count=25,
+            from_external_referrer=True,
+            now_dt=now,
+        )
+        self.assertEqual(w_trusted, 3.0)
+        self.assertLess(w_new_brigade, 0.1)
+        self.assertGreater(w_trusted, w_new_brigade * 20)
+
+    def test_community_db_chat_posts_comments_votes_and_tariff(self):
+        import tempfile
+        import community_db as cdb
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            db_path = cdb.init_db(tmpdir, seed_demo=False)
+
+            # 1. Gość na czacie live: blokada linków + slow-mode
+            with self.assertRaises(ValueError):
+                cdb.send_chat_message(
+                    tmpdir,
+                    room="/Polska",
+                    text="Wejdź na https://tania-reklama.pl",
+                    user=None,
+                    guest_key="g_test1",
+                    guest_cooldown_sec=60,
+                    db_path=db_path,
+                )
+
+            msg1 = cdb.send_chat_message(
+                tmpdir,
+                room="/Polska",
+                text="Dzień dobry na czacie lokalnym!",
+                user=None,
+                guest_key="g_test1",
+                guest_cooldown_sec=60,
+                db_path=db_path,
+            )
+            self.assertEqual(msg1["author_kind"], "guest")
+            with self.assertRaises(PermissionError):
+                cdb.send_chat_message(
+                    tmpdir,
+                    room="/Polska",
+                    text="Druga wiadomość za szybko",
+                    user=None,
+                    guest_key="g_test1",
+                    guest_cooldown_sec=60,
+                    db_path=db_path,
+                )
+
+            # 2. Gość nie może pisać w 2. kolumnie ani komentować artykułu
+            with self.assertRaises(PermissionError):
+                cdb.create_community_post(tmpdir, None, "/Polska", "Własna analiza", "Próba wpisu jako gość", db_path=db_path)
+            with self.assertRaises(PermissionError):
+                cdb.create_comment(tmpdir, None, 101, "Komentarz gościa", db_path=db_path)
+
+            # 3. Konto 1-klik odblokowuje linki na czacie, 2. kolumnę, komentarze bez +/- i głosy
+            auth = cdb.login_or_register(tmpdir, "@Jan_Weteran", demo_age_days=400, db_path=db_path)
+            u_vet = auth["user"]
+            msg_link = cdb.send_chat_message(
+                tmpdir,
+                room="/Polska",
+                text="Źródło NBP: https://nbp.pl/statystyka",
+                user=u_vet,
+                user_cooldown_sec=0,
+                db_path=db_path,
+            )
+            self.assertEqual(msg_link["author_kind"], "user")
+
+            post = cdb.create_community_post(
+                tmpdir,
+                u_vet,
+                "/Polska/Wielkopolskie",
+                "Relacja na żywo",
+                "Korek na moście Królowej Jadwigi w Poznaniu już rozładowany.",
+                db_path=db_path,
+            )
+            self.assertEqual(post["path"], "/Polska/Wielkopolskie")
+            posts_pl = cdb.list_community_posts(tmpdir, "/Polska", db_path=db_path)
+            self.assertEqual(len(posts_pl), 1)
+
+            c1 = cdb.create_comment(tmpdir, u_vet, 101, "Pierwszy argument merytoryczny w dyskusji.", db_path=db_path)
+            c2 = cdb.create_comment(tmpdir, u_vet, 101, "Uzupełnienie z cytowaniem #1.", reply_to_id=c1["id"], db_path=db_path)
+            clist = cdb.list_comments(tmpdir, 101, db_path=db_path)
+            self.assertEqual([c["seq_num"] for c in clist], [1, 2])
+            self.assertEqual(clist[1]["reply_to_seq"], 1)
+            self.assertNotIn("upvotes", clist[0])
+            self.assertNotIn("downvotes", clist[0])
+
+            vs = cdb.toggle_article_vote(tmpdir, u_vet, 101, read_seconds=45, from_external_referrer=False, db_path=db_path)
+            self.assertTrue(vs["user_voted"])
+            self.assertGreaterEqual(vs["display_score"], 2)
+            self.assertNotIn("raw_weight", vs)
+
+            # 4. Taryfikator §1.1–§2.3: ODRZUCONO (0 pkt) vs MUTE (6 pkt) vs BAN (10 pkt)
+            rej = cdb.apply_moderation_decision(
+                tmpdir,
+                account_handle="@Jan_Weteran",
+                tariff_code="§2.1",
+                content_excerpt="Krytyka projektu ustawy budżetowej.",
+                outcome="REJECTED",
+                db_path=db_path,
+            )
+            self.assertEqual(rej["points_delta"], 0)
+            self.assertEqual(cdb.get_user_by_token(tmpdir, auth["token"], db_path=db_path)["status"], "ACTIVE")
+
+            cdb.apply_moderation_decision(
+                tmpdir,
+                account_handle="@TrollTest",
+                tariff_code="§1.3",
+                content_excerpt="Link phishingowy",
+                outcome="PUNISHED",
+                db_path=db_path,
+            )
+            troll_auth = cdb.login_or_register(tmpdir, "@TrollTest", db_path=db_path)
+            self.assertEqual(troll_auth["user"]["status"], "MUTED")
+            with self.assertRaises(PermissionError):
+                cdb.create_comment(tmpdir, troll_auth["user"], 101, "Próba komentarza podczas wyciszenia", db_path=db_path)
+
+            cdb.apply_moderation_decision(
+                tmpdir,
+                account_handle="@TrollTest",
+                tariff_code="§1.2",
+                content_excerpt="Rajd multikont",
+                outcome="PUNISHED",
+                db_path=db_path,
+            )
+            with self.assertRaises(PermissionError):
+                cdb.login_or_register(tmpdir, "@TrollTest", db_path=db_path)
+
+    def test_server_community_endpoints_and_sse_stream(self):
+        import shutil
+        import tempfile
+        import threading
+        import urllib.error
+        import urllib.request
+        import server as verity_server
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            for fname in ("styles.css", "app.js", "community.js"):
+                shutil.copyfile(os.path.join(ROOT_DIR, fname), os.path.join(tmpdir, fname))
+            sample = [{
+                "id": 9101,
+                "path": "/Polska/Gospodarka",
+                "seo_url": "/Polska/Gospodarka/test-komentarze-moderacja",
+                "seo_title": "Testowa informacja gospodarcza do dyskusji",
+                "summary_lead": "Krótki opis danych makroekonomicznych za ostatni kwartał.",
+                "published_iso": "2026-11-16T10:00:00+01:00",
+                "updated_iso": "2026-11-16T10:00:00+01:00",
+                "display_date": "16.11.2026, 10:00",
+                "status": "AUTO_PUBLISHED",
+                "sources": ["PAP", "Bankier.pl"],
+                "fact_agreement_pct": 90,
+                "full_sections": [{"heading": "Dane", "paragraphs": ["Odczyt potwierdzony przez dwie redakcje. [Źródło: PAP, Bankier.pl]"]}],
+                "perspectives": [
+                    {"outlet": "PAP", "angle": "Depesza", "summary": "Raport", "url": "https://pap.pl/9101"},
+                    {"outlet": "Bankier.pl", "angle": "Finanse", "summary": "Analiza", "url": "https://bankier.pl/9101"},
+                ],
+            }]
+            with open(os.path.join(tmpdir, "articles.json"), "w", encoding="utf-8") as f:
+                json.dump(sample, f, ensure_ascii=False)
+            seo_builder.build_all_seo_artifacts(tmpdir, sample, site_base_url="https://verity.pl")
+
+            mod_page = os.path.join(tmpdir, "moderacja", "index.html")
+            self.assertTrue(os.path.isfile(mod_page))
+            with open(mod_page, "r", encoding="utf-8") as f:
+                mod_html = f.read()
+            self.assertIn("§1.1", mod_html)
+            self.assertIn("§2.3", mod_html)
+            self.assertIn("community.js", mod_html)
+
+            os.environ["VERITY_QUIET_SERVER"] = "1"
+            old_guest_cd = os.environ.get("VERITY_GUEST_CHAT_COOLDOWN")
+            os.environ["VERITY_GUEST_CHAT_COOLDOWN"] = "0"
+            old_tok = os.environ.pop("VERITY_ADMIN_TOKEN", None)
+
+            srv = verity_server.create_server(directory=tmpdir, host="127.0.0.1", port=0, rebuild_seo_on_write=False)
+            t = threading.Thread(target=srv.serve_forever, daemon=True)
+            t.start()
+            port = srv.server_address[1]
+            base = f"http://127.0.0.1:{port}"
+
+            def req_json(path, method="GET", body=None, headers=None):
+                hdrs = dict(headers or {})
+                data_bytes = None
+                if body is not None:
+                    data_bytes = json.dumps(body).encode("utf-8")
+                    hdrs["Content-Type"] = "application/json"
+                r = urllib.request.Request(base + path, data=data_bytes, method=method, headers=hdrs)
+                try:
+                    with urllib.request.urlopen(r, timeout=5) as resp:
+                        return resp.status, json.loads(resp.read().decode("utf-8"))
+                except urllib.error.HTTPError as he:
+                    return he.code, json.loads(he.read().decode("utf-8"))
+
+            try:
+                # 1. Blokada linku gościa przez HTTP 400
+                st_link, d_link = req_json("/api/chat/send", method="POST", body={"room": "Globalny", "text": "Sprawdź https://spam.pl"})
+                self.assertEqual(st_link, 400)
+                self.assertFalse(d_link["ok"])
+
+                # 2. Podłączenie strumienia SSE (od najnowszego id) i wysłanie wiadomości w tle
+                _, init_chat = req_json("/api/chat/messages?room=Globalny")
+                after_id = max((m["id"] for m in init_chat.get("messages", [])), default=0)
+                sse_lines = []
+                sse_ready = threading.Event()
+
+                def _read_sse():
+                    req_s = urllib.request.Request(f"{base}/api/chat/stream?room=Globalny&after_id={after_id}")
+                    with urllib.request.urlopen(req_s, timeout=5) as resp:
+                        while len(sse_lines) < 20:
+                            line = resp.readline().decode("utf-8", errors="ignore")
+                            if not line:
+                                break
+                            sse_lines.append(line.strip())
+                            if line.startswith(": connected"):
+                                sse_ready.set()
+                            if line.startswith("data: ") and "Wiadomość SSE od gościa" in line:
+                                break
+
+                t_sse = threading.Thread(target=_read_sse, daemon=True)
+                t_sse.start()
+                self.assertTrue(sse_ready.wait(timeout=3.0))
+
+                st_g, d_g = req_json("/api/chat/send", method="POST", body={"room": "Globalny", "text": "Wiadomość SSE od gościa"})
+                self.assertEqual(st_g, 200)
+                t_sse.join(timeout=3.0)
+                joined_sse = "\n".join(sse_lines)
+                self.assertIn("event: message", joined_sse)
+                self.assertIn("Wiadomość SSE od gościa", joined_sse)
+
+                # 3. 1-klik rejestracja, wpis 2. kolumny, głos ▲, komentarz, zgłoszenie i /api/moderation/log
+                st_l, d_l = req_json("/api/auth/login", method="POST", body={"handle": "@TestServer", "demo_age_days": 120})
+                self.assertEqual(st_l, 200)
+                hdr = {"X-Session-Token": d_l["token"]}
+
+                st_v, d_v = req_json("/api/votes", method="POST", body={"article_id": 9101, "read_seconds": 30}, headers=hdr)
+                self.assertEqual(st_v, 200)
+                self.assertTrue(d_v["vote_summary"]["user_voted"])
+                self.assertGreaterEqual(d_v["vote_summary"]["display_score"], 1)
+
+                st_c, d_c = req_json("/api/comments", method="POST", body={"article_id": 9101, "text": "Komentarz testowy REST"}, headers=hdr)
+                self.assertEqual(st_c, 200)
+                cid = d_c["comment"]["id"]
+
+                st_rep, d_rep = req_json("/api/reports", method="POST", body={"target_type": "comment", "target_id": cid, "tariff_code": "§2.1"}, headers=hdr)
+                self.assertEqual(st_rep, 200)
+
+                st_pun, _ = req_json(
+                    "/api/admin/moderation/punish",
+                    method="POST",
+                    body={
+                        "report_id": d_rep["report"]["id"],
+                        "account_handle": "@TestServer",
+                        "content_excerpt": "Komentarz testowy REST",
+                        "tariff_code": "§2.1",
+                        "target_type": "comment",
+                        "target_id": cid,
+                        "outcome": "REJECTED",
+                    },
+                )
+                self.assertEqual(st_pun, 200)
+                st_mlog, d_mlog = req_json("/api/moderation/log")
+                self.assertEqual(st_mlog, 200)
+                self.assertTrue(any(row["account_handle"] == "@TestServer" and row["outcome"] == "REJECTED" for row in d_mlog["log"]))
+            finally:
+                srv.shutdown()
+                srv.server_close()
+                if old_tok is not None:
+                    os.environ["VERITY_ADMIN_TOKEN"] = old_tok
+                if old_guest_cd is None:
+                    os.environ.pop("VERITY_GUEST_CHAT_COOLDOWN", None)
+                else:
+                    os.environ["VERITY_GUEST_CHAT_COOLDOWN"] = old_guest_cd
 
 
 if __name__ == "__main__":

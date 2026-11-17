@@ -141,6 +141,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/tragiczny-wypadek-na-pasach-nie-zyje-znana-dzialaczka-ochotniczej/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Tragiczny wypadek na pasach. Nie żyje znana działaczka ochotniczej?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jak informuje Komenda Wojewódzka Państwowej Straży Pożarnej w Łodzi, zmarła to Małgorzata Pawlik – dyrektorka zarządu wojewódzkiego związku Ochotniczej Straży Pożarnej."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Poszkodowany został też były komendant powiatowy państwowej straży w Opocznie, Dariusz Polański."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -150,7 +180,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -165,8 +195,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -256,11 +292,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Łódzkie</span>
+              
               <time datetime="2026-11-14T08:45:28+01:00">14.11.2026, 08:45</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Tragiczny wypadek na pasach. Nie żyje znana działaczka ochotniczej straży, ranny były komendant</h1>
             <p class="article-lede">Tragiczny wypadek w Spale (Łódzkie). 55-letni kierowca potrącił przechodzące przez przejście dla pieszych dwie osoby. Kobieta zginęła na miejscu, mężczyzna został ranny.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Kierowcy i pasażerowie</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Zdarzenie i utrudnienia</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -290,6 +329,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny wypadek na pasach. Nie żyje znana działaczka ochotniczej straży, ranny były komendant</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: żyje, znana.</div><div><strong>Pomija:</strong> Pomija kontekst (tomaszowskim, Śmiertelny, zasłużonej) rozwijany w TVP3 Łódź, o2.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/lodz/spala-tragiczny-wypadek-na-przejsciu-dla-pieszych-nie-zyje-znana-dzialaczka-osp-ranny-byly-komendant-st9338695?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Łódź">
           <div class="perspective-head">
@@ -300,6 +340,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragedia w Spale. Zginęła dyrektor wojewódzkiego Związku OSP RP, ranny były komendant PSP</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Tragedia.</div><div><strong>Pomija:</strong> Pomija kontekst (działaczka, pasach, tomaszowskim) rozwijany w TVN24, o2.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radiolodz.pl/tragedia-w-spale-zginela-dyrektor-wojewodzkiego-zwiazku-osp-rp-ranny-byly-komendant-psp,687498/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Łódź" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Łódź">
           <div class="perspective-head">
@@ -310,6 +351,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny wypadek w Spale. Kobieta zginęła na przejściu dla pieszych</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wypadku, doszło, piątek.</div><div><strong>Pomija:</strong> Pomija kontekst (działaczka, pasach, Śmiertelny) rozwijany w TVN24, o2.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://lodz.tvp.pl/smiertelne-potracenie-pieszych-w-spale-nie-zyje-kobieta,96461918" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Łódź" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="o2.pl">
           <div class="perspective-head">
@@ -320,6 +362,7 @@
             </div>
           </div>
           <p class="perspective-summary">Śmiertelny wypadek w Spale. Zginęła działaczka OSP, ranny były komendant</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Śmiertelny.</div><div><strong>Pomija:</strong> Pomija kontekst (pasach, tomaszowskim, zasłużonej) rozwijany w TVN24, Fakt.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.o2.pl/informacje/smiertelny-wypadek-w-spale-zginela-dzialaczka-osp-ranny-byly-komendant-7350881039464480a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="o2.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Fakt.pl">
           <div class="perspective-head">
@@ -330,10 +373,12 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczna śmierć zasłużonej druhny. To stało się na pasach. &quot;Małgosiu, dziękujemy&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: śmierć, zasłużonej, druhny.</div><div><strong>Pomija:</strong> Pomija kontekst (działaczka, tomaszowskim, Śmiertelny) rozwijany w TVN24, o2.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.fakt.pl/wydarzenia/polska/lodz/spala-tragiczna-smierc-zasluzonej-druhny-to-stalo-sie-na-pasach/7m72236" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Fakt.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="5" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (5)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Tragiczny wypadek na pasach. Nie żyje znana działaczka ochotniczej?</summary><div class="faq-a">Jak informuje Komenda Wojewódzka Państwowej Straży Pożarnej w Łodzi, zmarła to Małgorzata Pawlik – dyrektorka zarządu wojewódzkiego związku Ochotniczej Straży Pożarnej.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Poszkodowany został też były komendant powiatowy państwowej straży w Opocznie, Dariusz Polański.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia.</div></details></section>
 
           
 
@@ -367,6 +412,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://tvn24.pl/lodz/spala-tragiczny-wypadek-na-przejsciu-dla-pieszych-nie-zyje-znana-dzialaczka-osp-ranny-byly-komendant-st9338695?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://radiolodz.pl/tragedia-w-spale-zginela-dyrektor-wojewodzkiego-zwiazku-osp-rp-ranny-byly-komendant-psp,687498/" target="_blank" rel="noopener noreferrer"><span>Radio Łódź</span><span>↗</span></a></li><li><a href="https://lodz.tvp.pl/smiertelne-potracenie-pieszych-w-spale-nie-zyje-kobieta,96461918" target="_blank" rel="noopener noreferrer"><span>TVP3 Łódź</span><span>↗</span></a></li><li><a href="https://www.o2.pl/informacje/smiertelny-wypadek-w-spale-zginela-dzialaczka-osp-ranny-byly-komendant-7350881039464480a" target="_blank" rel="noopener noreferrer"><span>o2.pl</span><span>↗</span></a></li><li><a href="https://www.fakt.pl/wydarzenia/polska/lodz/spala-tragiczna-smierc-zasluzonej-druhny-to-stalo-sie-na-pasach/7m72236" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:25" data-id="105255457">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/smiertelne-potracenie-przez-pociag-w-chechle-powazne-utrudnienia-na/" onclick="return openArticleLink(event, 105255457, '/Polska/Regiony/Lodzkie/smiertelne-potracenie-przez-pociag-w-chechle-powazne-utrudnienia-na')" tabindex="-1" aria-hidden="true">
@@ -409,7 +455,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -425,6 +471,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -435,6 +482,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Lodzkie/tragiczny-wypadek-na-pasach-nie-zyje-znana-dzialaczka-ochotniczej";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

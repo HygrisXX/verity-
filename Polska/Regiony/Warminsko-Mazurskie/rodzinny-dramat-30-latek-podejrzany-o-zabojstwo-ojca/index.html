@@ -123,6 +123,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/rodzinny-dramat-30-latek-podejrzany-o-zabojstwo-ojca/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Rodzinny dramat. 30-latek podejrzany o zabójstwo ojca?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Do tragedii doszło we wtorek, 10 listopada 2026 roku, w miejscowości Krzywe w gminie Mrągowo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "W jednym z domów na Mazurach policjanci znaleźli ciało 64-latka."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy Warmii i Mazur (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -132,7 +162,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -147,8 +177,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -238,11 +274,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Warmińsko-Mazurskie</span>
+              
               <time datetime="2026-11-14T03:03:30+01:00">14.11.2026, 03:03</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Rodzinny dramat. 30-latek podejrzany o zabójstwo ojca</h1>
             <p class="article-lede">Wstrząsające informacje spod Mrągowa. 30-latek jest podejrzewany o zabójstwo 64-letniego ojca. Rodzina zarzuca policjantom brak reakcji na wcześniejsze sygnały.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy Warmii i Mazur</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (3 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -272,6 +311,7 @@
             </div>
           </div>
           <p class="perspective-summary">Rodzinny dramat. 30-latek podejrzany o zabójstwo ojca</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: relacja wiodąca.</div><div><strong>Pomija:</strong> Pomija kontekst (Prokuratura, zgłoszeniem, agresywnego) rozwijany w TKO Olsztyn.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://olsztyn.tvp.pl/96441980/rodzinny-dramat-30-latek-podejrzany-o-zabojstwo-ojca" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Olsztyn" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TKO Olsztyn">
           <div class="perspective-head">
@@ -282,6 +322,7 @@
             </div>
           </div>
           <p class="perspective-summary">Syn z zarzutem zabójstwa ojca. Prokuratura ujawnia, co wydarzyło się w domu na Mazurach</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija kontekst (Wstrząsające, wcześniejsze, 64-letniego) rozwijany w TVP3 Olsztyn, Radio Olsztyn.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tko.pl/412908,2026,11,13,syn-z-zarzutem-zabojstwa-ojca-prokuratura-ujawnia-co-wydarzylo-sie-w-domu-na-mazurach" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TKO Olsztyn" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Olsztyn">
           <div class="perspective-head">
@@ -292,10 +333,12 @@
             </div>
           </div>
           <p class="perspective-summary">Tragedia pod Mrągowem. 30-latek usłyszał zarzut zabójstwa</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija kontekst (Prokuratura, zgłoszeniem, agresywnego) rozwijany w TKO Olsztyn.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radioolsztyn.pl/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/01901089" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Olsztyn" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Rodzinny dramat. 30-latek podejrzany o zabójstwo ojca?</summary><div class="faq-a">Do tragedii doszło we wtorek, 10 listopada 2026 roku, w miejscowości Krzywe w gminie Mrągowo.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">W jednym z domów na Mazurach policjanci znaleźli ciało 64-latka.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy Warmii i Mazur (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła).</div></details></section>
 
           
 
@@ -329,6 +372,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://olsztyn.tvp.pl/96441980/rodzinny-dramat-30-latek-podejrzany-o-zabojstwo-ojca" target="_blank" rel="noopener noreferrer"><span>TVP3 Olsztyn</span><span>↗</span></a></li><li><a href="https://tko.pl/412908,2026,11,13,syn-z-zarzutem-zabojstwa-ojca-prokuratura-ujawnia-co-wydarzylo-sie-w-domu-na-mazurach" target="_blank" rel="noopener noreferrer"><span>TKO Olsztyn</span><span>↗</span></a></li><li><a href="https://radioolsztyn.pl/tragedia-pod-mragowem-30-latek-uslyszal-zarzut-zabojstwa/01901089" target="_blank" rel="noopener noreferrer"><span>Radio Olsztyn</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:140" data-id="1754468358">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Warminsko-Mazurskie/dachowanie-samochodu-piec-osob-trafilo-do-szpitala/" onclick="return openArticleLink(event, 1754468358, '/Polska/Regiony/Warminsko-Mazurskie/dachowanie-samochodu-piec-osob-trafilo-do-szpitala')" tabindex="-1" aria-hidden="true">
@@ -371,7 +415,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -387,6 +431,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -397,6 +442,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Warminsko-Mazurskie/rodzinny-dramat-30-latek-podejrzany-o-zabojstwo-ojca";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

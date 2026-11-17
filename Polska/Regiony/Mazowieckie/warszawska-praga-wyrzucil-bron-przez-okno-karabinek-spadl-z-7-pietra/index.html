@@ -132,6 +132,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Okazało się, że 30-latek, który go wyrzucił, miał tego dnia na koncie coś jeszcze, a cała historia skończyła się na ul."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "30-letni mieszkaniec Pragi-Północ w ciągu jednego dnia dokonał wykroczeń i przestępstw, za które może trafić za kratki nawet na 5 lat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (4 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -141,7 +171,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -156,8 +186,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -247,11 +283,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Mazowieckie</span>
+              
               <time datetime="2026-11-13T08:52:16+01:00">13.11.2026, 08:52</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia</h1>
             <p class="article-lede">Na warszawskiej Pradze na idącego chodnikiem 49-latka spadł z dużej wysokości karabinek przypominający broń pneumatyczną. Mężczyzna z obrażeniami nogi trafił do szpitala. Policjanci szybko ustalili, z którego okna wyleciał przedmiot.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Pacjenci, pracownicy i usługi</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (4 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -281,6 +320,7 @@
             </div>
           </div>
           <p class="perspective-summary">Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra prosto na przechodnia</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Praga, spadł, Pradze.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 lat) przytaczane przez TVP3 Warszawa.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://warszawawpigulce.pl/wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto-na-przechodnia/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Warszawa w Pigułce" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Interia Wydarzenia">
           <div class="perspective-head">
@@ -291,6 +331,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wyrzucił karabinek przez okno i uciekł. Niebezpieczny incydent w Warszawie</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Niebezpieczny, incydent, namierzyła.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 lat) przytaczane przez TVP3 Warszawa.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wydarzenia.interia.pl/mazowieckie/news-wyrzucil-karabinek-przez-okno-i-uciekl-niebezpieczny-incyden,nId,23572890" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Wydarzenia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -301,6 +342,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wyrzucił przez okno karabinek i uciekł. Broń raniła przypadkową osobę</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: raniła, przypadkową, osobę.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 lat) przytaczane przez TVP3 Warszawa.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96452334/pijany-30-latek-wyrzucil-z-mieszkania-na-siodmym-pietrze-na-pradze-polnoc-w-warszawie-karabinek-bron-spadla-na-przypadkowego-przechodnia-pijany-sprawca-uciekl-autem" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Warszawa">
           <div class="perspective-head">
@@ -311,10 +353,12 @@
             </div>
           </div>
           <p class="perspective-summary">Wyrzucił broń z siódmego piętra prosto na przechodnia. Szalony rajd zakończył w areszcie</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (5 lat) oraz wątki: siódmego, Szalony.</div><div><strong>Pomija:</strong> Pomija kontekst (Warszawska, Policjanci, uciekł) rozwijany w Warszawa w Pigułce, Interia Wydarzenia.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://warszawa.tvp.pl/96453955/mezczyzna-zraniony-zrzuconym-z-siodmego-pietra-karabinkiem-szokujacy-rajd-pijanego-kierowcy" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Warszawa" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Warszawska Praga: wyrzucił broń przez okno. Karabinek spadł z 7. piętra?</summary><div class="faq-a">Okazało się, że 30-latek, który go wyrzucił, miał tego dnia na koncie coś jeszcze, a cała historia skończyła się na ul.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">30-letni mieszkaniec Pragi-Północ w ciągu jednego dnia dokonał wykroczeń i przestępstw, za które może trafić za kratki nawet na 5 lat.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (4 źródła).</div></details></section>
 
           
 
@@ -348,6 +392,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://warszawawpigulce.pl/wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra-prosto-na-przechodnia/" target="_blank" rel="noopener noreferrer"><span>Warszawa w Pigułce</span><span>↗</span></a></li><li><a href="https://wydarzenia.interia.pl/mazowieckie/news-wyrzucil-karabinek-przez-okno-i-uciekl-niebezpieczny-incyden,nId,23572890" target="_blank" rel="noopener noreferrer"><span>Interia Wydarzenia</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96452334/pijany-30-latek-wyrzucil-z-mieszkania-na-siodmym-pietrze-na-pradze-polnoc-w-warszawie-karabinek-bron-spadla-na-przypadkowego-przechodnia-pijany-sprawca-uciekl-autem" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li><li><a href="https://warszawa.tvp.pl/96453955/mezczyzna-zraniony-zrzuconym-z-siodmego-pietra-karabinkiem-szokujacy-rajd-pijanego-kierowcy" target="_blank" rel="noopener noreferrer"><span>TVP3 Warszawa</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:225" data-id="354123906">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Mazowieckie/rachunki-za-prad-moga-byc-nizsze-wystarczy-sprawdzic-jedna-rzecz-w-domu/" onclick="return openArticleLink(event, 354123906, '/Polska/Regiony/Mazowieckie/rachunki-za-prad-moga-byc-nizsze-wystarczy-sprawdzic-jedna-rzecz-w-domu')" tabindex="-1" aria-hidden="true">
@@ -390,7 +435,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -406,6 +451,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -416,6 +462,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Mazowieckie/warszawska-praga-wyrzucil-bron-przez-okno-karabinek-spadl-z-7-pietra";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

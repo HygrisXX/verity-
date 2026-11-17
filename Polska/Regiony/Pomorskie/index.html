@@ -78,7 +78,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -93,8 +93,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -183,7 +189,7 @@
           <h1>Pomorze (pomorskie)</h1>
         </div>
         <span>5 opracowań</span>
-      </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">121</span></a><a class="region-pill has-items" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">12</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">7</span></a><a class="region-pill active has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">8</span></a></nav><article class="cat lead-wrap" style="--h:200">
+      </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">122</span></a><a class="region-pill has-items" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">10</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">12</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">7</span></a><a class="region-pill active has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">8</span></a></nav><article class="cat lead-wrap" style="--h:200">
       <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 1667418350, '/Polska/Regiony/Pomorskie/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni')">
         <a class="lead-thumb-wrap" href="../../../Polska/Regiony/Pomorskie/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni/" onclick="return openArticleLink(event, 1667418350, '/Polska/Regiony/Pomorskie/nocny-pozar-pustostanu-w-leborku-dwaj-strazacy-zostali-ranni')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Pomorskie</span><span class="thumb-fallback-mark">V</span></div>
@@ -276,7 +282,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -292,6 +298,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -302,6 +309,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_PATH="/Polska/Regiony/Pomorskie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

@@ -60,7 +60,7 @@
         "@type": "ListItem",
         "position": 4,
         "url": "https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc/",
-        "name": "Służby szykują się do akcji „Zima”. Kolejne miasto zgłasza gotowość!"
+        "name": "Drogowcy w gotowości. Akcja zima w Rybniku przygotowana na 100 procent"
       },
       {
         "@type": "ListItem",
@@ -114,7 +114,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -129,8 +129,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -219,7 +225,7 @@
           <h1>Śląsk (śląskie)</h1>
         </div>
         <span>11 opracowań</span>
-      </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">121</span></a><a class="region-pill has-items" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">12</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">5</span></a><a class="region-pill active has-items" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">8</span></a></nav><article class="cat lead-wrap" style="--h:245">
+      </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">122</span></a><a class="region-pill has-items" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">10</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">12</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">5</span></a><a class="region-pill active has-items" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">9</span></a><a class="region-pill has-items" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">5</span></a><a class="region-pill has-items" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">8</span></a></nav><article class="cat lead-wrap" style="--h:245">
       <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 1009589771, '/Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja')">
         <a class="lead-thumb-wrap" href="../../../Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja/" onclick="return openArticleLink(event, 1009589771, '/Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Śląskie</span><span class="thumb-fallback-mark">V</span></div>
@@ -275,12 +281,12 @@
         <a class="card-media-link" href="../../../Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc/" onclick="return openArticleLink(event, 762889578, '/Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Śląskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://s8.tvp.pl/images2/8/8/5/uid_8851ec188ed142dda2895e1778d67f77_width_900_play_0_pos_0_gs_0_height_506.jpg" alt="Służby szykują się do akcji „Zima”. Kolejne miasto zgłasza gotowość!" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://s8.tvp.pl/images2/8/8/5/uid_8851ec188ed142dda2895e1778d67f77_width_900_play_0_pos_0_gs_0_height_506.jpg" alt="Drogowcy w gotowości. Akcja zima w Rybniku przygotowana na 100 procent" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Śląskie</span><span class="story-date">15.11.2026, 09:44</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc/" onclick="return openArticleLink(event, 762889578, '/Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc')">Służby szykują się do akcji „Zima”. Kolejne miasto zgłasza gotowość!</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc/" onclick="return openArticleLink(event, 762889578, '/Polska/Regiony/Slaskie/sluzby-szykuja-sie-do-akcji-zima-kolejne-miasto-zglasza-gotowosc')">Drogowcy w gotowości. Akcja zima w Rybniku przygotowana na 100 procent</a></h2>
           <p class="story-lede">Zima coraz bliżej, a gliwickie służby szykują się do walki ze śniegiem i oblodzeniem! W gotowości są ekipy odpowiedzialne za odśnieżanie i posypywanie ulic, chodników oraz przystanków.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Slaskie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
@@ -350,8 +356,8 @@
           <div class="story-top"><span class="cat-badge">Śląskie</span><span class="story-date">14.11.2026, 14:39</span></div>
           <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Regiony/Slaskie/miliony-w-grze-czestochowa-zarobi-na-pielgrzymach/" onclick="return openArticleLink(event, 723747974, '/Polska/Regiony/Slaskie/miliony-w-grze-czestochowa-zarobi-na-pielgrzymach')">Miliony w grze. Częstochowa zarobi na pielgrzymach?</a></h2>
           <p class="story-lede">Komisarz Częstochowy Łukasz Pabiś zdecyduje, czy od 1 stycznia 2027 r. w mieście zacznie obowiązywać opłata miejscowa, nazywana w lokalnej debacie &quot;pielgrzymkową&quot;.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">6 redakcji</span><span class="chip" title="Kategoria">/Polska/Regiony/Slaskie</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>6 źródeł · 2 min</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">5 redakcji</span><span class="chip" title="Kategoria">/Polska/Regiony/Slaskie</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>5 źródeł · 1 min</span></div>
         </div>
       </div>
     </article>
@@ -414,7 +420,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -430,6 +436,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -440,6 +447,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_PATH="/Polska/Regiony/Slaskie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

@@ -54,7 +54,7 @@
         "@type": "ListItem",
         "position": 3,
         "url": "https://hygrisxx.github.io/verity-/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/",
-        "name": "Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera"
+        "name": "Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera (1,6 proc.)"
       },
       {
         "@type": "ListItem",
@@ -90,7 +90,7 @@
         "@type": "ListItem",
         "position": 9,
         "url": "https://hygrisxx.github.io/verity-/Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach/",
-        "name": "Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach \"podpisali się\" zmarli"
+        "name": "Nie będzie referendum w Gliwicach. Na listach dane 245 zmarłych osób (10 proc)"
       },
       {
         "@type": "ListItem",
@@ -102,7 +102,7 @@
         "@type": "ListItem",
         "position": 11,
         "url": "https://hygrisxx.github.io/verity-/Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co/",
-        "name": "Spór o Trybunał Konstytucyjny. Święczkowski nakazuje pracę poza siedzibą TK"
+        "name": "Spór o Trybunał Konstytucyjny. Święczkowski nakazuje pracę poza siedzibą TK (2015 r.)"
       },
       {
         "@type": "ListItem",
@@ -120,7 +120,7 @@
         "@type": "ListItem",
         "position": 14,
         "url": "https://hygrisxx.github.io/verity-/Polska/Polityka/morawiecki-o-kluczowej-decyzji-ws-wyborow-mamy-zupelnie-inne-podejscie/",
-        "name": "Morawiecki o kluczowej decyzji ws. wyborów. \"Mamy zupełnie inne podejście\""
+        "name": "Wybory parlamentarne 2027. Morawiecki podjął kluczową decyzję"
       },
       {
         "@type": "ListItem",
@@ -138,7 +138,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -153,8 +153,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -282,12 +288,12 @@
         <a class="card-media-link" href="../../Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/" onclick="return openArticleLink(event, 513911660, '/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://files.niezalezna.tech/images/upload/2026/11/14/n_0ee5dbda7510dde52c3045cf10a2b8a4b29d9a623cb021380e267b244340ff2b_c.jpg?r=750,400" alt="Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://files.niezalezna.tech/images/upload/2026/11/14/n_0ee5dbda7510dde52c3045cf10a2b8a4b29d9a623cb021380e267b244340ff2b_c.jpg?r=750,400" alt="Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera (1,6 proc.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">14.11.2026, 19:38</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/" onclick="return openArticleLink(event, 513911660, '/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera')">Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/" onclick="return openArticleLink(event, 513911660, '/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera')">Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera (1,6 proc.)</a></h2>
           <p class="story-lede">W sondażach Polska 2050 dostaje od niespełna 1 do 1,6 proc. poparcia. Mimo to, Rada Krajowa ugrupowania przyjęła w sobotę kalendarz wyborów nowego przewodniczącego.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:96%"></span></span>96% zgodności</span><span>3 źródła · 1 min</span></div>
@@ -340,8 +346,8 @@
           <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">14.11.2026, 14:39</span></div>
           <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/premier-wskazuje-skutki-weta-ofiarami-polskie-dzieci/" onclick="return openArticleLink(event, 1560522331, '/Polska/Polityka/premier-wskazuje-skutki-weta-ofiarami-polskie-dzieci')">Premier wskazuje skutki weta. „Ofiarami polskie dzieci”</a></h2>
           <p class="story-lede">W piątkowy wieczór na placu Bolesława Chrobrego w Bielsku-Białej odbył się wiec poparcia dla prezydenta Karola Nawrockiego.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">28 redakcji</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>28 źródeł · 4 min</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">27 redakcji</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>27 źródeł · 3 min</span></div>
         </div>
       </div>
     </article>
@@ -384,12 +390,12 @@
         <a class="card-media-link" href="../../Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach/" onclick="return openArticleLink(event, 31889682, '/Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://tvn24.pl/najnowsze/cdn-zdjecie-7268385-gliwice-ph8620718/alternates/LANDSCAPE_1280" alt="Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach &quot;podpisali się&quot; zmarli" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://tvn24.pl/najnowsze/cdn-zdjecie-7268385-gliwice-ph8620718/alternates/LANDSCAPE_1280" alt="Nie będzie referendum w Gliwicach. Na listach dane 245 zmarłych osób (10 proc)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">14.11.2026, 03:44</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach/" onclick="return openArticleLink(event, 31889682, '/Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach')">Zawiadomienie do prokuratury zamiast referendum w Gliwicach. Na listach &quot;podpisali się&quot; zmarli</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach/" onclick="return openArticleLink(event, 31889682, '/Polska/Polityka/zawiadomienie-do-prokuratury-zamiast-referendum-w-gliwicach-na-listach')">Nie będzie referendum w Gliwicach. Na listach dane 245 zmarłych osób (10 proc)</a></h2>
           <p class="story-lede">O odrzuceniu wniosku o referendum poinformowała w piątek delegatura Krajowego Biura Wyborczego w Katowicach.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
@@ -418,15 +424,15 @@
         <a class="card-media-link" href="../../Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co/" onclick="return openArticleLink(event, 814134826, '/Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/ZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRz/L0ZPQjAwMDAwMDAwMDAwMDc3MDE5NjkvZmlsZXMvcG/9vZHd5emtpLTM5MzE4NTY1LmpwZyIsInciOjM4NDB9" alt="Spór o Trybunał Konstytucyjny. Święczkowski nakazuje pracę poza siedzibą TK" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/ZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRz/L0ZPQjAwMDAwMDAwMDAwMDc3MDE5NjkvZmlsZXMvcG/9vZHd5emtpLTM5MzE4NTY1LmpwZyIsInciOjM4NDB9" alt="Spór o Trybunał Konstytucyjny. Święczkowski nakazuje pracę poza siedzibą TK (2015 r.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">13.11.2026, 23:37</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co/" onclick="return openArticleLink(event, 814134826, '/Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co')">Spór o Trybunał Konstytucyjny. Święczkowski nakazuje pracę poza siedzibą TK</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co/" onclick="return openArticleLink(event, 814134826, '/Polska/Polityka/gorace-spory-o-trybunal-konstytucyjny-czy-o-co')">Spór o Trybunał Konstytucyjny. Święczkowski nakazuje pracę poza siedzibą TK (2015 r.)</a></h2>
           <p class="story-lede">Z takim pytaniem zwróciliśmy się do mecenasa Jacka Kozioła z Łomży (drugie pokolenie znanych adwokatów łomżyńskich; syn senatora RP Lecha Kozioła 1939 – 2016).</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">8 redakcji</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>8 źródeł · 2 min</span></div>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">7 redakcji</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>7 źródeł · 1 min</span></div>
         </div>
       </div>
     </article>
@@ -472,7 +478,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -488,6 +494,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -498,6 +505,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_PATH="/Polska/Polityka";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

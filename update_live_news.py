@@ -29,6 +29,9 @@ if _THIS_DIR not in sys.path:
     sys.path.insert(0, _THIS_DIR)
 
 import seo_builder  # noqa: E402
+import ai_synthesizer  # noqa: E402
+
+_ACTIVE_COST_GUARD = None
 
 MAX_TOTAL_ARTICLES = 300
 MAX_NEW_PER_RUN = 6
@@ -227,7 +230,9 @@ for _f in LIVE_RSS_FEEDS:
     if _f["name"] not in OUTLET_DEFAULT_PATH:
         OUTLET_DEFAULT_PATH[_f["name"]] = _f["path"]
 
-BLACKLIST = {"oko.press", "demagog.org.pl"}
+BLACKLIST = {"oko.press", "demagog.org.pl", "konkret24.tvn24.pl"}
+BLACKLIST_EVIDENCE_DOMAINS = ("oko.press", "demagog.org.pl", "konkret24")
+EDITORIAL_STATE_FILENAME = "editorial_state.json"
 
 PREFERRED_PRIMARY_OUTLETS = {
     "Rzeczpospolita", "Bankier.pl", "Money.pl", "WNP.pl", "300Gospodarka",
@@ -2930,6 +2935,435 @@ def _metrics_for_article(sources: list, path: str, primary_outlet: str) -> list:
     ]
 
 
+_ZERO_TRUST_GOV_RE = re.compile(
+    r"\b(?:rząd\w*|ministerstw\w*|minist(?:er|ra|rowi|rem)\b|premier\w*|resort\w*|kancelari\w*\s+premiera|"
+    r"koalicj\w*\s+rząd\w*|projekt\w*\s+ustaw\w*|budżet\w*\s+państwa|deficyt\w*|dług\w*\s+publiczn\w*|finans\w*\s+publiczn\w*)\b",
+    re.IGNORECASE,
+)
+
+_ZERO_TRUST_DATA_RE = re.compile(
+    r"\b(?:nbp\b|narodow\w+\s+bank\w*|rpp\b|rad\w+\s+polityki\s+pieniężn\w*|gus\b|główn\w+\s+urz\w+\s+statystyczn\w*|"
+    r"nik\b|najwyższ\w+\s+izb\w+\s+kontrol\w*|bgk\b|ure\b|prezes\w*\s+ure|eurostat\w*|mfw\b|"
+    r"ekonomi(?:ści|stów|sta)|anality(?:cy|ków)|indeks\w*\s+wiarygodności\s+ekonomiczn\w*|"
+    r"mechanizm\w*\s+rynkow\w*|rekompensat\w*|nadzwyczajn\w+\s+(?:strat\w*|zysk\w*)|windfall\s+tax|"
+    r"podat(?:ek|ku)\s+od\s+(?:zysków|nadzwyczajnych))\b",
+    re.IGNORECASE,
+)
+
+_ZERO_TRUST_DISPUTE_RE = re.compile(
+    r"\b(?:spór\b|spor[uó]|rozbieżnoś\w*|wbrew\b|jednak\s+dane|natomiast\s+dane|nadzwyczajn\w+\s+strat\w*|"
+    r"zamrożeni\w*\s+cen\s+gazu|mechanizm\w*\s+rynkow\w*|rekompensat\w*\s+ma\s+kosztować|kto\s+zapłaci\s+rachunek|"
+    r"pozabudżetow\w*|ukryt\w*\s+dług\w*|odkładani\w*\s+reform\s+finansów\s+publicznych|poważne\s+problemy\s+finansów\s+publicznych)\b",
+    re.IGNORECASE,
+)
+
+_EVIDENCE_URL_RE = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", re.IGNORECASE)
+
+
+def evaluate_zero_trust_article(art: dict) -> tuple:
+    """
+    Ocenia artykuł według reguły Zero-Trust (Krok 5):
+    Wstrzymuje publikację (status PENDING_ADMIN), gdy temat w działach krajowych/gospodarczych/energetycznych/politycznych
+    dotyczy sporu lub rozbieżności między komunikatem rządowym/resortowym a twardymi danymi rynkowymi/instytucjonalnymi
+    (NBP, GUS, NIK, URE, BGK, ekonomiści, nadzwyczajne straty/podatki).
+    Zwraca krotkę: (status, zero_trust_reason, suggested_admin_note).
+    """
+    path = (art.get("path") or "").strip()
+    sources = art.get("sources") or []
+    if path not in ("/Polska/Gospodarka", "/Polska/Polityka", "/Polska/Energetyka", "/Polska") or len(sources) < 2:
+        return "AUTO_PUBLISHED", "", ""
+
+    blob = " ".join([
+        art.get("seo_title") or "",
+        art.get("summary_lead") or "",
+        " ".join((p.get("summary") or "") for p in (art.get("perspectives") or [])),
+        " ".join(par for s in (art.get("full_sections") or []) for par in (s.get("paragraphs") or [])),
+    ])
+    if not (_ZERO_TRUST_GOV_RE.search(blob) and _ZERO_TRUST_DATA_RE.search(blob) and _ZERO_TRUST_DISPUTE_RE.search(blob)):
+        return "AUTO_PUBLISHED", "", ""
+
+    low_blob = blob.lower()
+    if "zamrożeni" in low_blob and "gaz" in low_blob:
+        reason = "Wstrzymano (Zero-Trust): Komunikat rządowy o zamrożeniu taryf gazu vs. rynkowy koszt rekompensat (URE / budżet)."
+        suggested_note = (
+            "Weryfikacja redakcyjna: Zamrożenie stawki taryfowej na poziomie 197,27 zł/MWh nie oznacza spadku rynkowego kosztu "
+            "surowca — koszt mechanizmu rekompensat oszacowano na ok. 6,2 mld zł."
+        )
+    elif "orlen" in low_blob and ("podat" in low_blob or "windfall" in low_blob or "strat" in low_blob):
+        reason = "Wstrzymano (Zero-Trust): Spór resortu i rządu o podatek od nadzwyczajnych zysków vs. dane finansowe i historyczne nakłady spółki."
+        suggested_note = (
+            "Weryfikacja redakcyjna: Stanowisko resortu energii zestawia bieżące marże rafineryjne z historycznymi nakładami "
+            "inwestycyjnymi Orlenu (ok. 5 mld USD inwestycji wobec 1 mld USD skumulowanego wyniku)."
+        )
+    elif "finansów publicznych" in low_blob or "deficyt" in low_blob or "pozabudżetow" in low_blob:
+        reason = "Wstrzymano (Zero-Trust): Rozbieżność między deklaracjami wzrostu gospodarczego a danymi o deficycie i długu pozabudżetowym."
+        suggested_note = (
+            "Weryfikacja redakcyjna: Eksperci i dane instytucjonalne wskazują, że bieżący wzrost PKB współwystępuje z wysokim "
+            "deficytem oraz wydatkami w funduszach pozabudżetowych wymagającymi korekty fiskalnej."
+        )
+    else:
+        reason = "Wstrzymano (Zero-Trust): Wykryto rozbieżność między komunikatem rządowym/resortowym a twardymi danymi rynkowymi lub instytucjonalnymi (NBP / GUS / NIK / ekonomiści)."
+        suggested_note = (
+            "Weryfikacja redakcyjna: Zestawiono oficjalne stanowisko rządowe z danymi instytucjonalnymi i rynkowymi — "
+            "szczegółowe wyliczenia poszczególnych redakcji poniżej."
+        )
+    return "PENDING_ADMIN", reason, suggested_note
+
+
+def validate_evidence_submission(claim_text: str, evidence_url: str) -> tuple:
+    """
+    Waliduje zgłoszenie korekty czytelnika w systemie „Mówisz, że nieprawda? Pokaż dowód (link)!” (Krok 7).
+    Wymaga poprawnego adresu URL (http/https), odrzuca domeny z czarnej listy i zbyt krótkie opisy.
+    """
+    clean_claim = re.sub(r"\s+", " ", (claim_text or "").strip())
+    clean_url = (evidence_url or "").strip()
+    if not _EVIDENCE_URL_RE.match(clean_url):
+        return False, "Wymagany jest poprawny adres URL (https://...) do dokumentu, komunikatu lub danych źródłowych."
+    low_url = clean_url.lower()
+    if any(bad in low_url for bad in BLACKLIST_EVIDENCE_DOMAINS):
+        return (
+            False,
+            "Zgodnie z regułą Zero-Trust nie akceptujemy linków do zewnętrznych portali fact-checkingowych — podaj bezpośredni link do dokumentu lub danych pierwotnych.",
+        )
+    if len(clean_claim) < 15:
+        return False, "Opisz przynajmniej jednym pełnym zdaniem (min. 15 znaków), czego dotyczy korekta faktograficzna."
+    if len(clean_claim) > 600:
+        return False, "Opis korekty nie może przekraczać 600 znaków."
+    return True, "OK"
+
+
+def _default_editorial_state() -> dict:
+    return {
+        "updated_iso": datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00"),
+        "article_decisions": {},
+        "rejected_keys": [],
+        "reader_corrections": [],
+    }
+
+
+def load_editorial_state(base_dir: str | None = None) -> dict:
+    target_dir = base_dir or _THIS_DIR
+    state_path = os.path.join(target_dir, EDITORIAL_STATE_FILENAME)
+    state = _default_editorial_state()
+    if os.path.isfile(state_path):
+        try:
+            with open(state_path, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+            if isinstance(loaded, dict):
+                if isinstance(loaded.get("article_decisions"), dict):
+                    state["article_decisions"] = loaded["article_decisions"]
+                if isinstance(loaded.get("rejected_keys"), list):
+                    state["rejected_keys"] = [str(k) for k in loaded["rejected_keys"] if k]
+                if isinstance(loaded.get("reader_corrections"), list):
+                    state["reader_corrections"] = [c for c in loaded["reader_corrections"] if isinstance(c, dict)]
+                if loaded.get("updated_iso"):
+                    state["updated_iso"] = str(loaded["updated_iso"])
+        except Exception as e:
+            print(f"[WARN] Nie udało się odczytać {state_path}: {e}", file=sys.stderr)
+    return state
+
+
+def save_editorial_state(state: dict, base_dir: str | None = None) -> dict:
+    target_dir = base_dir or _THIS_DIR
+    state_path = os.path.join(target_dir, EDITORIAL_STATE_FILENAME)
+    state["updated_iso"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
+    state.setdefault("article_decisions", {})
+    state.setdefault("rejected_keys", [])
+    state.setdefault("reader_corrections", [])
+    with open(state_path, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+    return state
+
+
+def apply_editorial_state_to_articles(articles: list, state: dict | None = None, base_dir: str | None = None) -> list:
+    """
+    Nakłada trwałe decyzje Admina (zatwierdzenia, noty weryfikacyjne, odrzucenia) oraz zgłoszenia korekt czytelników
+    z pliku editorial_state.json na listę artykułów, a dla nowych tematów wrażliwych uruchamia regułę Zero-Trust.
+    """
+    if state is None:
+        state = load_editorial_state(base_dir)
+    decisions = state.get("article_decisions") or {}
+    rejected_set = set(state.get("rejected_keys") or [])
+    for k, dec in decisions.items():
+        if isinstance(dec, dict) and dec.get("status") == "REJECTED":
+            rejected_set.add(k)
+
+    reader_corrs = state.get("reader_corrections") or []
+    result = []
+    for art in articles or []:
+        seo_url = (art.get("seo_url") or "").rstrip("/")
+        aid_str = str(art.get("id") or "")
+        norm_t = _norm_pl(art.get("seo_title") or "").strip()
+        if (seo_url and seo_url in rejected_set) or (aid_str and aid_str in rejected_set) or (norm_t and norm_t in rejected_set):
+            continue
+
+        zt_status, zt_reason, zt_note = evaluate_zero_trust_article(art)
+        dec = decisions.get(seo_url) or decisions.get(aid_str) or (decisions.get(norm_t) if norm_t else None)
+
+        if isinstance(dec, dict):
+            dec_status = dec.get("status") or "AUTO_PUBLISHED"
+            if dec_status == "REJECTED":
+                continue
+            art["status"] = dec_status
+            if "admin_note" in dec:
+                art["admin_note"] = dec.get("admin_note") or ""
+            art["zero_trust_reason"] = dec.get("zero_trust_reason") or art.get("zero_trust_reason") or zt_reason
+        else:
+            if zt_status == "PENDING_ADMIN" or art.get("status") == "PENDING_ADMIN":
+                art["status"] = "PENDING_ADMIN"
+                art["zero_trust_reason"] = art.get("zero_trust_reason") or zt_reason
+                if not art.get("admin_note"):
+                    art["admin_note"] = zt_note
+            else:
+                art["status"] = "AUTO_PUBLISHED"
+                art["zero_trust_reason"] = art.get("zero_trust_reason") or ""
+
+        # Synchronizuj korekty czytelników (zachowując schemat {"claim_text", "evidence_url"} w art["corrections"])
+        existing_corrs = list(art.get("corrections") or [])
+        rejected_urls_claims = set()
+        approved_or_pending_for_art = []
+        for rc in reader_corrs:
+            rc_url_key = (rc.get("seo_url") or "").rstrip("/")
+            rc_id_key = str(rc.get("article_id") or "")
+            if (seo_url and rc_url_key == seo_url) or (aid_str and rc_id_key == aid_str):
+                pair = ((rc.get("claim_text") or "").strip(), (rc.get("evidence_url") or "").strip())
+                if rc.get("status") == "REJECTED":
+                    rejected_urls_claims.add(pair)
+                elif pair[0] and pair[1]:
+                    approved_or_pending_for_art.append({"claim_text": pair[0], "evidence_url": pair[1]})
+
+        filtered_corrs = []
+        seen_pairs = set()
+        for c in existing_corrs:
+            pair = ((c.get("claim_text") or "").strip(), (c.get("evidence_url") or "").strip())
+            if not pair[0] or not pair[1] or pair in rejected_urls_claims or pair in seen_pairs:
+                continue
+            seen_pairs.add(pair)
+            filtered_corrs.append({"claim_text": pair[0], "evidence_url": pair[1]})
+
+        for c in approved_or_pending_for_art:
+            pair = (c["claim_text"], c["evidence_url"])
+            if pair not in seen_pairs and pair not in rejected_urls_claims:
+                seen_pairs.add(pair)
+                filtered_corrs.append(c)
+
+        art["corrections"] = filtered_corrs[-10:]
+        result.append(art)
+
+    return result
+
+
+def _persist_articles_and_seo(base_dir: str, articles: list, rebuild_seo: bool = True):
+    articles_path = os.path.join(base_dir, "articles.json")
+    with open(articles_path, "w", encoding="utf-8") as f:
+        json.dump(articles, f, ensure_ascii=False, indent=2)
+    if rebuild_seo:
+        seo_builder.build_all_seo_artifacts(base_dir, articles)
+    else:
+        index_items = seo_builder.build_articles_index(articles)
+        with open(os.path.join(base_dir, "articles-index.json"), "w", encoding="utf-8") as f:
+            json.dump(index_items, f, ensure_ascii=False, separators=(",", ":"))
+
+
+def admin_approve_article(
+    base_dir: str = _THIS_DIR,
+    article_id: int | None = None,
+    seo_url: str = "",
+    admin_note: str = "",
+    rebuild_seo: bool = True,
+) -> dict:
+    """Zatwierdza artykuł z kolejki PENDING_ADMIN na stałe w editorial_state.json i articles.json."""
+    state = load_editorial_state(base_dir)
+    articles_path = os.path.join(base_dir, "articles.json")
+    with open(articles_path, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+    clean_note = (admin_note or "").strip()
+    now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
+    target_art = None
+    norm_seo = (seo_url or "").rstrip("/")
+
+    for a in articles:
+        if (article_id is not None and int(a.get("id") or 0) == int(article_id)) or (
+            norm_seo and (a.get("seo_url") or "").rstrip("/") == norm_seo
+        ):
+            target_art = a
+            break
+
+    if target_art is None:
+        raise ValueError(f"Nie znaleziono artykułu (id={article_id}, seo_url={seo_url}).")
+
+    art_key = (target_art.get("seo_url") or "").rstrip("/") or str(target_art.get("id"))
+    target_art["status"] = "AUTO_PUBLISHED"
+    target_art["admin_note"] = clean_note
+    target_art["updated_iso"] = now_iso
+
+    state["article_decisions"][art_key] = {
+        "status": "AUTO_PUBLISHED",
+        "admin_note": clean_note,
+        "zero_trust_reason": target_art.get("zero_trust_reason") or "",
+        "decided_iso": now_iso,
+    }
+    if art_key in state["rejected_keys"]:
+        state["rejected_keys"].remove(art_key)
+
+    save_editorial_state(state, base_dir)
+    _persist_articles_and_seo(base_dir, articles, rebuild_seo=rebuild_seo)
+    return {"ok": True, "article": target_art, "editorial_state": state}
+
+
+def admin_reject_article(
+    base_dir: str = _THIS_DIR,
+    article_id: int | None = None,
+    seo_url: str = "",
+    rebuild_seo: bool = True,
+) -> dict:
+    """Odrzuca artykuł na stałe w editorial_state.json i usuwa go z articles.json."""
+    state = load_editorial_state(base_dir)
+    articles_path = os.path.join(base_dir, "articles.json")
+    with open(articles_path, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+    now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
+    norm_seo = (seo_url or "").rstrip("/")
+    removed_art = None
+    kept_articles = []
+
+    for a in articles:
+        match_id = article_id is not None and int(a.get("id") or 0) == int(article_id)
+        match_url = bool(norm_seo and (a.get("seo_url") or "").rstrip("/") == norm_seo)
+        if match_id or match_url:
+            removed_art = a
+        else:
+            kept_articles.append(a)
+
+    art_key = norm_seo or (
+        (removed_art.get("seo_url") or "").rstrip("/") if removed_art else (str(article_id) if article_id else "")
+    )
+    if not art_key:
+        raise ValueError("Wymagane id lub seo_url artykułu do odrzucenia.")
+
+    state["article_decisions"][art_key] = {
+        "status": "REJECTED",
+        "admin_note": "",
+        "decided_iso": now_iso,
+    }
+    if art_key not in state["rejected_keys"]:
+        state["rejected_keys"].append(art_key)
+
+    save_editorial_state(state, base_dir)
+    _persist_articles_and_seo(base_dir, kept_articles, rebuild_seo=rebuild_seo)
+    return {"ok": True, "removed_key": art_key, "editorial_state": state}
+
+
+def submit_reader_correction(
+    base_dir: str = _THIS_DIR,
+    article_id: int | None = None,
+    seo_url: str = "",
+    claim_text: str = "",
+    evidence_url: str = "",
+    rebuild_seo: bool = True,
+) -> dict:
+    """Waliduje i trwale zapisuje zgłoszenie korekty od czytelnika w editorial_state.json i articles.json."""
+    is_valid, msg = validate_evidence_submission(claim_text, evidence_url)
+    if not is_valid:
+        return {"ok": False, "error": msg}
+
+    clean_claim = re.sub(r"\s+", " ", claim_text.strip())
+    clean_url = evidence_url.strip()
+
+    state = load_editorial_state(base_dir)
+    articles_path = os.path.join(base_dir, "articles.json")
+    with open(articles_path, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+    norm_seo = (seo_url or "").rstrip("/")
+    target_art = None
+    for a in articles:
+        if (article_id is not None and int(a.get("id") or 0) == int(article_id)) or (
+            norm_seo and (a.get("seo_url") or "").rstrip("/") == norm_seo
+        ):
+            target_art = a
+            break
+
+    if target_art is None:
+        return {"ok": False, "error": "Nie znaleziono artykułu, którego dotyczy zgłoszenie."}
+
+    now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
+    corr_id = f"corr_{int(time.time() * 1000)}_{target_art.get('id')}"
+    corr_record = {
+        "id": corr_id,
+        "article_id": target_art.get("id"),
+        "seo_url": (target_art.get("seo_url") or "").rstrip("/"),
+        "article_title": target_art.get("seo_title") or "",
+        "claim_text": clean_claim,
+        "evidence_url": clean_url,
+        "status": "PENDING_ADMIN_REVIEW",
+        "submitted_iso": now_iso,
+    }
+
+    # Unikaj duplikatów tego samego zgłoszenia
+    for existing in state["reader_corrections"]:
+        if (
+            existing.get("seo_url") == corr_record["seo_url"]
+            and existing.get("evidence_url") == clean_url
+            and existing.get("claim_text") == clean_claim
+        ):
+            return {"ok": True, "correction": existing, "editorial_state": state}
+
+    state["reader_corrections"].append(corr_record)
+    articles = apply_editorial_state_to_articles(articles, state, base_dir=base_dir)
+    target_art["updated_iso"] = now_iso
+
+    save_editorial_state(state, base_dir)
+    _persist_articles_and_seo(base_dir, articles, rebuild_seo=rebuild_seo)
+    return {"ok": True, "correction": corr_record, "editorial_state": state}
+
+
+def admin_moderate_correction(
+    base_dir: str = _THIS_DIR,
+    correction_id: str = "",
+    action: str = "approve",
+    admin_note: str = "",
+    rebuild_seo: bool = True,
+) -> dict:
+    """Pozwala Adminowi zatwierdzić (approve) lub odrzucić (reject) zgłoszenie czytelnika."""
+    if action not in ("approve", "reject"):
+        raise ValueError("Parametr action musi mieć wartość 'approve' lub 'reject'.")
+
+    state = load_editorial_state(base_dir)
+    target_corr = None
+    for rc in state.get("reader_corrections") or []:
+        if rc.get("id") == correction_id:
+            target_corr = rc
+            break
+
+    if target_corr is None:
+        raise ValueError(f"Nie znaleziono zgłoszenia korekty o id={correction_id}.")
+
+    now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
+    target_corr["status"] = "APPROVED" if action == "approve" else "REJECTED"
+    target_corr["moderated_iso"] = now_iso
+
+    articles_path = os.path.join(base_dir, "articles.json")
+    with open(articles_path, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+    if admin_note.strip() and action == "approve":
+        for a in articles:
+            if int(a.get("id") or 0) == int(target_corr.get("article_id") or -1) or (
+                (a.get("seo_url") or "").rstrip("/") == (target_corr.get("seo_url") or "").rstrip("/")
+            ):
+                a["admin_note"] = admin_note.strip()
+                a["updated_iso"] = now_iso
+                break
+
+    articles = apply_editorial_state_to_articles(articles, state, base_dir=base_dir)
+    save_editorial_state(state, base_dir)
+    _persist_articles_and_seo(base_dir, articles, rebuild_seo=rebuild_seo)
+    return {"ok": True, "correction": target_corr, "editorial_state": state}
+
+
 def build_article_from_group(group: list, art_id: int) -> dict:
     now_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+01:00")
     now_display = datetime.now().strftime("%d.%m.%Y, %H:%M")
@@ -2958,8 +3392,12 @@ def build_article_from_group(group: list, art_id: int) -> dict:
         combined_titles = " ".join(it.get("title") or "" for it in ranked_group)
         if infer_category_path("/Polska", "", combined_titles, "") == "/Swiat":
             art_path = "/Swiat"
-    slug = _make_clean_slug(clean_title)
     sections, fact_agreement_pct = synthesize_article_sections(ranked_group, clean_title)
+    if len(sources) >= 2:
+        clean_title = polish_typography_clean(
+            ai_synthesizer.enrich_seo_title_deterministic(clean_title, ranked_group, sections)
+        )
+    slug = _make_clean_slug(clean_title)
     summary_lead, meta_description, keywords = _build_meta_and_summary(clean_title, sections, art_path, sources)
     declickbait = _build_declickbait_entries(
         clean_title, raw_primary_title, ranked_group, summary_lead=summary_lead, sections=sections
@@ -2977,7 +3415,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
 
     metrics = _metrics_for_article(sources, art_path, primary["outlet"])
 
-    return {
+    art_dict = {
         "id": art_id,
         "path": art_path,
         "seo_url": f"{art_path}/{slug}",
@@ -2992,6 +3430,7 @@ def build_article_from_group(group: list, art_id: int) -> dict:
         "status": "AUTO_PUBLISHED",
         "fact_agreement_pct": fact_agreement_pct,
         "admin_note": "",
+        "zero_trust_reason": "",
         "metrics": metrics,
         "declickbait": declickbait,
         "full_sections": sections,
@@ -2999,6 +3438,21 @@ def build_article_from_group(group: list, art_id: int) -> dict:
         "sources": sources,
         "corrections": [],
     }
+    ai_synthesizer.enhance_article_narrative_and_seo(
+        art_dict,
+        ranked_group,
+        cost_guard=_ACTIVE_COST_GUARD,
+        use_gemini=(None if _ACTIVE_COST_GUARD is not None else False) if len(sources) >= 2 else False,
+    )
+    if len(sources) >= 2 and art_dict.get("seo_title") and art_dict["seo_title"] != clean_title:
+        art_dict["seo_url"] = f"{art_path}/{_make_clean_slug(art_dict['seo_title'])}"
+
+    zt_status, zt_reason, zt_note = evaluate_zero_trust_article(art_dict)
+    art_dict["status"] = zt_status
+    art_dict["zero_trust_reason"] = zt_reason
+    if zt_status == "PENDING_ADMIN":
+        art_dict["admin_note"] = zt_note
+    return art_dict
 
 
 def _reconstruct_outlet_texts(art: dict) -> dict:
@@ -3085,6 +3539,11 @@ def _extract_candidates_from_article(art: dict) -> list:
 
 
 def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: bool = False):
+    prev_persp_by_outlet = {
+        (p.get("outlet") or "").strip(): p
+        for p in (art.get("perspectives") or [])
+        if isinstance(p, dict) and p.get("outlet")
+    }
     raw_title = polish_typography_clean(art.get("seo_title") or (candidates[0]["title"] if candidates else ""))
     title = _neutralize_clickbait_title(raw_title) if _is_clickbait_title(raw_title) else _clean_title_artifacts(raw_title)
     if _is_clickbait_title(raw_title) and len(candidates) >= 2:
@@ -3094,18 +3553,9 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
             if ct and not _is_clickbait_title(ct) and len((tokenize_title(ct) - GENERIC_TOPIC_TOKENS) & raw_toks) >= 2:
                 title = ct
                 break
-    art["seo_title"] = title
     art_path = art.get("path") or "/Polska"
     sources = sorted(list({c["outlet"] for c in candidates if c.get("outlet")}))
     primary_outlet = candidates[0]["outlet"] if candidates else (sources[0] if sources else "")
-
-    if not preserve_seo_url:
-        old_seo = art.get("seo_url") or ""
-        old_cat = old_seo.rsplit("/", 1)[0] if "/" in old_seo else ""
-        old_slug = old_seo.split("/")[-1] if old_seo else ""
-        new_slug = _make_clean_slug(title)
-        if not old_seo or old_cat != art_path or len(old_slug) >= 74:
-            art["seo_url"] = f"{art_path}/{new_slug}"
 
     ranked_for_synth = [
         {
@@ -3119,27 +3569,66 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
     ]
 
     new_secs, new_pct = synthesize_article_sections(ranked_for_synth, title)
+    was_ai_same_sources = bool(art.get("ai_synthesized") and int(art.get("ai_source_count") or 0) == len(sources))
+    if len(candidates) >= 2 and not was_ai_same_sources:
+        title = polish_typography_clean(
+            ai_synthesizer.enrich_seo_title_deterministic(title, ranked_for_synth, new_secs)
+        )
+    art["seo_title"] = title
+
+    if not preserve_seo_url:
+        old_seo = art.get("seo_url") or ""
+        old_cat = old_seo.rsplit("/", 1)[0] if "/" in old_seo else ""
+        old_slug = old_seo.split("/")[-1] if old_seo else ""
+        new_slug = _make_clean_slug(title)
+        if not old_seo or old_cat != art_path or len(old_slug) >= 74:
+            art["seo_url"] = f"{art_path}/{new_slug}"
+
     art["full_sections"] = new_secs
     art["fact_agreement_pct"] = new_pct
     art["sources"] = sources
-    art["perspectives"] = [
-        {
+
+    new_perspectives = []
+    for idx, c in enumerate(candidates):
+        p_item = {
             "outlet": c["outlet"],
             "angle": _contextual_angle(c["outlet"], c["title"], art_path, idx == 0),
             "summary": c["title"],
             "url": c.get("link") or "",
         }
-        for idx, c in enumerate(candidates)
-    ]
+        if was_ai_same_sources:
+            prev_p = prev_persp_by_outlet.get(c["outlet"])
+            if prev_p:
+                if prev_p.get("angle"):
+                    p_item["angle"] = prev_p["angle"]
+                if prev_p.get("focus"):
+                    p_item["focus"] = prev_p["focus"]
+                if prev_p.get("omits"):
+                    p_item["omits"] = prev_p["omits"]
+        new_perspectives.append(p_item)
+    art["perspectives"] = new_perspectives
+
     summary_lead, meta_desc, keywords = _build_meta_and_summary(title, new_secs, art_path, sources)
-    art["summary_lead"] = summary_lead
-    art["meta_description"] = meta_desc
+    if not (was_ai_same_sources and art.get("summary_lead")):
+        art["summary_lead"] = summary_lead
+    if not (was_ai_same_sources and art.get("meta_description")):
+        art["meta_description"] = meta_desc
     art["keywords"] = keywords
     art["metrics"] = _metrics_for_article(sources, art_path, primary_outlet)
 
+    ai_synthesizer.enhance_article_narrative_and_seo(
+        art,
+        ranked_for_synth,
+        cost_guard=_ACTIVE_COST_GUARD,
+        use_gemini=(None if _ACTIVE_COST_GUARD is not None else False) if len(sources) >= 2 else False,
+    )
+
     merged_dc = list(art.get("declickbait") or [])
     seen_dc = {(d.get("original") or "").strip().lower() for d in merged_dc}
-    for dc in _build_declickbait_entries(title, raw_title, candidates, summary_lead=summary_lead, sections=new_secs):
+    for dc in _build_declickbait_entries(
+        art.get("seo_title") or title, raw_title, candidates,
+        summary_lead=art.get("summary_lead") or summary_lead, sections=new_secs,
+    ):
         key = (dc.get("original") or "").strip().lower()
         if key and key not in seen_dc:
             merged_dc.append(dc)
@@ -4008,228 +4497,284 @@ def run_quality_gate(
     return (len(errors) == 0), errors
 
 
-def update_news_cycle(fetch_live: bool = True, quality_gate: bool = False) -> bool:
+def update_news_cycle(
+    fetch_live: bool = True,
+    quality_gate: bool = False,
+    use_gemini: bool | None = None,
+) -> bool:
+    global _ACTIVE_COST_GUARD
     base_dir = os.path.dirname(os.path.abspath(__file__))
     articles_path = os.path.join(base_dir, "articles.json")
 
-    # 1. Wczytaj, oczyść, rozbij błędnie sklejone klastry i zdeduplikuj istniejące artykuły
-    existing_articles = []
-    rejected_pool = []
-    if os.path.exists(articles_path):
-        try:
-            with open(articles_path, "r", encoding="utf-8") as f:
-                loaded = json.load(f)
-                if isinstance(loaded, list):
-                    for a in loaded:
-                        if (a.get("published_iso") or "")[:10] < "2026-11-13":
-                            continue
-                        rej_local = []
-                        upgraded = _upgrade_existing_article(a, rejected_out=rej_local)
-                        for r in rej_local:
-                            r["_orig_id"] = a.get("id")
-                            r["_pub_iso"] = a.get("published_iso") or ""
-                            r["_disp_date"] = a.get("display_date") or ""
-                            r["group"] = r.get("outlet") or ""
-                            r["description"] = r.get("excl_description") or r.get("description") or r.get("title") or ""
-                            rejected_pool.append(r)
-                        if upgraded is not None:
-                            existing_articles.append(upgraded)
-        except Exception as e:
-            print(f"[WARN] Błąd odczytu {articles_path}: {e}")
+    if use_gemini is None:
+        env_flag = os.environ.get("VERITY_USE_GEMINI", "").strip().lower()
+        use_gemini = bool(fetch_live and os.environ.get("GEMINI_API_KEY", "").strip() and env_flag not in ("0", "false", "no"))
 
-    recovered_count = 0
-    if rejected_pool:
-        rec_clusters = cluster_similar_items(rejected_pool)
-        for grp in rec_clusters:
-            u_groups = {it.get("group") or it["outlet"] for it in grp}
-            if len(u_groups) < 2:
-                continue
-            rec_art = build_article_from_group(grp, 9000 + recovered_count)
-            latest_iso = max((it.get("_pub_iso") or "" for it in grp), default="")
-            latest_disp = next(
-                (it.get("_disp_date") for it in grp if it.get("_pub_iso") == latest_iso and it.get("_disp_date")),
-                "",
+    _ACTIVE_COST_GUARD = None
+    try:
+        # 1. Wczytaj, oczyść, rozbij błędnie sklejone klastry i zdeduplikuj istniejące artykuły
+        existing_articles = []
+        rejected_pool = []
+        if os.path.exists(articles_path):
+            try:
+                with open(articles_path, "r", encoding="utf-8") as f:
+                    loaded = json.load(f)
+                    if isinstance(loaded, list):
+                        for a in loaded:
+                            if (a.get("published_iso") or "")[:10] < "2026-11-13":
+                                continue
+                            rej_local = []
+                            upgraded = _upgrade_existing_article(a, rejected_out=rej_local)
+                            for r in rej_local:
+                                r["_orig_id"] = a.get("id")
+                                r["_pub_iso"] = a.get("published_iso") or ""
+                                r["_disp_date"] = a.get("display_date") or ""
+                                r["group"] = r.get("outlet") or ""
+                                r["description"] = r.get("excl_description") or r.get("description") or r.get("title") or ""
+                                rejected_pool.append(r)
+                            if upgraded is not None:
+                                existing_articles.append(upgraded)
+            except Exception as e:
+                print(f"[WARN] Błąd odczytu {articles_path}: {e}")
+
+        recovered_count = 0
+        if rejected_pool:
+            rec_clusters = cluster_similar_items(rejected_pool)
+            for grp in rec_clusters:
+                u_groups = {it.get("group") or it["outlet"] for it in grp}
+                if len(u_groups) < 2:
+                    continue
+                rec_art = build_article_from_group(grp, 9000 + recovered_count)
+                latest_iso = max((it.get("_pub_iso") or "" for it in grp), default="")
+                latest_disp = next(
+                    (it.get("_disp_date") for it in grp if it.get("_pub_iso") == latest_iso and it.get("_disp_date")),
+                    "",
+                )
+                if latest_iso:
+                    rec_art["published_iso"] = latest_iso
+                    if latest_disp:
+                        rec_art["display_date"] = latest_disp
+                existing_articles.append(rec_art)
+                recovered_count += 1
+        if recovered_count:
+            print(f"[SPLIT-RECOVER] Odzyskano {recovered_count} wieloźródłowych tematów z rozdzielonych klastrów.")
+
+        before_dedup = len(existing_articles)
+        existing_articles = deduplicate_existing_articles(existing_articles)
+        if len(existing_articles) < before_dedup:
+            print(f"[DEDUP] Scalono {before_dedup - len(existing_articles)} zduplikowanych artykułów o tych samych wydarzeniach.")
+
+        if use_gemini and os.environ.get("GEMINI_API_KEY", "").strip():
+            _ACTIVE_COST_GUARD = ai_synthesizer.GeminiCostGuard(
+                budget_path=os.path.join(base_dir, "gemini_budget.json")
             )
-            if latest_iso:
-                rec_art["published_iso"] = latest_iso
-                if latest_disp:
-                    rec_art["display_date"] = latest_disp
-            existing_articles.append(rec_art)
-            recovered_count += 1
-    if recovered_count:
-        print(f"[SPLIT-RECOVER] Odzyskano {recovered_count} wieloźródłowych tematów z rozdzielonych klastrów.")
 
-    before_dedup = len(existing_articles)
-    existing_articles = deduplicate_existing_articles(existing_articles)
-    if len(existing_articles) < before_dedup:
-        print(f"[DEDUP] Scalono {before_dedup - len(existing_articles)} zduplikowanych artykułów o tych samych wydarzeniach.")
+        new_articles = []
+        touched_ids = set()
+        if fetch_live:
+            print("Pobieranie wiadomości z polskich kanałów RSS...")
+            raw_items = fetch_rss_items()
+            clusters = cluster_similar_items(raw_items) if raw_items else []
 
-    new_articles = []
-    touched_ids = set()
-    if fetch_live:
-        print("Pobieranie wiadomości z polskich kanałów RSS...")
-        raw_items = fetch_rss_items()
-        clusters = cluster_similar_items(raw_items) if raw_items else []
+            # Najpierw dopisz nowe źródła/perspektywy do już opublikowanych artykułów
+            enriched_count = 0
+            for grp in clusters:
+                matched_existing = find_matching_existing_article(grp, existing_articles)
+                if matched_existing is not None:
+                    if merge_cluster_into_article(matched_existing, grp):
+                        touched_ids.add(id(matched_existing))
+                        enriched_count += 1
+            if enriched_count:
+                print(f"[MERGE] Dopisano nowe źródła do {enriched_count} istniejących artykułów.")
 
-        # Najpierw dopisz nowe źródła/perspektywy do już opublikowanych artykułów
-        enriched_count = 0
-        for grp in clusters:
-            matched_existing = find_matching_existing_article(grp, existing_articles)
-            if matched_existing is not None:
-                if merge_cluster_into_article(matched_existing, grp):
-                    touched_ids.add(id(matched_existing))
-                    enriched_count += 1
-        if enriched_count:
-            print(f"[MERGE] Dopisano nowe źródła do {enriched_count} istniejących artykułów.")
-
-        for grp in clusters:
-            if len(new_articles) >= MAX_NEW_PER_RUN:
-                break
-            unique_groups = {it.get("group") or it["outlet"] for it in grp}
-            if len(unique_groups) < 2:
-                continue
-            matched = find_matching_existing_article(grp, existing_articles + new_articles)
-            if matched is not None:
-                if merge_cluster_into_article(matched, grp):
-                    touched_ids.add(id(matched))
-                continue
-            _enrich_group_from_urls(grp)
-            art = build_article_from_group(grp, len(new_articles) + 1)
-            new_articles.append(art)
-            touched_ids.add(id(art))
-
-        reg_counts = {vp: 0 for vp in seo_builder.VOIVODESHIP_BY_PATH}
-        for ext in existing_articles + new_articles:
-            ep = ext.get("path") or ""
-            if ep in reg_counts:
-                reg_counts[ep] += 1
-
-        if len(new_articles) < MAX_NEW_PER_RUN:
-            energ_single_cnt = sum(
-                1 for ext in (existing_articles + new_articles)
-                if (ext.get("path") or "") == "/Polska/Energetyka" and len(ext.get("sources") or []) <= 1
-            )
             for grp in clusters:
                 if len(new_articles) >= MAX_NEW_PER_RUN:
                     break
                 unique_groups = {it.get("group") or it["outlet"] for it in grp}
-                if len(unique_groups) == 1 and is_local_or_niche_item(grp[0]):
-                    lead_it = grp[0]
-                    cand_p = infer_category_path(
-                        lead_it.get("path") or "/Polska",
-                        lead_it.get("link") or "",
-                        lead_it.get("title") or "",
-                        lead_it.get("description") or "",
-                    )
-                    if cand_p in reg_counts and reg_counts[cand_p] >= REGIONAL_SATURATION_CAP:
-                        continue
-                    if cand_p == "/Polska/Energetyka" and energ_single_cnt >= 3:
-                        continue
-                    if not is_already_covered(grp, existing_articles + new_articles):
-                        _enrich_group_from_urls(grp)
-                        art = build_article_from_group(grp, len(new_articles) + 1)
-                        plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
-                        min_req = 600 if cand_p == "/Polska/Energetyka" else 160
-                        if plain_len < min_req:
-                            continue
-                        new_articles.append(art)
-                        touched_ids.add(id(art))
-                        if cand_p in reg_counts:
-                            reg_counts[cand_p] += 1
+                if len(unique_groups) < 2:
+                    continue
+                matched = find_matching_existing_article(grp, existing_articles + new_articles)
+                if matched is not None:
+                    if merge_cluster_into_article(matched, grp):
+                        touched_ids.add(id(matched))
+                    continue
+                _enrich_group_from_urls(grp)
+                art = build_article_from_group(grp, len(new_articles) + 1)
+                new_articles.append(art)
+                touched_ids.add(id(art))
+
+            reg_counts = {vp: 0 for vp in seo_builder.VOIVODESHIP_BY_PATH}
+            for ext in existing_articles + new_articles:
+                ep = ext.get("path") or ""
+                if ep in reg_counts:
+                    reg_counts[ep] += 1
+
+            if len(new_articles) < MAX_NEW_PER_RUN:
+                energ_single_cnt = sum(
+                    1 for ext in (existing_articles + new_articles)
+                    if (ext.get("path") or "") == "/Polska/Energetyka" and len(ext.get("sources") or []) <= 1
+                )
+                for grp in clusters:
+                    if len(new_articles) >= MAX_NEW_PER_RUN:
                         break
+                    unique_groups = {it.get("group") or it["outlet"] for it in grp}
+                    if len(unique_groups) == 1 and is_local_or_niche_item(grp[0]):
+                        lead_it = grp[0]
+                        cand_p = infer_category_path(
+                            lead_it.get("path") or "/Polska",
+                            lead_it.get("link") or "",
+                            lead_it.get("title") or "",
+                            lead_it.get("description") or "",
+                        )
+                        if cand_p in reg_counts and reg_counts[cand_p] >= REGIONAL_SATURATION_CAP:
+                            continue
+                        if cand_p == "/Polska/Energetyka" and energ_single_cnt >= 3:
+                            continue
+                        if not is_already_covered(grp, existing_articles + new_articles):
+                            _enrich_group_from_urls(grp)
+                            art = build_article_from_group(grp, len(new_articles) + 1)
+                            plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
+                            min_req = 600 if cand_p == "/Polska/Energetyka" else 160
+                            if plain_len < min_req:
+                                continue
+                            new_articles.append(art)
+                            touched_ids.add(id(art))
+                            if cand_p in reg_counts:
+                                reg_counts[cand_p] += 1
+                            break
 
-        # Dedykowana pula regionalna (priorytetowo wypełnia województwa z 0 artykułów, dalej rotuje od najmniej licznych)
-        reg_candidates = []
-        for grp in clusters:
-            lead_it = grp[0]
-            inferred_p = infer_category_path(
-                lead_it.get("path") or "/Polska",
-                lead_it.get("link") or "",
-                lead_it.get("title") or "",
-                lead_it.get("description") or "",
+            # Dedykowana pula regionalna (priorytetowo wypełnia województwa z 0 artykułów, dalej rotuje od najmniej licznych)
+            reg_candidates = []
+            for grp in clusters:
+                lead_it = grp[0]
+                inferred_p = infer_category_path(
+                    lead_it.get("path") or "/Polska",
+                    lead_it.get("link") or "",
+                    lead_it.get("title") or "",
+                    lead_it.get("description") or "",
+                )
+                if inferred_p not in seo_builder.VOIVODESHIP_BY_PATH:
+                    continue
+                unique_groups = {it.get("group") or it["outlet"] for it in grp}
+                reg_candidates.append((reg_counts.get(inferred_p, 0), 0 if len(unique_groups) >= 2 else 1, inferred_p, grp))
+
+            reg_candidates.sort(key=lambda x: (x[0], x[1], -len(x[3][0].get("description") or "")))
+            added_reg = 0
+            added_reg_paths = set()
+            for _, _, cand_path, grp in reg_candidates:
+                if cand_path in added_reg_paths:
+                    continue
+                unique_groups = {it.get("group") or it["outlet"] for it in grp}
+                is_single_reg = len(unique_groups) <= 1
+                is_empty_region = reg_counts.get(cand_path, 0) == 0
+                if is_single_reg and reg_counts.get(cand_path, 0) >= REGIONAL_SATURATION_CAP:
+                    continue
+                if not is_empty_region and added_reg >= MAX_REGIONAL_PER_RUN:
+                    continue
+                matched = find_matching_existing_article(grp, existing_articles + new_articles)
+                if matched is not None:
+                    if merge_cluster_into_article(matched, grp):
+                        touched_ids.add(id(matched))
+                    continue
+                _enrich_group_from_urls(grp)
+                art = build_article_from_group(grp, len(new_articles) + 1)
+                plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
+                if len(art.get("sources") or []) <= 1 and plain_len < (80 if is_empty_region else 160):
+                    continue
+                new_articles.append(art)
+                touched_ids.add(id(art))
+                reg_counts[cand_path] = reg_counts.get(cand_path, 0) + 1
+                added_reg += 1
+                added_reg_paths.add(cand_path)
+
+            enriched_thin = _enrich_existing_thin_articles(existing_articles, max_articles=30)
+            if enriched_thin:
+                print(f"[ENRICH] Uzupełniono pełną treść ze stron źródłowych dla {enriched_thin} krótkich artykułów.")
+
+            print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
+        elif _ACTIVE_COST_GUARD is not None:
+            for ext in existing_articles:
+                if len(ext.get("sources") or []) >= 2 and not ext.get("ai_synthesized"):
+                    if not _ACTIVE_COST_GUARD.can_call():
+                        break
+                    cands_ext = _extract_candidates_from_article(ext)
+                    ranked_ext = [
+                        {
+                            "outlet": c["outlet"],
+                            "title": c["title"],
+                            "description": c.get("description") or c["title"],
+                            "link": c.get("link") or "",
+                            "path": ext.get("path") or "/Polska",
+                        }
+                        for c in cands_ext
+                    ]
+                    ai_synthesizer.enhance_article_narrative_and_seo(
+                        ext, ranked_ext, cost_guard=_ACTIVE_COST_GUARD, use_gemini=True
+                    )
+
+        if _ACTIVE_COST_GUARD is not None and _ACTIVE_COST_GUARD.calls_this_run > 0:
+            print(
+                f"[AI-ZERO-TRUST] Wywołania Gemini Free Tier w tym cyklu: {_ACTIVE_COST_GUARD.calls_this_run} "
+                f"(dziennie: {_ACTIVE_COST_GUARD.state.get('daily_calls', 0)}/{_ACTIVE_COST_GUARD.max_daily_calls})."
             )
-            if inferred_p not in seo_builder.VOIVODESHIP_BY_PATH:
-                continue
-            unique_groups = {it.get("group") or it["outlet"] for it in grp}
-            reg_candidates.append((reg_counts.get(inferred_p, 0), 0 if len(unique_groups) >= 2 else 1, inferred_p, grp))
 
-        reg_candidates.sort(key=lambda x: (x[0], x[1], -len(x[3][0].get("description") or "")))
-        added_reg = 0
-        added_reg_paths = set()
-        for _, _, cand_path, grp in reg_candidates:
-            if cand_path in added_reg_paths:
-                continue
-            unique_groups = {it.get("group") or it["outlet"] for it in grp}
-            is_single_reg = len(unique_groups) <= 1
-            is_empty_region = reg_counts.get(cand_path, 0) == 0
-            if is_single_reg and reg_counts.get(cand_path, 0) >= REGIONAL_SATURATION_CAP:
-                continue
-            if not is_empty_region and added_reg >= MAX_REGIONAL_PER_RUN:
-                continue
-            matched = find_matching_existing_article(grp, existing_articles + new_articles)
-            if matched is not None:
-                if merge_cluster_into_article(matched, grp):
-                    touched_ids.add(id(matched))
-                continue
-            _enrich_group_from_urls(grp)
-            art = build_article_from_group(grp, len(new_articles) + 1)
-            plain_len = sum(len(_strip_all_citations(p)) for s in art["full_sections"] for p in s["paragraphs"])
-            if len(art.get("sources") or []) <= 1 and plain_len < (80 if is_empty_region else 160):
-                continue
-            new_articles.append(art)
-            touched_ids.add(id(art))
-            reg_counts[cand_path] = reg_counts.get(cand_path, 0) + 1
-            added_reg += 1
-            added_reg_paths.add(cand_path)
+        # 4. Połącz, zdeduplikuj i zbalansuj chronologicznie (malejąco, bez przypinania declickbait)
+        combined = new_articles + existing_articles
+        before_step4_dedup = len(combined)
+        combined = deduplicate_existing_articles(combined)
+        if len(combined) < before_step4_dedup:
+            combined = [
+                a if id(a) in touched_ids else (u if (u := _upgrade_existing_article(a)) is not None else a)
+                for a in combined
+            ]
+        combined = _trim_articles_with_balance(combined, MAX_TOTAL_ARTICLES)
 
-        enriched_thin = _enrich_existing_thin_articles(existing_articles, max_articles=30)
-        if enriched_thin:
-            print(f"[ENRICH] Uzupełniono pełną treść ze stron źródłowych dla {enriched_thin} krótkich artykułów.")
+        _ensure_unique_seo_urls(combined)
+        _assign_stable_ids(combined)
 
-        print(f"Wyselekcjonowano {len(new_articles)} nowych kluczowych artykułów w tej godzinie (w tym regionalne: {added_reg}).")
+        # 4.5 Połącz długofalowe i powtarzające się wątki w osie czasu „Akta Sprawy” (Krok 1)
+        dossier_cnt = ai_synthesizer.assign_dossier_timelines(combined)
+        if dossier_cnt:
+            print(f"[DOSSIER] Połączono {dossier_cnt} osi czasu („Akta Sprawy”).")
 
-    # 4. Połącz, zdeduplikuj i zbalansuj chronologicznie (malejąco, bez przypinania declickbait)
-    combined = new_articles + existing_articles
-    before_step4_dedup = len(combined)
-    combined = deduplicate_existing_articles(combined)
-    if len(combined) < before_step4_dedup:
-        combined = [
-            a if id(a) in touched_ids else (u if (u := _upgrade_existing_article(a)) is not None else a)
-            for a in combined
-        ]
-    combined = _trim_articles_with_balance(combined, MAX_TOTAL_ARTICLES)
+        # 5. Nałóż regułę Zero-Trust oraz trwałe decyzje Admina i korekty czytelników z editorial_state.json
+        editorial_state = load_editorial_state(base_dir)
+        combined = apply_editorial_state_to_articles(combined, editorial_state, base_dir=base_dir)
 
-    _ensure_unique_seo_urls(combined)
-    _assign_stable_ids(combined)
+        # 6. Zapisz articles.json
+        with open(articles_path, "w", encoding="utf-8") as f:
+            json.dump(combined, f, ensure_ascii=False, indent=2)
+        print(f"[SUKCES] Baza zaktualizowana: {len(combined)} artykułów zapisanych w {articles_path}")
 
-    # 6. Zapisz articles.json
-    with open(articles_path, "w", encoding="utf-8") as f:
-        json.dump(combined, f, ensure_ascii=False, indent=2)
-    print(f"[SUKCES] Baza zaktualizowana: {len(combined)} artykułów zapisanych w {articles_path}")
+        # 7. Wygeneruj całą infrastrukturę SEO (statyczne HTML, karty OG 1200x630, sitemap.xml, news-sitemap.xml, feed.xml, robots.txt, 404.html)
+        seo_builder.build_all_seo_artifacts(base_dir, combined)
 
-    # 7. Wygeneruj całą infrastrukturę SEO (statyczne HTML, sitemap.xml, news-sitemap.xml, feed.xml, robots.txt, 404.html)
-    seo_builder.build_all_seo_artifacts(base_dir, combined)
+        # 8. Wypisz podsumowanie jakościowe cyklu (wieloźródłowość, działy, 16 województw)
+        stats = print_cycle_summary(combined)
 
-    # 8. Wypisz podsumowanie jakościowe cyklu (wieloźródłowość, działy, 16 województw)
-    stats = print_cycle_summary(combined)
-
-    if quality_gate:
-        ok, errs = run_quality_gate(combined)
-        if not ok:
-            print("\n[QUALITY-GATE] FAIL:", file=sys.stderr)
-            for err in errs:
-                print(f"  - {err}", file=sys.stderr)
-            return False
-        print(
-            f"\n[QUALITY-GATE] PASS: {stats['multi_source_pct']:.1f}% wieloźródłowych, "
-            f"{stats['voivodeships_covered']}/{stats['voivodeships_total']} województw."
-        )
-    return True
+        if quality_gate:
+            ok, errs = run_quality_gate(combined)
+            if not ok:
+                print("\n[QUALITY-GATE] FAIL:", file=sys.stderr)
+                for err in errs:
+                    print(f"  - {err}", file=sys.stderr)
+                return False
+            print(
+                f"\n[QUALITY-GATE] PASS: {stats['multi_source_pct']:.1f}% wieloźródłowych, "
+                f"{stats['voivodeships_covered']}/{stats['voivodeships_total']} województw."
+            )
+        return True
+    finally:
+        _ACTIVE_COST_GUARD = None
 
 
 if __name__ == "__main__":
     if "--audit-feeds" in sys.argv:
         sys.exit(audit_feeds())
+    if "--ping-indexnow" in sys.argv:
+        ok_ping, ping_msg = seo_builder.submit_indexnow_urls(_THIS_DIR)
+        print(f"[IndexNow] {ping_msg}")
+        sys.exit(0 if ok_ping else 1)
     if "--check-only" in sys.argv:
         articles_json_path = os.path.join(_THIS_DIR, "articles.json")
         with open(articles_json_path, "r", encoding="utf-8") as af:
@@ -4245,7 +4790,8 @@ if __name__ == "__main__":
         sys.exit(0)
     no_fetch = "--rebuild-only" in sys.argv
     enforce_gate = "--quality-gate" in sys.argv
-    passed = update_news_cycle(fetch_live=not no_fetch, quality_gate=enforce_gate)
+    cli_gemini = True if "--use-gemini" in sys.argv else (False if "--no-gemini" in sys.argv else None)
+    passed = update_news_cycle(fetch_live=not no_fetch, quality_gate=enforce_gate, use_gemini=cli_gemini)
     sys.exit(0 if passed else 1)
 
 

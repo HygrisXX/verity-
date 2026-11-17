@@ -111,6 +111,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nowy Rok (1 stycznia) wypada w piątek, co oznacza trzy dni wolnego z rzędu bez konieczności wykorzystywania urlopu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "W 2027 roku majówka ułoży się dla pracowników korzystniej niż miało to miejsce w tym roku."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (3 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -120,7 +150,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -135,8 +165,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -226,11 +262,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Polska</span>
+              
               <time datetime="2026-11-13T16:48:28+01:00">13.11.2026, 16:48</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?</h1>
             <p class="article-lede">Katalog dni ustawowo wolnych od pracy określa ustawa z 18 stycznia 1951 r. o dniach wolnych od pracy. Są to: Pierwsza okazja do dłuższego odpoczynku pojawi się już na początku 2027 roku.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Wydarzenia krajowe</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (3 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -260,6 +299,7 @@
             </div>
           </div>
           <p class="perspective-summary">Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027) w ujęciu: raport rynkowy.</div><div><strong>Pomija:</strong> Pomija kontekst (wolny, listopadzie, pracodawca) rozwijany w naTemat.pl, Kaszuby24.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://forsal.pl/praca/artykuly/11344168,dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Forsal.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="naTemat.pl">
           <div class="perspective-head">
@@ -270,6 +310,7 @@
             </div>
           </div>
           <p class="perspective-summary">Dni wolne na 2027 rok policzone. 2 soboty do odebrania i 7 długich weekendów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027) w ujęciu: relacja uzupełniająca.</div><div><strong>Pomija:</strong> Pomija kontekst (Długie, listopadzie, pracodawca) rozwijany w Forsal.pl, Kaszuby24.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://natemat.pl/675451,dni-wolne-na-2027-rok-policzone-2-soboty-do-odebrania-i-7-dlugich-weekendow" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="naTemat.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Kaszuby24.pl">
           <div class="perspective-head">
@@ -280,10 +321,12 @@
             </div>
           </div>
           <p class="perspective-summary">Długie weekendy 2027. Za 4 dni urlopu 10 dni wolnego, w listopadzie nawet 16 dni z rzędu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027) w ujęciu: relacja uzupełniająca.</div><div><strong>Pomija:</strong> Pomija kontekst (kalendarzowym, przyszłym, policzone) rozwijany w Forsal.pl, naTemat.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://kaszuby24.pl/dlugie-weekendy-2027-kiedy-wziac-urlop-10-dni-wolnego-za-4-dni/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Kaszuby24.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Długie weekendy 2027. Jak zaplanować urlop w przyszłym roku kalendarzowym?</summary><div class="faq-a">Nowy Rok (1 stycznia) wypada w piątek, co oznacza trzy dni wolnego z rzędu bez konieczności wykorzystywania urlopu.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">W 2027 roku majówka ułoży się dla pracowników korzystniej niż miało to miejsce w tym roku.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (3 źródła).</div></details></section>
 
           
 
@@ -317,6 +360,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://forsal.pl/praca/artykuly/11344168,dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym.html" target="_blank" rel="noopener noreferrer"><span>Forsal.pl</span><span>↗</span></a></li><li><a href="https://natemat.pl/675451,dni-wolne-na-2027-rok-policzone-2-soboty-do-odebrania-i-7-dlugich-weekendow" target="_blank" rel="noopener noreferrer"><span>naTemat.pl</span><span>↗</span></a></li><li><a href="https://kaszuby24.pl/dlugie-weekendy-2027-kiedy-wziac-urlop-10-dni-wolnego-za-4-dni/" target="_blank" rel="noopener noreferrer"><span>Kaszuby24.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:20" data-id="773115592">
       <div class="story-card">
         <a class="card-media-link" href="../../Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/" onclick="return openArticleLink(event, 773115592, '/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie')" tabindex="-1" aria-hidden="true">
@@ -330,7 +374,7 @@
           <h2 class="story-title"><a class="story-title-link" href="../../Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/" onclick="return openArticleLink(event, 773115592, '/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie')">Smartfony Samsunga zyskają nową funkcję. Pomoże na diecie</a></h2>
           <p class="story-lede">Użytkownicy smartfonów Samsunga dostaną przydatną funkcję, która ułatwi utrzymanie określonego celu kalorycznego. Zaletą ma być szybkość i wygoda korzystania.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:88%"></span></span>88% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article><article class="cat" style="--h:20" data-id="1257358520">
@@ -338,12 +382,12 @@
         <a class="card-media-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp" alt="Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp" alt="Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')">Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')">Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)</a></h2>
           <p class="story-lede">W październiku br. na 50. największych portalach rekrutacyjnych w Polsce opublikowano łącznie ponad 266,12 tys. nowych ofert pracy, czyli prawie o 13 tys. (5 proc.) więcej niż w ubiegłym roku –…</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
@@ -359,7 +403,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -375,6 +419,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -385,6 +430,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/dlugie-weekendy-2027-jak-zaplanowac-urlop-w-przyszlym-roku-kalendarzowym";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

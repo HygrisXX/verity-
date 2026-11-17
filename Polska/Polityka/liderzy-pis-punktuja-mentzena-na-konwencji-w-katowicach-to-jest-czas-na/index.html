@@ -153,6 +153,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Polityka/liderzy-pis-punktuja-mentzena-na-konwencji-w-katowicach-to-jest-czas-na/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Liderzy PiS punktują Mentzena na konwencji w Katowicach. \"To jest czas na?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chcecie razem z nami budować normalność czy kontynuować nienormalność w Polsce?"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Politycy partii zapowiedzieli powrót do polityki, która ma zwiększać dochody gospodarstw domowych i pobudzać rozwój gospodarczy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (7 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -162,7 +192,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -177,8 +207,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -268,11 +304,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Polityka</span>
+              
               <time datetime="2026-11-14T13:46:52+01:00">14.11.2026, 13:46</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Liderzy PiS punktują Mentzena na konwencji w Katowicach. &quot;To jest czas na odpowiedzi&quot;</h1>
             <p class="article-lede">Politycy PiS podczas dzisiejszej konwencji nie rezygnowali z przytyków w stronę jednego z liderów Konfederacji, Sławomira Mentzena. Kandydat PiS na premiera, Przemysław Czarnek, postawił szereg pytań Mentzenowi i jego ludziom.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Prawo i decyzje publiczne</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (7 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -302,6 +341,7 @@
             </div>
           </div>
           <p class="perspective-summary">Liderzy PiS punktują Mentzena na konwencji w Katowicach. &quot;To jest czas na odpowiedzi&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Liderzy, punktują, czas.</div><div><strong>Pomija:</strong> Pomija kontekst (Ambitna, gracie, przewidywalnością) rozwijany w RadioMaryja.pl, TVP3 Katowice.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://niezalezna.pl/polityka/liderzy-pis-punktuja-mentzena-na-konwencji-w-katowicach-to-jest-czas-na-odpowiedzi/584150" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Niezależna.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Business Insider PL">
           <div class="perspective-head">
@@ -312,6 +352,7 @@
             </div>
           </div>
           <p class="perspective-summary">Gospodarka najważniejszym punktem konwencji PiS. Oto propozycje dla Polaków</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: najważniejszym, punktem, propozycje.</div><div><strong>Pomija:</strong> Pomija kontekst (Katowicach, Przemysław, normalność) rozwijany w Niezależna.pl, RadioMaryja.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://businessinsider.com.pl/gospodarka/pis-zapowiada-nizsza-skladke-zdrowotna-i-tansza-energie-nowe-propozycje-z-katowic/wcswh42" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Business Insider PL" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="RadioMaryja.pl">
           <div class="perspective-head">
@@ -322,6 +363,7 @@
             </div>
           </div>
           <p class="perspective-summary">Katowice: konwencja programowa PiS „Ambitna Gospodarka – Damy Radę”</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: programowa, Prawo, Sprawiedliwość.</div><div><strong>Pomija:</strong> Pomija kontekst (Politycy, zapowiedzieli, Przemysław) rozwijany w Niezależna.pl, Business Insider PL.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.radiomaryja.pl/informacje/katowice-konwencja-programowa-pis-ambitna-gospodarka-damy-rade/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="RadioMaryja.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Rzeczpospolita">
           <div class="perspective-head">
@@ -332,6 +374,7 @@
             </div>
           </div>
           <p class="perspective-summary">Konwencja gospodarcza PiS. Politycy zapowiadają „powrót do normalności”</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zapowiadają, Beata, Szydło.</div><div><strong>Pomija:</strong> Pomija kontekst (Katowicach, nienormalność, Konfederacji) rozwijany w Niezależna.pl, RadioMaryja.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/polityka/art45488231-konwencja-gospodarcza-pis-politycy-zapowiadaja-powrot-do-normalnosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Gazeta.pl">
           <div class="perspective-head">
@@ -342,6 +385,7 @@
             </div>
           </div>
           <p class="perspective-summary">Czarnek do Konfederacji: &quot;W co wy gracie?&quot;. Kandydat PiS na premiera uderza w Mentzena na konwencji</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: uderza.</div><div><strong>Pomija:</strong> Pomija kontekst (gospodarstw, partii, zapowiedzieli) rozwijany w Niezależna.pl, Business Insider PL.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33132206,czarnek-do-konfederacji-w-co-wy-gracie-kandydat-pis-na.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Gazeta.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP3 Katowice">
           <div class="perspective-head">
@@ -352,6 +396,7 @@
             </div>
           </div>
           <p class="perspective-summary">„Ambitna gospodarka – damy radę!&quot; Kongres gospodarczy PiS w Katowicach</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Kongres, portfel, musi.</div><div><strong>Pomija:</strong> Pomija kontekst (konwencji, Przemysław, normalność) rozwijany w Niezależna.pl, Business Insider PL.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://katowice.tvp.pl/96479703/ambitna-gospodarka-damy-rade-kongres-gospodarczy-pis-w-katowicach" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Katowice" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Wyborcza.pl">
           <div class="perspective-head">
@@ -362,10 +407,12 @@
             </div>
           </div>
           <p class="perspective-summary">Konwencja PiS w Katowicach. Czarnek do Konfederacji: W co wy gracie?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).</div><div><strong>Pomija:</strong> Pomija kontekst (gospodarstw, partii, zapowiedzieli) rozwijany w Niezależna.pl, Business Insider PL.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wyborcza.pl/7,75398,33132275,konwencja-pis-w-katowicach-czarnek-do-konfederacji-w-co-wy.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wyborcza.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="7" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (7)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Liderzy PiS punktują Mentzena na konwencji w Katowicach. &quot;To jest czas na?</summary><div class="faq-a">Chcecie razem z nami budować normalność czy kontynuować nienormalność w Polsce?</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Politycy partii zapowiedzieli powrót do polityki, która ma zwiększać dochody gospodarstw domowych i pobudzać rozwój gospodarczy.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (7 źródeł).</div></details></section>
 
           
 
@@ -399,6 +446,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://niezalezna.pl/polityka/liderzy-pis-punktuja-mentzena-na-konwencji-w-katowicach-to-jest-czas-na-odpowiedzi/584150" target="_blank" rel="noopener noreferrer"><span>Niezależna.pl</span><span>↗</span></a></li><li><a href="https://businessinsider.com.pl/gospodarka/pis-zapowiada-nizsza-skladke-zdrowotna-i-tansza-energie-nowe-propozycje-z-katowic/wcswh42" target="_blank" rel="noopener noreferrer"><span>Business Insider PL</span><span>↗</span></a></li><li><a href="https://www.radiomaryja.pl/informacje/katowice-konwencja-programowa-pis-ambitna-gospodarka-damy-rade/" target="_blank" rel="noopener noreferrer"><span>RadioMaryja.pl</span><span>↗</span></a></li><li><a href="https://www.rp.pl/polityka/art45488231-konwencja-gospodarcza-pis-politycy-zapowiadaja-powrot-do-normalnosci" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/polityka/7,198012,33132206,czarnek-do-konfederacji-w-co-wy-gracie-kandydat-pis-na.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://katowice.tvp.pl/96479703/ambitna-gospodarka-damy-rade-kongres-gospodarczy-pis-w-katowicach" target="_blank" rel="noopener noreferrer"><span>TVP3 Katowice</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75398,33132275,konwencja-pis-w-katowicach-czarnek-do-konfederacji-w-co-wy.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:215" data-id="1150495200">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem/" onclick="return openArticleLink(event, 1150495200, '/Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem')" tabindex="-1" aria-hidden="true">
@@ -441,7 +489,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -457,6 +505,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -467,6 +516,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Polityka/liderzy-pis-punktuja-mentzena-na-konwencji-w-katowicach-to-jest-czas-na";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

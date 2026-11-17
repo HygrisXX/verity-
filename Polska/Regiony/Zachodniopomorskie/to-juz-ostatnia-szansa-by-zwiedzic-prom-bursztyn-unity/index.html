@@ -123,6 +123,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/to-juz-ostatnia-szansa-by-zwiedzic-prom-bursztyn-unity/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: To już ostatnia szansa, by zwiedzić prom Bursztyn Unity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "— Po czwartej rano wyjechaliśmy z Ostrowa Wielkopolskiego, no i tutaj przyszliśmy, tak półtorej godziny stoimy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "— Przyjechaliśmy specjalnie, dlatego, że dzisiaj pociągi są za darmo i wejście do Bursztynu jest za darmo, i dlatego przyjechaliśmy z radością."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy Pomorza Zachodniego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -132,7 +162,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -147,8 +177,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -238,11 +274,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Zachodniopomorskie</span>
+              
               <time datetime="2026-11-14T07:55:46+01:00">14.11.2026, 07:55</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">To już ostatnia szansa, by zwiedzić prom Bursztyn Unity</h1>
             <p class="article-lede">Bez biletów, bez zapisów, za to z gwarancją wrażeń. Punktualnie o godz. 10 w sobotę prom Bursztyn Unity otworzył się dla zwiedzających. To ostatnia okazja, by zobaczyć jednostkę, nim wypłynie w rejs techniczny do Szwecji.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy Pomorza Zachodniego</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (3 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -272,6 +311,7 @@
             </div>
           </div>
           <p class="perspective-summary">To już ostatnia szansa, by zwiedzić prom Bursztyn Unity</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Stoimy, godzinkę, czwartej.</div><div><strong>Pomija:</strong> Pomija kontekst (Mieszkańcy, pokład, mogli) rozwijany w TVP3 Szczecin, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radioszczecin.pl/1,513698" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Szczecin" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Szczecin">
           <div class="perspective-head">
@@ -282,6 +322,7 @@
             </div>
           </div>
           <p class="perspective-summary">Bursztyn Unity zaprasza na pokład. Ostatnia szansa na zwiedzanie</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zaprasza, statek, wcześniej.</div><div><strong>Pomija:</strong> Pomija kontekst (Wielkopolskiego, Przyjechaliśmy, Niepodległości) rozwijany w Radio Szczecin, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://szczecin.tvp.pl/96464927/bursztyn-unity-do-zwiedzania-w-szczecinie-ostatni-dzien-otwarty" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Szczecin" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -292,10 +333,12 @@
             </div>
           </div>
           <p class="perspective-summary">Prom Bursztyn Unity wypłynął w morze. Wkrótce regularne rejsy</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wypłynął, morze, Wkrótce.</div><div><strong>Pomija:</strong> Pomija kontekst (zwiedzić, godziny, szansa) rozwijany w Radio Szczecin, TVP3 Szczecin.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: To już ostatnia szansa, by zwiedzić prom Bursztyn Unity?</summary><div class="faq-a">— Po czwartej rano wyjechaliśmy z Ostrowa Wielkopolskiego, no i tutaj przyszliśmy, tak półtorej godziny stoimy.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">— Przyjechaliśmy specjalnie, dlatego, że dzisiaj pociągi są za darmo i wejście do Bursztynu jest za darmo, i dlatego przyjechaliśmy z radością.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy Pomorza Zachodniego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (1):</strong><div>• Dopisano źródło: TVP.info (aktualizacja wieloźródłowa) (<a href="https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -329,6 +372,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://radioszczecin.pl/1,513698" target="_blank" rel="noopener noreferrer"><span>Radio Szczecin</span><span>↗</span></a></li><li><a href="https://szczecin.tvp.pl/96464927/bursztyn-unity-do-zwiedzania-w-szczecinie-ostatni-dzien-otwarty" target="_blank" rel="noopener noreferrer"><span>TVP3 Szczecin</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96493718/prom-bursztyn-unity-wyruszy-w-rejs-do-ystad-pierwszy-rejs-nowego-promu-to-szczecin-swinoujscie" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:188" data-id="234329824">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Zachodniopomorskie/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo-niepokojace/" onclick="return openArticleLink(event, 234329824, '/Polska/Regiony/Zachodniopomorskie/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo-niepokojace')" tabindex="-1" aria-hidden="true">
@@ -371,7 +415,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -387,6 +431,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -397,6 +442,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Zachodniopomorskie/to-juz-ostatnia-szansa-by-zwiedzic-prom-bursztyn-unity";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

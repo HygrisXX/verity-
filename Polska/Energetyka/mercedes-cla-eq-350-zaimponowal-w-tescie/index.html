@@ -99,6 +99,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Energetyka/mercedes-cla-eq-350-zaimponowal-w-tescie/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Mercedes CLA EQ 350 zaimponował w teście?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jeszcze niedawno przejechanie elektrycznym Mercedesem z Jeleniej Góry do Warszawy wymagało dwóch postojów na ładowanie. Tak było w styczniu 2022 roku, gdy testowaliśmy EQA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Do Warszawy dotarliśmy po 4 godzinach i 35 minutach, bez żadnego przystanku, z 4% zapasu energii w akumulatorze (plus rezerwa poniżej 0%)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Energia i rachunki). Status: Doniesienie lokalne / branżowe."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -108,7 +138,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -123,8 +153,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -214,11 +250,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Energetyka</span>
+              
               <time datetime="2026-11-15T02:50:39+01:00">15.11.2026, 02:50</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Mercedes CLA EQ 350 zaimponował w teście</h1>
             <p class="article-lede">Jeszcze niedawno przejechanie elektrycznym Mercedesem z Jeleniej Góry do Warszawy wymagało dwóch postojów na ładowanie. Tak było w styczniu 2022 roku, gdy testowaliśmy EQA.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Kierowcy i pasażerowie</span><span class="impact-pill"><strong>Obszar:</strong> Energia i rachunki</span><span class="impact-pill"><strong>Status:</strong> Doniesienie lokalne / branżowe</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -248,10 +287,12 @@
             </div>
           </div>
           <p class="perspective-summary">Mercedes CLA EQ 350 zaimponował w teście</p>
+          
           <div class="perspective-actions"><a class="perspective-link" href="https://wysokienapiecie.pl/122769-mercedes-cla-eq-350-z-wiekszym-zasiegiem-od-benzynowego-brata/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Mercedes CLA EQ 350 zaimponował w teście?</summary><div class="faq-a">Jeszcze niedawno przejechanie elektrycznym Mercedesem z Jeleniej Góry do Warszawy wymagało dwóch postojów na ładowanie. Tak było w styczniu 2022 roku, gdy testowaliśmy EQA.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Do Warszawy dotarliśmy po 4 godzinach i 35 minutach, bez żadnego przystanku, z 4% zapasu energii w akumulatorze (plus rezerwa poniżej 0%).</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Kierowcy i pasażerowie (obszar: Energia i rachunki). Status: Doniesienie lokalne / branżowe.</div></details></section>
 
           
 
@@ -285,6 +326,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://wysokienapiecie.pl/122769-mercedes-cla-eq-350-z-wiekszym-zasiegiem-od-benzynowego-brata/" target="_blank" rel="noopener noreferrer"><span>WysokieNapiecie.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:38" data-id="2028415519">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Energetyka/orlen-zerwal-pierwszy-kontrakt-z-katarem-gaz-i-tak-nie-plynal-ale/" onclick="return openArticleLink(event, 2028415519, '/Polska/Energetyka/orlen-zerwal-pierwszy-kontrakt-z-katarem-gaz-i-tak-nie-plynal-ale')" tabindex="-1" aria-hidden="true">
@@ -327,7 +369,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -343,6 +385,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -353,6 +396,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Energetyka/mercedes-cla-eq-350-zaimponowal-w-tescie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

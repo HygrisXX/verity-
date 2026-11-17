@@ -1,9 +1,10 @@
 /* VERITY Service Worker — cache powłoki aplikacji i czytanie offline */
-const CACHE_NAME = 'verity-shell-v1';
+const CACHE_NAME = 'verity-shell-v2';
 const CORE_ASSETS = [
   './',
   './styles.css',
   './app.js',
+  './community.js',
   './manifest.webmanifest',
   './icon.svg'
 ];
@@ -37,8 +38,9 @@ self.addEventListener('fetch', event => {
     return;
   }
   if (url.origin !== self.location.origin) return;
+  if (url.pathname.includes('/api/')) return;
 
-  const isDataJson = url.pathname.endsWith('/articles-index.json') || url.pathname.endsWith('/articles.json');
+  const isDataJson = url.pathname.endsWith('/articles-index.json') || url.pathname.endsWith('/articles.json') || url.pathname.endsWith('/editorial_state.json');
   const isNav = req.mode === 'navigate' || (req.headers.get('accept') || '').includes('text/html');
 
   // Dane JSON oraz nawigacja HTML: najpierw sieć (świeże wiadomości co godzinę), przy braku sieci pamięć podręczna

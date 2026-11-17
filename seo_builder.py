@@ -10,9 +10,24 @@ import json
 import os
 import re
 import shutil
+import struct
+import urllib.error
+import urllib.request
 import xml.sax.saxutils
+import zlib
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
+from urllib.parse import urlparse
+
+VERITY_INDEXNOW_DEFAULT_KEY = "a7f3c91e4b2d8065e19a4f7c3d28b50e"
+
+
+def get_indexnow_key() -> str:
+    env_k = (os.environ.get("VERITY_INDEXNOW_KEY") or "").strip()
+    if re.fullmatch(r"[A-Za-z0-9-]{8,128}", env_k):
+        return env_k
+    return VERITY_INDEXNOW_DEFAULT_KEY
+
 
 VOIVODESHIPS = [
     (
@@ -218,6 +233,177 @@ def path_hue(path: str) -> int:
     for ch in last:
         h = (h * 31 + ord(ch)) % 360
     return h
+
+
+def _hsl_to_rgb(hue_deg: int, sat: float = 0.68, light: float = 0.50) -> tuple:
+    import colorsys
+    r, g, b = colorsys.hls_to_rgb((hue_deg % 360) / 360.0, light, sat)
+    return (int(round(r * 255)), int(round(g * 255)), int(round(b * 255)))
+
+
+def _png_chunk(tag: bytes, data: bytes) -> bytes:
+    return struct.pack(">I", len(data)) + tag + data + struct.pack(">I", zlib.crc32(tag + data) & 0xFFFFFFFF)
+
+
+def _write_fallback_og_png(out_path: str, width: int, height: int, accent_rgb: tuple):
+    bg_row = b"\x00" + (b"\x15\x1b\x28" * width)
+    acc_bytes = bytes(accent_rgb)
+    acc_row = b"\x00" + (acc_bytes * width)
+    card_row = b"\x00" + (b"\x1e\x26\x38" * width)
+    rows = []
+    for y in range(height):
+        if y < 14 or y >= height - 10:
+            rows.append(acc_row)
+        elif 96 <= y <= height - 96:
+            rows.append(card_row)
+        else:
+            rows.append(bg_row)
+    raw = b"".join(rows)
+    ihdr = struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)
+    png_bytes = b"\x89PNG\r\n\x1a\n" + _png_chunk(b"IHDR", ihdr) + _png_chunk(b"IDAT", zlib.compress(raw, 6)) + _png_chunk(b"IEND", b"")
+    with open(out_path, "wb") as f:
+        f.write(png_bytes)
+
+
+def _load_og_font(candidates: tuple, size: int):
+    from PIL import ImageFont
+    for fp in candidates:
+        if os.path.isfile(fp):
+            try:
+                return ImageFont.truetype(fp, size)
+            except Exception:
+                pass
+    return ImageFont.load_default()
+
+
+def generate_og_card_png(art: dict, out_path: str) -> bool:
+    """
+    Generuje automatyczną kartę graficzną OpenGraph 1200x630 PNG z tytułem, działem,
+    liczbą źródeł i paskiem zgodności (dla artykułów bez zdjęcia z RSS).
+    """
+    width, height = 1200, 630
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    hue = path_hue(art.get("path") or "/Polska")
+    accent_rgb = _hsl_to_rgb(hue, sat=0.72, light=0.54)
+
+    try:
+        from PIL import Image, ImageDraw
+    except Exception:
+        _write_fallback_og_png(out_path, width, height, accent_rgb)
+        return True
+
+    bg_col = (21, 27, 40)
+    panel_col = (30, 38, 56)
+    border_col = (52, 65, 92)
+    text_main = (245, 247, 250)
+    text_muted = (176, 188, 208)
+
+    img = Image.new("RGB", (width, height), bg_col)
+    draw = ImageDraw.Draw(img)
+
+    # Pasek kategorii u góry oraz ramka redakcyjna
+    draw.rectangle([0, 0, width, 12], fill=accent_rgb)
+    draw.rounded_rectangle([48, 44, width - 48, height - 44], radius=22, fill=panel_col, outline=border_col, width=2)
+
+    serif_paths = (
+        "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    )
+    sans_bold_paths = (
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    )
+    sans_paths = (
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    )
+
+    f_logo = _load_og_font(sans_bold_paths, 28)
+    f_badge = _load_og_font(sans_bold_paths, 22)
+    f_title = _load_og_font(serif_paths, 46)
+    f_meta = _load_og_font(sans_bold_paths, 23)
+    f_small = _load_og_font(sans_paths, 21)
+
+    # Nagłówek: V VERITY + Kategoria + Data
+    draw.rounded_rectangle([84, 78, 134, 128], radius=10, fill=accent_rgb)
+    draw.text((99, 86), "V", font=f_logo, fill=(255, 255, 255))
+    draw.text((152, 87), "VERITY", font=f_logo, fill=text_main)
+
+    cat_txt = short_cat_label(art.get("path") or "/Polska").upper()
+    cat_bbox = draw.textbbox((0, 0), cat_txt, font=f_badge)
+    cat_w = (cat_bbox[2] - cat_bbox[0]) + 32
+    draw.rounded_rectangle([296, 82, 296 + cat_w, 124], radius=12, fill=accent_rgb)
+    draw.text((312, 90), cat_txt, font=f_badge, fill=(255, 255, 255))
+
+    date_txt = (art.get("display_date") or "")[:28]
+    if date_txt:
+        d_bbox = draw.textbbox((0, 0), date_txt, font=f_small)
+        d_w = d_bbox[2] - d_bbox[0]
+        draw.text((width - 84 - d_w, 92), date_txt, font=f_small, fill=text_muted)
+
+    # Zawijanie tytułu do maks. 4 wierszy
+    raw_title = strip_citations(art.get("seo_title") or "VERITY — Weryfikacja faktów")
+    max_title_w = width - 168
+    words = raw_title.split()
+    lines = []
+    cur = ""
+    for w in words:
+        cand = f"{cur} {w}".strip()
+        cb = draw.textbbox((0, 0), cand, font=f_title)
+        if cb[2] - cb[0] <= max_title_w:
+            cur = cand
+        else:
+            if cur:
+                lines.append(cur)
+            cur = w
+        if len(lines) == 4:
+            cur = ""
+            break
+    if cur and len(lines) < 4:
+        lines.append(cur)
+    if len(lines) == 4 and len(" ".join(lines).split()) < len(words):
+        lines[-1] = lines[-1].rstrip(".,;:- ") + "…"
+
+    y_cursor = 178
+    for ln in lines:
+        draw.text((84, y_cursor), ln, font=f_title, fill=text_main)
+        y_cursor += 64
+
+    # Dolna belka z liczbą źródeł i paskiem zgodności
+    draw.line([84, height - 154, width - 84, height - 154], fill=border_col, width=2)
+    srcs = art.get("sources") or []
+    pct = art.get("fact_agreement_pct")
+    src_txt = f"Źródła: {sources_label(len(srcs))}" if srcs else "Synteza faktograficzna"
+    draw.text((84, height - 124), src_txt, font=f_meta, fill=text_main)
+
+    if len(srcs) >= 2 and pct is not None:
+        pct_i = max(0, min(100, int(pct)))
+        meter_col = (34, 197, 94) if pct_i >= 85 else ((245, 158, 11) if pct_i >= 70 else (239, 68, 68))
+        bar_x0, bar_y0, bar_w, bar_h = 370, height - 116, 260, 14
+        draw.rounded_rectangle([bar_x0, bar_y0, bar_x0 + bar_w, bar_y0 + bar_h], radius=7, fill=(52, 65, 92))
+        fill_w = max(14, int(bar_w * (pct_i / 100.0)))
+        draw.rounded_rectangle([bar_x0, bar_y0, bar_x0 + fill_w, bar_y0 + bar_h], radius=7, fill=meter_col)
+        draw.text((bar_x0 + bar_w + 18, height - 124), f"{pct_i}% zgodności faktów", font=f_meta, fill=meter_col)
+    else:
+        draw.text((370, height - 124), "Bez clickbaitu i opinii", font=f_small, fill=text_muted)
+
+    foot_right = "Zero-Trust · Weryfikacja faktów"
+    fr_box = draw.textbbox((0, 0), foot_right, font=f_small)
+    draw.text((width - 84 - (fr_box[2] - fr_box[0]), height - 121), foot_right, font=f_small, fill=text_muted)
+
+    img.save(out_path, format="PNG", optimize=True)
+    return True
+
+
+def _article_og_image_info(art: dict, site_base_url: str) -> tuple:
+    thumb = (art.get("thumbnail_url") or "").strip()
+    if thumb:
+        return thumb, None
+    art_id = art.get("id")
+    if art_id:
+        return f"{site_base_url.rstrip('/')}/og/{art_id}.png", (1200, 630)
+    return "", None
 
 
 def short_cat_label(path: str) -> str:
@@ -845,6 +1031,12 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
         )
         actions_html = f'<div class="perspective-actions">{link}{filter_btn}</div>' if (link or filter_btn) else ""
         col_cls = "perspective-col is-collapsed-persp" if p_idx >= 4 else "perspective-col"
+        diff_parts = []
+        if p.get("focus"):
+            diff_parts.append(f'<div><strong>Eksponuje:</strong> {html.escape(pl_typography(p["focus"]))}</div>')
+        if p.get("omits"):
+            diff_parts.append(f'<div><strong>Pomija:</strong> {html.escape(pl_typography(p["omits"]))}</div>')
+        diff_html = f'<div class="perspective-diff">{"".join(diff_parts)}</div>' if diff_parts else ""
         persp_cols.append(f"""<div class="{col_cls}" data-outlet="{o_esc}">
           <div class="perspective-head">
             <span class="outlet-mono" aria-hidden="true">{html.escape(_outlet_monogram(o_raw))}</span>
@@ -854,6 +1046,7 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
             </div>
           </div>
           <p class="perspective-summary">{html.escape(pl_typography(p.get("summary","")))}</p>
+          {diff_html}
           {actions_html}
         </div>""")
 
@@ -945,6 +1138,74 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
             {persp_more_html}
           </div>"""
 
+    # Pigułki "Kogo dotyczy / Obszar / Status"
+    imp = art.get("impact") or {}
+    impact_html = ""
+    if imp and (imp.get("audience") or imp.get("scope") or imp.get("status")):
+        imp_parts = []
+        if imp.get("audience"):
+            imp_parts.append(f'<span class="impact-pill"><strong>Kogo dotyczy:</strong> {html.escape(imp["audience"])}</span>')
+        if imp.get("scope"):
+            imp_parts.append(f'<span class="impact-pill"><strong>Obszar:</strong> {html.escape(imp["scope"])}</span>')
+        if imp.get("status"):
+            imp_parts.append(f'<span class="impact-pill"><strong>Status:</strong> {html.escape(imp["status"])}</span>')
+        impact_html = f'<div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status">{"".join(imp_parts)}</div>'
+
+    # Baner i oś czasu "Akta Sprawy"
+    dossier_items = art.get("dossier_items") or []
+    dossier_banner_html = ""
+    timeline_html = ""
+    if len(dossier_items) >= 2:
+        d_title = html.escape(art.get("dossier_title") or "Wątek rozwijany")
+        d_idx = int(art.get("dossier_index") or 1)
+        d_cnt = int(art.get("dossier_count") or len(dossier_items))
+        dossier_banner_html = (
+            f'<div class="dossier-banner">'
+            f'<span class="dossier-badge">Akta Sprawy</span>'
+            f'<span class="dossier-title-txt">{d_title} ({d_idx}/{d_cnt})</span>'
+            f'<a class="dossier-jump" href="#timeline">Oś czasu tematu ↓</a>'
+            f'</div>'
+        )
+        tl_steps = []
+        for step in dossier_items:
+            s_id = step.get("id")
+            s_url = step.get("seo_url") or ""
+            is_cur = (s_id == art.get("id")) or (s_url and s_url == art.get("seo_url"))
+            s_href = html.escape(_rel_href(rel_root, s_url), quote=True)
+            s_js = html.escape(s_url, quote=True)
+            s_title = html.escape(pl_typography(step.get("seo_title") or ""))
+            s_date = html.escape(step.get("display_date") or "")
+            tl_cls = "timeline-item is-current" if is_cur else "timeline-item"
+            cur_tag = '<span class="timeline-now">Czytasz teraz</span>' if is_cur else ""
+            link_el = (
+                f'<span class="timeline-link">{s_title}</span>'
+                if is_cur
+                else f'<a class="timeline-link" href="{s_href}" onclick="return openArticleLink(event, {int(s_id or 0)}, \'{s_js}\')">{s_title}</a>'
+            )
+            tl_steps.append(f'<li class="{tl_cls}"><div class="timeline-date">{s_date}</div>{link_el}{cur_tag}</li>')
+        timeline_html = (
+            f'<section id="timeline" class="dossier-timeline" aria-label="Oś czasu sprawy">'
+            f'<div class="timeline-head"><span class="dossier-badge">Akta Sprawy · Oś czasu</span>'
+            f'<h2>{d_title}</h2><span class="timeline-meta">Etap {d_idx} z {d_cnt}</span></div>'
+            f'<ol class="timeline-list">{"".join(tl_steps)}</ol>'
+            f'</section>'
+        )
+
+    # Sekcja FAQ pod Rich Snippets
+    seo_faq = [f for f in (art.get("seo_faq") or []) if isinstance(f, dict) and f.get("q") and f.get("a")]
+    faq_html = ""
+    if seo_faq:
+        faq_items_html = "".join(
+            f'<details class="faq-item"{" open" if idx == 0 else ""}>'
+            f'<summary class="faq-q">{html.escape(pl_typography(fq["q"]))}</summary>'
+            f'<div class="faq-a">{html.escape(pl_typography(fq["a"]))}</div>'
+            f'</details>'
+            for idx, fq in enumerate(seo_faq)
+        )
+        faq_html = f'<section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2>{faq_items_html}</section>'
+
+    ai_badge_html = '<span class="ai-badge">Synteza AI Zero-Trust</span>' if art.get("ai_synthesized") else ""
+
     return f"""<div class="cat" style="--h:{hue}">
       <a class="back-link" href="{back_href}" onclick="return selectPathLink(event, '{html.escape(back_cat, quote=True)}')">← Wróć do {back_label}</a>
       <div class="reader has-aside">
@@ -952,11 +1213,14 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">{html.escape(short_cat_label(cat_path))}</span>
+              {ai_badge_html}
               <time datetime="{html.escape(art.get('published_iso') or '')}">{date_esc}</time>
               <span>{minutes_label(mins)}</span>
             </div>
             <h1 class="article-title">{title_html}</h1>
             {lede_html}
+            {impact_html}
+            {dossier_banner_html}
           </header>
 
           {hero_html}
@@ -970,6 +1234,7 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
           </div>
 
           {perspectives_box_html}
+          {faq_html}
 
           {corr_box_html}
 
@@ -999,6 +1264,7 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
           {links_html}
         </aside>
       </div>
+      {timeline_html}
       {related_html}
     </div>"""
 
@@ -1053,17 +1319,111 @@ def _build_news_article_jsonld(art: dict, site_base_url: str) -> list:
         "author": {"@type": "Organization", "name": "Zespół Redakcyjny VERITY", "url": f"{site_base_url}/"},
         "publisher": {"@type": "Organization", "name": "VERITY", "url": f"{site_base_url}/"},
     }
-    if art.get("thumbnail_url"):
-        news_ld["image"] = [art["thumbnail_url"]]
+    og_img_url, _ = _article_og_image_info(art, site_base_url)
+    if og_img_url:
+        news_ld["image"] = [og_img_url]
     if art.get("keywords"):
         news_ld["keywords"] = art["keywords"]
     if citations:
         news_ld["citation"] = citations
 
-    return [
+    out_ld = [
         news_ld,
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": breadcrumbs},
     ]
+    faq_entities = [
+        {
+            "@type": "Question",
+            "name": item["q"],
+            "acceptedAnswer": {"@type": "Answer", "text": item["a"]},
+        }
+        for item in (art.get("seo_faq") or [])
+        if isinstance(item, dict) and item.get("q") and item.get("a")
+    ]
+    if faq_entities:
+        out_ld.append({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faq_entities,
+        })
+    return out_ld
+
+
+try:
+    from community_db import PENALTY_TARIFF as _COMMUNITY_TARIFF
+    _TARIFF_ROWS = list(_COMMUNITY_TARIFF.values())
+except Exception:
+    _TARIFF_ROWS = [
+        {"code": "§1.1", "title": "Spam, flood lub link komercyjny", "description": "Masowe powielanie treści, reklamy komercyjne lub flood na czacie live / w komentarzach.", "points": 2},
+        {"code": "§1.2", "title": "Koordynacja rajdu lub multikonta", "description": "Zorganizowane zwoływanie brygady z zewnętrznych komunikatorów lub zakładanie multikont do manipulacji.", "points": 4},
+        {"code": "§1.3", "title": "Phishing, złośliwe linki lub podszywanie", "description": "Rozsyłanie fałszywych stron logowania, skracaczy maskujących malware lub podszywanie się pod redakcję.", "points": 6},
+        {"code": "§2.1", "title": "Wulgarna obelga personalna", "description": "Bezpośrednie wyzwiska, inwektywy ad personam i poniżanie innych uczestników dyskusji.", "points": 2},
+        {"code": "§2.2", "title": "Prowokacja nienawiścią / dezorganizacja debaty", "description": "Systematyczne rozbijanie dyskusji mową nienawiści lub wulgarnym trollingiem (zero kar za same poglądy).", "points": 4},
+        {"code": "§2.3", "title": "Groźby karalne lub doxxing", "description": "Grożenie przemocą fizyczną, publikowanie prywatnych adresów, telefonów lub danych osobowych.", "points": 10},
+    ]
+
+
+def _render_moderation_ssr(rel_root: str) -> str:
+    tariff_rows = "\n".join(
+        f'<tr>'
+        f'<td class="mod-code"><code>{html.escape(r["code"])}</code></td>'
+        f'<td><strong>{html.escape(r["title"])}</strong><div class="mod-desc">{html.escape(r["description"])}</div></td>'
+        f'<td class="mod-pts">+{int(r["points"])}&nbsp;pkt</td>'
+        f'</tr>'
+        for r in _TARIFF_ROWS
+    )
+    home_href = html.escape(_rel_href(rel_root, "/Polska"), quote=True)
+    return f"""<div class="moderation-page">
+      <a class="back-link" href="{home_href}" onclick="return selectPathLink(event, '/Polska')">← Wróć do wydania głównego VERITY</a>
+      <div class="feed-heading">
+        <div>
+          <span class="feed-crumb">/moderacja</span>
+          <h1>Publiczny Rejestr Moderacji i Taryfikator</h1>
+        </div>
+        <span>Pełna jawność decyzji</span>
+      </div>
+      <div class="mod-principle-box">
+        <strong>Zasada naczelna:</strong> Zero kar za poglądy polityczne czy gospodarcze. Usuwamy wyłącznie spam, rajdy multikont i wulgarne wyzwiska personalne według sztywnego taryfikatora. Przy <strong>6 pkt</strong> następuje automatyczne wyciszenie na 24h, a przy <strong>10 pkt</strong> blokada konta.
+      </div>
+      <section class="mod-card">
+        <h2 class="mod-section-title">Sztywny Taryfikator Punktowy (§1.1–§2.3)</h2>
+        <div class="mod-table-wrap">
+          <table class="mod-table">
+            <thead>
+              <tr><th>Paragraf</th><th>Naruszenie</th><th>Punkty</th></tr>
+            </thead>
+            <tbody>
+              {tariff_rows}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="moderationRegistryMount" class="mod-card">
+        <h2 class="mod-section-title">Ostatnie jawne wpisy w rejestrze</h2>
+        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu w trybie serwera (`server.py` / docelowo Supabase).</p>
+        <div class="mod-table-wrap">
+          <table class="mod-table">
+            <thead>
+              <tr><th>Konto</th><th>Paragraf</th><th>Kontekst</th><th>Decyzja</th></tr>
+            </thead>
+            <tbody id="moderationLogBody">
+              <tr>
+                <td><strong>@Troll_Konto99</strong></td>
+                <td><code>§2.1</code> Wulgarna obelga personalna</td>
+                <td>„Ty jesteś chory psychicznie i nie umiesz czytać...”</td>
+                <td class="mod-decision warn">+2 pkt karne (4/10)</td>
+              </tr>
+              <tr>
+                <td><strong>@Prawica_PL</strong></td>
+                <td><code>ODRZUCONO</code> Zgłoszenie za „poglądy polityczne”</td>
+                <td>„Ta zmiana podatkowa oznacza wyższe koszty dla samorządów...”</td>
+                <td class="mod-decision ok">ODRZUCONO (Komentarz zostaje — zero kar za poglądy)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>"""
 
 
 def _page_shell(
@@ -1082,15 +1442,24 @@ def _page_shell(
     robots_content: str = "index, follow, max-image-preview:large, max-snippet:-1",
     css_ver: str = "1",
     js_ver: str = "1",
+    comm_ver: str = "1",
     section_rss_rel: str = "",
     section_rss_title: str = "",
+    pending_count: int = 0,
+    og_image_dims: tuple | None = None,
 ) -> str:
     safe_title = html.escape(title, quote=True)
     safe_desc = html.escape(description, quote=True)
     safe_can = html.escape(canonical_url, quote=True)
     safe_img = html.escape(og_image, quote=True) if og_image else ""
+    og_dim_tags = (
+        f'  <meta property="og:image:width" content="{int(og_image_dims[0])}" />\n'
+        f'  <meta property="og:image:height" content="{int(og_image_dims[1])}" />\n'
+        if safe_img and og_image_dims
+        else ""
+    )
     og_img_tags = (
-        f'  <meta property="og:image" content="{safe_img}" />\n  <meta name="twitter:image" content="{safe_img}" />\n'
+        f'  <meta property="og:image" content="{safe_img}" />\n{og_dim_tags}  <meta name="twitter:image" content="{safe_img}" />\n'
         if safe_img
         else ""
     )
@@ -1150,8 +1519,14 @@ def _page_shell(
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">{int(pending_count)}</span>
         </button>
       </div>
     </div>
@@ -1207,7 +1582,7 @@ def _page_shell(
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -1223,6 +1598,7 @@ def _page_shell(
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="{html.escape(rel_root, quote=True)}moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="{html.escape(rel_root, quote=True)}news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="{html.escape(rel_root, quote=True)}sitemap.xml">Sitemap (XML)</a>
         <a href="{html.escape(rel_root, quote=True)}feed.xml">Kanał RSS</a>
@@ -1234,6 +1610,7 @@ def _page_shell(
 
   <script>{init_script_vars}</script>
   <script src="{html.escape(rel_root, quote=True)}app.js?v={html.escape(js_ver, quote=True)}"></script>
+  <script src="{html.escape(rel_root, quote=True)}community.js?v={html.escape(comm_ver, quote=True)}" defer></script>
 </body>
 </html>
 """
@@ -1293,7 +1670,7 @@ def build_articles_index(articles: list) -> list:
     """Buduje lekki indeks artykułów (bez full_sections i perspectives) do szybkiego startu SPA."""
     index_items = []
     for a in articles or []:
-        index_items.append({
+        item = {
             "id": a.get("id"),
             "path": a.get("path") or "/Polska",
             "seo_url": a.get("seo_url") or "",
@@ -1311,7 +1688,14 @@ def build_articles_index(articles: list) -> list:
             "sources": a.get("sources") or [],
             "declickbait": a.get("declickbait") or [],
             "reading_minutes": reading_minutes(a),
-        })
+        }
+        if a.get("admin_note"):
+            item["admin_note"] = a["admin_note"]
+        if a.get("zero_trust_reason"):
+            item["zero_trust_reason"] = a["zero_trust_reason"]
+        if a.get("corrections"):
+            item["corrections"] = a["corrections"]
+        index_items.append(item)
     return index_items
 
 
@@ -1350,16 +1734,52 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     site_base_url = site_base_url.rstrip("/")
     css_ver = _asset_hash(os.path.join(base_dir, "styles.css"))
     js_ver = _asset_hash(os.path.join(base_dir, "app.js"))
+    comm_ver = _asset_hash(os.path.join(base_dir, "community.js"))
 
     published = _sort_articles_for_feed(
         [a for a in articles if a.get("status", "AUTO_PUBLISHED") == "AUTO_PUBLISHED"]
     )
+    all_sorted = _sort_articles_for_feed(list(articles or []))
+    pending_arts_cnt = sum(1 for a in articles if a.get("status") == "PENDING_ADMIN")
+    pending_corrs_cnt = 0
+    ed_state_path = os.path.join(base_dir, "editorial_state.json")
+    if os.path.isfile(ed_state_path):
+        try:
+            with open(ed_state_path, "r", encoding="utf-8") as ef:
+                ed_state = json.load(ef)
+            if isinstance(ed_state, dict) and isinstance(ed_state.get("reader_corrections"), list):
+                pending_corrs_cnt = sum(
+                    1
+                    for c in ed_state["reader_corrections"]
+                    if isinstance(c, dict) and c.get("status") == "PENDING_ADMIN_REVIEW"
+                )
+        except Exception:
+            pass
+    pending_badge_total = pending_arts_cnt + pending_corrs_cnt
 
     # 1. Bezpieczne oczyszczenie poprzednich statycznych folderów kategorii/artykułów
     for top_dir in ("Polska", "Swiat", "Sport"):
         full = os.path.join(base_dir, top_dir)
         if os.path.isdir(full):
             shutil.rmtree(full)
+
+    # 1a. Automatyczne karty graficzne OG 1200x630 PNG dla artykułów bez zdjęcia z RSS + usunięcie nieaktualnych kart
+    og_dir = os.path.join(base_dir, "og")
+    os.makedirs(og_dir, exist_ok=True)
+    valid_og_files = set()
+    generated_og_cnt = 0
+    for art in all_sorted:
+        if not (art.get("thumbnail_url") or "").strip() and art.get("id"):
+            fname = f"{art['id']}.png"
+            valid_og_files.add(fname)
+            if generate_og_card_png(art, os.path.join(og_dir, fname)):
+                generated_og_cnt += 1
+    for existing_f in os.listdir(og_dir):
+        if existing_f.endswith(".png") and existing_f not in valid_og_files:
+            try:
+                os.remove(os.path.join(og_dir, existing_f))
+            except OSError:
+                pass
 
     # 1b. Lekki indeks articles-index.json do szybkiego startu SPA i odroczonego ładowania treści
     index_items = build_articles_index(articles)
@@ -1402,12 +1822,16 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         },
     ]
     first_thumb = next((a.get("thumbnail_url") for a in published if a.get("thumbnail_url")), "")
+    first_thumb_dims = None
+    if not first_thumb and published:
+        first_thumb, first_thumb_dims = _article_og_image_info(published[0], site_base_url)
     home_html = _page_shell(
         title="VERITY – Wieloźródłowa Weryfikacja i Synteza Informacji",
         description="Wieloźródłowa weryfikacja i synteza informacji z 151 redakcji ogólnopolskich, regionalnych (16 województw) i branżowych. Pełna treść faktograficzna, zero clickbaitu, bezpośrednie linki do źródeł.",
         canonical_url=f"{site_base_url}/",
         og_type="website",
         og_image=first_thumb,
+        og_image_dims=first_thumb_dims,
         json_ld_obj=home_ld,
         rel_root="",
         active_path="/Polska",
@@ -1415,8 +1839,10 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         init_script_vars=f'window.VERITY_BASE="";window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
         css_ver=css_ver,
         js_ver=js_ver,
+        comm_ver=comm_ver,
         section_rss_rel="Polska/feed.xml",
         section_rss_title="VERITY — Polska (RSS)",
+        pending_count=pending_badge_total,
     )
     with open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(home_html)
@@ -1427,7 +1853,12 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         depth = len([p for p in rel_dir.split("/") if p])
         rel_root = "../" * depth
         cat_arts = [a for a in published if (a.get("path") or "").startswith(cat_path)]
-        cat_thumb = next((a.get("thumbnail_url") for a in cat_arts if a.get("thumbnail_url")), first_thumb)
+        cat_thumb = next((a.get("thumbnail_url") for a in cat_arts if a.get("thumbnail_url")), "")
+        cat_thumb_dims = None
+        if not cat_thumb and cat_arts:
+            cat_thumb, cat_thumb_dims = _article_og_image_info(cat_arts[0], site_base_url)
+        elif not cat_thumb:
+            cat_thumb, cat_thumb_dims = first_thumb, first_thumb_dims
         cat_ld = [
             {
                 "@context": "https://schema.org",
@@ -1458,6 +1889,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             canonical_url=f"{site_base_url}{cat_path}/",
             og_type="website",
             og_image=cat_thumb,
+            og_image_dims=cat_thumb_dims,
             json_ld_obj=cat_ld,
             rel_root=rel_root,
             active_path=cat_path,
@@ -1465,14 +1897,36 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             init_script_vars=f'window.VERITY_BASE={json.dumps(rel_root)};window.VERITY_INITIAL_PATH={json.dumps(cat_path)};window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
             css_ver=css_ver,
             js_ver=js_ver,
+            comm_ver=comm_ver,
             section_rss_rel=sec_rss_rel,
             section_rss_title=sec_rss_title,
+            pending_count=pending_badge_total,
         )
         _write_file(os.path.join(base_dir, rel_dir, "index.html"), cat_html)
 
-    # 4. Strony pojedynczych artykułów (prawdziwy HTTP 200 OK dla każdego artykułu!)
+    # 3b. Strona Publicznego Rejestru Moderacji (/moderacja/)
+    mod_html = _page_shell(
+        title="Publiczny Rejestr Moderacji i Taryfikator (§1.1–§2.3) — VERITY",
+        description="Jawny rejestr moderacji VERITY. Zero kar za poglądy polityczne — usuwamy wyłącznie spam, rajdy multikont i wulgarne wyzwiska według taryfikatora.",
+        canonical_url=f"{site_base_url}/moderacja/",
+        og_type="website",
+        og_image=first_thumb,
+        og_image_dims=first_thumb_dims,
+        json_ld_obj={"@context": "https://schema.org", "@type": "WebPage", "name": "Publiczny Rejestr Moderacji — VERITY", "url": f"{site_base_url}/moderacja/"},
+        rel_root="../",
+        active_path="/Polska",
+        ssr_main_html=_render_moderation_ssr("../"),
+        init_script_vars=f'window.VERITY_IS_MODERATION=true;window.VERITY_BASE="../";window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+        css_ver=css_ver,
+        js_ver=js_ver,
+        comm_ver=comm_ver,
+        pending_count=pending_badge_total,
+    )
+    _write_file(os.path.join(base_dir, "moderacja", "index.html"), mod_html)
+
+    # 4. Strony pojedynczych artykułów (prawdziwy HTTP 200 OK dla każdego artykułu, z noindex dla PENDING_ADMIN)
     written_urls = set()
-    for art in published:
+    for art in all_sorted:
         seo_url = (art.get("seo_url") or "").strip("/")
         if not seo_url or seo_url in written_urls:
             continue
@@ -1491,12 +1945,19 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             extra_meta += f'  <meta name="news_keywords" content="{html.escape(art["keywords"], quote=True)}" />\n'
 
         sec_rss_rel, sec_rss_title = _section_rss_for_path(cat_path)
+        art_robots = (
+            "noindex, follow"
+            if art.get("status") == "PENDING_ADMIN"
+            else "index, follow, max-image-preview:large, max-snippet:-1"
+        )
+        art_og_img, art_og_dims = _article_og_image_info(art, site_base_url)
         art_html = _page_shell(
             title=f"{art['seo_title']} — VERITY",
             description=meta_desc,
             canonical_url=f"{site_base_url}/{seo_url}/",
             og_type="article",
-            og_image=art.get("thumbnail_url") or "",
+            og_image=art_og_img,
+            og_image_dims=art_og_dims,
             json_ld_obj=_build_news_article_jsonld(art, site_base_url),
             rel_root=rel_root,
             active_path=cat_path if any(c[0] == cat_path for c in CATEGORIES) else "/Polska",
@@ -1507,15 +1968,17 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
                 f'window.VERITY_INITIAL_ARTICLE_URL={json.dumps("/" + seo_url)};'
                 f'window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};'
             ),
+            robots_content=art_robots,
             css_ver=css_ver,
             js_ver=js_ver,
+            comm_ver=comm_ver,
             section_rss_rel=sec_rss_rel,
             section_rss_title=sec_rss_title,
+            pending_count=pending_badge_total,
         )
         _write_file(os.path.join(base_dir, seo_url, "index.html"), art_html)
 
     # 5. Strona 404.html (obsługuje też miękkie przekierowania SPA dla zmienionych URL-i)
-    from urllib.parse import urlparse
     parsed_base = urlparse(site_base_url)
     root_abs_prefix = (parsed_base.path.rstrip("/") + "/") if parsed_base.path.strip("/") else "/"
     not_found_html = _page_shell(
@@ -1532,6 +1995,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         robots_content="noindex, follow",
         css_ver=css_ver,
         js_ver=js_ver,
+        comm_ver=comm_ver,
+        pending_count=pending_badge_total,
     )
     with open(os.path.join(base_dir, "404.html"), "w", encoding="utf-8") as f:
         f.write(not_found_html)
@@ -1574,8 +2039,9 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             f"      <news:title>{title_xml}</news:title>",
             "    </news:news>",
         ])
-        if a.get("thumbnail_url"):
-            img_loc = xml.sax.saxutils.escape(a["thumbnail_url"])
+        og_img_url, _ = _article_og_image_info(a, site_base_url)
+        if og_img_url:
+            img_loc = xml.sax.saxutils.escape(og_img_url)
             news_lines.extend([
                 "    <image:image>",
                 f"      <image:loc>{img_loc}</image:loc>",
@@ -1601,6 +2067,12 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
         "    <changefreq>hourly</changefreq>",
         "    <priority>1.0</priority>",
+        "  </url>",
+        "  <url>",
+        f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/moderacja/')}</loc>",
+        f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
+        "    <changefreq>daily</changefreq>",
+        "    <priority>0.6</priority>",
         "  </url>",
     ]
     for cat_path, _, _ in CATEGORIES:
@@ -1630,10 +2102,11 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
             "    <changefreq>daily</changefreq>",
             "    <priority>0.8</priority>",
         ])
-        if a.get("thumbnail_url"):
+        og_img_url, _ = _article_og_image_info(a, site_base_url)
+        if og_img_url:
             sitemap_lines.extend([
                 "    <image:image>",
-                f"      <image:loc>{xml.sax.saxutils.escape(a['thumbnail_url'])}</image:loc>",
+                f"      <image:loc>{xml.sax.saxutils.escape(og_img_url)}</image:loc>",
                 "    </image:image>",
             ])
         sitemap_lines.append("  </url>")
@@ -1667,7 +2140,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         )
         _write_file(os.path.join(base_dir, sec_rel, "feed.xml"), sec_rss)
 
-    # 9. robots.txt
+    # 9. robots.txt oraz plik weryfikacyjny IndexNow (<key>.txt)
     robots_txt = (
         "User-agent: *\n"
         "Allow: /\n\n"
@@ -1677,7 +2150,92 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     with open(os.path.join(base_dir, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(robots_txt)
 
+    inow_key = get_indexnow_key()
+    with open(os.path.join(base_dir, f"{inow_key}.txt"), "w", encoding="utf-8") as f:
+        f.write(f"{inow_key}\n")
+
     print(
         f"[SEO] Wygenerowano strony HTML ({len(written_urls)} artykułów + {len(CATEGORIES)} działów), "
+        f"karty OG ({generated_og_cnt} PNG 1200x630), IndexNow ({inow_key}.txt), "
         f"articles-index.json, sitemap.xml, news-sitemap.xml, feed.xml (+{len(MAIN_RSS_SECTIONS)} działowych RSS), robots.txt, 404.html"
     )
+
+
+def build_indexnow_payload(site_base_url: str, urls: list, key: str | None = None) -> dict:
+    base = (site_base_url or "https://hygrisxx.github.io/verity-").strip().rstrip("/")
+    parsed = urlparse(base)
+    host = parsed.netloc
+    chosen_key = (key or get_indexnow_key()).strip()
+    clean_urls = []
+    seen = set()
+    for u in urls or []:
+        s = str(u or "").strip()
+        if s and s.startswith(("http://", "https://")) and s not in seen:
+            seen.add(s)
+            clean_urls.append(s)
+    return {
+        "host": host,
+        "key": chosen_key,
+        "keyLocation": f"{base}/{chosen_key}.txt",
+        "urlList": clean_urls,
+    }
+
+
+def submit_indexnow_urls(
+    base_dir: str,
+    articles: list | None = None,
+    site_base_url: str | None = None,
+    key: str | None = None,
+    endpoint: str = "https://api.indexnow.org/indexnow",
+    max_urls: int = 100,
+    timeout: int = 12,
+) -> tuple:
+    base = (site_base_url or detect_site_base_url(base_dir)).strip().rstrip("/")
+    if articles is None:
+        arts_path = os.path.join(base_dir, "articles.json")
+        if not os.path.isfile(arts_path):
+            return False, "Brak pliku articles.json"
+        try:
+            with open(arts_path, "r", encoding="utf-8") as f:
+                articles = json.load(f)
+        except Exception as e:
+            return False, f"Błąd odczytu articles.json: {e}"
+
+    published = sorted(
+        [a for a in (articles or []) if (a.get("status") or "AUTO_PUBLISHED") == "AUTO_PUBLISHED" and a.get("seo_url")],
+        key=lambda a: a.get("updated_iso") or a.get("published_iso") or "",
+        reverse=True,
+    )
+    urls = [f"{base}/", f"{base}/Polska/"]
+    for a in published:
+        if len(urls) >= max_urls:
+            break
+        seo_u = "/" + str(a["seo_url"]).strip("/")
+        urls.append(f"{base}{seo_u}/")
+
+    payload = build_indexnow_payload(base, urls, key=key)
+    if not payload["host"] or not payload["urlList"]:
+        return False, "Brak poprawnego hosta lub listy URL dla IndexNow"
+
+    raw = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    req = urllib.request.Request(
+        endpoint,
+        data=raw,
+        method="POST",
+        headers={"Content-Type": "application/json; charset=utf-8"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            status = getattr(resp, "status", 200)
+            msg = f"IndexNow HTTP {status}: wysłano {len(payload['urlList'])} URL ({payload['host']})"
+            print(f"[SEO] {msg}")
+            return 200 <= int(status) < 300, msg
+    except urllib.error.HTTPError as he:
+        msg = f"IndexNow HTTP {he.code}: {he.reason}"
+        print(f"[WARN] {msg}")
+        return False, msg
+    except (urllib.error.URLError, OSError, TimeoutError) as e:
+        msg = f"IndexNow niedostępne: {e}"
+        print(f"[WARN] {msg}")
+        return False, msg
+

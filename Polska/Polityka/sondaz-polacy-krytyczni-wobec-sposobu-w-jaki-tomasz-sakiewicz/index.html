@@ -144,6 +144,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Polityka/sondaz-polacy-krytyczni-wobec-sposobu-w-jaki-tomasz-sakiewicz/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Sondaż: Polacy krytyczni wobec sposobu, w jaki Tomasz Sakiewicz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Od kul Michała O. zginęło sześć osób, a 15 zostało rannych."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pozytywną ocenę wystawiło 14,5 proc. badanych, 10,5 proc. nie miało zdania, a 21,4 proc. przyznało, że nie wie, jak wyglądała ta relacja."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (6 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -153,7 +183,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -168,8 +198,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -259,11 +295,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Polityka</span>
+              
               <time datetime="2026-11-15T08:55:02+01:00">15.11.2026, 08:55</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Sondaż: Polacy krytyczni wobec sposobu, w jaki Tomasz Sakiewicz relacjonował zamach w Krakowie</h1>
             <p class="article-lede">15.11.2026 07:21 7 listopada 24-letni Michał Oksiński, mieszkaniec Ostrowca Świętokrzyskiego, wjechał samochodem na krakowski Rynek Główny i zaczął strzelać z karabinu samopowtarzalnego AR-15 do przypadkowych ludzi. Od kul Michała O.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Portfel, podatki i rynek</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (6 źródeł)</span></div>
+            <div class="dossier-banner"><span class="dossier-badge">Akta Sprawy</span><span class="dossier-title-txt">Krakowie · zamach (1/2)</span><a class="dossier-jump" href="#timeline">Oś czasu tematu ↓</a></div>
           </header>
 
           <div class="article-hero-wrap">
@@ -293,6 +332,7 @@
             </div>
           </div>
           <p class="perspective-summary">Sondaż: Polacy krytyczni wobec sposobu, w jaki Tomasz Sakiewicz relacjonował zamach w Krakowie</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: krytyczni, sposobu.</div><div><strong>Pomija:</strong> Pomija wyliczenia (14,5 proc., 10,5 proc.) przytaczane przez Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/spoleczenstwo/art45489501-sondaz-polacy-krytyczni-wobec-sposobu-w-jaki-tomasz-sakiewicz-relacjonowal-zamach-w-krakowie" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -303,6 +343,7 @@
             </div>
           </div>
           <p class="perspective-summary">Duża część Polaków źle ocenia relację TV Republika po zamachu w Krakowie [SONDAŻ]</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (14,5 proc., 10,5 proc.) oraz wątki: Duża, Pozytywną.</div><div><strong>Pomija:</strong> Pomija wyliczenia (53,7 proc.) przytaczane przez naTemat.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/kraj/ponad-polowa-badanych-zle-ocenia-tv-republike-chodzi-o-zamach-w-krakowie/n8dpnhr" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="naTemat.pl">
           <div class="perspective-head">
@@ -313,6 +354,7 @@
             </div>
           </div>
           <p class="perspective-summary">Sakiewicz dostał rachunek za relację z Krakowa. Wystawiło go 53,7 proc. Polaków</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (53,7 proc.) oraz wątki: dostał, rachunek.</div><div><strong>Pomija:</strong> Pomija wyliczenia (14,5 proc., 10,5 proc.) przytaczane przez Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://natemat.pl/675616,sakiewicz-dostal-rachunek-za-relacje-z-krakowa-wystawilo-go-53-7-proc-polakow" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="naTemat.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Gazeta.pl">
           <div class="perspective-head">
@@ -323,6 +365,7 @@
             </div>
           </div>
           <p class="perspective-summary">Jak Polacy oceniają relację TV Republika po zamachu w Krakowie? Negatywne opinie zdecydowanie przeważają</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Negatywne, opinie, zdecydowanie.</div><div><strong>Pomija:</strong> Pomija wyliczenia (14,5 proc., 10,5 proc.) przytaczane przez Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.gazeta.pl/polska/7,198072,33132911,jak-polacy-oceniaja-relacje-tv-republika-po-zamachu-w-krakowie.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Gazeta.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Wirtualnemedia.pl">
           <div class="perspective-head">
@@ -333,6 +376,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ponad połowa Polaków źle ocenia relację Republiki z zamachu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: połowa.</div><div><strong>Pomija:</strong> Pomija wyliczenia (14,5 proc., 10,5 proc.) przytaczane przez Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.wirtualnemedia.pl/ponad-polowa-polakow-zle-ocenia-relacje-republiki-z-zamachu,7351251072272384a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wirtualnemedia.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -343,10 +387,12 @@
             </div>
           </div>
           <p class="perspective-summary">Polacy bezlitośni dla Sakiewicza. Wymowne wyniki nowego sondażu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: bezlitośni, Wymowne, wyniki.</div><div><strong>Pomija:</strong> Pomija wyliczenia (14,5 proc., 10,5 proc.) przytaczane przez Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/polacy-bezlitosni-dla-sakiewicza-wymowne-wyniki-nowego-sondazu-7351531281061920a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="6" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (6)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Sondaż: Polacy krytyczni wobec sposobu, w jaki Tomasz Sakiewicz?</summary><div class="faq-a">Od kul Michała O. zginęło sześć osób, a 15 zostało rannych.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Pozytywną ocenę wystawiło 14,5 proc. badanych, 10,5 proc. nie miało zdania, a 21,4 proc. przyznało, że nie wie, jak wyglądała ta relacja.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (6 źródeł).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (3):</strong><div>• Dopisano źródło: Gazeta.pl (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.gazeta.pl/polska/7,198072,33132911,jak-polacy-oceniaja-relacje-tv-republika-po-zamachu-w-krakowie.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Wirtualnemedia.pl (aktualizacja wieloźródłowa) (<a href="https://www.wirtualnemedia.pl/ponad-polowa-polakow-zle-ocenia-relacje-republiki-z-zamachu,7351251072272384a" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.wp.pl/polacy-bezlitosni-dla-sakiewicza-wymowne-wyniki-nowego-sondazu-7351531281061920a" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -380,6 +426,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.rp.pl/spoleczenstwo/art45489501-sondaz-polacy-krytyczni-wobec-sposobu-w-jaki-tomasz-sakiewicz-relacjonowal-zamach-w-krakowie" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/kraj/ponad-polowa-badanych-zle-ocenia-tv-republike-chodzi-o-zamach-w-krakowie/n8dpnhr" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li><li><a href="https://natemat.pl/675616,sakiewicz-dostal-rachunek-za-relacje-z-krakowa-wystawilo-go-53-7-proc-polakow" target="_blank" rel="noopener noreferrer"><span>naTemat.pl</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/polska/7,198072,33132911,jak-polacy-oceniaja-relacje-tv-republika-po-zamachu-w-krakowie.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://www.wirtualnemedia.pl/ponad-polowa-polakow-zle-ocenia-relacje-republiki-z-zamachu,7351251072272384a" target="_blank" rel="noopener noreferrer"><span>Wirtualnemedia.pl</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/polacy-bezlitosni-dla-sakiewicza-wymowne-wyniki-nowego-sondazu-7351531281061920a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      <section id="timeline" class="dossier-timeline" aria-label="Oś czasu sprawy"><div class="timeline-head"><span class="dossier-badge">Akta Sprawy · Oś czasu</span><h2>Krakowie · zamach</h2><span class="timeline-meta">Etap 1 z 2</span></div><ol class="timeline-list"><li class="timeline-item is-current"><div class="timeline-date">15.11.2026, 08:55</div><span class="timeline-link">Sondaż: Polacy krytyczni wobec sposobu, w jaki Tomasz Sakiewicz relacjonował zamach w Krakowie</span><span class="timeline-now">Czytasz teraz</span></li><li class="timeline-item"><div class="timeline-date">16.11.2026, 02:52</div><a class="timeline-link" href="../../../Polska/Regiony/Malopolskie/malopolska-policja-prostuje-doniesienia-wokol-zamachu-w-krakowie/" onclick="return openArticleLink(event, 1339136984, '/Polska/Regiony/Malopolskie/malopolska-policja-prostuje-doniesienia-wokol-zamachu-w-krakowie')">Małopolska policja prostuje doniesienia wokół zamachu w Krakowie. &quot;Prosimy o niewprowadzanie w błąd&quot;</a></li></ol></section>
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:215" data-id="1150495200">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem/" onclick="return openArticleLink(event, 1150495200, '/Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem')" tabindex="-1" aria-hidden="true">
@@ -401,12 +448,12 @@
         <a class="card-media-link" href="../../../Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/" onclick="return openArticleLink(event, 513911660, '/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://files.niezalezna.tech/images/upload/2026/11/14/n_0ee5dbda7510dde52c3045cf10a2b8a4b29d9a623cb021380e267b244340ff2b_c.jpg?r=750,400" alt="Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://files.niezalezna.tech/images/upload/2026/11/14/n_0ee5dbda7510dde52c3045cf10a2b8a4b29d9a623cb021380e267b244340ff2b_c.jpg?r=750,400" alt="Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera (1,6 proc.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">14.11.2026, 19:38</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/" onclick="return openArticleLink(event, 513911660, '/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera')">Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/" onclick="return openArticleLink(event, 513911660, '/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera')">Sondaże szorują po dnie, a Polska 2050 szuka nowego lidera (1,6 proc.)</a></h2>
           <p class="story-lede">W sondażach Polska 2050 dostaje od niespełna 1 do 1,6 proc. poparcia. Mimo to, Rada Krajowa ugrupowania przyjęła w sobotę kalendarz wyborów nowego przewodniczącego.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:96%"></span></span>96% zgodności</span><span>3 źródła · 1 min</span></div>
@@ -422,7 +469,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -438,6 +485,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -448,6 +496,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Polityka/sondaz-polacy-krytyczni-wobec-sposobu-w-jaki-tomasz-sakiewicz";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

@@ -147,6 +147,36 @@
         "item": "https://hygrisxx.github.io/verity-/Swiat/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oprogramowanie służy m.in. do planowania lotów drona rozpoznawczego Vector, od lat używanego przez Ukrainę i zakupionego także przez Bundeswehrę, gdzie nosi nazwę „Sokół” („Falke”)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rzekoma aktualizacja została rozesłana, ale nie bezpośrednio do dronów, lecz na serwery Bundeswehry i innych klientów."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (7 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -156,7 +186,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -171,8 +201,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -262,11 +298,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Świat</span>
+              
               <time datetime="2026-11-13T10:54:04+01:00">13.11.2026, 10:54</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii</h1>
             <p class="article-lede">13.11.2026 11:00 Sprawcy cyberataku włamali się do sieci firmowych producenta i przemycili na wewnętrzne serwery program, który podszywał się pod legalną aktualizację oprogramowania do misji QBase.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Opinia publiczna i dyplomacja</span><span class="impact-pill"><strong>Obszar:</strong> Świat i bezpieczeństwo</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (7 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -296,6 +335,7 @@
             </div>
           </div>
           <p class="perspective-summary">Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do niemieckiej armii</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Niemczech, hakerzy, trafili.</div><div><strong>Pomija:</strong> Pomija kontekst (Ukrainy, uziemiona, kontynuowali) rozwijany w CyberDefence24, Dziennik.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radar.rp.pl/przemysl-obronny/art45484091-cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckiej-armii" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Bankier.pl">
           <div class="perspective-head">
@@ -306,6 +346,7 @@
             </div>
           </div>
           <p class="perspective-summary">Cyberatak na producenta dronów. Niemcy uziemiają flotę &quot;Sokołów&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Niemcy, uziemiają, Sokołów.</div><div><strong>Pomija:</strong> Pomija kontekst (Ukrainy, armii, uziemiona) rozwijany w CyberDefence24, Dziennik.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.bankier.pl/wiadomosc/Cyberatak-na-producenta-dronow-Niemcy-uziemiaja-flote-Sokolow-9228335.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Bankier.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="CyberDefence24">
           <div class="perspective-head">
@@ -316,6 +357,7 @@
             </div>
           </div>
           <p class="perspective-summary">Producent dronów dla Niemiec i Ukrainy ofiarą cyberataku. Bundeswehra uziemiła bezzałogowce</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: ofiarą.</div><div><strong>Pomija:</strong> Pomija kontekst (armii, uziemiona, kontynuowali) rozwijany w Rzeczpospolita, RMF24.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://cyberdefence24.pl/armia-i-sluzby/cyberatak-na-niemieckiego-producenta-bundeswehra-uziemila-drony" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="CyberDefence24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="RMF24">
           <div class="perspective-head">
@@ -326,6 +368,7 @@
             </div>
           </div>
           <p class="perspective-summary">Flota niemieckiej armii była uziemiona. Cyberatak na producenta dronów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Flota.</div><div><strong>Pomija:</strong> Pomija kontekst (Ukrainy, kontynuowali, użytkownicy) rozwijany w CyberDefence24, Dziennik.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rmf24.pl/fakty/swiat/news-flota-niemieckiej-armii-byla-uziemiona-cyberatak-na-producen,nIdn,1025972" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="RMF24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Dziennik.pl">
           <div class="perspective-head">
@@ -336,6 +379,7 @@
             </div>
           </div>
           <p class="perspective-summary">Cyberatak na producenta dronów dla Bundeswehry i Ukrainy. Uziemiono flotę</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).</div><div><strong>Pomija:</strong> Pomija kontekst (niezaplanowanej, bezzałogowców, dostarczonych) rozwijany w Rzeczpospolita, Bankier.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.dziennik.pl/swiat/artykuly/11344131,cyberatak-na-producenta-dronow-dla-bundeswehry-i-ukrainy-uziemiono-fl.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Dziennik.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVN24">
           <div class="perspective-head">
@@ -346,6 +390,7 @@
             </div>
           </div>
           <p class="perspective-summary">Cyberatak na producenta dronów dla armii Niemiec i Ukrainy</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).</div><div><strong>Pomija:</strong> Pomija kontekst (uziemiona, kontynuowali, użytkownicy) rozwijany w RMF24, Dziennik.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/biznes/ze-swiata/quantum-systems-cyberatak-na-producenta-dronow-dla-armii-niemiec-i-ukrainy-st9337163?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Defence24">
           <div class="perspective-head">
@@ -356,10 +401,12 @@
             </div>
           </div>
           <p class="perspective-summary">Cyberatak na producenta bezzałogowców. Bundeswehra czasowo uziemiła flotę dronów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Inni, użytkownicy, kontynuowali.</div><div><strong>Pomija:</strong> Pomija kontekst (Ukrainy, armii, uziemiona) rozwijany w CyberDefence24, Dziennik.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://defence24.pl/sily-zbrojne/cyberatak-na-producenta-bezzalogowcow-bundeswehra-czasowo-uziemila-flote-dronow" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Defence24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="7" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (7)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Cyberatak w Niemczech. Przez producenta dronów hakerzy trafili do?</summary><div class="faq-a">Oprogramowanie służy m.in. do planowania lotów drona rozpoznawczego Vector, od lat używanego przez Ukrainę i zakupionego także przez Bundeswehrę, gdzie nosi nazwę „Sokół” („Falke”).</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Rzekoma aktualizacja została rozesłana, ale nie bezpośrednio do dronów, lecz na serwery Bundeswehry i innych klientów.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (7 źródeł).</div></details></section>
 
           
 
@@ -393,6 +440,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://radar.rp.pl/przemysl-obronny/art45484091-cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do-niemieckiej-armii" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://www.bankier.pl/wiadomosc/Cyberatak-na-producenta-dronow-Niemcy-uziemiaja-flote-Sokolow-9228335.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer"><span>Bankier.pl</span><span>↗</span></a></li><li><a href="https://cyberdefence24.pl/armia-i-sluzby/cyberatak-na-niemieckiego-producenta-bundeswehra-uziemila-drony" target="_blank" rel="noopener noreferrer"><span>CyberDefence24</span><span>↗</span></a></li><li><a href="https://www.rmf24.pl/fakty/swiat/news-flota-niemieckiej-armii-byla-uziemiona-cyberatak-na-producen,nIdn,1025972" target="_blank" rel="noopener noreferrer"><span>RMF24</span><span>↗</span></a></li><li><a href="https://wiadomosci.dziennik.pl/swiat/artykuly/11344131,cyberatak-na-producenta-dronow-dla-bundeswehry-i-ukrainy-uziemiono-fl.html" target="_blank" rel="noopener noreferrer"><span>Dziennik.pl</span><span>↗</span></a></li><li><a href="https://tvn24.pl/biznes/ze-swiata/quantum-systems-cyberatak-na-producenta-dronow-dla-armii-niemiec-i-ukrainy-st9337163?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://defence24.pl/sily-zbrojne/cyberatak-na-producenta-bezzalogowcow-bundeswehra-czasowo-uziemila-flote-dronow" target="_blank" rel="noopener noreferrer"><span>Defence24</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:265" data-id="619313495">
       <div class="story-card">
         <a class="card-media-link" href="../../Swiat/trzeci-lotniskowiec-usa-dotarl-na-bliski-wschod-w-tle-napiecia-z-iranem/" onclick="return openArticleLink(event, 619313495, '/Swiat/trzeci-lotniskowiec-usa-dotarl-na-bliski-wschod-w-tle-napiecia-z-iranem')" tabindex="-1" aria-hidden="true">
@@ -414,15 +462,15 @@
         <a class="card-media-link" href="../../Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/" onclick="return openArticleLink(event, 1537415576, '/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Świat</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg" alt="Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg" alt="Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Świat</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/" onclick="return openArticleLink(event, 1537415576, '/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde')">Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/" onclick="return openArticleLink(event, 1537415576, '/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde')">Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)</a></h2>
           <p class="story-lede">Ponad 1,6 mln żołnierzy, zabitych i rannych, straciła Rosja od początku inwazji na Ukrainę w 2022 roku – podał w niedzielę ukraiński minister spraw zagranicznych Andrij Sybiha.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Swiat</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:88%"></span></span>88% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article></div></section>
@@ -435,7 +483,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -451,6 +499,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -461,6 +510,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Swiat/cyberatak-w-niemczech-przez-producenta-dronow-hakerzy-trafili-do";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

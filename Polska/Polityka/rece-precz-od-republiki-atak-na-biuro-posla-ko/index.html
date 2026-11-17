@@ -126,6 +126,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Polityka/rece-precz-od-republiki-atak-na-biuro-posla-ko/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: „Ręce precz od Republiki”. Atak na biuro posła KO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Michał Jaros, poseł Koalicji Obywatelskiej i szef dolnośląskich struktur partii, zareagował na incydent na platformie X."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Placówka działa w tym miejscu od września 2025 r. i jest jedną z kilku filii biura parlamentarzysty na Dolnym Śląsku."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (4 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -135,7 +165,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -150,8 +180,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -241,11 +277,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Polityka</span>
+              
               <time datetime="2026-11-13T11:50:05+01:00">13.11.2026, 11:50</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">„Ręce precz od Republiki”. Atak na biuro posła KO</h1>
             <p class="article-lede">Na szybach i ścianach budynku pojawiły się napisy „Ręce precz od Republiki” oraz „Tusk precz”, wykonane czarną farbą. Zniszczenia są widoczne zarówno na oknach, jak i elewacji.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Prawo i decyzje publiczne</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (4 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -275,6 +314,7 @@
             </div>
           </div>
           <p class="perspective-summary">„Ręce precz od Republiki”. Atak na biuro posła KO</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zwrócił, bezpośrednio, sprawców.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 lat, 2025) przytaczane przez TVP3 Wrocław, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rmf24.pl/fakty/polska/news-rece-precz-od-republiki-atak-na-biuro-posla-ko,nIdn,1025994" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="RMF24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -285,6 +325,7 @@
             </div>
           </div>
           <p class="perspective-summary">&quot;Ręce precz od Republiki&quot;. Zdewastowali biuro wiceministra</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: pracują, policjanci, przeprowadzili.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 lat, 2025) przytaczane przez TVP3 Wrocław, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/rece-precz-od-republiki-zdewastowali-biuro-wiceministra-7350539292428320a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -295,6 +336,7 @@
             </div>
           </div>
           <p class="perspective-summary">&quot;Ręce precz od Republiki&quot;. Ktoś zdewastował fasadę biura posła KO Michała Jarosa</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2025) oraz wątki: fasadę, biura.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 lat) przytaczane przez TVP3 Wrocław.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/wroclaw/rece-precz-od-republiki-ktos-zdewastowal-fasade-biura-posla-michala-jarosa/f6xz2cy" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Wrocław">
           <div class="perspective-head">
@@ -305,10 +347,12 @@
             </div>
           </div>
           <p class="perspective-summary">Trzebnica: atak na biuro posła Michała Jarosa</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (5 lat) oraz wątki: Sprawcy, grozić.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2025) przytaczane przez Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wroclaw.tvp.pl/96456051/trzebnica-atak-na-biuro-posla-michala-jarosa" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Wrocław" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: „Ręce precz od Republiki”. Atak na biuro posła KO?</summary><div class="faq-a">Michał Jaros, poseł Koalicji Obywatelskiej i szef dolnośląskich struktur partii, zareagował na incydent na platformie X.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Placówka działa w tym miejscu od września 2025 r. i jest jedną z kilku filii biura parlamentarzysty na Dolnym Śląsku.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (4 źródła).</div></details></section>
 
           
 
@@ -342,6 +386,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.rmf24.pl/fakty/polska/news-rece-precz-od-republiki-atak-na-biuro-posla-ko,nIdn,1025994" target="_blank" rel="noopener noreferrer"><span>RMF24</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/rece-precz-od-republiki-zdewastowali-biuro-wiceministra-7350539292428320a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/wroclaw/rece-precz-od-republiki-ktos-zdewastowal-fasade-biura-posla-michala-jarosa/f6xz2cy" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li><li><a href="https://wroclaw.tvp.pl/96456051/trzebnica-atak-na-biuro-posla-michala-jarosa" target="_blank" rel="noopener noreferrer"><span>TVP3 Wrocław</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:215" data-id="1150495200">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem/" onclick="return openArticleLink(event, 1150495200, '/Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem')" tabindex="-1" aria-hidden="true">
@@ -384,7 +429,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -400,6 +445,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -410,6 +456,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Polityka/rece-precz-od-republiki-atak-na-biuro-posla-ko";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

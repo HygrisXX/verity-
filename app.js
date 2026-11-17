@@ -81,9 +81,9 @@ function formatCitations(text, perspectives = []) {
     .replace(/\[(\d+:[^\]]+)\]/g, '<span class="cite-tag">[$1]</span>');
 }
 
-// =========================================================================
+// ---
 // AUTOMATYCZNE WYKRYWANIE MOTYWU URZĄDZENIA + RĘCZNY PRZEŁĄCZNIK
-// =========================================================================
+// ---
 let currentThemeMode = 'auto';
 try { currentThemeMode = localStorage.getItem('verity_theme') || 'auto'; } catch (e) {}
 
@@ -113,9 +113,9 @@ if (window.matchMedia) {
   });
 }
 
-// =========================================================================
+// ---
 // ARTYKUŁY ŁADOWANE DYNAMICZNIE Z articles.json (Z FALLBACKIEM SSR)
-// =========================================================================
+// ---
 let articles = [];
 
 const CANONICAL_ORIGIN = (
@@ -219,9 +219,130 @@ let feedRenderedCount = 0;
 let feedTotalCount = 0;
 let feedHasLead = false;
 
-// ===========================================================================
+const EDITORIAL_KEY = 'verity_editorial_state_v1';
+const BLACKLIST_DOMAINS = ['oko.press', 'demagog.org.pl', 'konkret24'];
+let serverApiAvailable = false;
+let editorialState = { article_decisions: {}, rejected_keys: [], reader_corrections: [] };
+
+function loadLocalEditorialState() {
+  try {
+    const p = JSON.parse(localStorage.getItem(EDITORIAL_KEY) || 'null');
+    if (p && typeof p === 'object') {
+      return {
+        article_decisions: p.article_decisions && typeof p.article_decisions === 'object' ? p.article_decisions : {},
+        rejected_keys: Array.isArray(p.rejected_keys) ? p.rejected_keys : [],
+        reader_corrections: Array.isArray(p.reader_corrections) ? p.reader_corrections : []
+      };
+    }
+  } catch (e) {}
+  return { article_decisions: {}, rejected_keys: [], reader_corrections: [] };
+}
+
+function saveLocalEditorialState() {
+  try {
+    editorialState.updated_iso = new Date().toISOString();
+    localStorage.setItem(EDITORIAL_KEY, JSON.stringify(editorialState));
+  } catch (e) {}
+}
+
+function mergeEditorialStates(rem, loc) {
+  const b = rem || {}, l = loc || {};
+  const corrs = [], byKey = {};
+  [...(b.reader_corrections || []), ...(l.reader_corrections || [])].forEach(c => {
+    if (!c || !c.claim_text || !c.evidence_url) return;
+    const k = `${(c.seo_url || '').replace(/\/+$/, '')}|${c.evidence_url}|${c.claim_text}`;
+    if (k in byKey) {
+      if (c.status && c.status !== 'PENDING_ADMIN_REVIEW') corrs[byKey[k]] = { ...corrs[byKey[k]], ...c };
+    } else {
+      byKey[k] = corrs.length;
+      corrs.push(c);
+    }
+  });
+  return {
+    article_decisions: { ...(b.article_decisions || {}), ...(l.article_decisions || {}) },
+    rejected_keys: Array.from(new Set([...(b.rejected_keys || []), ...(l.rejected_keys || [])])),
+    reader_corrections: corrs
+  };
+}
+
+async function fetchEditorialState() {
+  const loc = loadLocalEditorialState();
+  if (typeof location !== 'undefined' && location.protocol === 'file:') { editorialState = loc; return; }
+  try {
+    const r = await fetch(resolveAsset('api/editorial-state'), { cache: 'no-store' });
+    if (r.ok) {
+      const d = await r.json();
+      if (d && d.ok && d.editorial_state) { serverApiAvailable = true; editorialState = d.editorial_state; return; }
+    }
+  } catch (e) {}
+  try {
+    const r2 = await fetch(resolveAsset('editorial_state.json'), { cache: 'no-store' });
+    if (r2.ok) { editorialState = mergeEditorialStates(await r2.json(), loc); return; }
+  } catch (e) {}
+  editorialState = loc;
+}
+
+function applyEditorialStateToArticles() {
+  const decs = editorialState.article_decisions || {};
+  const rej = new Set(editorialState.rejected_keys || []);
+  Object.entries(decs).forEach(([k, d]) => { if (d && d.status === 'REJECTED') rej.add(k); });
+  const corrs = editorialState.reader_corrections || [];
+  articles = articles.filter(a => {
+    const u = (a.seo_url || '').replace(/\/+$/, ''), i = String(a.id || '');
+    return !(u && rej.has(u)) && !(i && rej.has(i));
+  }).map(a => {
+    const u = (a.seo_url || '').replace(/\/+$/, ''), i = String(a.id || '');
+    const dec = decs[u] || decs[i];
+    const next = { ...a };
+    if (dec && typeof dec === 'object') {
+      next.status = dec.status || next.status;
+      if ('admin_note' in dec) next.admin_note = dec.admin_note || '';
+      if (dec.zero_trust_reason) next.zero_trust_reason = dec.zero_trust_reason;
+    }
+    const rejPairs = new Set(), extra = [], seen = new Set(), merged = [];
+    corrs.forEach(rc => {
+      const ru = (rc.seo_url || '').replace(/\/+$/, ''), ri = String(rc.article_id || '');
+      if ((u && ru === u) || (i && ri === i)) {
+        const pair = `${rc.claim_text}|${rc.evidence_url}`;
+        if (rc.status === 'REJECTED') rejPairs.add(pair);
+        else extra.push({ claim_text: rc.claim_text, evidence_url: rc.evidence_url });
+      }
+    });
+    [...(Array.isArray(next.corrections) ? next.corrections : []), ...extra].forEach(c => {
+      const pair = `${c.claim_text}|${c.evidence_url}`;
+      if (c.claim_text && c.evidence_url && !rejPairs.has(pair) && !seen.has(pair)) {
+        seen.add(pair);
+        merged.push({ claim_text: c.claim_text, evidence_url: c.evidence_url });
+      }
+    });
+    next.corrections = merged;
+    return next;
+  });
+}
+
+function getPendingEditorialCount() {
+  return articles.filter(a => a.status === 'PENDING_ADMIN').length +
+    (editorialState.reader_corrections || []).filter(c => c.status === 'PENDING_ADMIN_REVIEW').length;
+}
+
+function exportEditorialStateJson() {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(editorialState, null, 2)], { type: 'application/json' }));
+  a.download = 'editorial_state.json';
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 500);
+}
+
+async function resetLocalEditorialState() {
+  try { localStorage.removeItem(EDITORIAL_KEY); } catch (e) {}
+  await fetchEditorialState();
+  applyEditorialStateToArticles();
+  renderPortal();
+}
+
+// ---==
 // NARZĘDZIA, TYPOGRAFIA POLSKA I ROUTING SEO
-// ===========================================================================
+// ---==
 function esc(s) {
   return String(s == null ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
@@ -266,45 +387,18 @@ function resolveAsset(rel) {
   return ROOT_URL + String(rel || '').replace(/^\/+/, '');
 }
 
-function pathHref(path) {
-  const clean = String(path || '').replace(/^\/+|\/+$/g, '');
-  const isFile = typeof location !== 'undefined' && location.protocol === 'file:';
-  if (!clean) return isFile ? (ROOT_URL + 'index.html') : ROOT_URL;
-  return ROOT_URL + clean + (isFile ? '/index.html' : '/');
+function pathHref(p) {
+  const clean = String(p || '').replace(/^\/+|\/+$/g, ''), isFile = typeof location !== 'undefined' && location.protocol === 'file:';
+  return !clean ? (isFile ? ROOT_URL + 'index.html' : ROOT_URL) : ROOT_URL + clean + (isFile ? '/index.html' : '/');
 }
-
-function articleHref(seoUrl) {
-  const clean = String(seoUrl || '').replace(/^\/+|\/+$/g, '');
-  const isFile = typeof location !== 'undefined' && location.protocol === 'file:';
-  if (!clean) return isFile ? (ROOT_URL + 'index.html') : ROOT_URL;
-  return ROOT_URL + clean + (isFile ? '/index.html' : '/');
-}
+const articleHref = pathHref;
 
 const KNOWN_HUES = {
-  gospodarka: 150,
-  polityka: 215,
-  energetyka: 38,
-  regiony: 175,
-  dolnoslaskie: 330,
-  'kujawsko-pomorskie': 195,
-  lubelskie: 105,
-  lubuskie: 132,
-  lodzkie: 25,
-  malopolskie: 12,
-  mazowieckie: 225,
-  opolskie: 48,
-  podkarpackie: 162,
-  podlaskie: 145,
-  pomorskie: 200,
-  slaskie: 245,
-  swietokrzyskie: 310,
-  'warminsko-mazurskie': 140,
-  wielkopolskie: 350,
-  zachodniopomorskie: 188,
-  poznan: 350,
-  swiat: 265,
-  sport: 15,
-  prawo: 190
+  gospodarka: 150, polityka: 215, energetyka: 38, regiony: 175, dolnoslaskie: 330,
+  'kujawsko-pomorskie': 195, lubelskie: 105, lubuskie: 132, lodzkie: 25, malopolskie: 12,
+  mazowieckie: 225, opolskie: 48, podkarpackie: 162, podlaskie: 145, pomorskie: 200,
+  slaskie: 245, swietokrzyskie: 310, 'warminsko-mazurskie': 140, wielkopolskie: 350,
+  zachodniopomorskie: 188, poznan: 350, swiat: 265, sport: 15, prawo: 190
 };
 function pathHue(path) {
   const last = norm((path || '').split('/').filter(Boolean).pop() || '');
@@ -315,11 +409,7 @@ function pathHue(path) {
 }
 
 function plainText(s) {
-  return decodeEntities(s || '')
-    .replace(/\[Źródło:\s*[^\]]+\]/g, '')
-    .replace(/\[\d+:[^\]]+\]/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
+  return decodeEntities(s || '').replace(/\[Źródło:\s*[^\]]+\]/g, '').replace(/\[\d+:[^\]]+\]/g, '').replace(/\s{2,}/g, ' ').trim();
 }
 
 const ABBREV_STOP = new Set([
@@ -329,76 +419,46 @@ const ABBREV_STOP = new Set([
 
 function truncateSafe(txt, max = 240) {
   if (!txt || txt.length <= max) return txt || '';
-  const cut = txt.slice(0, max);
-  const minPos = Math.floor(max * 0.45);
-  let bestStop = -1;
-  const re = /[.!?](?:\s|$)/g;
-  let m;
+  const cut = txt.slice(0, max), minPos = Math.floor(max * 0.45), re = /[.!?](?:\s|$)/g;
+  let bestStop = -1, m;
   while ((m = re.exec(cut)) !== null) {
     const pos = m.index;
     if (pos < minPos) continue;
-    const prefix = cut.slice(0, pos + 1);
-    const wMatch = prefix.match(/([A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9.]+\.)$/);
+    const wMatch = cut.slice(0, pos + 1).match(/([A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9.]+\.)$/);
     if (wMatch && ABBREV_STOP.has(wMatch[1].toLowerCase())) continue;
     bestStop = pos + 1;
   }
   if (bestStop > 0) return cut.slice(0, bestStop).trim();
-  const trimmed = cut.replace(/\s+\S*$/, '').replace(/[,;:-]+$/, '').replace(/\s+(?:m\.in|np|ok|tzw|godz)\.$/i, '');
-  return trimmed + '…';
+  return cut.replace(/\s+\S*$/, '').replace(/[,;:-]+$/, '').replace(/\s+(?:m\.in|np|ok|tzw|godz)\.$/i, '') + '…';
 }
 
 function articleLede(art, max = 240) {
   let lead = plainText(art.summary_lead || '');
-  if (!lead) {
-    const first = art.full_sections && art.full_sections[0] && art.full_sections[0].paragraphs[0];
-    lead = plainText(first);
-  }
+  if (!lead) lead = plainText(art.full_sections && art.full_sections[0] && art.full_sections[0].paragraphs[0]);
   return truncateSafe(lead, max);
 }
 
 function readingMinutes(art) {
-  if (!(art.full_sections && art.full_sections.length) && art.reading_minutes) {
-    return art.reading_minutes;
-  }
-  const words = (art.full_sections || [])
-    .map(s => (s.heading || '') + ' ' + (s.paragraphs || []).join(' '))
-    .join(' ')
-    .split(/\s+/)
-    .filter(Boolean).length;
+  if (!(art.full_sections && art.full_sections.length) && art.reading_minutes) return art.reading_minutes;
+  const words = (art.full_sections || []).map(s => (s.heading || '') + ' ' + (s.paragraphs || []).join(' ')).join(' ').split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 190));
 }
 
-function minutesLabel(n) {
-  if (n === 1) return '1 minuta czytania';
-  if ((n >= 2 && n <= 4) || (n > 20 && n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14))) {
-    return `${n} minuty czytania`;
-  }
-  return `${n} minut czytania`;
+function plPlural(n, one, few, many) {
+  if (n === 1) return `1 ${one}`;
+  const m10 = n % 10, m100 = n % 100;
+  return `${n} ${(m10 >= 2 && m10 <= 4 && !(m100 >= 12 && m100 <= 14)) ? few : many}`;
 }
-
-function countArticlesLabel(n) {
-  if (n === 1) return '1 opracowanie';
-  if ((n >= 2 && n <= 4) || (n > 20 && n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14))) {
-    return `${n} opracowania`;
-  }
-  return `${n} opracowań`;
-}
-
-function sourcesLabel(n) {
-  if (n === 1) return '1 źródło';
-  if ((n >= 2 && n <= 4) || (n > 20 && n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14))) {
-    return `${n} źródła`;
-  }
-  return `${n} źródeł`;
-}
+const minutesLabel = n => plPlural(n, 'minuta czytania', 'minuty czytania', 'minut czytania');
+const countArticlesLabel = n => plPlural(n, 'opracowanie', 'opracowania', 'opracowań');
+const sourcesLabel = n => plPlural(n, 'źródło', 'źródła', 'źródeł');
 
 function meterClass(p) { return p >= 85 ? 'ok' : p >= 70 ? 'mid' : 'low'; }
 function meterHtml(p, sourcesCount = 2) {
   if (sourcesCount < 2 || p == null) {
     return `<span class="meter neutral" title="Temat lokalny lub niszowy z pojedynczej redakcji — bez oceny %">Temat lokalny/niszowy</span>`;
   }
-  return `<span class="meter ${meterClass(p)}" title="Zbieżność faktów potwierdzona w ${sourcesCount} redakcjach">
-    <span class="meter-bar"><span class="meter-fill" style="width:${p}%"></span></span>${p}% zgodności</span>`;
+  return `<span class="meter ${meterClass(p)}" title="Zbieżność faktów potwierdzona w ${sourcesCount} redakcjach"><span class="meter-bar"><span class="meter-fill" style="width:${p}%"></span></span>${p}% zgodności</span>`;
 }
 
 function catAttr(art) { return `class="cat" style="--h:${pathHue(art.path)}"`; }
@@ -522,31 +582,30 @@ function resolveStateFromLocation() {
   return { path: '/Polska', articleId: null, notFound: false };
 }
 
+function fixFileHref(e) {
+  if (typeof location !== 'undefined' && location.protocol === 'file:' && e?.currentTarget?.tagName === 'A') {
+    const raw = e.currentTarget.getAttribute('href') || '';
+    if (raw.endsWith('/')) e.currentTarget.setAttribute('href', raw + 'index.html');
+  }
+  return true;
+}
+
 function openArticleLink(event, id, seoUrl) {
   if (isModifiedClick(event)) return true;
-  if (articles.length === 0) {
-    if (typeof location !== 'undefined' && location.protocol === 'file:' && event?.currentTarget?.tagName === 'A') {
-      const rawHref = event.currentTarget.getAttribute('href') || '';
-      if (rawHref && rawHref.endsWith('/')) {
-        event.currentTarget.setAttribute('href', rawHref + 'index.html');
-      }
-    }
-    return true;
-  }
+  if (articles.length === 0) return fixFileHref(event);
   if (event && event.preventDefault) event.preventDefault();
   openArticle(id, seoUrl);
   return false;
 }
 
 function openArticle(id, seoUrlOverride) {
+  window.VERITY_IS_MODERATION = false;
   if (articles.length === 0) return;
   const published = articles.filter(a => a.status === 'AUTO_PUBLISHED');
   const art = published.find(a => a.id === id) || articles.find(a => a.id === id);
   if (!art) return;
   toggleRegionsDrawer(false);
-  if (activeArticleId === null && !isNotFoundState) {
-    lastFeedHref = location.pathname;
-  }
+  if (activeArticleId === null && !isNotFoundState) lastFeedHref = location.pathname;
   activeArticleId = art.id;
   activeOutletFilter = null;
   const artPath = LEGACY_PATH_MAP[art.path] || art.path;
@@ -570,17 +629,9 @@ function openArticle(id, seoUrlOverride) {
 
 function selectPathLink(event, p) {
   if (isModifiedClick(event)) return true;
-  if (articles.length === 0) {
-    if (typeof location !== 'undefined' && location.protocol === 'file:' && event?.currentTarget?.tagName === 'A') {
-      const rawHref = event.currentTarget.getAttribute('href') || '';
-      if (rawHref && rawHref.endsWith('/')) {
-        event.currentTarget.setAttribute('href', rawHref + 'index.html');
-      }
-    }
-    return true;
-  }
+  if (articles.length === 0) return fixFileHref(event);
   if (event && event.preventDefault) event.preventDefault();
-  const fromBrand = Boolean(event && event.currentTarget && event.currentTarget.classList && event.currentTarget.classList.contains('brand'));
+  const fromBrand = Boolean(event?.currentTarget?.classList?.contains('brand'));
   if (fromBrand) {
     const si = document.getElementById('searchInput');
     if (si) si.value = '';
@@ -590,6 +641,7 @@ function selectPathLink(event, p) {
 }
 
 function selectPath(p, toRootHome = false) {
+  window.VERITY_IS_MODERATION = false;
   if (articles.length === 0) return;
   toggleRegionsDrawer(false);
   const resolvedP = LEGACY_PATH_MAP[p] || p;
@@ -612,15 +664,7 @@ function selectPath(p, toRootHome = false) {
 
 function closeArticle(event) {
   if (isModifiedClick(event)) return true;
-  if (articles.length === 0) {
-    if (typeof location !== 'undefined' && location.protocol === 'file:' && event?.currentTarget?.tagName === 'A') {
-      const rawHref = event.currentTarget.getAttribute('href') || '';
-      if (rawHref && rawHref.endsWith('/')) {
-        event.currentTarget.setAttribute('href', rawHref + 'index.html');
-      }
-    }
-    return true;
-  }
+  if (articles.length === 0) return fixFileHref(event);
   if (event && event.preventDefault) event.preventDefault();
   toggleRegionsDrawer(false);
   activeArticleId = null;
@@ -637,9 +681,6 @@ function closeArticle(event) {
   return false;
 }
 
-// ===========================================================================
-// NAWIGACJA I WYSZUKIWANIE
-// ===========================================================================
 function switchView(view) {
   toggleRegionsDrawer(false);
   currentView = view;
@@ -733,9 +774,9 @@ function updateReadingProgress() {
   bar.style.width = `${pct.toFixed(1)}%`;
 }
 
-// ===========================================================================
+// ---==
 // WYSZUKIWARKA (stemmer fleksyjny działa w tle)
-// ===========================================================================
+// ---==
 function matchesStemQuery(art, q) {
   const qWords = q.split(/\s+/).filter(w => w.length > 1);
   if (!qWords.length) return true;
@@ -766,9 +807,9 @@ function matchesStemQuery(art, q) {
   });
 }
 
-// ===========================================================================
+// ---==
 // DYNAMICZNE SEO HEAD (title, description, robots, canonical, OG, JSON-LD)
-// ===========================================================================
+// ---==
 function setMetaTag(attrName, attrVal, content) {
   let el = document.querySelector(`meta[${attrName}="${attrVal}"]`);
   if (content == null || content === '') {
@@ -796,17 +837,12 @@ function syncSeoHead(openArt, published, query) {
     desc = openArt.meta_description || articleLede(openArt, 158);
     canUrl = `${CANONICAL_ORIGIN}${openArt.seo_url}/`;
     ogType = 'article';
-    ogImg = openArt.thumbnail_url || '';
+    ogImg = openArt.thumbnail_url || (openArt.id ? `${CANONICAL_ORIGIN}/og/${openArt.id}.png` : '');
     const normArtPath = LEGACY_PATH_MAP[openArt.path] || openArt.path || '/Polska';
     const parts = normArtPath.split('/').filter(Boolean);
     const prettyCrumb = {
-      Polska: 'Polska',
-      Swiat: 'Świat',
-      Sport: 'Sport',
-      Gospodarka: 'Gospodarka',
-      Polityka: 'Polityka',
-      Energetyka: 'Energetyka',
-      Regiony: 'Regiony',
+      Polska: 'Polska', Swiat: 'Świat', Sport: 'Sport', Gospodarka: 'Gospodarka',
+      Polityka: 'Polityka', Energetyka: 'Energetyka', Regiony: 'Regiony',
       ...Object.fromEntries(VOIVODESHIPS.map(v => [v.path.split('/').pop(), v.label]))
     };
     const crumbs = [{ '@type': 'ListItem', position: 1, name: 'VERITY', item: `${CANONICAL_ORIGIN}/` }];
@@ -842,6 +878,10 @@ function syncSeoHead(openArt, published, query) {
     }));
     if (cites.length) newsLd.citation = cites;
     ldObj = [newsLd, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs }];
+    const faqEnt = (openArt.seo_faq || []).filter(f => f && f.q && f.a).map(f => ({
+      '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a }
+    }));
+    if (faqEnt.length) ldObj.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqEnt });
   } else {
     const isRootHome = currentPath === '/Polska' && (location.pathname === ROOT_URL || location.pathname === ROOT_URL + 'index.html');
     const catTitle = PATH_TITLES[currentPath] || currentPath;
@@ -854,24 +894,14 @@ function syncSeoHead(openArt, published, query) {
     canUrl = isRootHome ? `${CANONICAL_ORIGIN}/` : `${CANONICAL_ORIGIN}${currentPath}/`;
     ogType = 'website';
     const catArts = (published || []).filter(a => (a.path || '').startsWith(currentPath));
-    ogImg = (catArts.find(a => a.thumbnail_url) || {}).thumbnail_url || '';
+    ogImg = (catArts.find(a => a.thumbnail_url) || {}).thumbnail_url || (catArts[0] && catArts[0].id ? `${CANONICAL_ORIGIN}/og/${catArts[0].id}.png` : '');
     ldObj = [
-      {
-        '@context': 'https://schema.org',
-        '@type': isRootHome ? 'WebSite' : 'CollectionPage',
-        name: title,
-        description: desc,
-        url: canUrl,
-        inLanguage: 'pl'
-      },
+      { '@context': 'https://schema.org', '@type': isRootHome ? 'WebSite' : 'CollectionPage', name: title, description: desc, url: canUrl, inLanguage: 'pl' },
       {
         '@context': 'https://schema.org',
         '@type': 'ItemList',
         itemListElement: catArts.slice(0, 15).map((a, idx) => ({
-          '@type': 'ListItem',
-          position: idx + 1,
-          url: `${CANONICAL_ORIGIN}${a.seo_url}/`,
-          name: a.seo_title
+          '@type': 'ListItem', position: idx + 1, url: `${CANONICAL_ORIGIN}${a.seo_url}/`, name: a.seo_title
         }))
       }
     ];
@@ -894,9 +924,9 @@ function syncSeoHead(openArt, published, query) {
   if (ldEl) ldEl.textContent = JSON.stringify(ldObj, null, 2);
 }
 
-// ===========================================================================
+// ---==
 // RENDER
-// ===========================================================================
+// ---==
 function renderPortal() {
   disconnectFeedObserver();
   const q = (document.getElementById('searchInput')?.value || '').trim();
@@ -906,7 +936,7 @@ function renderPortal() {
   const published = articles.filter(a => a.status === 'AUTO_PUBLISHED');
   const pendingArts = articles.filter(a => a.status === 'PENDING_ADMIN');
   const badgeEl = document.getElementById('pendingBadge');
-  if (badgeEl) badgeEl.textContent = pendingArts.length;
+  if (badgeEl) badgeEl.textContent = getPendingEditorialCount();
 
   const openArt = activeArticleId !== null ? published.find(a => a.id === activeArticleId) : null;
 
@@ -934,6 +964,7 @@ function renderPortal() {
       if (container) {
         container.innerHTML = `<div class="empty-state"><h2>Nie znaleziono strony (404)</h2><p style="margin-top:0.6rem">Wybrany adres nie istnieje lub został zaktualizowany.</p><p style="margin-top:1rem"><a class="btn-primary" style="text-decoration:none;display:inline-block" href="${esc(ROOT_URL)}" onclick="return selectPathLink(event, '/Polska')">Wróć na stronę główną VERITY</a></p></div>`;
       }
+    } else if (window.VERITY_IS_MODERATION && !q) {
     } else {
       const list = published
         .filter(a => q ? true : (a.path || '').startsWith(currentPath))
@@ -943,8 +974,9 @@ function renderPortal() {
     }
   }
   renderEditorialPanel(pendingArts);
-  syncSeoHead(openArt, published, q);
+  if (!window.VERITY_IS_MODERATION || q) syncSeoHead(openArt, published, q);
   updateReadingProgress();
+  if (typeof CustomEvent === 'function') window.dispatchEvent(new CustomEvent('verity:rendered', { detail: { path: window.VERITY_IS_MODERATION && !q ? '/moderacja' : currentPath, articleId: openArt ? openArt.id : null, view: currentView } }));
 }
 
 function shortCatLabel(path) {
@@ -993,21 +1025,13 @@ function storyCardHtml(art) {
   const stats = (art.metrics || []).slice(0, 2).map(m => `<span class="chip" title="${esc(m.label)}">${esc(m.val)}</span>`).join('');
   const href = esc(articleHref(art.seo_url));
   const jsUrl = esc(art.seo_url || '');
-  return `
-    <article ${catAttr(art)} data-id="${art.id}">
-      <div class="story-card" onclick="if(!event.target.closest('a'))openArticleLink(event, ${art.id}, '${jsUrl}')">
-        <a class="card-media-link" href="${href}" onclick="return openArticleLink(event, ${art.id}, '${jsUrl}')" tabindex="-1" aria-hidden="true">
-          ${thumbWrapHtml(art, 'story-thumb-wrap', 'story-thumb')}
-        </a>
-        <div class="story-body">
-          <div class="story-top"><span class="cat-badge">${esc(shortCatLabel(art.path))}</span><span class="story-date">${esc(art.display_date)}</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="${href}" onclick="return openArticleLink(event, ${art.id}, '${jsUrl}')">${esc(plTypography(art.seo_title))}</a></h2>
-          <p class="story-lede">${esc(plTypography(articleLede(art, 200)))}</p>
-          ${stats ? `<div class="story-chips">${stats}</div>` : ''}
-          <div class="story-foot">${meterHtml(art.fact_agreement_pct, art.sources.length)}<span>${sourcesLabel(art.sources.length)} · ${readingMinutes(art)} min</span></div>
-        </div>
-      </div>
-    </article>`;
+  return `<article ${catAttr(art)} data-id="${art.id}"><div class="story-card" onclick="if(!event.target.closest('a'))openArticleLink(event,${art.id},'${jsUrl}')">` +
+`<a class="card-media-link" href="${href}" onclick="return openArticleLink(event,${art.id},'${jsUrl}')" tabindex="-1" aria-hidden="true">${thumbWrapHtml(art, 'story-thumb-wrap', 'story-thumb')}</a>` +
+`<div class="story-body"><div class="story-top"><span class="cat-badge">${esc(shortCatLabel(art.path))}</span><span class="story-date">${esc(art.display_date)}</span></div>` +
+`<h2 class="story-title"><a class="story-title-link" href="${href}" onclick="return openArticleLink(event,${art.id},'${jsUrl}')">${esc(plTypography(art.seo_title))}</a></h2>` +
+`<p class="story-lede">${esc(plTypography(articleLede(art, 200)))}</p>` +
+`${stats ? `<div class="story-chips">${stats}</div>` : ''}` +
+`<div class="story-foot">${meterHtml(art.fact_agreement_pct, art.sources.length)}<span>${sourcesLabel(art.sources.length)} · ${readingMinutes(art)} min</span></div></div></div></article>`;
 }
 
 function regionStripHtml(allPublished) {
@@ -1016,34 +1040,21 @@ function regionStripHtml(allPublished) {
   let totalReg = 0;
   (allPublished || []).forEach(a => {
     const ap = a.path || '';
-    if (ap.startsWith('/Polska/Regiony/')) {
-      counts[ap] = (counts[ap] || 0) + 1;
-      totalReg += 1;
-    }
+    if (ap.startsWith('/Polska/Regiony/')) { counts[ap] = (counts[ap] || 0) + 1; totalReg += 1; }
   });
   const allHref = esc(pathHref('/Polska/Regiony'));
   const allCls = currentPath === '/Polska/Regiony' ? 'region-pill active' : 'region-pill';
-  const pills = [
-    `<a class="${allCls}" href="${allHref}" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">${totalReg}</span></a>`
-  ];
+  const pills = [`<a class="${allCls}" href="${allHref}" onclick="return selectPathLink(event,'/Polska/Regiony')">Wszystkie <span class="region-pill-count">${totalReg}</span></a>`];
   VOIVODESHIPS.forEach(v => {
     const c = counts[v.path] || 0;
-    let cls = 'region-pill';
-    if (currentPath === v.path) cls += ' active';
-    if (c > 0) cls += ' has-items';
-    pills.push(
-      `<a class="${cls}" style="--h:${pathHue(v.path)}" href="${esc(pathHref(v.path))}" onclick="return selectPathLink(event, '${esc(v.path)}')">` +
-      `${esc(v.label)}<span class="region-pill-count">${c}</span></a>`
-    );
+    let cls = 'region-pill' + (currentPath === v.path ? ' active' : '') + (c > 0 ? ' has-items' : '');
+    pills.push(`<a class="${cls}" style="--h:${pathHue(v.path)}" href="${esc(pathHref(v.path))}" onclick="return selectPathLink(event,'${esc(v.path)}')">${esc(v.label)}<span class="region-pill-count">${c}</span></a>`);
   });
   return `<nav class="region-strip" aria-label="Wybierz województwo">${pills.join('')}</nav>`;
 }
 
 function disconnectFeedObserver() {
-  if (feedObserver) {
-    try { feedObserver.disconnect(); } catch (e) {}
-    feedObserver = null;
-  }
+  if (feedObserver) { try { feedObserver.disconnect(); } catch (e) {} feedObserver = null; }
 }
 
 function updateFeedPagerUi() {
@@ -1065,23 +1076,13 @@ function updateFeedPagerUi() {
 
 function loadMoreFeedItems() {
   const grid = document.getElementById('feedGrid');
-  if (!grid || feedRenderedCount >= feedRestItems.length) {
-    disconnectFeedObserver();
-    updateFeedPagerUi();
-    return;
-  }
+  if (!grid || feedRenderedCount >= feedRestItems.length) { disconnectFeedObserver(); updateFeedPagerUi(); return; }
   const nextSlice = feedRestItems.slice(feedRenderedCount, feedRenderedCount + FEED_BATCH_SIZE);
-  if (!nextSlice.length) {
-    disconnectFeedObserver();
-    updateFeedPagerUi();
-    return;
-  }
+  if (!nextSlice.length) { disconnectFeedObserver(); updateFeedPagerUi(); return; }
   grid.insertAdjacentHTML('beforeend', nextSlice.map(storyCardHtml).join(''));
   feedRenderedCount += nextSlice.length;
   updateFeedPagerUi();
-  if (feedRenderedCount >= feedRestItems.length) {
-    disconnectFeedObserver();
-  }
+  if (feedRenderedCount >= feedRestItems.length) disconnectFeedObserver();
 }
 
 function attachFeedObserver() {
@@ -1090,9 +1091,7 @@ function attachFeedObserver() {
   const wrap = document.getElementById('feedLoadMoreWrap');
   if (!wrap || typeof IntersectionObserver === 'undefined') return;
   feedObserver = new IntersectionObserver(entries => {
-    if (entries.some(e => e.isIntersecting)) {
-      loadMoreFeedItems();
-    }
+    if (entries.some(e => e.isIntersecting)) loadMoreFeedItems();
   }, { rootMargin: '420px 0px', threshold: 0.01 });
   feedObserver.observe(wrap);
 }
@@ -1104,46 +1103,30 @@ function renderFeed(list, q, allPublished = null) {
 
   const crumbText = q ? 'Wszystkie działy' : currentPath;
   const titleText = q ? `Wyniki dla „${esc(q)}”` : esc(PATH_TITLES[currentPath] || currentPath);
-  const heading = `
-    <div class="feed-heading">
-      <div>
-        <span class="feed-crumb">${esc(crumbText)}</span>
-        <h1>${titleText}</h1>
-      </div>
-      <span>${countArticlesLabel(list.length)}</span>
-    </div>`;
+  const heading = `<div class="feed-heading"><div><span class="feed-crumb">${esc(crumbText)}</span><h1>${titleText}</h1></div><span>${countArticlesLabel(list.length)}</span></div>`;
   const stripHtml = q ? '' : regionStripHtml(allPublished || articles.filter(a => a.status === 'AUTO_PUBLISHED'));
 
   const syncStripScroll = () => {
     const activePill = container.querySelector('.region-strip .region-pill.active');
     if (activePill && activePill.parentElement) {
       const strip = activePill.parentElement;
-      const pLeft = activePill.offsetLeft - 12;
-      const pRight = activePill.offsetLeft + activePill.offsetWidth + 12;
+      const pLeft = activePill.offsetLeft - 12, pRight = activePill.offsetLeft + activePill.offsetWidth + 12;
       if (pLeft < strip.scrollLeft) strip.scrollLeft = Math.max(0, pLeft);
       else if (pRight > strip.scrollLeft + strip.clientWidth) strip.scrollLeft = Math.max(0, pRight - strip.clientWidth);
     }
   };
 
   if (!list.length) {
-    feedRestItems = [];
-    feedRenderedCount = 0;
-    feedTotalCount = 0;
-    feedHasLead = false;
-    if (q) {
-      container.innerHTML = `<div class="empty-state">Brak opracowań dla zapytania „${esc(q)}”.</div>`;
-      return;
-    }
+    feedRestItems = []; feedRenderedCount = 0; feedTotalCount = 0; feedHasLead = false;
+    if (q) { container.innerHTML = `<div class="empty-state">Brak opracowań dla zapytania „${esc(q)}”.</div>`; return; }
     const vInfo = VOIVODESHIP_BY_PATH[currentPath];
     if (vInfo) {
       const outletsTxt = esc(vInfo.outlets.join(', '));
       const allRegHref = esc(pathHref('/Polska/Regiony'));
       container.innerHTML = heading + stripHtml +
-        `<div class="empty-state">` +
-        `<p>Brak bieżących opracowań w dziale <strong>${esc(vInfo.title)}</strong>.</p>` +
+        `<div class="empty-state"><p>Brak bieżących opracowań w dziale <strong>${esc(vInfo.title)}</strong>.</p>` +
         `<p class="empty-sub">Monitorowane redakcje w tym województwie: ${outletsTxt}. Kolejne depesze ze stolicy i powiatów regionu pojawiają się w aktualizacjach cyklicznych.</p>` +
-        `<p style="margin-top:0.9rem"><a class="btn-outline" style="text-decoration:none;display:inline-block" href="${allRegHref}" onclick="return selectPathLink(event, '/Polska/Regiony')">← Zobacz wiadomości ze wszystkich 16 województw</a></p>` +
-        `</div>`;
+        `<p style="margin-top:0.9rem"><a class="btn-outline" style="text-decoration:none;display:inline-block" href="${allRegHref}" onclick="return selectPathLink(event,'/Polska/Regiony')">← Zobacz wiadomości ze wszystkich 16 województw</a></p></div>`;
       syncStripScroll();
       return;
     }
@@ -1157,43 +1140,29 @@ function renderFeed(list, q, allPublished = null) {
   const rest = useLead ? list.slice(1) : list;
   const initialRest = rest.slice(0, FEED_BATCH_SIZE);
 
-  feedHasLead = Boolean(lead);
-  feedRestItems = rest;
-  feedRenderedCount = initialRest.length;
-  feedTotalCount = list.length;
+  feedHasLead = Boolean(lead); feedRestItems = rest; feedRenderedCount = initialRest.length; feedTotalCount = list.length;
 
   let leadHtml = '';
   if (lead) {
     const lHref = esc(articleHref(lead.seo_url));
     const lJsUrl = esc(lead.seo_url || '');
     const lNoThumbCls = lead.thumbnail_url ? '' : ' no-thumb';
-    leadHtml = `
-    <article ${catAttr(lead)} class="lead-wrap">
-      <div class="lead-story${lNoThumbCls}" onclick="if(!event.target.closest('a'))openArticleLink(event, ${lead.id}, '${lJsUrl}')">
-        <a class="lead-thumb-wrap${lNoThumbCls}" href="${lHref}" onclick="return openArticleLink(event, ${lead.id}, '${lJsUrl}')" tabindex="-1" aria-hidden="true">
-          <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(lead.path))}</span><span class="thumb-fallback-mark">V</span></div>
-          ${lead.thumbnail_url ? `<img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />` : ''}
-        </a>
-        <div class="lead-main">
-          <div class="story-top"><span class="cat-badge">${esc(shortCatLabel(lead.path))}</span><span class="story-date">${esc(lead.display_date)}</span></div>
-          <h2 class="lead-title"><a class="story-title-link" href="${lHref}" onclick="return openArticleLink(event, ${lead.id}, '${lJsUrl}')">${esc(plTypography(lead.seo_title))}</a></h2>
-          <p class="lead-lede">${esc(plTypography(articleLede(lead, 290)))}</p>
-          <div class="story-foot">${meterHtml(lead.fact_agreement_pct, lead.sources.length)}<span>${sourcesLabel(lead.sources.length)} · ${minutesLabel(readingMinutes(lead))}</span></div>
-        </div>
-        <div class="lead-side">
-          <div class="lead-side-title">Kluczowe parametry</div>
-          ${(lead.metrics || []).slice(0, 3).map(m => `<div class="stat-row"><span class="stat-label">${esc(m.label)}</span><span class="stat-val">${metricValHtml(m.val)}</span></div>`).join('')}
-        </div>
-      </div>
-    </article>`;
+    leadHtml = `<article ${catAttr(lead)} class="lead-wrap"><div class="lead-story${lNoThumbCls}" onclick="if(!event.target.closest('a'))openArticleLink(event,${lead.id},'${lJsUrl}')">` +
+`<a class="lead-thumb-wrap${lNoThumbCls}" href="${lHref}" onclick="return openArticleLink(event,${lead.id},'${lJsUrl}')" tabindex="-1" aria-hidden="true">` +
+`<div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(lead.path))}</span><span class="thumb-fallback-mark">V</span></div>` +
+`${lead.thumbnail_url ? `<img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />` : ''}</a>` +
+`<div class="lead-main"><div class="story-top"><span class="cat-badge">${esc(shortCatLabel(lead.path))}</span><span class="story-date">${esc(lead.display_date)}</span></div>` +
+`<h2 class="lead-title"><a class="story-title-link" href="${lHref}" onclick="return openArticleLink(event,${lead.id},'${lJsUrl}')">${esc(plTypography(lead.seo_title))}</a></h2>` +
+`<p class="lead-lede">${esc(plTypography(articleLede(lead, 290)))}</p>` +
+`<div class="story-foot">${meterHtml(lead.fact_agreement_pct, lead.sources.length)}<span>${sourcesLabel(lead.sources.length)} · ${minutesLabel(readingMinutes(lead))}</span></div></div>` +
+`<div class="lead-side"><div class="lead-side-title">Kluczowe parametry</div>` +
+`${(lead.metrics || []).slice(0, 3).map(m => `<div class="stat-row"><span class="stat-label">${esc(m.label)}</span><span class="stat-val">${metricValHtml(m.val)}</span></div>`).join('')}</div></div></article>`;
   }
 
   container.innerHTML = heading + stripHtml + leadHtml +
     (initialRest.length ? `<div id="feedGrid" class="cards-grid${lead ? ' after-lead' : ''}">${initialRest.map(storyCardHtml).join('')}</div>` : '') +
     `<div id="feedLoadMoreWrap" class="feed-load-more-wrap hidden"></div>`;
-  updateFeedPagerUi();
-  attachFeedObserver();
-  syncStripScroll();
+  updateFeedPagerUi(); attachFeedObserver(); syncStripScroll();
 }
 
 function reconcileLeadAndFirstPara(art) {
@@ -1466,44 +1435,16 @@ function renderArticleView(art, published) {
     }
   });
 
-  const sourceFilterBarHtml = (srcs.length >= 2 && totalRenderedParas > 0 && orderedOutlets.length) ? `
-    <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji">
-      <div class="source-filter-head">
-        <span class="source-filter-label">Filtruj wg redakcji</span>
-        <span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span>
-      </div>
-      <div class="source-filter-pills">
-        <button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(${totalRenderedParas})</span></button>
-        ${orderedOutlets.map(oName => {
-          const cnt = outletParaCounts[oName] || 0;
-          const cls = cnt === 0 ? 'source-filter-chip is-zero-paras' : 'source-filter-chip';
-          return `<button type="button" class="${cls}" data-outlet-filter="${esc(oName)}" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">${esc(oName)} <span class="source-chip-count">(${cnt})</span></button>`;
-        }).join('')}
-      </div>
-      <div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div>
-    </div>` : '';
+  const sourceFilterBarHtml = (srcs.length >= 2 && totalRenderedParas > 0 && orderedOutlets.length) ? `<div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(${totalRenderedParas})</span></button>${orderedOutlets.map(oName => {
+    const cnt = outletParaCounts[oName] || 0;
+    return `<button type="button" class="${cnt === 0 ? 'source-filter-chip is-zero-paras' : 'source-filter-chip'}" data-outlet-filter="${esc(oName)}" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">${esc(oName)} <span class="source-chip-count">(${cnt})</span></button>`;
+  }).join('')}</div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>` : '';
 
-  const heroThumb = art.thumbnail_url ? `
-    <div class="article-hero-wrap">
-      <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(art.path))}</span><span class="thumb-fallback-mark">V</span></div>
-      <img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
-    </div>` : '';
+  const heroThumb = art.thumbnail_url ? `<div class="article-hero-wrap"><div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(art.path))}</span><span class="thumb-fallback-mark">V</span></div><img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" /></div>` : '';
 
   const asideVerifHtml = (srcs.length >= 2 && art.fact_agreement_pct != null)
-    ? `
-      <div class="aside-card">
-        <div class="aside-title">Zgodność danych</div>
-        <div class="big-meter meter ${meterClass(art.fact_agreement_pct)}">${art.fact_agreement_pct}%<small>${sourcesLabel(srcs.length)}</small></div>
-        <div class="meter-bar wide"><span class="meter-fill" style="width:${art.fact_agreement_pct}%"></span></div>
-      </div>`
-    : `
-      <div class="aside-card">
-        <div class="aside-title">Status źródeł</div>
-        <div class="aside-status">1 redakcja (lokalne / branżowe)</div>
-        <div class="aside-note">
-          Informacja niszowa z pojedynczego źródła — publikowana bez wskaźnika % zgodności krzyżowej.
-        </div>
-      </div>`;
+    ? `<div class="aside-card"><div class="aside-title">Zgodność danych</div><div class="big-meter meter ${meterClass(art.fact_agreement_pct)}">${art.fact_agreement_pct}%<small>${sourcesLabel(srcs.length)}</small></div><div class="meter-bar wide"><span class="meter-fill" style="width:${art.fact_agreement_pct}%"></span></div></div>`
+    : `<div class="aside-card"><div class="aside-title">Status źródeł</div><div class="aside-status">1 redakcja (lokalne / branżowe)</div><div class="aside-note">Informacja niszowa z pojedynczego źródła — publikowana bez wskaźnika % zgodności krzyżowej.</div></div>`;
 
   const backTarget = lastFeedHref || pathHref(currentPath);
   const canonicalFull = `${CANONICAL_ORIGIN}${art.seo_url}/`;
@@ -1511,204 +1452,177 @@ function renderArticleView(art, published) {
     ? `${sourcesLabel(srcs.length)} · kliknij wybraną, by wyróżnić jej ustalenia`
     : `Źródło: ${srcs.map(esc).join(', ')}`;
 
-  container.innerHTML = `
-    <div ${catAttr(art)}>
-      <a class="back-link" href="${esc(backTarget)}" onclick="return closeArticle(event)">← Wróć do ${esc(PATH_TITLES[currentPath] || currentPath)}</a>
-      <div class="reader has-aside">
-        <article class="article-main">
-          <header class="article-head">
-            <div class="article-kicker">
-              <span class="cat-badge">${esc(shortCatLabel(art.path))}</span>
-              <time datetime="${esc(art.published_iso || '')}">${esc(art.display_date)}</time>
-              <span>${minutesLabel(mins)}</span>
-            </div>
-            <h1 class="article-title">${esc(plTypography(art.seo_title))}</h1>
-            ${ledeHtml}
-          </header>
+  const imp = art.impact || {};
+  const impactHtml = (imp.audience || imp.scope || imp.status)
+    ? `<div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status">${imp.audience ? `<span class="impact-pill"><strong>Kogo dotyczy:</strong> ${esc(imp.audience)}</span>` : ''}${imp.scope ? `<span class="impact-pill"><strong>Obszar:</strong> ${esc(imp.scope)}</span>` : ''}${imp.status ? `<span class="impact-pill"><strong>Status:</strong> ${esc(imp.status)}</span>` : ''}</div>`
+    : '';
 
-          ${heroThumb}
+  const dItems = Array.isArray(art.dossier_items) ? art.dossier_items : [];
+  const hasDossier = dItems.length >= 2;
+  const dTitle = esc(art.dossier_title || 'Wątek rozwijany');
+  const dIdx = Number(art.dossier_index || 1);
+  const dCnt = Number(art.dossier_count || dItems.length);
+  const dossierBannerHtml = hasDossier
+    ? `<div class="dossier-banner"><span class="dossier-badge">Akta Sprawy</span><span class="dossier-title-txt">${dTitle} (${dIdx}/${dCnt})</span><a class="dossier-jump" href="#timeline">Oś czasu tematu ↓</a></div>`
+    : '';
+  const timelineHtml = hasDossier
+    ? `<section id="timeline" class="dossier-timeline" aria-label="Oś czasu sprawy"><div class="timeline-head"><span class="dossier-badge">Akta Sprawy · Oś czasu</span><h2>${dTitle}</h2><span class="timeline-meta">Etap ${dIdx} z ${dCnt}</span></div><ol class="timeline-list">${dItems.map(st => {
+        const isCur = st.id === art.id || (st.seo_url && st.seo_url === art.seo_url);
+        const tTxt = esc(plTypography(st.seo_title || ''));
+        return `<li class="timeline-item${isCur ? ' is-current' : ''}"><div class="timeline-date">${esc(st.display_date || '')}</div>${isCur ? `<span class="timeline-link">${tTxt}</span><span class="timeline-now">Czytasz teraz</span>` : `<a class="timeline-link" href="${esc(articleHref(st.seo_url))}" onclick="return openArticleLink(event,${Number(st.id || 0)},'${esc(st.seo_url || '')}')">${tTxt}</a>`}</li>`;
+      }).join('')}</ol></section>`
+    : '';
 
-          ${art.metrics && art.metrics.length ? `
-            <div class="facts-strip">
-              ${art.metrics.map(m => `<div class="fact-box"><div class="fact-label">${esc(m.label)}</div><div class="fact-val">${metricValHtml(m.val)}</div></div>`).join('')}
-            </div>` : ''}
+  const faqList = (art.seo_faq || []).filter(f => f && f.q && f.a);
+  const faqHtml = faqList.length
+    ? `<section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2>${faqList.map((f, idx) => `<details class="faq-item"${idx === 0 ? ' open' : ''}><summary class="faq-q">${esc(plTypography(f.q))}</summary><div class="faq-a">${esc(plTypography(f.a))}</div></details>`).join('')}</section>`
+    : '';
 
-          ${art.admin_note ? `<div class="callout callout-warn"><strong>Nota weryfikacyjna redakcji:</strong> ${esc(plTypography(art.admin_note))}</div>` : ''}
+  container.innerHTML = `<div ${catAttr(art)}>` +
+`<a class="back-link" href="${esc(backTarget)}" onclick="return closeArticle(event)">← Wróć do ${esc(PATH_TITLES[currentPath] || currentPath)}</a>` +
+`<div class="reader has-aside"><article class="article-main">` +
+`<header class="article-head"><div class="article-kicker"><span class="cat-badge">${esc(shortCatLabel(art.path))}</span>` +
+`${art.ai_synthesized ? '<span class="ai-badge">Synteza AI Zero-Trust</span>' : ''}` +
+`<time datetime="${esc(art.published_iso || '')}">${esc(art.display_date)}</time><span>${minutesLabel(mins)}</span></div>` +
+`<h1 class="article-title">${esc(plTypography(art.seo_title))}</h1>${ledeHtml}${impactHtml}${dossierBannerHtml}</header>` +
+`${heroThumb}` +
+`${art.metrics && art.metrics.length ? `<div class="facts-strip">${art.metrics.map(m => `<div class="fact-box"><div class="fact-label">${esc(m.label)}</div><div class="fact-val">${metricValHtml(m.val)}</div></div>`).join('')}</div>` : ''}` +
+`${art.admin_note ? `<div class="callout callout-warn"><strong>Nota weryfikacyjna redakcji:</strong> ${esc(plTypography(art.admin_note))}</div>` : ''}` +
+`${art.declickbait && art.declickbait.length ? `<div class="callout callout-clickbait"><div class="callout-title">Odfiltrowany clickbait</div>${art.declickbait.map(dc => `<div class="cb-item"><div class="cb-strike">„${esc(dc.original)}” <em>— ${esc(dc.outlet)}</em></div><div class="cb-fact">→ ${esc(dc.fact)}</div></div>`).join('')}</div>` : ''}` +
+`${sourceFilterBarHtml}` +
+`<div class="article-sections">${(art._isIndexOnly && !articlesLoadedFull && !secs.length) ? '<div class="callout">Wczytywanie pełnej treści opracowania i perspektyw redakcji…</div>' : sectionsHtml}</div>` +
+`${persps.length ? `<div class="perspectives-box"><div class="perspectives-header"><span class="perspectives-title">Kto jak to przedstawia?</span><span class="perspectives-sources">${perspSubtitle}</span></div><div class="perspectives-grid">${persps.map((p, pIdx) => {
+  const oRaw = (p.outlet || '').trim();
+  const link = p.url ? `<a class="perspective-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>` : '';
+  const filterBtn = (srcs.length >= 2 && oRaw) ? `<button type="button" class="perspective-filter-btn" data-outlet-btn="${esc(oRaw)}" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button>` : '';
+  const actionsHtml = (link || filterBtn) ? `<div class="perspective-actions">${link}${filterBtn}</div>` : '';
+  const colCls = pIdx >= 4 ? 'perspective-col is-collapsed-persp' : 'perspective-col';
+  return `<div class="${colCls}" data-outlet="${esc(oRaw)}"><div class="perspective-head"><span class="outlet-mono" aria-hidden="true">${esc(outletMonogram(oRaw))}</span><div><div class="perspective-outlet">${esc(oRaw)}</div><div class="perspective-angle">${esc(p.angle || 'Depesza źródłowa')}</div></div></div><p class="perspective-summary">${esc(plTypography(p.summary))}</p>${(p.focus || p.omits) ? `<div class="perspective-diff">${p.focus ? `<div><strong>Eksponuje:</strong> ${esc(plTypography(p.focus))}</div>` : ''}${p.omits ? `<div><strong>Pomija:</strong> ${esc(plTypography(p.omits))}</div>` : ''}</div>` : ''}${actionsHtml}</div>`;
+}).join('')}</div>${persps.length > 4 ? `<div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="${persps.length}" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (${persps.length})</button></div>` : ''}</div>` : ''}` +
+`${faqHtml}` +
+`${art.corrections && art.corrections.length ? `<div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (${art.corrections.length}):</strong>${art.corrections.map(c => `<div>• ${esc(c.claim_text)} (<a href="${esc(c.evidence_url)}" target="_blank" rel="noopener noreferrer">link</a>)</div>`).join('')}</div>` : ''}` +
+`<div class="article-footer"><div class="permalink-wrap"><span class="permalink">${esc(canonicalFull)}</span><button type="button" class="copy-link-btn" onclick="copyPermalink(this, '${esc(canonicalFull)}')" title="Kopiuj link do artykułu">Kopiuj link</button></div><button class="btn-outline" onclick="toggleCorr(${art.id})">Zgłoś sprostowanie (wymagany link do źródła)</button></div>` +
+`<div id="corrDrawer_${art.id}" class="correction-drawer hidden"><div class="corr-intro">Zgłoś korektę faktograficzną – przyjmujemy wyłącznie zgłoszenia z linkiem do dokumentu lub źródła:</div><div class="form-row"><input id="corrClaim_${art.id}" type="text" class="text-input" placeholder="Co wymaga korekty?" /><input id="corrUrl_${art.id}" type="text" class="text-input" placeholder="Link do dowodu: https://..." /></div><div class="corr-actions"><span id="corrMsg_${art.id}" class="corr-msg"></span><button class="btn-primary" onclick="submitCorr(${art.id})">Wyślij korektę</button></div></div>` +
+`</article>` +
+`<aside class="article-aside">${asideVerifHtml}${secs.length > 1 ? `<div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list">${secs.map((s, i) => `<li><button class="toc-btn" onclick="document.getElementById('sec_${art.id}_${i}').scrollIntoView({behavior:'smooth'})"><span>${esc(s.heading)}</span><span>↓</span></button></li>`).join('')}</ul></div>` : ''}${uniqueLinks.length ? `<div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list">${uniqueLinks.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(cleanOutletName(p.outlet))}</span><span>↗</span></a></li>`).join('')}</ul></div>` : ''}</aside>` +
+`</div>${timelineHtml}${others.length ? `<section class="related"><h2>Czytaj dalej</h2><div class="cards-grid">${others.map(storyCardHtml).join('')}</div></section>` : ''}</div>`;
+}
 
-          ${art.declickbait && art.declickbait.length ? `
-            <div class="callout callout-clickbait">
-              <div class="callout-title">Odfiltrowany clickbait</div>
-              ${art.declickbait.map(dc => `
-                <div class="cb-item">
-                  <div class="cb-strike">„${esc(dc.original)}” <em>— ${esc(dc.outlet)}</em></div>
-                  <div class="cb-fact">→ ${esc(dc.fact)}</div>
-                </div>`).join('')}
-            </div>` : ''}
-
-          ${sourceFilterBarHtml}
-
-          <div class="article-sections">
-            ${(art._isIndexOnly && !articlesLoadedFull && !secs.length)
-              ? '<div class="callout">Wczytywanie pełnej treści opracowania i perspektyw redakcji…</div>'
-              : sectionsHtml}
-          </div>
-
-          ${persps.length ? `
-          <div class="perspectives-box">
-            <div class="perspectives-header">
-              <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">${perspSubtitle}</span>
-            </div>
-            <div class="perspectives-grid">
-              ${persps.map((p, pIdx) => {
-                const oRaw = (p.outlet || '').trim();
-                const link = p.url ? `<a class="perspective-link" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a>` : '';
-                const filterBtn = (srcs.length >= 2 && oRaw)
-                  ? `<button type="button" class="perspective-filter-btn" data-outlet-btn="${esc(oRaw)}" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button>`
-                  : '';
-                const actionsHtml = (link || filterBtn) ? `<div class="perspective-actions">${link}${filterBtn}</div>` : '';
-                const colCls = pIdx >= 4 ? 'perspective-col is-collapsed-persp' : 'perspective-col';
-                return `
-                <div class="${colCls}" data-outlet="${esc(oRaw)}">
-                  <div class="perspective-head">
-                    <span class="outlet-mono" aria-hidden="true">${esc(outletMonogram(oRaw))}</span>
-                    <div>
-                      <div class="perspective-outlet">${esc(oRaw)}</div>
-                      <div class="perspective-angle">${esc(p.angle || 'Depesza źródłowa')}</div>
-                    </div>
-                  </div>
-                  <p class="perspective-summary">${esc(plTypography(p.summary))}</p>
-                  ${actionsHtml}
-                </div>`;
-              }).join('')}
-            </div>
-            ${persps.length > 4 ? `
-              <div class="perspectives-more-wrap">
-                <button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="${persps.length}" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (${persps.length})</button>
-              </div>` : ''}
-          </div>` : ''}
-
-          ${art.corrections && art.corrections.length ? `
-            <div class="callout callout-success">
-              <strong>Zweryfikowane uzupełnienia czytelników (${art.corrections.length}):</strong>
-              ${art.corrections.map(c => `<div>• ${esc(c.claim_text)} (<a href="${esc(c.evidence_url)}" target="_blank" rel="noopener noreferrer">link</a>)</div>`).join('')}
-            </div>` : ''}
-
-          <div class="article-footer">
-            <div class="permalink-wrap">
-              <span class="permalink">${esc(canonicalFull)}</span>
-              <button type="button" class="copy-link-btn" onclick="copyPermalink(this, '${esc(canonicalFull)}')" title="Kopiuj link do artykułu">Kopiuj link</button>
-            </div>
-            <button class="btn-outline" onclick="toggleCorr(${art.id})">Zgłoś sprostowanie (wymagany link do źródła)</button>
-          </div>
-          <div id="corrDrawer_${art.id}" class="correction-drawer hidden">
-            <div class="corr-intro">Zgłoś korektę faktograficzną – przyjmujemy wyłącznie zgłoszenia z linkiem do dokumentu lub źródła:</div>
-            <div class="form-row">
-              <input id="corrClaim_${art.id}" type="text" class="text-input" placeholder="Co wymaga korekty?" />
-              <input id="corrUrl_${art.id}" type="text" class="text-input" placeholder="Link do dowodu: https://..." />
-            </div>
-            <div class="corr-actions">
-              <span id="corrMsg_${art.id}" class="corr-msg"></span>
-              <button class="btn-primary" onclick="submitCorr(${art.id})">Wyślij korektę</button>
-            </div>
-          </div>
-        </article>
-
-        <aside class="article-aside">
-          ${asideVerifHtml}
-          ${secs.length > 1 ? `
-          <div class="aside-card">
-            <div class="aside-title">W tym artykule</div>
-            <ul class="aside-list">
-              ${secs.map((s, i) => `<li><button class="toc-btn" onclick="document.getElementById('sec_${art.id}_${i}').scrollIntoView({behavior:'smooth'})"><span>${esc(s.heading)}</span><span>↓</span></button></li>`).join('')}
-            </ul>
-          </div>` : ''}
-          ${uniqueLinks.length ? `
-          <div class="aside-card">
-            <div class="aside-title">Źródła do przeczytania</div>
-            <ul class="aside-list">
-              ${uniqueLinks.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(cleanOutletName(p.outlet))}</span><span>↗</span></a></li>`).join('')}
-            </ul>
-          </div>` : ''}
-        </aside>
-      </div>
-
-      ${others.length ? `
-        <section class="related">
-          <h2>Czytaj dalej</h2>
-          <div class="cards-grid">${others.map(storyCardHtml).join('')}</div>
-        </section>` : ''}
-    </div>`;
+function postEd(ep, pl) {
+  if (typeof location !== 'undefined' && location.protocol === 'file:') return Promise.resolve(null);
+  return fetch(resolveAsset(ep), {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(pl || {})
+  }).then(r => r.json().catch(() => null)).catch(() => null);
 }
 
 function renderEditorialPanel(pending) {
-  const container = document.getElementById('editorialQueue');
-  if (!container) return;
-
-  if (!pending.length) {
-    container.innerHTML = `<div class="empty-state success">Wszystkie artykuły z kolejki zostały zatwierdzone i opublikowane.</div>`;
-    return;
-  }
-
-  container.innerHTML = pending.map(art => `
-    <div class="article-card queue-card">
-      <div class="queue-card-top">
-        <span class="queue-status">Oczekuje na akceptację redakcji</span>
-        <span class="queue-path">${esc(art.path)}</span>
-      </div>
-      <h3 class="queue-title">${esc(art.seo_title)}</h3>
-      <div class="queue-body">
-        ${art.full_sections.map(s => `<p class="section-paragraph"><strong>${esc(s.heading)}:</strong> ${formatCitations(esc(plTypography(s.paragraphs.join(' '))), art.perspectives)}</p>`).join('')}
-      </div>
-      <div>
-        <label class="queue-label" for="adminNoteInput_${art.id}">Nota weryfikacyjna redakcji (wyświetli się nad artykułem):</label>
-        <input id="adminNoteInput_${art.id}" type="text" class="text-input" value="${esc(art.admin_note)}" />
-      </div>
-      <div class="queue-actions">
-        <button class="btn-primary" onclick="approveArt(${art.id})">Zatwierdź i opublikuj</button>
-        <button class="btn-outline" onclick="rejectArt(${art.id})">Odrzuć</button>
-      </div>
-    </div>`).join('');
+  const c = document.getElementById('editorialQueue');
+  if (!c) return;
+  const pCorrs = (editorialState.reader_corrections || []).filter(x => x.status === 'PENDING_ADMIN_REVIEW');
+  const appCnt = (editorialState.reader_corrections || []).filter(x => x.status === 'APPROVED').length;
+  const bar = `<div class="editorial-status-bar"><span>${serverApiAvailable
+    ? 'Tryb serwera: zmiany zapisują się trwale w <code>editorial_state.json</code> i <code>articles.json</code>.'
+    : 'Tryb statyczny: zmiany zapisują się w <code>localStorage</code> + <code>editorial_state.json</code>.'}</span>`
+    + (!serverApiAvailable ? `<span class="editorial-status-actions"><button type="button" class="btn-outline" onclick="exportEditorialStateJson()">Eksportuj JSON</button><button type="button" class="btn-outline" onclick="resetLocalEditorialState()">Resetuj</button></span>` : '')
+    + `</div>`;
+  const artsHtml = pending.length ? pending.map(a =>
+    `<div class="article-card queue-card" data-queue-art="${a.id}">`
+    + `<div class="queue-card-top"><span class="queue-status">Wstrzymany (Zero-Trust)</span><span class="queue-path">${esc(a.path)}</span></div>`
+    + (a.zero_trust_reason ? `<div class="queue-reason">${esc(a.zero_trust_reason)}</div>` : '')
+    + `<h3 class="queue-title">${esc(a.seo_title)}</h3>`
+    + `<div class="queue-body">${(a.full_sections && a.full_sections.length) ? a.full_sections.map(s => `<p class="section-paragraph"><strong>${esc(s.heading)}:</strong> ${formatCitations(esc(plTypography(s.paragraphs.join(' '))), a.perspectives)}</p>`).join('') : `<p class="section-paragraph">${esc(plTypography(a.summary_lead || ''))}</p>`}</div>`
+    + `<div><label class="queue-label" for="adminNoteInput_${a.id}">Nota weryfikacyjna redakcji (wyświetli się nad artykułem):</label>`
+    + `<input id="adminNoteInput_${a.id}" type="text" class="text-input" value="${esc(a.admin_note)}" /></div>`
+    + `<div class="queue-actions"><button class="btn-primary" onclick="approveArt(${a.id},true)">Zatwierdź z notą i opublikuj</button>`
+    + `<button class="btn-outline" onclick="approveArt(${a.id},false)">Opublikuj bez noty</button>`
+    + `<button class="btn-outline" onclick="rejectArt(${a.id})">Odrzuć</button></div></div>`
+  ).join('') : `<div class="empty-state success">Wszystkie artykuły z kolejki Zero-Trust zostały zweryfikowane.</div>`;
+  const corrsHtml = `<div class="editorial-subhead"><h2>Zgłoszenia korekt od czytelników — „Pokaż dowód!” (${pCorrs.length} oczekujących${appCnt ? `, ${appCnt} zatwierdzonych` : ''})</h2></div>`
+    + (pCorrs.length ? pCorrs.map(x =>
+      `<div class="article-card queue-card corr-queue-card" data-corr-id="${esc(x.id)}">`
+      + `<div class="queue-card-top"><span class="queue-status">Dowód czytelnika do weryfikacji</span><span class="queue-path">${esc(x.seo_url || '#' + x.article_id)}</span></div>`
+      + `<h3 class="queue-title">${esc(x.article_title || 'Artykuł #' + x.article_id)}</h3>`
+      + `<p class="section-paragraph"><strong>Zgłoszenie:</strong> ${esc(x.claim_text)}</p>`
+      + `<p class="corr-evidence-line"><strong>Dowód:</strong> <a href="${esc(x.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(x.evidence_url)}</a></p>`
+      + `<div class="queue-actions"><button class="btn-primary" onclick="moderateCorr('${esc(x.id)}','approve')">Potwierdź dowód</button>`
+      + `<button class="btn-outline" onclick="moderateCorr('${esc(x.id)}','reject')">Odrzuć zgłoszenie</button></div></div>`
+    ).join('') : `<div class="empty-state success">Brak niezweryfikowanych zgłoszeń korekt od czytelników.</div>`);
+  c.innerHTML = bar + artsHtml + corrsHtml;
 }
 
-function toggleCorr(id) {
-  document.getElementById('corrDrawer_' + id)?.classList.toggle('hidden');
-}
+function toggleCorr(id) { document.getElementById('corrDrawer_' + id)?.classList.toggle('hidden'); }
 
-function submitCorr(id) {
+async function submitCorr(id) {
   const claim = document.getElementById('corrClaim_' + id).value.trim();
   const url = document.getElementById('corrUrl_' + id).value.trim();
   const msg = document.getElementById('corrMsg_' + id);
-
   if (!/^https?:\/\/[^\s/$.?#].[^\s]*$/i.test(url)) {
     msg.textContent = 'Wymagany jest poprawny adres URL (https://...) do dokumentu lub źródła.';
-    msg.style.color = 'var(--danger)';
-    return;
+    msg.style.color = 'var(--danger)'; return;
+  }
+  if (BLACKLIST_DOMAINS.some(d => url.toLowerCase().includes(d))) {
+    msg.textContent = 'Domena na czarnej liście Zero-Trust — podaj link do danych pierwotnych.';
+    msg.style.color = 'var(--danger)'; return;
   }
   if (claim.length < 15) {
-    msg.textContent = 'Opisz jednym zdaniem, czego dotyczy korekta.';
-    msg.style.color = 'var(--warning)';
-    return;
+    msg.textContent = 'Opisz jednym zdaniem (min. 15 znaków), czego dotyczy korekta.';
+    msg.style.color = 'var(--warning)'; return;
   }
   const art = articles.find(a => a.id === id);
-  if (art) {
-    art.corrections.push({ claim_text: claim, evidence_url: url });
-    renderPortal();
-  }
+  if (!art) return;
+  const sUrl = (art.seo_url || '').replace(/\/+$/, '');
+  editorialState.reader_corrections.push({
+    id: `corr_${Date.now()}_${art.id}`, article_id: art.id, seo_url: sUrl, article_title: art.seo_title || '',
+    claim_text: claim, evidence_url: url, status: 'PENDING_ADMIN_REVIEW', submitted_iso: new Date().toISOString()
+  });
+  art.corrections = [...(art.corrections || []), { claim_text: claim, evidence_url: url }];
+  saveLocalEditorialState();
+  const res = await postEd('api/corrections', { article_id: art.id, seo_url: sUrl, claim_text: claim, evidence_url: url });
+  if (res && res.ok && res.editorial_state) { serverApiAvailable = true; editorialState = res.editorial_state; applyEditorialStateToArticles(); }
+  renderPortal();
+  document.getElementById('corrDrawer_' + id)?.classList.remove('hidden');
+  const m2 = document.getElementById('corrMsg_' + id);
+  if (m2) { m2.textContent = 'Zapisano zgłoszenie i wysłano alert do Kolejki redakcyjnej.'; m2.style.color = 'var(--success)'; }
 }
 
-function approveArt(id) {
-  const note = document.getElementById('adminNoteInput_' + id).value.trim();
+async function approveArt(id, withNote = true) {
+  const inp = document.getElementById('adminNoteInput_' + id);
+  const note = withNote && inp ? inp.value.trim() : '';
   const art = articles.find(a => a.id === id);
   if (art) {
-    art.status = 'AUTO_PUBLISHED';
-    art.admin_note = note;
+    const key = (art.seo_url || '').replace(/\/+$/, '') || String(art.id);
+    art.status = 'AUTO_PUBLISHED'; art.admin_note = note;
+    editorialState.article_decisions[key] = { status: 'AUTO_PUBLISHED', admin_note: note, decided_iso: new Date().toISOString() };
+    editorialState.rejected_keys = (editorialState.rejected_keys || []).filter(k => k !== key);
+    saveLocalEditorialState();
+    const res = await postEd('api/admin/approve-article', { article_id: art.id, seo_url: art.seo_url, admin_note: note });
+    if (res && res.ok && res.editorial_state) { serverApiAvailable = true; editorialState = res.editorial_state; }
   }
   switchView('public');
 }
 
-function rejectArt(id) {
+async function rejectArt(id) {
+  const art = articles.find(a => a.id === id);
+  const key = art ? ((art.seo_url || '').replace(/\/+$/, '') || String(art.id)) : String(id);
+  editorialState.article_decisions[key] = { status: 'REJECTED', admin_note: '', decided_iso: new Date().toISOString() };
+  if (!editorialState.rejected_keys.includes(key)) editorialState.rejected_keys.push(key);
   articles = articles.filter(a => a.id !== id);
+  saveLocalEditorialState();
+  const res = await postEd('api/admin/reject-article', { article_id: id, seo_url: art ? art.seo_url : '' });
+  if (res && res.ok && res.editorial_state) { serverApiAvailable = true; editorialState = res.editorial_state; }
+  renderPortal();
+}
+
+async function moderateCorr(corrId, action) {
+  const t = (editorialState.reader_corrections || []).find(c => c.id === corrId);
+  if (t) {
+    t.status = action === 'approve' ? 'APPROVED' : 'REJECTED';
+    t.moderated_iso = new Date().toISOString();
+    saveLocalEditorialState();
+    const res = await postEd('api/admin/moderate-correction', { correction_id: corrId, action });
+    if (res && res.ok && res.editorial_state) { serverApiAvailable = true; editorialState = res.editorial_state; }
+    applyEditorialStateToArticles();
+  }
   renderPortal();
 }
 
@@ -1792,6 +1706,7 @@ function normalizeArticleRecord(a, i, isIndexOnly = false) {
     id: a.id || (i + 1),
     status: a.status || 'AUTO_PUBLISHED',
     admin_note: a.admin_note || '',
+    zero_trust_reason: a.zero_trust_reason || '',
     metrics: a.metrics || [],
     declickbait: a.declickbait || [],
     perspectives: a.perspectives || [],
@@ -1819,6 +1734,7 @@ function ensureFullArticlesLoaded() {
           const fresh = liveData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
           if (fresh.length > 0) {
             articles = fresh.map((a, i) => normalizeArticleRecord(a, i, false));
+            applyEditorialStateToArticles();
             articlesLoadedFull = true;
             return true;
           }
@@ -1852,25 +1768,32 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   let loadedFromRemote = false;
   let loadedFromIndexOnly = false;
-  try {
-    const idxResp = await fetch(resolveAsset('articles-index.json'), { cache: 'no-store' });
-    if (idxResp.ok) {
-      const idxData = await idxResp.json();
-      if (Array.isArray(idxData) && idxData.length > 0) {
-        const fresh = idxData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
-        if (fresh.length > 0) {
-          loadedFromRemote = true;
-          loadedFromIndexOnly = true;
-          articles = fresh.map((a, i) => normalizeArticleRecord(a, i, true));
+  await Promise.all([
+    fetchEditorialState(),
+    (async () => {
+      try {
+        const idxResp = await fetch(resolveAsset('articles-index.json'), { cache: 'no-store' });
+        if (idxResp.ok) {
+          const idxData = await idxResp.json();
+          if (Array.isArray(idxData) && idxData.length > 0) {
+            const fresh = idxData.filter(a => (a.published_iso || '').slice(0, 10) >= '2026-11-13');
+            if (fresh.length > 0) {
+              loadedFromRemote = true;
+              loadedFromIndexOnly = true;
+              articles = fresh.map((a, i) => normalizeArticleRecord(a, i, true));
+            }
+          }
         }
-      }
-    }
-  } catch (e) {}
+      } catch (e) {}
+    })()
+  ]);
 
   if (!loadedFromRemote) {
     const okFull = await ensureFullArticlesLoaded();
     if (okFull) loadedFromRemote = true;
   }
+
+  if (loadedFromRemote) applyEditorialStateToArticles();
 
   if (!loadedFromRemote && articles.length === 0) {
     const feedEl = document.getElementById('articlesFeed');
@@ -1909,7 +1832,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       ensureFullArticlesLoaded().then(ok => {
         if (!ok) return;
         const badgeEl = document.getElementById('pendingBadge');
-        if (badgeEl) badgeEl.textContent = articles.filter(a => a.status === 'PENDING_ADMIN').length;
+        if (badgeEl) badgeEl.textContent = getPendingEditorialCount();
         const hasSearch = Boolean((document.getElementById('searchInput')?.value || '').trim());
         if (activeArticleId !== null || currentView === 'editorial' || hasSearch) {
           renderPortal();

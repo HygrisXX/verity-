@@ -102,6 +102,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/wspolna-porazka-epidemia-eboli-poza-kontrola-juz-5-5-tys-ofiar/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: \"Wspólna porażka\". Epidemia eboli poza kontrolą. Już 5,5 tys. ofiar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Afrykańskie Centra Kontroli i Zapobiegania Chorobom ostrzegają, że służby nie śledzą już większości nowych zakażeń."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jeana Kaseya ponad 80 proc. nowych zakażeń wykrywanych jest u osób, które nie figurują na listach kontaktów znanych chorych."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (2 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -111,7 +141,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -126,8 +156,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -217,11 +253,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Polska</span>
+              
               <time datetime="2026-11-15T21:34:28+01:00">15.11.2026, 21:34</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">&quot;Wspólna porażka&quot;. Epidemia eboli poza kontrolą. Już 5,5 tys. ofiar</h1>
             <p class="article-lede">Epidemia eboli w Demokratycznej Republice Konga nadal wymyka się spod kontroli. Od 15 maja zakażenie wykryto u ponad 11,2 tys. osób, a 5,5 tys. chorych zmarło.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Wydarzenia krajowe</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (2 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -251,6 +290,7 @@
             </div>
           </div>
           <p class="perspective-summary">&quot;Wspólna porażka&quot;. Epidemia eboli poza kontrolą. Już 5,5 tys. ofiar</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (80 proc.) oraz wątki: Wspólna, porażka.</div><div><strong>Pomija:</strong> Pomija wyliczenia (5 tys.) przytaczane przez Wyborcza.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/wspolna-porazka-epidemia-eboli-poza-kontrola-juz-5-5-tys-ofiar-7351408924198912a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Wyborcza.pl">
           <div class="perspective-head">
@@ -261,10 +301,12 @@
             </div>
           </div>
           <p class="perspective-summary">Ebola w Demokratycznej Republice Konga wciąż poza kontrolą. Zmarło już ponad 5 tys. osób</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (5 tys.) oraz wątki: Ebola, wciąż.</div><div><strong>Pomija:</strong> Pomija wyliczenia (80 proc.) przytaczane przez WP Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wyborcza.pl/7,75399,33132767,ebola-w-demokratycznej-republice-konga-wciaz-poza-kontrola.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wyborcza.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: &quot;Wspólna porażka&quot;. Epidemia eboli poza kontrolą. Już 5,5 tys. ofiar?</summary><div class="faq-a">Afrykańskie Centra Kontroli i Zapobiegania Chorobom ostrzegają, że służby nie śledzą już większości nowych zakażeń.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Jeana Kaseya ponad 80 proc. nowych zakażeń wykrywanych jest u osób, które nie figurują na listach kontaktów znanych chorych.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (2 źródła).</div></details></section>
 
           
 
@@ -298,6 +340,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://wiadomosci.wp.pl/wspolna-porazka-epidemia-eboli-poza-kontrola-juz-5-5-tys-ofiar-7351408924198912a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75399,33132767,ebola-w-demokratycznej-republice-konga-wciaz-poza-kontrola.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:20" data-id="773115592">
       <div class="story-card">
         <a class="card-media-link" href="../../Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/" onclick="return openArticleLink(event, 773115592, '/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie')" tabindex="-1" aria-hidden="true">
@@ -311,7 +354,7 @@
           <h2 class="story-title"><a class="story-title-link" href="../../Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/" onclick="return openArticleLink(event, 773115592, '/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie')">Smartfony Samsunga zyskają nową funkcję. Pomoże na diecie</a></h2>
           <p class="story-lede">Użytkownicy smartfonów Samsunga dostaną przydatną funkcję, która ułatwi utrzymanie określonego celu kalorycznego. Zaletą ma być szybkość i wygoda korzystania.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:88%"></span></span>88% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article><article class="cat" style="--h:20" data-id="1257358520">
@@ -319,12 +362,12 @@
         <a class="card-media-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp" alt="Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp" alt="Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')">Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')">Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)</a></h2>
           <p class="story-lede">W październiku br. na 50. największych portalach rekrutacyjnych w Polsce opublikowano łącznie ponad 266,12 tys. nowych ofert pracy, czyli prawie o 13 tys. (5 proc.) więcej niż w ubiegłym roku –…</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
@@ -340,7 +383,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -356,6 +399,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -366,6 +410,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/wspolna-porazka-epidemia-eboli-poza-kontrola-juz-5-5-tys-ofiar";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

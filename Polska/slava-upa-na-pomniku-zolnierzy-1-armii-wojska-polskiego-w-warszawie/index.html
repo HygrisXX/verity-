@@ -210,6 +210,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/slava-upa-na-pomniku-zolnierzy-1-armii-wojska-polskiego-w-warszawie/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: „Slava UPA” na pomniku żołnierzy 1. Armii Wojska Polskiego w Warszawie.?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "W ostatnich dniach podobne hasła umieszczono na pomnikach w Warszawie, Gdańsku, Gdyni i Poznaniu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Policja potwierdza, że przyjęła zgłoszenie i bada sprawę."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (14 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -219,7 +249,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -234,8 +264,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -325,11 +361,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Polska</span>
+              
               <time datetime="2026-11-14T12:41:13+01:00">14.11.2026, 12:41</time>
               <span>2 minuty czytania</span>
             </div>
             <h1 class="article-title">„Slava UPA” na pomniku żołnierzy 1. Armii Wojska Polskiego w Warszawie. Kolejny akt wandalizmu</h1>
             <p class="article-lede">Na pomniku upamiętniającym żołnierzy 1. Armii Wojska Polskiego w Warszawie pojawił się napis „Slava UPA”, odwołujący się do Ukraińskiej Powstańczej Armii. To kolejny przypadek dewastacji miejsca pamięci w Polsce.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Wydarzenia krajowe</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (14 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -359,6 +398,7 @@
             </div>
           </div>
           <p class="perspective-summary">„Slava UPA” na pomniku żołnierzy 1. Armii Wojska Polskiego w Warszawie. Kolejny akt wandalizmu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja wiodąca).</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/przestepczosc/art45488241-slava-upa-na-pomniku-zolnierzy-1-armii-wojska-polskiego-w-warszawie-kolejny-akt-wandalizmu" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVN24">
           <div class="perspective-head">
@@ -369,6 +409,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zniszczone dwa pomniki w Warszawie. Sprawą zajmuje się policja</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Zniszczone.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/tvnwarszawa/srodmiescie/napisy-dotyczace-ukrainy-na-pomnikach-w-warszawie-st9338937?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -379,6 +420,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zdewastowano dwa pomniki w Warszawie. &quot;Linia została przekroczona&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Linia, przekroczona, Zaledwie.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/zdewastowano-dwa-pomniki-w-warszawie-linia-zostala-przekroczona-7350948037687328a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -389,6 +431,7 @@
             </div>
           </div>
           <p class="perspective-summary">Dwa warszawskie pomniki zdewastowane. Policja bada sprawę</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/warszawa/dwa-warszawskie-pomniki-zdewastowane-policja-bada-sprawe/4l78rrt" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Gazeta.pl">
           <div class="perspective-head">
@@ -399,6 +442,7 @@
             </div>
           </div>
           <p class="perspective-summary">Napis &quot;Slava UPA&quot; na kolejnych pomnikach. Dwa historyczne miejsca w Warszawie zdewastowane</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: historyczne, Fryderyka, Królewskich.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.gazeta.pl/polska/7,198073,33132033,napis-slava-upa-na-kolejnych-pomnikach-dwa-historyczne-miejsca.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Gazeta.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -409,6 +453,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zdewastowano pomniki w Warszawie. To może być rosyjska prowokacja</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: prowokacja, Najprawdopodobniej, uszkodzeń.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96478251/atak-na-pomniki-w-warszawie-w-tle-mozliwa-operacja-kremla-kolejna-dewastacja-pomnikow-sluzby-badaja-rosyjski-slad" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Kresy.pl">
           <div class="perspective-head">
@@ -419,6 +464,7 @@
             </div>
           </div>
           <p class="perspective-summary">Napisy „Sława UPA” na siedmiu pomnikach. Policja zatrzymała 17-letniego Ukraińca</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: siedmiu.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://kresy.pl/wydarzenia/napisy-slawa-upa-na-siedmiu-pomnikach-policja-zatrzymala-17-letniego-ukrainca/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Kresy.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Wyborcza.pl">
           <div class="perspective-head">
@@ -429,6 +475,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zarzuty dla 17-latka. Na polskich pomnikach umieścił napis &quot;Slawa UPA&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: umieścił.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wyborcza.pl/7,75398,33131706,zarzuty-dla-17-latka-na-polskich-pomnikach-umiescil-napis-slawa.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wyborcza.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Polsat News">
           <div class="perspective-head">
@@ -439,6 +486,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ambasada Ukrainy wskazuje na Rosję. Chodzi o dewastacje pomników</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Rosję, Chodzi, doszło.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-14/upa-na-polskich-pomnikach-ambasada-ukrainy-apeluje/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Interia Wydarzenia">
           <div class="perspective-head">
@@ -449,6 +497,7 @@
             </div>
           </div>
           <p class="perspective-summary">Graffiti chwalące UPA na polskich pomnikach. Ambasada Ukrainy reaguje</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Graffiti, chwalące, reaguje.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wydarzenia.interia.pl/kraj/news-graffiti-chwalace-upa-na-polskich-pomnikach-ambasada-ukrainy,nId,23573597" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Wydarzenia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Niedziela.pl">
           <div class="perspective-head">
@@ -459,6 +508,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zdewastowano dwa pomniki; pojawiły się czerwone napisy „Slava UPA”</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.niedziela.pl/artykul/129865/Zdewastowano-dwa-pomniki-pojawily-sie-czerwone-napisy-Slava-UPA" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Niedziela.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP3 Warszawa">
           <div class="perspective-head">
@@ -469,6 +519,7 @@
             </div>
           </div>
           <p class="perspective-summary">Rafał Trzaskowski mocno o dewastacji pomników w stolicy. „Nie ma zgody na wandalizm”</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Rafał, Trzaskowski, mocno.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://warszawa.tvp.pl/96491520/napisy-slava-upa-na-warszawskich-pomnikach-policja-poszukuje-sprawcow" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Warszawa" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Lublin112.pl">
           <div class="perspective-head">
@@ -479,6 +530,7 @@
             </div>
           </div>
           <p class="perspective-summary">Wandalizm na pomnikach w Polsce. Ambasada Ukrainy wskazuje na próbę skłócenia Polaków i Ukraińców</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: próbę, skłócenia, Polaków.</div><div><strong>Pomija:</strong> Pomija wyliczenia (100 lat) przytaczane przez Warszawa w Pigułce.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.lublin112.pl/wandalizm-na-pomnikach-w-polsce-ambasada-ukrainy-wskazuje-na-probe-sklocenia-polakow-i-ukraincow/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Lublin112.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Warszawa w Pigułce">
           <div class="perspective-head">
@@ -489,10 +541,12 @@
             </div>
           </div>
           <p class="perspective-summary">100 lat pomnika Chopina w Warszawie. Historia wysadzonego symbolu i ratowania gipsowych odlewów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (100 lat) oraz wątki: Historia, wysadzonego.</div><div><strong>Pomija:</strong> Pomija kontekst (dewastacji, przypadek, napis) rozwijany w Rzeczpospolita, TVN24.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://warszawawpigulce.pl/100-lat-pomnika-chopina-w-warszawie-historia-wysadzonego-symbolu-i-ratowania-gipsowych-odlewow/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Warszawa w Pigułce" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="14" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (14)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: „Slava UPA” na pomniku żołnierzy 1. Armii Wojska Polskiego w Warszawie.?</summary><div class="faq-a">W ostatnich dniach podobne hasła umieszczono na pomnikach w Warszawie, Gdańsku, Gdyni i Poznaniu.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Policja potwierdza, że przyjęła zgłoszenie i bada sprawę.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (14 źródeł).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (3):</strong><div>• Dopisano źródło: TVP3 Warszawa (aktualizacja wieloźródłowa) (<a href="https://warszawa.tvp.pl/96491520/napisy-slava-upa-na-warszawskich-pomnikach-policja-poszukuje-sprawcow" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Lublin112.pl (aktualizacja wieloźródłowa) (<a href="https://www.lublin112.pl/wandalizm-na-pomnikach-w-polsce-ambasada-ukrainy-wskazuje-na-probe-sklocenia-polakow-i-ukraincow/" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Warszawa w Pigułce (aktualizacja wieloźródłowa) (<a href="https://warszawawpigulce.pl/100-lat-pomnika-chopina-w-warszawie-historia-wysadzonego-symbolu-i-ratowania-gipsowych-odlewow/" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -526,6 +580,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.rp.pl/przestepczosc/art45488241-slava-upa-na-pomniku-zolnierzy-1-armii-wojska-polskiego-w-warszawie-kolejny-akt-wandalizmu" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://tvn24.pl/tvnwarszawa/srodmiescie/napisy-dotyczace-ukrainy-na-pomnikach-w-warszawie-st9338937?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/zdewastowano-dwa-pomniki-w-warszawie-linia-zostala-przekroczona-7350948037687328a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/warszawa/dwa-warszawskie-pomniki-zdewastowane-policja-bada-sprawe/4l78rrt" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/polska/7,198073,33132033,napis-slava-upa-na-kolejnych-pomnikach-dwa-historyczne-miejsca.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96478251/atak-na-pomniki-w-warszawie-w-tle-mozliwa-operacja-kremla-kolejna-dewastacja-pomnikow-sluzby-badaja-rosyjski-slad" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li><li><a href="https://kresy.pl/wydarzenia/napisy-slawa-upa-na-siedmiu-pomnikach-policja-zatrzymala-17-letniego-ukrainca/" target="_blank" rel="noopener noreferrer"><span>Kresy.pl</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75398,33131706,zarzuty-dla-17-latka-na-polskich-pomnikach-umiescil-napis-slawa.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-14/upa-na-polskich-pomnikach-ambasada-ukrainy-apeluje/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li><li><a href="https://wydarzenia.interia.pl/kraj/news-graffiti-chwalace-upa-na-polskich-pomnikach-ambasada-ukrainy,nId,23573597" target="_blank" rel="noopener noreferrer"><span>Interia Wydarzenia</span><span>↗</span></a></li><li><a href="https://www.niedziela.pl/artykul/129865/Zdewastowano-dwa-pomniki-pojawily-sie-czerwone-napisy-Slava-UPA" target="_blank" rel="noopener noreferrer"><span>Niedziela.pl</span><span>↗</span></a></li><li><a href="https://warszawa.tvp.pl/96491520/napisy-slava-upa-na-warszawskich-pomnikach-policja-poszukuje-sprawcow" target="_blank" rel="noopener noreferrer"><span>TVP3 Warszawa</span><span>↗</span></a></li><li><a href="https://www.lublin112.pl/wandalizm-na-pomnikach-w-polsce-ambasada-ukrainy-wskazuje-na-probe-sklocenia-polakow-i-ukraincow/" target="_blank" rel="noopener noreferrer"><span>Lublin112.pl</span><span>↗</span></a></li><li><a href="https://warszawawpigulce.pl/100-lat-pomnika-chopina-w-warszawie-historia-wysadzonego-symbolu-i-ratowania-gipsowych-odlewow/" target="_blank" rel="noopener noreferrer"><span>Warszawa w Pigułce</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:20" data-id="773115592">
       <div class="story-card">
         <a class="card-media-link" href="../../Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/" onclick="return openArticleLink(event, 773115592, '/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie')" tabindex="-1" aria-hidden="true">
@@ -539,7 +594,7 @@
           <h2 class="story-title"><a class="story-title-link" href="../../Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/" onclick="return openArticleLink(event, 773115592, '/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie')">Smartfony Samsunga zyskają nową funkcję. Pomoże na diecie</a></h2>
           <p class="story-lede">Użytkownicy smartfonów Samsunga dostaną przydatną funkcję, która ułatwi utrzymanie określonego celu kalorycznego. Zaletą ma być szybkość i wygoda korzystania.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:88%"></span></span>88% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article><article class="cat" style="--h:20" data-id="1257358520">
@@ -547,12 +602,12 @@
         <a class="card-media-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polska</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp" alt="Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp" alt="Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Polska</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')">Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/" onclick="return openArticleLink(event, 1257358520, '/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje')">Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)</a></h2>
           <p class="story-lede">W październiku br. na 50. największych portalach rekrutacyjnych w Polsce opublikowano łącznie ponad 266,12 tys. nowych ofert pracy, czyli prawie o 13 tys. (5 proc.) więcej niż w ubiegłym roku –…</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
@@ -568,7 +623,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -584,6 +639,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -594,6 +650,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/slava-upa-na-pomniku-zolnierzy-1-armii-wojska-polskiego-w-warszawie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

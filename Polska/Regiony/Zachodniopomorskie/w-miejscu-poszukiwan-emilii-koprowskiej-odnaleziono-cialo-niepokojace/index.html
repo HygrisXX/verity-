@@ -195,6 +195,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo-niepokojace/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: W miejscu poszukiwań Emilii Koprowskiej odnaleziono ciało. Niepokojące?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "— Osoba spacerująca z psem znalazła w lesie ciało i nas wezwała."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pewne rzeczy wskazują na to, że to Emilia — mówi \"Faktowi\" detektyw Maja Rutkowski."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy Pomorza Zachodniego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (11 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -204,7 +234,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -219,8 +249,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -310,11 +346,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Zachodniopomorskie</span>
+              
               <time datetime="2026-11-15T10:41:15+01:00">15.11.2026, 10:41</time>
               <span>2 minuty czytania</span>
             </div>
             <h1 class="article-title">W miejscu poszukiwań Emilii Koprowskiej odnaleziono ciało. Niepokojące informacje z Darłowa</h1>
             <p class="article-lede">W okolicach Darłowa (woj. zachodniopomorskie) znaleziono ciało młodej kobiety. To tam od wielu tygodni trwają poszukiwania zaginionej Emilii Koprowskiej.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy Pomorza Zachodniego</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (11 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -344,6 +383,7 @@
             </div>
           </div>
           <p class="perspective-summary">W miejscu poszukiwań Emilii Koprowskiej odnaleziono ciało. Niepokojące informacje z Darłowa</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (relacja wiodąca).</div><div><strong>Pomija:</strong> Pomija kontekst (prokurator, zwłoki, tożsamości) rozwijany w TVP3 Szczecin, Dziennik.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.fakt.pl/wydarzenia/polska/szczecin/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo/8kb40hc" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Fakt.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -354,6 +394,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczne odkrycie w okolicy Darłowa. Znaleziono ciało młodej kobiety</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Tragiczne, Wiemy, pewno.</div><div><strong>Pomija:</strong> Pomija kontekst (policją, Skontaktowaliśmy, uczestniczyła) rozwijany w Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96488839/darlowo-w-zakrzewie-w-okolicach-darlowa-znaleziono-cialo-mlodej-kobiety-to-teren-poszukiwan-zaginionej-emilii-koprowskiej" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -364,6 +405,7 @@
             </div>
           </div>
           <p class="perspective-summary">W Darłowie odnaleziono ciało młodej kobiety. W tym miejscu policja szukała Emilii Koprowskiej</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: szukała, istotne, choć.</div><div><strong>Pomija:</strong> Pomija kontekst (powiedzieć, przekazała, Wiśniewska) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/kraj/w-darlowie-odnaleziono-cialo-mlodej-kobiety-w-tym-miejscu-policja-szukala-emilii/w5rcmps" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Szczecin">
           <div class="perspective-head">
@@ -374,6 +416,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ciało w rejonie poszukiwań. Czy to zaginiona Emilia Koprowska?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zwłok, wiadomo, kogo.</div><div><strong>Pomija:</strong> Pomija kontekst (lesie, spacerująca, znalazła) rozwijany w Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://szczecin.tvp.pl/96489227/darlowo-znaleziono-cialo-kobiety-w-rejonie-poszukiwan-emilii-koprowskiej-policja-potwierdza-odkrycie" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Szczecin" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Interia Wydarzenia">
           <div class="perspective-head">
@@ -384,6 +427,7 @@
             </div>
           </div>
           <p class="perspective-summary">Kobiece zwłoki w pobliżu Darłowa. Mąż Emilii Koprowskiej zabrał głos</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Kobiece, pobliżu, zabrał.</div><div><strong>Pomija:</strong> Pomija kontekst (koszalińskiej, policją, Skontaktowaliśmy) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wydarzenia.interia.pl/zachodniopomorskie/news-kobiece-zwloki-w-poblizu-darlowa-maz-emilii-koprowskiej-zabr,nId,23573727" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Wydarzenia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Gazeta.pl">
           <div class="perspective-head">
@@ -394,6 +438,7 @@
             </div>
           </div>
           <p class="perspective-summary">Koniec poszukiwań Emilii Koprowskiej. Mąż: Znaleziono zwłoki mojej żony</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Koniec, mojej, żony.</div><div><strong>Pomija:</strong> Pomija kontekst (koszalińskiej, policją, Skontaktowaliśmy) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.gazeta.pl/polska/7,198072,33132725,cialo-mlodej-kobiety-w-lesie-w-darlowie-na-tym-obszarze-poszukiwano.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Gazeta.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Dziennik.pl">
           <div class="perspective-head">
@@ -404,6 +449,7 @@
             </div>
           </div>
           <p class="perspective-summary">W okolicach Darłowa znaleziono ciało kobiety. Prokuratura ujawnia, czy to Emilia Koprowska</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: ujawnia, ujawnione, chwilę.</div><div><strong>Pomija:</strong> Pomija kontekst (koszalińskiej, policją, Skontaktowaliśmy) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11344599,w-okolicach-darlowa-znaleziono-cialo-kobiety-to-miejsce-poszukiwan-emilii-koprowskiej-emilia-koprowska-nie-zyje.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Dziennik.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Wyborcza.pl">
           <div class="perspective-head">
@@ -414,6 +460,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ciało młodej kobiety w okolicy Darłowa. Prokuratura: To prawdopodobnie Emilia Koprowska</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: prawdopodobnie.</div><div><strong>Pomija:</strong> Pomija kontekst (potwierdzić, lesie, powiedzieć) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wyborcza.pl/7,75398,33132969,cialo-mlodej-kobiety-w-okolicy-darlowa-prokuratura-to-prawdopodobnie.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wyborcza.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="naTemat.pl">
           <div class="perspective-head">
@@ -424,6 +471,7 @@
             </div>
           </div>
           <p class="perspective-summary">Ciało w lesie pod Darłowem. W tym rejonie szukano zaginionej Emilii Koprowskiej</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Darłowem, szukano, zmarłej.</div><div><strong>Pomija:</strong> Pomija kontekst (koszalińskiej, Skontaktowaliśmy, uczestniczyła) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://natemat.pl/675631,cialo-w-lesie-pod-darlowem-w-tym-rejonie-szukano-zaginionej-emilii-koprowskiej" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="naTemat.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="o2.pl">
           <div class="perspective-head">
@@ -434,6 +482,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tajemnica Emilii Koprowskiej. Detektyw zabiera głos: &quot;byłbym ostrożny&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Tajemnica, zabiera, byłbym.</div><div><strong>Pomija:</strong> Pomija kontekst (potwierdzić, lesie, powiedzieć) rozwijany w Fakt.pl, TVP.info.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.o2.pl/informacje/tajemnica-emilii-koprowskiej-detektyw-zabiera-glos-bylbym-ostrozny-7351368883767328a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="o2.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Radio Szczecin">
           <div class="perspective-head">
@@ -444,10 +493,12 @@
             </div>
           </div>
           <p class="perspective-summary">W okolicach Darłowa znaleziono ciało młodej kobiety</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: znajduje, rozkładzie, wykonywane.</div><div><strong>Pomija:</strong> Pomija kontekst (Skontaktowaliśmy, uczestniczyła, Niepokojące) rozwijany w Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radioszczecin.pl/1,513794" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Szczecin" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="11" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (11)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: W miejscu poszukiwań Emilii Koprowskiej odnaleziono ciało. Niepokojące?</summary><div class="faq-a">— Osoba spacerująca z psem znalazła w lesie ciało i nas wezwała.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Pewne rzeczy wskazują na to, że to Emilia — mówi &quot;Faktowi&quot; detektyw Maja Rutkowski.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy Pomorza Zachodniego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (11 źródeł).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (5):</strong><div>• Dopisano źródło: Wyborcza.pl (aktualizacja wieloźródłowa) (<a href="https://wyborcza.pl/7,75398,33132969,cialo-mlodej-kobiety-w-okolicy-darlowa-prokuratura-to-prawdopodobnie.html" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: naTemat.pl (aktualizacja wieloźródłowa) (<a href="https://natemat.pl/675631,cialo-w-lesie-pod-darlowem-w-tym-rejonie-szukano-zaginionej-emilii-koprowskiej" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: o2.pl (aktualizacja wieloźródłowa) (<a href="https://www.o2.pl/informacje/tajemnica-emilii-koprowskiej-detektyw-zabiera-glos-bylbym-ostrozny-7351368883767328a" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Radio Szczecin (aktualizacja wieloźródłowa) (<a href="https://radioszczecin.pl/1,513794" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.wp.pl/zwloki-w-poblizu-darlowa-estonia-zamyka-granice-z-rosja-skrot-dnia-7351356002965536a" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -481,6 +532,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.fakt.pl/wydarzenia/polska/szczecin/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo/8kb40hc" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96488839/darlowo-w-zakrzewie-w-okolicach-darlowa-znaleziono-cialo-mlodej-kobiety-to-teren-poszukiwan-zaginionej-emilii-koprowskiej" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/kraj/w-darlowie-odnaleziono-cialo-mlodej-kobiety-w-tym-miejscu-policja-szukala-emilii/w5rcmps" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li><li><a href="https://szczecin.tvp.pl/96489227/darlowo-znaleziono-cialo-kobiety-w-rejonie-poszukiwan-emilii-koprowskiej-policja-potwierdza-odkrycie" target="_blank" rel="noopener noreferrer"><span>TVP3 Szczecin</span><span>↗</span></a></li><li><a href="https://wydarzenia.interia.pl/zachodniopomorskie/news-kobiece-zwloki-w-poblizu-darlowa-maz-emilii-koprowskiej-zabr,nId,23573727" target="_blank" rel="noopener noreferrer"><span>Interia Wydarzenia</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/polska/7,198072,33132725,cialo-mlodej-kobiety-w-lesie-w-darlowie-na-tym-obszarze-poszukiwano.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11344599,w-okolicach-darlowa-znaleziono-cialo-kobiety-to-miejsce-poszukiwan-emilii-koprowskiej-emilia-koprowska-nie-zyje.html" target="_blank" rel="noopener noreferrer"><span>Dziennik.pl</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75398,33132969,cialo-mlodej-kobiety-w-okolicy-darlowa-prokuratura-to-prawdopodobnie.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li><li><a href="https://natemat.pl/675631,cialo-w-lesie-pod-darlowem-w-tym-rejonie-szukano-zaginionej-emilii-koprowskiej" target="_blank" rel="noopener noreferrer"><span>naTemat.pl</span><span>↗</span></a></li><li><a href="https://www.o2.pl/informacje/tajemnica-emilii-koprowskiej-detektyw-zabiera-glos-bylbym-ostrozny-7351368883767328a" target="_blank" rel="noopener noreferrer"><span>o2.pl</span><span>↗</span></a></li><li><a href="https://radioszczecin.pl/1,513794" target="_blank" rel="noopener noreferrer"><span>Radio Szczecin</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:188" data-id="1313282134">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Zachodniopomorskie/wypadek-na-przejsciu-tramwaj-potracil-pieszego/" onclick="return openArticleLink(event, 1313282134, '/Polska/Regiony/Zachodniopomorskie/wypadek-na-przejsciu-tramwaj-potracil-pieszego')" tabindex="-1" aria-hidden="true">
@@ -523,7 +575,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -539,6 +591,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -549,6 +602,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Zachodniopomorskie/w-miejscu-poszukiwan-emilii-koprowskiej-odnaleziono-cialo-niepokojace";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

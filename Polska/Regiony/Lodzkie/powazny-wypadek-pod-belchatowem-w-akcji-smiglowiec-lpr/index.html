@@ -114,6 +114,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Poważny wypadek pod Bełchatowem. W akcji śmigłowiec LPR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rowerzystka została przetransportowana śmigłowcem LPR do szpitala."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Policjanci ustalają dokładne okoliczności tego zdarzenia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy woj. łódzkiego (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -123,7 +153,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -138,8 +168,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -229,11 +265,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Łódzkie</span>
+              
               <time datetime="2026-11-15T06:56:28+01:00">15.11.2026, 06:56</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Poważny wypadek pod Bełchatowem. W akcji śmigłowiec LPR</h1>
             <p class="article-lede">Do groźnego wypadku doszło w sobotę, 14 listopada w miejscowości Drużbice-Kolonia w powiecie bełchatowskim. Poszkodowana została jedna osoba. Zgłoszenie o wypadku na drodze wojewódzkiej nr 485 wpłynęło do służb po godz. 14:00.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy woj. łódzkiego</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Zdarzenie i utrudnienia</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -263,6 +302,7 @@
             </div>
           </div>
           <p class="perspective-summary">Poważny wypadek pod Bełchatowem. W akcji śmigłowiec LPR</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: akcji, groźnego, wypadku.</div><div><strong>Pomija:</strong> Pomija kontekst (przetransportowana, najważniejszych, wiadomościach) rozwijany w Radio Łódź.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://lodz.tvp.pl/grozny-wypadek-pod-belchatowem-rowerzystka-trafil-do-szpitala,96479873" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Łódź" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Łódź">
           <div class="perspective-head">
@@ -273,10 +313,12 @@
             </div>
           </div>
           <p class="perspective-summary">Poważny wypadek pod Bełchatowem. Rowerzystka potrącona przez samochód, lądował śmigłowiec LPR</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Rowerzystka, potrącona, samochód.</div><div><strong>Pomija:</strong> Pomija kontekst (Drużbice-Kolonia, miejscowości, Poszkodowana) rozwijany w TVP3 Łódź.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radiolodz.pl/powazny-wypadek-pod-belchatowem-rowerzystka-potracona-przez-samochod-ladowal-smiglowiec-lpr,687582/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Łódź" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Poważny wypadek pod Bełchatowem. W akcji śmigłowiec LPR?</summary><div class="faq-a">Rowerzystka została przetransportowana śmigłowcem LPR do szpitala.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Policjanci ustalają dokładne okoliczności tego zdarzenia.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy woj. łódzkiego (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia.</div></details></section>
 
           
 
@@ -310,6 +352,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://lodz.tvp.pl/grozny-wypadek-pod-belchatowem-rowerzystka-trafil-do-szpitala,96479873" target="_blank" rel="noopener noreferrer"><span>TVP3 Łódź</span><span>↗</span></a></li><li><a href="https://radiolodz.pl/powazny-wypadek-pod-belchatowem-rowerzystka-potracona-przez-samochod-ladowal-smiglowiec-lpr,687582/" target="_blank" rel="noopener noreferrer"><span>Radio Łódź</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:25" data-id="105255457">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/smiertelne-potracenie-przez-pociag-w-chechle-powazne-utrudnienia-na/" onclick="return openArticleLink(event, 105255457, '/Polska/Regiony/Lodzkie/smiertelne-potracenie-przez-pociag-w-chechle-powazne-utrudnienia-na')" tabindex="-1" aria-hidden="true">
@@ -326,20 +369,20 @@
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
-    </article><article class="cat" style="--h:25" data-id="413354089">
+    </article><article class="cat" style="--h:25" data-id="1873908803">
       <div class="story-card">
-        <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/nowa-sciezka-rowerowa-za-ponad-7-mln-zl-budzi-kontrowersje-zarzadca/" onclick="return openArticleLink(event, 413354089, '/Polska/Regiony/Lodzkie/nowa-sciezka-rowerowa-za-ponad-7-mln-zl-budzi-kontrowersje-zarzadca')" tabindex="-1" aria-hidden="true">
+        <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/swiatowy-dzien-ubogich-w-lodzi-okolo-300-osob-przy-wspolnym-stole/" onclick="return openArticleLink(event, 1873908803, '/Polska/Regiony/Lodzkie/swiatowy-dzien-ubogich-w-lodzi-okolo-300-osob-przy-wspolnym-stole')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Łódzkie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg" alt="Nowa ścieżka rowerowa za ponad 7 mln zł budzi kontrowersje. Zarządca drogi wyjaśnia, skąd problem z poboczem" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-15-at-14.00.55-300x300.jpg" alt="Światowy Dzień Ubogich w Łodzi. Około 300 osób przy wspólnym stole" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Łódzkie</span><span class="story-date">15.11.2026, 04:38</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Lodzkie/nowa-sciezka-rowerowa-za-ponad-7-mln-zl-budzi-kontrowersje-zarzadca/" onclick="return openArticleLink(event, 413354089, '/Polska/Regiony/Lodzkie/nowa-sciezka-rowerowa-za-ponad-7-mln-zl-budzi-kontrowersje-zarzadca')">Nowa ścieżka rowerowa za ponad 7 mln zł budzi kontrowersje. Zarządca drogi wyjaśnia, skąd problem z poboczem</a></h2>
-          <p class="story-lede">Nowa ścieżka rowerowa na drodze powiatowej relacji Ruda – Mierzyce – Kamion miała być powodem do zadowolenia dla mieszkańców i miłośników dwóch kółek.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">1 redakcja</span><span class="chip" title="Kategoria">/Polska/Regiony/Lodzkie</span></div>
-          <div class="story-foot"><span class="meter neutral">Temat lokalny/niszowy</span><span>1 źródło · 1 min</span></div>
+          <div class="story-top"><span class="cat-badge">Łódzkie</span><span class="story-date">15.11.2026, 06:56</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Lodzkie/swiatowy-dzien-ubogich-w-lodzi-okolo-300-osob-przy-wspolnym-stole/" onclick="return openArticleLink(event, 1873908803, '/Polska/Regiony/Lodzkie/swiatowy-dzien-ubogich-w-lodzi-okolo-300-osob-przy-wspolnym-stole')">Światowy Dzień Ubogich w Łodzi. Około 300 osób przy wspólnym stole</a></h2>
+          <p class="story-lede">Obchodzimy X Światowy Dzień Ubogich pod hasłem „Pan jest ucieczką ubogiego”. W wielu diecezjach zorganizowano spotkania dla osób doświadczających różnych form ubóstwa i wykluczenia.</p>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">15 redakcji</span><span class="chip" title="Kategoria">/Polska/Regiony/Lodzkie</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>15 źródeł · 3 min</span></div>
         </div>
       </div>
     </article></div></section>
@@ -352,7 +395,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -368,6 +411,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -378,6 +422,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

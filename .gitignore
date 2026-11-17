@@ -20,6 +20,11 @@ e2e_shots*/
 verity_e2e_shots*/
 _tmp*/
 feeds_health.json
+gemini_budget.json
+*.db
+*.db-wal
+*.db-shm
+verity_community.db*
 
 # OS / editors
 .DS_Store

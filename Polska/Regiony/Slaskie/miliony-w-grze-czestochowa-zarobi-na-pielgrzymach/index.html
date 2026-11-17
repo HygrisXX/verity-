@@ -103,15 +103,6 @@
           "@type": "Organization",
           "name": "Polsat News"
         }
-      },
-      {
-        "@type": "NewsArticle",
-        "headline": "Tyle kosztuje utrzymanie jednego więźnia. Padła konkretna kwota",
-        "url": "https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html",
-        "publisher": {
-          "@type": "Organization",
-          "name": "WNP.pl"
-        }
       }
     ]
   },
@@ -150,6 +141,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/miliony-w-grze-czestochowa-zarobi-na-pielgrzymach/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Miliony w grze. Częstochowa zarobi na pielgrzymach?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wcześniej chce poznać opinie mieszkańców oraz przedstawicieli branży hotelarskiej i turystycznej."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Budżet Częstochowy wzbogaciłby się dzięki niej o dodatkowe 1,5 mln zł."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Mieszkańcy Śląska (obszar: Portfel, podatki i rynek). Status: Potwierdzone (5 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -159,7 +180,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -174,8 +195,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -265,30 +292,33 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Śląskie</span>
+              
               <time datetime="2026-11-14T14:39:03+01:00">14.11.2026, 14:39</time>
-              <span>2 minuty czytania</span>
+              <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Miliony w grze. Częstochowa zarobi na pielgrzymach?</h1>
             <p class="article-lede">Komisarz Częstochowy Łukasz Pabiś zdecyduje, czy od 1 stycznia 2027 r. w mieście zacznie obowiązywać opłata miejscowa, nazywana w lokalnej debacie &quot;pielgrzymkową&quot;.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Mieszkańcy Śląska</span><span class="impact-pill"><strong>Obszar:</strong> Portfel, podatki i rynek</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (5 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Śląskie</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/2ffc0f66-3d4f-403b-9e68-e84ee16391a8" alt="Miliony w grze. Częstochowa zarobi na pielgrzymach?" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
           </div>
-          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">6 redakcji</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Regiony/<wbr>Slaskie</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">WP Wiadomości</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (6 źródeł)</div></div></div>
+          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">5 redakcji</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Regiony/<wbr>Slaskie</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">WP Wiadomości</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (5 źródeł)</div></div></div>
           
           
-          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(7)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WP Wiadomości" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WP Wiadomości <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Fakt.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Fakt.pl <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="TVP3 Katowice" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVP3 Katowice <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="TVN24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVN24 <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Polsat News" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Polsat News <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WNP.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WNP.pl <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(6)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WP Wiadomości" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WP Wiadomości <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Fakt.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Fakt.pl <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="TVP3 Katowice" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVP3 Katowice <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="TVN24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVN24 <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Polsat News" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Polsat News <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section data-sec-idx="0"><h2 class="section-heading" id="sec_723747974_0">Ustalenia wspólne (6 redakcji)</h2><p class="section-paragraph has-dropcap" data-outlets="WP Wiadomości|Fakt.pl|TVP3 Katowice|TVN24|Polsat News">Wcześniej chce poznać opinie mieszkańców oraz przedstawicieli branży hotelarskiej i turystycznej. Budżet Częstochowy wzbogaciłby się dzięki niej o dodatkowe 1,5 mln zł. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a> <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a> <a class="cite-tag cite-link" href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVP3 Katowice">TVP3 Katowice ↗</a> <a class="cite-tag cite-link" href="https://tvn24.pl/katowice/czestochowa-komisarz-chce-wprowadzenia-oplaty-pielgrzymkowej-st9339534?source=rss" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVN24">TVN24 ↗</a> <a class="cite-tag cite-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-15/podatek-od-pielgrzymow-w-czestochowie-wzbogacilibysmy-sie-o-15-miliona-zlotych/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Polsat News">Polsat News ↗</a></p><p class="section-paragraph is-quote" data-outlets="WP Wiadomości|Fakt.pl">— W Częstochowie od wielu lat toczy się dyskusja na temat wprowadzenia opłaty lokalnej. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a> <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a></p><p class="section-paragraph" data-outlets="WP Wiadomości|Fakt.pl">Zmieniające się przepisy prawne umożliwiają wprowadzenie takiej opłaty od 1 stycznia 2027 r. – poinformował Pabiś w nagraniu umieszczonym w sobotę w mediach społecznościowych. Zaznaczył, że jako pełniący funkcje dwóch organów Częstochowy – zarówno prezydenta, jak i Rady Miasta – decyzję musi podjąć jednoosobowo. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a> <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a></p><p class="section-paragraph is-quote" data-outlets="WP Wiadomości">— Zanim to zrobię, chciałbym poznać zdanie organizacji pracodawców i przedsiębiorców świadczących usługi hotelarskie i turystyczne oraz mieszkańców. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_723747974_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Fakt.pl">To może wywołać kontrowersje. Nasze miasto każdego roku odwiedzają pielgrzymi i turyści z całej Polski oraz świata, dlatego temat dodatkowych wpływów związanych z ruchem turystycznym wielokrotnie pojawiał się w debacie publicznej. (...) Nie chcę jednak rozstrzygać tak ważnej kwestii bez wysłuchania mieszkańców i przedsiębiorców. <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a></p><p class="section-paragraph" data-outlets="TVP3 Katowice">Nie klimatyczna, nie uzdrowiskowa – od początku roku miasta będą mogły wprowadzić opłatę miejscową bez względu na czystość powietrza. Teraz jej pobieranie będzie możliwe, a pochylenie się nad projektem obiecuje komisarz miasta, Łukasz Pabiś. <a class="cite-tag cite-link" href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVP3 Katowice">TVP3 Katowice ↗</a></p><p class="section-paragraph" data-outlets="WNP.pl">Utrzymanie więźniów w Polsce kosztuje coraz więcej. Jak wynika z danych przekazanych WP przez Centralny Zarząd Służby Więziennej, na koniec października 2026 r. w polskich jednostkach penitencjarnych przebywało 70 191 osób. Koszty ich utrzymania znacząco rosną – w 2025 r. było to aż 5,8 mld zł, czyli prawie 7 tys. zł miesięcznie. <a class="cite-tag cite-link" href="https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WNP.pl">WNP.pl ↗</a></p></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_723747974_0">Ustalenia wspólne (5 redakcji)</h2><p class="section-paragraph has-dropcap" data-outlets="WP Wiadomości|Fakt.pl|TVP3 Katowice|TVN24|Polsat News">Wcześniej chce poznać opinie mieszkańców oraz przedstawicieli branży hotelarskiej i turystycznej. Budżet Częstochowy wzbogaciłby się dzięki niej o dodatkowe 1,5 mln zł. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a> <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a> <a class="cite-tag cite-link" href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVP3 Katowice">TVP3 Katowice ↗</a> <a class="cite-tag cite-link" href="https://tvn24.pl/katowice/czestochowa-komisarz-chce-wprowadzenia-oplaty-pielgrzymkowej-st9339534?source=rss" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVN24">TVN24 ↗</a> <a class="cite-tag cite-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-15/podatek-od-pielgrzymow-w-czestochowie-wzbogacilibysmy-sie-o-15-miliona-zlotych/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Polsat News">Polsat News ↗</a></p><p class="section-paragraph is-quote" data-outlets="WP Wiadomości|Fakt.pl">— W Częstochowie od wielu lat toczy się dyskusja na temat wprowadzenia opłaty lokalnej. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a> <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a></p><p class="section-paragraph" data-outlets="WP Wiadomości|Fakt.pl">Zmieniające się przepisy prawne umożliwiają wprowadzenie takiej opłaty od 1 stycznia 2027 r. – poinformował Pabiś w nagraniu umieszczonym w sobotę w mediach społecznościowych. Zaznaczył, że jako pełniący funkcje dwóch organów Częstochowy – zarówno prezydenta, jak i Rady Miasta – decyzję musi podjąć jednoosobowo. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a> <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a></p><p class="section-paragraph is-quote" data-outlets="WP Wiadomości">— Zanim to zrobię, chciałbym poznać zdanie organizacji pracodawców i przedsiębiorców świadczących usługi hotelarskie i turystyczne oraz mieszkańców. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_723747974_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Fakt.pl">To może wywołać kontrowersje. Nasze miasto każdego roku odwiedzają pielgrzymi i turyści z całej Polski oraz świata, dlatego temat dodatkowych wpływów związanych z ruchem turystycznym wielokrotnie pojawiał się w debacie publicznej. (...) Nie chcę jednak rozstrzygać tak ważnej kwestii bez wysłuchania mieszkańców i przedsiębiorców. <a class="cite-tag cite-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Fakt.pl">Fakt.pl ↗</a></p><p class="section-paragraph" data-outlets="TVP3 Katowice">Nie klimatyczna, nie uzdrowiskowa – od początku roku miasta będą mogły wprowadzić opłatę miejscową bez względu na czystość powietrza. Teraz jej pobieranie będzie możliwe, a pochylenie się nad projektem obiecuje komisarz miasta, Łukasz Pabiś. <a class="cite-tag cite-link" href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVP3 Katowice">TVP3 Katowice ↗</a></p></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">6 źródeł · kliknij wybraną, by wyróżnić jej ustalenia</span>
+              <span class="perspectives-sources">5 źródeł · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
             <div class="perspectives-grid"><div class="perspective-col" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -299,6 +329,7 @@
             </div>
           </div>
           <p class="perspective-summary">Miliony w grze. Częstochowa zarobi na pielgrzymach?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027, 1,5 mln zł) w ujęciu: relacja wiodąca.</div><div><strong>Pomija:</strong> Pomija kontekst (kontrowersje, wielokrotnie, uzdrowiskowa) rozwijany w Fakt.pl, TVP3 Katowice.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Fakt.pl">
           <div class="perspective-head">
@@ -309,6 +340,7 @@
             </div>
           </div>
           <p class="perspective-summary">Złe wieści dla pielgrzymów. Będzie opłata miejscowa w Częstochowie?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027, 1,5 mln zł) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija kontekst (świadczących, uzdrowiskowa, zapowiedział) rozwijany w WP Wiadomości, TVP3 Katowice.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Fakt.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Katowice">
           <div class="perspective-head">
@@ -319,6 +351,7 @@
             </div>
           </div>
           <p class="perspective-summary">„Opłata pielgrzymkowa&quot; od początku roku? Komisarz Częstochowy zapowiada decyzję</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027, 1,5 mln zł) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija kontekst (opłaty, społecznościowych, przedsiębiorców) rozwijany w WP Wiadomości, Fakt.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Katowice" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVN24">
           <div class="perspective-head">
@@ -329,6 +362,7 @@
             </div>
           </div>
           <p class="perspective-summary">Komisarz Częstochowy zapowiedział wprowadzenie opłaty &quot;pielgrzymkowej&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027, 1,5 mln zł) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija kontekst (decyzję, Miasta, społecznościowych) rozwijany w WP Wiadomości, Fakt.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/katowice/czestochowa-komisarz-chce-wprowadzenia-oplaty-pielgrzymkowej-st9339534?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Polsat News">
           <div class="perspective-head">
@@ -339,20 +373,12 @@
             </div>
           </div>
           <p class="perspective-summary">&quot;Podatek od pielgrzymów&quot; w Częstochowie? Padła konkretna kwota</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2027, 1,5 mln zł) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija kontekst (wprowadzenia, decyzję, opłaty) rozwijany w WP Wiadomości, Fakt.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-15/podatek-od-pielgrzymow-w-czestochowie-wzbogacilibysmy-sie-o-15-miliona-zlotych/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
-        </div><div class="perspective-col is-collapsed-persp" data-outlet="WNP.pl">
-          <div class="perspective-head">
-            <span class="outlet-mono" aria-hidden="true">WP</span>
-            <div>
-              <div class="perspective-outlet">WNP.pl</div>
-              <div class="perspective-angle">Doniesienie regionalne</div>
-            </div>
-          </div>
-          <p class="perspective-summary">Tyle kosztuje utrzymanie jednego więźnia. Padła konkretna kwota</p>
-          <div class="perspective-actions"><a class="perspective-link" href="https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WNP.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
-            <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="6" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (6)</button></div>
+            <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="5" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (5)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Miliony w grze. Częstochowa zarobi na pielgrzymach?</summary><div class="faq-a">Wcześniej chce poznać opinie mieszkańców oraz przedstawicieli branży hotelarskiej i turystycznej.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Budżet Częstochowy wzbogaciłby się dzięki niej o dodatkowe 1,5 mln zł.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Mieszkańcy Śląska (obszar: Portfel, podatki i rynek). Status: Potwierdzone (5 źródeł).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (1):</strong><div>• Dopisano źródło: WNP.pl (aktualizacja wieloźródłowa) (<a href="https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -379,13 +405,14 @@
         <aside class="article-aside">
           <div class="aside-card">
             <div class="aside-title">Zgodność danych</div>
-            <div class="big-meter meter ok">98%<small>6 źródeł</small></div>
+            <div class="big-meter meter ok">98%<small>5 źródeł</small></div>
             <div class="meter-bar wide"><span class="meter-fill" style="width:98%"></span></div>
           </div>
-          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_723747974_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (6 redakcji)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_723747974_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
-          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li><li><a href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li><li><a href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer"><span>TVP3 Katowice</span><span>↗</span></a></li><li><a href="https://tvn24.pl/katowice/czestochowa-komisarz-chce-wprowadzenia-oplaty-pielgrzymkowej-st9339534?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-15/podatek-od-pielgrzymow-w-czestochowie-wzbogacilibysmy-sie-o-15-miliona-zlotych/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li><li><a href="https://www.wnp.pl/rynki/tyle-kosztuje-utrzymanie-jednego-wieznia-padla-konkretna-kwota,1120025.html" target="_blank" rel="noopener noreferrer"><span>WNP.pl</span><span>↗</span></a></li></ul></div>
+          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_723747974_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (5 redakcji)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_723747974_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
+          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://wiadomosci.wp.pl/miliony-w-grze-czestochowa-chce-zarobic-na-pielgrzymach-7350941196290080a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li><li><a href="https://www.fakt.pl/wydarzenia/polska/slask/bedzie-oplata-pielgrzymkowa-w-czestochowie-komisarz-to-rozwaza/demv50v" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li><li><a href="https://katowice.tvp.pl/96482665/oplata-pielgrzymkowa-od-poczatku-roku-jest-decyzja-komisarza-czestochowy" target="_blank" rel="noopener noreferrer"><span>TVP3 Katowice</span><span>↗</span></a></li><li><a href="https://tvn24.pl/katowice/czestochowa-komisarz-chce-wprowadzenia-oplaty-pielgrzymkowej-st9339534?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-15/podatek-od-pielgrzymow-w-czestochowie-wzbogacilibysmy-sie-o-15-miliona-zlotych/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:245" data-id="1009589771">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja/" onclick="return openArticleLink(event, 1009589771, '/Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja')" tabindex="-1" aria-hidden="true">
@@ -428,7 +455,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -444,6 +471,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -454,6 +482,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Slaskie/miliony-w-grze-czestochowa-zarobi-na-pielgrzymach";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

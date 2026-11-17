@@ -76,15 +76,6 @@
           "@type": "Organization",
           "name": "Forsal.pl"
         }
-      },
-      {
-        "@type": "NewsArticle",
-        "headline": "31 grudnia 2026 r. (Sylwester) dniem wolnym od pracy – aż 4 dni wolnego z rzędu, długi weekend bez wykorzystywania urlopu wypoczynkowego",
-        "url": "https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Infor.pl"
-        }
       }
     ]
   },
@@ -117,6 +108,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Już poprzednia edycja Indeksu Wiarygodności Ekonomicznej Polski wskazywała na poważne problemy finansów publicznych."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Odpowiedzi przyniesie piąta edycja Indeksu, której premiera odbędzie się 17 listopada podczas Open Eyes Economy Summit 2026 w Krakowie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (2 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -126,7 +147,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -141,8 +162,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -232,30 +259,33 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Gospodarka</span>
+              
               <time datetime="2026-11-14T08:45:28+01:00">14.11.2026, 08:45</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych</h1>
             <p class="article-lede">Polska pozostaje jedną z szybciej rozwijających się gospodarek Europy, ale rosnące zadłużenie i wysokie deficyty rodzą pytania o trwałość tego wzrostu.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Portfel, podatki i rynek</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (2 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Gospodarka</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/427552ba-1f7e-4d83-b13e-a3ac66f4eb8b" alt="Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
           </div>
-          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">3 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Gospodarka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Money.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (3 źródła)</div></div></div>
+          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">2 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Gospodarka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Money.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (2 źródła)</div></div></div>
+          <div class="callout callout-warn"><strong>Nota weryfikacyjna redakcji:</strong> Weryfikacja redakcyjna: Eksperci Indeksu Wiarygodności Ekonomicznej wskazują, że wysoki wzrost PKB współwystępuje z narastającym deficytem i zadłużeniem pozabudżetowym wymagającym korekty fiskalnej.</div>
           
-          
-          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Money.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Money.pl <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Forsal.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Forsal.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Infor.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Infor.pl <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Money.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Money.pl <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Forsal.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Forsal.pl <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section data-sec-idx="0"><h2 class="section-heading" id="sec_1257236645_0">Ustalenia wspólne (3 redakcje)</h2><p class="section-paragraph" data-outlets="Money.pl">Już poprzednia edycja Indeksu Wiarygodności Ekonomicznej Polski wskazywała na poważne problemy finansów publicznych. <a class="cite-tag cite-link" href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Money.pl">Money.pl ↗</a></p><p class="section-paragraph has-dropcap" data-outlets="Money.pl">Prof. Jerzy Hausner ostrzegał niedawno na łamach money.pl, że finansowanie wzrostu długiem nie musi przekładać się na zwiększenie przyszłego potencjału gospodarki. Odpowiedzi przyniesie piąta edycja Indeksu, której premiera odbędzie się 17 listopada podczas Open Eyes Economy Summit 2026 w Krakowie. <a class="cite-tag cite-link" href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Money.pl">Money.pl ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_1257236645_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Forsal.pl">Wigilia miała zapewnić pracownikom więcej odpoczynku i czasu z rodziną. Tymczasem tegoroczne święta mogą okazać się dla części zatrudnionych wyjątkowo wyczerpujące. Przedświąteczne plany pracodawców budzą sprzeciw związkowców, a nietypowy układ kalendarza sprawi, że skutki odczują zarówno pracownicy, jak i klienci. <a class="cite-tag cite-link" href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11344432,wigilia-24-grudnia-2026-r-miala-byc-dniem-wolnym-od-pracy-sejm-zmienil-przepisy-ale-pracownicy-moga-zaplacic-za-to-wysoka-cene.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Forsal.pl">Forsal.pl ↗</a></p><p class="section-paragraph" data-outlets="Infor.pl">1 stycznia (Nowy Rok) w 2027 roku przypada w piątek. Dzięki temu – wielu pracowników czeka długi weekend noworoczny. Okazuje się jednak, że istnieje sposób, aby weekend ten rozpocząć już w czwartek 31 grudnia 2026 r. (w Sylwestra), który również może być dniem wolnym od pracy i to bez konieczności wykorzystywania urlopu wypoczynkowego. <a class="cite-tag cite-link" href="https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Infor.pl">Infor.pl ↗</a></p></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_1257236645_0">Ustalenia wspólne (2 redakcje)</h2><p class="section-paragraph" data-outlets="Money.pl">Już poprzednia edycja Indeksu Wiarygodności Ekonomicznej Polski wskazywała na poważne problemy finansów publicznych. <a class="cite-tag cite-link" href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Money.pl">Money.pl ↗</a></p><p class="section-paragraph has-dropcap" data-outlets="Money.pl">Prof. Jerzy Hausner ostrzegał niedawno na łamach money.pl, że finansowanie wzrostu długiem nie musi przekładać się na zwiększenie przyszłego potencjału gospodarki. Odpowiedzi przyniesie piąta edycja Indeksu, której premiera odbędzie się 17 listopada podczas Open Eyes Economy Summit 2026 w Krakowie. <a class="cite-tag cite-link" href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Money.pl">Money.pl ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_1257236645_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Forsal.pl">Wigilia miała zapewnić pracownikom więcej odpoczynku i czasu z rodziną. Tymczasem tegoroczne święta mogą okazać się dla części zatrudnionych wyjątkowo wyczerpujące. Przedświąteczne plany pracodawców budzą sprzeciw związkowców, a nietypowy układ kalendarza sprawi, że skutki odczują zarówno pracownicy, jak i klienci. <a class="cite-tag cite-link" href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11344432,wigilia-24-grudnia-2026-r-miala-byc-dniem-wolnym-od-pracy-sejm-zmienil-przepisy-ale-pracownicy-moga-zaplacic-za-to-wysoka-cene.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Forsal.pl">Forsal.pl ↗</a></p></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">3 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
+              <span class="perspectives-sources">2 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
             <div class="perspectives-grid"><div class="perspective-col" data-outlet="Money.pl">
           <div class="perspective-head">
@@ -266,6 +296,7 @@
             </div>
           </div>
           <p class="perspective-summary">Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: raport rynkowy.</div><div><strong>Pomija:</strong> Pomija kontekst (Przedświąteczne, zatrudnionych, wyczerpujące) rozwijany w Forsal.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Money.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Forsal.pl">
           <div class="perspective-head">
@@ -276,22 +307,14 @@
             </div>
           </div>
           <p class="perspective-summary">Wigilia 24 grudnia 2026 r. miała być dniem wolnym od pracy. Sejm zmienił przepisy, ale pracownicy mogą zapłacić za to wysoką cenę</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: perspektywa rynkowa.</div><div><strong>Pomija:</strong> Pomija kontekst (rozwijających, Wiarygodności, Ekonomicznej) rozwijany w Money.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11344432,wigilia-24-grudnia-2026-r-miala-byc-dniem-wolnym-od-pracy-sejm-zmienil-przepisy-ale-pracownicy-moga-zaplacic-za-to-wysoka-cene.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Forsal.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
-        </div><div class="perspective-col" data-outlet="Infor.pl">
-          <div class="perspective-head">
-            <span class="outlet-mono" aria-hidden="true">IP</span>
-            <div>
-              <div class="perspective-outlet">Infor.pl</div>
-              <div class="perspective-angle">Perspektywa rynkowa</div>
-            </div>
-          </div>
-          <p class="perspective-summary">31 grudnia 2026 r. (Sylwester) dniem wolnym od pracy – aż 4 dni wolnego z rzędu, długi weekend bez wykorzystywania urlopu wypoczynkowego</p>
-          <div class="perspective-actions"><a class="perspective-link" href="https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Infor.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych?</summary><div class="faq-a">Już poprzednia edycja Indeksu Wiarygodności Ekonomicznej Polski wskazywała na poważne problemy finansów publicznych.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Odpowiedzi przyniesie piąta edycja Indeksu, której premiera odbędzie się 17 listopada podczas Open Eyes Economy Summit 2026 w Krakowie.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (2 źródła).</div></details></section>
 
-          <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (1):</strong><div>• Dopisano źródło: Infor.pl (aktualizacja wieloźródłowa) (<a href="https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
+          <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (2):</strong><div>• Dopisano źródło: Infor.pl (aktualizacja wieloźródłowa) (<a href="https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Według kwartalnego zestawienia MF relacja długu EDP do PKB przekroczyła 54,2 proc., uwzględniając fundusze w BGK i PFR. (<a href="https://www.gov.pl/web/finanse/zadluzenie-sektora-finansow-publicznych" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
           <div class="article-footer">
             <div class="permalink-wrap">
@@ -316,13 +339,14 @@
         <aside class="article-aside">
           <div class="aside-card">
             <div class="aside-title">Zgodność danych</div>
-            <div class="big-meter meter ok">90%<small>3 źródła</small></div>
-            <div class="meter-bar wide"><span class="meter-fill" style="width:90%"></span></div>
+            <div class="big-meter meter ok">86%<small>2 źródła</small></div>
+            <div class="meter-bar wide"><span class="meter-fill" style="width:86%"></span></div>
           </div>
-          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_1257236645_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (3 redakcje)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_1257236645_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
-          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer"><span>Money.pl</span><span>↗</span></a></li><li><a href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11344432,wigilia-24-grudnia-2026-r-miala-byc-dniem-wolnym-od-pracy-sejm-zmienil-przepisy-ale-pracownicy-moga-zaplacic-za-to-wysoka-cene.html" target="_blank" rel="noopener noreferrer"><span>Forsal.pl</span><span>↗</span></a></li><li><a href="https://www.infor.pl/prawo/nowosci-prawne/7702007,31-grudnia-2026-r-sylwester-dniem-wolnym-od-pracy-az-4-dni-wolnego-z-rzedu.html" target="_blank" rel="noopener noreferrer"><span>Infor.pl</span><span>↗</span></a></li></ul></div>
+          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_1257236645_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (2 redakcje)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_1257236645_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
+          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.money.pl/gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow-publicznych-7350247323437056a.html" target="_blank" rel="noopener noreferrer"><span>Money.pl</span><span>↗</span></a></li><li><a href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11344432,wigilia-24-grudnia-2026-r-miala-byc-dniem-wolnym-od-pracy-sejm-zmienil-przepisy-ale-pracownicy-moga-zaplacic-za-to-wysoka-cene.html" target="_blank" rel="noopener noreferrer"><span>Forsal.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:150" data-id="32382638">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Gospodarka/amazon-rozszerza-dostawy-dronami-jest-przelomowa-zgoda/" onclick="return openArticleLink(event, 32382638, '/Polska/Gospodarka/amazon-rozszerza-dostawy-dronami-jest-przelomowa-zgoda')" tabindex="-1" aria-hidden="true">
@@ -365,7 +389,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -381,6 +405,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -391,6 +416,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

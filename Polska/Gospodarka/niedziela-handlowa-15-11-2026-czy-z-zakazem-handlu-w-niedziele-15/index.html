@@ -162,6 +162,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Gospodarka/niedziela-handlowa-15-11-2026-czy-z-zakazem-handlu-w-niedziele-15/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co ustalono w sprawie: Niedziela handlowa 15.11.2026 czy z zakazem handlu. W niedzielę 15?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jaki je zaplanować nie burząc innych prac domowych oraz sposobów na wypoczynek."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Najnowsze badanie UCE Research i Shopfully Poland pokazuje, że ponad 60 procent Polaków opowiada się za całkowitym zniesieniem zakazu handlu lub wprowadzeniem jednej bądź dwóch niedziel handlowych w miesiącu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (8 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -171,7 +201,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -186,8 +216,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -277,11 +313,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Gospodarka</span>
+              
               <time datetime="2026-11-14T14:39:03+01:00">14.11.2026, 14:39</time>
               <span>2 minuty czytania</span>
             </div>
             <h1 class="article-title">Niedziela handlowa 15.11.2026 czy z zakazem handlu. W niedzielę 15 listopada otwarte są sklepy Biedronka, Lidl i wszystkie inne?</h1>
             <p class="article-lede">To już trzecia niedziela listopada – po tygodniu, w środku którego było święto. Czas wrócić do normalnego rozkładu zajęć domowych. Jego ważnym punktem z pewnością są zakupy.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Portfel, podatki i rynek</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (8 źródeł)</span></div>
+            <div class="dossier-banner"><span class="dossier-badge">Akta Sprawy</span><span class="dossier-title-txt">Biedronka · otwarte (1/2)</span><a class="dossier-jump" href="#timeline">Oś czasu tematu ↓</a></div>
           </header>
 
           <div class="article-hero-wrap">
@@ -311,6 +350,7 @@
             </div>
           </div>
           <p class="perspective-summary">Niedziela handlowa 15.11.2026 czy z zakazem handlu. W niedzielę 15 listopada otwarte są sklepy Biedronka, Lidl i wszystkie inne?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (60 proc) w ujęciu: relacja wiodąca.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 2027) przytaczane przez Farmer.pl, Infor.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.dziennik.pl/artykuly/11344030,niedziela-handlowa-15112026-czy-z-zakazem-handlu-w-niedziele-15-list.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Dziennik.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Łódź">
           <div class="perspective-head">
@@ -321,6 +361,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zakaz handlu w niedziele do zmiany? Polacy podzieleni, Łodzianie mają swoje zdanie</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (60 proc) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 2027) przytaczane przez Farmer.pl, Infor.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radiolodz.pl/zakaz-handlu-w-niedziele-do-zmiany-polacy-podzieleni-lodzianie-maja-swoje-zdanie,687559/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Łódź" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="GazetaPrawna.pl (DGP)">
           <div class="perspective-head">
@@ -331,6 +372,7 @@
             </div>
           </div>
           <p class="perspective-summary">Czy jutro jest niedziela handlowa? Sprawdź, czy Biedronka, Lidl i Żabka będą otwarte</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Żabka, zrobić, supermarketach.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 60 proc) przytaczane przez Farmer.pl, Infor.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11344430,czy-15-listopada-2026-jest-niedziela-handlowa-sklepy-otwarte.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="GazetaPrawna.pl (DGP)" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Forsal.pl">
           <div class="perspective-head">
@@ -341,6 +383,7 @@
             </div>
           </div>
           <p class="perspective-summary">Niedziela handlowa 15.11.2026: sklepy otwarte 15 listopada czy obowiązuje zakaz handlu. Czy dzisiaj jest niedziela handlowa?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: obowiązuje, Wiele, osób.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 60 proc) przytaczane przez Farmer.pl, Infor.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11343786,niedziela-handlowa-15112026-sklepy-otwarte-15-listopada-czy-obowiazuje-zakaz-handlu-czy-dzisiaj-jest-niedziela-handlowa.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Forsal.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Farmer.pl">
           <div class="perspective-head">
@@ -351,6 +394,7 @@
             </div>
           </div>
           <p class="perspective-summary">„Czarny tydzień w handlu” przed świętami? OPZZ wzywa do protestów w Dino, Biedronce i Lidlu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: relacja uzupełniająca.</div><div><strong>Pomija:</strong> Pomija wyliczenia (60 proc, 2027) przytaczane przez Dziennik.pl, Radio Łódź.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.farmer.pl/fakty/czarny-tydzien-w-handlu-przed-swietami-opzz-wzywa-do-protestow-w-dino-biedronce-i-lidlu,187057.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Farmer.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Infor.pl">
           <div class="perspective-head">
@@ -361,6 +405,7 @@
             </div>
           </div>
           <p class="perspective-summary">Niedziele handlowe w grudniu 2026. Sklepy będą zamknięte aż przez cztery dni z rzędu!</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2027) oraz wątki: grudniu, zamknięte.</div><div><strong>Pomija:</strong> Pomija wyliczenia (60 proc) przytaczane przez Dziennik.pl, Radio Łódź.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.infor.pl/twoje-pieniadze/zakupy/7702011,niedziele-handlowe-w-grudniu-2026-sklepy-beda-zamkniete-az-przez-cztery-dni-z-rzedu.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Infor.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Wroclaw.pl">
           <div class="perspective-head">
@@ -371,6 +416,7 @@
             </div>
           </div>
           <p class="perspective-summary">Niedziela handlowa 15 listopada 2026. Czy sklepy będą otwarte?</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026, 60 proc) w ujęciu: relacja uzupełniająca.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2027) przytaczane przez Infor.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.wroclaw.pl/przedsiebiorczy-wroclaw/niedziele-handlowe-2026" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wroclaw.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP3 Łódź">
           <div class="perspective-head">
@@ -381,10 +427,12 @@
             </div>
           </div>
           <p class="perspective-summary">Adwent 2026. Kiedy się zaczyna i ile potrwa? Daty wszystkich niedziel adwentowych</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija wyliczenia (60 proc, 2027) przytaczane przez Dziennik.pl, Radio Łódź.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://lodz.tvp.pl/96490864/-adwent-2026-kiedy-sie-zaczyna-ile-trwa-niedziele-roraty" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Łódź" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="8" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (8)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co ustalono w sprawie: Niedziela handlowa 15.11.2026 czy z zakazem handlu. W niedzielę 15?</summary><div class="faq-a">Jaki je zaplanować nie burząc innych prac domowych oraz sposobów na wypoczynek.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Najnowsze badanie UCE Research i Shopfully Poland pokazuje, że ponad 60 procent Polaków opowiada się za całkowitym zniesieniem zakazu handlu lub wprowadzeniem jednej bądź dwóch niedziel handlowych w miesiącu.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (8 źródeł).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (1):</strong><div>• Dopisano źródło: TVP3 Łódź (aktualizacja wieloźródłowa) (<a href="https://lodz.tvp.pl/96490864/-adwent-2026-kiedy-sie-zaczyna-ile-trwa-niedziele-roraty" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -418,6 +466,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://wiadomosci.dziennik.pl/artykuly/11344030,niedziela-handlowa-15112026-czy-z-zakazem-handlu-w-niedziele-15-list.html" target="_blank" rel="noopener noreferrer"><span>Dziennik.pl</span><span>↗</span></a></li><li><a href="https://radiolodz.pl/zakaz-handlu-w-niedziele-do-zmiany-polacy-podzieleni-lodzianie-maja-swoje-zdanie,687559/" target="_blank" rel="noopener noreferrer"><span>Radio Łódź</span><span>↗</span></a></li><li><a href="https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11344430,czy-15-listopada-2026-jest-niedziela-handlowa-sklepy-otwarte.html" target="_blank" rel="noopener noreferrer"><span>GazetaPrawna.pl (DGP)</span><span>↗</span></a></li><li><a href="https://forsal.pl/gospodarka/aktualnosci/artykuly/11343786,niedziela-handlowa-15112026-sklepy-otwarte-15-listopada-czy-obowiazuje-zakaz-handlu-czy-dzisiaj-jest-niedziela-handlowa.html" target="_blank" rel="noopener noreferrer"><span>Forsal.pl</span><span>↗</span></a></li><li><a href="https://www.farmer.pl/fakty/czarny-tydzien-w-handlu-przed-swietami-opzz-wzywa-do-protestow-w-dino-biedronce-i-lidlu,187057.html" target="_blank" rel="noopener noreferrer"><span>Farmer.pl</span><span>↗</span></a></li><li><a href="https://www.infor.pl/twoje-pieniadze/zakupy/7702011,niedziele-handlowe-w-grudniu-2026-sklepy-beda-zamkniete-az-przez-cztery-dni-z-rzedu.html" target="_blank" rel="noopener noreferrer"><span>Infor.pl</span><span>↗</span></a></li><li><a href="https://www.wroclaw.pl/przedsiebiorczy-wroclaw/niedziele-handlowe-2026" target="_blank" rel="noopener noreferrer"><span>Wroclaw.pl</span><span>↗</span></a></li><li><a href="https://lodz.tvp.pl/96490864/-adwent-2026-kiedy-sie-zaczyna-ile-trwa-niedziele-roraty" target="_blank" rel="noopener noreferrer"><span>TVP3 Łódź</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      <section id="timeline" class="dossier-timeline" aria-label="Oś czasu sprawy"><div class="timeline-head"><span class="dossier-badge">Akta Sprawy · Oś czasu</span><h2>Biedronka · otwarte</h2><span class="timeline-meta">Etap 1 z 2</span></div><ol class="timeline-list"><li class="timeline-item is-current"><div class="timeline-date">14.11.2026, 14:39</div><span class="timeline-link">Niedziela handlowa 15.11.2026 czy z zakazem handlu. W niedzielę 15 listopada otwarte są sklepy Biedronka, Lidl i wszystkie inne?</span><span class="timeline-now">Czytasz teraz</span></li><li class="timeline-item"><div class="timeline-date">14.11.2026, 15:32</div><a class="timeline-link" href="../../../Polska/Gospodarka/biedronka-otwarta-24h-przed-swietami-zalogi-w-szoku-w-poniedzialek/" onclick="return openArticleLink(event, 226395385, '/Polska/Gospodarka/biedronka-otwarta-24h-przed-swietami-zalogi-w-szoku-w-poniedzialek')">Biedronki otwarte całą dobę przed świętami? W tle groźba referendum strajkowego (50 proc.)</a></li></ol></section>
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:150" data-id="32382638">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Gospodarka/amazon-rozszerza-dostawy-dronami-jest-przelomowa-zgoda/" onclick="return openArticleLink(event, 32382638, '/Polska/Gospodarka/amazon-rozszerza-dostawy-dronami-jest-przelomowa-zgoda')" tabindex="-1" aria-hidden="true">
@@ -460,7 +509,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -476,6 +525,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -486,6 +536,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Gospodarka/niedziela-handlowa-15-11-2026-czy-z-zakazem-handlu-w-niedziele-15";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

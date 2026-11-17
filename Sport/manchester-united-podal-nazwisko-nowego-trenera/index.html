@@ -138,6 +138,36 @@
         "item": "https://hygrisxx.github.io/verity-/Sport/manchester-united-podal-nazwisko-nowego-trenera/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Manchester United podał nazwisko nowego trenera?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zmiana szkoleniowca Czerwonych Diabłów nastąpiła po najsłabszym od czterech dekad początku sezonu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Argentyńczyk miał umowę z narodową kadrą do 2030 r."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (6 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -147,7 +177,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -162,8 +192,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -253,11 +289,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Sport</span>
+              
               <time datetime="2026-11-13T14:11:13+01:00">13.11.2026, 14:11</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Manchester United podał nazwisko nowego trenera</h1>
             <p class="article-lede">Katastrofalny start sezonu spowodował kolejną zmianę rządów w Manchesterze United. Argentyńczyk pracuje obecnie jako selekcjoner reprezentacji USA, a na Wyspy Brytyjskie przeniesie się tuż po przerwie reprezentacyjnej.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Kibice i środowisko sportowe</span><span class="impact-pill"><strong>Obszar:</strong> Sport i rozgrywki</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (6 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -287,6 +326,7 @@
             </div>
           </div>
           <p class="perspective-summary">Manchester United podał nazwisko nowego trenera</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: podał, nazwisko.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2030) przytaczane przez Przegląd Sportowy.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.rmf24.pl/fakty/sport/news-manchester-united-podal-nazwisko-nowego-trenera,nIdn,1026018" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="RMF24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Interia Sport">
           <div class="perspective-head">
@@ -297,6 +337,7 @@
             </div>
           </div>
           <p class="perspective-summary">Koszmarny start sezonu Manchesteru United. Wybrano nowego trenera</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Koszmarny, Wybrano.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2030) przytaczane przez Przegląd Sportowy.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://sport.interia.pl/pilka-nozna/premier-league/news-katastrofa-na-starcie-sezonu-gigant-zmienil-trenera-ogloszon,nId,23573171" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Interia Sport" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Polsat Sport">
           <div class="perspective-head">
@@ -307,6 +348,7 @@
             </div>
           </div>
           <p class="perspective-summary">Potwierdziło się. Znamy nowego trenera Manchesteru United</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Potwierdziło, Znamy, Zmiana.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2030) przytaczane przez Przegląd Sportowy.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatsport.pl/wiadomosc/2026-11-13/potwierdzilo-sie-znamy-nowego-trenera-manchesteru-united/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat Sport" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Sport.pl">
           <div class="perspective-head">
@@ -317,6 +359,7 @@
             </div>
           </div>
           <p class="perspective-summary">Manchester United ma nowego trenera! Ten zakup będzie słono kosztował</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zakup, słono, kosztował.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2030) przytaczane przez Przegląd Sportowy.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.sport.pl/pilka/7,65080,33130994,manchester-united-ma-nowego-trenera-ten-zakup-bedzie-slono.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Sport.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Przegląd Sportowy">
           <div class="perspective-head">
@@ -327,6 +370,7 @@
             </div>
           </div>
           <p class="perspective-summary">Oficjalnie. Manchester United ma nowego trenera. Musi dźwignąć giganta z dna</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2030) oraz wątki: Oficjalnie, Musi.</div><div><strong>Pomija:</strong> Pomija kontekst (Brytyjskie, sezonu, Katastrofalny) rozwijany w RMF24, Interia Sport.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://przegladsportowy.onet.pl/pilka-nozna/premier-league/oficjalnie-manchester-united-ma-nowego-trenera-musi-dzwignac-giganta-z-dna/l0ehtrl" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Przegląd Sportowy" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="WP SportoweFakty">
           <div class="perspective-head">
@@ -337,10 +381,12 @@
             </div>
           </div>
           <p class="perspective-summary">To już pewne. Manchester United ma nowego trenera</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: pewne.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2030) przytaczane przez Przegląd Sportowy.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://sportowefakty.wp.pl/pilka-nozna/1283992/to-juz-pewne-manchester-united-ma-nowego-trenera" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP SportoweFakty" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="6" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (6)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Manchester United podał nazwisko nowego trenera?</summary><div class="faq-a">Zmiana szkoleniowca Czerwonych Diabłów nastąpiła po najsłabszym od czterech dekad początku sezonu.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Argentyńczyk miał umowę z narodową kadrą do 2030 r.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (6 źródeł).</div></details></section>
 
           
 
@@ -374,20 +420,21 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.rmf24.pl/fakty/sport/news-manchester-united-podal-nazwisko-nowego-trenera,nIdn,1026018" target="_blank" rel="noopener noreferrer"><span>RMF24</span><span>↗</span></a></li><li><a href="https://sport.interia.pl/pilka-nozna/premier-league/news-katastrofa-na-starcie-sezonu-gigant-zmienil-trenera-ogloszon,nId,23573171" target="_blank" rel="noopener noreferrer"><span>Interia Sport</span><span>↗</span></a></li><li><a href="https://www.polsatsport.pl/wiadomosc/2026-11-13/potwierdzilo-sie-znamy-nowego-trenera-manchesteru-united/" target="_blank" rel="noopener noreferrer"><span>Polsat Sport</span><span>↗</span></a></li><li><a href="https://www.sport.pl/pilka/7,65080,33130994,manchester-united-ma-nowego-trenera-ten-zakup-bedzie-slono.html" target="_blank" rel="noopener noreferrer"><span>Sport.pl</span><span>↗</span></a></li><li><a href="https://przegladsportowy.onet.pl/pilka-nozna/premier-league/oficjalnie-manchester-united-ma-nowego-trenera-musi-dzwignac-giganta-z-dna/l0ehtrl" target="_blank" rel="noopener noreferrer"><span>Przegląd Sportowy</span><span>↗</span></a></li><li><a href="https://sportowefakty.wp.pl/pilka-nozna/1283992/to-juz-pewne-manchester-united-ma-nowego-trenera" target="_blank" rel="noopener noreferrer"><span>WP SportoweFakty</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:15" data-id="1215463584">
       <div class="story-card">
         <a class="card-media-link" href="../../Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/" onclick="return openArticleLink(event, 1215463584, '/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Sport</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afa823eadd334_39038489.jfif" alt="Polak bohaterem Superpucharu Włoch. Nie zapomną mu tego" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            <img src="https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afa823eadd334_39038489.jfif" alt="Było już 0:2 i 15:19 w trzecim secie! Perugia odwróciła losy meczu o Superpuchar Włoch" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
           </div>
         </a>
         <div class="story-body">
           <div class="story-top"><span class="cat-badge">Sport</span><span class="story-date">16.11.2026, 06:03</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/" onclick="return openArticleLink(event, 1215463584, '/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego')">Polak bohaterem Superpucharu Włoch. Nie zapomną mu tego</a></h2>
+          <h2 class="story-title"><a class="story-title-link" href="../../Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/" onclick="return openArticleLink(event, 1215463584, '/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego')">Było już 0:2 i 15:19 w trzecim secie! Perugia odwróciła losy meczu o Superpuchar Włoch</a></h2>
           <p class="story-lede">Kamil Semeniuk zdobył 16 punktów, a Sir Susa Scai Perugia pokonała Cucine Lube Civitanova 3:2 w finale Superpucharu Włoch. Polski przyjmujący odegrał kluczową rolę w odwróceniu losów spotkania.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Sport</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>2 źródła · 1 min</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>
       </div>
     </article><article class="cat" style="--h:15" data-id="1534437874">
@@ -416,7 +463,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -432,6 +479,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../feed.xml">Kanał RSS</a>
@@ -442,6 +490,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Sport/manchester-united-podal-nazwisko-nowego-trenera";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=903bd3e9"></script>
+  <script src="../../app.js?v=c339d426"></script>
+  <script src="../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

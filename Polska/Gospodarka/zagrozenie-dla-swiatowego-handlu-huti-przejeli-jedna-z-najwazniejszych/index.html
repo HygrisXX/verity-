@@ -126,6 +126,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Gospodarka/zagrozenie-dla-swiatowego-handlu-huti-przejeli-jedna-z-najwazniejszych/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Zagrożenie dla światowego handlu. Huti przejęli jedną z najważniejszych?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O utracie strategicznego obszaru poinformowały w niedzielę jemeńskie sił rządowe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cytowane przez agencję Reutera jemeńskie Południowe Siły Zbrojne przekazały w komunikacie, że oddziały zostały wycofane z lotniska Dhubab oraz okolic Bab al-Mandab."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (4 źródła)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -135,7 +165,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -150,8 +180,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -241,11 +277,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Gospodarka</span>
+              
               <time datetime="2026-11-15T20:14:20+01:00">15.11.2026, 20:14</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Zagrożenie dla światowego handlu. Huti przejęli jedną z najważniejszych cieśnin</h1>
             <p class="article-lede">Bab al-Mandab, jedna z najważniejszych dla światowego handlu cieśnina została przejęta przez bojowników Huti. To poważne zagrożenie dla jednego z najważniejszych morskich szlaków na globie.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Portfel, podatki i rynek</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (4 źródła)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -275,6 +314,7 @@
             </div>
           </div>
           <p class="perspective-summary">Zagrożenie dla światowego handlu. Huti przejęli jedną z najważniejszych cieśnin</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Bahrajn, oskarża, Iran.</div><div><strong>Pomija:</strong> Pomija kontekst (rebeliantów, handlowych, zagraża) rozwijany w Business Insider PL, Biznes Interia.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-15/rebelianci-przejeli-strategiczna-ciesnine/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Business Insider PL">
           <div class="perspective-head">
@@ -285,6 +325,7 @@
             </div>
           </div>
           <p class="perspective-summary">Huti zdobywają kolejny teren. To zagraża jednemu z najważniejszych szlaków handlowych</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zdobywają, kolejny, jednemu.</div><div><strong>Pomija:</strong> Pomija kontekst (przejęli, międzynarodowej, zabezpieczenie) rozwijany w Polsat News, Biznes Interia.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://businessinsider.com.pl/finanse/handel/jemen-huti-zyskuja-przewage-przy-bab-al-mandab-transport-zagrozony/lnthef7" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Business Insider PL" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Biznes Interia">
           <div class="perspective-head">
@@ -295,6 +336,7 @@
             </div>
           </div>
           <p class="perspective-summary">Kolejne zagrożenie dla światowego handlu? Kluczowy szlak pod kontrolą Huti</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Kolejne, Kluczowy, szlak.</div><div><strong>Pomija:</strong> Pomija kontekst (najważniejszych, strategicznego, bojowników) rozwijany w Polsat News, Business Insider PL.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://biznes.interia.pl/gospodarka/news-kolejne-zagrozenie-dla-swiatowego-handlu-kluczowy-szlak-pod,nId,23573671" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Biznes Interia" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="WP Wiadomości">
           <div class="perspective-head">
@@ -305,10 +347,12 @@
             </div>
           </div>
           <p class="perspective-summary">Nie tylko Ormuz. Huti przejmują kontrolę nad Bramą Łez</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: przejmują, Bramą.</div><div><strong>Pomija:</strong> Pomija kontekst (przegrupowywane, komunikacie, proirańskim) rozwijany w Polsat News, Business Insider PL.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/nie-tylko-ormuz-huti-przejmuja-kontrole-nad-brama-lez-7351446840465440a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Zagrożenie dla światowego handlu. Huti przejęli jedną z najważniejszych?</summary><div class="faq-a">O utracie strategicznego obszaru poinformowały w niedzielę jemeńskie sił rządowe.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Cytowane przez agencję Reutera jemeńskie Południowe Siły Zbrojne przekazały w komunikacie, że oddziały zostały wycofane z lotniska Dhubab oraz okolic Bab al-Mandab.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (4 źródła).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (2):</strong><div>• Dopisano źródło: Biznes Interia (aktualizacja wieloźródłowa) (<a href="https://biznes.interia.pl/gospodarka/news-kolejne-zagrozenie-dla-swiatowego-handlu-kluczowy-szlak-pod,nId,23573671" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.wp.pl/nie-tylko-ormuz-huti-przejmuja-kontrole-nad-brama-lez-7351446840465440a" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -342,6 +386,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-15/rebelianci-przejeli-strategiczna-ciesnine/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li><li><a href="https://businessinsider.com.pl/finanse/handel/jemen-huti-zyskuja-przewage-przy-bab-al-mandab-transport-zagrozony/lnthef7" target="_blank" rel="noopener noreferrer"><span>Business Insider PL</span><span>↗</span></a></li><li><a href="https://biznes.interia.pl/gospodarka/news-kolejne-zagrozenie-dla-swiatowego-handlu-kluczowy-szlak-pod,nId,23573671" target="_blank" rel="noopener noreferrer"><span>Biznes Interia</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/nie-tylko-ormuz-huti-przejmuja-kontrole-nad-brama-lez-7351446840465440a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:150" data-id="32382638">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Gospodarka/amazon-rozszerza-dostawy-dronami-jest-przelomowa-zgoda/" onclick="return openArticleLink(event, 32382638, '/Polska/Gospodarka/amazon-rozszerza-dostawy-dronami-jest-przelomowa-zgoda')" tabindex="-1" aria-hidden="true">
@@ -384,7 +429,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -400,6 +445,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -410,6 +456,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Gospodarka/zagrozenie-dla-swiatowego-handlu-huti-przejeli-jedna-z-najwazniejszych";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=903bd3e9"></script>
+  <script src="../../../app.js?v=c339d426"></script>
+  <script src="../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>

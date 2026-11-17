@@ -1,0 +1,34 @@
+{
+  "updated_iso": "2026-11-15T20:00:00+01:00",
+  "article_decisions": {
+    "/Polska/Gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow": {
+      "status": "AUTO_PUBLISHED",
+      "admin_note": "Weryfikacja redakcyjna: Eksperci Indeksu Wiarygodności Ekonomicznej wskazują, że wysoki wzrost PKB współwystępuje z narastającym deficytem i zadłużeniem pozabudżetowym wymagającym korekty fiskalnej.",
+      "zero_trust_reason": "Wstrzymano (Zero-Trust): Rozbieżność między optymistycznymi deklaracjami wzrostu gospodarczego a twardymi danymi o deficycie i finansach publicznych.",
+      "decided_iso": "2026-11-15T18:30:00+01:00"
+    }
+  },
+  "rejected_keys": [],
+  "reader_corrections": [
+    {
+      "id": "corr_20261115_inflacja_gus",
+      "article_id": 1392756724,
+      "seo_url": "/Polska/Gospodarka/jak-bardzo-wzrosly-ceny-sa-nowe-dane-o-inflacji",
+      "article_title": "Jak bardzo wzrosły ceny? Są nowe dane o inflacji",
+      "claim_text": "Pełna tabela komunikatu GUS wskazuje, że ceny usług wzrosły o 6,2 proc. r/r przy wzroście cen towarów o 2,5 proc. r/r.",
+      "evidence_url": "https://stat.gov.pl/obszary-tematyczne/ceny-handel/wskazniki-cen/",
+      "status": "APPROVED",
+      "submitted_iso": "2026-11-15T17:15:00+01:00"
+    },
+    {
+      "id": "corr_20261115_dlug_mf",
+      "article_id": 1257236645,
+      "seo_url": "/Polska/Gospodarka/polska-moze-zaplacic-wysoka-cene-za-odkladanie-reform-finansow",
+      "article_title": "Polska może zapłacić wysoką cenę za odkładanie reform finansów publicznych",
+      "claim_text": "Według kwartalnego zestawienia MF relacja długu EDP do PKB przekroczyła 54,2 proc., uwzględniając fundusze w BGK i PFR.",
+      "evidence_url": "https://www.gov.pl/web/finanse/zadluzenie-sektora-finansow-publicznych",
+      "status": "PENDING_ADMIN_REVIEW",
+      "submitted_iso": "2026-11-15T19:40:00+01:00"
+    }
+  ]
+}

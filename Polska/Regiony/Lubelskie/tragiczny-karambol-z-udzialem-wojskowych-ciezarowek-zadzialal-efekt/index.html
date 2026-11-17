@@ -186,6 +186,36 @@
         "item": "https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/tragiczny-karambol-z-udzialem-wojskowych-ciezarowek-zadzialal-efekt/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co wiadomo w sprawie: Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał \"efekt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jedna osoba zginęła, a poszkodowanych przetransportowały do szpitala dwa śmigłowce LPR."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "22.00 droga w jest zablokowana – policja apeluje o korzystanie z wyznaczonych objazdów."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (10 źródeł)."
+        }
+      }
+    ]
   }
 ]
   </script>
@@ -195,7 +225,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=8d86a602" />
+  <link rel="stylesheet" href="../../../../styles.css?v=6748ccbd" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -210,8 +240,14 @@
         <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
       </div>
       <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          Kolejka redakcyjna <span id="pendingBadge" class="queue-count">0</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">3</span>
         </button>
       </div>
     </div>
@@ -301,11 +337,14 @@
           <header class="article-head">
             <div class="article-kicker">
               <span class="cat-badge">Lubelskie</span>
+              
               <time datetime="2026-11-13T23:37:51+01:00">13.11.2026, 23:37</time>
               <span>1 minuta czytania</span>
             </div>
             <h1 class="article-title">Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał &quot;efekt domina&quot;. Troje dzieci w szpitalu</h1>
             <p class="article-lede">Tragiczny karambol na drodze ekspresowej S12/S17 w województwie lubelskim. W piątek (13 listopada 2026 r.) wieczorem w rejonie Janówka zderzyło się sześć pojazdów, w tym dwa wojskowe samochody ciężarowe.</p>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Kierowcy i pasażerowie</span><span class="impact-pill"><strong>Obszar:</strong> Sprawy lokalne i samorząd</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (10 źródeł)</span></div>
+            
           </header>
 
           <div class="article-hero-wrap">
@@ -335,6 +374,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał &quot;efekt domina&quot;. Troje dzieci w szpitalu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: relacja wiodąca.</div><div><strong>Pomija:</strong> Pomija wyliczenia (12 za) przytaczane przez Niezależna.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.fakt.pl/wydarzenia/polska/lublin/ciezarowka-uderzyla-w-kolumne-aut-pod-piaskami-jedna-osoba-zginela-na-miejscu/20w23e7" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Fakt.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVN24">
           <div class="perspective-head">
@@ -345,6 +385,7 @@
             </div>
           </div>
           <p class="perspective-summary">Karambol na S12. Zderzyło się sześć samochodów, jedna osoba nie żyje</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 12 za) przytaczane przez Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/lublin/janowek-karambol-szesciu-samochodow-nie-zyje-jedna-osoba-duze-utrudnienia-w-ruchu-st9338424?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Onet Wiadomości">
           <div class="perspective-head">
@@ -355,6 +396,7 @@
             </div>
           </div>
           <p class="perspective-summary">Karambol z udziałem wojskowych ciężarówek. Nie żyje jedna osoba</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija wyliczenia (12 za) przytaczane przez Niezależna.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.onet.pl/lublin/grozny-wypadek-na-s12-w-lubelskiem-zderzylo-sie-szesc-aut/lww1hwz" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Onet Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Radio Lublin">
           <div class="perspective-head">
@@ -365,6 +407,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny karambol na drodze ekspresowej. Nie żyje kobieta [ZDJĘCIA]</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: ZDJĘCIA, Brak, należytej.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 12 za) przytaczane przez Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radio.lublin.pl/2026/11/tragiczny-karambol-na-drodze-ekspresowej-nie-zyje-kobieta/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Lublin" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP3 Lublin">
           <div class="perspective-head">
@@ -375,6 +418,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny karambol na S12 przed Piaskami. Jedna osoba nie żyje, trasa zablokowana</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (2026) w ujęciu: doniesienie regionalne.</div><div><strong>Pomija:</strong> Pomija wyliczenia (12 za) przytaczane przez Niezależna.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://lublin.tvp.pl/96464277/tragiczny-karambol-na-s12-przed-piaskami-jedna-osoba-nie-zyje-trasa-zablokowana" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Lublin" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Polsat News">
           <div class="perspective-head">
@@ -385,6 +429,7 @@
             </div>
           </div>
           <p class="perspective-summary">Tragiczny wypadek z udziałem wojskowych ciężarówek. &quot;Efekt domina&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Siła, uderzenia, spowodowała.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 12 za) przytaczane przez Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-14/tragiczny-karambol-z-udzialem-wojskowych-ciezarowek-policja-o-efekcie-domina/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="TVP.info">
           <div class="perspective-head">
@@ -395,6 +440,7 @@
             </div>
           </div>
           <p class="perspective-summary">„Efekt domina”. Tragiczny wypadek na trasie ekspresowej</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Elwira, Domaradzka, Komendy.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 12 za) przytaczane przez Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.tvp.info/96475324/tragiczny-wypadek-na-drodze-ekspresowej-s12-w-miejscowosci-janowek-lubelskie-zginela-kobieta-w-ktorej-samochod-wjechala-ciezarowka" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP.info" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Lublin112.pl">
           <div class="perspective-head">
@@ -405,6 +451,7 @@
             </div>
           </div>
           <p class="perspective-summary">30-latka zginęła w wypadku na S12/S17. Zderzyło się sześć pojazdów</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Śmierć, poniosła, 30-letnia.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 12 za) przytaczane przez Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.lublin112.pl/30-latka-zginela-w-wypadku-na-s12-s17-zderzylo-sie-szesc-pojazdow/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Lublin112.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="o2.pl">
           <div class="perspective-head">
@@ -415,6 +462,7 @@
             </div>
           </div>
           <p class="perspective-summary">Śmiertelny karambol na S12. Nowe informacje. &quot;Przyznał, że się zagapił&quot;</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Śmiertelny.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026, 12 za) przytaczane przez Fakt.pl, Onet Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.o2.pl/informacje/smiertelny-karambol-na-s12-nowe-informacje-przyznal-ze-sie-zagapil-7350907677919232a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="o2.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col is-collapsed-persp" data-outlet="Niezależna.pl">
           <div class="perspective-head">
@@ -425,10 +473,12 @@
             </div>
           </div>
           <p class="perspective-summary">Karambol na S12 zakończył się śmiercią 30-latki</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (12 za) oraz wątki: zakończył, śmiercią.</div><div><strong>Pomija:</strong> Pomija kontekst (zablokowana, świdnicki, wyznaczonych) rozwijany w Fakt.pl, TVN24.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://niezalezna.pl/polska/karambol-na-s12-zakonczyl-sie-smiercia-30-latki/584229" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Niezależna.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="10" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (10)</button></div>
           </div>
+          <section class="faq-box" aria-label="Najczęstsze pytania"><h2 class="faq-heading">Najczęstsze pytania (FAQ)</h2><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Tragiczny karambol z udziałem wojskowych ciężarówek. Zadziałał &quot;efekt?</summary><div class="faq-a">Jedna osoba zginęła, a poszkodowanych przetransportowały do szpitala dwa śmigłowce LPR.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">22.00 droga w jest zablokowana – policja apeluje o korzystanie z wyznaczonych objazdów.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (10 źródeł).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (1):</strong><div>• Dopisano źródło: Niezależna.pl (aktualizacja wieloźródłowa) (<a href="https://niezalezna.pl/polska/karambol-na-s12-zakonczyl-sie-smiercia-30-latki/584229" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -462,6 +512,7 @@
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.fakt.pl/wydarzenia/polska/lublin/ciezarowka-uderzyla-w-kolumne-aut-pod-piaskami-jedna-osoba-zginela-na-miejscu/20w23e7" target="_blank" rel="noopener noreferrer"><span>Fakt.pl</span><span>↗</span></a></li><li><a href="https://tvn24.pl/lublin/janowek-karambol-szesciu-samochodow-nie-zyje-jedna-osoba-duze-utrudnienia-w-ruchu-st9338424?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://wiadomosci.onet.pl/lublin/grozny-wypadek-na-s12-w-lubelskiem-zderzylo-sie-szesc-aut/lww1hwz" target="_blank" rel="noopener noreferrer"><span>Onet Wiadomości</span><span>↗</span></a></li><li><a href="https://radio.lublin.pl/2026/11/tragiczny-karambol-na-drodze-ekspresowej-nie-zyje-kobieta/" target="_blank" rel="noopener noreferrer"><span>Radio Lublin</span><span>↗</span></a></li><li><a href="https://lublin.tvp.pl/96464277/tragiczny-karambol-na-s12-przed-piaskami-jedna-osoba-nie-zyje-trasa-zablokowana" target="_blank" rel="noopener noreferrer"><span>TVP3 Lublin</span><span>↗</span></a></li><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-14/tragiczny-karambol-z-udzialem-wojskowych-ciezarowek-policja-o-efekcie-domina/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li><li><a href="https://www.tvp.info/96475324/tragiczny-wypadek-na-drodze-ekspresowej-s12-w-miejscowosci-janowek-lubelskie-zginela-kobieta-w-ktorej-samochod-wjechala-ciezarowka" target="_blank" rel="noopener noreferrer"><span>TVP.info</span><span>↗</span></a></li><li><a href="https://www.lublin112.pl/30-latka-zginela-w-wypadku-na-s12-s17-zderzylo-sie-szesc-pojazdow/" target="_blank" rel="noopener noreferrer"><span>Lublin112.pl</span><span>↗</span></a></li><li><a href="https://www.o2.pl/informacje/smiertelny-karambol-na-s12-nowe-informacje-przyznal-ze-sie-zagapil-7350907677919232a" target="_blank" rel="noopener noreferrer"><span>o2.pl</span><span>↗</span></a></li><li><a href="https://niezalezna.pl/polska/karambol-na-s12-zakonczyl-sie-smiercia-30-latki/584229" target="_blank" rel="noopener noreferrer"><span>Niezależna.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
+      
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:105" data-id="351974024">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Lubelskie/piaty-odblaskowy-spacer-w-zemborzycach-mieszkancy-znow-wyszli-na-drogi/" onclick="return openArticleLink(event, 351974024, '/Polska/Regiony/Lubelskie/piaty-odblaskowy-spacer-w-zemborzycach-mieszkancy-znow-wyszli-na-drogi')" tabindex="-1" aria-hidden="true">
@@ -504,7 +555,7 @@
         <div>
           <h1>Kolejka Weryfikacji Redakcyjnej</h1>
           <p>
-            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK.
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
           </p>
         </div>
         <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
@@ -520,6 +571,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -530,6 +582,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Lubelskie/tragiczny-karambol-z-udzialem-wojskowych-ciezarowek-zadzialal-efekt";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=903bd3e9"></script>
+  <script src="../../../../app.js?v=c339d426"></script>
+  <script src="../../../../community.js?v=bae6924a" defer></script>
 </body>
 </html>
