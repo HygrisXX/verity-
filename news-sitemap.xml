@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/jubileusz-kadry-we-wroclawiu-mecz-ze-szwecja-30-w-historii/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T22:54:48+01:00</news:publication_date>
+      <news:title>Jubileusz kadry we Wrocławiu. Mecz ze Szwecją 30. w historii</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1154330/main/reprezentacja-polski-we-wroclawiu.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
+      <image:title>Jubileusz kadry we Wrocławiu. Mecz ze Szwecją 30. w historii</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/pazura-hycnar-i-stramowski-w-nowym-serialu-canal-znamy-date-premiery/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T22:54:47+01:00</news:publication_date>
+      <news:title>Pazura, Hycnar i Stramowski w nowym serialu Canal+. Znamy datę premiery</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bde20943-fb18-4c3e-b820-745c5d558d78</image:loc>
+      <image:title>Pazura, Hycnar i Stramowski w nowym serialu Canal+. Znamy datę premiery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/polska-szwecja-bialo-czerwoni-uratowali-sie-przed-barazami/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T22:54:46+01:00</news:publication_date>
+      <news:title>Polska – Szwecja. Biało-Czerwoni uratowali się przed barażami!</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/17/n_72e6bff07e53bd3fd930f6bf17437bdd3e9da778524d9be2e4495b353857c3e8_c.jpg?r=750,400</image:loc>
+      <image:title>Polska – Szwecja. Biało-Czerwoni uratowali się przed barażami!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/posiedzenie-zgromadzenia-ogolnego-sedziow-tk-zakonczylo-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T22:54:44+01:00</news:publication_date>
+      <news:title>Posiedzenie Zgromadzenia Ogólnego Sędziów TK zakończyło się</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-bogdan-swieczkowski-przed-trybunalem-konstytucyjnym-ph9335420/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Posiedzenie Zgromadzenia Ogólnego Sędziów TK zakończyło się</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/abramowicz-po-debiucie-czulem-ze-to-mecz-inny-niz-wszystkie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T22:54:43+01:00</news:publication_date>
+      <news:title>Abramowicz po debiucie. „Czułem, że to mecz inny niż wszystkie”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/AA_17112026_cmwl71r7-scaled.jpg</image:loc>
+      <image:title>Abramowicz po debiucie. „Czułem, że to mecz inny niż wszystkie”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/pentagon-krytykuje-ukrainska-strategie-ostrzega-przed-eskalacja-wojny/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T22:54:42+01:00</news:publication_date>
+      <news:title>Pentagon krytykuje ukraińską strategię. Ostrzega przed eskalacją wojny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ra/raqt4h1t4wxr5ztarmuuowuwen51jwn3.jpg</image:loc>
+      <image:title>Pentagon krytykuje ukraińską strategię. Ostrzega przed eskalacją wojny</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/powodz-przedluzyla-budowe-ale-nowy-budynek-przedszkola-we-wleniu-czeka/</loc>
     <news:news>
       <news:publication>
@@ -18,7 +108,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/spotkanie-klubow-gazety-polskiej-jasna-gora-sie-odcina-i-chce-wyjasnien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/spotkanie-klubow-gazety-polskiej-jasna-gora-sie-odcina-i-chce-wyjasnien/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -115,11 +205,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-17T21:52:26+01:00</news:publication_date>
-      <news:title>Zderzenie i dachowanie na Trasie Łazienkowskiej</news:title>
+      <news:title>Zderzenie i dachowanie na Trasie Łazienkowskiej (46 osób)</news:title>
     </news:news>
     <image:image>
       <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-zderzenie-trzech-pojazdow-na-trasie-lazienkowskiej-ph9344057/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Zderzenie i dachowanie na Trasie Łazienkowskiej</image:title>
+      <image:title>Zderzenie i dachowanie na Trasie Łazienkowskiej (46 osób)</image:title>
     </image:image>
   </url>
   <url>
@@ -618,6 +708,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T16:58:30+01:00</news:publication_date>
+      <news:title>Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2016162074.png</image:loc>
+      <image:title>Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/gta-6-zarobilo-juz-ponad-1-mld-dolarow-choc-nie-mialo-jeszcze-premiery/</loc>
     <news:news>
       <news:publication>
@@ -975,21 +1080,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/bd784e8e64883ca78487f75aaa633b48/?t=crop:6530:2855:nowe:1.2807050231304E-12:89.840042884106,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Dymisja w Ministerstwie Rolnictwa. W tle ponad 2 mln zł długu spłaconego przez KOWR</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/rzad-chce-uszczelnic-magazynowanie-paliw-wzrosnie-rola-rars/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T12:57:31+01:00</news:publication_date>
-      <news:title>Rząd chce uszczelnić magazynowanie paliw. Wzrośnie rola RARS (197,29 zł/MWh)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/67080a47-6e66-4494-9c83-e77b3b798639</image:loc>
-      <image:title>Rząd chce uszczelnić magazynowanie paliw. Wzrośnie rola RARS (197,29 zł/MWh)</image:title>
     </image:image>
   </url>
   <url>
@@ -1848,7 +1938,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/nieudana-misja-rakiety-vulcan-centaur-amazon-stracil-40-satelitow/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/nieudana-misja-rakiety-vulcan-centaur-amazon-stracil-40-satelitow/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
