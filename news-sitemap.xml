@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/syreny-alarmowe-na-zachodzie-wroclawia-to-cwiczenia-sluzb-nie-awaria/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:45+01:00</news:publication_date>
+      <news:title>Syreny alarmowe na zachodzie Wrocławia. To ćwiczenia służb, nie awaria</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1154216/main/syreny-alarmowe-zlotniki-wroclaw-cwiczenia.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
+      <image:title>Syreny alarmowe na zachodzie Wrocławia. To ćwiczenia służb, nie awaria</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/miala-blisko-3-promile-i-prowadzila-ciezarowke-z-niebezpiecznymi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:44+01:00</news:publication_date>
+      <news:title>Miała blisko 3 promile i prowadziła ciężarówkę z niebezpiecznymi chemikaliami</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radio.bialystok.pl/src/thumbs/461/08ab3347f7827c775c19c87a54eb3cbe</image:loc>
+      <image:title>Miała blisko 3 promile i prowadziła ciężarówkę z niebezpiecznymi chemikaliami</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/witold-zembaczynski-kontra-pawel-kukiz-chodzi-o-pieniadze-fundacji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:43+01:00</news:publication_date>
+      <news:title>Witold Zembaczyński kontra Paweł Kukiz. Chodzi o pieniądze fundacji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/911355701.png</image:loc>
+      <image:title>Witold Zembaczyński kontra Paweł Kukiz. Chodzi o pieniądze fundacji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/postepowanie-w-razie-zagrozenia-i-ogloszenia-alarmu-czy-rodzice-moga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:42+01:00</news:publication_date>
+      <news:title>Postępowanie w razie zagrożenia i ogłoszenia alarmu. Czy rodzice mogą odebrać dzieci ze szkół i przedszkoli?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/02/szkola.jpg</image:loc>
+      <image:title>Postępowanie w razie zagrożenia i ogłoszenia alarmu. Czy rodzice mogą odebrać dzieci ze szkół i przedszkoli?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/voyager-1-znajdzie-sie-dzien-swietlny-od-ziemi-to-cos-naprawde/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:40+01:00</news:publication_date>
+      <news:title>Voyager 1 znajdzie się dzień świetlny od Ziemi. "To coś naprawdę niezwykłego" (49 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/tvnmeteo/najnowsze/cdn-zdjecie-sonda-voyager-1-ph9342696/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Voyager 1 znajdzie się dzień świetlny od Ziemi. "To coś naprawdę niezwykłego" (49 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/schowal-sie-w-toalecie-na-stacji-paliw-po-zamknieciu-ukradl-47-tys-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:40+01:00</news:publication_date>
+      <news:title>Schował się w toalecie na stacji paliw. Po zamknięciu ukradł 47 tys. zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://rzeszow-news.pl/wp-content/uploads/2026/11/18-latek-skok-na-stacje-paliw.jpg</image:loc>
+      <image:title>Schował się w toalecie na stacji paliw. Po zamknięciu ukradł 47 tys. zł</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zawalila-sie-sciana-rozbieranego-biurowca-przy-marszalkowskiej-gruz/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:39+01:00</news:publication_date>
+      <news:title>Zawaliła się ściana rozbieranego biurowca przy Marszałkowskiej. Gruz spadł na chodnik i ścieżkę rowerową, ulic</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/07/Tasma.webp</image:loc>
+      <image:title>Zawaliła się ściana rozbieranego biurowca przy Marszałkowskiej. Gruz spadł na chodnik i ścieżkę rowerową, ulic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/nawrocki-dokona-zmian-w-skladzie-rzadu-rzecznik-prezydenta-pewne-jest/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:37+01:00</news:publication_date>
+      <news:title>Nawrocki dokona zmian w składzie rządu. Rzecznik prezydenta: Pewne jest jedno</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/d9/61/1e/z31857369IHG,-.jpg</image:loc>
+      <image:title>Nawrocki dokona zmian w składzie rządu. Rzecznik prezydenta: Pewne jest jedno</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/smierc-pieciolatka-w-gorzowskim-szpitalu-sprawe-bada-prokuratura/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T14:16:36+01:00</news:publication_date>
+      <news:title>Śmierć pięciolatka w gorzowskim szpitalu. Sprawę bada prokuratura</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-7628731-szpital-w-gorzowie-wielkopolskim-ph7971712/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Śmierć pięciolatka w gorzowskim szpitalu. Sprawę bada prokuratura</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/dawid-tyszkowski-laureatem-nagrody-artystycznej-miasta-torunia-im/</loc>
     <news:news>
       <news:publication>
@@ -288,21 +423,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/zolta-i-czerwona-kartka-w-pilce-noznej-co-oznaczaja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T11:01:10+01:00</news:publication_date>
-      <news:title>Żółta i czerwona kartka w piłce nożnej — co oznaczają?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/842149912.png</image:loc>
-      <image:title>Żółta i czerwona kartka w piłce nożnej — co oznaczają?</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/ceny-mieszkan-w-warszawie-wystrzelily-prawie-19-tysiecy-zlotych-za-metr/</loc>
     <news:news>
       <news:publication>
@@ -363,7 +483,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/wkrotce-nowe-przepisy-dla-kierowcow-za-wykroczenia-na-przejazdach/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/wkrotce-nowe-przepisy-dla-kierowcow-za-wykroczenia-na-przejazdach/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -373,7 +493,7 @@
       <news:title>Wkrótce nowe przepisy dla kierowców. Za wykroczenia na przejazdach kolejowych kary będą wyższe</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1001379497.png</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/578259320.png</image:loc>
       <image:title>Wkrótce nowe przepisy dla kierowców. Za wykroczenia na przejazdach kolejowych kary będą wyższe</image:title>
     </image:image>
   </url>
@@ -813,21 +933,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/przelom-po-latach-oczekiwania-tramwaje-z-gorzowa-widac-juz-w-mapach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T06:03:43+01:00</news:publication_date>
-      <news:title>Przełom po latach oczekiwania. Tramwaje z Gorzowa widać już w Mapach Google</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://gorzowianin.com/data/articles/org/30370.png</image:loc>
-      <image:title>Przełom po latach oczekiwania. Tramwaje z Gorzowa widać już w Mapach Google</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/</loc>
     <news:news>
       <news:publication>
@@ -1203,21 +1308,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/kulisy-samorzadu-zajeci-nikczemnoscia/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-15T20:36:03+01:00</news:publication_date>
-      <news:title>Kulisy samorządu: Zajęci nikczemnością</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://swidnica24.pl/wp-content/uploads/2026/11/stocksnap-cup-2592041-scaled.jpg</image:loc>
-      <image:title>Kulisy samorządu: Zajęci nikczemnością</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/ukraina-w-nato-w-zamian-za-donbas-pomysl-kuriozalny/</loc>
     <news:news>
       <news:publication>
@@ -1290,21 +1380,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/357459b68e24cfa38b3aac6744bfe78a/?t=crop:3510:1534:nowe:0:403,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Leon XIV w Andach. Papież zwrócił się do chorych i mieszkańców Peru (100 tys.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/tragiczne-zdarzenie-na-drodze-wojewodzkiej-zginely-dwie-osoby/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-15T20:35:56+01:00</news:publication_date>
-      <news:title>Dramat na drodze pod Końskimi. Nie żyją dwie osoby. Wśród ofiar 16-latek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/04/CO-NA-DROGACH-RADIO-KIELCE-2.jpg</image:loc>
-      <image:title>Dramat na drodze pod Końskimi. Nie żyją dwie osoby. Wśród ofiar 16-latek</image:title>
     </image:image>
   </url>
   <url>
