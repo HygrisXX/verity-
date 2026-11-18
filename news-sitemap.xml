@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/niezwykly-prezent-dla-malych-pacjentow-w-olsztynskim-szpitalu-stanely/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:26+01:00</news:publication_date>
+      <news:title>Niezwykły prezent dla małych pacjentów. W olsztyńskim szpitalu stanęły dwa pianina</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/IMG_8503-scaled.jpg</image:loc>
+      <image:title>Niezwykły prezent dla małych pacjentów. W olsztyńskim szpitalu stanęły dwa pianina</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/kobieta-siedziala-na-torach-w-regionie-maszynista-zatrzymal-pociag/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:25+01:00</news:publication_date>
+      <news:title>Kobieta siedziała na torach w regionie. Maszynista zatrzymał pociąg</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://epoznan.pl/storage/gallery/143540/PrJ2ZkeDPpNQpveDIeAsGlIPUAAh171b_left4.jpg?1795006734</image:loc>
+      <image:title>Kobieta siedziała na torach w regionie. Maszynista zatrzymał pociąg</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/pijany-wszczal-awanture-w-szkole-mial-ze-soba-noze/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:23+01:00</news:publication_date>
+      <news:title>Pijany wszczął awanturę w szkole. Miał ze sobą noże</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/3/e/1/uid_3e130791525a4e12a1403a500fe524e1_width_900_play_0_pos_0_gs_0_height_506.jfif</image:loc>
+      <image:title>Pijany wszczął awanturę w szkole. Miał ze sobą noże</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:20+01:00</news:publication_date>
+      <news:title>Przełom w sprawie kamienicy w Ciechocinku. Co to oznacza dla mieszkańców?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/e/7/d/uid_e7de9a160e38444395bf1af917f5499d_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Przełom w sprawie kamienicy w Ciechocinku. Co to oznacza dla mieszkańców?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/operatorzy-gazowi-z-polski-czech-slowacji-i-wegier-zaciesniaja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:19+01:00</news:publication_date>
+      <news:title>Operatorzy gazowi z Polski, Czech, Słowacji i Węgier zacieśniają współpracę regionalną</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/M7COMnfNbhB8ZBC9wYjFhEz4IF398udUKx9V2W7Y.llkd.jpg</image:loc>
+      <image:title>Operatorzy gazowi z Polski, Czech, Słowacji i Węgier zacieśniają współpracę regionalną</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/na-gornym-slasku-odslonieto-pomnik-niemieckiego-przedsiebiorcy-hermann/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:17+01:00</news:publication_date>
+      <news:title>Na Górnym Śląsku odsłonięto pomnik niemieckiego przedsiębiorcy. Hermann Muller prowadził browar</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNh/bC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAw/MDAwMDAwMDc3MDkyNDMvZmlsZXMvc2xhc2thLWZsYWdhLW5h/LXRsZS1mYW1pbG9rYS0zOTMyMzIzNy5qcGciLCJ3IjozODQwfQ</image:loc>
+      <image:title>Na Górnym Śląsku odsłonięto pomnik niemieckiego przedsiębiorcy. Hermann Muller prowadził browar</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/fenomen-gta-jak-jedna-gra-zawladnela-wyobraznia-calego-swiata/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:16+01:00</news:publication_date>
+      <news:title>Fenomen GTA. Jak jedna gra zawładnęła wyobraźnią całego świata?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s13.tvp.pl/images2/3/c/c/uid_3cc9e9bf861740b69e2da4391fe93315_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Fenomen GTA. Jak jedna gra zawładnęła wyobraźnią całego świata?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/48-latek-oskarzony-o-zniszczenie-amerykanskiego-samolotu-wojskowego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:15+01:00</news:publication_date>
+      <news:title>48-latek oskarżony o zniszczenie amerykańskiego samolotu wojskowego</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-uszkodzony-samolot-amerykanskich-sil-powietrznych-ph9344681/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>48-latek oskarżony o zniszczenie amerykańskiego samolotu wojskowego</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zmarl-prof-tadeusz-wojciechowski-powstaniec-warszawski-mial-101-lat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T17:01:14+01:00</news:publication_date>
+      <news:title>Zmarł prof. Tadeusz Wojciechowski. Powstaniec warszawski miał 101 lat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/c/2/9/uid_c29fd1f5fa30408abfd25c44e92e9892_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Zmarł prof. Tadeusz Wojciechowski. Powstaniec warszawski miał 101 lat</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/grozil-uzyciem-broni-na-starym-rynku-w-poznaniu-20-latek-zatrzymany/</loc>
     <news:news>
       <news:publication>
@@ -70,11 +205,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-18T15:58:58+01:00</news:publication_date>
-      <news:title>PFR łączy siły z Amerykanami. Chodzi o miliardy na polski atom</news:title>
+      <news:title>PFR łączy siły z Amerykanami. Chodzi o miliardy na polski atom (2 mld)</news:title>
     </news:news>
     <image:image>
       <image:loc>https://pliki.wnp.pl/d/57/87/36/578736_r0_300.jpg</image:loc>
-      <image:title>PFR łączy siły z Amerykanami. Chodzi o miliardy na polski atom</image:title>
+      <image:title>PFR łączy siły z Amerykanami. Chodzi o miliardy na polski atom (2 mld)</image:title>
     </image:image>
   </url>
   <url>
@@ -1143,21 +1278,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/posiedzenie-zgromadzenia-ogolnego-sedziow-tk-zakonczylo-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T22:54:44+01:00</news:publication_date>
-      <news:title>Posiedzenie Zgromadzenia Ogólnego Sędziów TK zakończyło się</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-bogdan-swieczkowski-przed-trybunalem-konstytucyjnym-ph9335420/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Posiedzenie Zgromadzenia Ogólnego Sędziów TK zakończyło się</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/abramowicz-po-debiucie-czulem-ze-to-mecz-inny-niz-wszystkie/</loc>
     <news:news>
       <news:publication>
@@ -2220,21 +2340,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-jelen-zaplatal-sie-w-siatke-ogrodzeniowa-ph9342732/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Jeleń zaplątał się w siatkę. "Pomoc nadeszła w ostatniej chwili"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/rozpoczecie-trasy-srednicowej-i-remont-stadionu-zuzlowego-opole-ma/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T11:53:30+01:00</news:publication_date>
-      <news:title>Rozpoczęcie trasy średnicowej i remont stadionu żużlowego – Opole ma ambitny plan</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/dochody.jpg</image:loc>
-      <image:title>Rozpoczęcie trasy średnicowej i remont stadionu żużlowego – Opole ma ambitny plan</image:title>
     </image:image>
   </url>
   <url>
