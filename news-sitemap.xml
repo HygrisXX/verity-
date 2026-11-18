@@ -3,18 +3,93 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/sprawdzilismy-jak-wladze-dolnego-slaska-przygotowuja-sie-na-nadchodzaca/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-18T05:00:27+01:00</news:publication_date>
-      <news:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</news:title>
+      <news:publication_date>2026-11-18T06:03:24+01:00</news:publication_date>
+      <news:title>Sprawdziliśmy, jak władze Dolnego Śląska przygotowują się na nadchodzącą zimę</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://static.300gospodarka.pl/media/2026/11/nickype-electricity-7378856_1280.jpg</image:loc>
-      <image:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</image:title>
+      <image:loc>http://www.radiowroclaw.pl/img/articles/165673/vcnWvQ5xsh.jpg</image:loc>
+      <image:title>Sprawdziliśmy, jak władze Dolnego Śląska przygotowują się na nadchodzącą zimę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/karta-moja-biedronka-oto-skad-moga-pojawic-sie-nieznane-transakcje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T06:03:23+01:00</news:publication_date>
+      <news:title>Karta Moja Biedronka. Oto skąd mogą pojawić się nieznane transakcje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/2aa07968-1c3c-49de-b6ab-38447b2f9535</image:loc>
+      <image:title>Karta Moja Biedronka. Oto skąd mogą pojawić się nieznane transakcje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/robert-lewandowski-i-reprezentacja-polski-u-malych-pacjentow-przyladka/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T06:03:22+01:00</news:publication_date>
+      <news:title>Robert Lewandowski i reprezentacja Polski u małych pacjentów „Przylądka Nadziei”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1153991/main/robert-lewandowski-przyladek-cancer-fighters.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
+      <image:title>Robert Lewandowski i reprezentacja Polski u małych pacjentów „Przylądka Nadziei”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/chemiczny-zapach-nad-osiedlami-kielc-mieszkancy-alarmuja-wios/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T06:03:21+01:00</news:publication_date>
+      <news:title>Chemiczny zapach nad osiedlami Kielc. Mieszkańcy alarmują, WIOŚ kontroluje zakład</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s7.tvp.pl/images2/7/c/1/uid_7c10bd5d4434454b8502fc02ee141c94_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Chemiczny zapach nad osiedlami Kielc. Mieszkańcy alarmują, WIOŚ kontroluje zakład</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/ostatni-pojedynek-do-senatu-usa-triumf-demokratow-na-alasce-50-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T06:03:20+01:00</news:publication_date>
+      <news:title>Ostatni pojedynek do Senatu USA. Triumf demokratów na Alasce (50 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/k7/k7aopjpqn5bm3muqw1m9bozkq44wcwxt.jpg</image:loc>
+      <image:title>Ostatni pojedynek do Senatu USA. Triumf demokratów na Alasce (50 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-jinping-i-putin-na-szczycie-apec-chiny-apeluja-o-wolny-handel-rosja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T06:03:19+01:00</news:publication_date>
+      <news:title>Xi Jinping i Putin na szczycie APEC. Chiny apelują o wolny handel, Rosja krytykuje sankcje Zachodu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.wiadomosci.onet.pl/1/Cbsk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9mNzZiNWFhOWI2ZWU5YzhiZDU0ODRjNmFmNjMzZjc1ZS5qcGeSlQMAM80DrM0CEZMFzQlgzQZA3gACoTAHoTEE</image:loc>
+      <image:title>Xi Jinping i Putin na szczycie APEC. Chiny apelują o wolny handel, Rosja krytykuje sankcje Zachodu</image:title>
     </image:image>
   </url>
   <url>
@@ -360,6 +435,21 @@
     <image:image>
       <image:loc>https://s3.tvp.pl/images2/c/1/b/uid_c1bbe55f6f25429d88952482cb6e7ee0_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
       <image:title>Wjechał w 19-letnią siostrę. Amelia nie żyje. Areszt dla jej brata</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/tragedia-w-spale-zginela-dyrektor-wojewodzkiego-zwiazku-osp-rp-ranny/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T21:52:26+01:00</news:publication_date>
+      <news:title>Tragedia w Spale. Zginęła dyrektor wojewódzkiego Związku OSP RP, ranny były komendant PSP</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s6.tvp.pl/images2/6/e/3/uid_6e39408ee99047b4af47bfdcef261286_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Tragedia w Spale. Zginęła dyrektor wojewódzkiego Związku OSP RP, ranny były komendant PSP</image:title>
     </image:image>
   </url>
   <url>
@@ -1740,81 +1830,6 @@
     <image:image>
       <image:loc>https://m.natemat.pl/turystka-zaginela-w-tatrach-odnalazla-sie-w-srodku-nocy-zc7e9s4l-1500x0x0x0.jpg</image:loc>
       <image:title>Nocna akcja ratunkowa w Tatrach. Kilkudziesięciu ratowników szukało turystki</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T06:03:40+01:00</news:publication_date>
-      <news:title>Smartfony Samsunga zyskają nową funkcję. Pomoże na diecie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.tabletowo.pl/wp-content/uploads/2026/04/samsung-galaxy-a37-galaxy-a57-recenzja-tabletowo-kordasinski-19.jpg</image:loc>
-      <image:title>Smartfony Samsunga zyskają nową funkcję. Pomoże na diecie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T06:03:40+01:00</news:publication_date>
-      <news:title>Było już 0:2 i 15:19 w trzecim secie! Perugia odwróciła losy meczu o Superpuchar Włoch</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afa823eadd334_39038489.jfif</image:loc>
-      <image:title>Było już 0:2 i 15:19 w trzecim secie! Perugia odwróciła losy meczu o Superpuchar Włoch</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/wiecej-ofert-pracy-w-polsce-te-branze-zwiekszaja-rekrutacje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T06:03:39+01:00</news:publication_date>
-      <news:title>Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp</image:loc>
-      <image:title>Więcej ofert pracy w Polsce. Te branże zwiększają rekrutację (5 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trzeci-lotniskowiec-usa-dotarl-na-bliski-wschod-w-tle-napiecia-z-iranem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T06:03:38+01:00</news:publication_date>
-      <news:title>Trzeci lotniskowiec USA dotarł na Bliski Wschód. W tle napięcia z Iranem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/2/1/d8d053323f309c-945-567-148-96-1640-984.jpg</image:loc>
-      <image:title>Trzeci lotniskowiec USA dotarł na Bliski Wschód. W tle napięcia z Iranem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T06:03:37+01:00</news:publication_date>
-      <news:title>Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg</image:loc>
-      <image:title>Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)</image:title>
     </image:image>
   </url>
 </urlset>
