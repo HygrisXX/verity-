@@ -3,6 +3,21 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T05:00:27+01:00</news:publication_date>
+      <news:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/nickype-electricity-7378856_1280.jpg</image:loc>
+      <image:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/wykonali-dobra-robote-trump-pochwalil-dyktatora-niecodzienne-slowa/</loc>
     <news:news>
       <news:publication>
