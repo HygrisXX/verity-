@@ -3,25 +3,25 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/</loc>
-    <lastmod>2026-11-18T17:01:17+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:37+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -33,25 +33,25 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/</loc>
-    <lastmod>2026-11-18T17:01:19+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:35+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/</loc>
-    <lastmod>2026-11-18T18:54:53+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,13 +69,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/</loc>
-    <lastmod>2026-11-18T11:07:16+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,15 +141,96 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-18T18:54:50+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:38+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-18T18:54:50+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:32+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/pilny-apel-policji-poszukuje-dwoch-nastolatek-z-podhala/</loc>
+    <lastmod>2026-11-18T19:56:45+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/9439ee1f-a97c-4f32-9243-83808a74b172</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/minelo-juz-61-lat-od-slynnych-slow-przebaczamy-i-prosimy-o-przebaczenie/</loc>
+    <lastmod>2026-11-18T19:56:43+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>http://www.radiowroclaw.pl/img/articles/165701/9aSrm8tSqp.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/sceny-w-podstawowce-atrapa-broni-w-rekach-nauczyciela-historyk/</loc>
+    <lastmod>2026-11-18T19:56:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/6df8b36e-294d-46c7-aab2-94b7483df7fd</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/izrael-rozpoczal-nowy-atak-ruszyly-czolgi-przekroczyly-zolta-granice/</loc>
+    <lastmod>2026-11-18T19:56:38+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJNEU25LMDXL6-C321.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/firmy-po-cichu-masowo-zwalniaja-w-polsce-miejsca-pracy-odplywaja-na/</loc>
+    <lastmod>2026-11-18T19:56:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/DKbktkpTURBXy8wOTIzOTFmOThiNjVmNjJhM2NiODc4MzMwOWU3MjVjMy5wbmeRkwXMyMyF</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/wieze-dla-turbin-morskiej-farmy-wiatrowej-bc-wind-beda-wyprodukowane-w/</loc>
+    <lastmod>2026-11-18T19:56:35+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/3xGybTEzsK3sYzo6NQDdEhQrcnGrO7QGeVoDdmIM.b1dc.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/msi-edgemesa-n-ai-maly-komputer-z-nvidia-rtx-spark-do-lokalnej/</loc>
+    <lastmod>2026-11-18T19:56:35+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.komputerswiat.pl/1/UOBk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy84NGJjZjA2NmJjNzM3MWQ5OGEyOGVjZjk2OWI3NTZmOC5qcGeSlQPM-QDNBY7NAyCTBc0JYM0GQN4AAqEwB6ExBA</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tauron-podsumowal-trzy-kwartaly-2-5-miliarda-zysku-i-inwestycje-za-3-8/</loc>
+    <lastmod>2026-11-18T19:56:33+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pliki.wnp.pl/d/57/87/49/578749_r0_300.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/jan-urban-obiektem-drwin-w-pzpn-takie-dostal-przezwisko/</loc>
+    <lastmod>2026-11-18T19:56:32+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/10/Jan-Urban-3-scaled.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/jak-przygotowac-sie-na-sytuacje-kryzysowe-eksperci-debatowali-w-lublinie/</loc>
@@ -342,7 +423,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1161,7 +1242,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/</loc>
-    <lastmod>2026-11-18T18:54:58+01:00</lastmod>
+    <lastmod>2026-11-18T19:56:47+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1997,15 +2078,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/smartfony-samsunga-zyskaja-nowa-funkcje-pomoze-na-diecie/</loc>
-    <lastmod>2026-11-16T06:03:40+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.tabletowo.pl/wp-content/uploads/2026/04/samsung-galaxy-a37-galaxy-a57-recenzja-tabletowo-kordasinski-19.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/polak-bohaterem-superpucharu-wloch-nie-zapomna-mu-tego/</loc>
     <lastmod>2026-11-16T06:03:40+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -2057,15 +2129,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/3d206c7b-de10-41ca-a406-d32442d0cb03</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/sedziszow-malopolski-pozegnal-ofiare-strzelaniny-w-krakowie-ten-bol/</loc>
-    <lastmod>2026-11-17T12:56:25+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/274919788.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -2768,69 +2831,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://konto.chip.pl/wp-content/uploads/2026/11/ss-united-states.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/gigantyczna-kara-dla-meta-chodzi-o-niedozwolony-dostep-do-prywatnych/</loc>
-    <lastmod>2026-11-14T20:33:16+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJ4EEAYXVLD3C-C321.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/zwyciestwo-widzewa-z-unia-skierniewice-w-sparingu-zdecydowal-jeden-gol/</loc>
-    <lastmod>2026-11-14T20:33:16+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s1.tvp.pl/images2/1/f/2/uid_1f2d32e2e67e4b87bafc5c43e90e7911_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/wypadek-na-s19-w-nienadowce-utrudnienia-w-ruchu/</loc>
-    <lastmod>2026-11-14T20:33:16+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s2.tvp.pl/images2/2/8/e/uid_28e7f2fadbe549ed87da00d847aa19aa_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/lukasz-zal-ze-zlota-zaba-za-zdjecia-do-filmu-ojczyzna/</loc>
-    <lastmod>2026-11-14T20:33:15+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s13.tvp.pl/images2/3/a/4/uid_3a488ff3a44c43a891f7848d68bcb7f2_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/spontanicznosc-w-wierze-czyli-forum-ogien-z-nieba-w-szczecinie/</loc>
-    <lastmod>2026-11-14T19:38:09+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-14_179467621410.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sondaze-szoruja-po-dnie-a-polska-2050-szuka-nowego-lidera/</loc>
-    <lastmod>2026-11-14T19:38:09+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/14/n_0ee5dbda7510dde52c3045cf10a2b8a4b29d9a623cb021380e267b244340ff2b_c.jpg?r=750,400</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/zaginal-strazak-z-mragowa-zaslynal-z-zawodow-schwarzeneggera/</loc>
-    <lastmod>2026-11-14T19:38:09+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/33cb8eed-9cae-48bc-873f-0cc4083bd135</image:loc>
     </image:image>
   </url>
 </urlset>
