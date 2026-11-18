@@ -3,18 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-rannych-20-osob/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-18T01:05:09+01:00</news:publication_date>
-      <news:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</news:title>
+      <news:publication_date>2026-11-18T02:23:13+01:00</news:publication_date>
+      <news:title>Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych (20 osób)</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://static.300gospodarka.pl/media/2026/11/nickype-electricity-7378856_1280.jpg</image:loc>
-      <image:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</image:title>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/f25ba0a1-31d7-4abd-a49d-82e278f65780</image:loc>
+      <image:title>Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych (20 osób)</image:title>
     </image:image>
   </url>
   <url>
@@ -285,6 +285,36 @@
     <image:image>
       <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-zderzenie-trzech-pojazdow-na-trasie-lazienkowskiej-ph9344057/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Zderzenie i dachowanie na Trasie Łazienkowskiej (46 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/wypadek-kolejowy-w-pradze-46-osob-poszkodowanych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T21:52:26+01:00</news:publication_date>
+      <news:title>Wypadek kolejowy w Pradze. 46 osób poszkodowanych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/960134688.png</image:loc>
+      <image:title>Wypadek kolejowy w Pradze. 46 osób poszkodowanych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T21:52:26+01:00</news:publication_date>
+      <news:title>Wjechał w 19-letnią siostrę. Amelia nie żyje. Areszt dla jej brata</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/c/1/b/uid_c1bbe55f6f25429d88952482cb6e7ee0_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Wjechał w 19-letnią siostrę. Amelia nie żyje. Areszt dla jej brata</image:title>
     </image:image>
   </url>
   <url>
@@ -750,21 +780,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-wypadek-na-ulicy-solnej-w-krakowie-ph9202916/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Zginęli rodzice ośmiomiesięcznego dziecka. Nowe ustalenia po tragicznym wypadku w Krakowie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T16:58:30+01:00</news:publication_date>
-      <news:title>Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2016162074.png</image:loc>
-      <image:title>Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna</image:title>
     </image:image>
   </url>
   <url>
@@ -1785,111 +1800,6 @@
     <image:image>
       <image:loc>https://bochnianin.pl/wp-content/uploads/2026/10/AZS-Uniwersytet-Warszawski.jpg</image:loc>
       <image:title>Sparta rozbiła rywalki, Leszno wygrało w Łańcucie. Podsumowanie 8. kolejki 1 Ligi Kobiet</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/starowka-w-zielonej-gorze-ma-zyc-radny-kasza-zabral-glos-w-sprawie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:09+01:00</news:publication_date>
-      <news:title>Starówka w Zielonej Górze ma żyć. Radny Kasza zabrał głos w sprawie ogródków gastronomicznych względem Cafe Ro</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://poscigi.pl/wp-content/uploads/2026/11/1-11.jpg</image:loc>
-      <image:title>Starówka w Zielonej Górze ma żyć. Radny Kasza zabrał głos w sprawie ogródków gastronomicznych względem Cafe Ro</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:07+01:00</news:publication_date>
-      <news:title>Co stanie się z ciałem zamachowca? Prezydent Krakowa zabrał głos (38,5 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/3d206c7b-de10-41ca-a406-d32442d0cb03</image:loc>
-      <image:title>Co stanie się z ciałem zamachowca? Prezydent Krakowa zabrał głos (38,5 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/sedziszow-malopolski-pozegnal-ofiare-strzelaniny-w-krakowie-ten-bol/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:07+01:00</news:publication_date>
-      <news:title>Sędziszów Małopolski pożegnał ofiarę strzelaniny w Krakowie. „Ten ból jest bólem nas wszystkich”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/274919788.png</image:loc>
-      <image:title>Sędziszów Małopolski pożegnał ofiarę strzelaniny w Krakowie. „Ten ból jest bólem nas wszystkich”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:06+01:00</news:publication_date>
-      <news:title>Mężczyzna z nożem pod teatrem w Częstochowie. Interweniowała policja</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s4.tvp.pl/images2/4/2/8/uid_4282b0be624a4f46bc231d72ab580b1f_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Mężczyzna z nożem pod teatrem w Częstochowie. Interweniowała policja</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:04+01:00</news:publication_date>
-      <news:title>Sikorski skomentował żądania Rosji. Wskazał na "odwieczny problem"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJ7UGTYFA2IFK-C321.webp</image:loc>
-      <image:title>Sikorski skomentował żądania Rosji. Wskazał na "odwieczny problem"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/mistrzowie-swiata-byli-juz-na-kolanach-czerwona-kartka-zmienila-wszystko/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:03+01:00</news:publication_date>
-      <news:title>Mistrzowie świata byli już na kolanach! Czerwona kartka zmieniła wszystko</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/13/99/1f/z33133331IHG,SOCCER-UEFANATIONS-ESP-ENG-.jpg</image:loc>
-      <image:title>Mistrzowie świata byli już na kolanach! Czerwona kartka zmieniła wszystko</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/final-wta-finals-rozstrzygniety-tytul-bez-straty-seta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T02:52:01+01:00</news:publication_date>
-      <news:title>Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/2c/99/1f/z33133356IHG,WTA-Finals-Indian-Wells--Elina-Switolina---Mirra-A.jpg</image:loc>
-      <image:title>Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta</image:title>
     </image:image>
   </url>
 </urlset>

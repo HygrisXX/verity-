@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-18T01:05:13+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-18T01:05:13+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-18T01:05:13+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -33,13 +33,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/</loc>
-    <lastmod>2026-11-18T01:05:09+01:00</lastmod>
+    <lastmod>2026-11-17T20:08:46+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-18T01:05:13+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -63,13 +63,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/</loc>
-    <lastmod>2026-11-17T22:54:56+01:00</lastmod>
+    <lastmod>2026-11-17T21:52:27+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-18T01:05:13+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,7 +141,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-18T01:00:33+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:13+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -152,12 +152,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty/</loc>
-    <lastmod>2026-11-18T01:05:09+01:00</lastmod>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-rannych-20-osob/</loc>
+    <lastmod>2026-11-18T02:23:13+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://static.300gospodarka.pl/media/2026/11/nickype-electricity-7378856_1280.jpg</image:loc>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/f25ba0a1-31d7-4abd-a49d-82e278f65780</image:loc>
     </image:image>
   </url>
   <url>
@@ -320,6 +320,24 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-zderzenie-trzech-pojazdow-na-trasie-lazienkowskiej-ph9344057/alternates/LANDSCAPE_1280</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/wypadek-kolejowy-w-pradze-46-osob-poszkodowanych/</loc>
+    <lastmod>2026-11-18T02:18:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/960134688.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata/</loc>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/c/1/b/uid_c1bbe55f6f25429d88952482cb6e7ee0_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -599,15 +617,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-wypadek-na-ulicy-solnej-w-krakowie-ph9202916/alternates/LANDSCAPE_1280</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna/</loc>
-    <lastmod>2026-11-17T22:54:56+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2016162074.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -1773,7 +1782,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/</loc>
-    <lastmod>2026-11-18T01:05:13+01:00</lastmod>
+    <lastmod>2026-11-18T02:23:18+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
