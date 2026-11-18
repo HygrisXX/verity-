@@ -3,6 +3,36 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/wykonali-dobra-robote-trump-pochwalil-dyktatora-niecodzienne-slowa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T03:54:54+01:00</news:publication_date>
+      <news:title>"Wykonali dobrą robotę". Trump pochwalił dyktatora, niecodzienne słowa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJHI5KGJEDOCL-C321.webp</image:loc>
+      <image:title>"Wykonali dobrą robotę". Trump pochwalił dyktatora, niecodzienne słowa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nikt-mnie-nie-rozpoznal-biden-ujawnia-kulisy-tajnej-podrozy-przez-polske/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T03:54:52+01:00</news:publication_date>
+      <news:title>"Nikt mnie nie rozpoznał". Biden ujawnia kulisy tajnej podróży przez Polskę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/5913a235-1bb7-4c3b-9c8b-1139605d3461</image:loc>
+      <image:title>"Nikt mnie nie rozpoznał". Biden ujawnia kulisy tajnej podróży przez Polskę</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-rannych-20-osob/</loc>
     <news:news>
       <news:publication>
@@ -303,7 +333,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -1548,21 +1578,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/tragiczne-zdarzenie-na-drodze-wojewodzkiej-zginely-dwie-osoby/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T08:56:55+01:00</news:publication_date>
-      <news:title>Tragiczne zdarzenie na drodze wojewódzkiej. Zginęły dwie osoby</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/798410679.png</image:loc>
-      <image:title>Tragiczne zdarzenie na drodze wojewódzkiej. Zginęły dwie osoby</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/smiglowiec-topr-przejdzie-przeglad-za-15-mln-zl-sokola-zastapi-wojskowa/</loc>
     <news:news>
       <news:publication>
@@ -1785,21 +1800,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg</image:loc>
       <image:title>Ogromne straty Rosji na wojnie. Kreml ukrywa prawdę (1,6 mln)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/sparta-rozbila-rywalki-leszno-wygralo-w-lancucie-podsumowanie-8-kolejki/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T04:04:31+01:00</news:publication_date>
-      <news:title>Sparta rozbiła rywalki, Leszno wygrało w Łańcucie. Podsumowanie 8. kolejki 1 Ligi Kobiet</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bochnianin.pl/wp-content/uploads/2026/10/AZS-Uniwersytet-Warszawski.jpg</image:loc>
-      <image:title>Sparta rozbiła rywalki, Leszno wygrało w Łańcucie. Podsumowanie 8. kolejki 1 Ligi Kobiet</image:title>
     </image:image>
   </url>
 </urlset>

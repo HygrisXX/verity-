@@ -1,18 +1,18 @@
 [
   {
-    "id": 271571437,
+    "id": 1684051549,
     "path": "/Swiat",
-    "seo_url": "/Swiat/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-rannych-20-osob",
-    "seo_title": "Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych (20 osób)",
-    "summary_lead": "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" – przekazał Andrij Sybiha. Wtorkowy ostrzał obwodu dniepropietrowskiego ranił łącznie 20 osób, w tym dwoje dzieci.",
-    "meta_description": "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" – przekazał Andrij Sybiha.",
-    "keywords": "Swiat, Rosjanie, uderzyli, obiekty, cywilne, konsulat, Wiele",
-    "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/f25ba0a1-31d7-4abd-a49d-82e278f65780",
-    "published_iso": "2026-11-18T02:23:13+01:00",
-    "updated_iso": "2026-11-18T02:23:13+01:00",
-    "display_date": "18.11.2026, 02:23",
+    "seo_url": "/Swiat/wykonali-dobra-robote-trump-pochwalil-dyktatora-niecodzienne-slowa",
+    "seo_title": "\"Wykonali dobrą robotę\". Trump pochwalił dyktatora, niecodzienne słowa",
+    "summary_lead": "— Bardzo dobrze znałem twoich rodziców.",
+    "meta_description": "— Bardzo dobrze znałem twoich rodziców. Wierzę w genetykę i oni wykonali dobrą robotę.",
+    "keywords": "Swiat, Wykonali, dobrą, robotę, Trump, pochwalił, dyktatora",
+    "thumbnail_url": "https://i.iplsc.com/-/000NJHI5KGJEDOCL-C321.webp",
+    "published_iso": "2026-11-18T03:54:54+01:00",
+    "updated_iso": "2026-11-18T03:54:54+01:00",
+    "display_date": "18.11.2026, 03:54",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -23,6 +23,102 @@
       {
         "label": "Kategoria",
         "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Wydarzenia"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "— Bardzo dobrze znałem twoich rodziców. [Źródło: Interia Wydarzenia, Onet Wiadomości]",
+          "Wierzę w genetykę i oni wykonali dobrą robotę. Masz bardzo dobre geny – w ten sposób Donald Trump pochwalił prezydenta Filipin Ferdinanda Marcosa Jr., a także jego ojca, który sprawował dyktatorskie rządy w kraju. Trump ponadto pochwalił własną administrację, używając nietypowego porównania. [Źródło: Interia Wydarzenia, Onet Wiadomości]",
+          "Prezydent USA zaapelował do państw Azji Południowo-Wschodniej o zwiększenie wydobycia metali ziem rzadkich i minerałów krytycznych. Amerykański prezydent stwierdził, że za rządów jego poprzednika USA \"były martwe\", natomiast obecnie \"są gorące\", chwaląc przy tym sukcesy własnej administracji. [Źródło: Interia Wydarzenia]",
+          "Więcej ważnych informacji znajdziesz na stronie głównej Interii Prezydent USA Donald Trump wystąpił w Manili – stolicy Filipin – na kolacji Stowarzyszenia Narodów Azji Południowo-Wschodniej (ASEAN). [Źródło: Interia Wydarzenia]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "— To prawdziwa przyjemność znów być na Filipinach.",
+          "Ferdinand Marcos rządził Filipinami od 1965 r., a jego dyktatura zakończyła się powstaniem w 1986 r. W czasie jego rządów tysiące ludzi zginęło w wyniku represji, a rodzina Marcosa zgromadziła nielegalnie majątek wart 10 mld dol. Transparency International w 2004 r. uznała go za drugiego najbardziej skorumpowanego przywódcę w historii. [Źródło: Onet Wiadomości]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Relacja wiodąca",
+        "summary": "\"Wykonali dobrą robotę\". Trump pochwalił dyktatora, niecodzienne słowa",
+        "url": "https://wydarzenia.interia.pl/zagranica/news-wykonali-dobra-robote-trump-pochwalil-dyktatora-niecodzienne,nId,23575088",
+        "focus": "Eksponuje dane (20 lat) oraz wątki: niecodzienne, słowa.",
+        "omits": "Pomija wyliczenia (10 mld) przytaczane przez Onet Wiadomości."
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Donald Trump pochwalił prezydenta Filipin i jego ojca. Ten był dyktatorem [WIDEO]",
+        "url": "https://wiadomosci.onet.pl/swiat/trump-mowil-o-dobrych-genach-prezydenta-filipin-jego-ojciec-byl-dyktatorem/mt5wm5v",
+        "focus": "Eksponuje dane (10 mld) oraz wątki: WIDEO, wiele.",
+        "omits": "Pomija wyliczenia (20 lat) przytaczane przez Interia Wydarzenia."
+      }
+    ],
+    "sources": [
+      "Interia Wydarzenia",
+      "Onet Wiadomości"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Opinia publiczna i dyplomacja",
+      "scope": "Świat i bezpieczeństwo",
+      "status": "Potwierdzone (2 źródła)"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: \"Wykonali dobrą robotę\". Trump pochwalił dyktatora, niecodzienne słowa?",
+        "a": "Wierzę w genetykę i oni wykonali dobrą robotę."
+      },
+      {
+        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "a": "W czasie jego rządów tysiące ludzi zginęło w wyniku represji, a rodzina Marcosa zgromadziła nielegalnie majątek wart 10 mld dol."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (2 źródła)."
+      }
+    ]
+  },
+  {
+    "id": 1352290763,
+    "path": "/Polska/Regiony/Podkarpackie",
+    "seo_url": "/Polska/Regiony/Podkarpackie/nikt-mnie-nie-rozpoznal-biden-ujawnia-kulisy-tajnej-podrozy-przez-polske",
+    "seo_title": "\"Nikt mnie nie rozpoznał\". Biden ujawnia kulisy tajnej podróży przez Polskę",
+    "summary_lead": "Były prezydent USA Joe Biden wydał wspomnienia zatytułowane \"Promise me, America\". W książce z podziwem pisze o przemianie Warszawy oraz postawie Polaków.",
+    "meta_description": "Były prezydent USA Joe Biden wydał wspomnienia zatytułowane \"Promise me, America\". W książce z podziwem pisze o przemianie Warszawy oraz postawie Polaków.",
+    "keywords": "Podkarpackie, Nikt, mnie, rozpoznał, Biden, ujawnia, kulisy",
+    "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/5913a235-1bb7-4c3b-9c8b-1139605d3461",
+    "published_iso": "2026-11-18T03:54:52+01:00",
+    "updated_iso": "2026-11-18T03:54:52+01:00",
+    "display_date": "18.11.2026, 03:54",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 90,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Podkarpackie"
       },
       {
         "label": "Główne źródło",
@@ -38,15 +134,110 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" – przekazał Andrij Sybiha. Wtorkowy ostrzał obwodu dniepropietrowskiego ranił łącznie 20 osób, w tym dwoje dzieci. Szef ukraińskiego MSZ wezwał zachodnich partnerów do pilnego zaostrzenia sankcji wobec Moskwy. [Źródło: WP Wiadomości, Onet Wiadomości]",
-          "We wtorek siły rosyjskie przeprowadziły serię ataków na terytorium obwodu dniepropietrowskiego we wschodniej Ukrainie. Według oficjalnych danych przekazanych przez ukraińskie ministerstwo spraw wewnętrznych, w wyniku ostrzału rannych zostało łącznie dwadzieścia osób. Wśród poszkodowanych znalazło się dwoje dzieci. [Źródło: WP Wiadomości]",
-          "\"W Dnieprze rannych zostało 14 osób, w tym 7-letni chłopiec; w Pawłohradzie ucierpiało dwóch mężczyzn i kobieta. Służby poinformowały również o skutkach uderzeń w rejonie Nikopola. [Źródło: WP Wiadomości, Onet Wiadomości]"
+          "Były prezydent USA Joe Biden wydał wspomnienia zatytułowane \"Promise me, America\". W książce z podziwem pisze o przemianie Warszawy oraz postawie Polaków. Ujawnia też kulisy tajnej podróży do Kijowa, gdy w Rzeszowie w pełnym kamuflażu sam niósł swoje walizki, by utrzymać wizytę w ścisłej tajemnicy. [Źródło: WP Wiadomości, Radio Rzeszów]",
+          "Wydana we wtorek książka Bidena opisuje najważniejsze momenty jego prezydentury, a znaczna część wspomnień dotyczy wojny w Ukrainie. Na kartach publikacji wielokrotnie pojawiają się polskie wątki, zawsze w bardzo pozytywnym kontekście. Szczególnie dużo miejsca polityk poświęcił swojej drugiej wizycie w Warszawie, która odbyła się tuż po historycznej podróży do Kijowa. [Źródło: WP Wiadomości, Radio Rzeszów]",
+          "Były przywódca USA z sentymentem i podziwem ocenił to, jak stolica Polski zmieniła się z szarego miasta zdominowanego niegdyś przez Rosję w porywające, nowoczesne centrum kulturalne i gospodarcze. Nikt mnie nie rozpoznał – zdradził Joe Biden. [Źródło: WP Wiadomości]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "W obu miastach uszkodzone zostały obiekty przemysłowe oraz domy prywatne\" — podaje resort w serwisie Telegram. Zniszczenia objęły budynki wielorodzinne, prywatne domy, gospodarstwo rolne oraz szpital. Na szczęście nikt nie ucierpiał\" — napisał Sybiha w serwisie społecznościowym X. Szef ukraińskiej dyplomacji ocenił uderzenia w placówki dyplomatyczne i konsularne jako rażące pogwałcenie prawa międzynarodowego. [Źródło: Onet Wiadomości]"
+          "Relacjonuje, jak przez Rzeszów i Przemyśl, we mgle i bez syren alarmowych, dotarł do pociągu, którym pojechał do ukraińskiej stolicy. Biden poświęca Polsce wiele miejsca, przedstawiając ją jako wiernego sojusznika USA i jednego z najlepszych członków NATO. Przypomina również o wysłaniu przed rosyjską inwazją 5 tysięcy żołnierzy amerykańskiej 82. [Źródło: Radio Rzeszów]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja wiodąca",
+        "summary": "\"Nikt mnie nie rozpoznał\". Biden ujawnia kulisy tajnej podróży przez Polskę",
+        "url": "https://wiadomosci.wp.pl/warszawa/nikt-mnie-nie-rozpoznal-biden-ujawnia-kulisy-tajnej-podrozy-przez-polske-7352205417130016a",
+        "focus": "Wyróżnia własne wątki i pojęcia: Nikt, mnie, rozpoznał.",
+        "omits": "Pomija wyliczenia (2023) przytaczane przez Radio Rzeszów."
+      },
+      {
+        "outlet": "Radio Rzeszów",
+        "angle": "Doniesienie regionalne",
+        "summary": "Rzeszów i Przemyśl we wspomnieniach Joe Bidena. Kulisy tajnej wizyty w Ukrainie",
+        "url": "https://radio.rzeszow.pl/374775/rzeszow-i-przemysl-we-wspomnieniach-joe-bidena-kulisy-tajnej-wizyty-w-ukrainie/",
+        "focus": "Eksponuje dane (2023) oraz wątki: wizyty, Podkarpacie.",
+        "omits": "Pomija kontekst (Północnoatlantyckiego, Bukareszteńskiej, najhojniejszych) rozwijany w WP Wiadomości."
+      }
+    ],
+    "sources": [
+      "Radio Rzeszów",
+      "WP Wiadomości"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy Podkarpacia",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Potwierdzone (2 źródła)"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: \"Nikt mnie nie rozpoznał\". Biden ujawnia kulisy tajnej podróży przez?",
+        "a": "Ujawnia też kulisy tajnej podróży do Kijowa, gdy w Rzeszowie w pełnym kamuflażu sam niósł swoje walizki, by utrzymać wizytę w ścisłej tajemnicy."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Wydana we wtorek książka Bidena opisuje najważniejsze momenty jego prezydentury, a znaczna część wspomnień dotyczy wojny w Ukrainie."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Podkarpacia (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
+      }
+    ]
+  },
+  {
+    "id": 271571437,
+    "path": "/Swiat",
+    "seo_url": "/Swiat/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-rannych-20-osob",
+    "seo_title": "Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych (20 osób)",
+    "summary_lead": "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" – przekazał Andrij Sybiha. Wtorkowy ostrzał obwodu dniepropietrowskiego ranił łącznie 20 osób, w tym dwoje dzieci.",
+    "meta_description": "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" – przekazał Andrij Sybiha.",
+    "keywords": "Swiat, Rosjanie, uderzyli, obiekty, cywilne, konsulat, Wiele",
+    "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/f25ba0a1-31d7-4abd-a49d-82e278f65780",
+    "published_iso": "2026-11-18T02:23:13+01:00",
+    "updated_iso": "2026-11-18T02:23:13+01:00",
+    "display_date": "18.11.2026, 02:23",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 96,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "3 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Swiat"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "WP Wiadomości"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (3 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (3 redakcje)",
+        "paragraphs": [
+          "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" – przekazał Andrij Sybiha. Wtorkowy ostrzał obwodu dniepropietrowskiego ranił łącznie 20 osób, w tym dwoje dzieci. Szef ukraińskiego MSZ wezwał zachodnich partnerów do pilnego zaostrzenia sankcji wobec Moskwy. [Źródło: WP Wiadomości, Onet Wiadomości, TVP.info]",
+          "We wtorek siły rosyjskie przeprowadziły serię ataków na terytorium obwodu dniepropietrowskiego we wschodniej Ukrainie. Według oficjalnych danych przekazanych przez ukraińskie ministerstwo spraw wewnętrznych, w wyniku ostrzału rannych zostało łącznie dwadzieścia osób. Wśród poszkodowanych znalazło się dwoje dzieci. [Źródło: WP Wiadomości]",
+          "\"W Dnieprze rannych zostało 14 osób, w tym 7-letni chłopiec; w Pawłohradzie ucierpiało dwóch mężczyzn i kobieta. Służby poinformowały również o skutkach uderzeń w rejonie Nikopola. W obu miastach uszkodzone zostały obiekty przemysłowe oraz domy prywatne\" — podaje resort w serwisie Telegram. [Źródło: WP Wiadomości, Onet Wiadomości, TVP.info]",
+          "Zniszczenia objęły budynki wielorodzinne, prywatne domy, gospodarstwo rolne oraz szpital. [Źródło: Onet Wiadomości, TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Według danych ministerstwa w Nikopolu oraz czterech gminach tego rejonu ranne zostały trzy osoby, w tym 13-letni chłopiec. [Źródło: TVP.info]"
         ]
       }
     ],
@@ -57,26 +248,40 @@
         "summary": "Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych",
         "url": "https://wiadomosci.wp.pl/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-ofiar-7352164912670720a",
         "focus": "Podkreśla konkretne liczby (20 osób, 14 osób) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (międzynarodowego, przekształcili, zagranicznych) rozwijany w Onet Wiadomości."
+        "omits": "Pomija kontekst (społecznościowym, międzynarodowego, wielorodzinne) rozwijany w Onet Wiadomości, TVP.info."
       },
       {
         "outlet": "Onet Wiadomości",
         "angle": "Relacja uzupełniająca",
         "summary": "Rosja nie przestaje atakować Ukrainy. Wielu rannych w obwodzie dniepropietrowskim i uszkodzony konsulat Austrii",
         "url": "https://wiadomosci.onet.pl/swiat/dniepr-po-rosyjskim-ataku-uszkodzony-konsulat-austrii-wielu-rannych/jh5ecwh",
+        "focus": "Podkreśla konkretne liczby (20 osób, 14 osób) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija kontekst (ministerstwo, ataków, danych) rozwijany w WP Wiadomości, TVP.info."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Rosyjskie ataki na Ukrainę. „Konsulat Honorowy Austrii uszkodzony”",
+        "url": "https://www.tvp.info/96533275/rosja-atak-na-ukraine-uszkodzenie-konsulatu-honorowego-austrii",
         "focus": "Podkreśla konkretne liczby (14 osób, 20 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (przeprowadziły, poszkodowanych, infrastruktura) rozwijany w WP Wiadomości."
+        "omits": "Pomija kontekst (przeprowadziły, poszkodowanych, wewnętrznych) rozwijany w WP Wiadomości."
       }
     ],
     "sources": [
       "Onet Wiadomości",
+      "TVP.info",
       "WP Wiadomości"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.tvp.info/96533275/rosja-atak-na-ukraine-uszkodzenie-konsulatu-honorowego-austrii"
+      }
+    ],
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -89,7 +294,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (2 źródła)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (3 źródła)."
       }
     ],
     "dossier_title": "Wiele · rannych",
@@ -344,13 +549,13 @@
     "updated_iso": "2026-11-17T23:49:39+01:00",
     "display_date": "17.11.2026, 23:49",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 94,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -362,18 +567,24 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Minister Andrzej Domański w \"Faktach po Faktach\" w TVN24 powiedział, że obecne ceny paliw w Polsce są zbliżone do tych z 2025 roku, czyli sprzed wybuchu między USA i Iranem. Podkreślił, że dzięki pakietowi CPN Polska ma drugie najtańsze paliwo w Unii Europejskiej. [Źródło: Biznes Interia, Business Insider PL]",
+          "Minister Andrzej Domański w \"Faktach po Faktach\" w TVN24 powiedział, że obecne ceny paliw w Polsce są zbliżone do tych z 2025 roku, czyli sprzed wybuchu między USA i Iranem. Podkreślił, że dzięki pakietowi CPN Polska ma drugie najtańsze paliwo w Unii Europejskiej. [Źródło: Biznes Interia, Business Insider PL, TVN24]",
           "— Od jutra [18 listopada – red.] benzyna 95 będzie kosztować poniżej 6 zł. Również na dieslu widzimy spadające ceny – mówił minister finansów. [Źródło: Biznes Interia]",
           "Obecny pakiet CPN wygasa wraz z końcem roku i zakłada maksymalne ceny detaliczne paliw ustalane przez ministra energii w każdy dzień roboczy, a także obniżoną akcyzę i VAT na paliwie. Domański zaznaczył, że pakiet CPN funkcjonuje \"przynajmniej do końca roku\", więc nie przesądza, że nie zostanie przedłużony. [Źródło: Biznes Interia]",
           "— Będziemy dokładnie analizować sytuację w najbliższych tygodniach, czy ten pakiet nie powinien być w całości lub częściowo przedłużony również w pierwszych miesiącach 2027 roku – powiedział minister gospodarki i finansów. [Źródło: Biznes Interia]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Przyznał też, że sam zaproszenia nie otrzymał i przekonywał, że jego nominacja na wicepremiera \"nie jest najważniejszą sprawą na świecie\". [Źródło: TVN24]"
         ]
       }
     ],
@@ -384,7 +595,7 @@
         "summary": "Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem",
         "url": "https://biznes.interia.pl/gospodarka/news-domanski-o-pakiecie-cpn-w-najblizszych-tygodniach-decyzja-o,nId,23575097",
         "focus": "Eksponuje dane (6 zł, 2027) oraz wątki: wyklucza, Decyzja.",
-        "omits": "Pomija kontekst (poważne, wysokie, kwoty) rozwijany w Business Insider PL."
+        "omits": "Pomija kontekst (zapowiedziane, najważniejszą, wicepremiera) rozwijany w TVN24."
       },
       {
         "outlet": "Business Insider PL",
@@ -393,17 +604,31 @@
         "url": "https://businessinsider.com.pl/gospodarka/pakiet-cpn-do-kiedy-obowiazuje-czy-bedzie-przedluzony/6kq9p15",
         "focus": "Podkreśla konkretne liczby (2025) w ujęciu: perspektywa rynkowa.",
         "omits": "Pomija wyliczenia (6 zł, 2027) przytaczane przez Biznes Interia."
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Nominacja Andrzeja Domańskiego na wicepremiera. \"Zaproszenia nie otrzymałem\"",
+        "url": "https://tvn24.pl/polska/karol-nawrocki-dokona-zmian-w-radzie-ministrow-andrzej-domanski-o-nominacji-na-wicepremiera-st9344071?source=rss",
+        "focus": "Podkreśla konkretne liczby (2025) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija wyliczenia (6 zł, 2027) przytaczane przez Biznes Interia."
       }
     ],
     "sources": [
       "Biznes Interia",
-      "Business Insider PL"
+      "Business Insider PL",
+      "TVN24"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: TVN24 (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://tvn24.pl/polska/karol-nawrocki-dokona-zmian-w-radzie-ministrow-andrzej-domanski-o-nominacji-na-wicepremiera-st9344071?source=rss"
+      }
+    ],
     "impact": {
       "audience": "Kierowcy i pasażerowie",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -416,7 +641,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Portfel, podatki i rynek). Status: Potwierdzone (2 źródła)."
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Portfel, podatki i rynek). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -790,10 +1015,11 @@
       {
         "heading": "Ustalenia wspólne (8 redakcji)",
         "paragraphs": [
-          "Reprezentacja Polski zremisowała ze Szwecją 1:1 w meczu ostatniej kolejki fazy grupowej Ligi Narodów. Biało-Czerwoni objęli prowadzenie w 16. minucie po trafieniu Adriana Benedyczaka, ale już osiem minut później wyrównał Hugo Larsson. [Źródło: Niezależna.pl, Interia Sport, Przegląd Sportowy, Gol24.pl, Polsat Sport, Weszło.com]",
+          "Reprezentacja Polski zremisowała ze Szwecją 1:1 w meczu ostatniej kolejki fazy grupowej Ligi Narodów. Biało-Czerwoni objęli prowadzenie w 16. minucie po trafieniu Adriana Benedyczaka, ale już osiem minut później wyrównał Hugo Larsson. [Źródło: Niezależna.pl, Interia Sport, Przegląd Sportowy, Gol24.pl, Polsat Sport]",
           "Dzięki remisowi Polacy utrzymali się w dywizji B. a]:hover:underline text-[#757575] font-['Roboto']\"> Autor: Mateusz Mol Reprezentacja Polski mierzy się dziś ze Szwecją na Tarczyński Arenie we Wrocławiu. Spotkanie rozpoczęło się o godz. 20.45. Radość Polaków nie trwała jednak długo. [Źródło: Niezależna.pl]",
-          "W 24. minucie do wyrównania doprowadził Hugo Larsson. Wynik 1:1 utrzymał się do końcowego gwizdka. Na konferencji prasowej po meczu ze Szwecją zrobił to jeden z dziennikarzy, który zadał selekcjonerowi pytanie, czy jego drużyna to najgorsza kadra od dekad. [Źródło: Niezależna.pl, Interia Sport, Gol24.pl, Weszło.com]",
-          "— Liczyliśmy, że zajmiemy drugie miejsce w grupie i powalczymy o awans do dywizji A w barażach – dodał. [Źródło: Gol24.pl, Polsat Sport]",
+          "W 24. minucie do wyrównania doprowadził Hugo Larsson. Wynik 1:1 utrzymał się do końcowego gwizdka. [Źródło: Niezależna.pl, Interia Sport, Gol24.pl]",
+          "— Liczyliśmy, że zajmiemy drugie miejsce w grupie i powalczymy o awans do dywizji A w barażach – dodał. [Źródło: Niezależna.pl, Gol24.pl, Polsat Sport]",
+          "Na konferencji prasowej po meczu ze Szwecją zrobił to jeden z dziennikarzy, który zadał selekcjonerowi pytanie, czy jego drużyna to najgorsza kadra od dekad. [Źródło: Interia Sport, Gol24.pl, Sport.pl, Weszło.com]",
           "— Teraz powinienem wstać i wyjść. [Źródło: Gol24.pl, Weszło.com]"
         ]
       },
@@ -804,7 +1030,7 @@
           "Jak się okazuje, Biało-Czerwoni zanotują spadek w rankingu FIFA. Miejsce drużyny Jana Urbana nie może napawać optymizmem przed walką o awans na Euro. [Źródło: Przegląd Sportowy]",
           "Jedno go ewidentnie zirytowało. [Źródło: Gol24.pl]",
           "— Jestem niesamowicie dumny i szczęśliwy, że mogłem dzisiaj wystąpić, spełnić największe marzenie w piłkarskim życiu – mówił Sławomir Abramowicz po spektakularnym debiucie w reprezentacji Polski. [Źródło: WP SportoweFakty]",
-          "Wiem, że jestem stary, ale nie wiem, czy w poprzednich latach kadra była lepsza czy gorsza. W tym momencie mamy reprezentację, jaką mamy, czyli mieszankę młodości z doświadczeniem. [Źródło: Sport.pl]",
+          "Jak się okazało, nawet na ogół spokojnego i wyważonego Jana Urbana można wyprowadzić z równowagi. [Źródło: Sport.pl]",
           "Czy my zawsze musimy szukać czegoś negatywnego? – zapytał selekcjoner. I kontynuował: – Ja na przykład cieszę się, że mieliśmy dziś cztery setki, które powinniśmy wykorzystać. A statystyki nie zginą, ale czy zawsze musimy wyciągać najgorsze? [Źródło: Weszło.com]"
         ]
       }
@@ -816,15 +1042,15 @@
         "summary": "Polska – Szwecja. Biało-Czerwoni uratowali się przed barażami!",
         "url": "https://niezalezna.pl/sport/pilka-nozna/polska-prowadzi-ze-szwecja-benedyczak-trafil-juz-w-16-minucie/584389",
         "focus": "Wyróżnia własne wątki i pojęcia: barażami, Dzięki, remisowi.",
-        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl, Weszło.com."
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
       },
       {
         "outlet": "Interia Sport",
         "angle": "Relacja sportowa",
         "summary": "Debiutant uratował Polaków w meczu ze Szwecją. Remis na zakończenie LN",
         "url": "https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-debiutant-bohaterem-kadry-urbana-polacy-do-konca-drzeli-o-wy,nId,23575103",
-        "focus": "Wyróżnia własne wątki i pojęcia: Tegoroczne, potoczyły, myśli.",
-        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl, Weszło.com."
+        "focus": "Wyróżnia własne wątki i pojęcia: zakończenie, Tegoroczne, rozgrywki.",
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
       },
       {
         "outlet": "Przegląd Sportowy",
@@ -832,15 +1058,15 @@
         "summary": "Remis ze Szwecją, a teraz to. Fatalna wiadomość dla Polski tuż po meczu",
         "url": "https://przegladsportowy.onet.pl/pilka-nozna/reprezentacja-polski/remis-ze-szwecja-a-teraz-to-fatalna-wiadomosc-dla-polski-tuz-po-meczu/g4gm7jk",
         "focus": "Wyróżnia własne wątki i pojęcia: Fatalna, wiadomość, okazuje.",
-        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl, Weszło.com."
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
       },
       {
         "outlet": "Gol24.pl",
         "angle": "Relacja sportowa",
         "summary": "\"Boże, teraz powinienem wstać i wyjść\". Dziennikarz zirytował Urbana pytaniem o najgorszą reprezentację od 30 lat",
         "url": "https://gol24.pl/boze-teraz-powinienem-wstac-i-wyjsc-dziennikarz-zirytowal-urbana-pytaniem-o-najgorsza-reprezentacje-od-30-lat/ar/c2-19151313",
-        "focus": "Podkreśla konkretne liczby (30 lat) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (zakończenie, Abramowicza, uratowali) rozwijany w Interia Sport, Polsat Sport."
+        "focus": "Eksponuje dane (30 lat) oraz wątki: Boże, zirytował.",
+        "omits": "Pomija kontekst (uratowali, Remis, Urban) rozwijany w Niezależna.pl, Interia Sport."
       },
       {
         "outlet": "WP SportoweFakty",
@@ -848,31 +1074,31 @@
         "summary": "Debiutant uratował remis i wysłał sygnał do Urbana. \"Odpowiedź nie może być inna\"",
         "url": "https://sportowefakty.wp.pl/pilka-nozna/1284734/debiutant-uratowal-remis-i-wyslal-sygnal-do-urbana-odpowiedz-nie-moze-byc-inna",
         "focus": "Wyróżnia własne wątki i pojęcia: wysłał, sygnał, Odpowiedź.",
-        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl, Weszło.com."
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
       },
       {
         "outlet": "Sport.pl",
         "angle": "Relacja sportowa",
         "summary": "Jan Urban nie wytrzymał po meczu Polska – Szwecja. \"Powinienem teraz wyjść\"",
         "url": "https://www.sport.pl/pilka/7,65037,33138044,jan-urban-nie-wytrzymal-po-meczu-polska-szwecja-powinienem.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: wytrzymał, Wiem, stary.",
-        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl, Weszło.com."
-      },
-      {
-        "outlet": "Polsat Sport",
-        "angle": "Relacja sportowa",
-        "summary": "Urban stracił cierpliwość na konferencji! \"Teraz powinienem wstać i wyjść\"",
-        "url": "https://www.polsatsport.pl/wiadomosc/2026-11-18/urban-stracil-cierpliwosc-na-konferencji-teraz-powinienem-wstac-i-wyjsc/",
-        "focus": "Wyróżnia własne wątki i pojęcia: cierpliwość, remisie, występów.",
-        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl, Weszło.com."
+        "focus": "Wyróżnia własne wątki i pojęcia: wytrzymał, okazało, nawet.",
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
       },
       {
         "outlet": "Weszło.com",
         "angle": "Relacja sportowa",
         "summary": "Jan Urban po jednym pytaniu: Teraz powinienem wstać i wyjść…",
         "url": "https://weszlo.com/jan-urban-po-jednym-pytaniu-nie-wytrzymal-powinienem-wstac-i-wyjsc",
-        "focus": "Podkreśla konkretne liczby (30 lat) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (Urbana, uratowali, Remis) rozwijany w Interia Sport, Przegląd Sportowy."
+        "focus": "Wyróżnia własne wątki i pojęcia: jednym, pytaniu, zawsze.",
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
+      },
+      {
+        "outlet": "Polsat Sport",
+        "angle": "Relacja sportowa",
+        "summary": "Urban stracił cierpliwość na konferencji! \"Teraz powinienem wstać i wyjść\"",
+        "url": "https://www.polsatsport.pl/wiadomosc/2026-11-18/urban-stracil-cierpliwosc-na-konferencji-teraz-powinienem-wstac-i-wyjsc/",
+        "focus": "Wyróżnia własne wątki i pojęcia: stracił, cierpliwość.",
+        "omits": "Pomija wyliczenia (30 lat) przytaczane przez Gol24.pl."
       }
     ],
     "sources": [
@@ -2027,7 +2253,7 @@
         "heading": "Ustalenia wspólne (25 redakcji)",
         "paragraphs": [
           "25-latek usłyszał zarzut umyślnego naruszenia zasad bezpieczeństwa w ruchu lądowym i spowodowania wypadku drogowego ze skutkiem śmiertelnym w stanie nietrzeźwości. Policja i prokuratura skierowały do sądu wniosek o zastosowanie wobec podejrzanego tymczasowego aresztowania. Sąd przychylił się do tego wniosku i zdecydował, że mężczyzna spędzi w areszcie najbliższe trzy miesiące. [Źródło: TVN24, TVP3 Lublin, Radio Olsztyn]",
-          "Do wypadku doszło w sobotę około północy na nieoświetlonej drodze gruntowej w miejscowości Łukówiec (Lubelskie). Jak wynika z ustaleń policji, 25-latek kierujący Fordem potrącił 19-letnią kobietę, która poruszała się prawą stroną drogi. Po uderzeniu piesza została uwięziona pod samochodem. [Źródło: TVN24, Rzeczpospolita, TKO Olsztyn, Radio Olsztyn, info.elblag.pl, Pościgi.pl, TVP3 Poznań, NewsLubuski.pl, Radio Poznań, ePoznan.pl]",
+          "Do wypadku doszło w sobotę około północy na nieoświetlonej drodze gruntowej w miejscowości Łukówiec (Lubelskie). Jak wynika z ustaleń policji, 25-latek kierujący Fordem potrącił 19-letnią kobietę, która poruszała się prawą stroną drogi. Po uderzeniu piesza została uwięziona pod samochodem. [Źródło: TVN24, Rzeczpospolita, Onet Wiadomości, TKO Olsztyn, Radio Olsztyn, info.elblag.pl, Pościgi.pl, Radio Kielce, Radio Poznań]",
           "Na miejsce skierowano służby ratunkowe. Przed wjazdem na główną stację kolejową w Pradze doszło do czołowego zderzenia pociągów. Według informacji podawanych przez czeskie służby i media rannych zostało 46 osób. [Źródło: TVN24, TVP.info, Polsat News, TVP3 Warszawa]",
           "Dwa pociągi pasażerskie zderzyły się na moście nad ulicą Seifertovą, w pobliżu skrzyżowania U Bulhara w trzeciej dzielnicy Pragi. [Źródło: TVP.info, Polsat News]"
         ]
@@ -2038,17 +2264,18 @@
           "Na miejscu działania prowadziły dwa zastępy straży. Obecna była też policja i pogotowie ratunkowe. [Źródło: TVP.info]",
           "Jak ustalił Polsat News, wśród poszkodowanych nie ma obywateli Polski. [Źródło: Polsat News]",
           "Prawdopodobnie nikt poważnie nie ucierpiał. [Źródło: Radio Rzeszów]",
-          "Czeska Inspekcja Kolejowa odnotowuje także zdarzenia, w których nie doszło do katastrofy, mimo że składy znajdowały się na tych samych torach. Zadziałały automatyczne systemy ETCS, jednak są one zainstalowane tylko na najważniejszych trasach kolejowych. [Źródło: Onet Wiadomości]",
+          "Zginęły dwie osoby Służby podjęły resuscytację 16-latka i 45-latka wyciągniętych z samochodu. [Źródło: Onet Wiadomości]",
           "Przyczyny zderzenia pozostają przedmiotem ustaleń właściwych służb. [Źródło: Kresy.pl]",
           "Všechny složky IZS zasahují u srážky dvou vlaků u Hlavního nádraží na přemostění se Seifertovou ulicí v Praze 3. [Źródło: Niezależna.pl]",
           "Oba składy zostały uszkodzone. [Źródło: Interia Wydarzenia]",
           "Początkowo twierdził, że samochód mu ukradziono a siostrę potrącił nieznany sprawca. [Źródło: TVP3 Lublin]",
-          "Na 152. kilometrze drogi krajowej nr 73 (152+000) w miejscowości Bukowa zderzyły się dwa pojazdy będące w ruchu – samochód ciężarowy oraz pojazd typu bus. [Źródło: Rzeszow-News.pl]",
           "Występują utrudnienia w ruchu. [Źródło: TVP3 Rzeszów]",
           "Na miejscu pracują policjanci z wydziału ruchu drogowego. [Źródło: Radio Olsztyn]",
-          "Do tragicznego w skutkach wypadku doszło wczoraj w powiecie tomaszowskim, w województwie lubelskim. Osobowy Peugeot wjechał w tył przyczepy ciągniętej przez traktor. Zginął kierowca i pasażerka auta. [Źródło: Farmer.pl]",
-          "Siła zderzenia była bardzo duża. Na miejsce natychmiast skierowano straż pożarną, zespół ratownictwa medycznego oraz policję. [Źródło: Pościgi.pl]",
+          "Tragiczny wypadek miał miejsce w niedzielę, 15 listopada, w godzinach wieczornych w gminie Gowarczów (pow. konecki). Jak poinformował oficer prasowy Komendy Powiatowej Państwowej Straży Pożarnej w Końskich. mł. bryg. Mariusz Czapelski, cytowany przez TVP Info, strażacy, by uwolnić kierowcę i pasażera osobówki, używali sprzętu do ratownictwa drogowego.",
+          "Do tragicznego w skutkach wypadku doszło wczoraj w powiecie tomaszowskim, w województwie lubelskim. [Źródło: Farmer.pl]",
+          "Mimo długiej walki ratowników o życie jednej z osób nie udało się uratować. Strażacy z Ostrowa Wielkopolskiego otrzymali zgłoszenie o wypadku drogowym. W pojeździe podróżowały trzy osoby. [Źródło: Pościgi.pl]",
           "Dwaj pozostali mężczyźni zostali przetransportowani do szpitala. Okoliczności i przyczyny wypadku będą wyjaśniane przez policję. [Źródło: TVP3 Poznań]",
+          "Trzy samochody zderzyły się na jednej z głównych tras stolicy, a jeden z nich wylądował na dachu. [Źródło: TVP3 Warszawa]",
           "Dachowanie samochodu w Krykajnach w gminie Godkowo. Wszystkie przewieziono do szpitala. W pomoc poszkodowanym na miejscu włączyli się także żołnierze. [Źródło: TVP3 Olsztyn]",
           "Wracamy do tragicznego wypadku drogowego w Łukówcu w gminie Firlej, w którym zginęła młoda kobieta potrącona przez swojego brata. Znamy szczegóły śledztwa, ujawnione przez prokuraturę. [Źródło: Radio Impuls]",
           "Zarówno kobieta, jak i dwóch pasażerów zostali zakleszczeni w mocno rozbitym pojeździe. Strażacy uwolnili poszkodowanych z auta. Dwóch pasażerów trafiło do szpitala. [Źródło: ePoznan.pl]"
@@ -2109,7 +2336,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Zderzenie dwóch pociągów w Czechach. Jest wielu rannych",
         "url": "https://wiadomosci.onet.pl/swiat/czechy-zderzenie-dwoch-pociagow-w-pradze-jest-wielu-rannych/1bx62lc",
-        "focus": "Wyróżnia własne wątki i pojęcia: Czechach, Czeska, Inspekcja.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Czechach, podjęły, resuscytację.",
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
       },
       {
@@ -2125,7 +2352,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Zderzenie pociągów osobowych w Pradze. 15 osób rannych",
         "url": "https://niezalezna.pl/swiat/zderzenie-pociagow-osobowych-w-pradze-15-osob-rannych/584330",
-        "focus": "Eksponuje dane (15 osób) oraz wątki: echny, zasahuj.",
+        "focus": "Eksponuje dane (15 osób) oraz wątki: osobowych, echny.",
         "omits": "Pomija wyliczenia (46 osób) przytaczane przez TVN24, TVP.info."
       },
       {
@@ -2133,16 +2360,8 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Zderzenie pociągów w Pradze. Rannych jest kilkadziesiąt osób",
         "url": "https://wydarzenia.interia.pl/zagranica/news-zderzenie-pociagow-w-pradze-rannych-jest-kilkadziesiat-osob,nId,23574608",
-        "focus": "Wyróżnia własne wątki i pojęcia: uszkodzone.",
+        "focus": "Wyróżnia własne wątki i pojęcia: składy, uszkodzone.",
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
-      },
-      {
-        "outlet": "TVP3 Warszawa",
-        "angle": "Doniesienie regionalne",
-        "summary": "Wypadek na moście Łazienkowskim. Jedno z aut dachowało",
-        "url": "https://warszawa.tvp.pl/96531334/chwile-grozy-na-moscie-lazienkowskim-stolica-w-korku-po-dachowaniu",
-        "focus": "Podkreśla konkretne liczby (46 osób) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija wyliczenia (15 osób) przytaczane przez Niezależna.pl."
       },
       {
         "outlet": "TVP3 Lublin",
@@ -2157,7 +2376,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Uwaga kierowcy! Zderzenie ciężarówki i busa na DK 73",
         "url": "https://rzeszow-news.pl/kolizja-ciezarowki-i-busa-na-dk-73/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Uwaga, kilometrze, krajowej.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Uwaga.",
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
       },
       {
@@ -2205,7 +2424,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Tragiczny wypadek w Odolanowie. Samochód uderzył w drzewo, jedna osoba nie żyje",
         "url": "https://poscigi.pl/odolanow-tragiczny-wypadek-na-dw444-samochod-uderzyl-w-drzewo/",
-        "focus": "Wyróżnia własne wątki i pojęcia: jedna, osoba, Siła.",
+        "focus": "Wyróżnia własne wątki i pojęcia: drzewo, jedna, osoba.",
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
       },
       {
@@ -2213,8 +2432,16 @@
         "angle": "Doniesienie regionalne",
         "summary": "Tragiczny wypadek w Wielkopolsce. Nie żyje 20-latka",
         "url": "https://poznan.tvp.pl/96519789/odolanow-smiertelny-wypadek-nie-zyje-mloda-kobieta-20-latka-samochod-uderzyl-w-drzewo",
-        "focus": "Wyróżnia własne wątki i pojęcia: Wielkopolsce, Dwaj, przetransportowani.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Dwaj, przetransportowani, Okoliczności.",
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
+      },
+      {
+        "outlet": "TVP3 Warszawa",
+        "angle": "Doniesienie regionalne",
+        "summary": "Wypadek na moście Łazienkowskim. Jedno z aut dachowało",
+        "url": "https://warszawa.tvp.pl/96531334/chwile-grozy-na-moscie-lazienkowskim-stolica-w-korku-po-dachowaniu",
+        "focus": "Podkreśla konkretne liczby (46 osób) w ujęciu: doniesienie regionalne.",
+        "omits": "Pomija wyliczenia (15 osób) przytaczane przez Niezależna.pl."
       },
       {
         "outlet": "TVP3 Olsztyn",
@@ -2233,11 +2460,11 @@
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
       },
       {
-        "outlet": "NewsLubuski.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Tragiczny wypadek w Lubuskiem. Nie żyje mężczyzna",
-        "url": "https://newslubuski.pl/interwencje/128563-tragiczny-wypadek-lubuskie-nie-zyje-mezczyzna-goscim.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Lubuskiem.",
+        "outlet": "Radio Kielce",
+        "angle": "Doniesienie regionalne",
+        "summary": "Tragiczne zdarzenie na drodze wojewódzkiej. Zginęły dwie osoby",
+        "url": "https://radiokielce.pl/1458100/tragiczne-zdarzenie-na-drodze-wojewodzkiej-zginely-dwie-osoby/",
+        "focus": "Wyróżnia własne wątki i pojęcia: zdarzenie.",
         "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez TVN24, TVP.info."
       },
       {
@@ -2261,12 +2488,12 @@
       "Farmer.pl",
       "Interia Wydarzenia",
       "Kresy.pl",
-      "NewsLubuski.pl",
       "Niezależna.pl",
       "Onet Wiadomości",
       "Polsat News",
       "Pościgi.pl",
       "Radio Impuls",
+      "Radio Kielce",
       "Radio Olsztyn",
       "Radio Poznań",
       "Radio Rzeszów",
@@ -2286,10 +2513,6 @@
     ],
     "corrections": [
       {
-        "claim_text": "Dopisano źródło: Farmer.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.farmer.pl/fakty/tragiczny-wypadek-w-gminie-ulhowek-peugeot-uderzyl-w-przyczepe-ciagnika-dwie-osoby-zginely,187254.html"
-      },
-      {
         "claim_text": "Dopisano źródło: Pościgi.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://poscigi.pl/odolanow-tragiczny-wypadek-na-dw444-samochod-uderzyl-w-drzewo/"
       },
@@ -2304,6 +2527,10 @@
       {
         "claim_text": "Dopisano źródło: Radio Impuls (aktualizacja wieloźródłowa)",
         "evidence_url": "https://radioimpuls.pl/tragiczny-wypadek-w-lukowcu-prokurator-wnioskuje-o-areszt-dla-sprawcy.html"
+      },
+      {
+        "claim_text": "Dopisano źródło: TVP3 Warszawa (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://warszawa.tvp.pl/96531334/chwile-grozy-na-moscie-lazienkowskim-stolica-w-korku-po-dachowaniu"
       }
     ],
     "impact": {
@@ -2419,13 +2646,13 @@
     ]
   },
   {
-    "id": 504582121,
-    "path": "/Polska",
-    "seo_url": "/Polska/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata",
+    "id": 1064012714,
+    "path": "/Polska/Regiony/Lubelskie",
+    "seo_url": "/Polska/Regiony/Lubelskie/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata",
     "seo_title": "Wjechał w 19-letnią siostrę. Amelia nie żyje. Areszt dla jej brata",
     "summary_lead": "Jest tymczasowy areszt dla 25-letniego Filipa F. Mężczyzna śmiertelnie potrącił 19-letnią Amelię F., swoją siostrę, na drodze gruntowej w miejscowości Łukówiec.",
     "meta_description": "Jest tymczasowy areszt dla 25-letniego Filipa F. Mężczyzna śmiertelnie potrącił 19-letnią Amelię F., swoją siostrę, na drodze gruntowej w miejscowości…",
-    "keywords": "Polska, Wjechał, 19-letnią, siostrę, Amelia, żyje, Areszt",
+    "keywords": "Lubelskie, Wjechał, 19-letnią, siostrę, Amelia, żyje, Areszt",
     "thumbnail_url": "https://s3.tvp.pl/images2/c/1/b/uid_c1bbe55f6f25429d88952482cb6e7ee0_width_900_play_0_pos_0_gs_0_height_506.jpg",
     "published_iso": "2026-11-17T21:52:26+01:00",
     "updated_iso": "2026-11-18T02:23:18+01:00",
@@ -2441,7 +2668,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska"
+        "val": "/Polska/Regiony/Lubelskie"
       },
       {
         "label": "Główne źródło",
@@ -2479,15 +2706,15 @@
         "summary": "Wjechał w 19-letnią siostrę. Amelia nie żyje. Areszt dla jej brata",
         "url": "https://www.o2.pl/informacje/wjechal-w-19-letnia-siostre-amelia-nie-zyje-areszt-dla-jej-brata-7352038890510336a",
         "focus": "Wyróżnia własne wątki i pojęcia: Wjechał, żyje, brata.",
-        "omits": "Pomija kontekst (nietrzeźwych, usłyszał, Łukówcu) rozwijany w Lublin112.pl, Radio Lublin."
+        "omits": "Pomija kontekst (Łukówcu, aresztu, trafił) rozwijany w Fakt.pl, Lublin112.pl."
       },
       {
         "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
+        "angle": "Doniesienie regionalne",
         "summary": "Amelia zginęła, wracając nocą do domu. Przejechał ją własny, pijany brat. \"Areszt\"",
         "url": "https://www.fakt.pl/wydarzenia/polska/lublin/tragedia-w-lukowcu-filip-f-smiertelnie-potracil-siostre-po-alkoholu/ex01hty",
         "focus": "Wyróżnia własne wątki i pojęcia: zginęła, wracając, nocą.",
-        "omits": "Pomija kontekst (nietrzeźwych, potrącenie, Okręgowej) rozwijany w Lublin112.pl, Radio Lublin."
+        "omits": "Pomija kontekst (nietrzeźwości, Okręgowej, przyznał) rozwijany w o2.pl, Lublin112.pl."
       },
       {
         "outlet": "Lublin112.pl",
@@ -2524,7 +2751,7 @@
     "corrections": [],
     "impact": {
       "audience": "Kierowcy i pasażerowie",
-      "scope": "Wydarzenia krajowe",
+      "scope": "Sprawy lokalne i samorząd",
       "status": "Postępowanie / Śledztwo"
     },
     "seo_faq": [
@@ -2538,7 +2765,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Wydarzenia krajowe). Status: Postępowanie / Śledztwo."
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Postępowanie / Śledztwo."
       }
     ]
   },
@@ -5068,7 +5295,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -5080,16 +5307,16 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
           "Po pięciu z rzędu wzrostowych sesjach i poniedziałkowymustanowieniu historycznych szczytów na GPW przyszła wyraźna korektora. Wtorkowenotowania upłynęły pod znakiem szerokiej realizacji zysków oraz potężnejwyprzedaży akcji XTB po zapowiedziach Komisji Nadzoru Finansowego. [Źródło: Bankier.pl, Parkiet]",
-          "Na zamknięciu wtorkowej sesji WIG20 spadł o 1,16 proc., a indeks szerokiego rynku WIG zniżkował o 1,48 proc. Na zapleczunajwiększych spółek – mWIG40 poszedł w dół o 2,68 proc., natomiast sWIG80stracił 1,44 proc. Obroty na szerokim rynku wyniosły 2,43 mld zł, przy czym 1,63 mld zł dotyczyło handlu akcjami spółek z WIG20, ale rekord dziennychobrotów dotyczył spółki XTB z mWIG40 (417,3 mln zł). [Źródło: Bankier.pl, Puls Biznesu, XYZ.pl, PurePC]",
+          "Na zamknięciu wtorkowej sesji WIG20 spadł o 1,16 proc., a indeks szerokiego rynku WIG zniżkował o 1,48 proc. Na zapleczunajwiększych spółek – mWIG40 poszedł w dół o 2,68 proc., natomiast sWIG80stracił 1,44 proc. Obroty na szerokim rynku wyniosły 2,43 mld zł, przy czym 1,63 mld zł dotyczyło handlu akcjami spółek z WIG20, ale rekord dziennychobrotów dotyczył spółki XTB z mWIG40 (417,3 mln zł). [Źródło: Bankier.pl, Puls Biznesu, XYZ.pl]",
           "Wtorkowa korekta przerwała imponującą passę pięciu sesji, kiedy WIG20 rósł bez przerwy, zyskując łącznie ponad 4 proc. Wponiedziałek indeks największych spółek wyznaczył nowe historyczne maksimum napoziomie 4.321,54 pkt. oraz rekord na zamknięciu. W czwartek, 19 listopada, na Nasdaq ma zadebiutować Anthropic, a skala tej operacji nie ma wielu precedensów w historii Wall Street. [Źródło: Bankier.pl, Puls Biznesu]"
         ]
       },
@@ -5100,8 +5327,7 @@
           "W centrum uwagi pozostaje Nvidia, której wyniki kwartalne mają zweryfikować oczekiwania związane z boomem na sztuczną inteligencję. Inwestorzy analizują jednocześnie perspektywy wydatków na infrastrukturę AI i politykę pieniężną Fed. Poniedziałkowa wyprzedaż akcji technologicznych zwiększyła ostrożność na amerykańskim rynku. [Źródło: Puls Biznesu]",
           "Wejście spółki na giełdę pod symbolem ANT staje się głównym punktem odniesienia dla inwestorów po obu stronach Atlantyku. [Źródło: StrefaInwestorów.pl]",
           "Liderem spadków było XTB, którego akcje poszły w dół o ponad 15 proc. [Źródło: XYZ.pl]",
-          "Zdaniem ekspertów dobra koniunktura ma szansę utrzymać się na warszawskiej giełdzie. Kluczem do nich będzie selekcja spółek. [Źródło: Parkiet]",
-          "Intel miał za sobą okres imponujących wzrostów na giełdzie, a zainteresowanie procesorami do centrów danych i infrastruktury AI poprawiało wyniki firmy. Jednak za tym kryły się problemy z dostawami komponentów i słabnący popyt na komputery osobiste. Teraz część inwestorów twierdzi, że kierownictwo wiedziało o skali zagrożeń wcześniej, niż zdecydowało się o nich poinformować. [Źródło: PurePC]"
+          "Zdaniem ekspertów dobra koniunktura ma szansę utrzymać się na warszawskiej giełdzie. Kluczem do nich będzie selekcja spółek. [Źródło: Parkiet]"
         ]
       }
     ],
@@ -5112,7 +5338,7 @@
         "summary": "Gorący handel akcjami XTB na polskiej giełdzie. Największe obroty i krwista przecena brokera CFD",
         "url": "https://www.bankier.pl/wiadomosc/Goracy-handel-akcjami-XTB-na-polskiej-gieldzie-Najwieksze-obroty-i-krwista-przecena-brokera-CFD-9230426.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Podkreśla konkretne liczby (1,16 proc., 1,48 proc.) w ujęciu: raport rynkowy.",
-        "omits": "Pomija wyliczenia (28,6 proc., 15 proc.) przytaczane przez PurePC, XYZ.pl."
+        "omits": "Pomija wyliczenia (15 proc., 2026) przytaczane przez XYZ.pl."
       },
       {
         "outlet": "Subiektywnie o Finansach",
@@ -5128,7 +5354,7 @@
         "summary": "Najgorsza sesja europejskiego rynku akcji od marca. Powodem przecena spółek technologicznych",
         "url": "https://www.pb.pl/najgorsza-sesja-europejskiego-rynku-akcji-od-marca-powodem-przecena-spolek-technologicznych-1270581",
         "focus": "Podkreśla konkretne liczby (1,16 proc., 1,48 proc.) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija wyliczenia (28,6 proc., 15 proc.) przytaczane przez PurePC, XYZ.pl."
+        "omits": "Pomija wyliczenia (15 proc., 2026) przytaczane przez XYZ.pl."
       },
       {
         "outlet": "StrefaInwestorów.pl",
@@ -5144,7 +5370,7 @@
         "summary": "Nadchodząca premiera GTA VI topi kurs CD Projektu. Akcje XTB runęły po zapowiedzi KNF. Notowania GPW 17 listopada 2026 r.",
         "url": "https://xyz.pl/nadchodzaca-premiera-gta-vi-topi-kurs-cd-projektu-akcje-xtb-runely-po-zapowiedzi-knf-notowania-gpw-17-listopada-2026-r/",
         "focus": "Eksponuje dane (2026, 15 proc.) oraz wątki: premiera, topi.",
-        "omits": "Pomija wyliczenia (4 proc., 28,6 proc.) przytaczane przez Bankier.pl, Puls Biznesu."
+        "omits": "Pomija wyliczenia (4 proc., 2027) przytaczane przez Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Parkiet",
@@ -5153,21 +5379,12 @@
         "url": "https://www.parkiet.com/finanse/art45503851-eksperci-o-perspektywach-krajowego-rynku-akcji-na-2027-rok",
         "focus": "Eksponuje dane (2027) oraz wątki: Eksperci, krajowego.",
         "omits": "Pomija wyliczenia (417,3 mln zł, 2,43 mld zł) przytaczane przez Bankier.pl, Puls Biznesu."
-      },
-      {
-        "outlet": "PurePC",
-        "angle": "Kontekst technologiczny",
-        "summary": "Pozew zbiorowy przeciwko Intelowi po ogromnym spadku cen akcji. Inwestorzy wskazują na kryzys PC i niedobory komponentów",
-        "url": "https://www.purepc.pl/intel-pozew-zbiorowy-akcjonariusze-spadek-akcji-lip-bu-tan-david-zinsner",
-        "focus": "Eksponuje dane (28,6 proc.) oraz wątki: Pozew, zbiorowy.",
-        "omits": "Pomija wyliczenia (4 proc., 15 proc.) przytaczane przez Bankier.pl, Puls Biznesu."
       }
     ],
     "sources": [
       "Bankier.pl",
       "Parkiet",
       "Puls Biznesu",
-      "PurePC",
       "StrefaInwestorów.pl",
       "Subiektywnie o Finansach",
       "XYZ.pl"
@@ -5193,7 +5410,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "seo_faq": [
       {
@@ -5206,7 +5423,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (6 źródeł)."
       }
     ]
   },
@@ -9396,7 +9613,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "29 redakcji"
+        "val": "28 redakcji"
       },
       {
         "label": "Kategoria",
@@ -9408,19 +9625,19 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (29 źródeł)"
+        "val": "Potwierdzone (28 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (29 redakcji)",
+        "heading": "Ustalenia wspólne (28 redakcji)",
         "paragraphs": [
           "17.11.2026 19:06 Rada Ministrów przyjęła projekt nowelizacji przepisów dotyczących zapasów ropy naftowej i paliw przygotowany przez Ministerstwo Energii. Prace nad uszczelnieniem przepisów rozpoczęły się jeszcze wiosną tego roku. [Źródło: Rzeczpospolita, Bankier.pl, Radio Rzeszów, Kresy.pl, TVP.info, Forsal.pl, Niezależna.pl, Tabletowo.pl, Money.pl, Biznes Interia, Energetyka24, Cashless.pl, Telepolis.pl, CyberDefence24, Puls Biznesu, Polsat News]",
           "Nowe rozwiązania mają zapewnić ciągłość utrzymywania zapasów, ograniczyć możliwość unikania obowiązków przez przedsiębiorców i usprawnić zarządzanie zapasami interwencyjnymi. [Źródło: Rzeczpospolita]",
           "— Przyjęte przez rząd rozwiązania wzmacniają mechanizm, porządkują obowiązki przedsiębiorców i zwiększają możliwości reagowania państwa. [Źródło: Rzeczpospolita]",
           "Chodzi o to, by krajowe zapasy były rzeczywistym zabezpieczeniem, a odpowiedzialność za ich utrzymywanie była jasno określona – komentuje minister energii Miłosz Motyka. Projekt przewiduje ujednolicenie zasad obejmowania przedsiębiorców obowiązkiem tworzenia i utrzymywania zapasów obowiązkowych oraz wnoszenia opłaty zapasowej. [Źródło: Rzeczpospolita]",
-          "Obowiązek będzie dotyczył przedsiębiorców rozpoczynających produkcję paliw lub przywóz ropy naftowej i paliw – od pierwszej jednostki produktu. 17.11.2026 13:40 – Dzisiaj zostało przez sekretarza Colby'ego potwierdzone, że wszystko idzie w dobrym kierunku, wszystko jest na jak najlepszej drodze. [Źródło: Rzeczpospolita, Bankier.pl, Radio Rzeszów, Kresy.pl, TVP.info, Forsal.pl, Niezależna.pl, Biznes Interia, Cashless.pl, Puls Biznesu, Polsat News]",
+          "Obowiązek będzie dotyczył przedsiębiorców rozpoczynających produkcję paliw lub przywóz ropy naftowej i paliw – od pierwszej jednostki produktu. 17.11.2026 13:40 – Dzisiaj zostało przez sekretarza Colby'ego potwierdzone, że wszystko idzie w dobrym kierunku, wszystko jest na jak najlepszej drodze. [Źródło: Rzeczpospolita, Bankier.pl, Radio Rzeszów, Kresy.pl, TVP.info, Forsal.pl, Niezależna.pl, Biznes Interia, Cashless.pl, Puls Biznesu, Polsat News, Business Insider PL, WysokieNapiecie.pl]",
           "Jest zielone światło z Pentagonu i wierzę, że to zielone światło też zaświeci bardzo mocno w Białym Domu – powiedział szef resortu. Przypomniał, że napawające optymizmem informacje w tej sprawie przywiózł też z Waszyngtonu, gdzie 10 listopada w Pentagonie spotkał się z sekretarzem wojny Pete'em Hegsethem. [Źródło: Bankier.pl, Radio Rzeszów, Kresy.pl, Gazeta.pl, TVP.info, Forsal.pl, Niezależna.pl]"
         ]
       },
@@ -9440,11 +9657,9 @@
           "Zaproponowane przepisy mają przygotować polskie prawo do wprowadzenia unijnego wymogu, który wszedł w życie ponad 2 lata temu. Każdy obywatel ma mieć możliwość aktywowania takiego dokumentu. [Źródło: CyberDefence24]",
           "Na rozwiązaniu mają skorzystać gospodarstwa domowe oraz odbiorcy wrażliwi, tacy jak szpitale i przedszkola. Opozycja upomina się o przedsiębiorców, a Pałac Prezydencki przypomina, że marszałek Sejmu zamroził propozycje głowy państwa o obniżeniu cen prądu. [Źródło: RadioMaryja.pl]",
           "Szef rządu dodał, że „będziemy też pracowali cały czas nad energią elektryczną, tak żeby Polacy mogli przeżyć tę późną jesień i zimę bez szoku cenowego”. [Źródło: Radio Kielce]",
+          "Zgodnie z OSR, interwencja ma kosztować w 2027 roku 4,634 mld zł, a w 2028 – 1,554 mld tytułem rozliczeń za poprzedni rok. [Źródło: Business Insider PL]",
           "Premier wyjaśnił, że ten mechanizm ma na celu utrzymanie inflacji na dotychczasowym niskim poziomie. Ta cena byłaby nieakceptowalna z punktu widzenia poziomu życia każdej polskiej rodziny – mówił szef rządu. [Źródło: Radio Lublin]",
-          "W Ocenie Skutków Regulacji powołuje się na powszechność stosowania podobnych mechanizmów we Francji, Niemczech, Hiszpanii i Portugalii, w związku z czym nie widzi potrzeby notyfikacji tego rodzaju pomocy w Komisji Europejskiej. [Źródło: Business Insider PL]",
-          "Proponowany limit odpowiada obecnej cenie maksymalnej. [Źródło: TVP3 Kielce]",
-          "Zgodnie z OSR, interwencja ma kosztować w 2027 roku 4,634 mld zł, a w 2028 – 1,554 mld tytułem rozliczeń za poprzedni rok. [Źródło: WysokieNapiecie.pl]",
-          "Od 2027 roku gospodarstwa domowe czekają zmiany w sposobie rozliczania energii elektrycznej. Urząd Regulacji Energetyki przygotowuje nowe zasady taryfowe, które przewidują m.in. wprowadzenie opłaty abonamentowej za sprzedaż prądu. Zmieni się również sposób uwzględniania części kosztów na rachunkach odbiorców. [Źródło: PulsHR]"
+          "Proponowany limit odpowiada obecnej cenie maksymalnej. [Źródło: TVP3 Kielce]"
         ]
       }
     ],
@@ -9463,7 +9678,7 @@
         "summary": "Kosiniak-Kamysz: Jest zielone światło z Pentagonu dla stałej bazy USA w Polsce",
         "url": "https://www.bankier.pl/wiadomosc/Kosiniak-Kamysz-Jest-zielone-swiatlo-z-Pentagonu-dla-stalej-bazy-USA-w-Polsce-9230179.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Eksponuje dane (197,29 zł/MWh, 2026) oraz wątki: zajmie, cenę.",
-        "omits": "Pomija wyliczenia (4,634 mld zł, 1,9 tys. zł) przytaczane przez WysokieNapiecie.pl, Business Insider PL."
+        "omits": "Pomija wyliczenia (4,634 mld zł, 6,187 mld zł) przytaczane przez Business Insider PL, WysokieNapiecie.pl."
       },
       {
         "outlet": "Radio Rzeszów",
@@ -9575,7 +9790,7 @@
         "summary": "Ceny gazu w 2027 roku. Rząd chce zamrozić stawki. Ile zapłacimy za ogrzewanie?",
         "url": "https://lodz.tvp.pl/ceny-gazu-2027-zamrozenie-stawek-ile-zaplacimy-za-ogrzewanie,96524102",
         "focus": "Eksponuje dane (1800 zł) oraz wątki: stawki, ogrzewanie.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
+        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, Business Insider PL."
       },
       {
         "outlet": "Cashless.pl",
@@ -9607,7 +9822,7 @@
         "summary": "Rząd zapowiedział zamrożenie cen gazu w 2027 roku",
         "url": "https://www.radiomaryja.pl/informacje/rzad-zapowiedzial-zamrozenie-cen-gazu-w-2027-roku/",
         "focus": "Podkreśla konkretne liczby (2027) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
+        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, Business Insider PL."
       },
       {
         "outlet": "Radio Kielce",
@@ -9615,7 +9830,7 @@
         "summary": "Ceny gazu zamrożone na 2027 rok. Rząd zapowiada też działania ws. cen prądu",
         "url": "https://radiokielce.pl/1458624/ceny-gazu-zamrozone-na-2027-rok-rzad-zapowiada-tez-dzialania-ws-cen-pradu/",
         "focus": "Podkreśla konkretne liczby (2027) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
+        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, Business Insider PL."
       },
       {
         "outlet": "Puls Biznesu",
@@ -9634,6 +9849,14 @@
         "omits": "Pomija wyliczenia (2027, 197,29 zł/MWh) przytaczane przez Bankier.pl, TVP3 Łódź."
       },
       {
+        "outlet": "Business Insider PL",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Rząd zamrozi ceny gazu na 2027 r. Oszczędności nawet 1,9 tys. zł",
+        "url": "https://businessinsider.com.pl/gospodarka/miliony-polakow-odetchna-z-ulga-rachunki-za-gaz-nie-wzrosna-w-2027/tqz8ybw",
+        "focus": "Eksponuje dane (1,9 tys. zł, 197,26 zł) oraz wątki: Oszczędności, opublikował.",
+        "omits": "Pomija wyliczenia (197,29 zł/MWh, 6,187 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
+      },
+      {
         "outlet": "Radio Lublin",
         "angle": "Doniesienie regionalne",
         "summary": "Rząd zamrozi ceny gazu ziemnego",
@@ -9642,20 +9865,12 @@
         "omits": "Pomija wyliczenia (2027, 197,29 zł/MWh) przytaczane przez Bankier.pl, TVP3 Łódź."
       },
       {
-        "outlet": "Business Insider PL",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Rząd zamrozi ceny gazu na 2027 r. Oszczędności nawet 1,9 tys. zł",
-        "url": "https://businessinsider.com.pl/gospodarka/miliony-polakow-odetchna-z-ulga-rachunki-za-gaz-nie-wzrosna-w-2027/tqz8ybw",
-        "focus": "Eksponuje dane (1,9 tys. zł, 197,26 zł) oraz wątki: Oszczędności, opublikował.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
-      },
-      {
         "outlet": "TVP3 Kielce",
         "angle": "Doniesienie regionalne",
         "summary": "Ceny gazu mają pozostać zamrożone w 2027 roku. Rząd przyjął projekt ustawy",
         "url": "https://kielce.tvp.pl/96524106/zamrozenie-cen-gazu-w-2027-roku-rzad-przyjal-projekt-z-limitem-19729-zlmwh",
         "focus": "Podkreśla konkretne liczby (2027) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
+        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, Business Insider PL."
       },
       {
         "outlet": "TVP3 Wrocław",
@@ -9670,16 +9885,8 @@
         "angle": "Kontekst sektorowy",
         "summary": "Jest projekt ustawy o mrożeniu cen gazu. I do tego całkowicie nowy podatek",
         "url": "https://wysokienapiecie.pl/122791-jest-projekt-ustawy-o-mrozeniu-cen-gazu-i-do-tego-calkowicie-nowy-podatek/",
-        "focus": "Eksponuje dane (4,634 mld zł, 2028) oraz wątki: mrożeniu, całkowicie.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 1,9 tys. zł) przytaczane przez Bankier.pl, Business Insider PL."
-      },
-      {
-        "outlet": "PulsHR",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Polacy zapłacą abonament za prąd. Od 2027 roku nowa opłata",
-        "url": "https://www.pulshr.pl/zarzadzanie/polacy-zaplaca-abonament-za-prad-od-2027-roku-nowa-oplata,123293.html",
-        "focus": "Podkreśla konkretne liczby (2027) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, WysokieNapiecie.pl."
+        "focus": "Eksponuje dane (6,187 mld zł, 275 zł) oraz wątki: mrożeniu, całkowicie.",
+        "omits": "Pomija wyliczenia (197,29 zł/MWh, 4,634 mld zł) przytaczane przez Bankier.pl, Business Insider PL."
       }
     ],
     "sources": [
@@ -9697,7 +9904,6 @@
       "Onet Wiadomości",
       "Polsat News",
       "Puls Biznesu",
-      "PulsHR",
       "Radio Kielce",
       "Radio Lublin",
       "Radio Rzeszów",
@@ -9715,24 +9921,24 @@
     ],
     "corrections": [
       {
-        "claim_text": "Dopisano źródło: Cashless.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.cashless.pl/19983-mobywatel-europa-projekt-ustawy-przyjety-przez-rzad"
-      },
-      {
-        "claim_text": "Dopisano źródło: CyberDefence24 (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://cyberdefence24.pl/polityka-i-prawo/polska/rzad-przyjal-ustawe-o-europejskim-portfelu-tozsamosci-cyfrowej"
-      },
-      {
-        "claim_text": "Dopisano źródło: Subiektywnie o Finansach (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://subiektywnieofinansach.pl/gaz-z-zamrozonymi-cenami-od-stycznia-2027-roku-jest-projekt-rzadu/"
-      },
-      {
         "claim_text": "Dopisano źródło: Telepolis.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.telepolis.pl/wiadomosci/ministerstwo-cyfryzacji-ustawa-o-europejskim-portfelu-tozsamosci"
       },
       {
         "claim_text": "Dopisano źródło: RadioMaryja.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.radiomaryja.pl/informacje/rzad-zapowiedzial-zamrozenie-cen-gazu-w-2027-roku/"
+      },
+      {
+        "claim_text": "Dopisano źródło: TVP3 Łódź (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://lodz.tvp.pl/ceny-gazu-2027-zamrozenie-stawek-ile-zaplacimy-za-ogrzewanie,96524102"
+      },
+      {
+        "claim_text": "Dopisano źródło: Cashless.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.cashless.pl/19983-mobywatel-europa-projekt-ustawy-przyjety-przez-rzad"
+      },
+      {
+        "claim_text": "Dopisano źródło: Radio Kielce (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://radiokielce.pl/1458624/ceny-gazu-zamrozone-na-2027-rok-rzad-zapowiada-tez-dzialania-ws-cen-pradu/"
       }
     ],
     "impact": {
@@ -13113,100 +13319,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (2 źródła)."
-      }
-    ]
-  },
-  {
-    "id": 798410679,
-    "path": "/Polska/Regiony/Swietokrzyskie",
-    "seo_url": "/Polska/Regiony/Swietokrzyskie/tragiczne-zdarzenie-na-drodze-wojewodzkiej-zginely-dwie-osoby",
-    "seo_title": "Tragiczne zdarzenie na drodze wojewódzkiej. Zginęły dwie osoby",
-    "summary_lead": "Śmiertelny wypadek w Odolanowie w powiecie ostrowskim. Samochód osobowy z nieustalonych przyczyn zjechał z drogi i uderzył w drzewo. Do zdarzenia doszło około godz. 22:30.",
-    "meta_description": "Śmiertelny wypadek w Odolanowie w powiecie ostrowskim. Samochód osobowy z nieustalonych przyczyn zjechał z drogi i uderzył w drzewo.",
-    "keywords": "Swietokrzyskie, Tragiczne, drodze, wojewódzkiej, Zginęły, dwie",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-17T08:56:55+01:00",
-    "updated_iso": "2026-11-17T17:59:30+01:00",
-    "display_date": "17.11.2026, 08:56",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Swietokrzyskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Radio Kielce"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Śmiertelny wypadek w Odolanowie w powiecie ostrowskim. Samochód osobowy z nieustalonych przyczyn zjechał z drogi i uderzył w drzewo. Do zdarzenia doszło około godz. 22:30. [Źródło: Radio Kielce, Onet Wiadomości]",
-          "W niedzielę wieczorem (15 listopada) zderzyły się tam samochód osobowy marki Volkswagen i pojazd ciężarowy marki Volvo przewożący mleko. [Źródło: Radio Kielce]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Tragiczny wypadek miał miejsce w niedzielę, 15 listopada, w godzinach wieczornych w gminie Gowarczów (pow. konecki). Jak poinformował oficer prasowy Komendy Powiatowej Państwowej Straży Pożarnej w Końskich. mł. bryg. Mariusz Czapelski, cytowany przez TVP Info, strażacy, by uwolnić kierowcę i pasażera osobówki, używali sprzętu do ratownictwa drogowego.",
-          "Zginęły dwie osoby Służby podjęły resuscytację 16-latka i 45-latka wyciągniętych z samochodu. [Źródło: Onet Wiadomości]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Radio Kielce",
-        "angle": "Relacja wiodąca",
-        "summary": "Tragiczne zdarzenie na drodze wojewódzkiej. Zginęły dwie osoby",
-        "url": "https://radiokielce.pl/1458100/tragiczne-zdarzenie-na-drodze-wojewodzkiej-zginely-dwie-osoby/",
-        "focus": "Wyróżnia własne wątki i pojęcia: drodze, wojewódzkiej, zderzyły.",
-        "omits": "Pomija kontekst (Świętokrzyskiem, wyciągniętych, poinformował) rozwijany w Onet Wiadomości."
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Doniesienie regionalne",
-        "summary": "Tragiczny wypadek w Świętokrzyskiem. Zginęły dwie osoby",
-        "url": "https://wiadomosci.onet.pl/kielce/tragiczny-wypadek-w-miejscowosci-korytkow-nie-zyja-dwie-osoby/etwtrfh",
-        "focus": "Wyróżnia własne wątki i pojęcia: Świętokrzyskiem, miejsce, godzinach.",
-        "omits": "Pomija kontekst (wojewódzkiej, Volkswagen, przewożący) rozwijany w Radio Kielce."
-      }
-    ],
-    "sources": [
-      "Onet Wiadomości",
-      "Radio Kielce"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Mieszkańcy woj. świętokrzyskiego",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Zdarzenie i utrudnienia"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Tragiczne zdarzenie na drodze wojewódzkiej. Zginęły dwie osoby?",
-        "a": "W niedzielę wieczorem (15 listopada) zderzyły się tam samochód osobowy marki Volkswagen i pojazd ciężarowy marki Volvo przewożący mleko."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Tragiczny wypadek miał miejsce w niedzielę, 15 listopada, w godzinach wieczornych w gminie Gowarczów (pow. konecki)."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. świętokrzyskiego (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia."
       }
     ]
   },
@@ -16951,7 +17063,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "9 redakcji"
+        "val": "14 redakcji"
       },
       {
         "label": "Kategoria",
@@ -16963,27 +17075,30 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (9 źródeł)"
+        "val": "Potwierdzone (14 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (9 redakcji)",
+        "heading": "Ustalenia wspólne (14 redakcji)",
         "paragraphs": [
           "15.11.2026 23:31 Rakieta nośna, która wystartowała z Przylądka Canaveral na Florydzie uległa awarii około 10 minut po starcie. Podczas transmisji wideo ze startu nie było widać żadnej wyraźnej usterki, lecz nagranie zakończyło się przed czasem. Rakieta miała wynieść na orbitę 40 satelitów internetowych Amazon Leo. [Źródło: Rzeczpospolita, WP Wiadomości, Onet Wiadomości, Bankier.pl, Polsat News, Benchmark.pl, Space24, Antyweb.pl]",
           "skazała ładunek na zniszczenie i pokrzyżowała plany obu firm. Amazon zadeklarował jednak, że ma zaufanie do United Launch Alliance (ULA) i wierzy, że wyciągnie wnioski z porażki. Kosmiczna rywalizacja technologicznych gigantów wchodzi w nową, bezprecedensową fazę. [Źródło: Rzeczpospolita, WP Wiadomości, Onet Wiadomości, Benchmark.pl]",
-          "Jak dodała, nie ma jeszcze jeszcze „żadnych konkretnych danych, które pozwoliłyby zrozumieć, co się dzisiaj wydarzyło”. Niedzielny start był pierwszą tego typu misją Vulcan Centaur. W wyniku awarii utracono 40 satelitów sieci Amazon Leo, która ma konkurować ze Starlinkiem. [Źródło: Rzeczpospolita, WP Wiadomości, Onet Wiadomości, Polsat News]"
+          "Jak dodała, nie ma jeszcze jeszcze „żadnych konkretnych danych, które pozwoliłyby zrozumieć, co się dzisiaj wydarzyło”. Niedzielny start był pierwszą tego typu misją Vulcan Centaur. W wyniku awarii utracono 40 satelitów sieci Amazon Leo, która ma konkurować ze Starlinkiem. [Źródło: Rzeczpospolita, WP Wiadomości, Onet Wiadomości, Polsat News]",
+          "Przyczyna problemu nie została jeszcze ustalona. [Źródło: WP Wiadomości, Biznes Interia, TVN24, Kresy.pl, GazetaPrawna.pl (DGP)]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Przyczyna problemu nie została jeszcze ustalona. [Źródło: WP Wiadomości]",
           "Usterki spowodowały, że Siły Kosmiczne USA postanowiły wstrzymać starty Vulcana do czasu, aż ULA zajmie się tym problemem. [Źródło: Onet Wiadomości]",
           "Przykro to słyszeć – uznał Elon Musk. [Źródło: Polsat News]",
           "Mało tego, zostały one zniszczone. Oznacza to, że rozrost konkurencji dla Starlinka przejdzie przynajmniej lekką rewizję planów: był to pierwszy z 38 zamówionych przez Amazona lotów tej rakiety. [Źródło: Antyweb.pl]",
-          "Asynchronics chce umożliwić konstruktorom satelitów testowanie sprzętu, zanim dotrze do ich laboratoriów. Warszawska firma pozyskała 3,1 mln dolarów na rozwój cyfrowych bliźniaków. Planuje co najmniej 50 modeli w dwa lata, narzędzia wykorzystujące AI i biuro w Tuluzie – zdradza XYZ Adam Chikha, szef startupu. [Źródło: XYZ.pl]"
+          "Asynchronics chce umożliwić konstruktorom satelitów testowanie sprzętu, zanim dotrze do ich laboratoriów. Warszawska firma pozyskała 3,1 mln dolarów na rozwój cyfrowych bliźniaków. Planuje co najmniej 50 modeli w dwa lata, narzędzia wykorzystujące AI i biuro w Tuluzie – zdradza XYZ Adam Chikha, szef startupu. [Źródło: XYZ.pl]",
+          "Koncern dotąd nie odniósł się do problemów w komunikacie. [Źródło: Biznes Interia]",
+          "Jak podały media, chodziło o ograniczenie obciążenia sieci przez jednoczesne logowanie się dziesiątek tysięcy użytkowników. Według jednego ze źródeł portalu system nie został całkowicie wyłączony, lecz działał z przerwami. [Źródło: Kresy.pl]",
+          "Wewnętrzna sieć łączności Agencji Bezpieczeństwa Narodowego (NSA) uległa awarii – podała stacja CNN. Jak dotąd nie odnotowano oznak, że jest to efekt cyberataku. [Źródło: Dziennik.pl]"
         ]
       }
     ],
@@ -17001,7 +17116,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Awaria rakiety Vulcan. Konkurent SpaceX stracił 40 satelitów",
         "url": "https://wiadomosci.wp.pl/awaria-rakiety-vulcan-konkurent-spacex-stracil-40-satelitow-7351414876502016a",
-        "focus": "Wyróżnia własne wątki i pojęcia: SpaceX, Przyczyna, ustalona.",
+        "focus": "Wyróżnia własne wątki i pojęcia: SpaceX.",
         "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
       },
       {
@@ -17025,7 +17140,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Awaria rakiety niedługo po starcie. Amazon stracił dziesiątki satelitów",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-16/awaria-rakiety-niedlugo-po-starcie-amazon-stracil-dziesiatki-satelitow/",
-        "focus": "Wyróżnia własne wątki i pojęcia: niedługo, dziesiątki, Przykro.",
+        "focus": "Wyróżnia własne wątki i pojęcia: niedługo, Przykro, słyszeć.",
         "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
       },
       {
@@ -17059,16 +17174,61 @@
         "url": "https://xyz.pl/satelita-jeszcze-w-planach-testy-juz-trwaja-miliony-na-kosmiczny-pomysl/",
         "focus": "Eksponuje dane (3,1 mln) oraz wątki: planach, testy.",
         "omits": "Pomija wyliczenia (38 za) przytaczane przez Antyweb.pl."
+      },
+      {
+        "outlet": "Biznes Interia",
+        "angle": "Perspektywa rynkowa",
+        "summary": "USA. Kolejna awaria. Tym razem problemy ma Apple",
+        "url": "https://biznes.interia.pl/gospodarka/news-usa-kolejna-awaria-tym-razem-problemy-ma-apple,nId,23575115",
+        "focus": "Wyróżnia własne wątki i pojęcia: Kolejna, razem, Koncern.",
+        "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "To nie koniec awarii. Problemy z usługami Apple",
+        "url": "https://tvn24.pl/biznes/tech/to-nie-koniec-awarii-problemy-z-uslugami-apple-st9344121?source=rss",
+        "focus": "Wyróżnia własne wątki i pojęcia: koniec.",
+        "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
+      },
+      {
+        "outlet": "Kresy.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Awaria ściśle tajnej sieci komunikacyjnej amerykańskiego wywiadu. NSA ma problemy",
+        "url": "https://kresy.pl/wydarzenia/awaria-scisle-tajnej-sieci-komunikacyjnej-amerykanskiego-wywiadu-nsa-ma-problemy/",
+        "focus": "Wyróżnia własne wątki i pojęcia: ściśle, tajnej, amerykańskiego.",
+        "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
+      },
+      {
+        "outlet": "GazetaPrawna.pl (DGP)",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Problemy z usługami Apple. Nie działa App Store, są też zgłoszenia dotyczące iCloud",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/artykuly/11346686,awaria-apple-app-store-icloud-apple-pay.html",
+        "focus": "Wyróżnia własne wątki i pojęcia: Store, zgłoszenia, dotyczące.",
+        "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Tajna sieć NSA nie działa. To piąta głośna awaria w USA w niecały tydzień",
+        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11346638,tajna-siec-nsa-nie-dziala-to-piata-glosna-awaria-w-usa-w-niecaly-tydz.html",
+        "focus": "Wyróżnia własne wątki i pojęcia: Tajna, sieć, piąta.",
+        "omits": "Pomija wyliczenia (3,1 mln, 38 za) przytaczane przez XYZ.pl, Antyweb.pl."
       }
     ],
     "sources": [
       "Antyweb.pl",
       "Bankier.pl",
       "Benchmark.pl",
+      "Biznes Interia",
+      "Dziennik.pl",
+      "GazetaPrawna.pl (DGP)",
+      "Kresy.pl",
       "Onet Wiadomości",
       "Polsat News",
       "Rzeczpospolita",
       "Space24",
+      "TVN24",
       "WP Wiadomości",
       "XYZ.pl"
     ],
@@ -17108,164 +17268,6 @@
       {
         "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
         "a": "Oznacza to, że rozrost konkurencji dla Starlinka przejdzie przynajmniej lekką rewizję planów: był to pierwszy z 38 zamówionych przez Amazona lotów tej rakiety."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Zdarzenie i utrudnienia."
-      }
-    ]
-  },
-  {
-    "id": 249744216,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/to-nie-koniec-awarii-problemy-z-uslugami-apple",
-    "seo_title": "To nie koniec awarii. Problemy z usługami Apple",
-    "summary_lead": "Przyczyna problemu nie została jeszcze ustalona. W związku z problemami technicznymi kierownictwo agencji zdecydowało o rozłożeniu w czasie godzin przybywania pracowników do siedziby NSA w Fort Meade w stanie Maryland.",
-    "meta_description": "Przyczyna problemu nie została jeszcze ustalona. W związku z problemami technicznymi kierownictwo agencji zdecydowało o rozłożeniu w czasie godzin…",
-    "keywords": "Swiat, awarii, Problemy, usługami, Apple",
-    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/af/afjj9mrb5s5uknkx92u8ipndxpa5k6ju.jpg",
-    "published_iso": "2026-11-16T01:11:42+01:00",
-    "updated_iso": "2026-11-18T01:00:33+01:00",
-    "display_date": "16.11.2026, 01:11",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "7 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Swiat"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "TVN24"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (7 redakcji)",
-        "paragraphs": [
-          "Przyczyna problemu nie została jeszcze ustalona. W związku z problemami technicznymi kierownictwo agencji zdecydowało o rozłożeniu w czasie godzin przybywania pracowników do siedziby NSA w Fort Meade w stanie Maryland. Szereg usług Apple, w tym sklep AppStore i iCloud, zmagają się z awariami, a ich przyczyny nie są znane. [Źródło: TVN24, Kresy.pl, Biznes Interia, Polsat News, GazetaPrawna.pl (DGP)]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Jak podały media, chodziło o ograniczenie obciążenia sieci przez jednoczesne logowanie się dziesiątek tysięcy użytkowników. Według jednego ze źródeł portalu system nie został całkowicie wyłączony, lecz działał z przerwami. [Źródło: Kresy.pl]",
-          "Koncern dotąd nie odniósł się do problemów w komunikacie. [Źródło: Biznes Interia]",
-          "To kolejne problemy z systemami informatycznymi w ostatnim czasie w USA. [Źródło: Polsat News]",
-          "Użytkownicy urządzeń z nadgryzionym jabłkiem oraz pracownicy giganta z Cupertino mierzą się z jedną z najpoważniejszych awarii infrastruktury w ostatnich latach. [Źródło: Antyweb.pl]",
-          "Wewnętrzna sieć łączności Agencji Bezpieczeństwa Narodowego (NSA) uległa awarii – podała stacja CNN. Jak dotąd nie odnotowano oznak, że jest to efekt cyberataku. [Źródło: Dziennik.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "TVN24",
-        "angle": "Relacja wiodąca",
-        "summary": "To nie koniec awarii. Problemy z usługami Apple",
-        "url": "https://tvn24.pl/biznes/tech/to-nie-koniec-awarii-problemy-z-uslugami-apple-st9344121?source=rss",
-        "focus": "Wyróżnia własne wątki i pojęcia: koniec.",
-        "omits": "Pomija kontekst (Awaria, komunikacyjnej, użytkowników) rozwijany w Kresy.pl, Biznes Interia."
-      },
-      {
-        "outlet": "Kresy.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Awaria ściśle tajnej sieci komunikacyjnej amerykańskiego wywiadu. NSA ma problemy",
-        "url": "https://kresy.pl/wydarzenia/awaria-scisle-tajnej-sieci-komunikacyjnej-amerykanskiego-wywiadu-nsa-ma-problemy/",
-        "focus": "Wyróżnia własne wątki i pojęcia: ściśle, tajnej, sieci.",
-        "omits": "Pomija kontekst (awarii, usługami, ostatnim) rozwijany w TVN24, Polsat News."
-      },
-      {
-        "outlet": "Biznes Interia",
-        "angle": "Perspektywa rynkowa",
-        "summary": "USA. Kolejna awaria. Tym razem problemy ma Apple",
-        "url": "https://biznes.interia.pl/gospodarka/news-usa-kolejna-awaria-tym-razem-problemy-ma-apple,nId,23575115",
-        "focus": "Wyróżnia własne wątki i pojęcia: Kolejna, razem, Koncern.",
-        "omits": "Pomija kontekst (awarii, użytkowników, usługami) rozwijany w TVN24, Polsat News."
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Apple informuje o awarii. Problemy z szeregiem aplikacji",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/apple-informuje-o-awarii-problemy-z-szeregiem-aplikacji/",
-        "focus": "Wyróżnia własne wątki i pojęcia: szeregiem, aplikacji, kolejne.",
-        "omits": "Pomija kontekst (Awaria, komunikacyjnej, użytkowników) rozwijany w Kresy.pl, Biznes Interia."
-      },
-      {
-        "outlet": "GazetaPrawna.pl (DGP)",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Problemy z usługami Apple. Nie działa App Store, są też zgłoszenia dotyczące iCloud",
-        "url": "https://www.gazetaprawna.pl/wiadomosci/artykuly/11346686,awaria-apple-app-store-icloud-apple-pay.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Store, zgłoszenia, dotyczące.",
-        "omits": "Pomija kontekst (awarii, Awaria, komunikacyjnej) rozwijany w TVN24, Polsat News."
-      },
-      {
-        "outlet": "Antyweb.pl",
-        "angle": "Kontekst technologiczny",
-        "summary": "Apple ma ogromne problemy. Nie działają kluczowe usługi",
-        "url": "https://antyweb.pl/apple-ma-ogromne-problemy-nie-dzialaja-kluczowe-uslugi",
-        "focus": "Wyróżnia własne wątki i pojęcia: ogromne, działają, kluczowe.",
-        "omits": "Pomija kontekst (agencji, technicznymi, kierownictwo) rozwijany w TVN24, Kresy.pl."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Tajna sieć NSA nie działa. To piąta głośna awaria w USA w niecały tydzień",
-        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11346638,tajna-siec-nsa-nie-dziala-to-piata-glosna-awaria-w-usa-w-niecaly-tydz.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Tajna, sieć, piąta.",
-        "omits": "Pomija kontekst (pracowników, Problemy, Apple) rozwijany w TVN24, Kresy.pl."
-      }
-    ],
-    "sources": [
-      "Antyweb.pl",
-      "Biznes Interia",
-      "Dziennik.pl",
-      "GazetaPrawna.pl (DGP)",
-      "Kresy.pl",
-      "Polsat News",
-      "TVN24"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Polsat News (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/apple-informuje-o-awarii-problemy-z-szeregiem-aplikacji/"
-      },
-      {
-        "claim_text": "Dopisano źródło: GazetaPrawna.pl (DGP) (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.gazetaprawna.pl/wiadomosci/artykuly/11346686,awaria-apple-app-store-icloud-apple-pay.html"
-      },
-      {
-        "claim_text": "Dopisano źródło: Antyweb.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://antyweb.pl/apple-ma-ogromne-problemy-nie-dzialaja-kluczowe-uslugi"
-      },
-      {
-        "claim_text": "Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11346638,tajna-siec-nsa-nie-dziala-to-piata-glosna-awaria-w-usa-w-niecaly-tydz.html"
-      }
-    ],
-    "impact": {
-      "audience": "Opinia publiczna i dyplomacja",
-      "scope": "Świat i bezpieczeństwo",
-      "status": "Zdarzenie i utrudnienia"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: To nie koniec awarii. Problemy z usługami Apple?",
-        "a": "Szereg usług Apple, w tym sklep AppStore i iCloud, zmagają się z awariami, a ich przyczyny nie są znane."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Jak podały media, chodziło o ograniczenie obciążenia sieci przez jednoczesne logowanie się dziesiątek tysięcy użytkowników."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
@@ -22843,7 +22845,7 @@
       "TVP3 Łódź"
     ],
     "corrections": [],
-    "updated_iso": "2026-11-18T02:23:18+01:00",
+    "updated_iso": "2026-11-18T03:54:57+01:00",
     "zero_trust_reason": "",
     "impact": {
       "audience": "Mieszkańcy woj. łódzkiego",
