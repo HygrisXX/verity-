@@ -3,6 +3,21 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/tani-prad-na-papierze-drozszy-rachunek-pozniej-gdzie-kryja-sie-koszty/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T01:05:09+01:00</news:publication_date>
+      <news:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/nickype-electricity-7378856_1280.jpg</image:loc>
+      <image:title>Tani prąd na papierze, droższy rachunek później. Gdzie kryją się koszty?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/lewandowski-az-wstal-z-lawki-obok-tego-nie-mozna-bylo-przejsc-obojetnie/</loc>
     <news:news>
       <news:publication>
@@ -25,11 +40,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-17T23:49:40+01:00</news:publication_date>
-      <news:title>Nie żyje Henryk Jagielski, działacz opozycji antykomunistycznej i stoczniowiec z Gdańska</news:title>
+      <news:title>Nie żyje Henryk Jagielski. Działacz opozycji antykomunistycznej zmarł w wieku 94 lat</news:title>
     </news:news>
     <image:image>
       <image:loc>https://cdn.wiadomosci.onet.pl/1/HjKk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9lYTgyYzk2NDM0MDY0YzZhNThhMWI1ZTQ0OTUwMDFlNC5wbmeSlQMCzQIBzRNGzQrakwXNCWDNBkDeAAKhMAehMQQ</image:loc>
-      <image:title>Nie żyje Henryk Jagielski, działacz opozycji antykomunistycznej i stoczniowiec z Gdańska</image:title>
+      <image:title>Nie żyje Henryk Jagielski. Działacz opozycji antykomunistycznej zmarł w wieku 94 lat</image:title>
     </image:image>
   </url>
   <url>
@@ -738,21 +753,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/smiertelnie-potracil-siostre-sa-zarzuty-i-areszt/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T16:58:30+01:00</news:publication_date>
-      <news:title>Śmiertelnie potrącił siostrę. Są zarzuty i areszt</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-mezczyzna-zostal-aresztowany-na-trzy-miesiace-ph9343847/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Śmiertelnie potrącił siostrę. Są zarzuty i areszt</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczny-wypadek-w-lubuskiem-nie-zyje-mezczyzna/</loc>
     <news:news>
       <news:publication>
@@ -1215,21 +1215,6 @@
     <image:image>
       <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/17/545464.webp</image:loc>
       <image:title>Liczba wykroczeń w sklepach drastycznie spada. Ekspert zwraca uwagę na szczegół (23,2 tys.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/uwaga-kierowcy-zderzenie-ciezarowki-i-busa-na-dk-73/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T11:53:24+01:00</news:publication_date>
-      <news:title>Uwaga kierowcy! Zderzenie ciężarówki i busa na DK 73</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://rzeszow-news.pl/wp-content/uploads/2026/11/GDDKiA-wypadek.png</image:loc>
-      <image:title>Uwaga kierowcy! Zderzenie ciężarówki i busa na DK 73</image:title>
     </image:image>
   </url>
   <url>
@@ -1905,96 +1890,6 @@
     <image:image>
       <image:loc>https://bi.im-g.pl/im/2c/99/1f/z33133356IHG,WTA-Finals-Indian-Wells--Elina-Switolina---Mirra-A.jpg</image:loc>
       <image:title>Finał WTA Finals rozstrzygnięty! Tytuł bez straty seta</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/piec-goli-w-hicie-ligi-narodow-gigant-traci-awans-wielka-zmiana-na-czele/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T01:11:47+01:00</news:publication_date>
-      <news:title>Pięć goli w hicie Ligi Narodów. Gigant traci awans, wielka zmiana na czele</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/0f/99/1f/z33133327IHG,Belgia---Wlochy.jpg</image:loc>
-      <image:title>Pięć goli w hicie Ligi Narodów. Gigant traci awans, wielka zmiana na czele</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/demolka-na-bystrzanskiej-bmw-stracilo-kolo-do-szpitala-odwieziono-trzy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T01:11:46+01:00</news:publication_date>
-      <news:title>Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62837/179478607587936900__.jpg</image:loc>
-      <image:title>Demolka na Bystrzańskiej, BMW straciło koło. Do szpitala odwieziono trzy osoby</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/piaty-odblaskowy-spacer-w-zemborzycach-mieszkancy-znow-wyszli-na-drogi/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T01:11:45+01:00</news:publication_date>
-      <news:title>Piąty Odblaskowy Spacer w Zemborzycach. Mieszkańcy znów wyszli na drogi, by przypomnieć o bezpieczeństwie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145r9.jpg</image:loc>
-      <image:title>Piąty Odblaskowy Spacer w Zemborzycach. Mieszkańcy znów wyszli na drogi, by przypomnieć o bezpieczeństwie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/drony-uderzyly-w-trzy-statki-u-wybrzezy-panstwa-nato-rumunia-poderwala/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T01:11:45+01:00</news:publication_date>
-      <news:title>Drony uderzyły w trzy statki u wybrzeży państwa NATO. Rumunia poderwała myśliwce</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/08/Pilne.webp</image:loc>
-      <image:title>Drony uderzyły w trzy statki u wybrzeży państwa NATO. Rumunia poderwała myśliwce</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/co-dalej-z-koncesja-dla-tv-republika-i-wpolsce24-nsa-podal-przewidywany/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T01:11:44+01:00</news:publication_date>
-      <news:title>Co dalej z koncesją dla TV Republika i wPolsce24? NSA podał przewidywany termin rozpatrzenia kasacji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljL/mluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk/9CMDAwMDAwMDAwMDAwNzcwMjA0Ny9maWxlcy90di1/yZXB1Ymxpa2EtMzkzMTgxMjYuanBnIiwidyI6Mzg0MH0</image:loc>
-      <image:title>Co dalej z koncesją dla TV Republika i wPolsce24? NSA podał przewidywany termin rozpatrzenia kasacji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/nieudana-misja-rakiety-vulcan-centaur-amazon-stracil-40-satelitow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T01:11:42+01:00</news:publication_date>
-      <news:title>Nieudana misja rakiety Vulcan Centaur. Amazon stracił 40 satelitów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/82d31c2f2214967b81a79fdeb5752142/?t=crop:4000:1749:nowe:0:726,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Nieudana misja rakiety Vulcan Centaur. Amazon stracił 40 satelitów</image:title>
     </image:image>
   </url>
 </urlset>
