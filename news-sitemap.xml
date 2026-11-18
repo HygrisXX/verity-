@@ -3,6 +3,36 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T23:47:40+01:00</news:publication_date>
+      <news:title>Pierwsza taka pracownia w tej części Polski. Powstała w Olsztynie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tko.pl/wp-content/uploads/2026/11/9ec4695102d15415.jpg</image:loc>
+      <image:title>Pierwsza taka pracownia w tej części Polski. Powstała w Olsztynie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/kara-za-wystajacy-szyld-stowarzyszenie-kibicow-pogoni-sklada-odwolanie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T23:47:40+01:00</news:publication_date>
+      <news:title>Kara za wystający szyld. Stowarzyszenie Kibiców Pogoni składa odwołanie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-18_1795009860_1064557.jpg</image:loc>
+      <image:title>Kara za wystający szyld. Stowarzyszenie Kibiców Pogoni składa odwołanie</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w/</loc>
     <news:news>
       <news:publication>
@@ -285,36 +315,6 @@
     <image:image>
       <image:loc>https://bi.im-g.pl/im/7b/9a/1f/z33139067IHG,Flaga-Rosji.jpg</image:loc>
       <image:title>UEFA zdecydowała ws. Rosji i Euro 2028. Oto oficjalne stanowisko</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/premier-tusk-wezmie-udzial-w-czwartek-w-spotkaniu-koalicji-chetnych-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:25+01:00</news:publication_date>
-      <news:title>Premier Tusk weźmie udział w czwartek w spotkaniu koalicji chętnych w Berlinie (50 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/7b91d51bfd6ab8754c2fe6dbd71b5deb_xl-150x150.jpg</image:loc>
-      <image:title>Premier Tusk weźmie udział w czwartek w spotkaniu koalicji chętnych w Berlinie (50 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/blyskawiczna-konferencja-nbp-na-trybunale-ciazy-obowiazek-dostarczenia/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:25+01:00</news:publication_date>
-      <news:title>Błyskawiczna konferencja NBP. „Na Trybunale ciąży obowiązek dostarczenia jednoznacznych dokumentów”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/1/6/ef09a7d0ab0e13-948-568-517-60-2400-1440.jpg</image:loc>
-      <image:title>Błyskawiczna konferencja NBP. „Na Trybunale ciąży obowiązek dostarczenia jednoznacznych dokumentów”</image:title>
     </image:image>
   </url>
   <url>
