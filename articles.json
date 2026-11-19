@@ -1,5 +1,271 @@
 [
   {
+    "id": 1961054971,
+    "path": "/Polska/Regiony/Warminsko-Mazurskie",
+    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos",
+    "seo_title": "Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś pójdzie nie tak",
+    "summary_lead": "Do początku października lotnisko w Szymanach obsłużyło ponad 100 tys. pasażerów, więcej niż w całym 2025 roku. Wiele osób lata też z Gdańska i Warszawy. Pierwsza podróż samolotem może stresować.",
+    "meta_description": "Do początku października lotnisko w Szymanach obsłużyło ponad 100 tys. pasażerów, więcej niż w całym 2025 roku. Wiele osób lata też z Gdańska i Warszawy.",
+    "keywords": "Warminsko-Mazurskie, Pierwszy, samolotem, przygotować, zrobić, pójdzie",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-19T05:00:41+01:00",
+    "updated_iso": "2026-11-19T05:00:41+01:00",
+    "display_date": "19.11.2026, 05:00",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Warminsko-Mazurskie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "TKO Olsztyn"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (TKO Olsztyn)",
+        "paragraphs": [
+          "Do początku października lotnisko w Szymanach obsłużyło ponad 100 tys. pasażerów, więcej niż w całym 2025 roku. Wiele osób lata też z Gdańska i Warszawy. Pierwsza podróż samolotem może stresować.",
+          "Podpowiadamy, jak przygotować się do krótkiego i długiego lotu oraz co zrobić, gdy lot się opóźni albo zaginie bagaż. Jakie dokumenty i bagaż przygotować przed pierwszym lotem? Na loty w obrębie Unii Europejskiej i strefy Schengen wystarczy ważny dowód osobisty.",
+          "Inaczej jest w Wielkiej Brytanii, która leży w Europie, ale poza UE i strefą Schengen. Tam potrzebny jest paszport i elektroniczne zezwolenie na podróż (ETA), o które trzeba wystąpić przed wylotem. W przypadku wylotu poza Europę zwykle potrzebny jest paszport, a do niektórych krajów także wiza.",
+          "Imię i nazwisko w rezerwacji muszą zgadzać się z dokumentem. Literówkę lepiej zgłosić przewoźnikowi przed wylotem. [Źródło: TKO Olsztyn]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "TKO Olsztyn",
+        "angle": "Relacja wiodąca",
+        "summary": "Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś pójdzie nie tak",
+        "url": "https://tko.pl/411744,2026,11,18,pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos-pojdzie-nie-tak"
+      }
+    ],
+    "sources": [
+      "TKO Olsztyn"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Kierowcy i pasażerowie",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś?",
+        "a": "Podpowiadamy, jak przygotować się do krótkiego i długiego lotu oraz co zrobić, gdy lot się opóźni albo zaginie bagaż."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Jakie dokumenty i bagaż przygotować przed pierwszym lotem?"
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 1826370193,
+    "path": "/Polska",
+    "seo_url": "/Polska/krytyczna-podatnosc-w-srodowisku-java",
+    "seo_title": "Krytyczna podatność w środowisku Java",
+    "summary_lead": "Krytyczna luka oznaczona CVE-2026-114938 i znana już jako java4shell oceniana jest na 9.2 w skali CVSS 4. Jak tłumaczy CERT Polska, umożliwia zdalne wykonanie kodu „w kontekście aplikacji działającej na podatnej wersji JVM poprzez…",
+    "meta_description": "Krytyczna luka oznaczona CVE-2026-114938 i znana już jako java4shell oceniana jest na 9.2 w skali CVSS 4.",
+    "keywords": "Polska, Krytyczna, podatność, środowisku, Java",
+    "thumbnail_url": "https://cdn.defence24.pl/2026/11/18/320x240px/NysCv7KFRCDvxfXs4CtA8myRgEfP8yEKX6QcdEh1.25qg.png",
+    "published_iso": "2026-11-19T05:00:37+01:00",
+    "updated_iso": "2026-11-19T05:00:37+01:00",
+    "display_date": "19.11.2026, 05:00",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 88,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "CyberDefence24"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Krytyczna luka oznaczona CVE-2026-114938 i znana już jako java4shell oceniana jest na 9.2 w skali CVSS 4. Jak tłumaczy CERT Polska, umożliwia zdalne wykonanie kodu „w kontekście aplikacji działającej na podatnej wersji JVM poprzez błędy w obsłudze dekodowania base64”. Specjaliści podzielili się wynikami analizy podatności. [Źródło: CyberDefence24, Sekurak]",
+          "Znajdziecie je na moje.cert.pl. [Źródło: CyberDefence24]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Firma Cisco opublikowała ostrzeżenie o wykryciu krytycznej podatności w Secure Email Gateway (SEG). Pozwala zdalnemu, nieuwierzytelnionemu atakującemu na zapisanie dowolnego pliku w systemie operacyjnym, co może skutkować wykonaniem polecenia z uprawnieniami roota. Luka została wykryta przez zespół badaczy z Cisco w ramach wewnętrznych testów bezpieczeństwa. [Źródło: Sekurak]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "CyberDefence24",
+        "angle": "Analiza sektorowa",
+        "summary": "Krytyczna podatność w środowisku Java",
+        "url": "https://cyberdefence24.pl/cyberbezpieczenstwo/krytyczna-podatnosc-w-srodowisku-java",
+        "focus": "Wyróżnia własne wątki i pojęcia: środowisku, Java, Znajdziecie.",
+        "omits": "Pomija wyliczenia (16.5 za) przytaczane przez Sekurak."
+      },
+      {
+        "outlet": "Sekurak",
+        "angle": "Kontekst technologiczny",
+        "summary": "Krytyczna podatność w Cisco Secure Email Gateway (CVE-2026-76519). Atakujący może wykonać dowolny kod z uprawnieniami roota",
+        "url": "https://sekurak.pl/krytyczna-podatnosc-w-cisco-secure-email-gateway-cve-2026-76519-atakujacy-moze-wykonac-dowolny-kod-z-uprawnieniami-roota/",
+        "focus": "Eksponuje dane (16.5 za) oraz wątki: Cisco, Secure.",
+        "omits": "Pomija kontekst (Znajdziecie, środowisku) rozwijany w CyberDefence24."
+      }
+    ],
+    "sources": [
+      "CyberDefence24",
+      "Sekurak"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Obywatele i instytucje w Polsce",
+      "scope": "Wydarzenia krajowe",
+      "status": "Potwierdzone (2 źródła)"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Krytyczna podatność w środowisku Java?",
+        "a": "Jak tłumaczy CERT Polska, umożliwia zdalne wykonanie kodu „w kontekście aplikacji działającej na podatnej wersji JVM poprzez błędy w obsłudze dekodowania base64”."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Specjaliści podzielili się wynikami analizy podatności."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (2 źródła)."
+      }
+    ]
+  },
+  {
+    "id": 1637803109,
+    "path": "/Polska/Regiony/Lubelskie",
+    "seo_url": "/Polska/Regiony/Lubelskie/dwie-mieszkanki-lublina-z-zarzutami-sutenerstwa-grozi-im-5-lat-wiezienia",
+    "seo_title": "Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia",
+    "summary_lead": "Dwie kobiety z Lublina odpowiedzą za czerpanie korzyści z nierządu innych kobiet. Obie usłyszały już prokuratorskie zarzuty.",
+    "meta_description": "Dwie kobiety z Lublina odpowiedzą za czerpanie korzyści z nierządu innych kobiet. Obie usłyszały już prokuratorskie zarzuty.",
+    "keywords": "Lubelskie, Dwie, mieszkanki, Lublina, zarzutami, sutenerstwa, Grozi",
+    "thumbnail_url": "https://radio.lublin.pl/wp-content/uploads/2026/11/EAttachments11150713fe877e271fdcf6244aec5e2cc0cb5a15_xl.jpg?size=md",
+    "published_iso": "2026-11-19T05:00:36+01:00",
+    "updated_iso": "2026-11-19T05:00:36+01:00",
+    "display_date": "19.11.2026, 05:00",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 92,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Lubelskie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Radio Lublin"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Dwie kobiety z Lublina odpowiedzą za czerpanie korzyści z nierządu innych kobiet. Obie usłyszały już prokuratorskie zarzuty. [Źródło: Radio Lublin, TVP3 Lublin]",
+          "— Zatrzymanie tych kobiet to efekt naszych działań operacyjnych – mówi komisarz Kamil Karbowniczek. [Źródło: Radio Lublin]",
+          "— Z naszych ustaleń wynika, że kobiety udostępniały mieszkania na terenie Lublina oraz zamieszczały w Internecie ogłoszenia o świadczeniu odpłatnych usług seksualnych. [Źródło: Radio Lublin, TVP3 Lublin]",
+          "W ten sposób ułatwiały kobietom świadczenie usług seksualnych, z czego czerpały korzyści majątkowe. W trakcie przeszukania zabezpieczyliśmy telefony komórkowe, laptopy oraz gotówkę. Zgromadzony w tej sprawie materiał dowodowy potwierdził, ze kobiety traktowały sutenerstwo jako stałe źródło dochodu. [Źródło: Radio Lublin, TVP3 Lublin]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Grozi im do 5 lat pozbawienia wolności. [Źródło: TVP3 Lublin]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Radio Lublin",
+        "angle": "Relacja wiodąca",
+        "summary": "Lublin: dwie kobiety zatrzymane za sutenerstwo",
+        "url": "https://radio.lublin.pl/2026/11/lublin-dwie-kobiety-zatrzymane-za-sutenerstwo/",
+        "focus": "Eksponuje dane (33 lat) oraz wątki: Lublin, lata.",
+        "omits": "Pomija kontekst (doprowadzone, podejrzane, zarzutami) rozwijany w TVP3 Lublin."
+      },
+      {
+        "outlet": "TVP3 Lublin",
+        "angle": "Doniesienie regionalne",
+        "summary": "Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia",
+        "url": "https://lublin.tvp.pl/96550726/dwie-mieszkanki-lublina-z-zarzutami-sutenerstwa-grozi-im-5-lat-wiezienia",
+        "focus": "Podkreśla konkretne liczby (5 lat) w ujęciu: doniesienie regionalne.",
+        "omits": "Pomija wyliczenia (33 lat) przytaczane przez Radio Lublin."
+      }
+    ],
+    "sources": [
+      "Radio Lublin",
+      "TVP3 Lublin"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy Lubelszczyzny",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Postępowanie / Śledztwo"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia?",
+        "a": "— Zatrzymanie tych kobiet to efekt naszych działań operacyjnych – mówi komisarz Kamil Karbowniczek."
+      },
+      {
+        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "a": "Grozi im do 5 lat pozbawienia wolności."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Lubelszczyzny (obszar: Sprawy lokalne i samorząd). Status: Postępowanie / Śledztwo."
+      }
+    ]
+  },
+  {
     "id": 41773654,
     "path": "/Polska/Regiony/Warminsko-Mazurskie",
     "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie",
@@ -84,7 +350,7 @@
     "path": "/Swiat",
     "seo_url": "/Swiat/iskrzy-miedzy-japonia-a-rosja-media-premierka-takaichi-wezwala-putina",
     "seo_title": "Iskrzy między Japonią a Rosją. Media: premierka Takaichi wezwała Putina do uwolnienia dziennikarza",
-    "summary_lead": "Premierka Japonii Sanae Takaichi miała zażądać od Władimira Putina natychmiastowego uwolnienia japońskiego dziennikarza zatrzymanego w Rosji. Według agencji Kyodo rozmowa odbyła się w środę w Shenzhen, podczas szczytu APEC.",
+    "summary_lead": "Premierka Japonii Sanae Takaichi miała zażądać od Władimira Putina natychmiastowego uwolnienia japońskiego dziennikarza zatrzymanego w Rosji.",
     "meta_description": "Premierka Japonii Sanae Takaichi miała zażądać od Władimira Putina natychmiastowego uwolnienia japońskiego dziennikarza zatrzymanego w Rosji.",
     "keywords": "Swiat, Iskrzy, Japonią, Rosją, Media, premierka, Takaichi",
     "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8bbacfec-8535-46da-b97f-d543a9ebbf45",
@@ -92,13 +358,13 @@
     "updated_iso": "2026-11-19T03:54:34+01:00",
     "display_date": "19.11.2026, 03:54",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 98,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -110,24 +376,26 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Premierka Japonii Sanae Takaichi miała zażądać od Władimira Putina natychmiastowego uwolnienia japońskiego dziennikarza zatrzymanego w Rosji. Według agencji Kyodo rozmowa odbyła się w środę w Shenzhen, podczas szczytu APEC. [Źródło: WP Wiadomości, Onet Wiadomości]",
-          "Według informacji agencji Kyodo Sanae Takaichi rozmawiała z Władimirem Putinem w środę, podczas kolacji zorganizowanej w związku z rozpoczęciem szczytu Wspólnoty Gospodarczej Azji i Pacyfiku. Spotkanie przywódców miało odbyć się w kuluarach wydarzenia w chińskim Shenzhen. Rozmowa miała potrwać około pół godziny. [Źródło: WP Wiadomości, Onet Wiadomości]",
-          "Jak podało anonimowe źródło rządowe cytowane przez Kyodo, premierka Japonii domagała się natychmiastowego uwolnienia korespondenta japońskiego dziennika \"Hokkaido Shimbun\". Dziennikarz został zatrzymany w październiku w Rosji i usłyszał zarzut szpiegostwa. [Źródło: WP Wiadomości, Onet Wiadomości]"
+          "Premierka Japonii Sanae Takaichi miała zażądać od Władimira Putina natychmiastowego uwolnienia japońskiego dziennikarza zatrzymanego w Rosji. Według informacji agencji Kyodo Sanae Takaichi rozmawiała z Władimirem Putinem w środę, podczas kolacji zorganizowanej w związku z rozpoczęciem szczytu Wspólnoty Gospodarczej Azji i Pacyfiku. [Źródło: WP Wiadomości, Onet Wiadomości, TVP.info, Interia Wydarzenia]",
+          "Spotkanie przywódców miało odbyć się w kuluarach wydarzenia w chińskim Shenzhen. Rozmowa miała potrwać około pół godziny. Jak podało anonimowe źródło rządowe cytowane przez Kyodo, premierka Japonii domagała się natychmiastowego uwolnienia korespondenta japońskiego dziennika \"Hokkaido Shimbun\". [Źródło: WP Wiadomości, Onet Wiadomości, Interia Wydarzenia]",
+          "Dziennikarz został zatrzymany w październiku w Rosji i usłyszał zarzut szpiegostwa. Przedstawiciel Pentagonu namieszał w Brukseli Przeczytaj artykuł Kyodo zwraca uwagę, że według rosyjskiej agencji informacyjnej rzecznik prezydenta Rosji Dmitrij Pieskow stwierdził, że nie doszło do spotkania obu przywódców. [Źródło: WP Wiadomości, Onet Wiadomości, TVP.info]",
+          "Ostatnie miesiące to eskalacja Relacje Tokio z Moskwą pogorszyły się po rozpoczęciu przez Rosję inwazji na Ukrainę na pełną skalę w 2022 r. W ostatnich miesiącach doszło do eskalacji napięć, m.in. po wizycie Putina na jednej z wysp spornego archipelagu Kuryli. [Źródło: Onet Wiadomości, TVP.info]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "PRZECZYTAJ: Odizolowany kurort u podnóża góry. Przedstawiciel Pentagonu namieszał w Brukseli Przeczytaj artykuł Kyodo zwraca uwagę, że według rosyjskiej agencji informacyjnej rzecznik prezydenta Rosji Dmitrij Pieskow stwierdził, że nie doszło do spotkania obu przywódców.",
-          "Ostatnie miesiące to eskalacja Relacje Tokio z Moskwą pogorszyły się po rozpoczęciu przez Rosję inwazji na Ukrainę na pełną skalę w 2022 r. W ostatnich miesiącach doszło do eskalacji napięć, m.in. po wizycie Putina na jednej z wysp spornego archipelagu Kuryli. [Źródło: Onet Wiadomości]"
+          "PRZECZYTAJ: Odizolowany kurort u podnóża góry. [Źródło: Onet Wiadomości]",
+          "Protesty Tokio wywołało także odsłonięcie na początku września w Chabarowsku pomnika upamiętniającego zwycięstwo ZSRR w II wojnie światowej. W tym tygodniu Tokio poinformowało także o naruszeniu japońskiej przestrzeni powietrznej przez prawdopodobnie rosyjskie samoloty. [Źródło: TVP.info]",
+          "Kreml zaprzecza takim rozmowom. [Źródło: Interia Wydarzenia]"
         ]
       }
     ],
@@ -137,8 +405,8 @@
         "angle": "Relacja wiodąca",
         "summary": "Iskrzy między Japonią a Rosją. Media: premierka Takaichi wezwała Putina do uwolnienia dziennikarza",
         "url": "https://wiadomosci.wp.pl/iskrzy-miedzy-japonia-a-rosja-media-premierka-takaichi-wezwala-putina-do-uwolnienia-dziennikarza-7352538185603072a",
-        "focus": "Podkreśla konkretne liczby (2022) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (przetrzymywanego, przedstawić, Odizolowany) rozwijany w Onet Wiadomości."
+        "focus": "Wyróżnia własne wątki i pojęcia: Iskrzy, Japonią, Rosją.",
+        "omits": "Pomija wyliczenia (2022) przytaczane przez Onet Wiadomości, TVP.info."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -146,14 +414,41 @@
         "summary": "Kulisy kolacji u Xi. Premierka Japonii miała przedstawić Putinowi żądania",
         "url": "https://wiadomosci.onet.pl/swiat/pol-godziny-z-putinem-na-kolacji-u-xi-japonia-miala-wysunac-zadania/plyqv5d",
         "focus": "Podkreśla konkretne liczby (2022) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (zaprotestowała, doświadczeniem, pełnoskalowej) rozwijany w WP Wiadomości."
+        "omits": "Pomija kontekst (zaprzecza, Kreml, upamiętniającego) rozwijany w TVP.info, Interia Wydarzenia."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Niespodziewana konfrontacja przy kolacji. Kreml wszystkiemu zaprzecza",
+        "url": "https://www.tvp.info/96551845/chiny-podczas-szczytu-apec-premier-japonii-przedstawila-zadania-wladimirowi-putinowi",
+        "focus": "Podkreśla konkretne liczby (2022) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija kontekst (korespondenta, wydarzenia, kuluarach) rozwijany w WP Wiadomości, Onet Wiadomości."
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Premier Japonii miała postawić Putinowi żądania. Doniesienia z kuluarów",
+        "url": "https://wydarzenia.interia.pl/zagranica/news-premier-japonii-miala-postawic-putinowi-zadania-doniesienia,nId,23575774",
+        "focus": "Wyróżnia własne wątki i pojęcia: postawić, Doniesienia, kuluarów.",
+        "omits": "Pomija wyliczenia (2022) przytaczane przez Onet Wiadomości, TVP.info."
       }
     ],
     "sources": [
+      "Interia Wydarzenia",
       "Onet Wiadomości",
+      "TVP.info",
       "WP Wiadomości"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.tvp.info/96551845/chiny-podczas-szczytu-apec-premier-japonii-przedstawila-zadania-wladimirowi-putinowi"
+      },
+      {
+        "claim_text": "Dopisano źródło: Interia Wydarzenia (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wydarzenia.interia.pl/zagranica/news-premier-japonii-miala-postawic-putinowi-zadania-doniesienia,nId,23575774"
+      }
+    ],
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
@@ -171,85 +466,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Postępowanie / Śledztwo."
-      }
-    ]
-  },
-  {
-    "id": 1968908329,
-    "path": "/Polska/Regiony/Warminsko-Mazurskie",
-    "seo_url": "/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w",
-    "seo_title": "82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych",
-    "summary_lead": "Wyniki egzaminu ósmoklasisty w Olsztynie pokazują, że między poszczególnymi szkołami występują spore różnice.",
-    "meta_description": "Wyniki egzaminu ósmoklasisty w Olsztynie pokazują, że między poszczególnymi szkołami występują spore różnice.",
-    "keywords": "Warminsko-Mazurskie, matematyki, niemal, angielskiego, podstawówka, Olsztynie, sobie",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-19T02:18:14+01:00",
-    "updated_iso": "2026-11-19T02:18:14+01:00",
-    "display_date": "19.11.2026, 02:18",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Warminsko-Mazurskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "TKO Olsztyn"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (TKO Olsztyn)",
-        "paragraphs": [
-          "Wyniki egzaminu ósmoklasisty w Olsztynie pokazują, że między poszczególnymi szkołami występują spore różnice. Niektóre placówki osiągnęły rezultaty znacznie przewyższające średnią krajową, a jedna z nich zdecydowanie wyprzedziła konkurencję. Sprawdziliśmy, gdzie uczniowie najlepiej poradzili sobie z matematyką, językiem polskim i angielskim oraz jak na tle kraju i województwa wypadła stolica Warmii i Mazur.",
-          "Która szkoła podstawowa w Olsztynie jest najlepsza? Tegoroczne wyniki egzaminu ósmoklasisty pozwalają porównać osiągnięcia uczniów olsztyńskich szkół podstawowych. Dane opublikowane w Mapie Wyników Egzaminów pokazują, że część placówek uzyskała rezultaty znacznie wyższe od średniej miejskiej, wojewódzkiej i ogólnopolskiej.",
-          "Na szczególną uwagę zasługuje Szkoła Podstawowa nr 311 z oddziałami dwujęzycznymi i sportowymi. Jej uczniowie osiągnęli najwyższe średnie wyniki w Olsztynie ze wszystkich trzech przedmiotów egzaminacyjnych. W zestawieniu uwzględniono szkoły, w których do egzaminów z matematyki i języka polskiego przystąpiło co najmniej 25 uczniów.",
-          "Takie kryterium pozwala ograniczyć wpływ pojedynczych rezultatów na średnią całej placówki. Warunek ten spełniło ponad 20 olsztyńskich szkół podstawowych. Oznacza to, że rezultat matematyczny był o 2,4 punktu procentowego niższy od średniej Olsztyna.",
-          "Mimo tego Olsztyn przesunął się w regionalnym zestawieniu z pierwszego na drugie miejsce. [Źródło: TKO Olsztyn]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "TKO Olsztyn",
-        "angle": "Relacja wiodąca",
-        "summary": "82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych",
-        "url": "https://tko.pl/414147,2026,11,18,82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w-olsztynie-nie-ma-sobie-rownych"
-      }
-    ],
-    "sources": [
-      "TKO Olsztyn"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Pacjenci, pracownicy i usługi",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: 82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w?",
-        "a": "Niektóre placówki osiągnęły rezultaty znacznie przewyższające średnią krajową, a jedna z nich zdecydowanie wyprzedziła konkurencję."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Sprawdziliśmy, gdzie uczniowie najlepiej poradzili sobie z matematyką, językiem polskim i angielskim oraz jak na tle kraju i województwa wypadła stolica Warmii i Mazur."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
       }
     ]
   },
@@ -549,8 +765,8 @@
           "— Widocznie był jakiś telefon z komitetu centralnego – stwierdził Szłapka. [Źródło: Gazeta.pl, Onet Wiadomości]",
           "Dopytywany, gdzie według niego jest ten komitet, powiedział, że \"najwyraźniej w polskim systemie, czy w środowisku także prezydenta, jest jakiś komitet centralny\". [Źródło: Gazeta.pl]",
           "— Ja bym szacował, że to jest Nowogrodzka – dodał, nawiązując do siedziby Prawa i Sprawiedliwości. [Źródło: Gazeta.pl]",
-          "Nie gniewam się na koalicjantów Władysława Kosiniaka-Kamysza i Szymona Hołownię za to, że szukają innych rozwiązań konfliktu wokół Trybunału Konstytucyjnego – podkreślił premier Donald Tusk. [Źródło: Dziennik.pl, TVN24, Radio Kielce, Niezależna.pl, GazetaPrawna.pl (DGP), Radio Szczecin, TVP.info, RadioMaryja.pl, Klub Jagielloński, Bankier.pl, Rzeczpospolita]",
-          "Jednak, jak dodał, stanowczo obstaje, że „wreszcie” pracują legalnie wybrani sędziowie TK.W poniedziałek w Belwederze doszło do spotkania sił parlamentarnych ws. uzdrowienia sytuacji wokół Trybunału Konstytucyjnego. I dlatego – mówił – chciałby, aby „wreszcie doszło do wszystkich, że mamy dzisiaj Trybunał Konstytucyjny odnowiony”. [Źródło: Dziennik.pl, TVN24, Radio Kielce, Niezależna.pl, GazetaPrawna.pl (DGP), Radio Szczecin, TVP.info, RadioMaryja.pl, Bankier.pl]"
+          "Nie gniewam się na koalicjantów Władysława Kosiniaka-Kamysza i Szymona Hołownię za to, że szukają innych rozwiązań konfliktu wokół Trybunału Konstytucyjnego – podkreślił premier Donald Tusk. [Źródło: Dziennik.pl, TVN24, Radio Kielce, Niezależna.pl, GazetaPrawna.pl (DGP), Radio Szczecin, RadioMaryja.pl, TVP.info, Klub Jagielloński, Bankier.pl, Rzeczpospolita]",
+          "Jednak, jak dodał, stanowczo obstaje, że „wreszcie” pracują legalnie wybrani sędziowie TK.W poniedziałek w Belwederze doszło do spotkania sił parlamentarnych ws. uzdrowienia sytuacji wokół Trybunału Konstytucyjnego. I dlatego – mówił – chciałby, aby „wreszcie doszło do wszystkich, że mamy dzisiaj Trybunał Konstytucyjny odnowiony”. [Źródło: Dziennik.pl, TVN24, Radio Kielce, Niezależna.pl, GazetaPrawna.pl (DGP), Radio Szczecin, RadioMaryja.pl, TVP.info, Bankier.pl]"
         ]
       },
       {
@@ -560,7 +776,7 @@
           "Mazur wychwalał \"transparentność\" uzurpatorów w TK. [Źródło: Niezależna.pl]",
           "— Będzie przedstawiony jakiś zarys propozycji przez Kancelarię Prezydenta, nad tym w tej chwili pracują urzędnicy – mówi Leśkiewicz. [Źródło: Radio Szczecin]",
           "Przywódcy będą rozmawiać o wsparciu Ukrainy i negocjacjach pokojowych. Spodziewana jest wizyta wysłanników prezydenta USA Donalda Trumpa w stolicy Niemiec. Szczytowi, zwołanemu przez kanclerza Niemiec Friedricha Merza, będą przewodniczyć także prezydent Francji Emmanuel Macron i premier Wielkiej Brytanii Andy Burnham. [Źródło: Radio Zachód]",
-          "W kontekście jednego wspólnego projektu Bogucki powiedział, że „najdalej idący” projekt PSL ws. TK został „mocno uzupełniony” o propozycje innych klubów i kół parlamentarnych. Będzie to już trzecie spotkanie klubów i kół z Boguckim ws. Trybunału. Dodał, że na środowym spotkaniu pojawiły się wszystkie kluby i koła, które brały udział w poniedziałkowych rozmowach. [Źródło: TVP.info]",
+          "W kontekście jednego wspólnego projektu Bogucki powiedział, że „najdalej idący” projekt PSL ws. TK został „mocno uzupełniony” o propozycje innych klubów i kół parlamentarnych. Dodał, że na środowym spotkaniu pojawiły się wszystkie kluby i koła, które brały udział w poniedziałkowych rozmowach. [Źródło: TVP.info]",
           "Jako organizacje i środowiska obywatelskie różnimy się nie mniej niż politycy. Środowisko pozarządowe także czuje się w obowiązku podjąć w tym kierunku wysiłki. [Źródło: Klub Jagielloński]"
         ]
       }
@@ -639,20 +855,20 @@
         "omits": "Pomija kontekst (Kosiniaka-Kamysza, Konstytucyjnego, Władysława) rozwijany w Dziennik.pl, TVN24."
       },
       {
-        "outlet": "TVP.info",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Narada w Kancelarii Prezydenta. Powstał jeden projekt w sprawie TK",
-        "url": "https://www.tvp.info/96546597/spotkanie-politykow-w-kancelarii-prezydenta-konsultacje-w-sprawie-tk",
-        "focus": "Wyróżnia własne wątki i pojęcia: Narada, kontekście, jednego.",
-        "omits": "Pomija kontekst (Nawrockim, Bezpieczeństwa, poinformował) rozwijany w Gazeta.pl, Onet Wiadomości."
-      },
-      {
         "outlet": "RadioMaryja.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Min. Z. Bogucki: W KPRP powstał projekt ws. TK; rozmowy będą kontynuowane w czwartek",
         "url": "https://www.radiomaryja.pl/informacje/min-z-bogucki-w-kprp-powstal-projekt-ws-tk-rozmowy-beda-kontynuowane-w-czwartek/",
         "focus": "Wyróżnia własne wątki i pojęcia: KPRP.",
         "omits": "Pomija kontekst (Szłapka, Donalda, Tuska) rozwijany w Gazeta.pl, Onet Wiadomości."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Narada w Kancelarii Prezydenta. Powstał jeden projekt w sprawie TK",
+        "url": "https://www.tvp.info/96546597/spotkanie-politykow-w-kancelarii-prezydenta-konsultacje-w-sprawie-tk",
+        "focus": "Wyróżnia własne wątki i pojęcia: Narada, kontekście, jednego.",
+        "omits": "Pomija kontekst (Nawrockim, Bezpieczeństwa, poinformował) rozwijany w Gazeta.pl, Onet Wiadomości."
       },
       {
         "outlet": "Klub Jagielloński",
@@ -697,10 +913,6 @@
     ],
     "corrections": [
       {
-        "claim_text": "Dopisano źródło: info.elblag.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://info.elblag.pl/37,86287,W-czwartek-w-Elblagu-odbedzie-sie-manifestacja-w-obronie-Trybunalu-Konstytucyjnego.html"
-      },
-      {
         "claim_text": "Dopisano źródło: RadioMaryja.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.radiomaryja.pl/informacje/atak-uzurpatorow-na-prezesa-i-wiceprezesa-trybunalu-konstytucyjnego/"
       },
@@ -715,6 +927,10 @@
       {
         "claim_text": "Dopisano źródło: Klub Jagielloński (aktualizacja wieloźródłowa)",
         "evidence_url": "https://klubjagiellonski.pl/2026/11/16/organizacje-do-politykow-roznimy-sie-tak-jak-wy-jestesmy-gotowi-pracowac-razem-nad-projektem-resetu-trybunalu-konstytucyjnego/"
+      },
+      {
+        "claim_text": "Dopisano źródło: Bankier.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.bankier.pl/wiadomosc/TK-Reset-na-horyzoncie-Bogucki-Powstal-jeden-projekt-ws-TK-9231207.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
       }
     ],
     "impact": {
@@ -780,7 +996,7 @@
           "NBP podkreśla, że wstrzymanie płatności ma charakter czysto techniczny i apolityczny, a piłka jest teraz po stronie samego Trybunału. Z kwadransem opóźnienia przed kamerami pojawił się zarząd NBP, z ktorego głos zabrał Paweł Szałamacha. [Źródło: Bankier.pl, Puls Biznesu, Niezależna.pl, Money.pl]",
           "Jego wystąpienie trwało niespełna pięć minut i sprowadziło się w zasadzie do powtórzenia tez z wydanego wcześniej komunikatu banku centralnego.„Nie może być żadnych dwuznaczności”W swoim oświadczeniu Paweł Szałamacha akcentował niezależność banku centralnego oraz fakt, że NBP nie zamierza być arbitrem w narastającym kryzysie konstytucyjnym.– Narodowy Bank Polski pozostaje w pełni niezależny w realizacji swoich zadań, działa jako bank centralny i nie uczestniczy w sporach politycznych. [Źródło: Bankier.pl, Puls Biznesu, Niezależna.pl]",
           "To na Trybunale ciąży obowiązek złożenia jednoznacznych dokumentów dotyczących dysponowania rachunkiem – dodał. Mając na względzie istniejące okoliczności NBP wstrzymał możliwość realizowania zleceń płatniczych z rachunków TK niezależnie od tego, przez kogo byłyby one wystawione – stwierdził. [Źródło: Bankier.pl, Puls Biznesu, Niezależna.pl]",
-          "Orzeczeniem TK jest rozstrzygnięcie wydane przez skład złożony wyłącznie z osób, które po wyborze przez Sejm złożyły ślubowanie w obecności prezydenta — przekazały w środę połączone trzy izby Sądu Najwyższego w oświadczeniu. Uchwałę podjęły Izba Cywilna, Izba Pracy i Ubezpieczeń Społecznych oraz Izba Kontroli Nadzwyczajnej i Spraw Publicznych. Te zostały jednak odrzucone. [Źródło: Onet Wiadomości, Rzeczpospolita, GazetaPrawna.pl (DGP), Dziennik.pl, Warszawa w Pigułce, TVN24, Polsat News, Business Insider PL, Gazeta.pl, Interia Wydarzenia, Radio PiK, Wyborcza.pl]"
+          "Orzeczeniem TK jest rozstrzygnięcie wydane przez skład złożony wyłącznie z osób, które po wyborze przez Sejm złożyły ślubowanie w obecności prezydenta — przekazały w środę połączone trzy izby Sądu Najwyższego w oświadczeniu. Uchwałę podjęły Izba Cywilna, Izba Pracy i Ubezpieczeń Społecznych oraz Izba Kontroli Nadzwyczajnej i Spraw Publicznych. Te zostały jednak odrzucone. [Źródło: Onet Wiadomości, Rzeczpospolita, GazetaPrawna.pl (DGP), Dziennik.pl, Warszawa w Pigułce, TVN24, Polsat News, Business Insider PL, Gazeta.pl, Radio PiK, Wyborcza.pl]"
         ]
       },
       {
@@ -792,8 +1008,7 @@
           "Adam Szłapka o rozmowie Donalda Tuska i Karola Nawrockiego W środę (18 listopada) na antenie TVN24 rzecznik rządu Adam Szłapka odniósł się do tej deklaracji. I dlatego – mówił – chciałby, aby „wreszcie doszło do wszystkich, że mamy dzisiaj Trybunał Konstytucyjny odnowiony”. [Źródło: Kresy.pl]",
           "Sąd odniósł się również do niepublikowanych wyroków Trybunału. [Źródło: Warszawa w Pigułce]",
           "Minister finansów Andrzej Domański zapewnia, że analizy już trwają, a rozważane rozwiązania będą zgodne z prawem. [Źródło: Money.pl]",
-          "Święczkowski i wiceprezes Trybunału Bartłomiej Sochański nie stawili się na sali, zaś w roli obrońców wystąpili ich prawnicy. [Źródło: Interia Wydarzenia]",
-          "Spór dotyczący Trybunału Konstytucyjnego toczy się już nawet w głowie jego zawieszonego prezesa. Mimo to chwali sędziów za niewyrażenie zgody na areszt i zapowiada analizę możliwości odwołania się od ich decyzji. [Źródło: naTemat.pl]"
+          "Spór dotyczący Trybunału Konstytucyjnego toczy się już nawet w głowie jego zawieszonego prezesa. Bogdan Święczkowski utrzymuje, że uchwały o uchyleniu mu immunitetu i zawieszeniu nie istnieją, ponieważ zwołane przez sędzię Annę Korwin-Piotrowską posiedzenie było bezprawne. Mimo to chwali sędziów za niewyrażenie zgody na areszt i zapowiada analizę możliwości odwołania się od ich decyzji. [Źródło: naTemat.pl]"
         ]
       }
     ],
@@ -836,7 +1051,7 @@
         "summary": "Trzy izby Sądu Najwyższego zabrały głos w sprawie orzeczeń TK",
         "url": "https://wiadomosci.onet.pl/kraj/trzy-izby-sadu-najwyzszego-zabraly-glos-w-sprawie-orzeczen-tk/bcf71by",
         "focus": "Wyróżnia własne wątki i pojęcia: zabrały.",
-        "omits": "Pomija kontekst (Trybunale, Konstytucyjnego, wystąpienie) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (Trybunale, Konstytucyjnego, stanowisko) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Rzeczpospolita",
@@ -844,7 +1059,7 @@
         "summary": "Trzy izby SN: Nawet nieopublikowane wyroki Trybunału Konstytucyjnego obowiązują",
         "url": "https://www.rp.pl/sady-i-trybunaly/art45508541-trzy-izby-sn-nawet-nieopublikowane-wyroki-trybunalu-konstytucyjnego-obowiazuja",
         "focus": "Wyróżnia własne wątki i pojęcia: nieopublikowane, wyroki, nieobecności.",
-        "omits": "Pomija kontekst (wystąpienie, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (stanowisko, przedstawicieli, zablokowania) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "GazetaPrawna.pl (DGP)",
@@ -852,7 +1067,7 @@
         "summary": "Trzy izby SN wydały stanowisko w sprawie orzeczeń Trybunału Konstytucyjnego",
         "url": "https://www.gazetaprawna.pl/prawnik/artykuly/11347566,trzy-izby-sn-stanowisko-w-sprawie-orzeczen-tk.html",
         "focus": "Wyróżnia własne wątki i pojęcia: wydały.",
-        "omits": "Pomija kontekst (wystąpienie, przedstawicieli, zablokowania) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (przedstawicieli, zablokowania, 15-minutowym) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Kresy.pl",
@@ -868,7 +1083,7 @@
         "summary": "Spór o Trybunał Konstytucyjny. Sąd Najwyższy zabrał głos",
         "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11347600,spor-o-trybunal-konstytucyjny-sad-najwyzszy-zabral-glos.html",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (wystąpienie, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (stanowisko, przedstawicieli, zablokowania) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Warszawa w Pigułce",
@@ -876,15 +1091,15 @@
         "summary": "Sąd Najwyższy zabrał głos w sprawie Trybunału Konstytucyjnego",
         "url": "https://warszawawpigulce.pl/sad-najwyzszy-zabral-glos-w-sprawie-trybunalu-konstytucyjnego/",
         "focus": "Wyróżnia własne wątki i pojęcia: niepublikowanych.",
-        "omits": "Pomija kontekst (wystąpienie, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (stanowisko, przedstawicieli, zablokowania) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "TVN24",
         "angle": "Relacja uzupełniająca",
         "summary": "Uchwała trzech izb Sądu Najwyższego w sprawie orzeczeń Trybunału Konstytucyjnego. Reakcja Waldemara Żurka",
         "url": "https://tvn24.pl/polska/uchwala-trzech-izb-sadu-najwyzszego-w-sprawie-orzeczen-trybunalu-konstytucyjnego-st9346060?source=rss",
-        "focus": "Wyróżnia własne wątki i pojęcia: Uchwała, Reakcja, Żurka.",
-        "omits": "Pomija kontekst (wystąpienie, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
+        "focus": "Wyróżnia własne wątki i pojęcia: Uchwała, trzech, Reakcja.",
+        "omits": "Pomija kontekst (stanowisko, przedstawicieli, zablokowania) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Polsat News",
@@ -892,7 +1107,7 @@
         "summary": "Sąd Najwyższy o Trybunale Konstytucyjnym. Zapadło orzeczenie",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-18/sad-najwyzszy-o-trybunale-konstytucyjnym-zapadlo-orzeczenie/",
         "focus": "Wyróżnia własne wątki i pojęcia: Zapadło.",
-        "omits": "Pomija kontekst (wystąpienie, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (stanowisko, przedstawicieli, zablokowania) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Business Insider PL",
@@ -900,22 +1115,22 @@
         "summary": "Sąd Najwyższy zdecydował w sprawie wyroków TK. Wiadomo już, kto nie jest sędzią Trybunału",
         "url": "https://businessinsider.com.pl/prawo/sn-rozstrzyga-w-sprawie-wyrokow-tk-ten-wyrok-zaskoczy-wielu-polakow/18bbmy8",
         "focus": "Wyróżnia własne wątki i pojęcia: zdecydował, Wiadomo, sędzią.",
-        "omits": "Pomija kontekst (Konstytucyjnego, wystąpienie, stanowisko) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (Konstytucyjnego, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Gazeta.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Żurek o uchwale TK ws. Święczkowskiego: Szanuję decyzję legalnych sędziów i trybunałów",
         "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33139835,zurek-o-uchwale-tk-ws-swieczkowskiego-szanuje-decyzje-legalnych.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: Szanuję, decyzję, legalnych.",
-        "omits": "Pomija kontekst (Konstytucyjnego, wystąpienie, stanowisko) rozwijany w Bankier.pl, Puls Biznesu."
+        "focus": "Wyróżnia własne wątki i pojęcia: Żurek, Szanuję, decyzję.",
+        "omits": "Pomija kontekst (Konstytucyjnego, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Money.pl",
         "angle": "Perspektywa rynkowa",
         "summary": "NBP wstrzymał przelewy TK. Minister reaguje",
         "url": "https://www.money.pl/finanse/nbp-wstrzymal-przelewy-tk-minister-reaguje-7352075124451328a.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: przelewy, reaguje, finansów.",
+        "focus": "Wyróżnia własne wątki i pojęcia: przelewy, Minister, reaguje.",
         "omits": "Pomija kontekst (oświadczeniu, złożonych, orzeczeń) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
@@ -927,20 +1142,12 @@
         "omits": "Pomija kontekst (złożonych, orzeczeń, środę) rozwijany w Puls Biznesu, Onet Wiadomości."
       },
       {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Poruszenie po decyzji w sprawie TK i Bogdana Święczkowskiego. \"Bójcie się\"",
-        "url": "https://wydarzenia.interia.pl/kraj/news-poruszenie-po-decyzji-w-sprawie-tk-i-bogdana-swieczkowskiego,nId,23575700",
-        "focus": "Wyróżnia własne wątki i pojęcia: Poruszenie, Bogdana, Bójcie.",
-        "omits": "Pomija kontekst (Konstytucyjnego, stanowisko, przedstawicieli) rozwijany w Bankier.pl, Puls Biznesu."
-      },
-      {
         "outlet": "Radio PiK",
         "angle": "Doniesienie regionalne",
         "summary": "Zgromadzenie sędziów w TK uchyliło immunitet B. Święczkowskiego w czterech sprawach",
         "url": "https://www.radiopik.pl/40,143821,zgromadzenie-sedziow-w-tk-uchylilo-immunitet-b-s",
         "focus": "Wyróżnia własne wątki i pojęcia: uchyliło, czterech, sprawach.",
-        "omits": "Pomija kontekst (zabrał, teraz, dotyczących) rozwijany w Bankier.pl, Puls Biznesu."
+        "omits": "Pomija kontekst (zabrał, obowiązek, wstrzymanie) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Radio Zachód",
@@ -955,8 +1162,8 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Święczkowski i Sochański tracą immunitety sędziowskie. TK nie wydał zgody na zatrzymanie",
         "url": "https://wyborcza.pl/7,75398,33139751,jest-decyzja-tk-ws-immunitetow-swieczkowski-i-sochanski-moga.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: tracą, wydał.",
-        "omits": "Pomija kontekst (Trybunale, Konstytucyjnego, wystąpienie) rozwijany w Bankier.pl, Puls Biznesu."
+        "focus": "Wyróżnia własne wątki i pojęcia: tracą, wydał, zatrzymanie.",
+        "omits": "Pomija kontekst (Trybunale, Konstytucyjnego, stanowisko) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "naTemat.pl",
@@ -964,6 +1171,14 @@
         "summary": "TK \"na uchodźstwie\". Święczkowski szuka biura i nie zamierza stawiać się w prokuraturze",
         "url": "https://natemat.pl/676108,tk-na-uchodzstwie-swieczkowski-szuka-biura-i-nie-zamierza-stawiac-sie-w-prokuraturze",
         "focus": "Wyróżnia własne wątki i pojęcia: uchodźstwie, szuka, biura.",
+        "omits": "Pomija kontekst (oświadczeniu, złożonych, orzeczeń) rozwijany w Bankier.pl, Puls Biznesu."
+      },
+      {
+        "outlet": "Newsweek Polska",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Sądny tydzień dla Święczkowskiego. Co może się zmienić w Trybunale Konstytucyjnym po 19 listopada? [WYJAŚNIAMY]",
+        "url": "https://www.newsweek.pl/polska/polityka/trybunal-konstytucyjny-swieczkowski-i-sochanski-maja-sie-czym-martwic/2rs7cvj",
+        "focus": "Wyróżnia własne wątki i pojęcia: Sądny, tydzień, zmienić.",
         "omits": "Pomija kontekst (oświadczeniu, złożonych, orzeczeń) rozwijany w Bankier.pl, Puls Biznesu."
       }
     ],
@@ -973,9 +1188,9 @@
       "Dziennik.pl",
       "Gazeta.pl",
       "GazetaPrawna.pl (DGP)",
-      "Interia Wydarzenia",
       "Kresy.pl",
       "Money.pl",
+      "Newsweek Polska",
       "Niezależna.pl",
       "Onet Wiadomości",
       "Polsat News",
@@ -992,10 +1207,6 @@
     ],
     "corrections": [
       {
-        "claim_text": "Dopisano źródło: Interia Wydarzenia (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wydarzenia.interia.pl/kraj/news-poruszenie-po-decyzji-w-sprawie-tk-i-bogdana-swieczkowskiego,nId,23575700"
-      },
-      {
         "claim_text": "Dopisano źródło: Radio PiK (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.radiopik.pl/40,143821,zgromadzenie-sedziow-w-tk-uchylilo-immunitet-b-s"
       },
@@ -1010,6 +1221,10 @@
       {
         "claim_text": "Dopisano źródło: Wyborcza.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wyborcza.pl/7,75398,33139751,jest-decyzja-tk-ws-immunitetow-swieczkowski-i-sochanski-moga.html"
+      },
+      {
+        "claim_text": "Dopisano źródło: Newsweek Polska (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.newsweek.pl/polska/polityka/trybunal-konstytucyjny-swieczkowski-i-sochanski-maja-sie-czym-martwic/2rs7cvj"
       }
     ],
     "impact": {
@@ -5676,7 +5891,7 @@
     "keywords": "Kujawsko-Pomorskie, Przełom, kamienicy, Ciechocinku, oznacza, mieszkańców",
     "thumbnail_url": "https://s5.tvp.pl/images2/e/7/d/uid_e7de9a160e38444395bf1af917f5499d_width_900_play_0_pos_0_gs_0_height_506.jpg",
     "published_iso": "2026-11-18T17:01:20+01:00",
-    "updated_iso": "2026-11-19T03:54:40+01:00",
+    "updated_iso": "2026-11-19T05:00:43+01:00",
     "display_date": "18.11.2026, 17:01",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -7224,7 +7439,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "22 redakcji"
+        "val": "23 redakcji"
       },
       {
         "label": "Kategoria",
@@ -7236,13 +7451,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (22 źródeł)"
+        "val": "Potwierdzone (23 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (22 redakcji)",
+        "heading": "Ustalenia wspólne (23 redakcji)",
         "paragraphs": [
           "Karol Nawrocki zawetował ustawę, która miała podnieść stawkę VAT m.in. na zawierające sok bezalkoholowe odpowiedniki napojów alkoholowych oraz napoje energetyczne. W drugiej połowie października Sejm uchwalił ustawę, która likwiduje preferencyjne opodatkowanie VAT napojów bezalkoholowych będących odpowiednikami napojów alkoholowych. [Źródło: Money.pl, GazetaPrawna.pl (DGP), WP Finanse, Rzeczpospolita, Bankier.pl, Puls Biznesu, Wiadomości Handlowe, Polsat News, WP Wiadomości, Onet Wiadomości, TVN24, TVP.info, RadioMaryja.pl, Niezależna.pl, Biznes Interia, Dziennik.pl, Business Insider PL, Forsal.pl, Kresy.pl, naTemat.pl, Interia Wydarzenia, Gazeta.pl]",
           "Zmiany dotyczą też napojów energetyzujących zawierających sok. Nowe przepisy przewidywały podwyższenie stawki VAT do 23 proc. na określone napoje bezalkoholowe, które zawierają w swoim składzie co najmniej 20 proc. soku owocowego, warzywnego lub owocowo-warzywnego. Oznacza to wzrost z 5 proc. w obrocie handlowym i 8 proc. w gastronomii. [Źródło: Money.pl, WP Finanse, Wiadomości Handlowe]",
@@ -7263,7 +7478,8 @@
           "Prezydent podkreślił, że decyzję podjął po wprowadzeniu gwarancji dotyczących przeznaczenia środków. [Źródło: Business Insider PL]",
           "Swoją decyzję argumentował troską o polskie rolnictwo. [Źródło: naTemat.pl]",
           "Premier Donald Tusk ocenił, że ofiarami prezydenckiego weta są polskie dzieci i bezpieczeństwo obywateli, a zadowoleni są z niego hejterzy i trolle. Na drugim biegunie znaleźli się respondenci po 50. roku życia. [Źródło: Interia Wydarzenia]",
-          "Przeciwnego zdania było natomiast 30,06 proc. badanych. 12,58 proc. badanych Polaków neutralnie podeszło do tej decyzji, a zdania w tej sprawie nie miało 13,4 proc. respondentów. [Źródło: Gazeta.pl]"
+          "Regulacja dawała możliwość usunięcia treści dotyczących między innymi: przemocy, gróźb, handlu ludźmi, nawoływania do samobójstwa, oszustw internetowych, phishingu, propagowania nienawiści i totalitaryzmów oraz naruszenia praw autorskich, fałszywych alarmów i wywoływania paniki, a także materiałów o charakterze seksualnym z udziałem małoletnich. Przeciwnego zdania było natomiast 30,06 proc. badanych.",
+          "12,58 proc. badanych Polaków neutralnie podeszło do tej decyzji, a zdania w tej sprawie nie miało 13,4 proc. respondentów. [Źródło: Gazeta.pl]"
         ]
       }
     ],
@@ -7274,7 +7490,7 @@
         "summary": "Wyższy VAT na napoje. Jest weto prezydenta",
         "url": "https://www.money.pl/podatki/wyzszy-vat-na-napoje-jest-weto-prezydenta-7352388615415840a.html",
         "focus": "Podkreśla konkretne liczby (23 proc., 20 proc.) w ujęciu: raport rynkowy.",
-        "omits": "Pomija wyliczenia (30,06 proc., 12,58 proc.) przytaczane przez Interia Wydarzenia, Gazeta.pl."
+        "omits": "Pomija wyliczenia (30,06 proc., 12,58 proc.) przytaczane przez Bankier.pl, Interia Wydarzenia."
       },
       {
         "outlet": "GazetaPrawna.pl (DGP)",
@@ -7282,7 +7498,7 @@
         "summary": "Prezydent zawetował podwyżkę VAT. Chodzi m.in. o energetyki i napoje bezalkoholowe",
         "url": "https://www.gazetaprawna.pl/podatki/artykuly/11347529,weto-vat-energetyki-napoje-bezalkoholowe.html",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija wyliczenia (23 proc., 20 proc.) przytaczane przez Money.pl, WP Finanse."
+        "omits": "Pomija wyliczenia (30,06 proc., 23 proc.) przytaczane przez Bankier.pl, Interia Wydarzenia."
       },
       {
         "outlet": "WP Finanse",
@@ -7305,7 +7521,7 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Akcyza na alkohol mocno w górę. Ustawa z podpisem prezydenta",
         "url": "https://www.bankier.pl/wiadomosc/Akcyza-na-alkohol-mocno-w-gore-Ustawa-z-podpisem-prezydenta-9231054.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: mocno, Ustawa, podpisem.",
+        "focus": "Podkreśla konkretne liczby (30,06 proc.) w ujęciu: perspektywa rynkowa.",
         "omits": "Pomija wyliczenia (2028, 1,4 mld zł) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
       },
       {
@@ -7322,7 +7538,7 @@
         "summary": "Prezydent podpisał ustawę o podwyżce akcyzy na alkohol. Będą drożej na półkach?",
         "url": "https://www.wiadomoscihandlowe.pl/prawo-i-polityka/prezydent-podpisal-ustawe-o-podwyzce-akcyzy-na-alkohol-beda-podwyzki-2539508",
         "focus": "Eksponuje dane (1,5 mld zł) oraz wątki: podwyżce, drożej.",
-        "omits": "Pomija wyliczenia (0,0 proc., 30,06 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija wyliczenia (30,06 proc., 0,0 proc.) przytaczane przez Bankier.pl, Interia Wydarzenia."
       },
       {
         "outlet": "Polsat News",
@@ -7394,7 +7610,7 @@
         "summary": "Wyższa akcyza na alkohol. Prezydent Nawrocki podpisał ustawę",
         "url": "https://wiadomosci.dziennik.pl/polityka/artykuly/11347534,wyzsza-akcyza-na-alkohol-prezydent-nawrocki-podpisal-ustawe.html",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (5 proc., 0,0 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija wyliczenia (5 proc., 30,06 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "Business Insider PL",
@@ -7418,7 +7634,7 @@
         "summary": "Alkohol podrożeje od 2027 roku. Prezydent podpisał ustawę, ale stawia warunki rządowi",
         "url": "https://kresy.pl/wydarzenia/alkohol-podrozeje-od-2027-roku-prezydent-podpisal-ustawe-ale-stawia-warunki-rzadowi/",
         "focus": "Podkreśla konkretne liczby (2027, 2025) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (5 proc., 0,0 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija wyliczenia (5 proc., 30,06 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "naTemat.pl",
@@ -7426,7 +7642,7 @@
         "summary": "Nowe weto i 3 podpisy Karola Nawrockiego. Chodzi o napoje energetyczne i alkohol",
         "url": "https://natemat.pl/676084,nowe-weto-i-3-podpisy-karola-nawrockiego-chodzi-o-napoje-energetyczne-i-alkohol",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (5 proc., 0,0 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija wyliczenia (5 proc., 30,06 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -7441,8 +7657,16 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Weto Nawrockiego do ustawy wdrażającej DSA. Polacy ocenili je w sondażu",
         "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33139897,weto-nawrockiego-do-ustawy-wdrazajacej-dsa-polacy-ocenili-je.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Eksponuje dane (13,4 proc.) oraz wątki: Przeciwnego, zdania.",
+        "focus": "Eksponuje dane (13,4 proc.) oraz wątki: Polaków, podeszło.",
         "omits": "Pomija wyliczenia (5 proc., 0,0 proc.) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
+      },
+      {
+        "outlet": "Wirtualnemedia.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Brzoska ocenił weto prezydenta ws. DSA. \"Ustawa zmieniałaby niewiele\"",
+        "url": "https://www.wirtualnemedia.pl/brzoska-ocenil-weto-prezydenta-ws-dsa-ustawa-zmienialaby-niewiele,7352270299981856a",
+        "focus": "Wyróżnia własne wątki i pojęcia: zmieniałaby, niewiele, Zgadzam.",
+        "omits": "Pomija wyliczenia (2028, 1,4 mld zł) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
       }
     ],
     "sources": [
@@ -7467,13 +7691,10 @@
       "WP Finanse",
       "WP Wiadomości",
       "Wiadomości Handlowe",
+      "Wirtualnemedia.pl",
       "naTemat.pl"
     ],
     "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Forsal.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://forsal.pl/kraj/artykuly/11347568,akcyza-na-alkohol-prezydent-zdecydowal.html"
-      },
       {
         "claim_text": "Dopisano źródło: Kresy.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://kresy.pl/wydarzenia/alkohol-podrozeje-od-2027-roku-prezydent-podpisal-ustawe-ale-stawia-warunki-rzadowi/"
@@ -7489,6 +7710,10 @@
       {
         "claim_text": "Dopisano źródło: Gazeta.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33139897,weto-nawrockiego-do-ustawy-wdrazajacej-dsa-polacy-ocenili-je.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+      },
+      {
+        "claim_text": "Dopisano źródło: Wirtualnemedia.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.wirtualnemedia.pl/brzoska-ocenil-weto-prezydenta-ws-dsa-ustawa-zmienialaby-niewiele,7352270299981856a"
       }
     ],
     "impact": {
@@ -9832,7 +10057,7 @@
     "summary_lead": "Co najmniej 15 osób zostało rannych, w tym kilka ciężej, we wtorek rano w Pradze wskutek zderzenia dwóch pociągów osobowych.",
     "meta_description": "Co najmniej 15 osób zostało rannych, w tym kilka ciężej, we wtorek rano w Pradze wskutek zderzenia dwóch pociągów osobowych.",
     "keywords": "Swiat, Wypadek, kolejowy, Pradze, poszkodowanych",
-    "thumbnail_url": "",
+    "thumbnail_url": "https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/c7594243-ea5a-464b-aef7-480f86c57b77",
     "published_iso": "2026-11-18T13:05:23+01:00",
     "updated_iso": "2026-11-18T02:18:37+01:00",
     "display_date": "18.11.2026, 13:05",
@@ -9843,7 +10068,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "6 redakcji"
+        "val": "16 redakcji"
       },
       {
         "label": "Kategoria",
@@ -9855,25 +10080,30 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
+        "val": "Potwierdzone (16 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (6 redakcji)",
+        "heading": "Ustalenia wspólne (16 redakcji)",
         "paragraphs": [
           "Co najmniej 15 osób zostało rannych, w tym kilka ciężej, we wtorek rano w Pradze wskutek zderzenia dwóch pociągów osobowych. Składy poruszały się wolno i dlatego obrażenia większości rannych nie są poważne – poinformowała czeska straż pożarna. Jak ustalił Polsat News, wśród poszkodowanych nie ma obywateli Polski. [Źródło: InfoSecurity24, Rzeczpospolita, Polsat News, RadioMaryja.pl, Kresy.pl]",
-          "Przyczyny zderzenia pozostają przedmiotem ustaleń właściwych służb. Według informacji podawanych przez czeskie służby i media rannych zostało 46 osób. \"Wszystkie służby ratunkowe interweniują przy zderzeniu dwóch pociągów przy stacji głównej\" – przekazała czeska policja chwilę przed godz. 8. [Źródło: InfoSecurity24, Rzeczpospolita, Polsat News, RadioMaryja.pl, Kresy.pl]",
-          "Rzecznik ekip medycznych przekazał dziennikarzom, że kilku poszkodowanych doznało ciężkich obrażeń. \" Prace ratunkowe zostały zakończone, a na miejscu są już funkcjonariusze, którzy we współpracy z inspektorami kolejowymi ustalają wszystkie przyczyny i okoliczności wypadku, a przede wszystkim – kto poniesie odpowiedzialność za zderzenie pociągów\" – poinformowano po godz. 9:00. [Źródło: InfoSecurity24, Polsat News, RadioMaryja.pl, Kresy.pl]"
+          "Przyczyny zderzenia pozostają przedmiotem ustaleń właściwych służb. Według informacji podawanych przez czeskie służby i media rannych zostało 46 osób. \"Wszystkie służby ratunkowe interweniują przy zderzeniu dwóch pociągów przy stacji głównej\" – przekazała czeska policja chwilę przed godz. 8. [Źródło: InfoSecurity24, Rzeczpospolita, Polsat News, RadioMaryja.pl, Kresy.pl, TVP.info]",
+          "Rzecznik ekip medycznych przekazał dziennikarzom, że kilku poszkodowanych doznało ciężkich obrażeń. \" Prace ratunkowe zostały zakończone, a na miejscu są już funkcjonariusze, którzy we współpracy z inspektorami kolejowymi ustalają wszystkie przyczyny i okoliczności wypadku, a przede wszystkim – kto poniesie odpowiedzialność za zderzenie pociągów\" – poinformowano po godz. 9:00. [Źródło: InfoSecurity24, Polsat News, RadioMaryja.pl, Kresy.pl]",
+          "Trwa ocena szkód” – napisał Siergiej Aksionow, szef władz okupacyjnych Krymu, na Telegramie. Jest to już trzeci w tym tygodniu atak na most łączący kontynentalną część Rosji z Krymem – półwyspem zaanektowanym przez Rosję w 2014 roku. [Źródło: Gazeta.pl, TVP.info, WP Wiadomości, Newsweek Polska, Niezależna.pl, Onet Wiadomości, Dziennik.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Do wypadku doszło w sobotę około północy na nieoświetlonej drodze gruntowej w miejscowości Łukówiec (Lubelskie). Jak wynika z ustaleń policji, 25-latek kierujący Fordem potrącił 19-letnią kobietę, która poruszała się prawą stroną drogi. Po uderzeniu piesza została uwięziona pod samochodem. [Źródło: Gazeta.pl]",
-          "Ruch kolejowy został wstrzymany; pociągi dalekobieżne skierowano na inne dworce w mieście. Na miejscu działają służby ratownicze. [Źródło: RadioMaryja.pl]",
-          "Później opublikowano informację o rannych – początkowo informowano o co najmniej 15, później bilans ten wyniósł 46. Według czeskich służb ratunkowych poszkodowanych zostało kilkadziesiąt osób, w tym kilka poważnie. Wypadek spowodował znaczne utrudnienia w ruchu kolejowym w czeskiej stolicy. [Źródło: Kresy.pl]"
+          "Na miejscu działają służby ratownicze. [Źródło: RadioMaryja.pl]",
+          "Później opublikowano informację o rannych – początkowo informowano o co najmniej 15, później bilans ten wyniósł 46. Według czeskich służb ratunkowych poszkodowanych zostało kilkadziesiąt osób, w tym kilka poważnie. Wypadek spowodował znaczne utrudnienia w ruchu kolejowym w czeskiej stolicy. [Źródło: Kresy.pl]",
+          "Operacja ograniczy rosyjskie możliwości transportu na okupowany Krym. [Źródło: WP Wiadomości]",
+          "Zdaniem ukraińskich ekspertów na przeszkodzie stoją zarówno problemy techniczne, logistyczne i wojskowe. Z kolei ocalała część mostu w każdej chwili może stać się celem nowego ataku. [Źródło: Wyborcza.pl]",
+          "Rakiety trafiły w dwa mosty, a uszkodzenia odnotowano także w metrze. We wtorek rano (17 listopada) doszło do kolejnego ataku na stolicę. O nocnym ostrzale poinformował mer Kijowa Witalij Kliczko. [Źródło: naTemat.pl]",
+          "Doniesienia z frontu wskazują na duży sukces Ukraińców. [Źródło: Dziennik.pl]"
         ]
       }
     ],
@@ -9884,7 +10114,7 @@
         "summary": "Wypadek kolejowy w stolicy Czech. Kilkanaście osób rannych",
         "url": "https://infosecurity24.pl/za-granica/wypadek-kolejowy-w-stolicy-czech-kilkanascie-osob-rannych",
         "focus": "Podkreśla konkretne liczby (15 osób, 46 osób) w ujęciu: analiza sektorowa.",
-        "omits": "Pomija kontekst (Kilkadziesiąt, wstrzymany, Kilkudziesięciu) rozwijany w Rzeczpospolita, Kresy.pl."
+        "omits": "Pomija wyliczenia (2024) przytaczane przez TVP.info, Newsweek Polska."
       },
       {
         "outlet": "Gazeta.pl",
@@ -9892,7 +10122,7 @@
         "summary": "Wypadek kolejowy w Pradze. 46 osób poszkodowanych",
         "url": "https://wiadomosci.gazeta.pl/swiat/7,198075,33136710,wypadek-kolejowy-w-pradze-46-osob-poszkodowanych.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
         "focus": "Podkreśla konkretne liczby (46 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (15 osób) przytaczane przez InfoSecurity24, Rzeczpospolita."
+        "omits": "Pomija wyliczenia (15 osób, 2024) przytaczane przez InfoSecurity24, Rzeczpospolita."
       },
       {
         "outlet": "Rzeczpospolita",
@@ -9900,7 +10130,7 @@
         "summary": "Zderzenie dwóch pociągów w Pradze. Kilkadziesiąt osób rannych, ruch kolejowy wstrzymany",
         "url": "https://www.rp.pl/wypadki/art45499211-zderzenie-dwoch-pociagow-w-pradze-kilkadziesiat-osob-rannych-ruch-kolejowy-wstrzymany",
         "focus": "Podkreśla konkretne liczby (15 osób, 46 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (wypadku, odpowiedzialność, funkcjonariusze) rozwijany w InfoSecurity24, Gazeta.pl."
+        "omits": "Pomija wyliczenia (2024) przytaczane przez TVP.info, Newsweek Polska."
       },
       {
         "outlet": "Polsat News",
@@ -9908,7 +10138,7 @@
         "summary": "Czołowe zderzenie pociągów w Pradze. Wielu rannych, niektórzy ciężko",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/czolowe-zderzenie-pociagow-w-pradze-wielu-rannych-niektorzy-ciezko/",
         "focus": "Podkreśla konkretne liczby (15 osób, 46 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (Wypadek, Kilkadziesiąt, wstrzymany) rozwijany w InfoSecurity24, Gazeta.pl."
+        "omits": "Pomija wyliczenia (2024) przytaczane przez TVP.info, Newsweek Polska."
       },
       {
         "outlet": "RadioMaryja.pl",
@@ -9916,7 +10146,7 @@
         "summary": "Rzecznik MSZ: Wśród poszkodowanych w zderzeniu pociągów w Pradze nie ma obywateli RP",
         "url": "https://www.radiomaryja.pl/informacje/rzecznik-msz-wsrod-poszkodowanych-w-zderzeniu-pociagow-w-pradze-nie-ma-obywateli-rp/",
         "focus": "Podkreśla konkretne liczby (15 osób, 46 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (Wypadek, Kilkadziesiąt, stolicy) rozwijany w InfoSecurity24, Gazeta.pl."
+        "omits": "Pomija wyliczenia (2024) przytaczane przez TVP.info, Newsweek Polska."
       },
       {
         "outlet": "Kresy.pl",
@@ -9924,18 +10154,121 @@
         "summary": "Zderzenie dwóch pociągów w Pradze. Kilkudziesięciu rannych, część w ciężkim stanie",
         "url": "https://kresy.pl/wydarzenia/zderzenie-dwoch-pociagow-w-pradze-kilkudziesieciu-rannych-czesc-w-ciezkim-stanie/",
         "focus": "Podkreśla konkretne liczby (15 osób, 46 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (wstrzymany, nieoświetlonej, miejscowości) rozwijany w Rzeczpospolita, RadioMaryja.pl."
+        "omits": "Pomija wyliczenia (2024) przytaczane przez TVP.info, Newsweek Polska."
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Most Krymski ponownie zaatakowany. Są pierwsze nagrania",
+        "url": "https://wiadomosci.wp.pl/most-krymski-ponownie-zaatakowany-sa-pierwsze-nagrania-7352505153656864a",
+        "focus": "Wyróżnia własne wątki i pojęcia: nagrania, ograniczy, transportu.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "Wyborcza.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Rosja zapewnia, że odbuduje Most Krymski. Są powody, by w to wątpić",
+        "url": "https://wyborcza.pl/7,75399,33139581,rosja-zapewnia-ze-odbuduje-most-krymski-sa-powody-by-w-to.html",
+        "focus": "Wyróżnia własne wątki i pojęcia: zapewnia, odbuduje, powody.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Most Krymski ponownie zaatakowany",
+        "url": "https://www.tvp.info/96551765/most-krymski-ponownie-zaatakowany-kto-stoi-za-atakiem",
+        "focus": "Podkreśla konkretne liczby (2024, 46 osób) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija wyliczenia (15 osób) przytaczane przez InfoSecurity24, Rzeczpospolita."
+      },
+      {
+        "outlet": "Newsweek Polska",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Kreml dostał bardzo mocny policzek. Ukraińcy trafili w Most Krymski",
+        "url": "https://www.newsweek.pl/swiat/precyzyjne-uderzenie-ukrainy-odbudowa-mostu-krymskiego-jest-nierealna/n229pbw",
+        "focus": "Podkreśla konkretne liczby (2024) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "naTemat.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Runął fragment Mostu Krymskiego. Wcześniej Rosja uderzyła w dwa mosty Kijowa",
+        "url": "https://natemat.pl/675814,runal-fragment-mostu-krymskiego-wczesniej-rosja-uderzyla-w-dwa-mosty-kijowa",
+        "focus": "Wyróżnia własne wątki i pojęcia: Runął, fragment, Wcześniej.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina",
+        "url": "https://www.bankier.pl/wiadomosc/Ukraina-uderzyla-w-Most-Kerczenski-bez-Starlinka-Operacja-miala-upokorzyc-Putina-9230775.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
+        "focus": "Wyróżnia własne wątki i pojęcia: upokorzyć.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "Space24",
+        "angle": "Kontekst technologiczny",
+        "summary": "Ukraina zaatakowała Most Kerczeński bez wsparcia Starlinka",
+        "url": "https://space24.pl/satelity/komunikacja/ukraina-zaatakowala-most-kerczenski-bez-wsparcia-starlinka",
+        "focus": "Wyróżnia własne wątki i pojęcia: wsparcia.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Potężne uderzenie w Most Krymski. Ujawniono kulisy operacji",
+        "url": "https://niezalezna.pl/swiat/potezne-uderzenie-w-most-krymski-ujawniono-kulisy-operacji/584437",
+        "focus": "Wyróżnia własne wątki i pojęcia: Potężne, Ujawniono, kulisy.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Symboliczny wymiar ataku na Most Krymski. Starlink nie był potrzebny",
+        "url": "https://wiadomosci.onet.pl/swiat/ukraina-uderzyla-w-most-krymski-bez-pomocy-z-usa-symboliczny-gest/ks37gd0",
+        "focus": "Wyróżnia własne wątki i pojęcia: potrzebny.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Doniesienia z frontu wskazują na duży sukces Ukraińców. \"Ujawnili słabość Rosji\"",
+        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11347304,doniesienia-z-frontu-wskazuja-na-duzy-sukces-ukraincow-ujawnili-slabosc-rosji.html",
+        "focus": "Wyróżnia własne wątki i pojęcia: Doniesienia, frontu, wskazują.",
+        "omits": "Pomija wyliczenia (46 osób, 15 osób) przytaczane przez InfoSecurity24, Gazeta.pl."
       }
     ],
     "sources": [
+      "Bankier.pl",
+      "Dziennik.pl",
       "Gazeta.pl",
       "InfoSecurity24",
       "Kresy.pl",
+      "Newsweek Polska",
+      "Niezależna.pl",
+      "Onet Wiadomości",
       "Polsat News",
       "RadioMaryja.pl",
-      "Rzeczpospolita"
+      "Rzeczpospolita",
+      "Space24",
+      "TVP.info",
+      "WP Wiadomości",
+      "Wyborcza.pl",
+      "naTemat.pl"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wiadomosci.wp.pl/most-krymski-ponownie-zaatakowany-sa-pierwsze-nagrania-7352505153656864a"
+      },
+      {
+        "claim_text": "Dopisano źródło: Wyborcza.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wyborcza.pl/7,75399,33139581,rosja-zapewnia-ze-odbuduje-most-krymski-sa-powody-by-w-to.html"
+      },
+      {
+        "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.tvp.info/96551765/most-krymski-ponownie-zaatakowany-kto-stoi-za-atakiem"
+      }
+    ],
     "impact": {
       "audience": "Kierowcy i pasażerowie",
       "scope": "Świat i bezpieczeństwo",
@@ -12003,7 +12336,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "17 redakcji"
+        "val": "18 redakcji"
       },
       {
         "label": "Kategoria",
@@ -12015,15 +12348,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (17 źródeł)"
+        "val": "Potwierdzone (18 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (17 redakcji)",
+        "heading": "Ustalenia wspólne (18 redakcji)",
         "paragraphs": [
-          "Do pierwszego w historii spotkania trójstronnego Trumpa, Xi i Putina ma dojść w czwartek. Przedstawiciel administracji Trumpa określił je jako „punkt wyjścia” i pierwszą rozmowę na szczeblu przywódców o redukcji arsenałów trzech państw. Zwrócił uwagę, że chiński arsenał rośnie najszybciej na świecie. [Źródło: Defence24, Niezależna.pl, Puls Biznesu, TVN24]",
+          "Do pierwszego w historii spotkania trójstronnego Trumpa, Xi i Putina ma dojść w czwartek. Przedstawiciel administracji Trumpa określił je jako „punkt wyjścia” i pierwszą rozmowę na szczeblu przywódców o redukcji arsenałów trzech państw. Zwrócił uwagę, że chiński arsenał rośnie najszybciej na świecie. [Źródło: Defence24, Niezależna.pl, Puls Biznesu, TVN24, TVP.info]",
           "Jak dotąd Chiny konsekwentnie odmawiały podjęcia dialogu na temat redukcji arsenałów atomowych, wskazując, że chińskie zasoby są znacznie mniejsze niż Rosji i USA. Trump zapowiedział, że poruszy również temat wojny w Ukrainie i wojny z Iranem. Zapowiedział to, mimo że jeszcze w piątek urzędnicy Białego Domu wykluczyli, by wojna w Ukrainie znalazła się w agendzie rozmów. [Źródło: Defence24, Niezależna.pl, Onet Wiadomości, WNP.pl, Kresy.pl, GazetaPrawna.pl (DGP), Dziennik.pl]",
           "Jak twierdził wówczas amerykański urzędnik, Trump uważał, że rozmowy byłyby „niestosowne”, bo Chiny nie uczestniczą w negocjacjach na temat zakończenia wojny. Jeszcze w piątek Biały Dom mówił, że nie ma w planach spotkań bilateralnych ani z jednym, ani z drugim przywódcą. [Źródło: Defence24, Onet Wiadomości, TVN24, WP Wiadomości]",
           "— Wszelkie sztuczne bariery w jakimkolwiek ogniwie łańcucha dostaw powodują szkody dla wszystkich uczestników – powiedział Putin podczas przemówienia pierwszego dnia szczytu Wspólnoty Gospodarczej Azji i Pacyfiku (APEC). [Źródło: Defence24, Biznes Interia, Niezależna.pl, Gazeta.pl, RadioMaryja.pl, Rzeczpospolita]",
@@ -12043,7 +12376,8 @@
           "Media opisują, jak wyglądało ich powitanie, opublikowano także nagranie. [Źródło: TVN24]",
           "W ocenie BBC Putin przed rozmowami trójstronnymi już uzyskał dokładnie to, na co liczył. [Źródło: Dziennik.pl]",
           "Rosyjski dyktator mówił o tym podczas szczytu CEO APEC, przed planowanymi rozmowami z Donaldem Trumpem i Xi Jinpingiem – podaje CNBC. [Źródło: Money.pl]",
-          "Tymczasem prezydent USA Donald Trump w swoim wystąpieniu sprzeciwił się globalnym regulacjom sektora sztucznej inteligencji. [Źródło: Rzeczpospolita]"
+          "Tymczasem prezydent USA Donald Trump w swoim wystąpieniu sprzeciwił się globalnym regulacjom sektora sztucznej inteligencji. [Źródło: Rzeczpospolita]",
+          "Od lat utrzymujemy świetne relacje. Znamy się od dawna i myślę, że może z tego wyniknąć wiele wspaniałych rzeczy, a przynajmniej coś się zacznie – powiedział Donald Trump. Putin odpowiedział kilkoma słowami, lecz nie były one wyraźnie słyszalne. [Źródło: TVP.info]"
         ]
       }
     ],
@@ -12069,7 +12403,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Trump w Shenzhen. Spotka się z Xi Jinpingiem i Putinem",
         "url": "https://niezalezna.pl/swiat/trump-w-shenzhen-spotka-sie-z-xi-jinpingiem-i-putinem/584424",
-        "focus": "Wyróżnia własne wątki i pojęcia: Spotka, poinformował, zawarł.",
+        "focus": "Wyróżnia własne wątki i pojęcia: poinformował, zawarł, filipińskim.",
         "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
       },
       {
@@ -12109,7 +12443,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Putin komentuje zachodnie sankcje. \"Sami siebie ukarali\"",
         "url": "https://wiadomosci.gazeta.pl/swiat/7,198077,33138107,putin-komentuje-zachodnie-sankcje-sami-siebie-ukarali.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: komentuje, Sami, ukarali.",
+        "focus": "Wyróżnia własne wątki i pojęcia: komentuje, Sami, siebie.",
         "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
       },
       {
@@ -12125,7 +12459,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Szczyt przywódców USA, Chin i Rosji w Shenzhen nie jest spotkaniem równych. Karty rozdaje Xi Jinping",
         "url": "https://wyborcza.pl/7,75399,33138876,szczyt-przywodcow-usa-chin-i-rosji-w-shenzhen-nie-jest-spotkaniem.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Chin, równych, Karty.",
+        "focus": "Wyróżnia własne wątki i pojęcia: równych, Karty, rozdaje.",
         "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
       },
       {
@@ -12133,7 +12467,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Donald Trump i Władimir Putin na szczycie w Chinach. Tak wyglądało ich powitanie",
         "url": "https://tvn24.pl/swiat/spotkanie-donalda-trumpa-i-wladimira-putina-na-szczycie-w-shenzhen-w-chinach-st9345127?source=rss",
-        "focus": "Wyróżnia własne wątki i pojęcia: wyglądało, powitanie, Media.",
+        "focus": "Wyróżnia własne wątki i pojęcia: wyglądało, Media, opisują.",
         "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
       },
       {
@@ -12165,7 +12499,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Putin spotkał się z Trumpem i Xi. Na takie efekty rozmów liczy Ukraina",
         "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11347500,putin-spotkal-sie-z-trumpem-i-xi-na-takie-efekty-rozmow-liczy-ukraina.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: spotkał, takie, efekty.",
+        "focus": "Wyróżnia własne wątki i pojęcia: takie, efekty, liczy.",
         "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
       },
       {
@@ -12182,6 +12516,14 @@
         "summary": "Donald Trump na szczycie APEC mówi, że sztuczna inteligencja „jest niemal całkowicie dobra”",
         "url": "https://www.rp.pl/gospodarka/art45511471-donald-trump-na-szczycie-apec-mowi-ze-sztuczna-inteligencja-jest-niemal-calkowicie-dobra",
         "focus": "Wyróżnia własne wątki i pojęcia: mówi, niemal, całkowicie.",
+        "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Trump spotkał się z Putinem. „To mój przyjaciel”",
+        "url": "https://www.tvp.info/96558326/spotkanie-donald-trump-wladimir-putin-na-szczycie-apec-o-czym-rozmawiali-przywodcy-usa-i-chiny-trump-o-putinie-to-moj-przyjaciel",
+        "focus": "Wyróżnia własne wątki i pojęcia: przyjaciel, moim, utrzymujemy.",
         "omits": "Pomija wyliczenia (85 proc, 9 proc) przytaczane przez Biznes Interia."
       }
     ],
@@ -12200,15 +12542,12 @@
       "RadioMaryja.pl",
       "Rzeczpospolita",
       "TVN24",
+      "TVP.info",
       "WNP.pl",
       "WP Wiadomości",
       "Wyborcza.pl"
     ],
     "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Money.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.money.pl/gospodarka/putin-na-szczycie-w-azji-europa-przegrywa-z-konkurencja-7352381824804896a.html"
-      },
       {
         "claim_text": "Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wiadomosci.wp.pl/zbliza-sie-szczyt-putin-trump-xi-kijow-grzmi-ton-powinien-byc-inny-7352370127681568a"
@@ -12224,12 +12563,16 @@
       {
         "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.rp.pl/gospodarka/art45511471-donald-trump-na-szczycie-apec-mowi-ze-sztuczna-inteligencja-jest-niemal-calkowicie-dobra"
+      },
+      {
+        "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.tvp.info/96558326/spotkanie-donald-trump-wladimir-putin-na-szczycie-apec-o-czym-rozmawiali-przywodcy-usa-i-chiny-trump-o-putinie-to-moj-przyjaciel"
       }
     ],
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (17 źródeł)"
+      "status": "Potwierdzone (18 źródeł)"
     },
     "seo_faq": [
       {
@@ -12242,7 +12585,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (17 źródeł)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (18 źródeł)."
       }
     ],
     "dossier_title": "Putin · APEC",
@@ -13346,7 +13689,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "11 redakcji"
+        "val": "10 redakcji"
       },
       {
         "label": "Kategoria",
@@ -13358,7 +13701,7 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (11 źródeł)"
+        "val": "Potwierdzone (10 źródeł)"
       }
     ],
     "declickbait": [
@@ -13370,13 +13713,12 @@
     ],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (11 redakcji)",
+        "heading": "Ustalenia wspólne (10 redakcji)",
         "paragraphs": [
           "18.11.2026 09:55 Autorem dębowego fotela inkrustowanego bursztynem jest Lucjan Myrta, sopocki artysta i mistrz bursztynnictwa. Podobny fotel, przedstawiony na zdjęciu, otrzymał w 2018 roku ówczesny prezydent Andrzej Duda. [Źródło: Rzeczpospolita, Polsat News, Interia Wydarzenia, Radio Gdańsk]",
           "Kancelaria Prezydenta poinformowała później, że Nawrocki przekazał Trumpowi w imieniu narodu polskiego marmurową tablicę, która ma zostać umieszczona na planowanym w Waszyngtonie łuku triumfalnym upamiętniającym 250-lecie Stanów Zjednoczonych. Nawiązuje ona do postaci Tadeusza Kościuszki i Kazimierza Pułaskiego. Nie ujawniono jednak, czym był drugi prezent. [Źródło: Rzeczpospolita, TVN24, Onet Wiadomości, TVP.info, Polsat News, Interia Wydarzenia, naTemat.pl, Radio Gdańsk]",
           "W rozmowie z TVN24+ bursztynnik wyjaśnił, że na zamówienie kancelarii wykonał również drugi, podobny fotel, który miał trafić do Donalda Trumpa jeszcze podczas jego pierwszej kadencji. Prezydent Trump w tym czasie nie przyjechał, a ja zdążyłem zrobić drugi fotel i z nim zostałem – powiedział Myrta. Nad Waszyngtonem przelatują myśliwce amerykańskich sił powietrznych. [Źródło: Rzeczpospolita, TVN24, WP Wiadomości, Onet Wiadomości, TVP.info, Polsat News, Interia Wydarzenia, naTemat.pl, Radio Gdańsk]",
-          "Minister Marcin Przydacz potwierdził jednak, że upominek zrobił wrażenie. [Źródło: WP Wiadomości, Interia Wydarzenia]",
-          "— Trump dostał królewski atrybut od usłużnego Karolka, który w zamian dostanie zdjęcie z amerykańskim prezydentem – komentuje Tomasz Trela z Lewicy. [Źródło: Forsal.pl, Gazeta.pl]"
+          "Minister Marcin Przydacz potwierdził jednak, że upominek zrobił wrażenie. [Źródło: WP Wiadomości, Interia Wydarzenia]"
         ]
       },
       {
@@ -13388,8 +13730,8 @@
           "Gest spotkał się z krytyką koalicji rządzącej. [Źródło: Polsat News]",
           "Do sprawy odnieśli się polscy politycy. [Źródło: Interia Wydarzenia]",
           "Z tej okazji amerykański prezydent zorganizował między innymi galę MMA. Oficjalnym była pamiątkowa tablica poświęcona pamięci Polaków walczących o niepodległość Stanów Zjednoczonych. Jak okazuje się teraz, tym drugim prezentem był bursztynowy tron. [Źródło: Radio Gdańsk]",
-          "Tron z bursztynu dla Donalda Trumpa, dębowe biurko z wraku arktycznego okrętu w Gabinecie Owalnym, a nawet… żywy nosorożec wysłany papieżowi oraz 100 kilogramów surowej jagnięciny. Przez stulecia podarunki wręczane przez koronowane głowy i prezydentów miały ocieplać relacje między państwami, choć nierzadko kończyły się wielkimi katastrofami lub dyplomatycznymi gafami. [Źródło: Forsal.pl]",
-          "Rozmawiamy w Sejmie z posłami o tym, czy chcieliby dostać na święta bursztynowy tron. [Źródło: Gazeta.pl]"
+          "— Trump dostał królewski atrybut od usłużnego Karolka, który w zamian dostanie zdjęcie z amerykańskim prezydentem – komentuje Tomasz Trela z Lewicy.",
+          "Tron z bursztynu dla Donalda Trumpa, dębowe biurko z wraku arktycznego okrętu w Gabinecie Owalnym, a nawet… żywy nosorożec wysłany papieżowi oraz 100 kilogramów surowej jagnięciny. Przez stulecia podarunki wręczane przez koronowane głowy i prezydentów miały ocieplać relacje między państwami, choć nierzadko kończyły się wielkimi katastrofami lub dyplomatycznymi gafami. [Źródło: Forsal.pl]"
         ]
       }
     ],
@@ -13416,7 +13758,7 @@
         "summary": "Tajemniczy prezent Nawrockiego dla Trumpa. Nawet MSZ nie wiedziało",
         "url": "https://wiadomosci.wp.pl/tajemniczy-prezent-nawrockiego-dla-trumpa-nawet-msz-nie-wiedzialo-7352285619255328a",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (Trumpowi, upamiętniającym, poinformowała) rozwijany w Rzeczpospolita, TVN24."
+        "omits": "Pomija kontekst (upamiętniającym, poinformowała, Zjednoczonych) rozwijany w Rzeczpospolita, TVN24."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -13447,7 +13789,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Nawrocki wręczył Trumpowi nietypowy prezent. \"Kupiono tron z bursztynu\"",
         "url": "https://wydarzenia.interia.pl/zagranica/news-nawrocki-wreczyl-trumpowi-nietypowy-prezent-kupiono-tron-z-b,nId,23575433",
-        "focus": "Wyróżnia własne wątki i pojęcia: nietypowy, Kupiono, sprawy.",
+        "focus": "Wyróżnia własne wątki i pojęcia: wręczył, nietypowy, Kupiono.",
         "omits": "Pomija kontekst (Tajemniczy, wiedziało, Nawet) rozwijany w Rzeczpospolita, TVN24."
       },
       {
@@ -13473,19 +13815,10 @@
         "url": "https://forsal.pl/lifestyle/aktualnosci/artykuly/11347584,prezenty-dyplomatyczne-historia-tron-z-bursztynu-trump-biurko-resolute-gafy.html",
         "focus": "Wyróżnia własne wątki i pojęcia: inne, dyplomacji, królowej.",
         "omits": "Pomija kontekst (Waszyngtonie, powietrznych, Kancelaria) rozwijany w Rzeczpospolita, TVN24."
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Prezydent wręczył Trumpowi bursztynowy \"tron\". Politycy komentują: Po prostu się zbłaźnił",
-        "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33139004,prezydent-wreczyl-trumpowi-bursztynowy-tron-politycy-komentuja.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: prostu, zbłaźnił, Rozmawiamy.",
-        "omits": "Pomija kontekst (Nawrockiego, prezent, Donalda) rozwijany w Rzeczpospolita, TVN24."
       }
     ],
     "sources": [
       "Forsal.pl",
-      "Gazeta.pl",
       "Interia Wydarzenia",
       "Onet Wiadomości",
       "Polsat News",
@@ -13521,7 +13854,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Prawo i decyzje publiczne",
-      "status": "Potwierdzone (11 źródeł)"
+      "status": "Potwierdzone (10 źródeł)"
     },
     "seo_faq": [
       {
@@ -13534,7 +13867,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (11 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (10 źródeł)."
       }
     ]
   },
@@ -17807,7 +18140,7 @@
     "keywords": "Lodzkie, Poważny, wypadek, Bełchatowem, akcji, śmigłowiec",
     "thumbnail_url": "",
     "published_iso": "2026-11-17T21:52:26+01:00",
-    "updated_iso": "2026-11-19T03:54:40+01:00",
+    "updated_iso": "2026-11-19T05:00:43+01:00",
     "display_date": "17.11.2026, 21:52",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -18278,13 +18611,13 @@
     "updated_iso": "2026-11-17T20:08:52+01:00",
     "display_date": "17.11.2026, 20:08",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -18296,13 +18629,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
           "29-letni kierowca Opla nie zatrzymał się do kontroli drogowej, a następnie próbował uciekać pieszo. Jak ustalili funkcjonariusze, mężczyzna miał sądowy zakaz prowadzenia pojazdów, cofnięte uprawnienia do kierowania, a test narkotykowy wskazał obecność substancji odurzających w organizmie. Zaskakujący okazał się także finał kontroli wobec kobiety, która zgłosiła jego zachowanie policji. [Źródło: TVP3 Łódź, Radio Łódź, Onet Wiadomości]",
           "11 listopada tuż po godz. 6.00 do Komendy Miejskiej Policji w Skierniewicach wpłynęło zgłoszenie dotyczące kierującego Oplem, który poruszał się ulicami centrum miasta. Według zgłaszającej mężczyzna mógł znajdować się pod wpływem alkoholu lub środków odurzających. Kobieta poinformowała, że jedzie za wskazanym pojazdem. [Źródło: TVP3 Łódź, Radio Łódź]",
@@ -18313,8 +18646,7 @@
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Do zdarzenia doszło w środę (11 listopada) tuż po godzinie 6 rano. Na miejsce skierowano patrole policji. Kierowca zignorował jednak sygnały świetlne i dźwiękowe, po czym kontynuował jazdę. [Źródło: Radio Łódź]",
-          "Nowe przepisy wchodzą w życie 21 listopada. [Źródło: Onet Wiadomości]",
-          "Prezydent Karol Nawrocki podpisał ustawę likwidującą ulgę podatkową na internet. Podatnicy, którzy po raz pierwszy skorzystają z niej w rozliczeniu za 2026 rok, zachowają jednak prawo do odliczenia także za 2027 rok. Nowe przepisy podwajają również ulgę dla honorowych dawców krwi i przedłużają preferencję podatkową na robotyzację. [Źródło: TVN24]"
+          "Nowe przepisy wchodzą w życie 21 listopada. [Źródło: Onet Wiadomości]"
         ]
       }
     ],
@@ -18325,7 +18657,7 @@
         "summary": "Zgłosiła kierowcę pod wpływem. Chwilę później sama została zatrzymana",
         "url": "https://lodz.tvp.pl/skierniewice-pijana-kobieta-zglosila-kierowce-sama-miala-15-promila,96530393",
         "focus": "Wyróżnia własne wątki i pojęcia: Chwilę, później.",
-        "omits": "Pomija wyliczenia (2027, 2026) przytaczane przez TVN24."
+        "omits": "Pomija kontekst (podejrzanego, kontynuował, skierowano) rozwijany w Radio Łódź."
       },
       {
         "outlet": "Radio Łódź",
@@ -18333,29 +18665,20 @@
         "summary": "Zgłosiła policji podejrzanego kierowcę. Sama miała 1,5 promila alkoholu",
         "url": "https://radiolodz.pl/zglosila-policji-podejrzanego-kierowce-sama-miala-15-promila-alkoholu,688261/",
         "focus": "Wyróżnia własne wątki i pojęcia: podejrzanego, promila, zdarzenia.",
-        "omits": "Pomija wyliczenia (2027, 2026) przytaczane przez TVN24."
+        "omits": "Pomija kontekst (przepisy, później, Wkrótce) rozwijany w Onet Wiadomości, TVP3 Łódź."
       },
       {
         "outlet": "Onet Wiadomości",
         "angle": "Doniesienie regionalne",
         "summary": "Wkrótce nowe przepisy dla kierowców. Za wykroczenia na przejazdach kolejowych kary będą wyższe",
         "url": "https://wiadomosci.onet.pl/kraj/kary-za-wykroczenia-na-przejazdach-kolejowych-beda-wyzsze-wkrotce-nowe-przepisy/vdt3kff",
-        "focus": "Wyróżnia własne wątki i pojęcia: wyższe, wchodzą, życie.",
-        "omits": "Pomija wyliczenia (2027, 2026) przytaczane przez TVN24."
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Doniesienie regionalne",
-        "summary": "Ta ulga wkrótce zniknie. Nowe przepisy od 2027 roku",
-        "url": "https://tvn24.pl/biznes/pieniadze/koniec-ulgi-na-internet-zmiana-przepisow-od-2027-roku-jakie-ulgi-podatkowe-beda-obowiazywac-st9346091?source=rss",
-        "focus": "Eksponuje dane (2027, 2026) oraz wątki: ulga, zniknie.",
-        "omits": "Pomija kontekst (funkcjonariusze, przeprowadzili, odurzających) rozwijany w TVP3 Łódź, Radio Łódź."
+        "focus": "Wyróżnia własne wątki i pojęcia: Wkrótce, przepisy, wyższe.",
+        "omits": "Pomija kontekst (Skierniewicach, poinformowała, zgłaszającej) rozwijany w TVP3 Łódź, Radio Łódź."
       }
     ],
     "sources": [
       "Onet Wiadomości",
       "Radio Łódź",
-      "TVN24",
       "TVP3 Łódź"
     ],
     "corrections": [
@@ -18379,8 +18702,8 @@
         "a": "Jak ustalili funkcjonariusze, mężczyzna miał sądowy zakaz prowadzenia pojazdów, cofnięte uprawnienia do kierowania, a test narkotykowy wskazał obecność substancji odurzających w organizmie."
       },
       {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Podatnicy, którzy po raz pierwszy skorzystają z niej w rozliczeniu za 2026 rok, zachowają jednak prawo do odliczenia także za 2027 rok."
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Zaskakujący okazał się także finał kontroli wobec kobiety, która zgłosiła jego zachowanie policji."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
@@ -24946,227 +25269,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Sprawy lokalne i samorząd). Status: Postępowanie / Śledztwo."
-      }
-    ]
-  },
-  {
-    "id": 1175395763,
-    "path": "/Swiat",
-    "seo_url": "/Swiat/kreml-dostal-bardzo-mocny-policzek-ukraincy-trafili-w-most-krymski",
-    "seo_title": "Kreml dostał bardzo mocny policzek. Ukraińcy trafili w Most Krymski",
-    "summary_lead": "Już w marcu 2024 r. szef SBU Wasyl Maluk mówił o możliwościach całkowitego zniszczenia mostu, ale zaznaczał, że przy wówczas posiadanych środkach może to być trudne.",
-    "meta_description": "Już w marcu 2024 r. szef SBU Wasyl Maluk mówił o możliwościach całkowitego zniszczenia mostu, ale zaznaczał, że przy wówczas posiadanych środkach może to być…",
-    "keywords": "Swiat, Kreml, dostał, mocny, policzek, Ukraińcy, trafili",
-    "thumbnail_url": "https://ipla.pluscdn.pl/dituel/cp/y3/y3o1cy1zms1cca1ar2htessbsnefnucs.jpg",
-    "published_iso": "2026-11-17T12:57:33+01:00",
-    "updated_iso": "2026-11-18T07:13:35+01:00",
-    "display_date": "17.11.2026, 12:57",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "13 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Swiat"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Newsweek Polska"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (13 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (13 redakcji)",
-        "paragraphs": [
-          "Już w marcu 2024 r. szef SBU Wasyl Maluk mówił o możliwościach całkowitego zniszczenia mostu, ale zaznaczał, że przy wówczas posiadanych środkach może to być trudne. Od niedawna jednak Ukraińcy posiadają broń, która podołała temu zadaniu. Tym razem Most Krymski był atakowany dwie noce z rzędu. [Źródło: Newsweek Polska, TVP.info]",
-          "Ukraińcy w nocy po raz drugi w ciągu doby zaatakowali Most Krymski, którego część została poważnie uszkodzona. Prezydent Ukrainy Wołodymyr Zełenski przekazał, że uderzenie w Most Krymski było odpowiedzią na ciągłe rosyjskie ataki na ukraińskie miasta, infrastrukturę krytyczną i statki ze zbożem. [Źródło: Newsweek Polska, Polsat News, Gazeta.pl, Niezależna.pl, Onet Wiadomości, Rzeczpospolita, WP Wiadomości, Dziennik.pl, TVP.info]",
-          "Ukraiński atak, który doprowadził we wtorek do zawalenia się części Mostu Kerczeńskiego, przeprowadzono bez użycia systemu Starlink – podał „The Times”. Operacja miała też wymiar symboliczny – jej celem było pokazanie słabości Rosji przed spotkaniem Władimira Putina z przywódcami USA i Chin. Ruch drogowy i kolejowy na przeprawie został wstrzymany. [Źródło: Newsweek Polska, Polsat News, Bankier.pl, Space24, Niezależna.pl, TVP.info]",
-          "W wyniku uderzenia część strategicznej przeprawy zawaliła się do Cieśniny Kerczeńskiej. [Źródło: Niezależna.pl, TVP.info]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Teraz będzie musiał być znacznie bardziej obciążony ruchem, ponieważ pozostał jedyną drogą lądową o odpowiedniej przepustowości. Według doniesień jeden z łuków drogowej części przeprawy miał zostać uszkodzony i runąć do wody. Doniesienia te nie zostały jednak niezależnie zweryfikowane. [Źródło: Kresy.pl]",
-          "Rakiety trafiły w dwa mosty, a uszkodzenia odnotowano także w metrze. We wtorek rano (17 listopada) doszło do kolejnego ataku na stolicę. O nocnym ostrzale poinformował mer Kijowa Witalij Kliczko. [Źródło: naTemat.pl]",
-          "W związku z uderzeniem rząd Rosji zbierze się na nadzwyczajnym posiedzeniu. [Źródło: Polsat News]",
-          "Jej twórcy zapewniają, że była to jedyna broń produkowana w Europie, poza granicami Ukrainy, która została wykorzystana w tym ataku. [Źródło: Rzeczpospolita]",
-          "Operacja ograniczy rosyjskie możliwości transportu na okupowany Krym. [Źródło: WP Wiadomości]",
-          "Doniesienia z frontu wskazują na duży sukces Ukraińców. [Źródło: Dziennik.pl]",
-          "Na miejscu zdarzenia są wszystkie odpowiednie służby. Trwa ocena szkód” – napisał Siergiej Aksionow, szef władz okupacyjnych Krymu, na Telegramie. [Źródło: TVP.info]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Newsweek Polska",
-        "angle": "Relacja wiodąca",
-        "summary": "Kreml dostał bardzo mocny policzek. Ukraińcy trafili w Most Krymski",
-        "url": "https://www.newsweek.pl/swiat/precyzyjne-uderzenie-ukrainy-odbudowa-mostu-krymskiego-jest-nierealna/n229pbw",
-        "focus": "Podkreśla konkretne liczby (2024) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (ataku, uderzyła, Ukraina) rozwijany w naTemat.pl, Gazeta.pl."
-      },
-      {
-        "outlet": "Kresy.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Ukraina ponownie uderzyła w Most Krymski. Rosja zaatakowała kluczowe przeprawy w Kijowie [+VIDEO/+FOTO]",
-        "url": "https://kresy.pl/wydarzenia/ukraina-ponownie-uderzyla-w-most-krymski-rosja-zaatakowala-kluczowe-przeprawy-w-kijowie-video-foto/",
-        "focus": "Wyróżnia własne wątki i pojęcia: kluczowe, Kijowie, VIDEO.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "naTemat.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Runął fragment Mostu Krymskiego. Wcześniej Rosja uderzyła w dwa mosty Kijowa",
-        "url": "https://natemat.pl/675814,runal-fragment-mostu-krymskiego-wczesniej-rosja-uderzyla-w-dwa-mosty-kijowa",
-        "focus": "Wyróżnia własne wątki i pojęcia: Runął, fragment, Wcześniej.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Celne trafienie w Most Krymski. Część przeprawy runęła, ruch wstrzymany",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-17/celne-trafienie-w-most-krymski-czesc-przeprawy-runela-ruch-wstrzymany/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Celne, trafienie, runęła.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Zełenski wyjaśnił powody ataku na Most Krymski. \"Od dawna mówiliśmy Rosji\"",
-        "url": "https://wiadomosci.gazeta.pl/swiat/7,198077,33138132,zelenski-wyjasnil-powody-ataku-na-most-krymski-od-dawna-mowilismy.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: wyjaśnił, powody, dawna.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina",
-        "url": "https://www.bankier.pl/wiadomosc/Ukraina-uderzyla-w-Most-Kerczenski-bez-Starlinka-Operacja-miala-upokorzyc-Putina-9230775.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: upokorzyć.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Space24",
-        "angle": "Kontekst technologiczny",
-        "summary": "Ukraina zaatakowała Most Kerczeński bez wsparcia Starlinka",
-        "url": "https://space24.pl/satelity/komunikacja/ukraina-zaatakowala-most-kerczenski-bez-wsparcia-starlinka",
-        "focus": "Wyróżnia własne wątki i pojęcia: wsparcia.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Potężne uderzenie w Most Krymski. Ujawniono kulisy operacji",
-        "url": "https://niezalezna.pl/swiat/potezne-uderzenie-w-most-krymski-ujawniono-kulisy-operacji/584437",
-        "focus": "Wyróżnia własne wątki i pojęcia: Potężne, Ujawniono, kulisy.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Symboliczny wymiar ataku na Most Krymski. Starlink nie był potrzebny",
-        "url": "https://wiadomosci.onet.pl/swiat/ukraina-uderzyla-w-most-krymski-bez-pomocy-z-usa-symboliczny-gest/ks37gd0",
-        "focus": "Wyróżnia własne wątki i pojęcia: potrzebny.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Firma imigranta z Rosji pomogła uszkodzić Most Krymski. Ukraińcy użyli jej broni",
-        "url": "https://radar.rp.pl/innowacje-w-armiach/art45507511-firma-imigranta-z-rosji-pomogla-uszkodzic-most-krymski-ukraincy-uzyli-jej-broni",
-        "focus": "Wyróżnia własne wątki i pojęcia: Firma, imigranta, pomogła.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "WP Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "ISW o ataku na Most Kerczeński. Odsłonił słabość Rosji",
-        "url": "https://wiadomosci.wp.pl/isw-o-ataku-na-most-kerczenski-odslonil-slabosc-rosji-7352358346881056a",
-        "focus": "Wyróżnia własne wątki i pojęcia: Odsłonił, ograniczy, transportu.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Doniesienia z frontu wskazują na duży sukces Ukraińców. \"Ujawnili słabość Rosji\"",
-        "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11347304,doniesienia-z-frontu-wskazuja-na-duzy-sukces-ukraincow-ujawnili-slabosc-rosji.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: frontu, wskazują, duży.",
-        "omits": "Pomija wyliczenia (2024) przytaczane przez Newsweek Polska, TVP.info."
-      },
-      {
-        "outlet": "TVP.info",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Most Krymski ponownie zaatakowany",
-        "url": "https://www.tvp.info/96551765/most-krymski-ponownie-zaatakowany-kto-stoi-za-atakiem",
-        "focus": "Podkreśla konkretne liczby (2024) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (ataku, uderzyła, Ukraina) rozwijany w naTemat.pl, Gazeta.pl."
-      }
-    ],
-    "sources": [
-      "Bankier.pl",
-      "Dziennik.pl",
-      "Gazeta.pl",
-      "Kresy.pl",
-      "Newsweek Polska",
-      "Niezależna.pl",
-      "Onet Wiadomości",
-      "Polsat News",
-      "Rzeczpospolita",
-      "Space24",
-      "TVP.info",
-      "WP Wiadomości",
-      "naTemat.pl"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Onet Wiadomości (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.onet.pl/swiat/ukraina-uderzyla-w-most-krymski-bez-pomocy-z-usa-symboliczny-gest/ks37gd0"
-      },
-      {
-        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://radar.rp.pl/innowacje-w-armiach/art45507511-firma-imigranta-z-rosji-pomogla-uszkodzic-most-krymski-ukraincy-uzyli-jej-broni"
-      },
-      {
-        "claim_text": "Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.wp.pl/isw-o-ataku-na-most-kerczenski-odslonil-slabosc-rosji-7352358346881056a"
-      },
-      {
-        "claim_text": "Dopisano źródło: Biznes Interia (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://biznes.interia.pl/polityka/news-ukraina-poradzila-sobie-bez-elona-muska-wazny-cel-na-krymie,nId,23575546"
-      },
-      {
-        "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.tvp.info/96551765/most-krymski-ponownie-zaatakowany-kto-stoi-za-atakiem"
-      }
-    ],
-    "impact": {
-      "audience": "Opinia publiczna i dyplomacja",
-      "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (13 źródeł)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Kreml dostał bardzo mocny policzek. Ukraińcy trafili w Most Krymski?",
-        "a": "Od niedawna jednak Ukraińcy posiadają broń, która podołała temu zadaniu."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Tym razem Most Krymski był atakowany dwie noce z rzędu."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (13 źródeł)."
       }
     ]
   },
@@ -39028,110 +39130,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (2 źródła)."
-      }
-    ]
-  },
-  {
-    "id": 1595211852,
-    "path": "/Polska/Regiony/Lubelskie",
-    "seo_url": "/Polska/Regiony/Lubelskie/wieczorna-wizyta-pary-prezydenckiej-w-lublinie-karol-nawrocki-z",
-    "seo_title": "Wieczorna wizyta pary prezydenckiej w Lublinie. Karol Nawrocki z małżonką na premierze „Pana Tadeusza”",
-    "summary_lead": "Sobotni wieczór w Centrum Spotkania Kultur miał szczególną rangę. Na premierę spektaklu „Pan Tadeusz” przybyła para prezydencka – prezydent Karol Nawrocki wraz z małżonką Martą Nawrocką.",
-    "meta_description": "Sobotni wieczór w Centrum Spotkania Kultur miał szczególną rangę. Na premierę spektaklu „Pan Tadeusz” przybyła para prezydencka – prezydent Karol Nawrocki…",
-    "keywords": "Lubelskie, Wieczorna, wizyta, pary, prezydenckiej, Lublinie, Karol",
-    "thumbnail_url": "https://www.lublin112.pl/wp-content/uploads/2026/11/145p72.jpg",
-    "published_iso": "2026-11-15T06:56:24+01:00",
-    "display_date": "15.11.2026, 06:56",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
-    "admin_note": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Lubelskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Lublin112.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Sobotni wieczór w Centrum Spotkania Kultur miał szczególną rangę. Na premierę spektaklu „Pan Tadeusz” przybyła para prezydencka – prezydent Karol Nawrocki wraz z małżonką Martą Nawrocką. Ich niezapowiadana wcześniej obecność nadała wydarzeniu wyjątkowy charakter. [Źródło: Lublin112.pl, Radio Lublin, Polsat News]",
-          "Wizyta głowy państwa w Lublinie zbiegła się z premierą dużej produkcji teatralno-muzycznej przygotowanej na podstawie epopei narodowej Adama Mickiewicza. „Pan Tadeusz” w reżyserii Przemysława Stippy to widowisko, w którym klasyczna literatura spotyka się ze współczesnymi rozwiązaniami scenicznymi. [Źródło: Lublin112.pl, Polsat News]",
-          "Na scenie występuje ponad stu artystów, w tym aktorzy, tancerze, statyści, orkiestra i chór. [Źródło: Radio Lublin, Polsat News]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Za adaptację i dramaturgię odpowiada Antoni Winch. Drugi pokaz zaplanowano na niedzielę, 15 listopada. [Źródło: Radio Lublin]",
-          "W obsadzie znaleźli się między innymi Joanna Trzepiecińska, Filip Gurłacz, czy Sandra Naum. [Źródło: Polsat News]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Lublin112.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Wieczorna wizyta pary prezydenckiej w Lublinie. Karol Nawrocki z małżonką na premierze „Pana Tadeusza”",
-        "url": "https://www.lublin112.pl/wieczorna-wizyta-pary-prezydenckiej-w-lublinie-karol-nawrocki-z-malzonka-na-premierze-pana-tadeusza/",
-        "focus": "Wyróżnia własne wątki i pojęcia: pary, Pana.",
-        "omits": "Pomija kontekst (występuje, orkiestra, artystów) rozwijany w Radio Lublin, Polsat News."
-      },
-      {
-        "outlet": "Radio Lublin",
-        "angle": "Doniesienie regionalne",
-        "summary": "Prezydent Karol Nawrocki na premierze lubelskiego spektaklu",
-        "url": "https://radio.lublin.pl/2026/11/prezydent-karol-nawrocki-na-premierze-lubelskiego-spektaklu/",
-        "focus": "Wyróżnia własne wątki i pojęcia: lubelskiego, adaptację, dramaturgię.",
-        "omits": "Pomija kontekst (teatralno-muzycznej, przygotowanej, współczesnymi) rozwijany w Lublin112.pl, Polsat News."
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Doniesienie regionalne",
-        "summary": "Wyjątkowy spektakl w Lublinie. Na widowni para prezydencka",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-15/wyjatkowy-spektakl-w-lublinie-na-widowni-para-prezydencka/",
-        "focus": "Wyróżnia własne wątki i pojęcia: widowni, obsadzie, znaleźli.",
-        "omits": "Pomija kontekst (lubelskiego, dramaturgię, zaplanowano) rozwijany w Radio Lublin."
-      }
-    ],
-    "sources": [
-      "Lublin112.pl",
-      "Polsat News",
-      "Radio Lublin"
-    ],
-    "corrections": [],
-    "updated_iso": "2026-11-15T06:56:24+01:00",
-    "zero_trust_reason": "",
-    "impact": {
-      "audience": "Mieszkańcy Lubelszczyzny",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (3 źródła)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Wieczorna wizyta pary prezydenckiej w Lublinie. Karol Nawrocki z małżonką?",
-        "a": "Ich niezapowiadana wcześniej obecność nadała wydarzeniu wyjątkowy charakter."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Wizyta głowy państwa w Lublinie zbiegła się z premierą dużej produkcji teatralno-muzycznej przygotowanej na podstawie epopei narodowej Adama Mickiewicza."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Lubelszczyzny (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
       }
     ]
   }

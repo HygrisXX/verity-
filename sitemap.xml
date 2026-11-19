@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,13 +51,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/</loc>
-    <lastmod>2026-11-18T21:49:47+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:36+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,7 +69,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/</loc>
-    <lastmod>2026-11-19T03:54:37+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:41+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -152,6 +152,33 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos/</loc>
+    <lastmod>2026-11-19T05:00:41+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1961054971.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/krytyczna-podatnosc-w-srodowisku-java/</loc>
+    <lastmod>2026-11-19T05:00:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/NysCv7KFRCDvxfXs4CtA8myRgEfP8yEKX6QcdEh1.25qg.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/dwie-mieszkanki-lublina-z-zarzutami-sutenerstwa-grozi-im-5-lat-wiezienia/</loc>
+    <lastmod>2026-11-19T05:00:36+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://radio.lublin.pl/wp-content/uploads/2026/11/EAttachments11150713fe877e271fdcf6244aec5e2cc0cb5a15_xl.jpg?size=md</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie/</loc>
     <lastmod>2026-11-19T03:54:37+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -167,15 +194,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8bbacfec-8535-46da-b97f-d543a9ebbf45</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w/</loc>
-    <lastmod>2026-11-19T02:18:14+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1968908329.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -621,7 +639,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -913,7 +931,7 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/960134688.png</image:loc>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/c7594243-ea5a-464b-aef7-480f86c57b77</image:loc>
     </image:image>
   </url>
   <url>
@@ -1440,7 +1458,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/</loc>
-    <lastmod>2026-11-19T03:54:40+01:00</lastmod>
+    <lastmod>2026-11-19T05:00:43+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1931,15 +1949,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/dfbedfae-290e-4fce-a5c4-c3fd4a49d7f5</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/kreml-dostal-bardzo-mocny-policzek-ukraincy-trafili-w-most-krymski/</loc>
-    <lastmod>2026-11-18T07:13:35+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/y3/y3o1cy1zms1cca1ar2htessbsnefnucs.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -2822,15 +2831,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-emmanuel-macron-ph9303289/alternates/LANDSCAPE_1280</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wieczorna-wizyta-pary-prezydenckiej-w-lublinie-karol-nawrocki-z/</loc>
-    <lastmod>2026-11-15T06:56:24+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145p72.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

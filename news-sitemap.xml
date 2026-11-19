@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T05:00:41+01:00</news:publication_date>
+      <news:title>Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś pójdzie nie tak</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1961054971.png</image:loc>
+      <image:title>Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś pójdzie nie tak</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/krytyczna-podatnosc-w-srodowisku-java/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T05:00:37+01:00</news:publication_date>
+      <news:title>Krytyczna podatność w środowisku Java</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/NysCv7KFRCDvxfXs4CtA8myRgEfP8yEKX6QcdEh1.25qg.png</image:loc>
+      <image:title>Krytyczna podatność w środowisku Java</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/dwie-mieszkanki-lublina-z-zarzutami-sutenerstwa-grozi-im-5-lat-wiezienia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T05:00:36+01:00</news:publication_date>
+      <news:title>Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radio.lublin.pl/wp-content/uploads/2026/11/EAttachments11150713fe877e271fdcf6244aec5e2cc0cb5a15_xl.jpg?size=md</image:loc>
+      <image:title>Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie/</loc>
     <news:news>
       <news:publication>
@@ -30,21 +75,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8bbacfec-8535-46da-b97f-d543a9ebbf45</image:loc>
       <image:title>Iskrzy między Japonią a Rosją. Media: premierka Takaichi wezwała Putina do uwolnienia dziennikarza</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T02:18:14+01:00</news:publication_date>
-      <news:title>82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1968908329.png</image:loc>
-      <image:title>82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych</image:title>
     </image:image>
   </url>
   <url>
@@ -1273,7 +1303,7 @@
       <news:title>Wypadek kolejowy w Pradze. 46 osób poszkodowanych</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/960134688.png</image:loc>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/c7594243-ea5a-464b-aef7-480f86c57b77</image:loc>
       <image:title>Wypadek kolejowy w Pradze. 46 osób poszkodowanych</image:title>
     </image:image>
   </url>
@@ -2970,21 +3000,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/dfbedfae-290e-4fce-a5c4-c3fd4a49d7f5</image:loc>
       <image:title>Kłopoty Grzegorza Brauna. Jest akt oskarżenia</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/kreml-dostal-bardzo-mocny-policzek-ukraincy-trafili-w-most-krymski/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T12:57:33+01:00</news:publication_date>
-      <news:title>Kreml dostał bardzo mocny policzek. Ukraińcy trafili w Most Krymski</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/y3/y3o1cy1zms1cca1ar2htessbsnefnucs.jpg</image:loc>
-      <image:title>Kreml dostał bardzo mocny policzek. Ukraińcy trafili w Most Krymski</image:title>
     </image:image>
   </url>
   <url>
