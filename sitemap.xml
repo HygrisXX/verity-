@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,7 +69,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/</loc>
-    <lastmod>2026-11-18T23:47:40+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:42+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -152,6 +152,15 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos/</loc>
+    <lastmod>2026-11-19T01:01:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1961054971.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie/</loc>
     <lastmod>2026-11-18T23:47:40+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -167,15 +176,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-18_1795009860_1064557.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w/</loc>
-    <lastmod>2026-11-18T22:50:36+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1968908329.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -612,7 +612,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1431,7 +1431,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powazny-wypadek-pod-belchatowem-w-akcji-smiglowiec-lpr/</loc>
-    <lastmod>2026-11-18T23:47:42+01:00</lastmod>
+    <lastmod>2026-11-19T01:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
