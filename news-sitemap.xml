@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T06:04:03+01:00</news:publication_date>
+      <news:title>82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1968908329.png</image:loc>
+      <image:title>82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-uslyszal-zadania-atak-na-most-krymski-podsumowanie-nocy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T06:04:00+01:00</news:publication_date>
+      <news:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.wiadomosci.onet.pl/1/hRbk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9hYTAwYWJhMjc1YWY3ZDc0MjNmZDY3MjAyYmIxNjEyOC5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
+      <image:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/elon-musk-oskarza-ukraine-i-usa-padly-slowa-o-obaleniu-janukowycza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T06:03:58+01:00</news:publication_date>
+      <news:title>Elon Musk oskarża Ukrainę i USA. Padły słowa o obaleniu Janukowycza</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/2e8c42b7ae9c5d81cd8b57500d73d5e6/?t=crop:5596:2446:nowe:0:642,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Elon Musk oskarża Ukrainę i USA. Padły słowa o obaleniu Janukowycza</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos/</loc>
     <news:news>
       <news:publication>
@@ -45,21 +90,6 @@
     <image:image>
       <image:loc>https://radio.lublin.pl/wp-content/uploads/2026/11/EAttachments11150713fe877e271fdcf6244aec5e2cc0cb5a15_xl.jpg?size=md</image:loc>
       <image:title>Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T03:54:37+01:00</news:publication_date>
-      <news:title>Pierwsza taka pracownia w tej części Polski. Powstała w Olsztynie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tko.pl/wp-content/uploads/2026/11/9ec4695102d15415.jpg</image:loc>
-      <image:title>Pierwsza taka pracownia w tej części Polski. Powstała w Olsztynie</image:title>
     </image:image>
   </url>
   <url>
@@ -1335,6 +1365,21 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1298258837.png</image:loc>
       <image:title>Zderzenie i dachowanie na Trasie Łazienkowskiej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/ukraina-uderzyla-w-most-kerczenski-bez-starlinka-operacja-miala/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T13:05:23+01:00</news:publication_date>
+      <news:title>Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina (250 km)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1292689945.png</image:loc>
+      <image:title>Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina (250 km)</image:title>
     </image:image>
   </url>
   <url>
@@ -3088,7 +3133,7 @@
       <news:title>Nawrocka broni weta prezydenta. Jedno zdanie skierowała wprost do polityków</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1498210694.png</image:loc>
+      <image:loc>https://bi.im-g.pl/im/d6/9a/1f/z33139926IHG,Karol-Nawrocki--zdjecie-archiwalne-.jpg</image:loc>
       <image:title>Nawrocka broni weta prezydenta. Jedno zdanie skierowała wprost do polityków</image:title>
     </image:image>
   </url>
