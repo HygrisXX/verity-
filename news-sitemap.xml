@@ -3,6 +3,36 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwsza-taka-pracownia-w-tej-czesci-polski-powstala-w-olsztynie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T03:54:37+01:00</news:publication_date>
+      <news:title>Pierwsza taka pracownia w tej części Polski. Powstała w Olsztynie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tko.pl/wp-content/uploads/2026/11/9ec4695102d15415.jpg</image:loc>
+      <image:title>Pierwsza taka pracownia w tej części Polski. Powstała w Olsztynie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/iskrzy-miedzy-japonia-a-rosja-media-premierka-takaichi-wezwala-putina/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T03:54:34+01:00</news:publication_date>
+      <news:title>Iskrzy między Japonią a Rosją. Media: premierka Takaichi wezwała Putina do uwolnienia dziennikarza</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8bbacfec-8535-46da-b97f-d543a9ebbf45</image:loc>
+      <image:title>Iskrzy między Japonią a Rosją. Media: premierka Takaichi wezwała Putina do uwolnienia dziennikarza</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/82-procent-z-matematyki-i-niemal-96-z-angielskiego-ta-podstawowka-w/</loc>
     <news:news>
       <news:publication>
@@ -15,21 +45,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1968908329.png</image:loc>
       <image:title>82 procent z matematyki i niemal 96 z angielskiego. Ta podstawówka w Olsztynie nie ma sobie równych</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pierwszy-lot-samolotem-z-polski-jak-sie-przygotowac-i-co-zrobic-gdy-cos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T01:01:42+01:00</news:publication_date>
-      <news:title>Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś pójdzie nie tak</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1961054971.png</image:loc>
-      <image:title>Pierwszy lot samolotem z Polski: jak się przygotować i co zrobić, gdy coś pójdzie nie tak</image:title>
     </image:image>
   </url>
   <url>
