@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/</loc>
-    <lastmod>2026-11-19T20:55:57+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:49+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -105,7 +105,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/</loc>
-    <lastmod>2026-11-19T20:56:00+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:53+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -129,7 +129,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:56+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,15 +141,78 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-19T20:55:58+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/interwencja-sar-uchronila-baltyk-przed-skazeniem/</loc>
+    <lastmod>2026-11-19T21:48:53+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://radiogdansk.pl/wp-content/uploads/2026/11/holownik-niemal-utonal-wciaz-jes-1.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/lawrow-stracil-panowanie-z-rownowagi-wyprowadzilo-go-pytanie-o-sukces/</loc>
+    <lastmod>2026-11-19T21:48:51+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://m.natemat.pl/siergiej-lawrow-oa1io2rm-1500x0x0x0.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/jak-nie-dac-sie-oszukac-wloclawscy-seniorzy-poznali-zasady/</loc>
+    <lastmod>2026-11-19T21:48:50+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/a/3/3/uid_a33b8cbee519455eaf7b4e9f9e8cdd66_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/potracenie-pieszej-w-solcu-kujawskim-ladowal-po-nia-smiglowiec-lpr/</loc>
+    <lastmod>2026-11-19T21:48:50+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/e/b/4/uid_eb4b90d6488b44488a283e2369171a70_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/59-ekspertow-od-ai-alarmuje-tusk-zaprasza-ich-do-warszawy-59-eur/</loc>
+    <lastmod>2026-11-19T21:48:49+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/0c4b7c72-2ea0-4531-a848-b0c835d283b5</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/do-pieciu-lat-wiezienia-za-seksualne-deepfake-i-poslowie-chca-zmian-w/</loc>
+    <lastmod>2026-11-19T21:48:46+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/19/320x240px/iISSfNaeiupMBWhorxPd3Lx0c4tX26IitdoYbar6.cjsg.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/oficjalnie-znamy-nowego-trenera-slaska-wroclaw/</loc>
+    <lastmod>2026-11-19T21:48:45+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.przegladsportowy.onet.pl/1/A7ck9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9lODA2NDVjNmRkODNhMjhjY2VlYTk3ZmFkMGFmNTM5My5qcGeSlQPNAUfNAlvNEIzNCU-TBc0JYM0GQN4AAqEwB6ExBA</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/nowoczesne-centrum-szkoleniowe-za-55-mln-zl-inwestycja-akademii/</loc>
@@ -737,15 +800,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tusk-w-berlinie-premier-liczy-na-informacje-od-amerykanow/</loc>
-    <lastmod>2026-11-19T13:17:32+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s15.tvp.pl/images2/5/1/e/uid_51e2ae80ff5a4213908c08faa9207be5_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/wojsko-placi-polakom-za-gotowosc-do-walki-nie-musisz-rzucac-pracy-zeby/</loc>
     <lastmod>2026-11-19T13:17:30+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -909,7 +963,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/dunczycy-jednomyslnie-poparli-porozumienie-z-usa-w-sprawie-grenlandii/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1007,12 +1061,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/podswietlenie-budynkow-na-czerwono-miedzynarodowy-dzien/</loc>
-    <lastmod>2026-11-19T09:59:33+01:00</lastmod>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/duza-ogolnopolska-akcja-wymierzona-w-pedofilow-123-zatrzymanych-takze-w/</loc>
+    <lastmod>2026-11-19T21:48:56+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://s3.tvp.pl/images2/3/3/6/uid_336d8691bee44ef48a707c9f111a0f33_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1517780372.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -1566,7 +1620,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2786,51 +2840,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://s6.tvp.pl/images2/f/d/0/uid_fd097b4b1e7144e9bba111056327903e_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zielona-gora-ma-nowa-hale-sportowa-na-te-inwestycje-czekano-od-lat-9-4/</loc>
-    <lastmod>2026-11-17T12:57:40+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/nowa-hala-sportowa-zielona-gora.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/berkowicz-i-mentzen-ukarani-przez-komisje-etyki-poselskiej-6-poslow/</loc>
-    <lastmod>2026-11-17T12:57:38+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/f74aee2f3abfc1e7782a4f368c52ecc5/konrad-berkowicz?t=resize:fill:600:300,enlarge:1</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/klopoty-grzegorza-brauna-jest-akt-oskarzenia/</loc>
-    <lastmod>2026-11-17T12:57:35+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/dfbedfae-290e-4fce-a5c4-c3fd4a49d7f5</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/dymisja-w-ministerstwie-rolnictwa-w-tle-ponad-2-mln-zl-dlugu-splaconego/</loc>
-    <lastmod>2026-11-17T12:57:32+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/bd784e8e64883ca78487f75aaa633b48/?t=crop:6530:2855:nowe:1.2807050231304E-12:89.840042884106,resize:fill:600:300,enlarge:1</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/pleszewski-szpital-potrzebuje-krwi/</loc>
-    <lastmod>2026-11-17T11:53:31+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://radiopoznan.fm/kdCmsAssets/render/id/358478/file_name/wow_7381-copy.jpg/thumb/80x80</image:loc>
     </image:image>
   </url>
 </urlset>
