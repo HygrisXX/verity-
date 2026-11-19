@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,19 +51,19 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/</loc>
-    <lastmod>2026-11-19T12:02:31+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:07+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/</loc>
-    <lastmod>2026-11-18T09:01:17+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:10+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -81,7 +81,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/</loc>
-    <lastmod>2026-11-19T14:51:49+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:12+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -99,7 +99,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/</loc>
-    <lastmod>2026-11-19T13:17:37+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:11+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -135,21 +135,102 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/</loc>
-    <lastmod>2026-11-19T11:01:32+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:06+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-18T22:50:33+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:05+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/odeszla-najwazniejsza-kobieta-w-zyciu-andrzeja-piasecznego/</loc>
+    <lastmod>2026-11-19T15:56:12+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/imported/blaskonline/thumbs/RbwEiD3c8p36o68BIzX4Lj7M1xKUEpar.jpg?r=750,400</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/swiatowy-dzien-rzucania-palenia-nigdy-nie-jest-za-pozno-by-zerwac-z/</loc>
+    <lastmod>2026-11-19T15:56:11+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.radio.bialystok.pl/src/thumbs/461/971ec3cdbd6058092822b6f9de51338c</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/mariusz-staszewski-wraca-do-falubazu-kibice-doskonale-go-pamietaja-69-za/</loc>
+    <lastmod>2026-11-19T15:56:10+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://poscigi.pl/wp-content/uploads/2026/11/thumb_126803_w_750x400_fill.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/zderzenie-autobusu-miejskiego-z-busem-we-wloclawku-kierowca-mpk-pod/</loc>
+    <lastmod>2026-11-19T15:56:08+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/a/2/5/uid_a25f2d8625fd48cbaa95e3952564e487_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/krasnik-gorny-tragiczny-wypadek-16-latkow-na-crossie-oboje-zgineli-na/</loc>
+    <lastmod>2026-11-19T15:56:07+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://poscigi.pl/wp-content/uploads/2025/07/2109222piojed073.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/zachodnia-obwodnica-szczecina-gigantyczna-maszyna-wydrazy-tunel-pod/</loc>
+    <lastmod>2026-11-19T15:56:06+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNh/bC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAw/MDAwMDAwMDc3MDk2ODMvZmlsZXMvemFjaG9kbmlhLW9id29k/bmljYS1zemN6ZWNpbmEtMzkzMjQ4NTkuanBnIiwidyI6Mzg0MH0</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/czeslaw-michniewicz-zastapi-jana-urbana-jest-stanowisko-pzpn/</loc>
+    <lastmod>2026-11-19T15:56:05+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/19/n_d538506095bd3dd05b33258578d4155736c948f9397b880f592580e289c744fb_c.jpg?r=750,400</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-trump-i-putin-oglaszaja-deklaracje-pokoju-porozumienie-po-rozmowach/</loc>
+    <lastmod>2026-11-19T15:56:04+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/e3/e3tcfsm3txvn1chnz58u5v276n521wfn.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wybuch-w-zakladach-chemicznych-w-lublinie-ewakuowano-pracownikow-na/</loc>
+    <lastmod>2026-11-19T15:56:03+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145s52.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/psia-mama-sama-ze-szczeniaczkami-w-lesie-pod-opolem-poszukuja/</loc>
@@ -287,7 +368,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/przelomowy-wyrok-miedzynarodowego-trybunalu-sprawiedliwosci-ws-smierci/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/przelomowy-wyrok-miedzynarodowego-trybunalu-sprawiedliwosci-ws-smierci/</loc>
     <lastmod>2026-11-19T13:17:29+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -450,7 +531,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/dunczycy-jednomyslnie-poparli-porozumienie-z-usa-w-sprawie-grenlandii/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -809,6 +890,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos/</loc>
+    <lastmod>2026-11-16T02:52:07+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/3d206c7b-de10-41ca-a406-d32442d0cb03</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/blik-week-w-newsweeku-takiej-oferty-jeszcze-nie-bylo-platna-wspolpraca/</loc>
     <lastmod>2026-11-18T20:52:33+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -1125,7 +1215,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-19T14:51:55+01:00</lastmod>
+    <lastmod>2026-11-19T15:56:14+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1301,15 +1391,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://niebezpiecznik.pl/wp-content/uploads/2026/10/image-2-124x250.png</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/sankcje-na-papierze-miliardy-w-obiegu-deutsche-bank-i-rosyjskie/</loc>
-    <lastmod>2026-11-19T13:14:48+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1028480439.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -2750,87 +2831,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://i.iplsc.com/-/000MHUG2JLCYUEFV-C321.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trzeci-lotniskowiec-usa-dotarl-na-bliski-wschod-w-tle-napiecia-z-iranem/</loc>
-    <lastmod>2026-11-16T06:03:38+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/2/1/d8d053323f309c-945-567-148-96-1640-984.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/ogromne-straty-rosji-na-wojnie-kreml-ukrywa-prawde/</loc>
-    <lastmod>2026-11-16T06:03:37+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/9p/9p3yizf2oidd379xeaxeaz1xpa5oejh4.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/starowka-w-zielonej-gorze-ma-zyc-radny-kasza-zabral-glos-w-sprawie/</loc>
-    <lastmod>2026-11-16T02:52:09+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://poscigi.pl/wp-content/uploads/2026/11/1-11.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/msza-sw-za-zamachowca-byly-krakowski-radny-zabral-glos/</loc>
-    <lastmod>2026-11-16T02:52:07+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/3d206c7b-de10-41ca-a406-d32442d0cb03</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/mezczyzna-z-nozem-pod-teatrem-w-czestochowie-interweniowala-policja/</loc>
-    <lastmod>2026-11-16T02:52:06+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s4.tvp.pl/images2/4/2/8/uid_4282b0be624a4f46bc231d72ab580b1f_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sikorski-skomentowal-zadania-rosji-wskazal-na-odwieczny-problem/</loc>
-    <lastmod>2026-11-16T02:52:04+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJ7UGTYFA2IFK-C321.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/mistrzowie-swiata-byli-juz-na-kolanach-czerwona-kartka-zmienila-wszystko/</loc>
-    <lastmod>2026-11-16T02:52:03+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/13/99/1f/z33133331IHG,SOCCER-UEFANATIONS-ESP-ENG-.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/final-wta-finals-rozstrzygniety-tytul-bez-straty-seta/</loc>
-    <lastmod>2026-11-16T02:52:01+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/2c/99/1f/z33133356IHG,WTA-Finals-Indian-Wells--Elina-Switolina---Mirra-A.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/piec-goli-w-hicie-ligi-narodow-gigant-traci-awans-wielka-zmiana-na-czele/</loc>
-    <lastmod>2026-11-16T01:11:47+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/0f/99/1f/z33133327IHG,Belgia---Wlochy.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
