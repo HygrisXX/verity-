@@ -3,7 +3,142 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/podawal-sie-za-lekarza-onz-55-latka-stracila-blisko-9-tys-zl/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/prawomocna-kara-25-lat-wiezienia-za-zabojstwo-upozorowane-na-wypadek/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:27+01:00</news:publication_date>
+      <news:title>Prawomocna kara 25 lat więzienia za zabójstwo upozorowane na wypadek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/3/7/2/uid_372ba2a1d6464dbdafb7fecc1a4f190b_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Prawomocna kara 25 lat więzienia za zabójstwo upozorowane na wypadek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/sledztwo-w-sprawie-zondacrypto-troje-podejrzanych-z-decyzja-o-areszcie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:26+01:00</news:publication_date>
+      <news:title>Śledztwo w sprawie Zondacrypto. Troje podejrzanych z decyzją o areszcie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/41f59cf4d08d5708433d091ec61a755f/?t=crop:5424:2371:nowe:0:261.80336351876,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Śledztwo w sprawie Zondacrypto. Troje podejrzanych z decyzją o areszcie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/lepsza-opieka-nad-pacjentami-onkologicznymi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:25+01:00</news:publication_date>
+      <news:title>Lepsza opieka nad pacjentami onkologicznymi</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/MGM5380-1024x683.jpg</image:loc>
+      <image:title>Lepsza opieka nad pacjentami onkologicznymi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/jarmark-bozonarodzeniowy-za-betonowymi-zaporami-warszawa-wzmacnia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:21+01:00</news:publication_date>
+      <news:title>Jarmark bożonarodzeniowy za betonowymi zaporami? Warszawa wzmacnia bezpieczeństwo</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/Zblizenie-belki-swietlnej-POLICJA-w-deszczu.webp</image:loc>
+      <image:title>Jarmark bożonarodzeniowy za betonowymi zaporami? Warszawa wzmacnia bezpieczeństwo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pies-biegal-przy-ruchliwym-skrzyzowaniu-w-bielsku-bialej-wrocil-do-domu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:21+01:00</news:publication_date>
+      <news:title>Pies biegał przy ruchliwym skrzyżowaniu w Bielsku-Białej. Wrócił do domu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62876/179507719550862100__.jpg</image:loc>
+      <image:title>Pies biegał przy ruchliwym skrzyżowaniu w Bielsku-Białej. Wrócił do domu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/nowy-wiadukt-w-centrum-katowic-trwa-montaz-konstrukcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:21+01:00</news:publication_date>
+      <news:title>Nowy wiadukt w centrum Katowic. Trwa montaż konstrukcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvs.pl/wp-content/uploads/2026/11/news_wiadukt_jana_tvs_zajawka_2026.11.19-1-1.webp</image:loc>
+      <image:title>Nowy wiadukt w centrum Katowic. Trwa montaż konstrukcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/dzieci-dostaly-egzotyczny-owoc-na-stolowce-kolce-powbijaly-im-sie-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:20+01:00</news:publication_date>
+      <news:title>Dzieci dostały egzotyczny owoc na stołówce. Kolce powbijały im się w dłonie i usta</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/RTZk9kuTURBXy82MjZhNDVkNi0yYjkzLTRkZGEtODU4NC1jN2I1OTczN2I4NWMuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
+      <image:title>Dzieci dostały egzotyczny owoc na stołówce. Kolce powbijały im się w dłonie i usta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jakosc-i-bezpieczenstwo-produkcji-zywnosci-dlaczego-uzdatnianie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:19+01:00</news:publication_date>
+      <news:title>Jakość i bezpieczeństwo produkcji żywności – dlaczego uzdatnianie sprężonego powietrza ma kluczowe znaczenie?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/10821450.png</image:loc>
+      <image:title>Jakość i bezpieczeństwo produkcji żywności – dlaczego uzdatnianie sprężonego powietrza ma kluczowe znaczenie?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/epuap-znowu-dziala-ministerstwo-cyfryzacji-zapewnia-o-wzmacnianiu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T17:58:18+01:00</news:publication_date>
+      <news:title>ePUAP znowu działa. Ministerstwo Cyfryzacji zapewnia o wzmacnianiu bezpieczeństwa po cyberataku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s10.tvp.pl/images2/0/8/f/uid_08fa1d1cdaf446da844105ce6c60c77e_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>ePUAP znowu działa. Ministerstwo Cyfryzacji zapewnia o wzmacnianiu bezpieczeństwa po cyberataku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/podawal-sie-za-lekarza-onz-55-latka-stracila-blisko-9-tys-zl/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -18,7 +153,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/jedyna-dostawa-w-tym-roku-kolejne-borsuki-trafily-do-wojska/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/jedyna-dostawa-w-tym-roku-kolejne-borsuki-trafily-do-wojska/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -993,21 +1128,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-spotkal-sie-z-xi-jinpingiem-rozmowy-dotyczyly-ukrainy-i-iranu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:46+01:00</news:publication_date>
-      <news:title>Trump spotkał się z Xi Jinpingiem. Rozmowy dotyczyły Ukrainy i Iranu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/1e1feb01436910f89ba8d4eda4543afc/?t=crop:3843:1680:nowe:0:691.07309991245,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Trump spotkał się z Xi Jinpingiem. Rozmowy dotyczyły Ukrainy i Iranu</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/putin-przylecial-z-nuklearna-walizka-odpowiedz-rosjanina/</loc>
     <news:news>
       <news:publication>
@@ -1170,21 +1290,6 @@
     <image:image>
       <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afe1f13a5acf5_79461093.jpg</image:loc>
       <image:title>Faworyci już w półfinale. Zobacz tabele ATP Finals</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rzecznik-rzadu-o-spotkaniu-tuska-z-nawrockim-widocznie-byl-jakis/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T22:50:31+01:00</news:publication_date>
-      <news:title>Rzecznik rządu o spotkaniu Tuska z Nawrockim: Widocznie był jakiś telefon z komitetu centralnego</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/f7/9a/1f/z33139959IHG,Rzecznik-rzadu-Adam-Szlapka.jpg</image:loc>
-      <image:title>Rzecznik rządu o spotkaniu Tuska z Nawrockim: Widocznie był jakiś telefon z komitetu centralnego</image:title>
     </image:image>
   </url>
   <url>
@@ -2178,18 +2283,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/gigantyczny-wyciek-danych-w-deutsche-banku-chodzi-o-ponad-15-mln/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/sankcje-na-papierze-miliardy-w-obiegu-deutsche-bank-i-rosyjskie/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-18T14:22:57+01:00</news:publication_date>
-      <news:title>Gigantyczny wyciek danych w Deutsche Banku. Chodzi o... ponad 15 mln dokumentów</news:title>
+      <news:title>Sankcje na papierze, miliardy w obiegu. Deutsche Bank i rosyjskie pieniądze</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://niebezpiecznik.pl/wp-content/uploads/2026/10/image-2-124x250.png</image:loc>
-      <image:title>Gigantyczny wyciek danych w Deutsche Banku. Chodzi o... ponad 15 mln dokumentów</image:title>
+      <image:loc>https://i.gremicdn.pl/image/free/079a098d841c1d655b573e18c88fe767/?t=crop:2895:1265:nowe:1225.3557567917:741.42690815006,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Sankcje na papierze, miliardy w obiegu. Deutsche Bank i rosyjskie pieniądze</image:title>
     </image:image>
   </url>
   <url>
