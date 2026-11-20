@@ -3,6 +3,111 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pacjent-oddalil-sie-ze-szpitala-w-bystrej-powiadomiono-policje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:01:19+01:00</news:publication_date>
+      <news:title>Pacjent oddalił się ze szpitala w Bystrej. Powiadomiono policję</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/20261120_051819800.jpg</image:loc>
+      <image:title>Pacjent oddalił się ze szpitala w Bystrej. Powiadomiono policję</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/jest-wyrok-w-sprawie-burmistrza-chocianowa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:01:02+01:00</news:publication_date>
+      <news:title>Jest wyrok w sprawie burmistrza Chocianowa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s2.tvp.pl/images2/b/5/6/uid_b5606b5583a04e3cbdd4169d67d63349_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Jest wyrok w sprawie burmistrza Chocianowa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/polska-i-niemcy-wezma-odpowiedzialnosc-szef-mon-o-bezpieczenstwie-europy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:00:48+01:00</news:publication_date>
+      <news:title>"Polska i Niemcy wezmą odpowiedzialność". Szef MON o bezpieczeństwie Europy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ew/ewepa9xmgw8m551v5inqk8cs5n9x7pt1.jpg</image:loc>
+      <image:title>"Polska i Niemcy wezmą odpowiedzialność". Szef MON o bezpieczeństwie Europy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/gospodarczo-to-jest-dzisiaj-karzelek-marcin-przydacz-o-pozycji-rosji-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:00:48+01:00</news:publication_date>
+      <news:title>"Gospodarczo to jest dzisiaj karzełek". Marcin Przydacz o pozycji Rosji w rozmowach pokojowych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/jz/jz4rxdo9p1feoy18qq2uteeyygmjkk7s.png</image:loc>
+      <image:title>"Gospodarczo to jest dzisiaj karzełek". Marcin Przydacz o pozycji Rosji w rozmowach pokojowych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/co-o-slowach-donalda-trumpa-mowia-amerykanscy-politycy-cezary-tomczyk/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:00:47+01:00</news:publication_date>
+      <news:title>Co o słowach Donalda Trumpa mówią amerykańscy politycy? Cezary Tomczyk: nie słyszałem specjalnej pochwały</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-tomczyk-o-przywitaniu-putina-przez-trumpa-slowami-to-moj-przyjaciel-0160-ph9348245/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Co o słowach Donalda Trumpa mówią amerykańscy politycy? Cezary Tomczyk: nie słyszałem specjalnej pochwały</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/frisco-na-gielde-albo-na-sprzedaz-eurocash-szykuje-wielki-ruch-20-lat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:00:43+01:00</news:publication_date>
+      <news:title>Frisco na giełdę albo... na sprzedaż? Eurocash szykuje wielki ruch (20 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/375510.webp</image:loc>
+      <image:title>Frisco na giełdę albo... na sprzedaż? Eurocash szykuje wielki ruch (20 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/zagrozenie-atakiem-z-powietrza-alert-rcb-wojsko-poderwalo-mysliwce/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T06:00:41+01:00</news:publication_date>
+      <news:title>"Zagrożenie atakiem z powietrza". Alert RCB, wojsko poderwało myśliwce</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/24/2448cmkdmjv2d3m2kocuhhe5wknj6jjc.jpg</image:loc>
+      <image:title>"Zagrożenie atakiem z powietrza". Alert RCB, wojsko poderwało myśliwce</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/interwencja-sar-uchronila-baltyk-przed-skazeniem/</loc>
     <news:news>
       <news:publication>
@@ -153,6 +258,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/reset-na-horyzoncie-bogucki-powstal-jeden-projekt-ws-tk/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T20:55:57+01:00</news:publication_date>
+      <news:title>Reset na horyzoncie? Bogucki: Powstał jeden projekt ws. TK</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/19/n_d493771797ca99d973b7178ea5fdb7eeb2cffe8fd30f2341109b3c9fa09918d2_c.jpg?r=750,400</image:loc>
+      <image:title>Reset na horyzoncie? Bogucki: Powstał jeden projekt ws. TK</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/smiertelny-wypadek-pod-swieciem-auto-zderzylo-sie-z-kombajnem/</loc>
     <news:news>
       <news:publication>
@@ -165,21 +285,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/29020636-52b3-4119-bbbd-13c7b75da892</image:loc>
       <image:title>Śmiertelny wypadek pod Świeciem. Auto zderzyło się z kombajnem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/wciagal-auto-na-lawete-potracila-go-ciezarowka-tragiczny-wypadek-na-s7/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:55:53+01:00</news:publication_date>
-      <news:title>Wciągał auto na lawetę, potrąciła go ciężarówka. Tragiczny wypadek na S7 (52,6 km)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-wypadek-na-s7-pod-mlawa-ph9348129/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Wciągał auto na lawetę, potrąciła go ciężarówka. Tragiczny wypadek na S7 (52,6 km)</image:title>
     </image:image>
   </url>
   <url>
@@ -810,21 +915,6 @@
     <image:image>
       <image:loc>https://s1.tvp.pl/images2/a/2/5/uid_a25f2d8625fd48cbaa95e3952564e487_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
       <image:title>Zderzenie autobusu miejskiego z busem we Włocławku. Kierowca MPK pod opieką ratowników</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/krasnik-gorny-tragiczny-wypadek-16-latkow-na-crossie-oboje-zgineli-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T15:56:07+01:00</news:publication_date>
-      <news:title>Kraśnik Górny. Tragiczny wypadek 16-latków na crossie. Oboje zginęli na miejscu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://poscigi.pl/wp-content/uploads/2025/07/2109222piojed073.jpg</image:loc>
-      <image:title>Kraśnik Górny. Tragiczny wypadek 16-latków na crossie. Oboje zginęli na miejscu</image:title>
     </image:image>
   </url>
   <url>
@@ -1740,21 +1830,6 @@
     <image:image>
       <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afe1f13a5acf5_79461093.jpg</image:loc>
       <image:title>Faworyci już w półfinale. Zobacz tabele ATP Finals</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/reset-na-horyzoncie-bogucki-powstal-jeden-projekt-ws-tk/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T22:50:31+01:00</news:publication_date>
-      <news:title>Reset na horyzoncie? Bogucki: Powstał jeden projekt ws. TK</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/19/n_d493771797ca99d973b7178ea5fdb7eeb2cffe8fd30f2341109b3c9fa09918d2_c.jpg?r=750,400</image:loc>
-      <image:title>Reset na horyzoncie? Bogucki: Powstał jeden projekt ws. TK</image:title>
     </image:image>
   </url>
   <url>
@@ -3390,231 +3465,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/u3/u3wzz42va3wh1c2dkbiq6cjfjbf44svp.jpg</image:loc>
       <image:title>Groziła wysadzeniem szkoły w Piasecznie. 16-latka zatrzymana</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/sprawdzilismy-jak-wladze-dolnego-slaska-przygotowuja-sie-na-nadchodzaca/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T06:03:24+01:00</news:publication_date>
-      <news:title>Sprawdziliśmy, jak władze Dolnego Śląska przygotowują się na nadchodzącą zimę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://www.radiowroclaw.pl/img/articles/165673/vcnWvQ5xsh.jpg</image:loc>
-      <image:title>Sprawdziliśmy, jak władze Dolnego Śląska przygotowują się na nadchodzącą zimę</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/karta-moja-biedronka-oto-skad-moga-pojawic-sie-nieznane-transakcje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T06:03:23+01:00</news:publication_date>
-      <news:title>Karta Moja Biedronka. Oto skąd mogą pojawić się nieznane transakcje</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/2aa07968-1c3c-49de-b6ab-38447b2f9535</image:loc>
-      <image:title>Karta Moja Biedronka. Oto skąd mogą pojawić się nieznane transakcje</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/robert-lewandowski-i-reprezentacja-polski-u-malych-pacjentow-przyladka/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T06:03:22+01:00</news:publication_date>
-      <news:title>Robert Lewandowski i reprezentacja Polski u małych pacjentów „Przylądka Nadziei”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1153991/main/robert-lewandowski-przyladek-cancer-fighters.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
-      <image:title>Robert Lewandowski i reprezentacja Polski u małych pacjentów „Przylądka Nadziei”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/chemiczny-zapach-nad-osiedlami-kielc-mieszkancy-alarmuja-wios/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T06:03:21+01:00</news:publication_date>
-      <news:title>Chemiczny zapach nad osiedlami Kielc. Mieszkańcy alarmują, WIOŚ kontroluje zakład</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s7.tvp.pl/images2/7/c/1/uid_7c10bd5d4434454b8502fc02ee141c94_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Chemiczny zapach nad osiedlami Kielc. Mieszkańcy alarmują, WIOŚ kontroluje zakład</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/ostatni-pojedynek-do-senatu-usa-triumf-demokratow-na-alasce-50-proc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T06:03:20+01:00</news:publication_date>
-      <news:title>Ostatni pojedynek do Senatu USA. Triumf demokratów na Alasce (50 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/k7/k7aopjpqn5bm3muqw1m9bozkq44wcwxt.jpg</image:loc>
-      <image:title>Ostatni pojedynek do Senatu USA. Triumf demokratów na Alasce (50 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-jinping-i-putin-na-szczycie-apec-chiny-apeluja-o-wolny-handel-rosja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T06:03:19+01:00</news:publication_date>
-      <news:title>Xi Jinping i Putin na szczycie APEC. Chiny apelują o wolny handel, Rosja krytykuje sankcje Zachodu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.wiadomosci.onet.pl/1/Cbsk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9mNzZiNWFhOWI2ZWU5YzhiZDU0ODRjNmFmNjMzZjc1ZS5qcGeSlQMAM80DrM0CEZMFzQlgzQZA3gACoTAHoTEE</image:loc>
-      <image:title>Xi Jinping i Putin na szczycie APEC. Chiny apelują o wolny handel, Rosja krytykuje sankcje Zachodu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/wykonali-dobra-robote-trump-pochwalil-dyktatora-niecodzienne-slowa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T03:54:54+01:00</news:publication_date>
-      <news:title>"Wykonali dobrą robotę". Trump pochwalił dyktatora, niecodzienne słowa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJHI5KGJEDOCL-C321.webp</image:loc>
-      <image:title>"Wykonali dobrą robotę". Trump pochwalił dyktatora, niecodzienne słowa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nikt-mnie-nie-rozpoznal-biden-ujawnia-kulisy-tajnej-podrozy-przez-polske/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T03:54:52+01:00</news:publication_date>
-      <news:title>"Nikt mnie nie rozpoznał". Biden ujawnia kulisy tajnej podróży przez Polskę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/5913a235-1bb7-4c3b-9c8b-1139605d3461</image:loc>
-      <image:title>"Nikt mnie nie rozpoznał". Biden ujawnia kulisy tajnej podróży przez Polskę</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-rannych-20-osob/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T02:23:13+01:00</news:publication_date>
-      <news:title>Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych (20 osób)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/f25ba0a1-31d7-4abd-a49d-82e278f65780</image:loc>
-      <image:title>Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych (20 osób)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/nie-zyje-henryk-jagielski-dzialacz-opozycji-antykomunistycznej-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T23:49:40+01:00</news:publication_date>
-      <news:title>Nie żyje Henryk Jagielski. Działacz opozycji antykomunistycznej zmarł w wieku 94 lat</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.wiadomosci.onet.pl/1/HjKk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9lYTgyYzk2NDM0MDY0YzZhNThhMWI1ZTQ0OTUwMDFlNC5wbmeSlQMCzQIBzRNGzQrakwXNCWDNBkDeAAKhMAehMQQ</image:loc>
-      <image:title>Nie żyje Henryk Jagielski. Działacz opozycji antykomunistycznej zmarł w wieku 94 lat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/domanski-nie-wyklucza-przedluzania-pakietu-cpn-decyzja-niebawem-6-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T23:49:39+01:00</news:publication_date>
-      <news:title>Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem (6 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000N4WJFI0HFO7VU-C321.webp</image:loc>
-      <image:title>Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem (6 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/jubileusz-kadry-we-wroclawiu-mecz-ze-szwecja-30-w-historii/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T22:54:48+01:00</news:publication_date>
-      <news:title>Jubileusz kadry we Wrocławiu. Mecz ze Szwecją 30. w historii</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1154330/main/reprezentacja-polski-we-wroclawiu.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
-      <image:title>Jubileusz kadry we Wrocławiu. Mecz ze Szwecją 30. w historii</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/pazura-hycnar-i-stramowski-w-nowym-serialu-canal-znamy-date-premiery/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T22:54:47+01:00</news:publication_date>
-      <news:title>Pazura, Hycnar i Stramowski w nowym serialu Canal+. Znamy datę premiery</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bde20943-fb18-4c3e-b820-745c5d558d78</image:loc>
-      <image:title>Pazura, Hycnar i Stramowski w nowym serialu Canal+. Znamy datę premiery</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/polska-szwecja-bialo-czerwoni-uratowali-sie-przed-barazami/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T22:54:46+01:00</news:publication_date>
-      <news:title>Polska – Szwecja. Biało-Czerwoni uratowali się przed barażami!</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/17/n_72e6bff07e53bd3fd930f6bf17437bdd3e9da778524d9be2e4495b353857c3e8_c.jpg?r=750,400</image:loc>
-      <image:title>Polska – Szwecja. Biało-Czerwoni uratowali się przed barażami!</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/abramowicz-po-debiucie-czulem-ze-to-mecz-inny-niz-wszystkie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T22:54:43+01:00</news:publication_date>
-      <news:title>Abramowicz po debiucie. „Czułem, że to mecz inny niż wszystkie”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/AA_17112026_cmwl71r7-scaled.jpg</image:loc>
-      <image:title>Abramowicz po debiucie. „Czułem, że to mecz inny niż wszystkie”</image:title>
     </image:image>
   </url>
 </urlset>

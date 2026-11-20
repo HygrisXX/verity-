@@ -3,25 +3,25 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/</loc>
-    <lastmod>2026-11-19T20:56:03+01:00</lastmod>
+    <lastmod>2026-11-20T06:00:43+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,25 +39,25 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/</loc>
-    <lastmod>2026-11-19T20:55:52+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:02+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/</loc>
-    <lastmod>2026-11-19T15:56:07+01:00</lastmod>
+    <lastmod>2026-11-20T06:00:41+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -81,7 +81,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/</loc>
-    <lastmod>2026-11-19T20:55:53+01:00</lastmod>
+    <lastmod>2026-11-19T17:58:26+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -111,7 +111,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/</loc>
-    <lastmod>2026-11-19T18:57:05+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:19+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,7 +141,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -150,6 +150,69 @@
     <lastmod>2026-11-19T21:48:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pacjent-oddalil-sie-ze-szpitala-w-bystrej-powiadomiono-policje/</loc>
+    <lastmod>2026-11-20T06:01:19+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/20261120_051819800.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/jest-wyrok-w-sprawie-burmistrza-chocianowa/</loc>
+    <lastmod>2026-11-20T06:01:02+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s2.tvp.pl/images2/b/5/6/uid_b5606b5583a04e3cbdd4169d67d63349_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/polska-i-niemcy-wezma-odpowiedzialnosc-szef-mon-o-bezpieczenstwie-europy/</loc>
+    <lastmod>2026-11-20T06:00:48+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ew/ewepa9xmgw8m551v5inqk8cs5n9x7pt1.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/gospodarczo-to-jest-dzisiaj-karzelek-marcin-przydacz-o-pozycji-rosji-w/</loc>
+    <lastmod>2026-11-20T06:00:48+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/jz/jz4rxdo9p1feoy18qq2uteeyygmjkk7s.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/co-o-slowach-donalda-trumpa-mowia-amerykanscy-politycy-cezary-tomczyk/</loc>
+    <lastmod>2026-11-20T06:00:47+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-tomczyk-o-przywitaniu-putina-przez-trumpa-slowami-to-moj-przyjaciel-0160-ph9348245/alternates/LANDSCAPE_1280</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/frisco-na-gielde-albo-na-sprzedaz-eurocash-szykuje-wielki-ruch-20-lat/</loc>
+    <lastmod>2026-11-20T06:00:43+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/375510.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/zagrozenie-atakiem-z-powietrza-alert-rcb-wojsko-poderwalo-mysliwce/</loc>
+    <lastmod>2026-11-20T06:00:41+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/24/2448cmkdmjv2d3m2kocuhhe5wknj6jjc.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/interwencja-sar-uchronila-baltyk-przed-skazeniem/</loc>
@@ -171,7 +234,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/jak-nie-dac-sie-oszukac-wloclawscy-seniorzy-poznali-zasady/</loc>
-    <lastmod>2026-11-19T21:48:50+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -242,21 +305,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/reset-na-horyzoncie-bogucki-powstal-jeden-projekt-ws-tk/</loc>
+    <lastmod>2026-11-19T09:59:44+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/19/n_d493771797ca99d973b7178ea5fdb7eeb2cffe8fd30f2341109b3c9fa09918d2_c.jpg?r=750,400</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/smiertelny-wypadek-pod-swieciem-auto-zderzylo-sie-z-kombajnem/</loc>
     <lastmod>2026-11-19T20:55:55+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/29020636-52b3-4119-bbbd-13c7b75da892</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/wciagal-auto-na-lawete-potracila-go-ciezarowka-tragiczny-wypadek-na-s7/</loc>
-    <lastmod>2026-11-19T20:55:53+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-wypadek-na-s7-pod-mlawa-ph9348129/alternates/LANDSCAPE_1280</image:loc>
     </image:image>
   </url>
   <url>
@@ -638,15 +701,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/krasnik-gorny-tragiczny-wypadek-16-latkow-na-crossie-oboje-zgineli-na/</loc>
-    <lastmod>2026-11-19T15:56:07+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://poscigi.pl/wp-content/uploads/2025/07/2109222piojed073.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/zachodnia-obwodnica-szczecina-gigantyczna-maszyna-wydrazy-tunel-pod/</loc>
     <lastmod>2026-11-19T15:56:06+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -963,7 +1017,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/dunczycy-jednomyslnie-poparli-porozumienie-z-usa-w-sprawie-grenlandii/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1193,15 +1247,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6afe1f13a5acf5_79461093.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/reset-na-horyzoncie-bogucki-powstal-jeden-projekt-ws-tk/</loc>
-    <lastmod>2026-11-19T09:59:44+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/19/n_d493771797ca99d973b7178ea5fdb7eeb2cffe8fd30f2341109b3c9fa09918d2_c.jpg?r=750,400</image:loc>
     </image:image>
   </url>
   <url>
@@ -1620,7 +1665,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-19T21:48:57+01:00</lastmod>
+    <lastmod>2026-11-20T06:01:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2420,24 +2465,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/tragiczny-wypadek-na-podhalu-nie-zyje-dwoch-mezczyzn/</loc>
-    <lastmod>2026-11-15T10:41:17+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJ5DGB3G2XL63-C321.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/tragiczny-wypadek-w-zorach-nie-zyje-jedna-osoba/</loc>
-    <lastmod>2026-11-18T14:23:06+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1303927655.png</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/zglosila-kierowce-pod-wplywem-chwile-pozniej-sama-zostala-zatrzymana/</loc>
     <lastmod>2026-11-17T20:08:52+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -2804,42 +2831,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>http://rzeszow-news.pl/wp-content/uploads/2026/11/18-latek-skok-na-stacje-paliw.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/zawalila-sie-sciana-rozbieranego-biurowca-przy-marszalkowskiej-gruz/</loc>
-    <lastmod>2026-11-17T14:16:39+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/07/Tasma.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/smierc-pieciolatka-w-gorzowskim-szpitalu-sprawe-bada-prokuratura/</loc>
-    <lastmod>2026-11-17T14:16:36+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-7628731-szpital-w-gorzowie-wielkopolskim-ph7971712/alternates/LANDSCAPE_1280</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/dawid-tyszkowski-laureatem-nagrody-artystycznej-miasta-torunia-im/</loc>
-    <lastmod>2026-11-17T12:57:42+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tylkotorun.pl/wp-content/uploads/2026/11/909510382-1157501836643923-7198565577683647609-n-1-original-600x338.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/okradl-i-uderzyl-nastolatka-w-opolskim-autobusie-35-latkowi-grozi/</loc>
-    <lastmod>2026-11-17T12:57:40+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s6.tvp.pl/images2/f/d/0/uid_fd097b4b1e7144e9bba111056327903e_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
