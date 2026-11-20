@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/jarmark-bozonarodzeniowy-w-bydgoszczy-coraz-blizej-90-stoisk-koncerty-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:48+01:00</news:publication_date>
+      <news:title>Jarmark Bożonarodzeniowy w Bydgoszczy coraz bliżej. 90 stoisk, koncerty i tysiące światełek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s7.tvp.pl/images2/7/2/0/uid_7203b9b5d0d148179657956ef88f49af_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Jarmark Bożonarodzeniowy w Bydgoszczy coraz bliżej. 90 stoisk, koncerty i tysiące światełek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/dyrektor-szpitala-we-fromborku-stracil-stanowisko-powodem-wyniki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:47+01:00</news:publication_date>
+      <news:title>Dyrektor szpitala we Fromborku stracił stanowisko. Powodem wyniki kontroli</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/153743277.png</image:loc>
+      <image:title>Dyrektor szpitala we Fromborku stracił stanowisko. Powodem wyniki kontroli</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/stargard-urzad-zawsze-pod-reka-150-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:45+01:00</news:publication_date>
+      <news:title>Stargard. Urząd zawsze pod ręką (150 proc)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-20_179517828610.jpg</image:loc>
+      <image:title>Stargard. Urząd zawsze pod ręką (150 proc)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/pilkarskie-hity-w-lidze-narodow-to-bedzie-przedwczesny-final/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:42+01:00</news:publication_date>
+      <news:title>Piłkarskie hity w Lidze Narodów. To będzie przedwczesny finał</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/20/n_bfef4513dd7e6980c72529eea0bcdb03f55d3c103093ac670877ec98543a7a06_c.jpg?r=750,400</image:loc>
+      <image:title>Piłkarskie hity w Lidze Narodów. To będzie przedwczesny finał</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/usa-tlumacza-deklaracje-z-shenzhen-to-nie-ustepstwo-wobec-rosji-i-chin/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:41+01:00</news:publication_date>
+      <news:title>USA tłumaczą deklarację z Shenzhen. „To nie ustępstwo wobec Rosji i Chin”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/09/16/320x240px/KZMEYMM2eaOXVCOlFRoWCf190mpiurqgxFYLxZNj.dmkn.png</image:loc>
+      <image:title>USA tłumaczą deklarację z Shenzhen. „To nie ustępstwo wobec Rosji i Chin”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-twierdzi-ze-most-krymski-to-obiekt-cywilny-nagranie-rosyjskiej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:40+01:00</news:publication_date>
+      <news:title>Putin twierdzi, że Most Krymski to obiekt cywilny. Nagranie rosyjskiej armii udowadnia co innego</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/485b23c388ea19447b1ab1761736726b/?t=crop:1725:754:nowe:0:159.52941176471,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Putin twierdzi, że Most Krymski to obiekt cywilny. Nagranie rosyjskiej armii udowadnia co innego</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/mamy-znieczulice-niepewnosc-i-brak-zaufania-do-tych-sygnalow-gen-polko/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:40+01:00</news:publication_date>
+      <news:title>„Mamy znieczulicę, niepewność i brak zaufania do tych sygnałów”. Gen. Polko ostrzega po alarmach w Polsce</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/10800f1bd5ed5294b7a0e5a5ac61e966/?t=crop:1920:839:nowe:0:120,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>„Mamy znieczulicę, niepewność i brak zaufania do tych sygnałów”. Gen. Polko ostrzega po alarmach w Polsce</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/problematyczny-lokator-nie-placi-i-okupuje-mieszkanie-problem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:39+01:00</news:publication_date>
+      <news:title>Problematyczny lokator nie płaci i okupuje mieszkanie? Problem właścicieli, którego nie da się łatwo rozwiązać</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbm/Nkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc2/MzYyNzIvZmlsZXMvd2luZHlrYWNqYS1rb21vcm5pay1kcnp3aS1wdW/thbmllLXRlY3prYS1kbHVnaS0zOTE0NDUyNC5qcGciLCJ3IjozODQwfQ</image:loc>
+      <image:title>Problematyczny lokator nie płaci i okupuje mieszkanie? Problem właścicieli, którego nie da się łatwo rozwiązać</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/orlen-moze-sprzedac-magazyny-gazu-jest-oferta-od-spolki-gaz-systemu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T14:21:37+01:00</news:publication_date>
+      <news:title>Orlen może sprzedać magazyny gazu. Jest oferta od spółki Gaz-Systemu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/8/8/dc703e0c9747d9-948-568-0-249-3544-2126.jpg</image:loc>
+      <image:title>Orlen może sprzedać magazyny gazu. Jest oferta od spółki Gaz-Systemu</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/pozar-w-szpitalu-w-dabrowie-tarnowskiej/</loc>
     <news:news>
       <news:publication>
@@ -78,21 +213,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/powrot-europy-do-paliw-z-rosji-amerykanie-zaprzeczaja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:30+01:00</news:publication_date>
-      <news:title>Powrót Europy do paliw z Rosji? Amerykanie zaprzeczają</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/94eb75e294fdac54819b36b6c0d414f2/?t=crop:5712:2497:nowe:0:655,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Powrót Europy do paliw z Rosji? Amerykanie zaprzeczają</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/estonia-zamknie-przejscia-graniczne-z-rosja-wrogie-dzialania-nie/</loc>
     <news:news>
       <news:publication>
@@ -150,6 +270,36 @@
     <image:image>
       <image:loc>https://ocdn.eu/pulscms-transforms/1/QU-k9kuTURBXy9lNTI0ZjNiMC1kZWYxLTQwMGMtYjIwZS1kOThmMjVmZmE5NzUuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
       <image:title>Alarm na kolei w Rudniku nad Sanem. Dyżurny usłyszał huk przy torach. Wstrzymano ruch kolejowy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/prezydent-podpisal-wazna-ustawe-nowe-wsparcie-dla-osob-z/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T11:02:26+01:00</news:publication_date>
+      <news:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2RuLnBsL2RncHN0YXRpYy9kb2/N1bWVudHMvRk9CMDAwMDAwMDAwMDAwNzcwNzM2My9maWxlcy9hc3lzdGVudC1vc29ieS1u/aWVwZWxub3NwcmF3bmVqLXBvbWFnYS1zdGFyc3plai1vc29iaWUtbmEtd296a3UtaW53YW/xpZHpraW0temFwaWFjLWd1emlraS13LXN3ZXRyemUtMzkyNTc1ODEuanBnIiwidyI6Mzg0MH0</image:loc>
+      <image:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/ta-sama-firma-inny-abonament-za-prad-prawie-50-proc-wiecej-od-kiedy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T11:02:26+01:00</news:publication_date>
+      <news:title>Ta sama firma, inny abonament za prąd., prawie 50 proc. więcej. Od kiedy podwyżka?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbm/Nkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc3/MDg4NTMvZmlsZXMvdXJlLXphdHdpZXJkemlsLXJvem5lLXN0YXdraS/1hYm9uYW1lbnR1LXphLXByYWQtMzkzMjI1ODUuanBnIiwidyI6Mzg0MH0</image:loc>
+      <image:title>Ta sama firma, inny abonament za prąd., prawie 50 proc. więcej. Od kiedy podwyżka?</image:title>
     </image:image>
   </url>
   <url>
@@ -1818,21 +1968,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/szafki-szkolne-metalowe-jak-wybrac-model-do-szkoly/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:31+01:00</news:publication_date>
-      <news:title>Szafki szkolne metalowe – jak wybrać model do szkoły?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1827885714.png</image:loc>
-      <image:title>Szafki szkolne metalowe – jak wybrać model do szkoły?</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/transportowal-26-ton-ladunku-mial-w-organizmie-3-promile/</loc>
     <news:news>
       <news:publication>
@@ -2205,21 +2340,6 @@
     <image:image>
       <image:loc>https://radio.lublin.pl/wp-content/uploads/2026/11/EAttachments11150713fe877e271fdcf6244aec5e2cc0cb5a15_xl.jpg?size=md</image:loc>
       <image:title>Dwie mieszkanki Lublina z zarzutami sutenerstwa. Grozi im 5 lat więzienia</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/kara-za-wystajacy-szyld-stowarzyszenie-kibicow-pogoni-sklada-odwolanie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T23:47:40+01:00</news:publication_date>
-      <news:title>Kara za wystający szyld. Stowarzyszenie Kibiców Pogoni składa odwołanie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-18_1795009860_1064557.jpg</image:loc>
-      <image:title>Kara za wystający szyld. Stowarzyszenie Kibiców Pogoni składa odwołanie</image:title>
     </image:image>
   </url>
   <url>
@@ -3180,156 +3300,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/52e37ea8-8029-4c62-8bad-2bbfc577f661</image:loc>
       <image:title>Wyższy VAT na napoje. Jest weto prezydenta (23 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/prezydent-podpisal-wazna-ustawe-nowe-wsparcie-dla-osob-z/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T15:58:52+01:00</news:publication_date>
-      <news:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2RuLnBsL2RncHN0YXRpYy9kb2/N1bWVudHMvRk9CMDAwMDAwMDAwMDAwNzcwNzM2My9maWxlcy9hc3lzdGVudC1vc29ieS1u/aWVwZWxub3NwcmF3bmVqLXBvbWFnYS1zdGFyc3plai1vc29iaWUtbmEtd296a3UtaW53YW/xpZHpraW0temFwaWFjLWd1emlraS13LXN3ZXRyemUtMzkyNTc1ODEuanBnIiwidyI6Mzg0MH0</image:loc>
-      <image:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/zmiany-w-radzie-ministrow-andrzej-domanski-wicepremierem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T15:58:52+01:00</news:publication_date>
-      <news:title>Zmiany w radzie ministrów. Andrzej Domański wicepremierem (246 tys.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NFHVCXOM3JJ1J-C321.webp</image:loc>
-      <image:title>Zmiany w radzie ministrów. Andrzej Domański wicepremierem (246 tys.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/pijany-nie-mogl-wyjsc-z-taksowki-wtedy-zaatakowal-ratownikow-gazem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:23:05+01:00</news:publication_date>
-      <news:title>Pijany nie mógł wyjść z taksówki. Wtedy zaatakował ratowników gazem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s2.tvp.pl/images2/2/3/8/uid_238e4591056b4835bed960e1058b1ede_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Pijany nie mógł wyjść z taksówki. Wtedy zaatakował ratowników gazem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/mpec-sprawdzi-ktoredy-ucieka-cieplo-rusza-druga-edycja-bezplatnych-badan/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:23:03+01:00</news:publication_date>
-      <news:title>MPEC sprawdzi, którędy ucieka ciepło. Rusza druga edycja bezpłatnych badań</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://4lomza.pl/foto/2026/11/261118123417_0.jpg</image:loc>
-      <image:title>MPEC sprawdzi, którędy ucieka ciepło. Rusza druga edycja bezpłatnych badań</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/policja-chlopiec-w-wejherowie-wbiegl-przed-samochod-przy-ul-jana/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:23:00+01:00</news:publication_date>
-      <news:title>Policja: chłopiec w Wejherowie wbiegł przed samochód przy ul. Jana Kotłowskiego (10 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://panel.kaszuby24.pl/storage/v1/object/public/media/articles/policja-chlopiec-w-wejherowie-wbiegl-przed-samochod-przy-ul-jana-kotlowskiego-1794993026718-iquhnc.webp</image:loc>
-      <image:title>Policja: chłopiec w Wejherowie wbiegł przed samochód przy ul. Jana Kotłowskiego (10 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/sankcje-na-papierze-miliardy-w-obiegu-deutsche-bank-i-rosyjskie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:22:57+01:00</news:publication_date>
-      <news:title>Sankcje na papierze, miliardy w obiegu. Deutsche Bank i rosyjskie pieniądze</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/079a098d841c1d655b573e18c88fe767/?t=crop:2895:1265:nowe:1225.3557567917:741.42690815006,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Sankcje na papierze, miliardy w obiegu. Deutsche Bank i rosyjskie pieniądze</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/ue-proponuje-nowa-pozyczke-dla-ukrainy-na-szali-45-mld-euro/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:22:56+01:00</news:publication_date>
-      <news:title>UE proponuje nową pożyczkę dla Ukrainy. Na szali 45 mld euro</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/a25f640a853ab2cabc9c698f92c3f192_xl-150x150.jpg</image:loc>
-      <image:title>UE proponuje nową pożyczkę dla Ukrainy. Na szali 45 mld euro</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/clo-zmienia-zakupy-polakow-o-78-proc-mniej-zamowien-na-temu-shein-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:22:56+01:00</news:publication_date>
-      <news:title>Cło zmienia zakupy Polaków. O 78 proc. mniej zamówień na Temu, Shein i AliExpress</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/18/654492.webp</image:loc>
-      <image:title>Cło zmienia zakupy Polaków. O 78 proc. mniej zamówień na Temu, Shein i AliExpress</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/zabojstwo-danusi-z-jeleniej-gory-sad-zdecydowal-co-z-12-latka/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:22:53+01:00</news:publication_date>
-      <news:title>Zabójstwo Danusi z Jeleniej Góry. Sąd zdecydował, co z 12-latką</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-reportaz-danusia-plus-ph9148526/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Zabójstwo Danusi z Jeleniej Góry. Sąd zdecydował, co z 12-latką</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/co-stalo-sie-z-sylwestrem-suszkiem-odkrylismy-slady-biologiczne/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T14:22:52+01:00</news:publication_date>
-      <news:title>Co stało się z Sylwestrem Suszkiem? "Odkryliśmy ślady biologiczne"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/sa/sabevseep4omagjtedz8m5a51gen87hg.jpg</image:loc>
-      <image:title>Co stało się z Sylwestrem Suszkiem? "Odkryliśmy ślady biologiczne"</image:title>
     </image:image>
   </url>
 </urlset>
