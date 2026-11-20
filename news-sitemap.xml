@@ -3,6 +3,111 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/dzieci-ucza-sie-ratowac-doroslych-koszty-placa-przez-cale-zycie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:25+01:00</news:publication_date>
+      <news:title>Dzieci uczą się ratować dorosłych. Koszty płacą przez całe życie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/Finansowane-przez-SWO.jpg</image:loc>
+      <image:title>Dzieci uczą się ratować dorosłych. Koszty płacą przez całe życie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/trump-o-rosyjskich-dronach-nad-polska-ladowaly-przez-pomylke/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:23+01:00</news:publication_date>
+      <news:title>Trump o rosyjskich dronach nad Polską: Lądowały przez pomyłkę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/1/3/f1f035f8f09366-948-568-0-200-2964-1778.jpg</image:loc>
+      <image:title>Trump o rosyjskich dronach nad Polską: Lądowały przez pomyłkę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/okradli-galerie-w-ostrowie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:21+01:00</news:publication_date>
+      <news:title>Okradli galerię w Ostrowie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rc.fm/files/styles/thumbnail/public/artykul_polityczny/168216/policja_obalwa_1.jpg?itok=F2hFok7k</image:loc>
+      <image:title>Okradli galerię w Ostrowie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/decyzja-trumpa-ws-stalej-bazy-w-polsce-coraz-blizej-wiceszef-mon/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:19+01:00</news:publication_date>
+      <news:title>Decyzja Trumpa ws. stałej bazy w Polsce coraz bliżej. Wiceszef MON wskazał datę (1600 km)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/cu/cugz19wrw7dtacuxo2ra9q1mz55rk9np.png</image:loc>
+      <image:title>Decyzja Trumpa ws. stałej bazy w Polsce coraz bliżej. Wiceszef MON wskazał datę (1600 km)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/ewakuacja-wiezy-na-rzeszowskim-lotnisku-pierwsza-taka-decyzja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:18+01:00</news:publication_date>
+      <news:title>Ewakuacja wieży na rzeszowskim lotnisku. Pierwsza taka decyzja</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/vy/vyk2oa8oc1ra3eajuw654zwxccv1ea1n.jpg</image:loc>
+      <image:title>Ewakuacja wieży na rzeszowskim lotnisku. Pierwsza taka decyzja</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/barcelona-gromi-w-lm-a-pajor-znow-bez-gola-hiszpanie-oceniaja-wprost/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:16+01:00</news:publication_date>
+      <news:title>Barcelona gromi w LM, a Pajor znów bez gola. Hiszpanie oceniają wprost</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/ce/93/1f/z33109198IHG,Ewa-Pajor.jpg</image:loc>
+      <image:title>Barcelona gromi w LM, a Pajor znów bez gola. Hiszpanie oceniają wprost</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/usa-ujawniaja-koszt-wojny-z-iranem-ponad-48-mld-dolarow-i-to-nie-koniec/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T07:16:14+01:00</news:publication_date>
+      <news:title>USA ujawniają koszt wojny z Iranem. Ponad 48 mld dolarów i to nie koniec</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/9/1/cce523a2f51621-948-568-0-202-3000-1799.jpg</image:loc>
+      <image:title>USA ujawniają koszt wojny z Iranem. Ponad 48 mld dolarów i to nie koniec</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pacjent-oddalil-sie-ze-szpitala-w-bystrej-powiadomiono-policje/</loc>
     <news:news>
       <news:publication>
@@ -93,7 +198,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/zagrozenie-atakiem-z-powietrza-alert-rcb-wojsko-poderwalo-mysliwce/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/zagrozenie-atakiem-z-powietrza-alert-rcb-wojsko-poderwalo-mysliwce/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -255,21 +360,6 @@
     <image:image>
       <image:loc>https://ocdn.eu/pulscms-transforms/1/JKxk9kpTURBXy9mZDMwMzcwYmQ5MWFlNGUyYzQ3NTAxNWExYjAzZTcxMy5qcGeRkwXMyMyF3gABoTAF</image:loc>
       <image:title>PiS liczy, że Karol Nawrocki upokorzy ministra w rządzie Tuska. "Powinien nas wesprzeć"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/reset-na-horyzoncie-bogucki-powstal-jeden-projekt-ws-tk/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:55:57+01:00</news:publication_date>
-      <news:title>Reset na horyzoncie? Bogucki: Powstał jeden projekt ws. TK</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/19/n_d493771797ca99d973b7178ea5fdb7eeb2cffe8fd30f2341109b3c9fa09918d2_c.jpg?r=750,400</image:loc>
-      <image:title>Reset na horyzoncie? Bogucki: Powstał jeden projekt ws. TK</image:title>
     </image:image>
   </url>
   <url>
@@ -520,11 +610,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-19T18:57:04+01:00</news:publication_date>
-      <news:title>Jarmark Bożonarodzeniowy w Żywcu. Ogłoszono termin wydarzenia. Czy impreza „wyjdzie” poza rynek?</news:title>
+      <news:title>Jarmarki bożonarodzeniowe w Polsce. Siedem miast na świąteczny weekend w 2026 r.</news:title>
     </news:news>
     <image:image>
       <image:loc>https://www.radio90.pl/files/2026/11/jarmark-bozonarodzeniowy-w-zywcu-fot-zywiec-pl.jpg</image:loc>
-      <image:title>Jarmark Bożonarodzeniowy w Żywcu. Ogłoszono termin wydarzenia. Czy impreza „wyjdzie” poza rynek?</image:title>
+      <image:title>Jarmarki bożonarodzeniowe w Polsce. Siedem miast na świąteczny weekend w 2026 r.</image:title>
     </image:image>
   </url>
   <url>
@@ -615,21 +705,6 @@
     <image:image>
       <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/MGM5380-1024x683.jpg</image:loc>
       <image:title>Lepsza opieka nad pacjentami onkologicznymi</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/jarmark-bozonarodzeniowy-za-betonowymi-zaporami-warszawa-wzmacnia/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:21+01:00</news:publication_date>
-      <news:title>Jarmark bożonarodzeniowy za betonowymi zaporami? Warszawa wzmacnia bezpieczeństwo</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/Zblizenie-belki-swietlnej-POLICJA-w-deszczu.webp</image:loc>
-      <image:title>Jarmark bożonarodzeniowy za betonowymi zaporami? Warszawa wzmacnia bezpieczeństwo</image:title>
     </image:image>
   </url>
   <url>
@@ -948,21 +1023,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-trump-i-putin-oglaszaja-deklaracje-pokoju-porozumienie-po-rozmowach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T15:56:04+01:00</news:publication_date>
-      <news:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/e3/e3tcfsm3txvn1chnz58u5v276n521wfn.jpg</image:loc>
-      <image:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wybuch-w-zakladach-chemicznych-w-lublinie-ewakuowano-pracownikow-na/</loc>
     <news:news>
       <news:publication>
@@ -1003,7 +1063,7 @@
       <news:title>Black Friday w salonach Pan Materac – rabaty do 50%!</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1619008357.png</image:loc>
+      <image:loc>https://static-radom.cozadzien.pl/data/articles/xga-16x9-black-friday-w-salonie-pan-materac-w-radomiu-rabaty-do-50-1795099719.jpg</image:loc>
       <image:title>Black Friday w salonach Pan Materac – rabaty do 50%!</image:title>
     </image:image>
   </url>
@@ -1683,21 +1743,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/anthropic-wchodzi-na-gielde-z-wycena-1-5-bln-dol-tworca-claude-a-pobil/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:44+01:00</news:publication_date>
-      <news:title>Anthropic wchodzi na giełdę z wyceną 1,5 bln dol. Twórca Claude’a pobił rekord SpaceX</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/3/b/b71cc5ea7f62da-948-568-18-28-3731-2238.jpg</image:loc>
-      <image:title>Anthropic wchodzi na giełdę z wyceną 1,5 bln dol. Twórca Claude’a pobił rekord SpaceX</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/wielka-akcja-sluzb-na-slasku-zatrzymano-33-osoby-16-w-sosnowcu/</loc>
     <news:news>
       <news:publication>
@@ -1713,21 +1758,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/w-powiecie-radzynskim-zawyja-syreny-jest-alert-rcb/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:42+01:00</news:publication_date>
-      <news:title>W powiecie radzyńskim zawyją syreny. Jest alert RCB</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/wh/whcnzompzajewpefnu495q1r4fuy47sa.png</image:loc>
-      <image:title>W powiecie radzyńskim zawyją syreny. Jest alert RCB</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/putin-uslyszal-zadania-atak-na-most-krymski-podsumowanie-nocy/</loc>
     <news:news>
       <news:publication>
@@ -1735,11 +1765,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-19T06:04:00+01:00</news:publication_date>
-      <news:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy</news:title>
+      <news:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy (20 osób)</news:title>
     </news:news>
     <image:image>
       <image:loc>https://cdn.wiadomosci.onet.pl/1/hRbk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9hYTAwYWJhMjc1YWY3ZDc0MjNmZDY3MjAyYmIxNjEyOC5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
-      <image:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy</image:title>
+      <image:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy (20 osób)</image:title>
     </image:image>
   </url>
   <url>
@@ -3390,81 +3420,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/8012807d0a69a80b7a8d2300fdf46672/?t=crop:896:392:nowe:0:45,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Tajemniczy prezent Nawrockiego dla Trumpa. Nawet MSZ nie wiedziało o „tronie z bursztynu”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/carefleet-zwieksza-rejestracje-o-29-i-celuje-w-pozycje-firmy-pierwszego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T07:18:33+01:00</news:publication_date>
-      <news:title>Carefleet zwiększa rejestracje o 29% i celuje w pozycję firmy pierwszego wyboru w wynajmie dla MŚP</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/205fcb23-e199-47a4-89e4-d093c458b047</image:loc>
-      <image:title>Carefleet zwiększa rejestracje o 29% i celuje w pozycję firmy pierwszego wyboru w wynajmie dla MŚP</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/jutro-na-stacjach-benzynowych-bedzie-taniej-niz-dzis-5-99-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T07:18:32+01:00</news:publication_date>
-      <news:title>Jutro na stacjach benzynowych będzie taniej niż dziś (5,99 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/09/02/320x240px/pGqjNb4kx0i6Rzsy1Sebrqa487LZAGxGizv8YAGq.diny.jpg</image:loc>
-      <image:title>Jutro na stacjach benzynowych będzie taniej niż dziś (5,99 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/krzysztof-bosak-o-wspolnej-liscie-prawicy-w-wyborach-dezinformacja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T07:18:31+01:00</news:publication_date>
-      <news:title>Krzysztof Bosak o wspólnej liście prawicy w wyborach: Dezinformacja. Propozycji nie będzie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/5437fd952d2967e0a0673b25ab3251b3/krzysztof-bosak?t=crop:3840:1679:nowe:0:441,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Krzysztof Bosak o wspólnej liście prawicy w wyborach: Dezinformacja. Propozycji nie będzie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/jubileusz-bazyliki-sw-piotra-w-watykanie-120-lat/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T07:18:30+01:00</news:publication_date>
-      <news:title>Jubileusz Bazyliki św. Piotra w Watykanie (120 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2025/2025-03-18_174229019210.jpg</image:loc>
-      <image:title>Jubileusz Bazyliki św. Piotra w Watykanie (120 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/grozila-wysadzeniem-szkoly-w-piasecznie-16-latka-zatrzymana/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T07:18:26+01:00</news:publication_date>
-      <news:title>Groziła wysadzeniem szkoły w Piasecznie. 16-latka zatrzymana</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/u3/u3wzz42va3wh1c2dkbiq6cjfjbf44svp.jpg</image:loc>
-      <image:title>Groziła wysadzeniem szkoły w Piasecznie. 16-latka zatrzymana</image:title>
     </image:image>
   </url>
 </urlset>
