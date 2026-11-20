@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -33,13 +33,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/</loc>
-    <lastmod>2026-11-20T12:59:59+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:03+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -93,13 +93,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/</loc>
-    <lastmod>2026-11-20T16:54:54+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:03+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/</loc>
-    <lastmod>2026-11-20T18:57:25+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:10+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,15 +141,78 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:12+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-20T17:56:11+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:04+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/koniec-z-dojazdami-rodzice-w-turosli-maja-nowy-zlobek/</loc>
+    <lastmod>2026-11-20T19:57:10+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/rosja-testuje-granice-zachodu-w-polsce-wychodzi-na-jaw-cos-wiecej/</loc>
+    <lastmod>2026-11-20T19:57:07+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.wiadomosci.onet.pl/1/DM7k9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8yMzYzMmU5OTU4OWI4ZDI1MTY5ZDI1OTc0NzRhZjIxNi5qcGeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/reaktywacja-klubu-pis-w-bydgoskiej-radzie-miasta-jest-ich-troje/</loc>
+    <lastmod>2026-11-20T19:57:06+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/5/a/1/uid_5a1c704ee6a94356aca1b2617946daee_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-trump-i-putin-oglaszaja-deklaracje-pokoju-porozumienie-po-rozmowach/</loc>
+    <lastmod>2026-11-20T19:57:05+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/e3/e3tcfsm3txvn1chnz58u5v276n521wfn.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/piast-mysliwca-dalej-wyczynia-cuda-korona-z-trzecia-porazka-z-rzedu/</loc>
+    <lastmod>2026-11-20T19:57:04+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/andreas-katsantonis-piast-gliwice-radosc-scaled.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/co-dalej-z-bogdanka-jest-porozumienie-w-sprawie-plac-i-plan-budowy/</loc>
+    <lastmod>2026-11-20T19:57:03+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/20/320x240px/kTpr8RbjEvcX8wA3pefQxnhRRXTLIAphPze7NH2m.4f2m.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nowoczesna-bron-powstanie-w-podkarpackiej-spolce-dezamet-i-saab/</loc>
+    <lastmod>2026-11-20T19:57:03+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rzeszow-news.pl/rzeszow-news.pl/wp-content/uploads/2026/11/dezamet-amunicja-313x420.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/wielkie-swieto-ekologii-w-suwalkach-dwa-dni-na-festiwalu-eko-wizja-6/</loc>
@@ -404,15 +467,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/niezidentyfikowany-obiekt-lecial-nisko-nad-rzeszowem-sluzby-szybko/</loc>
-    <lastmod>2026-11-20T15:55:29+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/0f163eb0-1a32-4aa8-a8fd-528870dd4709</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/kolejny-alert-rcb-dla-mieszkancow-woj-lubelskiego-i-podkarpackiego/</loc>
     <lastmod>2026-11-20T11:02:17+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -522,7 +576,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/chiny-wiedza-ze-rosja-z-ukraina-bylaby-imperium-trwanie-wojny-oplaca/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:12+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -908,24 +962,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/lawrow-stracil-panowanie-z-rownowagi-wyprowadzilo-go-pytanie-o-sukces/</loc>
-    <lastmod>2026-11-19T21:48:51+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://m.natemat.pl/siergiej-lawrow-oa1io2rm-1500x0x0x0.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-zadzwonil-do-koalicji-chetnych-mial-mowic-o-marnowaniu-pieniedzy/</loc>
-    <lastmod>2026-11-20T09:59:22+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/731594652.png</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/xi-jinping-apeluje-o-swiat-wolny-od-broni-jadrowej/</loc>
     <lastmod>2026-11-20T09:59:22+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -936,7 +972,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/jak-nie-dac-sie-oszukac-wloclawscy-seniorzy-poznali-zasady/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1692,7 +1728,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/dunczycy-jednomyslnie-poparli-porozumienie-z-usa-w-sprawie-grenlandii/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:12+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1985,15 +2021,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://pliki.pulshr.pl/i/14/11/71/141171_r2_620.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/nowe-informacje-o-stanie-rannych-w-zamachu-jeden-z-poszkodowanych/</loc>
-    <lastmod>2026-11-18T20:52:36+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/67Fk9kuTURBXy84NzYyYThmZi02NWRiLTQ4YjAtYTM3Ni1kMzk3MTJiZDM2MTMuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
     </image:image>
   </url>
   <url>
@@ -2304,7 +2331,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/przelom-w-sprawie-kamienicy-w-ciechocinku-co-to-oznacza-dla-mieszkancow/</loc>
-    <lastmod>2026-11-20T18:57:27+01:00</lastmod>
+    <lastmod>2026-11-20T19:57:13+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2795,33 +2822,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://gorzowianin.com/data/articles/org/30393.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ksef-od-2027-roku-obejmie-wszystkie-firmy-zmiany-takze-dla/</loc>
-    <lastmod>2026-11-18T09:01:14+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://cdn.businessinsider.com.pl/1/ZB5k9lGaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy81YzA3ZTkzZC1kZjdhLTQzNDctODY0ZC1iODljMmE4MjA4NmIuanBlZ5GTBc0JYM0GQN4AAqEwB6ExBA</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/pelna-gotowosc-bojowa-na-granicy-z-polska-bialoruskie-jednostki-dostaly/</loc>
-    <lastmod>2026-11-18T09:01:13+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmNkbi5wbC9mb/3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc3MDg4OTQvZmlsZXMvcGVsbm/EtZ290b3dvc2MtYm9qb3dhLW5hLWdyYW5pY3ktei1wb2xza2EtYmlhbG9ydXNraWU/tamVkbm9zdGtpLWRvc3RhbHktcm96a2F6LTM5MzIyNTkxLmpwZyIsInciOjM4NDB9</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tajemniczy-prezent-nawrockiego-dla-trumpa-nawet-msz-nie-wiedzialo-o/</loc>
-    <lastmod>2026-11-18T09:01:12+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/8012807d0a69a80b7a8d2300fdf46672/?t=crop:896:392:nowe:0:45,resize:fill:600:300,enlarge:1</image:loc>
     </image:image>
   </url>
 </urlset>

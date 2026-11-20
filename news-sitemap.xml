@@ -3,6 +3,111 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/koniec-z-dojazdami-rodzice-w-turosli-maja-nowy-zlobek/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:10+01:00</news:publication_date>
+      <news:title>Koniec z dojazdami? Rodzice w Turośli mają nowy żłobek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c</image:loc>
+      <image:title>Koniec z dojazdami? Rodzice w Turośli mają nowy żłobek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/rosja-testuje-granice-zachodu-w-polsce-wychodzi-na-jaw-cos-wiecej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:07+01:00</news:publication_date>
+      <news:title>Rosja testuje granice Zachodu. W Polsce wychodzi na jaw coś więcej [WNIOSKI Z DNIA]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.wiadomosci.onet.pl/1/DM7k9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8yMzYzMmU5OTU4OWI4ZDI1MTY5ZDI1OTc0NzRhZjIxNi5qcGeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
+      <image:title>Rosja testuje granice Zachodu. W Polsce wychodzi na jaw coś więcej [WNIOSKI Z DNIA]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/reaktywacja-klubu-pis-w-bydgoskiej-radzie-miasta-jest-ich-troje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:06+01:00</news:publication_date>
+      <news:title>Reaktywacja klubu PiS w bydgoskiej radzie miasta. Jest ich troje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/5/a/1/uid_5a1c704ee6a94356aca1b2617946daee_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Reaktywacja klubu PiS w bydgoskiej radzie miasta. Jest ich troje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-trump-i-putin-oglaszaja-deklaracje-pokoju-porozumienie-po-rozmowach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:05+01:00</news:publication_date>
+      <news:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/e3/e3tcfsm3txvn1chnz58u5v276n521wfn.jpg</image:loc>
+      <image:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/piast-mysliwca-dalej-wyczynia-cuda-korona-z-trzecia-porazka-z-rzedu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:04+01:00</news:publication_date>
+      <news:title>Piast Myśliwca dalej wyczynia cuda. Korona z trzecią porażką z rzędu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/andreas-katsantonis-piast-gliwice-radosc-scaled.jpg</image:loc>
+      <image:title>Piast Myśliwca dalej wyczynia cuda. Korona z trzecią porażką z rzędu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/co-dalej-z-bogdanka-jest-porozumienie-w-sprawie-plac-i-plan-budowy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:03+01:00</news:publication_date>
+      <news:title>Co dalej z Bogdanką? Jest porozumienie w sprawie płac i plan budowy nowego szybu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/20/320x240px/kTpr8RbjEvcX8wA3pefQxnhRRXTLIAphPze7NH2m.4f2m.jpg</image:loc>
+      <image:title>Co dalej z Bogdanką? Jest porozumienie w sprawie płac i plan budowy nowego szybu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nowoczesna-bron-powstanie-w-podkarpackiej-spolce-dezamet-i-saab/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T19:57:03+01:00</news:publication_date>
+      <news:title>Nowoczesna broń powstanie w podkarpackiej spółce. Dezamet i Saab podpisały umowę licencyjną</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rzeszow-news.pl/rzeszow-news.pl/wp-content/uploads/2026/11/dezamet-amunicja-313x420.jpg</image:loc>
+      <image:title>Nowoczesna broń powstanie w podkarpackiej spółce. Dezamet i Saab podpisały umowę licencyjną</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/wielkie-swieto-ekologii-w-suwalkach-dwa-dni-na-festiwalu-eko-wizja-6/</loc>
     <news:news>
       <news:publication>
@@ -420,21 +525,6 @@
     <image:image>
       <image:loc>https://panel.kaszuby24.pl/storage/v1/object/public/media/articles/dwie-kobiety-cztery-kradzieze-blisko-5-tys-zl-policja-zatrzymala-je-w-pucku-i-wl-1795165838288-fgbv0v.webp</image:loc>
       <image:title>Dwie kobiety, cztery kradzieże, blisko 5 tys. zł. Policja zatrzymała je w Pucku i Władysławowie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/niezidentyfikowany-obiekt-lecial-nisko-nad-rzeszowem-sluzby-szybko/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T15:55:29+01:00</news:publication_date>
-      <news:title>Niezidentyfikowany obiekt leciał nisko nad Rzeszowem. Służby szybko namierzyły świadków</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/0f163eb0-1a32-4aa8-a8fd-528870dd4709</image:loc>
-      <image:title>Niezidentyfikowany obiekt leciał nisko nad Rzeszowem. Służby szybko namierzyły świadków</image:title>
     </image:image>
   </url>
   <url>
@@ -1260,36 +1350,6 @@
     <image:image>
       <image:loc>https://radiogdansk.pl/wp-content/uploads/2026/11/holownik-niemal-utonal-wciaz-jes-1.jpg</image:loc>
       <image:title>Interwencja SAR uchroniła Bałtyk przed skażeniem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/lawrow-stracil-panowanie-z-rownowagi-wyprowadzilo-go-pytanie-o-sukces/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T21:48:51+01:00</news:publication_date>
-      <news:title>Ławrow stracił panowanie. Z równowagi wyprowadziło go pytanie... o sukces Putina</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://m.natemat.pl/siergiej-lawrow-oa1io2rm-1500x0x0x0.jpg</image:loc>
-      <image:title>Ławrow stracił panowanie. Z równowagi wyprowadziło go pytanie... o sukces Putina</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-zadzwonil-do-koalicji-chetnych-mial-mowic-o-marnowaniu-pieniedzy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T21:48:51+01:00</news:publication_date>
-      <news:title>Trump zadzwonił do Koalicji Chętnych. Miał mówić o „marnowaniu pieniędzy” na wojnę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/731594652.png</image:loc>
-      <image:title>Trump zadzwonił do Koalicji Chętnych. Miał mówić o „marnowaniu pieniędzy” na wojnę</image:title>
     </image:image>
   </url>
   <url>
@@ -3060,111 +3120,6 @@
     <image:image>
       <image:loc>https://pliki.pulshr.pl/i/14/11/71/141171_r2_620.jpg</image:loc>
       <image:title>Już za kilka dni konferencja "Nauka. Rozwój. Biznes"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/nowe-informacje-o-stanie-rannych-w-zamachu-jeden-z-poszkodowanych/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:36+01:00</news:publication_date>
-      <news:title>Nowe informacje o stanie rannych w zamachu. "Jeden z poszkodowanych"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/67Fk9kuTURBXy84NzYyYThmZi02NWRiLTQ4YjAtYTM3Ni1kMzk3MTJiZDM2MTMuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>Nowe informacje o stanie rannych w zamachu. "Jeden z poszkodowanych"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/w-sedziszowie-malopolskim-i-krasniku-odbyly-sie-pogrzeby-ofiar/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:36+01:00</news:publication_date>
-      <news:title>W Sędziszowie Małopolskim i Kraśniku odbyły się pogrzeby ofiar strzelaniny w Krakowie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1886913263.png</image:loc>
-      <image:title>W Sędziszowie Małopolskim i Kraśniku odbyły się pogrzeby ofiar strzelaniny w Krakowie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/blik-week-w-newsweeku-takiej-oferty-jeszcze-nie-bylo-platna-wspolpraca/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:33+01:00</news:publication_date>
-      <news:title>BLIK WEEK w "Newsweeku". Takiej oferty jeszcze nie było [PŁATNA WSPÓŁPRACA]</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/QT3k9kpTURBXy9jNmJjMDNiZWJmOTJlYTZiOGNhMjMzMWNlZWQxOWY2Ny5wbmeRkwXMyMyF3gABoTAF</image:loc>
-      <image:title>BLIK WEEK w "Newsweeku". Takiej oferty jeszcze nie było [PŁATNA WSPÓŁPRACA]</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/rosjanie-przyjada-do-warszawy-mamy-wizy-zapytalismy-organizatorow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:32+01:00</news:publication_date>
-      <news:title>Rosjanie przyjadą do Warszawy. "Mamy wizy". Zapytaliśmy organizatorów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.przegladsportowy.onet.pl/1/Ijvk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy84YzY3ZTY0ODE0NmE5YzJiNWIwYjdjMTMxMjA4OGU0Yi5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
-      <image:title>Rosjanie przyjadą do Warszawy. "Mamy wizy". Zapytaliśmy organizatorów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/krakow-chce-zawieszenia-partnerstwa-z-lwowem-w-tle-decyzja-o-upa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:30+01:00</news:publication_date>
-      <news:title>Kraków chce zawieszenia partnerstwa z Lwowem. W tle decyzja o UPA</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/6b44efe997446d0c7f5b7198ad794deb/?t=crop:1600:699:nowe:0:184,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Kraków chce zawieszenia partnerstwa z Lwowem. W tle decyzja o UPA</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/znamy-cene-za-akcje-w-ratunkowej-emisji-mostostalu-warszawa-2-75-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:28+01:00</news:publication_date>
-      <news:title>Znamy cenę za akcję w ratunkowej emisji Mostostalu Warszawa (2,75 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://pliki.wnp.pl/d/57/87/67/578767_r0_300.jpg</image:loc>
-      <image:title>Znamy cenę za akcję w ratunkowej emisji Mostostalu Warszawa (2,75 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/uefa-zdecydowala-ws-rosji-i-euro-2028-oto-oficjalne-stanowisko/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T20:52:27+01:00</news:publication_date>
-      <news:title>UEFA zdecydowała ws. Rosji i Euro 2028. Oto oficjalne stanowisko</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/7b/9a/1f/z33139067IHG,Flaga-Rosji.jpg</image:loc>
-      <image:title>UEFA zdecydowała ws. Rosji i Euro 2028. Oto oficjalne stanowisko</image:title>
     </image:image>
   </url>
 </urlset>
