@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/pozar-w-szpitalu-w-dabrowie-tarnowskiej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:36+01:00</news:publication_date>
+      <news:title>Pożar w szpitalu w Dąbrowie Tarnowskiej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s9.tvp.pl/images2/9/4/6/uid_946e4afd73084b77bedf12e952fa9082_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Pożar w szpitalu w Dąbrowie Tarnowskiej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/cialo-znalezione-w-redze-trwa-ustalanie-tozsamosci/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:35+01:00</news:publication_date>
+      <news:title>Ciało znalezione w Redze. Trwa ustalanie tożsamości</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s10.tvp.pl/images2/0/f/8/uid_0f853b2520ae44ebabdd945331787e7d_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Ciało znalezione w Redze. Trwa ustalanie tożsamości</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/obwodnica-lapczycy-rusza-zbiorka-podpisow-pod-petycja-do-ministerstwa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:34+01:00</news:publication_date>
+      <news:title>Obwodnica Łapczycy. Rusza zbiórka podpisów pod petycją do ministerstwa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/810059582.png</image:loc>
+      <image:title>Obwodnica Łapczycy. Rusza zbiórka podpisów pod petycją do ministerstwa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/8-latek-tonal-na-basenie-w-koscierzynie-cztery-kobiety-uslyszaly-wyrok/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:31+01:00</news:publication_date>
+      <news:title>8-latek tonął na basenie w Kościerzynie. Cztery kobiety usłyszały wyrok</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ocdn.eu/pulscms-transforms/1/vyWk9kuTURBXy8xM2JiYzNlYy0yYjg5LTQ3ZjEtODc0My1mY2NiODFjYjk1YzcuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
+      <image:title>8-latek tonął na basenie w Kościerzynie. Cztery kobiety usłyszały wyrok</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/plac-rybny-w-lublinie-czeka-przebudowa-wybrano-oferte-za-682-7-tys-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:31+01:00</news:publication_date>
+      <news:title>Plac Rybny w Lublinie czeka przebudowa. Wybrano ofertę za 682,7 tys. zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/Plac-Rybny_fot.-Miasto-Lublin-scaled.jpg</image:loc>
+      <image:title>Plac Rybny w Lublinie czeka przebudowa. Wybrano ofertę za 682,7 tys. zł</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/powrot-europy-do-paliw-z-rosji-amerykanie-zaprzeczaja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:30+01:00</news:publication_date>
+      <news:title>Powrót Europy do paliw z Rosji? Amerykanie zaprzeczają</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/94eb75e294fdac54819b36b6c0d414f2/?t=crop:5712:2497:nowe:0:655,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Powrót Europy do paliw z Rosji? Amerykanie zaprzeczają</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/estonia-zamknie-przejscia-graniczne-z-rosja-wrogie-dzialania-nie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:28+01:00</news:publication_date>
+      <news:title>Estonia zamknie przejścia graniczne z Rosją. "Wrogie działania nie pozostaną bez odpowiedzi"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/35/99/1f/z33133109IHG,Premier-Estonii-Kristen-Michal.jpg</image:loc>
+      <image:title>Estonia zamknie przejścia graniczne z Rosją. "Wrogie działania nie pozostaną bez odpowiedzi"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/niecodzienny-komunikat-pzpn-dziesieciu-pilkarzy-zawieszonych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:26+01:00</news:publication_date>
+      <news:title>Niecodzienny komunikat PZPN. Dziesięciu piłkarzy zawieszonych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NJX5IGP5NUD82-C321.webp</image:loc>
+      <image:title>Niecodzienny komunikat PZPN. Dziesięciu piłkarzy zawieszonych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/grzegorz-lindenberg-nie-zyje-wspolzalozyciel-gazety-wyborczej-mial-71/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T13:01:24+01:00</news:publication_date>
+      <news:title>Grzegorz Lindenberg nie żyje. Współzałożyciel „Gazety Wyborczej” miał 71 lat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/653554642c6db70372b4cb33bba29400/grzegorz-lindenberg?t=resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Grzegorz Lindenberg nie żyje. Współzałożyciel „Gazety Wyborczej” miał 71 lat</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/alarm-na-kolei-w-rudniku-nad-sanem-dyzurny-uslyszal-huk-przy-torach/</loc>
     <news:news>
       <news:publication>
@@ -48,21 +183,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/agnieszka-bartol-nowa-minister-funduszy-i-polityki-regionalnej-nawrocki/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:20+01:00</news:publication_date>
-      <news:title>Agnieszka Bartol nową minister funduszy i polityki regionalnej. Nawrocki wręczył nominację</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/rg/rg3jt1ktwy4exod7r26fay6py3t5dxrx.jpg</image:loc>
-      <image:title>Agnieszka Bartol nową minister funduszy i polityki regionalnej. Nawrocki wręczył nominację</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ponar-wadowice-planuje-ipo-na-gpw-oferta-moze-przekroczyc-1-mld-zl/</loc>
     <news:news>
       <news:publication>
@@ -73,23 +193,23 @@
       <news:title>PONAR Wadowice planuje IPO na GPW. Oferta może przekroczyć 1 mld zł</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/776042701.png</image:loc>
+      <image:loc>https://i.gremicdn.pl/image/free/03c4d7f540187628cffb576e0ccc724e/?t=crop:4528:2808:nowe:0:104,resize:fill:1200:750,enlarge:1</image:loc>
       <image:title>PONAR Wadowice planuje IPO na GPW. Oferta może przekroczyć 1 mld zł</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/niezidentyfikowany-obiekt-spadl-w-polsce-gawkowski-uruchomil-specjalna/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/ewakuacja-wiezy-kontroli-lotow-w-rzeszowie-zagrozenie-atakiem/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-20T11:02:18+01:00</news:publication_date>
-      <news:title>Niezidentyfikowany obiekt spadł w Polsce. Gawkowski uruchomił specjalną procedurę</news:title>
+      <news:title>Ewakuacja wieży kontroli lotów w Rzeszowie. "Zagrożenie atakiem powietrznym"</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/20/320x240px/DBksFauWK4R86cXAHqWSSGwMLdkDhcnMEt2EnDsC.etj8.jpg</image:loc>
-      <image:title>Niezidentyfikowany obiekt spadł w Polsce. Gawkowski uruchomił specjalną procedurę</image:title>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2025/09/PILNE-17.jpg</image:loc>
+      <image:title>Ewakuacja wieży kontroli lotów w Rzeszowie. "Zagrożenie atakiem powietrznym"</image:title>
     </image:image>
   </url>
   <url>
@@ -195,21 +315,6 @@
     <image:image>
       <image:loc>https://files.niezalezna.tech/images/upload/2026/11/20/n_bc5b9b747f9b8a43b075195955a9e5bc8ca1ed915bacbb8773a4bbe46acd8f23_c.jpg?r=750,400</image:loc>
       <image:title>Messi przed Lewandowskim. Ujawniono zarobki gwiazd MLS (19,51 mln)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/czesc-ukrainy-bez-pradu-po-rosyjskich-atakach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:08+01:00</news:publication_date>
-      <news:title>Część Ukrainy bez prądu po rosyjskich atakach</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/08/06/320x240px/Iv49wB4WOn6C8DwHxnnSpUOa6eLq2yvYogSnQEnu.0hvc.png</image:loc>
-      <image:title>Część Ukrainy bez prądu po rosyjskich atakach</image:title>
     </image:image>
   </url>
   <url>
@@ -1863,6 +1968,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nsa-zdecydowal-w-sprawie-abonamentu-rtv-krrit-musi-zwrocic-mediom/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T09:59:41+01:00</news:publication_date>
+      <news:title>NSA zdecydował w sprawie abonamentu RTV. KRRiT musi zwrócić mediom publicznym 280 mln zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/08/Maciej-Wrobel-2-e1795171856595.jpg</image:loc>
+      <image:title>NSA zdecydował w sprawie abonamentu RTV. KRRiT musi zwrócić mediom publicznym 280 mln zł</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/19-latek-driftowal-autem-i-uderzyl-w-latarnie/</loc>
     <news:news>
       <news:publication>
@@ -2040,21 +2160,6 @@
     <image:image>
       <image:loc>https://s11.tvp.pl/images2/1/6/1/uid_1610fb0770cc4ecf91dc4036a2be3233_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
       <image:title>Wielka akcja służb na Śląsku. Zatrzymano 33 osoby, 16 w Sosnowcu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-uslyszal-zadania-atak-na-most-krymski-podsumowanie-nocy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T06:04:00+01:00</news:publication_date>
-      <news:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy (20 osób)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.wiadomosci.onet.pl/1/hRbk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9hYTAwYWJhMjc1YWY3ZDc0MjNmZDY3MjAyYmIxNjEyOC5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
-      <image:title>Putin usłyszał żądania, atak na Most Krymski. Podsumowanie nocy (20 osób)</image:title>
     </image:image>
   </url>
   <url>
@@ -2988,6 +3093,36 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/wielki-kontrakt-orlenu-i-naftogazu-polski-gigant-zabezpieczy-ukraine-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T15:58:58+01:00</news:publication_date>
+      <news:title>Wielki kontrakt Orlenu i Naftogazu. Polski gigant zabezpieczy Ukrainę na zimę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1195240232.png</image:loc>
+      <image:title>Wielki kontrakt Orlenu i Naftogazu. Polski gigant zabezpieczy Ukrainę na zimę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/orlen-podpisal-porozumienia-z-gigantami-technologicznymi-czego-dotyczy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T15:58:58+01:00</news:publication_date>
+      <news:title>ORLEN podpisał porozumienia z gigantami technologicznymi. Czego dotyczy?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://mamstartup.pl/wp-content/uploads/2026/11/orlen-przemysl-4.0-wspolpraca-listopad-2026.png</image:loc>
+      <image:title>ORLEN podpisał porozumienia z gigantami technologicznymi. Czego dotyczy?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/wynajem-mieszkania-w-warszawie-drozeje-ale-pensje-rosna-szybciej-co/</loc>
     <news:news>
       <news:publication>
@@ -3060,6 +3195,21 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2RuLnBsL2RncHN0YXRpYy9kb2/N1bWVudHMvRk9CMDAwMDAwMDAwMDAwNzcwNzM2My9maWxlcy9hc3lzdGVudC1vc29ieS1u/aWVwZWxub3NwcmF3bmVqLXBvbWFnYS1zdGFyc3plai1vc29iaWUtbmEtd296a3UtaW53YW/xpZHpraW0temFwaWFjLWd1emlraS13LXN3ZXRyemUtMzkyNTc1ODEuanBnIiwidyI6Mzg0MH0</image:loc>
       <image:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/zmiany-w-radzie-ministrow-andrzej-domanski-wicepremierem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T15:58:52+01:00</news:publication_date>
+      <news:title>Zmiany w radzie ministrów. Andrzej Domański wicepremierem (246 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NFHVCXOM3JJ1J-C321.webp</image:loc>
+      <image:title>Zmiany w radzie ministrów. Andrzej Domański wicepremierem (246 tys.)</image:title>
     </image:image>
   </url>
   <url>
@@ -3180,186 +3330,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/sa/sabevseep4omagjtedz8m5a51gen87hg.jpg</image:loc>
       <image:title>Co stało się z Sylwestrem Suszkiem? "Odkryliśmy ślady biologiczne"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/kielce-chca-otworzyc-tereny-inwestycyjne-powstanie-nowa-droga-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:33+01:00</news:publication_date>
-      <news:title>Kielce chcą otworzyć tereny inwestycyjne. Powstanie nowa droga na terenie dawnego browaru</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s6.tvp.pl/images2/6/9/c/uid_69c879b240d7467ea7c85f3bbc30551c_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Kielce chcą otworzyć tereny inwestycyjne. Powstanie nowa droga na terenie dawnego browaru</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/51-latce-odebrano-dwa-psy-w-takich-warunkach-zyly-nie-potrafila-wyjasnic/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:32+01:00</news:publication_date>
-      <news:title>51-latce odebrano dwa psy. W takich warunkach żyły. "Nie potrafiła wyjaśnić"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/1a202ecf-425b-4e86-8f0b-e7e1ec8d1c4e</image:loc>
-      <image:title>51-latce odebrano dwa psy. W takich warunkach żyły. "Nie potrafiła wyjaśnić"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/kdp-polaczy-warszawe-lodz-poznan-i-wroclaw-co-z-mniejszymi-miastami/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:29+01:00</news:publication_date>
-      <news:title>KDP połączy Warszawę, Łódź, Poznań i Wrocław. Co z mniejszymi miastami?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.300gospodarka.pl/media/2026/11/sam-_IOLdUn2op8-unsplash.jpg</image:loc>
-      <image:title>KDP połączy Warszawę, Łódź, Poznań i Wrocław. Co z mniejszymi miastami?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-18-11-2026-4-0108-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:27+01:00</news:publication_date>
-      <news:title>Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 18.11.2026 (4.0108 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/e0ba71a8-9c02-482d-85dd-ebac5362ee3b</image:loc>
-      <image:title>Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 18.11.2026 (4.0108 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/leasing-fiat-ducato-jak-wybrac-furgon-i-porownac-koszty-finansowania/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:26+01:00</news:publication_date>
-      <news:title>Leasing Fiat Ducato — jak wybrać furgon i porównać koszty finansowania?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/77600807-3c6d-40ac-a04b-9756a3278e6b</image:loc>
-      <image:title>Leasing Fiat Ducato — jak wybrać furgon i porównać koszty finansowania?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/mieszkancy-warszawy-i-okolic-zobacza-nietypowe-swiatla-mon-wydalo/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:25+01:00</news:publication_date>
-      <news:title>Mieszkańcy Warszawy i okolic zobaczą nietypowe światła. MON wydało komunikat</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/ad110ab25bb39528ba1ff2ab414640fb/?t=crop:4994:2183:nowe:0:572,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Mieszkańcy Warszawy i okolic zobaczą nietypowe światła. MON wydało komunikat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/francuzi-skonfiskowali-luksusowy-hotel-ukrainskiego-miliardera/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:24+01:00</news:publication_date>
-      <news:title>Francuzi skonfiskowali luksusowy hotel ukraińskiego miliardera. Właściciel zapowiada walkę w sądzie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LWZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1l/bnRzL0ZPQjAwMDAwMDAwMDAwMDc3MDkxNzcvZmls/ZXMvcGFyeXotMzkyMDIzODkuanBnIiwidyI6Mzg0MH0</image:loc>
-      <image:title>Francuzi skonfiskowali luksusowy hotel ukraińskiego miliardera. Właściciel zapowiada walkę w sądzie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/wypadek-polskich-pielgrzymow-na-wegrzech-nowa-decyzja-ws-kierowcy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:23+01:00</news:publication_date>
-      <news:title>Wypadek polskich pielgrzymów na Węgrzech. Nowa decyzja ws. kierowcy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/c0bc4d1c-07ec-4e2b-bffa-f792fdaefd7e</image:loc>
-      <image:title>Wypadek polskich pielgrzymów na Węgrzech. Nowa decyzja ws. kierowcy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/wypadek-kolejowy-w-pradze-46-osob-poszkodowanych/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:23+01:00</news:publication_date>
-      <news:title>Wypadek kolejowy w Pradze. 46 osób poszkodowanych</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/c7594243-ea5a-464b-aef7-480f86c57b77</image:loc>
-      <image:title>Wypadek kolejowy w Pradze. 46 osób poszkodowanych</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/dachowanie-samochodu-w-krykajnach-piec-osob-trafilo-do-szpitala/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:23+01:00</news:publication_date>
-      <news:title>Dachowanie samochodu w Krykajnach. Pięć osób trafiło do szpitala</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1334592373.png</image:loc>
-      <image:title>Dachowanie samochodu w Krykajnach. Pięć osób trafiło do szpitala</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/zderzenie-i-dachowanie-na-trasie-lazienkowskiej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:23+01:00</news:publication_date>
-      <news:title>Zderzenie i dachowanie na Trasie Łazienkowskiej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1298258837.png</image:loc>
-      <image:title>Zderzenie i dachowanie na Trasie Łazienkowskiej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/ukraina-uderzyla-w-most-kerczenski-bez-starlinka-operacja-miala/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T13:05:23+01:00</news:publication_date>
-      <news:title>Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina (250 km)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1292689945.png</image:loc>
-      <image:title>Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina (250 km)</image:title>
     </image:image>
   </url>
 </urlset>
