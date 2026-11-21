@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:30+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/mamy-swietne-narzedzia-ale-ich-nie-uzywamy-jak-skutecznie-chronic/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:30+01:00</news:publication_date>
+      <news:title>Mamy świetne narzędzia, ale ich nie używamy. Jak skutecznie chronić ofiary przemocy?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/979960670.png</image:loc>
+      <image:title>Mamy świetne narzędzia, ale ich nie używamy. Jak skutecznie chronić ofiary przemocy?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/jak-rozpoznac-przemoc-wobec-dziecka-i-kiedy-reagowac-konferencja-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:30+01:00</news:publication_date>
+      <news:title>Jak rozpoznać przemoc wobec dziecka i kiedy reagować? Konferencja w Bochni</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bochnianin.pl/wp-content/plugins/photo-gallery/images/lazy_placeholder.gif</image:loc>
+      <image:title>Jak rozpoznać przemoc wobec dziecka i kiedy reagować? Konferencja w Bochni</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/gta-vi-pobila-rekord-wszech-czasow-takiego-wyniku-nie-osiagnal-nawet/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:28+01:00</news:publication_date>
+      <news:title>GTA VI pobiła rekord wszech czasów. Takiego wyniku nie osiągnął nawet Hollywood (3,79 mld)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/5/e/fa74f2f4ca27ad-948-568-20-130-3980-2387.jpg</image:loc>
+      <image:title>GTA VI pobiła rekord wszech czasów. Takiego wyniku nie osiągnął nawet Hollywood (3,79 mld)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/inflacja-spada-a-ceny-w-sklepach-rosna-jak-tu-oszczedzac/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:26+01:00</news:publication_date>
+      <news:title>Inflacja spada, a ceny w sklepach rosną. Jak tu oszczędzać?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/534050f3500e17d96284a95648950a44/?t=crop:5000:3101:nowe:0:232,resize:fill:1200:750,enlarge:1</image:loc>
+      <image:title>Inflacja spada, a ceny w sklepach rosną. Jak tu oszczędzać?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/trwa-nowenna-w-intencji-ojczyzny-o-zgode-i-pojednanie-w-narodzie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:25+01:00</news:publication_date>
+      <news:title>Trwa nowenna w intencji ojczyzny o zgodę i pojednanie w narodzie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-01-18_176873729410.jpg</image:loc>
+      <image:title>Trwa nowenna w intencji ojczyzny o zgodę i pojednanie w narodzie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjskie-ataki-na-krzywy-rog-dwie-ofiary-kilkadziesiat-osob-rannych-28/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:24+01:00</news:publication_date>
+      <news:title>Rosyjskie ataki na Krzywy Róg. Dwie ofiary, kilkadziesiąt osób rannych (28 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s17.tvp.pl/images2/7/9/a/uid_79a6eda6cab446779c4a47dcf4593d5a_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Rosyjskie ataki na Krzywy Róg. Dwie ofiary, kilkadziesiąt osób rannych (28 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/grozil-poslance-smiercia-42-latek-zatrzymany-przez-policje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:23+01:00</news:publication_date>
+      <news:title>Groził posłance śmiercią. 42-latek zatrzymany przez policję</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s18.tvp.pl/images2/8/9/a/uid_89a307e8d2044a04b9933d237bd2baa6_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Groził posłance śmiercią. 42-latek zatrzymany przez policję</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/zona-nie-zlozyla-zyczen-i-nie-chciala-pic-alkoholu-zablokowal-numer-112/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T08:15:22+01:00</news:publication_date>
+      <news:title>Żona nie złożyła życzeń i nie chciała pić alkoholu. Zablokował numer 112</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s14.tvp.pl/images2/4/8/8/uid_488dfacb17284328a6dd21bcef1f78e6_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Żona nie złożyła życzeń i nie chciała pić alkoholu. Zablokował numer 112</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/konsolidacja-ograniczona-usk-ma-sie-polaczyc-z-jednym-szpitalem/</loc>
     <news:news>
       <news:publication>
@@ -93,21 +228,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T05:53:15+01:00</news:publication_date>
-      <news:title>Weekend w Opolu pełen atrakcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
-      <image:title>Weekend w Opolu pełen atrakcji</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/radomiak-zmierzy-sie-z-wisla-krakowianie-maja-problem-na-wyjazdach/</loc>
     <news:news>
       <news:publication>
@@ -180,21 +300,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY/2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMD/AwMDAwMDAwNzcxMDkzMi9maWxlcy9vc29ieS01MC1sYXQ/tZW1lcnl0dXJhLTM5MjU0MTQ5LnBuZyIsInciOjM4NDB9</image:loc>
       <image:title>Nadchodzi koniec emerytur groszowych. ZUS szykuje rewolucyjną zmianę i czeka na decyzję rządu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/praca-w-cold-fakturzysta-fakturzystka/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T04:53:07+01:00</news:publication_date>
-      <news:title>🔸 PRACA w COLD: Fakturzysta / Fakturzystka</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1522167661.png</image:loc>
-      <image:title>🔸 PRACA w COLD: Fakturzysta / Fakturzystka</image:title>
     </image:image>
   </url>
   <url>
@@ -3330,81 +3435,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1647518221.png</image:loc>
       <image:title>Białystok rozbłyśnie na czerwono. To finał kampanii "Dzieciństwo bez przemocy" (79 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/zmiany-w-organizacji-ruchu-przy-rondzie-honorowych-dawcow-krwi-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:51+01:00</news:publication_date>
-      <news:title>Zmiany w organizacji ruchu przy Rondzie Honorowych Dawców Krwi i Konstytucji 3 Maja</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tylkotorun.pl/wp-content/uploads/2026/11/obraz_2026-11-17_174330074-original-600x378.webp</image:loc>
-      <image:title>Zmiany w organizacji ruchu przy Rondzie Honorowych Dawców Krwi i Konstytucji 3 Maja</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/ewakuacja-galerii-handlowej-na-targowku-wszystko-przez-wybryk-13-latka/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:49+01:00</news:publication_date>
-      <news:title>Ewakuacja galerii handlowej na Targówku. Wszystko przez wybryk 13-latka</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s4.tvp.pl/images2/d/9/7/uid_d974ab86d31d4290869a31f60dcc4dcf_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Ewakuacja galerii handlowej na Targówku. Wszystko przez wybryk 13-latka</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/neuca-odwolala-sie-od-decyzji-uokik-spolka-nie-utworzy-rezerw-na-kare/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:47+01:00</news:publication_date>
-      <news:title>Neuca odwołała się od decyzji UOKiK. Spółka nie utworzy rezerw na karę ponad 500 mln zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/e/5/ca6bd42372762d-948-568-0-79-1998-1199.jpg</image:loc>
-      <image:title>Neuca odwołała się od decyzji UOKiK. Spółka nie utworzy rezerw na karę ponad 500 mln zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-przylecial-z-nuklearna-walizka-odpowiedz-rosjanina/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:45+01:00</news:publication_date>
-      <news:title>Putin przyleciał z nuklearną walizką? Odpowiedź Rosjanina</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/7399fcd8-e9ee-47cb-96ea-3faa05965c27</image:loc>
-      <image:title>Putin przyleciał z nuklearną walizką? Odpowiedź Rosjanina</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/wielka-akcja-sluzb-na-slasku-zatrzymano-33-osoby-16-w-sosnowcu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T08:22:44+01:00</news:publication_date>
-      <news:title>Wielka akcja służb na Śląsku. Zatrzymano 33 osoby, 16 w Sosnowcu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s11.tvp.pl/images2/1/6/1/uid_1610fb0770cc4ecf91dc4036a2be3233_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-      <image:title>Wielka akcja służb na Śląsku. Zatrzymano 33 osoby, 16 w Sosnowcu</image:title>
     </image:image>
   </url>
 </urlset>
