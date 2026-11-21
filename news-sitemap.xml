@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/jagiellonia-bialystok-przegrywa-z-cracovia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:27+01:00</news:publication_date>
+      <news:title>Jagiellonia Białystok przegrywa z Cracovią</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/d71d2e20d59f27804e16720992cd3598</image:loc>
+      <image:title>Jagiellonia Białystok przegrywa z Cracovią</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/konsolidacja-ograniczona-usk-ma-sie-polaczyc-z-jednym-szpitalem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:26+01:00</news:publication_date>
+      <news:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/981893204.png</image:loc>
+      <image:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:26+01:00</news:publication_date>
+      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
+      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/zandarmeria-wykluczyla-obecnosc-zagrozen-w-miejscach-upadku-rosyjskich/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:23+01:00</news:publication_date>
+      <news:title>Żandarmeria wykluczyła obecność zagrożeń w miejscach upadku rosyjskich środków bojowych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2023/05/08/320x180px/PPZiJKl74od5hoLwh4FYCeoGG6h64BntfqdN3Qo2.clyt.jpg</image:loc>
+      <image:title>Żandarmeria wykluczyła obecność zagrożeń w miejscach upadku rosyjskich środków bojowych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-komentuje-atak-hakerow-na-fbi-ciekawe-kto-za-tym-stoi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:21+01:00</news:publication_date>
+      <news:title>Trump komentuje atak hakerów na FBI. „Ciekawe, kto za tym stoi”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/368142cd0d5f6967f0c9b4afb1281abd/?t=crop:1920:839:nowe:0:220,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Trump komentuje atak hakerów na FBI. „Ciekawe, kto za tym stoi”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/zabezpieczali-wczesniejsza-kolizje-na-a4-w-ich-pojazdy-uderzyl-samochod/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:20+01:00</news:publication_date>
+      <news:title>Zabezpieczali wcześniejszą kolizję na A4. W ich pojazdy uderzył samochód</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bochnianin.pl/wp-content/uploads/2026/11/02-768x1024.jpg</image:loc>
+      <image:title>Zabezpieczali wcześniejszą kolizję na A4. W ich pojazdy uderzył samochód</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/na-meczu-w-radomiu-zamknieto-sektor-dla-gosci-powodem-uszkodzona-furtka/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:19+01:00</news:publication_date>
+      <news:title>Na meczu w Radomiu zamknięto sektor dla gości. Powodem uszkodzona furtka</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-3246879-stadion-radomiaka-radom-ph8780934/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Na meczu w Radomiu zamknięto sektor dla gości. Powodem uszkodzona furtka</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/koszykarskie-emocje-i-deszcz-pluszakow-w-rzeszowie-resovia-zagra-dla/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:18+01:00</news:publication_date>
+      <news:title>Koszykarskie emocje i deszcz pluszaków w Rzeszowie. Resovia zagra dla dzieci z hospicjum</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rzeszow-news.pl/wp-content/uploads/2026/11/koszykowka-mecz-02.jpeg</image:loc>
+      <image:title>Koszykarskie emocje i deszcz pluszaków w Rzeszowie. Resovia zagra dla dzieci z hospicjum</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/prawdziwie-zimowe-sniezyce-na-horyzoncie-przedtem-odczujemy-przenikliwe/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T17:40:17+01:00</news:publication_date>
+      <news:title>Prawdziwie zimowe śnieżyce na horyzoncie. Przedtem odczujemy przenikliwe zimno. Prognoza pogody</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-6782462-zima-snieg-sniezyca-zawieja-ph8839739/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Prawdziwie zimowe śnieżyce na horyzoncie. Przedtem odczujemy przenikliwe zimno. Prognoza pogody</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/dramat-w-zakopanem-mezczyzna-wypadl-z-okna-w-domu-znaleziono-zwloki/</loc>
     <news:news>
       <news:publication>
@@ -153,21 +288,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T15:43:06+01:00</news:publication_date>
-      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
-      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/firma-uruchamia-zaklad-i-szuka-pracownikow-oferuje-darmowe-szkolenia-40/</loc>
     <news:news>
       <news:publication>
@@ -285,21 +405,6 @@
     <image:image>
       <image:loc>https://s5.tvp.pl/images2/5/1/7/uid_51729f7fc47646039ee532040cdc8b8c_width_900_play_0_pos_0_gs_0_height_506.jpeg</image:loc>
       <image:title>Wykolejenie tramwaju na rondzie Fordońskim. Utrudnienia w Bydgoszczy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T14:49:07+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -513,21 +618,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/pko-bp-ekstraklasa-cracovia-jagiellonia-bialystok-relacja-live-i-wynik/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T13:56:29+01:00</news:publication_date>
-      <news:title>PKO BP Ekstraklasa: Cracovia – Jagiellonia Białystok. Relacja live i wynik na żywo online</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/u1/u1zzp6gvwo5945wcxfz21bo4g5pqfrhe.jpg</image:loc>
-      <image:title>PKO BP Ekstraklasa: Cracovia – Jagiellonia Białystok. Relacja live i wynik na żywo online</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/21-lat-w-watykanie-wojciech-giertych-idzie-na-emeryture-to-stryj-posla/</loc>
     <news:news>
       <news:publication>
@@ -645,21 +735,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-donald-tusk-i-andy-burnham-na-szczycie-koalicji-chetnych-w-berlinie-19-11-2026-r-ph9350774/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Donald Tusk zwrócił się do brytyjskiego premiera. "Do dzieła" (100 tys.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/jedni-chca-przedluzyc-serie-inni-szukaja-przelamania-co-nas-czeka-w-8/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T11:43:55+01:00</news:publication_date>
-      <news:title>Jedni chcą przedłużyć serię, inni szukają przełamania. Co nas czeka w 8. kolejce BLK? – ZAPOWIEDŹ</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bochnianin.pl/wp-content/uploads/2026/09/11-polonia-warszawa.png</image:loc>
-      <image:title>Jedni chcą przedłużyć serię, inni szukają przełamania. Co nas czeka w 8. kolejce BLK? – ZAPOWIEDŹ</image:title>
     </image:image>
   </url>
   <url>
@@ -3165,126 +3240,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-druga-linia-metra-bedzie-przedluzona-z-brodna-na-marymont-ph9348008/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Druga linia metra będzie przedłużona z Bródna na Marymont</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/prawomocna-kara-25-lat-wiezienia-za-zabojstwo-upozorowane-na-wypadek/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:27+01:00</news:publication_date>
-      <news:title>Prawomocna kara 25 lat więzienia za zabójstwo upozorowane na wypadek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s3.tvp.pl/images2/3/7/2/uid_372ba2a1d6464dbdafb7fecc1a4f190b_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Prawomocna kara 25 lat więzienia za zabójstwo upozorowane na wypadek</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/sledztwo-w-sprawie-zondacrypto-troje-podejrzanych-z-decyzja-o-areszcie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:26+01:00</news:publication_date>
-      <news:title>Śledztwo ws. Zondacrypto nabiera tempa. Sąd zdecydował o areszcie 3 osób</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/41f59cf4d08d5708433d091ec61a755f/?t=crop:5424:2371:nowe:0:261.80336351876,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Śledztwo ws. Zondacrypto nabiera tempa. Sąd zdecydował o areszcie 3 osób</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/lepsza-opieka-nad-pacjentami-onkologicznymi/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:25+01:00</news:publication_date>
-      <news:title>Lepsza opieka nad pacjentami onkologicznymi</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/MGM5380-1024x683.jpg</image:loc>
-      <image:title>Lepsza opieka nad pacjentami onkologicznymi</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pies-biegal-przy-ruchliwym-skrzyzowaniu-w-bielsku-bialej-wrocil-do-domu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:21+01:00</news:publication_date>
-      <news:title>Pies biegał przy ruchliwym skrzyżowaniu w Bielsku-Białej. Wrócił do domu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62876/179507719550862100__.jpg</image:loc>
-      <image:title>Pies biegał przy ruchliwym skrzyżowaniu w Bielsku-Białej. Wrócił do domu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/nowy-wiadukt-w-centrum-katowic-trwa-montaz-konstrukcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:21+01:00</news:publication_date>
-      <news:title>Nowy wiadukt w centrum Katowic. Trwa montaż konstrukcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvs.pl/wp-content/uploads/2026/11/news_wiadukt_jana_tvs_zajawka_2026.11.19-1-1.webp</image:loc>
-      <image:title>Nowy wiadukt w centrum Katowic. Trwa montaż konstrukcji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/dzieci-dostaly-egzotyczny-owoc-na-stolowce-kolce-powbijaly-im-sie-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:20+01:00</news:publication_date>
-      <news:title>Dzieci dostały egzotyczny owoc na stołówce. Kolce powbijały im się w dłonie i usta</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/RTZk9kuTURBXy82MjZhNDVkNi0yYjkzLTRkZGEtODU4NC1jN2I1OTczN2I4NWMuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>Dzieci dostały egzotyczny owoc na stołówce. Kolce powbijały im się w dłonie i usta</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jakosc-i-bezpieczenstwo-produkcji-zywnosci-dlaczego-uzdatnianie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:19+01:00</news:publication_date>
-      <news:title>Jakość i bezpieczeństwo produkcji żywności – dlaczego uzdatnianie sprężonego powietrza ma kluczowe znaczenie?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/10821450.png</image:loc>
-      <image:title>Jakość i bezpieczeństwo produkcji żywności – dlaczego uzdatnianie sprężonego powietrza ma kluczowe znaczenie?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/epuap-znowu-dziala-ministerstwo-cyfryzacji-zapewnia-o-wzmacnianiu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T17:58:18+01:00</news:publication_date>
-      <news:title>ePUAP znowu działa. Ministerstwo Cyfryzacji zapewnia o wzmacnianiu bezpieczeństwa po cyberataku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s10.tvp.pl/images2/0/8/f/uid_08fa1d1cdaf446da844105ce6c60c77e_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>ePUAP znowu działa. Ministerstwo Cyfryzacji zapewnia o wzmacnianiu bezpieczeństwa po cyberataku</image:title>
     </image:image>
   </url>
 </urlset>
