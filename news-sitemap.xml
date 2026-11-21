@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T05:53:15+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/radomiak-zmierzy-sie-z-wisla-krakowianie-maja-problem-na-wyjazdach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T05:53:15+01:00</news:publication_date>
+      <news:title>Radomiak zmierzy się z Wisłą. Krakowianie mają problem na wyjazdach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static-radom.cozadzien.pl/data/articles/xga-16x9-radomiak-zmierzy-sie-z-wisla-krakowianie-maja-problem-na-wyjazdach-1795192039.jpg</image:loc>
+      <image:title>Radomiak zmierzy się z Wisłą. Krakowianie mają problem na wyjazdach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/kolejna-znana-marka-wycofuje-reklamy-z-republiki-od-grudnia-znikna-jej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T05:53:12+01:00</news:publication_date>
+      <news:title>Kolejna znana marka wycofuje reklamy z Republiki. Od grudnia znikną jej spoty</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/ca707809-50c8-4ea0-b571-5f033170384f</image:loc>
+      <image:title>Kolejna znana marka wycofuje reklamy z Republiki. Od grudnia znikną jej spoty</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zurek-wygral-proces-z-czlowiekiem-ziobry-klamstwo-w-sieci-ma-swoja-cene/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T05:53:10+01:00</news:publication_date>
+      <news:title>Żurek wygrał proces z człowiekiem Ziobry. "Kłamstwo w sieci ma swoją cenę"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NK1TMK0BKVPWG-C321.webp</image:loc>
+      <image:title>Żurek wygrał proces z człowiekiem Ziobry. "Kłamstwo w sieci ma swoją cenę"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/dziela-sztuki-warte-blisko-100-milionow-zl-w-warszawie-opalka-uklanski/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T05:53:08+01:00</news:publication_date>
+      <news:title>Dzieła sztuki warte blisko 100 milionów zł w Warszawie. Opałka, Uklański i Mitoraj</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/32f2050bef143376d97153e597d28bfe/?t=crop:2000:874:nowe:0:230,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Dzieła sztuki warte blisko 100 milionów zł w Warszawie. Opałka, Uklański i Mitoraj</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nadchodzi-koniec-emerytur-groszowych-zus-szykuje-rewolucyjna-zmiane-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T05:53:06+01:00</news:publication_date>
+      <news:title>Nadchodzi koniec emerytur groszowych. ZUS szykuje rewolucyjną zmianę i czeka na decyzję rządu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY/2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMD/AwMDAwMDAwNzcxMDkzMi9maWxlcy9vc29ieS01MC1sYXQ/tZW1lcnl0dXJhLTM5MjU0MTQ5LnBuZyIsInciOjM4NDB9</image:loc>
+      <image:title>Nadchodzi koniec emerytur groszowych. ZUS szykuje rewolucyjną zmianę i czeka na decyzję rządu</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/dzieci-ucza-sie-ratowac-doroslych-koszty-placa-przez-cale-zycie/</loc>
     <news:news>
       <news:publication>
@@ -33,51 +123,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/skuterem-po-galerii-w-tym-centrum-handlowym-to-wdrozono/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T04:53:05+01:00</news:publication_date>
-      <news:title>Skuterem po galerii? W tym centrum handlowym to wdrożono</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/662580.webp</image:loc>
-      <image:title>Skuterem po galerii? W tym centrum handlowym to wdrożono</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/fotowoltaika-zawieszona-nad-roslinami-na-dachu-cup-jedna-z-nielicznych/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T03:49:21+01:00</news:publication_date>
-      <news:title>Fotowoltaika „zawieszona” nad roślinami na dachu CUP. Jedna z nielicznych takich instalacji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-20-at-13.44.14-4-300x300.jpg</image:loc>
-      <image:title>Fotowoltaika „zawieszona” nad roślinami na dachu CUP. Jedna z nielicznych takich instalacji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/agnieszka-radwanska-wchodzi-do-branzy-kosmetycznej-nowa-inwestycja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T03:49:19+01:00</news:publication_date>
-      <news:title>Agnieszka Radwańska wchodzi do branży kosmetycznej. Nowa inwestycja</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/10821468.webp</image:loc>
-      <image:title>Agnieszka Radwańska wchodzi do branży kosmetycznej. Nowa inwestycja</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/trzesienie-ziemi-w-peru-ewakuowano-parlament-w-limie/</loc>
     <news:news>
       <news:publication>
@@ -90,21 +135,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8066a5bd-426b-4951-9fbe-35af8406bd04</image:loc>
       <image:title>Trzęsienie ziemi w Peru. Ewakuowano parlament w Limie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/jak-rozpoznac-przemoc-wobec-dziecka-i-kiedy-reagowac-konferencja-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T02:11:33+01:00</news:publication_date>
-      <news:title>Jak rozpoznać przemoc wobec dziecka i kiedy reagować? Konferencja w Bochni</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bochnianin.pl/wp-content/plugins/photo-gallery/images/lazy_placeholder.gif</image:loc>
-      <image:title>Jak rozpoznać przemoc wobec dziecka i kiedy reagować? Konferencja w Bochni</image:title>
     </image:image>
   </url>
   <url>
@@ -508,7 +538,7 @@
       <news:title>Jensen Huang miał źle traktować pracowników Nvidii. "New York Times" o upokorzeniach i groźbach</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1205373977.png</image:loc>
+      <image:loc>https://m.natemat.pl/madison-huang-f4asnvzd-1500x0x0x0.jpg</image:loc>
       <image:title>Jensen Huang miał źle traktować pracowników Nvidii. "New York Times" o upokorzeniach i groźbach</image:title>
     </image:image>
   </url>
@@ -3285,21 +3315,6 @@
     <image:image>
       <image:loc>https://s11.tvp.pl/images2/1/6/1/uid_1610fb0770cc4ecf91dc4036a2be3233_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
       <image:title>Wielka akcja służb na Śląsku. Zatrzymano 33 osoby, 16 w Sosnowcu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/elon-musk-oskarza-ukraine-i-usa-padly-slowa-o-obaleniu-janukowycza/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T06:03:58+01:00</news:publication_date>
-      <news:title>Elon Musk oskarża Ukrainę i USA. Padły słowa o obaleniu Janukowycza</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/2e8c42b7ae9c5d81cd8b57500d73d5e6/?t=crop:5596:2446:nowe:0:642,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Elon Musk oskarża Ukrainę i USA. Padły słowa o obaleniu Janukowycza</image:title>
     </image:image>
   </url>
 </urlset>
