@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/fotowoltaika-zawieszona-nad-roslinami-na-dachu-cup-jedna-z-nielicznych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T03:49:21+01:00</news:publication_date>
+      <news:title>Fotowoltaika „zawieszona” nad roślinami na dachu CUP. Jedna z nielicznych takich instalacji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-20-at-13.44.14-4-300x300.jpg</image:loc>
+      <image:title>Fotowoltaika „zawieszona” nad roślinami na dachu CUP. Jedna z nielicznych takich instalacji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/agnieszka-radwanska-wchodzi-do-branzy-kosmetycznej-nowa-inwestycja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T03:49:19+01:00</news:publication_date>
+      <news:title>Agnieszka Radwańska wchodzi do branży kosmetycznej. Nowa inwestycja</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/10821468.webp</image:loc>
+      <image:title>Agnieszka Radwańska wchodzi do branży kosmetycznej. Nowa inwestycja</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/trzesienie-ziemi-w-peru-ewakuowano-parlament-w-limie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T03:49:18+01:00</news:publication_date>
+      <news:title>Trzęsienie ziemi w Peru. Ewakuowano parlament w Limie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8066a5bd-426b-4951-9fbe-35af8406bd04</image:loc>
+      <image:title>Trzęsienie ziemi w Peru. Ewakuowano parlament w Limie</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
     <news:news>
       <news:publication>
@@ -60,21 +105,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/2d/2dk1wh5zmzf158pw7xboy6wkxyozd3ba.png</image:loc>
       <image:title>"Wejście w stan wojny". Generał Bieniek o "zamknięciu nieba" nad Ukrainą przez NATO</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/dzieci-ucza-sie-ratowac-doroslych-koszty-placa-przez-cale-zycie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T01:00:31+01:00</news:publication_date>
-      <news:title>Dzieci uczą się ratować dorosłych. Koszty płacą przez całe życie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/Finansowane-przez-SWO.jpg</image:loc>
-      <image:title>Dzieci uczą się ratować dorosłych. Koszty płacą przez całe życie</image:title>
     </image:image>
   </url>
   <url>
