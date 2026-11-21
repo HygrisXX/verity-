@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/zginal-bo-byl-hejtowany-apel-rodzicow-14-letniego-mateusza-50-osob/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:10+01:00</news:publication_date>
+      <news:title>"Zginął, bo był hejtowany". Apel rodziców 14-letniego Mateusza (50 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/89e68563-7633-4caa-ba24-2a3c2e178d6c</image:loc>
+      <image:title>"Zginął, bo był hejtowany". Apel rodziców 14-letniego Mateusza (50 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:09+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/1lk-przed-nami-9-kolejka-i-hit-w-ziebicach-zapowiedz/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:09+01:00</news:publication_date>
+      <news:title>1LK. Przed nami 9. kolejka i hit w Ziębicach – ZAPOWIEDŹ</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s.w.org/images/core/emoji/17.0.2/72x72/1f525.png</image:loc>
+      <image:title>1LK. Przed nami 9. kolejka i hit w Ziębicach – ZAPOWIEDŹ</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/tusk-i-domanski-wypychaja-rodziny-do-parabankow-pis-odpowiada-projektem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:07+01:00</news:publication_date>
+      <news:title>Tusk i Domański wypychają rodziny do parabanków? PiS odpowiada projektem ustawy ws. 800 plus</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/21/n_126a2b19f1c2b2d3aefb03ab76f90b669d88209cb0816510875aa1994e090300_c.jpg?r=750,400</image:loc>
+      <image:title>Tusk i Domański wypychają rodziny do parabanków? PiS odpowiada projektem ustawy ws. 800 plus</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/jedna-z-najwiekszych-zagadek-matematyki-rozwiazana-naukowiec-anthropic/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:06+01:00</news:publication_date>
+      <news:title>Jedna z największych zagadek matematyki rozwiązana? Naukowiec Anthropic twierdzi, że rozwiązał hipotezę Rieman</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/3/b/b71cc5ea7f62da-948-568-18-28-3731-2238.jpg</image:loc>
+      <image:title>Jedna z największych zagadek matematyki rozwiązana? Naukowiec Anthropic twierdzi, że rozwiązał hipotezę Rieman</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/ekrany-reklamowe-na-domach-centrum-pod-lupa-nadzoru/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:05+01:00</news:publication_date>
+      <news:title>Ekrany reklamowe na Domach Centrum pod lupą nadzoru</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-ekrany-na-domach-centrum-pod-lupa-nadzoru-ph9350517/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Ekrany reklamowe na Domach Centrum pod lupą nadzoru</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/fbi-ponownie-padlo-ofiara-ataku-hakerskiego-celem-wlamania-byla-baza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:04+01:00</news:publication_date>
+      <news:title>FBI ponownie padło ofiarą ataku hakerskiego. Celem włamania była baza danych przestępstw</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-dc7k2s-fbi-ph7287296/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>FBI ponownie padło ofiarą ataku hakerskiego. Celem włamania była baza danych przestępstw</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/atak-na-baltyku-rosyjski-statek-ostrzelany-na-drodze-do-krolewca/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:02+01:00</news:publication_date>
+      <news:title>Atak na Bałtyku. Rosyjski statek ostrzelany na drodze do Królewca</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NK2HKSSJDAAL6-C321.webp</image:loc>
+      <image:title>Atak na Bałtyku. Rosyjski statek ostrzelany na drodze do Królewca</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/donald-tusk-zwrocil-sie-do-brytyjskiego-premiera-do-dziela-100-tys/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T12:51:01+01:00</news:publication_date>
+      <news:title>Donald Tusk zwrócił się do brytyjskiego premiera. "Do dzieła" (100 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-donald-tusk-i-andy-burnham-na-szczycie-koalicji-chetnych-w-berlinie-19-11-2026-r-ph9350774/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Donald Tusk zwrócił się do brytyjskiego premiera. "Do dzieła" (100 tys.)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/jedni-chca-przedluzyc-serie-inni-szukaja-przelamania-co-nas-czeka-w-8/</loc>
     <news:news>
       <news:publication>
@@ -33,18 +168,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T11:43:54+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -168,21 +303,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/konsolidacja-ograniczona-usk-ma-sie-polaczyc-z-jednym-szpitalem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T10:45:55+01:00</news:publication_date>
-      <news:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/981893204.png</image:loc>
-      <image:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/konduktorka-zaatakowana-w-pociagu-na-podkarpaciu-37-latek-grozil-jej/</loc>
     <news:news>
       <news:publication>
@@ -255,21 +375,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/ag/ag76y39gzhuj2p1omdiaztgws4vjxfd6.JPG</image:loc>
       <image:title>Sunderland wydał komunikat w sprawie kibiców Jagiellonii. "Anulowano wejściówki"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/jak-usunac-kogos-ze-zdjecia-nowoczesne-metody-retuszu-fotograficznego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T09:45:34+01:00</news:publication_date>
-      <news:title>🔸 Jak usunąć kogoś ze zdjęcia? Nowoczesne metody retuszu fotograficznego</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bochnianin.pl/wp-content/uploads/2026/11/1.jpg</image:loc>
-      <image:title>🔸 Jak usunąć kogoś ze zdjęcia? Nowoczesne metody retuszu fotograficznego</image:title>
     </image:image>
   </url>
   <url>
@@ -2305,11 +2410,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-19T21:48:46+01:00</news:publication_date>
-      <news:title>Do pięciu lat więzienia za seksualne deepfake’i. Posłowie chcą zmian w Kodeksie karnym</news:title>
+      <news:title>Intymne deepfake’i mają być karane. Projekt przewiduje do 5 lat więzienia</news:title>
     </news:news>
     <image:image>
       <image:loc>https://cdn.defence24.pl/2026/11/19/320x240px/iISSfNaeiupMBWhorxPd3Lx0c4tX26IitdoYbar6.cjsg.jpg</image:loc>
-      <image:title>Do pięciu lat więzienia za seksualne deepfake’i. Posłowie chcą zmian w Kodeksie karnym</image:title>
+      <image:title>Intymne deepfake’i mają być karane. Projekt przewiduje do 5 lat więzienia</image:title>
     </image:image>
   </url>
   <url>
@@ -3180,96 +3285,6 @@
     <image:image>
       <image:loc>https://cdn.defence24.pl/2026/11/19/320x240px/ahvNWodOs3826E9aFfdiLmmLtYPFsMSiaEq9jM6p.mu1b.jpg</image:loc>
       <image:title>20 zarzutów dla komendanta. W tle nagrania z interwencji Straży Miejskiej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/jak-projektowac-miasta-odporne-na-kryzysy-east-design-days-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T13:17:37+01:00</news:publication_date>
-      <news:title>Jak projektować miasta odporne na kryzysy? East Design Days na Politechnice Białostockiej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radio.bialystok.pl/src/thumbs/629/39b724d383a950c738a999d883ba82ca</image:loc>
-      <image:title>Jak projektować miasta odporne na kryzysy? East Design Days na Politechnice Białostockiej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/mazury-szykuja-sie-na-wielkie-widowisko-wszystko-wydarzy-sie-latem-2027/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T13:17:36+01:00</news:publication_date>
-      <news:title>Mazury szykują się na wielkie widowisko. Wszystko wydarzy się latem 2027 roku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/Zdj.Air2-2-scaled.jpg</image:loc>
-      <image:title>Mazury szykują się na wielkie widowisko. Wszystko wydarzy się latem 2027 roku</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/kryminalni-z-torunia-zatrzymali-39-latka-poszukiwany-listem-gonczym/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T13:17:33+01:00</news:publication_date>
-      <news:title>Kryminalni z Torunia zatrzymali 39-latka. Poszukiwany listem gończym ukrył się w chłodziarce.</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tylkotorun.pl/wp-content/uploads/2026/11/poszukiwany-przez-policje-w-toruniu-3-original-600x348.webp</image:loc>
-      <image:title>Kryminalni z Torunia zatrzymali 39-latka. Poszukiwany listem gończym ukrył się w chłodziarce.</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/wojsko-placi-polakom-za-gotowosc-do-walki-nie-musisz-rzucac-pracy-zeby/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T13:17:30+01:00</news:publication_date>
-      <news:title>Wojsko płaci Polakom za gotowość do walki. Nie musisz rzucać pracy, żeby zarobić 14 tys. zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://xyz.pl/wp-content/uploads/2026/10/polacy_warszawa-1024x576.jpg</image:loc>
-      <image:title>Wojsko płaci Polakom za gotowość do walki. Nie musisz rzucać pracy, żeby zarobić 14 tys. zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/przelomowy-wyrok-miedzynarodowego-trybunalu-sprawiedliwosci-ws-smierci/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T13:17:29+01:00</news:publication_date>
-      <news:title>Przełomowy wyrok Międzynarodowego Trybunału Sprawiedliwości ws. śmierci 10 tys. osób</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/f791a7770afe3ff8aa0a5e4ce0903c61/?t=crop:5092:2226:nowe:0:584,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Przełomowy wyrok Międzynarodowego Trybunału Sprawiedliwości ws. śmierci 10 tys. osób</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/awaria-na-glownej-linii-kolejowej-w-polsce-pociagi-maja-nawet-60-minut/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T13:17:28+01:00</news:publication_date>
-      <news:title>Awaria na głównej linii kolejowej w Polsce. Pociągi mają nawet 60 minut opóźnienia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://m.natemat.pl/pkp-intercity-pociag-kolej-qfgsyt6p-1500x0x0x0.jpg</image:loc>
-      <image:title>Awaria na głównej linii kolejowej w Polsce. Pociągi mają nawet 60 minut opóźnienia</image:title>
     </image:image>
   </url>
 </urlset>
