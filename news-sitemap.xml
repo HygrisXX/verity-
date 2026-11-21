@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/dzieci-ucza-sie-ratowac-doroslych-koszty-placa-przez-cale-zycie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T01:00:31+01:00</news:publication_date>
+      <news:title>Dzieci uczą się ratować dorosłych. Koszty płacą przez całe życie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/Finansowane-przez-SWO.jpg</image:loc>
+      <image:title>Dzieci uczą się ratować dorosłych. Koszty płacą przez całe życie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/radomiak-zmierzy-sie-z-wisla-krakowianie-maja-problem-na-wyjazdach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T01:00:31+01:00</news:publication_date>
+      <news:title>Radomiak zmierzy się z Wisłą. Krakowianie mają problem na wyjazdach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static-radom.cozadzien.pl/data/articles/xga-16x9-radomiak-zmierzy-sie-z-wisla-krakowianie-maja-problem-na-wyjazdach-1795192039.jpg</image:loc>
+      <image:title>Radomiak zmierzy się z Wisłą. Krakowianie mają problem na wyjazdach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/polacy-ruszaja-na-black-friday-ale-ich-budzety-sa-najnizsze-co-trafi-do/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T01:00:29+01:00</news:publication_date>
+      <news:title>Polacy ruszają na Black Friday, ale ich budżety są najniższe. Co trafi do koszyków?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/10821474.webp</image:loc>
+      <image:title>Polacy ruszają na Black Friday, ale ich budżety są najniższe. Co trafi do koszyków?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/budowa-lub-remont-domu-kiedy-najlepiej-wybrac-okna-i-drzwi/</loc>
     <news:news>
       <news:publication>
@@ -135,21 +180,6 @@
     <image:image>
       <image:loc>https://epoznan.pl/storage/gallery/143643/pUUYOMHjjqXQV0jvQHQfJvPFyy64uUNm_left4.jpg?1795209331</image:loc>
       <image:title>BitterSweet Festival znów na Cytadeli? "Umowa przygotowana jeszcze nie jest"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:47+01:00</news:publication_date>
-      <news:title>Weekend w Opolu pełen atrakcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
-      <image:title>Weekend w Opolu pełen atrakcji</image:title>
     </image:image>
   </url>
   <url>
@@ -450,21 +480,6 @@
     <image:image>
       <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c</image:loc>
       <image:title>Koniec z dojazdami? Rodzice w Turośli mają nowy żłobek</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/rosja-testuje-granice-zachodu-w-polsce-wychodzi-na-jaw-cos-wiecej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T19:57:07+01:00</news:publication_date>
-      <news:title>Rosja testuje granice Zachodu. W Polsce wychodzi na jaw coś więcej [WNIOSKI Z DNIA]</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.wiadomosci.onet.pl/1/DM7k9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8yMzYzMmU5OTU4OWI4ZDI1MTY5ZDI1OTc0NzRhZjIxNi5qcGeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
-      <image:title>Rosja testuje granice Zachodu. W Polsce wychodzi na jaw coś więcej [WNIOSKI Z DNIA]</image:title>
     </image:image>
   </url>
   <url>
@@ -795,21 +810,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000MB4SGQYOKTFPA-C321.webp</image:loc>
       <image:title>Skoki. Klasyfikacja generalna Pucharu Narodów po konkursie w Lillehammer</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/atak-na-ukraine-naruszenie-polskiej-przestrzeni-powietrznej-co-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T17:56:04+01:00</news:publication_date>
-      <news:title>Atak na Ukrainę, naruszenie polskiej przestrzeni powietrznej. Co się działo godzina po godzinie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-sluzby-pracuja-na-miejscu-zdarzenia-w-miejscowosci-rudnik-nad-sanem-ph9350004/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Atak na Ukrainę, naruszenie polskiej przestrzeni powietrznej. Co się działo godzina po godzinie</image:title>
     </image:image>
   </url>
   <url>
@@ -1218,21 +1218,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/obwodnica-lapczycy-rusza-zbiorka-podpisow-pod-petycja-do-ministerstwa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:34+01:00</news:publication_date>
-      <news:title>Obwodnica Łapczycy. Rusza zbiórka podpisów pod petycją do ministerstwa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/810059582.png</image:loc>
-      <image:title>Obwodnica Łapczycy. Rusza zbiórka podpisów pod petycją do ministerstwa</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/8-latek-tonal-na-basenie-w-koscierzynie-cztery-kobiety-uslyszaly-wyrok/</loc>
     <news:news>
       <news:publication>
@@ -1410,21 +1395,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/03c4d7f540187628cffb576e0ccc724e/?t=crop:4528:2808:nowe:0:104,resize:fill:1200:750,enlarge:1</image:loc>
       <image:title>PONAR Wadowice planuje IPO na GPW. Oferta może przekroczyć 1 mld zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/ewakuacja-wiezy-kontroli-lotow-w-rzeszowie-zagrozenie-atakiem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:18+01:00</news:publication_date>
-      <news:title>Ewakuacja wieży kontroli lotów w Rzeszowie. "Zagrożenie atakiem powietrznym"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2025/09/PILNE-17.jpg</image:loc>
-      <image:title>Ewakuacja wieży kontroli lotów w Rzeszowie. "Zagrożenie atakiem powietrznym"</image:title>
     </image:image>
   </url>
   <url>
