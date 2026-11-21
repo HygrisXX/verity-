@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T02:11:33+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/jak-rozpoznac-przemoc-wobec-dziecka-i-kiedy-reagowac-konferencja-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T02:11:33+01:00</news:publication_date>
+      <news:title>Jak rozpoznać przemoc wobec dziecka i kiedy reagować? Konferencja w Bochni</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bochnianin.pl/wp-content/plugins/photo-gallery/images/lazy_placeholder.gif</image:loc>
+      <image:title>Jak rozpoznać przemoc wobec dziecka i kiedy reagować? Konferencja w Bochni</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/od-tiktoka-do-polki-sklepowej-internetowe-trendy-zmieniaja-rynek/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T02:11:31+01:00</news:publication_date>
+      <news:title>Od TikToka do półki sklepowej. Internetowe trendy zmieniają rynek przekąsek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/10818030.webp</image:loc>
+      <image:title>Od TikToka do półki sklepowej. Internetowe trendy zmieniają rynek przekąsek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/wejscie-w-stan-wojny-general-bieniek-o-zamknieciu-nieba-nad-ukraina/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T02:11:29+01:00</news:publication_date>
+      <news:title>"Wejście w stan wojny". Generał Bieniek o "zamknięciu nieba" nad Ukrainą przez NATO</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/2d/2dk1wh5zmzf158pw7xboy6wkxyozd3ba.png</image:loc>
+      <image:title>"Wejście w stan wojny". Generał Bieniek o "zamknięciu nieba" nad Ukrainą przez NATO</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/dzieci-ucza-sie-ratowac-doroslych-koszty-placa-przez-cale-zycie/</loc>
     <news:news>
       <news:publication>
@@ -60,21 +120,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/822880066.png</image:loc>
       <image:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/fotowoltaika-zawieszona-nad-roslinami-na-dachu-cup-jedna-z-nielicznych/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:54+01:00</news:publication_date>
-      <news:title>Fotowoltaika „zawieszona” nad roślinami na dachu CUP. Jedna z nielicznych takich instalacji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-20-at-13.44.14-4-300x300.jpg</image:loc>
-      <image:title>Fotowoltaika „zawieszona” nad roślinami na dachu CUP. Jedna z nielicznych takich instalacji</image:title>
     </image:image>
   </url>
   <url>
@@ -168,6 +213,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-trump-i-putin-oglaszaja-deklaracje-pokoju-porozumienie-po-rozmowach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T23:46:43+01:00</news:publication_date>
+      <news:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/e3/e3tcfsm3txvn1chnz58u5v276n521wfn.jpg</image:loc>
+      <image:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/bittersweet-festival-znow-na-cytadeli-umowa-przygotowana-jeszcze-nie/</loc>
     <news:news>
       <news:publication>
@@ -180,21 +240,6 @@
     <image:image>
       <image:loc>https://epoznan.pl/storage/gallery/143643/pUUYOMHjjqXQV0jvQHQfJvPFyy64uUNm_left4.jpg?1795209331</image:loc>
       <image:title>BitterSweet Festival znów na Cytadeli? "Umowa przygotowana jeszcze nie jest"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/praca-w-cold-fakturzysta-fakturzystka/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:47+01:00</news:publication_date>
-      <news:title>🔸 PRACA w COLD: Fakturzysta / Fakturzystka</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1522167661.png</image:loc>
-      <image:title>🔸 PRACA w COLD: Fakturzysta / Fakturzystka</image:title>
     </image:image>
   </url>
   <url>
@@ -495,21 +540,6 @@
     <image:image>
       <image:loc>https://s5.tvp.pl/images2/5/a/1/uid_5a1c704ee6a94356aca1b2617946daee_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
       <image:title>Reaktywacja klubu PiS w bydgoskiej radzie miasta. Jest ich troje</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/xi-trump-i-putin-oglaszaja-deklaracje-pokoju-porozumienie-po-rozmowach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T19:57:05+01:00</news:publication_date>
-      <news:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/e3/e3tcfsm3txvn1chnz58u5v276n521wfn.jpg</image:loc>
-      <image:title>Xi, Trump i Putin ogłaszają "deklarację pokoju". Porozumienie po rozmowach w Shenzhen</image:title>
     </image:image>
   </url>
   <url>
@@ -1413,21 +1443,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/black-friday-za-tydzien-dwie-kategorie-w-ktorych-prawie-polowa-polakow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:16+01:00</news:publication_date>
-      <news:title>Black Friday za tydzień. Dwie kategorie, w których prawie połowa Polaków szuka promocji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmNkbi5w/bC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc3MTAwMTQvZmls/ZXMvYmxhY2stZnJpZGF5LTIwMjYtemF6bmFjem9ueS13LWthbGVuZGFyenUt/c2NpZW5ueW0tMjctbGlzdG9wYWRhLTM5MzI1NzM2LmpwZyIsInciOjM4NDB9</image:loc>
-      <image:title>Black Friday za tydzień. Dwie kategorie, w których prawie połowa Polaków szuka promocji</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/wielki-gest-igi-swiatek-oglasza-przekazuje-200-tys-zl/</loc>
     <news:news>
       <news:publication>
@@ -1545,21 +1560,6 @@
     <image:image>
       <image:loc>https://www.radio90.pl/files/2026/03/45-925754.jpg</image:loc>
       <image:title>Makabryczne odkrycie w Jastrzębiu. Ciało dziecka w torebce, porzucone na cmentarzu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/trump-o-rosyjskich-dronach-nad-polska-ladowaly-przez-pomylke/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T07:16:23+01:00</news:publication_date>
-      <news:title>Trump o rosyjskich dronach nad Polską: Lądowały przez pomyłkę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/1/3/f1f035f8f09366-948-568-0-200-2964-1778.jpg</image:loc>
-      <image:title>Trump o rosyjskich dronach nad Polską: Lądowały przez pomyłkę</image:title>
     </image:image>
   </url>
   <url>
