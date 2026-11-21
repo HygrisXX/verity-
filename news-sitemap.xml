@@ -3,6 +3,126 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:46:00+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:46:00+01:00</news:publication_date>
+      <news:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2113000437.png</image:loc>
+      <image:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/przydacz-oskarza-sikorskiego-ws-ambasadorow-prosi-o-zgode-obce-rzady/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:45:57+01:00</news:publication_date>
+      <news:title>Przydacz oskarża Sikorskiego ws. ambasadorów. "Prosi o zgodę obce rządy"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/da/99/1f/z33134554IHG,Radoslaw-Sikorski--zdjecie-archiwalne-.jpg</image:loc>
+      <image:title>Przydacz oskarża Sikorskiego ws. ambasadorów. "Prosi o zgodę obce rządy"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:45:54+01:00</news:publication_date>
+      <news:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/66d108abd093ddcbde1b295a603fa00a/?t=crop:3872:1693:nowe:0:450,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/ochrona-ludnosci-i-przyszlosc-osp-powiatowy-zjazd-strazakow-w-olsztynie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:45:53+01:00</news:publication_date>
+      <news:title>Ochrona ludności i przyszłość OSP. Powiatowy zjazd strażaków w Olsztynie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/8524-scaled.jpg</image:loc>
+      <image:title>Ochrona ludności i przyszłość OSP. Powiatowy zjazd strażaków w Olsztynie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/rakieta-wybuchla-jeszcze-w-powietrzu-zakonczyly-sie-dzialania-w-nowym/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:45:52+01:00</news:publication_date>
+      <news:title>Rakieta wybuchła jeszcze w powietrzu. Zakończyły się działania w Nowym Lipowcu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145t64.jpg</image:loc>
+      <image:title>Rakieta wybuchła jeszcze w powietrzu. Zakończyły się działania w Nowym Lipowcu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/polacy-bez-punktow-w-lillehammer-pierwszy-taki-konkurs-od-12-lat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:45:51+01:00</news:publication_date>
+      <news:title>Polacy bez punktów w Lillehammer. Pierwszy taki konkurs od 12 lat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s18.tvp.pl/images2/8/3/e/uid_83eb00f0855f496987ca1cec17ee0c32_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Polacy bez punktów w Lillehammer. Pierwszy taki konkurs od 12 lat</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/macaulay-culkin-wraca-jako-kevin-wielki-powrot-po-36-latach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T19:45:50+01:00</news:publication_date>
+      <news:title>Macaulay Culkin wraca jako Kevin. Wielki powrót po 36 latach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/943ef795-ac50-4d7d-ae71-c6966303bfa4</image:loc>
+      <image:title>Macaulay Culkin wraca jako Kevin. Wielki powrót po 36 latach</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/seniorzy-z-gminy-monki-maja-swoje-miejsce-spotkan-otwarto-dzienny-dom/</loc>
     <news:news>
       <news:publication>
@@ -18,18 +138,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T18:41:49+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -150,36 +270,6 @@
     <image:image>
       <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/d71d2e20d59f27804e16720992cd3598</image:loc>
       <image:title>Jagiellonia Białystok przegrywa z Cracovią</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/konsolidacja-ograniczona-usk-ma-sie-polaczyc-z-jednym-szpitalem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T17:40:26+01:00</news:publication_date>
-      <news:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/981893204.png</image:loc>
-      <image:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T17:40:26+01:00</news:publication_date>
-      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
-      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
     </image:image>
   </url>
   <url>
@@ -543,21 +633,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/rosyjskie-rakiety-i-dron-spadly-na-polske-nasz-kraj-od-dawna-jest-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T14:49:02+01:00</news:publication_date>
-      <news:title>Rosyjskie rakiety i dron spadły na Polskę. Nasz kraj "od dawna jest na celowniku Kremla"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/99186149-5a4b-4221-8370-3c850638a8ae</image:loc>
-      <image:title>Rosyjskie rakiety i dron spadły na Polskę. Nasz kraj "od dawna jest na celowniku Kremla"</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/dwie-rakiety-i-dron-w-polskiej-przestrzen-powietrznej-jeden-z-obiektow/</loc>
     <news:news>
       <news:publication>
@@ -615,21 +690,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-nowy-lipowiec-12-30-21-11-ph9350827/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Wydobyto "elementy napędowe" i "sterownicze" jednego z rosyjskich obiektów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/rosyjskie-rakiety-naruszyly-polska-przestrzen-powietrzna-nato-zwoluje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T14:48:59+01:00</news:publication_date>
-      <news:title>Rosyjskie rakiety naruszyły polską przestrzeń powietrzną. NATO zwołuje posiedzenie w Brukseli</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1495819214.png</image:loc>
-      <image:title>Rosyjskie rakiety naruszyły polską przestrzeń powietrzną. NATO zwołuje posiedzenie w Brukseli</image:title>
     </image:image>
   </url>
   <url>
@@ -1545,21 +1605,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/f2/f2ffdte4a2p7wb7pizyb3stqk4fn23sw.jpg</image:loc>
       <image:title>Zbigniew Ziobro spotkał się z amerykańskim działaczem. "Polski bohater"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ue-chce-ograniczyc-dark-patterns-aplikacje-mobilne-czekaja-duze-zmiany/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:22+01:00</news:publication_date>
-      <news:title>UE chce ograniczyć dark patterns. Aplikacje mobilne czekają duże zmiany</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.300gospodarka.pl/media/2026/11/pexels-zulfugarkarimov-33440157.jpg</image:loc>
-      <image:title>UE chce ograniczyć dark patterns. Aplikacje mobilne czekają duże zmiany</image:title>
     </image:image>
   </url>
   <url>
@@ -3075,111 +3120,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NJSPUS5B6X9FE-C321.webp</image:loc>
       <image:title>Groźny wypadek na przejeździe kolejowym. Wstrzymano ruch pociągów (170 osób)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/na-starowce-w-toruniu-krecili-film-jana-holoubka-doppelg-nger-sobowtor/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:33+01:00</news:publication_date>
-      <news:title>Na starówce w Toruniu kręcili film Jana Holoubka "Doppelgänger. Sobowtór". W roli głównej Jakub Gierszał</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/05/f4/62976e147eee7_o,size,640x400,q,71,h,f78eed.jpg</image:loc>
-      <image:title>Na starówce w Toruniu kręcili film Jana Holoubka "Doppelgänger. Sobowtór". W roli głównej Jakub Gierszał</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/podejrzana-przesylka-na-poczcie-w-tucholi-w-akcji-chemicy-ewakuowano-17/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:30+01:00</news:publication_date>
-      <news:title>Podejrzana przesyłka na poczcie w Tucholi. W akcji chemicy. "Ewakuowano 17 osób"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/4_fk9kuTURBXy8yZDJlMmM2MS0zYjRhLTQ4NGEtYjViNi04ZjBiYjc0YzVjZjQuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>Podejrzana przesyłka na poczcie w Tucholi. W akcji chemicy. "Ewakuowano 17 osób"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/pierwsze-swiatlo-najwiekszego-polskiego-teleskopu-optycznego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:28+01:00</news:publication_date>
-      <news:title>Pierwsze światło największego polskiego teleskopu optycznego</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/PsJzwJDzp3F4G4w53W1fjvfJSwQ7qAt7ov6bcX7B.i6oj.jpg</image:loc>
-      <image:title>Pierwsze światło największego polskiego teleskopu optycznego</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/zerwana-lina-na-moscie-na-a4-utrudnienia-w-strone-rzeszowa-w-tym/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:27+01:00</news:publication_date>
-      <news:title>Zerwana lina na moście na A4. Utrudnienia w stronę Rzeszowa: w tym miejscu przejezdny tylko jeden pas</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/362940374.png</image:loc>
-      <image:title>Zerwana lina na moście na A4. Utrudnienia w stronę Rzeszowa: w tym miejscu przejezdny tylko jeden pas</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/cyfrowy-polsat-ostrzega-przed-slabszym-iv-kwartalem-kurs-cps-spadl-o-3/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:26+01:00</news:publication_date>
-      <news:title>Cyfrowy Polsat ostrzega przed słabszym IV kwartałem. Kurs CPS spadł o 3,47%</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/c1165a73d009f1d21c5eb403313113be/?t=crop:5412:3356:nowe:0:126,resize:fill:1200:750,enlarge:1</image:loc>
-      <image:title>Cyfrowy Polsat ostrzega przed słabszym IV kwartałem. Kurs CPS spadł o 3,47%</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/prognoza-do-2034-r-ai-moze-dodac-polsce-nawet-12-proc-pkb-pod-trzema/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:25+01:00</news:publication_date>
-      <news:title>Prognoza: do 2034 r. AI może dodać Polsce nawet 12 proc. PKB. Pod trzema warunkami</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/059b8686-25d5-447e-bc41-20adfbc62c4b</image:loc>
-      <image:title>Prognoza: do 2034 r. AI może dodać Polsce nawet 12 proc. PKB. Pod trzema warunkami</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nie-masz-allegro-smart-od-stycznia-zaplacisz-wiecej-10-49-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T20:01:23+01:00</news:publication_date>
-      <news:title>Nie masz Allegro Smart? Od stycznia zapłacisz więcej (10,49 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.antyweb.pl/img/w_full/wp-content/uploads/2026/07/allegro_paczki.jpg</image:loc>
-      <image:title>Nie masz Allegro Smart? Od stycznia zapłacisz więcej (10,49 zł)</image:title>
     </image:image>
   </url>
 </urlset>
