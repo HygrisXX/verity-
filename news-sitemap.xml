@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T23:36:45+01:00</news:publication_date>
+      <news:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg</image:loc>
+      <image:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T23:36:45+01:00</news:publication_date>
+      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
+      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/ewangelia-na-uroczystosc-jezusa-chrystusa-krola-wszechswiata/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T23:36:42+01:00</news:publication_date>
+      <news:title>Ewangelia na Uroczystość Jezusa Chrystusa Króla Wszechświata</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1100638257.png</image:loc>
+      <image:title>Ewangelia na Uroczystość Jezusa Chrystusa Króla Wszechświata</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
     <news:news>
       <news:publication>
@@ -105,36 +150,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NK2XC6J6B02BF-C321.webp</image:loc>
       <image:title>Wrze po klęsce Tomasiaka. Małysz grzmi po decyzji jury. "Nie powinno dojść" (12 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:22+01:00</news:publication_date>
-      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
-      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:21+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -255,21 +270,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/66/66hrt5h625629m1381oughct4iph7d91.jpg</image:loc>
       <image:title>Szef MON o ws. wschodniej granicy Polski. Mówi o dodatkowym wsparciu NATO</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/przydacz-oskarza-sikorskiego-ws-ambasadorow-prosi-o-zgode-obce-rzady/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T19:45:57+01:00</news:publication_date>
-      <news:title>Przydacz oskarża Sikorskiego ws. ambasadorów. "Prosi o zgodę obce rządy"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/da/99/1f/z33134554IHG,Radoslaw-Sikorski--zdjecie-archiwalne-.jpg</image:loc>
-      <image:title>Przydacz oskarża Sikorskiego ws. ambasadorów. "Prosi o zgodę obce rządy"</image:title>
     </image:image>
   </url>
   <url>
