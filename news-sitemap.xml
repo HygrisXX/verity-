@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/seniorzy-z-gminy-monki-maja-swoje-miejsce-spotkan-otwarto-dzienny-dom/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:51+01:00</news:publication_date>
+      <news:title>Seniorzy z gminy Mońki mają swoje miejsce spotkań. Otwarto Dzienny Dom Seniora</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/85255b31bfe5cc907ce4d378cd3f76d7</image:loc>
+      <image:title>Seniorzy z gminy Mońki mają swoje miejsce spotkań. Otwarto Dzienny Dom Seniora</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:49+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:49+01:00</news:publication_date>
+      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/dzieci-ponizej-15-lat-bez-social-mediow-rzad-planuje-zmiany/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:47+01:00</news:publication_date>
+      <news:title>Dzieci poniżej 15 lat bez social mediów? Rząd planuje zmiany</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s2.tvp.pl/images2/b/f/8/uid_bf8e6a5280024e3fbdc1de784dcc237b_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Dzieci poniżej 15 lat bez social mediów? Rząd planuje zmiany</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/billie-jean-king-cup-linda-klimovicova-caijsa-hennemann-relacja-live-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:46+01:00</news:publication_date>
+      <news:title>Billie Jean King Cup: Linda Klimovicova – Caijsa Hennemann. Relacja live i wynik na żywo online</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ms/msrw3un6q2hjn39zvis8qsc57bnwvedj.jpg</image:loc>
+      <image:title>Billie Jean King Cup: Linda Klimovicova – Caijsa Hennemann. Relacja live i wynik na żywo online</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/niespodzianka-w-ekstraklasie-gornik-na-kolanach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:45+01:00</news:publication_date>
+      <news:title>Niespodzianka w Ekstraklasie! Górnik na kolanach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/27/9b/1f/z33144615IHG,Zaglebie-Lubin---Gornik-Zabrze.jpg</image:loc>
+      <image:title>Niespodzianka w Ekstraklasie! Górnik na kolanach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/torunski-jarmark-bozonarodzeniowy-juz-otwarty-starowka-rozblysla/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:43+01:00</news:publication_date>
+      <news:title>Toruński jarmark bożonarodzeniowy już otwarty. Starówka rozbłysła świątecznymi iluminacjami</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/3/3/a/uid_33a3af3ee05447a7b7538de2a64980fc_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Toruński jarmark bożonarodzeniowy już otwarty. Starówka rozbłysła świątecznymi iluminacjami</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/pgg-chce-przejac-weglokoks-kraj-czy-uokik-wyda-zgode/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:42+01:00</news:publication_date>
+      <news:title>PGG chce przejąć Węglokoks Kraj. Czy UOKiK wyda zgodę?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/20/320x240px/mb2ERdh8tLDox1CIBs9v4ug5pKyUdaSNW4Y352bM.3yof.jpg</image:loc>
+      <image:title>PGG chce przejąć Węglokoks Kraj. Czy UOKiK wyda zgodę?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/wbito-pierwsze-lopaty-rusza-budowa-trasy-gdansk-poludnie-wrzeszcz-8-5/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T18:41:41+01:00</news:publication_date>
+      <news:title>Wbito pierwsze łopaty. Rusza budowa trasy Gdańsk Południe-Wrzeszcz (8,5 mln)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiogdansk.pl/wp-content/uploads/2026/11/symboliczne_wbicie_lopaty_pod_budowe_trasy_gpw_fot_d_11_-1.jpg</image:loc>
+      <image:title>Wbito pierwsze łopaty. Rusza budowa trasy Gdańsk Południe-Wrzeszcz (8,5 mln)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/jagiellonia-bialystok-przegrywa-z-cracovia/</loc>
     <news:news>
       <news:publication>
@@ -150,36 +285,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/fd3a6501-5985-47e9-a201-4d3f0bc8503c</image:loc>
       <image:title>Dramat w Zakopanem. Mężczyzna wypadł z okna, w domu znaleziono zwłoki kobiety</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T16:42:24+01:00</news:publication_date>
-      <news:title>Weekend w Opolu pełen atrakcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
-      <image:title>Weekend w Opolu pełen atrakcji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T16:42:24+01:00</news:publication_date>
-      <news:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2113000437.png</image:loc>
-      <image:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</image:title>
     </image:image>
   </url>
   <url>
@@ -438,21 +543,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/upadek-obiektow-w-trzech-miejscowosciach-w-nowym-lipowcu-wydobyto/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T14:49:02+01:00</news:publication_date>
-      <news:title>Upadek obiektów w trzech miejscowościach. W Nowym Lipowcu wydobyto elementy napędu i sterowania</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/87b041e2-08dd-435a-ae39-963dbeadd280.jpg</image:loc>
-      <image:title>Upadek obiektów w trzech miejscowościach. W Nowym Lipowcu wydobyto elementy napędu i sterowania</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/rosyjskie-rakiety-i-dron-spadly-na-polske-nasz-kraj-od-dawna-jest-na/</loc>
     <news:news>
       <news:publication>
@@ -463,7 +553,7 @@
       <news:title>Rosyjskie rakiety i dron spadły na Polskę. Nasz kraj "od dawna jest na celowniku Kremla"</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1553528468.png</image:loc>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/99186149-5a4b-4221-8370-3c850638a8ae</image:loc>
       <image:title>Rosyjskie rakiety i dron spadły na Polskę. Nasz kraj "od dawna jest na celowniku Kremla"</image:title>
     </image:image>
   </url>
@@ -525,6 +615,21 @@
     <image:image>
       <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-nowy-lipowiec-12-30-21-11-ph9350827/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Wydobyto "elementy napędowe" i "sterownicze" jednego z rosyjskich obiektów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/rosyjskie-rakiety-naruszyly-polska-przestrzen-powietrzna-nato-zwoluje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T14:48:59+01:00</news:publication_date>
+      <news:title>Rosyjskie rakiety naruszyły polską przestrzeń powietrzną. NATO zwołuje posiedzenie w Brukseli</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1495819214.png</image:loc>
+      <image:title>Rosyjskie rakiety naruszyły polską przestrzeń powietrzną. NATO zwołuje posiedzenie w Brukseli</image:title>
     </image:image>
   </url>
   <url>
@@ -3075,171 +3180,6 @@
     <image:image>
       <image:loc>https://static.antyweb.pl/img/w_full/wp-content/uploads/2026/07/allegro_paczki.jpg</image:loc>
       <image:title>Nie masz Allegro Smart? Od stycznia zapłacisz więcej (10,49 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/alert-rcb-woda-z-wodociagu-zloty-stok-nie-nadaje-sie-do-spozycia/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:13+01:00</news:publication_date>
-      <news:title>Alert RCB. Woda z wodociągu Złoty Stok nie nadaje się do spożycia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s5.tvp.pl/images2/e/0/4/uid_e04e5bca149d4bd497643f06480e5dbd_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Alert RCB. Woda z wodociągu Złoty Stok nie nadaje się do spożycia</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/kolejny-fragment-s11-coraz-blizej-wybrano-wykonawce-za-ponad-631-mln-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:12+01:00</news:publication_date>
-      <news:title>Kolejny fragment S11 coraz bliżej. Wybrano wykonawcę za ponad 631 mln zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s9.tvp.pl/images2/9/d/2/uid_9d2ab8fe2a8b47579a06cc8efd6a4bae_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Kolejny fragment S11 coraz bliżej. Wybrano wykonawcę za ponad 631 mln zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/425-lat-biblioteki-elblaskiej-pokazano-bezcenne-skarby-ksiegozbioru/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:11+01:00</news:publication_date>
-      <news:title>425 lat Biblioteki Elbląskiej. Pokazano bezcenne skarby księgozbioru (zdjęcia!)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1219024143.png</image:loc>
-      <image:title>425 lat Biblioteki Elbląskiej. Pokazano bezcenne skarby księgozbioru (zdjęcia!)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/grupa-azoty-ze-strata-ebitda-w-iii-kwartale-wzrost-przychodow-nie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:07+01:00</news:publication_date>
-      <news:title>Grupa Azoty ze stratą EBITDA w III kwartale. Wzrost przychodów nie wystarczył (25 mln zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/c/5/b012d4c4e099bd-948-568-0-99-2500-1499.jpg</image:loc>
-      <image:title>Grupa Azoty ze stratą EBITDA w III kwartale. Wzrost przychodów nie wystarczył (25 mln zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/korona-kielce-chce-przelamac-zla-passe-w-gliwicach-nie-wygrala-od-ponad/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:05+01:00</news:publication_date>
-      <news:title>Korona Kielce chce przełamać złą passę. W Gliwicach nie wygrała od ponad 11 lat</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/04/KORONA-KIELCE-RADIO-KIELCE.jpg</image:loc>
-      <image:title>Korona Kielce chce przełamać złą passę. W Gliwicach nie wygrała od ponad 11 lat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/ratusz-zabezpiecza-teren-jarmarku-warszawskiego-pojawily-sie-juz/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:04+01:00</news:publication_date>
-      <news:title>Ratusz zabezpiecza teren Jarmarku Warszawskiego. Pojawiły się już betonowe zapory, będzie więcej policji i och</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/182874100.png</image:loc>
-      <image:title>Ratusz zabezpiecza teren Jarmarku Warszawskiego. Pojawiły się już betonowe zapory, będzie więcej policji i och</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/biedronka-miala-zaplacic-723-mln-zl-sad-scial-kare-o-ponad-pol-miliarda/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:03+01:00</news:publication_date>
-      <news:title>Biedronka miała zapłacić 723 mln zł. Sąd ściął karę o ponad pół miliarda!</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/10817294.webp</image:loc>
-      <image:title>Biedronka miała zapłacić 723 mln zł. Sąd ściął karę o ponad pół miliarda!</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/kolejny-dzien-korekty-na-warszawskiej-gieldzie-pzu-liderem-spadkow-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:03+01:00</news:publication_date>
-      <news:title>Kolejny dzień korekty na warszawskiej giełdzie. PZU liderem spadków w WIG20. Notowania GPW 19 listopada 2026 r</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://xyz.pl/wp-content/uploads/2025/01/GPW-1024x681.jpg</image:loc>
-      <image:title>Kolejny dzień korekty na warszawskiej giełdzie. PZU liderem spadków w WIG20. Notowania GPW 19 listopada 2026 r</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/anthropic-zadebiutowal-na-nasdaq-akcje-tworcy-claude-wystrzelily-o-34/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:03+01:00</news:publication_date>
-      <news:title>Anthropic zadebiutował na Nasdaq. Akcje twórcy Claude wystrzeliły o 34%, ale szybko zaczęły spadać</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1533851152.png</image:loc>
-      <image:title>Anthropic zadebiutował na Nasdaq. Akcje twórcy Claude wystrzeliły o 34%, ale szybko zaczęły spadać</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/anthropic-wchodzi-na-gielde-pierwsza-w-historii-oferta-akcji-za-100-mld/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:03+01:00</news:publication_date>
-      <news:title>Anthropic wchodzi na giełdę. Pierwsza w historii oferta akcji za 100 mld dolarów [HIRSCH O GOSPODARCE]</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1966628821.png</image:loc>
-      <image:title>Anthropic wchodzi na giełdę. Pierwsza w historii oferta akcji za 100 mld dolarów [HIRSCH O GOSPODARCE]</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/druga-linia-metra-bedzie-przedluzona-z-brodna-na-marymont/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:02+01:00</news:publication_date>
-      <news:title>Druga linia metra będzie przedłużona z Bródna na Marymont</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-druga-linia-metra-bedzie-przedluzona-z-brodna-na-marymont-ph9348008/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Druga linia metra będzie przedłużona z Bródna na Marymont</image:title>
     </image:image>
   </url>
 </urlset>
