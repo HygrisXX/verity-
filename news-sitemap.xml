@@ -3,6 +3,111 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:32+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:32+01:00</news:publication_date>
+      <news:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2113000437.png</image:loc>
+      <image:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/rezerwowy-uratowal-real-madryt/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:30+01:00</news:publication_date>
+      <news:title>Rezerwowy uratował Real Madryt</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6b020fdae10af1_69476883.jpg</image:loc>
+      <image:title>Rezerwowy uratował Real Madryt</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/tak-zagrala-wisla-krakow-po-gigantycznej-burzy-przed-meczem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:29+01:00</news:publication_date>
+      <news:title>Tak zagrała Wisła Kraków po gigantycznej burzy przed meczem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/92/9b/1f/z33144722IHG,Angel-Rodado.jpg</image:loc>
+      <image:title>Tak zagrała Wisła Kraków po gigantycznej burzy przed meczem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/palac-oburzony-po-ruchu-msz-bez-uzgodnienia-z-prezydentem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:28+01:00</news:publication_date>
+      <news:title>Pałac oburzony po ruchu MSZ. "Bez uzgodnienia z prezydentem"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NK2W0DHDCM5UV-C321.webp</image:loc>
+      <image:title>Pałac oburzony po ruchu MSZ. "Bez uzgodnienia z prezydentem"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/baron-narkotykowy-el-chapo-isidro-zlapany-w-meksyku-11-osob/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:27+01:00</news:publication_date>
+      <news:title>Baron narkotykowy „El Chapo Isidro” złapany w Meksyku (11 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/938f0d800126ff269d2c48fc3c972cb4/?t=crop:5943:2598:nowe:0:445,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Baron narkotykowy „El Chapo Isidro” złapany w Meksyku (11 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/wrze-po-klesce-tomasiaka-malysz-grzmi-po-decyzji-jury-nie-powinno-dojsc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T22:38:25+01:00</news:publication_date>
+      <news:title>Wrze po klęsce Tomasiaka. Małysz grzmi po decyzji jury. "Nie powinno dojść" (12 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NK2XC6J6B02BF-C321.webp</image:loc>
+      <image:title>Wrze po klęsce Tomasiaka. Małysz grzmi po decyzji jury. "Nie powinno dojść" (12 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
     <news:news>
       <news:publication>
@@ -18,18 +123,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T21:37:21+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -105,36 +210,6 @@
     <image:image>
       <image:loc>https://s9.tvp.pl/images2/9/7/4/uid_974df36297fb498fae9fc1bbe4154a37_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
       <image:title>Strażak, który osłonił żonę przed kulami, rozpoczął rehabilitację</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T20:39:53+01:00</news:publication_date>
-      <news:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg</image:loc>
-      <image:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T20:39:53+01:00</news:publication_date>
-      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
-      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
     </image:image>
   </url>
   <url>
@@ -225,21 +300,6 @@
     <image:image>
       <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/8524-scaled.jpg</image:loc>
       <image:title>Ochrona ludności i przyszłość OSP. Powiatowy zjazd strażaków w Olsztynie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/rakieta-wybuchla-jeszcze-w-powietrzu-zakonczyly-sie-dzialania-w-nowym/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T19:45:52+01:00</news:publication_date>
-      <news:title>Rakieta wybuchła jeszcze w powietrzu. Zakończyły się działania w Nowym Lipowcu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145t64.jpg</image:loc>
-      <image:title>Rakieta wybuchła jeszcze w powietrzu. Zakończyły się działania w Nowym Lipowcu</image:title>
     </image:image>
   </url>
   <url>
@@ -390,21 +450,6 @@
     <image:image>
       <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/d71d2e20d59f27804e16720992cd3598</image:loc>
       <image:title>Jagiellonia Białystok przegrywa z Cracovią</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/wydobyto-elementy-napedowe-i-sterownicze-jednego-z-rosyjskich-obiektow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T17:40:23+01:00</news:publication_date>
-      <news:title>Wydobyto "elementy napędowe" i "sterownicze" jednego z rosyjskich obiektów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1266573418.png</image:loc>
-      <image:title>Wydobyto "elementy napędowe" i "sterownicze" jednego z rosyjskich obiektów</image:title>
     </image:image>
   </url>
   <url>
