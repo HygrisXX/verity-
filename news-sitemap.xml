@@ -3,6 +3,126 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/atrakcje-nie-tylko-dla-najmlodszych-kolejowe-swieto-w-lublinie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:57+01:00</news:publication_date>
+      <news:title>Atrakcje nie tylko dla najmłodszych. Kolejowe święto w Lublinie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/649795149.png</image:loc>
+      <image:title>Atrakcje nie tylko dla najmłodszych. Kolejowe święto w Lublinie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/zimowe-szalenstwo-na-lodowisku-przy-enea-arenie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:56+01:00</news:publication_date>
+      <news:title>Zimowe szaleństwo na lodowisku przy Enea Arenie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-20_179518883710.jpg</image:loc>
+      <image:title>Zimowe szaleństwo na lodowisku przy Enea Arenie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/konsolidacja-ograniczona-usk-ma-sie-polaczyc-z-jednym-szpitalem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:55+01:00</news:publication_date>
+      <news:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/981893204.png</image:loc>
+      <image:title>Konsolidacja ograniczona. USK ma się połączyć z jednym szpitalem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/konduktorka-zaatakowana-w-pociagu-na-podkarpaciu-37-latek-grozil-jej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:52+01:00</news:publication_date>
+      <news:title>Konduktorka zaatakowana w pociągu na Podkarpaciu. 37-latek groził jej śmiercią</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/1/6/c/uid_16c3b00d99504bd0a5c6aaaf662cc394_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Konduktorka zaatakowana w pociągu na Podkarpaciu. 37-latek groził jej śmiercią</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/taki-samoboj-ze-az-sie-rozplakal-nawet-rywale-pocieszali-pilkarza-porto/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:52+01:00</news:publication_date>
+      <news:title>Taki samobój, że aż się rozpłakał. Nawet rywale pocieszali piłkarza Porto</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/Francisco-Moura.png</image:loc>
+      <image:title>Taki samobój, że aż się rozpłakał. Nawet rywale pocieszali piłkarza Porto</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nawet-4-tysiace-aplikacji-na-jedno-ogloszenie-w-tych-zawodach-trudno-o/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:50+01:00</news:publication_date>
+      <news:title>Nawet 4 tysiące aplikacji na jedno ogłoszenie. W tych zawodach trudno o pracę (5 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.pulshr.pl/i/14/12/51/141251_r2_620.jpg</image:loc>
+      <image:title>Nawet 4 tysiące aplikacji na jedno ogłoszenie. W tych zawodach trudno o pracę (5 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jedna-z-najwiekszych-inwestycji-pkp-intercity-gotowa-kosztowala-360-mln/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:48+01:00</news:publication_date>
+      <news:title>Jedna z największych inwestycji PKP Intercity gotowa. Kosztowała 360 mln zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.wnp.pl/d/57/90/50/579050_r0_300.jpg</image:loc>
+      <image:title>Jedna z największych inwestycji PKP Intercity gotowa. Kosztowała 360 mln zł</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/sunderland-wydal-komunikat-w-sprawie-kibicow-jagiellonii-anulowano/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T10:45:47+01:00</news:publication_date>
+      <news:title>Sunderland wydał komunikat w sprawie kibiców Jagiellonii. "Anulowano wejściówki"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ag/ag76y39gzhuj2p1omdiaztgws4vjxfd6.JPG</image:loc>
+      <image:title>Sunderland wydał komunikat w sprawie kibiców Jagiellonii. "Anulowano wejściówki"</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
     <news:news>
       <news:publication>
@@ -123,7 +243,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/2-tys-zl-mandatu-i-trzy-miesiace-bez-prawa-jazdy-od-dzis-obowiazuja/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/2-tys-zl-mandatu-i-trzy-miesiace-bez-prawa-jazdy-od-dzis-obowiazuja/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -135,21 +255,6 @@
     <image:image>
       <image:loc>https://cdn.defence24.pl/2025/11/21/320x240px/q2vhydliih070fgly1ukxotjnq1scpizdrir2m6u.eirh.jpg</image:loc>
       <image:title>2 tys. zł mandatu i trzy miesiące bez prawa jazdy. Od dziś obowiązują nowe kary</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T08:15:30+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -303,7 +408,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-ujawnia-slowa-putina-nie-dokonalbym-inwazji-gdybys-byl-prezydentem/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/donald-trump-o-prezydencie-nawrockim-najwieksza-polityczna-sensacja-od/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -450,21 +555,6 @@
     <image:image>
       <image:loc>https://s2.tvp.pl/images2/b/3/1/uid_b316a621b7514644adb65f91272ac6b5_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
       <image:title>Niezidentyfikowany obiekt nad uczelnią w Rzeszowie? Służby badają sprawę</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/rosyjskie-rakiety-i-dron-spadly-w-polsce-data-i-miejsce-nie-sa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T02:11:29+01:00</news:publication_date>
-      <news:title>Rosyjskie rakiety i dron spadły w Polsce. Data i miejsce nie są przypadkowe?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/06/320x240px/tkPhLPe7xr0MQJO0CAD0DJGglSiAR3xxC8JVNJm2.rxx0.jpg</image:loc>
-      <image:title>Rosyjskie rakiety i dron spadły w Polsce. Data i miejsce nie są przypadkowe?</image:title>
     </image:image>
   </url>
   <url>
@@ -1060,11 +1150,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-20T17:56:15+01:00</news:publication_date>
-      <news:title>Więcej atrakcji i więcej służb. Jarmark Bożonarodzeniowy w Gdańsku startuje w tym tygodniu</news:title>
+      <news:title>Jarmarki bożonarodzeniowe w Polsce. Siedem miast na świąteczny weekend w 2026 r.</news:title>
     </news:news>
     <image:image>
       <image:loc>https://s4.tvp.pl/images2/4/6/2/uid_462d0422c3df4c58ba7702e40ad870fd_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Więcej atrakcji i więcej służb. Jarmark Bożonarodzeniowy w Gdańsku startuje w tym tygodniu</image:title>
+      <image:title>Jarmarki bożonarodzeniowe w Polsce. Siedem miast na świąteczny weekend w 2026 r.</image:title>
     </image:image>
   </url>
   <url>
@@ -2388,21 +2478,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/jarmark-bozonarodzeniowy-w-zywcu-ogloszono-termin-wydarzenia-czy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T18:57:04+01:00</news:publication_date>
-      <news:title>Jarmarki bożonarodzeniowe w Polsce. Siedem miast na świąteczny weekend w 2026 r.</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radio90.pl/files/2026/11/jarmark-bozonarodzeniowy-w-zywcu-fot-zywiec-pl.jpg</image:loc>
-      <image:title>Jarmarki bożonarodzeniowe w Polsce. Siedem miast na świąteczny weekend w 2026 r.</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/ratusz-zabezpiecza-teren-jarmarku-warszawskiego-pojawily-sie-juz/</loc>
     <news:news>
       <news:publication>
@@ -3210,141 +3285,6 @@
     <image:image>
       <image:loc>https://niebezpiecznik.pl/wp-content/uploads/2026/10/infografika-usde-200x600.png</image:loc>
       <image:title>Sejm przyjął ustawę o blokowaniu treści przez UKE. Czy to oznacza cenzurę internetu?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/utrudnienia-na-autostradzie-a2-w-kierunku-poznania-ciezarowka-w-rowie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:32+01:00</news:publication_date>
-      <news:title>Utrudnienia na autostradzie A2 w kierunku Poznania. Ciężarówka w rowie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s3.tvp.pl/images2/c/7/d/uid_c7d3f1c311424d388be2fc084c21cc94_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Utrudnienia na autostradzie A2 w kierunku Poznania. Ciężarówka w rowie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/telewizja-republika-przekazala-prokuraturze-czesc-zadanych-materialow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:32+01:00</news:publication_date>
-      <news:title>Telewizja Republika przekazała prokuraturze część żądanych materiałów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/c0b8daf88687e080d94397702a6066d1/redaktor-naczelny-republiki-tomasz-sakiewicz?t=resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Telewizja Republika przekazała prokuraturze część żądanych materiałów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/transportowal-26-ton-ladunku-mial-w-organizmie-3-promile/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:30+01:00</news:publication_date>
-      <news:title>Transportował 26 ton ładunku. Miał w organizmie 3 promile</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radiopiekary.pl/wp-content/uploads/2026/11/pijany-kierowca-ciagnik-siodlowy-autostrada-A4-Gliwice.jpg</image:loc>
-      <image:title>Transportował 26 ton ładunku. Miał w organizmie 3 promile</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/zus-umorzy-stare-dlugi-skladkowe-zmiany-wejda-w-zycie-1-maja-2027-roku/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:29+01:00</news:publication_date>
-      <news:title>ZUS umorzy stare długi składkowe. Zmiany wejdą w życie 1 maja 2027 roku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s8.tvp.pl/images2/8/a/d/uid_8ad86bed411748bb8b65303e75008e17_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>ZUS umorzy stare długi składkowe. Zmiany wejdą w życie 1 maja 2027 roku</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/niedlugo-pieniadze-z-programu-dobry-start-przepadna-wniosek-mozna/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:29+01:00</news:publication_date>
-      <news:title>Niedługo pieniądze z programu Dobry start przepadną. Wniosek można złożyć w ZUS online i tylko do końca listop</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s2.tvp.pl/images2/b/c/5/uid_bc518e76fbae424d88ccbe54d9e0eaeb_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Niedługo pieniądze z programu Dobry start przepadną. Wniosek można złożyć w ZUS online i tylko do końca listop</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/zus-podal-dane-o-emeryturach-roznica-wynosi-nawet-1500-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:29+01:00</news:publication_date>
-      <news:title>ZUS podał dane o emeryturach. Różnica wynosi nawet 1500 zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/10819966.webp</image:loc>
-      <image:title>ZUS podał dane o emeryturach. Różnica wynosi nawet 1500 zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/dunczycy-jednomyslnie-poparli-porozumienie-z-usa-w-sprawie-grenlandii/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:28+01:00</news:publication_date>
-      <news:title>Duńczycy jednomyślnie poparli porozumienie z USA w sprawie Grenlandii</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/4ec3d5ea21849ed3ba0f68af1b631ca3/?t=crop:3944:1724:nowe:0:272,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Duńczycy jednomyślnie poparli porozumienie z USA w sprawie Grenlandii</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/zatopiony-samochod-w-nim-ludzkie-szczatki-tragiczny-final-poszukiwan-31/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:27+01:00</news:publication_date>
-      <news:title>Zatopiony samochód, w nim ludzkie szczątki. Tragiczny finał poszukiwań 31-latka (10 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/s4/s41issz6jsx9raiigfvjyemv2s931t5o.jpg</image:loc>
-      <image:title>Zatopiony samochód, w nim ludzkie szczątki. Tragiczny finał poszukiwań 31-latka (10 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/oplaty-za-wywoz-smieci-w-gore-o-33-proc-wladze-mowia-o-manipulowaniu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T11:01:26+01:00</news:publication_date>
-      <news:title>Opłaty za wywóz śmieci w górę o 33 proc. Władze mówią o "manipulowaniu mieszkańcami"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://pliki.wnp.pl/d/57/88/01/578801_r0_300.jpg</image:loc>
-      <image:title>Opłaty za wywóz śmieci w górę o 33 proc. Władze mówią o "manipulowaniu mieszkańcami"</image:title>
     </image:image>
   </url>
 </urlset>
