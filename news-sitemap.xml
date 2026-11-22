@@ -3,6 +3,126 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:06+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:06+01:00</news:publication_date>
+      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/sensacyjna-porazka-i-skandaliczne-zachowanie-messiego-trabi-o-tym-caly/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:04+01:00</news:publication_date>
+      <news:title>Sensacyjna porażka i skandaliczne zachowanie Messiego. Trąbi o tym cały świat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/d4/9b/1f/z33144788IHG,Lionel-Messi.jpg</image:loc>
+      <image:title>Sensacyjna porażka i skandaliczne zachowanie Messiego. Trąbi o tym cały świat</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/usa-przed-trudnym-swietem-dziekczynienia-deszcze-i-powodzie-utrudnia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:03+01:00</news:publication_date>
+      <news:title>USA przed trudnym Świętem Dziękczynienia. Deszcze i powodzie utrudnią podróże (80 mln)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/bf6645cd-30a8-421a-ad5c-af0fb46e4a31</image:loc>
+      <image:title>USA przed trudnym Świętem Dziękczynienia. Deszcze i powodzie utrudnią podróże (80 mln)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/bielsko-biala-bardzo-wysoko-w-niechlubnym-rankingu-ponad-trzy-miesiace/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:03+01:00</news:publication_date>
+      <news:title>Bielsko-Biała bardzo wysoko w niechlubnym rankingu. Ponad trzy miesiące z fatalnym powietrzem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bielsko.biala.pl/userfiles/aktualnosci/62904/179533398050546100__.jpg</image:loc>
+      <image:title>Bielsko-Biała bardzo wysoko w niechlubnym rankingu. Ponad trzy miesiące z fatalnym powietrzem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-najpierw-pomylil-nawrockiego-z-tuskiem-potem-porownal-prezydenta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:01+01:00</news:publication_date>
+      <news:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/R6aWVubmlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3Vt/ZW50cy9GT0IwMDAwMDAwMDAwMDA3NzA5Nzc1L2ZpbG/VzL3RydW1wLTM5MzI1MDgyLmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sikorski-krytykuje-palac-prezydencki-nigdy-nie-widzialem-czegos-tak/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:15:00+01:00</news:publication_date>
+      <news:title>Sikorski krytykuje Pałac Prezydencki. "Nigdy nie widziałem czegoś tak głupiego". Jest odpowiedź</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-karol-nawrocki-ph9341366/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Sikorski krytykuje Pałac Prezydencki. "Nigdy nie widziałem czegoś tak głupiego". Jest odpowiedź</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/marcin-gorny-z-bielska-bialej-drugi-w-50-rajdzie-cieszynska-barborka/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T08:14:58+01:00</news:publication_date>
+      <news:title>Marcin Górny z Bielska-Białej drugi w 50. Rajdzie Cieszyńska Barbórka | WIDEO, ZDJĘCIA</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/Klasyfikacja-1.jpg</image:loc>
+      <image:title>Marcin Górny z Bielska-Białej drugi w 50. Rajdzie Cieszyńska Barbórka | WIDEO, ZDJĘCIA</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
     <news:news>
       <news:publication>
@@ -60,36 +180,6 @@
     <image:image>
       <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/wybory-do-senatu-lubuskie-cisza-wyborcza.jpg</image:loc>
       <image:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T05:55:25+01:00</news:publication_date>
-      <news:title>Weekend w Opolu pełen atrakcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
-      <image:title>Weekend w Opolu pełen atrakcji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T05:55:25+01:00</news:publication_date>
-      <news:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2113000437.png</image:loc>
-      <image:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</image:title>
     </image:image>
   </url>
   <url>
