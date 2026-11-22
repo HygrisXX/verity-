@@ -3,18 +3,78 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T23:39:49+01:00</news:publication_date>
+      <news:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1920354443.png</image:loc>
+      <image:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/strazackie-dzieje-ponidzia-zapisane-na-kartach-wyjatkowej-ksiazki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T23:39:49+01:00</news:publication_date>
+      <news:title>Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/2222-Niestandardowy-9.jpg</image:loc>
+      <image:title>Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/drozej-za-telefony-w-calej-polsce-nowa-oplata-juz-obowiazuje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T23:39:48+01:00</news:publication_date>
+      <news:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-18.jpg</image:loc>
+      <image:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/deregulacja-w-branzy-piwnej-minister-chce-pomoc-browarom/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T23:39:47+01:00</news:publication_date>
+      <news:title>Deregulacja w branży piwnej. Minister chce pomóc browarom</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/534301.webp</image:loc>
+      <image:title>Deregulacja w branży piwnej. Minister chce pomóc browarom</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T22:41:58+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -93,21 +153,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T21:40:22+01:00</news:publication_date>
-      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
-      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/budowa-lub-remont-domu-kiedy-najlepiej-wybrac-okna-i-drzwi/</loc>
     <news:news>
       <news:publication>
@@ -165,21 +210,6 @@
     <image:image>
       <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/12019-pentagon-80394-scaled.jpg</image:loc>
       <image:title>„Prawdziwy wzór sojusznika”. Tak Pentagon ocenił Polskę (5 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/nadchodzi-finansowy-wstrzas-ktory-moze-odczuc-niemal-kazdy-polak/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T20:41:43+01:00</news:publication_date>
-      <news:title>Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-17.jpg</image:loc>
-      <image:title>Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak</image:title>
     </image:image>
   </url>
   <url>
@@ -1593,21 +1623,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T19:45:54+01:00</news:publication_date>
-      <news:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/66d108abd093ddcbde1b295a603fa00a/?t=crop:3872:1693:nowe:0:450,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/ochrona-ludnosci-i-przyszlosc-osp-powiatowy-zjazd-strazakow-w-olsztynie/</loc>
     <news:news>
       <news:publication>
@@ -2100,21 +2115,6 @@
     <image:image>
       <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145t61.jpg</image:loc>
       <image:title>Lublin ma swoje Monopoly. Premiera planszówki i emocjonująca gra miejska</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/dwie-rakiety-i-dron-w-polskiej-przestrzen-powietrznej-jeden-z-obiektow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T14:49:02+01:00</news:publication_date>
-      <news:title>Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVub/mlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3VtZW50cy9GT0IwMD/AwMDAwMDAwMDA3NzEyNDkyL2ZpbGVzL3NsdXpieS1uYS1taWV/qc2N1LXpkYXJ6ZW5pYS0zOTMyNjg3Ny5qcGciLCJ3IjozODQwfQ</image:loc>
-      <image:title>Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań</image:title>
     </image:image>
   </url>
   <url>
@@ -2790,81 +2790,6 @@
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8066a5bd-426b-4951-9fbe-35af8406bd04</image:loc>
       <image:title>Trzęsienie ziemi w Peru. Ewakuowano parlament w Limie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/voyager-1-odlecial-na-jeden-dzien-swietlny-od-ziemi-rozmawiamy-z/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:51+01:00</news:publication_date>
-      <news:title>Voyager 1 odleciał na jeden dzień świetlny od Ziemi. Rozmawiamy z kierowniczką tej misji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/340787250.png</image:loc>
-      <image:title>Voyager 1 odleciał na jeden dzień świetlny od Ziemi. Rozmawiamy z kierowniczką tej misji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/oto-najwieksza-rewelacja-ekstraklasy-wlasnie-wskoczyli-na-podium/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:48+01:00</news:publication_date>
-      <news:title>Oto największa rewelacja Ekstraklasy! Właśnie wskoczyli na podium</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/b5/9b/1f/z33143989IHG,Mecz-Piast-Gliwice---Korona-Kielce.jpg</image:loc>
-      <image:title>Oto największa rewelacja Ekstraklasy! Właśnie wskoczyli na podium</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/skrot-meczu-lechia-zielona-gora-chojniczanka-chojnice-uratowali-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:47+01:00</news:publication_date>
-      <news:title>Skrót meczu Lechia Zielona Góra – Chojniczanka Chojnice. Uratowali się dzięki jedenastce</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/11/71/6b00cf53eed06_o,size,640x400,q,71,h,85984b.jpg</image:loc>
-      <image:title>Skrót meczu Lechia Zielona Góra – Chojniczanka Chojnice. Uratowali się dzięki jedenastce</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/miedz-legnica-ratuje-remis-w-ostatnich-sekundach-meczu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:46+01:00</news:publication_date>
-      <news:title>Miedź Legnica ratuje remis w ostatnich sekundach meczu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s9.tvp.pl/images2/9/1/e/uid_91eed2e30a5646948a6f789a01097e21_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Miedź Legnica ratuje remis w ostatnich sekundach meczu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/porto-krok-od-blamazu-zdecydowaly-rzuty-karne-polacy-w-centrum-akcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:45+01:00</news:publication_date>
-      <news:title>Porto krok od blamażu. Zdecydowały rzuty karne. Polacy w centrum akcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NK1YYNIML2KNN-C321.webp</image:loc>
-      <image:title>Porto krok od blamażu. Zdecydowały rzuty karne. Polacy w centrum akcji</image:title>
     </image:image>
   </url>
 </urlset>

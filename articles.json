@@ -1,12 +1,334 @@
 [
   {
-    "id": 625277702,
+    "id": 1920354443,
     "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/minal-tydzien",
-    "seo_title": "Minął tydzień",
+    "seo_url": "/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania",
+    "seo_title": "Sukcesja w Eko-Oknach. Nowy prezes, stare pytania",
+    "summary_lead": "Od marca 2026 roku prezesem zarządu Eko-Okien był Paweł Bobrek, wieloletni pracownik firmy. W tym samym czasie Mateusz Kłosek przestał zasiadać w zarządzie spółki.",
+    "meta_description": "Od marca 2026 roku prezesem zarządu Eko-Okien był Paweł Bobrek, wieloletni pracownik firmy.",
+    "keywords": "Opolskie, Sukcesja, Eko-Oknach, stare, pytania",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-22T23:39:49+01:00",
+    "updated_iso": "2026-11-22T23:39:49+01:00",
+    "display_date": "22.11.2026, 23:39",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Opolskie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Opolska360.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [
+      {
+        "outlet": "Opolska360.pl",
+        "original": "Zaskakująca sukcesja w Eko-Oknach. Nowy prezes, stare pytania",
+        "fact": "Dlatego też przekazanie udziałów nie oznaczało faktycznej zmiany właścicielskiej."
+      }
+    ],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (Opolska360.pl)",
+        "paragraphs": [
+          "Od marca 2026 roku prezesem zarządu Eko-Okien był Paweł Bobrek, wieloletni pracownik firmy. W tym samym czasie Mateusz Kłosek przestał zasiadać w zarządzie spółki. Kilka miesięcy później przekazał udziały Eko-Okien katolickiej Fundacji „Nasze Dzieci”, znanej m.in. z kampanii „Gdzie są te dzieci?”.",
+          "Dziś fundacja kontroluje 99,1 proc. udziałów holdingu. W sierpniowej rozmowie z „O! Polską” szefowa marketingu Eko-Okien Ewelina Timler podkreślała, że wokół tej decyzji narosło wiele nieporozumień.",
+          "Jak zaznaczała, właścicielem fundacji od początku jej działalności jest Mateusz Kłosek. Dlatego też przekazanie udziałów nie oznaczało faktycznej zmiany właścicielskiej. Fundacja i spółka od lat współpracowały ze sobą.",
+          "Eko-Okna mają nowego szefa – to 24-letni Kamil Kłosek. Więcej pytań budzi jednak ostatnia zmiana. [Źródło: Opolska360.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Opolska360.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Zaskakująca sukcesja w Eko-Oknach. Nowy prezes, stare pytania",
+        "url": "https://opolska360.pl/zaskakujaca-sukcesja-w-firmie-eko-okna-nowy-prezes-to-kamil-klosek-stare-pytania-zostaly"
+      }
+    ],
+    "sources": [
+      "Opolska360.pl"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy Opolszczyzny",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Sukcesja w Eko-Oknach. Nowy prezes, stare pytania?",
+        "a": "Kilka miesięcy później przekazał udziały Eko-Okien katolickiej Fundacji „Nasze Dzieci”, znanej m.in. z kampanii „Gdzie są te dzieci?”."
+      },
+      {
+        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "a": "Dziś fundacja kontroluje 99,1 proc. udziałów holdingu."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Opolszczyzny (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 1746013296,
+    "path": "/Polska/Regiony/Swietokrzyskie",
+    "seo_url": "/Polska/Regiony/Swietokrzyskie/strazackie-dzieje-ponidzia-zapisane-na-kartach-wyjatkowej-ksiazki",
+    "seo_title": "Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki",
+    "summary_lead": "44 jednostki Ochotniczych Straży Pożarnych, blisko 150 lat historii, setki fotografii, dokumentów i wspomnień.",
+    "meta_description": "44 jednostki Ochotniczych Straży Pożarnych, blisko 150 lat historii, setki fotografii, dokumentów i wspomnień.",
+    "keywords": "Swietokrzyskie, Strażackie, dzieje, Ponidzia, zapisane, kartach, wyjątkowej",
+    "thumbnail_url": "https://radiokielce.pl/wp-content/uploads/2026/11/2222-Niestandardowy-9.jpg",
+    "published_iso": "2026-11-22T23:39:49+01:00",
+    "updated_iso": "2026-11-22T23:39:49+01:00",
+    "display_date": "22.11.2026, 23:39",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Swietokrzyskie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Radio Kielce"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (Radio Kielce)",
+        "paragraphs": [
+          "44 jednostki Ochotniczych Straży Pożarnych, blisko 150 lat historii, setki fotografii, dokumentów i wspomnień. To wszystko znalazło się w publikacji „Jedna historia wielu pokoleń”, poświęconej dziejom ochotniczego pożarnictwa na terenie powiatu pińczowskiego. Autorami wydawnictwa są Marek Długosz i Zbigniew Kierkowski.",
+          "W przygotowanie książki zaangażowała się również Paulina Mucha. Jak mówi publikacja opowiada o wielu ludziach i pokoleniach, których losy splatają się z historią ochotniczego pożarnictwa.",
+          "— Zanim książka trafiła do drukarni, istniała w postaci wspomnień, fotografii i dokumentów przechowywanych w strażackich albumach.",
+          "Jako zespół redakcyjny docieraliśmy do tych materiałów, odwiedzaliśmy poszczególne jednostki, rozmawialiśmy z druhami i wsłuchiwaliśmy się w ich opowieści. Wspólnie odkrywaliśmy przeszłość, zbieraliśmy rozsypane fragmenty historii i nadawaliśmy im kształt – opowiada współautorka.",
+          "Odnalezione fotografie i wspomnienia pozwalały kolejnym pokoleniom poznać losy swoich bliskich, często nieznane nawet najbliższej rodzinie. Okazało się również, że historia poszczególnych jednostek niejednokrotnie łączy się ze sobą poprzez ludzi, którzy przez lata służyli w różnych OSP.",
+          "— Dzieci, wnuki, prawnuki, a nawet praprawnuki poznawały swoich ojców i dziadków dzięki opowieściom, o których wcześniej nie miały pojęcia. [Źródło: Radio Kielce]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Radio Kielce",
+        "angle": "Relacja wiodąca",
+        "summary": "Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki",
+        "url": "https://radiokielce.pl/1459790/strazackie-dzieje-ponidzia-zapisane-na-kartach-wyjatkowej-ksiazki/"
+      }
+    ],
+    "sources": [
+      "Radio Kielce"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy woj. świętokrzyskiego",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Zdarzenie i utrudnienia"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki?",
+        "a": "To wszystko znalazło się w publikacji „Jedna historia wielu pokoleń”, poświęconej dziejom ochotniczego pożarnictwa na terenie powiatu pińczowskiego."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Autorami wydawnictwa są Marek Długosz i Zbigniew Kierkowski."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy woj. świętokrzyskiego (obszar: Sprawy lokalne i samorząd). Status: Zdarzenie i utrudnienia."
+      }
+    ]
+  },
+  {
+    "id": 235229824,
+    "path": "/Polska/Regiony/Mazowieckie",
+    "seo_url": "/Polska/Regiony/Mazowieckie/drozej-za-telefony-w-calej-polsce-nowa-oplata-juz-obowiazuje",
+    "seo_title": "Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje",
+    "summary_lead": "Właściciele smartfonów w Polsce muszą przygotować się na zmianę, która może odbić się na ich portfelach. Od 13 listopada 2026 roku obowiązują nowe przepisy dotyczące opłaty reprograficznej.",
+    "meta_description": "Właściciele smartfonów w Polsce muszą przygotować się na zmianę, która może odbić się na ich portfelach.",
+    "keywords": "Mazowieckie, Drożej, telefony, całej, opłata, obowiązuje",
+    "thumbnail_url": "https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-18.jpg",
+    "published_iso": "2026-11-22T23:39:48+01:00",
+    "updated_iso": "2026-11-22T23:39:48+01:00",
+    "display_date": "22.11.2026, 23:39",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Mazowieckie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Warszawa w Pigułce"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (Warszawa w Pigułce)",
+        "paragraphs": [
+          "Właściciele smartfonów w Polsce muszą przygotować się na zmianę, która może odbić się na ich portfelach. Od 13 listopada 2026 roku obowiązują nowe przepisy dotyczące opłaty reprograficznej. Producenci i importerzy telefonów komórkowych z wbudowaną pamięcią wynoszącą co najmniej 32 GB, w tym popularnych smartfonów, zostali objęci obowiązkiem odprowadzania opłaty wynoszącej 1 procent ceny sprzedaży netto urządzenia.",
+          "Koszt może zostać uwzględniony w cenach elektroniki. Nowe regulacje dotyczą również tabletów, komputerów i wybranych telewizorów. Nie oznacza to jednak, że każdy użytkownik telefonu otrzyma nowy rachunek albo że wszystkie modele automatycznie podrożeją o taką samą kwotę.",
+          "Smartfon jest dziś podstawowym urządzeniem wykorzystywanym do komunikacji, płatności, pracy i korzystania z usług publicznych. W wielu gospodarstwach domowych znajduje się kilka telefonów, a ich wymiana co kilka lat stanowi istotny wydatek. Szczególnie dotkliwe mogą być koszty zakupu nowych urządzeń dla całej rodziny, gdy jednocześnie trzeba wymienić telefon rodzica, dziecka albo sprzęt wykorzystywany w pracy.",
+          "Tymczasem w Polsce weszły w życie nowe przepisy rozszerzające katalog urządzeń objętych opłatą reprograficzną. Zmiana została wprowadzona rozporządzeniem Ministra Kultury i Dziedzictwa Narodowego z 30 kwietnia 2026 roku, opublikowanym 12 maja w Dzienniku Ustaw. Oznacza to, że nie mówimy już o samej propozycji zmian ani projekcie, który dopiero ma trafić do konsultacji.",
+          "Oznacza to, że znaczna część modeli dostępnych obecnie w sklepach mieści się w kategorii wymienionej w nowych przepisach. [Źródło: Warszawa w Pigułce]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Warszawa w Pigułce",
+        "angle": "Relacja wiodąca",
+        "summary": "Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje",
+        "url": "https://warszawawpigulce.pl/drozej-za-telefony-w-calej-polsce-nowa-oplata-juz-obowiazuje/"
+      }
+    ],
+    "sources": [
+      "Warszawa w Pigułce"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy Mazowsza",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje?",
+        "a": "Producenci i importerzy telefonów komórkowych z wbudowaną pamięcią wynoszącą co najmniej 32 GB, w tym popularnych smartfonów, zostali objęci obowiązkiem odprowadzania opłaty wynoszącej 1 procent ceny sprzedaży netto urządzenia."
+      },
+      {
+        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "a": "Zmiana została wprowadzona rozporządzeniem Ministra Kultury i Dziedzictwa Narodowego z 30 kwietnia 2026 roku, opublikowanym 12 maja w Dzienniku Ustaw."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Mazowsza (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 1439882517,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/deregulacja-w-branzy-piwnej-minister-chce-pomoc-browarom",
+    "seo_title": "Deregulacja w branży piwnej. Minister chce pomóc browarom",
+    "summary_lead": "Portal lebensmittelprexis.de informuje, że deklaracja padła podczas wizyty Rainera w browarze klasztornym Neuzeller w Brandenburgii. Rainer opisał sytuację w branży jako napiętą.",
+    "meta_description": "Portal lebensmittelprexis.de informuje, że deklaracja padła podczas wizyty Rainera w browarze klasztornym Neuzeller w Brandenburgii.",
+    "keywords": "Polityka, Deregulacja, branży, piwnej, Minister, chce, pomóc",
+    "thumbnail_url": "https://static.wiadomoscihandlowe.pl/images/2026/11/20/534301.webp",
+    "published_iso": "2026-11-22T23:39:47+01:00",
+    "updated_iso": "2026-11-22T23:39:47+01:00",
+    "display_date": "22.11.2026, 23:39",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Wiadomości Handlowe"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (Wiadomości Handlowe)",
+        "paragraphs": [
+          "Portal lebensmittelprexis.de informuje, że deklaracja padła podczas wizyty Rainera w browarze klasztornym Neuzeller w Brandenburgii. Rainer opisał sytuację w branży jako napiętą. Wysokie koszty energii, spadające spożycie piwa i obszerne wymogi biurokratyczne wywierają ogromną presję na producentów.",
+          "Dodał, że spadek spożycia piwa jest wprawdzie częściowo rekompensowany przez rosnący rynek piw bezalkoholowych, ale nie w całości. Sejm zdecydował w sprawie reklamy i promocji alkoholu. Również Holger Eichele, dyrektor generalny Niemieckiego Związku Piwowarów (Deutscher Brauer-Bund), kreśli ponury obraz sytuacji w branży.",
+          "— Sytuacja niemieckiego przemysłu browarniczego jest poważna.",
+          "Nasza branża, zdominowana głównie przez małe i średnie przedsiębiorstwa, znajduje się pod ogromną presją: sprzedaż piwa spada od lat, utrzymuje się powściągliwość konsumencka, a coraz więcej browarów walczy o swój byt. Jednocześnie wysokie koszty energii i personelu, rosnące składki na ubezpieczenia społeczne oraz coraz większa biurokracja obciążają firmy – powiedział.",
+          "Eichele podkreślił, że branża piwowarska oczekuje od rządu konsekwentnego wspierania wzrostu i konkurencyjności. Mocny wzrost akcyzy na alkohol. Według ministra trudne warunki rynkowe dotykają nie tylko same browary, ale również plantatorów chmielu, którzy jako dostawcy dla branży w równym stopniu odczuwają skutki spadku sprzedaży. [Źródło: Wiadomości Handlowe]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Wiadomości Handlowe",
+        "angle": "Relacja wiodąca",
+        "summary": "Deregulacja w branży piwnej. Minister chce pomóc browarom",
+        "url": "https://www.wiadomoscihandlowe.pl/przemysl-i-producenci/rynek-piwa-i-cydru/deregulacja-w-branzy-piwnej-minister-chce-pomoc-browarom-2539587"
+      }
+    ],
+    "sources": [
+      "Wiadomości Handlowe"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Obywatele i instytucje w Polsce",
+      "scope": "Prawo i decyzje publiczne",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Deregulacja w branży piwnej. Minister chce pomóc browarom?",
+        "a": "Wysokie koszty energii, spadające spożycie piwa i obszerne wymogi biurokratyczne wywierają ogromną presję na producentów."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Dodał, że spadek spożycia piwa jest wprawdzie częściowo rekompensowany przez rosnący rynek piw bezalkoholowych, ale nie w całości."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 90372259,
+    "path": "/Polska/Regiony/Opolskie",
+    "seo_url": "/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili",
+    "seo_title": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału",
     "summary_lead": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału Praw Człowieka o zabezpieczenie decyzji Zgromadzenia Ogólnego TK o zawieszeniu ich w czynnościach.",
     "meta_description": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału Praw Człowieka o zabezpieczenie decyzji Zgromadzenia…",
-    "keywords": "Opolskie, Minął, tydzień",
+    "keywords": "Opolskie, Wokół, ciągle, dzieje, sędziowie, Święczkowski, Sochański",
     "thumbnail_url": "",
     "published_iso": "2026-11-22T22:41:58+01:00",
     "updated_iso": "2026-11-22T22:41:58+01:00",
@@ -33,7 +355,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "CzasNaOpole.pl",
+        "original": "Minął tydzień",
+        "fact": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (CzasNaOpole.pl)",
@@ -297,14 +625,14 @@
         "summary": "Nagle upadła na murawę. Dramatyczne chwile 19-latki, nowe szczegóły",
         "url": "https://przegladsportowy.onet.pl/pilka-nozna/nagle-upadla-na-murawe-dramatyczne-chwile-19-latki-nowe-szczegoly/lhe9lv6",
         "focus": "Eksponuje dane (600 tys.) oraz wątki: Dramatyczne, ubiegłego.",
-        "omits": "Pomija kontekst (przetransportowana, kilkuminutowej, niebezpiecznie) rozwijany w WP SportoweFakty."
+        "omits": "Pomija kontekst (przetransportowana, kilkuminutowej, otrzymała) rozwijany w WP SportoweFakty."
       },
       {
         "outlet": "WP SportoweFakty",
         "angle": "Relacja sportowa",
         "summary": "Chwile grozy 19-latki. Nagle upadła na murawę. Jest komunikat",
         "url": "https://sportowefakty.wp.pl/pilka-nozna/1285654/chwile-grozy-19-latki-nagle-upadla-na-murawe-jest-komunikat",
-        "focus": "Wyróżnia własne wątki i pojęcia: grozy, 19-letnia, kontaktu.",
+        "focus": "Wyróżnia własne wątki i pojęcia: grozy, Incydent, miejsce.",
         "omits": "Pomija wyliczenia (600 tys.) przytaczane przez Przegląd Sportowy."
       }
     ],
@@ -346,7 +674,7 @@
     "updated_iso": "2026-11-22T22:41:52+01:00",
     "display_date": "22.11.2026, 22:41",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -391,16 +719,16 @@
         "angle": "Relacja wiodąca",
         "summary": "Kibice wyręczyli Jana Urbana. Bartosz Nowak dostał powołanie! [WIDEO]",
         "url": "https://weszlo.com/kibice-zabawili-sie-w-selekcjonera-wszystko-na-oczach-jana-urbana-wideo",
-        "focus": "Eksponuje dane (33 lat) oraz wątki: wyręczyli, dostał.",
-        "omits": "Pomija wyliczenia (2025, 2026) przytaczane przez Interia Sport."
+        "focus": "Wyróżnia własne wątki i pojęcia: wyręczyli, dostał, WIDEO.",
+        "omits": "Pomija kontekst (imponujących, dziennikarze, uhonorowali) rozwijany w Interia Sport."
       },
       {
         "outlet": "Interia Sport",
         "angle": "Relacja sportowa",
         "summary": "Ogromne wyróżnienie dla Nowaka. Wszystko po decyzji Jana Urbana",
         "url": "https://sport.interia.pl/pilka-nozna/ekstraklasa/news-urban-nie-chcial-go-w-reprezentacji-oto-co-zrobili-kibice-ta,nId,23577345",
-        "focus": "Eksponuje dane (2025, 2026) oraz wątki: Ogromne, decyzji.",
-        "omits": "Pomija wyliczenia (33 lat) przytaczane przez Weszło.com."
+        "focus": "Wyróżnia własne wątki i pojęcia: Ogromne, decyzji, imponujących.",
+        "omits": "Pomija kontekst (rozpoczęcia, jakąkolwiek, wyręczyli) rozwijany w Weszło.com."
       }
     ],
     "sources": [
@@ -447,7 +775,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -459,18 +787,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Bramki po asystach Nicoli Zalewskiego dwukrotnie dawały nadzieję Atalancie, która ambitnie goniła w meczu z Interem Mediolan. Drużyna Polaka postawiła na swoim w końcówce szalonych derbów Lombardii. Wtedy doprowadziła do remisu 4:4. [Źródło: WP SportoweFakty, Sport.pl]",
-          "Do spotkania reprezentantów Polski w Bergamo nie doszło. Zgodnie z zapowiedziami mediów, Piotr Zieliński nie znalazł się w kadrze Cristiana Chivu, a przyczyną jest uraz stopy. Zagrał natomiast od początku Nicola Zalewski, którego notowania u trenera Maurizio Sarrego poszły w górę. [Źródło: WP SportoweFakty, Sport.pl, Interia Sport]",
-          "Piotr Zieliński nie był jedynym wielkim nieobecnym w Interze. Absencja kapitana nie była tak mocno odczuwalna, ponieważ w wysokiej formie jest Francesco Pio Esposito. Nie miał trudnego zadania, ponieważ obrona gospodarzy była w rozsypce po stracie Giorgio Scalviniego. [Źródło: WP SportoweFakty]",
-          "W 35. minucie Nicola Zalewski wyszedł na dobrą pozycję w polu karnym, i wycofał piłkę w kierunku Eljifa Elmasa. [Źródło: Sport.pl, Interia Sport, Weszło.com]"
+          "Bramki po asystach Nicoli Zalewskiego dwukrotnie dawały nadzieję Atalancie, która ambitnie goniła w meczu z Interem Mediolan. Drużyna Polaka postawiła na swoim w końcówce szalonych derbów Lombardii. Wtedy doprowadziła do remisu 4:4. [Źródło: WP SportoweFakty, Sport.pl, Polsat Sport, Przegląd Sportowy]",
+          "Do spotkania reprezentantów Polski w Bergamo nie doszło. Zgodnie z zapowiedziami mediów, Piotr Zieliński nie znalazł się w kadrze Cristiana Chivu, a przyczyną jest uraz stopy. Zagrał natomiast od początku Nicola Zalewski, którego notowania u trenera Maurizio Sarrego poszły w górę. [Źródło: WP SportoweFakty, Sport.pl, Interia Sport, Polsat Sport]",
+          "W 35. minucie Nicola Zalewski wyszedł na dobrą pozycję w polu karnym, i wycofał piłkę w kierunku Eljifa Elmasa. [Źródło: WP SportoweFakty, Sport.pl, Interia Sport, Weszło.com]"
         ]
       },
       {
@@ -478,7 +805,8 @@
         "paragraphs": [
           "Po jego podaniu bramkę na 1:2 zdobył Eljif Elmas. Atalanta fatalnie rozpoczęła niedzielne starcie z wiceliderami Serie A. Już w 16. minucie bramkę dla Nerazzurich zdobył Pio Esposito, znakomicie odnajdując się w polu karnym. Po kolejnym kwadransie młodziutki napastnik Interu miał już na koncie dublet. [Źródło: Sport.pl]",
           "Do przerwy padły trzy bramki. Nie on jednak okazał się pierwszoplanową postacią tego wieczoru. [Źródło: Interia Sport]",
-          "Zacznijmy od tego, co polskie. Długo wydawało się, że tego wieczoru gwiazdą będzie Francesco Pio Esposito, rewelacja ostatnich tygodni. Ale… Atalanta wstała z martwych i hat-trick młodego Włocha nic nie dał. [Źródło: Weszło.com]"
+          "Zacznijmy od tego, co polskie. Długo wydawało się, że tego wieczoru gwiazdą będzie Francesco Pio Esposito, rewelacja ostatnich tygodni. Ale… Atalanta wstała z martwych i hat-trick młodego Włocha nic nie dał. [Źródło: Weszło.com]",
+          "Dzięki temu awansował do ścisłej czołówki najlepiej podających piłkarzy Serie A w tym sezonie. Jego drużyna zremisowała po kapitalnym meczu 4:4, a zagrania Polaka pomogły odrobić dwubramkową stratę do mistrzów Włoch. [Źródło: Przegląd Sportowy]"
         ]
       }
     ],
@@ -488,16 +816,16 @@
         "angle": "Relacja wiodąca",
         "summary": "Padło osiem goli. Przy dwóch asystował Nicola Zalewski",
         "url": "https://sportowefakty.wp.pl/pilka-nozna/1285359/padlo-osiem-goli-przy-dwoch-asystowal-nicola-zalewski",
-        "focus": "Wyróżnia własne wątki i pojęcia: dwóch, asystował, jedynym.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "focus": "Wyróżnia własne wątki i pojęcia: Przy, dwóch, asystował.",
+        "omits": "Pomija kontekst (hicie, Serie, Atalanta) rozwijany w Sport.pl, Interia Sport."
       },
       {
         "outlet": "Sport.pl",
         "angle": "Relacja sportowa",
         "summary": "Show Zalewskiego w hicie Serie A! Osiem goli, niebywałe sceny",
         "url": "https://www.sport.pl/pilka/7,65083,33145264,zalewski-blysnal-w-hicie-serie-a-oto-co-zrobil-w-35-minucie.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: niebywałe, sceny, zdobył.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "focus": "Wyróżnia własne wątki i pojęcia: Show, niebywałe, sceny.",
+        "omits": "Pomija kontekst (asysty, wieczoru, Padło) rozwijany w Weszło.com, Polsat Sport."
       },
       {
         "outlet": "Interia Sport",
@@ -505,19 +833,37 @@
         "summary": "Epicka kanonada w hicie Serie A. Tak budzi się Zalewski. Padło 8 goli",
         "url": "https://sport.interia.pl/pilka-nozna/serie-a/news-spektakularna-kanonada-w-hicie-serie-a-tak-budzi-sie-zalewsk,nId,23577347",
         "focus": "Wyróżnia własne wątki i pojęcia: Epicka, kanonada, budzi.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (doprowadziła, dwukrotnie, Atalancie) rozwijany w WP SportoweFakty, Sport.pl."
       },
       {
         "outlet": "Weszło.com",
         "angle": "Relacja sportowa",
         "summary": "Dwie asysty Zalewskiego! Kolejny absolutnie zwariowany mecz Atalanty",
         "url": "https://weszlo.com/zalewski-blysnal-asystami-w-meczu-z-mistrzem-wloch-szalenstwo-i-mnostwo-goli",
-        "focus": "Eksponuje dane (2026) oraz wątki: Dwie, asysty.",
-        "omits": "Pomija kontekst (zapowiedziami, Cristiana, przyczyną) rozwijany w WP SportoweFakty, Sport.pl."
+        "focus": "Wyróżnia własne wątki i pojęcia: absolutnie, zwariowany, mecz.",
+        "omits": "Pomija kontekst (Bramki, reprezentantów, zapowiedziami) rozwijany w WP SportoweFakty, Sport.pl."
+      },
+      {
+        "outlet": "Polsat Sport",
+        "angle": "Relacja sportowa",
+        "summary": "Dwie asysty Zalewskiego w hicie Serie A! Osiem bramek w Bergamo",
+        "url": "https://www.polsatsport.pl/wiadomosc/2026-11-22/dwie-asysty-zalewskiego-w-hicie-serie-a-osiem-bramek-w-bergamo/",
+        "focus": "Wyróżnia własne wątki i pojęcia: bramek.",
+        "omits": "Pomija kontekst (kierunku, minucie, wyszedł) rozwijany w WP SportoweFakty, Sport.pl."
+      },
+      {
+        "outlet": "Przegląd Sportowy",
+        "angle": "Relacja sportowa",
+        "summary": "Ależ błysk Nicoli Zalewskiego w hicie kolejki! Kapitalne zagrania, jest w czołówce ligi",
+        "url": "https://przegladsportowy.onet.pl/pilka-nozna/serie-a/alez-blysk-nicoli-zalewskiego-kapitalne-zagranie-blyskawiczna-nagroda/t6tn6p6",
+        "focus": "Wyróżnia własne wątki i pojęcia: Ależ, błysk, kolejki.",
+        "omits": "Pomija kontekst (reprezentantów, zapowiedziami, spotkania) rozwijany w WP SportoweFakty, Sport.pl."
       }
     ],
     "sources": [
       "Interia Sport",
+      "Polsat Sport",
+      "Przegląd Sportowy",
       "Sport.pl",
       "WP SportoweFakty",
       "Weszło.com"
@@ -526,12 +872,20 @@
       {
         "claim_text": "Dopisano źródło: Weszło.com (aktualizacja wieloźródłowa)",
         "evidence_url": "https://weszlo.com/zalewski-blysnal-asystami-w-meczu-z-mistrzem-wloch-szalenstwo-i-mnostwo-goli"
+      },
+      {
+        "claim_text": "Dopisano źródło: Polsat Sport (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.polsatsport.pl/wiadomosc/2026-11-22/dwie-asysty-zalewskiego-w-hicie-serie-a-osiem-bramek-w-bergamo/"
+      },
+      {
+        "claim_text": "Dopisano źródło: Przegląd Sportowy (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://przegladsportowy.onet.pl/pilka-nozna/serie-a/alez-blysk-nicoli-zalewskiego-kapitalne-zagranie-blyskawiczna-nagroda/t6tn6p6"
       }
     ],
     "impact": {
       "audience": "Kibice i środowisko sportowe",
       "scope": "Sport i rozgrywki",
-      "status": "Potwierdzone (4 źródła)"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "seo_faq": [
       {
@@ -544,87 +898,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (4 źródła)."
-      }
-    ]
-  },
-  {
-    "id": 1570018842,
-    "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje",
-    "seo_title": "Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa",
-    "summary_lead": "Przypomnijmy, że pierwsze podobne zdarzenie w powiecie miało miejsce w nocy z 14 na 15 stycznia tego roku. Wilki przeszły przez ogrodzenie i zabiły dwa młode daniele w hodowli Gerarda Koika w Suchodańcu.",
-    "meta_description": "Przypomnijmy, że pierwsze podobne zdarzenie w powiecie miało miejsce w nocy z 14 na 15 stycznia tego roku.",
-    "keywords": "Opolskie, Wilki, budzą, niepokój, Mieszkańcy, boją, swoje",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-22T21:40:22+01:00",
-    "updated_iso": "2026-11-22T21:40:22+01:00",
-    "display_date": "22.11.2026, 21:40",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Opolskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Opolska360.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Opolska360.pl)",
-        "paragraphs": [
-          "Przypomnijmy, że pierwsze podobne zdarzenie w powiecie miało miejsce w nocy z 14 na 15 stycznia tego roku. Wilki przeszły przez ogrodzenie i zabiły dwa młode daniele w hodowli Gerarda Koika w Suchodańcu. Tym razem do ataku doszło w zagrodzie w Krośnicy, w miejscu za budynkami mieszkalnymi.",
-          "— Po południu 12 listopada wpuściłam daniele na mały wybieg, ponieważ rosła tam ładna trawa.",
-          "Chciałam, by w nocy mogły sobie ją nieco wygryźć. Następnego dnia miały wrócić na drugie, większe pastwisko, ale rano zadzwonił do mnie kolega, wskazując, że połowa danieli leży zagryziona. Gdy dotarłam na miejsce, od razu było widać, iż to zagryzienie jest wynikiem wejścia wilka i „zabawy” drapieżnika z tymi zwierzętami.",
-          "Zresztą poza siatką widać, że są tu ślady wilka – mówi Ewa Grabowska, właścicielka hodowli.",
-          "— Na pozostałych pięciu, które przeżyły, nie ma żadnych śladów, więc podejrzewam, że byk (samiec daniela – red.), który przeżył, bronił się porożem i obronił pozostałą czwórkę.",
-          "W sumie straciłam wszystkie młode, czyli osiem sztuk, plus sześć dorosłych łań. Tym, co rzuca się w oczy, jest charakter obrażeń. Prowadzone jest postępowanie wyjaśniające w tej sprawie. [Źródło: Opolska360.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Opolska360.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa",
-        "url": "https://opolska360.pl/wilki-w-opolskim-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje-gospodarstwa"
-      }
-    ],
-    "sources": [
-      "Opolska360.pl"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Mieszkańcy Opolszczyzny",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje?",
-        "a": "Tym razem do ataku doszło w zagrodzie w Krośnicy, w miejscu za budynkami mieszkalnymi."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "— Po południu 12 listopada wpuściłam daniele na mały wybieg, ponieważ rosła tam ładna trawa."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Opolszczyzny (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (6 źródeł)."
       }
     ]
   },
@@ -981,85 +1255,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Mieszkańcy Mazowsza (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
-      }
-    ]
-  },
-  {
-    "id": 1141976759,
-    "path": "/Polska/Regiony/Mazowieckie",
-    "seo_url": "/Polska/Regiony/Mazowieckie/nadchodzi-finansowy-wstrzas-ktory-moze-odczuc-niemal-kazdy-polak",
-    "seo_title": "Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak",
-    "summary_lead": "Tankowanie samochodu, ogrzewanie mieszkania, zakupy w sklepie, dostawa towarów do domu. Wszystkie te wydatki mogą zostać dotknięte skutkami wielkiej zmiany przygotowywanej w Unii Europejskiej.",
-    "meta_description": "Tankowanie samochodu, ogrzewanie mieszkania, zakupy w sklepie, dostawa towarów do domu.",
-    "keywords": "Mazowieckie, Nadchodzi, finansowy, wstrząs, odczuć, niemal, każdy",
-    "thumbnail_url": "https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-17.jpg",
-    "published_iso": "2026-11-22T20:41:43+01:00",
-    "updated_iso": "2026-11-22T20:41:43+01:00",
-    "display_date": "22.11.2026, 20:41",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Mazowieckie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Warszawa w Pigułce"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Warszawa w Pigułce)",
-        "paragraphs": [
-          "Tankowanie samochodu, ogrzewanie mieszkania, zakupy w sklepie, dostawa towarów do domu. Wszystkie te wydatki mogą zostać dotknięte skutkami wielkiej zmiany przygotowywanej w Unii Europejskiej. Chodzi o system ETS2, który obejmie emisje związane ze spalaniem paliw w budynkach, transporcie drogowym i wybranych sektorach gospodarki.",
-          "Jego pełne uruchomienie zaplanowano na 2028 rok. Największe obawy budzi możliwość przeniesienia kosztów zakupu uprawnień do emisji na klientów. Oznacza to, że dodatkowe obciążenia mogą pojawić się nie jako osobny podatek na rachunku, lecz w cenach codziennych produktów i usług.",
-          "Skutki mogą odczuć również osoby, które nie posiadają samochodu ani pieca gazowego. Polacy od kilku lat zmagają się ze zmieniającymi się kosztami życia. Ceny energii, ogrzewania, żywności i usług są istotnym elementem wydatków milionów gospodarstw domowych.",
-          "Tymczasem w perspektywie najbliższych lat europejski system rozliczania emisji zostanie rozszerzony na kolejne sektory gospodarki. Nie chodzi o projekt, który dopiero ktoś zaproponował. Nie oznacza to jednak, że właściciel każdego mieszkania będzie musiał samodzielnie kupować uprawnienia do emisji.",
-          "Nie oznacza to, że każde gospodarstwo domowe w Polsce automatycznie otrzyma określoną kwotę rekompensaty. [Źródło: Warszawa w Pigułce]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Warszawa w Pigułce",
-        "angle": "Relacja wiodąca",
-        "summary": "Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak",
-        "url": "https://warszawawpigulce.pl/nadchodzi-finansowy-wstrzas-ktory-moze-odczuc-niemal-kazdy-polak/"
-      }
-    ],
-    "sources": [
-      "Warszawa w Pigułce"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Kierowcy i pasażerowie",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak?",
-        "a": "Chodzi o system ETS2, który obejmie emisje związane ze spalaniem paliw w budynkach, transporcie drogowym i wybranych sektorach gospodarki."
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Jego pełne uruchomienie zaplanowano na 2028 rok."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
       }
     ]
   },
@@ -1765,7 +1960,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "24 redakcji"
+        "val": "23 redakcji"
       },
       {
         "label": "Kategoria",
@@ -1777,20 +1972,20 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (24 źródeł)"
+        "val": "Potwierdzone (23 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (24 redakcji)",
+        "heading": "Ustalenia wspólne (23 redakcji)",
         "paragraphs": [
-          "We wszystkich trzech miejscach upadku obiektów latających w Nowym Lipowcu (Lubelskie), Rudniku i Mołodyczu (Podkarpackie) znaleziono szczątki rosyjskich pocisków manewrujących Ch-101 – podała w niedzielę Prokuratura Okręgowa w Lublinie na postawie wstępnych ustaleń. [Źródło: Bankier.pl, Niezależna.pl, TVP.info, TVP3 Lublin, Rzeszow-News.pl, Radio PiK, TVN24, Kresy.pl, Polsat News, Dziennik.pl, Lublin112.pl, Radio Kraków, Radio Zachód, Interia Wydarzenia]",
+          "We wszystkich trzech miejscach upadku obiektów latających w Nowym Lipowcu (Lubelskie), Rudniku i Mołodyczu (Podkarpackie) znaleziono szczątki rosyjskich pocisków manewrujących Ch-101 – podała w niedzielę Prokuratura Okręgowa w Lublinie na postawie wstępnych ustaleń. [Źródło: Bankier.pl, Niezależna.pl, TVP.info, TVP3 Lublin, Rzeszow-News.pl, Radio PiK, TVN24, Kresy.pl, Polsat News, Dziennik.pl, Lublin112.pl, Radio Kraków, Radio Zachód]",
           "Niezidentyfikowane obiekty latające spadły w piątek w miejscowościach: Nowy Lipowiec (pow. biłgorajski, woj. lubelskie), Rudnik (pow. niżański, woj. podkarpackie), Mołodycz (pow. jarosławski, woj. podkarpackie). [Źródło: Bankier.pl, Niezależna.pl, TVP.info, TVP3 Lublin, Rzeszow-News.pl, Radio PiK, TVN24, Kresy.pl, Dziennik.pl, Lublin112.pl, Radio Kraków, Radio Zachód]",
           "Okoliczności zdarzeń bada prokuratura i Żandarmeria Wojskowa.„Na podstawie dotychczas przeprowadzonych oględzin (...) ustalono, że we wszystkich trzech lokalizacjach – tj. w Nowym Lipowcu (pow. biłgorajski), Rudniku (pow. niżański) oraz Mołodyczu (pow. jarosławski) – ujawniono szczątki pocisków manewrujących Ch-101” – podała lubelska prokuratura. [Źródło: Bankier.pl, Niezależna.pl, TVP.info, Radio PiK, TVN24, Kresy.pl, Lublin112.pl, Radio Kraków, Radio Zachód]",
           "W działania zaangażowani są prokuratorzy wojskowi z Prokuratury Okręgowej w Lublinie oraz wojskowych działów Prokuratur Rejonowych w Lublinie i Rzeszowie. Czynności prowadzone są wspólnie z funkcjonariuszami Żandarmerii Wojskowej. Rutte o rosyjskich rakietach w Polsce: „To nie jest terytorium artykułu 5. [Źródło: Bankier.pl, Niezależna.pl, TVP.info, TVP3 Lublin, Rzeszow-News.pl, InfoSecurity24, Puls Biznesu, Polsat News, Wyborcza.pl, Rzeczpospolita, Defence24]",
           "Prokuratura Okręgowa w Lublinie nie czekała z ujawnieniem najnowszych ustaleń śledztwa do poniedziałku, jak wstępnie zapowiadała i uchyliła rąbka tajemnicy w niedzielne popołudnie. Natomiast trzeci obiekt latający spadł na niezabudowanym terenie w Mołodyczu (pow. jarosławski, woj. podkarpackie), ok. 280 m od domku letniskowego, w którym nikogo nie było. [Źródło: Niezależna.pl, TVP.info, TVP3 Lublin, Rzeszow-News.pl, Radio PiK, TVN24, Kresy.pl, Dziennik.pl, Lublin112.pl]",
-          "Wcześniej informowano o dwóch pociskach i jednym dronie. Obiekty wleciały do Polski podczas porannego rosyjskiego ataku na Ukrainę. [Źródło: TVP.info, Radio PiK, TVN24, Kresy.pl, Polsat News, Dziennik.pl, Lublin112.pl, Interia Wydarzenia]"
+          "Wcześniej informowano o dwóch pociskach i jednym dronie. Obiekty wleciały do Polski podczas porannego rosyjskiego ataku na Ukrainę. [Źródło: TVP.info, Radio PiK, TVN24, Kresy.pl, Polsat News, Dziennik.pl, Lublin112.pl]"
         ]
       },
       {
@@ -1831,7 +2026,7 @@
         "summary": "Wszystkie obiekty, które spadły w Polsce, były rosyjskimi rakietami",
         "url": "https://www.tvp.info/96621857/rosyjskie-rakiety-nad-polska-nowe-ustalenia-sledczych-sledczy-ustalili-trzy-rosyjskie-rakiety-spadly-w-polsce",
         "focus": "Wyróżnia własne wątki i pojęcia: Nikt, poszkodowany.",
-        "omits": "Pomija kontekst (pociski, rakiety, służby) rozwijany w Bankier.pl, Rzeszow-News.pl."
+        "omits": "Pomija kontekst (rakiety, pociski, służby) rozwijany w Niezależna.pl, Rzeszow-News.pl."
       },
       {
         "outlet": "TVP3 Lublin",
@@ -1863,7 +2058,7 @@
         "summary": "Rosyjskie obiekty naruszyły polską przestrzeń powietrzną. Służby i wojsko działały przez całą noc",
         "url": "https://infosecurity24.pl/bezpieczenstwo-wewnetrzne/rosyjskie-obiekty-naruszyly-polska-przestrzen-powietrzna-sluzby-i-wojsko-dzialaly-przez-cala-noc",
         "focus": "Wyróżnia własne wątki i pojęcia: wojsko, działały.",
-        "omits": "Pomija kontekst (latających, spadły, znaleziono) rozwijany w Bankier.pl, Niezależna.pl."
+        "omits": "Pomija kontekst (spadły, latających, znaleziono) rozwijany w Bankier.pl, Niezależna.pl."
       },
       {
         "outlet": "Puls Biznesu",
@@ -1886,7 +2081,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Prokuratura poinformowała, jakie rakiety spadły we wschodniej Polsce",
         "url": "https://tvn24.pl/polska/prokuratura-podala-jakie-rakiety-spadly-we-wschodniej-polsce-nowe-informacje-st9352226?source=rss",
-        "focus": "Wyróżnia własne wątki i pojęcia: poinformowała, wschodniej.",
+        "focus": "Wyróżnia własne wątki i pojęcia: wschodniej.",
         "omits": "Pomija kontekst (terytorium, działania, Czynności) rozwijany w Bankier.pl, Niezależna.pl."
       },
       {
@@ -1943,7 +2138,7 @@
         "summary": "Mark Rutte o rosyjskich obiektach w Polsce: Nie do przyjęcia",
         "url": "https://wyborcza.pl/7,75399,33144708,mark-rutte-o-rosyjskich-obiektach-w-polsce-nie-do-przyjecia.html",
         "focus": "Wyróżnia własne wątki i pojęcia: Mark, obiektach.",
-        "omits": "Pomija kontekst (obiekty, latających, spadły) rozwijany w Bankier.pl, Niezależna.pl."
+        "omits": "Pomija kontekst (obiekty, spadły, latających) rozwijany w Bankier.pl, Niezależna.pl."
       },
       {
         "outlet": "GazetaPrawna.pl (DGP)",
@@ -1975,7 +2170,7 @@
         "summary": "Rada NATO zbierze się ws. rosyjskich rakiet. „Będziemy bronić każdego centymetra Polski”",
         "url": "https://www.rp.pl/polityka/art45523411-rada-nato-zbierze-sie-ws-rosyjskich-rakiet-bedziemy-bronic-kazdego-centymetra-polski",
         "focus": "Wyróżnia własne wątki i pojęcia: Rada, zbierze, Będziemy.",
-        "omits": "Pomija kontekst (obiekty, latających, spadły) rozwijany w Bankier.pl, Niezależna.pl."
+        "omits": "Pomija kontekst (obiekty, spadły, latających) rozwijany w Bankier.pl, Niezależna.pl."
       },
       {
         "outlet": "Defence24",
@@ -1983,23 +2178,15 @@
         "summary": "Rutte w Warszawie: NATO będzie bronić każdego centymetra polskiego terytorium",
         "url": "https://defence24.pl/polityka-obronna/rutte-w-warszawie-nato-bedzie-bronic-kazdego-centymetra-polskiego-terytorium",
         "focus": "Wyróżnia własne wątki i pojęcia: Warszawie, polskiego.",
-        "omits": "Pomija kontekst (obiekty, latających, spadły) rozwijany w Bankier.pl, Niezależna.pl."
+        "omits": "Pomija kontekst (obiekty, spadły, latających) rozwijany w Bankier.pl, Niezależna.pl."
       },
       {
         "outlet": "Radio Zachód",
         "angle": "Doniesienie regionalne",
         "summary": "Prokuratura ustaliła pochodzenie obiektów, które naruszyły polską przestrzeń powietrzną",
         "url": "https://zachod.pl/1594579/prokuratura-ustalila-pochodzenie-obiektow-ktore-naruszyly-polska-przestrzen-powietrzna/",
-        "focus": "Wyróżnia własne wątki i pojęcia: ustaliła, pochodzenie, czasowo.",
+        "focus": "Wyróżnia własne wątki i pojęcia: ustaliła, pochodzenie, rzecznik.",
         "omits": "Pomija kontekst (terytorium, Rutte, funkcjonariuszami) rozwijany w Bankier.pl, Niezależna.pl."
-      },
-      {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Zwrot w sprawie obiektów, które wtargnęły do Polski. Nowe informacje",
-        "url": "https://wydarzenia.interia.pl/kraj/news-zwrot-w-sprawie-obiektow-ktore-wtargnely-do-polski-nowe-info,nId,23577224",
-        "focus": "Wyróżnia własne wątki i pojęcia: Zwrot, wtargnęły.",
-        "omits": "Pomija kontekst (Żandarmeria, Wojskowa, spadły) rozwijany w Bankier.pl, Niezależna.pl."
       }
     ],
     "sources": [
@@ -2011,7 +2198,6 @@
       "Gazeta.pl",
       "GazetaPrawna.pl (DGP)",
       "InfoSecurity24",
-      "Interia Wydarzenia",
       "Kresy.pl",
       "Lublin112.pl",
       "Niezależna.pl",
@@ -2232,7 +2418,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "6 redakcji"
+        "val": "25 redakcji"
       },
       {
         "label": "Kategoria",
@@ -2244,28 +2430,37 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
+        "val": "Potwierdzone (25 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (6 redakcji)",
+        "heading": "Ustalenia wspólne (25 redakcji)",
         "paragraphs": [
-          "W piątek rano trzy obiekty naruszyły polską przestrzeń powietrzną. Według ustaleń służb, były to dwie rakiety oraz dron. Ich upadek na ziemię nie wyrządził strat. [Źródło: CyberDefence24, o2.pl, RadioMaryja.pl, Gazeta.pl]",
-          "Jak informowaliśmy na naszych łamach, już po pierwszych komunikatach w stan alarmowy postawiono ośrodki przeciwdziałania dezinformacji. Wzmocniono w ten sposób monitoring cyberprzestrzeni oraz infosfery. Wśród podmiotów objętych stanem alarmowym znalazło się Centrum Walki z Dezinformacją (CWD). [Źródło: CyberDefence24, Business Insider PL, o2.pl, RadioMaryja.pl, Wyborcza.pl]",
-          "Jak wynika z opublikowanego w godzinach popołudniowych komunikatu, po naruszeniu polskiej przestrzeni powietrznej w sieci pojawiły się narracje dezinformacyjne związane z incydentami. W rozpowszechnianie treści o charakterze dezinformacyjnym są zaangażowane konta znane ze stałego szerzenia przekazów antyukraińskich i antyrządowych” – wyjaśniło Centrum Walki z Dezinformacją. [Źródło: CyberDefence24, Business Insider PL, o2.pl, RadioMaryja.pl, Wyborcza.pl]",
-          "Inny z wicepremierów, minister spraw zagranicznych, Radosław Sikorski, ambasadora Rosji na razie nie wzywa. Spadły w Nowym Lipowcu na Lubelszczyźnie oraz w Rudniku nad Sanem i Mołodyczu na Podkarpaciu. [Źródło: Business Insider PL, RadioMaryja.pl, o2.pl, Gazeta.pl]"
+          "W piątek rano trzy obiekty naruszyły polską przestrzeń powietrzną. Według ustaleń służb, były to dwie rakiety oraz dron. Ich upadek na ziemię nie wyrządził strat. [Źródło: CyberDefence24, o2.pl, RadioMaryja.pl, Gazeta.pl, Lublin112.pl, Rzeszow-News.pl, TVP3 Kielce]",
+          "Jak informowaliśmy na naszych łamach, już po pierwszych komunikatach w stan alarmowy postawiono ośrodki przeciwdziałania dezinformacji. Wzmocniono w ten sposób monitoring cyberprzestrzeni oraz infosfery. Wśród podmiotów objętych stanem alarmowym znalazło się Centrum Walki z Dezinformacją (CWD). [Źródło: CyberDefence24, Business Insider PL, o2.pl, RadioMaryja.pl, Wyborcza.pl, Lublin112.pl, Polsat News, GazetaPrawna.pl (DGP), Rzeszow-News.pl, TVP3 Bydgoszcz, Rzeczpospolita, Defence24, Bankier.pl, Interia Wydarzenia, Radio PiK, Dziennik.pl, Radio Rzeszów]",
+          "Jak wynika z opublikowanego w godzinach popołudniowych komunikatu, po naruszeniu polskiej przestrzeni powietrznej w sieci pojawiły się narracje dezinformacyjne związane z incydentami. W rozpowszechnianie treści o charakterze dezinformacyjnym są zaangażowane konta znane ze stałego szerzenia przekazów antyukraińskich i antyrządowych” – wyjaśniło Centrum Walki z Dezinformacją. [Źródło: CyberDefence24, Business Insider PL, o2.pl, RadioMaryja.pl, Wyborcza.pl, Polsat News, Rzeszow-News.pl]",
+          "Inny z wicepremierów, minister spraw zagranicznych, Radosław Sikorski, ambasadora Rosji na razie nie wzywa. Spadły w Nowym Lipowcu na Lubelszczyźnie oraz w Rudniku nad Sanem i Mołodyczu na Podkarpaciu. [Źródło: Business Insider PL, o2.pl, RadioMaryja.pl, Gazeta.pl, Polsat News, TVP3 Kielce]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "— To jest rosyjska strategia, którą nazywam \"tysiącem ukłuć\".",
-          "Trwa ustalanie, jakie dokładnie obiekty spadły na terytorium Polski. [Źródło: Business Insider PL]",
+          "Trwa ustalanie, jakie dokładnie obiekty spadły na terytorium Polski. W sieci publikowano między innymi materiały podważające skuteczność polskiej obrony powietrznej, a także zdjęcia wygenerowane przez sztuczną inteligencję. [Źródło: Business Insider PL]",
           "Zdaniem eksperta, był to pokaz siły i ostrzeżenie, że Rosja może posunąć się do wszystkiego. Na szczęście nikt nie ucierpiał. [Źródło: o2.pl]",
-          "Wyborcza.pl później ustaliła jednak, że na Lubelszczyznę i Podkarpacie spadły trzy rosyjskie pociski manewrujące. Gawkowski nie wyklucza zatrzymań Kiedy służby ustalały szczegóły, w sieci zaczęły pojawiać się teorie spiskowe i fałszywe wiadomości na temat zdarzenia. Minister cyfryzacji, Krzysztof Gawkowski, pytany, czy służby przeprowadzą zatrzymania w związku z dezinformacją, nie wykluczył takiego scenariusza. [Źródło: Gazeta.pl]",
-          "W działania zaangażowani są prokuratorzy wojskowi z Prokuratury Okręgowej w Lublinie oraz wojskowych działów Prokuratur Rejonowych w Lublinie i Rzeszowie. Czynności prowadzone są wspólnie z funkcjonariuszami Żandarmerii Wojskowej. [Źródło: Wyborcza.pl]"
+          "Wyborcza.pl później ustaliła jednak, że na Lubelszczyznę i Podkarpacie spadły trzy rosyjskie pociski manewrujące. [Źródło: Gazeta.pl]",
+          "W działania zaangażowani są prokuratorzy wojskowi z Prokuratury Okręgowej w Lublinie oraz wojskowych działów Prokuratur Rejonowych w Lublinie i Rzeszowie. Czynności prowadzone są wspólnie z funkcjonariuszami Żandarmerii Wojskowej. [Źródło: Wyborcza.pl]",
+          "Pojawiały się również teorie spiskowe, według których Ukraina miała celowo przepuszczać rosyjskie pociski w kierunku Polski. [Źródło: Lublin112.pl]",
+          "Tym razem reakcja państwa – być może – nie ograniczy się jednak do ogólnych ostrzeżeń. Po blisko czterech latach defensywnej postawy władz, punktowanej przez dziennikarzy i badaczy mediów społecznościowych, upadek rosyjskich rakiet na Podkarpaciu, może przynieść realny zwrot w walce z rosyjską wojną informacyjną. Bezpośrednim tłem tych zapowiedzi jest incydent z nocy z czwartku na piątek 20 listopada. [Źródło: Rzeszow-News.pl]",
+          "Nie potwierdzono dotąd, czy baza wojskowa została trafiona ani czy poniósł straty sprzęt lub personel. [Źródło: WP Wiadomości]",
+          "W sobotę 21 listopada około godz. 18.00 czasu polskiego w Królewcu i innych miastach obwodu zawyły syreny. Na ten moment nie potwierdzono, że powodem alarmu były ukraińskie drony. [Źródło: Defence24]",
+          "Czasowo ograniczono również pracę lotniska. [Źródło: Kresy.pl]",
+          "— To jest rosyjska strategia, którą nazywam \"tysiącem ukłuć\". [Źródło: Bankier.pl]",
+          "Ukraiński analityk uważa, że cała sprawa może być rosyjską prowokacją. [Źródło: Niezależna.pl]",
+          "Dodał, że odnotowano liczne rosyjskie fałszywe przekazy dezinformacyjne. [Źródło: Dziennik.pl]",
+          "Zaznaczył, że jego kraj nie zezwolił na wykorzystanie swojej przestrzeni powietrznej do nalotów na obiekty w Rosji. Jak przekazał Olszewski, nadal rozpowszechniane są wcześniej zidentyfikowane fałszywe narracje. Jedna z nich sugeruje, że Polska i NATO mogą zostać wciągnięte w wojnę z Rosją. [Źródło: Radio Rzeszów]",
+          "Według szefa MON w dwóch przypadkach mowa jest o rakietach, a w trzecim najprawdopodobniej o dronie odrzutowym. Rakieta Ch-101 w Nowym Lipowcu która spadła około 200–300 metrów od zabudowań. Najnowsze informacje przekazano podczas konferencji prasowej z udziałem szefa MON oraz Dowódcy Operacyjnego Rodzajów Sił Zbrojnych gen. broni pil. [Źródło: TVP3 Kielce]"
         ]
       }
     ],
@@ -2276,15 +2471,15 @@
         "summary": "Fala dezinformacji po naruszeniu polskiej przestrzeni powietrznej",
         "url": "https://cyberdefence24.pl/cyberbezpieczenstwo/dezinformacja/fala-dezinformacji-po-naruszeniu-polskiej-przestrzeni-powietrznej",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (analiza sektorowa).",
-        "omits": "Pomija kontekst (Lubelszczyźnie, wicepremierów, zagranicznych) rozwijany w Business Insider PL, o2.pl."
+        "omits": "Pomija kontekst (królewiecki, obwodzie, Rosji) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
       },
       {
         "outlet": "Business Insider PL",
         "angle": "Perspektywa rynkowa",
         "summary": "NATO reaguje na naruszenie polskiej przestrzeni powietrznej",
         "url": "https://businessinsider.com.pl/wiadomosci/nato-reaguje-na-naruszenie-polskiej-przestrzeni-powietrznej-jest-komunikat/m87hpje",
-        "focus": "Wyróżnia własne wątki i pojęcia: reaguje, strategia, nazywam.",
-        "omits": "Pomija kontekst (wtargnięcia, naruszyły, wyrządził) rozwijany w CyberDefence24, o2.pl."
+        "focus": "Wyróżnia własne wątki i pojęcia: reaguje, Trwa, ustalanie.",
+        "omits": "Pomija kontekst (królewiecki, obwodzie, rosyjskich) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
       },
       {
         "outlet": "o2.pl",
@@ -2292,15 +2487,15 @@
         "summary": "Ekspert o naruszeniu przestrzeni powietrznej Polski. \"Powinna być stanowcza reakcja\"",
         "url": "https://www.o2.pl/informacje/ekspert-o-naruszeniu-przestrzeni-powietrznej-polski-powinna-byc-stanowcza-reakcja-7353051548694560a",
         "focus": "Wyróżnia własne wątki i pojęcia: Ekspert, Powinna, stanowcza.",
-        "omits": "Pomija kontekst (Gawkowski, zatrzymań, wyklucza) rozwijany w Gazeta.pl, Wyborcza.pl."
+        "omits": "Pomija kontekst (królewiecki, obwodzie, rosyjskich) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
       },
       {
         "outlet": "RadioMaryja.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "NATO będzie rozmawiać o naruszeniu polskiej przestrzeni powietrznej",
         "url": "https://www.radiomaryja.pl/informacje/nato-bedzie-rozmawiac-o-naruszeniu-polskiej-przestrzeni-powietrznej/",
-        "focus": "Wyróżnia własne wątki i pojęcia: rozmawiać, Będziemy, nasze.",
-        "omits": "Pomija kontekst (Gawkowski, zatrzymań, wyklucza) rozwijany w Gazeta.pl, Wyborcza.pl."
+        "focus": "Wyróżnia własne wątki i pojęcia: rozmawiać.",
+        "omits": "Pomija kontekst (królewiecki, obwodzie, rosyjskich) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
       },
       {
         "outlet": "Gazeta.pl",
@@ -2308,39 +2503,222 @@
         "summary": "Fala dezinformacji po wtargnięciu rosyjskich rakiet. Gawkowski nie wyklucza zatrzymań",
         "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33145114,fala-dezinformacji-po-wtargnieciu-rosyjskich-rakiet-gawkowski.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
         "focus": "Wyróżnia własne wątki i pojęcia: Wyborcza, później, ustaliła.",
-        "omits": "Pomija kontekst (rozpowszechnianie, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+        "omits": "Pomija kontekst (przeciwdziałania, cyberprzestrzeni, informowaliśmy) rozwijany w CyberDefence24, Business Insider PL."
       },
       {
         "outlet": "Wyborcza.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Dezinformacja po wtargnięciu rakiet. Gawkowski nie wyklucza zatrzymań",
         "url": "https://wyborcza.pl/7,75398,33145186,dezinformacja-po-wtargnieciu-rakiet-gawkowski-nie-wyklucza.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: działania, prokuratorzy, wojskowi.",
-        "omits": "Pomija kontekst (Rosyjskiej, obiekty, Lubelszczyźnie) rozwijany w CyberDefence24, Business Insider PL."
+        "focus": "Wyróżnia własne wątki i pojęcia: działania, prokuratorzy, Okręgowej.",
+        "omits": "Pomija kontekst (królewiecki, obwodzie, obiekty) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
+      },
+      {
+        "outlet": "Lublin112.pl",
+        "angle": "Doniesienie regionalne",
+        "summary": "Służby sprawdzają wpisy o rosyjskich rakietach. Osoby szerzące dezinformację mogą zostać zatrzymane",
+        "url": "https://www.lublin112.pl/sluzby-sprawdzaja-wpisy-o-rosyjskich-rakietach-osoby-szerzace-dezinformacje-moga-zostac-zatrzymane/",
+        "focus": "Wyróżnia własne wątki i pojęcia: Służby, sprawdzają, wpisy.",
+        "omits": "Pomija kontekst (królewiecki, przekazów, polskiej) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
+      },
+      {
+        "outlet": "Polsat News",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Możliwe zatrzymania ws. dezinformacji po naruszeniu polskiej przestrzeni powietrznej",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-22/mozliwe-zatrzymania-ws-dezinformacji-po-naruszeniu-polskiej-przestrzeni-powietrznej/",
+        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
+        "omits": "Pomija kontekst (królewiecki, obwodzie, obiekty) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
+      },
+      {
+        "outlet": "GazetaPrawna.pl (DGP)",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Doniesienia o ataku na obwód królewiecki. Polska monitoruje rosyjską dezinformację",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11350014,doniesienia-o-ataku-na-obwod-krolewiecki-polska-monitoruje-rosyjska-dezinformacje.html",
+        "focus": "Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Rzeszow-News.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Możliwe zatrzymania za dezinformację po zdarzeniach na Podkarpaciu. Koniec bierności rządu w Internecie?",
+        "url": "https://rzeszow-news.pl/dezinformacja-podkarpacie-zatrzymania/",
+        "focus": "Wyróżnia własne wątki i pojęcia: zdarzeniach, Koniec, bierności.",
+        "omits": "Pomija kontekst (królewiecki, obwodzie, Rosji) rozwijany w GazetaPrawna.pl (DGP), TVP3 Bydgoszcz."
+      },
+      {
+        "outlet": "TVP3 Bydgoszcz",
+        "angle": "Doniesienie regionalne",
+        "summary": "Wiceminister cyfryzacji: „Informacje w związku z doniesieniami o ukraińskim ataku na obwód królewiecki są monitorowane\"",
+        "url": "https://bydgoszcz.tvp.pl/krolewiec-atak-centrum-walki-z-dezinformacja-monitoruje-przestrzen-informacyjna-pawel-olszewski-bydgoszcz,96620506",
+        "focus": "Wyróżnia własne wątki i pojęcia: związku.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Alarmy w obwodzie królewieckim. Miało dojść do eksplozji",
+        "url": "https://www.rp.pl/konflikty-zbrojne/art45523701-alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji",
+        "focus": "Wyróżnia własne wątki i pojęcia: Miało, dojść.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Alarmy w obwodzie królewieckim. Są nieoficjalne informacje o eksplozjach",
+        "url": "https://wiadomosci.onet.pl/swiat/alarmy-w-obwodzie-krolewieckim-sa-nieoficjalne-informacje-o-eksplozjach/41plllw",
+        "focus": "Wyróżnia własne wątki i pojęcia: nieoficjalne.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Eksplozje w obwodzie królewieckim. Doniesienia o dronach",
+        "url": "https://wiadomosci.wp.pl/eksplozje-w-obwodzie-krolewieckim-doniesienia-o-dronach-7353516617369632a",
+        "focus": "Wyróżnia własne wątki i pojęcia: dronach, dotąd, baza.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Defence24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Syreny w obwodzie królewieckim. Rosjanie mówią o „podejrzanym obiekcie\" od strony Litwy",
+        "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/syreny-w-obwodzie-krolewieckim-rosjanie-mowia-o-podejrzanym-obiekcie-od-strony-litwy",
+        "focus": "Wyróżnia własne wątki i pojęcia: Rosjanie, mówią, podejrzanym.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Kresy.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Alarm powietrzny w obwodzie królewieckim. Informacje o eksplozjach [+VIDEO]",
+        "url": "https://kresy.pl/wydarzenia/alarm-powietrzny-w-obwodzie-krolewieckim-informacje-o-eksplozjach-video/",
+        "focus": "Wyróżnia własne wątki i pojęcia: VIDEO, Czasowo, pracę.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Bankier.pl",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Alarmy i eksplozje przy rosyjskiej bazie Floty Bałtyckiej. Doniesienia z obwodu królewieckiego",
+        "url": "https://www.bankier.pl/wiadomosc/Alarmy-i-eksplozje-przy-rosyjskiej-bazie-Floty-Baltyckiej-Doniesienia-z-obwodu-krolewieckiego-9233062.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
+        "focus": "Wyróżnia własne wątki i pojęcia: przy, bazie, Floty.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Alarmy i eksplozje w obwodzie królewieckim. Sprzeczne doniesienia z Rosji",
+        "url": "https://wydarzenia.interia.pl/zagranica/news-alarmy-i-eksplozje-w-obwodzie-krolewieckim-sprzeczne-doniesi,nId,23577085",
+        "focus": "Wyróżnia własne wątki i pojęcia: Sprzeczne.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Niezależna.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Alarm powietrzny w obwodzie królewieckim Rosji. Analityk: To może być prowokacja Kremla",
+        "url": "https://niezalezna.pl/swiat/alarm-powietrzny-w-obwodzie-krolewieckim-rosji-analityk-to-moze-byc-prowokacja-kremla/584701",
+        "focus": "Wyróżnia własne wątki i pojęcia: Analityk, prowokacja, Kremla.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "naTemat.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Syreny zawyły w całym obwodzie królewieckim. Rosja wskazała palcem na Litwę",
+        "url": "https://natemat.pl/676504,syreny-zawyly-w-calym-obwodzie-krolewieckim-rosja-wskazala-palcem-na-litwe",
+        "focus": "Wyróżnia własne wątki i pojęcia: całym, palcem, Litwę.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Radio PiK",
+        "angle": "Doniesienie regionalne",
+        "summary": "Wiceminister cyfryzacji: Rosyjska dezinformacja związana z ukraińskim atakiem na obwód królewiecki",
+        "url": "https://www.radiopik.pl/40,143927,wiceminister-cyfryzacji-rosyjska-dezinformacja-z",
+        "focus": "Wyróżnia własne wątki i pojęcia: atakiem.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, przekazów) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Ostrzeżenie po doniesieniach o ataku w obwodzie królewieckim. \"Liczne rosyjskie przekazy dezinformacyjne”",
+        "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11350035,ostrzezenie-po-doniesieniach-o-ataku-w-obwodzie-krolewieckim-liczne-rosyjskie-przekazy-dezinformacyjne.html",
+        "focus": "Wyróżnia własne wątki i pojęcia: Liczne, Dodał, odnotowano.",
+        "omits": "Pomija kontekst (powietrznej, przestrzeni, polskiej) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Radio Rzeszów",
+        "angle": "Doniesienie regionalne",
+        "summary": "Fala dezinformacji po doniesieniach o ataku na obwód królewiecki",
+        "url": "https://radio.rzeszow.pl/376332/fala-dezinformacji-po-doniesieniach-o-ataku-na-obwod-krolewiecki/",
+        "focus": "Wyróżnia własne wątki i pojęcia: Zaznaczył, jego, kraj.",
+        "omits": "Pomija kontekst (polskiej, obwodzie, rosyjskich) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "TVP3 Kielce",
+        "angle": "Doniesienie regionalne",
+        "summary": "Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań",
+        "url": "https://kielce.tvp.pl/96586060/trzy-obiekty-spadly-w-polsce-rakieta-ch-101-200-metrow-od-zabudowan",
+        "focus": "Wyróżnia własne wątki i pojęcia: Jeden, uderzył, metrów.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
+      },
+      {
+        "outlet": "Radio Kielce",
+        "angle": "Doniesienie regionalne",
+        "summary": "Szef MON: są trzy miejsca upadku obiektów. To dwie rakiety i dron",
+        "url": "https://radiokielce.pl/1459189/szef-mon-sa-trzy-miejsca-upadku-obiektow-to-dwie-rakiety-i-dron/",
+        "focus": "Wyróżnia własne wątki i pojęcia: Szef.",
+        "omits": "Pomija kontekst (dezinformacji, przeciwdziałania, cyberprzestrzeni) rozwijany w CyberDefence24, Business Insider PL."
       }
     ],
     "sources": [
+      "Bankier.pl",
       "Business Insider PL",
       "CyberDefence24",
+      "Defence24",
+      "Dziennik.pl",
       "Gazeta.pl",
+      "GazetaPrawna.pl (DGP)",
+      "Interia Wydarzenia",
+      "Kresy.pl",
+      "Lublin112.pl",
+      "Niezależna.pl",
+      "Onet Wiadomości",
+      "Polsat News",
+      "Radio Kielce",
+      "Radio PiK",
+      "Radio Rzeszów",
       "RadioMaryja.pl",
+      "Rzeczpospolita",
+      "Rzeszow-News.pl",
+      "TVP3 Bydgoszcz",
+      "TVP3 Kielce",
+      "WP Wiadomości",
       "Wyborcza.pl",
+      "naTemat.pl",
       "o2.pl"
     ],
     "corrections": [
       {
-        "claim_text": "Dopisano źródło: Gazeta.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33145114,fala-dezinformacji-po-wtargnieciu-rosyjskich-rakiet-gawkowski.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+        "claim_text": "Dopisano źródło: Lublin112.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.lublin112.pl/sluzby-sprawdzaja-wpisy-o-rosyjskich-rakietach-osoby-szerzace-dezinformacje-moga-zostac-zatrzymane/"
       },
       {
-        "claim_text": "Dopisano źródło: Wyborcza.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wyborcza.pl/7,75398,33145186,dezinformacja-po-wtargnieciu-rakiet-gawkowski-nie-wyklucza.html"
+        "claim_text": "Dopisano źródło: Polsat News (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.polsatnews.pl/wiadomosc/2026-11-22/mozliwe-zatrzymania-ws-dezinformacji-po-naruszeniu-polskiej-przestrzeni-powietrznej/"
+      },
+      {
+        "claim_text": "Dopisano źródło: GazetaPrawna.pl (DGP) (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11350014,doniesienia-o-ataku-na-obwod-krolewiecki-polska-monitoruje-rosyjska-dezinformacje.html"
+      },
+      {
+        "claim_text": "Dopisano źródło: Rzeszow-News.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://rzeszow-news.pl/dezinformacja-podkarpacie-zatrzymania/"
+      },
+      {
+        "claim_text": "Dopisano źródło: TVP3 Bydgoszcz (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://bydgoszcz.tvp.pl/krolewiec-atak-centrum-walki-z-dezinformacja-monitoruje-przestrzen-informacyjna-pawel-olszewski-bydgoszcz,96620506"
       }
     ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Wydarzenia krajowe",
-      "status": "Potwierdzone (6 źródeł)"
+      "status": "Potwierdzone (25 źródeł)"
     },
     "seo_faq": [
       {
@@ -2353,7 +2731,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (6 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (25 źródeł)."
       }
     ]
   },
@@ -2826,7 +3204,7 @@
         "angle": "Raport rynkowy",
         "summary": "Niemieckie czołgi miały przejechać przez Polskę. W ostatniej chwili zmieniono plany",
         "url": "https://www.bankier.pl/wiadomosc/Niemieckie-czolgi-mialy-przejechac-przez-Polske-W-ostatniej-chwili-zmieniono-plany-9233160.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: zmieniono.",
+        "focus": "Wyróżnia własne wątki i pojęcia: przejechać, zmieniono.",
         "omits": "Pomija wyliczenia (5 tys.) przytaczane przez TVP.info."
       },
       {
@@ -2859,7 +3237,7 @@
         "summary": "Niemcy nie chcieli drażnić Rosji. Czołgi wysłali koleją",
         "url": "https://www.tvp.info/96625012/niemcy-obawiali-sie-prowokacji-zmienili-przerzut-wojsk-bundeswehra-rosja-mogla-zle-odebrac-kolumny-czolgow",
         "focus": "Eksponuje dane (5 tys.) oraz wątki: chcieli, drażnić.",
-        "omits": "Pomija kontekst (ostatniej, chwili, przejechać) rozwijany w Bankier.pl, Interia Wydarzenia."
+        "omits": "Pomija kontekst (ostatniej, chwili, zapadła) rozwijany w Bankier.pl, Interia Wydarzenia."
       },
       {
         "outlet": "Polsat News",
@@ -3985,7 +4363,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "18 redakcji"
+        "val": "19 redakcji"
       },
       {
         "label": "Kategoria",
@@ -3997,15 +4375,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (18 źródeł)"
+        "val": "Potwierdzone (19 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (18 redakcji)",
+        "heading": "Ustalenia wspólne (19 redakcji)",
         "paragraphs": [
-          "Prezydent USA Donald Trump powtórzył w piątek, że uważa Władimira Putina za swojego przyjaciela i ma z nim fantastyczne relacje. Powiedział, że od dawna ma do czynienia z Putinem i podczas afery związanej z powiązaniami jego otoczenia z Rosją Putin był „bardzo miły”.- Uważam go za kogoś, z kim mam ma bardzo dobre relacje i to naprawdę bardzo dobre. [Źródło: WP Wiadomości, TVP.info, Rzeczpospolita, Polsat News, Puls Biznesu, Forsal.pl, Energetyka24, o2.pl, Interia Wydarzenia, Defence24, Onet Wiadomości, Radio Zachód, Business Insider PL, naTemat.pl, Dziennik.pl, Bankier.pl, Wyborcza.pl, Gazeta.pl]",
+          "Prezydent USA Donald Trump powtórzył w piątek, że uważa Władimira Putina za swojego przyjaciela i ma z nim fantastyczne relacje. Powiedział, że od dawna ma do czynienia z Putinem i podczas afery związanej z powiązaniami jego otoczenia z Rosją Putin był „bardzo miły”.- Uważam go za kogoś, z kim mam ma bardzo dobre relacje i to naprawdę bardzo dobre. [Źródło: WP Wiadomości, TVP.info, Rzeczpospolita, Polsat News, Puls Biznesu, Forsal.pl, Energetyka24, o2.pl, Interia Wydarzenia, Defence24, Onet Wiadomości, Radio Zachód, Business Insider PL, naTemat.pl, Dziennik.pl, Bankier.pl, Wyborcza.pl, TVN24, Gazeta.pl]",
           "Skonfrontowany z faktem, że Rosja przypuściła tuż po ich spotkaniu kolejny potężny atak na Ukrainę, Trump powiedział, że Putin bardzo chciałby zakończyć wojnę, ale jest to trudne, przede wszystkim ze względu na nienawiść między nim a prezydentem Ukrainy. [Źródło: WP Wiadomości, TVP.info, Rzeczpospolita, Polsat News, Puls Biznesu, Forsal.pl, Energetyka24, o2.pl, Interia Wydarzenia, Defence24, Onet Wiadomości, Radio Zachód, Business Insider PL, Dziennik.pl, Bankier.pl]",
           "Władimir Putin jasno wyraził chęć zakończenia wojny między Rosją a Ukrainą środkami dyplomatycznymi – powiedział w piątek prezydent USA Donald Trump. Wyjawił też, że Putin powiedział mu, że nie zaatakowałby Ukrainy, gdyby Trump był wówczas prezydentem. Mimo to, stwierdził że jest duża szansa na osiągnięcie porozumienia. [Źródło: WP Wiadomości, TVP.info, Rzeczpospolita, Puls Biznesu, Forsal.pl, Energetyka24, o2.pl, Interia Wydarzenia, Defence24, Radio Zachód, Bankier.pl]",
           "Został on jednak usunięty przez stronę amerykańską.„Sformułowania w tym punkcie nie były dobre i Stany Zjednoczone go usunęły. Wiceminister ogłosił też, że Polska zamierza poszerzyć swój arsenał obronny, dlatego oficjalnie wystąpiła do Stanów Zjednoczonych w sprawie kupna pocisków manewrujących Tomahawk o zasięgu ok. 1600 km. Dołączono do niej podpis: \"Mój przyjaciel\". [Źródło: WP Wiadomości, Polsat News, Onet Wiadomości, Dziennik.pl]",
@@ -4019,6 +4397,7 @@
           "Resort przekonuje, że sygnały z Pentagonu są jak najbardziej pozytywne. Rząd Donalda Tuska rozpoczął w tej sprawie grę z Karolem Nawrockim i wywiera presję, aby prezydent wykorzystał swoje kontakty w Białym Domu. [Źródło: Onet Wiadomości]",
           "Czy o przyszłości Ukrainy, Polski i całej Europy znów zdecydują wielkie mocarstwa, nie pytając zainteresowanych o zdanie? Jego wnioski są niepokojące. Za pokazem dyplomatycznej potęgi kryje się bowiem wizja świata, w którym silniejsi dyktują warunki słabszym. [Źródło: naTemat.pl]",
           "Nad zdjęciem widnieje napis: \"Mój przyjaciel\". [Źródło: Wyborcza.pl]",
+          "Opublikowano ją już po tym, jak w polską strefę powietrzną wtargnęły rosyjskie obiekty. [Źródło: TVN24]",
           "Ją też opatrzono podpisem \"Przyjaciele\". Wśród opublikowanych obrazków jest też zestawienie zdjęcia Józefa Stalina, Franklina Delano Roosevelta i Winstona Churchilla z konferencji teherańskiej oraz fotografii przedstawiającej Trumpa, Putina i Xi. Grafikę podpisano: \"Mocarstwa. [Źródło: Gazeta.pl]"
         ]
       }
@@ -4161,6 +4540,14 @@
         "omits": "Pomija wyliczenia (1600 km, 107 mld) przytaczane przez WP Wiadomości, Polsat News."
       },
       {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Trump z wymowną grafiką. \"Mój przyjaciel\"",
+        "url": "https://tvn24.pl/swiat/trump-z-wymowna-grafika-z-putinem-moj-przyjaciel-st9351305?source=rss",
+        "focus": "Wyróżnia własne wątki i pojęcia: wymowną, grafiką, strefę.",
+        "omits": "Pomija wyliczenia (1600 km, 107 mld) przytaczane przez WP Wiadomości, Polsat News."
+      },
+      {
         "outlet": "Gazeta.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Trump pokazał zdjęcie z Putinem. W podpisie tylko dwa słowa",
@@ -4183,6 +4570,7 @@
       "Puls Biznesu",
       "Radio Zachód",
       "Rzeczpospolita",
+      "TVN24",
       "TVP.info",
       "WP Wiadomości",
       "Wyborcza.pl",
@@ -6007,13 +6395,13 @@
     "updated_iso": "2026-11-22T15:42:34+01:00",
     "display_date": "22.11.2026, 15:42",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -6025,15 +6413,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "W niedzielę w Ełku 38-letni mężczyzna groził przechodniom nożem, spowodował kolizję, a następnie odjechał przejętym samochodem – podaje \"Gazeta Olsztyńska\". Jego rajd zakończył się przebiciem barierek i upadkiem ze skarpy. Agresor został zatrzymany przez policję. [Źródło: WP Wiadomości, Onet Wiadomości]",
+          "W niedzielę w Ełku 38-letni mężczyzna groził przechodniom nożem, spowodował kolizję, a następnie odjechał przejętym samochodem – podaje \"Gazeta Olsztyńska\". Jego rajd zakończył się przebiciem barierek i upadkiem ze skarpy. Agresor został zatrzymany przez policję. [Źródło: WP Wiadomości, Onet Wiadomości, Interia Wydarzenia]",
           "Do serii niebezpiecznych incydentów doszło w niedzielę około godziny 11 w Ełku. Jak podaje \"Gazeta Olsztyńska\", 38-letni mieszkaniec miasta zachowywał się agresywnie wobec przypadkowych osób. Mężczyzna zaczepiał ludzi, zarówno na ulicach miasta, jak i w jednym z lokali gastronomicznych, i groził im użyciem noża. [Źródło: WP Wiadomości]",
           "Po zajściu 38-latek wsiadł do samochodu. [Źródło: WP Wiadomości]"
         ]
@@ -6041,7 +6429,8 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Następnie na ul. Mickiewicza, w pobliżu skrzyżowania z ul. Słowackiego, 38-latek uderzył samochodem w tył innego pojazdu. Nie ustalono jeszcze, do kogo należało auto, którym poruszał się wcześniej. Przebił barierki i spadł ze skarpy w Ełku. [Źródło: Onet Wiadomości]"
+          "Następnie na ul. Mickiewicza, w pobliżu skrzyżowania z ul. Słowackiego, 38-latek uderzył samochodem w tył innego pojazdu. Nie ustalono jeszcze, do kogo należało auto, którym poruszał się wcześniej. Przebił barierki i spadł ze skarpy w Ełku. [Źródło: Onet Wiadomości]",
+          "38-latek ukradł nóż z przypadkowego mieszkania, potem groził nim w lokalu gastronomicznym i przypadkowym uczestnikom ruchu. Mrożące krew w żyłach sceny rozegrały się w centrum Ełku. Ucieczka przed policją ostatecznie się nie powiodła. [Źródło: Interia Wydarzenia]"
         ]
       }
     ],
@@ -6060,14 +6449,28 @@
         "summary": "Groził nożem mieszkańcom Ełku. Autem przebił barierki i spadł ze skarpy",
         "url": "https://wiadomosci.onet.pl/olsztyn/38-latek-grozil-nozem-w-elku-wsiadl-do-auta-przebil-barierki-i-spadl-ze-skarpy/v81gsbt",
         "focus": "Wyróżnia własne wątki i pojęcia: przebił, barierki, spadł.",
-        "omits": "Pomija kontekst (gastronomicznych, niebezpiecznych, przypadkowych) rozwijany w WP Wiadomości."
+        "omits": "Pomija kontekst (gastronomicznych, przypadkowych, niebezpiecznych) rozwijany w WP Wiadomości, Interia Wydarzenia."
+      },
+      {
+        "outlet": "Interia Wydarzenia",
+        "angle": "Doniesienie regionalne",
+        "summary": "Z nożem w ręku groził mieszkańcom. Mrożące krew w żyłach sceny w Ełku",
+        "url": "https://wydarzenia.interia.pl/warminsko-mazurskie/news-z-nozem-w-reku-grozil-mieszkancom-mrozace-krew-w-zylach-scen,nId,23577354",
+        "focus": "Wyróżnia własne wątki i pojęcia: ręku, Mrożące, krew.",
+        "omits": "Pomija kontekst (autem, niebezpiecznych, skrzyżowania) rozwijany w WP Wiadomości, Onet Wiadomości."
       }
     ],
     "sources": [
+      "Interia Wydarzenia",
       "Onet Wiadomości",
       "WP Wiadomości"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: Interia Wydarzenia (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wydarzenia.interia.pl/warminsko-mazurskie/news-z-nozem-w-reku-grozil-mieszkancom-mrozace-krew-w-zylach-scen,nId,23577354"
+      }
+    ],
     "impact": {
       "audience": "Mieszkańcy Warmii i Mazur",
       "scope": "Sprawy lokalne i samorząd",
@@ -6107,7 +6510,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "14 redakcji"
+        "val": "16 redakcji"
       },
       {
         "label": "Kategoria",
@@ -6119,17 +6522,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (14 źródeł)"
+        "val": "Potwierdzone (16 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (14 redakcji)",
+        "heading": "Ustalenia wspólne (16 redakcji)",
         "paragraphs": [
           "Black Friday to dobra okazja, żeby uzupełnić domowy zestaw audio albo wymienić starszy sprzęt. Sonos obniżył ceny słuchawek, głośników, soundbarów i subwooferów. Największa oszczędność czeka na osoby zainteresowane kompletnym zestawem kina domowego. [Źródło: Telepolis.pl, RadioMaryja.pl, Bochnianin.pl]",
           "Promocja obejmuje między innymi słuchawki Sonos Ace. W ich przypadku obniżka wynosi aż 830 zł. Producent przecenił także głośniki przenośne Roam 2 i Move 2 oraz tegoroczną nowość – Sonos Play. Nie zapomniano o urządzeniach przeznaczonych do słuchania muzyki w domu. [Źródło: Telepolis.pl]",
-          "Wśród przecenionych modeli znalazły się Era 100 SL, Era 300 i Five. Można więc nabyć dwa takie same głośniki i stworzyć zestaw stereo bez konieczności płacenia standardowej ceny za drugi egzemplarz. W przypadku tego drugiego różnica względem wcześniejszej ceny wynosi 1100 zł. [Źródło: Telepolis.pl, Benchmark.pl]",
+          "Wśród przecenionych modeli znalazły się Era 100 SL, Era 300 i Five. Można więc nabyć dwa takie same głośniki i stworzyć zestaw stereo bez konieczności płacenia standardowej ceny za drugi egzemplarz. W przypadku tego drugiego różnica względem wcześniejszej ceny wynosi 1100 zł. [Źródło: Telepolis.pl, Benchmark.pl, Komputer Świat]",
           "Już za tydzień Black Friday, czyli wielkie zakupowe szaleństwo. [Źródło: TVP3 Gorzów, TVP3 Kielce, Biznes Interia]"
         ]
       },
@@ -6148,7 +6551,9 @@
           "W takiej atmosferze łatwo o nieprzemyślane zakupy. [Źródło: RadioMaryja.pl]",
           "W Polsce promocje są znacznie skromniejsze, często iluzoryczne i z każdym rokiem budzą coraz większą nieufność klientów. Eksperci wskazują, gdzie leży problem i jak szukać prawdziwych okazji. [Źródło: Biznes Interia]",
           "Konsumenci planujący skorzystać z tegorocznego Black Friday powinni się do niego wcześniej przygotować – uważa miejska rzeczniczka konsumentów w Szczecinie Marzena Nowowiejska-Wojciechowska. Radzi m.in., by sprawdzać ceny, które obowiązywały w ciągu ostatnich 30 dni, oraz firmy, w których planujemy zakupy. [Źródło: TVP3 Szczecin]",
-          "Od poniedziałku 23 do poniedziałku 30 listopada salon Expert Bochnia przy ul. Krzeczowskiej obniża o 20% ceny wszystkich drzwi i podłóg, które nie są objęte inną promocją. Pomiar jest bezpłatny, a dojazd do 30 km od Bochni gratis. transport i montaż przez naszą ekipę. [Źródło: Bochnianin.pl]"
+          "Od poniedziałku 23 do poniedziałku 30 listopada salon Expert Bochnia przy ul. Krzeczowskiej obniża o 20% ceny wszystkich drzwi i podłóg, które nie są objęte inną promocją. Pomiar jest bezpłatny, a dojazd do 30 km od Bochni gratis. transport i montaż przez naszą ekipę. [Źródło: Bochnianin.pl]",
+          "Polowanie na najlepsze okazje właśnie się zaczyna! W Media Expert ruszyły Black Days, a wraz z nimi obniżki na elektronikę i sprzęt do domu. [Źródło: Komputer Świat]",
+          "Na niektóre dni warto czekać cały rok... W piątek (27 listopada 2026) startuje tanie ogłaszanie! Od godz. 00:01 do 23:59 za wszystkie banery, pakiety ogłoszeń i pojedyncze ogłoszenia zapłacisz 40 procent mniej! [Źródło: PortEl.pl]"
         ]
       }
     ],
@@ -6174,7 +6579,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Black Friday: Polowanie na okazje trwa, chociaż sklepy oszukują na promocjach",
         "url": "https://www.rp.pl/handel/art45521911-black-friday-polowanie-na-okazje-trwa-chociaz-sklepy-oszukuja-na-promocjach",
-        "focus": "Wyróżnia własne wątki i pojęcia: Polowanie, trwa, chociaż.",
+        "focus": "Wyróżnia własne wątki i pojęcia: trwa, chociaż, oszukują.",
         "omits": "Pomija wyliczenia (1100 zł, 46 proc.) przytaczane przez Telepolis.pl, Benchmark.pl."
       },
       {
@@ -6214,7 +6619,7 @@
         "angle": "Kontekst technologiczny",
         "summary": "GeForce NOW w kuszącej promocji. Tańsze granie w chmurze na Black Friday",
         "url": "https://www.instalki.pl/news/gry/nvidia-geforce-now-promocja-na-granie-w-chmurze/",
-        "focus": "Wyróżnia własne wątki i pojęcia: GeForce, kuszącej, granie.",
+        "focus": "Wyróżnia własne wątki i pojęcia: GeForce, kuszącej, Tańsze.",
         "omits": "Pomija wyliczenia (1100 zł, 46 proc.) przytaczane przez Telepolis.pl, Benchmark.pl."
       },
       {
@@ -6222,7 +6627,7 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Godzina awarii podczas Black Friday kosztuje sklepy 4 miliony złotych. Jak uchronić e-commerce przed paraliżem?",
         "url": "https://mojafirma.infor.pl/biznes/7710119,godzina-awarii-podczas-black-friday-kosztuje-sklepy-4-miliony-zlotych-jak-uchronic-ecommerce-przed-paralizem.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Godzina, awarii, miliony.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Godzina, awarii, kosztuje.",
         "omits": "Pomija wyliczenia (1100 zł, 46 proc.) przytaczane przez Telepolis.pl, Benchmark.pl."
       },
       {
@@ -6262,7 +6667,23 @@
         "angle": "Relacja uzupełniająca",
         "summary": "🔸 Black Week w Expert Bochnia: −20% na drzwi i podłogi. Pięć decyzji, które warto podjąć przed zamówieniem",
         "url": "https://bochnianin.pl/164691/black-week-w-expert-bochnia-20-na-drzwi-i-podlogi-piec-decyzji-ktore-warto-podjac-przed-zamowieniem/",
-        "focus": "Eksponuje dane (20%, 30 km) oraz wątki: Expert, Bochnia.",
+        "focus": "Eksponuje dane (20%, 30 km) oraz wątki: Bochnia, drzwi.",
+        "omits": "Pomija wyliczenia (1100 zł, 46 proc.) przytaczane przez Telepolis.pl, Benchmark.pl."
+      },
+      {
+        "outlet": "Komputer Świat",
+        "angle": "Kontekst technologiczny",
+        "summary": "Black Days w Media Expert ruszyły z przytupem! Ten telewizor kupisz aż 1000 zł taniej",
+        "url": "https://www.komputerswiat.pl/inne/black-week-w-media-expert-kusi-obnizkami-te-sprzety-kupisz-taniej-nawet-o-1000-zl/yldbllc",
+        "focus": "Eksponuje dane (1000 zł) oraz wątki: Days, Media.",
+        "omits": "Pomija wyliczenia (46 proc., 11 proc.) przytaczane przez 300Gospodarka, Wiadomości Handlowe."
+      },
+      {
+        "outlet": "PortEl.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Black Friday na portEl.pl! Reklama taniej o 40% [ Wiadomości ]",
+        "url": "https://www.portel.pl/wiadomosci/black-friday-naportel-pl-reklama-taniej-o-40/151934",
+        "focus": "Eksponuje dane (40%, 2026) oraz wątki: portEl, Reklama.",
         "omits": "Pomija wyliczenia (1100 zł, 46 proc.) przytaczane przez Telepolis.pl, Benchmark.pl."
       }
     ],
@@ -6274,6 +6695,8 @@
       "Forsal.pl",
       "Infor.pl",
       "Instalki.pl",
+      "Komputer Świat",
+      "PortEl.pl",
       "RadioMaryja.pl",
       "Rzeczpospolita",
       "TVP3 Gorzów",
@@ -6283,14 +6706,6 @@
       "Wiadomości Handlowe"
     ],
     "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.rp.pl/handel/art45521911-black-friday-polowanie-na-okazje-trwa-chociaz-sklepy-oszukuja-na-promocjach"
-      },
-      {
-        "claim_text": "Dopisano źródło: 300Gospodarka (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://300gospodarka.pl/news/portfele-sa-gotowe-ale-sklepy-musza-powalczyc-polacy-inaczej-podchodza-do-black-friday"
-      },
       {
         "claim_text": "Dopisano źródło: TVP3 Kielce (aktualizacja wieloźródłowa)",
         "evidence_url": "https://kielce.tvp.pl/96622826/ack-week-i-black-friday-jak-nie-dac-sie-nabrac-na-promocje"
@@ -6302,12 +6717,20 @@
       {
         "claim_text": "Dopisano źródło: TVP3 Szczecin (aktualizacja wieloźródłowa)",
         "evidence_url": "https://szczecin.tvp.pl/96618953/black-friday-2026-jak-bezpiecznie-robic-zakupy-rzeczniczka-konsumentow-w-szczecinie-ostrzega"
+      },
+      {
+        "claim_text": "Dopisano źródło: Komputer Świat (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.komputerswiat.pl/inne/black-week-w-media-expert-kusi-obnizkami-te-sprzety-kupisz-taniej-nawet-o-1000-zl/yldbllc"
+      },
+      {
+        "claim_text": "Dopisano źródło: PortEl.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.portel.pl/wiadomosci/black-friday-naportel-pl-reklama-taniej-o-40/151934"
       }
     ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (14 źródeł)"
+      "status": "Potwierdzone (16 źródeł)"
     },
     "seo_faq": [
       {
@@ -6320,7 +6743,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (14 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (16 źródeł)."
       }
     ]
   },
@@ -6532,7 +6955,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "6 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -6544,18 +6967,18 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (6 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "Jak powiedział w rozmowie z TVN24 Witold Michalak, prezes Fundacji \"List do Mikołaja z DPS-u\", w łódzkich domach pomocy społecznej mieszka niecałe dwa tysiące osób. Dotychczas jego organizacja otrzymała około 1800 listów z prośbami o prezenty, z czego około 500 znalazło swoich darczyńców. Pozostałe wciąż na nich czekają. [Źródło: TVN24, Dziennik Łódzki, Kurier Poranny]",
+          "Jak powiedział w rozmowie z TVN24 Witold Michalak, prezes Fundacji \"List do Mikołaja z DPS-u\", w łódzkich domach pomocy społecznej mieszka niecałe dwa tysiące osób. Dotychczas jego organizacja otrzymała około 1800 listów z prośbami o prezenty, z czego około 500 znalazło swoich darczyńców. Pozostałe wciąż na nich czekają. [Źródło: TVN24, Dziennik Łódzki]",
           "Autorami listów są nie tylko seniorzy, ale też dzieci. [Źródło: TVN24]",
           "— Najmłodszy z mieszkańców DPS-ów to Milan, ma dziewięć lat, a najstarszy w tym roku to 102-letni Włodzimierz – przekazał Michalak i odczytał ich listy. [Źródło: TVN24]",
-          "\"Piszę do Ciebie, Mikołaju, za pomocą pracownika DPS-u. Mam już swoje lata i za sobą wiele różnych historii i wspomnień. Pierogi z kapustą i grzybami, zupa grzybowa, karp. [Źródło: TVN24, Dziennik Łódzki, Kurier Poranny]"
+          "\"Piszę do Ciebie, Mikołaju, za pomocą pracownika DPS-u. Mam już swoje lata i za sobą wiele różnych historii i wspomnień. [Źródło: TVN24, Dziennik Łódzki]"
         ]
       },
       {
@@ -6563,8 +6986,7 @@
         "paragraphs": [
           "Piernik na Boże Narodzenie 2025 – sprawdzone przepisy. Szybki piernik świąteczny, piernik na ostatnią chwilę, piernik idealny, a nawet… piernik orkiszowy! Te pierniki zawsze się udają. [Źródło: Gazeta Krakowska]",
           "Do kartuskiego Domu Nadziei przed świętami zgłaszają się szkoły, firmy i mieszkańcy. Hospicjum zebrało potrzeby podopiecznych w jednym liście. [Źródło: Kaszuby24.pl]",
-          "Potrawy wigilijne od Kół Gospodyń Wiejskich. Przepisy na najsmaczniejsze potrawy wigilijne i świąteczny stół. [Źródło: Dziennik Łódzki]",
-          "12 wigilijnych potraw od Gessler, Makłowicza, Wachowicz, Brodnickiego, Okrasy i Starmach. Wypróbuj przepisów świątecznych od mistrzów kuchni. [Źródło: Kurier Poranny]",
+          "Pierogi z kapustą i grzybami, zupa grzybowa, karp. Potrawy wigilijne od Kół Gospodyń Wiejskich. Przepisy na najsmaczniejsze potrawy wigilijne i świąteczny stół. [Źródło: Dziennik Łódzki]",
           "Podopieczni dolnośląskich placówek opiekuńczo-wychowawczych napisali ponad 700 listów do św. Mikołaja. W spełnieniu zawartych w nich życzeń pomóc może każdy z nas. [Źródło: TVP3 Wrocław]"
         ]
       }
@@ -6583,7 +7005,7 @@
         "angle": "Doniesienie regionalne",
         "summary": "Ciasta na Wigilię i Boże Narodzenie. Domowy piernik świąteczny. TOP 10 przepisów naszych Czytelników na pierniki",
         "url": "https://gazetakrakowska.pl/ciasta-na-wigilie-i-boze-narodzenie-domowy-piernik-swiateczny-top-10-przepisow-naszych-czytelnikow-na-pierniki/ar/c17-13731628",
-        "focus": "Eksponuje dane (2025) oraz wątki: Ciasta, Domowy.",
+        "focus": "Eksponuje dane (2025) oraz wątki: Ciasta, Wigilię.",
         "omits": "Pomija kontekst (Mikołaja, Mieszkańcy, listów) rozwijany w TVN24, Kaszuby24.pl."
       },
       {
@@ -6599,15 +7021,7 @@
         "angle": "Doniesienie regionalne",
         "summary": "Tradycyjne potrawy na Boże Narodzenie: pierogi z kapustą i grzybami, zupa grzybowa, karp. Przepisy od Kół Gospodyń Wiejskich",
         "url": "https://dzienniklodzki.pl/tradycyjne-potrawy-na-boze-narodzenie-pierogi-z-kapusta-i-grzybami-zupa-grzybowa-karp-przepisy-od-kol-gospodyn-wiejskich/ar/c17-12761710",
-        "focus": "Wyróżnia własne wątki i pojęcia: Gospodyń, Wiejskich, najsmaczniejsze.",
-        "omits": "Pomija wyliczenia (2025) przytaczane przez Gazeta Krakowska."
-      },
-      {
-        "outlet": "Kurier Poranny",
-        "angle": "Doniesienie regionalne",
-        "summary": "12 potraw na Wigilię – lista. Tradycyjne potrawy na Wigilię polecają Makłowicz, Wachowicz, Brodnicki, Okrasa",
-        "url": "https://poranny.pl/12-potraw-na-wigilie-lista-tradycyjne-potrawy-na-wigilie-polecaja-maklowicz-wachowicz-brodnicki-okrasa/ar/c17-15351553",
-        "focus": "Wyróżnia własne wątki i pojęcia: potraw, lista, polecają.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Tradycyjne, potrawy, pierogi.",
         "omits": "Pomija wyliczenia (2025) przytaczane przez Gazeta Krakowska."
       },
       {
@@ -6623,7 +7037,6 @@
       "Dziennik Łódzki",
       "Gazeta Krakowska",
       "Kaszuby24.pl",
-      "Kurier Poranny",
       "TVN24",
       "TVP3 Wrocław"
     ],
@@ -6648,7 +7061,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (6 źródeł)"
+      "status": "Potwierdzone (5 źródeł)"
     },
     "seo_faq": [
       {
@@ -6661,7 +7074,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (6 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (5 źródeł)."
       }
     ]
   },
@@ -11915,7 +12328,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "8 redakcji"
       },
       {
         "label": "Kategoria",
@@ -11927,17 +12340,18 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (8 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (8 redakcji)",
         "paragraphs": [
-          "Alexander Zverev został drugim finalistą prestiżowych zawodów ATP Finals 2026 w Turynie. Niemiecki tenisista i lider rankingu ATP pokonał Rosjanina Daniła Miedwiediewa 7:6(0), 6:4 i w niedzielę zmierzy się z Hiszpanem Carlosem Alcarazem. Będzie hit w finale Turnieju Mistrzów! [Źródło: WP SportoweFakty, Przegląd Sportowy, Sport.pl, Polsat Sport, Interia Sport, Niezależna.pl, Weszło.com]",
+          "Alexander Zverev został drugim finalistą prestiżowych zawodów ATP Finals 2026 w Turynie. Niemiecki tenisista i lider rankingu ATP pokonał Rosjanina Daniła Miedwiediewa 7:6(0), 6:4 i w niedzielę zmierzy się z Hiszpanem Carlosem Alcarazem. Będzie hit w finale Turnieju Mistrzów! [Źródło: WP SportoweFakty, Przegląd Sportowy, Sport.pl, Polsat Sport, Interia Sport, Niezależna.pl, Weszło.com, Rzeczpospolita]",
           "Najpierw awans wywalczył w sobotę oznaczony \"dwójką\" Hiszpan Carlos Alcaraz ( więcej tutaj ). Wieczorem dołączył do niego drugi z wielkich faworytów, Alexander Zverev. Najwyżej rozstawiony Niemiec pokonał Daniła Miedwiediewa 7:6(0), 6:4. [Źródło: WP SportoweFakty, Interia Sport]",
-          "Dzięki temu poprawił ciągle niekorzystny bilans gier z Rosjaninem na 9-14 w głównym cyklu. W drugiej partii obraz gry nie uległ zmianie. Przy drugim Miedwiediew nie wytrzymał i popełnił podwójny błąd. [Źródło: WP SportoweFakty, Sport.pl]"
+          "Dzięki temu poprawił ciągle niekorzystny bilans gier z Rosjaninem na 9-14 w głównym cyklu. W drugiej partii obraz gry nie uległ zmianie. Przy drugim Miedwiediew nie wytrzymał i popełnił podwójny błąd. [Źródło: WP SportoweFakty, Sport.pl]",
+          "Hiszpan po zaciętym pojedynku wyeliminował Bena Sheltona i powalczy o swój pierwszy tytuł w imprezie kończącej sezon. [Źródło: Interia Sport, Rzeczpospolita]"
         ]
       },
       {
@@ -11945,7 +12359,7 @@
         "paragraphs": [
           "Alexander Zverev w fazie grupowej potwierdził kapitalną formę. Reprezentant Niemiec zanotował komplet zwycięstw i nie stracił ani jednego seta. Walka o półfinał była niezwykle wyrównana. [Źródło: Przegląd Sportowy]",
           "I był faworytem półfinałowej potyczki z Daniiłem Miedwiediewem, który w pierwszym secie potrafił postawić się Niemcowi – ten pokazał wyższość dopiero w tie-breaku. W finale dojdzie do wielkiego hitu! [Źródło: Sport.pl]",
-          "Hiszpan po zaciętym pojedynku wyeliminował Bena Sheltona i powalczy o swój pierwszy tytuł w imprezie kończącej sezon. Zapraszamy na relację na żywo. [Źródło: Interia Sport]",
+          "Zapraszamy na relację na żywo. [Źródło: Interia Sport]",
           "Carlos Alcaraz zakończył sezon w wielkim stylu. Dzięki triumfowi w Turynie dołączył do elitarnego grona tenisistów, którzy wygrali wszystkie turnieje wielkoszlemowe oraz ATP Finals. [Źródło: Niezależna.pl]",
           "W tym gronie jest przy tym zawodnikiem zdecydowanie najmłodszym – ma 23 lata i 6 miesięcy, a dotychczasowy rekordzista, Roger Federer, skompletował tę wielką piątkę turniejów w wieku niemal 28 lat. Hiszpan postawił kolejny krok na drodze do tenisowej nieśmiertelności. Gdy zdrowi, to na czele są Carlos Alcaraz i Jannik Sinner. [Źródło: Weszło.com]"
         ]
@@ -12006,7 +12420,15 @@
         "summary": "Zverev nie potwierdził, że zasłużenie jest liderem rankingu. Alcaraz mistrzem ATP Finals!",
         "url": "https://weszlo.com/zverev-nie-zagral-jak-lider-rankingu-alcaraz-mistrzem-atp-finals",
         "focus": "Eksponuje dane (23 lat, 28 lat) oraz wątki: zasłużenie, liderem.",
-        "omits": "Pomija kontekst (Tie-break, faworytów, dołączył) rozwijany w WP SportoweFakty, Przegląd Sportowy."
+        "omits": "Pomija kontekst (Tie-break, faworytów, pierwszym) rozwijany w WP SportoweFakty, Przegląd Sportowy."
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja sportowa",
+        "summary": "Carlos Alcaraz mistrzem ATP Finals. „To trofeum znaczy dla mnie wszystko”",
+        "url": "https://sport.rp.pl/tenis/art45525811-carlos-alcaraz-mistrzem-atp-finals-to-trofeum-znaczy-dla-mnie-wszystko",
+        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
+        "omits": "Pomija wyliczenia (23 lat, 28 lat) przytaczane przez Weszło.com."
       }
     ],
     "sources": [
@@ -12014,15 +12436,12 @@
       "Niezależna.pl",
       "Polsat Sport",
       "Przegląd Sportowy",
+      "Rzeczpospolita",
       "Sport.pl",
       "WP SportoweFakty",
       "Weszło.com"
     ],
     "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Sport.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.sport.pl/tenis/7,64987,33144707,tak-zagral-lider-rankingu-w-polfinale-atp-finals-wielki-hit.html"
-      },
       {
         "claim_text": "Dopisano źródło: Polsat Sport (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.polsatsport.pl/wiadomosc/2026-11-21/alcaraz-zverev-gdzie-obejrzec-final-atp-finals/"
@@ -12038,12 +12457,16 @@
       {
         "claim_text": "Dopisano źródło: Weszło.com (aktualizacja wieloźródłowa)",
         "evidence_url": "https://weszlo.com/zverev-nie-zagral-jak-lider-rankingu-alcaraz-mistrzem-atp-finals"
+      },
+      {
+        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://sport.rp.pl/tenis/art45525811-carlos-alcaraz-mistrzem-atp-finals-to-trofeum-znaczy-dla-mnie-wszystko"
       }
     ],
     "impact": {
       "audience": "Kibice i środowisko sportowe",
       "scope": "Sport i rozgrywki",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (8 źródeł)"
     },
     "seo_faq": [
       {
@@ -12056,7 +12479,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (8 źródeł)."
       }
     ]
   },
@@ -12569,263 +12992,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (2 źródła)."
-      }
-    ]
-  },
-  {
-    "id": 890722585,
-    "path": "/Polska",
-    "seo_url": "/Polska/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji",
-    "seo_title": "Alarmy w obwodzie królewieckim. Miało dojść do eksplozji",
-    "summary_lead": "W obwodzie królewieckim miało dojść do kilku eksplozji w pobliżu rosyjskiej bazy Floty Bałtyckiej w związku z ostrzeżeniami dotyczącymi dronów – donosi ukraiński serwis The Kyiv Independent powołując się na rosyjskie media.",
-    "meta_description": "W obwodzie królewieckim miało dojść do kilku eksplozji w pobliżu rosyjskiej bazy Floty Bałtyckiej w związku z ostrzeżeniami dotyczącymi dronów – donosi…",
-    "keywords": "Polska, Alarmy, obwodzie, królewieckim, Miało, dojść, eksplozji",
-    "thumbnail_url": "https://i.gremicdn.pl/image/free/66d108abd093ddcbde1b295a603fa00a/?t=crop:3872:1693:nowe:0:450,resize:fill:600:300,enlarge:1",
-    "published_iso": "2026-11-21T19:45:54+01:00",
-    "updated_iso": "2026-11-21T19:45:54+01:00",
-    "display_date": "21.11.2026, 19:45",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "17 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Rzeczpospolita"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (17 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (17 redakcji)",
-        "paragraphs": [
-          "W obwodzie królewieckim miało dojść do kilku eksplozji w pobliżu rosyjskiej bazy Floty Bałtyckiej w związku z ostrzeżeniami dotyczącymi dronów – donosi ukraiński serwis The Kyiv Independent powołując się na rosyjskie media. Nad częścią rosyjskiej eksklawy rozległy się syreny alarmowe – podaje \"Kyiv Independent\". [Źródło: Rzeczpospolita, Onet Wiadomości, WP Wiadomości, Defence24, Polsat News, Kresy.pl, Bankier.pl, Interia Wydarzenia, Niezależna.pl, naTemat.pl, Gazeta.pl, GazetaPrawna.pl (DGP), Radio Rzeszów, o2.pl]",
-          "Ukraiński portal Espreso, powołując się na kanał Exilenova+, podał, że mieszkańcy informowali o licznych wybuchach, odgłosach dronów oraz aktywności obrony przeciwlotniczej. Oto możliwy cel Gubernator obwodu królewieckiego Aleksiej Biesprozwannych potwierdził uruchomienie systemu alarmowego w rejonie niemańskim po wykryciu podejrzanego obiektu powietrznego nadlatującego od strony Litwy. [Źródło: Rzeczpospolita, Onet Wiadomości, WP Wiadomości, Defence24, Polsat News, Bankier.pl, Interia Wydarzenia, Niezależna.pl, naTemat.pl, Radio Rzeszów, o2.pl]",
-          "W związku z doniesieniami o ukraińskim ataku na obwód królewiecki Centrum Walki z Dezinformacją intensywnie monitoruje przestrzeń informacyjną – poinformował w niedzielę na platformie X wiceminister cyfryzacji Paweł Olszewski. Mieszkańców wezwano do schronienia się w bezpiecznych miejscach. [Źródło: Rzeczpospolita, Defence24, Bankier.pl, Interia Wydarzenia, Radio PiK, TVP3 Bydgoszcz, GazetaPrawna.pl (DGP), Dziennik.pl, Radio Rzeszów]",
-          "Zaznaczył, że jego kraj nie zezwolił na wykorzystanie swojej przestrzeni powietrznej do nalotów na obiekty w Rosji. [Źródło: Gazeta.pl, Radio Rzeszów]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Nie potwierdzono dotąd, czy baza wojskowa została trafiona ani czy poniósł straty sprzęt lub personel. [Źródło: WP Wiadomości]",
-          "W sobotę 21 listopada około godz. 18.00 czasu polskiego w Królewcu i innych miastach obwodu zawyły syreny. Na ten moment nie potwierdzono, że powodem alarmu były ukraińskie drony. [Źródło: Defence24]",
-          "Czasowo ograniczono również pracę lotniska. [Źródło: Kresy.pl]",
-          "Ukraiński analityk uważa, że cała sprawa może być rosyjską prowokacją. [Źródło: Niezależna.pl]",
-          "Dodał, że odnotowano liczne rosyjskie fałszywe przekazy dezinformacyjne. [Źródło: Dziennik.pl]",
-          "Jak przekazał Olszewski, nadal rozpowszechniane są wcześniej zidentyfikowane fałszywe narracje. Jedna z nich sugeruje, że Polska i NATO mogą zostać wciągnięte w wojnę z Rosją. Wśród fałszywych przekazów wymienianych przez wiceministra znalazły się również twierdzenia, że niemieckie wojska stacjonujące w Polsce koordynują ukraiński atak oraz że NATO zaatakowało Kaliningrad. [Źródło: Radio Rzeszów]",
-          "W tym samym czasie pojawiały się doniesienia o aktywności dronów w pobliżu Bałtyjska, gdzie znajduje się ważna baza rosyjskiej Floty Bałtyckiej. Według lokalnych mediów był to pierwszy taki alarm od rozpoczęcia pełnoskalowej inwazji Rosji na Ukrainę w 2022 r. [Źródło: o2.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja wiodąca",
-        "summary": "Alarmy w obwodzie królewieckim. Miało dojść do eksplozji",
-        "url": "https://www.rp.pl/konflikty-zbrojne/art45523701-alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja wiodąca).",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Alarmy w obwodzie królewieckim. Są nieoficjalne informacje o eksplozjach",
-        "url": "https://wiadomosci.onet.pl/swiat/alarmy-w-obwodzie-krolewieckim-sa-nieoficjalne-informacje-o-eksplozjach/41plllw",
-        "focus": "Wyróżnia własne wątki i pojęcia: nieoficjalne.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "WP Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Eksplozje w obwodzie królewieckim. Doniesienia o dronach",
-        "url": "https://wiadomosci.wp.pl/eksplozje-w-obwodzie-krolewieckim-doniesienia-o-dronach-7353516617369632a",
-        "focus": "Wyróżnia własne wątki i pojęcia: dronach, dotąd, wojskowa.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Defence24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Syreny w obwodzie królewieckim. Rosjanie mówią o „podejrzanym obiekcie\" od strony Litwy",
-        "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/syreny-w-obwodzie-krolewieckim-rosjanie-mowia-o-podejrzanym-obiekcie-od-strony-litwy",
-        "focus": "Wyróżnia własne wątki i pojęcia: Rosjanie, mówią, obiekcie.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Alarm w obwodzie królewieckim. Donoszą o eksplozjach w pobliżu rosyjskiej bazy",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-21/alarm-w-obwodzie-krolewieckim-donosza-o-eksplozjach-w-poblizu-rosyjskiej-bazy/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Donoszą.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Kresy.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Alarm powietrzny w obwodzie królewieckim. Informacje o eksplozjach [+VIDEO]",
-        "url": "https://kresy.pl/wydarzenia/alarm-powietrzny-w-obwodzie-krolewieckim-informacje-o-eksplozjach-video/",
-        "focus": "Wyróżnia własne wątki i pojęcia: VIDEO, Czasowo, ograniczono.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Alarmy i eksplozje przy rosyjskiej bazie Floty Bałtyckiej. Doniesienia z obwodu królewieckiego",
-        "url": "https://www.bankier.pl/wiadomosc/Alarmy-i-eksplozje-przy-rosyjskiej-bazie-Floty-Baltyckiej-Doniesienia-z-obwodu-krolewieckiego-9233062.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: bazie.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Alarmy i eksplozje w obwodzie królewieckim. Sprzeczne doniesienia z Rosji",
-        "url": "https://wydarzenia.interia.pl/zagranica/news-alarmy-i-eksplozje-w-obwodzie-krolewieckim-sprzeczne-doniesi,nId,23577085",
-        "focus": "Wyróżnia własne wątki i pojęcia: Sprzeczne.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Alarm powietrzny w obwodzie królewieckim Rosji. Analityk: To może być prowokacja Kremla",
-        "url": "https://niezalezna.pl/swiat/alarm-powietrzny-w-obwodzie-krolewieckim-rosji-analityk-to-moze-byc-prowokacja-kremla/584701",
-        "focus": "Wyróżnia własne wątki i pojęcia: Analityk, prowokacja, Kremla.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "naTemat.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Syreny zawyły w całym obwodzie królewieckim. Rosja wskazała palcem na Litwę",
-        "url": "https://natemat.pl/676504,syreny-zawyly-w-calym-obwodzie-krolewieckim-rosja-wskazala-palcem-na-litwe",
-        "focus": "Wyróżnia własne wątki i pojęcia: całym, wskazała, palcem.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Obiekty nad obwodem królewieckim? Litwa \"odrzuca pogłoski\". Polski wiceminister ostrzega przed fałszem",
-        "url": "https://wiadomosci.gazeta.pl/swiat/7,198075,33144825,obiekty-nad-obwodem-krolewieckim-litwa-odrzuca-pogloski.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: obwodem, Litwa, odrzuca.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Radio PiK",
-        "angle": "Doniesienie regionalne",
-        "summary": "Wiceminister cyfryzacji: Rosyjska dezinformacja związana z ukraińskim atakiem na obwód królewiecki",
-        "url": "https://www.radiopik.pl/40,143927,wiceminister-cyfryzacji-rosyjska-dezinformacja-z",
-        "focus": "Wyróżnia własne wątki i pojęcia: związana, atakiem.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "TVP3 Bydgoszcz",
-        "angle": "Doniesienie regionalne",
-        "summary": "Wiceminister cyfryzacji: „Informacje w związku z doniesieniami o ukraińskim ataku na obwód królewiecki są monitorowane\"",
-        "url": "https://bydgoszcz.tvp.pl/krolewiec-atak-centrum-walki-z-dezinformacja-monitoruje-przestrzen-informacyjna-pawel-olszewski-bydgoszcz,96620506",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "GazetaPrawna.pl (DGP)",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Doniesienia o ataku na obwód królewiecki. Polska monitoruje rosyjską dezinformację",
-        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11350014,doniesienia-o-ataku-na-obwod-krolewiecki-polska-monitoruje-rosyjska-dezinformacje.html",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Ostrzeżenie po doniesieniach o ataku w obwodzie królewieckim. \"Liczne rosyjskie przekazy dezinformacyjne”",
-        "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11350035,ostrzezenie-po-doniesieniach-o-ataku-w-obwodzie-krolewieckim-liczne-rosyjskie-przekazy-dezinformacyjne.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Liczne, Dodał, odnotowano.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "Radio Rzeszów",
-        "angle": "Doniesienie regionalne",
-        "summary": "Fala dezinformacji po doniesieniach o ataku na obwód królewiecki",
-        "url": "https://radio.rzeszow.pl/376332/fala-dezinformacji-po-doniesieniach-o-ataku-na-obwod-krolewiecki/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Fala, nadal, rozpowszechniane.",
-        "omits": "Pomija wyliczenia (2022) przytaczane przez o2.pl."
-      },
-      {
-        "outlet": "o2.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Alarm przy granicy. Syreny zawyły w Królewcu. Pierwszy raz od lat",
-        "url": "https://www.o2.pl/informacje/alarm-przy-granicy-syreny-zawyly-w-krolewcu-pierwszy-raz-od-lat-7353847979005952a",
-        "focus": "Eksponuje dane (2022) oraz wątki: granicy, Pierwszy.",
-        "omits": "Pomija kontekst (wiceminister, przestrzeń, Dezinformacją) rozwijany w Rzeczpospolita, Defence24."
-      }
-    ],
-    "sources": [
-      "Bankier.pl",
-      "Defence24",
-      "Dziennik.pl",
-      "Gazeta.pl",
-      "GazetaPrawna.pl (DGP)",
-      "Interia Wydarzenia",
-      "Kresy.pl",
-      "Niezależna.pl",
-      "Onet Wiadomości",
-      "Polsat News",
-      "Radio PiK",
-      "Radio Rzeszów",
-      "Rzeczpospolita",
-      "TVP3 Bydgoszcz",
-      "WP Wiadomości",
-      "naTemat.pl",
-      "o2.pl"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: TVP3 Bydgoszcz (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://bydgoszcz.tvp.pl/krolewiec-atak-centrum-walki-z-dezinformacja-monitoruje-przestrzen-informacyjna-pawel-olszewski-bydgoszcz,96620506"
-      },
-      {
-        "claim_text": "Dopisano źródło: GazetaPrawna.pl (DGP) (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11350014,doniesienia-o-ataku-na-obwod-krolewiecki-polska-monitoruje-rosyjska-dezinformacje.html"
-      },
-      {
-        "claim_text": "Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11350035,ostrzezenie-po-doniesieniach-o-ataku-w-obwodzie-krolewieckim-liczne-rosyjskie-przekazy-dezinformacyjne.html"
-      },
-      {
-        "claim_text": "Dopisano źródło: Radio Rzeszów (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://radio.rzeszow.pl/376332/fala-dezinformacji-po-doniesieniach-o-ataku-na-obwod-krolewiecki/"
-      },
-      {
-        "claim_text": "Dopisano źródło: o2.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.o2.pl/informacje/alarm-przy-granicy-syreny-zawyly-w-krolewcu-pierwszy-raz-od-lat-7353847979005952a"
-      }
-    ],
-    "impact": {
-      "audience": "Obywatele i instytucje w Polsce",
-      "scope": "Wydarzenia krajowe",
-      "status": "Potwierdzone (17 źródeł)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Alarmy w obwodzie królewieckim. Miało dojść do eksplozji?",
-        "a": "Nad częścią rosyjskiej eksklawy rozległy się syreny alarmowe – podaje \"Kyiv Independent\"."
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Według lokalnych mediów był to pierwszy taki alarm od rozpoczęcia pełnoskalowej inwazji Rosji na Ukrainę w 2022 r."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (17 źródeł)."
       }
     ]
   },
@@ -16821,110 +16987,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Mieszkańcy Lubelszczyzny (obszar: Sprawy lokalne i samorząd). Status: Zapowiedź / Etap propozycji."
-      }
-    ]
-  },
-  {
-    "id": 1121133388,
-    "path": "/Polska/Regiony/Swietokrzyskie",
-    "seo_url": "/Polska/Regiony/Swietokrzyskie/dwie-rakiety-i-dron-w-polskiej-przestrzen-powietrznej-jeden-z-obiektow",
-    "seo_title": "Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań",
-    "summary_lead": "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz. Chodzi o Mołodycz, Rudnik nad Sanem i Nowy Lipowiec.",
-    "meta_description": "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz.",
-    "keywords": "Swietokrzyskie, Dwie, rakiety, dron, polskiej, przestrzeń, powietrznej",
-    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVub/mlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3VtZW50cy9GT0IwMD/AwMDAwMDAwMDA3NzEyNDkyL2ZpbGVzL3NsdXpieS1uYS1taWV/qc2N1LXpkYXJ6ZW5pYS0zOTMyNjg3Ny5qcGciLCJ3IjozODQwfQ",
-    "published_iso": "2026-11-21T14:49:02+01:00",
-    "updated_iso": "2026-11-21T16:42:29+01:00",
-    "display_date": "21.11.2026, 14:49",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "3 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Swietokrzyskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "TVP3 Kielce"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (3 redakcje)",
-        "paragraphs": [
-          "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz. Chodzi o Mołodycz, Rudnik nad Sanem i Nowy Lipowiec. Według szefa MON w dwóch przypadkach mowa jest o rakietach, a w trzecim najprawdopodobniej o dronie odrzutowym. [Źródło: TVP3 Kielce, Dziennik.pl]",
-          "Rakieta Ch-101 w Nowym Lipowcu która spadła około 200–300 metrów od zabudowań. Najnowsze informacje przekazano podczas konferencji prasowej z udziałem szefa MON oraz Dowódcy Operacyjnego Rodzajów Sił Zbrojnych gen. broni pil. [Źródło: TVP3 Kielce]",
-          "Władysław Kosiniak-Kamysz poinformował, że obiekty spadły w Mołodyczu w powiecie jarosławskim, Rudniku nad Sanem w powiecie niżańskim oraz Nowym Lipowcu w powiecie biłgorajskim. [Źródło: TVP3 Kielce]",
-          "— W tym ostatnim przypadku już najwięcej możemy powiedzieć, że to była rakieta Ch-101, która naruszyła polską przestrzeń powietrzną i jest zlokalizowana w tym miejscu. [Źródło: TVP3 Kielce]",
-          "W drugim przypadku też można mówić o rakiecie, a w trzecim najprawdopodobniej to dron odrzutowy – powiedział Władysław Kosiniak-Kamysz. [Źródło: TVP3 Kielce]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "TVP3 Kielce",
-        "angle": "Relacja wiodąca",
-        "summary": "Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań",
-        "url": "https://kielce.tvp.pl/96586060/trzy-obiekty-spadly-w-polsce-rakieta-ch-101-200-metrow-od-zabudowan",
-        "focus": "Wyróżnia własne wątki i pojęcia: polskiej, Jeden, uderzył.",
-        "omits": "Pomija kontekst (Żandarmeria, latające, Wojskowa) rozwijany w Dziennik.pl."
-      },
-      {
-        "outlet": "Radio Kielce",
-        "angle": "Doniesienie regionalne",
-        "summary": "Szef MON: są trzy miejsca upadku obiektów. To dwie rakiety i dron",
-        "url": "https://radiokielce.pl/1459189/szef-mon-sa-trzy-miejsca-upadku-obiektow-to-dwie-rakiety-i-dron/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Szef.",
-        "omits": "Pomija kontekst (najprawdopodobniej, Kosiniak-Kamysz, powietrznej) rozwijany w TVP3 Kielce, Dziennik.pl."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Obiekty latające nad Polską. Żandarmeria Wojskowa sprawdza miejsca upadku",
-        "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11349589,obiekty-latajace-nad-polska-zandarmeria-wojskowa-sprawdza-miejsca-upa.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: latające, Żandarmeria, Wojskowa.",
-        "omits": "Pomija kontekst (rakiety, zlokalizowana, Operacyjnego) rozwijany w TVP3 Kielce, Radio Kielce."
-      }
-    ],
-    "sources": [
-      "Dziennik.pl",
-      "Radio Kielce",
-      "TVP3 Kielce"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11349589,obiekty-latajace-nad-polska-zandarmeria-wojskowa-sprawdza-miejsca-upa.html"
-      }
-    ],
-    "impact": {
-      "audience": "Mieszkańcy woj. świętokrzyskiego",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (3 źródła)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów?",
-        "a": "Według szefa MON w dwóch przypadkach mowa jest o rakietach, a w trzecim najprawdopodobniej o dronie odrzutowym."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Rakieta Ch-101 w Nowym Lipowcu która spadła około 200–300 metrów od zabudowań."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. świętokrzyskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -20977,7 +21039,7 @@
     "keywords": "Gospodarka, Inflacja, spada, ceny, sklepach, rosną, oszczędzać",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/534050f3500e17d96284a95648950a44/?t=crop:5000:3101:nowe:0:232,resize:fill:1200:750,enlarge:1",
     "published_iso": "2026-11-21T08:15:26+01:00",
-    "updated_iso": "2026-11-22T22:42:02+01:00",
+    "updated_iso": "2026-11-22T23:39:51+01:00",
     "display_date": "21.11.2026, 08:15",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 88,
@@ -23032,7 +23094,7 @@
     "keywords": "Wielkopolskie, BitterSweet, Festival, znów, Cytadeli, Umowa, przygotowana",
     "thumbnail_url": "https://epoznan.pl/storage/gallery/143643/pUUYOMHjjqXQV0jvQHQfJvPFyy64uUNm_left4.jpg?1795209331",
     "published_iso": "2026-11-20T22:45:49+01:00",
-    "updated_iso": "2026-11-22T22:42:03+01:00",
+    "updated_iso": "2026-11-22T23:39:52+01:00",
     "display_date": "20.11.2026, 22:45",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -24901,7 +24963,7 @@
     "keywords": "Podlaskie, dojazdami, Rodzice, Turośli, żłobek",
     "thumbnail_url": "https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c",
     "published_iso": "2026-11-20T19:57:10+01:00",
-    "updated_iso": "2026-11-22T22:42:03+01:00",
+    "updated_iso": "2026-11-22T23:39:51+01:00",
     "display_date": "20.11.2026, 19:57",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -29657,7 +29719,7 @@
     "keywords": "Swiat, Chiny, wiedzą, Rosja, Ukrainą, byłaby, imperium",
     "thumbnail_url": "",
     "published_iso": "2026-11-20T14:21:41+01:00",
-    "updated_iso": "2026-11-22T22:42:02+01:00",
+    "updated_iso": "2026-11-22T23:39:51+01:00",
     "display_date": "20.11.2026, 14:21",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -34658,7 +34720,7 @@
     "keywords": "Kujawsko-Pomorskie, oszukać, Włocławscy, seniorzy, poznali, zasady, bezpieczeństwa",
     "thumbnail_url": "https://s1.tvp.pl/images2/a/3/3/uid_a33b8cbee519455eaf7b4e9f9e8cdd66_width_900_play_0_pos_0_gs_0_height_506.png",
     "published_iso": "2026-11-19T21:48:50+01:00",
-    "updated_iso": "2026-11-22T22:42:03+01:00",
+    "updated_iso": "2026-11-22T23:39:52+01:00",
     "display_date": "19.11.2026, 21:48",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -35688,7 +35750,7 @@
         "paragraphs": [
           "W Ernestowie w powiecie świeckim samochód osobowy zderzył się z kombajnem. Zginęła 90-letnia pasażerka auta, a trzy pozostałe osoby trafiły do szpitala. Policja, pod nadzorem prokuratora, ustala przebieg zdarzenia. [Źródło: WP Wiadomości, Radio PiK, TVP3 Bydgoszcz, Pościgi.pl, Gazeta.pl, TVP3 Warszawa, Radio Wrocław, Radio Kraków, Farmer.pl, Radio Piekary, TVP3 Łódź, Radio Łódź, TVP3 Opole, Radio Szczecin, Radio Rzeszów, Lublin112.pl, Bochnianin.pl, Rzeszow-News.pl, o2.pl]",
           "Podczas wymijania samochodu marki Hyundai z kombajnem auto uderzyło w stopnie maszyny rolniczej – podało Polskie Radio PiK. Samochodem podróżowały cztery osoby. 90-letnia pasażerka poniosła śmierć na miejscu. [Źródło: WP Wiadomości, Radio PiK, Gazeta.pl, Radio Piekary, TVP3 Łódź, Radio Łódź, Radio Szczecin, Lublin112.pl]",
-          "Pozostałych troje uczestników zdarzenia ratownicy przetransportowali do szpitala. Służby prowadzą czynności, które mają pomóc w ustaleniu dokładnego przebiegu zderzenia oraz przyczyn wypadku. Pozostałe osoby zostały przewiezione do szpitala – wyjaśnia Polskiemu Radiu PiK asp. Damian Ejankowski ze świeckiej policji. [Źródło: WP Wiadomości, Radio PiK, Pościgi.pl, TVP3 Warszawa, Radio Wrocław, Radio Piekary, Bochnianin.pl, Rzeszow-News.pl]",
+          "Pozostałych troje uczestników zdarzenia ratownicy przetransportowali do szpitala. Służby prowadzą czynności, które mają pomóc w ustaleniu dokładnego przebiegu zderzenia oraz przyczyn wypadku. Pozostałe osoby zostały przewiezione do szpitala – wyjaśnia Polskiemu Radiu PiK asp. Damian Ejankowski ze świeckiej policji. [Źródło: WP Wiadomości, Radio PiK, Pościgi.pl, TVP3 Warszawa, Radio Wrocław, Radio Piekary, Bochnianin.pl, Rzeszow-News.pl, Niedziela.pl]",
           "Do zdarzenia doszło o godz. 17:39 w Ernestowie (pow. świecki). [Źródło: Radio PiK, NewsLubuski.pl, Radio Szczecin, Lublin112.pl, TVP3 Rzeszów]"
         ]
       },
@@ -35709,8 +35771,9 @@
           "27-letni kierowca Skody trafił do szpitala z ogólnymi obrażeniami ciała po uderzeniu w bariery energochłonne na zjeździe z drogi S6 w kierunku Jamna. Pierwsze badanie wykazało 1,04 mg alkoholu w litrze wydychanego powietrza, czyli ponad 2 promile. [Źródło: TVP3 Szczecin]",
           "Według wstępnych informacji kierowca utracił panowanie nad pojazdem w wyniku czego uderzył w słup energetyczny, a następnie w drzewo. [Źródło: Polsat News]",
           "Mężczyzna jadący rowerem elektrycznym uderzył w barierki przy ścieżce rowerowej. [Źródło: o2.pl]",
-          "Kapłan został potrącony przez samochód osobowy w sobotnie popołudnie. [Źródło: Niedziela.pl]",
-          "We wczorajszym wypadku w naszej miejscowości przy drodze wojewódzkiej zginął tragicznie nasz ks. Józef Kot. Wieczne odpoczywanie, racz mu dać Panie – czytamy we wpisie na facebookowym profilu OSP Medynia Głogowska. Ze wstępnych ustaleń wynika, że kierujący BMW, 38-letni mieszkaniec powiatu rzeszowskiego, potrącił pieszego, który nagle wszedł na jezdnię. [Źródło: TVP3 Rzeszów]"
+          "Poszkodowanym okazał się ks. Józef Kot, duchowny związany z miejscową społecznością parafialną. Za kierownicą BMW siedział 38-letni mężczyzna. [Źródło: Niedziela.pl]",
+          "— Niestety, dociera do nas z rana tragiczna informacja.",
+          "We wczorajszym wypadku w naszej miejscowości przy drodze wojewódzkiej zginął tragicznie nasz ks. Józef Kot. Wieczne odpoczywanie, racz mu dać Panie – czytamy we wpisie na facebookowym profilu OSP Medynia Głogowska. [Źródło: TVP3 Rzeszów]"
         ]
       }
     ],
@@ -35849,7 +35912,7 @@
         "summary": "3 śmiertelne wypadki drogowe w powiecie wrocławskim. Policjanci apelują o rozwagę na drogach",
         "url": "https://wroclaw.tvp.pl/96585475/3-smiertelne-wypadki-drogowe-w-powiecie-wroclawskim-policjanci-apeluja-o-rozwage-na-drogach",
         "focus": "Eksponuje dane (3 osoby) oraz wątki: wypadki, drogowe.",
-        "omits": "Pomija kontekst (wypadek, szpitala, Ernestowie) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (wypadek, szpitala, świeckim) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "TVP3 Poznań",
@@ -35936,7 +35999,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Nie żyje 90-letni ksiądz",
         "url": "https://www.niedziela.pl/artykul/130141/Nie-zyje-90-letni-ksiadz",
-        "focus": "Wyróżnia własne wątki i pojęcia: napłynęły, poranek, Medyni.",
+        "focus": "Wyróżnia własne wątki i pojęcia: okazał, duchowny, związany.",
         "omits": "Pomija wyliczenia (3 osoby) przytaczane przez TVP3 Wrocław."
       },
       {
@@ -35944,7 +36007,7 @@
         "angle": "Doniesienie regionalne",
         "summary": "Tragedia w powiecie łańcuckim. Nie żyje ksiądz potrącony przez samochód",
         "url": "https://rzeszow.tvp.pl/96620323/tragedia-w-powiecie-lancuckim-nie-zyje-ksiadz-potracony-przez-samochod",
-        "focus": "Wyróżnia własne wątki i pojęcia: Tragedia, Niestety, dociera.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Tragedia, łańcuckim, wczorajszym.",
         "omits": "Pomija wyliczenia (3 osoby) przytaczane przez TVP3 Wrocław."
       }
     ],
