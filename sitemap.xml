@@ -3,25 +3,25 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/</loc>
-    <lastmod>2026-11-22T11:41:36+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -63,13 +63,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/</loc>
-    <lastmod>2026-11-22T11:41:29+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:15+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-22T11:41:33+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:22+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -87,7 +87,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/</loc>
-    <lastmod>2026-11-22T11:41:33+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:22+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -99,7 +99,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -129,7 +129,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -141,15 +141,78 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-22T10:45:01+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:18+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <lastmod>2026-11-22T12:49:22+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
+    <lastmod>2026-11-22T12:49:22+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/o-krok-od-tragedii-w-regionie-policjant-wyniosl-63-latka-z-plonacego/</loc>
+    <lastmod>2026-11-22T12:49:19+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://epoznan.pl/storage/gallery/143676/m2jBiJCjtA6tvwITX97qSHRWTtOHRHNb_left4.jpg?1795340412</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/granerud-powiedzial-co-mysli-o-tomasiaku-stal-sie-bardziej-agresywny/</loc>
+    <lastmod>2026-11-22T12:49:18+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/58/9c/1f/z33144920IHG,-FIS-Ski-Jumping-World-Cup-in-Lillehammer.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/szczyt-klimatyczny-moze-zakonczyc-sie-fiaskiem-trwaja-negocjacje-o/</loc>
+    <lastmod>2026-11-22T12:49:17+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.businessinsider.com.pl/1/dJMk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9iODE0MzQxYjhlNmIyMDBiM2Y0MjgxNzEyY2NmYjBkYy5qcGeSlQMAPs0H0M0EZZMFzQlgzQZA3gACoTAHoTEE</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/pis-znow-obiecuje-tanie-mieszkania-i-kredyt-panstwo-ma-byc-deweloperem/</loc>
+    <lastmod>2026-11-22T12:49:16+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/a88e913baad860de16065f5a963f2d06/?t=crop:2048:895:nowe:0:234,resize:fill:600:300,enlarge:1</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczne-odkrycie-pod-zielona-gora-znaleziono-cialo-mezczyzny/</loc>
+    <lastmod>2026-11-22T12:49:15+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/tragiczne-odkrycie-zielona-gora-mezczyzna.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/20-latek-stracil-panowanie-nad-audi-dwie-osoby-nie-zyja-dwie-sa-ranne/</loc>
@@ -224,15 +287,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <lastmod>2026-11-22T10:45:05+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/22/n_ad4735c7ce5d6e2bba192bc886dafbc4ec5cc179479a861a0ca52ec83e1f7ab6_c.jpg?r=750,400</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
     <lastmod>2026-11-22T10:45:05+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -260,15 +314,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/mieszkania-trzypokojowe-bez-wkladu-wlasnego-rata-juz-od-1800-zl-pis/</loc>
-    <lastmod>2026-11-22T10:44:59+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1431841111.png</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/tragiczny-final-poszukiwan-zaginionego-mezczyzny-w-powiecie-leskim/</loc>
     <lastmod>2026-11-22T10:44:58+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -284,24 +329,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/5f1ad573e19fb3f97cf6c8d88a2a3daa/?t=crop:3590:1569:nowe:0:413,resize:fill:600:300,enlarge:1</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
-    <lastmod>2026-11-22T09:46:17+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jutro-dzien-zyczliwosci-i-pozdrowien-specjalny-osrodek-szkolno/</loc>
-    <lastmod>2026-11-22T09:46:17+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/2026/11/20112026-zyczliwosc1.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1179,7 +1206,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/inflacja-spada-a-ceny-w-sklepach-rosna-jak-tu-oszczedzac/</loc>
-    <lastmod>2026-11-22T11:41:36+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1368,7 +1395,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/bittersweet-festival-znow-na-cytadeli-umowa-przygotowana-jeszcze-nie/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1521,7 +1548,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/koniec-z-dojazdami-rodzice-w-turosli-maja-nowy-zlobek/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1881,7 +1908,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/chiny-wiedza-ze-rosja-z-ukraina-bylaby-imperium-trwanie-wojny-oplaca/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2223,7 +2250,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/jak-nie-dac-sie-oszukac-wloclawscy-seniorzy-poznali-zasady/</loc>
-    <lastmod>2026-11-22T11:41:37+01:00</lastmod>
+    <lastmod>2026-11-22T12:49:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2804,33 +2831,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/Zdj.Air2-2-scaled.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/kryminalni-z-torunia-zatrzymali-39-latka-poszukiwany-listem-gonczym/</loc>
-    <lastmod>2026-11-19T13:17:33+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tylkotorun.pl/wp-content/uploads/2026/11/poszukiwany-przez-policje-w-toruniu-3-original-600x348.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/wojsko-placi-polakom-za-gotowosc-do-walki-nie-musisz-rzucac-pracy-zeby/</loc>
-    <lastmod>2026-11-19T13:17:30+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://xyz.pl/wp-content/uploads/2026/10/polacy_warszawa-1024x576.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/przelomowy-wyrok-miedzynarodowego-trybunalu-sprawiedliwosci-ws-smierci/</loc>
-    <lastmod>2026-11-19T13:17:29+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/f791a7770afe3ff8aa0a5e4ce0903c61/?t=crop:5092:2226:nowe:0:584,resize:fill:600:300,enlarge:1</image:loc>
     </image:image>
   </url>
 </urlset>

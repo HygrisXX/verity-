@@ -3,6 +3,111 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:22+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:22+01:00</news:publication_date>
+      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/o-krok-od-tragedii-w-regionie-policjant-wyniosl-63-latka-z-plonacego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:19+01:00</news:publication_date>
+      <news:title>O krok od tragedii w regionie. Policjant wyniósł 63-latka z płonącego budynku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://epoznan.pl/storage/gallery/143676/m2jBiJCjtA6tvwITX97qSHRWTtOHRHNb_left4.jpg?1795340412</image:loc>
+      <image:title>O krok od tragedii w regionie. Policjant wyniósł 63-latka z płonącego budynku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/granerud-powiedzial-co-mysli-o-tomasiaku-stal-sie-bardziej-agresywny/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:18+01:00</news:publication_date>
+      <news:title>Granerud powiedział, co myśli o Tomasiaku. "Stał się bardziej agresywny"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/58/9c/1f/z33144920IHG,-FIS-Ski-Jumping-World-Cup-in-Lillehammer.jpg</image:loc>
+      <image:title>Granerud powiedział, co myśli o Tomasiaku. "Stał się bardziej agresywny"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/szczyt-klimatyczny-moze-zakonczyc-sie-fiaskiem-trwaja-negocjacje-o/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:17+01:00</news:publication_date>
+      <news:title>Szczyt klimatyczny może zakończyć się fiaskiem. Trwają negocjacje o główny punkt</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.businessinsider.com.pl/1/dJMk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9iODE0MzQxYjhlNmIyMDBiM2Y0MjgxNzEyY2NmYjBkYy5qcGeSlQMAPs0H0M0EZZMFzQlgzQZA3gACoTAHoTEE</image:loc>
+      <image:title>Szczyt klimatyczny może zakończyć się fiaskiem. Trwają negocjacje o główny punkt</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/pis-znow-obiecuje-tanie-mieszkania-i-kredyt-panstwo-ma-byc-deweloperem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:16+01:00</news:publication_date>
+      <news:title>PiS znów obiecuje tanie mieszkania i kredyt. Państwo ma być deweloperem (0,5 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/a88e913baad860de16065f5a963f2d06/?t=crop:2048:895:nowe:0:234,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>PiS znów obiecuje tanie mieszkania i kredyt. Państwo ma być deweloperem (0,5 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/tragiczne-odkrycie-pod-zielona-gora-znaleziono-cialo-mezczyzny/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T12:49:15+01:00</news:publication_date>
+      <news:title>Tragiczne odkrycie pod Zieloną Górą. Znaleziono ciało mężczyzny</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/tragiczne-odkrycie-zielona-gora-mezczyzna.jpg</image:loc>
+      <image:title>Tragiczne odkrycie pod Zieloną Górą. Znaleziono ciało mężczyzny</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/20-latek-stracil-panowanie-nad-audi-dwie-osoby-nie-zyja-dwie-sa-ranne/</loc>
     <news:news>
       <news:publication>
@@ -123,21 +228,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T10:45:05+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/22/n_ad4735c7ce5d6e2bba192bc886dafbc4ec5cc179479a861a0ca52ec83e1f7ab6_c.jpg?r=750,400</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
     <news:news>
       <news:publication>
@@ -183,21 +273,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/mieszkania-trzypokojowe-bez-wkladu-wlasnego-rata-juz-od-1800-zl-pis/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T10:44:59+01:00</news:publication_date>
-      <news:title>Mieszkania trzypokojowe bez wkładu własnego, rata już od 1800 zł. PiS zapowiada nowy program. Kto skorzysta?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1431841111.png</image:loc>
-      <image:title>Mieszkania trzypokojowe bez wkładu własnego, rata już od 1800 zł. PiS zapowiada nowy program. Kto skorzysta?</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/tragiczny-final-poszukiwan-zaginionego-mezczyzny-w-powiecie-leskim/</loc>
     <news:news>
       <news:publication>
@@ -225,36 +300,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/5f1ad573e19fb3f97cf6c8d88a2a3daa/?t=crop:3590:1569:nowe:0:413,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Pod gruzami może być 14 osób</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T09:46:17+01:00</news:publication_date>
-      <news:title>Weekend w Opolu pełen atrakcji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
-      <image:title>Weekend w Opolu pełen atrakcji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jutro-dzien-zyczliwosci-i-pozdrowien-specjalny-osrodek-szkolno/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T09:46:17+01:00</news:publication_date>
-      <news:title>Jutro Dzień Życzliwości i Pozdrowień! Specjalny Ośrodek Szkolno-Wychowawczy pamiętał o nim już dziś</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/2026/11/20112026-zyczliwosc1.jpg</image:loc>
-      <image:title>Jutro Dzień Życzliwości i Pozdrowień! Specjalny Ośrodek Szkolno-Wychowawczy pamiętał o nim już dziś</image:title>
     </image:image>
   </url>
   <url>
@@ -1435,11 +1480,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T11:43:51+01:00</news:publication_date>
-      <news:title>„Diagnoza: guz mózgu”. Sebastian Szczęsny szczerze o zmaganiach z chorobą</news:title>
+      <news:title>Chcą zebrać 939 702 zł. Szczęsny walczy z nowotworem mózgu. "Gramy z Tobą!"</news:title>
     </news:news>
     <image:image>
       <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/Sebastian-Szczesny-scaled.jpg</image:loc>
-      <image:title>„Diagnoza: guz mózgu”. Sebastian Szczęsny szczerze o zmaganiach z chorobą</image:title>
+      <image:title>Chcą zebrać 939 702 zł. Szczęsny walczy z nowotworem mózgu. "Gramy z Tobą!"</image:title>
     </image:image>
   </url>
   <url>
@@ -2955,111 +3000,6 @@
     <image:image>
       <image:loc>http://galeria.bankier.pl/p/8/8/dc703e0c9747d9-948-568-0-249-3544-2126.jpg</image:loc>
       <image:title>Orlen może sprzedać magazyny gazu. Jest oferta od spółki Gaz-Systemu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/pozar-w-szpitalu-w-dabrowie-tarnowskiej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:36+01:00</news:publication_date>
-      <news:title>Pożar w szpitalu w Dąbrowie Tarnowskiej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s9.tvp.pl/images2/9/4/6/uid_946e4afd73084b77bedf12e952fa9082_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Pożar w szpitalu w Dąbrowie Tarnowskiej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/cialo-znalezione-w-redze-trwa-ustalanie-tozsamosci/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:35+01:00</news:publication_date>
-      <news:title>Ciało znalezione w Redze. Trwa ustalanie tożsamości</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s10.tvp.pl/images2/0/f/8/uid_0f853b2520ae44ebabdd945331787e7d_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Ciało znalezione w Redze. Trwa ustalanie tożsamości</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/8-latek-tonal-na-basenie-w-koscierzynie-cztery-kobiety-uslyszaly-wyrok/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:31+01:00</news:publication_date>
-      <news:title>8-latek tonął na basenie w Kościerzynie. Cztery kobiety usłyszały wyrok</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/vyWk9kuTURBXy8xM2JiYzNlYy0yYjg5LTQ3ZjEtODc0My1mY2NiODFjYjk1YzcuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>8-latek tonął na basenie w Kościerzynie. Cztery kobiety usłyszały wyrok</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/plac-rybny-w-lublinie-czeka-przebudowa-wybrano-oferte-za-682-7-tys-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:31+01:00</news:publication_date>
-      <news:title>Plac Rybny w Lublinie czeka przebudowa. Wybrano ofertę za 682,7 tys. zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/Plac-Rybny_fot.-Miasto-Lublin-scaled.jpg</image:loc>
-      <image:title>Plac Rybny w Lublinie czeka przebudowa. Wybrano ofertę za 682,7 tys. zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/estonia-zamknie-przejscia-graniczne-z-rosja-wrogie-dzialania-nie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:28+01:00</news:publication_date>
-      <news:title>Estonia zamknie przejścia graniczne z Rosją. "Wrogie działania nie pozostaną bez odpowiedzi"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/35/99/1f/z33133109IHG,Premier-Estonii-Kristen-Michal.jpg</image:loc>
-      <image:title>Estonia zamknie przejścia graniczne z Rosją. "Wrogie działania nie pozostaną bez odpowiedzi"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/niecodzienny-komunikat-pzpn-dziesieciu-pilkarzy-zawieszonych/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:26+01:00</news:publication_date>
-      <news:title>Niecodzienny komunikat PZPN. Dziesięciu piłkarzy zawieszonych</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NJX5IGP5NUD82-C321.webp</image:loc>
-      <image:title>Niecodzienny komunikat PZPN. Dziesięciu piłkarzy zawieszonych</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/grzegorz-lindenberg-nie-zyje-wspolzalozyciel-gazety-wyborczej-mial-71/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T13:01:24+01:00</news:publication_date>
-      <news:title>Grzegorz Lindenberg nie żyje. Współzałożyciel „Gazety Wyborczej” miał 71 lat</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/653554642c6db70372b4cb33bba29400/grzegorz-lindenberg?t=resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Grzegorz Lindenberg nie żyje. Współzałożyciel „Gazety Wyborczej” miał 71 lat</image:title>
     </image:image>
   </url>
 </urlset>
