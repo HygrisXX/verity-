@@ -3,6 +3,111 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/nadchodzi-finansowy-wstrzas-ktory-moze-odczuc-niemal-kazdy-polak/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:43+01:00</news:publication_date>
+      <news:title>Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-17.jpg</image:loc>
+      <image:title>Nadchodzi finansowy wstrząs, który może odczuć niemal każdy Polak</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:43+01:00</news:publication_date>
+      <news:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1920354443.png</image:loc>
+      <image:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/jest-program-naprawczy-szpitala-w-ostrowcu-w-zalozeniu-optymalizacja-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:43+01:00</news:publication_date>
+      <news:title>Jest program naprawczy szpitala w Ostrowcu. W założeniu optymalizacja i większe przychody</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1239273592.png</image:loc>
+      <image:title>Jest program naprawczy szpitala w Ostrowcu. W założeniu optymalizacja i większe przychody</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/tak-zle-nie-bylo-od-40-lat-kompromitacja-manchesteru-united/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:41+01:00</news:publication_date>
+      <news:title>Tak źle nie było od 40 lat! Kompromitacja Manchesteru United</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/66/9c/1f/z33145190IHG,SOCCER-ENGLAND-LIV-MUN-.jpg</image:loc>
+      <image:title>Tak źle nie było od 40 lat! Kompromitacja Manchesteru United</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/pajor-blysnela-w-meczu-barcelony-nie-mialy-litosci-dla-rywalek/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:40+01:00</news:publication_date>
+      <news:title>Pajor błysnęła w meczu Barcelony! Nie miały litości dla rywalek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/50/9b/1f/z33141840IHG,Ewa-Pajor.jpg</image:loc>
+      <image:title>Pajor błysnęła w meczu Barcelony! Nie miały litości dla rywalek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/niemcy-wzmacniaja-wschodnia-flanke-nato-testy-dronow-kamikadze-na-litwie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:38+01:00</news:publication_date>
+      <news:title>Niemcy wzmacniają wschodnią flankę NATO. Testy dronów kamikadze na Litwie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/a06cbe50cc2b28116a09b7080a6d6424/?t=crop:1920:839:nowe:0:220,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Niemcy wzmacniają wschodnią flankę NATO. Testy dronów kamikadze na Litwie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/polacy-zainwestowali-miliony-w-akcje-firmy-anthropic/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T20:41:37+01:00</news:publication_date>
+      <news:title>Polacy zainwestowali miliony w akcje firmy Anthropic</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/aa7f9fde06618cd0e90d60d9e9ea3c18/?t=crop:4000:2481:nowe:0:93,resize:fill:1200:750,enlarge:1</image:loc>
+      <image:title>Polacy zainwestowali miliony w akcje firmy Anthropic</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/wypadek-na-quadzie-karetka-nie-mogla-dojechac-do-rannego/</loc>
     <news:news>
       <news:publication>
@@ -33,18 +138,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T19:47:17+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -168,21 +273,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T18:42:48+01:00</news:publication_date>
-      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
-      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/byd-ti-7-vel-denza-bao-7-z-tymczasowym-zakazem-sprzedazy-w-unii/</loc>
     <news:news>
       <news:publication>
@@ -255,21 +345,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LWZvcnNhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1l/bnRzL0ZPQjAwMDAwMDAwMDAwMDc3MTM5NTYvZmls/ZXMvZG9tLTM5MzI3NTk0LmpwZyIsInciOjM4NDB9</image:loc>
       <image:title>Podatek za szopę 10 razy wyższy niż za dom. Sprawdź, jak odwołać się od decyzji gminy w 2027 roku</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/mieszkasz-w-bloku-kontrola-moze-skonczyc-sie-grzywna-do-30-000-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T17:40:23+01:00</news:publication_date>
-      <news:title>Mieszkasz w bloku? Kontrola może skończyć się grzywną do 30 000 zł. Przepisy zaostrzono</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-15.jpg</image:loc>
-      <image:title>Mieszkasz w bloku? Kontrola może skończyć się grzywną do 30 000 zł. Przepisy zaostrzono</image:title>
     </image:image>
   </url>
   <url>
@@ -1365,21 +1440,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcn/NhbC5pbmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAw/MDAwMDAwMDAwMDc3MTM3NTMvZmlsZXMvc2h1dHRlcnN0b2/NrLTI4NTIwMjQ1NzEtMzkzMjY5NzYuanBnIiwidyI6Mzg0MH0</image:loc>
       <image:title>Gdzie najlepiej płacą? Te dwa województwa dzieli ponad 30 tys. zł rocznie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/szef-mon-o-ws-wschodniej-granicy-polski-mowi-o-dodatkowym-wsparciu-nato/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T20:39:46+01:00</news:publication_date>
-      <news:title>Szef MON o ws. wschodniej granicy Polski. Mówi o dodatkowym wsparciu NATO</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/66/66hrt5h625629m1381oughct4iph7d91.jpg</image:loc>
-      <image:title>Szef MON o ws. wschodniej granicy Polski. Mówi o dodatkowym wsparciu NATO</image:title>
     </image:image>
   </url>
   <url>
@@ -2598,21 +2658,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/budowa-lub-remont-domu-kiedy-najlepiej-wybrac-okna-i-drzwi/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T23:46:54+01:00</news:publication_date>
-      <news:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/822880066.png</image:loc>
-      <image:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/voyager-1-odlecial-na-jeden-dzien-swietlny-od-ziemi-rozmawiamy-z/</loc>
     <news:news>
       <news:publication>
@@ -2850,96 +2895,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/3g/3g23hx3a5dox466s3p17bxbqhrtyeoip.jpg</image:loc>
       <image:title>Rosyjski pocisk przeleciał nad jego gminą. Wójt wskazuje na poważny problem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/posel-od-brauna-wszedl-do-szkoly-by-szukac-flagi-izraela-wojewoda/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T20:49:22+01:00</news:publication_date>
-      <news:title>Poseł od Brauna wszedł do szkoły, by szukać flagi Izraela. Wojewoda zawiadamia prokuraturę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/7d/9a/1f/z33138813IHG.jpg</image:loc>
-      <image:title>Poseł od Brauna wszedł do szkoły, by szukać flagi Izraela. Wojewoda zawiadamia prokuraturę</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/motorola-potwierdza-harmonogram-aktualizacji-androida-17-czy-twoj/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T20:49:21+01:00</news:publication_date>
-      <news:title>Motorola potwierdza harmonogram aktualizacji Androida 17. Czy Twój smartfon jest na liście?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://konto.chip.pl/wp-content/uploads/2025/06/motorola-razr-60-ultra-22.jpg</image:loc>
-      <image:title>Motorola potwierdza harmonogram aktualizacji Androida 17. Czy Twój smartfon jest na liście?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/dzieki-sprytowi-kupil-anthropic-lata-wczesniej-niz-ty-mogles-nie-dla/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T20:49:21+01:00</news:publication_date>
-      <news:title>Dzięki sprytowi kupił Anthropic lata wcześniej, niż ty mogłeś. – Nie dla zysku, a z obawy, że AI zabierze mi p</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/BPYktkpTURBXy8wZjkwOTg2ZGY2ZDllODg1ZTYzNWM1MmQ0MTdmMzUwMy5qcGeRkwXMyMyF</image:loc>
-      <image:title>Dzięki sprytowi kupił Anthropic lata wcześniej, niż ty mogłeś. – Nie dla zysku, a z obawy, że AI zabierze mi p</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/jensen-huang-mial-zle-traktowac-pracownikow-nvidii-new-york-times-o/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T20:49:19+01:00</news:publication_date>
-      <news:title>Jensen Huang miał źle traktować pracowników Nvidii. "New York Times" o upokorzeniach i groźbach</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://m.natemat.pl/madison-huang-f4asnvzd-1500x0x0x0.jpg</image:loc>
-      <image:title>Jensen Huang miał źle traktować pracowników Nvidii. "New York Times" o upokorzeniach i groźbach</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/lechia-nie-wytrzymala-oblezenia-ze-strony-chojniczanki/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T20:49:18+01:00</news:publication_date>
-      <news:title>Lechia nie wytrzymała oblężenia ze strony Chojniczanki</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/0caabe6b84d629f6b5b7bc8a2a79cf75_xl-150x150.jpg</image:loc>
-      <image:title>Lechia nie wytrzymała oblężenia ze strony Chojniczanki</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/skansen-to-nie-tylko-zabytkowe-chaty-i-dawne-zagrody-w-lubelskim-muzeum/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T20:49:17+01:00</news:publication_date>
-      <news:title>Skansen to nie tylko zabytkowe chaty i dawne zagrody. W lubelskim muzeum pojawiła się wyjątkowa mieszkanka</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145s99.jpg</image:loc>
-      <image:title>Skansen to nie tylko zabytkowe chaty i dawne zagrody. W lubelskim muzeum pojawiła się wyjątkowa mieszkanka</image:title>
     </image:image>
   </url>
 </urlset>
