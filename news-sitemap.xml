@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:41:58+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/dyrektorzy-zyskaja-prawo-do-przeszukania-plecakow-i-szafek-men/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:41:58+01:00</news:publication_date>
+      <news:title>Dyrektorzy zyskają prawo do przeszukania plecaków i szafek. MEN publikuje zasady korzystania z wykrywaczy meta</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2022/12/classroom-g1ac9f84e7_1920.jpg</image:loc>
+      <image:title>Dyrektorzy zyskają prawo do przeszukania plecaków i szafek. MEN publikuje zasady korzystania z wykrywaczy meta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wedkarstwo-nowoczesny-sprzet-i-pasja-przekazywana-pokoleniom/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:41:58+01:00</news:publication_date>
+      <news:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/IMG_2126-1024x683.jpg</image:loc>
+      <image:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/nagle-upadla-na-murawe-dramatyczne-chwile-19-latki-nowe-szczegoly-600/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:41:55+01:00</news:publication_date>
+      <news:title>Nagle upadła na murawę. Dramatyczne chwile 19-latki, nowe szczegóły (600 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.przegladsportowy.onet.pl/1/f4Wk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8wNWRlZjg2YWMzZWU3ODhmN2MwMDRhZDcyMTY5MDc3OS5qcGeSlQPNAnrNAozNCNzNBP2TBc0JYM0GQN4AAqEwB6ExBA</image:loc>
+      <image:title>Nagle upadła na murawę. Dramatyczne chwile 19-latki, nowe szczegóły (600 tys.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/kibice-wyreczyli-jana-urbana-bartosz-nowak-dostal-powolanie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:41:52+01:00</news:publication_date>
+      <news:title>Kibice wyręczyli Jana Urbana. Bartosz Nowak dostał powołanie!</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/11222026HEL125-scaled.jpg</image:loc>
+      <image:title>Kibice wyręczyli Jana Urbana. Bartosz Nowak dostał powołanie!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/padlo-osiem-goli-przy-dwoch-asystowal-nicola-zalewski/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:41:50+01:00</news:publication_date>
+      <news:title>Padło osiem goli. Przy dwóch asystował Nicola Zalewski</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6b0359e11efd96_90717979.jpg</image:loc>
+      <image:title>Padło osiem goli. Przy dwóch asystował Nicola Zalewski</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
     <news:news>
       <news:publication>
@@ -93,36 +183,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T20:41:43+01:00</news:publication_date>
-      <news:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1920354443.png</image:loc>
-      <image:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/jest-program-naprawczy-szpitala-w-ostrowcu-w-zalozeniu-optymalizacja-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T20:41:43+01:00</news:publication_date>
-      <news:title>Jest program naprawczy szpitala w Ostrowcu. W założeniu optymalizacja i większe przychody</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1239273592.png</image:loc>
-      <image:title>Jest program naprawczy szpitala w Ostrowcu. W założeniu optymalizacja i większe przychody</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/tak-zle-nie-bylo-od-40-lat-kompromitacja-manchesteru-united/</loc>
     <news:news>
       <news:publication>
@@ -198,21 +258,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/drozej-za-telefony-w-calej-polsce-nowa-oplata-juz-obowiazuje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T19:47:17+01:00</news:publication_date>
-      <news:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-18.jpg</image:loc>
-      <image:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ponad-1000-zl-wiecej-do-emerytury-projekt-o-wyplatach-z-krus-i-zus/</loc>
     <news:news>
       <news:publication>
@@ -258,7 +303,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/fala-dezinformacji-po-naruszeniu-polskiej-przestrzeni-powietrznej/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/fala-dezinformacji-po-naruszeniu-polskiej-przestrzeni-powietrznej/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -270,6 +315,21 @@
     <image:image>
       <image:loc>https://bi.im-g.pl/im/30/9c/1f/z33145136IHG,Krzysztof-Gawkowski--zdjecie-archiwalne-.jpg</image:loc>
       <image:title>Fala dezinformacji po naruszeniu polskiej przestrzeni powietrznej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nato-wzmocni-ochrone-wschodniej-granicy-polski-szef-mon-zapowiada/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
+      <news:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/776235625.png</image:loc>
+      <image:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</image:title>
     </image:image>
   </url>
   <url>
@@ -2805,81 +2865,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NK1YYNIML2KNN-C321.webp</image:loc>
       <image:title>Porto krok od blamażu. Zdecydowały rzuty karne. Polacy w centrum akcji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/bittersweet-festival-znow-na-cytadeli-umowa-przygotowana-jeszcze-nie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:49+01:00</news:publication_date>
-      <news:title>BitterSweet Festival znów na Cytadeli? "Umowa przygotowana jeszcze nie jest"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://epoznan.pl/storage/gallery/143643/pUUYOMHjjqXQV0jvQHQfJvPFyy64uUNm_left4.jpg?1795209331</image:loc>
-      <image:title>BitterSweet Festival znów na Cytadeli? "Umowa przygotowana jeszcze nie jest"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/trzy-nowe-krasnale-we-wroclawiu-upamietniaja-zbiorke-latwoganga/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:44+01:00</news:publication_date>
-      <news:title>Trzy nowe krasnale we Wrocławiu. Upamiętniają zbiórkę Łatwoganga</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1157771/main/Koleczko-lewe-2.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
-      <image:title>Trzy nowe krasnale we Wrocławiu. Upamiętniają zbiórkę Łatwoganga</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/dwa-dni-z-dzika-przyroda-w-lomzy-czyli-v-narwianski-festiwal/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:43+01:00</news:publication_date>
-      <news:title>Dwa dni z dziką przyrodą w Łomży czyli V Narwiański Festiwal Przyrodniczy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://4lomza.pl/foto/2026/11/261118081742_0.jpg</image:loc>
-      <image:title>Dwa dni z dziką przyrodą w Łomży czyli V Narwiański Festiwal Przyrodniczy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/niemowle-w-oknie-zycia-w-lodzi-siostry-zaopiekowaly-sie-dziewczynka/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:41+01:00</news:publication_date>
-      <news:title>Niemowlę w Oknie życia w Łodzi. Siostry zaopiekowały się dziewczynką</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s10.tvp.pl/images2/0/3/1/uid_0314ec013c83432d8ea671327e79958f_width_900_play_0_pos_0_gs_0_height_506.jpeg</image:loc>
-      <image:title>Niemowlę w Oknie życia w Łodzi. Siostry zaopiekowały się dziewczynką</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zbigniew-ziobro-spotkal-sie-z-amerykanskim-dzialaczem-polski-bohater/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T22:45:24+01:00</news:publication_date>
-      <news:title>Zbigniew Ziobro spotkał się z amerykańskim działaczem. "Polski bohater"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/f2/f2ffdte4a2p7wb7pizyb3stqk4fn23sw.jpg</image:loc>
-      <image:title>Zbigniew Ziobro spotkał się z amerykańskim działaczem. "Polski bohater"</image:title>
     </image:image>
   </url>
 </urlset>
