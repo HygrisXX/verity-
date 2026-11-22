@@ -3,18 +3,138 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/20-latek-stracil-panowanie-nad-audi-dwie-osoby-nie-zyja-dwie-sa-ranne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:33+01:00</news:publication_date>
+      <news:title>20-latek stracił panowanie nad Audi. Dwie osoby nie żyją, dwie są ranne (20 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/47a5afac-be8d-400b-9e33-3cf376b4a8f1</image:loc>
+      <image:title>20-latek stracił panowanie nad Audi. Dwie osoby nie żyją, dwie są ranne (20 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:33+01:00</news:publication_date>
+      <news:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1920354443.png</image:loc>
+      <image:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/w-domu-znaleziono-ciala-malzenstwa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:30+01:00</news:publication_date>
+      <news:title>W domu znaleziono ciała małżeństwa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-4400094-policja-zdjecie-ilustracyjne-ph9022560/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>W domu znaleziono ciała małżeństwa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/pozar-haldy-zlomu-w-porcie-gdansk-30-za/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:30+01:00</news:publication_date>
+      <news:title>Pożar hałdy złomu w Porcie Gdańsk (30 za)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-pozar-haldy-zlomu-w-porcie-gdansk-ph9351748/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Pożar hałdy złomu w Porcie Gdańsk (30 za)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zielona-gora-jazda-na-suwak-to-obowiazek-policja-przypomina-kierowcom-o/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:29+01:00</news:publication_date>
+      <news:title>Zielona Góra. Jazda na suwak to obowiązek. Policja przypomina kierowcom o ważnej zasadzie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://poscigi.pl/wp-content/uploads/2026/11/Bez-nazwy-8.jpg</image:loc>
+      <image:title>Zielona Góra. Jazda na suwak to obowiązek. Policja przypomina kierowcom o ważnej zasadzie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/noze-i-palki-w-autach-policja-zablokowala-ustawke-w-warszawie-16-osob/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:28+01:00</news:publication_date>
+      <news:title>Noże i pałki w autach. Policja zablokowała ustawkę w Warszawie (16 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/0f2bca16-08d4-47f6-a086-3a6a9996bfba</image:loc>
+      <image:title>Noże i pałki w autach. Policja zablokowała ustawkę w Warszawie (16 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/jestem-onkologiem-oto-co-robie-by-uniknac-raka-to-sa-podstawy-92-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:28+01:00</news:publication_date>
+      <news:title>"Jestem onkologiem. Oto co robię, by uniknąć raka. To są podstawy" (92 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.medonet.pl/1/eTKk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8zYTAzMjllNTJjNjI3OWM0MWVjYzU4NmQxYTJjNzA2Yy5qcGeSlQMAzQNRzQoVzQWrkwXNCWDNBkDeAAKhMAehMQQ</image:loc>
+      <image:title>"Jestem onkologiem. Oto co robię, by uniknąć raka. To są podstawy" (92 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/nie-zyje-tworca-jubilerskiej-potegi-paolo-bulgari-zmarl-w-rzymie-89-lat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T11:41:27+01:00</news:publication_date>
+      <news:title>Nie żyje twórca jubilerskiej potęgi. Paolo Bulgari zmarł w Rzymie (89 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/6bf0ca44dd1ce7b977fd0e7e8c3d78e6/?t=crop:2038:890:nowe:0:181.43267108168,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Nie żyje twórca jubilerskiej potęgi. Paolo Bulgari zmarł w Rzymie (89 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T10:45:05+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/22/n_ad4735c7ce5d6e2bba192bc886dafbc4ec5cc179479a861a0ca52ec83e1f7ab6_c.jpg?r=750,400</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -93,21 +213,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-najpierw-pomylil-nawrockiego-z-tuskiem-potem-porownal-prezydenta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T10:44:57+01:00</news:publication_date>
-      <news:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/R6aWVubmlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3Vt/ZW50cy9GT0IwMDAwMDAwMDAwMDA3NzA5Nzc1L2ZpbG/VzL3RydW1wLTM5MzI1MDgyLmpwZyIsInciOjM4NDB9</image:loc>
-      <image:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjski-dron-zburzyl-czesc-bloku-pod-kijowem-pod-gruzami-moze-byc/</loc>
     <news:news>
       <news:publication>
@@ -115,11 +220,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T10:44:55+01:00</news:publication_date>
-      <news:title>Rosyjski dron zburzył część bloku pod Kijowem. Pod gruzami może być kilkanaście osób</news:title>
+      <news:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Pod gruzami może być 14 osób</news:title>
     </news:news>
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/5f1ad573e19fb3f97cf6c8d88a2a3daa/?t=crop:3590:1569:nowe:0:413,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Rosyjski dron zburzył część bloku pod Kijowem. Pod gruzami może być kilkanaście osób</image:title>
+      <image:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Pod gruzami może być 14 osób</image:title>
     </image:image>
   </url>
   <url>
@@ -543,7 +648,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
