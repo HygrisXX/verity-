@@ -3,6 +3,66 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T07:01:20+01:00</news:publication_date>
+      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
+      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T07:01:19+01:00</news:publication_date>
+      <news:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg</image:loc>
+      <image:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sondaz-utrzymanie-wladzy-przez-obecna-koalicje-ma-wiecej-zwolennikow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T07:01:16+01:00</news:publication_date>
+      <news:title>Sondaż: Utrzymanie władzy przez obecną koalicję ma więcej zwolenników niż rząd prawicy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/3279dd4214bd4f920ec239813d519ca0/jaroslaw-kaczynski-i-donald-tusk?t=crop:2912:1273:nowe:0:443,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Sondaż: Utrzymanie władzy przez obecną koalicję ma więcej zwolenników niż rząd prawicy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/wybory-do-senatu-w-lubuskiem-ostatnie-godziny-przed-cisza-wyborcza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T07:01:15+01:00</news:publication_date>
+      <news:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/wybory-do-senatu-lubuskie-cisza-wyborcza.jpg</image:loc>
+      <image:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
     <news:news>
       <news:publication>
@@ -45,36 +105,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NK3F2YIP25KGM-C321.webp</image:loc>
       <image:title>Emocje w GP Las Vegas. Festiwal wyprzedzania. Kolizja kierowców Ferrari</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T04:56:03+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T04:56:03+01:00</news:publication_date>
-      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
-      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
     </image:image>
   </url>
   <url>
@@ -1270,11 +1300,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T09:45:29+01:00</news:publication_date>
-      <news:title>Groźny pożar. Strażacy wynieśli cztery butle z gazem</news:title>
+      <news:title>Groźny pożar. Strażacy wynieśli cztery butle z gazem (59 lat)</news:title>
     </news:news>
     <image:image>
       <image:loc>https://s10.tvp.pl/images2/0/7/8/uid_078e62eed62e4f47a49b8483e998f13d_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Groźny pożar. Strażacy wynieśli cztery butle z gazem</image:title>
+      <image:title>Groźny pożar. Strażacy wynieśli cztery butle z gazem (59 lat)</image:title>
     </image:image>
   </url>
   <url>
@@ -2955,66 +2985,6 @@
     <image:image>
       <image:loc>https://www.radio90.pl/files/2026/03/45-925754.jpg</image:loc>
       <image:title>Makabryczne odkrycie w Jastrzębiu. Ciało dziecka w torebce, porzucone na cmentarzu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/okradli-galerie-w-ostrowie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T07:16:21+01:00</news:publication_date>
-      <news:title>Okradli galerię w Ostrowie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://rc.fm/files/styles/thumbnail/public/artykul_polityczny/168216/policja_obalwa_1.jpg?itok=F2hFok7k</image:loc>
-      <image:title>Okradli galerię w Ostrowie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/decyzja-trumpa-ws-stalej-bazy-w-polsce-coraz-blizej-wiceszef-mon/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T07:16:19+01:00</news:publication_date>
-      <news:title>Decyzja Trumpa ws. stałej bazy w Polsce coraz bliżej. Wiceszef MON wskazał datę (1600 km)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/cu/cugz19wrw7dtacuxo2ra9q1mz55rk9np.png</image:loc>
-      <image:title>Decyzja Trumpa ws. stałej bazy w Polsce coraz bliżej. Wiceszef MON wskazał datę (1600 km)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/barcelona-gromi-w-lm-a-pajor-znow-bez-gola-hiszpanie-oceniaja-wprost/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T07:16:16+01:00</news:publication_date>
-      <news:title>Barcelona gromi w LM, a Pajor znów bez gola. Hiszpanie oceniają wprost</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/ce/93/1f/z33109198IHG,Ewa-Pajor.jpg</image:loc>
-      <image:title>Barcelona gromi w LM, a Pajor znów bez gola. Hiszpanie oceniają wprost</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/usa-ujawniaja-koszt-wojny-z-iranem-ponad-48-mld-dolarow-i-to-nie-koniec/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T07:16:14+01:00</news:publication_date>
-      <news:title>USA ujawniają koszt wojny z Iranem. Ponad 48 mld dolarów i to nie koniec</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/9/1/cce523a2f51621-948-568-0-202-3000-1799.jpg</image:loc>
-      <image:title>USA ujawniają koszt wojny z Iranem. Ponad 48 mld dolarów i to nie koniec</image:title>
     </image:image>
   </url>
 </urlset>
