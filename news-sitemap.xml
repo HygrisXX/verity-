@@ -3,18 +3,138 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:17+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jutro-dzien-zyczliwosci-i-pozdrowien-specjalny-osrodek-szkolno/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:17+01:00</news:publication_date>
+      <news:title>Jutro Dzień Życzliwości i Pozdrowień! Specjalny Ośrodek Szkolno-Wychowawczy pamiętał o nim już dziś</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/2026/11/20112026-zyczliwosc1.jpg</image:loc>
+      <image:title>Jutro Dzień Życzliwości i Pozdrowień! Specjalny Ośrodek Szkolno-Wychowawczy pamiętał o nim już dziś</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/wladimir-semirunnij-poprowadzil-polakow-do-medalu-tego-nie-bylo-od-lat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:15+01:00</news:publication_date>
+      <news:title>Władimir Semirunnij poprowadził Polaków do medalu. Tego nie było od lat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.przegladsportowy.onet.pl/1/1bHk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8zMTVmOGYxNjQxZTg2MjUyZTFiYjVmNDlkM2Y5MDZlMi5qcGeSlQMAzJvNE2HNCuaTBc0JYM0GQN4AAqEwB6ExBA</image:loc>
+      <image:title>Władimir Semirunnij poprowadził Polaków do medalu. Tego nie było od lat</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/pozar-zabytkowego-dworku-w-strzyzowie-30-strazakow-w-akcji-7-za/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:14+01:00</news:publication_date>
+      <news:title>Pożar zabytkowego dworku w Strzyżowie. 30 strażaków w akcji (7 za)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s5.tvp.pl/images2/5/7/1/uid_571dc2d61d1f4061bf198bf994c72834_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Pożar zabytkowego dworku w Strzyżowie. 30 strażaków w akcji (7 za)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/wrze-w-lillehammer-tak-dyrektor-ps-tlumaczy-decyzje-o-puszczeniu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:13+01:00</news:publication_date>
+      <news:title>Wrze w Lillehammer. Tak dyrektor PŚ tłumaczy decyzję o puszczeniu Tomasiaka (12 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NK3H3QERP81G6-C321.webp</image:loc>
+      <image:title>Wrze w Lillehammer. Tak dyrektor PŚ tłumaczy decyzję o puszczeniu Tomasiaka (12 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/tragiczne-odkrycie-w-bialogardzie-nie-zyje-mlody-mezczyzna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:12+01:00</news:publication_date>
+      <news:title>Tragiczne odkrycie w Białogardzie. Nie żyje młody mężczyzna</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/a/4/d/uid_a4de65cdeca64313858dedbf4284ddbd_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Tragiczne odkrycie w Białogardzie. Nie żyje młody mężczyzna</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/samsung-szykuje-wlasne-dynamic-island-w-one-ui-9-5-moze-to-wreszcie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:11+01:00</news:publication_date>
+      <news:title>Samsung szykuje własne Dynamic Island. W One UI 9.5 może to wreszcie mieć sens</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.tabletowo.pl/wp-content/uploads/2026/03/Samsung-Galaxy-S26-recenzja-Tabletowo-19.jpg</image:loc>
+      <image:title>Samsung szykuje własne Dynamic Island. W One UI 9.5 może to wreszcie mieć sens</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-najpierw-pomylil-nawrockiego-z-tuskiem-potem-porownal-prezydenta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T09:46:10+01:00</news:publication_date>
+      <news:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/R6aWVubmlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3Vt/ZW50cy9GT0IwMDAwMDAwMDAwMDA3NzA5Nzc1L2ZpbG/VzL3RydW1wLTM5MzI1MDgyLmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T08:15:06+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/22/n_ad4735c7ce5d6e2bba192bc886dafbc4ec5cc179479a861a0ca52ec83e1f7ab6_c.jpg?r=750,400</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -78,21 +198,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-najpierw-pomylil-nawrockiego-z-tuskiem-potem-porownal-prezydenta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T08:15:01+01:00</news:publication_date>
-      <news:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/R6aWVubmlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3Vt/ZW50cy9GT0IwMDAwMDAwMDAwMDA3NzA5Nzc1L2ZpbG/VzL3RydW1wLTM5MzI1MDgyLmpwZyIsInciOjM4NDB9</image:loc>
-      <image:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sikorski-krytykuje-palac-prezydencki-nigdy-nie-widzialem-czegos-tak/</loc>
     <news:news>
       <news:publication>
@@ -120,21 +225,6 @@
     <image:image>
       <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/Klasyfikacja-1.jpg</image:loc>
       <image:title>Marcin Górny z Bielska-Białej drugi w 50. Rajdzie Cieszyńska Barbórka | WIDEO, ZDJĘCIA</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T07:01:20+01:00</news:publication_date>
-      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
-      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
     </image:image>
   </url>
   <url>
@@ -270,21 +360,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/938f0d800126ff269d2c48fc3c972cb4/?t=crop:5943:2598:nowe:0:445,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Baron narkotykowy „El Chapo Isidro” złapany w Meksyku (11 osób)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/wrze-po-klesce-tomasiaka-malysz-grzmi-po-decyzji-jury-nie-powinno-dojsc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T22:38:25+01:00</news:publication_date>
-      <news:title>Wrze po klęsce Tomasiaka. Małysz grzmi po decyzji jury. "Nie powinno dojść" (12 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NK2XC6J6B02BF-C321.webp</image:loc>
-      <image:title>Wrze po klęsce Tomasiaka. Małysz grzmi po decyzji jury. "Nie powinno dojść" (12 lat)</image:title>
     </image:image>
   </url>
   <url>
@@ -2970,111 +3045,6 @@
     <image:image>
       <image:loc>https://cdn.przegladsportowy.onet.pl/1/PKIk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9lY2YzZGU1ZTRkYmU0MDgzMjU5NjkxMjg2ODZhOTI5MC5qcGeSlQMARM0QTM0JKpMFzQlgzQZA3gACoTAHoTEE</image:loc>
       <image:title>Wielki gest Igi Świątek. Ogłasza: przekazuję 200 tys. zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/wraca-sprawa-tragedii-7-latka-w-lodzkim-aquaparku-przelomowe-informacje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:14+01:00</news:publication_date>
-      <news:title>Wraca sprawa tragedii 7-latka w łódzkim aquaparku. Przełomowe informacje (5 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/jlVk9kuTURBXy9lMmE4MzZjYy05YWI1LTQxOGItOGY2Ni0wYjMyYjliMWEyYzQuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>Wraca sprawa tragedii 7-latka w łódzkim aquaparku. Przełomowe informacje (5 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/52-cudzoziemcow-naruszylo-prawo-pobytowe-akcja-strazy-granicznej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:13+01:00</news:publication_date>
-      <news:title>52 cudzoziemców naruszyło prawo pobytowe. Akcja Straży Granicznej zakończona (52 osoby)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s1.tvp.pl/images2/1/2/b/uid_12b7c791d1a14805abfd98191babcb91_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>52 cudzoziemców naruszyło prawo pobytowe. Akcja Straży Granicznej zakończona (52 osoby)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/nielegalnie-latal-dronem-i-nagrywal-okolice-portu-morskiego-zatrzymala/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:12+01:00</news:publication_date>
-      <news:title>Nielegalnie latał dronem i nagrywał okolice portu morskiego. Zatrzymała go policja</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-policjanci-zatrzymali-40-latka-ktory-nielegalnie-latal-dronem-w-rejonie-portu-morskiego-i-nagrywal-infrastrukture-krytyczna-ph9348377/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Nielegalnie latał dronem i nagrywał okolice portu morskiego. Zatrzymała go policja</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/messi-przed-lewandowskim-ujawniono-zarobki-gwiazd-mls-19-51-mln/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:09+01:00</news:publication_date>
-      <news:title>Messi przed Lewandowskim. Ujawniono zarobki gwiazd MLS (19,51 mln)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/20/n_bc5b9b747f9b8a43b075195955a9e5bc8ca1ed915bacbb8773a4bbe46acd8f23_c.jpg?r=750,400</image:loc>
-      <image:title>Messi przed Lewandowskim. Ujawniono zarobki gwiazd MLS (19,51 mln)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rozwoj-plus-ruch-mateusza-morawieckiego-taka-nazwe-bedzie-nosic-nowa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:07+01:00</news:publication_date>
-      <news:title>"Rozwój Plus Ruch Mateusza Morawieckiego". Taką nazwę będzie nosić nowa partia byłego premiera</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/f/7/105beccc6f7123-948-568-0-15-3000-1799.jpg</image:loc>
-      <image:title>"Rozwój Plus Ruch Mateusza Morawieckiego". Taką nazwę będzie nosić nowa partia byłego premiera</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nowy-rozdzial-inpostu-przejecie-sfinalizowane-wlasciciele-zapowiadaja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:05+01:00</news:publication_date>
-      <news:title>Nowy rozdział InPostu. Przejęcie sfinalizowane, właściciele zapowiadają przyspieszenie inwestycji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://xyz.pl/wp-content/uploads/2026/10/GettyImages-2275812624-1024x683.jpg</image:loc>
-      <image:title>Nowy rozdział InPostu. Przejęcie sfinalizowane, właściciele zapowiadają przyspieszenie inwestycji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/makabryczne-odkrycie-w-jastrzebiu-cialo-dziecka-w-torebce-porzucone-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T10:02:04+01:00</news:publication_date>
-      <news:title>Makabryczne odkrycie w Jastrzębiu. Ciało dziecka w torebce, porzucone na cmentarzu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radio90.pl/files/2026/03/45-925754.jpg</image:loc>
-      <image:title>Makabryczne odkrycie w Jastrzębiu. Ciało dziecka w torebce, porzucone na cmentarzu</image:title>
     </image:image>
   </url>
 </urlset>
