@@ -1,12 +1,174 @@
 [
   {
-    "id": 625277702,
+    "id": 920692758,
     "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/minal-tydzien",
-    "seo_title": "Minął tydzień",
+    "seo_url": "/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji",
+    "seo_title": "Weekend w Opolu pełen atrakcji",
+    "summary_lead": "Trzeci weekend listopada będzie po brzegi wypełniony wydarzeniami kulturalnymi. Dodatkowo nie zabraknie także wydarzeń sportowych.",
+    "meta_description": "Trzeci weekend listopada będzie po brzegi wypełniony wydarzeniami kulturalnymi. Dodatkowo nie zabraknie także wydarzeń sportowych.",
+    "keywords": "Opolskie, Weekend, Opolu, pełen, atrakcji",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-22T02:03:54+01:00",
+    "updated_iso": "2026-11-22T02:03:54+01:00",
+    "display_date": "22.11.2026, 02:03",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Opolskie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "CzasNaOpole.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (CzasNaOpole.pl)",
+        "paragraphs": [
+          "Trzeci weekend listopada będzie po brzegi wypełniony wydarzeniami kulturalnymi. Dodatkowo nie zabraknie także wydarzeń sportowych. Ponadto bogaty program seansów w Kinie Meduza, wystaw w naszych instytucjach kultury oraz w przestrzeni miejskiej.",
+          "Natomiast fani polskiej muzyki powinni wybrać się do Muzeum Polskiej Piosenki na wystawę poświęconą Jerzemu Połomskiemu.",
+          "— Spektakl „Kto się boi braci Grimm?” w Opolskim Teatrze Lalki i Aktora – godz. 9:00, 11:00",
+          "— Zwiedzanie Wieży Ratuszowej na Rynku – godz.: 10.00-11.00, 11.00-12.00, 12.15-13.15, 13.15-14.15, 14.30-15.30, 15.45-16.45",
+          "— 24 OPOLSKA JESIEŃ LITERACKA: Spotkanie ze Szczepanem Twardochem w Miejskiej Bibliotece Publicznej – godz. 18:00",
+          "— Koncert „Cesarskie tańce” w Państwowej Szkole Muzycznej II st. im. F. Chopina – godz. 19:00",
+          "— Wystawa czasowa „Wojenne dzieci” w Centralnym Muzeum Jeńców Wojennych – godz. 8:00 – 17:00",
+          "— Wystawa fotografii Jerzego Stemplewskiego w Centrum Dokumentacyjno-Wystawienniczym Niemców WBP – godz. 8:00 – 16:00",
+          "— Wystawa „Druga strona” studentów i studentek Wydziału Sztuki Uniwersytetu Opolskiego w Muzeum Diecezjalnym [Źródło: CzasNaOpole.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "CzasNaOpole.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Weekend w Opolu pełen atrakcji",
+        "url": "https://czasnaopole.pl/weekend-w-opolu-pelen-atrakcji-3/"
+      }
+    ],
+    "sources": [
+      "CzasNaOpole.pl"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy Opolszczyzny",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Weekend w Opolu pełen atrakcji?",
+        "a": "Ponadto bogaty program seansów w Kinie Meduza, wystaw w naszych instytucjach kultury oraz w przestrzeni miejskiej."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Natomiast fani polskiej muzyki powinni wybrać się do Muzeum Polskiej Piosenki na wystawę poświęconą Jerzemu Połomskiemu."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Opolszczyzny (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 2113000437,
+    "path": "/Polska/Regiony/Lodzkie",
+    "seo_url": "/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra",
+    "seo_title": "Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku",
+    "summary_lead": "Najlepszym zawodnikiem meczu wybrano niemieckiego przyjmującego Resovii, Tobiasa Branda. Od drugiego seta skutecznie atakował również Łukasz Kaczmarek, który zastąpił Karola Butryna: Przyjmujący Skry Bełchatów Igor Grobelny podkreśla…",
+    "meta_description": "Najlepszym zawodnikiem meczu wybrano niemieckiego przyjmującego Resovii, Tobiasa Branda.",
+    "keywords": "Lodzkie, Asseco, Resovia, Rzeszów, przełamała, passę, Zwycięstwo",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-22T02:03:54+01:00",
+    "updated_iso": "2026-11-22T02:03:54+01:00",
+    "display_date": "22.11.2026, 02:03",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Lodzkie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Radio Rzeszów"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (Radio Rzeszów)",
+        "paragraphs": [
+          "Najlepszym zawodnikiem meczu wybrano niemieckiego przyjmującego Resovii, Tobiasa Branda. Od drugiego seta skutecznie atakował również Łukasz Kaczmarek, który zastąpił Karola Butryna: Przyjmujący Skry Bełchatów Igor Grobelny podkreśla, że był to dobry mecz w wykonaniu obu zespołów:",
+          "Zadowolenia ze zwycięstwa nie kryje przyjmujący Asseco Resovii Klemen Ćebulj.",
+          "— Taka wygrana była nam bardzo potrzebna – przyznaje siatkarz rzeszowskiego zespołu.",
+          "https://radio.rzeszow.pl/wp-content/uploads/2026/11/stream_RR_MP3-21-listopad-2026-17_09_21.mp3 Siatkarze Asseco Resovii Rzeszów odnieśli trzecie zwycięstwo w sezonie. W hali Podpromie pokonali PGE GiEK Skrę Bełchatów 3:2, kończąc serię trzech porażek z rzędu.",
+          "Spotkanie rozpoczęło się od wyrównanej rywalizacji. W pierwszym secie lepsi okazali się goście, którzy zwyciężyli po grze na przewagi 28:26. W drugiej partii Rzeszowianie odpowiedzieli zdecydowanie, wygrywając 25:17 i doprowadzając do remisu. [Źródło: Radio Rzeszów]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Radio Rzeszów",
+        "angle": "Relacja wiodąca",
+        "summary": "Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku",
+        "url": "https://radio.rzeszow.pl/376027/asseco-resovia-rzeszow-pge-giek-skra-belchatow-czas-na-przelamanie-zlej-passy/"
+      }
+    ],
+    "sources": [
+      "Radio Rzeszów"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy woj. łódzkiego",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą?",
+        "a": "Od drugiego seta skutecznie atakował również Łukasz Kaczmarek, który zastąpił Karola Butryna: Przyjmujący Skry Bełchatów Igor Grobelny podkreśla, że był to dobry mecz w wykonaniu obu zespołów."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Zadowolenia ze zwycięstwa nie kryje przyjmujący Asseco Resovii Klemen Ćebulj."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy woj. łódzkiego (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 90372259,
+    "path": "/Polska/Regiony/Opolskie",
+    "seo_url": "/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili",
+    "seo_title": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału",
     "summary_lead": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału Praw Człowieka o zabezpieczenie decyzji Zgromadzenia Ogólnego TK o zawieszeniu ich w czynnościach.",
     "meta_description": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału Praw Człowieka o zabezpieczenie decyzji Zgromadzenia…",
-    "keywords": "Opolskie, Minął, tydzień",
+    "keywords": "Opolskie, Wokół, ciągle, dzieje, sędziowie, Święczkowski, Sochański",
     "thumbnail_url": "",
     "published_iso": "2026-11-22T00:55:56+01:00",
     "updated_iso": "2026-11-22T00:55:56+01:00",
@@ -33,7 +195,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "CzasNaOpole.pl",
+        "original": "Minął tydzień",
+        "fact": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (CzasNaOpole.pl)",
@@ -151,168 +319,6 @@
       {
         "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
         "a": "Bardzo cieszy mnie ta wiadomość, że pozyskaliśmy 61 tysięcy 465 złotych na przedsięwzięcie, które ma przyczynić się do wzrostu świadomości ekologicznej mieszkańców."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. łódzkiego (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
-    "id": 927223101,
-    "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga",
-    "seo_title": "Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą",
-    "summary_lead": "Andrzej Poczobut pojawił się w Opolu na wydarzeniu zorganizowanym przez Urząd Marszałkowski Województwa Opolskiego oraz Wojewódzką Bibliotekę Publiczną. Spotkanie prowadził Bartosz T.",
-    "meta_description": "Andrzej Poczobut pojawił się w Opolu na wydarzeniu zorganizowanym przez Urząd Marszałkowski Województwa Opolskiego oraz Wojewódzką Bibliotekę Publiczną.",
-    "keywords": "Opolskie, Andrzej, Poczobut, Opolu, Odwaga, przychodzi, idziesz",
-    "thumbnail_url": "https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg",
-    "published_iso": "2026-11-21T23:36:45+01:00",
-    "updated_iso": "2026-11-21T23:36:45+01:00",
-    "display_date": "21.11.2026, 23:36",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Opolskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Opolska360.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Opolska360.pl)",
-        "paragraphs": [
-          "Andrzej Poczobut pojawił się w Opolu na wydarzeniu zorganizowanym przez Urząd Marszałkowski Województwa Opolskiego oraz Wojewódzką Bibliotekę Publiczną. Spotkanie prowadził Bartosz T. Wieliński, zastępca redaktora naczelnego „Gazety Wyborczej”,",
-          "— Trudno sobie wyobrazić lepszego rozmówcę niż Andrzej Poczobut, Honorowy Obywatel Opola, a więc i województwa opolskiego – mówił, witając publiczność, marszałek województwa Szymon Ogłaza.",
-          "— Nie sposób mówić o panu Andrzeju bez używania wielkich słów: patriota, bojownik o wolność i o prawo do własnych poglądów.",
-          "Mam nadzieję, że to wydarzenie zostanie państwu na długo w pamięci.",
-          "— Mamy tu dzisiaj człowieka, który nie tylko mówi o wolności, ale o tę wolność walczył więzieniem, wieloletnimi prześladowaniami.",
-          "Cieszę się, że pan Andrzej cykl spotkań o Polsce zamyka tutaj w Opolu. Jest z nami także minister Tomasz Siemoniak. Mam nadzieję, że o szczegółach uwolnienia pana Poczobuta coś usłyszymy – dodał wicemarszałek Zbigniew Kubalańca.",
-          "Prowadzący rozpoczął pytaniem o to, jak smakuje wolność dostępna od pół roku po pięciu latach łagru.",
-          "— Świat w ciągu pięciu lat nie za bardzo się zmienił, choć sztucznej inteligencji w 2021 roku nie było – odpowiedział Andrzej Poczobut w Opolu.",
-          "Operacja mogła się powieść, bo my, Zachód, mieliśmy takie osoby, na których zależało drugiej stronie. A odwaga przychodzi w miarę tego, jak idziesz swoją drogą. [Źródło: Opolska360.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Opolska360.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą",
-        "url": "https://opolska360.pl/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga"
-      }
-    ],
-    "sources": [
-      "Opolska360.pl"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Mieszkańcy Opolszczyzny",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą?",
-        "a": "Wieliński, zastępca redaktora naczelnego „Gazety Wyborczej”."
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "— Świat w ciągu pięciu lat nie za bardzo się zmienił, choć sztucznej inteligencji w 2021 roku nie było – odpowiedział Andrzej Poczobut w Opolu."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Opolszczyzny (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
-    "id": 638078893,
-    "path": "/Polska/Regiony/Lodzkie",
-    "seo_url": "/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos",
-    "seo_title": "Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem",
-    "summary_lead": "Skrajnie niebezpieczny incydent podczas zbiórki gabarytów w gminie Wieluń. Wśród starych mebli i niepotrzebnych przedmiotów wystawionych przed posesję znalazła się… butla wypełniona gazem.",
-    "meta_description": "Skrajnie niebezpieczny incydent podczas zbiórki gabarytów w gminie Wieluń.",
-    "keywords": "Lodzkie, zbiórki, gabarytów, gminie, Wieluń, mogło, dojść",
-    "thumbnail_url": "https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png",
-    "published_iso": "2026-11-21T23:36:45+01:00",
-    "updated_iso": "2026-11-21T23:36:45+01:00",
-    "display_date": "21.11.2026, 23:36",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Lodzkie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Radio ZW"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Radio ZW)",
-        "paragraphs": [
-          "Skrajnie niebezpieczny incydent podczas zbiórki gabarytów w gminie Wieluń. Wśród starych mebli i niepotrzebnych przedmiotów wystawionych przed posesję znalazła się… butla wypełniona gazem. O sprawie poinformowało Przedsiębiorstwo Komunalne w Wieluniu, które wystosowało stanowczy apel do mieszkańców o rozwagę.",
-          "Gdyby butla została uszkodzona podczas załadunku lub gdyby doszło do rozszczelnienia czy zapłonu – mogło dojść do tragedii. Przypominamy: butle gazowe, chemikalia, farby czy zużyty sprzęt elektryczny to odpady niebezpieczne i absolutnie nie wolno wystawiać ich podczas zbiórki gabarytów. Jak się okazuję jest jeszcze wiele do zrobienia w zakresie edukacji.",
-          "Właśnie temu służy akcja Bezpieczny Wieluń, która doczekała się już dwóch edycji. My mówimy o bezpieczeństwie z odpadami, gdzie wrzucać baterie, powerbanki. W tamtym roku podczas ćwiczeń zapaliła nam się śmieciarka, bo były powerbanki wyrzucone.",
-          "Mówimy gdzie lakiery, dezodoranty wyrzucić, gdzie farby. Chcemy uniknąć, żeby ktoś zrobił krzywdę. – mówił nam podczas tegorocznego wydarzenia Marcin Gorzelak, prezes Przedsiębiorstwa Komunalnego w Wieluniu, pomysłodawca akcji. Skutki takiej nieodpowiedzialności mogłyby być niewyobrażalne!",
-          "Zbiórka gabarytów nie oznacza, że można wystawić przed posesję wszystko, czego chcemy się pozbyć. [Źródło: Radio ZW]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Radio ZW",
-        "angle": "Relacja wiodąca",
-        "summary": "Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem",
-        "url": "https://www.radiozw.com.pl/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos-wyrzucil-butle-wypelniona-gazem/"
-      }
-    ],
-    "sources": [
-      "Radio ZW"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Mieszkańcy woj. łódzkiego",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś?",
-        "a": "O sprawie poinformowało Przedsiębiorstwo Komunalne w Wieluniu, które wystosowało stanowczy apel do mieszkańców o rozwagę."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Gdyby butla została uszkodzona podczas załadunku lub gdyby doszło do rozszczelnienia czy zapłonu – mogło dojść do tragedii."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
@@ -836,13 +842,13 @@
     "updated_iso": "2026-11-21T22:38:27+01:00",
     "display_date": "21.11.2026, 22:38",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 94,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -854,21 +860,22 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Fausto Isidro Meza-Flores, baron kartelu narkotykowego z listy najbardziej poszukiwanych przez FBI, został schwytany podczas dramatycznej operacji wojskowej w Meksyku. Podczas operacji zginęło 11 osób. [Źródło: Rzeczpospolita, RadioMaryja.pl]"
+          "Fausto Isidro Meza-Flores, baron kartelu narkotykowego z listy najbardziej poszukiwanych przez FBI, został schwytany podczas dramatycznej operacji wojskowej w Meksyku. Podczas operacji zginęło 11 osób. [Źródło: Rzeczpospolita, RadioMaryja.pl, WP Wiadomości]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Podczas sobotniej operacji doszło do starć między członkami jego kartelu Guasave a siłami zbrojnymi. Operację przeprowadziły elitarne formacje sił zbrojnych z wykorzystaniem „działań z ukrycia i zaskoczenia”. Ministerstwo obrony Meksyku podało, że Meza-Flores został aresztowany z pomocą USA. [Źródło: RadioMaryja.pl]"
+          "Podczas sobotniej operacji doszło do starć między członkami jego kartelu Guasave a siłami zbrojnymi. Operację przeprowadziły elitarne formacje sił zbrojnych z wykorzystaniem „działań z ukrycia i zaskoczenia”. Ministerstwo obrony Meksyku podało, że Meza-Flores został aresztowany z pomocą USA. [Źródło: RadioMaryja.pl]",
+          "Mężczyzna figurował na liście dziesięciu najbardziej poszukiwanych osób FBI. Po operacji w stanie Sinaloa doszło do wymiany ognia, podpaleń i śmierci żołnierzy oraz napastników. [Źródło: WP Wiadomości]"
         ]
       }
     ],
@@ -879,7 +886,7 @@
         "summary": "Baron narkotykowy „El Chapo Isidro” złapany w Meksyku",
         "url": "https://www.rp.pl/przestepczosc/art45523761-baron-narkotykowy-el-chapo-isidro-zlapany-w-meksyku",
         "focus": "Podkreśla konkretne liczby (11 osób) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (przeprowadziły, wykorzystaniem, Ministerstwo) rozwijany w RadioMaryja.pl."
+        "omits": "Pomija kontekst (zatrzymała, doszło, przeprowadziły) rozwijany w RadioMaryja.pl, WP Wiadomości."
       },
       {
         "outlet": "RadioMaryja.pl",
@@ -887,18 +894,32 @@
         "summary": "Meksyk: armia zatrzymała barona narkotykowego Isidro Meza-Floresa",
         "url": "https://www.radiomaryja.pl/informacje/meksyk-armia-zatrzymala-barona-narkotykowego-isidro-meza-floresa/",
         "focus": "Podkreśla konkretne liczby (11 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (złapany, Chapo) rozwijany w Rzeczpospolita."
+        "omits": "Pomija kontekst (Chapo, Meksykańskie, Mezę-Floresa) rozwijany w Rzeczpospolita, WP Wiadomości."
+      },
+      {
+        "outlet": "WP Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Był na \"krótkiej liście\" FBI. \"El Chapo Isidro\" zatrzymany",
+        "url": "https://wiadomosci.wp.pl/byl-na-krotkiej-liscie-fbi-el-chapo-isidro-zatrzymany-7353583242987520a",
+        "focus": "Podkreśla konkretne liczby (11 osób) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija kontekst (przeprowadziły, wykorzystaniem, Ministerstwo) rozwijany w RadioMaryja.pl."
       }
     ],
     "sources": [
       "RadioMaryja.pl",
-      "Rzeczpospolita"
+      "Rzeczpospolita",
+      "WP Wiadomości"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wiadomosci.wp.pl/byl-na-krotkiej-liscie-fbi-el-chapo-isidro-zatrzymany-7353583242987520a"
+      }
+    ],
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -911,7 +932,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (2 źródła)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -1179,7 +1200,7 @@
         "summary": "Tie-break do zera w meczu lidera. Jest drugi finalista ATP Finals",
         "url": "https://sportowefakty.wp.pl/tenis/1285462/tie-break-do-zera-w-meczu-lidera-jest-drugi-finalista-atp-finals",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (półfinał, Daniiłem, Reprezentant) rozwijany w Przegląd Sportowy, Sport.pl."
+        "omits": "Pomija kontekst (półfinał, Reprezentant, potwierdził) rozwijany w Przegląd Sportowy, Sport.pl."
       },
       {
         "outlet": "Przegląd Sportowy",
@@ -1187,7 +1208,7 @@
         "summary": "7-0 w tie-breaku. Znamy finalistów ATP Finals, co za hit",
         "url": "https://przegladsportowy.onet.pl/tenis/7-0-w-tie-breaku-znamy-finalistow-atp-finals-co-za-hit/vtm95y2",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (drugiej, niekorzystny, faworytów) rozwijany w WP SportoweFakty, Sport.pl."
+        "omits": "Pomija kontekst (niekorzystny, faworytów, wytrzymał) rozwijany w WP SportoweFakty, Sport.pl."
       },
       {
         "outlet": "Sport.pl",
@@ -1195,7 +1216,7 @@
         "summary": "Tak zagrał lider rankingu w półfinale ATP Finals. Wielki hit o tytuł",
         "url": "https://www.sport.pl/tenis/7,64987,33144707,tak-zagral-lider-rankingu-w-polfinale-atp-finals-wielki-hit.html",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (Carlos, Reprezentant, rozstawiony) rozwijany w WP SportoweFakty, Polsat Sport."
+        "omits": "Pomija kontekst (Reprezentant, rozstawiony, potwierdził) rozwijany w Przegląd Sportowy, WP SportoweFakty."
       },
       {
         "outlet": "Polsat Sport",
@@ -1785,7 +1806,8 @@
           "Służby poinformowały, że nikt nie odniósł obrażeń. [Źródło: Radio Olsztyn]",
           "Minęła doba od wtargnięcia niezidentyfikowanych obiektów latających w polską przestrzeń powietrzną. Równolegle do działań w terenie trwa walka w sieci. [Źródło: Rzeszow-News.pl]",
           "Zakończyły się czynności w miejscu upadku rakiety w miejscowości Nowy Lipowiec w powiecie biłgorajskim. Jeszcze w południe prokuratura wskazywała, że sytuacja w tym miejscu jest najtrudniejsza z uwagi na potencjalne zagrożenie „z punktu widzenia pirotechnicznego”. Obawiano się bowiem, że wciąż mogą się tam znajdować materiały wybuchowe. [Źródło: Lublin112.pl]",
-          "Będą one przekazane do laboratorium do badania i wtedy dopiero będziemy mogli ostatecznie odpowiedzieć na pytanie, jaki jest to rodzaj obiektu latającego. Jak dodała wojewoda, ze wstępnych ustaleń wynika, że prawdopodobnie chodzi o rakietę. Ostateczne potwierdzenie rodzaju obiektu będzie możliwe po przeprowadzeniu badań. [Źródło: Radio Rzeszów]"
+          "Prokuratura i Żandarmeria Wojskowa zakończyły prace w miejscu upadku obiektu latającego w Rudniku nad Sanem – poinformowała Prokuratura Okręgowa w Lublinie. Rzecznik lubelskiej prokuratury Marcin Kozak przekazał, że wszystkie ślady kryminalistyczne i fragmenty obiektu ujawnione w Rudniku „zostały w całości podjęte i procesowo zabezpieczone”.",
+          "Wojewoda podkarpacki Teresa Kubas-Hul powiedziała w TVP Info, że dokładne informacje na temat obiektu latającego, który spadł w Rudniku nad Sanem, będą znane dopiero po przebadaniu zabezpieczonych elementów. [Źródło: Radio Rzeszów]"
         ]
       }
     ],
@@ -1796,7 +1818,7 @@
         "summary": "Szef MON o ws. wschodniej granicy Polski. Mówi o dodatkowym wsparciu NATO",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-21/szef-mon-zabral-glos-ws-wschodniej-granicy-polski-mowi-o-dodatkowych-wsparciu-nato/",
         "focus": "Wyróżnia własne wątki i pojęcia: Mówi.",
-        "omits": "Pomija kontekst (województwie, lubelskim, spadł) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "WP Wiadomości",
@@ -1804,7 +1826,7 @@
         "summary": "Wsparcie NATO dla Polski. Jest zapowiedź szefa MON",
         "url": "https://wiadomosci.wp.pl/wsparcie-nato-dla-polski-jest-zapowiedz-szefa-mon-7353497493972992a",
         "focus": "Wyróżnia własne wątki i pojęcia: zapowiedź, szefa, pojawia.",
-        "omits": "Pomija kontekst (polskiego, prokuratury, obiekty) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Radio Lublin",
@@ -1812,7 +1834,7 @@
         "summary": "Wicepremier Kosiniak-Kamysz: Otrzymamy od sojuszników z NATO wsparcie wzmacniające ochronę wschodniej granicy",
         "url": "https://radio.lublin.pl/2026/11/wicepremier-kosiniak-kamysz-otrzymamy-od-sojusznikow-z-nato-wsparcie-wzmacniajace-ochrone-wschodniej-granicy/",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
-        "omits": "Pomija kontekst (polskiego, prokuratury, obiekty) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Radio Kielce",
@@ -1900,7 +1922,7 @@
         "summary": "Mark Rutte o tym, co zrobi NATO. Władysław Kosiniak-Kamysz podziękował mu za jego deklarację",
         "url": "https://tvn24.pl/swiat/szef-nato-mark-rutte-w-polsce-po-naruszeniu-naszej-przestrzeni-powietrznej-moge-zagwarantowac-st9350823?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: zrobi.",
-        "omits": "Pomija kontekst (województwie, lubelskim, spadł) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "TVP.info",
@@ -1908,7 +1930,7 @@
         "summary": "Będzie wsparcie od Sojuszu dla Polski. „Wzmocnienie ochrony granicy”",
         "url": "https://www.tvp.info/96611826/nadzwyczajne-spotkanie-rady-nato-zapowiedz-wsparcia-dla-polski-szef-mon-o-pomocy-od-nato",
         "focus": "Wyróżnia własne wątki i pojęcia: Wzmocnienie, ochrony.",
-        "omits": "Pomija kontekst (polskiego, prokuratury, obiekty) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Niezależna.pl",
@@ -1932,7 +1954,7 @@
         "summary": "Sekretarz generalny NATO o naruszeniu przestrzeni powietrznej przez trzy rosyjskie obiekty",
         "url": "https://zachod.pl/1594112/sekretarz-generalny-nato-o-naruszeniu-przestrzeni-powietrznej-przez-trzy-rosyjskie-obiekty/",
         "focus": "Wyróżnia własne wątki i pojęcia: wyraźnie, straszną, wojną.",
-        "omits": "Pomija kontekst (województwie, lubelskim, spadł) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Kresy.pl",
@@ -1940,7 +1962,7 @@
         "summary": "Gen. Polko o naruszeniu polskiej przestrzeni powietrznej: „Okazaliśmy się nieskuteczni”",
         "url": "https://kresy.pl/wydarzenia/gen-polko-o-naruszeniu-polskiej-przestrzeni-powietrznej-okazalismy-sie-nieskuteczni/",
         "focus": "Wyróżnia własne wątki i pojęcia: Polko, Okazaliśmy, nieskuteczni.",
-        "omits": "Pomija kontekst (województwie, lubelskim, spadł) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "InfoSecurity24",
@@ -2020,7 +2042,7 @@
         "summary": "Szef MON: Polska otrzyma wsparcie NATO w ochronie wschodniej granicy",
         "url": "https://radioolsztyn.pl/szef-mon-polska-otrzyma-wsparcie-nato-w-ochronie-wschodniej-granicy/01902428",
         "focus": "Wyróżnia własne wątki i pojęcia: ochronie, nikt, odniósł.",
-        "omits": "Pomija kontekst (polskiego, prokuratury, obiekty) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Rzeszow-News.pl",
@@ -2028,7 +2050,7 @@
         "summary": "Co spadło na Podkarpaciu: pocisk, czy dron odrzutowy? Rosyjska propaganda już zmieniła narrację",
         "url": "https://rzeszow-news.pl/rakiety-podkarpacie-ogledziny-rudnik-molodycz/",
         "focus": "Wyróżnia własne wątki i pojęcia: spadło, propaganda, zmieniła.",
-        "omits": "Pomija kontekst (województwie, lubelskim, spadł) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Radio PiK",
@@ -4035,7 +4057,7 @@
       {
         "heading": "Ustalenia wspólne (7 redakcji)",
         "paragraphs": [
-          "W Zakopanem mężczyzna wypadł najprawdopodobniej z okna budynku w pobliżu Krupówek. Około 44-latek z poważnymi obrażeniami trafił do szpitala. Policjanci, którzy weszli do mieszkania, znaleźli tam ciało około 76-letniej kobiety. [Źródło: WP Wiadomości, Podhale24.pl, Fakt.pl, Polsat News, Interia Wydarzenia, Onet Wiadomości, TVP3 Kraków]",
+          "W Zakopanem mężczyzna wypadł najprawdopodobniej z okna budynku w pobliżu Krupówek. Około 44-latek z poważnymi obrażeniami trafił do szpitala. Policjanci, którzy weszli do mieszkania, znaleźli tam ciało około 76-letniej kobiety. [Źródło: WP Wiadomości, Podhale24.pl, Fakt.pl, Polsat News, Interia Wydarzenia, TVP3 Kraków, Onet Wiadomości]",
           "Według informacji przekazanych przez policję zgłoszenie o zdarzeniu wpłynęło w sobotę tuż po godz. 13.40. Do jednego z domów w Zakopanem skierowano policjantów i ratowników. Poszkodowany miał najprawdopodobniej wypaść z okna. [Źródło: WP Wiadomości]",
           "Według ustaleń Wirtualnej Polski do zdarzenia doszło na ulicy Weteranów Wojny, około 30 m od Krupówek. Zabezpieczane i dokumentowane są ślady mogące pomóc w wyjaśnieniu sprawy. [Źródło: WP Wiadomości, Polsat News, TVP3 Kraków]"
         ]
@@ -4057,14 +4079,14 @@
         "summary": "Dramat w Zakopanem. Mężczyzna wypadł z okna, w domu znaleziono zwłoki kobiety",
         "url": "https://wiadomosci.wp.pl/dramat-w-zakopanem-w-mieszkaniu-znaleziono-zwloki-7353453330266112a",
         "focus": "Wyróżnia własne wątki i pojęcia: domu, informacji, przekazanych.",
-        "omits": "Pomija kontekst (Tragedia, centrum, prawdopodobnie) rozwijany w Podhale24.pl, Interia Wydarzenia."
+        "omits": "Pomija kontekst (Tragedia, centrum, kobieta) rozwijany w Podhale24.pl, Interia Wydarzenia."
       },
       {
         "outlet": "Podhale24.pl",
         "angle": "Doniesienie regionalne",
         "summary": "Tragedia w centrum Zakopanego. Znaleziono ciało kobiety, mężczyzna wypadł prawdopodobnie z okna",
         "url": "http://www.podhale24.pl/aktualnosci/artykul/119504/Tragedia_w_centrum_Zakopanego_Znaleziono_cialo_kobiety_mezczyzna_wypadl_prawdopodobnie_z_okna.html",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
+        "focus": "Wyróżnia własne wątki i pojęcia: prawdopodobnie.",
         "omits": "Pomija kontekst (Zabezpieczane, dokumentowane, wyjaśnieniu) rozwijany w WP Wiadomości, Polsat News."
       },
       {
@@ -4088,15 +4110,7 @@
         "angle": "Doniesienie regionalne",
         "summary": "Dramat w Zakopanem. Mężczyzna wypadł z okna, w mieszkaniu znaleziono zwłoki",
         "url": "https://wydarzenia.interia.pl/malopolskie/news-dramat-w-zakopanem-mezczyzna-wypadl-z-okna-w-mieszkaniu-znal,nId,23577055",
-        "focus": "Wyróżnia własne wątki i pojęcia: Tajemnicze, najpewniej, dokonali.",
-        "omits": "Pomija kontekst (Zabezpieczane, dokumentowane, wyjaśnieniu) rozwijany w WP Wiadomości, Polsat News."
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Doniesienie regionalne",
-        "summary": "Tragedia w Zakopanem. Nie żyje kobieta, mężczyzna spadł z wysokości",
-        "url": "https://wiadomosci.onet.pl/krakow/smierc-i-powazny-wypadek-w-zakopanem-policja-wyjasnia-tajemnicze-zdarzenie/7dmztdz",
-        "focus": "Wyróżnia własne wątki i pojęcia: spadł, wysokości, budynków.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Tajemnicze, okoliczności, najpewniej.",
         "omits": "Pomija kontekst (Zabezpieczane, dokumentowane, wyjaśnieniu) rozwijany w WP Wiadomości, Polsat News."
       },
       {
@@ -4104,8 +4118,16 @@
         "angle": "Doniesienie regionalne",
         "summary": "Tragedia w centrum Zakopanego. Nie żyje 76-letnia kobieta",
         "url": "https://krakow.tvp.pl/96609333/tragiczne-zdarzenie-w-zakopanem-policja-bada-okolicznosci-smierci-kobiety",
-        "focus": "Wyróżnia własne wątki i pojęcia: prokuratura, ciężkimi.",
+        "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
         "omits": "Pomija kontekst (znaleziono, Dramat, zwłoki) rozwijany w WP Wiadomości, Podhale24.pl."
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Doniesienie regionalne",
+        "summary": "Tragedia w Zakopanem. Nie żyje kobieta, mężczyzna spadł z wysokości",
+        "url": "https://wiadomosci.onet.pl/krakow/smierc-i-powazny-wypadek-w-zakopanem-policja-wyjasnia-tajemnicze-zdarzenie/7dmztdz",
+        "focus": "Wyróżnia własne wątki i pojęcia: spadł, wysokości.",
+        "omits": "Pomija kontekst (Zabezpieczane, dokumentowane, wyjaśnieniu) rozwijany w WP Wiadomości, Polsat News."
       }
     ],
     "sources": [
@@ -4739,7 +4761,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -4751,24 +4773,25 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Iran zapowiedział, że przełamie blokadę USA w cieśninie Ormuz. Irańskie tankowce są już w drodze – przekazał wiceprzewodniczący parlamentu Iranu Hamidrez Hadżi-Babei. Deputowany Wahid Ahmadi zagroził, że w przypadku ataku na irańskie statki odwet uderzy w infrastrukturę petrochemiczną w regionie. [Źródło: Rzeczpospolita, Interia Wydarzenia, Business Insider PL]",
-          "Wyraził też przekonanie, że kraje, które umożliwiły obecność wojskową i interwencję USA w regionie Bliskiego Wschodu, również zostaną dotknięte konsekwencjami rozszerzania konfliktu z Iranem. Co najmniej trzy tankowce zostały w sobotę zaatakowane w Cieśninie Ormuz lub w jej pobliżu – podała Associated Press. [Źródło: Rzeczpospolita, Interia Wydarzenia, Business Insider PL, WP Wiadomości, Bankier.pl]",
-          "W tym samym czasie Iran pokazał nagranie podziemnego kompleksu rakietowego z nową wyrzutnią zdolną do odpalenia dwóch pocisków na paliwo ciekłe. [Źródło: Rzeczpospolita, WP Wiadomości, Bankier.pl]"
+          "Iran zapowiedział, że przełamie blokadę USA w cieśninie Ormuz. Irańskie tankowce są już w drodze – przekazał wiceprzewodniczący parlamentu Iranu Hamidrez Hadżi-Babei. Deputowany Wahid Ahmadi zagroził, że w przypadku ataku na irańskie statki odwet uderzy w infrastrukturę petrochemiczną w regionie. [Źródło: Rzeczpospolita, Interia Wydarzenia, Business Insider PL, Kresy.pl]",
+          "Wyraził też przekonanie, że kraje, które umożliwiły obecność wojskową i interwencję USA w regionie Bliskiego Wschodu, również zostaną dotknięte konsekwencjami rozszerzania konfliktu z Iranem. Co najmniej trzy tankowce zostały w sobotę zaatakowane w Cieśninie Ormuz lub w jej pobliżu – podała Associated Press. [Źródło: Rzeczpospolita, Interia Wydarzenia, Business Insider PL, WP Wiadomości, Bankier.pl, Kresy.pl]",
+          "W tym samym czasie Iran pokazał nagranie podziemnego kompleksu rakietowego z nową wyrzutnią zdolną do odpalenia dwóch pocisków na paliwo ciekłe. [Źródło: Rzeczpospolita, WP Wiadomości, Bankier.pl, Kresy.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Teheran chce w ten sposób przełamać impas i wznowić eksport ropy naftowej na światowe rynki. Ruch Iranu stawia USA przed dylematem: znieść blokadę bądź wrócić do walk na pełną skalę – ocenia think tank ISW. Według analizy Instytutu Studiów nad Wojną Iran ryzykuje wznowienie konfliktu na szeroką skalę, dążąc do uczynienia blokady politycznie nieopłacalną. [Źródło: Interia Wydarzenia]",
-          "Powiadomił, że jednostki znajdują się już w drodze do punktów docelowych, ale nie wymienił ich nazw. [Źródło: Business Insider PL]"
+          "Powiadomił, że jednostki znajdują się już w drodze do punktów docelowych, ale nie wymienił ich nazw. [Źródło: Business Insider PL]",
+          "W sobotę rano, podczas przepływania przez cieśninę Ormuz w kierunku wyjścia z Zatoki Perskiej, dwa tankowce zostały trafione pociskami. [Źródło: Kresy.pl]"
         ]
       }
     ],
@@ -4778,8 +4801,8 @@
         "angle": "Relacja wiodąca",
         "summary": "Iran: nie mamy wyjścia. 14 tankowców płynie, by przełamać blokadę USA w cieśninie Ormuz",
         "url": "https://www.rp.pl/konflikty-zbrojne/art45523471-iran-nie-mamy-wyjscia-14-tankowcow-plynie-by-przelamac-blokade-usa-w-ciesninie-ormuz",
-        "focus": "Wyróżnia własne wątki i pojęcia: mamy, wyjścia, płynie.",
-        "omits": "Pomija kontekst (nieopłacalną, politycznie, alternatywy) rozwijany w Interia Wydarzenia, Business Insider PL."
+        "focus": "Wyróżnia własne wątki i pojęcia: mamy, płynie.",
+        "omits": "Pomija kontekst (Teheran, zaprezentował, nieopłacalną) rozwijany w Interia Wydarzenia, Kresy.pl."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -4812,12 +4835,21 @@
         "url": "https://www.bankier.pl/wiadomosc/Iran-uderza-w-tankowce-w-ciesninie-Ormuz-Pokazal-tez-podziemne-miasto-rakietowe-9233040.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Wyróżnia własne wątki i pojęcia: uderza, miasto.",
         "omits": "Pomija kontekst (wiceprzewodniczący, infrastrukturę, petrochemiczną) rozwijany w Rzeczpospolita, Interia Wydarzenia."
+      },
+      {
+        "outlet": "Kresy.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Trzy tankowce zaatakowane w rejonie cieśniny Ormuz. Iran demonstruje potencjał rakietowy",
+        "url": "https://kresy.pl/wydarzenia/trzy-tankowce-zaatakowane-w-rejonie-ciesniny-ormuz-iran-demonstruje-potencjal-rakietowy/",
+        "focus": "Wyróżnia własne wątki i pojęcia: rejonie, demonstruje, potencjał.",
+        "omits": "Pomija kontekst (nieopłacalną, politycznie, alternatywy) rozwijany w Interia Wydarzenia, Business Insider PL."
       }
     ],
     "sources": [
       "Bankier.pl",
       "Business Insider PL",
       "Interia Wydarzenia",
+      "Kresy.pl",
       "Rzeczpospolita",
       "WP Wiadomości"
     ],
@@ -4833,12 +4865,16 @@
       {
         "claim_text": "Dopisano źródło: Bankier.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.bankier.pl/wiadomosc/Iran-uderza-w-tankowce-w-ciesninie-Ormuz-Pokazal-tez-podziemne-miasto-rakietowe-9233040.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci"
+      },
+      {
+        "claim_text": "Dopisano źródło: Kresy.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://kresy.pl/wydarzenia/trzy-tankowce-zaatakowane-w-rejonie-ciesniny-ormuz-iran-demonstruje-potencjal-rakietowy/"
       }
     ],
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "seo_faq": [
       {
@@ -4851,7 +4887,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (6 źródeł)."
       }
     ]
   },
@@ -10386,7 +10422,7 @@
     "keywords": "Gospodarka, Inflacja, spada, ceny, sklepach, rosną, oszczędzać",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/534050f3500e17d96284a95648950a44/?t=crop:5000:3101:nowe:0:232,resize:fill:1200:750,enlarge:1",
     "published_iso": "2026-11-21T08:15:26+01:00",
-    "updated_iso": "2026-11-22T00:55:59+01:00",
+    "updated_iso": "2026-11-22T02:03:56+01:00",
     "display_date": "21.11.2026, 08:15",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 88,
@@ -13123,7 +13159,7 @@
     "keywords": "Wielkopolskie, BitterSweet, Festival, znów, Cytadeli, Umowa, przygotowana",
     "thumbnail_url": "https://epoznan.pl/storage/gallery/143643/pUUYOMHjjqXQV0jvQHQfJvPFyy64uUNm_left4.jpg?1795209331",
     "published_iso": "2026-11-20T22:45:49+01:00",
-    "updated_iso": "2026-11-22T00:56:00+01:00",
+    "updated_iso": "2026-11-22T02:03:56+01:00",
     "display_date": "20.11.2026, 22:45",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -14919,7 +14955,7 @@
     "keywords": "Podlaskie, dojazdami, Rodzice, Turośli, żłobek",
     "thumbnail_url": "https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c",
     "published_iso": "2026-11-20T19:57:10+01:00",
-    "updated_iso": "2026-11-22T00:55:59+01:00",
+    "updated_iso": "2026-11-22T02:03:57+01:00",
     "display_date": "20.11.2026, 19:57",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -19684,7 +19720,7 @@
     "keywords": "Swiat, Chiny, wiedzą, Rosja, Ukrainą, byłaby, imperium",
     "thumbnail_url": "",
     "published_iso": "2026-11-20T14:21:41+01:00",
-    "updated_iso": "2026-11-22T00:56:00+01:00",
+    "updated_iso": "2026-11-22T02:03:57+01:00",
     "display_date": "20.11.2026, 14:21",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -24814,7 +24850,7 @@
     "keywords": "Kujawsko-Pomorskie, oszukać, Włocławscy, seniorzy, poznali, zasady, bezpieczeństwa",
     "thumbnail_url": "https://s1.tvp.pl/images2/a/3/3/uid_a33b8cbee519455eaf7b4e9f9e8cdd66_width_900_play_0_pos_0_gs_0_height_506.png",
     "published_iso": "2026-11-19T21:48:50+01:00",
-    "updated_iso": "2026-11-22T00:56:00+01:00",
+    "updated_iso": "2026-11-22T02:03:57+01:00",
     "display_date": "19.11.2026, 21:48",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 88,
@@ -35657,7 +35693,7 @@
     "keywords": "Swiat, Duńczycy, jednomyślnie, poparli, porozumienie, Grenlandii",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/4ec3d5ea21849ed3ba0f68af1b631ca3/?t=crop:3944:1724:nowe:0:272,resize:fill:600:300,enlarge:1",
     "published_iso": "2026-11-19T11:01:28+01:00",
-    "updated_iso": "2026-11-22T00:55:59+01:00",
+    "updated_iso": "2026-11-22T02:03:57+01:00",
     "display_date": "19.11.2026, 11:01",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 90,
