@@ -3,18 +3,138 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:15+01:00</news:publication_date>
+      <news:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg</image:loc>
+      <image:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jutro-dzien-zyczliwosci-i-pozdrowien-specjalny-osrodek-szkolno/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:15+01:00</news:publication_date>
+      <news:title>Jutro Dzień Życzliwości i Pozdrowień! Specjalny Ośrodek Szkolno-Wychowawczy pamiętał o nim już dziś</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/2026/11/20112026-zyczliwosc1.jpg</image:loc>
+      <image:title>Jutro Dzień Życzliwości i Pozdrowień! Specjalny Ośrodek Szkolno-Wychowawczy pamiętał o nim już dziś</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/atak-na-rosyjski-statek-w-zatoce-finskiej-nowe-informacje-strazy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:13+01:00</news:publication_date>
+      <news:title>Atak na rosyjski statek w Zatoce Fińskiej. Nowe informacje Straży Przybrzeżnej (16 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/cw/cwmr5iqj9rz2r2wzn9po3og3n2n29jxy.jpg</image:loc>
+      <image:title>Atak na rosyjski statek w Zatoce Fińskiej. Nowe informacje Straży Przybrzeżnej (16 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/kierwinski-ujawnia-kulisy-policyjnej-operacji-domaga-sie-przeprosin-od/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:12+01:00</news:publication_date>
+      <news:title>Kierwiński ujawnia kulisy policyjnej operacji. Domaga się przeprosin od PiS</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>http://galeria.bankier.pl/p/f/8/aeee0935e66cf2-948-567-0-5-1000-599.jpg</image:loc>
+      <image:title>Kierwiński ujawnia kulisy policyjnej operacji. Domaga się przeprosin od PiS</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/iran-uderzyl-w-bahrajn-na-celowniku-amerykanskie-bazy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:10+01:00</news:publication_date>
+      <news:title>Iran uderzył w Bahrajn. Na celowniku amerykańskie bazy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/j2/j2f458sgwxz2ku61xmke4bb866ncpdcr.jpg</image:loc>
+      <image:title>Iran uderzył w Bahrajn. Na celowniku amerykańskie bazy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/dwa-zdarzenia-drogowe-w-woj-lubelskim-samochod-wjechal-do-wykopu-drugi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:10+01:00</news:publication_date>
+      <news:title>Dwa zdarzenia drogowe w woj. lubelskim. Samochód wjechał do wykopu, drugi uderzył w bariery</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/5ba68991-7625-4805-ad82-9b900014f7a5.jpg</image:loc>
+      <image:title>Dwa zdarzenia drogowe w woj. lubelskim. Samochód wjechał do wykopu, drugi uderzył w bariery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/szef-mswia-z-apelem-do-pis-chodzi-o-policje-jezeli-macie-resztki-honoru/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:09+01:00</news:publication_date>
+      <news:title>Szef MSWiA z apelem do PiS, chodzi o policję. "Jeżeli macie resztki honoru"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ex/exacnj62ddv68h93db1ypkun9qmhqhvu.jpg</image:loc>
+      <image:title>Szef MSWiA z apelem do PiS, chodzi o policję. "Jeżeli macie resztki honoru"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nawet-20-tys-zl-emerytury-dla-czesci-gornikow-wazna-zmiana-przepisow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T13:55:08+01:00</news:publication_date>
+      <news:title>Nawet 20 tys. zł emerytury dla części górników. Ważna zmiana przepisów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://pliki.pulshr.pl/i/14/12/54/141254_r2_620.jpg</image:loc>
+      <image:title>Nawet 20 tys. zł emerytury dla części górników. Ważna zmiana przepisów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T12:49:22+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/22/n_ad4735c7ce5d6e2bba192bc886dafbc4ec5cc179479a861a0ca52ec83e1f7ab6_c.jpg?r=750,400</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -225,21 +345,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/6bf0ca44dd1ce7b977fd0e7e8c3d78e6/?t=crop:2038:890:nowe:0:181.43267108168,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Nie żyje twórca jubilerskiej potęgi. Paolo Bulgari zmarł w Rzymie (89 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T10:45:05+01:00</news:publication_date>
-      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
-      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
     </image:image>
   </url>
   <url>
@@ -1143,21 +1248,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjski-smiglowiec-nad-finlandia-reakcja-ministerstwa-obrony-4-1-km/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T15:42:58+01:00</news:publication_date>
-      <news:title>Rosyjski śmigłowiec nad Finlandią. Reakcja Ministerstwa Obrony (4,1 km)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/o3/o3fb31gt9s86h5pe734y5tw3bsbdze88.jpg</image:loc>
-      <image:title>Rosyjski śmigłowiec nad Finlandią. Reakcja Ministerstwa Obrony (4,1 km)</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/skrajnie-nieodpowiedzialne-zachowanie-w-regionie-przewozili-3/</loc>
     <news:news>
       <news:publication>
@@ -1338,18 +1428,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/sebastian-szczesny-ma-guza-mozgu-dziennikarz-eurosportu-opowiedzial-o/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/chca-zebrac-939-702-zl-szczesny-walczy-z-nowotworem-mozgu-gramy-z-toba/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T13:56:30+01:00</news:publication_date>
-      <news:title>Sebastian Szczęsny ma guza mózgu. Dziennikarz Eurosportu opowiedział o chorobie</news:title>
+      <news:title>Chcą zebrać 939 702 zł. Szczęsny walczy z nowotworem mózgu. "Gramy z Tobą!"</news:title>
     </news:news>
     <image:image>
       <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/df39d0d2-683f-41a9-a9ce-22cae9db1733</image:loc>
-      <image:title>Sebastian Szczęsny ma guza mózgu. Dziennikarz Eurosportu opowiedział o chorobie</image:title>
+      <image:title>Chcą zebrać 939 702 zł. Szczęsny walczy z nowotworem mózgu. "Gramy z Tobą!"</image:title>
     </image:image>
   </url>
   <url>
@@ -1470,21 +1560,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/5c/5cckew668a4vy6fj3vricgvj6qg4g9fh.jpg</image:loc>
       <image:title>Wypili alkohol nieznanego pochodzenia. Zmarło 11 osób, ponad 180 w szpitalach</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/diagnoza-guz-mozgu-sebastian-szczesny-szczerze-o-zmaganiach-z-choroba/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T11:43:51+01:00</news:publication_date>
-      <news:title>Chcą zebrać 939 702 zł. Szczęsny walczy z nowotworem mózgu. "Gramy z Tobą!"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/Sebastian-Szczesny-scaled.jpg</image:loc>
-      <image:title>Chcą zebrać 939 702 zł. Szczęsny walczy z nowotworem mózgu. "Gramy z Tobą!"</image:title>
     </image:image>
   </url>
   <url>
@@ -2850,156 +2925,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/hu/hu8eovj4f2z6ycbv7i811namay31mbvn.jpg</image:loc>
       <image:title>Żołnierz strzelał na granicy z Białorusią. Sąd podjął decyzję</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/jarmark-bozonarodzeniowy-w-bydgoszczy-coraz-blizej-90-stoisk-koncerty-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:48+01:00</news:publication_date>
-      <news:title>Jarmark Bożonarodzeniowy w Bydgoszczy coraz bliżej. 90 stoisk, koncerty i tysiące światełek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s7.tvp.pl/images2/7/2/0/uid_7203b9b5d0d148179657956ef88f49af_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Jarmark Bożonarodzeniowy w Bydgoszczy coraz bliżej. 90 stoisk, koncerty i tysiące światełek</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/dyrektor-szpitala-we-fromborku-stracil-stanowisko-powodem-wyniki/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:47+01:00</news:publication_date>
-      <news:title>Dyrektor szpitala we Fromborku stracił stanowisko. Powodem wyniki kontroli</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/153743277.png</image:loc>
-      <image:title>Dyrektor szpitala we Fromborku stracił stanowisko. Powodem wyniki kontroli</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/stargard-urzad-zawsze-pod-reka-150-proc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:45+01:00</news:publication_date>
-      <news:title>Stargard. Urząd zawsze pod ręką (150 proc)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-11-20_179517828610.jpg</image:loc>
-      <image:title>Stargard. Urząd zawsze pod ręką (150 proc)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/pilkarskie-hity-w-lidze-narodow-to-bedzie-przedwczesny-final/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:42+01:00</news:publication_date>
-      <news:title>Piłkarskie hity w Lidze Narodów. To będzie przedwczesny finał</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/20/n_bfef4513dd7e6980c72529eea0bcdb03f55d3c103093ac670877ec98543a7a06_c.jpg?r=750,400</image:loc>
-      <image:title>Piłkarskie hity w Lidze Narodów. To będzie przedwczesny finał</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/usa-tlumacza-deklaracje-z-shenzhen-to-nie-ustepstwo-wobec-rosji-i-chin/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:41+01:00</news:publication_date>
-      <news:title>USA tłumaczą deklarację z Shenzhen. „To nie ustępstwo wobec Rosji i Chin”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/09/16/320x240px/KZMEYMM2eaOXVCOlFRoWCf190mpiurqgxFYLxZNj.dmkn.png</image:loc>
-      <image:title>USA tłumaczą deklarację z Shenzhen. „To nie ustępstwo wobec Rosji i Chin”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/chiny-wiedza-ze-rosja-z-ukraina-bylaby-imperium-trwanie-wojny-oplaca/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:41+01:00</news:publication_date>
-      <news:title>Chiny wiedzą, że Rosja z Ukrainą byłaby imperium. Trwanie wojny opłaca się im najbardziej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/642076417.png</image:loc>
-      <image:title>Chiny wiedzą, że Rosja z Ukrainą byłaby imperium. Trwanie wojny opłaca się im najbardziej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/mamy-znieczulice-niepewnosc-i-brak-zaufania-do-tych-sygnalow-gen-polko/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:40+01:00</news:publication_date>
-      <news:title>„Mamy znieczulicę, niepewność i brak zaufania do tych sygnałów”. Gen. Polko ostrzega po alarmach w Polsce</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/10800f1bd5ed5294b7a0e5a5ac61e966/?t=crop:1920:839:nowe:0:120,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>„Mamy znieczulicę, niepewność i brak zaufania do tych sygnałów”. Gen. Polko ostrzega po alarmach w Polsce</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/alarm-na-kolei-w-rudniku-nad-sanem-dyzurny-uslyszal-huk-przy-torach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:40+01:00</news:publication_date>
-      <news:title>Alarm na kolei w Rudniku nad Sanem. Dyżurny usłyszał huk przy torach. Wstrzymano ruch kolejowy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/217a8ae5-ab8f-4a29-a929-cd1011cfc467</image:loc>
-      <image:title>Alarm na kolei w Rudniku nad Sanem. Dyżurny usłyszał huk przy torach. Wstrzymano ruch kolejowy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/problematyczny-lokator-nie-placi-i-okupuje-mieszkanie-problem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:39+01:00</news:publication_date>
-      <news:title>Problematyczny lokator nie płaci i okupuje mieszkanie? Problem właścicieli, którego nie da się łatwo rozwiązać</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbm/Nkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc2/MzYyNzIvZmlsZXMvd2luZHlrYWNqYS1rb21vcm5pay1kcnp3aS1wdW/thbmllLXRlY3prYS1kbHVnaS0zOTE0NDUyNC5qcGciLCJ3IjozODQwfQ</image:loc>
-      <image:title>Problematyczny lokator nie płaci i okupuje mieszkanie? Problem właścicieli, którego nie da się łatwo rozwiązać</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/orlen-moze-sprzedac-magazyny-gazu-jest-oferta-od-spolki-gaz-systemu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T14:21:37+01:00</news:publication_date>
-      <news:title>Orlen może sprzedać magazyny gazu. Jest oferta od spółki Gaz-Systemu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/8/8/dc703e0c9747d9-948-568-0-249-3544-2126.jpg</image:loc>
-      <image:title>Orlen może sprzedać magazyny gazu. Jest oferta od spółki Gaz-Systemu</image:title>
     </image:image>
   </url>
 </urlset>
