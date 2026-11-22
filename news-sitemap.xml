@@ -3,6 +3,126 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:45:05+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:45:05+01:00</news:publication_date>
+      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
+      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/zus-do-konca-listopada-mozna-skladac-wnioski-o-wyprawke-szkolna-300-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:45:03+01:00</news:publication_date>
+      <news:title>ZUS: do końca listopada można składać wnioski o wyprawkę szkolną (300 zł)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2014427356.png</image:loc>
+      <image:title>ZUS: do końca listopada można składać wnioski o wyprawkę szkolną (300 zł)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/pko-bp-ekstraklasa-rakow-czestochowa-widzew-lodz-relacja-live-i-wynik/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:45:01+01:00</news:publication_date>
+      <news:title>PKO BP Ekstraklasa: Raków Częstochowa – Widzew Łódź. Relacja live i wynik na żywo</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/v8/v899ssait191ikh2yiybk5kttagxd7p4.jpg</image:loc>
+      <image:title>PKO BP Ekstraklasa: Raków Częstochowa – Widzew Łódź. Relacja live i wynik na żywo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/mieszkania-trzypokojowe-bez-wkladu-wlasnego-rata-juz-od-1800-zl-pis/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:44:59+01:00</news:publication_date>
+      <news:title>Mieszkania trzypokojowe bez wkładu własnego, rata już od 1800 zł. PiS zapowiada nowy program. Kto skorzysta?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1431841111.png</image:loc>
+      <image:title>Mieszkania trzypokojowe bez wkładu własnego, rata już od 1800 zł. PiS zapowiada nowy program. Kto skorzysta?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/tragiczny-final-poszukiwan-zaginionego-mezczyzny-w-powiecie-leskim/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:44:58+01:00</news:publication_date>
+      <news:title>Tragiczny finał poszukiwań zaginionego mężczyzny w powiecie leskim</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s8.tvp.pl/images2/8/f/6/uid_8f68086764dd4a60bacd29262f3c3c9f_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Tragiczny finał poszukiwań zaginionego mężczyzny w powiecie leskim</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-najpierw-pomylil-nawrockiego-z-tuskiem-potem-porownal-prezydenta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:44:57+01:00</news:publication_date>
+      <news:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/R6aWVubmlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3Vt/ZW50cy9GT0IwMDAwMDAwMDAwMDA3NzA5Nzc1L2ZpbG/VzL3RydW1wLTM5MzI1MDgyLmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjski-dron-zburzyl-czesc-bloku-pod-kijowem-pod-gruzami-moze-byc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:44:55+01:00</news:publication_date>
+      <news:title>Rosyjski dron zburzył część bloku pod Kijowem. Pod gruzami może być kilkanaście osób</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/5f1ad573e19fb3f97cf6c8d88a2a3daa/?t=crop:3590:1569:nowe:0:413,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Rosyjski dron zburzył część bloku pod Kijowem. Pod gruzami może być kilkanaście osób</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
     <news:news>
       <news:publication>
@@ -108,51 +228,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trump-najpierw-pomylil-nawrockiego-z-tuskiem-potem-porownal-prezydenta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T09:46:10+01:00</news:publication_date>
-      <news:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLW/R6aWVubmlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3Vt/ZW50cy9GT0IwMDAwMDAwMDAwMDA3NzA5Nzc1L2ZpbG/VzL3RydW1wLTM5MzI1MDgyLmpwZyIsInciOjM4NDB9</image:loc>
-      <image:title>Trump najpierw pomylił Nawrockiego z Tuskiem. Potem porównał prezydenta do premiera Iraku</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T08:15:06+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://files.niezalezna.tech/images/upload/2026/11/22/n_ad4735c7ce5d6e2bba192bc886dafbc4ec5cc179479a861a0ca52ec83e1f7ab6_c.jpg?r=750,400</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/powiatowa-biblioteka-publiczna-w-wieluniu-pozyskala-dofinansowanie-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T08:15:06+01:00</news:publication_date>
-      <news:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
-      <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/sensacyjna-porazka-i-skandaliczne-zachowanie-messiego-trabi-o-tym-caly/</loc>
     <news:news>
       <news:publication>
@@ -225,21 +300,6 @@
     <image:image>
       <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/Klasyfikacja-1.jpg</image:loc>
       <image:title>Marcin Górny z Bielska-Białej drugi w 50. Rajdzie Cieszyńska Barbórka | WIDEO, ZDJĘCIA</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T07:01:19+01:00</news:publication_date>
-      <news:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg</image:loc>
-      <image:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</image:title>
     </image:image>
   </url>
   <url>
@@ -1638,21 +1698,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/kiedy-spadnie-pierwszy-snieg-imgw-nie-ma-watpliwosci-nadciaga-zima-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T07:00:51+01:00</news:publication_date>
-      <news:title>Kiedy spadnie pierwszy śnieg? IMGW nie ma wątpliwości. Nadciąga zima i intensywne opady</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/4GLk9kuTURBXy80NjFjYmQ0ZC04MDQyLTRmNTgtYjlhZC1kYmZjNTgyMzFlZmUuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>Kiedy spadnie pierwszy śnieg? IMGW nie ma wątpliwości. Nadciąga zima i intensywne opady</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/donald-trump-o-prezydencie-nawrockim-najwieksza-polityczna-sensacja-od/</loc>
     <news:news>
       <news:publication>
@@ -2910,141 +2955,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/653554642c6db70372b4cb33bba29400/grzegorz-lindenberg?t=resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Grzegorz Lindenberg nie żyje. Współzałożyciel „Gazety Wyborczej” miał 71 lat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/prezydent-podpisal-wazna-ustawe-nowe-wsparcie-dla-osob-z/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:26+01:00</news:publication_date>
-      <news:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2RuLnBsL2RncHN0YXRpYy9kb2/N1bWVudHMvRk9CMDAwMDAwMDAwMDAwNzcwNzM2My9maWxlcy9hc3lzdGVudC1vc29ieS1u/aWVwZWxub3NwcmF3bmVqLXBvbWFnYS1zdGFyc3plai1vc29iaWUtbmEtd296a3UtaW53YW/xpZHpraW0temFwaWFjLWd1emlraS13LXN3ZXRyemUtMzkyNTc1ODEuanBnIiwidyI6Mzg0MH0</image:loc>
-      <image:title>Prezydent podpisał ważną ustawę. Nowe wsparcie dla osób z niepełnosprawnościami (65 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/ta-sama-firma-inny-abonament-za-prad-prawie-50-proc-wiecej-od-kiedy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:26+01:00</news:publication_date>
-      <news:title>Ta sama firma, inny abonament za prąd., prawie 50 proc. więcej. Od kiedy podwyżka?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbm/Nkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc3/MDg4NTMvZmlsZXMvdXJlLXphdHdpZXJkemlsLXJvem5lLXN0YXdraS/1hYm9uYW1lbnR1LXphLXByYWQtMzkzMjI1ODUuanBnIiwidyI6Mzg0MH0</image:loc>
-      <image:title>Ta sama firma, inny abonament za prąd., prawie 50 proc. więcej. Od kiedy podwyżka?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/domanski-nie-wyklucza-przedluzania-pakietu-cpn-decyzja-niebawem-6-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:26+01:00</news:publication_date>
-      <news:title>Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem (6 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000N4WJFI0HFO7VU-C321.webp</image:loc>
-      <image:title>Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem (6 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zmiany-w-rzadzie-prezydent-powolal-nowego-wicepremiera-i-nowa-ministre/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:26+01:00</news:publication_date>
-      <news:title>Zmiany w rządzie. Prezydent powołał nowego wicepremiera i nową ministrę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1929420937.png</image:loc>
-      <image:title>Zmiany w rządzie. Prezydent powołał nowego wicepremiera i nową ministrę</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/hacknation-2026-w-bydgoszczy-programisci-zmierza-sie-z-wyzwaniami/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:24+01:00</news:publication_date>
-      <news:title>HackNation 2026 w Bydgoszczy. Programiści zmierzą się z wyzwaniami administracji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s5.tvp.pl/images2/e/b/4/uid_eb4c59964b1d488d9e368151fd60bd13_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>HackNation 2026 w Bydgoszczy. Programiści zmierzą się z wyzwaniami administracji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/duzy-pozar-gospodarstwa-13-zastepow-ruszylo-do-akcji-gasniczej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:23+01:00</news:publication_date>
-      <news:title>Duży pożar gospodarstwa. 13 zastępów ruszyło do akcji gaśniczej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/921927017_1860365558726349_3327559023824770186_n.jpg</image:loc>
-      <image:title>Duży pożar gospodarstwa. 13 zastępów ruszyło do akcji gaśniczej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ponar-wadowice-planuje-ipo-na-gpw-oferta-moze-przekroczyc-1-mld-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:19+01:00</news:publication_date>
-      <news:title>PONAR Wadowice planuje IPO na GPW. Oferta może przekroczyć 1 mld zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/03c4d7f540187628cffb576e0ccc724e/?t=crop:4528:2808:nowe:0:104,resize:fill:1200:750,enlarge:1</image:loc>
-      <image:title>PONAR Wadowice planuje IPO na GPW. Oferta może przekroczyć 1 mld zł</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/pentagon-krytykuje-ukrainska-strategie-ostrzega-przed-eskalacja-wojny/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:18+01:00</news:publication_date>
-      <news:title>Pentagon krytykuje ukraińską strategię. Ostrzega przed eskalacją wojny</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1761123170.png</image:loc>
-      <image:title>Pentagon krytykuje ukraińską strategię. Ostrzega przed eskalacją wojny</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/wielki-gest-igi-swiatek-oglasza-przekazuje-200-tys-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T11:02:14+01:00</news:publication_date>
-      <news:title>Wielki gest Igi Świątek. Ogłasza: przekazuję 200 tys. zł</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.przegladsportowy.onet.pl/1/PKIk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9lY2YzZGU1ZTRkYmU0MDgzMjU5NjkxMjg2ODZhOTI5MC5qcGeSlQMARM0QTM0JKpMFzQlgzQZA3gACoTAHoTEE</image:loc>
-      <image:title>Wielki gest Igi Świątek. Ogłasza: przekazuję 200 tys. zł</image:title>
     </image:image>
   </url>
 </urlset>
