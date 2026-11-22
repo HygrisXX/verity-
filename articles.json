@@ -1,12 +1,268 @@
 [
   {
-    "id": 625277702,
+    "id": 920692758,
     "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/minal-tydzien",
-    "seo_title": "Minął tydzień",
+    "seo_url": "/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji",
+    "seo_title": "Weekend w Opolu pełen atrakcji",
+    "summary_lead": "Trzeci weekend listopada będzie po brzegi wypełniony wydarzeniami kulturalnymi. Dodatkowo nie zabraknie także wydarzeń sportowych.",
+    "meta_description": "Trzeci weekend listopada będzie po brzegi wypełniony wydarzeniami kulturalnymi. Dodatkowo nie zabraknie także wydarzeń sportowych.",
+    "keywords": "Opolskie, Weekend, Opolu, pełen, atrakcji",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-22T05:55:25+01:00",
+    "updated_iso": "2026-11-22T05:55:25+01:00",
+    "display_date": "22.11.2026, 05:55",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Opolskie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "CzasNaOpole.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (CzasNaOpole.pl)",
+        "paragraphs": [
+          "Trzeci weekend listopada będzie po brzegi wypełniony wydarzeniami kulturalnymi. Dodatkowo nie zabraknie także wydarzeń sportowych. Ponadto bogaty program seansów w Kinie Meduza, wystaw w naszych instytucjach kultury oraz w przestrzeni miejskiej.",
+          "Natomiast fani polskiej muzyki powinni wybrać się do Muzeum Polskiej Piosenki na wystawę poświęconą Jerzemu Połomskiemu.",
+          "— Spektakl „Kto się boi braci Grimm?” w Opolskim Teatrze Lalki i Aktora – godz. 9:00, 11:00",
+          "— Zwiedzanie Wieży Ratuszowej na Rynku – godz.: 10.00-11.00, 11.00-12.00, 12.15-13.15, 13.15-14.15, 14.30-15.30, 15.45-16.45",
+          "— 24 OPOLSKA JESIEŃ LITERACKA: Spotkanie ze Szczepanem Twardochem w Miejskiej Bibliotece Publicznej – godz. 18:00",
+          "— Koncert „Cesarskie tańce” w Państwowej Szkole Muzycznej II st. im. F. Chopina – godz. 19:00",
+          "— Wystawa czasowa „Wojenne dzieci” w Centralnym Muzeum Jeńców Wojennych – godz. 8:00 – 17:00",
+          "— Wystawa fotografii Jerzego Stemplewskiego w Centrum Dokumentacyjno-Wystawienniczym Niemców WBP – godz. 8:00 – 16:00",
+          "— Wystawa „Druga strona” studentów i studentek Wydziału Sztuki Uniwersytetu Opolskiego w Muzeum Diecezjalnym [Źródło: CzasNaOpole.pl]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "CzasNaOpole.pl",
+        "angle": "Relacja wiodąca",
+        "summary": "Weekend w Opolu pełen atrakcji",
+        "url": "https://czasnaopole.pl/weekend-w-opolu-pelen-atrakcji-3/"
+      }
+    ],
+    "sources": [
+      "CzasNaOpole.pl"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy Opolszczyzny",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Weekend w Opolu pełen atrakcji?",
+        "a": "Ponadto bogaty program seansów w Kinie Meduza, wystaw w naszych instytucjach kultury oraz w przestrzeni miejskiej."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Natomiast fani polskiej muzyki powinni wybrać się do Muzeum Polskiej Piosenki na wystawę poświęconą Jerzemu Połomskiemu."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy Opolszczyzny (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 2113000437,
+    "path": "/Polska/Regiony/Lodzkie",
+    "seo_url": "/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra",
+    "seo_title": "Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku",
+    "summary_lead": "Najlepszym zawodnikiem meczu wybrano niemieckiego przyjmującego Resovii, Tobiasa Branda. Od drugiego seta skutecznie atakował również Łukasz Kaczmarek, który zastąpił Karola Butryna: Przyjmujący Skry Bełchatów Igor Grobelny podkreśla…",
+    "meta_description": "Najlepszym zawodnikiem meczu wybrano niemieckiego przyjmującego Resovii, Tobiasa Branda.",
+    "keywords": "Lodzkie, Asseco, Resovia, Rzeszów, przełamała, passę, Zwycięstwo",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-22T05:55:25+01:00",
+    "updated_iso": "2026-11-22T05:55:25+01:00",
+    "display_date": "22.11.2026, 05:55",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": null,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "1 redakcja"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Regiony/Lodzkie"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Radio Rzeszów"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "1 źródło (lokalne/niszowe)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Relacja źródłowa (Radio Rzeszów)",
+        "paragraphs": [
+          "Najlepszym zawodnikiem meczu wybrano niemieckiego przyjmującego Resovii, Tobiasa Branda. Od drugiego seta skutecznie atakował również Łukasz Kaczmarek, który zastąpił Karola Butryna: Przyjmujący Skry Bełchatów Igor Grobelny podkreśla, że był to dobry mecz w wykonaniu obu zespołów:",
+          "Zadowolenia ze zwycięstwa nie kryje przyjmujący Asseco Resovii Klemen Ćebulj.",
+          "— Taka wygrana była nam bardzo potrzebna – przyznaje siatkarz rzeszowskiego zespołu.",
+          "https://radio.rzeszow.pl/wp-content/uploads/2026/11/stream_RR_MP3-21-listopad-2026-17_09_21.mp3 Siatkarze Asseco Resovii Rzeszów odnieśli trzecie zwycięstwo w sezonie. W hali Podpromie pokonali PGE GiEK Skrę Bełchatów 3:2, kończąc serię trzech porażek z rzędu.",
+          "Spotkanie rozpoczęło się od wyrównanej rywalizacji. W pierwszym secie lepsi okazali się goście, którzy zwyciężyli po grze na przewagi 28:26. W drugiej partii Rzeszowianie odpowiedzieli zdecydowanie, wygrywając 25:17 i doprowadzając do remisu. [Źródło: Radio Rzeszów]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Radio Rzeszów",
+        "angle": "Relacja wiodąca",
+        "summary": "Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku",
+        "url": "https://radio.rzeszow.pl/376027/asseco-resovia-rzeszow-pge-giek-skra-belchatow-czas-na-przelamanie-zlej-passy/"
+      }
+    ],
+    "sources": [
+      "Radio Rzeszów"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Mieszkańcy woj. łódzkiego",
+      "scope": "Sprawy lokalne i samorząd",
+      "status": "Doniesienie lokalne / branżowe"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą?",
+        "a": "Od drugiego seta skutecznie atakował również Łukasz Kaczmarek, który zastąpił Karola Butryna: Przyjmujący Skry Bełchatów Igor Grobelny podkreśla, że był to dobry mecz w wykonaniu obu zespołów."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Zadowolenia ze zwycięstwa nie kryje przyjmujący Asseco Resovii Klemen Ćebulj."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Mieszkańcy woj. łódzkiego (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
+      }
+    ]
+  },
+  {
+    "id": 528095251,
+    "path": "/Sport",
+    "seo_url": "/Sport/emocje-w-gp-las-vegas-festiwal-wyprzedzania-kolizja-kierowcow-ferrari",
+    "seo_title": "Emocje w GP Las Vegas. Festiwal wyprzedzania. Kolizja kierowców Ferrari",
+    "summary_lead": "Nowe regulacje techniczne w Formule 1 sugerują nieprzywiązywanie się do kolejnych manewrów wyprzedzania, bo z uwagi na konieczność ładowania baterii bardzo często oglądamy udane kontrataki.",
+    "meta_description": "Nowe regulacje techniczne w Formule 1 sugerują nieprzywiązywanie się do kolejnych manewrów wyprzedzania, bo z uwagi na konieczność ładowania baterii bardzo…",
+    "keywords": "Sport, Emocje, Vegas, Festiwal, wyprzedzania, Kolizja, kierowców",
+    "thumbnail_url": "https://i.iplsc.com/-/000NK3F2YIP25KGM-C321.webp",
+    "published_iso": "2026-11-22T05:55:23+01:00",
+    "updated_iso": "2026-11-22T05:55:23+01:00",
+    "display_date": "22.11.2026, 05:55",
+    "status": "AUTO_PUBLISHED",
+    "fact_agreement_pct": 86,
+    "admin_note": "",
+    "zero_trust_reason": "",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "2 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Sport"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Interia Sport"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (2 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (2 redakcje)",
+        "paragraphs": [
+          "Nowe regulacje techniczne w Formule 1 sugerują nieprzywiązywanie się do kolejnych manewrów wyprzedzania, bo z uwagi na konieczność ładowania baterii bardzo często oglądamy udane kontrataki. Grand Prix Las Vegas było idealną prezentacją tego sezonu. Na czele stawki raz po raz oglądaliśmy zmianę. [Źródło: Interia Sport]",
+          "Nie wszystkim się to podoba, ale takie są realia. Na metę jako pierwszy przyjechał Max Verstappen, a za nim duet kierowców McLarena. Od samego początku mieliśmy do czynienia z niesamowitą walką Maxa Verstappena, George'a Russella i Isacka Hadjara. [Źródło: Interia Sport]",
+          "O ile trudno było wyprzedzać na starcie, bo dojazd z pól do pierwszego zakrętu jest krótki, to na otwierających okrążeniach oglądaliśmy regularne zmiany w układzie TOP3. Mistrz świata z poprzedniego sezonu miał spore problemy, szybko znalazł się na początku drugiej dziesiątki, nawet za słabo dysponowanym w sobotę Ferrari. [Źródło: Interia Sport]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "Max Verstappen wygrał GP Las Vegas, w którym nie brakowało manewrów wyprzedzania i szalonych zwrotów akcji. Znów gorąco zrobiło się w Ferrari po tym, jak Charles Leclerc wjechał w bolid Lewisa Hamiltona. Monakijczyk otrzymał za to karę od sędziów. [Źródło: WP SportoweFakty]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Interia Sport",
+        "angle": "Relacja wiodąca",
+        "summary": "Emocje w GP Las Vegas. Festiwal wyprzedzania. Kolizja kierowców Ferrari",
+        "url": "https://sport.interia.pl/f1/news-emocje-w-gp-las-vegas-festiwal-wyprzedzania-kolizja-kierowco,nId,23577093",
+        "focus": "Eksponuje dane (40 proc) oraz wątki: Festiwal, regulacje.",
+        "omits": "Pomija wyliczenia (2026) przytaczane przez WP SportoweFakty."
+      },
+      {
+        "outlet": "WP SportoweFakty",
+        "angle": "Relacja sportowa",
+        "summary": "Verstappen królem Las Vegas. Kolizja kierowców Ferrari!",
+        "url": "https://sportowefakty.wp.pl/formula-1/1285511/verstappen-krolem-las-vegas-kolizja-kierowcow-ferrari",
+        "focus": "Eksponuje dane (2026) oraz wątki: królem, wygrał.",
+        "omits": "Pomija wyliczenia (40 proc) przytaczane przez Interia Sport."
+      }
+    ],
+    "sources": [
+      "Interia Sport",
+      "WP SportoweFakty"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Kierowcy i pasażerowie",
+      "scope": "Sport i rozgrywki",
+      "status": "Potwierdzone (2 źródła)"
+    },
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Emocje w GP Las Vegas. Festiwal wyprzedzania. Kolizja kierowców Ferrari?",
+        "a": "Grand Prix Las Vegas było idealną prezentacją tego sezonu."
+      },
+      {
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Na czele stawki raz po raz oglądaliśmy zmianę."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sport i rozgrywki). Status: Potwierdzone (2 źródła)."
+      }
+    ]
+  },
+  {
+    "id": 90372259,
+    "path": "/Polska/Regiony/Opolskie",
+    "seo_url": "/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili",
+    "seo_title": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału",
     "summary_lead": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału Praw Człowieka o zabezpieczenie decyzji Zgromadzenia Ogólnego TK o zawieszeniu ich w czynnościach.",
     "meta_description": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału Praw Człowieka o zabezpieczenie decyzji Zgromadzenia…",
-    "keywords": "Opolskie, Minął, tydzień",
+    "keywords": "Opolskie, Wokół, ciągle, dzieje, sędziowie, Święczkowski, Sochański",
     "thumbnail_url": "",
     "published_iso": "2026-11-22T04:56:03+01:00",
     "updated_iso": "2026-11-22T04:56:03+01:00",
@@ -33,7 +289,13 @@
         "val": "1 źródło (lokalne/niszowe)"
       }
     ],
-    "declickbait": [],
+    "declickbait": [
+      {
+        "outlet": "CzasNaOpole.pl",
+        "original": "Minął tydzień",
+        "fact": "Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału"
+      }
+    ],
     "full_sections": [
       {
         "heading": "Relacja źródłowa (CzasNaOpole.pl)",
@@ -151,168 +413,6 @@
       {
         "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
         "a": "Bardzo cieszy mnie ta wiadomość, że pozyskaliśmy 61 tysięcy 465 złotych na przedsięwzięcie, które ma przyczynić się do wzrostu świadomości ekologicznej mieszkańców."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. łódzkiego (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
-    "id": 927223101,
-    "path": "/Polska/Regiony/Opolskie",
-    "seo_url": "/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga",
-    "seo_title": "Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą",
-    "summary_lead": "Andrzej Poczobut pojawił się w Opolu na wydarzeniu zorganizowanym przez Urząd Marszałkowski Województwa Opolskiego oraz Wojewódzką Bibliotekę Publiczną. Spotkanie prowadził Bartosz T.",
-    "meta_description": "Andrzej Poczobut pojawił się w Opolu na wydarzeniu zorganizowanym przez Urząd Marszałkowski Województwa Opolskiego oraz Wojewódzką Bibliotekę Publiczną.",
-    "keywords": "Opolskie, Andrzej, Poczobut, Opolu, Odwaga, przychodzi, idziesz",
-    "thumbnail_url": "https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg",
-    "published_iso": "2026-11-22T03:52:51+01:00",
-    "updated_iso": "2026-11-22T03:52:51+01:00",
-    "display_date": "22.11.2026, 03:52",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Opolskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Opolska360.pl"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Opolska360.pl)",
-        "paragraphs": [
-          "Andrzej Poczobut pojawił się w Opolu na wydarzeniu zorganizowanym przez Urząd Marszałkowski Województwa Opolskiego oraz Wojewódzką Bibliotekę Publiczną. Spotkanie prowadził Bartosz T. Wieliński, zastępca redaktora naczelnego „Gazety Wyborczej”,",
-          "— Trudno sobie wyobrazić lepszego rozmówcę niż Andrzej Poczobut, Honorowy Obywatel Opola, a więc i województwa opolskiego – mówił, witając publiczność, marszałek województwa Szymon Ogłaza.",
-          "— Nie sposób mówić o panu Andrzeju bez używania wielkich słów: patriota, bojownik o wolność i o prawo do własnych poglądów.",
-          "Mam nadzieję, że to wydarzenie zostanie państwu na długo w pamięci.",
-          "— Mamy tu dzisiaj człowieka, który nie tylko mówi o wolności, ale o tę wolność walczył więzieniem, wieloletnimi prześladowaniami.",
-          "Cieszę się, że pan Andrzej cykl spotkań o Polsce zamyka tutaj w Opolu. Jest z nami także minister Tomasz Siemoniak. Mam nadzieję, że o szczegółach uwolnienia pana Poczobuta coś usłyszymy – dodał wicemarszałek Zbigniew Kubalańca.",
-          "Prowadzący rozpoczął pytaniem o to, jak smakuje wolność dostępna od pół roku po pięciu latach łagru.",
-          "— Świat w ciągu pięciu lat nie za bardzo się zmienił, choć sztucznej inteligencji w 2021 roku nie było – odpowiedział Andrzej Poczobut w Opolu.",
-          "Operacja mogła się powieść, bo my, Zachód, mieliśmy takie osoby, na których zależało drugiej stronie. A odwaga przychodzi w miarę tego, jak idziesz swoją drogą. [Źródło: Opolska360.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Opolska360.pl",
-        "angle": "Relacja wiodąca",
-        "summary": "Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą",
-        "url": "https://opolska360.pl/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga"
-      }
-    ],
-    "sources": [
-      "Opolska360.pl"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Mieszkańcy Opolszczyzny",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą?",
-        "a": "Wieliński, zastępca redaktora naczelnego „Gazety Wyborczej”."
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "— Świat w ciągu pięciu lat nie za bardzo się zmienił, choć sztucznej inteligencji w 2021 roku nie było – odpowiedział Andrzej Poczobut w Opolu."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Opolszczyzny (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
-      }
-    ]
-  },
-  {
-    "id": 638078893,
-    "path": "/Polska/Regiony/Lodzkie",
-    "seo_url": "/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos",
-    "seo_title": "Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem",
-    "summary_lead": "Skrajnie niebezpieczny incydent podczas zbiórki gabarytów w gminie Wieluń. Wśród starych mebli i niepotrzebnych przedmiotów wystawionych przed posesję znalazła się… butla wypełniona gazem.",
-    "meta_description": "Skrajnie niebezpieczny incydent podczas zbiórki gabarytów w gminie Wieluń.",
-    "keywords": "Lodzkie, zbiórki, gabarytów, gminie, Wieluń, mogło, dojść",
-    "thumbnail_url": "https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png",
-    "published_iso": "2026-11-22T03:52:51+01:00",
-    "updated_iso": "2026-11-22T03:52:51+01:00",
-    "display_date": "22.11.2026, 03:52",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": null,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "1 redakcja"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Lodzkie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Radio ZW"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "1 źródło (lokalne/niszowe)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Relacja źródłowa (Radio ZW)",
-        "paragraphs": [
-          "Skrajnie niebezpieczny incydent podczas zbiórki gabarytów w gminie Wieluń. Wśród starych mebli i niepotrzebnych przedmiotów wystawionych przed posesję znalazła się… butla wypełniona gazem. O sprawie poinformowało Przedsiębiorstwo Komunalne w Wieluniu, które wystosowało stanowczy apel do mieszkańców o rozwagę.",
-          "Gdyby butla została uszkodzona podczas załadunku lub gdyby doszło do rozszczelnienia czy zapłonu – mogło dojść do tragedii. Przypominamy: butle gazowe, chemikalia, farby czy zużyty sprzęt elektryczny to odpady niebezpieczne i absolutnie nie wolno wystawiać ich podczas zbiórki gabarytów. Jak się okazuję jest jeszcze wiele do zrobienia w zakresie edukacji.",
-          "Właśnie temu służy akcja Bezpieczny Wieluń, która doczekała się już dwóch edycji. My mówimy o bezpieczeństwie z odpadami, gdzie wrzucać baterie, powerbanki. W tamtym roku podczas ćwiczeń zapaliła nam się śmieciarka, bo były powerbanki wyrzucone.",
-          "Mówimy gdzie lakiery, dezodoranty wyrzucić, gdzie farby. Chcemy uniknąć, żeby ktoś zrobił krzywdę. – mówił nam podczas tegorocznego wydarzenia Marcin Gorzelak, prezes Przedsiębiorstwa Komunalnego w Wieluniu, pomysłodawca akcji. Skutki takiej nieodpowiedzialności mogłyby być niewyobrażalne!",
-          "Zbiórka gabarytów nie oznacza, że można wystawić przed posesję wszystko, czego chcemy się pozbyć. [Źródło: Radio ZW]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Radio ZW",
-        "angle": "Relacja wiodąca",
-        "summary": "Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem",
-        "url": "https://www.radiozw.com.pl/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos-wyrzucil-butle-wypelniona-gazem/"
-      }
-    ],
-    "sources": [
-      "Radio ZW"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Mieszkańcy woj. łódzkiego",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Doniesienie lokalne / branżowe"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś?",
-        "a": "O sprawie poinformowało Przedsiębiorstwo Komunalne w Wieluniu, które wystosowało stanowczy apel do mieszkańców o rozwagę."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Gdyby butla została uszkodzona podczas załadunku lub gdyby doszło do rozszczelnienia czy zapłonu – mogło dojść do tragedii."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
@@ -1814,8 +1914,7 @@
           "Służby poinformowały, że nikt nie odniósł obrażeń. [Źródło: Radio Olsztyn]",
           "Minęła doba od wtargnięcia niezidentyfikowanych obiektów latających w polską przestrzeń powietrzną. Równolegle do działań w terenie trwa walka w sieci. [Źródło: Rzeszow-News.pl]",
           "Zakończyły się czynności w miejscu upadku rakiety w miejscowości Nowy Lipowiec w powiecie biłgorajskim. Jeszcze w południe prokuratura wskazywała, że sytuacja w tym miejscu jest najtrudniejsza z uwagi na potencjalne zagrożenie „z punktu widzenia pirotechnicznego”. Obawiano się bowiem, że wciąż mogą się tam znajdować materiały wybuchowe. [Źródło: Lublin112.pl]",
-          "Prokuratura i Żandarmeria Wojskowa zakończyły prace w miejscu upadku obiektu latającego w Rudniku nad Sanem – poinformowała Prokuratura Okręgowa w Lublinie. Rzecznik lubelskiej prokuratury Marcin Kozak przekazał, że wszystkie ślady kryminalistyczne i fragmenty obiektu ujawnione w Rudniku „zostały w całości podjęte i procesowo zabezpieczone”.",
-          "Wojewoda podkarpacki Teresa Kubas-Hul powiedziała w TVP Info, że dokładne informacje na temat obiektu latającego, który spadł w Rudniku nad Sanem, będą znane dopiero po przebadaniu zabezpieczonych elementów. [Źródło: Radio Rzeszów]"
+          "Rzecznik lubelskiej prokuratury Marcin Kozak przekazał, że wszystkie ślady kryminalistyczne i fragmenty obiektu ujawnione w Rudniku „zostały w całości podjęte i procesowo zabezpieczone”. Jak dodała wojewoda, ze wstępnych ustaleń wynika, że prawdopodobnie chodzi o rakietę. Ostateczne potwierdzenie rodzaju obiektu będzie możliwe po przeprowadzeniu badań. [Źródło: Radio Rzeszów]"
         ]
       }
     ],
@@ -1826,7 +1925,7 @@
         "summary": "Szef MON o ws. wschodniej granicy Polski. Mówi o dodatkowym wsparciu NATO",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-21/szef-mon-zabral-glos-ws-wschodniej-granicy-polski-mowi-o-dodatkowych-wsparciu-nato/",
         "focus": "Wyróżnia własne wątki i pojęcia: Mówi.",
-        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (województwie, spadł, przedstawiciele) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "WP Wiadomości",
@@ -1834,7 +1933,7 @@
         "summary": "Wsparcie NATO dla Polski. Jest zapowiedź szefa MON",
         "url": "https://wiadomosci.wp.pl/wsparcie-nato-dla-polski-jest-zapowiedz-szefa-mon-7353497493972992a",
         "focus": "Wyróżnia własne wątki i pojęcia: zapowiedź, szefa, pojawia.",
-        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, prokuratura, obiekty) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Radio Lublin",
@@ -1842,7 +1941,7 @@
         "summary": "Wicepremier Kosiniak-Kamysz: Otrzymamy od sojuszników z NATO wsparcie wzmacniające ochronę wschodniej granicy",
         "url": "https://radio.lublin.pl/2026/11/wicepremier-kosiniak-kamysz-otrzymamy-od-sojusznikow-z-nato-wsparcie-wzmacniajace-ochrone-wschodniej-granicy/",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
-        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, prokuratura, obiekty) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Radio Kielce",
@@ -1930,7 +2029,7 @@
         "summary": "Mark Rutte o tym, co zrobi NATO. Władysław Kosiniak-Kamysz podziękował mu za jego deklarację",
         "url": "https://tvn24.pl/swiat/szef-nato-mark-rutte-w-polsce-po-naruszeniu-naszej-przestrzeni-powietrznej-moge-zagwarantowac-st9350823?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: zrobi.",
-        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (województwie, spadł, przedstawiciele) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "TVP.info",
@@ -1938,7 +2037,7 @@
         "summary": "Będzie wsparcie od Sojuszu dla Polski. „Wzmocnienie ochrony granicy”",
         "url": "https://www.tvp.info/96611826/nadzwyczajne-spotkanie-rady-nato-zapowiedz-wsparcia-dla-polski-szef-mon-o-pomocy-od-nato",
         "focus": "Wyróżnia własne wątki i pojęcia: Wzmocnienie, ochrony.",
-        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, prokuratura, obiekty) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Niezależna.pl",
@@ -1962,7 +2061,7 @@
         "summary": "Sekretarz generalny NATO o naruszeniu przestrzeni powietrznej przez trzy rosyjskie obiekty",
         "url": "https://zachod.pl/1594112/sekretarz-generalny-nato-o-naruszeniu-przestrzeni-powietrznej-przez-trzy-rosyjskie-obiekty/",
         "focus": "Wyróżnia własne wątki i pojęcia: wyraźnie, straszną, wojną.",
-        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (województwie, spadł, przedstawiciele) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Kresy.pl",
@@ -1970,7 +2069,7 @@
         "summary": "Gen. Polko o naruszeniu polskiej przestrzeni powietrznej: „Okazaliśmy się nieskuteczni”",
         "url": "https://kresy.pl/wydarzenia/gen-polko-o-naruszeniu-polskiej-przestrzeni-powietrznej-okazalismy-sie-nieskuteczni/",
         "focus": "Wyróżnia własne wątki i pojęcia: Polko, Okazaliśmy, nieskuteczni.",
-        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (województwie, spadł, przedstawiciele) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "InfoSecurity24",
@@ -2050,7 +2149,7 @@
         "summary": "Szef MON: Polska otrzyma wsparcie NATO w ochronie wschodniej granicy",
         "url": "https://radioolsztyn.pl/szef-mon-polska-otrzyma-wsparcie-nato-w-ochronie-wschodniej-granicy/01902428",
         "focus": "Wyróżnia własne wątki i pojęcia: ochronie, nikt, odniósł.",
-        "omits": "Pomija kontekst (polskiego, Prokuratura, miejscu) rozwijany w Defence24, Dziennik.pl."
+        "omits": "Pomija kontekst (polskiego, prokuratura, obiekty) rozwijany w Defence24, Dziennik.pl."
       },
       {
         "outlet": "Rzeszow-News.pl",
@@ -2058,7 +2157,7 @@
         "summary": "Co spadło na Podkarpaciu: pocisk, czy dron odrzutowy? Rosyjska propaganda już zmieniła narrację",
         "url": "https://rzeszow-news.pl/rakiety-podkarpacie-ogledziny-rudnik-molodycz/",
         "focus": "Wyróżnia własne wątki i pojęcia: spadło, propaganda, zmieniła.",
-        "omits": "Pomija kontekst (lubelskim, przedstawiciele, miejscowości) rozwijany w WP Wiadomości, Radio Lublin."
+        "omits": "Pomija kontekst (województwie, spadł, przedstawiciele) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Radio PiK",
@@ -2846,13 +2945,13 @@
     "updated_iso": "2026-11-21T18:41:46+01:00",
     "display_date": "21.11.2026, 18:41",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 96,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -2864,22 +2963,23 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Linda Klimovicova – Caijsa Hennemann to decydujące spotkanie w ramach meczu Polska – Szwecja w Billie Jean King Cup. Relacja live i wynik na żywo na Polsatsport.pl. Poza składem Biało-Czerwonych na mecz ze Szwecją z różnych przyczyn znalazło się aż pięć najlepszych polskich tenisistek w rankingu WTA: Iga Świątek, Maja Chwalińska, Magda Linette, Magdalena Fręch i Katarzyna Kawa. [Źródło: Polsat Sport, Interia Sport]",
-          "Pierwszego dnia odbędą się dwa mecze gry pojedynczej, a drugiego spotkanie deblowe oraz jedno lub dwa starcia singlowe. Zwyciężczynie całej konfrontacji w kwietniu 2027 roku zagrają o awans do turnieju finałowego Billie Jean King Cup. [Źródło: Polsat Sport, Interia Sport]"
+          "Linda Klimovicova – Caijsa Hennemann to decydujące spotkanie w ramach meczu Polska – Szwecja w Billie Jean King Cup. Relacja live i wynik na żywo na Polsatsport.pl. Poza składem Biało-Czerwonych na mecz ze Szwecją z różnych przyczyn znalazło się aż pięć najlepszych polskich tenisistek w rankingu WTA: Iga Świątek, Maja Chwalińska, Magda Linette, Magdalena Fręch i Katarzyna Kawa. [Źródło: Polsat Sport, Interia Sport, Rzeczpospolita]",
+          "Pierwszego dnia odbędą się dwa mecze gry pojedynczej, a drugiego spotkanie deblowe oraz jedno lub dwa starcia singlowe. Zwyciężczynie całej konfrontacji w kwietniu 2027 roku zagrają o awans do turnieju finałowego Billie Jean King Cup. [Źródło: Polsat Sport, Interia Sport, Rzeczpospolita]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "W obliczu tylu absencji liderką zespołu będzie 144. w tym zestawieniu Martyna Kubka. Nawet przy tak dużych brakach kadrowych Polki mają szansę na zwycięstwo. Najlepszą szwedzką singlistką jest bowiem Kajsa Rinaldo Persson, która zajmuje 228. miejsce na światowej liście. [Źródło: Interia Sport]"
+          "W obliczu tylu absencji liderką zespołu będzie 144. w tym zestawieniu Martyna Kubka. Nawet przy tak dużych brakach kadrowych Polki mają szansę na zwycięstwo. Najlepszą szwedzką singlistką jest bowiem Kajsa Rinaldo Persson, która zajmuje 228. miejsce na światowej liście. [Źródło: Interia Sport]",
+          "Pięć meczów potrzebowały polskie tenisistki, by pokonać we Włocławku Szwecję. [Źródło: Rzeczpospolita]"
         ]
       }
     ],
@@ -2890,7 +2990,7 @@
         "summary": "Billie Jean King Cup: Linda Klimovicova – Caijsa Hennemann. Relacja live i wynik na żywo online",
         "url": "https://www.polsatsport.pl/wiadomosc/2026-11-21/billie-jean-king-cup-gina-feistel-caijsa-hennemann-relacja-live-i-wynik-na-zywo-online/",
         "focus": "Podkreśla konkretne liczby (2027) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (zestawieniu, zwycięstwo, singlistką) rozwijany w Interia Sport."
+        "omits": "Pomija kontekst (zwycięstwo, Polki, zagwarantowała) rozwijany w Interia Sport, Rzeczpospolita."
       },
       {
         "outlet": "Interia Sport",
@@ -2898,18 +2998,32 @@
         "summary": "Linda Klimovičová – Caijsa Hennemann w BJK Cup. Relacja na żywo",
         "url": "https://sport.interia.pl/tenis/na-zywo-linda-klimovicova-caijsa-hennemann-w-bjk-cup-relacja-na-zywo,nzId,9446",
         "focus": "Podkreśla konkretne liczby (2027) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (online) rozwijany w Polsat Sport."
+        "omits": "Pomija kontekst (zagwarantowała, Rollercoaster, potrzebowały) rozwijany w Rzeczpospolita."
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja sportowa",
+        "summary": "Rollercoaster emocji we Włocławku. Polki zagrają o turniej finałowy Billie Jean King Cup",
+        "url": "https://sport.rp.pl/tenis/art45523801-rollercoaster-emocji-we-wloclawku-polki-zagraja-o-turniej-finalowy-billie-jean-king-cup",
+        "focus": "Podkreśla konkretne liczby (2027) w ujęciu: relacja sportowa.",
+        "omits": "Pomija kontekst (zestawieniu, singlistką, kadrowych) rozwijany w Interia Sport."
       }
     ],
     "sources": [
       "Interia Sport",
-      "Polsat Sport"
+      "Polsat Sport",
+      "Rzeczpospolita"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://sport.rp.pl/tenis/art45523801-rollercoaster-emocji-we-wloclawku-polki-zagraja-o-turniej-finalowy-billie-jean-king-cup"
+      }
+    ],
     "impact": {
       "audience": "Kibice i środowisko sportowe",
       "scope": "Sport i rozgrywki",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -2922,7 +3036,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (2 źródła)."
+        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -3990,7 +4104,7 @@
         "summary": "Prognoza pogody na 22 listopada [WIDEO]",
         "url": "https://radioszczecin.pl/1,514114",
         "focus": "Wyróżnia własne wątki i pojęcia: listopada, WIDEO, Instytut.",
-        "omits": "Pomija kontekst (niedzielę, powietrza, grenlandzkiego) rozwijany w TVN24, TVP3 Wrocław."
+        "omits": "Pomija kontekst (niedzielę, grenlandzkiego, współudziale) rozwijany w TVN24, TVP3 Wrocław."
       },
       {
         "outlet": "TVP3 Wrocław",
@@ -3998,7 +4112,7 @@
         "summary": "Prognoza pogody na niedzielę",
         "url": "https://wroclaw.tvp.pl/96609002/prognoza-pogody-na-niedziele",
         "focus": "Wyróżnia własne wątki i pojęcia: cały, kolejny, dzień.",
-        "omits": "Pomija kontekst (Meteorologii, powietrza, grenlandzkiego) rozwijany w Radio Szczecin, Onet Wiadomości."
+        "omits": "Pomija kontekst (Meteorologii, grenlandzkiego, współudziale) rozwijany w Radio Szczecin, Onet Wiadomości."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -6170,18 +6284,18 @@
     "summary_lead": "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz. Chodzi o Mołodycz, Rudnik nad Sanem i Nowy Lipowiec.",
     "meta_description": "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz.",
     "keywords": "Swietokrzyskie, Dwie, rakiety, dron, polskiej, przestrzeń, powietrznej",
-    "thumbnail_url": "",
+    "thumbnail_url": "https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVub/mlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3VtZW50cy9GT0IwMD/AwMDAwMDAwMDA3NzEyNDkyL2ZpbGVzL3NsdXpieS1uYS1taWV/qc2N1LXpkYXJ6ZW5pYS0zOTMyNjg3Ny5qcGciLCJ3IjozODQwfQ",
     "published_iso": "2026-11-21T14:49:02+01:00",
     "updated_iso": "2026-11-21T16:42:29+01:00",
     "display_date": "21.11.2026, 14:49",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 86,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -6193,15 +6307,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
-          "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz. Chodzi o Mołodycz, Rudnik nad Sanem i Nowy Lipowiec. Według szefa MON w dwóch przypadkach mowa jest o rakietach, a w trzecim najprawdopodobniej o dronie odrzutowym. [Źródło: TVP3 Kielce]",
+          "Trzy miejsca upadku obiektów, które naruszyły polską przestrzeń powietrzną, wskazał w piątek minister obrony narodowej Władysław Kosiniak-Kamysz. Chodzi o Mołodycz, Rudnik nad Sanem i Nowy Lipowiec. Według szefa MON w dwóch przypadkach mowa jest o rakietach, a w trzecim najprawdopodobniej o dronie odrzutowym. [Źródło: TVP3 Kielce, Dziennik.pl]",
           "Rakieta Ch-101 w Nowym Lipowcu która spadła około 200–300 metrów od zabudowań. Najnowsze informacje przekazano podczas konferencji prasowej z udziałem szefa MON oraz Dowódcy Operacyjnego Rodzajów Sił Zbrojnych gen. broni pil. [Źródło: TVP3 Kielce]",
           "Władysław Kosiniak-Kamysz poinformował, że obiekty spadły w Mołodyczu w powiecie jarosławskim, Rudniku nad Sanem w powiecie niżańskim oraz Nowym Lipowcu w powiecie biłgorajskim. [Źródło: TVP3 Kielce]",
           "— W tym ostatnim przypadku już najwięcej możemy powiedzieć, że to była rakieta Ch-101, która naruszyła polską przestrzeń powietrzną i jest zlokalizowana w tym miejscu. [Źródło: TVP3 Kielce]",
@@ -6215,8 +6329,8 @@
         "angle": "Relacja wiodąca",
         "summary": "Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań",
         "url": "https://kielce.tvp.pl/96586060/trzy-obiekty-spadly-w-polsce-rakieta-ch-101-200-metrow-od-zabudowan",
-        "focus": "Wyróżnia własne wątki i pojęcia: polskiej, przestrzeń, powietrznej.",
-        "omits": "Obejmuje kluczowe fakty i liczby zbieżne z pozostałymi źródłami."
+        "focus": "Wyróżnia własne wątki i pojęcia: polskiej, Jeden, uderzył.",
+        "omits": "Pomija kontekst (potencjalnych, Żandarmeria, prokuratury) rozwijany w Dziennik.pl."
       },
       {
         "outlet": "Radio Kielce",
@@ -6224,18 +6338,32 @@
         "summary": "Szef MON: są trzy miejsca upadku obiektów. To dwie rakiety i dron",
         "url": "https://radiokielce.pl/1459189/szef-mon-sa-trzy-miejsca-upadku-obiektow-to-dwie-rakiety-i-dron/",
         "focus": "Wyróżnia własne wątki i pojęcia: Szef.",
-        "omits": "Pomija kontekst (najprawdopodobniej, Kosiniak-Kamysz, zlokalizowana) rozwijany w TVP3 Kielce."
+        "omits": "Pomija kontekst (najprawdopodobniej, Kosiniak-Kamysz, poinformował) rozwijany w TVP3 Kielce, Dziennik.pl."
+      },
+      {
+        "outlet": "Dziennik.pl",
+        "angle": "Doniesienie regionalne",
+        "summary": "Obiekty latające nad Polską. Żandarmeria Wojskowa sprawdza miejsca upadku",
+        "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11349589,obiekty-latajace-nad-polska-zandarmeria-wojskowa-sprawdza-miejsca-upa.html",
+        "focus": "Wyróżnia własne wątki i pojęcia: latające, Żandarmeria, Wojskowa.",
+        "omits": "Pomija kontekst (rakiety, zlokalizowana, Operacyjnego) rozwijany w TVP3 Kielce, Radio Kielce."
       }
     ],
     "sources": [
+      "Dziennik.pl",
       "Radio Kielce",
       "TVP3 Kielce"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11349589,obiekty-latajace-nad-polska-zandarmeria-wojskowa-sprawdza-miejsca-upa.html"
+      }
+    ],
     "impact": {
       "audience": "Mieszkańcy woj. świętokrzyskiego",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -6248,7 +6376,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. świętokrzyskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
+        "a": "Dotyczy grupy: Mieszkańcy woj. świętokrzyskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
       }
     ]
   },
@@ -8459,7 +8587,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -8471,15 +8599,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "Prawie jedna czwarta Polaków wskazała prezydenta Karola Nawrockiego jako lidera prawicy – wynika z najnowszego sondażu. Na drugim miejscu uplasował się prezes PiS Jarosław Kaczyński. Podium zamyka jeden z liderów Konfederacji – Krzysztof Bosak – który nieznacznie wyprzedził swojego partyjnego kolegę – Sławomira Mentzena. [Źródło: Polsat News, WP Wiadomości, Onet Wiadomości, Dziennik.pl]",
+          "Prawie jedna czwarta Polaków wskazała prezydenta Karola Nawrockiego jako lidera prawicy – wynika z najnowszego sondażu. Na drugim miejscu uplasował się prezes PiS Jarosław Kaczyński. Podium zamyka jeden z liderów Konfederacji – Krzysztof Bosak – który nieznacznie wyprzedził swojego partyjnego kolegę – Sławomira Mentzena. [Źródło: Polsat News, WP Wiadomości, Onet Wiadomości, Dziennik.pl, Gazeta.pl]",
           "Wskazało go 23,8 proc. badanych. Prezes PiS Jarosław Kaczyński zajął w tym zestawieniu drugie miejsce – uzyskując 19 proc. głosów. Na czwartej pozycji uplasował się inny lider Konfederacji Sławomir Mentzen. [Źródło: Polsat News, WP Wiadomości]",
           "6,7 proc. respondentów uważa go za lidera prawicy w Polsce. [Źródło: Polsat News, WP Wiadomości]"
         ]
@@ -8489,7 +8617,8 @@
         "paragraphs": [
           "Co więcej, wśród najmłodszych respondentów Kaczyński ustępuje również Sławomirowi Mentzenowi. Najczęściej wskazywanym politykiem okazał się prezydent Karol Nawrocki, zyskując 23,8 proc. poparcia. Kolejne miejsca zajęli politycy Konfederacji. [Źródło: WP Wiadomości]",
           "Chodzi o listę do Sejmu — powiedział. Prezes PiS stwierdził, że \"to trzeba przekonywać przedstawicieli trzech Konfederacji\". [Źródło: Onet Wiadomości]",
-          "— Będziemy działali w tym kierunku, żeby była jedna wielka lista, nie tylko do Senatu. [Źródło: Dziennik.pl]"
+          "— Będziemy działali w tym kierunku, żeby była jedna wielka lista, nie tylko do Senatu. [Źródło: Dziennik.pl]",
+          "Zdaniem dziennikarzy celem prezydenta może być zjednoczenie prawej strony sceny politycznej. [Źródło: Gazeta.pl]"
         ]
       }
     ],
@@ -8500,7 +8629,7 @@
         "summary": "Polacy wskazali lidera prawicy. Nawrocki wyprzedza Kaczyńskiego",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-21/polacy-wskazali-lidera-prawicy-nawrocki-wyprzedza-kaczynskiego/",
         "focus": "Podkreśla konkretne liczby (23,8 proc., 19 proc.) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (Karol, przedstawicieli, najmłodszych) rozwijany w WP Wiadomości, Dziennik.pl."
+        "omits": "Pomija kontekst (Karol, politycy, liderem) rozwijany w WP Wiadomości, Dziennik.pl."
       },
       {
         "outlet": "WP Wiadomości",
@@ -8508,7 +8637,7 @@
         "summary": "To jego Polacy widzą na czele prawicy. Nawrocki przed Kaczyńskim?",
         "url": "https://wiadomosci.wp.pl/to-jego-polacy-widza-na-czele-prawicy-nawrocki-przed-kaczynskim-7353381175617536a",
         "focus": "Podkreśla konkretne liczby (23,8 proc., 19 proc.) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (przedstawicieli, przekonywać, zdecydowali) rozwijany w Onet Wiadomości, Dziennik.pl."
+        "omits": "Pomija kontekst (liderem, przedstawicieli, Rzeczpospolitej) rozwijany w Dziennik.pl, Gazeta.pl."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -8523,21 +8652,35 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Karol Nawrocki nowym liderem prawicy. Polacy zdecydowali w najnowszym sondażu",
         "url": "https://wiadomosci.dziennik.pl/polityka/artykuly/11349691,karol-nawrocki-nowym-liderem-prawicy-polacy-zdecydowali-w-najnowszym-sondazu.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: nowym, liderem, zdecydowali.",
+        "focus": "Wyróżnia własne wątki i pojęcia: nowym, zdecydowali, Będziemy.",
+        "omits": "Pomija wyliczenia (23,8 proc., 6,7 proc.) przytaczane przez Polsat News, WP Wiadomości."
+      },
+      {
+        "outlet": "Gazeta.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Lider prawicy w Polsce. Polacy wybrali w sondażu swojego faworyta",
+        "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33144657,lider-prawicy-w-polsce-polacy-wybrali-w-sondazu-swojego-faworyta.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
+        "focus": "Wyróżnia własne wątki i pojęcia: wybrali, faworyta, bezpartyjny.",
         "omits": "Pomija wyliczenia (23,8 proc., 6,7 proc.) przytaczane przez Polsat News, WP Wiadomości."
       }
     ],
     "sources": [
       "Dziennik.pl",
+      "Gazeta.pl",
       "Onet Wiadomości",
       "Polsat News",
       "WP Wiadomości"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: Gazeta.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33144657,lider-prawicy-w-polsce-polacy-wybrali-w-sondazu-swojego-faworyta.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882"
+      }
+    ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Prawo i decyzje publiczne",
-      "status": "Potwierdzone (4 źródła)"
+      "status": "Potwierdzone (5 źródeł)"
     },
     "seo_faq": [
       {
@@ -8550,7 +8693,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (4 źródła)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (5 źródeł)."
       }
     ]
   },
@@ -10445,7 +10588,7 @@
     "keywords": "Gospodarka, Inflacja, spada, ceny, sklepach, rosną, oszczędzać",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/534050f3500e17d96284a95648950a44/?t=crop:5000:3101:nowe:0:232,resize:fill:1200:750,enlarge:1",
     "published_iso": "2026-11-21T08:15:26+01:00",
-    "updated_iso": "2026-11-22T04:56:06+01:00",
+    "updated_iso": "2026-11-22T05:55:27+01:00",
     "display_date": "21.11.2026, 08:15",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 88,
@@ -11174,7 +11317,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "9 redakcji"
       },
       {
         "label": "Kategoria",
@@ -11186,13 +11329,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (9 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (9 redakcji)",
         "paragraphs": [
           "To pytanie zadaje sobie coraz więcej osób, zwłaszcza że grudzień zbliża się wielkimi krokami. Najnowsze prognozy długoterminowe wskazują, że zima może wkrótce pokazać swoje prawdziwe oblicze. Możliwe są opady śniegu, także na nizinach, a miejscami może sypnąć mocniej. [Źródło: Fakt.pl, Radio Lublin]",
           "IMGW w odpowiedzi dla \"Faktu\" wskazuje okres, w którym warto przygotować się na zimową aurę. Choć listopad jeszcze się nie skończył, wiele osób zastanawia się, kiedy w Polsce pojawi się śnieg i czy tegoroczna zima przyniesie większe opady śniegu. Najnowsze prognozy pogody na grudzień 2026 dają nadzieję miłośnikom białych krajobrazów. [Źródło: Fakt.pl, Radio Lublin]",
@@ -11208,7 +11351,9 @@
           "Deszcz ze śniegiem, miejscami śnieg i porywisty wiatr – to prognozy pogody dla Polski na ten weekend (21-22.11). Nieco cieplej może nad morzem. [Źródło: Radio Lublin]",
           "Synoptycy IMGW ostrzegają przed pierwszymi wyraźnymi akcentami zimy: lokalnie na nizinach spadnie do 5 centymetrów śniegu, a mokre jezdnie zaczną w nocy i rano zamarzać. Sprawdzamy, które regiony są zagrożone alertami pierwszego stopnia i jak głęboki mróz uderzy w Polskę po weekendzie. [Źródło: naTemat.pl]",
           "Końcówka listopada może przynieść w Polsce wyraźny zwrot pogody. Największe ochłodzenie spodziewane jest w drugiej połowie przyszłego tygodnia. Nocami temperatura może lokalnie spaść w okolice -10°C, a na wschodzie, północnym wschodzie i południu kraju możliwy jest całodobowy mróz. [Źródło: Warszawa w Pigułce]",
-          "Temperatura minimalna dobijająca do -10 stopni Celsjusza – to nas czeka końcem listopada według nowej prognozy Instytutu Meteorologii i Gospodarki Wodnej. Na Podhalu mróz nie ustąpi ani na moment. W analizie wskazano również drugi \"biegun zimna\". [Źródło: Interia Wydarzenia]"
+          "Temperatura minimalna dobijająca do -10 stopni Celsjusza – to nas czeka końcem listopada według nowej prognozy Instytutu Meteorologii i Gospodarki Wodnej. Na Podhalu mróz nie ustąpi ani na moment. W analizie wskazano również drugi \"biegun zimna\". [Źródło: Interia Wydarzenia]",
+          "Na drogach w części kraju przyczepność mocno się pogorszy. [Źródło: TVN24]",
+          "Kierowcy i piesi powinni uważać na śliskie nawierzchnie. IMGW wydał ostrzeżenie pierwszego stopnia przed oblodzeniem dla siedmiu powiatów województwa zachodniopomorskiego. Niebezpieczne warunki mogą wystąpić w niedzielę, 22 listopada, w godzinach porannych. [Źródło: TVP3 Szczecin]"
         ]
       }
     ],
@@ -11234,7 +11379,7 @@
         "angle": "Doniesienie regionalne",
         "summary": "Zima coraz bliżej. Na Lubelszczyźnie spadnie śnieg, pojawi się mróz i śliskie drogi",
         "url": "https://www.lublin112.pl/zima-coraz-blizej-na-lubelszczyznie-spadnie-snieg-pojawi-sie-mroz-i-sliskie-drogi/",
-        "focus": "Wyróżnia własne wątki i pojęcia: bliżej, Lubelszczyźnie, śliskie.",
+        "focus": "Wyróżnia własne wątki i pojęcia: bliżej, Lubelszczyźnie, drogi.",
         "omits": "Pomija wyliczenia (2026) przytaczane przez Fakt.pl, Radio Lublin."
       },
       {
@@ -11268,6 +11413,22 @@
         "url": "https://wydarzenia.interia.pl/kraj/news-w-jednym-regionie-mroz-nie-ustanie-dlugoterminowa-prognoza-i,nId,23577078",
         "focus": "Wyróżnia własne wątki i pojęcia: jednym, regionie, ustanie.",
         "omits": "Pomija wyliczenia (2026) przytaczane przez Fakt.pl, Radio Lublin."
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Uwaga, zrobi się ślisko. Ostrzeżenia IMGW",
+        "url": "https://tvn24.pl/tvnmeteo/prognoza/teraz-silny-wiatr-pozniej-lod-gdzie-pogoda-bedzie-grozna-ostrzezenia-i-prognoza-zagrozen-imgw-st9350724?source=rss",
+        "focus": "Wyróżnia własne wątki i pojęcia: Uwaga, zrobi, ślisko.",
+        "omits": "Pomija wyliczenia (2026) przytaczane przez Fakt.pl, Radio Lublin."
+      },
+      {
+        "outlet": "TVP3 Szczecin",
+        "angle": "Doniesienie regionalne",
+        "summary": "Mróz i śliskie nawierzchnie. IMGW ostrzega",
+        "url": "https://szczecin.tvp.pl/96607385/ostrzezenie-imgw-przed-oblodzeniem-w-zachodniopomorskiem-siedem-powiatow-zagrozonych",
+        "focus": "Wyróżnia własne wątki i pojęcia: nawierzchnie, Kierowcy, piesi.",
+        "omits": "Pomija wyliczenia (2026) przytaczane przez Fakt.pl, Radio Lublin."
       }
     ],
     "sources": [
@@ -11276,6 +11437,8 @@
       "Interia Wydarzenia",
       "Lublin112.pl",
       "Radio Lublin",
+      "TVN24",
+      "TVP3 Szczecin",
       "Warszawa w Pigułce",
       "naTemat.pl"
     ],
@@ -11304,7 +11467,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Wydarzenia krajowe",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (9 źródeł)"
     },
     "seo_faq": [
       {
@@ -11317,7 +11480,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (9 źródeł)."
       }
     ]
   },
@@ -13182,7 +13345,7 @@
     "keywords": "Wielkopolskie, BitterSweet, Festival, znów, Cytadeli, Umowa, przygotowana",
     "thumbnail_url": "https://epoznan.pl/storage/gallery/143643/pUUYOMHjjqXQV0jvQHQfJvPFyy64uUNm_left4.jpg?1795209331",
     "published_iso": "2026-11-20T22:45:49+01:00",
-    "updated_iso": "2026-11-22T04:56:06+01:00",
+    "updated_iso": "2026-11-22T05:55:27+01:00",
     "display_date": "20.11.2026, 22:45",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -14978,7 +15141,7 @@
     "keywords": "Podlaskie, dojazdami, Rodzice, Turośli, żłobek",
     "thumbnail_url": "https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c",
     "published_iso": "2026-11-20T19:57:10+01:00",
-    "updated_iso": "2026-11-22T04:56:06+01:00",
+    "updated_iso": "2026-11-22T05:55:27+01:00",
     "display_date": "20.11.2026, 19:57",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -18174,7 +18337,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -18186,17 +18349,17 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Nawet 150 osób straci pracę w jednej z największych polskich firm zajmujących się w zarządzaniem wierzytelnościami – Kruk SA. [Źródło: Bankier.pl, WP Finanse, Business Insider PL]",
-          "Zwolnienia rozpoczną się w styczniu 2027 r. Jak poinformowała Bankier.pl Agnieszka Salach, rzeczniczkaprasowa Kruk SA, spółka planujeredukcję zatrudnienia.– Jest to proces, który dotyczy całej Grupy, przy czym jego zakres i sposób realizacji będądostosowane do specyfiki poszczególnych rynków. W Polsce będą one wiązały się zprzeprowadzeniemzwolnień grupowych. [Źródło: Bankier.pl, PulsHR, WP Finanse, Business Insider PL]",
-          "Zwolnienia mogą ruszyć w styczniu 2027 r. Powodem zwolnień jest dostosowanie struktury organizacyjnej i poziomu zatrudnienia doobecnych i przyszłych potrzeb biznesowych oraz docelowego sposobufunkcjonowania firmy wkolejnych latach. Zmienia się również sposób realizacji procesów wewnętrznych, wykorzystaniatechnologii oraz zarządzania organizacją – wyjaśnia rzeczniczka spółki. [Źródło: Bankier.pl, PulsHR, WP Finanse]",
+          "Nawet 150 osób straci pracę w jednej z największych polskich firm zajmujących się w zarządzaniem wierzytelnościami – Kruk SA. [Źródło: Bankier.pl, WP Finanse, Business Insider PL, Forsal.pl]",
+          "Zwolnienia rozpoczną się w styczniu 2027 r. Jak poinformowała Bankier.pl Agnieszka Salach, rzeczniczkaprasowa Kruk SA, spółka planujeredukcję zatrudnienia.– Jest to proces, który dotyczy całej Grupy, przy czym jego zakres i sposób realizacji będądostosowane do specyfiki poszczególnych rynków. W Polsce będą one wiązały się zprzeprowadzeniemzwolnień grupowych. [Źródło: Bankier.pl, PulsHR, WP Finanse, Business Insider PL, Forsal.pl]",
+          "Zwolnienia mogą ruszyć w styczniu 2027 r. Powodem zwolnień jest dostosowanie struktury organizacyjnej i poziomu zatrudnienia doobecnych i przyszłych potrzeb biznesowych oraz docelowego sposobufunkcjonowania firmy wkolejnych latach. Zmienia się również sposób realizacji procesów wewnętrznych, wykorzystaniatechnologii oraz zarządzania organizacją – wyjaśnia rzeczniczka spółki. [Źródło: Bankier.pl, PulsHR, WP Finanse, Forsal.pl]",
           "— Działania ukierunkowane na dalsze zwiększanie efektywności operacyjnej oraz efektywne zarządzanie zasobami dotyczą całej Grupy, nie tylko polskiego rynku – przekazała nam Agnieszka Salach. [Źródło: Bankier.pl, PulsHR, WP Finanse]",
           "Planowane redukcje mogą objąć nie więcej niż 10 proc. zatrudnionych. W Polsce będzie to nie więcejniż 150 osób – twierdziAgnieszka Salach. [Źródło: PulsHR, WP Finanse]",
           "— Pracownikom, z którymi zakończymy współpracę wramach tego procesu, zaoferujemy, oprócz odpraw finansowych, również wsparcie wprzejściu przez zmianę zawodową i poszukiwaniu nowych możliwości zatrudnienia. [Źródło: PulsHR, WP Finanse]",
@@ -18208,7 +18371,8 @@
         "paragraphs": [
           "Branża drzewno-meblarska zmaga się z coraz większymi problemami. Producenci alarmują, że pogarszająca się kondycja firm, rosnące koszty oraz konkurencja z Chin mogą doprowadzić do dużych zwolnień. Na przyszły tydzień zapowiedziana jest manifestacja przedstawicieli sektora drzewno-meblarskiego. [Źródło: Radio Olsztyn]",
           "— Jesteśmy w trakcie konsultacji i wierzymy, że zakończą się one porozumieniem. [Źródło: WP Finanse]",
-          "To ok. 10 proc. całej załogi — podaje portal PulsHR. [Źródło: Business Insider PL]"
+          "To ok. 10 proc. całej załogi — podaje portal PulsHR. [Źródło: Business Insider PL]",
+          "Jak informuje Business Insider, powołując się na ustalenia PulsHR, Grupa Kruk zamierza rozstać się ze 150 pracownikami. [Źródło: Forsal.pl]"
         ]
       }
     ],
@@ -18243,7 +18407,7 @@
         "summary": "Polski gigant zwalnia. Pracę może stracić 150 osób",
         "url": "https://finanse.wp.pl/polski-gigant-zwalnia-prace-moze-stracic-150-osob-7353106892359680a",
         "focus": "Podkreśla konkretne liczby (150 osób, 2027) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija kontekst (grupowe, pracy, drzewno-meblarska) rozwijany w Bankier.pl, PulsHR."
+        "omits": "Pomija kontekst (grupowe, PulsHR, pracy) rozwijany w Bankier.pl, PulsHR."
       },
       {
         "outlet": "Business Insider PL",
@@ -18252,11 +18416,20 @@
         "url": "https://businessinsider.com.pl/praca/firma-od-dlugow-tnie-zatrudnienie-150-osob-bez-pracy-po-nowym-roku/w7p25wh",
         "focus": "Podkreśla konkretne liczby (150 osób, 2027) w ujęciu: perspektywa rynkowa.",
         "omits": "Pomija kontekst (przyszłych, wykorzystaniatechnologii, sposobufunkcjonowania) rozwijany w Bankier.pl, PulsHR."
+      },
+      {
+        "outlet": "Forsal.pl",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Grupa Kruk zapowiada zwolnienia grupowe. 150 osób ma stracić pracę w styczniu 2027 roku",
+        "url": "https://forsal.pl/kraj/aktualnosci/artykuly/11349933,grupa-kruk-zapowiada-zwolnienia-grupowe-150-osob-ma-stracic-prace.html",
+        "focus": "Podkreśla konkretne liczby (150 osób, 2027) w ujęciu: perspektywa rynkowa.",
+        "omits": "Pomija wyliczenia (10 proc.) przytaczane przez PulsHR, WP Finanse."
       }
     ],
     "sources": [
       "Bankier.pl",
       "Business Insider PL",
+      "Forsal.pl",
       "PulsHR",
       "Radio Olsztyn",
       "WP Finanse"
@@ -18265,12 +18438,16 @@
       {
         "claim_text": "Dopisano źródło: Business Insider PL (aktualizacja wieloźródłowa)",
         "evidence_url": "https://businessinsider.com.pl/praca/firma-od-dlugow-tnie-zatrudnienie-150-osob-bez-pracy-po-nowym-roku/w7p25wh"
+      },
+      {
+        "claim_text": "Dopisano źródło: Forsal.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://forsal.pl/kraj/aktualnosci/artykuly/11349933,grupa-kruk-zapowiada-zwolnienia-grupowe-150-osob-ma-stracic-prace.html"
       }
     ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Wydarzenia krajowe",
-      "status": "Zapowiedź / Etap propozycji"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "seo_faq": [
       {
@@ -18283,7 +18460,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Zapowiedź / Etap propozycji."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (6 źródeł)."
       }
     ]
   },
@@ -19743,7 +19920,7 @@
     "keywords": "Swiat, Chiny, wiedzą, Rosja, Ukrainą, byłaby, imperium",
     "thumbnail_url": "",
     "published_iso": "2026-11-20T14:21:41+01:00",
-    "updated_iso": "2026-11-22T04:56:06+01:00",
+    "updated_iso": "2026-11-22T05:55:27+01:00",
     "display_date": "20.11.2026, 14:21",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -24873,7 +25050,7 @@
     "keywords": "Kujawsko-Pomorskie, oszukać, Włocławscy, seniorzy, poznali, zasady, bezpieczeństwa",
     "thumbnail_url": "https://s1.tvp.pl/images2/a/3/3/uid_a33b8cbee519455eaf7b4e9f9e8cdd66_width_900_play_0_pos_0_gs_0_height_506.png",
     "published_iso": "2026-11-19T21:48:50+01:00",
-    "updated_iso": "2026-11-22T04:56:07+01:00",
+    "updated_iso": "2026-11-22T05:55:27+01:00",
     "display_date": "19.11.2026, 21:48",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 88,
@@ -34637,7 +34814,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "19 redakcji"
+        "val": "20 redakcji"
       },
       {
         "label": "Kategoria",
@@ -34649,13 +34826,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (19 źródeł)"
+        "val": "Potwierdzone (20 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (19 redakcji)",
+        "heading": "Ustalenia wspólne (20 redakcji)",
         "paragraphs": [
           "Z powodu niedawnych ataków nożowników w polskich szkołach, 8 października pod głosowanie w Sejmie trafiła (po raz kolejny) nowelizacja ustawy o świadczeniu usług drogą elektroniczną. Nowe prawo ma “skończyć z patologiami w internecie”, a konkretniej — dać UKE możliwość wydawania nakazów blokowania treści i blokowania stron. [Źródło: Niebezpiecznik, Forsal.pl, WP Wiadomości, Interia Wydarzenia, Onet Wiadomości, GazetaPrawna.pl (DGP), TVP.info, Business Insider PL, Polsat News, Radio Zachód, Wyborcza.pl, Bankier.pl, TVP3 Gdańsk, Kresy.pl, Telepolis.pl, TylkoTorun.pl]",
           "Choć ustawę poddano pod głosowanie w wyniku poruszających społeczeństwo ataków w szkołach, to wbrew krążącym po internecie opiniom, ta ustawa nie powstała ani jako reakcja na ataki nożowników, ani jako “wdrażanie DSA”. A czy wprowadza ona cenzurę internetu? To już ocenicie sami po lekturze poniższych akapitów. [Źródło: Niebezpiecznik]",
@@ -34670,13 +34847,14 @@
           "Nowe przepisy nakładają na sprzedawców obowiązek weryfikacji wieku kupujących w razie wątpliwości pod rygorem odmowy sprzedaży. [Źródło: Business Insider PL]",
           "Cały proces uchwalania tej ustawy obfitował w wiele zwrotów akcji. Posłowie Lewicy, autorzy projektu połączonego później z projektem Polski 2050, od początku nalegali na mocne ograniczenie zarówno promocji, jak i reklamy marek alkoholowych, a także sprzedaży wyrobów alkoholowych przez internet. Pierwotne głosowanie w Sejmie nieco osłabiło zamierzenia pomysłodawców. [Źródło: Wiadomości Handlowe]",
           "Z zakazu wyłączona została branża winiarska, w noweli m.in. zdefiniowano „wydarzenia enokulinarne”, podczas których dopuszczony ma być przekaz informacyjno-kulturalny związany z wyrobami winiarskimi. [Źródło: Radio Zachód]",
-          "Od 22:00 do 6:00 sklepy w całej Polsce miałyby wstrzymać sprzedaż alkoholu. Na razie zasady zakupów się nie zmieniają — ustawa ma trafić do prezydenta. [Źródło: TVP3 Łódź]",
-          "Nie będzie też wydawał pracownikom zgody na objęcie mandatu posła lub senatora. Minimalny wymiar zatrudnienia w szpitalu, który ma kontrakt z NFZ, wyniesienie nie pół, a ćwierć etatu. [Źródło: Wyborcza.pl]",
+          "Od 22:00 do 6:00 sklepy w całej Polsce miałyby wstrzymać sprzedaż alkoholu. [Źródło: TVP3 Łódź]",
+          "Nie będzie też wydawał pracownikom zgody na objęcie mandatu posła lub senatora. [Źródło: Wyborcza.pl]",
           "W środę w Sejmie odbyło się drugie czytanie poselskiego projektu ustawy o zmianie ustawy o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, ustawy o Centralnym Biurze Antykorupcyjnym oraz ustawy o Służbie Kontrwywiadu Wojskowego oraz niektórych innych ustaw. W trakcie drugiego czytania poprawki do projektu zgłosiły kluby Prawo i Sprawiedliwość i Rozwój Plus. [Źródło: Bankier.pl]",
           "O poważnych skutkach jakie niesie ze sobą picie alkoholu rozmawiano również na konferencji zorganizowanej przez Gdański Uniwersytet Medyczny. [Źródło: TVP3 Gdańsk]",
           "Utrzymano natomiast ograniczenia dotyczące zarobków i wymiaru zatrudnienia personelu medycznego. [Źródło: Kresy.pl]",
           "Oznacza to, że od przyszłego wchodzi nowy zakaz, który wielu osobom się nie spodoba. Oznacza to, że na wieczornej imprezie, na której skończą się butelki, nie będzie możliwości uzupełnienia zapasów, aby kontynuować zakrapianą zabawę. Wyjątek stanowi tylko gastronomia, czyli np. puby. [Źródło: Telepolis.pl]",
-          "Radni Prawa i Sprawiedliwości postanowili się dowiedzieć, jak regulacje wpływają na liczbę interwencji służb. Michał Gazda zwrócił się z wnioskiem do prezydenta miasta o przedstawienie danych dotyczących interwencji policjantów i [Źródło: TylkoTorun.pl]"
+          "Radni Prawa i Sprawiedliwości postanowili się dowiedzieć, jak regulacje wpływają na liczbę interwencji służb. Michał Gazda zwrócił się z wnioskiem do prezydenta miasta o przedstawienie danych dotyczących interwencji policjantów i [Źródło: TylkoTorun.pl]",
+          "Sejm rozpatrzył poprawki Senatu do ustawy ograniczającej zarobki i czas pracy lekarzy. [Źródło: Rzeczpospolita]"
         ]
       }
     ],
@@ -34734,7 +34912,7 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Limit zarobków i czas pracy lekarzy. Sejm zadecydował o poprawkach Senatu",
         "url": "https://www.gazetaprawna.pl/prawnik/legislacja/artykuly/11348278,limit-zarobkow-i-czas-pracy-lekarzy-sejm-zadecydowal-o-poprawkach-senatu.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: Limit, czas, zadecydował.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Limit, zadecydował.",
         "omits": "Pomija wyliczenia (242 posłów, 0 proc.) przytaczane przez Niebezpiecznik, Forsal.pl."
       },
       {
@@ -34750,7 +34928,7 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Nowe limity dla lekarzy. Sejm przyjął ograniczenia etatów i wysokości zarobków",
         "url": "https://businessinsider.com.pl/prawo/sejm-przyjal-nowe-limity-pracy-lekarzy-maksymalnie-dwa-etaty-i-76-900-zl/fxrxmdz",
-        "focus": "Wyróżnia własne wątki i pojęcia: limity, etatów, wysokości.",
+        "focus": "Wyróżnia własne wątki i pojęcia: etatów, wysokości, przepisy.",
         "omits": "Pomija wyliczenia (242 posłów, 0 proc.) przytaczane przez Niebezpiecznik, Forsal.pl."
       },
       {
@@ -34758,7 +34936,7 @@
         "angle": "Perspektywa rynkowa",
         "summary": "Sejm zdecydował w sprawie reklamy i promocji alkoholu. Co zrobi prezydent?",
         "url": "https://www.wiadomoscihandlowe.pl/prawo-i-polityka/sejm-zdecydowal-w-sprawie-reklamy-i-promocji-alkoholu-co-zrobi-prezydent-2539536",
-        "focus": "Wyróżnia własne wątki i pojęcia: zdecydował, zrobi, Cały.",
+        "focus": "Wyróżnia własne wątki i pojęcia: zrobi, Cały, proces.",
         "omits": "Pomija wyliczenia (242 posłów, 0 proc.) przytaczane przez Niebezpiecznik, Forsal.pl."
       },
       {
@@ -34832,6 +35010,14 @@
         "url": "https://tylkotorun.pl/wiadomosci/jakie-sa-dotychczasowe-skutki-zakazu-nocnej-sprzedazy-alkoholu-na-starowce/",
         "focus": "Wyróżnia własne wątki i pojęcia: dotychczasowe, skutki, Starówce.",
         "omits": "Pomija wyliczenia (242 posłów, 0 proc.) przytaczane przez Niebezpiecznik, Forsal.pl."
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Sejm zdecydował w sprawie wynagrodzeń medyków. Są nowe limity",
+        "url": "https://www.rp.pl/ochrona-zdrowia/art45514401-sejm-zdecydowal-w-sprawie-wynagrodzen-medykow-sa-nowe-limity",
+        "focus": "Wyróżnia własne wątki i pojęcia: wynagrodzeń, medyków, rozpatrzył.",
+        "omits": "Pomija wyliczenia (242 posłów, 0 proc.) przytaczane przez Niebezpiecznik, Forsal.pl."
       }
     ],
     "sources": [
@@ -34846,6 +35032,7 @@
       "Onet Wiadomości",
       "Polsat News",
       "Radio Zachód",
+      "Rzeczpospolita",
       "TVP.info",
       "TVP3 Gdańsk",
       "TVP3 Łódź",
@@ -34856,10 +35043,6 @@
       "Wyborcza.pl"
     ],
     "corrections": [
-      {
-        "claim_text": "Dopisano źródło: CyberDefence24 (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://cyberdefence24.pl/polityka-i-prawo/polska/sejm-zdecydowal-ws-ustawy-o-sprawiedliwym-dostepie-do-danych"
-      },
       {
         "claim_text": "Dopisano źródło: Wirtualnemedia.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.wirtualnemedia.pl/sejm-zdecydowal-zakaz-reklamy-obejmie-tez-piwo-0-proc,7352761022674944a"
@@ -34875,6 +35058,10 @@
       {
         "claim_text": "Dopisano źródło: TVP3 Wrocław (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wroclaw.tvp.pl/96597025/ogolnopolska-nocna-prohibicja-i-zakaz-reklam-alkoholu-uchwalone"
+      },
+      {
+        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.rp.pl/ochrona-zdrowia/art45514401-sejm-zdecydowal-w-sprawie-wynagrodzen-medykow-sa-nowe-limity"
       }
     ],
     "impact": {
@@ -35271,7 +35458,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -35283,13 +35470,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
           "Nowe przepisy obejmą zadłużenie, które powstało przed 1 stycznia 1999 roku. Umorzenie będzie dotyczyć zaległych składek na: – ubezpieczenia społeczne, – Fundusz Pracy, – Fundusz Gwarantowanych Świadczeń Pracowniczych. ZUS umorzy również odsetki za zwłokę, dodatkowe opłaty, opłaty prolongacyjne, a także koszty upomnienia i egzekucji. [Źródło: TVP3 Rzeszów, Rzeszow-News.pl, Infor.pl]",
           "Cała procedura odbędzie się automatycznie, z mocy prawa. Osoby zadłużone nie będą musiały składać wniosków ani występować do ZUS z dodatkowymi dokumentami. W skali całego kraju nowe rozwiązanie obejmie kilka tysięcy podmiotów. [Źródło: TVP3 Rzeszów, Rzeszow-News.pl, Infor.pl]",
@@ -35303,8 +35490,7 @@
           "Do Sejmu trafił nowy projekt poselski przygotowany przez Konfederację, który politycy nazwali programem „15. emerytura dla seniorów”. Wbrew tradycyjnym programom socjalnym, propozycja ta nie zakłada wypłaty gotówki z budżetu, lecz rewolucję w przepisach. Pracujący emeryci mają zostać całkowicie zwolnieni z części składki rentowej, co przełoży się na automatycznie wyższe pensje. [Źródło: GazetaPrawna.pl (DGP)]",
           "ZUS przygotował konkretne wyliczenia, które pokazują, jak kwota zgromadzonych składek przełoży się na wysokość świadczenia. [Źródło: PulsHR]",
           "W analizowanym przypadku było to zaledwie 1465,26 zł brutto. Dzięki odpowiedniemu stażowi emerytura została jednak podwyższona do 1978,49 zł. [Źródło: Farmer.pl]",
-          "Zakład Ubezpieczeń Społecznych informuje, że osoby, które mają zaległości składkowe sprzed 1999 roku, mogą odetchnąć z ulgą. Ale jest istotny szczegół – umorzenie zaległości może wpłynąć na wysokość przyszłej emerytury. [Źródło: Infor.pl]",
-          "Dodatek pielęgnacyjny przyznawany jest z urzędu, seniorzy, którzy skończyli 75 lat z reguły nie muszą składać wniosku. O tym część seniorów może nie wiedzieć. [Źródło: Forsal.pl]"
+          "Zakład Ubezpieczeń Społecznych informuje, że osoby, które mają zaległości składkowe sprzed 1999 roku, mogą odetchnąć z ulgą. Ale jest istotny szczegół – umorzenie zaległości może wpłynąć na wysokość przyszłej emerytury. [Źródło: Infor.pl]"
         ]
       }
     ],
@@ -35356,19 +35542,10 @@
         "url": "https://ksiegowosc.infor.pl/zus-kadry/skladki/7709558,zus-1-maja-2027-r-umorzy-stare-zaleglosci-skladkowe-ale-moze-to-wplynac-niekorzystnie-na-wysokosc-emerytury-mozna-zrezygnowac-z-umorzenia.html",
         "focus": "Podkreśla konkretne liczby (2027) w ujęciu: doniesienie regionalne.",
         "omits": "Pomija wyliczenia (22,2 tys. zł, 1465,26 zł) przytaczane przez GazetaPrawna.pl (DGP), Farmer.pl."
-      },
-      {
-        "outlet": "Forsal.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "ZUS wstrzymuje wypłaty dodatku do emerytury. Chodzi o dodatek pielęgnacyjny po 75. roku życia",
-        "url": "https://forsal.pl/finanse/twoje-pieniadze/artykuly/11331319,zus-wstrzymuje-wyplaty-dodatku-do-emerytury-chodzi-o-dodatek-pielegnacyjny-po-75-roku-zycia.html",
-        "focus": "Eksponuje dane (75 lat) oraz wątki: wstrzymuje, dodatku.",
-        "omits": "Pomija wyliczenia (2027, 22,2 tys. zł) przytaczane przez TVP3 Rzeszów, Rzeszow-News.pl."
       }
     ],
     "sources": [
       "Farmer.pl",
-      "Forsal.pl",
       "GazetaPrawna.pl (DGP)",
       "Infor.pl",
       "PulsHR",
@@ -35392,7 +35569,7 @@
     "impact": {
       "audience": "Przedsiębiorcy i podatnicy",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "seo_faq": [
       {
@@ -35405,7 +35582,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Przedsiębiorcy i podatnicy (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Przedsiębiorcy i podatnicy (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (6 źródeł)."
       }
     ]
   },
@@ -35716,7 +35893,7 @@
     "keywords": "Swiat, Duńczycy, jednomyślnie, poparli, porozumienie, Grenlandii",
     "thumbnail_url": "https://i.gremicdn.pl/image/free/4ec3d5ea21849ed3ba0f68af1b631ca3/?t=crop:3944:1724:nowe:0:272,resize:fill:600:300,enlarge:1",
     "published_iso": "2026-11-19T11:01:28+01:00",
-    "updated_iso": "2026-11-22T04:56:07+01:00",
+    "updated_iso": "2026-11-22T05:55:27+01:00",
     "display_date": "19.11.2026, 11:01",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 90,
@@ -36504,100 +36681,6 @@
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (7 źródeł)."
-      }
-    ]
-  },
-  {
-    "id": 569549622,
-    "path": "/Polska/Regiony/Zachodniopomorskie",
-    "seo_url": "/Polska/Regiony/Zachodniopomorskie/19-latek-driftowal-autem-i-uderzyl-w-latarnie",
-    "seo_title": "19-latek driftował autem i uderzył w latarnię",
-    "summary_lead": "Niebezpieczny popis za kierownicą zakończył się kolizją i utratą prawa jazdy. 19-letni kierowca celowo wprowadził samochód w poślizg, doprowadzając do uderzenia w latarnię uliczną. Całe zdarzenie zarejestrował monitoring miejski.",
-    "meta_description": "Niebezpieczny popis za kierownicą zakończył się kolizją i utratą prawa jazdy.",
-    "keywords": "Zachodniopomorskie, 19-latek, driftował, autem, uderzył, latarnię",
-    "thumbnail_url": "https://s1.tvp.pl/images2/1/3/9/uid_13958421776f4a42b499dfa1d249aaf9_width_900_play_0_pos_0_gs_0_height_506.jpg",
-    "published_iso": "2026-11-19T09:59:40+01:00",
-    "updated_iso": "2026-11-19T09:59:40+01:00",
-    "display_date": "19.11.2026, 09:59",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "2 redakcje"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Regiony/Zachodniopomorskie"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "TVP3 Szczecin"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (2 redakcje)",
-        "paragraphs": [
-          "Niebezpieczny popis za kierownicą zakończył się kolizją i utratą prawa jazdy. 19-letni kierowca celowo wprowadził samochód w poślizg, doprowadzając do uderzenia w latarnię uliczną. Całe zdarzenie zarejestrował monitoring miejski. [Źródło: TVP3 Szczecin, Radio Szczecin]",
-          "Do zdarzenia doszło na terenie Szczecina. Jak informuje policja, młody kierowca świadomie wykonywał niebezpieczne manewry, wprowadzając pojazd w poślizg. Swoim zachowaniem stwarzał zagrożenie nie tylko dla innych uczestników ruchu drogowego, ale również dla pasażerów podróżujących autem. [Źródło: TVP3 Szczecin, Radio Szczecin]",
-          "Na miejsce skierowano funkcjonariuszy Wydziału Ruchu Drogowego Komendy Miejskiej Policji w Szczecinie. Tym razem zdarzenie zakończyło się jedynie uszkodzeniem infrastruktury drogowej, jednak skutki takiego zachowania mogły być znacznie poważniejsze. [Źródło: TVP3 Szczecin]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Kierowca uciekł, ale szybko został namierzony przez mundurowych. Za swój czyn odpowie też przed sądem. [Źródło: Radio Szczecin]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "TVP3 Szczecin",
-        "angle": "Relacja wiodąca",
-        "summary": "19-latek driftował autem i uderzył w latarnię",
-        "url": "https://szczecin.tvp.pl/96560327/szczecin-19-latek-driftowal-autem-i-uderzyl-w-latarnie-stracil-prawo-jazdy",
-        "focus": "Wyróżnia własne wątki i pojęcia: 19-latek, uderzył, miejsce.",
-        "omits": "Pomija kontekst (mundurowych, namierzony, Zatrzymał) rozwijany w Radio Szczecin."
-      },
-      {
-        "outlet": "Radio Szczecin",
-        "angle": "Doniesienie regionalne",
-        "summary": "Driftował po rondzie. Zatrzymał się na latarni i uciekł [WIDEO]",
-        "url": "https://radioszczecin.pl/1,513990",
-        "focus": "Wyróżnia własne wątki i pojęcia: rondzie, Zatrzymał, uciekł.",
-        "omits": "Pomija kontekst (funkcjonariuszy, infrastruktury, uszkodzeniem) rozwijany w TVP3 Szczecin."
-      }
-    ],
-    "sources": [
-      "Radio Szczecin",
-      "TVP3 Szczecin"
-    ],
-    "corrections": [],
-    "impact": {
-      "audience": "Kierowcy i pasażerowie",
-      "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (2 źródła)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: 19-latek driftował autem i uderzył w latarnię?",
-        "a": "Do zdarzenia doszło na terenie Szczecina."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Jak informuje policja, młody kierowca świadomie wykonywał niebezpieczne manewry, wprowadzając pojazd w poślizg."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
       }
     ]
   },

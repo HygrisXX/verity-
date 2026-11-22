@@ -3,18 +3,63 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/weekend-w-opolu-pelen-atrakcji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T05:55:25+01:00</news:publication_date>
+      <news:title>Weekend w Opolu pełen atrakcji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920692758.png</image:loc>
+      <image:title>Weekend w Opolu pełen atrakcji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/asseco-resovia-rzeszow-przelamala-zla-passe-zwyciestwo-3-2-ze-skra/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T05:55:25+01:00</news:publication_date>
+      <news:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2113000437.png</image:loc>
+      <image:title>Asseco Resovia Rzeszów przełamała złą passę! Zwycięstwo 3-2 ze Skrą Bełchatów po tie-breaku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/emocje-w-gp-las-vegas-festiwal-wyprzedzania-kolizja-kierowcow-ferrari/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T05:55:23+01:00</news:publication_date>
+      <news:title>Emocje w GP Las Vegas. Festiwal wyprzedzania. Kolizja kierowców Ferrari</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NK3F2YIP25KGM-C321.webp</image:loc>
+      <image:title>Emocje w GP Las Vegas. Festiwal wyprzedzania. Kolizja kierowców Ferrari</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T04:56:03+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -30,36 +75,6 @@
     <image:image>
       <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
       <image:title>Powiatowa Biblioteka Publiczna w Wieluniu pozyskała dofinansowanie na projekt ekologiczny</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/andrzej-poczobut-w-opolu-odwaga-przychodzi-kiedy-idziesz-swoja-droga/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T03:52:51+01:00</news:publication_date>
-      <news:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-16.58.57-300x300.jpeg</image:loc>
-      <image:title>Andrzej Poczobut w Opolu: Odwaga przychodzi, kiedy idziesz swoją drogą</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/podczas-zbiorki-gabarytow-w-gminie-wielun-moglo-dojsc-do-tragedii-ktos/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T03:52:51+01:00</news:publication_date>
-      <news:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s.w.org/images/core/emoji/15.0.3/72x72/1f6a8.png</image:loc>
-      <image:title>Podczas zbiórki gabarytów w gminie Wieluń mogło dojść do tragedii! Ktoś wyrzucił butlę wypełnioną gazem</image:title>
     </image:image>
   </url>
   <url>
@@ -808,7 +823,7 @@
       <news:title>Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1121133388.png</image:loc>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVub/mlrLmluY2RuLnBsL2R6aWVubmlrL2RvY3VtZW50cy9GT0IwMD/AwMDAwMDAwMDA3NzEyNDkyL2ZpbGVzL3NsdXpieS1uYS1taWV/qc2N1LXpkYXJ6ZW5pYS0zOTMyNjg3Ny5qcGciLCJ3IjozODQwfQ</image:loc>
       <image:title>Dwie rakiety i dron w polskiej przestrzeń powietrznej. Jeden z obiektów uderzył 300 metrów od zabudowań</image:title>
     </image:image>
   </url>
@@ -3000,96 +3015,6 @@
     <image:image>
       <image:loc>http://galeria.bankier.pl/p/9/1/cce523a2f51621-948-568-0-202-3000-1799.jpg</image:loc>
       <image:title>USA ujawniają koszt wojny z Iranem. Ponad 48 mld dolarów i to nie koniec</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pacjent-oddalil-sie-ze-szpitala-w-bystrej-powiadomiono-policje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T06:01:19+01:00</news:publication_date>
-      <news:title>Pacjent oddalił się ze szpitala w Bystrej. Powiadomiono policję</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/20261120_051819800.jpg</image:loc>
-      <image:title>Pacjent oddalił się ze szpitala w Bystrej. Powiadomiono policję</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/jest-wyrok-w-sprawie-burmistrza-chocianowa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T06:01:02+01:00</news:publication_date>
-      <news:title>Jest wyrok w sprawie burmistrza Chocianowa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s2.tvp.pl/images2/b/5/6/uid_b5606b5583a04e3cbdd4169d67d63349_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
-      <image:title>Jest wyrok w sprawie burmistrza Chocianowa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/polska-i-niemcy-wezma-odpowiedzialnosc-szef-mon-o-bezpieczenstwie-europy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T06:00:48+01:00</news:publication_date>
-      <news:title>"Polska i Niemcy wezmą odpowiedzialność". Szef MON o bezpieczeństwie Europy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ew/ewepa9xmgw8m551v5inqk8cs5n9x7pt1.jpg</image:loc>
-      <image:title>"Polska i Niemcy wezmą odpowiedzialność". Szef MON o bezpieczeństwie Europy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/gospodarczo-to-jest-dzisiaj-karzelek-marcin-przydacz-o-pozycji-rosji-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T06:00:48+01:00</news:publication_date>
-      <news:title>"Gospodarczo to jest dzisiaj karzełek". Marcin Przydacz o pozycji Rosji w rozmowach pokojowych</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/jz/jz4rxdo9p1feoy18qq2uteeyygmjkk7s.png</image:loc>
-      <image:title>"Gospodarczo to jest dzisiaj karzełek". Marcin Przydacz o pozycji Rosji w rozmowach pokojowych</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/co-o-slowach-donalda-trumpa-mowia-amerykanscy-politycy-cezary-tomczyk/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T06:00:47+01:00</news:publication_date>
-      <news:title>Co o słowach Donalda Trumpa mówią amerykańscy politycy? Cezary Tomczyk: nie słyszałem specjalnej pochwały</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-tomczyk-o-przywitaniu-putina-przez-trumpa-slowami-to-moj-przyjaciel-0160-ph9348245/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Co o słowach Donalda Trumpa mówią amerykańscy politycy? Cezary Tomczyk: nie słyszałem specjalnej pochwały</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/frisco-na-gielde-albo-na-sprzedaz-eurocash-szykuje-wielki-ruch-20-lat/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T06:00:43+01:00</news:publication_date>
-      <news:title>Frisco na giełdę albo... na sprzedaż? Eurocash szykuje wielki ruch (20 lat)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/19/375510.webp</image:loc>
-      <image:title>Frisco na giełdę albo... na sprzedaż? Eurocash szykuje wielki ruch (20 lat)</image:title>
     </image:image>
   </url>
 </urlset>
