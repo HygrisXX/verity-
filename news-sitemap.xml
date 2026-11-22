@@ -3,6 +3,81 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T21:40:22+01:00</news:publication_date>
+      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
+      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/budowa-lub-remont-domu-kiedy-najlepiej-wybrac-okna-i-drzwi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T21:40:22+01:00</news:publication_date>
+      <news:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/822880066.png</image:loc>
+      <image:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/szalony-rajd-nozownika-w-elku-skradzione-auto-wyladowalo-w-rowie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T21:40:19+01:00</news:publication_date>
+      <news:title>Szalony rajd nożownika w Ełku. Skradzione auto wylądowało w rowie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ij/ij9krd54rftde6ceq8y3mihoupgw53w5.jpg</image:loc>
+      <image:title>Szalony rajd nożownika w Ełku. Skradzione auto wylądowało w rowie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/wstyd-wam-kibicowac-pilkarze-widzewa-nasluchali-sie-po-porazce/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T21:40:18+01:00</news:publication_date>
+      <news:title>„Wstyd wam kibicować”. Piłkarze Widzewa nasłuchali się po porażce</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/627A9987-scaled.jpg</image:loc>
+      <image:title>„Wstyd wam kibicować”. Piłkarze Widzewa nasłuchali się po porażce</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/prawdziwy-wzor-sojusznika-tak-pentagon-ocenil-polske-5-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T21:40:17+01:00</news:publication_date>
+      <news:title>„Prawdziwy wzór sojusznika”. Tak Pentagon ocenił Polskę (5 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/12019-pentagon-80394-scaled.jpg</image:loc>
+      <image:title>„Prawdziwy wzór sojusznika”. Tak Pentagon ocenił Polskę (5 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/nadchodzi-finansowy-wstrzas-ktory-moze-odczuc-niemal-kazdy-polak/</loc>
     <news:news>
       <news:publication>
@@ -138,21 +213,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T19:47:17+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ponad-1000-zl-wiecej-do-emerytury-projekt-o-wyplatach-z-krus-i-zus/</loc>
     <news:news>
       <news:publication>
@@ -180,6 +240,36 @@
     <image:image>
       <image:loc>http://galeria.bankier.pl/p/d/a/f766846f327434-948-568-0-270-4000-2399.jpg</image:loc>
       <image:title>Nie ma już wątpliwości. To rosyjskie pociski Ch-101 spadły w trzech miejscach w Polsce</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/szef-mon-polska-otrzyma-wsparcie-nato-w-ochronie-wschodniej-granicy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
+      <news:title>Szef MON: Polska otrzyma wsparcie NATO w ochronie wschodniej granicy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/07/21/320x240px/ctGHHM3TMOMfxvNI2Cby3uWrmy8V45LLkOM1ArjO.q3d3.jpg</image:loc>
+      <image:title>Szef MON: Polska otrzyma wsparcie NATO w ochronie wschodniej granicy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/fala-dezinformacji-po-naruszeniu-polskiej-przestrzeni-powietrznej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
+      <news:title>Fala dezinformacji po naruszeniu polskiej przestrzeni powietrznej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://bi.im-g.pl/im/30/9c/1f/z33145136IHG,Krzysztof-Gawkowski--zdjecie-archiwalne-.jpg</image:loc>
+      <image:title>Fala dezinformacji po naruszeniu polskiej przestrzeni powietrznej</image:title>
     </image:image>
   </url>
   <url>
@@ -588,18 +678,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wedkarstwo-nowoczesny-sprzet-i-pasja-przekazywana-pokoleniom/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/polacy-wskazali-lidera-prawicy-nawrocki-wyprzedza-kaczynskiego-23-8-proc/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
-      <news:publication_date>2026-11-22T15:42:37+01:00</news:publication_date>
-      <news:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</news:title>
+      <news:publication_date>2026-11-22T16:42:41+01:00</news:publication_date>
+      <news:title>Polacy wskazali lidera prawicy. Nawrocki wyprzedza Kaczyńskiego (23,8 proc.)</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/IMG_2126-1024x683.jpg</image:loc>
-      <image:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</image:title>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/yy/yyytiam6ajc45bqj64cducx1xrnfr4f4.jpg</image:loc>
+      <image:title>Polacy wskazali lidera prawicy. Nawrocki wyprzedza Kaczyńskiego (23,8 proc.)</image:title>
     </image:image>
   </url>
   <url>
@@ -2238,21 +2328,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/polacy-wskazali-lidera-prawicy-nawrocki-wyprzedza-kaczynskiego-23-8-proc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T11:43:46+01:00</news:publication_date>
-      <news:title>Polacy wskazali lidera prawicy. Nawrocki wyprzedza Kaczyńskiego (23,8 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/yy/yyytiam6ajc45bqj64cducx1xrnfr4f4.jpg</image:loc>
-      <image:title>Polacy wskazali lidera prawicy. Nawrocki wyprzedza Kaczyńskiego (23,8 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/atrakcje-nie-tylko-dla-najmlodszych-kolejowe-swieto-w-lublinie/</loc>
     <news:news>
       <news:publication>
@@ -2805,96 +2880,6 @@
     <image:image>
       <image:loc>https://ipla.pluscdn.pl/dituel/cp/f2/f2ffdte4a2p7wb7pizyb3stqk4fn23sw.jpg</image:loc>
       <image:title>Zbigniew Ziobro spotkał się z amerykańskim działaczem. "Polski bohater"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/tajna-operacja-sluzb-jednym-posunieciem-uratowali-tysiace-lodowek/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T21:44:49+01:00</news:publication_date>
-      <news:title>Tajna operacja służb. Jednym posunięciem uratowali tysiące lodówek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ocdn.eu/pulscms-transforms/1/wPXk9kuTURBXy9kNjcxZGU4MC00N2QzLTRkZDItODI0YS02OWVlN2Q1OWM2MzIuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
-      <image:title>Tajna operacja służb. Jednym posunięciem uratowali tysiące lodówek</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-zwrocil-sie-do-ukraincow-wydal-apel-przejdzcie-na-nasza-strone/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T21:44:48+01:00</news:publication_date>
-      <news:title>Putin zwrócił się do Ukraińców. Wydał apel, "przejdźcie na naszą stronę"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NK1MKOKR8TFO5-C321.webp</image:loc>
-      <image:title>Putin zwrócił się do Ukraińców. Wydał apel, "przejdźcie na naszą stronę"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/ekstraliga-rugby-swieta-wojna-w-ostatnim-tancu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T21:44:47+01:00</news:publication_date>
-      <news:title>Ekstraliga Rugby. "Święta wojna" w ostatnim tańcu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/7f/7ff31yawoz2c3ha726915wm1g3eiazj6.jpeg</image:loc>
-      <image:title>Ekstraliga Rugby. "Święta wojna" w ostatnim tańcu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/polski-chirurg-skazany-w-usa-na-kare-smierci-tomasz-kosowski-mial-zabic/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T21:44:46+01:00</news:publication_date>
-      <news:title>Polski chirurg skazany w USA na karę śmierci. Tomasz Kosowski miał zabić prawnika</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/ne/ne2oxyr8i1y9d4b7m14vu1734omy6r7s.jpg</image:loc>
-      <image:title>Polski chirurg skazany w USA na karę śmierci. Tomasz Kosowski miał zabić prawnika</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/grozny-incydent-na-wschodzie-polski-zmasowany-atak-na-ukraine-skrot-dnia/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T21:44:44+01:00</news:publication_date>
-      <news:title>Groźny incydent na wschodzie Polski. Zmasowany atak na Ukrainę [SKRÓT DNIA]</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/e29840c1-fcdb-4fb6-98b3-becdca5d5637</image:loc>
-      <image:title>Groźny incydent na wschodzie Polski. Zmasowany atak na Ukrainę [SKRÓT DNIA]</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjski-pocisk-przelecial-nad-jego-gmina-wojt-wskazuje-na-powazny/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T21:44:43+01:00</news:publication_date>
-      <news:title>Rosyjski pocisk przeleciał nad jego gminą. Wójt wskazuje na poważny problem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/3g/3g23hx3a5dox466s3p17bxbqhrtyeoip.jpg</image:loc>
-      <image:title>Rosyjski pocisk przeleciał nad jego gminą. Wójt wskazuje na poważny problem</image:title>
     </image:image>
   </url>
 </urlset>
