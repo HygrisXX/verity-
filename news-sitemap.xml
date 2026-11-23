@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T05:20:10+01:00</news:publication_date>
+      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
+      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/weekend-w-warszawie-pod-znakiem-festiwali-sportu-i-przyrody-co-robic-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T05:20:10+01:00</news:publication_date>
+      <news:title>Weekend w Warszawie pod znakiem festiwali, sportu i przyrody. Co robić w stolicy od 20 do 22 listopada?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/667807664.png</image:loc>
+      <image:title>Weekend w Warszawie pod znakiem festiwali, sportu i przyrody. Co robić w stolicy od 20 do 22 listopada?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wedkarstwo-nowoczesny-sprzet-i-pasja-przekazywana-pokoleniom/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T05:20:10+01:00</news:publication_date>
+      <news:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/IMG_2126-1024x683.jpg</image:loc>
+      <image:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nocny-pozar-na-rzeszowskim-zalesiu-gesty-dym-w-bloku-przy-ul/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T05:20:06+01:00</news:publication_date>
+      <news:title>Nocny pożar na rzeszowskim Zalesiu. Gęsty dym w bloku przy ul. Ćwiklińskiej [FILM]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://rzeszow-news.pl</image:loc>
+      <image:title>Nocny pożar na rzeszowskim Zalesiu. Gęsty dym w bloku przy ul. Ćwiklińskiej [FILM]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/jared-kushner-donald-trump-gotow-rozwazyc-gwarancje-dla-ukrainy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T05:20:04+01:00</news:publication_date>
+      <news:title>Jared Kushner: Donald Trump gotów rozważyć gwarancje dla Ukrainy wzorowane na artykule 5 Traktatu Północnoatla</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/1e7fcf1e85e42480ab082cd6148f3275/wolodymyr-zelenski?t=crop:3840:1679:nowe:0:93.263906856404,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Jared Kushner: Donald Trump gotów rozważyć gwarancje dla Ukrainy wzorowane na artykule 5 Traktatu Północnoatla</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-grozi-iranowi-kolejnymi-atakami-po-nowym-roku-konflikt-uderza-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T05:20:02+01:00</news:publication_date>
+      <news:title>Trump grozi Iranowi kolejnymi atakami po Nowym Roku. Konflikt uderza w transport ropy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/b2aebc6d-ec18-4e69-abff-1675f7f05d06</image:loc>
+      <image:title>Trump grozi Iranowi kolejnymi atakami po Nowym Roku. Konflikt uderza w transport ropy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/budowa-lub-remont-domu-kiedy-najlepiej-wybrac-okna-i-drzwi/</loc>
     <news:news>
       <news:publication>
@@ -48,51 +138,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/deregulacja-w-branzy-piwnej-minister-chce-pomoc-browarom/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T04:01:27+01:00</news:publication_date>
-      <news:title>Deregulacja w branży piwnej. Minister chce pomóc browarom</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/534301.webp</image:loc>
-      <image:title>Deregulacja w branży piwnej. Minister chce pomóc browarom</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T02:17:36+01:00</news:publication_date>
-      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
-      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/dyrektorzy-zyskaja-prawo-do-przeszukania-plecakow-i-szafek-men/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T02:17:36+01:00</news:publication_date>
-      <news:title>Dyrektorzy zyskają prawo do przeszukania plecaków i szafek. MEN publikuje zasady korzystania z wykrywaczy meta</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2022/12/classroom-g1ac9f84e7_1920.jpg</image:loc>
-      <image:title>Dyrektorzy zyskają prawo do przeszukania plecaków i szafek. MEN publikuje zasady korzystania z wykrywaczy meta</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/szukamy-drzewa-roku-mozna-zglaszac-kandydatury/</loc>
     <news:news>
       <news:publication>
@@ -105,21 +150,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/898117793.png</image:loc>
       <image:title>Szukamy drzewa roku. Można zgłaszać kandydatury</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/jest-program-naprawczy-szpitala-w-ostrowcu-w-zalozeniu-optymalizacja-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T00:58:26+01:00</news:publication_date>
-      <news:title>Jest program naprawczy szpitala w Ostrowcu. W założeniu optymalizacja i większe przychody</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1239273592.png</image:loc>
-      <image:title>Jest program naprawczy szpitala w Ostrowcu. W założeniu optymalizacja i większe przychody</image:title>
     </image:image>
   </url>
   <url>
@@ -390,21 +420,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/776235625.png</image:loc>
       <image:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
-      <news:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVubmlrLmluY2RuLnBsL2/R6aWVubmlrL2RvY3VtZW50cy9GT0IwMDAwMDAwMDAwMDA3NzEzOTQzL2ZpbGVzL3dp/Y2VtaW5pc3Rlci1jeWZyeXphY2ppLXBhd2VsLW9sc3pld3NraS1vc3RyemVnYS1wcn/plZC1yb3N5anNrYS1kZXppbmZvcm1hY2phLTM5MzI3NTIxLmpwZyIsInciOjM4NDB9</image:loc>
-      <image:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</image:title>
     </image:image>
   </url>
   <url>
@@ -2760,66 +2775,6 @@
     <image:image>
       <image:loc>https://ocdn.eu/pulscms-transforms/1/Ackk9kuTURBXy83NzIzM2I3My03MjdhLTQ1NmEtYWM5Zi04YTMwN2IwOGEzOTYuanBlZ5GTAs0EsADeAAGhMAE</image:loc>
       <image:title>Silny wstrząs w kopalni Murcki-Staszic. Mieszkańcy Śląska zbudzeni o świcie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/kolejna-znana-marka-wycofuje-reklamy-z-republiki-od-grudnia-znikna-jej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T05:53:12+01:00</news:publication_date>
-      <news:title>Kolejna znana marka wycofuje reklamy z Republiki. Od grudnia znikną jej spoty</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/ca707809-50c8-4ea0-b571-5f033170384f</image:loc>
-      <image:title>Kolejna znana marka wycofuje reklamy z Republiki. Od grudnia znikną jej spoty</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zurek-wygral-proces-z-czlowiekiem-ziobry-klamstwo-w-sieci-ma-swoja-cene/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T05:53:10+01:00</news:publication_date>
-      <news:title>Żurek wygrał proces z człowiekiem Ziobry. "Kłamstwo w sieci ma swoją cenę"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NK1TMK0BKVPWG-C321.webp</image:loc>
-      <image:title>Żurek wygrał proces z człowiekiem Ziobry. "Kłamstwo w sieci ma swoją cenę"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/dziela-sztuki-warte-blisko-100-milionow-zl-w-warszawie-opalka-uklanski/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T05:53:08+01:00</news:publication_date>
-      <news:title>Dzieła sztuki warte blisko 100 milionów zł w Warszawie. Opałka, Uklański i Mitoraj</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/32f2050bef143376d97153e597d28bfe/?t=crop:2000:874:nowe:0:230,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Dzieła sztuki warte blisko 100 milionów zł w Warszawie. Opałka, Uklański i Mitoraj</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nadchodzi-koniec-emerytur-groszowych-zus-szykuje-rewolucyjna-zmiane-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T05:53:06+01:00</news:publication_date>
-      <news:title>Nadchodzi koniec emerytur groszowych. ZUS szykuje rewolucyjną zmianę i czeka na decyzję rządu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY/2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMD/AwMDAwMDAwNzcxMDkzMi9maWxlcy9vc29ieS01MC1sYXQ/tZW1lcnl0dXJhLTM5MjU0MTQ5LnBuZyIsInciOjM4NDB9</image:loc>
-      <image:title>Nadchodzi koniec emerytur groszowych. ZUS szykuje rewolucyjną zmianę i czeka na decyzję rządu</image:title>
     </image:image>
   </url>
 </urlset>
