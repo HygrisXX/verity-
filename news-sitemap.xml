@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/rozanska-z-mandatem-senatorskim-koalicjanci-zadowoleni-43-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:23+01:00</news:publication_date>
+      <news:title>Różańska z mandatem senatorskim, koalicjanci zadowoleni (43 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/ae61db4d31dd1ee30de4c569da87a7e2_xl-150x150.jpg</image:loc>
+      <image:title>Różańska z mandatem senatorskim, koalicjanci zadowoleni (43 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/szkolenie-okresowe-bhp-kto-jak-czesto-i-jak-utrzymac-je-w-waznosci/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:22+01:00</news:publication_date>
+      <news:title>Szkolenie okresowe BHP: kto, jak często i jak utrzymać je w ważności?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/52123353.png</image:loc>
+      <image:title>Szkolenie okresowe BHP: kto, jak często i jak utrzymać je w ważności?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/nadzwyczajni-szafarze-komunii-sw-zapelnili-w-niedziele-kosciol/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:22+01:00</news:publication_date>
+      <news:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/0000-WhatsApp-Image-2026-11-22-at-19.07.12-300x300.jpg</image:loc>
+      <image:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/decyzja-zostala-potwierdzona-polske-wesprze-samolot-wczesnego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
+      <news:title>"Decyzja została potwierdzona". Polskę wesprze samolot wczesnego ostrzegania AWACS</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-samolot-wczesnego-ostrzegania-awacs-zdjecie-ilustracyjne-ph9353822/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>"Decyzja została potwierdzona". Polskę wesprze samolot wczesnego ostrzegania AWACS</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosja-bez-flagi-w-imprezach-sportowych-w-ue/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
+      <news:title>Rosja bez flagi w imprezach sportowych w UE</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s16.tvp.pl/images2/6/e/4/uid_6e418b03c0f6478cb789b198539c690f_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
+      <image:title>Rosja bez flagi w imprezach sportowych w UE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/co-piec-minut-na-froncie-w-ukrainie-ginie-rosyjski-zolnierz-ale-putina/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:19+01:00</news:publication_date>
+      <news:title>Co pięć minut na froncie w Ukrainie ginie rosyjski żołnierz. Ale Putina to niewiele kosztuje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.wiadomosci.onet.pl/1/w5Hk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9kZmZlMWM1NTU4ZjBjODMzMjVkYWZkNTUzYTYxNzc0MS5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
+      <image:title>Co pięć minut na froncie w Ukrainie ginie rosyjski żołnierz. Ale Putina to niewiele kosztuje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:17+01:00</news:publication_date>
+      <news:title>Duże zmiany na rynku gazu? Rząd szykuje nową ustawę, a magazyny mogą zmienić właściciela</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/wierzchowicemagazyn.x76883.jpeg</image:loc>
+      <image:title>Duże zmiany na rynku gazu? Rząd szykuje nową ustawę, a magazyny mogą zmienić właściciela</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/ujawnili-skale-rosyjskich-strat-w-ukrainie-te-dane-byly-pilnie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:16+01:00</news:publication_date>
+      <news:title>Ujawnili skalę rosyjskich strat w Ukrainie. Te dane były pilnie strzeżone (490 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NKBP4W659UI2S-C321.webp</image:loc>
+      <image:title>Ujawnili skalę rosyjskich strat w Ukrainie. Te dane były pilnie strzeżone (490 tys.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/groza-wybuchem-otwartej-wojny-rosyjskie-msz-ws-kraju-nato/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:14+01:00</news:publication_date>
+      <news:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/w3/w3rrjimvyhwqr4qphxrud85hmcjy1pb5.jpg</image:loc>
+      <image:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/inowroclawska-mleczarnia-cuiavia-weszla-w-stan-likwidacji-prace-straci/</loc>
     <news:news>
       <news:publication>
@@ -48,7 +183,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/ruch-prokuratury-ws-rodziny-andziaks-sa-zarzuty-i-zgoda-na-aresztowanie/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ruch-prokuratury-ws-rodziny-andziaks-sa-zarzuty-i-zgoda-na-aresztowanie/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -165,21 +300,6 @@
     <image:image>
       <image:loc>https://zachod.pl/wp-content/uploads/2026/11/043b973c9732e52623fe97af301830e3_xl-150x150.jpg</image:loc>
       <image:title>Green City Accord – Zielona Góra przystępuje do programu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T16:04:40+01:00</news:publication_date>
-      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
-      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
     </image:image>
   </url>
   <url>
@@ -2455,56 +2575,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-21T20:39:48+01:00</news:publication_date>
-      <news:title>GUS podał pakiet danych z gospodarki. Produkcja przemysłowa niemal stanęła. Płace wzrosły mocniej od prognoz</news:title>
+      <news:title>Szczyt koniunktury za nami? Produkcja stanęła na 0,1%, a RPP może czekać do marca</news:title>
     </news:news>
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/4e23e20afb17d5a3be4666b49092da4d/?t=crop:3000:1860:nowe:0:70,resize:fill:1200:750,enlarge:1</image:loc>
-      <image:title>GUS podał pakiet danych z gospodarki. Produkcja przemysłowa niemal stanęła. Płace wzrosły mocniej od prognoz</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/ochrona-ludnosci-i-przyszlosc-osp-powiatowy-zjazd-strazakow-w-olsztynie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T19:45:53+01:00</news:publication_date>
-      <news:title>Ochrona ludności i przyszłość OSP. Powiatowy zjazd strażaków w Olsztynie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/8524-scaled.jpg</image:loc>
-      <image:title>Ochrona ludności i przyszłość OSP. Powiatowy zjazd strażaków w Olsztynie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/polacy-bez-punktow-w-lillehammer-pierwszy-taki-konkurs-od-12-lat/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T19:45:51+01:00</news:publication_date>
-      <news:title>Polacy bez punktów w Lillehammer. Pierwszy taki konkurs od 12 lat</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s18.tvp.pl/images2/8/3/e/uid_83eb00f0855f496987ca1cec17ee0c32_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-      <image:title>Polacy bez punktów w Lillehammer. Pierwszy taki konkurs od 12 lat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/macaulay-culkin-wraca-jako-kevin-wielki-powrot-po-36-latach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T19:45:50+01:00</news:publication_date>
-      <news:title>Macaulay Culkin wraca jako Kevin. Wielki powrót po 36 latach</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/943ef795-ac50-4d7d-ae71-c6966303bfa4</image:loc>
-      <image:title>Macaulay Culkin wraca jako Kevin. Wielki powrót po 36 latach</image:title>
+      <image:title>Szczyt koniunktury za nami? Produkcja stanęła na 0,1%, a RPP może czekać do marca</image:title>
     </image:image>
   </url>
 </urlset>
