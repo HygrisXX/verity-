@@ -3,18 +3,78 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/budowa-lub-remont-domu-kiedy-najlepiej-wybrac-okna-i-drzwi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T04:01:30+01:00</news:publication_date>
+      <news:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/822880066.png</image:loc>
+      <image:title>Budowa lub remont domu. Kiedy najlepiej wybrać okna i drzwi?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/drozej-za-telefony-w-calej-polsce-nowa-oplata-juz-obowiazuje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T04:01:29+01:00</news:publication_date>
+      <news:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-18.jpg</image:loc>
+      <image:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T04:01:29+01:00</news:publication_date>
+      <news:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1920354443.png</image:loc>
+      <image:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/deregulacja-w-branzy-piwnej-minister-chce-pomoc-browarom/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T04:01:27+01:00</news:publication_date>
+      <news:title>Deregulacja w branży piwnej. Minister chce pomóc browarom</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.wiadomoscihandlowe.pl/images/2026/11/20/534301.webp</image:loc>
+      <image:title>Deregulacja w branży piwnej. Minister chce pomóc browarom</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wokol-tk-ciagle-sie-dzieje-sedziowie-swieczkowski-i-sochanski-wystapili/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-23T02:17:36+01:00</news:publication_date>
-      <news:title>Minął tydzień</news:title>
+      <news:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
-      <image:title>Minął tydzień</image:title>
+      <image:loc>https://hygrisxx.github.io/verity-/og/90372259.png</image:loc>
+      <image:title>Wokół TK ciągle się dzieje: sędziowie Święczkowski i Sochański wystąpili do Europejskiego Trybunału</image:title>
     </image:image>
   </url>
   <url>
@@ -45,36 +105,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/898117793.png</image:loc>
       <image:title>Szukamy drzewa roku. Można zgłaszać kandydatury</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T00:58:26+01:00</news:publication_date>
-      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
-      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/weekend-w-warszawie-pod-znakiem-festiwali-sportu-i-przyrody-co-robic-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T00:58:26+01:00</news:publication_date>
-      <news:title>Weekend w Warszawie pod znakiem festiwali, sportu i przyrody. Co robić w stolicy od 20 do 22 listopada?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/667807664.png</image:loc>
-      <image:title>Weekend w Warszawie pod znakiem festiwali, sportu i przyrody. Co robić w stolicy od 20 do 22 listopada?</image:title>
     </image:image>
   </url>
   <url>
@@ -120,21 +150,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NK4XL9BT7J52T-C321.webp</image:loc>
       <image:title>Europejski gigant pręży muskuły. Testy tuż przy granicy z Białorusią</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/strazackie-dzieje-ponidzia-zapisane-na-kartach-wyjatkowej-ksiazki/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T23:39:49+01:00</news:publication_date>
-      <news:title>Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/2222-Niestandardowy-9.jpg</image:loc>
-      <image:title>Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki</image:title>
     </image:image>
   </url>
   <url>
@@ -378,7 +393,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/alarmy-w-obwodzie-krolewieckim-mialo-dojsc-do-eksplozji/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -390,21 +405,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVubmlrLmluY2RuLnBsL2/R6aWVubmlrL2RvY3VtZW50cy9GT0IwMDAwMDAwMDAwMDA3NzEzOTQzL2ZpbGVzL3dp/Y2VtaW5pc3Rlci1jeWZyeXphY2ppLXBhd2VsLW9sc3pld3NraS1vc3RyemVnYS1wcn/plZC1yb3N5anNrYS1kZXppbmZvcm1hY2phLTM5MzI3NTIxLmpwZyIsInciOjM4NDB9</image:loc>
       <image:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjski-dron-uderzyl-w-blok-w-obwodzie-kijowskim-nie-zyja-dwie-osoby-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
-      <news:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Nie żyją dwie osoby, w tym 18-latek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1217401903.png</image:loc>
-      <image:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Nie żyją dwie osoby, w tym 18-latek</image:title>
     </image:image>
   </url>
   <url>
@@ -2820,21 +2820,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY/2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMD/AwMDAwMDAwNzcxMDkzMi9maWxlcy9vc29ieS01MC1sYXQ/tZW1lcnl0dXJhLTM5MjU0MTQ5LnBuZyIsInciOjM4NDB9</image:loc>
       <image:title>Nadchodzi koniec emerytur groszowych. ZUS szykuje rewolucyjną zmianę i czeka na decyzję rządu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/trzesienie-ziemi-w-peru-ewakuowano-parlament-w-limie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T03:49:18+01:00</news:publication_date>
-      <news:title>Trzęsienie ziemi w Peru. Ewakuowano parlament w Limie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/8066a5bd-426b-4951-9fbe-35af8406bd04</image:loc>
-      <image:title>Trzęsienie ziemi w Peru. Ewakuowano parlament w Limie</image:title>
     </image:image>
   </url>
 </urlset>
