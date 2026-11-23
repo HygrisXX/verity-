@@ -1,10 +1,11 @@
 /* VERITY Service Worker — cache powłoki aplikacji i czytanie offline */
-const CACHE_NAME = 'verity-shell-v2';
+const CACHE_NAME = 'verity-shell-v3';
 const CORE_ASSETS = [
   './',
   './styles.css',
   './app.js',
   './community.js',
+  './cameras.js',
   './manifest.webmanifest',
   './icon.svg'
 ];

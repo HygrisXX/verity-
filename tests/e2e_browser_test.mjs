@@ -254,6 +254,7 @@ async function run() {
       ['/Swiat/', 200],
       ['/Sport/', 200],
       ['/moderacja/', 200],
+      ['/kamery/', 200],
       ['/community.js', 200],
       [`${sampleMulti.seo_url}/`, 200],
       [`${sampleSingle.seo_url}/`, 200],
@@ -898,6 +899,48 @@ async function run() {
       modStatic.pathname.endsWith('/moderacja/') && modStatic.h1.includes('Rejestr Moderacji') && modStatic.tariffRows >= 8 && !modStatic.overflow,
       `Błąd strony statycznej /moderacja/: ${JSON.stringify(modStatic)}`
     );
+
+    // 8e. /kamery/: fasada click-to-play, filtry Polska/Świat, brak iframe przed kliknięciem, brak overflow na mobile
+    await browser.goto(`${baseUrl}/kamery/`);
+    const camInit = await browser.evalJs(`({
+      pathname: location.pathname,
+      h1: document.querySelector('h1')?.textContent || '',
+      cards: document.querySelectorAll('#camGrid .cam-card').length,
+      iframesBefore: document.querySelectorAll('#camGrid iframe').length,
+      navActive: document.querySelector('.path-chip[data-path="/kamery"]')?.classList.contains('active') || false,
+      overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+    })`);
+    assert(
+      camInit.pathname.endsWith('/kamery/') && camInit.h1.includes('Kamery') && camInit.cards >= 10 && camInit.iframesBefore === 0 && camInit.navActive && !camInit.overflow,
+      `Błąd strony /kamery/: ${JSON.stringify(camInit)}`
+    );
+
+    await browser.evalJs(`document.querySelector('.cam-scope-btn[data-cam-scope="swiat"]')?.click()`);
+    const camWorld = await browser.evalJs(`({
+      visiblePl: document.querySelectorAll('#camGrid .cam-card[data-scope="polska"]:not(.hidden)').length,
+      visibleWorld: document.querySelectorAll('#camGrid .cam-card[data-scope="swiat"]:not(.hidden)').length,
+      search: location.search,
+    })`);
+    assert(
+      camWorld.visiblePl === 0 && camWorld.visibleWorld >= 6 && camWorld.search.includes('scope=swiat'),
+      `Błąd filtra Świat na /kamery/: ${JSON.stringify(camWorld)}`
+    );
+
+    await browser.evalJs(`document.querySelector('#camGrid .cam-card:not(.hidden) button.cam-play[data-embed]')?.click()`);
+    const camPlaying = await browser.evalJs(`({
+      iframeCount: document.querySelectorAll('#camGrid iframe').length,
+      iframeSrc: document.querySelector('#camGrid iframe')?.getAttribute('src') || '',
+    })`);
+    assert(
+      camPlaying.iframeCount === 1 && camPlaying.iframeSrc.includes('youtube-nocookie.com/embed/'),
+      `Błąd fasady click-to-play na /kamery/: ${JSON.stringify(camPlaying)}`
+    );
+
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
+    const camMobileOverflow = await browser.evalJs(`document.documentElement.scrollWidth > document.documentElement.clientWidth`);
+    assert(!camMobileOverflow, 'Poziomy overflow na /kamery/ przy szerokości 390px');
+    await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+    console.log(`[PASS] Sekcja E (/kamery/): ${camInit.cards} kamer, fasada click-to-play, filtry i mobile OK`);
 
     await browser.goto(`${baseUrl}/`);
     await browser.evalJs(`document.getElementById('liveChatBtn')?.click()`);

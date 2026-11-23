@@ -619,6 +619,12 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
             f'<a class="{cls}" data-path="{html.escape(path, quote=True)}" '
             f'href="{href}" onclick="return selectPathLink(event, \'{html.escape(path, quote=True)}\')">{html.escape(label)}</a>'
         )
+    cam_cls = "path-chip active" if active_path == "/kamery" else "path-chip"
+    cam_href = html.escape(_rel_href(rel_root, "/kamery"), quote=True)
+    out.append(
+        f'<a class="{cam_cls}" data-path="/kamery" href="{cam_href}" '
+        'onclick="return fixFileHref(event)">Kamery</a>'
+    )
     return "\n        ".join(out)
 
 
@@ -1426,6 +1432,222 @@ def _render_moderation_ssr(rel_root: str) -> str:
     </div>"""
 
 
+def _load_cameras(base_dir: str) -> list:
+    cam_path = os.path.join(base_dir, "cameras.json")
+    if not os.path.exists(cam_path):
+        return []
+    try:
+        with open(cam_path, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except Exception as exc:
+        print(f"[VERITY] Ostrzeżenie: nie można wczytać cameras.json: {exc}")
+        return []
+    if not isinstance(raw, list):
+        print("[VERITY] Ostrzeżenie: cameras.json nie jest tablicą JSON.")
+        return []
+
+    valid_regions = {v[0] for v in VOIVODESHIPS}
+    seen_ids = set()
+    cameras = []
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        cid = str(item.get("id") or "").strip()
+        name = str(item.get("name") or "").strip()
+        scope = str(item.get("scope") or "").strip()
+        ctype = str(item.get("type") or "").strip()
+        source_name = str(item.get("source_name") or "").strip()
+        source_url = str(item.get("source_url") or "").strip()
+        if not cid or not name or scope not in ("polska", "swiat") or not source_name or not source_url:
+            print(f"[VERITY] Pominięto niekompletną kamerę w cameras.json: {cid or name or item}")
+            continue
+        if cid in seen_ids:
+            print(f"[VERITY] Pominięto duplikat kamery id={cid}")
+            continue
+        region = item.get("region")
+        if scope == "polska":
+            if region not in valid_regions:
+                print(f"[VERITY] Pominięto kamerę {cid}: niepoprawny region={region!r}")
+                continue
+        else:
+            region = None
+        if ctype == "youtube_channel" and not str(item.get("youtube_channel_id") or "").strip():
+            print(f"[VERITY] Pominięto kamerę {cid}: brak youtube_channel_id")
+            continue
+        if ctype == "youtube_video" and not str(item.get("youtube_video_id") or "").strip():
+            print(f"[VERITY] Pominięto kamerę {cid}: brak youtube_video_id")
+            continue
+        if ctype == "external_link" and not str(item.get("external_url") or "").strip():
+            print(f"[VERITY] Pominięto kamerę {cid}: brak external_url")
+            continue
+        if ctype not in ("youtube_channel", "youtube_video", "external_link"):
+            print(f"[VERITY] Pominięto kamerę {cid}: nieznany type={ctype!r}")
+            continue
+        seen_ids.add(cid)
+        cameras.append(item)
+    return cameras
+
+
+def _camera_monogram(name: str) -> str:
+    words = [w for w in re.split(r"[\s\-–—/]+", (name or "").strip()) if w and w[0].isalnum()]
+    if len(words) >= 2:
+        return (words[0][0] + words[1][0]).upper()
+    if words:
+        return words[0][:2].upper()
+    return "CAM"
+
+
+def _render_cameras_ssr(rel_root: str, cameras: list) -> str:
+    home_href = html.escape(_rel_href(rel_root, "/Polska"), quote=True)
+    voiv_labels = {v[0]: v[1] for v in VOIVODESHIPS}
+    region_options = "\n            ".join(
+        f'<option value="{html.escape(v[0], quote=True)}">{html.escape(v[1])}</option>'
+        for v in VOIVODESHIPS
+    )
+    categories = []
+    for c in cameras:
+        cat = str(c.get("category") or "").strip()
+        if cat and cat not in categories:
+            categories.append(cat)
+    cat_chips = "\n          ".join(
+        f'<button type="button" class="cam-cat-chip" data-cam-cat="{html.escape(cat, quote=True)}">{html.escape(cat.capitalize())}</button>'
+        for cat in categories
+    )
+
+    cards_html = []
+    for c in cameras:
+        cid = str(c.get("id") or "")
+        name = str(c.get("name") or "")
+        scope = str(c.get("scope") or "polska")
+        region = str(c.get("region") or "")
+        country = str(c.get("country") or "")
+        city = str(c.get("city") or "")
+        category = str(c.get("category") or "")
+        ctype = str(c.get("type") or "")
+        source_name = str(c.get("source_name") or "")
+        source_url = str(c.get("source_url") or "")
+        status = str(c.get("status") or "online")
+        is_offline = status == "offline"
+
+        embed_url = ""
+        thumb_html = ""
+        monogram = html.escape(_camera_monogram(source_name or name))
+        hue = sum(ord(ch) for ch in cid) % 360
+
+        if ctype == "youtube_channel":
+            ch_id = str(c.get("youtube_channel_id") or "").strip()
+            embed_url = f"https://www.youtube-nocookie.com/embed/live_stream?channel={ch_id}"
+            thumb_html = (
+                f'<div class="cam-poster" style="--cam-h:{hue}">'
+                f'<span class="cam-monogram" aria-hidden="true">{monogram}</span>'
+                f'<span class="cam-poster-sub">{html.escape(city or source_name)}</span>'
+                f"</div>"
+            )
+        elif ctype == "youtube_video":
+            vid_id = str(c.get("youtube_video_id") or "").strip()
+            embed_url = f"https://www.youtube-nocookie.com/embed/{vid_id}"
+            poster_src = f"https://i.ytimg.com/vi/{html.escape(vid_id, quote=True)}/hqdefault.jpg"
+            thumb_html = (
+                f'<img class="cam-thumb-img" src="{poster_src}" '
+                f'alt="{html.escape(name, quote=True)}" loading="lazy" decoding="async" />'
+            )
+        else:
+            ext_url = str(c.get("external_url") or source_url).strip()
+            thumb_html = (
+                f'<div class="cam-poster cam-poster-ext" style="--cam-h:{hue}">'
+                f'<span class="cam-monogram" aria-hidden="true">{monogram}</span>'
+                f'<span class="cam-poster-sub">{html.escape(source_name)}</span>'
+                f"</div>"
+            )
+
+        if is_offline:
+            badge_html = '<span class="cam-live-badge is-offline">OFFLINE</span>'
+            action_html = (
+                f'<a class="cam-play cam-ext-link" href="{html.escape(source_url, quote=True)}" '
+                f'target="_blank" rel="noopener nofollow" aria-label="Otwórz u źródła: {html.escape(name, quote=True)}">'
+                '<span aria-hidden="true">↗</span> Otwórz u źródła</a>'
+            )
+        elif ctype == "external_link":
+            ext_url = str(c.get("external_url") or source_url).strip()
+            badge_html = '<span class="cam-live-badge is-external">ZEWN.</span>'
+            action_html = (
+                f'<a class="cam-play cam-ext-link" href="{html.escape(ext_url, quote=True)}" '
+                f'target="_blank" rel="noopener nofollow" aria-label="Otwórz transmisję na stronie źródła: {html.escape(name, quote=True)}">'
+                '<span aria-hidden="true">↗</span> Otwórz u źródła</a>'
+            )
+        else:
+            badge_html = '<span class="cam-live-badge"><span class="cam-live-dot" aria-hidden="true"></span>LIVE</span>'
+            action_html = (
+                f'<button type="button" class="cam-play" '
+                f'data-embed="{html.escape(embed_url, quote=True)}" '
+                f'data-title="{html.escape(name, quote=True)}" '
+                f'aria-label="Odtwórz kamerę na żywo: {html.escape(name, quote=True)}">'
+                '<span class="cam-play-icon" aria-hidden="true">▶</span> Odtwórz na żywo</button>'
+            )
+
+        loc_parts = [p for p in [city, voiv_labels.get(region, ""), country if scope == "swiat" else ""] if p]
+        loc_line = " · ".join(loc_parts)
+        offline_cls = " is-offline" if is_offline else ""
+        cards_html.append(
+            f'<article class="cam-card{offline_cls}" '
+            f'data-cam-id="{html.escape(cid, quote=True)}" '
+            f'data-scope="{html.escape(scope, quote=True)}" '
+            f'data-region="{html.escape(region, quote=True)}" '
+            f'data-category="{html.escape(category, quote=True)}">'
+            f'<div class="cam-media">'
+            f'{thumb_html}'
+            f'{badge_html}'
+            f'{action_html}'
+            f"</div>"
+            f'<div class="cam-body">'
+            f'<div class="cam-meta-row">'
+            f'<span class="cam-loc">{html.escape(loc_line)}</span>'
+            f'<span class="cam-cat-tag">{html.escape(category)}</span>'
+            f"</div>"
+            f'<h2 class="cam-title">{html.escape(name)}</h2>'
+            f'<div class="cam-source">Źródło: <a href="{html.escape(source_url, quote=True)}" target="_blank" rel="noopener nofollow">{html.escape(source_name)}</a></div>'
+            f"</div>"
+            f"</article>"
+        )
+
+    pl_count = sum(1 for c in cameras if c.get("scope") == "polska")
+    world_count = sum(1 for c in cameras if c.get("scope") == "swiat")
+    grid_inner = "\n        ".join(cards_html) if cards_html else '<div class="empty-state"><p>Brak skonfigurowanych kamer.</p></div>'
+
+    return f"""<div class="cameras-page">
+      <a class="back-link" href="{home_href}" onclick="return selectPathLink(event, '/Polska')">← Wróć do wydania głównego VERITY</a>
+      <div class="feed-heading">
+        <div>
+          <span class="feed-crumb">/kamery</span>
+          <h1>Kamery na żywo — Polska i świat</h1>
+        </div>
+        <span id="camCountLabel">{len(cameras)} kamer ({pl_count} Polska · {world_count} Świat)</span>
+      </div>
+      <div class="cam-filters" role="region" aria-label="Filtrowanie kamer">
+        <div class="cam-scope-group" role="group" aria-label="Zakres geograficzny">
+          <button type="button" class="cam-scope-btn active" data-cam-scope="all">Wszystkie ({len(cameras)})</button>
+          <button type="button" class="cam-scope-btn" data-cam-scope="polska">Polska ({pl_count})</button>
+          <button type="button" class="cam-scope-btn" data-cam-scope="swiat">Świat ({world_count})</button>
+        </div>
+        <label class="cam-region-label">
+          <span class="sr-only">Województwo</span>
+          <select id="camRegionSelect" class="cam-region-select" aria-label="Filtruj według województwa">
+            <option value="">Wszystkie województwa</option>
+            {region_options}
+          </select>
+        </label>
+        <div class="cam-cat-group" role="group" aria-label="Kategoria widoku">
+          <button type="button" class="cam-cat-chip active" data-cam-cat="all">Wszystkie kategorie</button>
+          {cat_chips}
+        </div>
+      </div>
+      <div id="camGrid" class="cam-grid">
+        {grid_inner}
+      </div>
+      <p class="cam-legal-note">Transmisje należą do ich nadawców; VERITY jedynie je osadza. Odtwarzacz ładuje się dopiero po kliknięciu, bez wcześniejszego przesyłania danych do zewnętrznych serwisów.</p>
+    </div>"""
+
+
 def _page_shell(
     *,
     title: str,
@@ -1598,6 +1820,7 @@ def _page_shell(
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="{html.escape(rel_root, quote=True)}kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="{html.escape(rel_root, quote=True)}moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="{html.escape(rel_root, quote=True)}news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="{html.escape(rel_root, quote=True)}sitemap.xml">Sitemap (XML)</a>
@@ -1611,6 +1834,7 @@ def _page_shell(
   <script>{init_script_vars}</script>
   <script src="{html.escape(rel_root, quote=True)}app.js?v={html.escape(js_ver, quote=True)}"></script>
   <script src="{html.escape(rel_root, quote=True)}community.js?v={html.escape(comm_ver, quote=True)}" defer></script>
+  {f'<script src="{html.escape(rel_root, quote=True)}cameras.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cameras.js")), quote=True)}" defer></script>' if active_path == "/kamery" else ""}
 </body>
 </html>
 """
@@ -1924,6 +2148,59 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     )
     _write_file(os.path.join(base_dir, "moderacja", "index.html"), mod_html)
 
+    # 3c. Strona Kamer Online (/kamery/)
+    cameras_list = _load_cameras(base_dir)
+    cam_ld_items = []
+    for idx, cam in enumerate(cameras_list, start=1):
+        ctype = cam.get("type")
+        if ctype in ("youtube_channel", "youtube_video"):
+            embed_u = (
+                f"https://www.youtube-nocookie.com/embed/live_stream?channel={cam.get('youtube_channel_id')}"
+                if ctype == "youtube_channel"
+                else f"https://www.youtube-nocookie.com/embed/{cam.get('youtube_video_id')}"
+            )
+            cam_ld_items.append({
+                "@type": "ListItem",
+                "position": idx,
+                "item": {
+                    "@type": "VideoObject",
+                    "name": cam.get("name"),
+                    "embedUrl": embed_u,
+                    "publication": {
+                        "@type": "BroadcastEvent",
+                        "isLiveBroadcast": True,
+                    },
+                },
+            })
+    cam_json_ld = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Kamery na żywo — Polska i świat — VERITY",
+        "url": f"{site_base_url}/kamery/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": cam_ld_items,
+        },
+    }
+    cam_html = _page_shell(
+        title="Kamery na żywo — Polska i świat — VERITY",
+        description="Kamery online na żywo z Polski i ze świata: góry, Bałtyk, polskie miasta oraz wybrane transmisje globalne.",
+        canonical_url=f"{site_base_url}/kamery/",
+        og_type="website",
+        og_image=first_thumb,
+        og_image_dims=first_thumb_dims,
+        json_ld_obj=cam_json_ld,
+        rel_root="../",
+        active_path="/kamery",
+        ssr_main_html=_render_cameras_ssr("../", cameras_list),
+        init_script_vars=f'window.VERITY_IS_CAMERAS=true;window.VERITY_BASE="../";window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+        css_ver=css_ver,
+        js_ver=js_ver,
+        comm_ver=comm_ver,
+        pending_count=pending_badge_total,
+    )
+    _write_file(os.path.join(base_dir, "kamery", "index.html"), cam_html)
+
     # 4. Strony pojedynczych artykułów (prawdziwy HTTP 200 OK dla każdego artykułu, z noindex dla PENDING_ADMIN)
     written_urls = set()
     for art in all_sorted:
@@ -2073,6 +2350,12 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
         "    <changefreq>daily</changefreq>",
         "    <priority>0.6</priority>",
+        "  </url>",
+        "  <url>",
+        f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/kamery/')}</loc>",
+        f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
+        "    <changefreq>daily</changefreq>",
+        "    <priority>0.7</priority>",
         "  </url>",
     ]
     for cat_path, _, _ in CATEGORIES:

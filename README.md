@@ -26,3 +26,14 @@ Statyczny portal informacyjny łączący wieloźródłowy agregator depesz ([upd
   ```
 
 Szczegóły architektury, harmonogramu GitHub Actions oraz konfiguracji publikacji znajdują się w [INSTRUKCJA_WDROZENIA.md](INSTRUKCJA_WDROZENIA.md).
+
+## Jak dodać kamerę (`/kamery/`)
+1. Dopisz nowy obiekt w `cameras.json` (wymagane pola: `id`, `name`, `scope` `"polska"|"swiat"`, `region` z listy 16 województw dla Polski lub `null` dla świata, `category`, `type` `"youtube_channel"|"youtube_video"|"external_link"`, `source_name`, `source_url`).
+2. Opcjonalnie sprawdź dostępność transmisji:
+   ```bash
+   python3 check_cameras.py
+   ```
+3. Przebuduj statyczne pliki HTML:
+   ```bash
+   python3 update_live_news.py --rebuild-only
+   ```

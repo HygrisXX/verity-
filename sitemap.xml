@@ -3,19 +3,25 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-23T22:49:22+01:00</lastmod>
+    <lastmod>2026-11-23T22:53:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-23T22:49:22+01:00</lastmod>
+    <lastmod>2026-11-23T22:53:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/kamery/</loc>
+    <lastmod>2026-11-23T22:53:21+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-23T22:49:22+01:00</lastmod>
+    <lastmod>2026-11-23T22:53:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -27,7 +33,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/</loc>
-    <lastmod>2026-11-23T21:48:23+01:00</lastmod>
+    <lastmod>2026-11-23T22:53:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,7 +45,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-23T22:49:22+01:00</lastmod>
+    <lastmod>2026-11-23T22:53:20+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -93,13 +99,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/</loc>
-    <lastmod>2026-11-23T22:49:12+01:00</lastmod>
+    <lastmod>2026-11-23T22:53:20+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/</loc>
-    <lastmod>2026-11-23T22:49:21+01:00</lastmod>
+    <lastmod>2026-11-23T20:54:42+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -314,6 +320,33 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nie-dwa-a-trzy-pociski-prokuratura-ujawnia-co-spadlo-na-polske/</loc>
+    <lastmod>2026-11-23T22:53:20+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1819593180.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/nato-reaguje-na-rosyjskie-obiekty-w-polsce-rutte-absolutnie-nie-do/</loc>
+    <lastmod>2026-11-23T22:53:20+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/437561954.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rosyjskie-obiekty-spadly-w-polsce-minister-ma-wazny-apel-do-polakow/</loc>
+    <lastmod>2026-11-23T22:53:21+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2030691471.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/zdobywcy-kulinarnych-perel-odbieraja-honory-za-maslo-z-gib-sekacz/</loc>
     <lastmod>2026-11-23T20:54:42+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -503,15 +536,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nato-wzmocni-ochrone-wschodniej-granicy-polski-szef-mon-zapowiada/</loc>
-    <lastmod>2026-11-22T22:40:10+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2025/10/07/320x240px/TW1DGF3PGw9FUfnu0JKEjCrO11JoZD4cbQdZxtrM.speq.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/dzieci-ponizej-15-lat-bez-social-mediow-rzad-planuje-zmiany/</loc>
     <lastmod>2026-11-23T20:54:46+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -611,7 +635,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/mosad-pomogl-udaremnic-zamach-na-koncert-taylor-swift-w-wiedniu-byly/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/mosad-pomogl-udaremnic-zamach-na-koncert-taylor-swift-w-wiedniu-byly/</loc>
     <lastmod>2026-11-23T20:00:14+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -2150,6 +2174,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/ceny-paliw-23-29-listopada-2026-ile-zaplacimy-za-benzyne-i-diesla/</loc>
+    <lastmod>2026-11-21T16:42:18+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY/2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMD/AwMDAwMDAwNzcxMzQzMS9maWxlcy9yZXplcndhLXdza2F/6bmlrLXBhbGl3YS0zOTMxOTI1My5qcGciLCJ3IjozODQwfQ</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/cracovia-czekala-na-to-42-dni-co-za-debiut-vukovica/</loc>
     <lastmod>2026-11-21T16:42:17+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -2804,33 +2837,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://zachod.pl/wp-content/uploads/2026/11/0caabe6b84d629f6b5b7bc8a2a79cf75_xl-150x150.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/skansen-to-nie-tylko-zabytkowe-chaty-i-dawne-zagrody-w-lubelskim-muzeum/</loc>
-    <lastmod>2026-11-20T20:49:17+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lublin112.pl/wp-content/uploads/2026/11/145s99.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/koniec-z-dojazdami-rodzice-w-turosli-maja-nowy-zlobek/</loc>
-    <lastmod>2026-11-23T22:49:21+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.radio.bialystok.pl/src/thumbs/709/f4e45415c7db2d60acf5077c6333861c</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/reaktywacja-klubu-pis-w-bydgoskiej-radzie-miasta-jest-ich-troje/</loc>
-    <lastmod>2026-11-20T19:57:06+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://s5.tvp.pl/images2/5/a/1/uid_5a1c704ee6a94356aca1b2617946daee_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
     </image:image>
   </url>
   <url>

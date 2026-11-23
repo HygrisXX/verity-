@@ -84,7 +84,7 @@ def run_smoke(base_url: str) -> None:
     print("[PASS] articles-index.json + PWA (manifest, sw.js, ikony) OK")
 
     # 3. Artefakty SEO/XML/404 oraz kanały RSS działów
-    for rel in ("robots.txt", "sitemap.xml", "news-sitemap.xml", "feed.xml", "Polska/feed.xml", "Swiat/feed.xml", "Sport/feed.xml", "404.html"):
+    for rel in ("robots.txt", "sitemap.xml", "news-sitemap.xml", "feed.xml", "Polska/feed.xml", "Swiat/feed.xml", "Sport/feed.xml", "404.html", "kamery/"):
         st, _, raw = fetch(f"{base}/{rel}")
         assert_true(st == 200, f"{rel} zwrócił HTTP {st}")
         txt = raw.decode("utf-8", errors="replace")

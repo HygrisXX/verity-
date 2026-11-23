@@ -3195,6 +3195,54 @@ class TestStage10CommunityChatWeightsAndModeration(unittest.TestCase):
                 else:
                     os.environ["VERITY_GUEST_CHAT_COOLDOWN"] = old_guest_cd
 
+    def test_cameras_json_schema_ssr_nav_and_sitemap(self):
+        cam_path = os.path.join(ROOT_DIR, "cameras.json")
+        self.assertTrue(os.path.exists(cam_path), "Brak pliku cameras.json")
+        cams = seo_builder._load_cameras(ROOT_DIR)
+        self.assertGreaterEqual(len(cams), 16)
+        pl_cams = [c for c in cams if c["scope"] == "polska"]
+        world_cams = [c for c in cams if c["scope"] == "swiat"]
+        self.assertGreaterEqual(len(pl_cams), 10)
+        self.assertGreaterEqual(len(world_cams), 6)
+
+        valid_regions = {v[0] for v in seo_builder.VOIVODESHIPS}
+        ids = [c["id"] for c in cams]
+        self.assertEqual(len(ids), len(set(ids)), "Duplikaty id w cameras.json")
+        for c in pl_cams:
+            self.assertIn(c["region"], valid_regions)
+
+        ssr_html = seo_builder._render_cameras_ssr("../", cams)
+        self.assertIn("Kamery na żywo", ssr_html)
+        self.assertNotIn("<iframe", ssr_html.lower(), "SSR nie może zawierać osadzeń iframe przed kliknięciem")
+        self.assertIn("youtube-nocookie.com/embed/", ssr_html)
+
+        nav_html = seo_builder._render_nav_html("../", "/kamery")
+        self.assertIn('data-path="/kamery"', nav_html)
+        self.assertIn('class="path-chip active" data-path="/kamery"', nav_html)
+
+        # Escaping check
+        evil = [{
+            "id": "evil-test",
+            "name": "<script>alert(1)</script>",
+            "scope": "swiat",
+            "region": None,
+            "country": "US",
+            "city": "NYC",
+            "category": "miasto",
+            "type": "youtube_video",
+            "youtube_video_id": "mwQ7mAEt3Iw",
+            "source_name": "EarthCam",
+            "source_url": "https://example.com",
+        }]
+        evil_ssr = seo_builder._render_cameras_ssr("../", evil)
+        self.assertNotIn("<script>alert(1)</script>", evil_ssr)
+        self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", evil_ssr)
+
+        sitemap_path = os.path.join(ROOT_DIR, "sitemap.xml")
+        if os.path.exists(sitemap_path):
+            with open(sitemap_path, "r", encoding="utf-8") as f:
+                self.assertIn("/kamery/</loc>", f.read())
+
 
 if __name__ == "__main__":
     unittest.main()

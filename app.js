@@ -480,7 +480,9 @@ function syncNavActive() {
   let activeBtn = null;
   document.querySelectorAll('.path-chip').forEach(btn => {
     const dp = btn.getAttribute('data-path');
-    const isAct = dp === currentPath || (dp === '/Polska/Regiony' && currentPath.startsWith('/Polska/Regiony/'));
+    const isAct = window.VERITY_IS_CAMERAS
+      ? dp === '/kamery'
+      : (dp === currentPath || (dp === '/Polska/Regiony' && currentPath.startsWith('/Polska/Regiony/')));
     btn.classList.toggle('active', isAct);
     if (isAct) activeBtn = btn;
   });
@@ -599,7 +601,7 @@ function openArticleLink(event, id, seoUrl) {
 }
 
 function openArticle(id, seoUrlOverride) {
-  window.VERITY_IS_MODERATION = false;
+  window.VERITY_IS_MODERATION = window.VERITY_IS_CAMERAS = false;
   if (articles.length === 0) return;
   const published = articles.filter(a => a.status === 'AUTO_PUBLISHED');
   const art = published.find(a => a.id === id) || articles.find(a => a.id === id);
@@ -641,7 +643,7 @@ function selectPathLink(event, p) {
 }
 
 function selectPath(p, toRootHome = false) {
-  window.VERITY_IS_MODERATION = false;
+  window.VERITY_IS_MODERATION = window.VERITY_IS_CAMERAS = false;
   if (articles.length === 0) return;
   toggleRegionsDrawer(false);
   const resolvedP = LEGACY_PATH_MAP[p] || p;
@@ -964,7 +966,7 @@ function renderPortal() {
       if (container) {
         container.innerHTML = `<div class="empty-state"><h2>Nie znaleziono strony (404)</h2><p style="margin-top:0.6rem">Wybrany adres nie istnieje lub został zaktualizowany.</p><p style="margin-top:1rem"><a class="btn-primary" style="text-decoration:none;display:inline-block" href="${esc(ROOT_URL)}" onclick="return selectPathLink(event, '/Polska')">Wróć na stronę główną VERITY</a></p></div>`;
       }
-    } else if (window.VERITY_IS_MODERATION && !q) {
+    } else if ((window.VERITY_IS_MODERATION || window.VERITY_IS_CAMERAS) && !q) {
     } else {
       const list = published
         .filter(a => q ? true : (a.path || '').startsWith(currentPath))
@@ -974,9 +976,10 @@ function renderPortal() {
     }
   }
   renderEditorialPanel(pendingArts);
-  if (!window.VERITY_IS_MODERATION || q) syncSeoHead(openArt, published, q);
+  const staticMode = (window.VERITY_IS_MODERATION || window.VERITY_IS_CAMERAS) && !q;
+  if (!staticMode) syncSeoHead(openArt, published, q);
   updateReadingProgress();
-  if (typeof CustomEvent === 'function') window.dispatchEvent(new CustomEvent('verity:rendered', { detail: { path: window.VERITY_IS_MODERATION && !q ? '/moderacja' : currentPath, articleId: openArt ? openArt.id : null, view: currentView } }));
+  if (typeof CustomEvent === 'function') window.dispatchEvent(new CustomEvent('verity:rendered', { detail: { path: staticMode ? (window.VERITY_IS_CAMERAS ? '/kamery' : '/moderacja') : currentPath, articleId: openArt ? openArt.id : null, view: currentView } }));
 }
 
 function shortCatLabel(path) {
@@ -1813,23 +1816,13 @@ window.addEventListener('DOMContentLoaded', async () => {
   renderPortal();
 
   if (loadedFromIndexOnly && !articlesLoadedFull) {
-    const triggerPreload = () => {
-      ensureFullArticlesLoaded().then(ok => {
-        if (!ok) return;
-        const badgeEl = document.getElementById('pendingBadge');
-        if (badgeEl) badgeEl.textContent = getPendingEditorialCount();
-        const hasSearch = Boolean((document.getElementById('searchInput')?.value || '').trim());
-        if (activeArticleId !== null || currentView === 'editorial' || hasSearch) {
-          renderPortal();
-        }
-      });
-    };
-    if (typeof requestIdleCallback === 'function') {
-      requestIdleCallback(triggerPreload, { timeout: 1500 });
-    } else {
-      setTimeout(triggerPreload, 150);
-    }
+    const tp = () => ensureFullArticlesLoaded().then(ok => {
+      if (!ok) return;
+      const b = document.getElementById('pendingBadge');
+      if (b) b.textContent = getPendingEditorialCount();
+      if (activeArticleId !== null || currentView === 'editorial' || (document.getElementById('searchInput')?.value || '').trim()) renderPortal();
+    });
+    if (typeof requestIdleCallback === 'function') requestIdleCallback(tp, { timeout: 1500 });
+    else setTimeout(tp, 150);
   }
 });
-
-

@@ -617,7 +617,7 @@
     const existingBar = document.getElementById('communityFeedToolbar');
     const existingPanel = document.getElementById('communitySideColumn');
 
-    const isFeedMode = state.currentView === 'public' && !state.currentArticleId && !window.VERITY_IS_MODERATION && !window.VERITY_IS_404;
+    const isFeedMode = state.currentView === 'public' && !state.currentArticleId && !window.VERITY_IS_MODERATION && !window.VERITY_IS_CAMERAS && !window.VERITY_IS_404;
     if (!isFeedMode) {
       viewPub.classList.remove('is-split-community');
       if (existingBar) existingBar.remove();
@@ -987,7 +987,7 @@
     initClientIds();
     ensureShellOverlays();
     updateAuthPill();
-    const initPath = window.VERITY_IS_MODERATION ? '/moderacja' : (window.VERITY_INITIAL_PATH || '/Polska');
+    const initPath = window.VERITY_IS_MODERATION ? '/moderacja' : (window.VERITY_IS_CAMERAS ? '/kamery' : (window.VERITY_INITIAL_PATH || '/Polska'));
     const initArt = detectInitialArticleId();
     refreshForCurrentContext({ path: initPath, articleId: initArt, view: 'public' });
   });

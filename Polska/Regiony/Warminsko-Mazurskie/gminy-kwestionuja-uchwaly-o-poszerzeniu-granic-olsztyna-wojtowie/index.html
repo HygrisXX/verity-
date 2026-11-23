@@ -162,7 +162,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=bec5e57b" />
+  <link rel="stylesheet" href="../../../../styles.css?v=a0b8a7ec" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -230,6 +230,7 @@
         <span class="path-divider" aria-hidden="true">|</span>
         <a class="path-chip" data-path="/Swiat" href="../../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+        <a class="path-chip" data-path="/kamery" href="../../../../kamery/" onclick="return fixFileHref(event)">Kamery</a>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -311,7 +312,7 @@
             </div>
           </div>
           <p class="perspective-summary">Gminy kwestionują uchwały o poszerzeniu granic Olsztyna. Wójtowie wskazują na błędy</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: wyjaśniała, wykazane, jeden.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026) przytaczane przez TKO Olsztyn.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Gminy, wyjaśniała, niektóre.</div><div><strong>Pomija:</strong> Pomija kontekst (podolsztyńskich, unieważnienia, interweniować) rozwijany w TKO Olsztyn, TVP3 Olsztyn.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://radioolsztyn.pl/gminy-kwestionuja-uchwaly-o-poszerzeniu-granic-olsztyna-wojtowie-wskazuja-na-bledy/01902625" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Olsztyn" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Olsztyn">
           <div class="perspective-head">
@@ -322,7 +323,7 @@
             </div>
           </div>
           <p class="perspective-summary">Uchwała ws. granic Olsztyna do unieważnienia? Wniosek trafił do wojewody</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: trafił, przypadku, mowa.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2026) przytaczane przez TKO Olsztyn.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Uchwała, unieważnienia, Wniosek.</div><div><strong>Pomija:</strong> Pomija kontekst (samorządów, procedura, podolsztyńskich) rozwijany w Radio Olsztyn, TKO Olsztyn.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://olsztyn.tvp.pl/96636150/uchwala-ws-granic-olsztyna-do-uniewaznienia-wniosek-trafil-do-wojewody" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Olsztyn" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TKO Olsztyn">
           <div class="perspective-head">
@@ -333,7 +334,7 @@
             </div>
           </div>
           <p class="perspective-summary">Burza wokół granic Olsztyna. W dokumentach wskazano duże nieprawidłowości</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2026) oraz wątki: Burza, wskazano.</div><div><strong>Pomija:</strong> Pomija kontekst (przejmowanych, obliczeniach, przedstawiła) rozwijany w Radio Olsztyn, TVP3 Olsztyn.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Burza, wskazano, duże.</div><div><strong>Pomija:</strong> Pomija kontekst (przejmowanych, Kontraktowicz, obliczeniach) rozwijany w Radio Olsztyn, TVP3 Olsztyn.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://tko.pl/414858,2026,11,23,burza-wokol-granic-olsztyna-w-dokumentach-wskazano-duze-nieprawidlowosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TKO Olsztyn" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
@@ -431,6 +432,7 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
@@ -442,7 +444,8 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Warminsko-Mazurskie/gminy-kwestionuja-uchwaly-o-poszerzeniu-granic-olsztyna-wojtowie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=d956c0e9"></script>
-  <script src="../../../../community.js?v=192e28ae" defer></script>
+  <script src="../../../../app.js?v=7bef122f"></script>
+  <script src="../../../../community.js?v=337d3bfe" defer></script>
+  
 </body>
 </html>
