@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/zdobywcy-kulinarnych-perel-odbieraja-honory-za-maslo-z-gib-sekacz/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:42+01:00</news:publication_date>
+      <news:title>Zdobywcy kulinarnych Pereł odbierają honory. Za masło z Gib, sękacz klejwiański, za keptas pilvas</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.suwalki24.pl/_uploads/2026/Listopad/Gmina_Punsk/thumb_zaperly000.jpg</image:loc>
+      <image:title>Zdobywcy kulinarnych Pereł odbierają honory. Za masło z Gib, sękacz klejwiański, za keptas pilvas</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/zmiany-na-trasie-zamkowej-od-wtorku-rusza-rozbiorka-lacznicy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:41+01:00</news:publication_date>
+      <news:title>Zmiany na Trasie Zamkowej. Od wtorku rusza rozbiórka łącznicy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s4.tvp.pl/images2/d/1/6/uid_d164c618043349e1978348fac1e59cd3_width_900_play_0_pos_0_gs_0_height_506.jpeg</image:loc>
+      <image:title>Zmiany na Trasie Zamkowej. Od wtorku rusza rozbiórka łącznicy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/inwestycje-pod-inwestorow-opole-wyda-ponad-100-mln-zl-w-strefie-we/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:40+01:00</news:publication_date>
+      <news:title>Inwestycje pod inwestorów. Opole wyda ponad 100 mln zł w strefie we Wrzoskach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1697679554.png</image:loc>
+      <image:title>Inwestycje pod inwestorów. Opole wyda ponad 100 mln zł w strefie we Wrzoskach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zegar-z-gorzowskiej-katedry-do-naprawy-czy-zdaza-na-jubileusz-miasta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:38+01:00</news:publication_date>
+      <news:title>Zegar z gorzowskiej katedry do naprawy. Czy zdążą na jubileusz miasta?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://zachod.pl/wp-content/uploads/2026/11/4a76c7b449b0ccfa7f0e6cfe5eb826bc_1_xl-150x150.jpg</image:loc>
+      <image:title>Zegar z gorzowskiej katedry do naprawy. Czy zdążą na jubileusz miasta?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/grypa-ptakow-w-powiecie-nowomiejskim-blisko-19-tysiecy-indykow-do/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:37+01:00</news:publication_date>
+      <news:title>Grypa ptaków w powiecie nowomiejskim. Blisko 19 tysięcy indyków do utylizacji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2024/03/indyk.jpg</image:loc>
+      <image:title>Grypa ptaków w powiecie nowomiejskim. Blisko 19 tysięcy indyków do utylizacji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/porod-w-domowej-lazience-w-zabrzu-ratownicy-ruszyli-na-pomoc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:36+01:00</news:publication_date>
+      <news:title>Poród w domowej łazience w Zabrzu. Ratownicy ruszyli na pomoc</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvs.pl/wp-content/uploads/2026/11/news_wpr_katowice_tvs_zajawka_2026.11.23-1.webp</image:loc>
+      <image:title>Poród w domowej łazience w Zabrzu. Ratownicy ruszyli na pomoc</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/ure-zatwierdzil-zmiany-taryf-na-prad-4-74-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:35+01:00</news:publication_date>
+      <news:title>URE zatwierdził zmiany taryf na prąd (4,74 zł)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://wysokienapiecie.pl/wp-content/uploads/2026/11/oplata_abonamentowa_taryfa_osd_sprzedawca_prosument-scaled.x76883.png</image:loc>
+      <image:title>URE zatwierdził zmiany taryf na prąd (4,74 zł)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/prokuratorzy-walcza-o-swoje-prawa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:34+01:00</news:publication_date>
+      <news:title>Prokuratorzy walczą o swoje prawa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s6.tvp.pl/images2/6/1/9/uid_619fee7b84bf47b286b5ac386e854230_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Prokuratorzy walczą o swoje prawa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nowy-podatek-od-oszczednosci-od-2027-r-zobacz-ile-zabierze-fiskus-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T20:54:34+01:00</news:publication_date>
+      <news:title>Nowy podatek od oszczędności od 2027 r. Zobacz, ile zabierze fiskus i jakie zwolnienia podatkowe dają konta OK</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/Wyplata-100-zl-z-bankomatu.png</image:loc>
+      <image:title>Nowy podatek od oszczędności od 2027 r. Zobacz, ile zabierze fiskus i jakie zwolnienia podatkowe dają konta OK</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/odnowiony-osrodek-caritas-w-pruszczu-gdanskim/</loc>
     <news:news>
       <news:publication>
@@ -168,21 +303,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/nadzwyczajni-szafarze-komunii-sw-zapelnili-w-niedziele-kosciol/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T18:56:22+01:00</news:publication_date>
-      <news:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/0000-WhatsApp-Image-2026-11-22-at-19.07.12-300x300.jpg</image:loc>
-      <image:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/decyzja-zostala-potwierdzona-polske-wesprze-samolot-wczesnego/</loc>
     <news:news>
       <news:publication>
@@ -213,6 +333,66 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/groza-wybuchem-otwartej-wojny-rosyjskie-msz-ws-kraju-nato/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
+      <news:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/w3/w3rrjimvyhwqr4qphxrud85hmcjy1pb5.jpg</image:loc>
+      <image:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nato-wzmocni-ochrone-wschodniej-granicy-polski-szef-mon-zapowiada/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
+      <news:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2025/10/07/320x240px/TW1DGF3PGw9FUfnu0JKEjCrO11JoZD4cbQdZxtrM.speq.jpg</image:loc>
+      <image:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/dzieci-ponizej-15-lat-bez-social-mediow-rzad-planuje-zmiany/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
+      <news:title>Dzieci poniżej 15 lat bez social mediów? Rząd planuje zmiany</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/920871430.png</image:loc>
+      <image:title>Dzieci poniżej 15 lat bez social mediów? Rząd planuje zmiany</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
+      <news:title>Rząd szykuje przepisy, które otworzą drogę do rozwoju rynku wodoru w Polsce</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/134403726.png</image:loc>
+      <image:title>Rząd szykuje przepisy, które otworzą drogę do rozwoju rynku wodoru w Polsce</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/co-piec-minut-na-froncie-w-ukrainie-ginie-rosyjski-zolnierz-ale-putina/</loc>
     <news:news>
       <news:publication>
@@ -240,21 +420,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NKBP4W659UI2S-C321.webp</image:loc>
       <image:title>Ujawnili skalę rosyjskich strat w Ukrainie. Te dane były pilnie strzeżone (490 tys.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/groza-wybuchem-otwartej-wojny-rosyjskie-msz-ws-kraju-nato/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T18:56:14+01:00</news:publication_date>
-      <news:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/w3/w3rrjimvyhwqr4qphxrud85hmcjy1pb5.jpg</image:loc>
-      <image:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</image:title>
     </image:image>
   </url>
   <url>
@@ -1380,21 +1545,6 @@
     <image:image>
       <image:loc>http://galeria.bankier.pl/p/d/a/f766846f327434-948-568-0-270-4000-2399.jpg</image:loc>
       <image:title>Nie ma już wątpliwości. To rosyjskie pociski Ch-101 spadły w trzech miejscach w Polsce</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/nato-wzmocni-ochrone-wschodniej-granicy-polski-szef-mon-zapowiada/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
-      <news:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/776235625.png</image:loc>
-      <image:title>NATO wzmocni ochronę wschodniej granicy Polski. Szef MON zapowiada wsparcie sojuszników</image:title>
     </image:image>
   </url>
   <url>
@@ -2550,81 +2700,6 @@
     <image:image>
       <image:loc>https://i.gremicdn.pl/image/free/938f0d800126ff269d2c48fc3c972cb4/?t=crop:5943:2598:nowe:0:445,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>Baron narkotykowy „El Chapo Isidro” złapany w Meksyku (11 osób)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/brutalny-nokaut-pogromca-blachowicza-sieje-postrach-w-ufc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:20+01:00</news:publication_date>
-      <news:title>Brutalny nokaut! Pogromca Błachowicza sieje postrach w UFC</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6b020e1e3bd5c2_88844267.jpg</image:loc>
-      <image:title>Brutalny nokaut! Pogromca Błachowicza sieje postrach w UFC</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/tie-break-do-zera-w-meczu-lidera-jest-drugi-finalista-atp-finals/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:19+01:00</news:publication_date>
-      <news:title>Tie-break do zera w meczu lidera. Jest drugi finalista ATP Finals</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6b00d4252bcb03_02147156.jpg</image:loc>
-      <image:title>Tie-break do zera w meczu lidera. Jest drugi finalista ATP Finals</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/mikolajki-maja-nowy-stadion-uhonorowano-wybitnego-sedziego-pilkarskiego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:18+01:00</news:publication_date>
-      <news:title>Mikołajki mają nowy stadion. Uhonorowano wybitnego sędziego piłkarskiego</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/916449811_1868990948567985_1233074904164250869_n-e1795263947174.jpg</image:loc>
-      <image:title>Mikołajki mają nowy stadion. Uhonorowano wybitnego sędziego piłkarskiego</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nest-bank-uniewaznia-stare-kody-cvv-na-kartach-sprawdz-jak-teraz/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:18+01:00</news:publication_date>
-      <news:title>Nest Bank unieważnia stare kody CVV na kartach. Sprawdź, jak teraz zapłacisz w internecie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2061808944.png</image:loc>
-      <image:title>Nest Bank unieważnia stare kody CVV na kartach. Sprawdź, jak teraz zapłacisz w internecie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/strazak-ktory-oslonil-zone-przed-kulami-rozpoczal-rehabilitacje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T21:37:17+01:00</news:publication_date>
-      <news:title>Strażak, który osłonił żonę przed kulami, rozpoczął rehabilitację</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s9.tvp.pl/images2/9/7/4/uid_974df36297fb498fae9fc1bbe4154a37_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Strażak, który osłonił żonę przed kulami, rozpoczął rehabilitację</image:title>
     </image:image>
   </url>
 </urlset>
