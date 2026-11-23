@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/minal-tydzien/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T02:17:36+01:00</news:publication_date>
+      <news:title>Minął tydzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/625277702.png</image:loc>
+      <image:title>Minął tydzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/dyrektorzy-zyskaja-prawo-do-przeszukania-plecakow-i-szafek-men/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T02:17:36+01:00</news:publication_date>
+      <news:title>Dyrektorzy zyskają prawo do przeszukania plecaków i szafek. MEN publikuje zasady korzystania z wykrywaczy meta</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2022/12/classroom-g1ac9f84e7_1920.jpg</image:loc>
+      <image:title>Dyrektorzy zyskają prawo do przeszukania plecaków i szafek. MEN publikuje zasady korzystania z wykrywaczy meta</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/szukamy-drzewa-roku-mozna-zglaszac-kandydatury/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T02:17:36+01:00</news:publication_date>
+      <news:title>Szukamy drzewa roku. Można zgłaszać kandydatury</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/898117793.png</image:loc>
+      <image:title>Szukamy drzewa roku. Można zgłaszać kandydatury</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
     <news:news>
       <news:publication>
@@ -78,21 +123,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/sukcesja-w-eko-oknach-nowy-prezes-stare-pytania/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T23:39:49+01:00</news:publication_date>
-      <news:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1920354443.png</image:loc>
-      <image:title>Sukcesja w Eko-Oknach. Nowy prezes, stare pytania</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/strazackie-dzieje-ponidzia-zapisane-na-kartach-wyjatkowej-ksiazki/</loc>
     <news:news>
       <news:publication>
@@ -105,36 +135,6 @@
     <image:image>
       <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/2222-Niestandardowy-9.jpg</image:loc>
       <image:title>Strażackie dzieje Ponidzia zapisane na kartach wyjątkowej książki</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/drozej-za-telefony-w-calej-polsce-nowa-oplata-juz-obowiazuje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T23:39:48+01:00</news:publication_date>
-      <news:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/8f099a20-969f-4544-9c1b-5cf0940590b5-18.jpg</image:loc>
-      <image:title>Drożej za telefony w całej Polsce. Nowa opłata już obowiązuje</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wedkarstwo-nowoczesny-sprzet-i-pasja-przekazywana-pokoleniom/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T22:41:58+01:00</news:publication_date>
-      <news:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/11/IMG_2126-1024x683.jpg</image:loc>
-      <image:title>Wędkarstwo, nowoczesny sprzęt i pasja przekazywana pokoleniom</image:title>
     </image:image>
   </url>
   <url>
@@ -390,6 +390,21 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWR6aWVubmlrLmluY2RuLnBsL2/R6aWVubmlrL2RvY3VtZW50cy9GT0IwMDAwMDAwMDAwMDA3NzEzOTQzL2ZpbGVzL3dp/Y2VtaW5pc3Rlci1jeWZyeXphY2ppLXBhd2VsLW9sc3pld3NraS1vc3RyemVnYS1wcn/plZC1yb3N5anNrYS1kZXppbmZvcm1hY2phLTM5MzI3NTIxLmpwZyIsInciOjM4NDB9</image:loc>
       <image:title>Alarmy w obwodzie królewieckim. Miało dojść do eksplozji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rosyjski-dron-uderzyl-w-blok-w-obwodzie-kijowskim-nie-zyja-dwie-osoby-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T19:47:14+01:00</news:publication_date>
+      <news:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Nie żyją dwie osoby, w tym 18-latek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1217401903.png</image:loc>
+      <image:title>Rosyjski dron uderzył w blok w obwodzie kijowskim. Nie żyją dwie osoby, w tym 18-latek</image:title>
     </image:image>
   </url>
   <url>
@@ -1450,11 +1465,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-22T07:01:15+01:00</news:publication_date>
-      <news:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą</news:title>
+      <news:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą (13,78 proc.)</news:title>
     </news:news>
     <image:image>
       <image:loc>https://newslubuski.pl/wp-content/uploads/2026/11/wybory-do-senatu-lubuskie-cisza-wyborcza.jpg</image:loc>
-      <image:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą</image:title>
+      <image:title>Wybory do Senatu w Lubuskiem. Ostatnie godziny przed ciszą wyborczą (13,78 proc.)</image:title>
     </image:image>
   </url>
   <url>
