@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/lech-poznan-ma-nowego-bramkarza-gral-w-europejskich-pucharach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:32+01:00</news:publication_date>
+      <news:title>Lech Poznań ma nowego bramkarza. Grał w europejskich pucharach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s10.tvp.pl/images2/0/0/0/uid_000e1d0aab494b32ad06d05f39e4cc2c_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Lech Poznań ma nowego bramkarza. Grał w europejskich pucharach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/wzieli-pod-lupe-stan-swidnickich-ulic-ktore-z-nich-najpredzej-moga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:30+01:00</news:publication_date>
+      <news:title>Wzięli pod lupę stan świdnickich ulic. Które z nich najprędzej mogą doczekać się remontu?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://swidnica24.pl/wp-content/uploads/2026/10/Aleja-Niepodleglosci-trwa-przebudowa-2026.10.16-21.jpg</image:loc>
+      <image:title>Wzięli pod lupę stan świdnickich ulic. Które z nich najprędzej mogą doczekać się remontu?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/nadzwyczajni-szafarze-komunii-sw-zapelnili-w-niedziele-kosciol/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:30+01:00</news:publication_date>
+      <news:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/0000-WhatsApp-Image-2026-11-22-at-19.07.12-300x300.jpg</image:loc>
+      <image:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/odpisy-pograzyly-wynik-pkp-cargo-przewoznik-pokazal-szacunki-za-iii/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:29+01:00</news:publication_date>
+      <news:title>Odpisy pogrążyły wynik PKP Cargo. Przewoźnik pokazał szacunki za III kwartał (254,9 mln zł)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/80a156125fb27ccdc6bf874edb4089f8/?t=crop:3600:2233:nowe:0:84,resize:fill:1200:750,enlarge:1</image:loc>
+      <image:title>Odpisy pogrążyły wynik PKP Cargo. Przewoźnik pokazał szacunki za III kwartał (254,9 mln zł)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/gminy-kwestionuja-uchwaly-o-poszerzeniu-granic-olsztyna-wojtowie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:27+01:00</news:publication_date>
+      <news:title>Gminy kwestionują uchwały o poszerzeniu granic Olsztyna. Wójtowie wskazują na błędy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/20261123_090712-1-scaled.jpg</image:loc>
+      <image:title>Gminy kwestionują uchwały o poszerzeniu granic Olsztyna. Wójtowie wskazują na błędy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/politycy-pis-zadaja-szybkiej-rozbiorki-szubienic/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:26+01:00</news:publication_date>
+      <news:title>Politycy PiS żądają szybkiej rozbiórki „szubienic”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioolsztyn.pl/wp-content/uploads/2026/11/pis1.jpg</image:loc>
+      <image:title>Politycy PiS żądają szybkiej rozbiórki „szubienic”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/sukces-producenta-bielski-prefabed-wprowadza-nowy-bialy-bloczek-na/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:25+01:00</news:publication_date>
+      <news:title>Sukces producenta. Bielski Prefabed wprowadza nowy biały bloczek na bazie piasku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://beskidzka24.pl/wp-content/uploads/2026/11/img-20261121-wa0062.jpg</image:loc>
+      <image:title>Sukces producenta. Bielski Prefabed wprowadza nowy biały bloczek na bazie piasku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/smiertelne-potracenie-na-torach-w-centrum-rzeszowa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:24+01:00</news:publication_date>
+      <news:title>Śmiertelne potrącenie na torach w centrum Rzeszowa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s4.tvp.pl/images2/d/c/c/uid_dccf728d62a8460e87ca57de3c58e153_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Śmiertelne potrącenie na torach w centrum Rzeszowa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/donald-tusk-z-apelem-po-upadku-rakiet-w-polsce-rosyjska-agresja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:23+01:00</news:publication_date>
+      <news:title>Donald Tusk z apelem po upadku rakiet w Polsce. "Rosyjska agresja przekroczyła granicę Ukrainy"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.wiadomosci.onet.pl/1/UPuk9lGaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8xNGUzY2U5Ni0yMDYxLTQ1ZWEtODA2Yy0xYzQ4N2IwNjZmOGYuanBlZ5KVAwDNAQvNFrDNDMWTBc0JYM0GQN4AAqEwB6ExBA</image:loc>
+      <image:title>Donald Tusk z apelem po upadku rakiet w Polsce. "Rosyjska agresja przekroczyła granicę Ukrainy"</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/zdobywcy-kulinarnych-perel-odbieraja-honory-za-maslo-z-gib-sekacz/</loc>
     <news:news>
       <news:publication>
@@ -165,21 +300,6 @@
     <image:image>
       <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/08/Samochod-parking-ulica.webp</image:loc>
       <image:title>300 zł za parkowanie w Warszawie. Kierowcy mają 14 dni, żeby zapłacić mniej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wilki-budza-coraz-wiekszy-niepokoj-mieszkancy-boja-sie-o-swoje/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T20:00:08+01:00</news:publication_date>
-      <news:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1570018842.png</image:loc>
-      <image:title>Wilki budzą coraz większy niepokój. Mieszkańcy boją się o swoje gospodarstwa</image:title>
     </image:image>
   </url>
   <url>
@@ -373,7 +493,7 @@
       <news:title>Dzieci poniżej 15 lat bez social mediów? Rząd planuje zmiany</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/920871430.png</image:loc>
+      <image:loc>https://m.natemat.pl/telefon-smartfon-dziecko-nastolatka-h9nrxg7u-1500x0x0x0.jpg</image:loc>
       <image:title>Dzieci poniżej 15 lat bez social mediów? Rząd planuje zmiany</image:title>
     </image:image>
   </url>
@@ -2640,66 +2760,6 @@
     <image:image>
       <image:loc>https://i.iplsc.com/-/000NJFW21AAM9D6R-C321.webp</image:loc>
       <image:title>Ewangelia na Uroczystość Jezusa Chrystusa Króla Wszechświata</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/rezerwowy-uratowal-real-madryt/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T22:38:30+01:00</news:publication_date>
-      <news:title>Rezerwowy uratował Real Madryt</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6b020fdae10af1_69476883.jpg</image:loc>
-      <image:title>Rezerwowy uratował Real Madryt</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/tak-zagrala-wisla-krakow-po-gigantycznej-burzy-przed-meczem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T22:38:29+01:00</news:publication_date>
-      <news:title>Tak zagrała Wisła Kraków po gigantycznej burzy przed meczem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://bi.im-g.pl/im/92/9b/1f/z33144722IHG,Angel-Rodado.jpg</image:loc>
-      <image:title>Tak zagrała Wisła Kraków po gigantycznej burzy przed meczem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/palac-oburzony-po-ruchu-msz-bez-uzgodnienia-z-prezydentem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T22:38:28+01:00</news:publication_date>
-      <news:title>Pałac oburzony po ruchu MSZ. "Bez uzgodnienia z prezydentem"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.iplsc.com/-/000NK2W0DHDCM5UV-C321.webp</image:loc>
-      <image:title>Pałac oburzony po ruchu MSZ. "Bez uzgodnienia z prezydentem"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/baron-narkotykowy-el-chapo-isidro-zlapany-w-meksyku-11-osob/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T22:38:27+01:00</news:publication_date>
-      <news:title>Baron narkotykowy „El Chapo Isidro” złapany w Meksyku (11 osób)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/938f0d800126ff269d2c48fc3c972cb4/?t=crop:5943:2598:nowe:0:445,resize:fill:600:300,enlarge:1</image:loc>
-      <image:title>Baron narkotykowy „El Chapo Isidro” złapany w Meksyku (11 osób)</image:title>
     </image:image>
   </url>
 </urlset>
