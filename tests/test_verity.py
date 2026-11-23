@@ -2204,7 +2204,51 @@ class TestStage7ZeroTrustEditorialQueueAndEvidenceSystem(unittest.TestCase):
         status, reason, note = uln.evaluate_zero_trust_article(dispute_art)
         self.assertEqual(status, "PENDING_ADMIN")
         self.assertTrue(reason.startswith("Wstrzymano (Zero-Trust)"))
+        self.assertIn("Sygnały:", reason)
+        self.assertIn("Wyzwalacz:", reason)
+        self.assertNotIn("197,27", note)
         self.assertTrue(len(note) >= 20)
+
+        # Obcy wątek doklejony w jednej z perspektyw nie może wstrzymać niezwiązanego artykułu
+        mixed_false_positive = {
+            "id": 103,
+            "path": "/Polska/Polityka",
+            "seo_url": "/Polska/Polityka/stala-baza-usa",
+            "seo_title": "Stała amerykańska baza w Polsce. Kosiniak-Kamysz: wiceszef resortu obrony USA potwierdził",
+            "summary_lead": "Pentagon dał zielone światło dla stałej bazy wojsk amerykańskich w Polsce.",
+            "sources": ["Rzeczpospolita", "Bankier.pl"],
+            "perspectives": [
+                {"outlet": "Rzeczpospolita", "summary": "Stała amerykańska baza w Polsce."},
+                {"outlet": "ObcaRedakcja", "summary": "Rząd zapowiada zamrożenie cen gazu mimo ostrzeżeń URE przed kosztem rekompensat."},
+            ],
+            "full_sections": [],
+        }
+        st_fp, reason_fp, _ = uln.evaluate_zero_trust_article(mixed_false_positive)
+        self.assertEqual(st_fp, "AUTO_PUBLISHED")
+        self.assertEqual(reason_fp, "")
+
+        # Brak efektu kuli śnieżnej po wspólnym frazesie („zielone światło”) i tytule pobocznej perspektywy
+        base_art = {
+            "id": 104,
+            "path": "/Polska/Polityka",
+            "seo_url": "/Polska/Polityka/stala-baza-usa",
+            "seo_title": "Stała amerykańska baza w Polsce. Kosiniak-Kamysz: wiceszef resortu obrony USA potwierdził",
+            "summary_lead": "Pentagon dał zielone światło dla stałej bazy wojskowej USA w Polsce.",
+            "sources": ["Rzeczpospolita", "Tabletowo.pl"],
+            "perspectives": [
+                {"outlet": "Rzeczpospolita", "summary": "Stała amerykańska baza w Polsce."},
+                {"outlet": "Tabletowo.pl", "summary": "Jeden cyfrowy portfel w całej Unii Europejskiej. Rząd daje zielone światło"},
+            ],
+            "full_sections": [],
+        }
+        wallet_grp = [{
+            "outlet": "Cashless.pl",
+            "title": "Rząd przyjął projekt ustawy dotyczący mObywatela Europa i cyfrowego portfela",
+            "description": "Nowe przepisy wprowadzą europejski portfel tożsamości cyfrowej.",
+            "link": "https://cashless.pl/mobywatel-europa",
+            "path": "/Polska/Polityka",
+        }]
+        self.assertIsNone(uln.find_matching_existing_article(wallet_grp, [base_art]))
 
         normal_art = {
             "id": 102,

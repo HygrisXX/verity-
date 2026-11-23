@@ -2681,7 +2681,9 @@ def _build_meta_and_summary(title: str, sections: list, path: str, sources: list
 
     # Meta description optymalne dla Google (115-158 znaków)
     meta_src = summary_lead if len(summary_lead) >= 115 else " ".join(raw_paras[:2]).strip()
-    if not meta_src:
+    if meta_src and len(meta_src) < 60 and title:
+        meta_src = f"{title}. {meta_src}".strip()
+    if not meta_src or len(meta_src) < 40:
         meta_src = f"{title}. Zweryfikowane zestawienie faktów z {len(sources)} źródeł w portalu VERITY."
     meta_desc = _safe_truncate_text(meta_src, 158)
 
@@ -2953,8 +2955,9 @@ def cluster_similar_items(items: list) -> list:
             overlap = shared / max(1, min(len(words_i), len(words_j)))
             desc_shared = len((words_i | desc_i) & (words_j | desc_tokens_cache[j]))
             if (
-                shared >= 3
-                or (shared >= 2 and overlap >= 0.45 and desc_shared >= 5)
+                (shared >= 3 and sp >= 1)
+                or shared >= 4
+                or (shared >= 2 and sp >= 1 and overlap >= 0.45 and desc_shared >= 5)
                 or (shared >= 2 and sp >= 2 and overlap >= 0.60 and desc_shared >= 4)
             ):
                 group.append(items[j])
@@ -2979,16 +2982,19 @@ def cluster_similar_items(items: list) -> list:
 
 GENERIC_TOPIC_TOKENS = {
     "prezydent", "premier", "minister", "minist", "ministr", "rzad", "sejm", "senat",
-    "ustaw", "przepis", "nowelizacj", "projekt", "uchwal", "koalicj", "opozycj",
+    "ustaw", "przepis", "przepisy", "przepisow", "nowelizacj", "projekt", "uchwal", "koalicj", "opozycj",
     "part", "wybor", "glosow", "polityk", "polityczn", "kandydat", "podpis", "zlec",
     "karol", "nawrock", "donald", "tusk", "trump", "biden", "putin", "zelensk", "zelen", "wolodymyr",
-    "polsk", "rosj", "ukrain", "usa", "niemc", "francj", "chin", "europ", "europejsk",
+    "polsk", "polak", "polakow", "rosj", "ukrain", "usa", "niemc", "francj", "chin", "europ", "europejsk",
     "panstw", "kraj", "swiat", "miasto", "powiat", "gmin", "region", "wojewodztw", "stan", "stol", "przy",
     "informacj", "pierwsz", "kolejn", "wazn", "piln", "oficjaln",
     "decyzj", "spraw", "stanowisk", "komentarz", "odpowiedz", "pytan", "rozmow",
     "spotkan", "konferencj", "apel", "protest", "akcj", "sluzb", "prokuratur",
     "onet", "tvn24", "rmf24", "polsat", "interi", "rzeczpospolit", "dziennik", "gazet",
-    "probl", "szykuj", "czesc", "klamk", "zapadl", "zart", "duz", "mog", "proc", "wzrosl", "wzrost",
+    "probl", "szykuj", "czesc", "klamk", "zapadl", "zart", "duz", "mog", "moze", "proc", "wzrosl", "wzrost",
+    "zielon", "swiatl", "daj", "daje", "przyjal", "przyjela", "przyjeli", "now", "nowe", "nowy", "nowa",
+    "bedzi", "bedzie", "chce", "chc", "mowi", "wiceszef", "szef", "zapowiedz", "zapowiedzial", "zapowiada",
+    "system", "milion", "miliard",
 }
 
 _ARTICLE_PROFILE_CACHE = {}
@@ -3085,7 +3091,7 @@ def _are_articles_same_event(art_a: dict, art_b: dict, prof_a: dict | None = Non
         and len(sp_b) >= 3
         and art_a.get("path") == art_b.get("path")
     )
-    c2 = len(sh_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 9 and ov_b >= 0.29
+    c2 = len(sh_l) >= 1 and len(sp_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 9 and ov_b >= 0.29
 
     ca_cities, _ = _extract_geo_entities((art_a.get("seo_title") or "") + " " + (art_a.get("summary_lead") or "")[:180])
     cb_cities, _ = _extract_geo_entities((art_b.get("seo_title") or "") + " " + (art_b.get("summary_lead") or "")[:180])
@@ -3150,12 +3156,15 @@ def find_matching_existing_article(group: list, existing_articles: list) -> dict
 
         if len(sh_l) >= 3 and len(sp_l) >= 2 and (ov_l >= 0.42 or len(sp_b) >= 4):
             return art
-        if len(sh_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 6 and ov_b >= 0.29:
+        if len(sh_l) >= 1 and len(sp_l) >= 1 and len(sh_p) >= 2 and len(sp_p) >= 1 and len(sp_b) >= 6 and ov_b >= 0.29:
             return art
 
-        for e_words in prof["title_toks_list"]:
+        anchor_spec = prof["lead_toks"] - GENERIC_TOPIC_TOKENS
+        for idx_e, e_words in enumerate(prof["title_toks_list"]):
             for c_words in cand_titles_tokens:
                 if not c_words:
+                    continue
+                if idx_e > 0 and anchor_spec and not (c_words & anchor_spec):
                     continue
                 sh = c_words & e_words
                 sp = sh - GENERIC_TOPIC_TOKENS
@@ -3212,12 +3221,27 @@ _ZERO_TRUST_DISPUTE_RE = re.compile(
 _EVIDENCE_URL_RE = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", re.IGNORECASE)
 
 
+def _collect_unique_hits(pattern: re.Pattern, text: str, limit: int = 3) -> list[str]:
+    hits = []
+    seen = set()
+    for m in pattern.finditer(text or ""):
+        val = re.sub(r"\s+", " ", m.group(0).strip())
+        low = val.lower()
+        if val and low not in seen:
+            seen.add(low)
+            hits.append(val)
+            if len(hits) >= limit:
+                break
+    return hits
+
+
 def evaluate_zero_trust_article(art: dict) -> tuple:
     """
     Ocenia artykuł według reguły Zero-Trust (Krok 5):
     Wstrzymuje publikację (status PENDING_ADMIN), gdy temat w działach krajowych/gospodarczych/energetycznych/politycznych
     dotyczy sporu lub rozbieżności między komunikatem rządowym/resortowym a twardymi danymi rynkowymi/instytucjonalnymi
     (NBP, GUS, NIK, URE, BGK, ekonomiści, nadzwyczajne straty/podatki).
+    Wymaga spójności z głównym tematem artykułu i zwraca konkretne dopasowane sygnały oraz fragment wyzwalający.
     Zwraca krotkę: (status, zero_trust_reason, suggested_admin_note).
     """
     path = (art.get("path") or "").strip()
@@ -3225,40 +3249,117 @@ def evaluate_zero_trust_article(art: dict) -> tuple:
     if path not in ("/Polska/Gospodarka", "/Polska/Polityka", "/Polska/Energetyka", "/Polska") or len(sources) < 2:
         return "AUTO_PUBLISHED", "", ""
 
-    blob = " ".join([
-        art.get("seo_title") or "",
-        art.get("summary_lead") or "",
-        " ".join((p.get("summary") or "") for p in (art.get("perspectives") or [])),
-        " ".join(par for s in (art.get("full_sections") or []) for par in (s.get("paragraphs") or [])),
-    ])
+    seo_title = (art.get("seo_title") or "").strip()
+    summary_lead = (art.get("summary_lead") or "").strip()
+    title_spec = tokenize_title(seo_title) - GENERIC_TOPIC_TOKENS
+
+    def _is_coherent_with_title(txt: str) -> bool:
+        if len(title_spec) < 2:
+            return True
+        return bool((tokenize_title(txt) - GENERIC_TOPIC_TOKENS) & title_spec)
+
+    coherent_units = []
+    if seo_title:
+        coherent_units.append(seo_title)
+    if summary_lead and _is_coherent_with_title(summary_lead):
+        coherent_units.append(summary_lead)
+    for p in art.get("perspectives") or []:
+        p_sum = (p.get("summary") or "").strip()
+        if p_sum and _is_coherent_with_title(p_sum):
+            coherent_units.append(p_sum)
+    for s in art.get("full_sections") or []:
+        for par in s.get("paragraphs") or []:
+            plain = _strip_all_citations(par)
+            if not plain:
+                continue
+            for seg in re.split(r"\s+(?=\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}\b)", plain):
+                seg = seg.strip()
+                if seg and _is_coherent_with_title(seg):
+                    coherent_units.append(seg)
+
+    if not coherent_units:
+        coherent_units = [x for x in (seo_title, summary_lead) if x]
+
+    blob = " ".join(coherent_units)
     if not (_ZERO_TRUST_GOV_RE.search(blob) and _ZERO_TRUST_DATA_RE.search(blob) and _ZERO_TRUST_DISPUTE_RE.search(blob)):
         return "AUTO_PUBLISHED", "", ""
 
+    # Wymagaj, aby co najmniej jedna jednostka (tytuł+lead lub akapit) łączyła >= 2 kryteria jednocześnie
+    title_lead_blob = f"{seo_title} {summary_lead if _is_coherent_with_title(summary_lead) else ''}".strip()
+    tl_hits = (
+        int(bool(_ZERO_TRUST_GOV_RE.search(title_lead_blob)))
+        + int(bool(_ZERO_TRUST_DATA_RE.search(title_lead_blob)))
+        + int(bool(_ZERO_TRUST_DISPUTE_RE.search(title_lead_blob)))
+    )
+    max_unit_hits = tl_hits
+    for u in coherent_units:
+        u_hits = (
+            int(bool(_ZERO_TRUST_GOV_RE.search(u)))
+            + int(bool(_ZERO_TRUST_DATA_RE.search(u)))
+            + int(bool(_ZERO_TRUST_DISPUTE_RE.search(u)))
+        )
+        if u_hits > max_unit_hits:
+            max_unit_hits = u_hits
+    if max_unit_hits < 2:
+        return "AUTO_PUBLISHED", "", ""
+
+    gov_hits = _collect_unique_hits(_ZERO_TRUST_GOV_RE, blob)
+    data_hits = _collect_unique_hits(_ZERO_TRUST_DATA_RE, blob)
+    dispute_hits = _collect_unique_hits(_ZERO_TRUST_DISPUTE_RE, blob)
+
+    # Wybierz najbardziej reprezentatywne zdanie wyzwalające
+    cand_sents = []
+    for u in coherent_units:
+        for sent in split_sentences_pl(u):
+            sent_clean = re.sub(r"\s+", " ", sent).strip()
+            if len(sent_clean) >= 15:
+                cand_sents.append(sent_clean)
+    best_sent = ""
+    best_score = (-1, -1)
+    for idx_s, s in enumerate(cand_sents):
+        sc = (
+            int(bool(_ZERO_TRUST_GOV_RE.search(s)))
+            + int(bool(_ZERO_TRUST_DATA_RE.search(s)))
+            + int(bool(_ZERO_TRUST_DISPUTE_RE.search(s)))
+        )
+        has_disp = 1 if _ZERO_TRUST_DISPUTE_RE.search(s) else 0
+        rank = (sc, has_disp, -idx_s)
+        if rank > best_score:
+            best_score = rank
+            best_sent = s
+    if len(best_sent) > 190:
+        best_sent = best_sent[:187].rstrip(" ,;:") + "…"
+
     low_blob = blob.lower()
     if "zamrożeni" in low_blob and "gaz" in low_blob:
-        reason = "Wstrzymano (Zero-Trust): Komunikat rządowy o zamrożeniu taryf gazu vs. rynkowy koszt rekompensat (URE / budżet)."
+        summary_reason = "Komunikat rządowy o zamrożeniu taryf gazu vs. koszty rekompensat i dane rynkowe."
         suggested_note = (
-            "Weryfikacja redakcyjna: Zamrożenie stawki taryfowej na poziomie 197,27 zł/MWh nie oznacza spadku rynkowego kosztu "
-            "surowca — koszt mechanizmu rekompensat oszacowano na ok. 6,2 mld zł."
+            "Weryfikacja redakcyjna: Zapowiedź zamrożenia taryf gazu zestawiono z szacunkami kosztów "
+            "rekompensat i danymi rynkowymi — szczegóły wymagają weryfikacji z dokumentem źródłowym."
         )
     elif "orlen" in low_blob and ("podat" in low_blob or "windfall" in low_blob or "strat" in low_blob):
-        reason = "Wstrzymano (Zero-Trust): Spór resortu i rządu o podatek od nadzwyczajnych zysków vs. dane finansowe i historyczne nakłady spółki."
+        summary_reason = "Spór resortu i rządu o podatek od nadzwyczajnych zysków vs. dane finansowe spółki."
         suggested_note = (
-            "Weryfikacja redakcyjna: Stanowisko resortu energii zestawia bieżące marże rafineryjne z historycznymi nakładami "
-            "inwestycyjnymi Orlenu (ok. 5 mld USD inwestycji wobec 1 mld USD skumulowanego wyniku)."
+            "Weryfikacja redakcyjna: Stanowisko resortu w sprawie wyniku i opodatkowania zestawiono z "
+            "danymi finansowymi oraz nakładami inwestycyjnymi spółki."
         )
     elif "finansów publicznych" in low_blob or "deficyt" in low_blob or "pozabudżetow" in low_blob:
-        reason = "Wstrzymano (Zero-Trust): Rozbieżność między deklaracjami wzrostu gospodarczego a danymi o deficycie i długu pozabudżetowym."
+        summary_reason = "Rozbieżność między deklaracjami gospodarczymi a danymi o deficycie i długu publicznym."
         suggested_note = (
-            "Weryfikacja redakcyjna: Eksperci i dane instytucjonalne wskazują, że bieżący wzrost PKB współwystępuje z wysokim "
-            "deficytem oraz wydatkami w funduszach pozabudżetowych wymagającymi korekty fiskalnej."
+            "Weryfikacja redakcyjna: Deklaracje dotyczące sytuacji gospodarczej zestawiono z danymi o "
+            "deficycie oraz zadłużeniu sektora finansów publicznych."
         )
     else:
-        reason = "Wstrzymano (Zero-Trust): Wykryto rozbieżność między komunikatem rządowym/resortowym a twardymi danymi rynkowymi lub instytucjonalnymi (NBP / GUS / NIK / ekonomiści)."
+        summary_reason = "Wykryto potencjalną rozbieżność między komunikatem rządowym a danymi instytucjonalnymi lub rynkowymi."
         suggested_note = (
             "Weryfikacja redakcyjna: Zestawiono oficjalne stanowisko rządowe z danymi instytucjonalnymi i rynkowymi — "
             "szczegółowe wyliczenia poszczególnych redakcji poniżej."
         )
+
+    signals_part = f"rząd/resort ({', '.join(gov_hits)}) vs dane ({', '.join(data_hits)}); spór ({', '.join(dispute_hits)})"
+    reason = f"Wstrzymano (Zero-Trust): {summary_reason} | Sygnały: {signals_part}"
+    if best_sent:
+        reason += f" | Wyzwalacz: „{best_sent}”"
     return "PENDING_ADMIN", reason, suggested_note
 
 
@@ -3361,14 +3462,23 @@ def apply_editorial_state_to_articles(articles: list, state: dict | None = None,
                 art["admin_note"] = dec.get("admin_note") or ""
             art["zero_trust_reason"] = dec.get("zero_trust_reason") or art.get("zero_trust_reason") or zt_reason
         else:
-            if zt_status == "PENDING_ADMIN" or art.get("status") == "PENDING_ADMIN":
+            prev_reason = (art.get("zero_trust_reason") or "").strip()
+            if zt_status == "PENDING_ADMIN":
                 art["status"] = "PENDING_ADMIN"
-                art["zero_trust_reason"] = art.get("zero_trust_reason") or zt_reason
-                if not art.get("admin_note"):
+                if not prev_reason or prev_reason.startswith("Wstrzymano (Zero-Trust)"):
+                    art["zero_trust_reason"] = zt_reason
+                if not art.get("admin_note") or str(art.get("admin_note") or "").startswith("Weryfikacja redakcyjna:"):
                     art["admin_note"] = zt_note
+            elif art.get("status") == "PENDING_ADMIN" and prev_reason and not prev_reason.startswith("Wstrzymano (Zero-Trust)"):
+                art["status"] = "PENDING_ADMIN"
             else:
                 art["status"] = "AUTO_PUBLISHED"
-                art["zero_trust_reason"] = art.get("zero_trust_reason") or ""
+                if prev_reason.startswith("Wstrzymano (Zero-Trust)"):
+                    art["zero_trust_reason"] = ""
+                    if str(art.get("admin_note") or "").startswith("Weryfikacja redakcyjna:"):
+                        art["admin_note"] = ""
+                else:
+                    art["zero_trust_reason"] = prev_reason
 
         # Synchronizuj korekty czytelników (zachowując schemat {"claim_text", "evidence_url"} w art["corrections"])
         existing_corrs = list(art.get("corrections") or [])
@@ -3921,7 +4031,7 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
     summary_lead, meta_desc, keywords = _build_meta_and_summary(title, new_secs, art_path, sources)
     if not (was_ai_same_sources and art.get("summary_lead")):
         art["summary_lead"] = summary_lead
-    if not (was_ai_same_sources and art.get("meta_description")):
+    if not (was_ai_same_sources and len(art.get("meta_description") or "") >= 40):
         art["meta_description"] = meta_desc
     art["keywords"] = keywords
     art["metrics"] = _metrics_for_article(sources, art_path, primary_outlet)
@@ -3973,6 +4083,18 @@ def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
         for p in (sec.get("paragraphs") or [])
     )
 
+    s0_txt = " ".join(existing_art.get("full_sections", [{}])[0].get("paragraphs") or []) if existing_art.get("full_sections") else ""
+    anchor_blob = " ".join([
+        existing_art.get("seo_title") or "",
+        existing_art.get("summary_lead") or "",
+        anchor.get("title") or "",
+        (anchor.get("description") or "")[:220],
+        s0_txt[:400],
+    ])
+    anchor_spec = tokenize_title(anchor_blob) - GENERIC_TOPIC_TOKENS
+    anchor_stems = {t[:5] for t in anchor_spec if len(t) >= 5}
+    anchor_nums = set(re.findall(r"\b\d+(?:[.,]\d+)?\s*(?:mld|mln|tys|proc|%)\b", anchor_blob.lower()))
+
     added_any = False
     newly_added_outlets = []
     for it in group:
@@ -3986,6 +4108,13 @@ def merge_cluster_into_article(existing_art: dict, group: list) -> bool:
             continue
         if has_cluster_conflict(anchor, it):
             continue
+        if len(anchor_spec) >= 2:
+            it_blob = it_title + " " + it_desc[:220]
+            it_spec = tokenize_title(it_blob) - GENERIC_TOPIC_TOKENS
+            it_stems = {t[:5] for t in it_spec if len(t) >= 5}
+            it_nums = set(re.findall(r"\b\d+(?:[.,]\d+)?\s*(?:mld|mln|tys|proc|%)\b", it_blob.lower()))
+            if not (it_spec & anchor_spec) and not (it_stems & anchor_stems) and not (anchor_nums and (it_nums & anchor_nums)):
+                continue
         if out_name in by_outlet:
             existing_c = by_outlet[out_name]
             if not existing_c.get("link") and it_link:
@@ -4228,7 +4357,24 @@ def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> di
         clean_anc_sents = []
         s0_first_toks = set()
         if s0_paras:
-            p0_sents = split_sentences_pl(s0_paras[0][0])
+            raw_p0 = s0_paras[0][0]
+            ts_blocks = [b.strip() for b in re.split(r"\s+(?=\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}\b)", raw_p0) if b.strip()]
+            p0_was_split = False
+            if len(ts_blocks) >= 2 and len(anc_title_spec) >= 2:
+                matching_blocks = [b for b in ts_blocks if (tokenize_title(b) - GENERIC_TOPIC_TOKENS) & anc_title_spec]
+                if matching_blocks and len(matching_blocks) < len(ts_blocks):
+                    raw_p0 = " ".join(matching_blocks)
+                    p0_was_split = True
+            p0_spec = tokenize_title(raw_p0) - GENERIC_TOPIC_TOKENS
+            later_matches_title = any(
+                bool((tokenize_title(pt) - GENERIC_TOPIC_TOKENS) & anc_title_spec)
+                for pt, _ in s0_paras[1:]
+            )
+            if len(anc_title_spec) >= 2 and not (p0_spec & anc_title_spec) and later_matches_title:
+                p0_sents = []
+                p0_was_split = True
+            else:
+                p0_sents = split_sentences_pl(raw_p0)
             for s in p0_sents:
                 s_norm = _norm_pl(s)
                 if any(sent_re.search(s_norm) and not art_re.search(anc_t_norm) for art_re, sent_re in _ALIEN_RULES):
@@ -4238,6 +4384,11 @@ def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> di
             core_anc_spec = anc_title_spec | s0_first_toks
             core_anc_all = anc_title_toks | s0_first_toks
             for para_txt, para_outs in s0_paras[1:]:
+                p_ts_blocks = [b.strip() for b in re.split(r"\s+(?=\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}\b)", para_txt) if b.strip()]
+                if len(p_ts_blocks) >= 2 and len(anc_title_spec) >= 2:
+                    m_pb = [b for b in p_ts_blocks if (tokenize_title(b) - GENERIC_TOPIC_TOKENS) & core_anc_spec]
+                    if m_pb and len(m_pb) < len(p_ts_blocks):
+                        para_txt = " ".join(m_pb)
                 has_anc_cite = anchor["outlet"] in para_outs
                 is_exclusive_anc = has_anc_cite and len(para_outs) == 1
                 para_sents_ok = []
@@ -4254,9 +4405,9 @@ def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> di
                     if s_hits_core:
                         para_shares_core = True
                     para_sents_ok.append((s, s_hits_core, bool(s_toks & core_anc_all)))
-                co_cited_anchor = has_anc_cite and not para_has_alien and len(para_outs & s0_p0_outs) >= 3
+                co_cited_anchor = (not p0_was_split) and has_anc_cite and not para_has_alien and len(para_outs & s0_p0_outs) >= 3
                 for s, s_hits_core, s_hits_all in para_sents_ok:
-                    is_anc_quote = is_exclusive_anc and not para_has_alien and s.startswith(("—", "–"))
+                    is_anc_quote = (not p0_was_split or para_shares_core) and is_exclusive_anc and not para_has_alien and s.startswith(("—", "–"))
                     if s_hits_core or (is_exclusive_anc and s_hits_all) or is_anc_quote or (has_anc_cite and para_shares_core) or co_cited_anchor:
                         clean_anc_sents.append(s)
 
@@ -4321,6 +4472,7 @@ def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> di
                 and cand["outlet"] in s0_shared_outlets
                 and sp_all >= 1
                 and len(ct_in_aa) >= 2
+                and (len(ct_spec_in_aa) >= 2 or bool((c_title_toks - GENERIC_TOPIC_TOKENS) & anc_title_spec))
             )
             bi_shared_match = (
                 cand["outlet"] in s0_shared_outlets
@@ -4348,7 +4500,7 @@ def _upgrade_existing_article(art: dict, rejected_out: list | None = None) -> di
                 or (sh_t >= 1 and len(non_geo_common_t) >= 1 and len(ct_in_aa) >= 2 and len(ct_spec_in_aa) >= 2)
                 or co_cited_match
             ):
-                if not (sh_t >= 1 and sh_all >= 5 and len(ct_in_aa) >= 2):
+                if not (sh_t >= 1 and sp_all >= 2 and sh_all >= 5 and len(ct_in_aa) >= 2):
                     ok = False
 
             if ok:
@@ -4845,7 +4997,16 @@ def update_news_cycle(
                                 r["_pub_iso"] = a.get("published_iso") or ""
                                 r["_disp_date"] = a.get("display_date") or ""
                                 r["group"] = r.get("outlet") or ""
-                                r["description"] = r.get("excl_description") or r.get("description") or r.get("title") or ""
+                                raw_rd = r.get("excl_description") or r.get("description") or r.get("title") or ""
+                                rd_blocks = [b.strip() for b in re.split(r"\s+(?=\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}\b)", raw_rd) if b.strip()]
+                                if len(rd_blocks) < 2:
+                                    rd_blocks = [ln.strip() for ln in raw_rd.splitlines() if ln.strip()]
+                                r_tspec = tokenize_title(r.get("title") or "") - GENERIC_TOPIC_TOKENS
+                                if len(rd_blocks) >= 2 and len(r_tspec) >= 2:
+                                    rd_kept = [b for b in rd_blocks if (tokenize_title(b) - GENERIC_TOPIC_TOKENS) & r_tspec]
+                                    raw_rd = "\n".join(rd_kept) if rd_kept else (r.get("title") or "")
+                                r["description"] = raw_rd
+                                r["excl_description"] = raw_rd
                                 rejected_pool.append(r)
                             if upgraded is not None:
                                 existing_articles.append(upgraded)
@@ -4869,8 +5030,10 @@ def update_news_cycle(
                     rec_art["published_iso"] = latest_iso
                     if latest_disp:
                         rec_art["display_date"] = latest_disp
-                existing_articles.append(rec_art)
-                recovered_count += 1
+                rec_art = _upgrade_existing_article(rec_art)
+                if rec_art is not None:
+                    existing_articles.append(rec_art)
+                    recovered_count += 1
         if recovered_count:
             print(f"[SPLIT-RECOVER] Odzyskano {recovered_count} wieloźródłowych tematów z rozdzielonych klastrów.")
 

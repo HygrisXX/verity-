@@ -1515,39 +1515,24 @@ function postEd(ep, pl) {
   }).then(r => r.json().catch(() => null)).catch(() => null);
 }
 
-function renderEditorialPanel(pending) {
-  const c = document.getElementById('editorialQueue');
-  if (!c) return;
-  const pCorrs = (editorialState.reader_corrections || []).filter(x => x.status === 'PENDING_ADMIN_REVIEW');
-  const appCnt = (editorialState.reader_corrections || []).filter(x => x.status === 'APPROVED').length;
-  const bar = `<div class="editorial-status-bar"><span>${serverApiAvailable
-    ? 'Tryb serwera: zmiany zapisują się trwale w <code>editorial_state.json</code> i <code>articles.json</code>.'
-    : 'Tryb statyczny: zmiany zapisują się w <code>localStorage</code> + <code>editorial_state.json</code>.'}</span>`
-    + (!serverApiAvailable ? `<span class="editorial-status-actions"><button type="button" class="btn-outline" onclick="exportEditorialStateJson()">Eksportuj JSON</button><button type="button" class="btn-outline" onclick="resetLocalEditorialState()">Resetuj</button></span>` : '')
-    + `</div>`;
-  const artsHtml = pending.length ? pending.map(a =>
-    `<div class="article-card queue-card" data-queue-art="${a.id}">`
-    + `<div class="queue-card-top"><span class="queue-status">Wstrzymany (Zero-Trust)</span><span class="queue-path">${esc(a.path)}</span></div>`
-    + (a.zero_trust_reason ? `<div class="queue-reason">${esc(a.zero_trust_reason)}</div>` : '')
-    + `<h3 class="queue-title">${esc(a.seo_title)}</h3>`
-    + `<div class="queue-body">${(a.full_sections && a.full_sections.length) ? a.full_sections.map(s => `<p class="section-paragraph"><strong>${esc(s.heading)}:</strong> ${formatCitations(esc(plTypography(s.paragraphs.join(' '))), a.perspectives)}</p>`).join('') : `<p class="section-paragraph">${esc(plTypography(a.summary_lead || ''))}</p>`}</div>`
-    + `<div><label class="queue-label" for="adminNoteInput_${a.id}">Nota weryfikacyjna redakcji (wyświetli się nad artykułem):</label>`
-    + `<input id="adminNoteInput_${a.id}" type="text" class="text-input" value="${esc(a.admin_note)}" /></div>`
-    + `<div class="queue-actions"><button class="btn-primary" onclick="approveArt(${a.id},true)">Zatwierdź z notą i opublikuj</button>`
-    + `<button class="btn-outline" onclick="approveArt(${a.id},false)">Opublikuj bez noty</button>`
-    + `<button class="btn-outline" onclick="rejectArt(${a.id})">Odrzuć</button></div></div>`
-  ).join('') : `<div class="empty-state success">Wszystkie artykuły z kolejki Zero-Trust zostały zweryfikowane.</div>`;
-  const corrsHtml = `<div class="editorial-subhead"><h2>Zgłoszenia korekt od czytelników — „Pokaż dowód!” (${pCorrs.length} oczekujących${appCnt ? `, ${appCnt} zatwierdzonych` : ''})</h2></div>`
-    + (pCorrs.length ? pCorrs.map(x =>
-      `<div class="article-card queue-card corr-queue-card" data-corr-id="${esc(x.id)}">`
-      + `<div class="queue-card-top"><span class="queue-status">Dowód czytelnika do weryfikacji</span><span class="queue-path">${esc(x.seo_url || '#' + x.article_id)}</span></div>`
-      + `<h3 class="queue-title">${esc(x.article_title || 'Artykuł #' + x.article_id)}</h3>`
-      + `<p class="section-paragraph"><strong>Zgłoszenie:</strong> ${esc(x.claim_text)}</p>`
-      + `<p class="corr-evidence-line"><strong>Dowód:</strong> <a href="${esc(x.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(x.evidence_url)}</a></p>`
-      + `<div class="queue-actions"><button class="btn-primary" onclick="moderateCorr('${esc(x.id)}','approve')">Potwierdź dowód</button>`
-      + `<button class="btn-outline" onclick="moderateCorr('${esc(x.id)}','reject')">Odrzuć zgłoszenie</button></div></div>`
-    ).join('') : `<div class="empty-state success">Brak niezweryfikowanych zgłoszeń korekt od czytelników.</div>`);
-  c.innerHTML = bar + artsHtml + corrsHtml;
+function qReasonHtml(r){
+  const t=(r||'').trim();
+  if(!t)return '<div class="queue-reason"><div class="qr-main"><strong>Powód:</strong> Brak szczegółowego uzasadnienia.</div></div>';
+  const o=[];let sg='',tr='';
+  t.split(' | ').forEach((p,i)=>{const x=p.trim();if(!x)return;if(i&&x.startsWith('Sygnały:'))sg=x.slice(8).trim();else if(i&&x.startsWith('Wyzwalacz:'))tr=x.slice(10).trim();else o.push(x);});
+  return `<div class="queue-reason"><div class="qr-main"><strong>Powód:</strong> ${esc(o.join(' · '))}</div>${sg?`<div class="qr-sig"><strong>Sygnały:</strong> ${esc(sg)}</div>`:''}${tr?`<div class="qr-quote"><strong>Fragment:</strong> ${esc(tr)}</div>`:''}</div>`;
+}
+function renderEditorialPanel(pending){
+  const c=document.getElementById('editorialQueue');if(!c)return;
+  const rcs=editorialState.reader_corrections||[],pCorrs=rcs.filter(x=>x.status==='PENDING_ADMIN_REVIEW'),appCnt=rcs.filter(x=>x.status==='APPROVED').length,ep=v=>esc(plTypography(v||''));
+  const bar=`<div class="editorial-status-bar"><span>${serverApiAvailable?'Tryb serwera: zmiany zapisują się trwale w <code>editorial_state.json</code> i <code>articles.json</code>.':'Tryb statyczny: zmiany zapisują się w <code>localStorage</code> + <code>editorial_state.json</code>.'}</span>${!serverApiAvailable?'<span class="editorial-status-actions"><button type="button" class="btn-outline" onclick="exportEditorialStateJson()">Eksportuj JSON</button><button type="button" class="btn-outline" onclick="resetLocalEditorialState()">Resetuj</button></span>':''}</div>`;
+  const artsHtml=pending.length?pending.map(a=>{
+    const s=Array.isArray(a.sources)?a.sources:[],sp=s.length?s.slice(0,6).join(', ')+(s.length>6?` (+${s.length-6})`:''):'brak',meta=`<div class="queue-meta">${a.display_date?`<span>${esc(a.display_date)}</span>`:''}<span>Źródła (${s.length}): ${esc(sp)}</span></div>`;
+    const body=(a.full_sections&&a.full_sections.length)?(a.summary_lead?`<p class="section-paragraph queue-lead">${ep(a.summary_lead)}</p>`:'')+a.full_sections.map(x=>`<p class="section-paragraph"><strong>${esc(x.heading)}:</strong> ${formatCitations(ep(x.paragraphs.join(' ')),a.perspectives)}</p>`).join(''):`<p class="section-paragraph">${ep(a.summary_lead)}</p>${a._isIndexOnly&&!articlesLoadedFull?'<p class="queue-meta">Wczytywanie…</p>':''}`;
+    return `<div class="article-card queue-card" data-queue-art="${a.id}"><div class="queue-card-top"><span class="queue-status">Wstrzymany (Zero-Trust)</span><span class="queue-path">${esc(a.path)}</span></div>${qReasonHtml(a.zero_trust_reason)}<h3 class="queue-title">${esc(a.seo_title)}</h3>${meta}<div class="queue-body">${body}</div><div><label class="queue-label" for="adminNoteInput_${a.id}">Nota weryfikacyjna redakcji (wyświetli się nad artykułem):</label><input id="adminNoteInput_${a.id}" type="text" class="text-input" value="${esc(a.admin_note)}" /></div><div class="queue-actions"><button class="btn-primary" onclick="approveArt(${a.id},true)">Zatwierdź z notą i opublikuj</button><button class="btn-outline" onclick="approveArt(${a.id},false)">Opublikuj bez noty</button><button class="btn-outline" onclick="rejectArt(${a.id})">Odrzuć</button></div></div>`;
+  }).join(''):'<div class="empty-state success">Wszystkie artykuły z kolejki Zero-Trust zostały zweryfikowane.</div>';
+  const corrsHtml=`<div class="editorial-subhead"><h2>Zgłoszenia korekt od czytelników — „Pokaż dowód!” (${pCorrs.length} oczekujących${appCnt?`, ${appCnt} zatwierdzonych`:''})</h2></div>`+(pCorrs.length?pCorrs.map(x=>`<div class="article-card queue-card corr-queue-card" data-corr-id="${esc(x.id)}"><div class="queue-card-top"><span class="queue-status">Dowód czytelnika do weryfikacji</span><span class="queue-path">${esc(x.seo_url||'#'+x.article_id)}</span></div><h3 class="queue-title">${esc(x.article_title||'Artykuł #'+x.article_id)}</h3><p class="section-paragraph"><strong>Zgłoszenie:</strong> ${esc(x.claim_text)}</p><p class="corr-evidence-line"><strong>Dowód:</strong> <a href="${esc(x.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(x.evidence_url)}</a></p><div class="queue-actions"><button class="btn-primary" onclick="moderateCorr('${esc(x.id)}','approve')">Potwierdź dowód</button><button class="btn-outline" onclick="moderateCorr('${esc(x.id)}','reject')">Odrzuć zgłoszenie</button></div></div>`).join(''):'<div class="empty-state success">Brak niezweryfikowanych zgłoszeń korekt od czytelników.</div>');
+  c.innerHTML=bar+artsHtml+corrsHtml;
 }
 
 function toggleCorr(id) { document.getElementById('corrDrawer_' + id)?.classList.toggle('hidden'); }

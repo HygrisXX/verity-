@@ -741,6 +741,23 @@ async function run() {
     // 8b. Kolejka redakcyjna (Zero-Trust) i „Pokaż dowód!” z trwałym zapisem po odświeżeniu
     await browser.cdp('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
     await browser.goto(`${baseUrl}/`);
+    if (pendingArticles.length === 0 && sampleMulti) {
+      await browser.evalJs(`(() => {
+        const key = ${JSON.stringify((sampleMulti.seo_url || '').replace(/\/+$/, '') || String(sampleMulti.id))};
+        localStorage.setItem('verity_editorial_state_v1', JSON.stringify({
+          article_decisions: {
+            [key]: {
+              status: 'PENDING_ADMIN',
+              zero_trust_reason: 'Wstrzymano (Zero-Trust): Testowa rozbieżność danych. | Sygnały: rząd/resort (Rząd) vs dane (NBP); spór (wbrew) | Wyzwalacz: „Komunikat rządu zestawiono z danymi NBP.”',
+              admin_note: 'Weryfikacja redakcyjna: test E2E.'
+            }
+          },
+          rejected_keys: [],
+          reader_corrections: []
+        }));
+      })()`);
+      await browser.goto(`${baseUrl}/`);
+    }
     const badgeBefore = await browser.evalJs(`parseInt(document.getElementById('pendingBadge')?.textContent || '0', 10)`);
     assert(badgeBefore >= 1, `Oczekiwano niezerowej liczby spraw w Kolejce redakcyjnej (jest ${badgeBefore})`);
     await browser.evalJs(`document.querySelector('.queue-btn').click()`);
@@ -752,11 +769,17 @@ async function run() {
       return {
         hasQueueCard: Boolean(qCard),
         artId,
-        hasReason: Boolean(document.querySelector('.queue-reason')),
+        hasReason: Boolean(document.querySelector('.queue-reason .qr-main')),
+        hasMeta: Boolean(document.querySelector('.queue-card .queue-meta')),
+        hasSig: Boolean(document.querySelector('.queue-reason .qr-sig')),
+        hasQuote: Boolean(document.querySelector('.queue-reason .qr-quote')),
         hasCorrCard: Boolean(corrCard),
       };
     })()`);
-    assert(edInfo.hasQueueCard && edInfo.hasReason, `Brak wstrzymanego artykułu Zero-Trust w kolejce redakcyjnej: ${JSON.stringify(edInfo)}`);
+    assert(edInfo.hasQueueCard && edInfo.hasReason && edInfo.hasMeta, `Brak wstrzymanego artykułu Zero-Trust w kolejce redakcyjnej: ${JSON.stringify(edInfo)}`);
+    if (pendingArticles.length === 0) {
+      assert(edInfo.hasSig && edInfo.hasQuote, `Brak czytelnych sekcji Sygnały/Fragment w kolejce Zero-Trust: ${JSON.stringify(edInfo)}`);
+    }
     assert(edInfo.hasCorrCard, 'Brak oczekującego zgłoszenia czytelnika w kolejce redakcyjnej');
 
     const testAdminNote = 'E2E Test: Nota redakcyjna zatwierdzona na podstawie danych URE.';
@@ -768,7 +791,7 @@ async function run() {
     await new Promise(r => setTimeout(r, 300));
 
     // Otwórz stronę ponownie (pełny reload) -> sprawdź, czy zatwierdzony artykuł i nota przetrwały
-    const approvedArt = pendingArticles.find(a => a.id === edInfo.artId) || pendingArticles[0];
+    const approvedArt = pendingArticles.find(a => a.id === edInfo.artId) || articles.find(a => a.id === edInfo.artId) || pendingArticles[0] || sampleMulti;
     if (approvedArt) {
       await browser.goto(`${baseUrl}${approvedArt.seo_url}/`);
       const afterApprove = await browser.evalJs(`({
