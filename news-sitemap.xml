@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/karambol-w-kruszwicy-zderzylo-sie-piec-samochodow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:35+01:00</news:publication_date>
+      <news:title>Karambol w Kruszwicy. Zderzyło się pięć samochodów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s4.tvp.pl/images2/4/c/2/uid_4c280eb48df64225b21b8ff88b9670d9_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Karambol w Kruszwicy. Zderzyło się pięć samochodów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/80-lat-ludowych-zespolow-sportowych-w-polsce-historia-ktora-zaczela-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:34+01:00</news:publication_date>
+      <news:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/LZS-80-lat-1024x576-1.jpg</image:loc>
+      <image:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/wandal-zdewastowal-pomocobus-polskiego-czerwonego-krzyza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:34+01:00</news:publication_date>
+      <news:title>Wandal zdewastował PomocoBus Polskiego Czerwonego Krzyża</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiogdansk.pl/wp-content/uploads/2026/11/pomocobus-pck-1-scaled.jpg</image:loc>
+      <image:title>Wandal zdewastował PomocoBus Polskiego Czerwonego Krzyża</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/pracownicy-czuja-sie-zagrozeni-ale-laduja-dane-firm-do-ai-15/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:32+01:00</news:publication_date>
+      <news:title>Pracownicy czują się zagrożeni, ale ładują dane firm do AI (15%)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://niebezpiecznik.pl/wp-content/uploads/2026/10/ataki-eset-600x314.png</image:loc>
+      <image:title>Pracownicy czują się zagrożeni, ale ładują dane firm do AI (15%)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/deepfake-narzedziem-przemocy-wobec-kobiet-kotula-odpowiada-prezesowi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:32+01:00</news:publication_date>
+      <news:title>Deepfake narzędziem przemocy wobec kobiet. Kotula odpowiada Prezesowi UODO</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/24/320x240px/op5b8Xc6JyAGI76d9NMLNbf9KA7vkzWnApJ8usoA.lf4a.jpg</image:loc>
+      <image:title>Deepfake narzędziem przemocy wobec kobiet. Kotula odpowiada Prezesowi UODO</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nie-warszawa-nie-krakow-katowice-wygraly-ranking-najbardziej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:31+01:00</news:publication_date>
+      <news:title>Nie Warszawa, nie Kraków. Katowice wygrały ranking najbardziej kreatywnych miast Polski</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/nomadic-julien-YW0SmGk1pt0-unsplash.jpg</image:loc>
+      <image:title>Nie Warszawa, nie Kraków. Katowice wygrały ranking najbardziej kreatywnych miast Polski</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/policja-prezentuje-help4u-startuje-platforma-wsparcia-dla-dzieci-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:30+01:00</news:publication_date>
+      <news:title>Policja prezentuje Help4U. Startuje platforma wsparcia dla dzieci i młodzieży doświadczających przemocy seksua</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/24/320x240px/gWwwC1WgvEY5Up1vdOvyLEMEnGyiSPqyyjc3jntu.1qb7.jpg</image:loc>
+      <image:title>Policja prezentuje Help4U. Startuje platforma wsparcia dla dzieci i młodzieży doświadczających przemocy seksua</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/tak-wyglada-tabela-ligi-mistrzow-nowy-lider-i-dwie-niespodzianki/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:29+01:00</news:publication_date>
+      <news:title>Tak wygląda tabela Ligi Mistrzów. Nowy lider. I dwie niespodzianki</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.przegladsportowy.onet.pl/1/0dxk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy82ZWY3NTY3OTM2MGYxZjJhMGViMTUzYzcxYmM1NGM2OC5wbmeSlQMAAM0HgM0EOJMFzQlgzQZA3gACoTAHoTEE</image:loc>
+      <image:title>Tak wygląda tabela Ligi Mistrzów. Nowy lider. I dwie niespodzianki</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/ledwo-zaczal-sie-mecz-ligi-mistrzow-a-oskar-pietuszewski-juz-blyszczal/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T22:54:29+01:00</news:publication_date>
+      <news:title>Ledwo zaczął się mecz Ligi Mistrzów, a Oskar Pietuszewski już błyszczał</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://sf-administracja.wphcdn.cloud/storage2/featured_original/6b05fc2bcf1576_04782206.jpg</image:loc>
+      <image:title>Ledwo zaczął się mecz Ligi Mistrzów, a Oskar Pietuszewski już błyszczał</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/sytuacja-na-odrze-i-zalewie-szczecinskim-stabilizuje-sie/</loc>
     <news:news>
       <news:publication>
@@ -288,21 +423,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/nadzwyczajni-szafarze-komunii-sw-zapelnili-w-niedziele-kosciol/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T21:48:30+01:00</news:publication_date>
-      <news:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/0000-WhatsApp-Image-2026-11-22-at-19.07.12-300x300.jpg</image:loc>
-      <image:title>Nadzwyczajni szafarze Komunii św. zapełnili w niedzielę kościół seminaryjny w Opolu</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/odpisy-pograzyly-wynik-pkp-cargo-przewoznik-pokazal-szacunki-za-iii/</loc>
     <news:news>
       <news:publication>
@@ -433,8 +553,23 @@
       <news:title>Rosyjskie obiekty spadły w Polsce. Minister ma ważny apel do Polaków</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2030691471.png</image:loc>
+      <image:loc>https://cdn.defence24.pl/2026/06/19/320x240px/MZWvnzSElURlLqiNwzs9PbdxXn0KMm1B5rLsTfUB.fzad.jpg</image:loc>
       <image:title>Rosyjskie obiekty spadły w Polsce. Minister ma ważny apel do Polaków</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/dodatkowe-wsparcie-nato-dla-polski-wiceszef-mon-to-bardzo-powazna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T21:48:23+01:00</news:publication_date>
+      <news:title>Dodatkowe wsparcie NATO dla Polski. Wiceszef MON: To bardzo poważna zdolność</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2079428073.png</image:loc>
+      <image:title>Dodatkowe wsparcie NATO dla Polski. Wiceszef MON: To bardzo poważna zdolność</image:title>
     </image:image>
   </url>
   <url>
@@ -693,21 +828,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/szkolenie-okresowe-bhp-kto-jak-czesto-i-jak-utrzymac-je-w-waznosci/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T18:56:22+01:00</news:publication_date>
-      <news:title>Szkolenie okresowe BHP: kto, jak często i jak utrzymać je w ważności?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/52123353.png</image:loc>
-      <image:title>Szkolenie okresowe BHP: kto, jak często i jak utrzymać je w ważności?</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/decyzja-zostala-potwierdzona-polske-wesprze-samolot-wczesnego/</loc>
     <news:news>
       <news:publication>
@@ -735,21 +855,6 @@
     <image:image>
       <image:loc>https://s16.tvp.pl/images2/6/e/4/uid_6e418b03c0f6478cb789b198539c690f_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
       <image:title>Rosja bez flagi w imprezach sportowych w UE</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/groza-wybuchem-otwartej-wojny-rosyjskie-msz-ws-kraju-nato/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T18:56:20+01:00</news:publication_date>
-      <news:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://ipla.pluscdn.pl/dituel/cp/w3/w3rrjimvyhwqr4qphxrud85hmcjy1pb5.jpg</image:loc>
-      <image:title>"Grożą wybuchem otwartej wojny". Rosyjskie MSZ ws. kraju NATO</image:title>
     </image:image>
   </url>
   <url>
