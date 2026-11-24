@@ -43,10 +43,10 @@ jobs:
           if [ -f articles.json ]; then
             git config user.name "VerityBot"
             git config user.email "bot@verity.pl"
-            git add -A articles.json articles-index.json editorial_state.json news-sitemap.xml sitemap.xml feed.xml robots.txt index.html 404.html manifest.webmanifest sw.js icon.svg icon-192.png icon-512.png community.js a7f3c91e4b2d8065e19a4f7c3d28b50e.txt og Polska Swiat Sport moderacja
+            git add -A articles.json articles-index.json editorial_state.json news-sitemap.xml sitemap.xml feed.xml robots.txt index.html 404.html manifest.webmanifest sw.js icon.svg icon-192.png icon-512.png community.js cameras.js cameras.json a7f3c91e4b2d8065e19a4f7c3d28b50e.txt og Polska Swiat Sport moderacja kamery
             if ! git diff --staged --quiet; then
               git commit -m "Automatyczna aktualizacja artykułów RSS"
-              git pull --rebase origin main || { git rebase --abort || true; exit 1; }
+              git pull --rebase --autostash origin main || { git rebase --abort || true; exit 1; }
               git push origin main
               PYTHONDONTWRITEBYTECODE=1 python3 update_live_news.py --ping-indexnow || true
             fi

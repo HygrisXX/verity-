@@ -2,9 +2,10 @@
 """
 Walidator dostępności kamer z pliku cameras.json.
 
-Dla kamer typu youtube_video sprawdza oEmbed (HTTP 200 = osadzenie dozwolone).
-Dla kamer typu youtube_channel sprawdza https://www.youtube.com/channel/<ID>/live.
-Dla external_link wykonuje lekkie żądanie HEAD/GET.
+Dla kamer YouTube sprawdza bezpośrednio stronę osadzenia (youtube-nocookie.com/embed/...)
+i parsuje embedded_player_response: wymaga status=OK, obecności liveStreamabilityRenderer,
+braku displayEndscreen oraz videoDurationSeconds=0 (czyli faktycznie trwającej transmisji LIVE).
+Dla external_link sprawdza kod HTTP 2xx/3xx.
 
 Użycie:
   python3 check_cameras.py           # tylko raport
@@ -14,12 +15,14 @@ Użycie:
 import argparse
 import json
 import os
+import re
 import urllib.error
 import urllib.request
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 CAMERAS_PATH = os.path.join(ROOT_DIR, "cameras.json")
-UA = "VERITY-CameraCheck/1.0"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0.0.0 Safari/537.36"
+REFERER = "https://hygrisxx.github.io/"
 
 
 def check_url_status(url: str, timeout: int = 10) -> tuple[bool, int]:
@@ -33,27 +36,45 @@ def check_url_status(url: str, timeout: int = 10) -> tuple[bool, int]:
         return False, 0
 
 
+def check_youtube_embed_live(embed_url: str, timeout: int = 10) -> tuple[bool, str]:
+    req = urllib.request.Request(embed_url, headers={"User-Agent": UA, "Referer": REFERER})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            body = resp.read().decode("utf-8", "ignore")
+    except urllib.error.HTTPError as err:
+        return False, f"HTTP {err.code}"
+    except Exception as exc:
+        return False, str(exc)
+
+    m = re.search(r'"embedded_player_response":"(.*?)","', body)
+    if not m:
+        return False, "brak embedded_player_response"
+    txt = m.group(1).encode().decode("unicode_escape", "ignore")
+    st_m = re.search(r'"status":"([^"]+)"', txt)
+    status = st_m.group(1) if st_m else "UNKNOWN"
+    if status != "OK":
+        reason_m = re.search(r'"reason":"([^"]+)"', txt)
+        reason = reason_m.group(1) if reason_m else ""
+        return False, f"status={status} {reason}".strip()
+
+    has_live = '"liveStreamabilityRenderer"' in txt
+    has_endscreen = '"displayEndscreen":true' in txt
+    dur_m = re.search(r'"videoDurationSeconds":"?(\d+)"?', txt)
+    dur = int(dur_m.group(1)) if dur_m else 0
+
+    if not has_live or has_endscreen or dur > 0:
+        return False, f"not live (live={has_live}, endscreen={has_endscreen}, dur={dur}s)"
+    return True, "embed OK (LIVE)"
+
+
 def check_camera(cam: dict) -> tuple[bool, str]:
     ctype = cam.get("type")
     if ctype == "youtube_video":
         vid = cam.get("youtube_video_id")
-        ok, code = check_url_status(f"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={vid}&format=json")
-        return ok, f"oEmbed HTTP {code}"
+        return check_youtube_embed_live(f"https://www.youtube-nocookie.com/embed/{vid}")
     if ctype == "youtube_channel":
         ch = cam.get("youtube_channel_id")
-        req = urllib.request.Request(
-            f"https://www.youtube.com/channel/{ch}/live",
-            headers={"User-Agent": "Mozilla/5.0", "Cookie": "CONSENT=YES+1"},
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                body = resp.read().decode("utf-8", "ignore")
-                is_live = '"isLive":true' in body or '"isLiveNow":true' in body
-                return is_live, "live=true" if is_live else "live=false"
-        except urllib.error.HTTPError as err:
-            return False, f"HTTP {err.code}"
-        except Exception as exc:
-            return False, str(exc)
+        return check_youtube_embed_live(f"https://www.youtube-nocookie.com/embed/live_stream?channel={ch}")
     if ctype == "external_link":
         ext = cam.get("external_url") or cam.get("source_url")
         ok, code = check_url_status(ext)
