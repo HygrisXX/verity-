@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/80-lat-ludowych-zespolow-sportowych-w-polsce-historia-ktora-zaczela-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:26+01:00</news:publication_date>
+      <news:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/LZS-80-lat-1024x576-1.jpg</image:loc>
+      <image:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/cyberprzestepcy-uzywaja-ai-do-tworzenia-falszywych-sklepow-internetowych/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:26+01:00</news:publication_date>
+      <news:title>Cyberprzestępcy używają AI do tworzenia fałszywych sklepów internetowych</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiokielce.pl/wp-content/uploads/2026/04/AI-POD-CTRLa-RADIO-KIELCE.jpg</image:loc>
+      <image:title>Cyberprzestępcy używają AI do tworzenia fałszywych sklepów internetowych</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/kazdy-mezczyzna-po-czterdziestce-powinien-sprawdzic-to-raz-w-roku/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:26+01:00</news:publication_date>
+      <news:title>Każdy mężczyzna po czterdziestce powinien sprawdzić to raz w roku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radioszczecin.pl/serwis_informacyjny/pliki/2026/2026-09-15_178949959210.jpg</image:loc>
+      <image:title>Każdy mężczyzna po czterdziestce powinien sprawdzić to raz w roku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/posel-wojciech-krol-pozostanie-w-areszcie-prokuratura-zarzuca-mu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:23+01:00</news:publication_date>
+      <news:title>Poseł Wojciech Król pozostanie w areszcie. Prokuratura zarzuca mu korupcję</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/4812869b3fcf767c35db1026e093d5db/?t=crop:4973:2174:nowe:0:571,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Poseł Wojciech Król pozostanie w areszcie. Prokuratura zarzuca mu korupcję</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/pozar-w-elektrocieplowni-siekierki-ogien-pojawil-sie-na-220-metrowym/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:22+01:00</news:publication_date>
+      <news:title>Pożar w Elektrociepłowni Siekierki. Ogień pojawił się na 220-metrowym kominie (14 za)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/59cd6d9ad32fcfaed5b2f8c362009cd1/?t=crop:5980:2614:nowe:0:341.41033979143,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>Pożar w Elektrociepłowni Siekierki. Ogień pojawił się na 220-metrowym kominie (14 za)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/leca-glowy-w-orlenie-odwolano-wiceprezesow-116-76-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:21+01:00</news:publication_date>
+      <news:title>Lecą głowy w Orlenie. Odwołano wiceprezesów (116,76 zł)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/aa7cf199-3b5f-4daf-96b6-a781b040deff</image:loc>
+      <image:title>Lecą głowy w Orlenie. Odwołano wiceprezesów (116,76 zł)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/zmarl-andrzej-domalik-rezyser-i-byly-prorektor-akademii-teatralnej-mial/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:20+01:00</news:publication_date>
+      <news:title>Zmarł Andrzej Domalik. Reżyser i były prorektor Akademii Teatralnej miał 77 lat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-andrzej-domalik-ph9357222/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Zmarł Andrzej Domalik. Reżyser i były prorektor Akademii Teatralnej miał 77 lat</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/w-srode-maksymalne-ceny-paliw-litr-benzyny-95-5-84-zl-diesla-7-23-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:19+01:00</news:publication_date>
+      <news:title>W środę maksymalne ceny paliw: litr benzyny 95 – 5,84 zł, diesla – 7,23 zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5pbmNkbi5wbC9mb3J/zYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAwMDc3MTU3ODIvZmlsZXMvb2QtMS1zdH/ljem5pYS13LWJlbnp5bmllLWt1cG93YW5lai13LXBvbHNjZS1iZWR6aWUtMTAtcHJvY/y1hLW5pZS01LXByb2MtYmlva29tcG9uZW50b3ctMzkzMzE3ODMuanBnIiwidyI6Mzg0MH0</image:loc>
+      <image:title>W środę maksymalne ceny paliw: litr benzyny 95 – 5,84 zł, diesla – 7,23 zł</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/strefa-zakazu-lotow-na-wschodzie-polski-duza-zmiana/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T15:01:18+01:00</news:publication_date>
+      <news:title>Strefa zakazu lotów na wschodzie Polski. "Duża zmiana"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-tomczyk-ph9357287/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Strefa zakazu lotów na wschodzie Polski. "Duża zmiana"</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/kompletnie-pijana-wiozla-dziecko-w-foteliku-kobieta-miala-niemal-2/</loc>
     <news:news>
       <news:publication>
@@ -93,7 +228,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/straz-graniczna-kupila-125-nowych-pojazdow-wartosc-dostawy-to-blisko-36/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/straz-graniczna-kupila-125-nowych-pojazdow-wartosc-dostawy-to-blisko-36/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -165,6 +300,21 @@
     <image:image>
       <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/skalik_braun.jpg</image:loc>
       <image:title>Włodzimierz Skalik: Prawa ręka „króla” idzie po władzę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/tragiczny-wypadek-w-przemyslu-nie-zyje-kobieta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:41+01:00</news:publication_date>
+      <news:title>Tragiczny wypadek w Przemyślu. Nie żyje kobieta</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1989383952.png</image:loc>
+      <image:title>Tragiczny wypadek w Przemyślu. Nie żyje kobieta</image:title>
     </image:image>
   </url>
   <url>
@@ -273,6 +423,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/anna-korwin-piotrowska-zaprasza-rafala-trzaskowskiego-chodzi-o-dostep/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:31+01:00</news:publication_date>
+      <news:title>Anna Korwin-Piotrowska zaprasza Rafała Trzaskowskiego. Chodzi o dostęp do siedziby TK</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-sedzia-korwin-piotrowska-ph9320576/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Anna Korwin-Piotrowska zaprasza Rafała Trzaskowskiego. Chodzi o dostęp do siedziby TK</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/adam-jarubas-polska-bedzie-miala-najwiekszy-udzial-w-planie-finansowym/</loc>
     <news:news>
       <news:publication>
@@ -285,21 +450,6 @@
     <image:image>
       <image:loc>https://radiokielce.pl/wp-content/uploads/2026/04/REPORTAZ-W-RADIU-KIELCE.jpg</image:loc>
       <image:title>Adam Jarubas: Polska będzie miała największy udział w planie finansowym Unii Europejskiej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/cba-w-ogrodzie-polskiej-akademii-nauk-media-wsrod-zatrzymanych-opolski/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T10:14:58+01:00</news:publication_date>
-      <news:title>CBA w ogrodzie Polskiej Akademii Nauk. Media: Wśród zatrzymanych opolski profesor</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/299183013.png</image:loc>
-      <image:title>CBA w ogrodzie Polskiej Akademii Nauk. Media: Wśród zatrzymanych opolski profesor</image:title>
     </image:image>
   </url>
   <url>
@@ -390,21 +540,6 @@
     <image:image>
       <image:loc>https://xyz.pl/wp-content/uploads/2026/08/Rafal-Brzoska-2-1024x576.jpg</image:loc>
       <image:title>Rafał Brzoska stawia 1,2 mld zł na InPost. Oto kulisy transakcji z FedExem (WYWIAD)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/wykrywacze-metali-i-kontrola-bagazu-w-szkolach-projekt-budzi-mieszane/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:15+01:00</news:publication_date>
-      <news:title>Wykrywacze metali i kontrola bagażu w szkołach? Projekt budzi mieszane uczucia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/569358652.png</image:loc>
-      <image:title>Wykrywacze metali i kontrola bagażu w szkołach? Projekt budzi mieszane uczucia</image:title>
     </image:image>
   </url>
   <url>
@@ -1573,7 +1708,7 @@
       <news:title>NATO reaguje na rosyjskie obiekty w Polsce. Rutte: Absolutnie nie do przyjęcia</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/437561954.png</image:loc>
+      <image:loc>https://i.gremicdn.pl/image/free/03600eb0d7e933edb7de930bb9bc920b/?t=crop:5956:2604:nowe:0:201.10996119017,resize:fill:600:300,enlarge:1</image:loc>
       <image:title>NATO reaguje na rosyjskie obiekty w Polsce. Rutte: Absolutnie nie do przyjęcia</image:title>
     </image:image>
   </url>
@@ -2190,156 +2325,6 @@
     <image:image>
       <image:loc>https://tvn24.pl/biznes/najnowsze/cdn-zdjecief21721dcec5851077b58a52e002ac8dc-pkp-plk-10-marca-wejdzie-w-zycie-wiosenna-korekta-kolejowego-rozkladu-jazdy-ph4228589/alternates/LANDSCAPE_1280</image:loc>
       <image:title>Śmiertelne potrącenie w Poroninie. Wstrzymane pociągi do Zakopanego</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/skarbowka-moze-sprawdzic-przelewy-miedzy-bliskimi-kiedy-darowizna/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:29+01:00</news:publication_date>
-      <news:title>Skarbówka może sprawdzić przelewy między bliskimi. Kiedy darowizna wymaga zgłoszenia?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/05/Pieniadze88.webp</image:loc>
-      <image:title>Skarbówka może sprawdzić przelewy między bliskimi. Kiedy darowizna wymaga zgłoszenia?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/kontrola-za-kontrola-kosiniak-kamysz-w-kielcach-zapowiada-zmiany-dla/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:29+01:00</news:publication_date>
-      <news:title>Kontrola za kontrolą. Kosiniak-Kamysz w Kielcach zapowiada zmiany dla firm</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://s4.tvp.pl/images2/4/8/0/uid_4800672ee12741b38bca076bdbe13bc2_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
-      <image:title>Kontrola za kontrolą. Kosiniak-Kamysz w Kielcach zapowiada zmiany dla firm</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/ujezdzil-kobyle-historii-prof-karol-modzelewski-upamietniony-we/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:27+01:00</news:publication_date>
-      <news:title>„Ujeździł kobyłę historii”. Prof. Karol Modzelewski upamiętniony we Wrocławiu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1159388/main/1-odsloniecie-tablicy-karol-modzelewski-wiezienna-BMo.jpg?imgeng=/w_1200/h_800/m_cropbox</image:loc>
-      <image:title>„Ujeździł kobyłę historii”. Prof. Karol Modzelewski upamiętniony we Wrocławiu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/10-osob-oskarzonych-o-dzialanie-na-szkode-polnordu-wsrod-nich-ryszard-k/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:26+01:00</news:publication_date>
-      <news:title>10 osób oskarżonych o działanie na szkodę Polnordu. Wśród nich Ryszard K.</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljL/mluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk/9CMDAwMDAwMDAwMDAwNzcwNjU1Ny9maWxlcy9wcm9/rdXJhdHVyYS0zOTMyMDM5Mi5qcGciLCJ3IjozODQwfQ</image:loc>
-      <image:title>10 osób oskarżonych o działanie na szkodę Polnordu. Wśród nich Ryszard K.</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/trzy-wnioski-o-uchylenie-immunitetow-ruch-prokuratury-ws-collegium/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:26+01:00</news:publication_date>
-      <news:title>Trzy wnioski o uchylenie immunitetów. Ruch prokuratury ws. Collegium Humanum</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://m.natemat.pl/collegium-humanum-w-warszawie-qzygtonu-1500x0x0x0.jpg</image:loc>
-      <image:title>Trzy wnioski o uchylenie immunitetów. Ruch prokuratury ws. Collegium Humanum</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/rosja-szykuje-atomowa-bron-w-kosmosie-satelita-moze-wystartowac-juz-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:24+01:00</news:publication_date>
-      <news:title>Rosja szykuje atomową broń w kosmosie? Satelita może wystartować już w grudniu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>http://galeria.bankier.pl/p/a/d/ee327c81dade35-948-568-10-10-3990-2393.jpg</image:loc>
-      <image:title>Rosja szykuje atomową broń w kosmosie? Satelita może wystartować już w grudniu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/koniec-procesu-w-sprawie-pobicia-bylego-ministra/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:23+01:00</news:publication_date>
-      <news:title>Koniec procesu w sprawie pobicia byłego ministra</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-adam-niedzielski-ph7937280/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Koniec procesu w sprawie pobicia byłego ministra</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/policja-zawiadamia-prokurature-w-sprawie-tv-republika-2-3-mln-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:22+01:00</news:publication_date>
-      <news:title>Policja zawiadamia prokuraturę w sprawie TV Republika (2,3 mln zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-reporter-telewizji-republika-ph9335453/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Policja zawiadamia prokuraturę w sprawie TV Republika (2,3 mln zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/policjant-postrzelony-podczas-zamachu-w-krakowie-opuscil-szpital/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:21+01:00</news:publication_date>
-      <news:title>Policjant postrzelony podczas zamachu w Krakowie opuścił szpital</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/A8lB0Ds0Gw2errlWd0gbFKsluDiyPq9Jmpo4kg3g.d47n.jpg</image:loc>
-      <image:title>Policjant postrzelony podczas zamachu w Krakowie opuścił szpital</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/czy-proboszcz-ma-prawo-odmowic-pochowku-kuria-zabrala-glos-ws/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T14:58:21+01:00</news:publication_date>
-      <news:title>Czy proboszcz ma prawo odmówić pochówku? Kuria zabrała głos ws. zamachowca z Krakowa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://cdn.defence24.pl/2026/11/10/320x240px/QPeMYZdtTzR5xG9rLRGSy3KBtLmo7uEAJQZ9qtku.y6fd.jpg</image:loc>
-      <image:title>Czy proboszcz ma prawo odmówić pochówku? Kuria zabrała głos ws. zamachowca z Krakowa</image:title>
     </image:image>
   </url>
 </urlset>
