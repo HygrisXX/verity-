@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/funkcjonariusze-strazy-granicznej-z-rutki-tartak-zatrzymali/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:38+01:00</news:publication_date>
+      <news:title>Funkcjonariusze Straży Granicznej z Rutki-Tartak zatrzymali poszukiwanego czerwoną notą Interpolu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.suwalki24.pl/_uploads/2026/Listopad/Drobne/thumb_posg_23_11_2026_(1).jpg</image:loc>
+      <image:title>Funkcjonariusze Straży Granicznej z Rutki-Tartak zatrzymali poszukiwanego czerwoną notą Interpolu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/wandal-zdewastowal-pomocobus-polskiego-czerwonego-krzyza/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:37+01:00</news:publication_date>
+      <news:title>Wandal zdewastował PomocoBus Polskiego Czerwonego Krzyża</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://radiogdansk.pl/wp-content/uploads/2026/11/pomocobus-pck-1-scaled.jpg</image:loc>
+      <image:title>Wandal zdewastował PomocoBus Polskiego Czerwonego Krzyża</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/cba-w-ogrodzie-polskiej-akademii-nauk-media-wsrod-zatrzymanych-opolski/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:37+01:00</news:publication_date>
+      <news:title>CBA w ogrodzie Polskiej Akademii Nauk. Media: Wśród zatrzymanych opolski profesor</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/299183013.png</image:loc>
+      <image:title>CBA w ogrodzie Polskiej Akademii Nauk. Media: Wśród zatrzymanych opolski profesor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/pwik-w-zorach-zapowiada-przerwe-w-dostawie-wody-kiedy-jej-nie-bedzie-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:35+01:00</news:publication_date>
+      <news:title>PWiK w Żorach zapowiada przerwę w dostawie wody. Kiedy jej nie będzie i przy jakich ulicach?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radio90.pl/files/2025/11/Brak-wody.jpg</image:loc>
+      <image:title>PWiK w Żorach zapowiada przerwę w dostawie wody. Kiedy jej nie będzie i przy jakich ulicach?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/zapytano-niemcow-o-militarna-pomoc-dla-ukrainy-gwaltowna-zmiana/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:34+01:00</news:publication_date>
+      <news:title>Zapytano Niemców o militarną pomoc dla Ukrainy. Gwałtowna zmiana nastrojów (53 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/b7/b7smr7t7zrkgyg1q18ynqes4nrjtjgqj.jpg</image:loc>
+      <image:title>Zapytano Niemców o militarną pomoc dla Ukrainy. Gwałtowna zmiana nastrojów (53 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-szykuje-nowe-cla-na-celowniku-ue-chiny-i-dziesiatki-panstw-12-5/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:33+01:00</news:publication_date>
+      <news:title>Trump szykuje nowe cła. Na celowniku UE, Chiny i dziesiątki państw (12,5 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LmluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMv/Rk9CMDAwMDAwMDAwMDAwNjk4NTI3OC9maWxlcy91/c2EtY2xhLTM4NDUyNzE0LmpwZyIsInciOjM4NDB9</image:loc>
+      <image:title>Trump szykuje nowe cła. Na celowniku UE, Chiny i dziesiątki państw (12,5 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/wyniki-pge-w-iii-kwartale-sa-zgodne-z-szacunkami-3-0-mld-zl-zysku-netto/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:32+01:00</news:publication_date>
+      <news:title>Wyniki PGE w III kwartale są zgodne z szacunkami. 3,0 mld zł zysku netto jednostki dominującej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/80a156125fb27ccdc6bf874edb4089f8/?t=crop:3600:2233:nowe:0:84,resize:fill:1200:750,enlarge:1</image:loc>
+      <image:title>Wyniki PGE w III kwartale są zgodne z szacunkami. 3,0 mld zł zysku netto jednostki dominującej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jsw-ogranicza-strate-ale-wciaz-jest-pod-kreska-13-5-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:31+01:00</news:publication_date>
+      <news:title>JSW ogranicza stratę, ale wciąż jest pod kreską (13,5 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/10833ab7620ab5fc384679b06c4c74d9/?t=crop:4000:2481:nowe:0:93,resize:fill:1200:750,enlarge:1</image:loc>
+      <image:title>JSW ogranicza stratę, ale wciąż jest pod kreską (13,5 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/rodzina-powiazana-z-gazpromem-pozwala-szwedzkie-banki-miliony/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T03:58:30+01:00</news:publication_date>
+      <news:title>Rodzina powiązana z Gazpromem pozwała szwedzkie banki. Miliony zablokowane (6 mln)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/0094f95f-f33e-4917-b983-225e647dc914</image:loc>
+      <image:title>Rodzina powiązana z Gazpromem pozwała szwedzkie banki. Miliony zablokowane (6 mln)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/nocne-niebo-w-bardzo-limitowanej-edycji-orient-star-swietuje-75-lecie/</loc>
     <news:news>
       <news:publication>
@@ -150,36 +285,6 @@
     <image:image>
       <image:loc>https://cdn-portal.img.wroclaw.pl/beta2/files/news/1160174/main/niedzwiedz-calka-zoo-wroclaw.png?imgeng=/w_1200/h_800/m_cropbox</image:loc>
       <image:title>"Stworzyła kawał historii". Nie żyje niedźwiedzica Całka z wrocławskiego zoo. Miała 37 lat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/akcja-zima-miasto-i-sluzby-gotowe-by-pomagac-bezdomnym/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T01:02:43+01:00</news:publication_date>
-      <news:title>Akcja Zima. Miasto i służby gotowe by pomagać bezdomnym</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://czasnaopole.pl/wp-content/uploads/2026/11/xbaner-www-Akcja-Zima-1024x474.jpg.pagespeed.ic_.vZHW4PclmY.jpg</image:loc>
-      <image:title>Akcja Zima. Miasto i służby gotowe by pomagać bezdomnym</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/miliardy-z-funduszy-europejskich-dla-pomorza/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T01:02:43+01:00</news:publication_date>
-      <news:title>Miliardy z funduszy europejskich dla Pomorza</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/383402789.png</image:loc>
-      <image:title>Miliardy z funduszy europejskich dla Pomorza</image:title>
     </image:image>
   </url>
   <url>
@@ -750,21 +855,6 @@
     <image:image>
       <image:loc>https://swidnica24.pl/wp-content/uploads/2026/10/Aleja-Niepodleglosci-trwa-przebudowa-2026.10.16-21.jpg</image:loc>
       <image:title>Wzięli pod lupę stan świdnickich ulic. Które z nich najprędzej mogą doczekać się remontu?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/odpisy-pograzyly-wynik-pkp-cargo-przewoznik-pokazal-szacunki-za-iii/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-23T21:48:29+01:00</news:publication_date>
-      <news:title>Odpisy pogrążyły wynik PKP Cargo. Przewoźnik pokazał szacunki za III kwartał (254,9 mln zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/80a156125fb27ccdc6bf874edb4089f8/?t=crop:3600:2233:nowe:0:84,resize:fill:1200:750,enlarge:1</image:loc>
-      <image:title>Odpisy pogrążyły wynik PKP Cargo. Przewoźnik pokazał szacunki za III kwartał (254,9 mln zł)</image:title>
     </image:image>
   </url>
   <url>
