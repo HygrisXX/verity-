@@ -3,37 +3,37 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/kamery/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:20+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/</loc>
-    <lastmod>2026-11-25T22:54:34+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:20+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,7 +69,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:20+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -135,7 +135,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/</loc>
-    <lastmod>2026-11-25T22:54:38+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:17+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -153,9 +153,81 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/przyznano-dziennikarskie-koziolki-wsrod-nagrodzonych-dziennikarz-tvp3/</loc>
+    <lastmod>2026-11-25T23:48:17+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://s1.tvp.pl/images2/a/f/f/uid_aff2bc9c925b49ff8395fa1c6ddabd5d_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali/</loc>
+    <lastmod>2026-11-25T23:48:16+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/856745910_29289908920613246_8482881178364690625_n.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/kiedy-decyzja-w-sprawie-bazy-usa-w-polsce-wiceminister-wskazal-termin/</loc>
+    <lastmod>2026-11-25T23:48:13+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ipla.pluscdn.pl/dituel/cp/44/44rjibp73o6weah3spxju1mh13uqggcy.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/pulapka-13-emerytury-w-2027-roku-wystarczy-przekroczyc-ten-limit-aby/</loc>
+    <lastmod>2026-11-25T23:48:12+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLWZvcnNhbC5p/bmNkbi5wbC9mb3JzYWwvZG9jdW1lbnRzL0ZPQjAwMDAwMDAwMDAw/MDc3MTU5MTkvZmlsZXMvMTMtZW1lcnl0dXJhLTIwMjYtenVzLWtp/ZWR5LXd5cGxhdGEtbmV0dG8tMzkzMzI5MDcuanBnIiwidyI6Mzg0MH0</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ile-kosztuje-frank-szwajcarski-kurs-franka-do-zlotego-pln-chf-25-11/</loc>
+    <lastmod>2026-11-25T23:48:10+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/b1c04e3f-7bce-4c35-b03c-7a8d7b0adc65</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/nie-zyje-andy-taylor-gitarzysta-duran-duran-przegral-walke-z-ciezka/</loc>
+    <lastmod>2026-11-25T23:48:09+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/640ef2bd87fc452ea53ec6fbd805d09f/?t=crop:404:177:nowe:0:179,resize:fill:600:300,enlarge:1</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/kuriozalne-gole-w-lidze-mistrzow-samoboj-i-kepka-trawy/</loc>
+    <lastmod>2026-11-25T23:48:08+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://static.weszlo.com/cdn-cgi/image/quality=85,f=auto/2026/11/700_lille_fcb_20261125_056.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/dramat-przed-ministerstwem-kultury-mswia-ujawnia-szczegoly-22-lat/</loc>
+    <lastmod>2026-11-25T23:48:07+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NKNN0SW77HUUQ-C321.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/afera-na-poznanskiej-uczelni-prorektor-z-zarzutem/</loc>
@@ -176,7 +248,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/w-poszukiwaniu-sygnalow-25-listopada-2026-dalszy-ciag-wyprzedazy-na/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/w-poszukiwaniu-sygnalow-25-listopada-2026-dalszy-ciag-wyprzedazy-na/</loc>
     <lastmod>2026-11-25T22:54:35+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -245,15 +317,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://radioolsztyn.pl/wp-content/uploads/2025/12/AdobeStock_18241968441-scaled.jpeg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wlodzimierz-skalik-prawa-reka-krola-idzie-po-wladze-kim-jest-mozg/</loc>
-    <lastmod>2026-11-25T21:56:18+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/skalik_braun.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -824,6 +887,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/o-zamachu-na-trybunal-w-parlamencie-europejskim-swieczkowski-chca/</loc>
+    <lastmod>2026-11-25T23:48:20+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/161850103.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/alimentation-couche-tard-nie-podniesiemy-ceny-w-wezwaniu-na-zabke/</loc>
     <lastmod>2026-11-25T12:00:44+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -960,7 +1032,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/macie-w-domu-kominek-jesli-tego-nie-zrobicie-wlepia-wam-wielka-kare-to/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:20+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1599,7 +1671,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zegar-z-gorzowskiej-katedry-do-naprawy-czy-zdaza-na-jubileusz-miasta/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1689,7 +1761,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/fifa-zdecydowala-o-mundialu-w-2035-roku-48-druzyn-i-104-mecze-na-wyspach/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:21+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2562,7 +2634,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/final-szansy-na-sukces-kto-wygral-kto-pojedzie-do-opola/</loc>
-    <lastmod>2026-11-25T22:54:41+01:00</lastmod>
+    <lastmod>2026-11-25T23:48:20+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2774,69 +2846,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://bi.im-g.pl/im/58/9c/1f/z33144920IHG,-FIS-Ski-Jumping-World-Cup-in-Lillehammer.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/szczyt-klimatyczny-moze-zakonczyc-sie-fiaskiem-trwaja-negocjacje-o/</loc>
-    <lastmod>2026-11-22T12:49:17+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://cdn.businessinsider.com.pl/1/dJMk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9iODE0MzQxYjhlNmIyMDBiM2Y0MjgxNzEyY2NmYjBkYy5qcGeSlQMAPs0H0M0EZZMFzQlgzQZA3gACoTAHoTEE</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/pis-znow-obiecuje-tanie-mieszkania-i-kredyt-panstwo-ma-byc-deweloperem/</loc>
-    <lastmod>2026-11-22T12:49:16+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.gremicdn.pl/image/free/a88e913baad860de16065f5a963f2d06/?t=crop:2048:895:nowe:0:234,resize:fill:600:300,enlarge:1</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/20-latek-stracil-panowanie-nad-audi-dwie-osoby-nie-zyja-dwie-sa-ranne/</loc>
-    <lastmod>2026-11-22T11:41:33+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/47a5afac-be8d-400b-9e33-3cf376b4a8f1</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/w-domu-znaleziono-ciala-malzenstwa/</loc>
-    <lastmod>2026-11-22T11:41:30+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-4400094-policja-zdjecie-ilustracyjne-ph9022560/alternates/LANDSCAPE_1280</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zielona-gora-jazda-na-suwak-to-obowiazek-policja-przypomina-kierowcom-o/</loc>
-    <lastmod>2026-11-22T11:41:29+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://poscigi.pl/wp-content/uploads/2026/11/Bez-nazwy-8.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/noze-i-palki-w-autach-policja-zablokowala-ustawke-w-warszawie-16-osob/</loc>
-    <lastmod>2026-11-22T11:41:28+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/0f2bca16-08d4-47f6-a086-3a6a9996bfba</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/jestem-onkologiem-oto-co-robie-by-uniknac-raka-to-sa-podstawy-92-proc/</loc>
-    <lastmod>2026-11-22T11:41:28+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://cdn.medonet.pl/1/eTKk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8zYTAzMjllNTJjNjI3OWM0MWVjYzU4NmQxYTJjNzA2Yy5qcGeSlQMAzQNRzQoVzQWrkwXNCWDNBkDeAAKhMAehMQQ</image:loc>
     </image:image>
   </url>
 </urlset>
