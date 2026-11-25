@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/tragiczny-wypadek-nie-zyje-45-latek/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:41+01:00</news:publication_date>
+      <news:title>Tragiczny wypadek. Nie żyje 45-latek</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s6.tvp.pl/images2/6/a/2/uid_6a29a8ab449d43fabb5ca3735a8c470f_width_900_play_0_pos_0_gs_0_height_506.png</image:loc>
+      <image:title>Tragiczny wypadek. Nie żyje 45-latek</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wlodzimierz-skalik-prawa-reka-krola-idzie-po-wladze/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:41+01:00</news:publication_date>
+      <news:title>Włodzimierz Skalik: Prawa ręka „króla” idzie po władzę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/skalik_braun.jpg</image:loc>
+      <image:title>Włodzimierz Skalik: Prawa ręka „króla” idzie po władzę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/od-centrum-slupska-na-zachod-zobaczcie-ulice-tuwima-na-dawnych-zdjeciach/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:40+01:00</news:publication_date>
+      <news:title>Od centrum Słupska na zachód. Zobaczcie ulicę Tuwima na dawnych zdjęciach!</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://d-pt.ppstatic.pl/kadry/k/r/1/3f/b5/5c1ccbf4d3aa7_o,size,640x400,q,71,h,046f79.jpg</image:loc>
+      <image:title>Od centrum Słupska na zachód. Zobaczcie ulicę Tuwima na dawnych zdjęciach!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/wychowanie-patriotyczne-w-szkolach-obowiazkowe-wycieczki-i-kluby/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:36+01:00</news:publication_date>
+      <news:title>Wychowanie patriotyczne w szkołach. Obowiązkowe wycieczki i kluby inżynierskie już w 2027 r.</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/633961011.png</image:loc>
+      <image:title>Wychowanie patriotyczne w szkołach. Obowiązkowe wycieczki i kluby inżynierskie już w 2027 r.</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/katastrofa-malego-samolotu-w-zatoce-meksykanskiej-wsrod-ofiar-sa-dzieci/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:35+01:00</news:publication_date>
+      <news:title>Katastrofa małego samolotu w Zatoce Meksykańskiej. Wśród ofiar są dzieci (10 lat)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-katastrofa-samolotu-missisipi-ph9356175/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Katastrofa małego samolotu w Zatoce Meksykańskiej. Wśród ofiar są dzieci (10 lat)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/brutalny-napad-na-kolekcjonera-w-lodzi-skradziono-obrazy-malczewskiego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:34+01:00</news:publication_date>
+      <news:title>Brutalny napad na kolekcjonera w Łodzi. Skradziono obrazy Malczewskiego i Kossaków</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/25/320x240px/JBvOx5NGe1Rfyp2BOHPhmfZN8KcrXzhcgWeTV2ZQ.q96b.jpg</image:loc>
+      <image:title>Brutalny napad na kolekcjonera w Łodzi. Skradziono obrazy Malczewskiego i Kossaków</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/cztery-prawa-jazdy-w-dwa-dni-policja-kontrolowala-przejazdy-kolejowe/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:33+01:00</news:publication_date>
+      <news:title>Cztery prawa jazdy w dwa dni. Policja kontrolowała przejazdy kolejowe</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-wjechali-na-tory-mimo-czerwonego-swiatla-ph9356725/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Cztery prawa jazdy w dwa dni. Policja kontrolowała przejazdy kolejowe</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/polska-rosja-w-lidze-narodow-fivb-opublikowala-komunikat-wszystko-jasne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:32+01:00</news:publication_date>
+      <news:title>Polska – Rosja w Lidze Narodów? FIVB opublikowała komunikat. Wszystko jasne</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000NKKJN071KR6KB-C321.webp</image:loc>
+      <image:title>Polska – Rosja w Lidze Narodów? FIVB opublikowała komunikat. Wszystko jasne</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/stoleczny-ratusz-mowi-dosc-zgromadzeniu-pod-trybunalem-konstytucyjnym/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25T12:00:31+01:00</news:publication_date>
+      <news:title>Stołeczny ratusz mówi „dość” zgromadzeniu pod Trybunałem Konstytucyjnym. Wskazano ostateczną datę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLm/luY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9C/MDAwMDAwMDAwMDAwNzcxNTc4MS9maWxlcy9wcm90ZX/N0LXBvZC10ay0zOTMzMTc5OS5qcGciLCJ3IjozODQwfQ</image:loc>
+      <image:title>Stołeczny ratusz mówi „dość” zgromadzeniu pod Trybunałem Konstytucyjnym. Wskazano ostateczną datę</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/adam-jarubas-polska-bedzie-miala-najwiekszy-udzial-w-planie-finansowym/</loc>
     <news:news>
       <news:publication>
@@ -108,7 +243,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/milionowa-kara-dla-szpitala-poludniowego-wykazano-liczne/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/milionowa-kara-dla-szpitala-poludniowego-wykazano-liczne/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -135,21 +270,6 @@
     <image:image>
       <image:loc>https://xyz.pl/wp-content/uploads/2026/08/Rafal-Brzoska-2-1024x576.jpg</image:loc>
       <image:title>Rafał Brzoska stawia 1,2 mld zł na InPost. Oto kulisy transakcji z FedExem (WYWIAD)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/80-lat-ludowych-zespolow-sportowych-w-polsce-historia-ktora-zaczela-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:15+01:00</news:publication_date>
-      <news:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/LZS-80-lat-1024x576-1.jpg</image:loc>
-      <image:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</image:title>
     </image:image>
   </url>
   <url>
@@ -2058,7 +2178,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/policja-zawiadamia-prokurature-w-sprawie-tv-republika/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/policja-zawiadamia-prokurature-w-sprawie-tv-republika-2-3-mln-zl/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -2085,6 +2205,21 @@
     <image:image>
       <image:loc>https://cdn.defence24.pl/2026/11/18/320x240px/A8lB0Ds0Gw2errlWd0gbFKsluDiyPq9Jmpo4kg3g.d47n.jpg</image:loc>
       <image:title>Policjant postrzelony podczas zamachu w Krakowie opuścił szpital</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/czy-proboszcz-ma-prawo-odmowic-pochowku-kuria-zabrala-glos-ws/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T14:58:21+01:00</news:publication_date>
+      <news:title>Czy proboszcz ma prawo odmówić pochówku? Kuria zabrała głos ws. zamachowca z Krakowa</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://cdn.defence24.pl/2026/11/10/320x240px/QPeMYZdtTzR5xG9rLRGSy3KBtLmo7uEAJQZ9qtku.y6fd.jpg</image:loc>
+      <image:title>Czy proboszcz ma prawo odmówić pochówku? Kuria zabrała głos ws. zamachowca z Krakowa</image:title>
     </image:image>
   </url>
   <url>
