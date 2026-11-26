@@ -882,10 +882,11 @@
       ${reps.length ? reps.map(r => `
         <div class="article-card queue-card" data-report-id="${r.id}">
           <div class="queue-card-top">
-            <span class="queue-status">${esc(r.tariff_code)} (${esc(r.target_type)})</span>
+            <span class="queue-status">${esc(r.tariff_code)} (${esc(r.target_type)}) · ${esc(r.reporter_handle || 'Czytelnik')}</span>
             <span class="queue-path">${esc(r.target_author)}</span>
           </div>
           <p class="section-paragraph">„${esc(r.target_excerpt)}”</p>
+          ${r.reason ? `<p class="mod-desc" style="margin:0.25rem 0 0.5rem"><strong>Powód:</strong> ${esc(r.reason)}</p>` : ''}
           <div class="queue-actions">
             <button type="button" class="btn-primary" onclick="window.VERITY_COMMUNITY.resolveReport(${r.id}, ${JSON.stringify(r.target_author).replace(/"/g, '&quot;')}, ${JSON.stringify(r.target_excerpt).replace(/"/g, '&quot;')}, ${JSON.stringify(r.tariff_code).replace(/"/g, '&quot;')}, ${JSON.stringify(r.target_type).replace(/"/g, '&quot;')}, ${Number(r.target_id)}, 'PUNISHED')">Nalicz ${esc(r.tariff_code)} i ukryj</button>
             <button type="button" class="btn-outline" onclick="window.VERITY_COMMUNITY.resolveReport(${r.id}, ${JSON.stringify(r.target_author).replace(/"/g, '&quot;')}, ${JSON.stringify(r.target_excerpt).replace(/"/g, '&quot;')}, ${JSON.stringify(r.tariff_code).replace(/"/g, '&quot;')}, ${JSON.stringify(r.target_type).replace(/"/g, '&quot;')}, ${Number(r.target_id)}, 'REJECTED')">Odrzuć zgłoszenie (0 pkt — zostaje)</button>

@@ -438,6 +438,12 @@ class VerityRequestHandler(http.server.SimpleHTTPRequestHandler):
                 self._send_json(400, {"ok": False, "error": str(err)})
             return
 
+        if req_path == "/api/moderation/check":
+            import auto_moderator as _am
+            verdict = _am.evaluate_content(str(data.get("text") or ""))
+            self._send_json(200, {"ok": True, "verdict": verdict.to_dict()})
+            return
+
         if req_path == "/api/corrections":
             with _STATE_LOCK:
                 res = uln.submit_reader_correction(

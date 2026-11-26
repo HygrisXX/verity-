@@ -3486,6 +3486,110 @@ class TestLegalComplianceAndRegexGuards(unittest.TestCase):
         self.assertIn("Rzetelna.pl", html_out)
         self.assertIn("Ściana odfiltrowanego clickbaitu", html_out)
 
+    def test_semi_automatic_moderation_tiers_and_db_enforcement(self):
+        import tempfile
+        import auto_moderator as am
+        import community_db as cdb
+
+        # 1. Poziom 1 (ALLOW): ostra polemika, pytania retoryczne, krytyka, przekleństwo sytuacyjne i zwykłe słowa
+        allow_cases = [
+            "Czy jesteś chory psychicznie? Przecież te dane są z zeszłego roku.",
+            "Bredzisz, nie masz pojęcia o budżecie samorządów.",
+            "Ta ustawa zabija mały biznes i podnosi koszty energii.",
+            "Kurwa, znowu podnieśli ceny prądu o 20 procent!",
+            "Mój kot ma skurcz łapy po zjedzeniu kurczaka, wielki sukces weterynarza.",
+        ]
+        for txt in allow_cases:
+            v = am.evaluate_content(txt)
+            self.assertEqual(v.action, "ALLOW", f"Błędna blokada/flaga dla dozwolonego tekstu: {txt!r} -> {v}")
+
+        # 2. Poziom 3 (AUTO_BLOCK §2.1): ciężkie wulgarne obelgi personalne, obrażanie rodziny, obejścia k*rwa / k.u.r.w.a / leetspeak
+        block_21_cases = [
+            "Twoja matka jest kurwą",
+            "twoja stara to j*bana dziwka",
+            "pojebać ty",
+            "jebać cię i całą twoją rodzinę",
+            "ty kurwo jebana, wypierdalaj stąd",
+            "chuj ci w dupę śmieciu",
+            "k.u.r.w.o j3bana z ciebie",
+            "skurwysynu",
+            "cwelu jeden",
+            "zjebie",
+        ]
+        for txt in block_21_cases:
+            v = am.evaluate_content(txt)
+            self.assertEqual(v.action, "AUTO_BLOCK", f"Nie zablokowano ciężkiej obelgi: {txt!r} -> {v}")
+            self.assertEqual(v.tariff_code, "§2.1", f"Zły paragraf dla {txt!r}: {v}")
+            self.assertNotIn("kurwą", v.redacted_excerpt.lower())
+            self.assertNotIn("kurwo", v.redacted_excerpt.lower())
+
+        # 3. Poziom 3 (AUTO_BLOCK §2.3): groźby przemocy, samookaleczenie, doxxing
+        block_23_cases = [
+            "Znajdę cię i cię zabiję",
+            "zajebię cię jutro",
+            "powieś się najlepiej",
+            "Jego PESEL to 92041205432, sprawdźcie sobie",
+        ]
+        for txt in block_23_cases:
+            v = am.evaluate_content(txt)
+            self.assertEqual(v.action, "AUTO_BLOCK", f"Nie zablokowano groźby/doxxingu: {txt!r} -> {v}")
+            self.assertEqual(v.tariff_code, "§2.3", f"Zły paragraf dla {txt!r}: {v}")
+
+        # 4. Poziom 2 (FLAG_REVIEW): treści graniczne trafiają do ręcznej weryfikacji człowieka bez auto-bana
+        flag_cases = [
+            "ja pierdolę, co za chujnia, wszystko rozjebali kurwa na tym świecie",
+            "ten dyrektor to zwykły skurwiel",
+        ]
+        for txt in flag_cases:
+            v = am.evaluate_content(txt)
+            self.assertEqual(v.action, "FLAG_REVIEW", f"Oczekiwano FLAG_REVIEW dla: {txt!r} -> {v}")
+
+        # 5. Integracja z SQLite (czat, komentarze, wpisy): ALLOW przechodzi, FLAG_REVIEW publikuje + zakłada PENDING,
+        #    AUTO_BLOCK blokuje + nalicza punkty + wpisuje zocenzurowany log do moderation_log
+        with tempfile.TemporaryDirectory() as tmpdir:
+            db_path = os.path.join(tmpdir, "automod_test.db")
+            cdb.init_db(tmpdir, db_path=db_path, seed_demo=False)
+            auth = cdb.login_or_register(tmpdir, "@Dyskutant", db_path=db_path)
+            user = auth["user"]
+
+            # Ostra polemika przechodzi bez zgłoszeń i kar
+            ok_c = cdb.create_comment(tmpdir, user, 77, "Czy jesteś chory psychicznie? Dane GUS mówią co innego.", db_path=db_path)
+            self.assertEqual(ok_c["seq_num"], 1)
+            self.assertEqual(len(cdb.list_reports(tmpdir, status="PENDING", db_path=db_path)), 0)
+
+            # Treść graniczna wchodzi na stronę, ale AutoMod tworzy zgłoszenie PENDING dla człowieka
+            flag_c = cdb.create_comment(tmpdir, user, 77, "Ten prezes spółki to zwykły skurwiel w zarządzaniu.", db_path=db_path)
+            self.assertEqual(flag_c["seq_num"], 2)
+            reps = cdb.list_reports(tmpdir, status="PENDING", db_path=db_path)
+            self.assertEqual(len(reps), 1)
+            self.assertEqual(reps[0]["reporter_handle"], "AutoMod VERITY")
+            self.assertEqual(reps[0]["target_id"], flag_c["id"])
+
+            # Ciężka obelga rodziny: natychmiastowa blokada, +2 pkt karne i wpis w moderation_log z maskowaniem
+            with self.assertRaises(ValueError) as ctx:
+                cdb.create_comment(tmpdir, user, 77, "Twoja matka jest kurwą i tyle", db_path=db_path)
+            self.assertIn("§2.1", str(ctx.exception))
+            u_after = cdb.get_user_by_token(tmpdir, auth["token"], db_path=db_path)
+            self.assertEqual(u_after["penalty_points"], 2)
+            logs = cdb.list_moderation_log(tmpdir, db_path=db_path)
+            self.assertEqual(len(logs), 1)
+            self.assertIn("AutoMod", logs[0]["tariff_label"])
+            self.assertIn("k***ą", logs[0]["content_excerpt"])
+            self.assertEqual(len(cdb.list_comments(tmpdir, 77, db_path=db_path)), 2)
+
+            # Gość na czacie: ciężka obelga zablokowana i odnotowana w logu bez błędu
+            with self.assertRaises(ValueError):
+                cdb.send_chat_message(tmpdir, "Globalny", "jebać cię ty kurwo", user=None, guest_key="g1234", guest_cooldown_sec=0, db_path=db_path)
+            self.assertEqual(len(cdb.list_chat_messages(tmpdir, "Globalny", db_path=db_path)), 0)
+
+            # Groźba karalna (§2.3): +10 pkt i natychmiastowa blokada konta (BANNED)
+            with self.assertRaises(ValueError) as ctx2:
+                cdb.create_community_post(tmpdir, user, "/Polska", "Własna analiza", "Znajdę cię i cię zabiję za ten wpis", db_path=db_path)
+            self.assertIn("§2.3", str(ctx2.exception))
+            u_banned = cdb.get_user_by_token(tmpdir, auth["token"], db_path=db_path)
+            self.assertEqual(u_banned["status"], "BANNED")
+            self.assertGreaterEqual(u_banned["penalty_points"], 10)
+
 
 if __name__ == "__main__":
     unittest.main()

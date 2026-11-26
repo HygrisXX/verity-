@@ -24,6 +24,8 @@ import threading
 import time
 import urllib.parse
 
+import auto_moderator as _am
+
 DB_FILENAME = "verity_community.db"
 
 MUTE_THRESHOLD_POINTS = 6
@@ -53,8 +55,8 @@ PENALTY_TARIFF = {
     },
     "§2.1": {
         "code": "§2.1",
-        "title": "Wulgarna obelga personalna",
-        "description": "Bezpośrednie wyzwiska, inwektywy ad personam i poniżanie innych uczestników dyskusji.",
+        "title": "Ciężka wulgarna obelga personalna",
+        "description": "Bezpośrednie ciężkie wulgarne wyzwiska ad personam lub obrażanie rodziny (ostra polemika bez wulgarnych ataków nie podlega karze).",
         "points": 2,
     },
     "§2.2": {
@@ -66,7 +68,7 @@ PENALTY_TARIFF = {
     "§2.3": {
         "code": "§2.3",
         "title": "Groźby karalne lub doxxing",
-        "description": "Grożenie przemocą fizyczną, publikowanie prywatnych adresów, telefonów lub danych osobowych.",
+        "description": "Grożenie przemocą fizyczną, nawoływanie do samookaleczenia, publikowanie prywatnych adresów, telefonów lub PESEL.",
         "points": 10,
     },
 }
@@ -292,11 +294,11 @@ def _seed_initial_data(conn: sqlite3.Connection) -> None:
                 t2,
                 "@Prawica_PL",
                 "ODRZUCONO",
-                "Zgłoszenie za „poglądy polityczne”",
-                "„Ta zmiana podatkowa oznacza wyższe koszty dla samorządów...”",
+                "Zgłoszenie za „poglądy / ostrą polemikę”",
+                "„Czy jesteś chory psychicznie? Ta zmiana podatkowa podniesie koszty samorządom...”",
                 0,
                 0,
-                "ODRZUCONO (Komentarz zostaje — zero kar za poglądy)",
+                "ODRZUCONO (Treść zostaje — zero kar za poglądy i ostrą polemikę)",
                 "REJECTED",
             ),
         )
@@ -310,11 +312,11 @@ def _seed_initial_data(conn: sqlite3.Connection) -> None:
                 t1,
                 "@Troll_Konto99",
                 "§2.1",
-                "§2.1 Wulgarna obelga personalna",
-                "„Ty jesteś chory psychicznie i nie umiesz czytać...”",
+                "§2.1 Ciężka wulgarna obelga personalna (AutoMod)",
+                "„Twoja matka jest k***ą, w*********j stąd...”",
                 2,
                 4,
-                "+2 pkt karne (4/10)",
+                "+2 pkt karne (4/10) · AutoMod",
                 "PUNISHED",
             ),
         )
@@ -451,6 +453,98 @@ def _check_user_can_participate(conn: sqlite3.Connection, user_id: str) -> sqlit
         until_txt = row["muted_until"] or "24h"
         raise PermissionError(f"Konto {row['display_handle']} ma tymczasowe wyciszenie do {until_txt} ({row['penalty_points']} pkt).")
     return row
+
+
+def _enforce_auto_moderation(
+    conn: sqlite3.Connection,
+    *,
+    text: str,
+    author_handle: str,
+    user_row: sqlite3.Row | None,
+) -> _am.ModerationVerdict:
+    """
+    Częściowo automatyczna moderacja przy zapisie treści:
+    - ALLOW       -> przepuszcza bez ingerencji.
+    - FLAG_REVIEW -> przepuszcza treść, a wywołujący dopisuje auto-flagę PENDING dla człowieka.
+    - AUTO_BLOCK  -> natychmiast blokuje, nalicza punkty karne (dla zalogowanych), zapisuje jawny wpis
+                     w moderation_log (z ocenzurowanym wulgaryzmem) i podnosi ValueError (HTTP 400).
+    """
+    verdict = _am.evaluate_content(text)
+    if verdict.action != "AUTO_BLOCK":
+        return verdict
+
+    rule = PENALTY_TARIFF.get(verdict.tariff_code) or PENALTY_TARIFF["§2.1"]
+    now_dt = _now_utc().replace(microsecond=0)
+    now_iso = now_dt.isoformat()
+    excerpt_log = f"„{verdict.redacted_excerpt}”" if verdict.redacted_excerpt else "—"
+    t_label = f"{rule['code']} {rule['title']} (AutoMod)"
+
+    if user_row is not None:
+        pts_delta = int(rule["points"])
+        total_pts = int(user_row["penalty_points"] or 0) + pts_delta
+        new_status = user_row["status"]
+        muted_until = user_row["muted_until"] or ""
+        if total_pts >= BAN_THRESHOLD_POINTS:
+            new_status = "BANNED"
+            muted_until = ""
+            decision_txt = f"+{pts_delta} pkt ({total_pts}/{BAN_THRESHOLD_POINTS}) → BLOKADA KONTA · AutoMod"
+        elif total_pts >= MUTE_THRESHOLD_POINTS:
+            new_status = "MUTED"
+            muted_until = (now_dt + dt.timedelta(hours=24)).isoformat()
+            decision_txt = f"+{pts_delta} pkt ({total_pts}/{BAN_THRESHOLD_POINTS}) → WYCISZENIE 24h · AutoMod"
+        else:
+            decision_txt = f"+{pts_delta} pkt karne ({total_pts}/{BAN_THRESHOLD_POINTS}) · AutoMod"
+        conn.execute(
+            "UPDATE users SET penalty_points = ?, status = ?, muted_until = ? WHERE id = ?",
+            (total_pts, new_status, muted_until, user_row["id"]),
+        )
+        conn.execute(
+            """
+            INSERT INTO moderation_log
+            (created_at, account_handle, tariff_code, tariff_label, content_excerpt, points_delta, total_points, decision, outcome)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'PUNISHED')
+            """,
+            (now_iso, user_row["display_handle"], rule["code"], t_label, excerpt_log, pts_delta, total_pts, decision_txt),
+        )
+        conn.commit()
+        raise ValueError(
+            f"Automatyczna moderacja ({rule['code']}): {verdict.reason}. "
+            f"Treść zablokowana · naliczono +{pts_delta} pkt ({total_pts}/{BAN_THRESHOLD_POINTS})."
+        )
+
+    # Gość na czacie (brak konta w users) — natychmiastowa blokada + wpis w rejestrze
+    conn.execute(
+        """
+        INSERT INTO moderation_log
+        (created_at, account_handle, tariff_code, tariff_label, content_excerpt, points_delta, total_points, decision, outcome)
+        VALUES (?, ?, ?, ?, ?, 0, 0, 'AUTO-BLOKADA (gość) · AutoMod', 'PUNISHED')
+        """,
+        (now_iso, author_handle, rule["code"], t_label, excerpt_log),
+    )
+    conn.commit()
+    raise ValueError(
+        f"Automatyczna moderacja ({rule['code']}): {verdict.reason}. Wiadomość została zablokowana."
+    )
+
+
+def _queue_auto_flag_report(
+    conn: sqlite3.Connection,
+    *,
+    target_type: str,
+    target_id: int,
+    author_handle: str,
+    verdict: _am.ModerationVerdict,
+) -> None:
+    if verdict.action != "FLAG_REVIEW":
+        return
+    t_code = verdict.tariff_code if verdict.tariff_code in PENALTY_TARIFF else "§2.1"
+    conn.execute(
+        """
+        INSERT INTO reports (target_type, target_id, target_author, target_excerpt, tariff_code, reason, reporter_handle, status, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, 'AutoMod VERITY', 'PENDING', ?)
+        """,
+        (target_type, int(target_id), author_handle, verdict.redacted_excerpt, t_code, verdict.reason[:300], _now_iso()),
+    )
 
 
 def login_or_register(
@@ -642,7 +736,11 @@ def send_chat_message(
             author_handle = f"Gość#{suffix}"
             author_kind = "guest"
             uid = None
+            u_row = None
 
+        verdict = _enforce_auto_moderation(
+            conn, text=clean_text, author_handle=author_handle, user_row=u_row
+        )
         cur = conn.execute(
             """
             INSERT INTO chat_messages (room, user_id, author_handle, author_kind, text, created_at)
@@ -651,6 +749,9 @@ def send_chat_message(
             (norm_room, uid, author_handle, author_kind, clean_text, now_iso),
         )
         msg_id = int(cur.lastrowid)
+        _queue_auto_flag_report(
+            conn, target_type="chat", target_id=msg_id, author_handle=author_handle, verdict=verdict
+        )
         row = conn.execute(
             "SELECT id, room, author_handle, author_kind, text, created_at FROM chat_messages WHERE id = ?",
             (msg_id,),
@@ -709,6 +810,9 @@ def create_community_post(
 
     with contextlib.closing(_connect(resolved)) as conn:
         u_row = _check_user_can_participate(conn, user["id"])
+        verdict = _enforce_auto_moderation(
+            conn, text=clean_text, author_handle=u_row["display_handle"], user_row=u_row
+        )
         now_iso = _now_iso()
         cur = conn.execute(
             """
@@ -718,6 +822,9 @@ def create_community_post(
             (norm_p, u_row["id"], u_row["display_handle"], clean_type, clean_text, clean_link, now_iso),
         )
         post_id = int(cur.lastrowid)
+        _queue_auto_flag_report(
+            conn, target_type="post", target_id=post_id, author_handle=u_row["display_handle"], verdict=verdict
+        )
         row = conn.execute(
             "SELECT id, path, author_handle, post_type, text, link_url, created_at FROM community_posts WHERE id = ?",
             (post_id,),
@@ -762,6 +869,9 @@ def create_comment(
 
     with contextlib.closing(_connect(resolved)) as conn:
         u_row = _check_user_can_participate(conn, user["id"])
+        verdict = _enforce_auto_moderation(
+            conn, text=clean_text, author_handle=u_row["display_handle"], user_row=u_row
+        )
         next_seq = int(
             conn.execute("SELECT COALESCE(MAX(seq_num), 0) + 1 FROM comments WHERE article_id = ?", (aid,)).fetchone()[0]
         )
@@ -791,6 +901,9 @@ def create_comment(
             (aid, next_seq, u_row["id"], u_row["display_handle"], r_id, r_seq, q_author, q_excerpt, clean_text, now_iso),
         )
         cid = int(cur.lastrowid)
+        _queue_auto_flag_report(
+            conn, target_type="comment", target_id=cid, author_handle=u_row["display_handle"], verdict=verdict
+        )
         row = conn.execute(
             """
             SELECT id, article_id, seq_num, author_handle, reply_to_id, reply_to_seq, quote_author, quote_excerpt, text, created_at

@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../styles.css?v=d109040b" />
+  <link rel="stylesheet" href="../styles.css?v=17181392" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -165,8 +165,28 @@
         <span>Pełna jawność decyzji</span>
       </div>
       <div class="mod-principle-box">
-        <strong>Zasada naczelna:</strong> Zero kar za poglądy polityczne czy gospodarcze. Usuwamy wyłącznie spam, rajdy multikont i wulgarne wyzwiska personalne według sztywnego taryfikatora. Przy <strong>6 pkt</strong> następuje automatyczne wyciszenie na 24h, a przy <strong>10 pkt</strong> blokada konta.
+        <strong>Zasada naczelna (moderacja częściowo automatyczna):</strong> Zero kar za poglądy polityczne, gospodarcze ani za ostrą polemikę (np. <em>„czy jesteś chory psychicznie?”</em> czy <em>„bredzisz”</em> nie podlegają blokadzie). <strong>AutoMod VERITY</strong> blokuje od razu wyłącznie ewidentne ciężkie wulgarne ataki personalne, obrażanie rodziny oraz groźby/doxxing; przypadki graniczne trafiają do ręcznej weryfikacji człowieka. Przy <strong>6 pkt</strong> następuje wyciszenie na 24h, a przy <strong>10 pkt</strong> blokada konta.
       </div>
+      <section class="mod-card">
+        <h2 class="mod-section-title">Jak działa 3-poziomowa moderacja VERITY</h2>
+        <div class="mod-tiers">
+          <div class="mod-tier">
+            <span class="mod-tier-badge ok">Poziom 1 · Swoboda debaty</span>
+            <strong>Przepuszczane bez ingerencji</strong>
+            <p class="mod-desc">Krytyka, sarkazm, ostre spory i riposty bez ciężkich wulgarnych wyzwisk (np. „czy jesteś chory psychicznie?”, „to kompletny absurd”) oraz zwykłe przekleństwa sytuacyjne nie skierowane w żadną osobę.</p>
+          </div>
+          <div class="mod-tier">
+            <span class="mod-tier-badge mid">Poziom 2 · Auto-flaga</span>
+            <strong>Kolejka do oceny człowieka</strong>
+            <p class="mod-desc">Treści graniczne (np. nagromadzenie ≥3 wulgaryzmów lub wulgaryzm wobec osoby trzeciej) publikują się normalnie, ale AutoMod kieruje je do ręcznej decyzji moderatora — zero fałszywych banów.</p>
+          </div>
+          <div class="mod-tier">
+            <span class="mod-tier-badge low">Poziom 3 · AutoMod</span>
+            <strong>Natychmiastowa blokada i punkty</strong>
+            <p class="mod-desc">Ciężkie wulgarne wyzwiska personalne i obrażanie rodziny (§2.1, +2 pkt) oraz groźby przemocy, nawoływanie do samookaleczenia i doxxing (§2.3, +10 pkt) są blokowane od razu z jawnym wpisem w rejestrze.</p>
+          </div>
+        </div>
+      </section>
       <section class="mod-card">
         <h2 class="mod-section-title">Sztywny Taryfikator Punktowy (§1.1–§2.3)</h2>
         <div class="mod-table-wrap">
@@ -178,16 +198,16 @@
               <tr><td class="mod-code"><code>§1.1</code></td><td><strong>Spam, flood lub link komercyjny</strong><div class="mod-desc">Masowe powielanie treści, reklamy komercyjne lub flood na czacie live / w komentarzach.</div></td><td class="mod-pts">+2&nbsp;pkt</td></tr>
 <tr><td class="mod-code"><code>§1.2</code></td><td><strong>Koordynacja rajdu lub multikonta</strong><div class="mod-desc">Zorganizowane zwoływanie brygady z zewnętrznych komunikatorów lub zakładanie multikont do manipulacji.</div></td><td class="mod-pts">+4&nbsp;pkt</td></tr>
 <tr><td class="mod-code"><code>§1.3</code></td><td><strong>Phishing, złośliwe linki lub podszywanie</strong><div class="mod-desc">Rozsyłanie fałszywych stron logowania, skracaczy maskujących malware lub podszywanie się pod redakcję.</div></td><td class="mod-pts">+6&nbsp;pkt</td></tr>
-<tr><td class="mod-code"><code>§2.1</code></td><td><strong>Wulgarna obelga personalna</strong><div class="mod-desc">Bezpośrednie wyzwiska, inwektywy ad personam i poniżanie innych uczestników dyskusji.</div></td><td class="mod-pts">+2&nbsp;pkt</td></tr>
+<tr><td class="mod-code"><code>§2.1</code></td><td><strong>Ciężka wulgarna obelga personalna</strong><div class="mod-desc">Bezpośrednie ciężkie wulgarne wyzwiska ad personam lub obrażanie rodziny (ostra polemika bez wulgarnych ataków nie podlega karze).</div></td><td class="mod-pts">+2&nbsp;pkt</td></tr>
 <tr><td class="mod-code"><code>§2.2</code></td><td><strong>Prowokacja nienawiścią / dezorganizacja debaty</strong><div class="mod-desc">Systematyczne rozbijanie dyskusji mową nienawiści lub wulgarnym trollingiem (zero kar za same poglądy).</div></td><td class="mod-pts">+4&nbsp;pkt</td></tr>
-<tr><td class="mod-code"><code>§2.3</code></td><td><strong>Groźby karalne lub doxxing</strong><div class="mod-desc">Grożenie przemocą fizyczną, publikowanie prywatnych adresów, telefonów lub danych osobowych.</div></td><td class="mod-pts">+10&nbsp;pkt</td></tr>
+<tr><td class="mod-code"><code>§2.3</code></td><td><strong>Groźby karalne lub doxxing</strong><div class="mod-desc">Grożenie przemocą fizyczną, nawoływanie do samookaleczenia, publikowanie prywatnych adresów, telefonów lub PESEL.</div></td><td class="mod-pts">+10&nbsp;pkt</td></tr>
             </tbody>
           </table>
         </div>
       </section>
       <section id="moderationRegistryMount" class="mod-card">
         <h2 class="mod-section-title">Ostatnie jawne wpisy w rejestrze</h2>
-        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu przy aktywnym serwerze VERITY.</p>
+        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu przy aktywnym serwerze VERITY. Wulgarne słowa w publicznym logu są automatycznie maskowane.</p>
         <div class="mod-table-wrap">
           <table class="mod-table">
             <thead>
@@ -196,15 +216,15 @@
             <tbody id="moderationLogBody">
               <tr>
                 <td><strong>@Troll_Konto99</strong></td>
-                <td><code>§2.1</code> Wulgarna obelga personalna</td>
-                <td>„Ty jesteś chory psychicznie i nie umiesz czytać...”</td>
-                <td class="mod-decision warn">+2 pkt karne (4/10)</td>
+                <td><code>§2.1</code> Ciężka wulgarna obelga personalna (AutoMod)</td>
+                <td>„Twoja matka jest k***ą, w*********j stąd...”</td>
+                <td class="mod-decision warn">+2 pkt karne (4/10) · AutoMod</td>
               </tr>
               <tr>
                 <td><strong>@Prawica_PL</strong></td>
-                <td><code>ODRZUCONO</code> Zgłoszenie za „poglądy polityczne”</td>
-                <td>„Ta zmiana podatkowa oznacza wyższe koszty dla samorządów...”</td>
-                <td class="mod-decision ok">ODRZUCONO (Komentarz zostaje — zero kar za poglądy)</td>
+                <td><code>ODRZUCONO</code> Zgłoszenie za „poglądy / ostrą polemikę”</td>
+                <td>„Czy jesteś chory psychicznie? Ta zmiana podatkowa podniesie koszty samorządom...”</td>
+                <td class="mod-decision ok">ODRZUCONO (Treść zostaje — zero kar za poglądy i ostrą polemikę)</td>
               </tr>
             </tbody>
           </table>
@@ -255,7 +275,7 @@
 
   <script>window.VERITY_IS_MODERATION=true;window.VERITY_BASE="../";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
   <script src="../app.js?v=fd0891d2"></script>
-  <script src="../community.js?v=7bc8db68" defer></script>
+  <script src="../community.js?v=15d1c005" defer></script>
   <script src="../weather.js?v=23447f76" defer></script>
   
   

@@ -1491,8 +1491,28 @@ def _render_moderation_ssr(rel_root: str) -> str:
         <span>Pełna jawność decyzji</span>
       </div>
       <div class="mod-principle-box">
-        <strong>Zasada naczelna:</strong> Zero kar za poglądy polityczne czy gospodarcze. Usuwamy wyłącznie spam, rajdy multikont i wulgarne wyzwiska personalne według sztywnego taryfikatora. Przy <strong>6 pkt</strong> następuje automatyczne wyciszenie na 24h, a przy <strong>10 pkt</strong> blokada konta.
+        <strong>Zasada naczelna (moderacja częściowo automatyczna):</strong> Zero kar za poglądy polityczne, gospodarcze ani za ostrą polemikę (np. <em>„czy jesteś chory psychicznie?”</em> czy <em>„bredzisz”</em> nie podlegają blokadzie). <strong>AutoMod VERITY</strong> blokuje od razu wyłącznie ewidentne ciężkie wulgarne ataki personalne, obrażanie rodziny oraz groźby/doxxing; przypadki graniczne trafiają do ręcznej weryfikacji człowieka. Przy <strong>6 pkt</strong> następuje wyciszenie na 24h, a przy <strong>10 pkt</strong> blokada konta.
       </div>
+      <section class="mod-card">
+        <h2 class="mod-section-title">Jak działa 3-poziomowa moderacja VERITY</h2>
+        <div class="mod-tiers">
+          <div class="mod-tier">
+            <span class="mod-tier-badge ok">Poziom 1 · Swoboda debaty</span>
+            <strong>Przepuszczane bez ingerencji</strong>
+            <p class="mod-desc">Krytyka, sarkazm, ostre spory i riposty bez ciężkich wulgarnych wyzwisk (np. „czy jesteś chory psychicznie?”, „to kompletny absurd”) oraz zwykłe przekleństwa sytuacyjne nie skierowane w żadną osobę.</p>
+          </div>
+          <div class="mod-tier">
+            <span class="mod-tier-badge mid">Poziom 2 · Auto-flaga</span>
+            <strong>Kolejka do oceny człowieka</strong>
+            <p class="mod-desc">Treści graniczne (np. nagromadzenie ≥3 wulgaryzmów lub wulgaryzm wobec osoby trzeciej) publikują się normalnie, ale AutoMod kieruje je do ręcznej decyzji moderatora — zero fałszywych banów.</p>
+          </div>
+          <div class="mod-tier">
+            <span class="mod-tier-badge low">Poziom 3 · AutoMod</span>
+            <strong>Natychmiastowa blokada i punkty</strong>
+            <p class="mod-desc">Ciężkie wulgarne wyzwiska personalne i obrażanie rodziny (§2.1, +2 pkt) oraz groźby przemocy, nawoływanie do samookaleczenia i doxxing (§2.3, +10 pkt) są blokowane od razu z jawnym wpisem w rejestrze.</p>
+          </div>
+        </div>
+      </section>
       <section class="mod-card">
         <h2 class="mod-section-title">Sztywny Taryfikator Punktowy (§1.1–§2.3)</h2>
         <div class="mod-table-wrap">
@@ -1508,7 +1528,7 @@ def _render_moderation_ssr(rel_root: str) -> str:
       </section>
       <section id="moderationRegistryMount" class="mod-card">
         <h2 class="mod-section-title">Ostatnie jawne wpisy w rejestrze</h2>
-        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu przy aktywnym serwerze VERITY.</p>
+        <p class="mod-desc" style="margin-bottom:0.75rem">Lista aktualizuje się na żywo z bazy portalu przy aktywnym serwerze VERITY. Wulgarne słowa w publicznym logu są automatycznie maskowane.</p>
         <div class="mod-table-wrap">
           <table class="mod-table">
             <thead>
@@ -1517,15 +1537,15 @@ def _render_moderation_ssr(rel_root: str) -> str:
             <tbody id="moderationLogBody">
               <tr>
                 <td><strong>@Troll_Konto99</strong></td>
-                <td><code>§2.1</code> Wulgarna obelga personalna</td>
-                <td>„Ty jesteś chory psychicznie i nie umiesz czytać...”</td>
-                <td class="mod-decision warn">+2 pkt karne (4/10)</td>
+                <td><code>§2.1</code> Ciężka wulgarna obelga personalna (AutoMod)</td>
+                <td>„Twoja matka jest k***ą, w*********j stąd...”</td>
+                <td class="mod-decision warn">+2 pkt karne (4/10) · AutoMod</td>
               </tr>
               <tr>
                 <td><strong>@Prawica_PL</strong></td>
-                <td><code>ODRZUCONO</code> Zgłoszenie za „poglądy polityczne”</td>
-                <td>„Ta zmiana podatkowa oznacza wyższe koszty dla samorządów...”</td>
-                <td class="mod-decision ok">ODRZUCONO (Komentarz zostaje — zero kar za poglądy)</td>
+                <td><code>ODRZUCONO</code> Zgłoszenie za „poglądy / ostrą polemikę”</td>
+                <td>„Czy jesteś chory psychicznie? Ta zmiana podatkowa podniesie koszty samorządom...”</td>
+                <td class="mod-decision ok">ODRZUCONO (Treść zostaje — zero kar za poglądy i ostrą polemikę)</td>
               </tr>
             </tbody>
           </table>
