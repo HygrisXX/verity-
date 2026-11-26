@@ -3,49 +3,49 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://hygrisxx.github.io/verity-/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/moderacja/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/kamery/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/</loc>
-    <lastmod>2026-11-26T02:53:05+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/</loc>
-    <lastmod>2026-11-25T16:09:19+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:41+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,13 +69,13 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:44+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/</loc>
-    <lastmod>2026-11-26T03:57:31+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:42+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -153,9 +153,36 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:44+01:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wlodzimierz-skalik-prawa-reka-krola-idzie-po-wladze-kim-jest-mozg/</loc>
+    <lastmod>2026-11-26T05:01:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/skalik_braun.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jesien-sztuki-w-lodzi-to-jedno-z-kulturalnych-wydarzen-tego-roku-przed/</loc>
+    <lastmod>2026-11-26T05:01:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/koszty-floty-w-malej-firmie-ile-naprawde-kosztuje-paliwo-i-jak-firmy-je/</loc>
+    <lastmod>2026-11-26T05:01:41+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/pexels-04iraq-35736762-1.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali/</loc>
@@ -200,24 +227,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/Nocny-zblizenie-belki-swietlnej-POLICJA.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/80-lat-ludowych-zespolow-sportowych-w-polsce-historia-ktora-zaczela-sie/</loc>
-    <lastmod>2026-11-26T02:53:02+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/LZS-80-lat-1024x576-1.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/lodzkie-dla-bezpieczenstwa-rekordowe-2-5-mln-zl-na-systemy-lacznosci/</loc>
-    <lastmod>2026-11-26T02:53:02+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -429,7 +438,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tusk-do-nawrockiego-na-milosc-boga-nad-czym-tu-sie-zastanawiac/</loc>
-    <lastmod>2026-11-26T02:53:05+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -668,15 +677,6 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://s19.tvp.pl/images2/9/b/7/uid_9b708f57dffd414d8c50dbac9cd8c4a3_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/smiertelne-potracenie-pieszego-na-autostradzie-a2/</loc>
-    <lastmod>2026-11-25T19:55:31+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-nowa-trzcianka-ph9357719/alternates/LANDSCAPE_1280</image:loc>
     </image:image>
   </url>
   <url>
@@ -1194,7 +1194,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/macie-w-domu-kominek-jesli-tego-nie-zrobicie-wlepia-wam-wielka-kare-to/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1833,7 +1833,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/zegar-z-gorzowskiej-katedry-do-naprawy-czy-zdaza-na-jubileusz-miasta/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:44+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1923,7 +1923,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/fifa-zdecydowala-o-mundialu-w-2035-roku-48-druzyn-i-104-mecze-na-wyspach/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:44+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2787,7 +2787,7 @@
   </url>
   <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/final-szansy-na-sukces-kto-wygral-kto-pojedzie-do-opola/</loc>
-    <lastmod>2026-11-26T03:57:34+01:00</lastmod>
+    <lastmod>2026-11-26T05:01:45+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>

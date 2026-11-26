@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/wlodzimierz-skalik-prawa-reka-krola-idzie-po-wladze-kim-jest-mozg/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T05:01:42+01:00</news:publication_date>
+      <news:title>Włodzimierz Skalik: Prawa ręka „króla” idzie po władzę. Kim jest mózg partii Brauna?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/skalik_braun.jpg</image:loc>
+      <image:title>Włodzimierz Skalik: Prawa ręka „króla” idzie po władzę. Kim jest mózg partii Brauna?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jesien-sztuki-w-lodzi-to-jedno-z-kulturalnych-wydarzen-tego-roku-przed/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T05:01:42+01:00</news:publication_date>
+      <news:title>Jesień Sztuki w Łodzi. To jedno z kulturalnych wydarzeń tego roku. Przed nami polska premiera serialu wyproduk</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
+      <image:title>Jesień Sztuki w Łodzi. To jedno z kulturalnych wydarzeń tego roku. Przed nami polska premiera serialu wyproduk</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/koszty-floty-w-malej-firmie-ile-naprawde-kosztuje-paliwo-i-jak-firmy-je/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T05:01:41+01:00</news:publication_date>
+      <news:title>Koszty floty w małej firmie – ile naprawdę kosztuje paliwo i jak firmy je kontrolują</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://static.300gospodarka.pl/media/2026/11/pexels-04iraq-35736762-1.jpg</image:loc>
+      <image:title>Koszty floty w małej firmie – ile naprawdę kosztuje paliwo i jak firmy je kontrolują</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali/</loc>
     <news:news>
       <news:publication>
@@ -75,36 +120,6 @@
     <image:image>
       <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/Nocny-zblizenie-belki-swietlnej-POLICJA.webp</image:loc>
       <image:title>Śmiertelny wypadek na Mazowszu. Pieszy nie żyje, kierująca trafiła do szpitala</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/80-lat-ludowych-zespolow-sportowych-w-polsce-historia-ktora-zaczela-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T02:53:02+01:00</news:publication_date>
-      <news:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://opolska360.pl/wp-content/uploads/2026/11/LZS-80-lat-1024x576-1.jpg</image:loc>
-      <image:title>80 lat Ludowych Zespołów Sportowych w Polsce. Historia, która zaczęła się pod Opolem</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/lodzkie-dla-bezpieczenstwa-rekordowe-2-5-mln-zl-na-systemy-lacznosci/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T02:53:02+01:00</news:publication_date>
-      <news:title>Łódzkie dla bezpieczeństwa. Rekordowe 2,5 mln zł na systemy łączności dla OSP</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://www.radiozw.com.pl/wp-content/uploads/angwp/items/191977/31082026_face 36tys.jpg</image:loc>
-      <image:title>Łódzkie dla bezpieczeństwa. Rekordowe 2,5 mln zł na systemy łączności dla OSP</image:title>
     </image:image>
   </url>
   <url>
@@ -855,21 +870,6 @@
     <image:image>
       <image:loc>https://s19.tvp.pl/images2/9/b/7/uid_9b708f57dffd414d8c50dbac9cd8c4a3_width_1280_play_0_pos_0_gs_0_height_720.jpg</image:loc>
       <image:title>Ogromy pożar po wybuchu cysterny. Zginęło co najmniej 30 osób</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/smiertelne-potracenie-pieszego-na-autostradzie-a2/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T19:55:31+01:00</news:publication_date>
-      <news:title>Śmiertelne potrącenie pieszego na autostradzie A2</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-nowa-trzcianka-ph9357719/alternates/LANDSCAPE_1280</image:loc>
-      <image:title>Śmiertelne potrącenie pieszego na autostradzie A2</image:title>
     </image:image>
   </url>
   <url>
