@@ -631,6 +631,12 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
         f'<a class="{mkt_cls}" data-path="/rynki" href="{mkt_href}" '
         'onclick="return fixFileHref(event)">Rynki i pogoda</a>'
     )
+    rnk_cls = "path-chip active" if active_path == "/ranking" else "path-chip"
+    rnk_href = html.escape(_rel_href(rel_root, "/ranking"), quote=True)
+    out.append(
+        f'<a class="{rnk_cls}" data-path="/ranking" href="{rnk_href}" '
+        'onclick="return fixFileHref(event)">Ranking redakcji</a>'
+    )
     return "\n        ".join(out)
 
 
@@ -1276,6 +1282,18 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
             '</div>'
         )
 
+    syndicate_notice_html = ""
+    syn_groups = art.get("syndicate_groups") or []
+    indep_cnt = art.get("independent_sources_count")
+    if syn_groups and indep_cnt is not None and indep_cnt < len(srcs):
+        grp_strs = ", ".join(" i ".join(g) for g in syn_groups[:2])
+        syndicate_notice_html = (
+            '<div class="callout callout-syndicate">'
+            f'<strong>Wykryto przedruk depeszy:</strong> {html.escape(grp_strs)} publikują niemal identyczne brzmienie nagłówka '
+            f'(niezależne ujęcia: {int(indep_cnt)} z {len(srcs)} redakcji).'
+            '</div>'
+        )
+
     return f"""<div class="cat" style="--h:{hue}">
       <a class="back-link" href="{back_href}" onclick="return selectPathLink(event, '{html.escape(back_cat, quote=True)}')">← Wróć do {back_label}</a>
       <div class="reader has-aside">
@@ -1296,6 +1314,7 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
           {hero_html}
           {facts_html}
           {single_source_notice_html}
+          {syndicate_notice_html}
           {admin_note_html}
           {discrepancies_html}
           {declickbait_html}
@@ -2289,6 +2308,132 @@ def _render_info_page_ssr(rel_root: str, slug: str, title: str, body_html: str) 
     </div>"""
 
 
+def _render_ranking_ssr(rel_root: str, ranking: dict) -> str:
+    """Renderuje stronę /ranking/ — publiczny Ranking Rzetelności i Clickbaitu Redakcji."""
+    updated = html.escape((ranking.get("updated_iso") or "")[:16].replace("T", " "))
+    outlets = list(ranking.get("outlets") or [])
+    examples = list(ranking.get("clickbait_examples") or [])
+    total_outlets = int(ranking.get("outlets_ranked") or len(outlets))
+    zero_cb = int(ranking.get("zero_clickbait_outlets") or 0)
+    overall_cb = float(ranking.get("overall_clickbait_pct") or 0.0)
+    analyzed = int(ranking.get("articles_analyzed") or 0)
+
+    row_parts = []
+    for r in outlets:
+        o_name = r.get("outlet") or ""
+        score = float(r.get("reliability_score") or 0.0)
+        cb_pct = float(r.get("clickbait_pct") or 0.0)
+        agr_pct = float(r.get("avg_agreement_pct") or 0.0)
+        cnt = int(r.get("articles_count") or 0)
+        cb_cnt = int(r.get("clickbait_count") or 0)
+        prim = int(r.get("primary_count") or 0)
+        cb_cls = "chg-up" if cb_pct == 0 else ("chg-flat" if cb_pct <= 12 else "chg-down")
+        sc_cls = "ok" if score >= 88 else ("mid" if score >= 75 else "low")
+        row_parts.append(
+            f'<tr data-outlet="{html.escape(o_name, quote=True)}" data-score="{score:.1f}" data-cb="{cb_pct:.1f}" data-count="{cnt}">'
+            f'<td class="rank-pos">{int(r.get("rank") or 0)}</td>'
+            f'<td><strong>{html.escape(o_name)}</strong><div class="mkt-sub-name">Relacja wiodąca: {prim}×</div></td>'
+            f'<td class="num">{cnt}</td>'
+            f'<td class="num">{agr_pct:.1f}%</td>'
+            f'<td class="num"><span class="mkt-chg-pill {cb_cls}">{cb_pct:.1f}% ({cb_cnt})</span></td>'
+            f'<td class="num"><div class="rank-score-wrap"><span class="rank-score-bar {sc_cls}"><span style="width:{min(100, int(round(score)))}%"></span></span><strong>{score:.1f}</strong></div></td>'
+            f'</tr>'
+        )
+    rows_html = "".join(row_parts) or '<tr><td colspan="6">Brak danych rankingu.</td></tr>'
+
+    wall_items = []
+    for ex in examples[:12]:
+        ex_url = (ex.get("seo_url") or "").strip("/")
+        ex_href = html.escape(_rel_href(rel_root, "/" + ex_url), quote=True) if ex_url else ""
+        link_html = (
+            f'<a class="cb-wall-link" href="{ex_href}" onclick="return fixFileHref(event)">Zobacz opracowanie VERITY →</a>'
+            if ex_href
+            else ""
+        )
+        wall_items.append(
+            f'<div class="cb-wall-card">'
+            f'<div class="cb-wall-meta"><strong>{html.escape(ex.get("outlet",""))}</strong><span>{html.escape(ex.get("display_date",""))}</span></div>'
+            f'<div class="cb-strike">„{html.escape(pl_typography(ex.get("original","")))}”</div>'
+            f'<div class="cb-fact">→ {html.escape(pl_typography(ex.get("fact","")))}</div>'
+            f'{link_html}'
+            f'</div>'
+        )
+    wall_html = (
+        f'<section id="sciana-clickbaitu" class="mkt-panel">'
+        f'<div class="panel-head-row"><div><h2>Ściana odfiltrowanego clickbaitu</h2>'
+        f'<p class="panel-sub">Autentyczne nagłówki źródeł z bieżącej bazy i ich neutralne odpowiedniki VERITY.</p></div>'
+        f'<span class="mkt-badge">{len(wall_items)} przykładów</span></div>'
+        f'<div class="cb-wall-grid">{"".join(wall_items)}</div></section>'
+        if wall_items
+        else ""
+    )
+
+    return f"""<div class="markets-page ranking-page">
+      <div class="feed-meta">
+        <div>
+          <span class="feed-crumb">/ranking</span>
+          <h1>Ranking rzetelności i clickbaitu redakcji</h1>
+        </div>
+        <span class="mkt-updated">Próba: {analyzed} tematów · Aktualizacja: {updated or "—"}</span>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-top"><span class="kpi-name">Ocenione redakcje</span><span class="kpi-tag">min. 2 tematy</span></div>
+          <div class="kpi-val">{total_outlets}</div>
+          <div class="kpi-foot"><span class="kpi-sub">Z aktywnych 151 redakcji w Polsce</span></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-top"><span class="kpi-name">Redakcje 0% clickbaitu</span><span class="kpi-tag">Czyste tytuły</span></div>
+          <div class="kpi-val">{zero_cb}</div>
+          <div class="kpi-foot"><span class="mkt-chg-pill chg-up">{round((zero_cb / max(1, total_outlets)) * 100)}% rankingu</span></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-top"><span class="kpi-name">Średni clickbait w nagłówkach</span><span class="kpi-tag">Wszystkie źródła</span></div>
+          <div class="kpi-val">{overall_cb:.1f}%</div>
+          <div class="kpi-foot"><span class="kpi-sub">Odfiltrowywany automatycznie w VERITY</span></div>
+        </div>
+      </div>
+
+      <section class="mkt-panel">
+        <div class="panel-head-row">
+          <div>
+            <h2>Tabela rzetelności redakcji</h2>
+            <p class="panel-sub">Indeks VERITY (0–100) = 55% zgodności z konsensusem + 35% czystości tytułów (brak clickbaitu) + 10% skali publikacji.</p>
+          </div>
+          <div class="rank-controls">
+            <input id="rankingSearch" type="search" class="rank-search-input" placeholder="Szukaj redakcji…" aria-label="Szukaj redakcji w rankingu" />
+            <div class="rank-sort-group" role="group" aria-label="Sortowanie rankingu">
+              <button type="button" class="jump-pill active" data-rank-sort="score">Indeks VERITY</button>
+              <button type="button" class="jump-pill" data-rank-sort="cb_asc">Najmniej clickbaitu</button>
+              <button type="button" class="jump-pill" data-rank-sort="cb_desc">Najwięcej clickbaitu</button>
+              <button type="button" class="jump-pill" data-rank-sort="count">Liczba tematów</button>
+            </div>
+          </div>
+        </div>
+        <div class="mkt-table-wrap">
+          <table class="mkt-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Redakcja</th>
+                <th class="num">Tematy</th>
+                <th class="num">Zgodność</th>
+                <th class="num">Clickbait</th>
+                <th class="num">Indeks VERITY</th>
+              </tr>
+            </thead>
+            <tbody id="rankingTableBody">{rows_html}</tbody>
+          </table>
+        </div>
+      </section>
+
+      {wall_html}
+
+      <p class="cam-legal-note">Ranking jest obliczany automatycznie w każdym cyklu wyłącznie na podstawie twardych, powtarzalnych reguł (bez subiektywnych ocen redaktorskich).</p>
+    </div>"""
+
+
 def _page_shell(
     *,
     title: str,
@@ -2462,6 +2607,7 @@ def _page_shell(
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="{html.escape(rel_root, quote=True)}ranking/" onclick="return fixFileHref(event)">Ranking redakcji (/ranking)</a>
         <a href="{html.escape(rel_root, quote=True)}rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
         <a href="{html.escape(rel_root, quote=True)}kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="{html.escape(rel_root, quote=True)}moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
@@ -2483,6 +2629,7 @@ def _page_shell(
   <script src="{html.escape(rel_root, quote=True)}community.js?v={html.escape(comm_ver, quote=True)}" defer></script>
   {f'<script src="{html.escape(rel_root, quote=True)}cameras.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cameras.js")), quote=True)}" defer></script>' if active_path == "/kamery" else ""}
   {f'<script src="{html.escape(rel_root, quote=True)}markets.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "markets.js")), quote=True)}" defer></script>' if active_path == "/rynki" else ""}
+  {f'<script src="{html.escape(rel_root, quote=True)}ranking.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ranking.js")), quote=True)}" defer></script>' if active_path == "/ranking" else ""}
 </body>
 </html>
 """
@@ -2878,6 +3025,35 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     )
     _write_file(os.path.join(base_dir, "rynki", "index.html"), mkt_html)
 
+    # 3d2. Strona Rankingu Rzetelności i Clickbaitu Redakcji (/ranking/)
+    import outlet_ranking as _or
+    rnk_data = _or.load_outlet_ranking(base_dir)
+    if not rnk_data.get("outlets"):
+        rnk_data = _or.compute_outlet_ranking(articles)
+    rnk_html = _page_shell(
+        title="Ranking rzetelności i clickbaitu redakcji — VERITY",
+        description="Automatyczny ranking polskich redakcji: wskaźnik clickbaitu w tytułach, zgodność faktograficzna z konsensusem i ściana odfiltrowanego clickbaitu.",
+        canonical_url=f"{site_base_url}/ranking/",
+        og_type="website",
+        og_image=first_thumb,
+        og_image_dims=first_thumb_dims,
+        json_ld_obj={
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Ranking rzetelności i clickbaitu redakcji — VERITY",
+            "url": f"{site_base_url}/ranking/",
+        },
+        rel_root="../",
+        active_path="/ranking",
+        ssr_main_html=_render_ranking_ssr("../", rnk_data),
+        init_script_vars=f'window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/ranking";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+        css_ver=css_ver,
+        js_ver=js_ver,
+        comm_ver=comm_ver,
+        pending_count=pending_badge_total,
+    )
+    _write_file(os.path.join(base_dir, "ranking", "index.html"), rnk_html)
+
     # 3e. Strony transparentności i prawne (/metodologia/, /o-nas/, /polityka-prywatnosci/, /zglos-blad/)
     for info_slug, info_title, info_desc, info_body in _INFO_PAGES:
         info_html = _page_shell(
@@ -3062,6 +3238,12 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         "  </url>",
         "  <url>",
         f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/rynki/')}</loc>",
+        f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
+        "    <changefreq>hourly</changefreq>",
+        "    <priority>0.8</priority>",
+        "  </url>",
+        "  <url>",
+        f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/ranking/')}</loc>",
         f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
         "    <changefreq>hourly</changefreq>",
         "    <priority>0.8</priority>",

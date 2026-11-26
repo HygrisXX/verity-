@@ -3413,6 +3413,70 @@ class TestLegalComplianceAndRegexGuards(unittest.TestCase):
             uniq_used = len({a.get("media_file") for a in arts if a.get("media_file")})
             self.assertGreaterEqual(uniq_used, 70, f"Za mała różnorodność zdjęć w bazie: {uniq_used}")
 
+    def test_market_loader_feeds_and_blocked_sources(self):
+        import market_loader
+        feeds = market_loader.load_market_feeds("pl", base_dir=ROOT_DIR)
+        self.assertGreaterEqual(len(feeds), 150)
+        with mock.patch.object(market_loader, "load_market_config", return_value={"market": "pl", "feeds_file": "pl_feeds.json", "blocked_sources": ["Onet Wiadomości"]}):
+            filtered = market_loader.load_market_feeds("pl", base_dir=ROOT_DIR)
+        self.assertEqual(len(filtered), len(feeds) - 1)
+        self.assertFalse(any(f.get("name") == "Onet Wiadomości" for f in filtered))
+
+    def test_promo_black_friday_ad_blacklisted(self):
+        self.assertTrue(uln.is_opinion_or_blacklisted("Aktywuj się 50% taniej na Black Friday [ Wiadomości ]", "https://example.pl/promo"))
+        self.assertFalse(uln.is_opinion_or_blacklisted("Pożar w centrum krwiodawstwa w Poznaniu. 10 zastępów straży", "https://epoznan.pl/news"))
+
+    def test_syndicate_reprint_detection(self):
+        persps = [
+            {"outlet": "Onet Wiadomości", "summary": "Sejm przyjął ustawę budżetową na 2027 rok głosami koalicji"},
+            {"outlet": "Interia Wydarzenia", "summary": "Sejm przyjął ustawę budżetową na 2027 rok głosami koalicji"},
+            {"outlet": "Rzeczpospolita", "summary": "Deficyt budżetowy w 2027 roku zatwierdzony przez parlament"},
+        ]
+        indep, groups = ai_synthesizer.count_independent_sources(persps)
+        self.assertEqual(indep, 2)
+        self.assertEqual(len(groups), 1)
+        self.assertIn("Onet Wiadomości", groups[0])
+        self.assertIn("Interia Wydarzenia", groups[0])
+
+    def test_outlet_ranking_computation_and_ssr_page(self):
+        import outlet_ranking
+        sample_arts = [
+            {
+                "status": "AUTO_PUBLISHED",
+                "seo_title": "Ceny prądu w 2027 r. bez zmian",
+                "seo_url": "/Polska/Energetyka/ceny-pradu",
+                "display_date": "26.11.2026",
+                "fact_agreement_pct": 94,
+                "declickbait": [{"outlet": "Tabloid.pl", "original": "SZOK! Nie uwierzysz, co z prądem!!", "fact": "Ceny prądu w 2027 r. bez zmian"}],
+                "perspectives": [
+                    {"outlet": "Rzetelna.pl", "summary": "URE zatwierdził taryfy na energię elektryczną na 2027 rok"},
+                    {"outlet": "Tabloid.pl", "summary": "SZOK! Nie uwierzysz, co z prądem!!"},
+                ],
+            },
+            {
+                "status": "AUTO_PUBLISHED",
+                "seo_title": "Nowy most w Krakowie otwarty",
+                "seo_url": "/Polska/Regiony/Malopolskie/most",
+                "display_date": "26.11.2026",
+                "fact_agreement_pct": 90,
+                "declickbait": [],
+                "perspectives": [
+                    {"outlet": "Rzetelna.pl", "summary": "Otwarto nowy most drogowy w Krakowie"},
+                    {"outlet": "Tabloid.pl", "summary": "PILNE! Zobacz, co otworzyli w Krakowie!!"},
+                ],
+            },
+        ]
+        rnk = outlet_ranking.compute_outlet_ranking(sample_arts, clickbait_checker=uln._is_clickbait_title)
+        self.assertEqual(rnk["outlets_ranked"], 2)
+        self.assertEqual(rnk["outlets"][0]["outlet"], "Rzetelna.pl")
+        self.assertEqual(rnk["outlets"][0]["clickbait_pct"], 0.0)
+        self.assertGreater(rnk["outlets"][0]["reliability_score"], rnk["outlets"][1]["reliability_score"])
+        self.assertEqual(len(rnk["clickbait_examples"]), 1)
+        html_out = seo_builder._render_ranking_ssr("../", rnk)
+        self.assertIn("Ranking rzetelności i clickbaitu redakcji", html_out)
+        self.assertIn("Rzetelna.pl", html_out)
+        self.assertIn("Ściana odfiltrowanego clickbaitu", html_out)
+
 
 if __name__ == "__main__":
     unittest.main()

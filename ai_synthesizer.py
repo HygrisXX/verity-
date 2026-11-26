@@ -322,6 +322,52 @@ def detect_numeric_discrepancies(art: dict, candidates: list | None = None) -> l
     return discrepancies[:3]
 
 
+def count_independent_sources(perspectives: list) -> tuple[int, list]:
+    """
+    Wykrywa przedruki niemal identycznych tytułów/depesz (Jaccard >= 0.80 na słowach kluczowych)
+    i liczy faktyczną liczbę niezależnych redakcji.
+    Zwraca (independent_count, syndicate_groups).
+    """
+    persps = [p for p in (perspectives or []) if (p.get("outlet") or "").strip()]
+    if len(persps) <= 1:
+        return len(persps), []
+
+    tok_sets = []
+    for p in persps:
+        raw = _norm_ascii(p.get("summary") or "")
+        toks = {w for w in re.findall(r"[a-z0-9]{4,}", raw) if w not in _STOP_FOCUS}
+        tok_sets.append(toks)
+
+    parent = list(range(len(persps)))
+
+    def _find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    for i in range(len(persps)):
+        if len(tok_sets[i]) < 4:
+            continue
+        for j in range(i + 1, len(persps)):
+            if len(tok_sets[j]) < 4:
+                continue
+            inter = len(tok_sets[i] & tok_sets[j])
+            union = len(tok_sets[i] | tok_sets[j])
+            if union > 0 and (inter / union) >= 0.80:
+                ri, rj = _find(i), _find(j)
+                if ri != rj:
+                    parent[rj] = ri
+
+    groups = {}
+    for idx, p in enumerate(persps):
+        root = _find(idx)
+        groups.setdefault(root, []).append(p["outlet"].strip())
+
+    syndicate_groups = [g for g in groups.values() if len(g) >= 2]
+    return len(groups), syndicate_groups
+
+
 def enrich_seo_title_deterministic(
     base_title: str,
     ranked_group: list,
@@ -1139,6 +1185,9 @@ def enhance_article_narrative_and_seo(
         art, candidates=ranked_group, perspectives=art.get("perspectives") or []
     )
     art["discrepancies"] = detect_numeric_discrepancies(art, candidates=ranked_group)
+    indep_cnt, syn_groups = count_independent_sources(art.get("perspectives") or [])
+    art["independent_sources_count"] = indep_cnt
+    art["syndicate_groups"] = syn_groups
     if not (art.get("ai_synthesized") and art.get("seo_faq")):
         art["seo_faq"] = generate_seo_faq_deterministic(art, art.get("full_sections") or [], impact=impact)
 

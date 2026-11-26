@@ -1813,3 +1813,96 @@ blockquote.section-paragraph.source-quote {
   .market-ticker { display: none !important; }
 }
 
+
+/* ==========================================================================
+   VERITY — Ranking redakcji (/ranking/) oraz nota przedruku depesz
+   ========================================================================== */
+.callout-syndicate {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  padding: 0.78rem 1rem;
+  border-radius: 8px;
+  margin: 0.85rem 0;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+.rank-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.rank-search-input {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 0.84rem;
+  min-width: 190px;
+}
+.rank-sort-group { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.rank-sort-group .jump-pill { cursor: pointer; font-family: inherit; }
+.rank-sort-group .jump-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+.rank-pos {
+  width: 34px;
+  font-weight: 800;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.rank-score-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  justify-content: flex-end;
+}
+.rank-score-bar {
+  display: inline-block;
+  width: 66px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+.rank-score-bar > span { display: block; height: 100%; border-radius: 999px; }
+.rank-score-bar.ok > span { background: var(--success); }
+.rank-score-bar.mid > span { background: var(--warning); }
+.rank-score-bar.low > span { background: var(--danger); }
+
+.cb-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.85rem;
+}
+.cb-wall-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.cb-wall-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.cb-wall-meta strong { color: var(--text-main); }
+.cb-wall-link {
+  margin-top: auto;
+  padding-top: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.cb-wall-link:hover { text-decoration: underline; }

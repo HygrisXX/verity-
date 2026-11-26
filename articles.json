@@ -99,7 +99,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:MAN_TGM_fire_engine_at_night,_Warsaw,_Poland.jpg",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 588718028,
@@ -200,7 +202,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:DSC08246_Memorial_Stones_for_the_Citizens_of_%C5%81%C3%B3d%C5%BA,_Poland,_2025-09.jpg",
-    "media_label": "Łódź, woj. łódzkie"
+    "media_label": "Łódź, woj. łódzkie",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1074000472,
@@ -301,7 +305,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lotnicze_Pogotowie_Ratunkowe,_%C5%9Bmig%C5%82owiec_SP-HXR.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 8572554,
@@ -401,7 +407,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 303947456,
@@ -501,7 +509,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 986548227,
@@ -602,7 +612,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Valero_refinery,_Port_Arthur_TX,_historical_plaque.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 315747352,
@@ -701,7 +713,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1666101463,
@@ -813,7 +827,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 721903990,
@@ -924,6 +940,8 @@
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stra%C5%BC_Graniczna_i_z%C5%82apani_przemytnicy_NAC_6462.jpg",
     "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 3,
+    "syndicate_groups": [],
     "dossier_title": "Rakiety · uderzyły",
     "dossier_count": 2,
     "dossier_index": 2,
@@ -957,13 +975,13 @@
     "updated_iso": "2026-11-26T17:11:07+01:00",
     "display_date": "26.11.2026, 17:11",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": null,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "1 redakcja"
       },
       {
         "label": "Kategoria",
@@ -975,25 +993,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "1 źródło (lokalne/niszowe)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Wzmianka źródłowa (Radio Olsztyn)",
         "paragraphs": [
-          "Przez cały najbliższy weekend odbędzie się kolejna edycja przedświątecznej zbiórki żywności organizowana przez Banki Żywności. W inicjatywę włączył się także Susz, w którym w ubiegłym roku udało się zebrać prawie pół tony żywności dla potrzebujących. Zbiórka będzie prowadzona w sklepach przez cały piątek i sobotę. [Źródło: Radio Olsztyn, PortEl.pl]",
-          "W Suszu w inicjatywę pomocy potrzebującym włączą się między innymi harcerze i wolontariusze tutejszego Środowiskowego Domu Samopomocy, którzy będą zachęcać mieszkańców do podzielenia się zakupionymi produktami z innymi. [Źródło: Radio Olsztyn]",
-          "Do specjalnie oznakowanych koszy przy wejściach do sklepów wolontariusze Banku Żywności będą czekać przede wszystkim na pozostawione przez darczyńców produkty z długim terminem przydatności do spożycia. [Źródło: Radio Olsztyn, PortEl.pl]",
-          "Chodzi między innymi o makaron, mąkę, ryż i kaszę, konserwy oraz dania w słoikach, owocowe i warzywne przetwory, ale także olej, cukier, kawę, herbatę oraz słodycze i świąteczne smakołyki. [Źródło: Radio Olsztyn, PortEl.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Możemy to włożyć do oznakowanego kosza wychodząc ze sklepu. Ofiarowane produkty trafią do organizacji charytatywnych, które przygotowują paczki świąteczne dla swoich podopiecznych.",
-          "W Elblągu pomagamy potrzebującym wszyscy razem: Bank Żywności, Caritas, inne organizacji pomocowe – bez podziału na poglądy polityczne czy pochodzenie: wszędzie są osoby i rodziny potrzebujące pomocy, a dobre serca biją w ludziach niezależnie od ich poglądów. [Źródło: PortEl.pl]"
+          "Przez cały najbliższy weekend odbędzie się kolejna edycja przedświątecznej zbiórki żywności organizowana przez Banki Żywności. W inicjatywę włączył się także Susz, w którym w ubiegłym roku udało się zebrać prawie pół tony żywności dla potrzebujących. [Źródło: Radio Olsztyn]"
         ]
       }
     ],
@@ -1002,28 +1010,17 @@
         "outlet": "Radio Olsztyn",
         "angle": "Relacja wiodąca",
         "summary": "Banki Żywności ruszają z przedświąteczną zbiórką. Susz włącza się do akcji",
-        "url": "https://radioolsztyn.pl/banki-zywnosci-ruszaja-z-przedswiateczna-zbiorka-susz-wlacza-sie-do-akcji/01903212",
-        "focus": "Wyróżnia własne wątki i pojęcia: ruszają, włącza, akcji.",
-        "omits": "Pomija kontekst (charytatywnych, podopiecznych, przygotowują) rozwijany w PortEl.pl."
-      },
-      {
-        "outlet": "PortEl.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Świąteczna zbiórka żywności [ Wiadomości ]",
-        "url": "https://www.portel.pl/wiadomosci/swiateczna-zbiorka-zywnosci/152006",
-        "focus": "Wyróżnia własne wątki i pojęcia: Możemy, włożyć, kosza.",
-        "omits": "Pomija kontekst (Środowiskowego, mieszkańców, podzielenia) rozwijany w Radio Olsztyn."
+        "url": "https://radioolsztyn.pl/banki-zywnosci-ruszaja-z-przedswiateczna-zbiorka-susz-wlacza-sie-do-akcji/01903212"
       }
     ],
     "sources": [
-      "PortEl.pl",
       "Radio Olsztyn"
     ],
     "corrections": [],
     "impact": {
       "audience": "Mieszkańcy Warmii i Mazur",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Doniesienie lokalne / branżowe"
     },
     "seo_faq": [
       {
@@ -1146,7 +1143,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Farm_track_and_wheat_fields_-_geograph.org.uk_-_5038194.jpg",
-    "media_label": "Rolnictwo i żywność"
+    "media_label": "Rolnictwo i żywność",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1845238236,
@@ -1248,7 +1247,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rynek-POL,_Rzesz%C3%B3w.jpg",
-    "media_label": "Podkarpacie (zdjęcie ilustracyjne)"
+    "media_label": "Podkarpacie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 278225848,
@@ -1357,7 +1358,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lviv_Old_Town_Street.JPG",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1531939302,
@@ -1456,7 +1459,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 410652498,
@@ -1569,7 +1574,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Osiedle_Nikiszowiec,_Katowice,001,_2021-3.jpg",
-    "media_label": "Śląsk (zdjęcie ilustracyjne)"
+    "media_label": "Śląsk (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 901637471,
@@ -1680,209 +1687,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Czech_Leopard_2A4_tank_043_during_NATO_Days_2026,_Ostrava,_20260919_0956_0635.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
-  },
-  {
-    "id": 1161536813,
-    "path": "/Polska/Gospodarka",
-    "seo_url": "/Polska/Gospodarka/aktywuj-sie-50-taniej-na-black-friday-wiadomosci",
-    "seo_title": "Aktywuj się 50% taniej na Black Friday [ Wiadomości ]",
-    "summary_lead": "Do sprzedawców wraca średnio co piąte ubranie kupione online, a w przypadku obuwia nawet 30 proc. – wylicza Europejska Agencja Środowiska.",
-    "meta_description": "Do sprzedawców wraca średnio co piąte ubranie kupione online, a w przypadku obuwia nawet 30 proc. – wylicza Europejska Agencja Środowiska.",
-    "keywords": "Gospodarka, Aktywuj, taniej, Black, Friday",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-26T17:10:59+01:00",
-    "updated_iso": "2026-11-26T17:10:59+01:00",
-    "display_date": "26.11.2026, 17:10",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "10 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska/Gospodarka"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "300Gospodarka"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (10 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (10 redakcji)",
-        "paragraphs": [
-          "Do sprzedawców wraca średnio co piąte ubranie kupione online, a w przypadku obuwia nawet 30 proc. – wylicza Europejska Agencja Środowiska. Tegoroczny Black Friday będzie pierwszym po wejściu w życie unijnego zakazu niszczenia niesprzedanej odzieży i obuwia przez duże firmy. [Źródło: 300Gospodarka, PurePC, naTemat.pl, Telepolis.pl]",
-          "Od 19 lipca 2026 r. duże przedsiębiorstwa działające w UE muszą szukać innych sposobów zagospodarowania niesprzedanej odzieży i obuwia. Fala zwrotów po listopadowych promocjach od dawna obciąża sklepy internetowe i magazyny. Konsument ma 14 dni na odstąpienie od umowy bez podania przyczyny. [Źródło: 300Gospodarka]",
-          "Dodatkowo promocje sprzyjają zamawianiu kilku rozmiarów tego samego produktu z zamiarem odesłania części z nich. Teraz zwróconego lub niesprzedanego towaru duzi sprzedawcy nie mogą już po prostu usunąć z magazynu poprzez jego zniszczenie. W wielu różnych sklepach i serwisach już ruszyły promocje w ramach Black Friday, w tym na Epic Games Store. [Źródło: 300Gospodarka, PurePC, PortEl.pl, Rzeszow-News.pl, Telepolis.pl]",
-          "Świdnicki butik outletowy Price & Style udowadnia to na co dzień, a z okazji Black Friday przygotował dla klientów coś wyjątkowego i nie tylko do 30 listopada! Z okazji największego święta zakupów w salonach Pan Materac przygotowane zostały atrakcyjne rabaty sięgające nawet 50% na wybrane materace. [Źródło: Świdnica24.pl, Rzeszow-News.pl]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Na platformie sporo się dzieje, i nie mówię tylko o nader częstych okazjach na zakup wybranych pozycji w niższych cenach. Plany rozwoju są dosyć ambitne, co pokazał pierwszy w historii firmy showcase. Zatem przyszłość rysuje się całkiem obiecująco, a tymczasem rozpisujemy co ciekawsze oferty. [Źródło: PurePC]",
-          "W piątek, 27 listopada, Miejski Ośrodek Sportu i Rekreacji w Elblągu przygotował specjalną ofertę dla wszystkich miłośników aktywności fizycznej. Tylko tego dnia na piątkowe zajęcia programu „Aktywuj się z MOSiR-em” obowiązywać będzie 50% zniżki! Na początek proponujemy Turbo Spalanie MIX o godz. 17:30 w górnej sali fitness na Lodowisku Helena przy ul. Karowej 1. [Źródło: PortEl.pl]",
-          "Guess, Tommy Hilfiger, Calvin Klein, Liu Jo, Armani, a może Max Mara? Markowa moda nie musi oznaczać wysokich cen. [Źródło: Świdnica24.pl]",
-          "To idealny moment, aby wymienić dotychczasowy materac na nowy model, zapewnić sobie lepsze warunki do nocnego wypoczynku i skorzystać z oszczędności. Odwiedź salony Pan Materac, poznaj szczegóły oferty Black Friday i wybierz rozwiązanie dopasowane do swoich potrzeb! [Źródło: Rzeszow-News.pl]",
-          "Zanim zapłacisz za upatrzony produkt, upewnij się, że sklep jest wiarygodny. W okresie wielkich wyprzedaży łatwo natknąć się na internetowe oszustwa, których celem jest kradzież pieniędzy i danych. W ochronie przed zagrożeniami może pomóc mObywatel. [Źródło: naTemat.pl]",
-          "Zwykle kojarzymy je z polowaniem na elektronikę czy inne gadżety, a także z zastanawianiem się, czy rabat faktycznie jest tak atrakcyjny, jak obiecuje czerwony baner. [Źródło: CHIP.pl]",
-          "Fonia proponuje też sposób na odzyskanie części wydatków poniesionych w Internecie. Podwyższone zwroty dotyczą zakupów online w ponad 600 sklepach dostępnych w aplikacji Fonia.app. Warto pamiętać, że klienci Fonia Telecom otrzymują standardowo dwa razy więcej punktów niż pozostali użytkownicy programu. [Źródło: Telepolis.pl]",
-          "Canon uruchomił w Polsce cashback na drukarki – promocja obejmuje aż 19 wariantów. [Źródło: Antyweb.pl]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "300Gospodarka",
-        "angle": "Raport rynkowy",
-        "summary": "Co piąte ubranie wraca do sklepu. Ten Black Friday będzie inny niż poprzednie",
-        "url": "https://300gospodarka.pl/news/co-piate-ubranie-wraca-do-sklepu-ten-black-friday-bedzie-inny-niz-poprzednie",
-        "focus": "Eksponuje dane (2026) oraz wątki: sklepu, inny.",
-        "omits": "Pomija wyliczenia (550 zł) przytaczane przez Antyweb.pl."
-      },
-      {
-        "outlet": "PurePC",
-        "angle": "Kontekst technologiczny",
-        "summary": "Black Friday rozpoczyna się na GOG-u. Przegląd najciekawszych promocji w sklepie",
-        "url": "https://www.purepc.pl/black-friday-gog-przeglad-promocje",
-        "focus": "Podkreśla konkretne liczby (30 proc.) w ujęciu: kontekst technologiczny.",
-        "omits": "Pomija wyliczenia (50%, 550 zł) przytaczane przez 300Gospodarka, PortEl.pl."
-      },
-      {
-        "outlet": "PortEl.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Aktywuj się 50% taniej na Black Friday [ Wiadomości ]",
-        "url": "https://www.portel.pl/wiadomosci/aktywuj-sie-50-taniej-na-black-friday/152040",
-        "focus": "Podkreśla konkretne liczby (50%) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (30 proc., 550 zł) przytaczane przez 300Gospodarka, PurePC."
-      },
-      {
-        "outlet": "Świdnica24.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Black Friday trwa w Świdnicy! Markowe ubrania i dodatki jeszcze taniej w Price & Style",
-        "url": "https://swidnica24.pl/2026/11/black-friday-trwa-w-swidnicy-markowe-ubrania-i-dodatki-jeszcze-taniej-w-price-style/",
-        "focus": "Podkreśla konkretne liczby (50%) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (30 proc., 550 zł) przytaczane przez 300Gospodarka, PurePC."
-      },
-      {
-        "outlet": "Rzeszow-News.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Black Friday w salonach Pan Materac – rabaty do 50%!",
-        "url": "https://rzeszow-news.pl/black-friday-w-salonach-pan-materac-rabaty-do-50-2/",
-        "focus": "Podkreśla konkretne liczby (50%) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (30 proc., 550 zł) przytaczane przez 300Gospodarka, PurePC."
-      },
-      {
-        "outlet": "Puls Biznesu",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Black Friday wyłącza racjonalne myślenie. Przekreślona cena zmienia wydatek w rzekomą oszczędność",
-        "url": "https://www.pb.pl/black-friday-wylacza-racjonalne-myslenie-przekreslona-cena-zmienia-wydatek-w-rzekoma-oszczednosc-1271139",
-        "focus": "Wyróżnia własne wątki i pojęcia: wyłącza, racjonalne, myślenie.",
-        "omits": "Pomija wyliczenia (30 proc., 50%) przytaczane przez 300Gospodarka, PurePC."
-      },
-      {
-        "outlet": "naTemat.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Black Friday to nie tylko okazje. Zanim zapłacisz, zrób to w aplikacji mObywatel",
-        "url": "https://natemat.pl/677050,black-friday-to-nie-tylko-okazje-zanim-zaplacisz-zrob-to-w-aplikacji-mobywatel",
-        "focus": "Podkreśla konkretne liczby (30 proc.) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (50%, 550 zł) przytaczane przez 300Gospodarka, PortEl.pl."
-      },
-      {
-        "outlet": "CHIP.pl",
-        "angle": "Kontekst technologiczny",
-        "summary": "Nie tylko polowanie na przecenioną elektronikę. Plush i Plus rozdają zapas gigabajtów na Black Friday",
-        "url": "https://www.chip.pl/2026/11/plush-i-plus-rozdaja-zapas-gigabajtow-na-black-friday",
-        "focus": "Wyróżnia własne wątki i pojęcia: polowanie, przecenioną, elektronikę.",
-        "omits": "Pomija wyliczenia (30 proc., 50%) przytaczane przez 300Gospodarka, PurePC."
-      },
-      {
-        "outlet": "Telepolis.pl",
-        "angle": "Kontekst technologiczny",
-        "summary": "Fonia ma coś na Black Friday. Skorzystają też klienci innych sieci",
-        "url": "https://www.telepolis.pl/wiadomosci/fonia-black-friday-2026-wiecej-punktow-za-zakupy",
-        "focus": "Podkreśla konkretne liczby (30 proc.) w ujęciu: kontekst technologiczny.",
-        "omits": "Pomija wyliczenia (50%, 550 zł) przytaczane przez 300Gospodarka, PortEl.pl."
-      },
-      {
-        "outlet": "Antyweb.pl",
-        "angle": "Kontekst technologiczny",
-        "summary": "Drukarka z cashbackiem do 550 zł. Canon rusza z promocją na Black Friday",
-        "url": "https://antyweb.pl/drukarka-z-cashbackiem-do-550-zl-canon-rusza-z-promocja-na-black-friday",
-        "focus": "Eksponuje dane (550 zł) oraz wątki: Drukarka, cashbackiem.",
-        "omits": "Pomija wyliczenia (30 proc., 50%) przytaczane przez 300Gospodarka, PurePC."
-      }
-    ],
-    "sources": [
-      "300Gospodarka",
-      "Antyweb.pl",
-      "CHIP.pl",
-      "PortEl.pl",
-      "Puls Biznesu",
-      "PurePC",
-      "Rzeszow-News.pl",
-      "Telepolis.pl",
-      "naTemat.pl",
-      "Świdnica24.pl"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: naTemat.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://natemat.pl/677050,black-friday-to-nie-tylko-okazje-zanim-zaplacisz-zrob-to-w-aplikacji-mobywatel"
-      },
-      {
-        "claim_text": "Dopisano źródło: Podhale24.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "http://www.podhale24.pl/aktualnosci/artykul/119556/Wielka_wyprzedaz_w_Optic_Expert__markowe_oprawy_i_okulary_przeciwsloneczne_nawet_do_70_taniej_emart_sponsorowanyem.html"
-      },
-      {
-        "claim_text": "Dopisano źródło: CHIP.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.chip.pl/2026/11/plush-i-plus-rozdaja-zapas-gigabajtow-na-black-friday"
-      },
-      {
-        "claim_text": "Dopisano źródło: Telepolis.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.telepolis.pl/wiadomosci/fonia-black-friday-2026-wiecej-punktow-za-zakupy"
-      },
-      {
-        "claim_text": "Dopisano źródło: Antyweb.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://antyweb.pl/drukarka-z-cashbackiem-do-550-zl-canon-rusza-z-promocja-na-black-friday"
-      }
-    ],
-    "impact": {
-      "audience": "Obywatele i instytucje w Polsce",
-      "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (10 źródeł)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: Aktywuj się 50% taniej na Black Friday [ Wiadomości ]?",
-        "a": "Tegoroczny Black Friday będzie pierwszym po wejściu w życie unijnego zakazu niszczenia niesprzedanej odzieży i obuwia przez duże firmy."
-      },
-      {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Od 19 lipca 2026 r. duże przedsiębiorstwa działające w UE muszą szukać innych sposobów zagospodarowania niesprzedanej odzieży i obuwia."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (10 źródeł)."
-      }
-    ],
-    "discrepancies": [],
-    "media_file": "media/topic-retail-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Cory Doctorow (CC BY-SA 2.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 2.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Grocery_store_shelves_of_junk_food.jpg",
-    "media_label": "Handel i konsumenci"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1280439510,
@@ -2056,6 +1863,8 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:US_Capitol_west_side.JPG",
     "media_label": "Stany Zjednoczone",
+    "independent_sources_count": 8,
+    "syndicate_groups": [],
     "dossier_title": "Putinem · dotyczące",
     "dossier_count": 2,
     "dossier_index": 2,
@@ -2190,7 +1999,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Pedestrians_crossing_a_snowy_street_in_Quebec_City_at_night.jpg",
-    "media_label": "Pogoda i aura"
+    "media_label": "Pogoda i aura",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1023203853,
@@ -2292,7 +2103,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Wroclaw_-_Piotr_Wlostowic_Boulevard,_Tumski_bridge_and_Ostrow_Tumski,_2019-05-10_14-33.jpg",
-    "media_label": "Wrocław, woj. dolnośląskie"
+    "media_label": "Wrocław, woj. dolnośląskie",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 990331109,
@@ -2472,7 +2285,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1676081781,
@@ -2575,7 +2390,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1661117164,
@@ -2730,7 +2547,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Krakow_2024_110_Old_Town_Hall_Tower_View.jpg",
-    "media_label": "Małopolska (zdjęcie ilustracyjne)"
+    "media_label": "Małopolska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1295994327,
@@ -2842,7 +2661,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Zielona_G%C3%B3ra,_the_town_square,_southern_part.jpg",
-    "media_label": "Lubuskie (zdjęcie ilustracyjne)"
+    "media_label": "Lubuskie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1391263062,
@@ -2974,7 +2795,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1643317357,
@@ -3098,7 +2921,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 609798173,
@@ -3199,7 +3024,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:%C5%81%C3%B3d%C5%BA_2023_01.jpg",
-    "media_label": "Łódź, woj. łódzkie"
+    "media_label": "Łódź, woj. łódzkie",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 39850301,
@@ -3300,7 +3127,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Moszna_zamek3.jpg",
-    "media_label": "Opolszczyzna (zdjęcie ilustracyjne)"
+    "media_label": "Opolszczyzna (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 622166502,
@@ -3524,7 +3353,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kirkwood_Avenue,_West,_212-216,_Bundy_European_Hotel,_Bloomington_Courthouse_Square_HD.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 320172829,
@@ -3672,7 +3503,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Champasak_Stadium_during_at_night_22Jan2026.jpg",
-    "media_label": "Piłka nożna"
+    "media_label": "Piłka nożna",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1364392062,
@@ -3812,7 +3645,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_312_Building_Murals.jpg",
-    "media_label": "Warszawa, woj. mazowieckie"
+    "media_label": "Warszawa, woj. mazowieckie",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 826818814,
@@ -3922,7 +3757,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_widok_z_mostu_08.jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 2063821659,
@@ -4033,7 +3870,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:City_of_Warsaw,Poland_in_2019.33.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1179385619,
@@ -4145,7 +3984,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kyiv_skyline_(15688086793).jpg",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 63933186,
@@ -4245,7 +4086,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Black_Bear_-_panoramio_(1).jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 533286097,
@@ -4346,7 +4189,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 755619273,
@@ -4451,7 +4296,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1461782719,
@@ -4552,7 +4399,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Navigon_Canada_310_-_board-40222.jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1548809453,
@@ -4715,7 +4564,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Schloss_--_2014_--_6769-71_(crop).jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 231709995,
@@ -4933,7 +4784,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 12,
+    "syndicate_groups": []
   },
   {
     "id": 1860341876,
@@ -4993,7 +4846,7 @@
         "angle": "Relacja wiodąca",
         "summary": "Kiedy gra dzisiaj Lech Poznań? Gdzie obejrzeć mecz? Liga Europy terminarz",
         "url": "https://przegladsportowy.onet.pl/pilka-nozna/liga-europy/kiedy-dzisiaj-lech-poznan-royale-union-sg-liga-europy-terminarz-transmisja-tv/tk3z5wp",
-        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja wiodąca.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Kiedy, Gdzie, obejrzeć.",
         "omits": "Pomija kontekst (Mistrzowie, przedostatnie, Sunderlandem) rozwijany w Polsat Sport, WP SportoweFakty."
       },
       {
@@ -5001,7 +4854,7 @@
         "angle": "Relacja sportowa",
         "summary": "Liga Europy: Royale Union Saint-Gilloise – Lech Poznań. Relacja live i wynik na żywo",
         "url": "https://www.polsatsport.pl/wiadomosc/2026-11-26/liga-europy-royale-union-saint-gilloise-lech-poznan-relacja-live-i-wynik-na-zywo/",
-        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
+        "focus": "Wyróżnia własne wątki i pojęcia: live, wynik, żywo.",
         "omits": "Pomija kontekst (Sunderlandem, Frederiksena, przegrywają) rozwijany w WP SportoweFakty."
       },
       {
@@ -5010,14 +4863,14 @@
         "summary": "Mecz Royale Union Saint-Gilloise – Lech Poznań online. Belgijska przygoda mistrza Polski. Transmisja i stream z Ligi Europy",
         "url": "https://gol24.pl/mecz-royale-union-saintgilloise-lech-poznan-online-belgijska-przygoda-mistrza-polski-transmisja-i-stream-z-ligi-europy/rs/c2-8065675655",
         "focus": "Wyróżnia własne wątki i pojęcia: przygoda, mistrza, paśmie.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Przegląd Sportowy, Polsat Sport."
+        "omits": "Pomija kontekst (Zestawienie, rywalizację, telewizyjną) rozwijany w Przegląd Sportowy, Polsat Sport."
       },
       {
         "outlet": "WP SportoweFakty",
         "angle": "Relacja sportowa",
         "summary": "Skład Lecha Poznań na mecz w Lidze Europy",
         "url": "https://sportowefakty.wp.pl/pilka-nozna/1286188/sklad-lecha-poznan-na-mecz-w-lidze-europy",
-        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja sportowa.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Skład, Lecha, Lidze.",
         "omits": "Pomija kontekst (przedostatnie, internecie, terminarz) rozwijany w Polsat Sport, Gol24.pl."
       }
     ],
@@ -5066,7 +4919,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Adidas_soccer_ball_on_a_grass_pitch_(Unsplash).jpg",
-    "media_label": "Piłka nożna"
+    "media_label": "Piłka nożna",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 549343014,
@@ -5193,7 +5048,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Autostrada_A2_-_Ko%C5%82o.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 844088919,
@@ -5294,7 +5151,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:PKP_Intercity_train_at_Krak%C3%B3w_G%C5%82%C3%B3wny_train_station,_Poland,_2019.jpg",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1586977327,
@@ -5531,7 +5390,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Belchatow-elektrownia.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1354086329,
@@ -5687,7 +5548,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:A2_Dopiewo.JPG",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 361532204,
@@ -5801,7 +5664,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg",
-    "media_label": "Wydarzenia międzynarodowe"
+    "media_label": "Wydarzenia międzynarodowe",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1860238170,
@@ -5957,7 +5822,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1837657215,
@@ -6067,7 +5934,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa-Centralna_%26_al2.png",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1400956276,
@@ -6256,7 +6125,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 9,
+    "syndicate_groups": []
   },
   {
     "id": 1022055315,
@@ -6358,7 +6229,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja_cars,_Krakow_2012.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 395476239,
@@ -6458,7 +6331,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:20190721_130502_Autostrada_A2_Lubusz_Voivodeship_July_2019.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 42448303,
@@ -6656,7 +6531,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stethoscope_(NIH_BioArt_501).png",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 2138841523,
@@ -6777,7 +6654,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Corte_Suprema_di_Cassazione_--_2013_--_3787.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1972283976,
@@ -6893,7 +6772,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Cow_pasture,_Candy_Mill_-_geograph.org.uk_-_474214.jpg",
-    "media_label": "Rolnictwo i żywność"
+    "media_label": "Rolnictwo i żywność",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 2025108874,
@@ -6994,7 +6875,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_Use.jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 107916837,
@@ -7105,7 +6988,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bieszczady_-_sunrise_from_Chatka_Puchatka_(2).jpg",
-    "media_label": "Podkarpacie (zdjęcie ilustracyjne)"
+    "media_label": "Podkarpacie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1728854606,
@@ -7242,7 +7127,14 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg",
-    "media_label": "Instytucje UE, Bruksela"
+    "media_label": "Instytucje UE, Bruksela",
+    "independent_sources_count": 4,
+    "syndicate_groups": [
+      [
+        "Money.pl",
+        "Business Insider PL"
+      ]
+    ]
   },
   {
     "id": 1125944086,
@@ -7343,7 +7235,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Palac_Rzplitej_na_Pl._Krasinskich_(Sad_Najwyzszy)_-_Varsava_-_Dvorec_Reci_Pospolitoj_na_Pl._Krasinskih_(Verh_sud)_-_Varsovie_-_Palais_de_la_Republique,_Pl._Krasinski_(Cour_Supreme)_-_Warsaw_-_the_Republic_Pal_1945_(119893198).jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1745899988,
@@ -7439,7 +7333,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Trybuna%C5%82_Konstytucyjny,_DSC_1460.JPG",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1123799529,
@@ -7539,7 +7435,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1394395071,
@@ -7638,7 +7536,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Gdansk_Baltic_Hub_1.jpg",
-    "media_label": "Gospodarka morska"
+    "media_label": "Gospodarka morska",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1865490358,
@@ -7764,7 +7664,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Katowice_-_Panorama_z_t%C4%99cz%C4%85.jpg",
-    "media_label": "Śląsk (zdjęcie ilustracyjne)"
+    "media_label": "Śląsk (zdjęcie ilustracyjne)",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 54858404,
@@ -7930,7 +7832,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 1258551442,
@@ -8084,7 +7988,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Delta_Sky_Club_at_New_York_LaGuardia_Airport_with_passengers_from_Delta_Air_Lines_Flight_1086_on_05_March_2015_Picture_001.jpg",
-    "media_label": "Lotnictwo i podróże"
+    "media_label": "Lotnictwo i podróże",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 2061672964,
@@ -8219,7 +8125,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:White_House_lawn.jpg",
-    "media_label": "Stany Zjednoczone"
+    "media_label": "Stany Zjednoczone",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 42315429,
@@ -8381,7 +8289,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:MAN_TGM_fire_engine_at_night,_Warsaw,_Poland.jpg",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 647325089,
@@ -8682,7 +8592,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Golden_Road_-_Winter;_Lublin,_Poland.jpg",
-    "media_label": "Pogoda i aura"
+    "media_label": "Pogoda i aura",
+    "independent_sources_count": 12,
+    "syndicate_groups": []
   },
   {
     "id": 376466548,
@@ -8812,7 +8724,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Storm_clouds_over_the_Oasis_of_Mara_(51183671077).jpg",
-    "media_label": "Pogoda i aura"
+    "media_label": "Pogoda i aura",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1932835746,
@@ -8906,7 +8820,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 176503207,
@@ -9170,7 +9086,16 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja_cars,_Krakow_2012.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 14,
+    "syndicate_groups": [
+      [
+        "Onet Wiadomości",
+        "Wyborcza.pl",
+        "Radio Rzeszów",
+        "WP Wiadomości"
+      ]
+    ]
   },
   {
     "id": 2054790297,
@@ -9299,7 +9224,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 2029536203,
@@ -9406,7 +9333,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Hutka_river_(rzeka_Hutka)_Area_sources_of_the_river_(2).jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 494362269,
@@ -9547,7 +9476,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 239671364,
@@ -9685,7 +9616,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%9F%D0%BE%D0%B4%D0%BE%D0%BB_Podil_at_night_(49530393651).jpg",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 94537188,
@@ -9847,6 +9780,8 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Fassaden_in_Bryggen,_Bergen_N.jpg",
     "media_label": "Skandynawia",
+    "independent_sources_count": 7,
+    "syndicate_groups": [],
     "dossier_title": "Putinem · dotyczące",
     "dossier_count": 2,
     "dossier_index": 1,
@@ -10047,7 +9982,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Voleibol_(Haro).jpg",
-    "media_label": "Siatkówka"
+    "media_label": "Siatkówka",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1687894605,
@@ -10181,6 +10118,8 @@
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tank_warfare_demonstration_features_U.S._Army_in_Poland_-_7_of_9.jpg",
     "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 4,
+    "syndicate_groups": [],
     "dossier_title": "Rakiety · uderzyły",
     "dossier_count": 2,
     "dossier_index": 1,
@@ -10343,7 +10282,14 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Medical_education_center_building,_Buriram_Hospital_09.12.12.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 4,
+    "syndicate_groups": [
+      [
+        "TVN24",
+        "Onet Wiadomości"
+      ]
+    ]
   },
   {
     "id": 1249294700,
@@ -10444,7 +10390,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1964397278,
@@ -10575,7 +10523,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Pedestrians_crossing_a_snowy_street_in_Quebec_City_at_night.jpg",
-    "media_label": "Pogoda i aura"
+    "media_label": "Pogoda i aura",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 901501224,
@@ -10676,7 +10626,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1298625775,
@@ -10780,7 +10732,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:RJ-45_Ethernet_socket_on_Lenovo_T410_Laptop_(cropped).jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 559932329,
@@ -10894,7 +10848,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mecz_pi%C5%82karski_Wis%C5%82a_Krak%C3%B3w_-_Zag%C5%82%C4%99bie_Sosnwoiec,_28_pa%C5%BAdziernika_2022,_Po%C5%BCegnanie_Stadionu_Ludowego,_KP.jpg",
-    "media_label": "Piłka nożna"
+    "media_label": "Piłka nożna",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 344077720,
@@ -11038,7 +10994,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Building_construction_crane_and_White_Hart_Lane_Stadium_Haringey_2025.jpg",
-    "media_label": "Nieruchomości i budownictwo"
+    "media_label": "Nieruchomości i budownictwo",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1642024589,
@@ -11152,7 +11110,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Pozna%C5%84,_Stadion_Miejski_-_fotopolska.eu_(173913).jpg",
-    "media_label": "Poznań, woj. wielkopolskie"
+    "media_label": "Poznań, woj. wielkopolskie",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 2057169434,
@@ -11255,7 +11215,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kirkwood_Avenue,_West,_212-216,_Bundy_European_Hotel,_Bloomington_Courthouse_Square_HD.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 639416483,
@@ -11386,7 +11348,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_039_Palace_Cathedral_Skyline.jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1995497299,
@@ -11487,7 +11451,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tramway_warsaw.jpg",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 436624697,
@@ -11632,7 +11598,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_September_2020_panorama.jpg",
-    "media_label": "Stany Zjednoczone"
+    "media_label": "Stany Zjednoczone",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 2085930560,
@@ -11763,7 +11731,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lotnicze_Pogotowie_Ratunkowe,_%C5%9Bmig%C5%82owiec_SP-HXR.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 662184526,
@@ -11892,7 +11862,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 243212183,
@@ -11993,7 +11965,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stary_Rynek_Poznan_model.JPG",
-    "media_label": "Poznań, woj. wielkopolskie"
+    "media_label": "Poznań, woj. wielkopolskie",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 671955166,
@@ -12141,7 +12115,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 901674053,
@@ -12257,7 +12233,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Vistula_sunset_5_02-2014.jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 341092148,
@@ -12389,7 +12367,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 933386013,
@@ -12551,7 +12531,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 150088336,
@@ -12717,7 +12699,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tangla_Hotel_Brussels_-_Woluwe-Saint-Lambert.jpg",
-    "media_label": "Instytucje UE, Bruksela"
+    "media_label": "Instytucje UE, Bruksela",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 820896934,
@@ -12818,7 +12802,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1154341625,
@@ -12965,7 +12951,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_194_Grand_Theatre_Relief.jpg",
-    "media_label": "Kultura i sztuka"
+    "media_label": "Kultura i sztuka",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1076401503,
@@ -13065,7 +13053,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_University_of_Technology,_main_building.jpg",
-    "media_label": "Edukacja i nauka"
+    "media_label": "Edukacja i nauka",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1170753023,
@@ -13183,7 +13173,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1162061687,
@@ -13283,7 +13275,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Residential_construction_in_Sompasaari,_Helsinki,_Finland,_2020.jpg",
-    "media_label": "Nieruchomości i budownictwo"
+    "media_label": "Nieruchomości i budownictwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1724931663,
@@ -13386,7 +13380,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Old_and_New_Town_Halls_in_Wroc%C5%82aw,_September_2022.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 766524715,
@@ -13517,6 +13513,8 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Gorzow_Wielkopolski_Warthe_Br%C3%BCcke.jpg",
     "media_label": "Lubuskie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 4,
+    "syndicate_groups": [],
     "dossier_title": "Góra · zielona",
     "dossier_count": 2,
     "dossier_index": 2,
@@ -13688,7 +13686,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Frastanz-Aelpele-Westdach-Solaredge_Power_Optimizer-04.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 2084981469,
@@ -13956,7 +13956,18 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 15,
+    "syndicate_groups": [
+      [
+        "Gazeta.pl",
+        "Onet Wiadomości"
+      ],
+      [
+        "TVP.info",
+        "Niedziela.pl"
+      ]
+    ]
   },
   {
     "id": 1425165336,
@@ -14056,7 +14067,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Toru%C5%84_-_Old_Town_by_night_01.jpg",
-    "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)"
+    "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 246457204,
@@ -14156,7 +14169,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa-Centralna_%26_al2.png",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 385120569,
@@ -14257,7 +14272,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Hutka_river_(rzeka_Hutka)_Area_sources_of_the_river_(2).jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1775549389,
@@ -14358,7 +14375,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Przydomowa_elektrownia_wiatrowa.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 37676514,
@@ -14487,7 +14506,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:PKP_Intercity_train_at_Krak%C3%B3w_G%C5%82%C3%B3wny_train_station,_Poland,_2019.jpg",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1912182071,
@@ -14589,7 +14610,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:New_Metrolink_Stop_at_Exchange_Square,_David_Dixon,_4762757.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1938487806,
@@ -14729,7 +14752,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Street_Scene_-_Old_Town_-_Zamosc_-_Poland_(9224487488).jpg",
-    "media_label": "Lubelszczyzna (zdjęcie ilustracyjne)"
+    "media_label": "Lubelszczyzna (zdjęcie ilustracyjne)",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1043353636,
@@ -14840,7 +14865,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Corte_Suprema_di_Cassazione_--_2013_--_3787.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 825401633,
@@ -14956,7 +14983,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:MAN_TGM_fire_engine_at_night,_Warsaw,_Poland.jpg",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 680341900,
@@ -15139,7 +15168,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lublin_Old_Town_Skyline.jpg",
-    "media_label": "Lubelszczyzna (zdjęcie ilustracyjne)"
+    "media_label": "Lubelszczyzna (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1235530973,
@@ -15359,7 +15390,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Winter_in_Tatry_Mountains_-_Poland.jpg",
-    "media_label": "Małopolska (zdjęcie ilustracyjne)"
+    "media_label": "Małopolska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 12,
+    "syndicate_groups": []
   },
   {
     "id": 1669217714,
@@ -15461,7 +15494,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Housing_estate,_construction_detail.jpg",
-    "media_label": "Nieruchomości i budownictwo"
+    "media_label": "Nieruchomości i budownictwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1377546964,
@@ -15590,7 +15625,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Palac_Rzplitej_na_Pl._Krasinskich_(Sad_Najwyzszy)_-_Varsava_-_Dvorec_Reci_Pospolitoj_na_Pl._Krasinskih_(Verh_sud)_-_Varsovie_-_Palais_de_la_Republique,_Pl._Krasinski_(Cour_Supreme)_-_Warsaw_-_the_Republic_Pal_1945_(119893198).jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1386852251,
@@ -15717,7 +15754,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_Use.jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1224112126,
@@ -15885,7 +15924,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:105_Polish_Air_Force_MiG-29A_Fulcrum_ILA_Berlin_2016_10.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 1162663248,
@@ -16068,7 +16109,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:20180816_Sandomierz_-_widok_z_Bramy_Opatowskiej_-_1731_9018_DxO.jpg",
-    "media_label": "Świętokrzyskie (zdjęcie ilustracyjne)"
+    "media_label": "Świętokrzyskie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 29039426,
@@ -16170,7 +16213,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:RJ-45_Ethernet_socket_on_Lenovo_T410_Laptop_(cropped).jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1908236310,
@@ -16326,7 +16371,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 321157577,
@@ -16481,7 +16528,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Firefighter_engine_in_snow.jpg",
-    "media_label": "Straż pożarna"
+    "media_label": "Straż pożarna",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1504056115,
@@ -16900,7 +16949,14 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:US_Capitol_west_side.JPG",
-    "media_label": "Stany Zjednoczone"
+    "media_label": "Stany Zjednoczone",
+    "independent_sources_count": 32,
+    "syndicate_groups": [
+      [
+        "CyberDefence24",
+        "Kresy.pl"
+      ]
+    ]
   },
   {
     "id": 1578986862,
@@ -17001,7 +17057,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bia%C5%82ystok_2023_086_Branicki_Palace_Fountain.jpg",
-    "media_label": "Podlasie (zdjęcie ilustracyjne)"
+    "media_label": "Podlasie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1274515990,
@@ -17118,7 +17176,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Sopot_2023_21_Pier_Stalls.jpg",
-    "media_label": "Pomorze (zdjęcie ilustracyjne)"
+    "media_label": "Pomorze (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1398958253,
@@ -17219,7 +17279,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1467104592,
@@ -17336,7 +17398,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Trybuna%C5%82_Konstytucyjny,_DSC_1460.JPG",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 591123198,
@@ -17532,7 +17596,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 10,
+    "syndicate_groups": []
   },
   {
     "id": 365988925,
@@ -17660,7 +17726,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:European_Parliament_building_in_Brussels,_Belgium,_July_2026_03.jpg",
-    "media_label": "Instytucje UE, Bruksela"
+    "media_label": "Instytucje UE, Bruksela",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1218986060,
@@ -17841,7 +17909,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Czech_Leopard_2A4_tank_043_during_NATO_Days_2026,_Ostrava,_20260919_0956_0635.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 801675025,
@@ -17941,7 +18011,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:DFC_2450_A_wide_city_view_at_dusk_showing_a_tree-lined_road_with_cars_passing_a_golden_temple_spire_rising_behind_greenery_and_modern_buildings_-_including_a_shopping_complex_-_under_a_cloudy_sky.jpg",
-    "media_label": "Motoryzacja"
+    "media_label": "Motoryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 2074939410,
@@ -18040,7 +18112,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Przydomowa_elektrownia_wiatrowa.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1390746559,
@@ -18166,7 +18240,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kirkwood_Avenue,_West,_212-216,_Bundy_European_Hotel,_Bloomington_Courthouse_Square_HD.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 132081260,
@@ -18281,7 +18357,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lviv_Old_Town_Street.JPG",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 337936075,
@@ -18402,7 +18480,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Zakopane_Wielka_Krokiew_3.jpg",
-    "media_label": "Sporty zimowe"
+    "media_label": "Sporty zimowe",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1857255145,
@@ -18688,7 +18768,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 10,
+    "syndicate_groups": []
   },
   {
     "id": 370776024,
@@ -18934,7 +19016,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:USACE,_EUCOM_break_ground_on_first_of_10_fire_station_renovations_in_Latvia.jpg",
-    "media_label": "Straż pożarna"
+    "media_label": "Straż pożarna",
+    "independent_sources_count": 14,
+    "syndicate_groups": []
   },
   {
     "id": 1489830085,
@@ -19078,7 +19162,14 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Car_park_and_Traffic_Street_-_geograph.org.uk_-_8119229.jpg",
-    "media_label": "Motoryzacja"
+    "media_label": "Motoryzacja",
+    "independent_sources_count": 4,
+    "syndicate_groups": [
+      [
+        "Polsat News",
+        "Gazeta.pl"
+      ]
+    ]
   },
   {
     "id": 1750556676,
@@ -19314,7 +19405,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Valero_refinery,_Port_Arthur_TX,_historical_plaque.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 14,
+    "syndicate_groups": []
   },
   {
     "id": 1919557781,
@@ -19434,7 +19527,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Muzeum_Narodowe_w_Warszawie.jpg",
-    "media_label": "Kultura i sztuka"
+    "media_label": "Kultura i sztuka",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 159504426,
@@ -19672,7 +19767,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Frastanz-Aelpele-Westdach-Solaredge_Power_Optimizer-04.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 14,
+    "syndicate_groups": []
   },
   {
     "id": 2103708918,
@@ -20026,7 +20123,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stra%C5%BC_Graniczna_i_z%C5%82apani_przemytnicy_NAC_6462.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 26,
+    "syndicate_groups": []
   },
   {
     "id": 1879658480,
@@ -20166,7 +20265,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 2057035911,
@@ -20266,7 +20367,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Old_and_New_Town_Halls_in_Wroc%C5%82aw,_September_2022.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 905189874,
@@ -20382,7 +20485,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:20190721_130502_Autostrada_A2_Lubusz_Voivodeship_July_2019.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1867132079,
@@ -20527,7 +20632,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 910353308,
@@ -20630,7 +20737,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg",
-    "media_label": "Instytucje UE, Bruksela"
+    "media_label": "Instytucje UE, Bruksela",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 434843198,
@@ -20797,7 +20906,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1627499012,
@@ -20898,7 +21009,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tank_warfare_demonstration_features_U.S._Army_in_Poland_-_7_of_9.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1464359335,
@@ -21027,7 +21140,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tramway_warsaw.jpg",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 683952668,
@@ -21174,7 +21289,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tramway_warsaw.jpg",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1866009251,
@@ -21318,7 +21435,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:A2_Dopiewo.JPG",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1989383952,
@@ -21476,7 +21595,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:City_of_Warsaw,Poland_in_2019.33.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1080709393,
@@ -21598,7 +21719,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Old_Town_houses_and_port_crane_along_Mot%C5%82awa,_Gda%C5%84sk.jpg",
-    "media_label": "Pomorze (zdjęcie ilustracyjne)"
+    "media_label": "Pomorze (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 633961011,
@@ -21700,7 +21823,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:SGGW,_building_1.jpg",
-    "media_label": "Edukacja i nauka"
+    "media_label": "Edukacja i nauka",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1704997118,
@@ -21839,7 +21964,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Huanglong_China_Jiuzhaigou-Huanglong-Airport-01.jpg",
-    "media_label": "Lotnictwo i podróże"
+    "media_label": "Lotnictwo i podróże",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1959024064,
@@ -21978,7 +22105,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_194_Grand_Theatre_Relief.jpg",
-    "media_label": "Kultura i sztuka"
+    "media_label": "Kultura i sztuka",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1969509269,
@@ -22179,7 +22308,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja_cars,_Krakow_2012.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 10,
+    "syndicate_groups": []
   },
   {
     "id": 1963215503,
@@ -22291,7 +22422,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Penn_State_Women%27s_Volleyball_warming_up_prior_to_the_2014_Women%27s_Volleyball_National_Championship.jpg",
-    "media_label": "Siatkówka"
+    "media_label": "Siatkówka",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1635581477,
@@ -22654,7 +22787,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Trybuna%C5%82_Konstytucyjny,_DSC_1460.JPG",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 26,
+    "syndicate_groups": []
   },
   {
     "id": 1216662803,
@@ -22782,7 +22917,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:COVID-19_vaccination_Point_in_Gemini_Shopping_Mall_in_Bielsko-Bia%C5%82a,_Poland,_September_2021.jpg",
-    "media_label": "Handel i konsumenci"
+    "media_label": "Handel i konsumenci",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1240285428,
@@ -22895,7 +23032,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:2016_Wroc%C5%82aw,_Rynek_49.jpg",
-    "media_label": "Wrocław, woj. dolnośląskie"
+    "media_label": "Wrocław, woj. dolnośląskie",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 745962593,
@@ -23022,7 +23161,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:DFC_2450_A_wide_city_view_at_dusk_showing_a_tree-lined_road_with_cars_passing_a_golden_temple_spire_rising_behind_greenery_and_modern_buildings_-_including_a_shopping_complex_-_under_a_cloudy_sky.jpg",
-    "media_label": "Motoryzacja"
+    "media_label": "Motoryzacja",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 983378223,
@@ -23338,7 +23479,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Medical_education_center_building,_Buriram_Hospital_09.12.12.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 21,
+    "syndicate_groups": []
   },
   {
     "id": 1142790033,
@@ -23488,7 +23631,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 983010043,
@@ -23620,7 +23765,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 523929713,
@@ -23761,7 +23908,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Basketball_training_session_at_unilorin_stadium_19.jpg",
-    "media_label": "Koszykówka"
+    "media_label": "Koszykówka",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1373145773,
@@ -23991,6 +24140,8 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
     "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 13,
+    "syndicate_groups": [],
     "dossier_title": "Collegium · Humanum",
     "dossier_count": 2,
     "dossier_index": 2,
@@ -24109,7 +24260,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_University_of_Technology,_main_building.jpg",
-    "media_label": "Edukacja i nauka"
+    "media_label": "Edukacja i nauka",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 91570995,
@@ -24287,7 +24440,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%9F%D0%BE%D0%B4%D0%BE%D0%BB_Podil_at_night_(49530393651).jpg",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 8,
+    "syndicate_groups": []
   },
   {
     "id": 736474599,
@@ -24308,7 +24463,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "22 redakcji"
+        "val": "21 redakcji"
       },
       {
         "label": "Kategoria",
@@ -24320,7 +24475,7 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (22 źródeł)"
+        "val": "Potwierdzone (21 źródeł)"
       }
     ],
     "declickbait": [
@@ -24332,7 +24487,7 @@
     ],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (22 redakcji)",
+        "heading": "Ustalenia wspólne (21 redakcji)",
         "paragraphs": [
           "Na stacji Warszawa Centralna wystąpiły utrudnienia związane z siecią trakcyjną. PKP PLK poinformowały o opóźnieniach w kursowaniu pociągów, część składów kierowana jest na inną stację. [Źródło: Polsat News, TVN24, TVP.info, Onet Wiadomości, Fakt.pl, Radio Lublin, TVP3 Warszawa, Radio Kolor, WP Wiadomości, TVP3 Łódź, RadioMaryja.pl, Radio Rzeszów, Radio Piekary, TVP3 Rzeszów, Warszawa w Pigułce, info.elblag.pl]",
           "— Opóźnienia będą się pogłębiać, jeżeli usterka nie zostanie usunięta (...). [Źródło: Polsat News]",
@@ -24352,7 +24507,6 @@
           "Wagon wykolejony na stacji w Zebrzydowicach. [Źródło: Radio 90]",
           "W miejscowości Unierzyż trwa usuwanie samochodu ciężarowego, który w wyniku wczorajszego zdarzenia drogowego wpadł do rowu. [Źródło: Warszawa w Pigułce]",
           "Na części trasy ruch pociągów odbywa się po jednym torze. Mogą wystąpić kilkudziesięciominutowe opóźnienia. [Źródło: Interia Wydarzenia]",
-          "W czwartek od godz. 8.15 na liniach 4 i 5 wprowadzono zmiany w kursowaniu tramwajów. Przyczyną jest awaria torowiska na ul. płk. Dąbka. [Źródło: PortEl.pl]",
           "Rozpoczyna się pierwszy etap remontu nawierzchni wylotówki w kierunku Warszawy. Marcin Januchta, rzecznik prasowy MZD tłumaczy, że kierowcy muszą przygotować się na spore utrudnienia. Planowane jest m.in. zamknięcie skrajnego pasa ruchu zachodniej jezdni ul. Radomskiej. [Źródło: Radio Kielce]",
           "Pasażerowie podróżujący między innymi na trasach Warszawa–Kraków oraz Warszawa–Katowice muszą uzbroić się w cierpliwość. Składy kursują tylko po jednym torze, a opóźnienia przekraczają 30 minut. [Źródło: Dziennik.pl]",
           "Łódź coraz bliżej rowerowego połączenia z Warszawą. Województwo łódzkie oraz przedstawiciele 11 samorządów podpisali list intencyjny dotyczący przygotowania i realizacji blisko 70-kilometrowej trasy rowerowej. Ma ona połączyć Łódź z granicą województwa mazowieckiego i stać się częścią krajowej trasy rowerowej nr 8, prowadzącej z Warszawy do Wrocławia. [Źródło: Radio Łódź]"
@@ -24502,15 +24656,7 @@
         "summary": "Awaria na Centralnej Magistrali Kolejowej. Mogą wystąpić spore opóźnienia",
         "url": "https://wydarzenia.interia.pl/kraj/news-awaria-na-centralnej-magistrali-kolejowej-moga-wystapic-spor,nId,23579306",
         "focus": "Wyróżnia własne wątki i pojęcia: części, odbywa, kilkudziesięciominutowe.",
-        "omits": "Pomija kontekst (utrudnienia, Warszawie, kursowaniu) rozwijany w Polsat News, TVN24."
-      },
-      {
-        "outlet": "PortEl.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Awaria torowiska. Tramwaje jeżdżą inną trasą [ Wiadomości ]",
-        "url": "https://www.portel.pl/wiadomosci/awaria-torowiska-tramwaje-jezdza-inna-trasa/152034",
-        "focus": "Wyróżnia własne wątki i pojęcia: torowiska, Tramwaje, jeżdżą.",
-        "omits": "Pomija kontekst (utrudnienia, Warszawie, opóźnieniach) rozwijany w Polsat News, TVN24."
+        "omits": "Pomija kontekst (utrudnienia, Warszawie, stacji) rozwijany w Polsat News, TVN24."
       },
       {
         "outlet": "Radio Kielce",
@@ -24526,7 +24672,7 @@
         "summary": "Utrudnienia na Centralnej Magistrali Kolejowej. Awaria powoduje duże opóźnienia pociągów",
         "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11407037,utrudnienia-na-centralnej-magistrali-kolejowej-awaria-powoduje-duze-opoznienia-pociagow.html",
         "focus": "Wyróżnia własne wątki i pojęcia: powoduje, Pasażerowie, podróżujący.",
-        "omits": "Pomija kontekst (kursowaniu, wystąpiły, stacji) rozwijany w Polsat News, TVN24."
+        "omits": "Pomija kontekst (wystąpiły, stacji, poinformowały) rozwijany w Polsat News, TVN24."
       },
       {
         "outlet": "Radio Łódź",
@@ -24543,7 +24689,6 @@
       "Interia Wydarzenia",
       "Onet Wiadomości",
       "Polsat News",
-      "PortEl.pl",
       "Radio 90",
       "Radio Kielce",
       "Radio Kolor",
@@ -24608,7 +24753,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Vistula_sunset_5_02-2014.jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 21,
+    "syndicate_groups": []
   },
   {
     "id": 445377289,
@@ -24709,7 +24856,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:New_Metrolink_Stop_at_Exchange_Square,_David_Dixon,_4762757.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1497074608,
@@ -24867,7 +25016,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Belchatow-elektrownia.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1350921737,
@@ -25037,7 +25188,14 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 6,
+    "syndicate_groups": [
+      [
+        "Rzeczpospolita",
+        "Parkiet"
+      ]
+    ]
   },
   {
     "id": 1937525537,
@@ -25136,7 +25294,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Building_construction_crane_and_White_Hart_Lane_Stadium_Haringey_2025.jpg",
-    "media_label": "Nieruchomości i budownictwo"
+    "media_label": "Nieruchomości i budownictwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 2110514769,
@@ -25307,7 +25467,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Seaman_Apprentice_Cody_Bernaich,_gunner%27s_mate_heaves_a_phone_and_distance_line_aboard_amphibious_dock_landing_ship_USS_Pearl_Harbor_(LSD_52)_during_a_replenishment_at_sea_with_dry_cargo_ship_100930-N-KB563-065.jpg",
-    "media_label": "Gospodarka morska"
+    "media_label": "Gospodarka morska",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 621075476,
@@ -25456,7 +25618,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:New_Town_Hall_in_Wroc%C5%82aw,_September_2022.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 419145731,
@@ -25556,7 +25720,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Black_Bear_-_panoramio_(1).jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1722324290,
@@ -25656,7 +25822,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1330889712,
@@ -25758,7 +25926,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Autostrada_A2_-_Ko%C5%82o.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 483798448,
@@ -25875,7 +26045,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Old_and_New_Town_Halls_in_Wroc%C5%82aw,_September_2022.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1709841661,
@@ -25976,7 +26148,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tank_warfare_demonstration_features_U.S._Army_in_Poland_-_7_of_9.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1397158724,
@@ -26077,7 +26251,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:City_of_Warsaw,Poland_in_2019.33.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 770205148,
@@ -26176,7 +26352,9 @@
     "media_license": "CC BY-SA 2.5",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.5",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_Quadriga_at_Night.jpg",
-    "media_label": "Niemcy"
+    "media_label": "Niemcy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1997807210,
@@ -26322,7 +26500,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
-    "media_label": "Wydarzenia międzynarodowe"
+    "media_label": "Wydarzenia międzynarodowe",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 685631151,
@@ -26507,7 +26687,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Crisler_Arena,_UM_Basketball,_wide_angle_court_view,_vs_Indiana_1993.jpg",
-    "media_label": "Koszykówka"
+    "media_label": "Koszykówka",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 998051979,
@@ -26608,7 +26790,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Valero_refinery,_Port_Arthur_TX,_historical_plaque.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 819075218,
@@ -26740,7 +26924,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Schloss_--_2014_--_6769-71_(crop).jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 866550994,
@@ -26841,7 +27027,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tangla_Hotel_Brussels_-_Woluwe-Saint-Lambert.jpg",
-    "media_label": "Instytucje UE, Bruksela"
+    "media_label": "Instytucje UE, Bruksela",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 910297955,
@@ -26942,7 +27130,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mikolajki,_Poland_-_panoramio_(5).jpg",
-    "media_label": "Warmia i Mazury (zdjęcie ilustracyjne)"
+    "media_label": "Warmia i Mazury (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 2051196881,
@@ -27043,7 +27233,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Shore_of_the_East_River_with_Headquarters_of_the_United_Nations,_New_York_City,_20231005_1132_2230.jpg",
-    "media_label": "Wydarzenia międzynarodowe"
+    "media_label": "Wydarzenia międzynarodowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 404699630,
@@ -27147,7 +27339,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 671834133,
@@ -27262,7 +27456,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stethoscope_(NIH_BioArt_501).png",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 2000287677,
@@ -27469,7 +27665,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stra%C5%BC_Graniczna_i_z%C5%82apani_przemytnicy_NAC_6462.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 11,
+    "syndicate_groups": []
   },
   {
     "id": 1965600971,
@@ -27585,7 +27783,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Hutka_river_(rzeka_Hutka)_Area_sources_of_the_river_(2).jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1895832680,
@@ -27686,7 +27886,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Medical_education_center_building,_Buriram_Hospital_09.12.12.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1570160086,
@@ -27786,7 +27988,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Palac_Rzplitej_na_Pl._Krasinskich_(Sad_Najwyzszy)_-_Varsava_-_Dvorec_Reci_Pospolitoj_na_Pl._Krasinskih_(Verh_sud)_-_Varsovie_-_Palais_de_la_Republique,_Pl._Krasinski_(Cour_Supreme)_-_Warsaw_-_the_Republic_Pal_1945_(119893198).jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1428637593,
@@ -27907,7 +28111,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Vistula_sunset_5_02-2014.jpg",
-    "media_label": "Przyroda i środowisko"
+    "media_label": "Przyroda i środowisko",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1450244381,
@@ -28037,7 +28243,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Residential_construction_in_Sompasaari,_Helsinki,_Finland,_2020.jpg",
-    "media_label": "Nieruchomości i budownictwo"
+    "media_label": "Nieruchomości i budownictwo",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 774872478,
@@ -28154,7 +28362,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Osiedle_Nikiszowiec,_Katowice,001,_2021-3.jpg",
-    "media_label": "Śląsk (zdjęcie ilustracyjne)"
+    "media_label": "Śląsk (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1786589973,
@@ -28363,7 +28573,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 11,
+    "syndicate_groups": []
   },
   {
     "id": 2103971864,
@@ -28459,12 +28671,14 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/reg-warminsko-mazurskie.jpg",
-    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Olsztyn_2023_034_Old_Town_Hall.jpg",
-    "media_label": "Warmia i Mazury (zdjęcie ilustracyjne)"
+    "media_file": "media/topic-retail-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Cory Doctorow (CC BY-SA 2.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 2.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Grocery_store_shelves_of_junk_food.jpg",
+    "media_label": "Handel i konsumenci",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1726062008,
@@ -28565,7 +28779,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa-Centralna_%26_al2.png",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 358920529,
@@ -28738,7 +28954,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 161356422,
@@ -28908,7 +29126,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kyiv_skyline_(15688086793).jpg",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 1692061826,
@@ -29010,7 +29230,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1742399049,
@@ -29112,7 +29334,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Wyspa_Mlynska_zm_1_07-2014.jpg",
-    "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)"
+    "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1416086248,
@@ -29230,7 +29454,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lviv_Old_Town_Street.JPG",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 784531430,
@@ -29489,7 +29715,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Corte_Suprema_di_Cassazione_--_2013_--_3787.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 16,
+    "syndicate_groups": []
   },
   {
     "id": 1705832976,
@@ -29629,7 +29857,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Czech_Leopard_2A4_tank_043_during_NATO_Days_2026,_Ostrava,_20260919_0956_0635.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 523078599,
@@ -29729,7 +29959,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Car_park_and_Traffic_Street_-_geograph.org.uk_-_8119229.jpg",
-    "media_label": "Motoryzacja"
+    "media_label": "Motoryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1989217295,
@@ -29833,7 +30065,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Navigon_Canada_310_-_board-40222.jpg",
-    "media_label": "Technologie i cyfryzacja"
+    "media_label": "Technologie i cyfryzacja",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 678887552,
@@ -29953,7 +30187,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Winter_in_Tatry_Mountains_-_Poland.jpg",
-    "media_label": "Małopolska (zdjęcie ilustracyjne)"
+    "media_label": "Małopolska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 345889436,
@@ -30089,7 +30325,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:MAN_TGM_fire_engine_at_night,_Warsaw,_Poland.jpg",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1005905898,
@@ -30269,7 +30507,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Zakopane_Wielka_Krokiew_dron_(1).jpg",
-    "media_label": "Sporty zimowe"
+    "media_label": "Sporty zimowe",
+    "independent_sources_count": 8,
+    "syndicate_groups": []
   },
   {
     "id": 495738318,
@@ -30370,7 +30610,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Seaman_Apprentice_Cody_Bernaich,_gunner%27s_mate_heaves_a_phone_and_distance_line_aboard_amphibious_dock_landing_ship_USS_Pearl_Harbor_(LSD_52)_during_a_replenishment_at_sea_with_dry_cargo_ship_100930-N-KB563-065.jpg",
-    "media_label": "Gospodarka morska"
+    "media_label": "Gospodarka morska",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 83905879,
@@ -30470,7 +30712,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja_cars,_Krakow_2012.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1131183497,
@@ -30598,7 +30842,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kirkwood_Avenue,_West,_212-216,_Bundy_European_Hotel,_Bloomington_Courthouse_Square_HD.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 83841968,
@@ -30740,7 +30986,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1904856520,
@@ -31031,7 +31279,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Belchatow-elektrownia.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 20,
+    "syndicate_groups": []
   },
   {
     "id": 1278091637,
@@ -31230,7 +31480,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 10,
+    "syndicate_groups": []
   },
   {
     "id": 426064494,
@@ -31404,7 +31656,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 8,
+    "syndicate_groups": []
   },
   {
     "id": 493472707,
@@ -31580,7 +31834,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:105_Polish_Air_Force_MiG-29A_Fulcrum_ILA_Berlin_2016_10.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 8,
+    "syndicate_groups": []
   },
   {
     "id": 592748336,
@@ -31676,7 +31932,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bia%C5%82ystok_2023_086_Branicki_Palace_Fountain.jpg",
-    "media_label": "Podlasie (zdjęcie ilustracyjne)"
+    "media_label": "Podlasie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 473275412,
@@ -31777,7 +32035,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Golden_Road_-_Winter;_Lublin,_Poland.jpg",
-    "media_label": "Pogoda i aura"
+    "media_label": "Pogoda i aura",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 139189383,
@@ -31878,7 +32138,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:SGGW,_building_1.jpg",
-    "media_label": "Edukacja i nauka"
+    "media_label": "Edukacja i nauka",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1873870570,
@@ -31994,7 +32256,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 599720102,
@@ -32163,7 +32427,14 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Czech_Leopard_2A4_tank_043_during_NATO_Days_2026,_Ostrava,_20260919_0956_0635.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 7,
+    "syndicate_groups": [
+      [
+        "Niezależna.pl",
+        "Radio PiK"
+      ]
+    ]
   },
   {
     "id": 939856959,
@@ -32258,7 +32529,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Adidas_soccer_ball_on_a_grass_pitch_(Unsplash).jpg",
-    "media_label": "Piłka nożna"
+    "media_label": "Piłka nożna",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 794868401,
@@ -32389,7 +32662,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Olsztyn_2023_034_Old_Town_Hall.jpg",
-    "media_label": "Warmia i Mazury (zdjęcie ilustracyjne)"
+    "media_label": "Warmia i Mazury (zdjęcie ilustracyjne)",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 638673415,
@@ -32490,7 +32765,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Cow_pasture,_Candy_Mill_-_geograph.org.uk_-_474214.jpg",
-    "media_label": "Rolnictwo i żywność"
+    "media_label": "Rolnictwo i żywność",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1859235394,
@@ -32592,7 +32869,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Katowice_-_Panorama_z_t%C4%99cz%C4%85.jpg",
-    "media_label": "Śląsk (zdjęcie ilustracyjne)"
+    "media_label": "Śląsk (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1807471189,
@@ -32693,7 +32972,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tank_warfare_demonstration_features_U.S._Army_in_Poland_-_7_of_9.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 437561954,
@@ -32907,7 +33188,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:105_Polish_Air_Force_MiG-29A_Fulcrum_ILA_Berlin_2016_10.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 11,
+    "syndicate_groups": []
   },
   {
     "id": 2030691471,
@@ -33029,7 +33312,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 244616875,
@@ -33130,7 +33415,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Corte_Suprema_di_Cassazione_--_2013_--_3787.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 2145488150,
@@ -33231,7 +33518,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Reichstag_pano.jpg",
-    "media_label": "Niemcy"
+    "media_label": "Niemcy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1854581106,
@@ -33334,7 +33623,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Moszna_zamek3.jpg",
-    "media_label": "Opolszczyzna (zdjęcie ilustracyjne)"
+    "media_label": "Opolszczyzna (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 493145577,
@@ -33435,7 +33726,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Outdoor_market_fruit_stall_Market_Place_Romford_London_01.jpg",
-    "media_label": "Rolnictwo i żywność"
+    "media_label": "Rolnictwo i żywność",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1214909032,
@@ -33555,7 +33848,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:20160308.Swinoujscie.-011.jpg",
-    "media_label": "Pomorze Zachodnie (zdjęcie ilustracyjne)"
+    "media_label": "Pomorze Zachodnie (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 2054704030,
@@ -33656,7 +33951,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:New_Metrolink_Stop_at_Exchange_Square,_David_Dixon,_4762757.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1859190978,
@@ -33757,7 +34054,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:New_Town_Hall_in_Wroc%C5%82aw,_September_2022.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 449326663,
@@ -33929,7 +34228,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Car_park_and_Traffic_Street_-_geograph.org.uk_-_8119229.jpg",
-    "media_label": "Motoryzacja"
+    "media_label": "Motoryzacja",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 428297640,
@@ -34028,7 +34329,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Palac_Rzplitej_na_Pl._Krasinskich_(Sad_Najwyzszy)_-_Varsava_-_Dvorec_Reci_Pospolitoj_na_Pl._Krasinskih_(Verh_sud)_-_Varsovie_-_Palais_de_la_Republique,_Pl._Krasinski_(Cour_Supreme)_-_Warsaw_-_the_Republic_Pal_1945_(119893198).jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 271532770,
@@ -34158,7 +34461,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1836677565,
@@ -34261,7 +34566,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Old_and_New_Town_Halls_in_Wroc%C5%82aw,_September_2022.jpg",
-    "media_label": "Społeczeństwo i samorząd"
+    "media_label": "Społeczeństwo i samorząd",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 689200765,
@@ -34385,7 +34692,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Autostrada_A2_-_Ko%C5%82o.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1621783105,
@@ -34487,7 +34796,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 59110936,
@@ -34601,7 +34912,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Champasak_Stadium_during_at_night_22Jan2026.jpg",
-    "media_label": "Piłka nożna"
+    "media_label": "Piłka nożna",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 706080496,
@@ -34716,7 +35029,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kyiv_skyline_(15688086793).jpg",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 577810621,
@@ -35003,7 +35318,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_widok_z_mostu_08.jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 18,
+    "syndicate_groups": []
   },
   {
     "id": 634491436,
@@ -35132,7 +35449,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 682115238,
@@ -35322,7 +35641,14 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Delta_Sky_Club_at_New_York_LaGuardia_Airport_with_passengers_from_Delta_Air_Lines_Flight_1086_on_05_March_2015_Picture_001.jpg",
-    "media_label": "Lotnictwo i podróże"
+    "media_label": "Lotnictwo i podróże",
+    "independent_sources_count": 8,
+    "syndicate_groups": [
+      [
+        "TVP.info",
+        "Radio PiK"
+      ]
+    ]
   },
   {
     "id": 997961881,
@@ -35561,7 +35887,9 @@
     "media_license": "CC BY-SA 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%9F%D0%BE%D0%B4%D0%BE%D0%BB_Podil_at_night_(49530393651).jpg",
-    "media_label": "Europa Wschodnia"
+    "media_label": "Europa Wschodnia",
+    "independent_sources_count": 14,
+    "syndicate_groups": []
   },
   {
     "id": 920871430,
@@ -35724,7 +36052,9 @@
     "media_license": "CC BY 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:20190721_130502_Autostrada_A2_Lubusz_Voivodeship_July_2019.jpg",
-    "media_label": "Ruch drogowy i infrastruktura"
+    "media_label": "Ruch drogowy i infrastruktura",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 1644939482,
@@ -35840,7 +36170,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Tank_warfare_demonstration_features_U.S._Army_in_Poland_-_7_of_9.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1812806113,
@@ -36062,7 +36394,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg",
-    "media_label": "Wydarzenia międzynarodowe"
+    "media_label": "Wydarzenia międzynarodowe",
+    "independent_sources_count": 12,
+    "syndicate_groups": []
   },
   {
     "id": 1900036620,
@@ -36181,7 +36515,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Wyspa_Mlynska_zm_1_07-2014.jpg",
-    "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)"
+    "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1255333206,
@@ -36299,7 +36635,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lotnicze_Pogotowie_Ratunkowe,_%C5%9Bmig%C5%82owiec_SP-HXR.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1776768447,
@@ -36401,7 +36739,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Trybuna%C5%82_Konstytucyjny,_DSC_1460.JPG",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 50260248,
@@ -36525,7 +36865,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 597067796,
@@ -36627,7 +36969,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:View_from_Oslo_Opera_House_over_Oslo_Fjord_with_seagull.jpg",
-    "media_label": "Skandynawia"
+    "media_label": "Skandynawia",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 410066502,
@@ -36728,7 +37072,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_039_Palace_Cathedral_Skyline.jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 612558205,
@@ -36853,7 +37199,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Przydomowa_elektrownia_wiatrowa.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 161904315,
@@ -36954,7 +37302,9 @@
     "media_license": "CC BY 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Shore_of_the_East_River_with_Headquarters_of_the_United_Nations,_New_York_City,_20231005_1132_2230.jpg",
-    "media_label": "Wydarzenia międzynarodowe"
+    "media_label": "Wydarzenia międzynarodowe",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1993916928,
@@ -37086,6 +37436,8 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
     "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 4,
+    "syndicate_groups": [],
     "dossier_title": "Góra · zielona",
     "dossier_count": 2,
     "dossier_index": 1,
@@ -37199,7 +37551,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:View_from_Oslo_Opera_House_over_Oslo_Fjord_with_seagull.jpg",
-    "media_label": "Skandynawia"
+    "media_label": "Skandynawia",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 1922296188,
@@ -37319,7 +37673,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Storm_clouds_over_the_Oasis_of_Mara_(51183671077).jpg",
-    "media_label": "Pogoda i aura"
+    "media_label": "Pogoda i aura",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 743341101,
@@ -37508,7 +37864,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Gdansk_Baltic_Hub_1.jpg",
-    "media_label": "Gospodarka morska"
+    "media_label": "Gospodarka morska",
+    "independent_sources_count": 10,
+    "syndicate_groups": []
   },
   {
     "id": 583580313,
@@ -37652,7 +38010,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 5,
+    "syndicate_groups": []
   },
   {
     "id": 1325682790,
@@ -37769,7 +38129,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:DFC_2450_A_wide_city_view_at_dusk_showing_a_tree-lined_road_with_cars_passing_a_golden_temple_spire_rising_behind_greenery_and_modern_buildings_-_including_a_shopping_complex_-_under_a_cloudy_sky.jpg",
-    "media_label": "Motoryzacja"
+    "media_label": "Motoryzacja",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1601427932,
@@ -37918,7 +38280,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Krakow_2024_110_Old_Town_Hall_Tower_View.jpg",
-    "media_label": "Małopolska (zdjęcie ilustracyjne)"
+    "media_label": "Małopolska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 6,
+    "syndicate_groups": []
   },
   {
     "id": 1769758778,
@@ -38044,7 +38408,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 1738423026,
@@ -38228,7 +38594,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stra%C5%BC_Graniczna_i_z%C5%82apani_przemytnicy_NAC_6462.jpg",
-    "media_label": "Obronność i bezpieczeństwo"
+    "media_label": "Obronność i bezpieczeństwo",
+    "independent_sources_count": 8,
+    "syndicate_groups": []
   },
   {
     "id": 2055009038,
@@ -38341,7 +38709,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   },
   {
     "id": 794064091,
@@ -38505,7 +38875,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Corte_Suprema_di_Cassazione_--_2013_--_3787.jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 1787530069,
@@ -38661,6 +39033,8 @@
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Kirkwood_Avenue,_West,_212-216,_Bundy_European_Hotel,_Bloomington_Courthouse_Square_HD.jpg",
     "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 7,
+    "syndicate_groups": [],
     "dossier_title": "Collegium · Humanum",
     "dossier_count": 2,
     "dossier_index": 1,
@@ -38890,7 +39264,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Frastanz-Aelpele-Westdach-Solaredge_Power_Optimizer-04.jpg",
-    "media_label": "Energetyka i paliwa"
+    "media_label": "Energetyka i paliwa",
+    "independent_sources_count": 11,
+    "syndicate_groups": []
   },
   {
     "id": 1076259801,
@@ -39015,7 +39391,9 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Palac_Rzplitej_na_Pl._Krasinskich_(Sad_Najwyzszy)_-_Varsava_-_Dvorec_Reci_Pospolitoj_na_Pl._Krasinskih_(Verh_sud)_-_Varsovie_-_Palais_de_la_Republique,_Pl._Krasinski_(Cour_Supreme)_-_Warsaw_-_the_Republic_Pal_1945_(119893198).jpg",
-    "media_label": "Wymiar sprawiedliwości"
+    "media_label": "Wymiar sprawiedliwości",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 1853646700,
@@ -39203,7 +39581,9 @@
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
-    "media_label": "Policja i bezpieczeństwo"
+    "media_label": "Policja i bezpieczeństwo",
+    "independent_sources_count": 9,
+    "syndicate_groups": []
   },
   {
     "id": 469481970,
@@ -39536,7 +39916,19 @@
     "media_license": "Public domain",
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stethoscope_(NIH_BioArt_501).png",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 21,
+    "syndicate_groups": [
+      [
+        "Interia Wydarzenia",
+        "Radio Kraków"
+      ],
+      [
+        "Onet Wiadomości",
+        "TVP3 Kraków",
+        "TVP3 Katowice"
+      ]
+    ]
   },
   {
     "id": 1817767462,
@@ -39728,7 +40120,9 @@
     "media_license": "CC0",
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_widok_z_mostu_08.jpg",
-    "media_label": "Polska (zdjęcie ilustracyjne)"
+    "media_label": "Polska (zdjęcie ilustracyjne)",
+    "independent_sources_count": 9,
+    "syndicate_groups": []
   },
   {
     "id": 625694053,
@@ -39898,7 +40292,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 7,
+    "syndicate_groups": []
   },
   {
     "id": 1578428258,
@@ -40023,7 +40419,9 @@
     "media_license": "CC BY 2.0",
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
-    "media_label": "Polityka i instytucje państwowe"
+    "media_label": "Polityka i instytucje państwowe",
+    "independent_sources_count": 4,
+    "syndicate_groups": []
   },
   {
     "id": 997059413,
@@ -40209,7 +40607,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:PKP_Intercity_train_at_Krak%C3%B3w_G%C5%82%C3%B3wny_train_station,_Poland,_2019.jpg",
-    "media_label": "Transport szynowy"
+    "media_label": "Transport szynowy",
+    "independent_sources_count": 9,
+    "syndicate_groups": []
   },
   {
     "id": 1320628585,
@@ -40310,7 +40710,9 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
-    "media_label": "Finanse i rynek kapitałowy"
+    "media_label": "Finanse i rynek kapitałowy",
+    "independent_sources_count": 2,
+    "syndicate_groups": []
   },
   {
     "id": 203200503,
@@ -40426,6 +40828,8 @@
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Lotnicze_Pogotowie_Ratunkowe,_%C5%9Bmig%C5%82owiec_SP-HXR.jpg",
-    "media_label": "Ochrona zdrowia"
+    "media_label": "Ochrona zdrowia",
+    "independent_sources_count": 3,
+    "syndicate_groups": []
   }
 ]

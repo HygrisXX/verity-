@@ -31,6 +31,8 @@ if _THIS_DIR not in sys.path:
 import seo_builder  # noqa: E402
 import ai_synthesizer  # noqa: E402
 import media_library  # noqa: E402
+import market_loader  # noqa: E402
+import outlet_ranking  # noqa: E402
 
 _ACTIVE_COST_GUARD = None
 _MEDIA_REGISTRY_CACHE = None
@@ -48,37 +50,8 @@ MAX_REGIONAL_PER_RUN = 3
 REGIONAL_SATURATION_CAP = 6
 ENABLE_THUMBNAILS = os.environ.get("VERITY_ENABLE_THUMBNAILS", "0").strip().lower() in ("1", "true", "yes")
 
-DEFAULT_MARKET_CONFIG = {
-    "market": "pl",
-    "name": "Polska",
-    "language": "pl",
-    "currency": "PLN",
-    "quote_max_chars_per_outlet": 300,
-    "quote_max_sentences_per_outlet": 2,
-    "single_source_mode": "mention",
-    "use_llm_text": False,
-    "commercial_mode": False,
-    "anonymize_suspects": True,
-    "blocked_sources": [],
-}
-
-
-def load_market_config(market: str | None = None) -> dict:
-    """Ładuje profil rynku z markets/<market>.json (domyślnie pl)."""
-    mkt = (market or os.environ.get("VERITY_MARKET") or "pl").strip().lower()
-    cfg = dict(DEFAULT_MARKET_CONFIG)
-    cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "markets", f"{mkt}.json")
-    if os.path.isfile(cfg_path):
-        try:
-            with open(cfg_path, "r", encoding="utf-8") as f:
-                loaded = json.load(f)
-            if isinstance(loaded, dict):
-                cfg.update(loaded)
-        except (OSError, ValueError):
-            pass
-    return cfg
-
-
+DEFAULT_MARKET_CONFIG = market_loader.DEFAULT_MARKET_CONFIG
+load_market_config = market_loader.load_market_config
 MARKET_CONFIG = load_market_config()
 
 _SUSPECT_ANONYMIZE_RE = re.compile(
@@ -113,191 +86,8 @@ _FIRST_PERSON_OUTLET_RE = re.compile(
     re.IGNORECASE,
 )
 
-LIVE_RSS_FEEDS = [
-    # --- Polityka, Prawo, Bezpieczeństwo, Opinia ---
-    {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss_main", "path": "/Polska/Polityka", "group": "Gremi Media"},
-    {"name": "Defence24", "url": "https://defence24.pl/feed", "path": "/Polska/Polityka", "group": "Defence24"},
-    {"name": "InfoSecurity24", "url": "https://infosecurity24.pl/feed", "path": "/Polska/Polityka", "group": "Defence24"},
-    {"name": "Niezależna.pl", "url": "https://niezalezna.pl/feed/", "path": "/Polska/Polityka"},
-    {"name": "Newsweek Polska", "url": "https://www.newsweek.pl/.feed", "path": "/Polska/Polityka"},
-    {"name": "Tygodnik Powszechny", "url": "https://www.tygodnikpowszechny.pl/rss.xml", "path": "/Polska/Polityka"},
-    {"name": "Klub Jagielloński", "url": "https://klubjagiellonski.pl/feed/", "path": "/Polska/Polityka"},
-    {"name": "Krytyka Polityczna", "url": "https://krytykapolityczna.pl/feed/", "path": "/Polska/Polityka"},
-    {"name": "Kultura Liberalna", "url": "https://kulturaliberalna.pl/feed/", "path": "/Polska/Polityka"},
-
-    # --- Gospodarka, Finanse, Prawo, Rynek Pracy, Rolnictwo ---
-    {"name": "Bankier.pl", "url": "https://www.bankier.pl/rss/wiadomosci.xml", "path": "/Polska/Gospodarka"},
-    {"name": "Money.pl", "url": "https://www.money.pl/rss/main.xml", "path": "/Polska/Gospodarka"},
-    {"name": "WNP.pl", "url": "https://www.wnp.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
-    {"name": "300Gospodarka", "url": "https://300gospodarka.pl/feed", "path": "/Polska/Gospodarka"},
-    {"name": "Business Insider PL", "url": "https://businessinsider.com.pl/.feed", "path": "/Polska/Gospodarka"},
-    {"name": "Forbes Polska", "url": "https://www.forbes.pl/.feed", "path": "/Polska/Gospodarka"},
-    {"name": "PulsHR", "url": "https://www.pulshr.pl/rss/serwis_rss.xml", "path": "/Polska/Gospodarka"},
-    {"name": "Farmer.pl", "url": "https://www.farmer.pl/rss/fakty.xml", "path": "/Polska/Gospodarka"},
-    {"name": "Forsal.pl", "url": "https://forsal.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
-    {"name": "Puls Biznesu", "url": "https://www.pb.pl/rss/najnowsze.xml", "path": "/Polska/Gospodarka"},
-    {"name": "Parkiet", "url": "https://www.parkiet.com/rss_main", "path": "/Polska/Gospodarka", "group": "Gremi Media"},
-    {"name": "XYZ.pl", "url": "https://xyz.pl/feed", "path": "/Polska/Gospodarka"},
-    {"name": "Legalis.pl", "url": "https://legalis.pl/feed/", "path": "/Polska/Gospodarka"},
-    {"name": "Infor.pl", "url": "https://www.infor.pl/.feed", "path": "/Polska/Gospodarka", "group": "Infor PL"},
-    {"name": "Cashless.pl", "url": "https://www.cashless.pl/rss", "path": "/Polska/Gospodarka"},
-    {"name": "Comparic.pl", "url": "https://comparic.pl/feed/", "path": "/Polska/Gospodarka"},
-    {"name": "StrefaInwestorów.pl", "url": "https://strefainwestorow.pl/rss.xml", "path": "/Polska/Gospodarka"},
-    {"name": "Subiektywnie o Finansach", "url": "https://subiektywnieofinansach.pl/feed/", "path": "/Polska/Gospodarka"},
-    {"name": "MamStartup.pl", "url": "https://mamstartup.pl/feed/", "path": "/Polska/Gospodarka"},
-    {"name": "Wiadomości Handlowe", "url": "https://www.wiadomoscihandlowe.pl/feed", "path": "/Polska/Gospodarka"},
-    {"name": "WP Finanse", "url": "https://finanse.wp.pl/rss.xml", "path": "/Polska/Gospodarka", "group": "Wirtualna Polska"},
-    {"name": "Biznes Interia", "url": "https://biznes.interia.pl/feed", "path": "/Polska/Gospodarka", "group": "Interia"},
-
-    # --- Energetyka, Transformacja, Elektromobilność ---
-    {"name": "WysokieNapiecie.pl", "url": "https://wysokienapiecie.pl/feed/", "path": "/Polska/Energetyka"},
-    {"name": "Energetyka24", "url": "https://energetyka24.com/feed", "path": "/Polska/Energetyka", "group": "Defence24"},
-    {"name": "Elektrowóz.pl", "url": "https://elektrowoz.pl/feed/", "path": "/Polska/Energetyka"},
-
-    # --- Wydarzenia Ogólnopolskie, Zdrowie, Motoryzacja ---
-    {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/wszystkie.xml", "path": "/Polska"},
-    {"name": "Interia Wydarzenia", "url": "https://wydarzenia.interia.pl/feed", "path": "/Polska", "group": "Interia"},
-    {"name": "WP Wiadomości", "url": "https://wiadomosci.wp.pl/rss.xml", "path": "/Polska", "group": "Wirtualna Polska"},
-    {"name": "Onet Wiadomości", "url": "https://wiadomosci.onet.pl/.feed", "path": "/Polska"},
-    {"name": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "path": "/Polska"},
-    {"name": "Gazeta.pl", "url": "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.htm", "path": "/Polska"},
-    {"name": "Fakt.pl", "url": "https://www.fakt.pl/wydarzenia.feed", "path": "/Polska"},
-    {"name": "Dziennik.pl", "url": "https://wiadomosci.dziennik.pl/.feed", "path": "/Polska", "group": "Infor PL"},
-    {"name": "GazetaPrawna.pl (DGP)", "url": "https://www.gazetaprawna.pl/.feed", "path": "/Polska", "group": "Infor PL"},
-    {"name": "TVP.info", "url": "https://www.tvp.info/tvp.info/rss+xml.php", "path": "/Polska"},
-    {"name": "Wyborcza.pl", "url": "https://wyborcza.pl/pub/rss/najnowsze_wyborcza.xml", "path": "/Polska"},
-    {"name": "naTemat.pl", "url": "https://natemat.pl/rss/wszystkie", "path": "/Polska"},
-    {"name": "o2.pl", "url": "https://www.o2.pl/rss.xml", "path": "/Polska", "group": "Wirtualna Polska"},
-    {"name": "Wirtualnemedia.pl", "url": "https://www.wirtualnemedia.pl/rss/aktualnosci", "path": "/Polska"},
-    {"name": "RadioMaryja.pl", "url": "https://www.radiomaryja.pl/feed/", "path": "/Polska"},
-    {"name": "Auto Świat", "url": "https://www.auto-swiat.pl/.feed", "path": "/Polska"},
-    {"name": "Medonet.pl", "url": "https://www.medonet.pl/.feed", "path": "/Polska"},
-    {"name": "Niedziela.pl", "url": "https://www.niedziela.pl/rss", "path": "/Polska"},
-
-    # --- Polska Lokalna i Regionalna (wszystkie 16 województw: TVP3, Polskie Radio, prasa powiatowa) ---
-    # Uwaga: Gazeta Wrocławska, Dziennik Łódzki i Dziennik Zachodni pozostają na /rss (4-5 depesz) — alternatywne /rss/*.xml zwracają HTTP 403 (Cloudflare).
-    # Dolnośląskie (5)
-    {"name": "Gazeta Wrocławska", "url": "https://gazetawroclawska.pl/rss", "path": "/Polska/Regiony/Dolnoslaskie", "group": "Polska Press"},
-    {"name": "Radio Wrocław", "url": "https://www.radiowroclaw.pl/articles/rss", "path": "/Polska/Regiony/Dolnoslaskie"},
-    {"name": "TVP3 Wrocław", "url": "https://wroclaw.tvp.pl/", "path": "/Polska/Regiony/Dolnoslaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Wroclaw.pl", "url": "https://www.wroclaw.pl/dla-mieszkanca/rss/", "path": "/Polska/Regiony/Dolnoslaskie"},
-    {"name": "Świdnica24.pl", "url": "https://swidnica24.pl/feed/", "path": "/Polska/Regiony/Dolnoslaskie"},
-    # Kujawsko-Pomorskie (4)
-    {"name": "Radio PiK", "url": "https://www.radiopik.pl/rss.php", "path": "/Polska/Regiony/Kujawsko-Pomorskie"},
-    {"name": "Gazeta Pomorska", "url": "https://pomorska.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Kujawsko-Pomorskie", "group": "Polska Press"},
-    {"name": "TVP3 Bydgoszcz", "url": "https://bydgoszcz.tvp.pl/", "path": "/Polska/Regiony/Kujawsko-Pomorskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "TylkoTorun.pl", "url": "https://tylkotorun.pl/feed/", "path": "/Polska/Regiony/Kujawsko-Pomorskie"},
-    # Lubelskie (5)
-    {"name": "Radio Lublin", "url": "https://radio.lublin.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
-    {"name": "Kurier Lubelski", "url": "https://kurierlubelski.pl/rss", "path": "/Polska/Regiony/Lubelskie", "group": "Polska Press"},
-    {"name": "Lublin112.pl", "url": "https://www.lublin112.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
-    {"name": "TVP3 Lublin", "url": "https://lublin.tvp.pl/", "path": "/Polska/Regiony/Lubelskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Radio Impuls", "url": "https://radioimpuls.pl/feed/", "path": "/Polska/Regiony/Lubelskie"},
-    # Lubuskie (7)
-    {"name": "Radio Zachód", "url": "https://zachod.pl/feed/?paged=1", "path": "/Polska/Regiony/Lubuskie"},
-    {"name": "Gazeta Lubuska", "url": "https://gazetalubuska.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Lubuskie", "group": "Polska Press"},
-    {"name": "TVP3 Gorzów", "url": "https://gorzow.tvp.pl/", "path": "/Polska/Regiony/Lubuskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Gorzowianin.com", "url": "https://gorzowianin.com/feed/", "path": "/Polska/Regiony/Lubuskie"},
-    {"name": "NewsLubuski.pl", "url": "https://newslubuski.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
-    {"name": "Radio Index", "url": "https://wzielonej.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
-    {"name": "Pościgi.pl", "url": "https://poscigi.pl/feed/", "path": "/Polska/Regiony/Lubuskie"},
-    # Łódzkie (4)
-    {"name": "Radio Łódź", "url": "https://radiolodz.pl/feed/", "path": "/Polska/Regiony/Lodzkie"},
-    {"name": "Dziennik Łódzki", "url": "https://dzienniklodzki.pl/rss", "path": "/Polska/Regiony/Lodzkie", "group": "Polska Press"},
-    {"name": "TVP3 Łódź", "url": "https://lodz.tvp.pl/", "path": "/Polska/Regiony/Lodzkie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Radio ZW", "url": "https://radiozw.com.pl/feed/", "path": "/Polska/Regiony/Lodzkie"},
-    # Małopolskie (5)
-    {"name": "Radio Kraków", "url": "https://www.radiokrakow.pl/rss.xml", "path": "/Polska/Regiony/Malopolskie"},
-    {"name": "Gazeta Krakowska", "url": "https://gazetakrakowska.pl/rss", "path": "/Polska/Regiony/Malopolskie", "group": "Polska Press"},
-    {"name": "TVP3 Kraków", "url": "https://krakow.tvp.pl/", "path": "/Polska/Regiony/Malopolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Podhale24.pl", "url": "https://podhale24.pl/rss", "path": "/Polska/Regiony/Malopolskie"},
-    {"name": "Bochnianin.pl", "url": "https://www.bochnianin.pl/feed/", "path": "/Polska/Regiony/Malopolskie"},
-    # Mazowieckie (5)
-    {"name": "Warszawa w Pigułce", "url": "https://warszawawpigulce.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
-    {"name": "TVP3 Warszawa", "url": "https://warszawa.tvp.pl/", "path": "/Polska/Regiony/Mazowieckie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Radio Kolor", "url": "https://radiokolor.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
-    {"name": "PetroNews.pl", "url": "https://petronews.pl/feed/", "path": "/Polska/Regiony/Mazowieckie"},
-    {"name": "CoZaDzień.pl", "url": "https://www.cozadzien.pl/rss/articles/pl", "path": "/Polska/Regiony/Mazowieckie"},
-    # Opolskie (4)
-    {"name": "Nowa Trybuna Opolska", "url": "https://nto.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Opolskie", "group": "Polska Press"},
-    {"name": "TVP3 Opole", "url": "https://opole.tvp.pl/38939592/aktualnosci", "path": "/Polska/Regiony/Opolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Opolska360.pl", "url": "https://opolska360.pl/feed", "path": "/Polska/Regiony/Opolskie"},
-    {"name": "CzasNaOpole.pl", "url": "https://czasnaopole.pl/feed/", "path": "/Polska/Regiony/Opolskie"},
-    # Podkarpackie (4)
-    {"name": "Radio Rzeszów", "url": "https://radio.rzeszow.pl/feed/", "path": "/Polska/Regiony/Podkarpackie"},
-    {"name": "Nowiny24", "url": "https://nowiny24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Podkarpackie", "group": "Polska Press"},
-    {"name": "TVP3 Rzeszów", "url": "https://rzeszow.tvp.pl/", "path": "/Polska/Regiony/Podkarpackie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Rzeszow-News.pl", "url": "https://rzeszow-news.pl/feed/", "path": "/Polska/Regiony/Podkarpackie"},
-    # Podlaskie (5)
-    {"name": "Kurier Poranny", "url": "https://poranny.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Podlaskie", "group": "Polska Press"},
-    {"name": "Radio Białystok", "url": "https://www.radio.bialystok.pl/rss", "path": "/Polska/Regiony/Podlaskie"},
-    {"name": "TVP3 Białystok", "url": "https://bialystok.tvp.pl/", "path": "/Polska/Regiony/Podlaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Suwałki24.pl", "url": "https://www.suwalki24.pl/rss", "path": "/Polska/Regiony/Podlaskie"},
-    {"name": "4Lomza.pl", "url": "https://feeds.feedburner.com/4lomza.pl", "path": "/Polska/Regiony/Podlaskie"},
-    # Pomorskie (5)
-    {"name": "Radio Gdańsk", "url": "https://radiogdansk.pl/feed/", "path": "/Polska/Regiony/Pomorskie"},
-    {"name": "Dziennik Bałtycki", "url": "https://dziennikbaltycki.pl/rss", "path": "/Polska/Regiony/Pomorskie", "group": "Polska Press"},
-    {"name": "TVP3 Gdańsk", "url": "https://gdansk.tvp.pl/", "path": "/Polska/Regiony/Pomorskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "GP24.pl", "url": "https://gp24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Pomorskie", "group": "Polska Press"},
-    {"name": "Kaszuby24.pl", "url": "https://kaszuby24.pl/feed/", "path": "/Polska/Regiony/Pomorskie"},
-    # Śląskie (7)
-    {"name": "TVS Śląsk", "url": "https://tvs.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
-    {"name": "Dziennik Zachodni", "url": "https://dziennikzachodni.pl/rss", "path": "/Polska/Regiony/Slaskie", "group": "Polska Press"},
-    {"name": "TVP3 Katowice", "url": "https://katowice.tvp.pl/", "path": "/Polska/Regiony/Slaskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Radio 90", "url": "https://www.radio90.pl/feed", "path": "/Polska/Regiony/Slaskie"},
-    {"name": "Radio Piekary", "url": "https://radiopiekary.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
-    {"name": "Bielsko.biala.pl", "url": "https://bielsko.biala.pl/aktualnosci.xml", "path": "/Polska/Regiony/Slaskie"},
-    {"name": "Beskidzka24.pl", "url": "https://beskidzka24.pl/feed/", "path": "/Polska/Regiony/Slaskie"},
-    # Świętokrzyskie (4)
-    {"name": "Radio Kielce", "url": "https://radiokielce.pl/feed/", "path": "/Polska/Regiony/Swietokrzyskie"},
-    {"name": "Echo Dnia Kielce", "url": "https://echodnia.eu/rss", "path": "/Polska/Regiony/Swietokrzyskie", "group": "Polska Press"},
-    {"name": "TVP3 Kielce", "url": "https://kielce.tvp.pl/", "path": "/Polska/Regiony/Swietokrzyskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Radio Ostrowiec", "url": "https://radioostrowiec.pl/feed/", "path": "/Polska/Regiony/Swietokrzyskie"},
-    # Warmińsko-Mazurskie (5)
-    {"name": "Radio Olsztyn", "url": "https://radioolsztyn.pl/feed/", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
-    {"name": "TVP3 Olsztyn", "url": "https://olsztyn.tvp.pl/", "path": "/Polska/Regiony/Warminsko-Mazurskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "TKO Olsztyn", "url": "https://tko.pl/feed/", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
-    {"name": "PortEl.pl", "url": "https://www.portel.pl/rss", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
-    {"name": "info.elblag.pl", "url": "https://info.elblag.pl/rss.xml", "path": "/Polska/Regiony/Warminsko-Mazurskie"},
-    # Wielkopolskie (6)
-    {"name": "ePoznan.pl", "url": "https://epoznan.pl/rss.php", "path": "/Polska/Regiony/Wielkopolskie"},
-    {"name": "Głos Wielkopolski", "url": "https://gloswielkopolski.pl/rss", "path": "/Polska/Regiony/Wielkopolskie", "group": "Polska Press"},
-    {"name": "Radio Poznań", "url": "https://radiopoznan.fm/rss/informacje", "path": "/Polska/Regiony/Wielkopolskie"},
-    {"name": "TVP3 Poznań", "url": "https://poznan.tvp.pl/", "path": "/Polska/Regiony/Wielkopolskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "Asta24.pl", "url": "https://www.asta24.pl/feed", "path": "/Polska/Regiony/Wielkopolskie"},
-    {"name": "rc.fm", "url": "https://www.rc.fm/rss.xml", "path": "/Polska/Regiony/Wielkopolskie"},
-    # Zachodniopomorskie (4)
-    {"name": "Głos Szczeciński", "url": "https://gs24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "Polska Press"},
-    {"name": "Radio Szczecin", "url": "https://radioszczecin.pl/rss.php", "path": "/Polska/Regiony/Zachodniopomorskie"},
-    {"name": "TVP3 Szczecin", "url": "https://szczecin.tvp.pl/", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "TVP3", "source_type": "tvp3_sgdata"},
-    {"name": "GK24.pl", "url": "https://gk24.pl/rss/wiadomosci.xml", "path": "/Polska/Regiony/Zachodniopomorskie", "group": "Polska Press"},
-
-    # --- Świat, Technologia, Cyberbezpieczeństwo, Kosmos ---
-    {"name": "Polsat News", "url": "https://www.polsatnews.pl/rss/swiat.xml", "path": "/Swiat"},
-    {"name": "TVN24", "url": "https://tvn24.pl/swiat.xml", "path": "/Swiat"},
-    {"name": "Niebezpiecznik", "url": "https://niebezpiecznik.pl/feed/", "path": "/Polska"},
-    {"name": "Sekurak", "url": "https://sekurak.pl/feed/", "path": "/Polska"},
-    {"name": "CHIP.pl", "url": "https://www.chip.pl/feed", "path": "/Polska"},
-    {"name": "PurePC", "url": "https://www.purepc.pl/rss.xml", "path": "/Polska"},
-    {"name": "Telepolis.pl", "url": "https://www.telepolis.pl/rss", "path": "/Polska"},
-    {"name": "Benchmark.pl", "url": "https://www.benchmark.pl/rss/aktualnosci-pliki.xml", "path": "/Polska"},
-    {"name": "Instalki.pl", "url": "https://www.instalki.pl/feed/", "path": "/Polska"},
-    {"name": "CyberDefence24", "url": "https://cyberdefence24.pl/feed", "path": "/Polska", "group": "Defence24"},
-    {"name": "Space24", "url": "https://space24.pl/feed", "path": "/Polska", "group": "Defence24"},
-    {"name": "Komputer Świat", "url": "https://www.komputerswiat.pl/.feed", "path": "/Polska"},
-    {"name": "Antyweb.pl", "url": "https://antyweb.pl/feed/", "path": "/Polska"},
-    {"name": "Tabletowo.pl", "url": "https://www.tabletowo.pl/feed/", "path": "/Polska"},
-    {"name": "Kresy.pl", "url": "https://kresy.pl/feed/", "path": "/Swiat"},
-
-    # --- Sport ---
-    {"name": "Sport.pl", "url": "https://www.sport.pl/pub/rss/sport.htm", "path": "/Sport"},
-    {"name": "Przegląd Sportowy", "url": "https://przegladsportowy.onet.pl/.feed", "path": "/Sport"},
-    {"name": "Interia Sport", "url": "https://sport.interia.pl/feed", "path": "/Sport", "group": "Interia"},
-    {"name": "Polsat Sport", "url": "https://www.polsatsport.pl/rss/wszystkie.xml", "path": "/Sport"},
-    {"name": "WP SportoweFakty", "url": "https://sportowefakty.wp.pl/rss.xml", "path": "/Sport", "group": "Wirtualna Polska"},
-    {"name": "Weszło.com", "url": "https://weszlo.com/feed/", "path": "/Sport"},
-    {"name": "Gol24.pl", "url": "https://gol24.pl/rss", "path": "/Sport", "group": "Polska Press"},
-]
+# Źródła RSS/HTML i lista redakcji wiodących ładowane z profilu rynku (markets/<rynek>_feeds.json)
+LIVE_RSS_FEEDS = market_loader.load_market_feeds()
 
 OUTLET_DEFAULT_PATH = {}
 for _f in LIVE_RSS_FEEDS:
@@ -308,13 +98,7 @@ BLACKLIST = {"oko.press", "demagog.org.pl", "konkret24.tvn24.pl"}
 BLACKLIST_EVIDENCE_DOMAINS = ("oko.press", "demagog.org.pl", "konkret24")
 EDITORIAL_STATE_FILENAME = "editorial_state.json"
 
-PREFERRED_PRIMARY_OUTLETS = {
-    "Rzeczpospolita", "Bankier.pl", "Money.pl", "WNP.pl", "300Gospodarka",
-    "WysokieNapiecie.pl", "Energetyka24", "Defence24", "InfoSecurity24",
-    "Polsat News", "TVN24", "Farmer.pl", "PulsHR", "Niebezpiecznik", "Sekurak",
-    "GazetaPrawna.pl (DGP)", "Forsal.pl", "Puls Biznesu", "Parkiet", "XYZ.pl",
-    "Legalis.pl", "CyberDefence24", "Space24", "Infor.pl", "Wiadomości Handlowe",
-}
+PREFERRED_PRIMARY_OUTLETS = set(MARKET_CONFIG.get("preferred_primary_outlets") or [])
 
 OPINION_MARKERS = [
     r"\bfelieton\b",
@@ -368,6 +152,13 @@ OPINION_MARKERS = [
     r"\b\d+\s+(?:ciekawych|najciekawszych|najlepszych)\s+miejsc\b",
     r"\bprywatne\s+zdj[eę]cia\b",
     r"\bpi[aą]tek\s+trzynastego\b.*\bpechow",
+    r"\baktywuj\s+si[eę]\b",
+    r"\bkup\s+teraz\b",
+    r"\bzgarnij\s+(?:rabat|zni[żz]k|bonus)\b",
+    r"\b\d+\s*%\s*taniej\b.*\bblack\s+friday\b",
+    r"\bblack\s+friday\b.*\b(?:taniej|rabat|zni[żz]k|okazj)\b",
+    r"\bmateria[łl]\s+promocyjn",
+    r"\[\s*wiadomo[śs]ci\s*\]\s*$",
 ]
 
 EDITORIAL_URL_SEGMENTS = (
@@ -5360,10 +5151,15 @@ def update_news_cycle(
             uniq_media = len({a.get("media_file") for a in combined if a.get("media_file")})
             print(f"[MEDIA] Przypisano {media_cnt} zdjęć CC ({uniq_media} unikalnych kadrów).")
 
-        # 6. Zapisz articles.json
+        # 6. Zapisz articles.json oraz outlet_ranking.json
         with open(articles_path, "w", encoding="utf-8") as f:
             json.dump(combined, f, ensure_ascii=False, indent=2)
-        print(f"[SUKCES] Baza zaktualizowana: {len(combined)} artykułów zapisanych w {articles_path}")
+        ranking_data = outlet_ranking.compute_outlet_ranking(combined, clickbait_checker=_is_clickbait_title)
+        outlet_ranking.save_outlet_ranking(ranking_data, base_dir=base_dir)
+        print(
+            f"[SUKCES] Baza zaktualizowana: {len(combined)} artykułów zapisanych w {articles_path} "
+            f"(ranking: {ranking_data['outlets_ranked']} redakcji, średni clickbait: {ranking_data['overall_clickbait_pct']}%)"
+        )
 
         # 7. Wygeneruj całą infrastrukturę SEO (statyczne HTML, karty OG 1200x630, sitemap.xml, news-sitemap.xml, feed.xml, robots.txt, 404.html)
         seo_builder.build_all_seo_artifacts(base_dir, combined)
