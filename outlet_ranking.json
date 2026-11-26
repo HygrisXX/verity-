@@ -1,5 +1,5 @@
 {
-  "updated_iso": "2026-11-26T20:14:40+00:00",
+  "updated_iso": "2026-11-26T20:38:39+00:00",
   "articles_analyzed": 300,
   "outlets_ranked": 122,
   "zero_clickbait_outlets": 110,
@@ -594,6 +594,18 @@
       "rank": 49
     },
     {
+      "outlet": "Radio Olsztyn",
+      "articles_count": 11,
+      "multi_source_count": 10,
+      "primary_count": 8,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.6,
+      "discrepancy_count": 0,
+      "reliability_score": 97.0,
+      "rank": 50
+    },
+    {
       "outlet": "Pościgi.pl",
       "articles_count": 8,
       "multi_source_count": 8,
@@ -603,7 +615,7 @@
       "avg_agreement_pct": 94.5,
       "discrepancy_count": 0,
       "reliability_score": 97.0,
-      "rank": 50
+      "rank": 51
     },
     {
       "outlet": "TVP3 Wrocław",
@@ -615,7 +627,7 @@
       "avg_agreement_pct": 94.6,
       "discrepancy_count": 0,
       "reliability_score": 97.0,
-      "rank": 51
+      "rank": 52
     },
     {
       "outlet": "Auto Świat",
@@ -627,18 +639,6 @@
       "avg_agreement_pct": 97.6,
       "discrepancy_count": 0,
       "reliability_score": 97.0,
-      "rank": 52
-    },
-    {
-      "outlet": "Radio Olsztyn",
-      "articles_count": 11,
-      "multi_source_count": 10,
-      "primary_count": 8,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 94.4,
-      "discrepancy_count": 0,
-      "reliability_score": 96.9,
       "rank": 53
     },
     {
@@ -1002,6 +1002,18 @@
       "rank": 83
     },
     {
+      "outlet": "TVP3 Olsztyn",
+      "articles_count": 5,
+      "multi_source_count": 5,
+      "primary_count": 0,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.0,
+      "discrepancy_count": 0,
+      "reliability_score": 95.0,
+      "rank": 84
+    },
+    {
       "outlet": "ePoznan.pl",
       "articles_count": 4,
       "multi_source_count": 4,
@@ -1011,18 +1023,6 @@
       "avg_agreement_pct": 97.0,
       "discrepancy_count": 0,
       "reliability_score": 95.0,
-      "rank": 84
-    },
-    {
-      "outlet": "TVP3 Olsztyn",
-      "articles_count": 5,
-      "multi_source_count": 5,
-      "primary_count": 0,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 93.6,
-      "discrepancy_count": 0,
-      "reliability_score": 94.8,
       "rank": 85
     },
     {

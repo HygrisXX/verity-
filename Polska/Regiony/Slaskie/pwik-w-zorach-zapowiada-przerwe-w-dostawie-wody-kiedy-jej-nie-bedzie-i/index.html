@@ -155,7 +155,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=3b9991aa" />
+  <link rel="stylesheet" href="../../../../styles.css?v=d109040b" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -194,6 +194,8 @@
           </div>
         </a>
 
+        <a id="weatherBubble" class="weather-bubble" href="../../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Mróz, -2.6°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, -3°C, Mróz. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">❄️</span><span class="wb-city">Warszawa</span><span class="wb-temp">-3°C</span></a>
+
         <div class="header-controls">
           <div class="search-box">
             <input
@@ -227,7 +229,7 @@
           <a class="path-chip" data-path="/Sport" href="../../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
         </div>
         <div class="nav-tools" aria-label="Narzędzia i dane">
-          <a class="path-chip" data-path="/rynki" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki i pogoda</a>
+          <a class="path-chip" data-path="/rynki" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki</a>
           <a class="path-chip" data-path="/kamery" href="../../../../kamery/" onclick="return fixFileHref(event)"><span class="nav-tool-dot" aria-hidden="true"></span>Kamery</a>
           <a class="path-chip" data-path="/ranking" href="../../../../ranking/" onclick="return fixFileHref(event)">Ranking</a>
         </div>
@@ -264,7 +266,7 @@
     </div>
     </div>
   </header>
-  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.48</span><span class="mkt-chg chg-down">▼ -0.02%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.32%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.36%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.90</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 044</span><span class="mkt-chg chg-up">▲ +1.59%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 183</span><span class="mkt-chg chg-down">▼ -0.25%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 971</span><span class="mkt-chg chg-up">▲ +1.50%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$60 659</span><span class="mkt-chg chg-up">▲ +1.18%</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">❄️</span><span class="tk-lbl">Warszawa</span><span class="tk-val">-2.6°C</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">⛅</span><span class="tk-lbl">Oslo</span><span class="tk-val">-5.2°C</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Rynki i pogoda →</span><span class="tk-more-short">Rynki →</span></a></div></div>
+  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.48</span><span class="mkt-chg chg-down">▼ -0.02%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.32%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.36%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.90</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 044</span><span class="mkt-chg chg-up">▲ +1.59%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 183</span><span class="mkt-chg chg-down">▼ -0.25%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 971</span><span class="mkt-chg chg-up">▲ +1.50%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$60 659</span><span class="mkt-chg chg-up">▲ +1.18%</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -428,9 +430,10 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
-        <a href="../../../../ranking/" onclick="return fixFileHref(event)">Ranking redakcji (/ranking)</a>
-        <a href="../../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
+        <a href="../../../../pogoda/" onclick="return fixFileHref(event)">Pogoda i mapa (/pogoda)</a>
+        <a href="../../../../rynki/" onclick="return fixFileHref(event)">Notowania rynkowe (/rynki)</a>
         <a href="../../../../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
+        <a href="../../../../ranking/" onclick="return fixFileHref(event)">Ranking redakcji (/ranking)</a>
         <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="../../../../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
         <a href="../../../../o-nas/" onclick="return fixFileHref(event)">O nas</a>
@@ -448,7 +451,7 @@
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Slaskie/pwik-w-zorach-zapowiada-przerwe-w-dostawie-wody-kiedy-jej-nie-bedzie-i";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
   <script src="../../../../app.js?v=fd0891d2"></script>
   <script src="../../../../community.js?v=7bc8db68" defer></script>
-  
+  <script src="../../../../weather.js?v=23447f76" defer></script>
   
   
 </body>

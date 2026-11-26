@@ -3367,13 +3367,22 @@ class TestLegalComplianceAndRegexGuards(unittest.TestCase):
             self.assertIn("EUR/PLN", ticker)
             self.assertIn("NOK/PLN", ticker)
             self.assertIn("/rynki", ticker)
+            self.assertNotIn("ticker-weather", ticker)
+            bubble = seo_builder._render_weather_bubble_html("./", mkt)
+            self.assertIn('id="weatherBubble"', bubble)
+            self.assertIn("pogoda/", bubble)
+            self.assertIn("°C", bubble)
             mkt_ssr = seo_builder._render_markets_ssr("../", mkt)
-            self.assertIn("Notowania rynkowe, waluty i mapa pogody", mkt_ssr)
-            self.assertIn("pl-map-svg", mkt_ssr)
-            self.assertIn("MORZE BAŁTYCKIE", mkt_ssr)
+            self.assertIn("Notowania rynkowe i waluty", mkt_ssr)
             self.assertIn("kpi-card", mkt_ssr)
-            self.assertIn("Oslo", mkt_ssr)
-        for slug in ("rynki", "metodologia", "o-nas", "polityka-prywatnosci", "zglos-blad"):
+            self.assertNotIn("pl-map-svg", mkt_ssr)
+            wx_ssr = seo_builder._render_weather_page_ssr("../", mkt)
+            self.assertIn("Pogoda i mapa Polski", wx_ssr)
+            self.assertIn("userWeatherCard", wx_ssr)
+            self.assertIn("pl-map-svg", wx_ssr)
+            self.assertIn("MORZE BAŁTYCKIE", wx_ssr)
+            self.assertIn("Oslo", wx_ssr)
+        for slug in ("rynki", "pogoda", "metodologia", "o-nas", "polityka-prywatnosci", "zglos-blad"):
             page_path = os.path.join(ROOT_DIR, slug, "index.html")
             if os.path.exists(page_path):
                 with open(page_path, "r", encoding="utf-8") as f:

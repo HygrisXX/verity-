@@ -629,7 +629,7 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
         (
             f'<a class="{mkt_cls}" data-path="/rynki" href="{mkt_href}" '
             'onclick="return fixFileHref(event)">'
-            '<span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki i pogoda</a>'
+            '<span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki</a>'
         ),
         (
             f'<a class="{cam_cls}" data-path="/kamery" href="{cam_href}" '
@@ -1856,27 +1856,44 @@ def _render_market_ticker_html(rel_root: str, mkt: dict | None) -> str:
             f'<span class="ticker-pill"><span class="tk-lbl">{html.escape(cr["symbol"])}</span>'
             f'<span class="tk-val">${float(cr["price_usd"]):,.0f}</span>{_fmt_chg(cr.get("change_pct"))}</span>'.replace(",", "\u00A0")
         )
-    cities = {w.get("city"): w for w in ((mkt.get("weather") or {}).get("cities") or [])}
-    for cname in ("Warszawa", "Oslo"):
-        w = cities.get(cname)
-        if w:
-            ico = _weather_icon_char(w.get("condition_key") or "")
-            pills.append(
-                f'<span class="ticker-pill ticker-weather"><span aria-hidden="true">{ico}</span>'
-                f'<span class="tk-lbl">{html.escape(cname)}</span>'
-                f'<span class="tk-val">{float(w["temp_c"]):.1f}°C</span></span>'
-            )
     if not pills:
         return ""
     href = html.escape(_rel_href(rel_root, "/rynki"), quote=True)
     return (
-        '<div class="market-ticker" role="region" aria-label="Notowania i pogoda">'
+        '<div class="market-ticker" role="region" aria-label="Notowania rynkowe">'
         '<div class="container market-ticker-inner">'
         f'<div class="ticker-track">{"".join(pills)}</div>'
         f'<a class="ticker-more" href="{href}" onclick="return fixFileHref(event)">'
-        '<span class="tk-more-full">Rynki i pogoda →</span>'
+        '<span class="tk-more-full">Wszystkie notowania →</span>'
         '<span class="tk-more-short">Rynki →</span></a>'
         '</div></div>'
+    )
+
+
+def _render_weather_bubble_html(rel_root: str, mkt: dict | None, active_path: str = "") -> str:
+    cities = ((mkt or {}).get("weather") or {}).get("cities") or []
+    city_obj = next((c for c in cities if c.get("city") == "Warszawa"), cities[0] if cities else None)
+    href = html.escape(_rel_href(rel_root, "/pogoda"), quote=True)
+    act_cls = " active" if active_path == "/pogoda" else ""
+    if city_obj:
+        cname = str(city_obj.get("city") or "Warszawa")
+        temp_val = float(city_obj.get("temp_c", 0.0))
+        temp_short = f"{int(round(temp_val))}°C"
+        cond = str(city_obj.get("condition") or "Pogoda bieżąca")
+        ico = _weather_icon_char(city_obj.get("condition_key") or "")
+        title_attr = html.escape(f"{cname}: {cond}, {temp_val:.1f}°C — kliknij, aby otworzyć mapę pogody", quote=True)
+        aria_attr = html.escape(f"Pogoda: {cname}, {temp_short}, {cond}. Otwórz mapę pogody.", quote=True)
+    else:
+        cname, temp_short, ico = "Pogoda", "—", "⛅"
+        title_attr = html.escape("Otwórz mapę pogody", quote=True)
+        aria_attr = title_attr
+    return (
+        f'<a id="weatherBubble" class="weather-bubble{act_cls}" href="{href}" '
+        f'onclick="return fixFileHref(event)" title="{title_attr}" aria-label="{aria_attr}">'
+        f'<span class="wb-ico" aria-hidden="true">{ico}</span>'
+        f'<span class="wb-city">{html.escape(cname)}</span>'
+        f'<span class="wb-temp">{html.escape(temp_short)}</span>'
+        '</a>'
     )
 
 
@@ -2097,8 +2114,68 @@ def _render_poland_weather_map_section(rel_root: str, weather: dict) -> str:
     </section>"""
 
 
+def _render_weather_page_ssr(rel_root: str, mkt: dict) -> str:
+    """Renderuje dedykowaną stronę /pogoda/: karta lokalizacji użytkownika + mapa pogody Polski."""
+    updated = html.escape((mkt.get("updated_iso") or "")[:16].replace("T", " "))
+    weather = mkt.get("weather") or {}
+    cities = list(weather.get("cities") or [])
+    dc = next((c for c in cities if c.get("city") == "Warszawa"), cities[0] if cities else None)
+    if dc:
+        u_ico = _weather_icon_char(dc.get("condition_key") or "")
+        u_temp = float(dc.get("temp_c", 0.0))
+        u_tone = _temp_tone_class(u_temp)
+        u_wind = f"{float(dc.get('wind_kmh', 0)):.0f} km/h"
+        u_press = f"{float(dc['pressure_hpa']):.0f} hPa" if dc.get("pressure_hpa") else "—"
+        u_hum = f"{int(dc['humidity_pct'])}%" if dc.get("humidity_pct") is not None else "—"
+        u_city = html.escape(dc.get("city") or "Warszawa")
+        u_cond = html.escape(dc.get("condition") or "")
+        u_sub = html.escape(f"{dc.get('voivodeship') or 'Polska'} · Stacja domyślna")
+        u_body = (
+            f'<div class="uwx-main">'
+            f'<span class="uwx-icon" aria-hidden="true">{u_ico}</span>'
+            f'<div class="uwx-place"><div class="uwx-city">{u_city}</div><div class="uwx-sub">{u_sub}</div></div>'
+            f'<div class="uwx-reading"><span class="wd-temp {u_tone}">{u_temp:.1f}°C</span><span class="uwx-cond">{u_cond}</span></div>'
+            f'</div>'
+            f'<div class="uwx-stats">'
+            f'<div class="uwx-stat"><span>Odczuwalna</span><strong>—</strong></div>'
+            f'<div class="uwx-stat"><span>Wiatr</span><strong>{u_wind}</strong></div>'
+            f'<div class="uwx-stat"><span>Ciśnienie</span><strong>{u_press}</strong></div>'
+            f'<div class="uwx-stat"><span>Wilgotność</span><strong>{u_hum}</strong></div>'
+            f'</div>'
+        )
+    else:
+        u_body = '<p class="uwx-note">Brak danych pogodowych — kliknij przycisk lokalizacji, aby pobrać pomiar.</p>'
+
+    weather_map_html = _render_poland_weather_map_section(rel_root, weather)
+    rynki_href = html.escape(_rel_href(rel_root, "/rynki"), quote=True)
+
+    return f"""<div class="markets-page weather-page">
+      <div class="feed-meta">
+        <div>
+          <span class="feed-crumb">Pogoda i mapa</span>
+          <h1>Pogoda i mapa Polski</h1>
+        </div>
+        <div class="mkt-jump-bar">
+          <button type="button" id="locateWeatherBtn" class="jump-pill locate-pill">📍 Użyj dokładnej lokalizacji</button>
+          <a href="{rynki_href}" class="jump-pill" onclick="return fixFileHref(event)">Notowania rynkowe →</a>
+          <span class="mkt-updated">Aktualizacja: {updated or "—"}</span>
+        </div>
+      </div>
+
+      <section id="userWeatherCard" class="mkt-panel uwx-card" aria-label="Pogoda w Twojej lokalizacji">
+        <div class="uwx-head">
+          <span class="uwx-eyebrow">Twoja lokalizacja</span>
+          <span class="mkt-badge">Na żywo · Open-Meteo</span>
+        </div>
+        <div class="uwx-body">{u_body}</div>
+      </section>
+
+      {weather_map_html}
+    </div>"""
+
+
 def _render_markets_ssr(rel_root: str, mkt: dict) -> str:
-    """Renderuje czytelny dashboard /rynki/: karty KPI ze sparkline'ami, tabele i mapę pogody Polski."""
+    """Renderuje czytelny dashboard /rynki/: karty KPI ze sparkline'ami oraz tabele walut, giełd i surowców."""
     updated = html.escape((mkt.get("updated_iso") or "")[:16].replace("T", " "))
     cur_block = mkt.get("currencies") or {}
     cur_items = cur_block.get("items") or []
@@ -2173,26 +2250,24 @@ def _render_markets_ssr(rel_root: str, mkt: dict) -> str:
         for c in crypto_list
     ) or '<tr><td colspan="4">Brak danych kryptowalut.</td></tr>'
 
-    weather_map_html = _render_poland_weather_map_section(rel_root, mkt.get("weather") or {})
+    pogoda_href = html.escape(_rel_href(rel_root, "/pogoda"), quote=True)
 
     return f"""<div class="markets-page">
       <div class="feed-meta">
         <div>
-          <span class="feed-crumb">/rynki</span>
-          <h1>Notowania rynkowe, waluty i mapa pogody</h1>
+          <span class="feed-crumb">Rynki</span>
+          <h1>Notowania rynkowe i waluty</h1>
         </div>
         <div class="mkt-jump-bar">
           <a href="#waluty" class="jump-pill">Waluty</a>
           <a href="#gieldy" class="jump-pill">Giełdy i GPW</a>
           <a href="#surowce" class="jump-pill">Surowce i krypto</a>
-          <a href="#pogoda" class="jump-pill">Mapa pogody</a>
+          <a href="{pogoda_href}" class="jump-pill" onclick="return fixFileHref(event)">Mapa pogody →</a>
           <span class="mkt-updated">Aktualizacja: {updated or "—"}</span>
         </div>
       </div>
 
       <div class="kpi-grid">{"".join(kpi_cards)}</div>
-
-      {weather_map_html}
 
       <div id="waluty" class="markets-grid">
         <section class="mkt-panel">
@@ -2570,6 +2645,8 @@ def _page_shell(
           </div>
         </a>
 
+        {_render_weather_bubble_html(rel_root, _ACTIVE_MARKET_DATA, active_path)}
+
         <div class="header-controls">
           <div class="search-box">
             <input
@@ -2627,9 +2704,10 @@ def _page_shell(
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
-        <a href="{html.escape(rel_root, quote=True)}ranking/" onclick="return fixFileHref(event)">Ranking redakcji (/ranking)</a>
-        <a href="{html.escape(rel_root, quote=True)}rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
+        <a href="{html.escape(rel_root, quote=True)}pogoda/" onclick="return fixFileHref(event)">Pogoda i mapa (/pogoda)</a>
+        <a href="{html.escape(rel_root, quote=True)}rynki/" onclick="return fixFileHref(event)">Notowania rynkowe (/rynki)</a>
         <a href="{html.escape(rel_root, quote=True)}kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
+        <a href="{html.escape(rel_root, quote=True)}ranking/" onclick="return fixFileHref(event)">Ranking redakcji (/ranking)</a>
         <a href="{html.escape(rel_root, quote=True)}moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
         <a href="{html.escape(rel_root, quote=True)}metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
         <a href="{html.escape(rel_root, quote=True)}o-nas/" onclick="return fixFileHref(event)">O nas</a>
@@ -2647,8 +2725,8 @@ def _page_shell(
   <script>{init_script_vars}</script>
   <script src="{html.escape(rel_root, quote=True)}app.js?v={html.escape(js_ver, quote=True)}"></script>
   <script src="{html.escape(rel_root, quote=True)}community.js?v={html.escape(comm_ver, quote=True)}" defer></script>
+  <script src="{html.escape(rel_root, quote=True)}weather.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'weather.js')), quote=True)}" defer></script>
   {f'<script src="{html.escape(rel_root, quote=True)}cameras.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cameras.js")), quote=True)}" defer></script>' if active_path == "/kamery" else ""}
-  {f'<script src="{html.escape(rel_root, quote=True)}markets.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "markets.js")), quote=True)}" defer></script>' if active_path == "/rynki" else ""}
   {f'<script src="{html.escape(rel_root, quote=True)}ranking.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ranking.js")), quote=True)}" defer></script>' if active_path == "/ranking" else ""}
 </body>
 </html>
@@ -3019,11 +3097,11 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     )
     _write_file(os.path.join(base_dir, "kamery", "index.html"), cam_html)
 
-    # 3d. Strona Notowań i Pogody (/rynki/)
+    # 3d. Strona Notowań Rynkowych (/rynki/)
     mkt_data = _ACTIVE_MARKET_DATA or {}
     mkt_html = _page_shell(
-        title="Notowania rynkowe, waluty i pogoda — VERITY",
-        description="Aktualne kursy walut NBP (EUR, USD, CHF, GBP, NOK), indeksy giełdowe (WIG20, S&P 500, DAX, OBX), spółki GPW, surowce, kryptowaluty i pogoda dla 16 województw oraz Oslo.",
+        title="Notowania rynkowe i waluty — VERITY",
+        description="Aktualne kursy walut NBP (EUR, USD, CHF, GBP, NOK), indeksy giełdowe (WIG20, S&P 500, DAX, OBX), spółki GPW, surowce i kryptowaluty.",
         canonical_url=f"{site_base_url}/rynki/",
         og_type="website",
         og_image=first_thumb,
@@ -3031,7 +3109,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         json_ld_obj={
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Notowania rynkowe, waluty i pogoda — VERITY",
+            "name": "Notowania rynkowe i waluty — VERITY",
             "url": f"{site_base_url}/rynki/",
         },
         rel_root="../",
@@ -3044,6 +3122,31 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         pending_count=pending_badge_total,
     )
     _write_file(os.path.join(base_dir, "rynki", "index.html"), mkt_html)
+
+    # 3d1. Dedykowana strona Pogody i Mapy Polski (/pogoda/)
+    wx_html = _page_shell(
+        title="Pogoda i mapa Polski (16 województw) — VERITY",
+        description="Aktualna pogoda dla Twojej lokalizacji oraz interaktywna mapa pogody Polski (16 stolic województw IMGW-PIB) i Oslo.",
+        canonical_url=f"{site_base_url}/pogoda/",
+        og_type="website",
+        og_image=first_thumb,
+        og_image_dims=first_thumb_dims,
+        json_ld_obj={
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Pogoda i mapa Polski — VERITY",
+            "url": f"{site_base_url}/pogoda/",
+        },
+        rel_root="../",
+        active_path="/pogoda",
+        ssr_main_html=_render_weather_page_ssr("../", mkt_data),
+        init_script_vars=f'window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/pogoda";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+        css_ver=css_ver,
+        js_ver=js_ver,
+        comm_ver=comm_ver,
+        pending_count=pending_badge_total,
+    )
+    _write_file(os.path.join(base_dir, "pogoda", "index.html"), wx_html)
 
     # 3d2. Strona Rankingu Rzetelności i Clickbaitu Redakcji (/ranking/)
     import outlet_ranking as _or
@@ -3258,6 +3361,12 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         "  </url>",
         "  <url>",
         f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/rynki/')}</loc>",
+        f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
+        "    <changefreq>hourly</changefreq>",
+        "    <priority>0.8</priority>",
+        "  </url>",
+        "  <url>",
+        f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/pogoda/')}</loc>",
         f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
         "    <changefreq>hourly</changefreq>",
         "    <priority>0.8</priority>",

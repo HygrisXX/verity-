@@ -12,7 +12,7 @@
     "updated_iso": "2026-11-26T20:01:30+01:00",
     "display_date": "26.11.2026, 20:01",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -740,8 +740,6 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "— Działania prowadzone są pod nadzorem prokuratora.",
-          "Wezwano również strażaków z grupy chemicznej.",
           "— Działania służb trwają od wczesnych godzin popołudniowych. [Źródło: Warszawa w Pigułce]"
         ]
       }
@@ -753,7 +751,7 @@
         "summary": "Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"",
         "url": "https://tvn24.pl/tvnwarszawa/okolice/kedzierowka-sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki-st9359623?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: Służby.",
-        "omits": "Pomija kontekst (przeprowadzenie, popołudniowych, działalnością) rozwijany w Warszawa w Pigułce."
+        "omits": "Pomija kontekst (popołudniowych, poszukiwaniu, Tajemnicza) rozwijany w Warszawa w Pigułce."
       },
       {
         "outlet": "Warszawa w Pigułce",
@@ -780,15 +778,15 @@
     "seo_faq": [
       {
         "q": "Co wiadomo w sprawie: Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"?",
-        "a": "— Działania prowadzone są pod nadzorem prokuratora."
+        "a": "— Działania służb trwają od wczesnych godzin popołudniowych."
       },
       {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Wezwano również strażaków z grupy chemicznej."
+        "q": "Kogo dotyczy i jaki jest status tej sprawy?",
+        "a": "Sprawa dotyczy: Mieszkańcy Małopolski. Obszar tematyczny: Sprawy lokalne i samorząd. Obecny status: Potwierdzone (2 źródła)."
       },
       {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Małopolski (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
+        "q": "Ile redakcji potwierdziło te informacje?",
+        "a": "Synteza powstała z 2 źródła (TVN24, Warszawa w Pigułce) przy zgodności faktów na poziomie 90%."
       }
     ],
     "media_file": "media/topic-nature-3.jpg",
@@ -1786,7 +1784,7 @@
         "summary": "Losowanie mistrzostw Europy do lat 21. Polska trafiła do grupy śmierci",
         "url": "https://gol24.pl/losowanie-mistrzostw-europy-do-lat-21-polska-trafila-do-grupy-smierci/ar/c2-19152123",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (nasza, przyszłorocznej, najzdolniejszą) rozwijany w WP SportoweFakty, Przegląd Sportowy."
+        "omits": "Pomija kontekst (nasza, przyszłorocznej, Biało-Czerwoni) rozwijany w WP SportoweFakty, Przegląd Sportowy."
       },
       {
         "outlet": "Przegląd Sportowy",
@@ -1893,7 +1891,6 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "— Do dyspozycji Polski będzie postawiony jeden samolot wczesnego ostrzegania AWACS – przekazał Zalewski na konferencji prasowej po spotkaniu.",
           "— To jest bardzo poważna zdolność, która daje nam pogłębioną świadomość sytuacyjną – podkreślił. [Źródło: Gazeta.pl]",
           "Uderzenie miało również bezpośrednie skutki dla Polski. Lotnisko znajduje się około 400 km od granicy z Ukrainą Marinowka była już wcześniej celem ukraińskich ataków. [Źródło: Onet Wiadomości]",
           "We wszystkich trzech miejscach upadku obiektów latających w Nowym Lipowcu (Lubelskie), Rudniku i Mołodyczu (Podkarpackie) znaleziono szczątki rosyjskich pocisków manewrujących Ch-101 – podała w niedzielę Prokuratura Okręgowa w Lublinie na postawie wstępnych ustaleń. [Źródło: Wyborcza.pl]",
@@ -1927,7 +1924,7 @@
         "summary": "Ukraina uderzyła w rosyjskie lotniska. Rakiety doleciały 1300 km w głąb Rosji",
         "url": "https://wiadomosci.onet.pl/swiat/ukraina-zaatakowala-cele-w-rosji-oddalone-o-1300-km-rakiety-neptun-w-akcji/h6krshs",
         "focus": "Eksponuje dane (1300 km, 400 km) oraz wątki: uderzyła, lotniska.",
-        "omits": "Pomija kontekst (zestrzeliwać, spotkania, Zalewski) rozwijany w Defence24, WP Wiadomości."
+        "omits": "Pomija kontekst (zestrzeliwać, spotkania, wiceszef) rozwijany w Defence24, WP Wiadomości."
       },
       {
         "outlet": "Wyborcza.pl",
@@ -3943,7 +3940,7 @@
         "summary": "Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde",
         "url": "https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (raport rynkowy).",
-        "omits": "Pomija kontekst (Financial, Christine, szefem) rozwijany w Puls Biznesu, WNP.pl."
+        "omits": "Pomija kontekst (najważniejsze, zajmującym, Financial) rozwijany w Puls Biznesu."
       },
       {
         "outlet": "WNP.pl",
