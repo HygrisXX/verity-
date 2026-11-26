@@ -617,7 +617,7 @@
     const existingBar = document.getElementById('communityFeedToolbar');
     const existingPanel = document.getElementById('communitySideColumn');
 
-    const isFeedMode = state.currentView === 'public' && !state.currentArticleId && !window.VERITY_IS_MODERATION && !window.VERITY_IS_CAMERAS && !window.VERITY_IS_404;
+    const isFeedMode = state.currentView === 'public' && !state.currentArticleId && !window.VERITY_IS_MODERATION && !window.VERITY_IS_CAMERAS && !window.VERITY_STATIC_PAGE && !window.VERITY_IS_404;
     if (!isFeedMode) {
       viewPub.classList.remove('is-split-community');
       if (existingBar) existingBar.remove();

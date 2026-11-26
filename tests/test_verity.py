@@ -3368,7 +3368,10 @@ class TestLegalComplianceAndRegexGuards(unittest.TestCase):
             self.assertIn("NOK/PLN", ticker)
             self.assertIn("/rynki", ticker)
             mkt_ssr = seo_builder._render_markets_ssr("../", mkt)
-            self.assertIn("Notowania rynkowe, waluty i pogoda", mkt_ssr)
+            self.assertIn("Notowania rynkowe, waluty i mapa pogody", mkt_ssr)
+            self.assertIn("pl-map-svg", mkt_ssr)
+            self.assertIn("MORZE BAŁTYCKIE", mkt_ssr)
+            self.assertIn("kpi-card", mkt_ssr)
             self.assertIn("Oslo", mkt_ssr)
         for slug in ("rynki", "metodologia", "o-nas", "polityka-prywatnosci", "zglos-blad"):
             page_path = os.path.join(ROOT_DIR, slug, "index.html")
@@ -3376,6 +3379,30 @@ class TestLegalComplianceAndRegexGuards(unittest.TestCase):
                 with open(page_path, "r", encoding="utf-8") as f:
                     content = f.read()
                 self.assertIn("VERITY", content)
+
+    def test_media_registry_free_licenses_and_articles_coverage(self):
+        import media_library
+        reg = media_library.load_media_registry(ROOT_DIR)
+        items = reg.get("items") or []
+        self.assertGreaterEqual(len(items), 30)
+        by_file = {}
+        for it in items:
+            self.assertTrue(media_library._is_free_commercial_license(it.get("license", "")), f"Niedozwolona licencja: {it}")
+            self.assertTrue(os.path.isfile(os.path.join(ROOT_DIR, it["file"])), f"Brak pliku: {it['file']}")
+            self.assertTrue(it.get("attribution"))
+            self.assertTrue(it.get("source_url"))
+            by_file[it["file"]] = it
+        arts_path = os.path.join(ROOT_DIR, "articles.json")
+        if os.path.exists(arts_path):
+            with open(arts_path, "r", encoding="utf-8") as f:
+                arts = json.load(f)
+            covered = 0
+            for a in arts:
+                mf = a.get("media_file") or ""
+                if mf:
+                    self.assertIn(mf, by_file, f"media_file spoza media_registry.json: {mf}")
+                    covered += 1
+            self.assertEqual(covered, len(arts), "Każdy artykuł powinien mieć legalne lokalne zdjęcie CC")
 
 
 if __name__ == "__main__":

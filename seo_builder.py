@@ -666,6 +666,13 @@ def _render_regions_drawer_html(rel_root: str, active_path: str = "/Polska") -> 
     </div>"""
 
 
+def _article_media_src(art: dict, rel_root: str) -> str:
+    mf = (art.get("media_file") or "").strip().lstrip("/")
+    if mf:
+        return f"{rel_root}{mf}"
+    return (art.get("thumbnail_url") or "").strip()
+
+
 def _render_card_ssr(art: dict, rel_root: str) -> str:
     seo_url = art.get("seo_url") or ""
     href = html.escape(_rel_href(rel_root, seo_url), quote=True)
@@ -674,7 +681,7 @@ def _render_card_ssr(art: dict, rel_root: str) -> str:
     title_html = html.escape(pl_typography(raw_title))
     cat_label = html.escape(short_cat_label(art.get("path") or "/Polska"))
     date_txt = html.escape(art.get("display_date") or "")
-    lede = html.escape(pl_typography(article_lede(art, 200)))
+    lede = html.escape(pl_typography(article_lede(art, 210)))
     hue = path_hue(art.get("path") or "/Polska")
     srcs = art.get("sources") or []
     pct = art.get("fact_agreement_pct")
@@ -686,11 +693,11 @@ def _render_card_ssr(art: dict, rel_root: str) -> str:
     else:
         meter = '<span class="meter neutral">Temat lokalny/niszowy</span>'
 
-    thumb_url = art.get("thumbnail_url") or ""
+    thumb_url = _article_media_src(art, rel_root)
     no_thumb_cls = "" if thumb_url else " no-thumb"
     img_html = (
         f'<img src="{html.escape(thumb_url, quote=True)}" alt="{title_attr}" class="story-thumb" '
-        f'loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add(\'no-thumb\');this.remove()" />'
+        f'loading="lazy" onerror="this.parentElement.classList.add(\'no-thumb\');this.remove()" />'
         if thumb_url
         else ""
     )
@@ -740,11 +747,11 @@ def _render_lead_ssr(lead: dict, rel_root: str) -> str:
     else:
         meter = '<span class="meter neutral">Temat lokalny/niszowy</span>'
 
-    thumb_url = lead.get("thumbnail_url") or ""
+    thumb_url = _article_media_src(lead, rel_root)
     no_thumb_cls = "" if thumb_url else " no-thumb"
     img_html = (
         f'<img src="{html.escape(thumb_url, quote=True)}" alt="{title_attr}" class="lead-thumb" '
-        f'loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add(\'no-thumb\');this.closest(\'.lead-story\')?.classList.add(\'no-thumb\');this.remove()" />'
+        f'loading="eager" onerror="this.parentElement.classList.add(\'no-thumb\');this.closest(\'.lead-story\')?.classList.add(\'no-thumb\');this.remove()" />'
         if thumb_url
         else ""
     )
@@ -929,13 +936,28 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
         else f'<p class="article-context-line">Synteza faktograficzna na podstawie {sources_label(len(srcs))} · Bezpośrednie odnośniki do publikacji źródłowych poniżej.</p>'
     )
 
-    thumb = art.get("thumbnail_url") or ""
+    thumb = _article_media_src(art, rel_root)
     hero_html = ""
     if thumb:
-        hero_html = f"""<div class="article-hero-wrap">
+        credit_txt = (art.get("media_credit") or "").strip()
+        lic_url = (art.get("media_license_url") or "").strip()
+        src_url = (art.get("media_source_url") or "").strip()
+        lic_name = (art.get("media_license") or "").strip()
+        cap_parts = []
+        if credit_txt:
+            cap_parts.append(html.escape(credit_txt))
+        if lic_url and lic_name:
+            cap_parts.append(f'<a href="{html.escape(lic_url, quote=True)}" target="_blank" rel="noopener noreferrer">Licencja {html.escape(lic_name)}</a>')
+        if src_url:
+            cap_parts.append(f'<a href="{html.escape(src_url, quote=True)}" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a>')
+        caption_html = f'<figcaption class="article-hero-caption">{" · ".join(cap_parts)}</figcaption>' if cap_parts else ""
+        hero_html = f"""<figure class="article-hero-figure">
+          <div class="article-hero-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">{html.escape(short_cat_label(cat_path))}</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="{html.escape(thumb, quote=True)}" alt="{title_attr}" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
-          </div>"""
+            <img src="{html.escape(thumb, quote=True)}" alt="{title_attr}" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
+          </div>
+          {caption_html}
+        </figure>"""
 
     facts_html = ""
     if art.get("metrics"):
@@ -1709,52 +1731,104 @@ def _load_market_data(base_dir: str) -> dict:
     return {}
 
 
-def _fmt_chg(chg) -> str:
+def _fmt_chg(chg, pill: bool = False) -> str:
     try:
         v = float(chg)
     except (TypeError, ValueError):
         return ""
     cls = "chg-up" if v > 0 else ("chg-down" if v < 0 else "chg-flat")
+    arrow = "▲ " if v > 0 else ("▼ " if v < 0 else "• ")
     sign = "+" if v > 0 else ""
-    return f'<span class="mkt-chg {cls}">{sign}{v:.2f}%</span>'
+    base = "mkt-chg-pill" if pill else "mkt-chg"
+    return f'<span class="{base} {cls}">{arrow}{sign}{v:.2f}%</span>'
+
+
+def _weather_icon_char(cond_key: str) -> str:
+    return {
+        "sun": "☀️",
+        "partly": "⛅",
+        "cloud": "☁️",
+        "rain": "🌧️",
+        "snow": "❄️",
+        "frost": "❄️",
+        "wind": "💨",
+    }.get((cond_key or "").lower(), "🌤️")
+
+
+def _temp_tone_class(temp_c: float) -> str:
+    if temp_c <= -1.0:
+        return "tone-cold"
+    if temp_c <= 6.0:
+        return "tone-cool"
+    if temp_c <= 16.0:
+        return "tone-mild"
+    if temp_c <= 24.0:
+        return "tone-warm"
+    return "tone-hot"
+
+
+def _render_sparkline_svg(values: list, chg: float = 0.0, width: int = 86, height: int = 26) -> str:
+    nums = [float(v) for v in (values or []) if isinstance(v, (int, float))]
+    if len(nums) < 2:
+        return ""
+    lo, hi = min(nums), max(nums)
+    span = (hi - lo) or 1.0
+    pad = 3.0
+    pts = []
+    n = len(nums)
+    for i, val in enumerate(nums):
+        x = pad + (i / (n - 1)) * (width - 2 * pad)
+        y = (height - pad) - ((val - lo) / span) * (height - 2 * pad)
+        pts.append(f"{x:.1f},{y:.1f}")
+    cls = "spark-up" if chg > 0 else ("spark-down" if chg < 0 else "spark-flat")
+    poly = " ".join(pts)
+    area = f"{pad:.1f},{height - pad:.1f} {poly} {width - pad:.1f},{height - pad:.1f}"
+    return (
+        f'<svg class="mkt-spark {cls}" width="{width}" height="{height}" viewBox="0 0 {width} {height}" aria-hidden="true">'
+        f'<polygon class="spark-area" points="{area}" />'
+        f'<polyline class="spark-line" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" points="{poly}" />'
+        f'</svg>'
+    )
 
 
 def _render_market_ticker_html(rel_root: str, mkt: dict | None) -> str:
-    """Renderuje zwięzły pasek notowań (waluty, indeksy, złoto, BTC, pogoda) pod nagłówkiem."""
+    """Renderuje czytelny, ustrukturyzowany pasek notowań i pogody pod nagłówkiem."""
     if not isinstance(mkt, dict) or not mkt:
         return ""
     pills = []
     cur_items = (mkt.get("currencies") or {}).get("items") or []
-    wanted_cur = {"EUR", "USD", "CHF", "NOK"}
-    for c in cur_items:
-        if c.get("code") in wanted_cur:
+    wanted_cur = ("EUR", "USD", "NOK", "CHF")
+    cur_map = {c.get("code"): c for c in cur_items}
+    for code in wanted_cur:
+        c = cur_map.get(code)
+        if c:
             pills.append(
-                f'<span class="ticker-item"><strong>{html.escape(c["code"])}/PLN</strong> '
-                f'{float(c["rate"]):.2f} {_fmt_chg(c.get("change_pct"))}</span>'
+                f'<span class="ticker-pill"><span class="tk-lbl">{html.escape(code)}/PLN</span>'
+                f'<span class="tk-val">{float(c["rate"]):.2f}</span>{_fmt_chg(c.get("change_pct"))}</span>'
             )
-    wanted_idx = {"WIG20", "S&P 500", "DAX", "OBX Oslo"}
-    for idx in mkt.get("indices") or []:
-        if idx.get("name") in wanted_idx:
+    wanted_idx = ("WIG20", "S&P 500", "OBX Oslo")
+    idx_map = {i.get("name"): i for i in (mkt.get("indices") or [])}
+    for name in wanted_idx:
+        idx = idx_map.get(name)
+        if idx:
             pills.append(
-                f'<span class="ticker-item"><strong>{html.escape(idx["name"])}</strong> '
-                f'{float(idx["price"]):,.0f} {_fmt_chg(idx.get("change_pct"))}</span>'.replace(",", "\u00A0")
+                f'<span class="ticker-pill"><span class="tk-lbl">{html.escape(name)}</span>'
+                f'<span class="tk-val">{float(idx["price"]):,.0f}</span>{_fmt_chg(idx.get("change_pct"))}</span>'.replace(",", "\u00A0")
             )
-    for cm in (mkt.get("commodities") or [])[:1]:
-        pills.append(
-            f'<span class="ticker-item"><strong>{html.escape(cm["name"])}</strong> '
-            f'{float(cm["price"]):,.0f} USD {_fmt_chg(cm.get("change_pct"))}</span>'.replace(",", "\u00A0")
-        )
     for cr in (mkt.get("crypto") or [])[:1]:
         pills.append(
-            f'<span class="ticker-item"><strong>{html.escape(cr["symbol"])}</strong> '
-            f'{float(cr["price_usd"]):,.0f} USD {_fmt_chg(cr.get("change_pct"))}</span>'.replace(",", "\u00A0")
+            f'<span class="ticker-pill"><span class="tk-lbl">{html.escape(cr["symbol"])}</span>'
+            f'<span class="tk-val">${float(cr["price_usd"]):,.0f}</span>{_fmt_chg(cr.get("change_pct"))}</span>'.replace(",", "\u00A0")
         )
-    cities = (mkt.get("weather") or {}).get("cities") or []
-    for w in cities:
-        if w.get("city") in ("Warszawa", "Oslo"):
+    cities = {w.get("city"): w for w in ((mkt.get("weather") or {}).get("cities") or [])}
+    for cname in ("Warszawa", "Oslo"):
+        w = cities.get(cname)
+        if w:
+            ico = _weather_icon_char(w.get("condition_key") or "")
             pills.append(
-                f'<span class="ticker-item ticker-weather"><strong>{html.escape(w["city"])}</strong> '
-                f'{float(w["temp_c"]):.1f}°C</span>'
+                f'<span class="ticker-pill ticker-weather"><span aria-hidden="true">{ico}</span>'
+                f'<span class="tk-lbl">{html.escape(cname)}</span>'
+                f'<span class="tk-val">{float(w["temp_c"]):.1f}°C</span></span>'
             )
     if not pills:
         return ""
@@ -1763,94 +1837,385 @@ def _render_market_ticker_html(rel_root: str, mkt: dict | None) -> str:
         '<div class="market-ticker" role="region" aria-label="Notowania i pogoda">'
         '<div class="container market-ticker-inner">'
         f'<div class="ticker-track">{"".join(pills)}</div>'
-        f'<a class="ticker-more" href="{href}" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a>'
+        f'<a class="ticker-more" href="{href}" onclick="return fixFileHref(event)">Rynki i mapa pogody →</a>'
         '</div></div>'
     )
 
 
+# Kontur geograficzny Polski (lon, lat) oraz główne rzeki do mapy pogody SVG
+_POLAND_BORDER_LONLAT = [
+    (14.23, 53.92), (14.95, 54.08), (15.57, 54.18), (16.35, 54.44), (16.86, 54.59),
+    (17.56, 54.76), (18.30, 54.84), (18.81, 54.60), (18.42, 54.62), (18.65, 54.36),
+    (19.64, 54.45), (19.82, 54.43), (20.90, 54.35), (22.30, 54.34), (22.79, 54.36),
+    (23.12, 54.33), (23.51, 54.04), (23.52, 53.75), (23.90, 53.15), (23.80, 52.70),
+    (23.18, 52.32), (23.62, 52.08), (23.58, 51.55), (23.85, 51.20), (24.15, 50.87),
+    (23.95, 50.45), (23.30, 50.25), (22.95, 49.80), (22.70, 49.40), (22.86, 49.08),
+    (22.55, 49.00), (21.70, 49.35), (20.95, 49.30), (20.10, 49.18), (19.60, 49.45),
+    (19.05, 49.48), (18.85, 49.52), (18.60, 49.75), (18.20, 49.95), (17.55, 50.28),
+    (16.95, 50.15), (16.65, 50.10), (16.25, 50.45), (15.74, 50.74), (15.20, 50.86),
+    (14.82, 50.87), (15.00, 51.15), (14.72, 51.55), (14.72, 51.95), (14.55, 52.35),
+    (14.62, 52.58), (14.12, 52.84), (14.40, 53.25), (14.32, 53.55),
+]
+_WISLA_LONLAT = [
+    (18.95, 49.65), (19.94, 50.06), (20.90, 50.30), (21.75, 50.68), (21.85, 51.25),
+    (21.25, 51.85), (21.01, 52.23), (19.70, 52.54), (18.60, 53.01), (18.38, 53.45),
+    (18.80, 53.95), (18.95, 54.35),
+]
+_ODRA_LONLAT = [
+    (18.22, 50.08), (17.92, 50.67), (17.04, 51.11), (16.08, 51.66), (15.15, 52.06),
+    (14.55, 52.35), (14.15, 52.86), (14.55, 53.43), (14.55, 53.75),
+]
+
+_CITY_VOIV_PATH = {
+    "Warszawa": "/Polska/Regiony/Mazowieckie",
+    "Kraków": "/Polska/Regiony/Malopolskie",
+    "Wrocław": "/Polska/Regiony/Dolnoslaskie",
+    "Poznań": "/Polska/Regiony/Wielkopolskie",
+    "Gdańsk": "/Polska/Regiony/Pomorskie",
+    "Łódź": "/Polska/Regiony/Lodzkie",
+    "Katowice": "/Polska/Regiony/Slaskie",
+    "Szczecin": "/Polska/Regiony/Zachodniopomorskie",
+    "Lublin": "/Polska/Regiony/Lubelskie",
+    "Białystok": "/Polska/Regiony/Podlaskie",
+    "Rzeszów": "/Polska/Regiony/Podkarpackie",
+    "Kielce": "/Polska/Regiony/Swietokrzyskie",
+    "Olsztyn": "/Polska/Regiony/Warminsko-Mazurskie",
+    "Opole": "/Polska/Regiony/Opolskie",
+    "Toruń": "/Polska/Regiony/Kujawsko-Pomorskie",
+    "Zielona Góra": "/Polska/Regiony/Lubuskie",
+}
+
+# Delikatne przesunięcia etykiet miast pod punktem (zero nakładania na pigułki temperatury)
+_MAP_LABEL_OFFSETS = {
+    "Katowice": (-16, 17),
+    "Kraków": (18, 17),
+    "Opole": (-18, 17),
+    "Wrocław": (-14, 17),
+    "Warszawa": (14, 17),
+    "Łódź": (-12, 17),
+    "Kielce": (0, 17),
+    "Toruń": (0, 17),
+    "Gdańsk": (8, 17),
+}
+
+
+def _project_pl(lon: float, lat: float) -> tuple[float, float]:
+    # Rzut równokątny dla szerokości 52°N na canvas 640x590
+    min_lon, max_lon = 13.85, 24.45
+    min_lat, max_lat = 48.80, 55.10
+    x = 34.0 + ((lon - min_lon) / (max_lon - min_lon)) * 572.0
+    y = 32.0 + ((max_lat - lat) / (max_lat - min_lat)) * 524.0
+    return round(x, 1), round(y, 1)
+
+
+def _render_poland_weather_map_section(rel_root: str, weather: dict) -> str:
+    cities = list((weather or {}).get("cities") or [])
+    pl_cities = [c for c in cities if c.get("voivodeship") != "Norwegia" and c.get("lat") and c.get("lon")]
+    oslo = next((c for c in cities if c.get("city") == "Oslo"), None)
+
+    border_pts = " ".join(f"{x},{y}" for x, y in (_project_pl(lo, la) for lo, la in _POLAND_BORDER_LONLAT))
+    wisla_pts = " ".join(f"{x},{y}" for x, y in (_project_pl(lo, la) for lo, la in _WISLA_LONLAT))
+    odra_pts = " ".join(f"{x},{y}" for x, y in (_project_pl(lo, la) for lo, la in _ODRA_LONLAT))
+
+    default_city = next((c for c in pl_cities if c.get("city") == "Warszawa"), pl_cities[0] if pl_cities else None)
+    default_name = default_city["city"] if default_city else ""
+
+    pins_svg = []
+    js_cities = []
+    for c in pl_cities:
+        cname = c.get("city") or ""
+        temp_c = float(c.get("temp_c", 0))
+        tone = _temp_tone_class(temp_c)
+        ico = _weather_icon_char(c.get("condition_key") or "")
+        x, y = _project_pl(float(c["lon"]), float(c["lat"]))
+        dx, dy = _MAP_LABEL_OFFSETS.get(cname, (0, 22))
+        is_act = " is-active" if cname == default_name else ""
+        temp_str = f"{temp_c:.0f}°" if abs(temp_c - round(temp_c)) < 0.05 else f"{temp_c:.1f}°"
+        reg_path = _CITY_VOIV_PATH.get(cname, "")
+        reg_href = _rel_href(rel_root, reg_path) if reg_path else ""
+
+        js_cities.append({
+            **c,
+            "icon": ico,
+            "region_href": reg_href,
+        })
+
+        pins_svg.append(
+            f'<g class="map-pin {tone}{is_act}" data-city="{html.escape(cname, quote=True)}" '
+            f'tabindex="0" role="button" aria-label="{html.escape(cname)}: {temp_c:.1f}°C, {html.escape(c.get("condition",""))}">'
+            f'<circle class="pin-dot" cx="{x}" cy="{y}" r="4.5" />'
+            f'<g transform="translate({x},{y - 16})">'
+            f'<rect class="pin-badge" x="-26" y="-12" width="52" height="22" rx="11" />'
+            f'<text class="pin-temp" x="0" y="3" text-anchor="middle">{ico} {temp_str}</text>'
+            f'</g>'
+            f'<text class="pin-city" x="{x + dx}" y="{y + dy}" text-anchor="middle">{html.escape(cname)}</text>'
+            f'</g>'
+        )
+
+    if oslo:
+        js_cities.append({**oslo, "icon": _weather_icon_char(oslo.get("condition_key") or ""), "region_href": ""})
+
+    # Domyślny panel szczegółowy (SSR — działa bez JS i odświeża się po kliknięciu/hoverze z markets.js)
+    detail_html = "<p>Brak danych pogodowych.</p>"
+    if default_city:
+        dc = default_city
+        d_ico = _weather_icon_char(dc.get("condition_key") or "")
+        d_tone = _temp_tone_class(float(dc.get("temp_c", 0)))
+        d_reg_path = _CITY_VOIV_PATH.get(dc["city"], "")
+        d_reg_link = (
+            f'<a class="wd-region-link" href="{html.escape(_rel_href(rel_root, d_reg_path), quote=True)}" '
+            f'onclick="return fixFileHref(event)">Wiadomości: {html.escape(dc.get("voivodeship",""))} →</a>'
+            if d_reg_path
+            else ""
+        )
+        d_press = f"{float(dc['pressure_hpa']):.0f} hPa" if dc.get("pressure_hpa") else "—"
+        d_hum = f"{int(dc['humidity_pct'])}%" if dc.get("humidity_pct") is not None else "—"
+        d_meas = f" · {html.escape(dc['measured_at'])}" if dc.get("measured_at") else ""
+        detail_html = (
+            f'<div class="wd-head"><div><div class="wd-city">{html.escape(dc["city"])}</div>'
+            f'<div class="wd-voiv">{html.escape(dc.get("voivodeship",""))}</div></div>'
+            f'<span class="wd-icon" aria-hidden="true">{d_ico}</span></div>'
+            f'<div class="wd-temp-row"><span class="wd-temp {d_tone}">{float(dc["temp_c"]):.1f}°C</span>'
+            f'<span class="wd-cond">{html.escape(dc.get("condition",""))}</span></div>'
+            f'<div class="wd-metrics">'
+            f'<div class="wd-metric"><span>Wiatr</span><strong>{float(dc.get("wind_kmh",0)):.0f} km/h</strong></div>'
+            f'<div class="wd-metric"><span>Ciśnienie</span><strong>{d_press}</strong></div>'
+            f'<div class="wd-metric"><span>Wilgotność</span><strong>{d_hum}</strong></div>'
+            f'<div class="wd-metric"><span>Opady</span><strong>{float(dc.get("precip_mm",0)):.1f} mm</strong></div>'
+            f'</div>'
+            f'<div class="wd-foot"><span class="wd-src">{html.escape(dc.get("source","IMGW-PIB"))}{d_meas}</span>{d_reg_link}</div>'
+        )
+
+    oslo_html = ""
+    if oslo:
+        o_ico = _weather_icon_char(oslo.get("condition_key") or "")
+        o_tone = _temp_tone_class(float(oslo.get("temp_c", 0)))
+        o_press = f"{float(oslo['pressure_hpa']):.0f} hPa" if oslo.get("pressure_hpa") else "—"
+        oslo_html = (
+            f'<div class="oslo-card">'
+            f'<div class="oslo-top"><span class="oslo-flag">NO · Norwegia</span><span class="oslo-src">Open-Meteo</span></div>'
+            f'<div class="oslo-main"><div><strong>Oslo</strong><div class="oslo-cond">{html.escape(oslo.get("condition",""))}</div></div>'
+            f'<div class="oslo-temp {o_tone}">{o_ico} {float(oslo["temp_c"]):.1f}°C</div></div>'
+            f'<div class="oslo-meta">Wiatr {float(oslo.get("wind_kmh",0)):.0f} km/h · {o_press} · Wilg. {int(oslo.get("humidity_pct") or 0)}%</div>'
+            f'</div>'
+        )
+
+    # Siatka szybkiego podglądu wszystkich miast pod mapą
+    compact_cards = []
+    for w in cities:
+        cname = w.get("city") or ""
+        t_val = float(w.get("temp_c", 0))
+        ico = _weather_icon_char(w.get("condition_key") or "")
+        tone = _temp_tone_class(t_val)
+        is_act = " is-active" if cname == default_name else ""
+        press_txt = f"{float(w['pressure_hpa']):.0f} hPa" if w.get("pressure_hpa") else "—"
+        compact_cards.append(
+            f'<button type="button" class="weather-card{is_act}" data-city="{html.escape(cname, quote=True)}">'
+            f'<div class="weather-card-top"><strong>{html.escape(cname)}</strong><span class="wc-temp {tone}">{ico} {t_val:.1f}°C</span></div>'
+            f'<div class="weather-card-sub"><span>{html.escape(w.get("voivodeship",""))}</span><span>{float(w.get("wind_kmh",0)):.0f} km/h · {press_txt}</span></div>'
+            f'</button>'
+        )
+
+    cities_json_safe = json.dumps(js_cities, ensure_ascii=False).replace("</", "<\\/")
+
+    return f"""<section id="pogoda" class="mkt-panel weather-panel">
+      <div class="panel-head-row">
+        <div>
+          <h2>Mapa pogody Polski (16 województw) i Oslo</h2>
+          <p class="panel-sub">Najedź lub kliknij miasto na mapie, aby zobaczyć pełne pomiary IMGW-PIB.</p>
+        </div>
+        <div class="temp-legend" aria-label="Legenda temperatur">
+          <span class="leg-pill tone-cold">&le; -1°C</span>
+          <span class="leg-pill tone-cool">0–6°C</span>
+          <span class="leg-pill tone-mild">7–16°C</span>
+          <span class="leg-pill tone-warm">17–24°C</span>
+          <span class="leg-pill tone-hot">&ge; 25°C</span>
+        </div>
+      </div>
+
+      <div class="weather-map-layout">
+        <div id="plWeatherMap" class="pl-map-wrap">
+          <svg class="pl-map-svg" viewBox="0 0 640 590" role="img" aria-label="Interaktywna mapa pogody Polski dla 16 stolic województw">
+            <rect class="map-sea" x="0" y="0" width="640" height="120" rx="12" />
+            <text class="map-sea-label" x="180" y="34">MORZE BAŁTYCKIE</text>
+            <polygon class="map-land" points="{border_pts}" />
+            <polyline class="map-river" fill="none" points="{wisla_pts}" />
+            <polyline class="map-river" fill="none" points="{odra_pts}" />
+            {"".join(pins_svg)}
+          </svg>
+        </div>
+
+        <div class="weather-sidebar">
+          <div id="weatherCityDetail" class="weather-detail-card" aria-live="polite">
+            {detail_html}
+          </div>
+          {oslo_html}
+        </div>
+      </div>
+
+      <div class="weather-grid">{"".join(compact_cards)}</div>
+      <p class="mkt-source">Źródło: {html.escape((weather or {}).get("source") or "IMGW-PIB (dane publiczne) + Open-Meteo (CC BY 4.0)")}</p>
+      <script id="weatherCitiesData" type="application/json">{cities_json_safe}</script>
+    </section>"""
+
+
 def _render_markets_ssr(rel_root: str, mkt: dict) -> str:
-    """Renderuje stronę /rynki/ z kursami walut (NBP), indeksami, akcjami GPW, surowcami, krypto i pogodą."""
+    """Renderuje czytelny dashboard /rynki/: karty KPI ze sparkline'ami, tabele i mapę pogody Polski."""
     updated = html.escape((mkt.get("updated_iso") or "")[:16].replace("T", " "))
     cur_block = mkt.get("currencies") or {}
     cur_items = cur_block.get("items") or []
+    cur_map = {c.get("code"): c for c in cur_items}
+    idx_list = mkt.get("indices") or []
+    idx_map = {i.get("name"): i for i in idx_list}
+    crypto_list = mkt.get("crypto") or []
+
+    # 1. Karty KPI na samej górze (natychmiastowa czytelność)
+    kpi_cards = []
+    for code in ("EUR", "USD", "NOK"):
+        c = cur_map.get(code)
+        if c:
+            kpi_cards.append(
+                f'<div class="kpi-card">'
+                f'<div class="kpi-top"><span class="kpi-name">{html.escape(c["pair"])}</span><span class="kpi-tag">NBP</span></div>'
+                f'<div class="kpi-val">{float(c["rate"]):.4f} <small>zł</small></div>'
+                f'<div class="kpi-foot">{_fmt_chg(c.get("change_pct"), pill=True)}{_render_sparkline_svg(c.get("history"), float(c.get("change_pct") or 0))}</div>'
+                f'</div>'
+            )
+    for iname in ("WIG20", "S&P 500"):
+        it = idx_map.get(iname)
+        if it:
+            kpi_cards.append(
+                f'<div class="kpi-card">'
+                f'<div class="kpi-top"><span class="kpi-name">{html.escape(it["name"])}</span><span class="kpi-tag">{html.escape(it["market"])}</span></div>'
+                f'<div class="kpi-val">{float(it["price"]):,.1f} <small>{html.escape(it["unit"])}</small></div>'.replace(",", "\u00A0")
+                + f'<div class="kpi-foot">{_fmt_chg(it.get("change_pct"), pill=True)}{_render_sparkline_svg(it.get("history"), float(it.get("change_pct") or 0))}</div>'
+                f'</div>'
+            )
+    if crypto_list:
+        btc = crypto_list[0]
+        kpi_cards.append(
+            f'<div class="kpi-card">'
+            f'<div class="kpi-top"><span class="kpi-name">{html.escape(btc["name"])}</span><span class="kpi-tag">{html.escape(btc["symbol"])}</span></div>'
+            f'<div class="kpi-val">${float(btc["price_usd"]):,.0f}</div>'.replace(",", "\u00A0")
+            + f'<div class="kpi-foot">{_fmt_chg(btc.get("change_pct"), pill=True)}<span class="kpi-sub">{float(btc.get("price_pln",0)):,.0f} PLN</span></div>'.replace(",", "\u00A0")
+            + '</div>'
+        )
+
     cur_rows = "".join(
-        f'<tr><td><strong>{html.escape(c.get("pair",""))}</strong></td>'
-        f'<td>{html.escape(c.get("name",""))}</td>'
-        f'<td class="num">{float(c.get("rate",0)):.4f} zł</td>'
-        f'<td class="num">{_fmt_chg(c.get("change_pct"))}</td></tr>'
+        f'<tr>'
+        f'<td><strong>{html.escape(c.get("pair",""))}</strong><div class="mkt-sub-name">{html.escape(c.get("name",""))}</div></td>'
+        f'<td class="spark-cell">{_render_sparkline_svg(c.get("history"), float(c.get("change_pct") or 0), width=68, height=22)}</td>'
+        f'<td class="num price-cell">{float(c.get("rate",0)):.4f} zł</td>'
+        f'<td class="num">{_fmt_chg(c.get("change_pct"), pill=True)}</td></tr>'
         for c in cur_items
     ) or '<tr><td colspan="4">Brak danych walutowych.</td></tr>'
 
     def _quote_rows(items: list) -> str:
         if not items:
             return '<tr><td colspan="4">Brak danych notowań.</td></tr>'
-        return "".join(
-            f'<tr><td><strong>{html.escape(it.get("name",""))}</strong> <span class="mkt-sym">{html.escape(it.get("symbol",""))}</span></td>'
-            f'<td>{html.escape(it.get("market",""))}</td>'
-            f'<td class="num">{float(it.get("price",0)):,.2f} {html.escape(it.get("unit",""))}</td>'
-            f'<td class="num">{_fmt_chg(it.get("change_pct"))}</td></tr>'.replace(",", "\u00A0")
-            for it in items
-        )
+        out_rows = []
+        for it in items:
+            price_fmt = f'{float(it.get("price",0)):,.2f}'.replace(",", "\u00A0")
+            out_rows.append(
+                f'<tr>'
+                f'<td><strong>{html.escape(it.get("name",""))}</strong>'
+                f'<div class="mkt-sub-name"><span class="mkt-badge">{html.escape(it.get("market",""))}</span> {html.escape(it.get("symbol",""))}</div></td>'
+                f'<td class="spark-cell">{_render_sparkline_svg(it.get("history"), float(it.get("change_pct") or 0), width=68, height=22)}</td>'
+                f'<td class="num price-cell">{price_fmt} <small>{html.escape(it.get("unit",""))}</small></td>'
+                f'<td class="num">{_fmt_chg(it.get("change_pct"), pill=True)}</td></tr>'
+            )
+        return "".join(out_rows)
 
     crypto_rows = "".join(
-        f'<tr><td><strong>{html.escape(c.get("name",""))}</strong> <span class="mkt-sym">{html.escape(c.get("symbol",""))}</span></td>'
-        f'<td class="num">{float(c.get("price_usd",0)):,.2f} USD</td>'
+        f'<tr>'
+        f'<td><strong>{html.escape(c.get("name",""))}</strong> <span class="mkt-badge">{html.escape(c.get("symbol",""))}</span></td>'
+        f'<td class="num price-cell">${float(c.get("price_usd",0)):,.2f}</td>'
         f'<td class="num">{float(c.get("price_pln",0)):,.0f} PLN</td>'
-        f'<td class="num">{_fmt_chg(c.get("change_pct"))}</td></tr>'.replace(",", "\u00A0")
-        for c in (mkt.get("crypto") or [])
+        f'<td class="num">{_fmt_chg(c.get("change_pct"), pill=True)}</td></tr>'.replace(",", "\u00A0")
+        for c in crypto_list
     ) or '<tr><td colspan="4">Brak danych kryptowalut.</td></tr>'
 
-    weather_cities = (mkt.get("weather") or {}).get("cities") or []
-    weather_card_parts = []
-    for w in weather_cities:
-        press_txt = f" · {float(w['pressure_hpa']):.0f} hPa" if w.get("pressure_hpa") else ""
-        hum_txt = f" · Wilg. {int(w['humidity_pct'])}%" if w.get("humidity_pct") is not None else ""
-        weather_card_parts.append(
-            f'<div class="weather-card">'
-            f'<div class="weather-head"><strong>{html.escape(w.get("city",""))}</strong><span class="weather-reg">{html.escape(w.get("voivodeship",""))}</span></div>'
-            f'<div class="weather-temp">{float(w.get("temp_c",0)):.1f}°C</div>'
-            f'<div class="weather-meta">Wiatr: {float(w.get("wind_kmh",0)):.0f} km/h{press_txt}{hum_txt}</div></div>'
-        )
-    weather_cards = "".join(weather_card_parts) or '<p>Brak danych pogodowych.</p>'
+    weather_map_html = _render_poland_weather_map_section(rel_root, mkt.get("weather") or {})
 
     return f"""<div class="markets-page">
       <div class="feed-meta">
         <div>
           <span class="feed-crumb">/rynki</span>
-          <h1>Notowania rynkowe, waluty i pogoda</h1>
+          <h1>Notowania rynkowe, waluty i mapa pogody</h1>
         </div>
-        <span>Aktualizacja: {updated or "—"}</span>
+        <div class="mkt-jump-bar">
+          <a href="#waluty" class="jump-pill">Waluty</a>
+          <a href="#gieldy" class="jump-pill">Giełdy i GPW</a>
+          <a href="#surowce" class="jump-pill">Surowce i krypto</a>
+          <a href="#pogoda" class="jump-pill">Mapa pogody</a>
+          <span class="mkt-updated">Aktualizacja: {updated or "—"}</span>
+        </div>
       </div>
 
-      <div class="markets-grid">
+      <div class="kpi-grid">{"".join(kpi_cards)}</div>
+
+      {weather_map_html}
+
+      <div id="waluty" class="markets-grid">
         <section class="mkt-panel">
-          <h2>Kursy walut (NBP Tabela A)</h2>
-          <table class="mkt-table"><thead><tr><th>Para</th><th>Waluta</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead><tbody>{cur_rows}</tbody></table>
-          <p class="mkt-source">Źródło: {html.escape(cur_block.get("source") or "NBP API")} {html.escape(cur_block.get("effective_date") or "")}</p>
+          <div class="panel-head-row">
+            <h2>Kursy walut (NBP Tabela A)</h2>
+            <span class="mkt-badge">{html.escape(cur_block.get("effective_date") or "NBP")}</span>
+          </div>
+          <div class="mkt-table-wrap">
+            <table class="mkt-table">
+              <thead><tr><th>Waluta</th><th class="spark-col">7 dni</th><th class="num">Kurs średni</th><th class="num">Zmiana</th></tr></thead>
+              <tbody>{cur_rows}</tbody>
+            </table>
+          </div>
+          <p class="mkt-source">Źródło: {html.escape(cur_block.get("source") or "NBP API")} {html.escape(cur_block.get("table_no") or "")}</p>
+        </section>
+
+        <section id="gieldy" class="mkt-panel">
+          <div class="panel-head-row">
+            <h2>Indeksy giełdowe</h2>
+            <span class="mkt-badge">Global + GPW</span>
+          </div>
+          <div class="mkt-table-wrap">
+            <table class="mkt-table">
+              <thead><tr><th>Indeks</th><th class="spark-col">Trend</th><th class="num">Poziom</th><th class="num">Zmiana</th></tr></thead>
+              <tbody>{_quote_rows(idx_list)}</tbody>
+            </table>
+          </div>
         </section>
 
         <section class="mkt-panel">
-          <h2>Indeksy giełdowe</h2>
-          <table class="mkt-table"><thead><tr><th>Indeks</th><th>Rynek</th><th class="num">Poziom</th><th class="num">Zmiana</th></tr></thead><tbody>{_quote_rows(mkt.get("indices") or [])}</tbody></table>
+          <div class="panel-head-row">
+            <h2>Wybrane spółki GPW</h2>
+            <span class="mkt-badge">WIG20</span>
+          </div>
+          <div class="mkt-table-wrap">
+            <table class="mkt-table">
+              <thead><tr><th>Spółka</th><th class="spark-col">Trend</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead>
+              <tbody>{_quote_rows(mkt.get("stocks") or [])}</tbody>
+            </table>
+          </div>
         </section>
 
-        <section class="mkt-panel">
-          <h2>Wybrane spółki GPW</h2>
-          <table class="mkt-table"><thead><tr><th>Spółka</th><th>Rynek</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead><tbody>{_quote_rows(mkt.get("stocks") or [])}</tbody></table>
-        </section>
-
-        <section class="mkt-panel">
-          <h2>Surowce i kryptowaluty</h2>
-          <table class="mkt-table"><thead><tr><th>Instrument</th><th>Rynek</th><th class="num">Cena</th><th class="num">Zmiana</th></tr></thead><tbody>{_quote_rows(mkt.get("commodities") or [])}</tbody></table>
-          <table class="mkt-table mkt-table-sub"><thead><tr><th>Kryptowaluta</th><th class="num">USD</th><th class="num">PLN</th><th class="num">24h</th></tr></thead><tbody>{crypto_rows}</tbody></table>
+        <section id="surowce" class="mkt-panel">
+          <div class="panel-head-row">
+            <h2>Surowce i kryptowaluty</h2>
+            <span class="mkt-badge">USD / PLN</span>
+          </div>
+          <div class="mkt-table-wrap">
+            <table class="mkt-table">
+              <thead><tr><th>Surowiec</th><th class="spark-col">Trend</th><th class="num">Cena</th><th class="num">Zmiana</th></tr></thead>
+              <tbody>{_quote_rows(mkt.get("commodities") or [])}</tbody>
+            </table>
+          </div>
+          <div class="mkt-table-wrap mkt-table-sub">
+            <table class="mkt-table">
+              <thead><tr><th>Kryptowaluta</th><th class="num">USD</th><th class="num">PLN</th><th class="num">24h</th></tr></thead>
+              <tbody>{crypto_rows}</tbody>
+            </table>
+          </div>
         </section>
       </div>
-
-      <section class="mkt-panel weather-panel">
-        <h2>Pogoda na żywo — 16 stolic województw i Oslo</h2>
-        <div class="weather-grid">{weather_cards}</div>
-        <p class="mkt-source">Źródło: {html.escape((mkt.get("weather") or {}).get("source") or "IMGW-PIB + Open-Meteo (CC BY 4.0)")}</p>
-      </section>
 
       <p class="cam-legal-note">Notowania mają charakter wyłącznie informacyjny (mogą być opóźnione) i nie stanowią porady inwestycyjnej.</p>
     </div>"""
@@ -2117,6 +2482,7 @@ def _page_shell(
   <script src="{html.escape(rel_root, quote=True)}app.js?v={html.escape(js_ver, quote=True)}"></script>
   <script src="{html.escape(rel_root, quote=True)}community.js?v={html.escape(comm_ver, quote=True)}" defer></script>
   {f'<script src="{html.escape(rel_root, quote=True)}cameras.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cameras.js")), quote=True)}" defer></script>' if active_path == "/kamery" else ""}
+  {f'<script src="{html.escape(rel_root, quote=True)}markets.js?v={html.escape(_asset_hash(os.path.join(os.path.dirname(os.path.abspath(__file__)), "markets.js")), quote=True)}" defer></script>' if active_path == "/rynki" else ""}
 </body>
 </html>
 """
@@ -2185,6 +2551,7 @@ def build_articles_index(articles: list) -> list:
             "meta_description": a.get("meta_description") or "",
             "keywords": a.get("keywords") or "",
             "thumbnail_url": a.get("thumbnail_url") or "",
+            "media_file": a.get("media_file") or "",
             "published_iso": a.get("published_iso") or "",
             "updated_iso": a.get("updated_iso") or a.get("published_iso") or "",
             "display_date": a.get("display_date") or "",

@@ -1016,12 +1016,18 @@ function outletMonogram(name) {
   return clean.slice(0, 2).toUpperCase();
 }
 
+function articleMediaSrc(art) {
+  if (art && art.media_file) return resolveAsset(String(art.media_file).replace(/^\/+/, ''));
+  return (art && art.thumbnail_url) || '';
+}
+
 function thumbWrapHtml(art, wrapClass, imgClass, eager = false) {
   const label = esc(shortCatLabel(art.path));
-  const noThumbCls = art.thumbnail_url ? '' : ' no-thumb';
+  const src = articleMediaSrc(art);
+  const noThumbCls = src ? '' : ' no-thumb';
   const fallback = `<div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${label}</span><span class="thumb-fallback-mark">V</span></div>`;
-  const img = art.thumbnail_url
-    ? `<img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="${imgClass}" loading="${eager ? 'eager' : 'lazy'}" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />`
+  const img = src
+    ? `<img src="${esc(src)}" alt="${esc(art.seo_title)}" class="${imgClass}" loading="${eager ? 'eager' : 'lazy'}" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />`
     : '';
   return `<div class="${wrapClass}${noThumbCls}">${fallback}${img}</div>`;
 }
@@ -1151,11 +1157,12 @@ function renderFeed(list, q, allPublished = null) {
   if (lead) {
     const lHref = esc(articleHref(lead.seo_url));
     const lJsUrl = esc(lead.seo_url || '');
-    const lNoThumbCls = lead.thumbnail_url ? '' : ' no-thumb';
+    const lSrc = articleMediaSrc(lead);
+    const lNoThumbCls = lSrc ? '' : ' no-thumb';
     leadHtml = `<article ${catAttr(lead)} class="lead-wrap"><div class="lead-story${lNoThumbCls}" onclick="if(!event.target.closest('a'))openArticleLink(event,${lead.id},'${lJsUrl}')">` +
 `<a class="lead-thumb-wrap${lNoThumbCls}" href="${lHref}" onclick="return openArticleLink(event,${lead.id},'${lJsUrl}')" tabindex="-1" aria-hidden="true">` +
 `<div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(lead.path))}</span><span class="thumb-fallback-mark">V</span></div>` +
-`${lead.thumbnail_url ? `<img src="${esc(lead.thumbnail_url)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />` : ''}</a>` +
+`${lSrc ? `<img src="${esc(lSrc)}" alt="${esc(lead.seo_title)}" class="lead-thumb" loading="eager" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />` : ''}</a>` +
 `<div class="lead-main"><div class="story-top"><span class="cat-badge">${esc(shortCatLabel(lead.path))}</span><span class="story-date">${esc(lead.display_date)}</span></div>` +
 `<h2 class="lead-title"><a class="story-title-link" href="${lHref}" onclick="return openArticleLink(event,${lead.id},'${lJsUrl}')">${esc(plTypography(lead.seo_title))}</a></h2>` +
 `<p class="lead-lede">${esc(plTypography(articleLede(lead, 290)))}</p>` +
@@ -1445,7 +1452,12 @@ function renderArticleView(art, published) {
     return `<button type="button" class="${cnt === 0 ? 'source-filter-chip is-zero-paras' : 'source-filter-chip'}" data-outlet-filter="${esc(oName)}" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">${esc(oName)} <span class="source-chip-count">(${cnt})</span></button>`;
   }).join('')}</div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>` : '';
 
-  const heroThumb = art.thumbnail_url ? `<div class="article-hero-wrap"><div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(art.path))}</span><span class="thumb-fallback-mark">V</span></div><img src="${esc(art.thumbnail_url)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" /></div>` : '';
+  const hSrc = articleMediaSrc(art);
+  const hCapParts = [];
+  if (art.media_credit) hCapParts.push(esc(art.media_credit));
+  if (art.media_license_url && art.media_license) hCapParts.push(`<a href="${esc(art.media_license_url)}" target="_blank" rel="noopener noreferrer">Licencja ${esc(art.media_license)}</a>`);
+  if (art.media_source_url) hCapParts.push(`<a href="${esc(art.media_source_url)}" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a>`);
+  const heroThumb = hSrc ? `<figure class="article-hero-figure"><div class="article-hero-wrap"><div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">${esc(shortCatLabel(art.path))}</span><span class="thumb-fallback-mark">V</span></div><img src="${esc(hSrc)}" alt="${esc(art.seo_title)}" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" /></div>${hCapParts.length ? `<figcaption class="article-hero-caption">${hCapParts.join(' · ')}</figcaption>` : ''}</figure>` : '';
 
   const asideVerifHtml = (srcs.length >= 2 && art.fact_agreement_pct != null)
     ? `<div class="aside-card"><div class="aside-title">Zgodność danych</div><div class="big-meter meter ${meterClass(art.fact_agreement_pct)}">${art.fact_agreement_pct}%<small>${sourcesLabel(srcs.length)}</small></div><div class="meter-bar wide"><span class="meter-fill" style="width:${art.fact_agreement_pct}%"></span></div></div>`

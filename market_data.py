@@ -81,14 +81,20 @@ def _fetch_json(url: str, timeout: int = 8):
 
 
 def fetch_nbp_currencies(timeout: int = 8) -> dict:
-    """Pobiera ostatnie 2 tabele A z NBP API i wylicza dzienną zmianę kursów."""
-    url = "https://api.nbp.pl/api/exchangerates/tables/A/last/2/?format=json"
+    """Pobiera ostatnie 7 tabel A z NBP API (zmiana dzienna + seria do wykresu sparkline)."""
+    url = "https://api.nbp.pl/api/exchangerates/tables/A/last/7/?format=json"
     tables = _fetch_json(url, timeout=timeout)
     if not isinstance(tables, list) or not tables:
         return {}
     latest = tables[-1]
     prev = tables[-2] if len(tables) >= 2 else latest
     prev_map = {r["code"]: float(r["mid"]) for r in prev.get("rates") or [] if r.get("code")}
+    hist_by_code = {c: [] for c in NBP_CODES}
+    for tbl in tables:
+        for r in tbl.get("rates") or []:
+            code = r.get("code")
+            if code in hist_by_code and r.get("mid") is not None:
+                hist_by_code[code].append(round(float(r["mid"]), 4))
     items = []
     latest_map = {r["code"]: r for r in latest.get("rates") or [] if r.get("code")}
     for code in NBP_CODES:
@@ -104,6 +110,7 @@ def fetch_nbp_currencies(timeout: int = 8) -> dict:
             "name": row.get("currency") or code,
             "rate": round(mid, 4),
             "change_pct": round(chg_pct, 2),
+            "history": hist_by_code.get(code) or [round(mid, 4)],
         })
     return {
         "effective_date": latest.get("effectiveDate") or "",
@@ -120,14 +127,15 @@ def _fetch_single_yahoo(spec: dict, timeout: int = 7) -> dict | None:
     for sym in symbols:
         try:
             enc = urllib.parse.quote(sym, safe="")
-            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{enc}?range=5d&interval=1d"
+            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{enc}?range=10d&interval=1d"
             data = _fetch_json(url, timeout=timeout)
             res = ((data.get("chart") or {}).get("result") or [None])[0]
             if not res:
                 continue
             meta = res.get("meta") or {}
             closes = [
-                c for c in (((res.get("indicators") or {}).get("quote") or [{}])[0].get("close") or [])
+                round(float(c), 2)
+                for c in (((res.get("indicators") or {}).get("quote") or [{}])[0].get("close") or [])
                 if isinstance(c, (int, float))
             ]
             price = meta.get("regularMarketPrice")
@@ -139,6 +147,7 @@ def _fetch_single_yahoo(spec: dict, timeout: int = 7) -> dict | None:
             if len(closes) >= 2 and closes[-2]:
                 prev = closes[-2]
             chg_pct = ((float(price) - float(prev)) / float(prev) * 100.0) if prev else 0.0
+            hist = closes[-7:] if closes else [round(float(price), 2)]
             return {
                 "symbol": sym,
                 "name": spec["name"],
@@ -146,6 +155,7 @@ def _fetch_single_yahoo(spec: dict, timeout: int = 7) -> dict | None:
                 "unit": spec["unit"],
                 "price": round(float(price), 2),
                 "change_pct": round(chg_pct, 2),
+                "history": hist,
             }
         except (urllib.error.URLError, urllib.error.HTTPError, ValueError, KeyError, TimeoutError, OSError):
             continue
@@ -196,23 +206,59 @@ def fetch_crypto_quotes(timeout: int = 7) -> list:
     return out
 
 
+def _infer_weather_condition(temp_c: float, precip_mm: float, wind_kmh: float, humidity_pct: int | None) -> tuple[str, str]:
+    """Zwraca (ikona_kod, opis_pl) na podstawie pomiarów IMGW / Open-Meteo."""
+    if precip_mm >= 0.2:
+        return ("snow", "Opady śniegu") if temp_c <= 0.5 else ("rain", "Opady deszczu")
+    if wind_kmh >= 32:
+        return ("wind", "Wietrznie")
+    if temp_c <= -2.0:
+        return ("frost", "Mróz")
+    if humidity_pct is not None and humidity_pct >= 88:
+        return ("cloud", "Pochmurno / mgła")
+    if humidity_pct is not None and humidity_pct >= 72:
+        return ("partly", "Zachmurzenie umiarkowane")
+    return ("sun", "Pogodnie")
+
+
 def _fetch_open_meteo_city(city_spec: dict, timeout: int = 6) -> dict | None:
     url = (
         f"https://api.open-meteo.com/v1/forecast?latitude={city_spec['lat']}"
-        f"&longitude={city_spec['lon']}&current=temperature_2m,wind_speed_10m,surface_pressure,relative_humidity_2m,precipitation"
+        f"&longitude={city_spec['lon']}&current=temperature_2m,wind_speed_10m,surface_pressure,relative_humidity_2m,precipitation,weather_code"
     )
     data = _fetch_json(url, timeout=timeout)
     cur = data.get("current") or {}
     if cur.get("temperature_2m") is None:
         return None
+    temp_c = round(float(cur["temperature_2m"]), 1)
+    wind_kmh = round(float(cur.get("wind_speed_10m") or 0), 1)
+    hum = round(float(cur.get("relative_humidity_2m") or 0)) if cur.get("relative_humidity_2m") is not None else None
+    prec = round(float(cur.get("precipitation") or 0), 1)
+    wcode = cur.get("weather_code")
+    if wcode in (71, 73, 75, 77, 85, 86):
+        cond_key, cond_label = "snow", "Opady śniegu"
+    elif wcode in (51, 53, 55, 61, 63, 65, 80, 81, 82, 95):
+        cond_key, cond_label = "rain", "Opady deszczu"
+    elif wcode in (0, 1):
+        cond_key, cond_label = ("frost", "Bezchmurnie, mróz") if temp_c <= -2 else ("sun", "Bezchmurnie")
+    elif wcode == 2:
+        cond_key, cond_label = "partly", "Częściowe zachmurzenie"
+    elif wcode in (3, 45, 48):
+        cond_key, cond_label = "cloud", "Pochmurno"
+    else:
+        cond_key, cond_label = _infer_weather_condition(temp_c, prec, wind_kmh, hum)
     return {
         "city": city_spec["city"],
         "voivodeship": city_spec["voivodeship"],
-        "temp_c": round(float(cur["temperature_2m"]), 1),
-        "wind_kmh": round(float(cur.get("wind_speed_10m") or 0), 1),
+        "lat": city_spec["lat"],
+        "lon": city_spec["lon"],
+        "temp_c": temp_c,
+        "wind_kmh": wind_kmh,
         "pressure_hpa": round(float(cur.get("surface_pressure") or 0), 1) if cur.get("surface_pressure") else None,
-        "humidity_pct": round(float(cur.get("relative_humidity_2m") or 0)) if cur.get("relative_humidity_2m") is not None else None,
-        "precip_mm": round(float(cur.get("precipitation") or 0), 1),
+        "humidity_pct": hum,
+        "precip_mm": prec,
+        "condition_key": cond_key,
+        "condition": cond_label,
         "source": "Open-Meteo (CC BY 4.0)",
     }
 
@@ -243,14 +289,19 @@ def fetch_weather(timeout: int = 8) -> dict:
                 press = round(float(row["cisnienie"]), 1) if row.get("cisnienie") not in (None, "") else None
                 hum = round(float(row["wilgotnosc_wzgledna"])) if row.get("wilgotnosc_wzgledna") not in (None, "") else None
                 prec = round(float(row.get("suma_opadu") or 0), 1)
+                cond_key, cond_label = _infer_weather_condition(temp_c, prec, wind_kmh, hum)
                 cities_out.append({
                     "city": spec["city"],
                     "voivodeship": spec["voivodeship"],
+                    "lat": spec["lat"],
+                    "lon": spec["lon"],
                     "temp_c": temp_c,
                     "wind_kmh": wind_kmh,
                     "pressure_hpa": press,
                     "humidity_pct": hum,
                     "precip_mm": prec,
+                    "condition_key": cond_key,
+                    "condition": cond_label,
                     "measured_at": f"{row.get('data_pomiaru', '')} {str(row.get('godzina_pomiaru', '')).zfill(2)}:00".strip(),
                     "source": "IMGW-PIB",
                 })

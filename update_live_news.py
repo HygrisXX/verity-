@@ -30,8 +30,17 @@ if _THIS_DIR not in sys.path:
 
 import seo_builder  # noqa: E402
 import ai_synthesizer  # noqa: E402
+import media_library  # noqa: E402
 
 _ACTIVE_COST_GUARD = None
+_MEDIA_REGISTRY_CACHE = None
+
+
+def _get_media_registry() -> dict:
+    global _MEDIA_REGISTRY_CACHE
+    if _MEDIA_REGISTRY_CACHE is None:
+        _MEDIA_REGISTRY_CACHE = media_library.load_media_registry()
+    return _MEDIA_REGISTRY_CACHE
 
 MAX_TOTAL_ARTICLES = 300
 MAX_NEW_PER_RUN = 6
@@ -3911,11 +3920,21 @@ def build_article_from_group(group: list, art_id: int) -> dict:
 
 
 def _apply_legal_sanitization(art: dict):
-    """Stosuje filtr art. 13 pr. pras. oraz blokadę zewnętrznych miniatur na obiekcie artykułu."""
+    """Stosuje filtr art. 13 pr. pras., blokadę zewnętrznych miniatur i dobór legalnego zdjęcia CC z media_registry.json."""
     if not art:
         return
     if not ENABLE_THUMBNAILS:
         art["thumbnail_url"] = ""
+    reg = _get_media_registry()
+    if reg.get("items"):
+        matched_media = media_library.match_media_for_article(art, registry=reg)
+        if matched_media:
+            art["media_file"] = matched_media["file"]
+            art["media_credit"] = matched_media.get("attribution") or ""
+            art["media_license"] = matched_media.get("license") or ""
+            art["media_license_url"] = matched_media.get("license_url") or ""
+            art["media_source_url"] = matched_media.get("source_url") or ""
+            art["media_label"] = matched_media.get("label") or ""
     if MARKET_CONFIG.get("anonymize_suspects", True):
         for field in ("seo_title", "summary_lead", "meta_description"):
             if art.get(field):
