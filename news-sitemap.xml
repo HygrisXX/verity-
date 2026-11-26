@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/56-letni-ukrainiec-zatrzymany-w-tychach-w-tle-gwalt-na-dziecku/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:56:00+01:00</news:publication_date>
+      <news:title>56-letni Ukrainiec zatrzymany w Tychach. W tle gwałt na dziecku</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1951191852.png</image:loc>
+      <image:title>56-letni Ukrainiec zatrzymany w Tychach. W tle gwałt na dziecku</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/konkurs-ipn-audycja-historyczna-roku-rozstrzygniety-dominika-debska-i/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:58+01:00</news:publication_date>
+      <news:title>Konkurs IPN "Audycja historyczna roku" rozstrzygnięty. Dominika Dębska i Miłka Malzahn wyróżnione</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/571592627.png</image:loc>
+      <image:title>Konkurs IPN "Audycja historyczna roku" rozstrzygnięty. Dominika Dębska i Miłka Malzahn wyróżnione</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/27-latka-zostala-ranna-w-zamachu-w-krakowie-nowe-wiesci-ze-szpitala/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:57+01:00</news:publication_date>
+      <news:title>27-latka została ranna w zamachu w Krakowie. Nowe wieści ze szpitala</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1930493880.png</image:loc>
+      <image:title>27-latka została ranna w zamachu w Krakowie. Nowe wieści ze szpitala</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/zabojstwo-policjanta-w-krasniku-gornym-sledczy-sprawdza-czy-doszlo-do/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:54+01:00</news:publication_date>
+      <news:title>Zabójstwo policjanta w Kraśniku Górnym. Śledczy sprawdzą, czy doszło do niedopełnienia obowiązków</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/457277703.png</image:loc>
+      <image:title>Zabójstwo policjanta w Kraśniku Górnym. Śledczy sprawdzą, czy doszło do niedopełnienia obowiązków</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/zmarl-strobe-talbott-wplywowy-amerykanski-dyplomata-i-znawca-europy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:52+01:00</news:publication_date>
+      <news:title>Zmarł Strobe Talbott, wpływowy amerykański dyplomata i znawca Europy Wschodniej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/341170521.png</image:loc>
+      <image:title>Zmarł Strobe Talbott, wpływowy amerykański dyplomata i znawca Europy Wschodniej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/donald-trump-zaapelowal-do-wladimira-putina-o-zaprzestanie-agresji-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:51+01:00</news:publication_date>
+      <news:title>Donald Trump zaapelował do Władimira Putina o zaprzestanie agresji w Europie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/812277265.png</image:loc>
+      <image:title>Donald Trump zaapelował do Władimira Putina o zaprzestanie agresji w Europie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/schronisko-dla-zwierzat-w-radomiu-wyremontowane-po-22-latach-udalo-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:50+01:00</news:publication_date>
+      <news:title>Schronisko dla zwierząt w Radomiu wyremontowane po 22 latach. Udało się zdążyć przed mrozami</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/434154229.png</image:loc>
+      <image:title>Schronisko dla zwierząt w Radomiu wyremontowane po 22 latach. Udało się zdążyć przed mrozami</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rafal-trzaskowski-reaguje-w-sprawie-ekranu-w-domach-centrum-samowola/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:48+01:00</news:publication_date>
+      <news:title>Rafał Trzaskowski reaguje w sprawie ekranu w Domach Centrum. "Samowola budowlana i bezczelność"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1876171358.png</image:loc>
+      <image:title>Rafał Trzaskowski reaguje w sprawie ekranu w Domach Centrum. "Samowola budowlana i bezczelność"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/moglo-byc-lzej-brzeczek-wprost-po-losowaniu-grup-euro-u-21/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T21:55:48+01:00</news:publication_date>
+      <news:title>„Mogło być lżej”. Brzęczek wprost po losowaniu grup EURO U-21</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1104777851.png</image:loc>
+      <image:title>„Mogło być lżej”. Brzęczek wprost po losowaniu grup EURO U-21</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/pionierki-fotografii-i-kobiecej-niezaleznosci-historia-trzech-siostr/</loc>
     <news:news>
       <news:publication>
@@ -3585,81 +3720,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1705832976.png</image:loc>
       <image:title>Kreml wzywa chargé d’affaires Estonii i grozi „otwartą wojną z Rosją”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/karambol-w-kruszwicy-zderzylo-sie-piec-samochodow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T22:54:35+01:00</news:publication_date>
-      <news:title>Karambol w Kruszwicy. Zderzyło się pięć samochodów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/523078599.png</image:loc>
-      <image:title>Karambol w Kruszwicy. Zderzyło się pięć samochodów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/pracownicy-czuja-sie-zagrozeni-ale-laduja-dane-firm-do-ai-15/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T22:54:32+01:00</news:publication_date>
-      <news:title>Pracownicy czują się zagrożeni, ale ładują dane firm do AI (15%)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1989217295.png</image:loc>
-      <image:title>Pracownicy czują się zagrożeni, ale ładują dane firm do AI (15%)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nie-warszawa-nie-krakow-katowice-wygraly-ranking-najbardziej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T22:54:31+01:00</news:publication_date>
-      <news:title>Nie Warszawa, nie Kraków. Katowice wygrały ranking najbardziej kreatywnych miast Polski</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/678887552.png</image:loc>
-      <image:title>Nie Warszawa, nie Kraków. Katowice wygrały ranking najbardziej kreatywnych miast Polski</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/policja-prezentuje-help4u-startuje-platforma-wsparcia-dla-dzieci-i/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T22:54:30+01:00</news:publication_date>
-      <news:title>Policja prezentuje Help4U. Startuje platforma wsparcia dla dzieci i młodzieży doświadczających przemocy seksua</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/345889436.png</image:loc>
-      <image:title>Policja prezentuje Help4U. Startuje platforma wsparcia dla dzieci i młodzieży doświadczających przemocy seksua</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/tak-wyglada-tabela-ligi-mistrzow-nowy-lider-i-dwie-niespodzianki/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T22:54:29+01:00</news:publication_date>
-      <news:title>Tak wygląda tabela Ligi Mistrzów. Nowy lider. I dwie niespodzianki</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1005905898.png</image:loc>
-      <image:title>Tak wygląda tabela Ligi Mistrzów. Nowy lider. I dwie niespodzianki</image:title>
     </image:image>
   </url>
 </urlset>
