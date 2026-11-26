@@ -584,60 +584,69 @@ def _rel_href(rel_root: str, target_path: str) -> str:
 
 def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
     items = [
-        ("/Polska", "Polska", ""),
-        ("/Polska/Gospodarka", "Gospodarka", "Polska / "),
-        ("/Polska/Polityka", "Polityka", "Polska / "),
-        ("/Polska/Energetyka", "Energetyka", "Polska / "),
+        ("/Polska", "Polska"),
+        ("/Polska/Gospodarka", "Gospodarka"),
+        ("/Polska/Polityka", "Polityka"),
+        ("/Polska/Energetyka", "Energetyka"),
     ]
-    out = []
-    for path, label, prefix in items:
+    sections = []
+    for path, label in items:
         cls = "path-chip active" if path == active_path else "path-chip"
         href = html.escape(_rel_href(rel_root, path), quote=True)
-        inner = f'<span class="path-root">{html.escape(prefix)}</span>{html.escape(label)}' if prefix else html.escape(label)
-        out.append(
+        sections.append(
             f'<a class="{cls}" data-path="{html.escape(path, quote=True)}" '
-            f'href="{href}" onclick="return selectPathLink(event, \'{html.escape(path, quote=True)}\')">{inner}</a>'
+            f'href="{href}" onclick="return selectPathLink(event, \'{html.escape(path, quote=True)}\')">{html.escape(label)}</a>'
         )
     reg_active = active_path == "/Polska/Regiony" or active_path.startswith("/Polska/Regiony/")
     reg_cls = "path-chip active" if reg_active else "path-chip"
     reg_href = html.escape(_rel_href(rel_root, "/Polska/Regiony"), quote=True)
-    out.append(
+    sections.append(
         '<div class="path-region-group">'
         f'<a class="{reg_cls}" data-path="/Polska/Regiony" href="{reg_href}" '
-        'onclick="return selectPathLink(event, \'/Polska/Regiony\')">'
-        '<span class="path-root">Polska / </span>Regiony</a>'
+        'onclick="return selectPathLink(event, \'/Polska/Regiony\')">Regiony</a>'
         '<button type="button" id="regionsToggleBtn" class="regions-toggle" '
         'onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" '
         'title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button>'
         '</div>'
     )
-    out.append('<span class="path-divider" aria-hidden="true">|</span>')
+    sections.append('<span class="path-divider" aria-hidden="true">|</span>')
     for path, label in [("/Swiat", "Świat"), ("/Sport", "Sport")]:
         cls = "path-chip active" if path == active_path else "path-chip"
         href = html.escape(_rel_href(rel_root, path), quote=True)
-        out.append(
+        sections.append(
             f'<a class="{cls}" data-path="{html.escape(path, quote=True)}" '
             f'href="{href}" onclick="return selectPathLink(event, \'{html.escape(path, quote=True)}\')">{html.escape(label)}</a>'
         )
-    cam_cls = "path-chip active" if active_path == "/kamery" else "path-chip"
-    cam_href = html.escape(_rel_href(rel_root, "/kamery"), quote=True)
-    out.append(
-        f'<a class="{cam_cls}" data-path="/kamery" href="{cam_href}" '
-        'onclick="return fixFileHref(event)">Kamery</a>'
-    )
+
     mkt_cls = "path-chip active" if active_path == "/rynki" else "path-chip"
     mkt_href = html.escape(_rel_href(rel_root, "/rynki"), quote=True)
-    out.append(
-        f'<a class="{mkt_cls}" data-path="/rynki" href="{mkt_href}" '
-        'onclick="return fixFileHref(event)">Rynki i pogoda</a>'
-    )
+    cam_cls = "path-chip active" if active_path == "/kamery" else "path-chip"
+    cam_href = html.escape(_rel_href(rel_root, "/kamery"), quote=True)
     rnk_cls = "path-chip active" if active_path == "/ranking" else "path-chip"
     rnk_href = html.escape(_rel_href(rel_root, "/ranking"), quote=True)
-    out.append(
-        f'<a class="{rnk_cls}" data-path="/ranking" href="{rnk_href}" '
-        'onclick="return fixFileHref(event)">Ranking redakcji</a>'
+
+    tools = [
+        (
+            f'<a class="{mkt_cls}" data-path="/rynki" href="{mkt_href}" '
+            'onclick="return fixFileHref(event)">'
+            '<span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki i pogoda</a>'
+        ),
+        (
+            f'<a class="{cam_cls}" data-path="/kamery" href="{cam_href}" '
+            'onclick="return fixFileHref(event)">'
+            '<span class="nav-tool-dot" aria-hidden="true"></span>Kamery</a>'
+        ),
+        (
+            f'<a class="{rnk_cls}" data-path="/ranking" href="{rnk_href}" '
+            'onclick="return fixFileHref(event)">Ranking</a>'
+        ),
+    ]
+    sec_html = "\n          ".join(sections)
+    tools_html = "\n          ".join(tools)
+    return (
+        f'<div class="nav-sections">\n          {sec_html}\n        </div>\n'
+        f'        <div class="nav-tools" aria-label="Narzędzia i dane">\n          {tools_html}\n        </div>'
     )
-    return "\n        ".join(out)
 
 
 def _render_regions_drawer_html(rel_root: str, active_path: str = "/Polska") -> str:
@@ -832,12 +841,20 @@ def render_feed_ssr(articles: list, path: str, rel_root: str) -> str:
     )
     title_map = {p: t for p, t, _ in CATEGORIES}
     heading_title = html.escape(title_map.get(path, path))
+    segs = [s for s in path.strip("/").split("/") if s]
+    crumb_html = (
+        f'<span class="feed-crumb">{" › ".join(html.escape(s) for s in segs[:-1])}</span>'
+        if len(segs) > 1
+        else ""
+    )
     heading = f"""<div class="feed-heading">
-        <div>
-          <span class="feed-crumb">{html.escape(path)}</span>
+        <div class="feed-heading-title">
+          {crumb_html}
           <h1>{heading_title}</h1>
         </div>
-        <span>{count_articles_label(len(filtered))}</span>
+        <div class="feed-heading-meta">
+          <span class="feed-count">{count_articles_label(len(filtered))}</span>
+        </div>
       </div>"""
     region_strip = _render_region_strip_ssr(articles, path, rel_root)
     if not filtered:
@@ -1856,7 +1873,9 @@ def _render_market_ticker_html(rel_root: str, mkt: dict | None) -> str:
         '<div class="market-ticker" role="region" aria-label="Notowania i pogoda">'
         '<div class="container market-ticker-inner">'
         f'<div class="ticker-track">{"".join(pills)}</div>'
-        f'<a class="ticker-more" href="{href}" onclick="return fixFileHref(event)">Rynki i mapa pogody →</a>'
+        f'<a class="ticker-more" href="{href}" onclick="return fixFileHref(event)">'
+        '<span class="tk-more-full">Rynki i pogoda →</span>'
+        '<span class="tk-more-short">Rynki →</span></a>'
         '</div></div>'
     )
 
@@ -2524,7 +2543,7 @@ def _page_shell(
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
-        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+        <span class="top-hide-sm">16 województw · 0 clickbaitu · 0 fake news</span>
       </div>
       <div class="top-utility-actions">
         <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
@@ -2557,6 +2576,7 @@ def _page_shell(
               id="searchInput"
               type="search"
               class="search-input"
+              placeholder="Szukaj…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />

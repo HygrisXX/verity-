@@ -12,7 +12,7 @@
     "updated_iso": "2026-11-26T20:01:30+01:00",
     "display_date": "26.11.2026, 20:01",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 88,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -38,8 +38,8 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "II zgrupowanie Polskiej Reprezentacji Sportowej do Invictus Games Birmingham 2027, listopad 2026, fot. Combat Camera W zawodach wezmą udział żołnierze i weterani, którzy doznali urazów podczas służby wojskowej. Polskę reprezentować będzie 20-osobowa drużyna. [Źródło: Radio Olsztyn, TVP3 Olsztyn]",
-          "Ideę zawodów przybliżył szef zespołu sportowego, major Sebastian Jędraszczyk. Pomysłodawcą i patronem igrzysk jest książę Harry, który zainspirowany amerykańskimi Warrior Games postanowił zorganizować podobne zawody w Europie. [Źródło: Radio Olsztyn]",
+          "II zgrupowanie Polskiej Reprezentacji Sportowej do Invictus Games Birmingham 2027, listopad 2026, fot. Combat Camera W zawodach wezmą udział żołnierze i weterani, którzy doznali urazów podczas służby wojskowej. Polskę reprezentować będzie 20-osobowa drużyna. Ideę zawodów przybliżył szef zespołu sportowego, major Sebastian Jędraszczyk. [Źródło: Radio Olsztyn, TVP3 Olsztyn]",
+          "Pomysłodawcą i patronem igrzysk jest książę Harry, który zainspirowany amerykańskimi Warrior Games postanowił zorganizować podobne zawody w Europie. [Źródło: Radio Olsztyn]",
           "— Od 2018 roku czterokrotnie braliśmy w nich udział: w Sydney, Hadze, Düsseldorfie i Vancouver-Whistler. [Źródło: Radio Olsztyn]",
           "Teraz mamy Birmingham – powiedział. [Źródło: Radio Olsztyn]",
           "— Są to urazy psychiczne, czyli zespół stresu pourazowego, urazy wewnętrzne, które często są widoczne na zewnątrz, oraz choroby przewlekłe związane z trudami służby – wyjaśnił. [Źródło: Radio Olsztyn]"
@@ -59,7 +59,7 @@
         "summary": "Żołnierze i weterani szykują się do igrzysk. Zgrupowanie w Mrągowie",
         "url": "https://radioolsztyn.pl/zolnierze-i-weterani-szykuja-sie-do-igrzysk-zgrupowanie-w-mragowie/01903214",
         "focus": "Podkreśla konkretne liczby (2027, 2026) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (międzynarodowych, Niezwyciężeni, rehabilitacji) rozwijany w TVP3 Olsztyn."
+        "omits": "Pomija kontekst (Niezwyciężeni, Przygotowania, rehabilitacji) rozwijany w TVP3 Olsztyn."
       },
       {
         "outlet": "TVP3 Olsztyn",
@@ -67,7 +67,7 @@
         "summary": "Niezwyciężeni. Przygotowania do igrzysk weteranów",
         "url": "https://olsztyn.tvp.pl/96704051/niezwyciezeni-przygotowania-do-igrzysk-weteranow",
         "focus": "Podkreśla konkretne liczby (2027, 2026) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija kontekst (Vancouver-Whistler, przyszłorocznych, paralimpijskich) rozwijany w Radio Olsztyn."
+        "omits": "Pomija kontekst (Vancouver-Whistler, zainspirowany, amerykańskimi) rozwijany w Radio Olsztyn."
       }
     ],
     "sources": [
@@ -238,16 +238,16 @@
         "angle": "Relacja wiodąca",
         "summary": "Nie żyje wybitny naukowiec z Rzeszowa. Był prorektorem Uniwersytetu Rzeszowskiego",
         "url": "https://rzeszow-news.pl/nie-zyje-wybitny-naukowiec-z-rzeszowa-byl-prorektorem-uniwersytetu-rzeszowskiego/",
-        "focus": "Wyróżnia własne wątki i pojęcia: wybitny, News, czwartek.",
-        "omits": "Pomija wyliczenia (74 lata) przytaczane przez Radio Rzeszów."
+        "focus": "Wyróżnia własne wątki i pojęcia: wybitny.",
+        "omits": "Pomija kontekst (poinformowała, działalnością, dydaktyczną) rozwijany w Radio Rzeszów."
       },
       {
         "outlet": "Radio Rzeszów",
         "angle": "Doniesienie regionalne",
         "summary": "Nie żyje profesor Jerzy Kitowski. Były prorektor Uniwersytetu Rzeszowskiego",
         "url": "https://radio.rzeszow.pl/377444/nie-zyje-profesor-jerzy-kitowski-byly-prorektor-uniwersytetu-rzeszowskiego/",
-        "focus": "Eksponuje dane (74 lata) oraz wątki: Zmarł, związany.",
-        "omits": "Pomija kontekst (przyjaciołom, wystartowała, komunikacie) rozwijany w Rzeszow-News.pl."
+        "focus": "Wyróżnia własne wątki i pojęcia: jego, poinformowała, Swoją.",
+        "omits": "Pomija kontekst (wybitny) rozwijany w Rzeszow-News.pl."
       }
     ],
     "sources": [
@@ -297,7 +297,7 @@
     "updated_iso": "2026-11-26T20:01:26+01:00",
     "display_date": "26.11.2026, 20:01",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 92,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -344,15 +344,15 @@
         "summary": "Lubelskie aktywne też lokalnie. Organizacje pozarządowe mają się coraz lepiej",
         "url": "https://radio.lublin.pl/2026/11/lubelskie-aktywne-tez-lokalnie-organizacje-pozarzadowe-maja-sie-coraz-lepiej/",
         "focus": "Wyróżnia własne wątki i pojęcia: coraz, lepiej, sektora.",
-        "omits": "Pomija kontekst (Przedstawiciele, beneficjenci, merytoryczne) rozwijany w TVP3 Lublin."
+        "omits": "Pomija kontekst (Przedstawiciele, beneficjenci, podsumowały) rozwijany w TVP3 Lublin."
       },
       {
         "outlet": "TVP3 Lublin",
         "angle": "Doniesienie regionalne",
         "summary": "Aktywne Lubelskie Lokalnie. Organizacje pozarządowe podsumowały kolejną edycję programu wspierającego lokalne społeczności",
         "url": "https://lublin.tvp.pl/96705680/aktywne-lubelskie-lokalnie-organizacje-pozarzadowe-podsumowaly-kolejna-edycje-programu-wspierajacego-lokalne-spolecznosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: kolejną, edycję, programu.",
-        "omits": "Pomija kontekst (zaangażowania, nieformalnych, jednocześnie) rozwijany w Radio Lublin."
+        "focus": "Wyróżnia własne wątki i pojęcia: podsumowały, kolejną, edycję.",
+        "omits": "Pomija kontekst (zaangażowania, konferencji, rozmawiali) rozwijany w Radio Lublin."
       }
     ],
     "sources": [
@@ -436,7 +436,6 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Podstawą zmian jest Rozporządzenie Komisji UE, które modyfikuje wczesniejsze rozporządzenie Parlamentu Europejskiego i Rady. Przepisy dotyczą stosowania witaminy A, alfa-arbutyny i arbutyny oraz wybranych substancji o potencjalnych właściwościach zaburzających gospodarkę hormonalną w produktach kosmetycznych.",
           "Retinol w kosmetykach obejmą nowe limity Od 1 stycznia 2027 r. w Unii nie będzie można wprowadzać do obrotu produktów kosmetycznych zawierających 0,05 proc. ekwiwalentu retinolu w balsamie do ciała albo 0,3 proc. ekwiwalentu retinolu w innych kosmetykach. [Źródło: Medonet.pl]"
         ]
       }
@@ -455,7 +454,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "UE zmienia zasady dla kosmetyków. Retinol będzie limitowany, a część filtrów UV zniknie",
         "url": "https://www.medonet.pl/zdrowie/wiadomosci/ue-ogranicza-retinol-w-kosmetykach-wchodza-nowe-limity-i-ostrzezenia/ne5jx2y",
-        "focus": "Eksponuje dane (2027, 0,05 proc.) oraz wątki: Retinol, filtrów.",
+        "focus": "Eksponuje dane (2027, 0,05 proc.) oraz wątki: kosmetyków, Retinol.",
         "omits": "Pomija wyliczenia (2026) przytaczane przez Instalki.pl."
       }
     ],
@@ -534,7 +533,6 @@
         "paragraphs": [
           "Jak co roku Regionalna Dyrekcja Lasów Państwowych w Lublinie zorganizowała Submisję Drewna Cennego. Na placu ekspozycyjnym Nadleśnictwa Krasnystaw zgromadzono najcenniejsze okazy, jakie w tym roku zostały pozyskane z lasów naszego regionu. [Źródło: Lublin112.pl]",
           "Mowa o starannie wyselekcjonowanym drewnie dębowym, charakteryzującym się wyjątkowymi parametrami technicznymi oraz ponadprzeciętnymi cechami użytkowymi. Na tegoroczną submisję leśnicy z 13 nadleśnictw przygotowali ponad 910 metrów sześciennych drewna. Surowiec podzielono na 972 partie. [Źródło: Lublin112.pl]",
-          "Jak się okazało, zainteresowanie było ogromne, a chętni byli gotowi zapłacić rekordowe kwoty. Oferty złożyło 16 przedsiębiorców z trzech krajów, z tego 14 firm z Polski. Jej miąższość wynosiła 1,80 m³, co oznacza, że za cały egzemplarz nabywca zapłacił blisko 24,4 tys. zł. [Źródło: Lublin112.pl]",
           "Wysokie ceny mogą rodzić pytania o to, czy organizacja tego typu wydarzeń oznacza dodatkowe pozyskiwanie drzew. [Źródło: Lublin112.pl]"
         ]
       },
@@ -551,8 +549,8 @@
         "angle": "Relacja wiodąca",
         "summary": "Rekordowe ceny drewna na Lubelszczyźnie. Za jedną kłodę zapłacono prawie 35 tys. złotych",
         "url": "https://www.lublin112.pl/rekordowe-ceny-drewna-na-lubelszczyznie-za-jedna-klode-zaplacono-prawie-35-tys-zlotych/",
-        "focus": "Eksponuje dane (35 tys., 6,5 mln) oraz wątki: drewna, Lubelszczyźnie.",
-        "omits": "Pomija wyliczenia (33,5 proc., 1,7 proc.) przytaczane przez WP Finanse."
+        "focus": "Eksponuje dane (35 tys.) oraz wątki: Rekordowe, drewna.",
+        "omits": "Pomija wyliczenia (800 tys., 3,92 mln) przytaczane przez WP Finanse."
       },
       {
         "outlet": "WP Finanse",
@@ -560,7 +558,7 @@
         "summary": "Ponad 800 tys. turystów z jednego kraju. Pokochali Polskę za ceny",
         "url": "https://finanse.wp.pl/zagraniczni-turysci-zalali-polske-padl-letni-rekord-7355093859109024a",
         "focus": "Eksponuje dane (800 tys., 3,92 mln) oraz wątki: turystów, jednego.",
-        "omits": "Pomija wyliczenia (24,4 tys. zł, 34,8 tys. zł) przytaczane przez Lublin112.pl."
+        "omits": "Pomija wyliczenia (35 tys.) przytaczane przez Lublin112.pl."
       }
     ],
     "sources": [
@@ -583,7 +581,7 @@
       },
       {
         "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Jej miąższość wynosiła 1,80 m³, co oznacza, że za cały egzemplarz nabywca zapłacił blisko 24,4 tys. zł."
+        "a": "Latem odwiedziło nasz kraj 3,92 mln zagranicznych turystów – o 23 proc. więcej niż rok wcześniej."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
@@ -698,19 +696,19 @@
     "media_label": "Finanse i rynek kapitałowy"
   },
   {
-    "id": 425997445,
-    "path": "/Polska/Regiony/Mazowieckie",
-    "seo_url": "/Polska/Regiony/Mazowieckie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki",
+    "id": 373791258,
+    "path": "/Polska/Regiony/Malopolskie",
+    "seo_url": "/Polska/Regiony/Malopolskie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki",
     "seo_title": "Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"",
-    "summary_lead": "— Działania prowadzone są pod nadzorem prokuratora.",
-    "meta_description": "— Działania prowadzone są pod nadzorem prokuratora. Dotyczą porachunków gangsterskich na tle narkotykowym.",
-    "keywords": "Mazowieckie, Służby, przekopują, działkę, Warszawą, gangsterskie, porachunki",
+    "summary_lead": "Dotyczą porachunków gangsterskich na tle narkotykowym. Śledczy dysponują informacją, że na tym terenie miało zostać zakopane ciało – przekazał reporter tvnwarszawa.pl Artur Węgrzynowicz, który pojechał na miejsce.",
+    "meta_description": "Dotyczą porachunków gangsterskich na tle narkotykowym. Śledczy dysponują informacją, że na tym terenie miało zostać zakopane ciało – przekazał reporter…",
+    "keywords": "Malopolskie, Służby, przekopują, działkę, Warszawą, gangsterskie, porachunki",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T20:01:21+01:00",
     "updated_iso": "2026-11-26T20:01:21+01:00",
     "display_date": "26.11.2026, 20:01",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -720,7 +718,7 @@
       },
       {
         "label": "Kategoria",
-        "val": "/Polska/Regiony/Mazowieckie"
+        "val": "/Polska/Regiony/Malopolskie"
       },
       {
         "label": "Główne źródło",
@@ -736,18 +734,15 @@
       {
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "— Działania prowadzone są pod nadzorem prokuratora. [Źródło: TVN24, Warszawa w Pigułce]",
-          "Dotyczą porachunków gangsterskich na tle narkotykowym. Śledczy dysponują informacją, że na tym terenie miało zostać zakopane ciało – przekazał reporter tvnwarszawa.pl Artur Węgrzynowicz, który pojechał na miejsce. [Źródło: TVN24, Warszawa w Pigułce]",
-          "Nasz reporter dodał, że na posesji pojawiła się koparka. [Źródło: TVN24]",
-          "Wezwano również strażaków z grupy chemicznej. [Źródło: TVN24, Warszawa w Pigułce]",
-          "— Działania służb trwają od wczesnych godzin popołudniowych. [Źródło: TVN24, Warszawa w Pigułce]",
-          "Śledczy mają do dyspozycji georadar. [Źródło: TVN24]"
+          "Dotyczą porachunków gangsterskich na tle narkotykowym. Śledczy dysponują informacją, że na tym terenie miało zostać zakopane ciało – przekazał reporter tvnwarszawa.pl Artur Węgrzynowicz, który pojechał na miejsce. [Źródło: TVN24, Warszawa w Pigułce]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Śledczy mieli uzyskać informacje wskazujące, że na terenie jednej z posesji mogą znajdować się zakopane ludzkie zwłoki. Według ustaleń medialnych sprawa ma związek z działalnością środowiska przestępczego oraz porachunkami dotyczącymi narkotyków. Na teren nieruchomości sprowadzono koparkę, która ma umożliwić przeprowadzenie prac ziemnych. [Źródło: Warszawa w Pigułce]"
+          "— Działania prowadzone są pod nadzorem prokuratora.",
+          "Wezwano również strażaków z grupy chemicznej.",
+          "— Działania służb trwają od wczesnych godzin popołudniowych. [Źródło: Warszawa w Pigułce]"
         ]
       }
     ],
@@ -757,16 +752,16 @@
         "angle": "Relacja wiodąca",
         "summary": "Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"",
         "url": "https://tvn24.pl/tvnwarszawa/okolice/kedzierowka-sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki-st9359623?source=rss",
-        "focus": "Wyróżnia własne wątki i pojęcia: Służby, Nasz, dodał.",
-        "omits": "Pomija kontekst (niejednorodności, potwierdzających, Funkcjonariusze) rozwijany w Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: Służby.",
+        "omits": "Pomija kontekst (przeprowadzenie, popołudniowych, działalnością) rozwijany w Warszawa w Pigułce."
       },
       {
         "outlet": "Warszawa w Pigułce",
         "angle": "Doniesienie regionalne",
         "summary": "Tajemnicza akcja służb pod Warszawą. Przekopują działkę w poszukiwaniu ciała. W tle gangsterskie porachunki",
         "url": "https://warszawawpigulce.pl/tajemnicza-akcja-sluzb-pod-warszawa-przekopuja-dzialke-w-poszukiwaniu-ciala-w-tle-gangsterskie-porachunki/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Tajemnicza, akcja, poszukiwaniu.",
-        "omits": "Pomija kontekst (zlokalizować, dyspozycji, pomagający) rozwijany w TVN24."
+        "focus": "Wyróżnia własne wątki i pojęcia: Tajemnicza, akcja, służb.",
+        "omits": "Pomija kontekst (Służby) rozwijany w TVN24."
       }
     ],
     "sources": [
@@ -775,9 +770,9 @@
     ],
     "corrections": [],
     "impact": {
-      "audience": "Mieszkańcy Mazowsza",
+      "audience": "Mieszkańcy Małopolski",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Postępowanie / Śledztwo"
+      "status": "Potwierdzone (2 źródła)"
     },
     "discrepancies": [],
     "independent_sources_count": 2,
@@ -785,42 +780,23 @@
     "seo_faq": [
       {
         "q": "Co wiadomo w sprawie: Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"?",
-        "a": "Dotyczą porachunków gangsterskich na tle narkotykowym."
+        "a": "— Działania prowadzone są pod nadzorem prokuratora."
       },
       {
         "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Śledczy dysponują informacją, że na tym terenie miało zostać zakopane ciało – przekazał reporter tvnwarszawa.pl Artur Węgrzynowicz, który pojechał na miejsce."
+        "a": "Wezwano również strażaków z grupy chemicznej."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Mazowsza (obszar: Sprawy lokalne i samorząd). Status: Postępowanie / Śledztwo."
+        "a": "Dotyczy grupy: Mieszkańcy Małopolski (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (2 źródła)."
       }
     ],
-    "media_file": "media/reg-mazowieckie-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_312_Building_Murals.jpg",
-    "media_label": "Warszawa, woj. mazowieckie",
-    "dossier_title": "Warszawie · służby",
-    "dossier_count": 2,
-    "dossier_index": 2,
-    "dossier_items": [
-      {
-        "id": 1922296188,
-        "seo_url": "/Polska/Regiony/Mazowieckie/pierwszy-snieg-w-warszawie-460-pojazdow-w-gotowosci-sluzby-juz",
-        "seo_title": "Pierwszy śnieg w Warszawie. 460 pojazdów w gotowości, służby już wyjechały na ulice",
-        "display_date": "23.11.2026, 16:04",
-        "published_iso": "2026-11-23T16:04:38+01:00"
-      },
-      {
-        "id": 425997445,
-        "seo_url": "/Polska/Regiony/Mazowieckie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki",
-        "seo_title": "Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"",
-        "display_date": "26.11.2026, 20:01",
-        "published_iso": "2026-11-26T20:01:21+01:00"
-      }
-    ]
+    "media_file": "media/topic-nature-3.jpg",
+    "media_credit": "Fot. ilustracyjne: Pit1233 (CC0, Wikimedia Commons)",
+    "media_license": "CC0",
+    "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Vistula_sunset_5_02-2014.jpg",
+    "media_label": "Przyroda i środowisko"
   },
   {
     "id": 462115590,
@@ -880,23 +856,23 @@
         "summary": "Wielki debiut polskiego zespołu w Lidze Mistrzyń",
         "url": "https://sportowefakty.wp.pl/siatkowka/1286299/wielki-debiut-polskiego-zespolu-w-lidze-mistrzyn",
         "focus": "Wyróżnia własne wątki i pojęcia: Wielki, rewelacją, poprzedniego.",
-        "omits": "Pomija kontekst (Wymarzony, zadebiutowały, doprowadziły) rozwijany w Polsat Sport, Przegląd Sportowy."
+        "omits": "Pomija kontekst (Wymarzony, zadebiutowały, rozgrywkach) rozwijany w Polsat Sport, Przegląd Sportowy."
       },
       {
         "outlet": "Polsat Sport",
         "angle": "Relacja sportowa",
         "summary": "Trzy do zera! Wymarzony debiut siatkarek UNI Opole w Lidze Mistrzyń",
         "url": "https://www.polsatsport.pl/wiadomosc/2026-11-26/uni-opole-volley-mulhouse-alsace-siatkowka-wynik-meczu/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Trzy, zera, meczu.",
-        "omits": "Pomija kontekst (Makarowska-Kulej, Olinga-Andela, Chillingworth) rozwijany w WP SportoweFakty, Przegląd Sportowy."
+        "focus": "Wyróżnia własne wątki i pojęcia: Trzy, zera, siatkarek.",
+        "omits": "Pomija kontekst (polskiego, poprzedniego, mistrzostw) rozwijany w WP SportoweFakty, Przegląd Sportowy."
       },
       {
         "outlet": "Przegląd Sportowy",
         "angle": "Relacja sportowa",
         "summary": "Demolka w Lidze Mistrzyń. Co za mecz polskiej drużyny, wymarzony debiut",
         "url": "https://przegladsportowy.onet.pl/siatkowka/demolka-w-lidze-mistrzyn-co-za-mecz-polskiej-druzyny-wymarzony-debiut/l4kwmne",
-        "focus": "Wyróżnia własne wątki i pojęcia: Demolka, drużyny, Klaudia.",
-        "omits": "Pomija kontekst (przeciwniczek, zdecydowanym, rozgrywająca) rozwijany w WP SportoweFakty, Polsat Sport."
+        "focus": "Wyróżnia własne wątki i pojęcia: Demolka, drużyny.",
+        "omits": "Pomija kontekst (zdecydowanym, prestiżowej, wyśmienicie) rozwijany w WP SportoweFakty, Polsat Sport."
       }
     ],
     "sources": [
@@ -1021,7 +997,7 @@
         "summary": "„Świadomy Senior – Bezpieczny Senior”. Minister sprawiedliwości podsumował kampanię [WIDEO]",
         "url": "https://bialystok.tvp.pl/96704583/swiadomy-senior-bezpieczny-senior-minister-sprawiedliwosci-podsumowal-kampanie-wideo",
         "focus": "Wyróżnia własne wątki i pojęcia: podsumował, kampanię, WIDEO.",
-        "omits": "Pomija kontekst (udział, Okłą-Drewnowicz, pełnomocniczką) rozwijany w Radio Białystok, Medonet.pl."
+        "omits": "Pomija kontekst (Okłą-Drewnowicz, pełnomocniczką, zainteresowana) rozwijany w Radio Białystok, Medonet.pl."
       },
       {
         "outlet": "Medonet.pl",
@@ -1421,7 +1397,7 @@
         "paragraphs": [
           "Odreagowanie na GPW po ostatnich spadkach spowodowało, że indeks WIG20 powrócił powyżej psychologicznegopoziomu 4 000 punktów, wspierany przez świetne nastroje na głównycheuropejskich parkietach oraz odbicie cen miedzi. Nie było jednak presji inwestorówz Wall Street, którzy świętowali w czwartek Dzień Dziękczynienia, ale dzień wcześniejzasiali na rynku nieco optymizmu. [Źródło: Bankier.pl, XYZ.pl]",
           "Indeks WIGzyskał 1,73 proc., indeks małych spółek sWIG80 zwyżkował o 1,88 proc., natomiast absolutnym liderem czwartkowego rozdania okazał się grupujący średniespółki mWIG40, który poszedł w górę aż o 2,33 proc. Obroty na WIG wyniosły 1,72 mld zł, z czego1,38 mld zł dotyczyło spółek z WIG20. Obroty na rynku były naturalnietonowane przez nieobecność inwestorów z USA. [Źródło: Bankier.pl]",
-          "Największą gwiazdą jest Text, którego akcje drożeją nawet o 15-17% po publikacji wyników wyraźnie lepszych od oczekiwań analityków. Rada nadzorcza Grupy Azoty powołała Mirosława Sobczyka w skład zarządu spółki, powierzając mu od 1 grudnia 2026 funkcję wiceprezesa zarządu – czytamy w komunikacie Grupy Azoty. [Źródło: Comparic.pl, WNP.pl, Parkiet, Puls Biznesu]"
+          "Największą gwiazdą jest Text, którego akcje drożeją nawet o 15-17% po publikacji wyników wyraźnie lepszych od oczekiwań analityków. Rada nadzorcza Grupy Azoty powołała Mirosława Sobczyka w skład zarządu spółki, powierzając mu od 1 grudnia 2026 funkcję wiceprezesa zarządu – czytamy w komunikacie Grupy Azoty. [Źródło: Bankier.pl, Comparic.pl, WNP.pl, Parkiet, Puls Biznesu]"
         ]
       },
       {
@@ -1440,7 +1416,7 @@
         "summary": "Bez Wall Street giełdy w górę. Text i Grupa Azoty z mocnymi wzrostami",
         "url": "https://www.bankier.pl/wiadomosc/Bez-Wall-Street-gieldy-w-gore-Text-i-Grupa-Azoty-z-mocnymi-wzrostami-9235839.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Eksponuje dane (1,73 proc., 1,88 proc.) oraz wątki: górę, mocnymi.",
-        "omits": "Pomija wyliczenia (2026, 18%) przytaczane przez Comparic.pl, WNP.pl."
+        "omits": "Pomija wyliczenia (18%) przytaczane przez Comparic.pl."
       },
       {
         "outlet": "Comparic.pl",
@@ -1782,8 +1758,7 @@
         "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
           "Serbia – gospodarze turnieju. Anglia – wicemistrz z 2025, Francja – półfinalista ostatniego turnieju. Takich rywali wylosowała młodzieżówka Jerzego Brzęczka w grupie ME w 2027 roku. [Źródło: WP SportoweFakty, Gol24.pl, Przegląd Sportowy]",
-          "Na igrzyska w Los Angeles awansują tylko trzy najlepsze drużyny. Gdy Polska ostatni raz zakwalifikowała się do igrzysk, Jerzy Brzęczek był kapitanem na boisku, a piłkarze pod wodzą trenera Janusza Wójcika zdobyli w Barcelonie srebrny medal. [Źródło: WP SportoweFakty, Gol24.pl, Przegląd Sportowy]",
-          "Teraz Brzęczek jako trener prowadzi najzdolniejszą reprezentację młodzieżową od lat, ale z kolei reguły awansu do igrzysk zmieniły się tak, że zakwalifikować się do nich z Europy jest trudniej niż kiedykolwiek. [Źródło: WP SportoweFakty, Interia Sport]",
+          "Na igrzyska w Los Angeles awansują tylko trzy najlepsze drużyny. Gdy Polska ostatni raz zakwalifikowała się do igrzysk, Jerzy Brzęczek był kapitanem na boisku, a piłkarze pod wodzą trenera Janusza Wójcika zdobyli w Barcelonie srebrny medal. [Źródło: WP SportoweFakty, Gol24.pl, Przegląd Sportowy, Interia Sport]",
           "Drużyna prowadzona przez Jerzego Brzęczka wygrała dziewięć pierwszych spotkań i długo utrzymywała się na czele grupy E. W ostatniej kolejce przegrała jednak z Włochami aż 2:6, przez co zakończyła rywalizację na drugim miejscu. Mimo to awansowała na Euro U21 jako najlepszy zespół z drugiego miejsca w grupie. [Źródło: WP SportoweFakty, Gol24.pl, Przegląd Sportowy]"
         ]
       },
@@ -1803,7 +1778,7 @@
         "summary": "Polska trafiła na gigantów. Oto nasza grupa na mistrzostwach Europy",
         "url": "https://sportowefakty.wp.pl/pilka-nozna/1286294/giganci-i-gospodarz-z-nimi-zagra-polska-w-mistrzostwach-europy-u-21",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (podopieczni, Losowanie, przyszłorocznej) rozwijany w Gol24.pl, Interia Sport."
+        "omits": "Pomija kontekst (reprezentacji, podopieczni, Losowanie) rozwijany w Gol24.pl, Przegląd Sportowy."
       },
       {
         "outlet": "Gol24.pl",
@@ -1811,7 +1786,7 @@
         "summary": "Losowanie mistrzostw Europy do lat 21. Polska trafiła do grupy śmierci",
         "url": "https://gol24.pl/losowanie-mistrzostw-europy-do-lat-21-polska-trafila-do-grupy-smierci/ar/c2-19152123",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (najzdolniejszą, kiedykolwiek, zmieniły) rozwijany w WP SportoweFakty, Interia Sport."
+        "omits": "Pomija kontekst (nasza, przyszłorocznej, najzdolniejszą) rozwijany w WP SportoweFakty, Przegląd Sportowy."
       },
       {
         "outlet": "Przegląd Sportowy",
@@ -1819,7 +1794,7 @@
         "summary": "Losowanie mistrzostw Europy U-21 [RELACJA NA ŻYWO]",
         "url": "https://przegladsportowy.onet.pl/pilka-nozna/losowanie-mistrzostw-europy-u-21-relacja-na-zywo/9g0ter2",
         "focus": "Podkreśla konkretne liczby (2025, 2027) w ujęciu: relacja sportowa.",
-        "omits": "Pomija kontekst (najzdolniejszą, kiedykolwiek, podopieczni) rozwijany w WP SportoweFakty, Interia Sport."
+        "omits": "Pomija kontekst (podopieczni, trafiła, przyszłorocznej) rozwijany w Gol24.pl, Interia Sport."
       },
       {
         "outlet": "Interia Sport",
@@ -1890,7 +1865,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "11 redakcji"
+        "val": "8 redakcji"
       },
       {
         "label": "Kategoria",
@@ -1902,34 +1877,30 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (11 źródeł)"
+        "val": "Potwierdzone (8 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (11 redakcji)",
+        "heading": "Ustalenia wspólne (8 redakcji)",
         "paragraphs": [
-          "Na uwagę zasługuje fakt, że aż 27% ogółu ankietowanych wyraziło zdecydowany sprzeciw wobec takiego rozwiązania. Wyrobionego zdania w tej materii nie ma natomiast 15,8% respondentów. W nocy z czwartku (19 listopada) na piątek (20 listopada) Rosja przeprowadziła zmasowany ostrzał Ukrainy i użyła ponad 400 dronów uderzeniowych oraz przeszło 110 rakiet. [Źródło: Defence24, Onet Wiadomości, Space24, Forsal.pl, Dziennik.pl, TVN24]",
-          "W poniedziałek 23 listopada na wniosek Polski w Brukseli odbyło się spotkanie Rady Północnoatlantyckiej, czyli głównego organu decyzyjnego NATO, który tworzą przedstawiciele wszystkich państw członkowskich. W szczycie brał udział wiceszef MON Paweł Zalewski. [Źródło: Gazeta.pl, WP Wiadomości, Forsal.pl, Dziennik.pl]",
-          "— Do dyspozycji Polski będzie postawiony jeden samolot wczesnego ostrzegania AWACS – przekazał Zalewski na konferencji prasowej po spotkaniu. [Źródło: Gazeta.pl, Bankier.pl]",
-          "Minister obrony narodowej Władysław Kosiniak-Kamysz zapowiadał wcześniej, że zwróci się do sojuszników o dodatkowe wsparcie, w tym samoloty AWACS i myśliwce F-35. AWACS (Airborne Warning And Control System) to samolot wojskowy, który służy do wykrywania innych obiektów. [Źródło: Gazeta.pl, WP Wiadomości]",
-          "Co powiedział premier — Apeluję do wszystkich uczestników dzisiejszego spotkania, aby wsparli Ukrainę w tych krytycznych miesiącach wobec rosyjskiej agresji, bo ta agresja przekroczyła granice Ukrainy. Rosja powinna unikać działań prowadzących do eskalacji wojny w Ukrainie – stwierdzili we wspólnym oświadczeniu prezydent USA Donalda Trump i szef NATO Mark Rutte. [Źródło: Gazeta.pl, Forsal.pl, Dziennik.pl, TVN24]"
+          "Na uwagę zasługuje fakt, że aż 27% ogółu ankietowanych wyraziło zdecydowany sprzeciw wobec takiego rozwiązania. Wyrobionego zdania w tej materii nie ma natomiast 15,8% respondentów. W nocy z czwartku (19 listopada) na piątek (20 listopada) Rosja przeprowadziła zmasowany ostrzał Ukrainy i użyła ponad 400 dronów uderzeniowych oraz przeszło 110 rakiet. [Źródło: Defence24, Onet Wiadomości, Forsal.pl, Dziennik.pl]",
+          "Co powiedział premier — Apeluję do wszystkich uczestników dzisiejszego spotkania, aby wsparli Ukrainę w tych krytycznych miesiącach wobec rosyjskiej agresji, bo ta agresja przekroczyła granice Ukrainy. Rosja powinna unikać działań prowadzących do eskalacji wojny w Ukrainie – stwierdzili we wspólnym oświadczeniu prezydent USA Donalda Trump i szef NATO Mark Rutte. [Źródło: Defence24, Gazeta.pl, Forsal.pl, Dziennik.pl]",
+          "W poniedziałek 23 listopada na wniosek Polski w Brukseli odbyło się spotkanie Rady Północnoatlantyckiej, czyli głównego organu decyzyjnego NATO, który tworzą przedstawiciele wszystkich państw członkowskich. W szczycie brał udział wiceszef MON Paweł Zalewski. AWACS (Airborne Warning And Control System) to samolot wojskowy, który służy do wykrywania innych obiektów. [Źródło: Gazeta.pl, WP Wiadomości, Forsal.pl, Dziennik.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
+          "— Do dyspozycji Polski będzie postawiony jeden samolot wczesnego ostrzegania AWACS – przekazał Zalewski na konferencji prasowej po spotkaniu.",
           "— To jest bardzo poważna zdolność, która daje nam pogłębioną świadomość sytuacyjną – podkreślił. [Źródło: Gazeta.pl]",
           "Uderzenie miało również bezpośrednie skutki dla Polski. Lotnisko znajduje się około 400 km od granicy z Ukrainą Marinowka była już wcześniej celem ukraińskich ataków. [Źródło: Onet Wiadomości]",
-          "Do ataku miało dojść 21 listopada 2026 r. w obwodzie smoleńskim. [Źródło: Space24]",
           "We wszystkich trzech miejscach upadku obiektów latających w Nowym Lipowcu (Lubelskie), Rudniku i Mołodyczu (Podkarpackie) znaleziono szczątki rosyjskich pocisków manewrujących Ch-101 – podała w niedzielę Prokuratura Okręgowa w Lublinie na postawie wstępnych ustaleń. [Źródło: Wyborcza.pl]",
           "Ma ono wzmocnić ochronę wschodniej granicy. Minister poinformował o planowanych działaniach w sobotę wieczorem za pośrednictwem platformy X. Podkreślił, że Polska może liczyć na zdecydowaną reakcję sojuszników i dodatkowe możliwości wzmacniania ochrony granicy. Szef MON dodał, że w sprawie szczegółów rozmawiał w sobotę z naczelnym dowódcą Sojuszniczych Sił w Europie gen. Alexusem Grynkewichem. [Źródło: WP Wiadomości]",
           "Podkreślił, że pogłębioną dyskusję na ten temat muszą podjąć wojskowi. Szef MSZ zaznaczył, że sama Ukraina prosi o to, aby „zestrzeliwać zagrażające obiekty nad ich terytorium”. Zestrzelenie nie oznacza, że to coś znika, tylko zestrzelony kawał szmelcu nadal spada na ziemię i może komuś zrobić krzywdę albo coś uszkodzić, jak się niestety dowiedzieliśmy już w czasie tej wojny. [Źródło: Forsal.pl]",
           "W ostatnich dniach dwukrotnie doszło do naruszenia polskiej przestrzeni powietrznej przez rosyjskie środki napadu powietrznego. [Źródło: Dziennik.pl]",
-          "Wcześniej o tym, że Polska zabiega o taką możliwość, donosił Bloomberg. [Źródło: Rzeczpospolita]",
-          "Zapewnił również, że Stany Zjednoczone, zgodnie z wcześniejszymi deklaracjami, dostarczają Ukrainie pociski PAC-3 do systemów obrony powietrznej Patriot. [Źródło: TVN24]",
-          "Zapowiedział, że będzie o to zabiegał w przyszłym tygodniu w NATO. [Źródło: Bankier.pl]"
+          "Wcześniej o tym, że Polska zabiega o taką możliwość, donosił Bloomberg. [Źródło: Rzeczpospolita]"
         ]
       }
     ],
@@ -1955,16 +1926,8 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Ukraina uderzyła w rosyjskie lotniska. Rakiety doleciały 1300 km w głąb Rosji",
         "url": "https://wiadomosci.onet.pl/swiat/ukraina-zaatakowala-cele-w-rosji-oddalone-o-1300-km-rakiety-neptun-w-akcji/h6krshs",
-        "focus": "Eksponuje dane (1300 km, 400 km) oraz wątki: lotniska, doleciały.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Space24."
-      },
-      {
-        "outlet": "Space24",
-        "angle": "Kontekst technologiczny",
-        "summary": "Ukraina uderzyła w rosyjski obiekt rozpoznania kosmicznego",
-        "url": "https://space24.pl/bezpieczenstwo/technologie-wojskowe/ukraina-uderzyla-w-rosyjski-obiekt-rozpoznania-kosmicznego",
-        "focus": "Eksponuje dane (2026) oraz wątki: obiekt, rozpoznania.",
-        "omits": "Pomija wyliczenia (1300 km, 400 km) przytaczane przez Onet Wiadomości."
+        "focus": "Eksponuje dane (1300 km, 400 km) oraz wątki: uderzyła, lotniska.",
+        "omits": "Pomija kontekst (zestrzeliwać, spotkania, Zalewski) rozwijany w Defence24, WP Wiadomości."
       },
       {
         "outlet": "Wyborcza.pl",
@@ -2003,36 +1966,17 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Wiceszef MON: NATO nie chce zestrzeliwać rosyjskich rakiet nad Ukrainą",
         "url": "https://www.rp.pl/konflikty-zbrojne/art45541251-wiceszef-mon-nato-nie-chce-zestrzeliwac-rosyjskich-rakiet-nad-ukraina",
-        "focus": "Wyróżnia własne wątki i pojęcia: taką, donosił, Bloomberg.",
-        "omits": "Pomija wyliczenia (15,8%, 27%) przytaczane przez Defence24, Onet Wiadomości."
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Szef NATO: Donald Trump sprawdza, czy Władimir Putin naprawdę jest gotowy do rozmów",
-        "url": "https://tvn24.pl/swiat/usa-dostarczaja-ukrainie-pociski-patriot-mark-rutte-donald-trump-testuje-wladimira-putina-st9357662?source=rss",
-        "focus": "Podkreśla konkretne liczby (27%, 15,8%) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (1300 km, 400 km) przytaczane przez Onet Wiadomości."
-      },
-      {
-        "outlet": "Bankier.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "AWACS to za mało. Sikorski chce od NATO kolejnych systemów obrony dla Polski",
-        "url": "https://www.bankier.pl/wiadomosc/AWACS-to-za-malo-Sikorski-chce-od-NATO-kolejnych-systemow-obrony-dla-Polski-9235532.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: mało, Sikorski, Zapowiedział.",
+        "focus": "Wyróżnia własne wątki i pojęcia: chce, zabiega, taką.",
         "omits": "Pomija wyliczenia (15,8%, 27%) przytaczane przez Defence24, Onet Wiadomości."
       }
     ],
     "sources": [
-      "Bankier.pl",
       "Defence24",
       "Dziennik.pl",
       "Forsal.pl",
       "Gazeta.pl",
       "Onet Wiadomości",
       "Rzeczpospolita",
-      "Space24",
-      "TVN24",
       "WP Wiadomości",
       "Wyborcza.pl"
     ],
@@ -2045,7 +1989,7 @@
     "impact": {
       "audience": "Kierowcy i pasażerowie",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (11 źródeł)"
+      "status": "Potwierdzone (8 źródeł)"
     },
     "discrepancies": [],
     "seo_faq": [
@@ -2059,7 +2003,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (11 źródeł)."
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (8 źródeł)."
       }
     ],
     "media_file": "media/topic-military-4.jpg",
@@ -2068,7 +2012,7 @@
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Stra%C5%BC_Graniczna_i_z%C5%82apani_przemytnicy_NAC_6462.jpg",
     "media_label": "Obronność i bezpieczeństwo",
-    "independent_sources_count": 11,
+    "independent_sources_count": 8,
     "syndicate_groups": [],
     "dossier_title": "Rakiety · uderzyły",
     "dossier_count": 2,
@@ -3073,7 +3017,7 @@
         "summary": "Region. Nadciągają intensywne opady śniegu. Lokalnie może spaść nawet 20 cm",
         "url": "https://bochnianin.pl/164954/region-nadciagaja-intensywne-opady-sniegu-lokalnie-moze-spasc-nawet-20-cm/",
         "focus": "Eksponuje dane (80 proc.) oraz wątki: Region, Nadciągają.",
-        "omits": "Pomija kontekst (Małopolskę, sprawdzony, Przedsiębiorstwo) rozwijany w Radio Kraków, TVP3 Kraków."
+        "omits": "Pomija kontekst (Małopolskę, Przedsiębiorstwo, Oczyszczania) rozwijany w Radio Kraków, TVP3 Kraków."
       },
       {
         "outlet": "Radio Kraków",
@@ -3960,7 +3904,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -3972,24 +3916,23 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Hiszpan Pablo Hernandez de Cos został wskazany wstępnie przez ambasadorów państw strefy euro na kandydata na nowego prezesa Europejskiego Banku Centralnego (EBC) – poinformował w czwartek unijny dyplomata. Wieczorem ma zostać oficjalnie kandydatem na to stanowisko. Rekomendacja Hernandeza de Cosa musi zostać potwierdzona w procedurze pisemnej. [Źródło: Bankier.pl, WNP.pl, Puls Biznesu, Business Insider PL, Rzeczpospolita]",
+          "Hiszpan Pablo Hernandez de Cos został wskazany wstępnie przez ambasadorów państw strefy euro na kandydata na nowego prezesa Europejskiego Banku Centralnego (EBC) – poinformował w czwartek unijny dyplomata. Wieczorem ma zostać oficjalnie kandydatem na to stanowisko. Rekomendacja Hernandeza de Cosa musi zostać potwierdzona w procedurze pisemnej. [Źródło: Bankier.pl, WNP.pl, Puls Biznesu, Business Insider PL]",
           "Po jej zakończeniu wieczorem w czwartek sprawa powróci na szczebel przywódców obradujących na szczycie w Brukseli. Obecnie pełni funkcję dyrektora Banku Rozrachunków Międzynarodowych (BIS).W czwartek wskazani zostali wstępnie także dwaj kandydaci do zarządu EBC: Francuzka Laurence Boone i Niemiec Markus Brunnermeier. [Źródło: Bankier.pl, Puls Biznesu]",
-          "Po zatwierdzeniu jego kandydatury w czwartek wieczorem przez przywódców na szczycie, szef Rady Europejskiej Antonio Costa przeprowadzi konsultacje z Parlamentem Europejskim i Radą Prezesów EBC (sześciu członków zarządu Banku i 21 prezesów banków centralnych strefy euro). Rada Europejska podejmie ostateczną decyzję na szczycie 17-18 grudnia w Brukseli. (PAP)mce/ kj/ [Źródło: Bankier.pl, Puls Biznesu]",
-          "Jeżeli informacje się potwierdzą, Pablo Hernandez de Cos będzie pierwszy w historii Hiszpanem zajmującym najwyższe stanowisko a po raz pierwszy objęłaby wówczas najważniejsze stanowisko w Europejskim Banku Centralnym. [Źródło: Puls Biznesu, Rzeczpospolita]"
+          "Po zatwierdzeniu jego kandydatury w czwartek wieczorem przez przywódców na szczycie, szef Rady Europejskiej Antonio Costa przeprowadzi konsultacje z Parlamentem Europejskim i Radą Prezesów EBC (sześciu członków zarządu Banku i 21 prezesów banków centralnych strefy euro). Rada Europejska podejmie ostateczną decyzję na szczycie 17-18 grudnia w Brukseli. (PAP)mce/ kj/ [Źródło: Bankier.pl, Puls Biznesu]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Były szef Banku Hiszpanii zastąpi Christine Lagarde w lutym. [Źródło: Rzeczpospolita]"
+          "Jeżeli informacje się potwierdzą, Pablo Hernandez de Cos będzie pierwszy w historii Hiszpanem zajmującym najwyższe stanowisko a po raz pierwszy objęłaby wówczas najważniejsze stanowisko w Europejskim Banku Centralnym. [Źródło: Puls Biznesu]"
         ]
       }
     ],
@@ -4000,7 +3943,7 @@
         "summary": "Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde",
         "url": "https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (raport rynkowy).",
-        "omits": "Pomija kontekst (najważniejsze, zajmującym, Christine) rozwijany w Puls Biznesu, Rzeczpospolita."
+        "omits": "Pomija kontekst (Financial, Christine, szefem) rozwijany w Puls Biznesu, WNP.pl."
       },
       {
         "outlet": "WNP.pl",
@@ -4016,7 +3959,7 @@
         "summary": "Kulisy wyboru szefa EBC. „Financial Times”: już jest następca Christine Lagarde",
         "url": "https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127",
         "focus": "Wyróżnia własne wątki i pojęcia: Kulisy, wyboru, Financial.",
-        "omits": "Pomija kontekst (Znamy, nazwisko, Historyczna) rozwijany w Bankier.pl, WNP.pl."
+        "omits": "Pomija kontekst (Znamy, nazwisko, szefem) rozwijany w Bankier.pl, WNP.pl."
       },
       {
         "outlet": "Business Insider PL",
@@ -4024,22 +3967,13 @@
         "summary": "Znamy nazwisko nowego szefa Europejskiego Banku Centralnego",
         "url": "https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).",
-        "omits": "Pomija kontekst (Lagarde, następcy, Międzynarodowych) rozwijany w Bankier.pl, WNP.pl."
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Historyczna zmiana na czele EBC. Wiadomo, kto ma zastąpić Christine Lagarde",
-        "url": "https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde",
-        "focus": "Wyróżnia własne wątki i pojęcia: Historyczna, zmiana, czele.",
-        "omits": "Pomija kontekst (następcy, szefa, Znamy) rozwijany w Bankier.pl, WNP.pl."
+        "omits": "Pomija kontekst (następcy, Lagarde, Międzynarodowych) rozwijany w Bankier.pl, WNP.pl."
       }
     ],
     "sources": [
       "Bankier.pl",
       "Business Insider PL",
       "Puls Biznesu",
-      "Rzeczpospolita",
       "WNP.pl"
     ],
     "corrections": [
@@ -4055,7 +3989,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Wydarzenia krajowe",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (4 źródła)"
     },
     "seo_faq": [
       {
@@ -4068,7 +4002,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (4 źródła)."
       }
     ],
     "discrepancies": [],
@@ -4078,7 +4012,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
     "media_label": "Finanse i rynek kapitałowy",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": []
   },
   {
@@ -4729,11 +4663,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/reg-mazowieckie.jpg",
-    "media_credit": "Fot. ilustracyjne: Simon Jowett (Flikr) (CC0, Wikimedia Commons)",
-    "media_license": "CC0",
-    "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:A_Warsaw_skyline_at_dusk_3345h5u5.jpg",
+    "media_file": "media/reg-mazowieckie-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_312_Building_Murals.jpg",
     "media_label": "Warszawa, woj. mazowieckie",
     "independent_sources_count": 6,
     "syndicate_groups": []
@@ -5295,13 +5229,13 @@
     "updated_iso": "2026-11-26T13:12:26+01:00",
     "display_date": "26.11.2026, 13:12",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 94,
+    "fact_agreement_pct": 88,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "3 redakcje"
+        "val": "2 redakcje"
       },
       {
         "label": "Kategoria",
@@ -5313,24 +5247,22 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
+        "val": "Potwierdzone (2 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (3 redakcje)",
+        "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
-          "W dodatku zakład w Możejkach ma wymagać kolejnych nakładów inwestycyjnych, a „zobowiązanie litewskiego rządu do udziału w tych wydatkach na poziomie ok. 50 mln euro od lat nie zostało zrealizowane” (PAP). [Źródło: Energetyka24, TVP3 Kraków, StrefaInwestorów.pl]",
-          "Z wczorajszego komunikatu PAP wynika, że Polska wciąż ma czekać na rozwiązanie kwestii udziału finansowego litewskiego rządu w inwestycji w instalację pogłębionego przerobu ropy naftowej w Możejkach. [Źródło: Energetyka24, StrefaInwestorów.pl]"
+          "W dodatku zakład w Możejkach ma wymagać kolejnych nakładów inwestycyjnych, a „zobowiązanie litewskiego rządu do udziału w tych wydatkach na poziomie ok. 50 mln euro od lat nie zostało zrealizowane” (PAP). [Źródło: Energetyka24, TVP3 Kraków]",
+          "Z wczorajszego komunikatu PAP wynika, że Polska wciąż ma czekać na rozwiązanie kwestii udziału finansowego litewskiego rządu w inwestycji w instalację pogłębionego przerobu ropy naftowej w Możejkach. [Źródło: Energetyka24]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Lata analiz, ekspertyz i przygotowań, a budowa krakowskiego metra wciąż stoi pod znakiem zapytania. Podczas nadzwyczajnej sesji Rady Miasta radni Koalicji Obywatelskiej i Nowej Lewicy domagali się wyjaśnień od prezydenta Łukasza Gibały. [Źródło: TVP3 Kraków]",
-          "Miliardowe nakłady, niepewność dotycząca dalszej modernizacji oraz perspektywa dodatkowych obciążeń podatkowych stawiają przyszłość litewskiej rafinerii Orlenu pod znakiem zapytania. Decyzje dotyczące zakładu mogą mieć konsekwencje nie tylko dla regionalnego rynku paliw, lecz także dla stosunków gospodarczych i politycznych między Warszawą a Wilnem.",
-          "Przejęcie rafinerii w Możejkach w 2006 r. zapoczątkowało wieloletnie zaangażowanie polskiego kapitału w litewski sektor paliwowy. [Źródło: StrefaInwestorów.pl]"
+          "Lata analiz, ekspertyz i przygotowań, a budowa krakowskiego metra wciąż stoi pod znakiem zapytania. Podczas nadzwyczajnej sesji Rady Miasta radni Koalicji Obywatelskiej i Nowej Lewicy domagali się wyjaśnień od prezydenta Łukasza Gibały. [Źródło: TVP3 Kraków]"
         ]
       }
     ],
@@ -5341,7 +5273,7 @@
         "summary": "Czy Możejki przetrwają? Opłacalność dalszych inwestycji pod znakiem zapytania",
         "url": "https://energetyka24.com/surowce/ropa/czy-mozejki-przetrwaja-oplacalnosc-dalszych-inwestycji-pod-znakiem-zapytania",
         "focus": "Podkreśla konkretne liczby (50 mln) w ujęciu: analiza sektorowa.",
-        "omits": "Pomija wyliczenia (1,5 tys., 700 mln) przytaczane przez StrefaInwestorów.pl."
+        "omits": "Pomija kontekst (nadzwyczajnej, Obywatelskiej, krakowskiego) rozwijany w TVP3 Kraków."
       },
       {
         "outlet": "TVP3 Kraków",
@@ -5349,20 +5281,11 @@
         "summary": "Metro w Krakowie pod znakiem zapytania. Radni pytają o przyszłość inwestycji",
         "url": "https://krakow.tvp.pl/96684807/metro-w-krakowie-pod-znakiem-zapytania-radni-pytaja-o-przyszlosc-inwestycji",
         "focus": "Podkreśla konkretne liczby (50 mln) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija wyliczenia (1,5 tys., 700 mln) przytaczane przez StrefaInwestorów.pl."
-      },
-      {
-        "outlet": "StrefaInwestorów.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Orlen analizuje przyszłość rafinerii Możejki. Decyzja wpłynie na bezpieczeństwo regionu i relacje Polski i Litwy",
-        "url": "https://strefainwestorow.pl/w-zielonej-strefie/paliwa-i-surowce/orlen-mozejki-ukraina-downstream",
-        "focus": "Eksponuje dane (5 mld, 1 mld) oraz wątki: Orlen, analizuje.",
-        "omits": "Pomija kontekst (nadzwyczajnej, Obywatelskiej, krakowskiego) rozwijany w TVP3 Kraków."
+        "omits": "Pomija kontekst (wczorajszego, pogłębionego, Opłacalność) rozwijany w Energetyka24."
       }
     ],
     "sources": [
       "Energetyka24",
-      "StrefaInwestorów.pl",
       "TVP3 Kraków"
     ],
     "corrections": [
@@ -5374,7 +5297,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Energia i rachunki",
-      "status": "Potwierdzone (3 źródła)"
+      "status": "Potwierdzone (2 źródła)"
     },
     "seo_faq": [
       {
@@ -5387,7 +5310,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Energia i rachunki). Status: Potwierdzone (3 źródła)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Energia i rachunki). Status: Potwierdzone (2 źródła)."
       }
     ],
     "discrepancies": [],
@@ -5397,7 +5320,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
     "media_label": "Finanse i rynek kapitałowy",
-    "independent_sources_count": 3,
+    "independent_sources_count": 2,
     "syndicate_groups": []
   },
   {
@@ -5522,7 +5445,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -5534,13 +5457,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
           "Wcześniejsze zakończenie aktywności zawodowej bez konieczności czekania na osiągnięcie ustawowego wieku emerytalnego nie jest dostępne dla wszystkich pracowników. Z takiej możliwości mogą skorzystać m.in. nauczyciele, którzy spełnią warunki uprawniające do otrzymania nauczycielskiego świadczenia kompensacyjnego. [Źródło: PulsHR, GazetaPrawna.pl (DGP)]",
           "O świadczenie mogą się starać również pracownicy: Od 1 stycznia 2026 r. prawo do nauczycielskich świadczeń kompensacyjnych przysługuje szerszej grupie osób. Do grona uprawnionych dołączyli kolejni nauczyciele: Samo wykonywanie pracy nauczyciela lub praca w jednej z uprawnionych placówek nie gwarantuje otrzymania świadczenia. [Źródło: PulsHR]",
@@ -5555,8 +5478,7 @@
           "Warunkiem jest podleganie ubezpieczeniu chorobowemu. ZUS przypomina, że świadczenie nie jest zarezerwowane wyłącznie dla pracowników etatowych. [Źródło: TVP3 Wrocław]",
           "Są też jednak seniorzy, których te progi nie dotyczą. [Źródło: naTemat.pl]",
           "Choć zasadą jest, że to ukończenie 60. i 65. roku życia jest kluczowe dla przyznania uprawnienia, to nie bez znaczenia pozostaje to, ile lat przepracowała kobieta i mężczyzna. [Źródło: GazetaPrawna.pl (DGP)]",
-          "Problem pojawia się jednak znacznie wcześniej, bo już podczas ciąży i macierzyństwa. [Źródło: 4Lomza.pl]",
-          "Okazuje się, że to całkiem prawdopodobny scenariusz. Senior po 75. roku życia może zostać pozbawiony dodatku pielęgnacyjnego. [Źródło: Forsal.pl]"
+          "Problem pojawia się jednak znacznie wcześniej, bo już podczas ciąży i macierzyństwa. [Źródło: 4Lomza.pl]"
         ]
       }
     ],
@@ -5608,19 +5530,10 @@
         "url": "https://4lomza.pl/index.php?wiad=73994",
         "focus": "Podkreśla konkretne liczby (2025, 4526,16 zł) w ujęciu: relacja uzupełniająca.",
         "omits": "Pomija wyliczenia (2026, 2027) przytaczane przez PulsHR, Warszawa w Pigułce."
-      },
-      {
-        "outlet": "Forsal.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "ZUS wstrzymuje wypłaty dodatku do emerytury. Zła wiadomość dla seniorów 75+",
-        "url": "https://forsal.pl/finanse/twoje-pieniadze/artykuly/11406030,zus-wstrzymuje-wyplaty-dodatku-do-emerytury-zla-wiadomosc-dla-seniorow-po-75-roku-zycia.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: wstrzymuje, wypłaty, dodatku.",
-        "omits": "Pomija wyliczenia (4526,16 zł, 8 tys. zł) przytaczane przez PulsHR, Warszawa w Pigułce."
       }
     ],
     "sources": [
       "4Lomza.pl",
-      "Forsal.pl",
       "GazetaPrawna.pl (DGP)",
       "PulsHR",
       "TVP3 Wrocław",
@@ -5652,7 +5565,7 @@
     "impact": {
       "audience": "Przedsiębiorcy i podatnicy",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "seo_faq": [
       {
@@ -5665,7 +5578,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Przedsiębiorcy i podatnicy (obszar: Portfel, podatki i rynek). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Przedsiębiorcy i podatnicy (obszar: Portfel, podatki i rynek). Status: Potwierdzone (6 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -5675,7 +5588,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Schloss_--_2014_--_6769-71_(crop).jpg",
     "media_label": "Polska (zdjęcie ilustracyjne)",
-    "independent_sources_count": 7,
+    "independent_sources_count": 6,
     "syndicate_groups": []
   },
   {
@@ -5697,7 +5610,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "15 redakcji"
+        "val": "14 redakcji"
       },
       {
         "label": "Kategoria",
@@ -5709,16 +5622,16 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (15 źródeł)"
+        "val": "Potwierdzone (14 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (15 redakcji)",
+        "heading": "Ustalenia wspólne (14 redakcji)",
         "paragraphs": [
           "Konfederacja złoży zawiadomienie do prokuratury w sprawie szefa MSWiA Marcina Kierwińskiego – poinformował poseł Michał Wawer. Konfederaci chcą zbadania zależności pomiędzy ministrem a osobami zatrudnionymi m.in. w państwowych instytucjach, które zarazem dokonały wpłat na jego kampanię wyborczą w 2023 r. [Źródło: Rzeczpospolita, Onet Wiadomości, Bankier.pl, Polsat News, GazetaPrawna.pl (DGP), Business Insider PL, Dziennik.pl, Niezależna.pl, RadioMaryja.pl]",
-          "To reakcja na doniesienia, według których ponad dwie trzecie pieniędzy zebranych przez polityka w 2023 roku pochodziło od 113 osób związanych zawodowo ze spółkami i instytucjami publicznymi. Dziennikarze przypominają również wypowiedzi obecnego szefa MSWiA, który kilka lat temu domagał się zbadania podobnych wpłat na rzecz polityków PiS. [Źródło: Rzeczpospolita, Polsat News, Kresy.pl, WP Wiadomości, naTemat.pl, Newsweek Polska]",
+          "To reakcja na doniesienia, według których ponad dwie trzecie pieniędzy zebranych przez polityka w 2023 roku pochodziło od 113 osób związanych zawodowo ze spółkami i instytucjami publicznymi. Dziennikarze przypominają również wypowiedzi obecnego szefa MSWiA, który kilka lat temu domagał się zbadania podobnych wpłat na rzecz polityków PiS. [Źródło: Rzeczpospolita, Polsat News, Kresy.pl, WP Wiadomości, naTemat.pl]",
           "Dymisji nie będzie, ale problem wizerunkowy jest – przyznają niektórzy politycy Koalicji Obywatelskiej, gdy pytamy o opisane przez TVN24 przypadki wpłat na kampanię Marcina Kierwińskiego. W tle pojawia się podejrzenie płatnej protekcji. [Źródło: Rzeczpospolita, Bankier.pl, GazetaPrawna.pl (DGP), naTemat.pl, Gazeta.pl, RadioMaryja.pl]"
         ]
       },
@@ -5731,8 +5644,7 @@
           "Część darczyńców później objęła nowe stanowiska. [Źródło: Kresy.pl]",
           "Informacje te wywołały lawinę komentarzy w sieci. [Źródło: WP Wiadomości]",
           "— A ci ludzie mieli na PiS wpłacać? – dziwi się jeden z posłów. [Źródło: Gazeta.pl]",
-          "Politycy w Polsce mają niską ocenę właśnie dlatego, że są sprawy niewyjaśnione, dwuznaczne – powiedział w \"Tak jest\" w TVN24 Grzegorz Schetyna. Były przewodniczący Platformy Obywatelskiej komentował ustalenia dziennikarzy \"Czarno na białym\" w kwestii finansowania kampanii jego partyjnego kolegi. [Źródło: TVN24]",
-          "Nawet jeśli taka praktyka jest zgodna z prawem, wygląda fatalnie nie tylko dla Kierwińskiego, ale także dla całej partii. [Źródło: Newsweek Polska]"
+          "Politycy w Polsce mają niską ocenę właśnie dlatego, że są sprawy niewyjaśnione, dwuznaczne – powiedział w \"Tak jest\" w TVN24 Grzegorz Schetyna. Były przewodniczący Platformy Obywatelskiej komentował ustalenia dziennikarzy \"Czarno na białym\" w kwestii finansowania kampanii jego partyjnego kolegi. [Źródło: TVN24]"
         ]
       }
     ],
@@ -5743,7 +5655,7 @@
         "summary": "Konfederacja składa zawiadomienie do prokuratury ws. Marcina Kierwińskiego",
         "url": "https://www.rp.pl/polityka/art45547531-konfederacja-sklada-zawiadomienie-do-prokuratury-ws-marcina-kierwinskiego",
         "focus": "Podkreśla konkretne liczby (2023, 113 osób) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl, Newsweek Polska."
+        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -5767,7 +5679,7 @@
         "summary": "Konfederacja zawiadamia prokuraturę ws. Marcina Kierwińskiego",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/konfederacja-zawiadamia-prokurature-ws-marcina-kierwinskiego/",
         "focus": "Podkreśla konkretne liczby (2023, 113 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl, Newsweek Polska."
+        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl."
       },
       {
         "outlet": "GazetaPrawna.pl (DGP)",
@@ -5799,7 +5711,7 @@
         "summary": "Śledztwo dziennikarskie: Najpierw pieniądze na kampanię Kierwińskiego, potem stanowiska w publicznych instytucjach",
         "url": "https://kresy.pl/wydarzenia/sledztwo-dziennikarskie-najpierw-pieniadze-na-kampanie-kierwinskiego-potem-stanowiska-w-publicznych-instytucjach/",
         "focus": "Podkreśla konkretne liczby (2023, 113 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl, Newsweek Polska."
+        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl."
       },
       {
         "outlet": "WP Wiadomości",
@@ -5807,7 +5719,7 @@
         "summary": "\"To jest mafia\". Burza po doniesieniach ws. kampanii Kierwińskiego",
         "url": "https://wiadomosci.wp.pl/to-jest-mafia-burza-po-doniesieniach-ws-kampanii-kierwinskiego-7355202773690464a",
         "focus": "Podkreśla konkretne liczby (2023, 113 osób) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl, Newsweek Polska."
+        "omits": "Pomija wyliczenia (724 tys. zł) przytaczane przez naTemat.pl."
       },
       {
         "outlet": "Niezależna.pl",
@@ -5822,7 +5734,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "113 darczyńców i 724 tys. zł na kampanię. W KO mają teorię ws. Kierwińskiego",
         "url": "https://natemat.pl/677086,113-darczyncow-i-724-tys-zl-na-kampanie-w-ko-maja-teorie-ws-kierwinskiego",
-        "focus": "Podkreśla konkretne liczby (724 tys. zł, 2023) w ujęciu: relacja uzupełniająca.",
+        "focus": "Eksponuje dane (724 tys. zł) oraz wątki: teorię.",
         "omits": "Pomija kontekst (zawiadomienie, zatrudnionymi, Konfederacja) rozwijany w Rzeczpospolita, Onet Wiadomości."
       },
       {
@@ -5830,7 +5742,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Darczyńcy Kierwińskiego. W partii Tuska przyznają: to problem wizerunkowy",
         "url": "https://wiadomosci.gazeta.pl/polityka/7,197990,33152649,darczyncy-kierwinskiego-w-partii-tuska-przyznaja-to-problem.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: Tuska, ludzie, wpłacać.",
+        "focus": "Wyróżnia własne wątki i pojęcia: partii, Tuska, ludzie.",
         "omits": "Pomija wyliczenia (2023, 113 osób) przytaczane przez Rzeczpospolita, Onet Wiadomości."
       },
       {
@@ -5848,14 +5760,6 @@
         "url": "https://www.radiomaryja.pl/informacje/mialo-byc-odpolitycznienie-spolek-skarbu-panstwa-sa-nominacje-dla-darczyncow-afera-wokol-kampanii-marcina-kierwinskiego/",
         "focus": "Podkreśla konkretne liczby (2023) w ujęciu: relacja uzupełniająca.",
         "omits": "Pomija wyliczenia (113 osób, 724 tys. zł) przytaczane przez Rzeczpospolita, Polsat News."
-      },
-      {
-        "outlet": "Newsweek Polska",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Kierwiński pogrąży KO? \"Tusk nie ma teraz dobrego ruchu\" [ANALIZA]",
-        "url": "https://www.newsweek.pl/polska/polityka/sprawa-kierwinskiego-pograzy-ko-nie-chodzi-tylko-o-wplaty-analiza/1s50s6j",
-        "focus": "Podkreśla konkretne liczby (2023, 724 tys. zł) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (Marcina, zawiadomienie, zatrudnionymi) rozwijany w Rzeczpospolita, Onet Wiadomości."
       }
     ],
     "sources": [
@@ -5865,7 +5769,6 @@
       "Gazeta.pl",
       "GazetaPrawna.pl (DGP)",
       "Kresy.pl",
-      "Newsweek Polska",
       "Niezależna.pl",
       "Onet Wiadomości",
       "Polsat News",
@@ -5923,7 +5826,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
     "media_label": "Polityka i instytucje państwowe",
-    "independent_sources_count": 15,
+    "independent_sources_count": 14,
     "syndicate_groups": []
   },
   {
@@ -5986,7 +5889,7 @@
         "summary": "Kiedy gra dzisiaj Lech Poznań? Gdzie obejrzeć mecz? Liga Europy terminarz",
         "url": "https://przegladsportowy.onet.pl/pilka-nozna/liga-europy/kiedy-dzisiaj-lech-poznan-royale-union-sg-liga-europy-terminarz-transmisja-tv/tk3z5wp",
         "focus": "Wyróżnia własne wątki i pojęcia: Kiedy, obejrzeć, terminarz.",
-        "omits": "Pomija kontekst (Mistrzowie, remisem, Lizbona) rozwijany w Polsat Sport, WP SportoweFakty."
+        "omits": "Pomija kontekst (Mistrzowie, Lizbona, przedostatnie) rozwijany w Polsat Sport, WP SportoweFakty."
       },
       {
         "outlet": "Polsat Sport",
@@ -5994,7 +5897,7 @@
         "summary": "Liga Europy: Royale Union Saint-Gilloise – Lech Poznań. Relacja live i wynik na żywo",
         "url": "https://www.polsatsport.pl/wiadomosc/2026-11-26/liga-europy-royale-union-saint-gilloise-lech-poznan-relacja-live-i-wynik-na-zywo/",
         "focus": "Wyróżnia własne wątki i pojęcia: live, wynik, żywo.",
-        "omits": "Pomija kontekst (remisem, Lizbona, Gdzie) rozwijany w WP SportoweFakty, Sport.pl."
+        "omits": "Pomija kontekst (Lizbona, Gdzie, niespodzianki) rozwijany w WP SportoweFakty, Sport.pl."
       },
       {
         "outlet": "Gol24.pl",
@@ -10016,7 +9919,7 @@
         "heading": "Ustalenia wspólne (18 redakcji)",
         "paragraphs": [
           "Prezes Trybunału Konstytucyjnego pojawił się w środę w Parlamencie Europejskim. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Interia Wydarzenia, Onet Wiadomości, Gazeta.pl, Wyborcza.pl, naTemat.pl, TVN24, Dziennik.pl, Niezależna.pl, Newsweek Polska, Radio Rzeszów, Kresy.pl, Radio PiK, Rzeczpospolita, WP Wiadomości]",
-          "— W Trybunale Konstytucyjnym obraduje ośmioro tak zwanych sędziów, z czego pięć osób nie złożyło ślubowania wobec prezydenta, a trzy inne osoby, które zostały wybrane i złożyły ślubowanie, uczestniczą w zorganizowanym związku przestępczym, który dokonuje zamachu na konstytucyjny organ – mówił Święczkowski. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Onet Wiadomości, naTemat.pl, TVN24, Niezależna.pl, Radio Rzeszów, Radio PiK, WP Wiadomości, Business Insider PL]",
+          "— W Trybunale Konstytucyjnym obraduje ośmioro tak zwanych sędziów, z czego pięć osób nie złożyło ślubowania wobec prezydenta, a trzy inne osoby, które zostały wybrane i złożyły ślubowanie, uczestniczą w zorganizowanym związku przestępczym, który dokonuje zamachu na konstytucyjny organ – mówił Święczkowski. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Onet Wiadomości, naTemat.pl, TVN24, Niezależna.pl, Radio Rzeszów, Radio PiK, Business Insider PL, WP Wiadomości]",
           "Prezes TK Bogdan Święczkowski zjawił się w środę w Parlamencie Europejskim, gdzie opisywał sytuację wokół instytucji. Zapowiedział, że jego wystąpienie będzie krótsze, bo musi wrócić do Polski z uwagi na decyzję w sprawie zgromadzenia przed TK. Stołeczny ratusz poinformował, że nie przedłużył zgody na zgromadzenie przed Trybunałem Konstytucyjnym. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Interia Wydarzenia, Onet Wiadomości, naTemat.pl, TVN24, Newsweek Polska, Radio Rzeszów, Radio PiK, WP Wiadomości]",
           "Oznacza to, że może ono trwać do 30 listopada. Organizatorzy mają 24 godziny na odwołanie się od tej decyzji do sądu. Stołeczny ratusz zdecydował – Szczerze mówiąc, nie przyszło mi do głowy, że ktoś będzie próbował na pałkach policyjnych wejść do Trybunału Konstytucyjnego, przejąć organ po to, żeby podejmować decyzje, oczywiście bezprawne i nie wywołujące skutków prawnych, ale które będą publikowane przez Prezesa Rady Ministrów i które mają doprowadzić do przemocowej zmiany ustroju Rzeczpospolitej Polskiej, tak aby jedna osoba, jedna partia mogła rządzić przez kolejne lata – wskazywał Święczkowski. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Onet Wiadomości, Radio PiK]",
           "Powodem było to, że nie dopuścił do orzekania ani udziału w Zgromadzeniu Ogólnym sędziów TK wybranych przez obecny Sejm. [Źródło: Dziennik.pl, Radio Rzeszów, Kresy.pl, Radio PiK]"
@@ -10030,8 +9933,8 @@
           "Orzeczenie zapadło po dwudniowym jawnym posiedzeniu, które odbyło się w środę i czwartek w gmachu Sądu Okręgowego w Warszawie. Jak wyjaśniła sędzia Bentkowska, w ocenie sądu roczny okres zawieszenia Święczkowskiego „pozwoli na przeprowadzenie postępowania dyscyplinarnego”. [Źródło: Radio Rzeszów]",
           "Wcześniej zgromadzenie zwołane w TK zgodziło się na uchylenie immunitetu prezesa w czterech sprawach. [Źródło: Kresy.pl]",
           "25 listopada Okręgowa Rada Adwokacka zdecydowała o wykreśleniu Macieja Taborowskiego z listy adwokatów. Taborowski złożył wniosek o wykreślenie z listy adwokatów dopiero 20 listopada. [Źródło: Rzeczpospolita]",
-          "Na posiedzeniu nie zjawił się wylosowany na rzecznika dyscyplinarnego w tej sprawie sędzia Stanisław Piotrowicz. [Źródło: TVP.info]",
-          "Zainteresowany uznał to orzeczenie za nieważne i pozbawione mocy prawnej. [Źródło: Business Insider PL]"
+          "Zainteresowany uznał to orzeczenie za nieważne i pozbawione mocy prawnej. [Źródło: Business Insider PL]",
+          "Na posiedzeniu nie zjawił się wylosowany na rzecznika dyscyplinarnego w tej sprawie sędzia Stanisław Piotrowicz. [Źródło: TVP.info]"
         ]
       }
     ],
@@ -10066,7 +9969,7 @@
         "summary": "Jest decyzja sądu dyscyplinarnego TK. Bogdan Święczkowski zawieszony",
         "url": "https://wiadomosci.onet.pl/kraj/jest-decyzja-sadu-dyscyplinarnego-tk-bogdan-swieczkowski-zawieszony/z68wg35",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (Bogdana, orzekania, wybranych) rozwijany w Gazeta.pl, TVN24."
+        "omits": "Pomija kontekst (orzekania, wybranych, dopuścił) rozwijany w Dziennik.pl, Radio Rzeszów."
       },
       {
         "outlet": "Gazeta.pl",
@@ -10082,7 +9985,7 @@
         "summary": "Bogdan Święczkowski zawieszony na 12 miesięcy. Jest decyzja Sądu Dyscyplinarnego TK",
         "url": "https://wyborcza.pl/7,75398,33152565,bogdan-swieczkowski-zawieszony-na-12-miesiecy-jest-decyzja.html",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (sędziów, zgromadzenia, decyzję) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija kontekst (sędziów, zgromadzenia, zjawił) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "naTemat.pl",
@@ -10106,7 +10009,7 @@
         "summary": "Bogdan Święczkowski zawieszony. Sąd dyscyplinarny Trybunału Konstytucyjnego zdecydował",
         "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11407292,bogdan-swieczkowski-zawieszony-sad-dyscyplinarny-trybunalu-konstytucyjnego-zdecydowal.html",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (decyzję, zjawił, Zorganizowany) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija kontekst (zjawił, Zorganizowany, Zapowiedział) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "Niezależna.pl",
@@ -10130,7 +10033,7 @@
         "summary": "Bogdan Święczkowski zawieszony na 12 miesięcy. Decyzja sądu dyscyplinarnego TK",
         "url": "https://radio.rzeszow.pl/377414/bogdan-swieczkowski-zawieszony-na-12-miesiecy-decyzja-sadu-dyscyplinarnego-tk/",
         "focus": "Wyróżnia własne wątki i pojęcia: zapadło, dwudniowym, jawnym.",
-        "omits": "Pomija kontekst (zdecydował, bezprawne, Prezesa) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija kontekst (zdecydował, bezprawne, listopada) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "Kresy.pl",
@@ -10138,7 +10041,7 @@
         "summary": "Sąd Dyscyplinarny Trybunału Konstytucyjnego zawiesił prezesa TK Bogdana Święczkowskiego",
         "url": "https://kresy.pl/wydarzenia/sad-dyscyplinarny-trybunalu-konstytucyjnego-zawiesil-prezesa-tk-bogdana-swieczkowskiego/",
         "focus": "Wyróżnia własne wątki i pojęcia: zwołane, zgodziło, uchylenie.",
-        "omits": "Pomija kontekst (Bogdan, decyzję, zjawił) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija kontekst (Bogdan, zjawił, Zorganizowany) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "Radio PiK",
@@ -10157,12 +10060,20 @@
         "omits": "Pomija kontekst (sędziów, Bogdan, zgromadzenia) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       },
       {
+        "outlet": "Business Insider PL",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Bogdan Święczkowski zawieszony. \"Decyzja bezprawna i pozbawiona skutków prawnych\"",
+        "url": "https://businessinsider.com.pl/gospodarka/trybunal-konstytucyjny-pod-presja-spor-wokol-zawieszenia-bogdana-swieczkowskiego/1hzfhbw",
+        "focus": "Wyróżnia własne wątki i pojęcia: pozbawiona, Zainteresowany, uznał.",
+        "omits": "Pomija kontekst (Prezes, Parlamencie, Europejskim) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
+      },
+      {
         "outlet": "WP Wiadomości",
         "angle": "Relacja uzupełniająca",
         "summary": "Święczkowski zawieszony. Jest decyzja sądu dyscyplinarnego",
         "url": "https://wiadomosci.wp.pl/swieczkowski-zawieszony-jest-decyzja-sadu-dyscyplinarnego-7355209206065312a",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (zdecydował, bezprawne, Prezesa) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
+        "omits": "Pomija kontekst (zdecydował, bezprawne, listopada) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "TVP.info",
@@ -10171,14 +10082,6 @@
         "url": "https://www.tvp.info/96703011/tk-bogdan-swieczkowski-zawieszony-na-rok-problemy-prezesa-tk",
         "focus": "Wyróżnia własne wątki i pojęcia: wylosowany, rzecznika, Stanisław.",
         "omits": "Pomija kontekst (Konstytucyjnego, Święczkowski, Trybunału) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Business Insider PL",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Bogdan Święczkowski zawieszony. \"Decyzja bezprawna i pozbawiona skutków prawnych\"",
-        "url": "https://businessinsider.com.pl/gospodarka/trybunal-konstytucyjny-pod-presja-spor-wokol-zawieszenia-bogdana-swieczkowskiego/1hzfhbw",
-        "focus": "Wyróżnia własne wątki i pojęcia: pozbawiona, Trzyosobowy, skład.",
-        "omits": "Pomija kontekst (Prezes, Parlamencie, Europejskim) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
       }
     ],
     "sources": [
@@ -11340,7 +11243,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "6 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -11352,16 +11255,16 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (6 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
           "Śmiertelny wypadek na autostradzie A2 w województwie mazowieckim. W środę, 25 listopada, samochód osobowy potrącił pieszego na trasie w kierunku Warszawy. Mężczyzna zginął na miejscu. [Źródło: Warszawa w Pigułce, TVN24, WP Wiadomości, Onet Wiadomości]",
-          "Po potrąceniu auto uderzyło w bariery energochłonne, a kierująca nim 43-letnia kobieta została przewieziona do szpitala. Na miejscu pracowały służby ratunkowe i policja. Do wypadku doszło około godziny 18:12 na 539. kilometrze autostrady A2, w rejonie miejscowości Słuchocin i Nowa Trzcianka w powiecie węgrowskim. [Źródło: Warszawa w Pigułce, TVP.info, TVN24, WP Wiadomości, Onet Wiadomości, PetroNews.pl]",
+          "Po potrąceniu auto uderzyło w bariery energochłonne, a kierująca nim 43-letnia kobieta została przewieziona do szpitala. Na miejscu pracowały służby ratunkowe i policja. Do wypadku doszło około godziny 18:12 na 539. kilometrze autostrady A2, w rejonie miejscowości Słuchocin i Nowa Trzcianka w powiecie węgrowskim. [Źródło: Warszawa w Pigułce, TVP.info, TVN24, WP Wiadomości, Onet Wiadomości]",
           "Ze wstępnych ustaleń wynika, że 43-letnia kobieta kierująca Skodą potrąciła pieszego, a następnie straciła panowanie nad pojazdem i uderzyła w bariery energochłonne. Nie wiadomo jeszcze, dlaczego pieszy znajdował się na autostradzie. Dokładne okoliczności zdarzenia będą wyjaśniane przez śledczych. [Źródło: Warszawa w Pigułce, TVP.info, TVN24, WP Wiadomości]",
           "\"Pomiędzy węzłami Wiskitki i Skierniewice, w pobliżu miejscowości Kolonia Bolimowska doszło do zderzenia pięciu pojazdów osobowych, jezdnia w kierunku Poznania zablokowana\" – przekazał Punkt Informacji Drogowej Generalnej Dyrekcji Dróg Krajowych i Autostrad. [Źródło: TVN24, WP Wiadomości, Onet Wiadomości]"
         ]
@@ -11371,8 +11274,7 @@
         "paragraphs": [
           "Autostrada jest nieprzejezdna. GDDKiA podaje, że utrudnienia potrwają przynajmniej do godz. 22. Kilka godzin wcześniej w tej samej miejscowości odkryto zwłoki dwóch osób w zaparkowanym na terenie lasu samochodzie. [Źródło: TVP.info]",
           "Na szczęście w zdarzeniu nikt nie odniósł obrażeń. [Źródło: TVN24]",
-          "Autem podróżowały trzy osoby, z czego jedna doznała lekkich obrażeń. [Źródło: Onet Wiadomości]",
-          "Miał w organizmie blisko 3,5 promila alkoholu i najprawdopodobniej zlekceważył czerwone światło. Po chwili potrąciła go Scania. Jak ustalili pracujący na miejscu funkcjonariusze, pieszy wszedł na przejście w niedozwolonym momencie, co zakończyło się zderzeniem z pojazdem ciężarowym. [Źródło: PetroNews.pl]"
+          "Autem podróżowały trzy osoby, z czego jedna doznała lekkich obrażeń. [Źródło: Onet Wiadomości]"
         ]
       }
     ],
@@ -11383,7 +11285,7 @@
         "summary": "Śmiertelny wypadek na Mazowszu. Pieszy nie żyje, kierująca trafiła do szpitala",
         "url": "https://warszawawpigulce.pl/smiertelny-wypadek-na-autostradzie-a2-pieszy-nie-zyje-kierujaca-trafila-do-szpitala/",
         "focus": "Wyróżnia własne wątki i pojęcia: Mazowszu, trafiła.",
-        "omits": "Pomija kontekst (zderzenia, Skierniewice, zablokowana) rozwijany w TVN24, WP Wiadomości."
+        "omits": "Pomija kontekst (obrażeń, nieprzejezdna, przynajmniej) rozwijany w TVN24, Onet Wiadomości."
       },
       {
         "outlet": "TVP.info",
@@ -11391,7 +11293,7 @@
         "summary": "Śmiertelny wypadek na autostradzie. Samochód potrącił pieszego",
         "url": "https://www.tvp.info/96687845/a2-smiertelny-wypadek-na-trasie-siedlce-warszawa",
         "focus": "Wyróżnia własne wątki i pojęcia: nieprzejezdna, GDDKiA, utrudnienia.",
-        "omits": "Pomija kontekst (listopada, środę, województwie) rozwijany w Warszawa w Pigułce, TVN24."
+        "omits": "Pomija kontekst (województwie, Skierniewice, mazowieckim) rozwijany w Warszawa w Pigułce, TVN24."
       },
       {
         "outlet": "TVN24",
@@ -11399,7 +11301,7 @@
         "summary": "Śmiertelne potrącenie pieszego na autostradzie A2",
         "url": "https://tvn24.pl/tvnwarszawa/okolice/nowa-trzcianka-smiertelne-potracenie-pieszego-na-autostradzie-a2-st9357707?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: szczęście, nikt, odniósł.",
-        "omits": "Pomija kontekst (najprawdopodobniej, funkcjonariusze, nieprzejezdna) rozwijany w PetroNews.pl, TVP.info."
+        "omits": "Pomija kontekst (nieprzejezdna, przynajmniej, zaparkowanym) rozwijany w TVP.info."
       },
       {
         "outlet": "WP Wiadomości",
@@ -11407,7 +11309,7 @@
         "summary": "Pieszy na A2. Mężczyzna nie żyje",
         "url": "https://wiadomosci.wp.pl/pieszy-na-a2-mezczyzna-nie-zyje-7354921832482976a",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
-        "omits": "Pomija kontekst (obrażeń, najprawdopodobniej, funkcjonariusze) rozwijany w TVN24, Onet Wiadomości."
+        "omits": "Pomija kontekst (obrażeń, nieprzejezdna, przynajmniej) rozwijany w TVN24, Onet Wiadomości."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -11415,20 +11317,11 @@
         "summary": "Tragedia na autostradzie A2. Śmiertelne potrącenie pieszego",
         "url": "https://wiadomosci.onet.pl/warszawa/tragedia-na-autostradzie-a2-kolo-nowej-trzcianki-smiertelne-potracenie-pieszego/s5vgmyd",
         "focus": "Wyróżnia własne wątki i pojęcia: Tragedia, Autem, podróżowały.",
-        "omits": "Pomija kontekst (wstępnych, pojazdem, ustaleń) rozwijany w Warszawa w Pigułce, TVP.info."
-      },
-      {
-        "outlet": "PetroNews.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "Potrącenie pieszego w centrum Płocka. W jakim był stanie?",
-        "url": "https://petronews.pl/potracenie-pieszego-w-centrum-plocka-mial-35-promila/",
-        "focus": "Wyróżnia własne wątki i pojęcia: centrum, Płocka, jakim.",
-        "omits": "Pomija kontekst (Śmiertelny, samochód, wypadek) rozwijany w Warszawa w Pigułce, TVP.info."
+        "omits": "Pomija kontekst (okoliczności, wyjaśniane, wstępnych) rozwijany w Warszawa w Pigułce, TVP.info."
       }
     ],
     "sources": [
       "Onet Wiadomości",
-      "PetroNews.pl",
       "TVN24",
       "TVP.info",
       "WP Wiadomości",
@@ -11474,7 +11367,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Medical_education_center_building,_Buriram_Hospital_09.12.12.jpg",
     "media_label": "Ochrona zdrowia",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": [
       [
         "TVN24",
@@ -11646,7 +11539,7 @@
         "summary": "Prognoza pogody na grudzień zaskakuje. \"Jeden z najzimniejszych w XXI wieku\"",
         "url": "https://natemat.pl/676999,prognoza-pogody-na-grudzien-zaskakuje-jeden-z-najzimniejszych-w-xxi-wieku",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (listopada, Pogoda, atmosferyczne) rozwijany w TVP3 Opole, Radio Łódź."
+        "omits": "Pomija kontekst (listopada, Pogoda, niebezpieczna) rozwijany w TVP3 Opole, Radio Łódź."
       },
       {
         "outlet": "TVP3 Opole",
@@ -12974,8 +12867,8 @@
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "\"W tej sytuacji istnieje poważne ryzyko, że zostanie uniemożliwione działanie Trybunału Konstytucyjnego w obszarze ochrony praw i wolności obywatelskich oraz organ ten nie będzie mógł wykonać ciążących na nim zobowiązań finansowych\" — czytamy dalej. [Źródło: Business Insider PL]",
-          "W odpowiedzi na ten ruch rząd przyjął uchwałę, która została w środę opublikowana w Monitorze Polskim. Wykonanie uchwały powierzono premierowi oraz ministrowi finansów i gospodarki. [Źródło: Biznes Interia]",
-          "— Moją rolą jest zapewnienie finansowania Trybunału Konstytucyjnego.",
+          "W odpowiedzi na ten ruch rząd przyjął uchwałę, która została w środę opublikowana w Monitorze Polskim. Wykonanie uchwały powierzono premierowi oraz ministrowi finansów i gospodarki.",
+          "— Moją rolą jest zapewnienie finansowania Trybunału Konstytucyjnego. [Źródło: Biznes Interia]",
           "Myślę, że jutro, najdalej w poniedziałek, te rachunki [w BGK na potrzeby TK] zostaną założone — wskazał wicepremier, minister finansów Andrzej Domański. [Źródło: Onet Wiadomości]"
         ]
       }
@@ -12995,7 +12888,7 @@
         "summary": "NBP zablokował rachunek TK. Jest ruch rządu",
         "url": "https://businessinsider.com.pl/prawo/rada-ministrow-funkcjonowanie-tk-zagrozone-konieczne-podjecie-dzialan/f6d16x1",
         "focus": "Wyróżnia własne wątki i pojęcia: zablokował, rachunek, sytuacji.",
-        "omits": "Pomija kontekst (zapewniał, odpowiedział, Koordynator) rozwijany w TVN24, Niezależna.pl."
+        "omits": "Pomija kontekst (odpowiedział, Koordynator, specjalnych) rozwijany w TVN24, Niezależna.pl."
       },
       {
         "outlet": "Polsat News",
@@ -13003,7 +12896,7 @@
         "summary": "\"Funkcjonowanie TK zagrożone\". Pilny komunikat rządu",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-25/funkcjonowanie-tk-zagrozone-pilny-komunikat-rzadu/",
         "focus": "Wyróżnia własne wątki i pojęcia: Pilny.",
-        "omits": "Pomija kontekst (zapewniał, odpowiedział, Koordynator) rozwijany w TVN24, Niezależna.pl."
+        "omits": "Pomija kontekst (odpowiedział, Koordynator, specjalnych) rozwijany w TVN24, Niezależna.pl."
       },
       {
         "outlet": "Niezależna.pl",
@@ -13027,7 +12920,7 @@
         "summary": "Wicepremier o nowym kroku rządu w sprawie TK. \"Jutro, najdalej w poniedziałek\"",
         "url": "https://wiadomosci.onet.pl/kraj/wicepremier-o-nowym-kroku-w-sprawie-tk-jutro-najdalej-w-poniedzialek/w7271v4",
         "focus": "Wyróżnia własne wątki i pojęcia: Wicepremier, nowym, kroku.",
-        "omits": "Pomija kontekst (funkcjonowanie, zgromadzonych, budżetowych) rozwijany w TVN24, Business Insider PL."
+        "omits": "Pomija kontekst (Konstytucyjnego, funkcjonowanie, zgromadzonych) rozwijany w TVN24, Business Insider PL."
       }
     ],
     "sources": [
@@ -13447,11 +13340,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-nature-3.jpg",
-    "media_credit": "Fot. ilustracyjne: Pit1233 (CC0, Wikimedia Commons)",
-    "media_license": "CC0",
-    "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Vistula_sunset_5_02-2014.jpg",
+    "media_file": "media/topic-nature-2.jpg",
+    "media_credit": "Fot. ilustracyjne: NaturesFan1226 (CC BY 3.0, Wikimedia Commons)",
+    "media_license": "CC BY 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Black_Bear_-_panoramio_(1).jpg",
     "media_label": "Przyroda i środowisko",
     "independent_sources_count": 3,
     "syndicate_groups": []
@@ -13475,7 +13368,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -13487,13 +13380,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
           "Kto przez lata opłacał składki w KRUS, a później pracował na etacie, może dziś dostawać tylko emeryturę z ZUS. Posłowie chcą dać części tych osób prawo do osobnej wypłaty z KRUS. O tym, ile pieniędzy rzeczywiście przybędzie, zdecyduje także to, co ZUS już dolicza do emerytury. [Źródło: GazetaPrawna.pl (DGP)]"
         ]
@@ -13503,9 +13396,7 @@
         "paragraphs": [
           "W określonych sytuacjach ZUS może ponownie obliczyć świadczenie, dzięki czemu seniorzy mogą otrzymywać nawet 200 zł więcej miesięcznie. Nie każdy wie, że emeryturę można ponownie przeliczyć i dzięki temu otrzymywać więcej pieniędzy. [Źródło: PulsHR]",
           "Minął rok od złożenia w Sejmie prezydenckiego projektu „Godna emerytura”, który miał zagwarantować seniorom co najmniej 150 zł podwyżki niezależnie od wskaźników inflacji. Na jakim etapie utknęły prace nad ustawą i ile naprawdę wyniesie waloryzacja świadczeń w marcu 2027 roku? [Źródło: Infor.pl]",
-          "Ustawę z 8.10.2026 r. o zmianie ustawy – Kodeks postępowania cywilnego (druk sejmowy nr 3011) Senat przyjął 6.11.2026 r. bez poprawek. 9.11.2026 r. przekazano ją Prezydentowi RP do podpisu. Nowe przepisy będą stosowane do odwołań wniesionych od dnia wejścia ustawy w życie. [Źródło: Legalis.pl]",
-          "Nawet 3600 zł rocznie mogłoby zostać w kieszeniach części Polaków dzięki zmianom w podatku dochodowym. Nowe przepisy przewidują podniesienie pierwszego progu PIT do 130 tys. zł i wprowadzenie dodatkowej stawki 24 proc. Jak informuje Forsal, los reformy zależy teraz od prezydenta Karola Nawrockiego, który ma czas na decyzję do piątku, 27 listopada 2026 roku.",
-          "Problem polega na tym, że korzystniejsze zasady dla pracowników połączono z podwyżkami podatków i ograniczeniami dla części przedsiębiorców. [Źródło: Warszawa w Pigułce]"
+          "Ustawę z 8.10.2026 r. o zmianie ustawy – Kodeks postępowania cywilnego (druk sejmowy nr 3011) Senat przyjął 6.11.2026 r. bez poprawek. 9.11.2026 r. przekazano ją Prezydentowi RP do podpisu. Nowe przepisy będą stosowane do odwołań wniesionych od dnia wejścia ustawy w życie. [Źródło: Legalis.pl]"
         ]
       }
     ],
@@ -13516,47 +13407,38 @@
         "summary": "Ponad 1000 zł więcej do emerytury. Projekt o wypłatach z KRUS i ZUS trafił do Sejmu",
         "url": "https://www.gazetaprawna.pl/praca/emerytury-i-renty/artykuly/11349828,czy-emeryture-z-krus-bedzie-mozna-pobierac-obok-emerytury-z-zus-po-10-latach-skladek.html",
         "focus": "Eksponuje dane (1000 zł) oraz wątki: wypłatach, trafił.",
-        "omits": "Pomija wyliczenia (150 tys. zł, 200 zł) przytaczane przez Infor.pl, Warszawa w Pigułce."
+        "omits": "Pomija wyliczenia (200 zł, 150 zł) przytaczane przez PulsHR, Infor.pl."
       },
       {
         "outlet": "PulsHR",
         "angle": "Relacja uzupełniająca",
         "summary": "ZUS podnosi emerytury. Dla tych roczników nawet 200 zł więcej",
         "url": "https://www.pulshr.pl/wynagrodzenia/zus-podnosi-emerytury-dla-tych-rocznikow-nawet-200-zl-wiecej,123416.html",
-        "focus": "Podkreśla konkretne liczby (200 zł) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (130 tys. zł, 150 tys. zł) przytaczane przez GazetaPrawna.pl (DGP), Warszawa w Pigułce."
+        "focus": "Eksponuje dane (200 zł) oraz wątki: podnosi, roczników.",
+        "omits": "Pomija wyliczenia (1000 zł, 150 zł) przytaczane przez GazetaPrawna.pl (DGP), Infor.pl."
       },
       {
         "outlet": "Infor.pl",
         "angle": "Perspektywa rynkowa",
         "summary": "150 zł więcej do najniższej emerytury i trzynastki? Taki jest los prezydenckiego projektu „Godna emerytura”",
         "url": "https://www.infor.pl/prawo/nowosci-prawne/7715960,150-zl-wiecej-do-najnizszej-emerytury-i-trzynastki-taki-jest-los-prezydenckiego-projektu-godna-emerytura.html",
-        "focus": "Podkreśla konkretne liczby (150 zł, 2027) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija wyliczenia (130 tys. zł, 24 proc.) przytaczane przez GazetaPrawna.pl (DGP), Warszawa w Pigułce."
+        "focus": "Eksponuje dane (150 zł, 2027) oraz wątki: najniższej, trzynastki.",
+        "omits": "Pomija wyliczenia (1000 zł, 200 zł) przytaczane przez GazetaPrawna.pl (DGP), PulsHR."
       },
       {
         "outlet": "Legalis.pl",
         "angle": "Perspektywa rynkowa",
         "summary": "Sąd będzie mógł uchylać więcej decyzji ZUS i KRUS",
         "url": "https://legalis.pl/sad-bedzie-mogl-uchylac-wiecej-decyzji-zus-i-krus/",
-        "focus": "Wyróżnia własne wątki i pojęcia: mógł, uchylać, Kodeks.",
-        "omits": "Pomija wyliczenia (130 tys. zł, 150 tys. zł) przytaczane przez GazetaPrawna.pl (DGP), Warszawa w Pigułce."
-      },
-      {
-        "outlet": "Warszawa w Pigułce",
-        "angle": "Doniesienie regionalne",
-        "summary": "Nawet 3600 zł więcej w kieszeni Polaków. Wszystko zależy od jednej decyzji Nawrockiego",
-        "url": "https://warszawawpigulce.pl/nawet-3600-zl-wiecej-w-kieszeni-polakow-wszystko-zalezy-od-jednej-decyzji-nawrockiego/",
-        "focus": "Eksponuje dane (3,5 mln, 300 zł) oraz wątki: Wszystko, jednej.",
-        "omits": "Pomija wyliczenia (1000 zł) przytaczane przez GazetaPrawna.pl (DGP)."
+        "focus": "Wyróżnia własne wątki i pojęcia: mógł, uchylać, decyzji.",
+        "omits": "Pomija wyliczenia (1000 zł, 200 zł) przytaczane przez GazetaPrawna.pl (DGP), PulsHR."
       }
     ],
     "sources": [
       "GazetaPrawna.pl (DGP)",
       "Infor.pl",
       "Legalis.pl",
-      "PulsHR",
-      "Warszawa w Pigułce"
+      "PulsHR"
     ],
     "corrections": [
       {
@@ -13575,7 +13457,7 @@
     "impact": {
       "audience": "Przedsiębiorcy i podatnicy",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (4 źródła)"
     },
     "seo_faq": [
       {
@@ -13588,7 +13470,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Przedsiębiorcy i podatnicy (obszar: Portfel, podatki i rynek). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Przedsiębiorcy i podatnicy (obszar: Portfel, podatki i rynek). Status: Potwierdzone (4 źródła)."
       }
     ],
     "discrepancies": [],
@@ -13598,7 +13480,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Presidential_Palace_Warsaw_by_night.jpg",
     "media_label": "Polityka i instytucje państwowe",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": []
   },
   {
@@ -14633,7 +14515,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -14645,13 +14527,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
           "Na zielonogórskim Starym Rynku pojawiła się już miejska choinka, która od razu przyciąga uwagę mieszkańców. W tym roku pod ratuszem stanął rekordowy, 16-metrowy świerk serbski, przekazany mieszkańcom przez leśników. W środę, 25 listopada, pod zielonogórskim ratuszem ustawiono miejską choinkę. [Źródło: Pościgi.pl, TVP3 Gorzów, NewsLubuski.pl, Radio Index]",
           "To już dziesiąty raz, gdy leśnicy przekazali świąteczne drzewko mieszkańcom miasta. Tegoroczna choinka jest wyjątkowa. Pod ratuszem stanął 16-metrowy świerk serbski, który jest najwyższym drzewkiem świątecznym, jakie do tej pory zdobiło centrum Zielonej Góry. [Źródło: Pościgi.pl, TVP3 Gorzów, NewsLubuski.pl, Radio Index]",
@@ -14663,8 +14545,7 @@
         "paragraphs": [
           "W Zielonej Górze powoli zaczyna się świąteczne odliczanie. Na Stary Rynek wjechała miejska choinka – to tradycyjny prezent od lubuskich leśników. [Źródło: TVP3 Gorzów]",
           "W środę, 25 listopada, do Zielonej Góry przyjechała kilkunastometrowa choinka. To właśnie tam będzie można oglądać je przez cały świąteczny okres. Transport świerku ulicami centrum był pilotowany przez policjantów z Wydziału Ruchu Drogowego oraz Straż Leśną. [Źródło: NewsLubuski.pl]",
-          "Na sygnałach, z eskortą policji i straży leśnej oraz w asyście mediów zawitała na zielonogórski Rynek. Choinka ma około 16 metrów, przyjechała z Nadleśnictwa Lubsko i wymagała niezłej koordynacji logistycznej, aby dotrzeć do centrum naszego miasta. [Źródło: Radio Index]",
-          "W sobotę i niedzielę w Zielonej Górze odbędzie się piąta i jednocześnie ostatnia runda Polskiej Ligi Snookera TOP16. Na starcie nie zabraknie Zielonogórzan, a jednym z nich jest gospodarz całej imprezy, Marcin Nitschke: Jako głównego faworyta turnieju w Zielonej Górze niektórzy specjaliści upatrują miejscowego zawodowca. [Źródło: Radio Zachód]"
+          "Na sygnałach, z eskortą policji i straży leśnej oraz w asyście mediów zawitała na zielonogórski Rynek. Choinka ma około 16 metrów, przyjechała z Nadleśnictwa Lubsko i wymagała niezłej koordynacji logistycznej, aby dotrzeć do centrum naszego miasta. [Źródło: Radio Index]"
         ]
       }
     ],
@@ -14700,21 +14581,12 @@
         "url": "https://wzielonej.pl/informacje/zielonagora/16-metrowy-swierk-serbski-z-asysta-sluzb-dotarl-do-zielonej-gory-choinka-juz-stoi-na-rynku-wideo/",
         "focus": "Wyróżnia własne wątki i pojęcia: asystą, służb, dotarł.",
         "omits": "Pomija kontekst (Górze, Państwowych, Regionalna) rozwijany w Pościgi.pl, TVP3 Gorzów."
-      },
-      {
-        "outlet": "Radio Zachód",
-        "angle": "Doniesienie regionalne",
-        "summary": "Kolejne poważne granie w Zielonej Górze",
-        "url": "https://zachod.pl/1597012/kolejne-powazne-granie-w-zielonej-gorze/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Kolejne, poważne, granie.",
-        "omits": "Pomija kontekst (mieszkańców, Świąteczny, 16-metrową) rozwijany w Pościgi.pl, TVP3 Gorzów."
       }
     ],
     "sources": [
       "NewsLubuski.pl",
       "Pościgi.pl",
       "Radio Index",
-      "Radio Zachód",
       "TVP3 Gorzów"
     ],
     "corrections": [
@@ -14734,7 +14606,7 @@
     "impact": {
       "audience": "Mieszkańcy woj. lubuskiego",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (4 źródła)"
     },
     "seo_faq": [
       {
@@ -14747,7 +14619,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. lubuskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Mieszkańcy woj. lubuskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (4 źródła)."
       }
     ],
     "discrepancies": [],
@@ -14757,7 +14629,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Gorzow_Wielkopolski_Warthe_Br%C3%BCcke.jpg",
     "media_label": "Lubuskie (zdjęcie ilustracyjne)",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": [],
     "dossier_title": "Góra · zielona",
     "dossier_count": 2,
@@ -16305,12 +16177,12 @@
         "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Sprawy lokalne i samorząd). Status: Doniesienie lokalne / branżowe."
       }
     ],
-    "media_file": "media/topic-rail-3.jpg",
-    "media_credit": "Fot. ilustracyjne: Wikimedia Commons (Public domain, Wikimedia Commons)",
-    "media_license": "Public domain",
-    "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Tramway_warsaw.jpg",
-    "media_label": "Transport szynowy"
+    "media_file": "media/reg-mazowieckie.jpg",
+    "media_credit": "Fot. ilustracyjne: Simon Jowett (Flikr) (CC0, Wikimedia Commons)",
+    "media_license": "CC0",
+    "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:A_Warsaw_skyline_at_dusk_3345h5u5.jpg",
+    "media_label": "Warszawa, woj. mazowieckie"
   },
   {
     "id": 1287941432,
@@ -16459,7 +16331,7 @@
           "— Chciałbym zwrócić się do przedstawicieli prawnych dziewczynki, która cudem, można powiedzieć, uniknęła śmierci, w kierunku której sprawca oddał serię z broni maszynowej – powiedział Korneluk w programie \"Kropka nad i\". [Źródło: WP Wiadomości, Radio PiK]",
           "— Szukamy zarówno przedstawicieli prawnych, jak i samej pokrzywdzonej. (…) Chcemy ją przesłuchać, chcemy przesłuchać jej przedstawicieli prawnych. [Źródło: WP Wiadomości, Radio PiK]",
           "To jest istotne z punktu widzenia wszechstronnego wyjaśnienia okoliczności tego zdarzenia – zaznaczył prokurator krajowy. Przypomnijmy, że w poniedziałek serwis \"Dziennik Śledczy\" w mediach społecznościowych opublikował nagranie, na którym widać ludzi uciekających i szukających schronienia przed nadjeżdżającym samochodem napastnika. [Źródło: WP Wiadomości, Radio PiK, Polsat News]",
-          "Jak wpłyną akta, wówczas zostanie wysłane do nich wezwanie na przesłuchanie w charakterze podejrzanych – dodał. Śledczy chcą ich przesłuchać. [Źródło: WP Wiadomości, Bankier.pl, Niezależna.pl, TVP3 Bydgoszcz]"
+          "Jak wpłyną akta, wówczas zostanie wysłane do nich wezwanie na przesłuchanie w charakterze podejrzanych – dodał. Śledczy chcą ich przesłuchać. [Źródło: WP Wiadomości, Niezależna.pl, Bankier.pl, TVP3 Bydgoszcz]"
         ]
       },
       {
@@ -16481,7 +16353,7 @@
         "summary": "Korneluk: Szukamy dziewczynki, do której strzelał zamachowiec",
         "url": "https://wiadomosci.wp.pl/korneluk-szukamy-dziewczynki-do-ktorej-strzelal-zamachowiec-7354931339327648a",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja wiodąca).",
-        "omits": "Pomija kontekst (szuka, Święczkowskiemu, badają) rozwijany w Radio PiK, TVP3 Kraków."
+        "omits": "Pomija kontekst (szuka, Święczkowskiemu, autentyczne) rozwijany w Radio PiK, TVP3 Kraków."
       },
       {
         "outlet": "Radio PiK",
@@ -16497,7 +16369,7 @@
         "summary": "Prokuratura nie odpuści Bogdanowi Święczkowskiemu. Dariusz Korneluk mówi wprost",
         "url": "https://wiadomosci.onet.pl/kraj/dariusz-korneluk-ostrzega-bogdana-swieczkowskiego-zapowiada-nowy-wniosek/7qwezt0",
         "focus": "Wyróżnia własne wątki i pojęcia: odpuści, Bogdanowi, mówi.",
-        "omits": "Pomija kontekst (przesłuchać, nagranie, okoliczności) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (przesłuchać, nagranie, szuka) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "TVN24",
@@ -16505,7 +16377,7 @@
         "summary": "Co jeżeli Bogdan Święczkowski nie stawi się w prokuraturze? Dariusz Korneluk zapowiada",
         "url": "https://tvn24.pl/polska/co-dalej-z-bogdanem-swieczkowskim-prokurator-krajowy-dariusz-korneluk-zapowiada-st9357695?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: jeżeli, Bogdan, stawi.",
-        "omits": "Pomija kontekst (przesłuchać, nagranie, okoliczności) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (przesłuchać, nagranie, szuka) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "Radio Kraków",
@@ -16513,7 +16385,7 @@
         "summary": "Nagranie z zamachu, na którym padają strzały obok dziecka jest autentyczne. Apel prokuratury",
         "url": "https://radiokrakow.pl/wiadomosci/krakow/prokuratura-krajowa-nagranie-z-zamachu-na-ktorym-padaja-strzaly-obok-dziecka-jest-autentyczne/188191",
         "focus": "Wyróżnia własne wątki i pojęcia: padają, strzały, obok.",
-        "omits": "Pomija kontekst (przesłuchać, okoliczności, szuka) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (przesłuchać, szuka, pokrzywdzonej) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "TVP3 Kraków",
@@ -16521,7 +16393,7 @@
         "summary": "Prokuratura szuka świadków zamachu. Nagranie z dziewczynką jest autentyczne",
         "url": "https://krakow.tvp.pl/96681132/prokuratura-szuka-swiadkow-zamachu-w-krakowie-nagranie-z-dziewczynka-jest-autentyczne",
         "focus": "Wyróżnia własne wątki i pojęcia: Dziecko, zostało, uznane.",
-        "omits": "Pomija kontekst (przesłuchać, zdarzenia, podejrzanych) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (przesłuchać, podejrzanych, szukających) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "Fakt.pl",
@@ -16529,7 +16401,7 @@
         "summary": "Apel prokuratora po zamachu w Krakowie. Chodzi o ocalałą dziewczynkę",
         "url": "https://www.fakt.pl/wydarzenia/polska/krakow/zamach-w-krakowie-prokuratura-poszukuje-dziewczynki-ktora-cudem-przezyla/n6dxkcg",
         "focus": "Wyróżnia własne wątki i pojęcia: Chodzi, ocalałą, ujawniają.",
-        "omits": "Pomija kontekst (przesłuchać, nagranie, okoliczności) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (przesłuchać, nagranie, szuka) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "Niezależna.pl",
@@ -16537,7 +16409,7 @@
         "summary": "Prokuratura wciąż poszukuje dziewczynki, do której strzelał zamachowiec. To cud, że przeżyła",
         "url": "https://niezalezna.pl/polska/prokuratura-wciaz-poszukuje-dziewczynki-do-ktorej-strzelal-zamachowiec-to-cud-ze-przezyla/584980",
         "focus": "Wyróżnia własne wątki i pojęcia: wciąż, przeżyła.",
-        "omits": "Pomija kontekst (nagranie, okoliczności, zdarzenia) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (nagranie, szuka, pokrzywdzonej) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "Bankier.pl",
@@ -16545,7 +16417,7 @@
         "summary": "Święczkowski i Sochański staną przed prokuratorem jako podejrzani. Korneluk zapowiada wezwania na przesłuchanie",
         "url": "https://www.bankier.pl/wiadomosc/Swieczkowski-i-Sochanski-stana-przed-prokuratorem-jako-podejrzani-Korneluk-zapowiada-wezwania-na-przesluchanie-9235233.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Wyróżnia własne wątki i pojęcia: Sochański, staną, jako.",
-        "omits": "Pomija kontekst (nagranie, okoliczności, zdarzenia) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (nagranie, szuka, pokrzywdzonej) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "Gazeta.pl",
@@ -16553,7 +16425,7 @@
         "summary": "Kim jest dziewczynka, która uciekała przed zamachowcem w Krakowie? Szukają jej śledczy",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198073,33151041,kim-jest-dziewczynka-ktora-uciekala-przed-zamachowcem-w-krakowie.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
         "focus": "Wyróżnia własne wątki i pojęcia: uciekała.",
-        "omits": "Pomija kontekst (przesłuchać, nagranie, okoliczności) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (przesłuchać, nagranie, szuka) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "Polsat News",
@@ -16569,15 +16441,15 @@
         "summary": "Zamach w Krakowie. Prokuratura z apelem, szuka dziewczynki z nagrania",
         "url": "https://wydarzenia.interia.pl/kraj/news-zamach-w-krakowie-prokuratura-z-apelem-szuka-dziewczynki-z-n,nId,23579280",
         "focus": "Wyróżnia własne wątki i pojęcia: apelem, nadać, status.",
-        "omits": "Pomija kontekst (okoliczności, zdarzenia, podejrzanych) rozwijany w WP Wiadomości, Radio PiK."
+        "omits": "Pomija kontekst (okoliczności, podejrzanych, wyjaśnienia) rozwijany w WP Wiadomości, Radio PiK."
       },
       {
         "outlet": "TVP3 Bydgoszcz",
         "angle": "Doniesienie regionalne",
         "summary": "Zamach w Krakowie. Prokuratura szuka dziewczynki, do której strzelano",
         "url": "https://bydgoszcz.tvp.pl/zamach-w-krakowie-prokuratura-szuka-dziewczynki-i-opiekunow,96708548",
-        "focus": "Wyróżnia własne wątki i pojęcia: znalazła, linii, ognia.",
-        "omits": "Pomija kontekst (nagranie, pokrzywdzonej, wyjaśnienia) rozwijany w WP Wiadomości, Radio PiK."
+        "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
+        "omits": "Pomija kontekst (nagranie, pokrzywdzonej, okoliczności) rozwijany w WP Wiadomości, Radio PiK."
       }
     ],
     "sources": [
@@ -20291,7 +20163,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -20303,29 +20175,26 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
-          "W wielkopolskiej Jasieni samochód wypadł na łuku z drogi, uderzył w drzewo i zapalił się. Zginęły trzy osoby – zdaniem policji były to najpewniej młode osoby poniżej 20. roku życia. Droga wojewódzka łącząca Czempiń i Kościan w miejscu wypadku była zablokowana. [Źródło: Polsat News, Interia Wydarzenia, WP Wiadomości, o2.pl, TVP3 Poznań]",
+          "W wielkopolskiej Jasieni samochód wypadł na łuku z drogi, uderzył w drzewo i zapalił się. Zginęły trzy osoby – zdaniem policji były to najpewniej młode osoby poniżej 20. roku życia. Droga wojewódzka łącząca Czempiń i Kościan w miejscu wypadku była zablokowana. [Źródło: Polsat News, Interia Wydarzenia, WP Wiadomości]",
           "O godz. 1:54 straż pożarna otrzymała zgłoszenie o wypadku samochodu BMW w miejscowości Jasień (woj. wielkopolskie). Jak mówił na antenie Polsat News kpt. Dawid Kryś, rzecznik prasowy Komendy Powiatowej Państwowej Straży Pożarnej w Kościanie, auto wypadło z drogi, uderzyło w drzewo, a następnie stanęło w płomieniach. [Źródło: Polsat News, Interia Wydarzenia, WP Wiadomości]",
           "— W momencie przybycia pierwszych zastępów pojazd był objęty ogniem. [Źródło: Polsat News]",
-          "Strażacy przystąpili natychmiast do akcji gaśniczej. W rejonie pracowali ekipy śledczych starające się ustalić przyczyny i okoliczności zdarzenia. Do tragedii doszło w okolicach miejscowości Jasień pod Kościanem. [Źródło: Polsat News, Interia Wydarzenia, WP Wiadomości]",
-          "Trzy osoby zginęły w wypadku samochodowym w Jasieniu (woj. wielkopolskie). [Źródło: Interia Wydarzenia, o2.pl]"
+          "Strażacy przystąpili natychmiast do akcji gaśniczej. W rejonie pracowali ekipy śledczych starające się ustalić przyczyny i okoliczności zdarzenia. Do tragedii doszło w okolicach miejscowości Jasień pod Kościanem. [Źródło: Polsat News, Interia Wydarzenia, WP Wiadomości]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Samochód momentalnie stanął w płomieniach. [Źródło: Interia Wydarzenia]",
+          "Trzy osoby zginęły w wypadku samochodowym w Jasieniu (woj. wielkopolskie). Samochód momentalnie stanął w płomieniach. [Źródło: Interia Wydarzenia]",
           "Gdy strażacy ugasili pożar, dokonali wstrząsającego odkrycia. Na razie służby nie informują o możliwych przyczynach wypadku. Strażacy odnaleźli we wraku zwęglone ciała ofiar. [Źródło: WP Wiadomości]",
-          "W sieci pojawiło się nagranie z BMW. [Źródło: ePoznan.pl]",
-          "Dzień po wypadku miejsce, gdzie zginęli młodzi mężczyźni, zapełniło się zniczami. [Źródło: o2.pl]",
-          "Teraz do policji dotarło wstrząsające nagranie. [Źródło: TVP3 Poznań]"
+          "W sieci pojawiło się nagranie z BMW. [Źródło: ePoznan.pl]"
         ]
       }
     ],
@@ -20336,7 +20205,7 @@
         "summary": "Tragedia w Wielkopolsce. W płonącym BMW zginęły trzy osoby",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-25/tragedia-w-wielkopolsce-w-plonacym-bmw-zginely-trzy-osoby/",
         "focus": "Wyróżnia własne wątki i pojęcia: momencie, przybycia, zastępów.",
-        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl, TVP3 Poznań."
+        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -20344,7 +20213,7 @@
         "summary": "Tragedia w Wielkopolsce. BMW stanęło w płomieniach, zginęły trzy osoby",
         "url": "https://wydarzenia.interia.pl/wielkopolskie/news-tragedia-w-wielkopolsce-bmw-stanelo-w-plomieniach-zginely-tr,nId,23578606",
         "focus": "Wyróżnia własne wątki i pojęcia: momentalnie, stanął.",
-        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl, TVP3 Poznań."
+        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl."
       },
       {
         "outlet": "Gazeta.pl",
@@ -20352,7 +20221,7 @@
         "summary": "Tragedia w Wielkopolsce. Trzy osoby zginęły w płonącym samochodzie",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198073,33149248,tragedia-w-wielkopolsce-trzy-osoby-zginely-w-plonacym-samochodzie.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (doniesienie regionalne).",
-        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl, TVP3 Poznań."
+        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl."
       },
       {
         "outlet": "WP Wiadomości",
@@ -20360,41 +20229,23 @@
         "summary": "Auto uderzyło w drzewo i spłonęło. W środku trzy zwęglone ciała",
         "url": "https://wiadomosci.wp.pl/auto-uderzylo-w-drzewo-i-splonelo-w-srodku-trzy-zweglone-ciala-7354689529509920a",
         "focus": "Wyróżnia własne wątki i pojęcia: środku, zwęglone, ciała.",
-        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl, TVP3 Poznań."
+        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl."
       },
       {
         "outlet": "ePoznan.pl",
         "angle": "Doniesienie regionalne",
         "summary": "BMW uderzyło w drzewo i spłonęło. Zginęło trzech młodych mężczyzn. Jechali ponad 220 km na godzinę?",
         "url": "https://epoznan.pl/news-news-182363-bmw_uderzylo_w_drzewo_i_splonelo_zginelo_trzech_mlodych_mezczyzn_jechali_ponad_220_km_na_godzine?rss=1",
-        "focus": "Podkreśla konkretne liczby (220 km) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija kontekst (Wielkopolsce, samochód, zginęły) rozwijany w Polsat News, Interia Wydarzenia."
-      },
-      {
-        "outlet": "o2.pl",
-        "angle": "Doniesienie regionalne",
-        "summary": "BMW spłonęło. Nie żyją trzy osoby. Przy drodze zapłonęły znicze",
-        "url": "https://www.o2.pl/informacje/bmw-splonelo-nie-zyja-trzy-osoby-przy-drodze-zaplonely-znicze-7355255779285088a",
-        "focus": "Wyróżnia własne wątki i pojęcia: żyją, Przy, drodze.",
-        "omits": "Pomija wyliczenia (220 km) przytaczane przez ePoznan.pl, TVP3 Poznań."
-      },
-      {
-        "outlet": "TVP3 Poznań",
-        "angle": "Doniesienie regionalne",
-        "summary": "Spłonęły trzy osoby. Nagrano, jak BMW pędzi 220 km/h [ZDJĘCIA]",
-        "url": "https://poznan.tvp.pl/96674759/jasien-trzy-osoby-splonely-wypadek-policja-auto-uderzylo-w-drzewo-koscian",
-        "focus": "Podkreśla konkretne liczby (220 km) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija kontekst (Tragedia, wypadło, stanęło) rozwijany w Polsat News, Interia Wydarzenia."
+        "focus": "Eksponuje dane (220 km) oraz wątki: Zginęło, trzech.",
+        "omits": "Pomija kontekst (Wielkopolsce, Tragedia, samochód) rozwijany w Polsat News, Interia Wydarzenia."
       }
     ],
     "sources": [
       "Gazeta.pl",
       "Interia Wydarzenia",
       "Polsat News",
-      "TVP3 Poznań",
       "WP Wiadomości",
-      "ePoznan.pl",
-      "o2.pl"
+      "ePoznan.pl"
     ],
     "corrections": [
       {
@@ -20413,7 +20264,7 @@
     "impact": {
       "audience": "Mieszkańcy Wielkopolski",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (5 źródeł)"
     },
     "seo_faq": [
       {
@@ -20426,7 +20277,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy Wielkopolski (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Mieszkańcy Wielkopolski (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (5 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -20436,7 +20287,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Car_park_and_Traffic_Street_-_geograph.org.uk_-_8119229.jpg",
     "media_label": "Motoryzacja",
-    "independent_sources_count": 6,
+    "independent_sources_count": 4,
     "syndicate_groups": [
       [
         "Polsat News",
@@ -22409,11 +22260,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-rail.jpg",
-    "media_credit": "Fot. ilustracyjne: Chris Olszewski (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:PKP_Intercity_train_at_Krak%C3%B3w_G%C5%82%C3%B3wny_train_station,_Poland,_2019.jpg",
+    "media_file": "media/topic-rail-3.jpg",
+    "media_credit": "Fot. ilustracyjne: Wikimedia Commons (Public domain, Wikimedia Commons)",
+    "media_license": "Public domain",
+    "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Tramway_warsaw.jpg",
     "media_label": "Transport szynowy",
     "independent_sources_count": 4,
     "syndicate_groups": []
@@ -24458,7 +24309,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "22 redakcji"
+        "val": "21 redakcji"
       },
       {
         "label": "Kategoria",
@@ -24470,7 +24321,7 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (22 źródeł)"
+        "val": "Potwierdzone (21 źródeł)"
       }
     ],
     "declickbait": [
@@ -24487,7 +24338,7 @@
     ],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (22 redakcji)",
+        "heading": "Ustalenia wspólne (21 redakcji)",
         "paragraphs": [
           "2,3 mln zł kary nałożył Narodowy Fundusz Zdrowia na warszawski Szpital Południowy – ustalił Polsat News. Zakończyła się prowadzona przez tę instytucję kontrola, a wykazała ona liczne nieprawidłowości w administrowanej przez stołeczny ratusz placówce. To tam pracował lekarz Dawid K., wokół zarobków którego wybuchła afera. [Źródło: Polsat News, Onet Wiadomości, TVP.info, Bankier.pl, Business Insider PL, RadioMaryja.pl, Interia Wydarzenia, Medonet.pl, Niezależna.pl, Dziennik.pl, naTemat.pl, TVP3 Warszawa, Radio Kolor, Warszawa w Pigułce, Radio Rzeszów, WP Wiadomości, Rzeczpospolita, Radio Kielce, Bochnianin.pl, TVN24]",
           "— Wynik kontroli jest negatywny, nasi kontrolerzy stwierdzili szereg nieprawidłowości – przekazała Ewelina Matoga, dyrektor Departamentu Kontroli w Narodowym Funduszu Zdrowia. [Źródło: Polsat News, Onet Wiadomości, TVP.info, Warszawa w Pigułce, Radio Kielce, TVN24]",
@@ -24509,8 +24360,7 @@
           "Naczelny Rzecznik Odpowiedzialności Zawodowej wydał postanowienie o postawieniu zarzutów byłemu koordynatorowi SOR w Warszawskim Szpitalu Południowym Dawidowi K. [Źródło: Gazeta.pl]",
           "Dotyczą one m.in. rzetelności wykonywania zawodu lekarza i naruszenia etyki. [Źródło: Rzeczpospolita]",
           "Natomiast wypłata jest niekompletna, ponieważ w ogóle nie jest zapłacone za tzw. podanie leku, czyli konsultację, która jest wymagana przez prawo i jest zakontraktowana w umowie. [Źródło: Radio Kielce]",
-          "Na oddziale przygotowano 20 łóżek. Roczna wartość podpisanej umowy wynosi niemal 5 mln zł. Zarówno hospitalizacja, jak i konsultacje w poradni będą dla ubezpieczonych pacjentów bezpłatne. Bocheński oddział geriatryczny będzie jedenastym tego typu oddziałem w Małopolsce, a poradnia – dwunastą w województwie. [Źródło: Bochnianin.pl]",
-          "Kolejki do specjalistów, obciążone oddziały i czekanie na pomoc, to rzeczywistość, z którą zmagają się szpitale psychiatryczne. To przełomowy moment dla placówki w Gdańsku. Otwarto nowe oddziały dzienne dla dorosłych oraz dzieci i młodzieży. [Źródło: TVP3 Gdańsk]"
+          "Na oddziale przygotowano 20 łóżek. Roczna wartość podpisanej umowy wynosi niemal 5 mln zł. Zarówno hospitalizacja, jak i konsultacje w poradni będą dla ubezpieczonych pacjentów bezpłatne. Bocheński oddział geriatryczny będzie jedenastym tego typu oddziałem w Małopolsce, a poradnia – dwunastą w województwie. [Źródło: Bochnianin.pl]"
         ]
       }
     ],
@@ -24682,14 +24532,6 @@
         "url": "https://tvn24.pl/zdrowie/zel-zamiast-implantu-szpital-w-koszalinie-dostal-8-milionow-zlotych-kary-od-nfz-prokuratura-wszczyna-postepowanie-st9359502?source=rss",
         "focus": "Podkreśla konkretne liczby (2,3 mln zł) w ujęciu: relacja uzupełniająca.",
         "omits": "Pomija wyliczenia (5 mln zł) przytaczane przez Bochnianin.pl."
-      },
-      {
-        "outlet": "TVP3 Gdańsk",
-        "angle": "Doniesienie regionalne",
-        "summary": "Nowe oddziały dzienne w szpitalu psychiatrycznym",
-        "url": "https://gdansk.tvp.pl/96683732/nowe-oddzialy-dzienne-w-szpitalu-psychiatrycznym",
-        "focus": "Wyróżnia własne wątki i pojęcia: dzienne, psychiatrycznym, Kolejki.",
-        "omits": "Pomija wyliczenia (2,3 mln zł, 5 mln zł) przytaczane przez Polsat News, Onet Wiadomości."
       }
     ],
     "sources": [
@@ -24710,7 +24552,6 @@
       "Rzeczpospolita",
       "TVN24",
       "TVP.info",
-      "TVP3 Gdańsk",
       "TVP3 Warszawa",
       "WP Wiadomości",
       "Warszawa w Pigułce",
@@ -24741,7 +24582,7 @@
     "impact": {
       "audience": "Pacjenci, pracownicy i usługi",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (22 źródeł)"
+      "status": "Potwierdzone (21 źródeł)"
     },
     "seo_faq": [
       {
@@ -24754,7 +24595,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Portfel, podatki i rynek). Status: Potwierdzone (22 źródeł)."
+        "a": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Portfel, podatki i rynek). Status: Potwierdzone (21 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -24764,7 +24605,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Medical_education_center_building,_Buriram_Hospital_09.12.12.jpg",
     "media_label": "Ochrona zdrowia",
-    "independent_sources_count": 22,
+    "independent_sources_count": 21,
     "syndicate_groups": []
   },
   {
@@ -27659,7 +27500,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "6 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -27671,25 +27512,24 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (6 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (6 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
           "Na UE nałożono wówczas 10-proc. cło, a na Chiny – 12,5 proc. Cła z tytułu sekcji 301 i innych uprawnień mają na celu zastąpienie unieważnionych przez Sąd Najwyższy jeszcze w lutym taryf wprowadzonych w ramach ustawy IEEPA. Administracja Donalda Trumpa może wkrótce ogłosić plany podniesienia ceł wobec Chin i UE – pisze w środę AP powołując się na dobrze poinformowane źródła. [Źródło: GazetaPrawna.pl (DGP), Comparic.pl, Bankier.pl, Biznes Interia, Business Insider PL]",
-          "Według „Wall Street Journal”, większy wzrost podatków importowych będzie dotyczyć produktów z Chin, bo ich nadwyżki produkcyjne i subsydia są szczególnie duże i stanowią problem globalny. Chiński koncern BYD otrzymał zakaz sprzedaży jednego ze swoich samochodów terenowych na terenie Unii Europejskiej, ponieważ zdaniem sądu pojazd za bardzo przypomina Land Rovera Defendera. [Źródło: Comparic.pl, Bankier.pl, Business Insider PL, Farmer.pl]",
-          "Patrząc na to, co widzieliśmy z relacji z tegorocznych targów CIAME w Tianjin, oraz na niektóre ciągniki oferowane już w Polsce, europejscy producenci mieliby się czemu przyjrzeć. [Źródło: Bankier.pl, Farmer.pl]"
+          "Według „Wall Street Journal”, większy wzrost podatków importowych będzie dotyczyć produktów z Chin, bo ich nadwyżki produkcyjne i subsydia są szczególnie duże i stanowią problem globalny. Chiński koncern BYD otrzymał zakaz sprzedaży jednego ze swoich samochodów terenowych na terenie Unii Europejskiej, ponieważ zdaniem sądu pojazd za bardzo przypomina Land Rovera Defendera. [Źródło: Comparic.pl, Bankier.pl, Business Insider PL]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "Ogłoszenie decyzji może nastąpić jeszcze tego samego dnia. Choć Waszyngton od dawna zarzuca swoim partnerom nadmierne wspieranie krajowego przemysłu, tak ogłoszenie nowych ograniczeń w handlu ma odbyć się jeszcze w tym tygodniu. [Źródło: Comparic.pl]",
-          "Według źródeł agencji Associated Press nowe cła mają uderzyć także w 14 innych gospodarek handlujących z USA. [Źródło: Biznes Interia]",
-          "Co ciekawe, precedensy w branży techniki rolniczej już istnieją. [Źródło: Farmer.pl]"
+          "Patrząc na to, co widzieliśmy z relacji z tegorocznych targów CIAME w Tianjin, oraz na niektóre ciągniki oferowane już w Polsce, europejscy producenci mieliby się czemu przyjrzeć. [Źródło: Bankier.pl]",
+          "Według źródeł agencji Associated Press nowe cła mają uderzyć także w 14 innych gospodarek handlujących z USA. [Źródło: Biznes Interia]"
         ]
       }
     ],
@@ -27708,7 +27548,7 @@
         "summary": "Kurs S&P 500 traci impet! Trump szykuje nowe cła na Chiny i UE?",
         "url": "https://comparic.pl/kurs-sp-500-traci-impet-trump-szykuje-nowe-cla-na-chiny-i-ue-24-11-2026/",
         "focus": "Podkreśla konkretne liczby (12,5 proc.) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija kontekst (celowniku, tegorocznych, widzieliśmy) rozwijany w GazetaPrawna.pl (DGP), Bankier.pl."
+        "omits": "Pomija kontekst (celowniku, tegorocznych, powstrzymuje) rozwijany w GazetaPrawna.pl (DGP), Bankier.pl."
       },
       {
         "outlet": "Bankier.pl",
@@ -27724,7 +27564,7 @@
         "summary": "Unieważnienie ceł nie powstrzymuje Trumpa. Ma nowy plan na UE i Chiny",
         "url": "https://biznes.interia.pl/gospodarka/news-trump-nie-sklada-broni-po-uniewaznieniu-taryf-beda-nowe-cla,nId,23578595",
         "focus": "Podkreśla konkretne liczby (12,5 proc.) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija kontekst (Europejskiej, importowych, produkcyjne) rozwijany w Comparic.pl, Bankier.pl."
+        "omits": "Pomija kontekst (Trump, Europejskiej, importowych) rozwijany w GazetaPrawna.pl (DGP), Comparic.pl."
       },
       {
         "outlet": "Business Insider PL",
@@ -27732,15 +27572,7 @@
         "summary": "Donald Trump idzie na kolejną wojnę celną. Znowu Chiny i UE",
         "url": "https://businessinsider.com.pl/gospodarka/donald-trump-idzie-na-kolejna-wojne-celna-znowu-chiny-i-ue/lhztcvn",
         "focus": "Podkreśla konkretne liczby (12,5 proc.) w ujęciu: perspektywa rynkowa.",
-        "omits": "Pomija kontekst (celowniku, szykuje, tegorocznych) rozwijany w GazetaPrawna.pl (DGP), Bankier.pl."
-      },
-      {
-        "outlet": "Farmer.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Chińskie kopie na celowniku europejskich sądów. Dziś samochody, jutro ciągniki rolnicze?",
-        "url": "https://www.farmer.pl/technika-rolnicza/maszyny-rolnicze/chinskie-kopie-na-celowniku-europejskich-sadow-dzis-samochody-jutro-ciagniki-rolnicze,187738.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: kopie, sądów, Dziś.",
-        "omits": "Pomija wyliczenia (12,5 proc.) przytaczane przez GazetaPrawna.pl (DGP), Comparic.pl."
+        "omits": "Pomija kontekst (szykuje, celowniku, tegorocznych) rozwijany w GazetaPrawna.pl (DGP), Comparic.pl."
       }
     ],
     "sources": [
@@ -27748,7 +27580,6 @@
       "Biznes Interia",
       "Business Insider PL",
       "Comparic.pl",
-      "Farmer.pl",
       "GazetaPrawna.pl (DGP)"
     ],
     "corrections": [
@@ -27772,7 +27603,7 @@
     "impact": {
       "audience": "Gospodarstwa domowe i konsumenci",
       "scope": "Energia i rachunki",
-      "status": "Potwierdzone (6 źródeł)"
+      "status": "Potwierdzone (5 źródeł)"
     },
     "seo_faq": [
       {
@@ -27785,7 +27616,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Gospodarstwa domowe i konsumenci (obszar: Energia i rachunki). Status: Potwierdzone (6 źródeł)."
+        "a": "Dotyczy grupy: Gospodarstwa domowe i konsumenci (obszar: Energia i rachunki). Status: Potwierdzone (5 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -27795,7 +27626,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by/2.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
     "media_label": "Wydarzenia międzynarodowe",
-    "independent_sources_count": 6,
+    "independent_sources_count": 5,
     "syndicate_groups": []
   },
   {
@@ -27817,7 +27648,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "8 redakcji"
+        "val": "7 redakcji"
       },
       {
         "label": "Kategoria",
@@ -27829,13 +27660,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (8 źródeł)"
+        "val": "Potwierdzone (7 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (8 redakcji)",
+        "heading": "Ustalenia wspólne (7 redakcji)",
         "paragraphs": [
           "Grupa PGE opublikowała we wtorek raport kwartalny skonsolidowany. Potwierdził 3 mld zł zysku netto jednostki dominującej w III kwartale, o którym spółka informowała wcześniej w listopadzie publikując szacunkowe wyniki w tym okresie. Przychody ze sprzedaży wyniosły 15,851 mld zł (wzrost o 15 proc. rdr), a zysk z działalności operacyjnej 3,465 mld zł (wzrost o 151 proc. rdr). [Źródło: Puls Biznesu, Energetyka24, Parkiet, WNP.pl, Comparic.pl, Bankier.pl, Radio 90]",
           "EBITDA wyniosła 4,613 mld zł wobec 2,524 mld zł przed rokiem, także zgodnie z szacunkami na poziomie 4,61 mld zł. EBITDA powtarzalna w trzecim kwartale sięgnęła 2,888 mld zł i była 2 proc. wyższa rdr. Po trzech kwartałach grupa PGE ma 10,988 mld zł EBITDA powtarzalnej, co oznacza wzrost o 5 proc. rdr. \"Trzeci kwartał 2026 roku zamykamy dobrymi wynikami. [Źródło: Puls Biznesu, Energetyka24, WNP.pl, Comparic.pl, Radio 90]",
@@ -27848,8 +27679,7 @@
           "Głównym motorem wzrostu nakładów w OZE są dwa sztandarowe projekty, które mają zostać oddane do użytku w przyszłym roku: Bateryjny Magazyn Energii Żarnowiec oraz Morska Farma Wiatrowa Baltica 2. Grupa rozpoczęła również prace nad kolejnym wielkoskalowym magazynem energii w Gryfinie, rozwijając jednocześnie projekty w obszarach energetyki gazowej, ciepłownictwa oraz dystrybucji. [Źródło: Energetyka24]",
           "Głównym obciążeniem dla wyników były odpisy z tytułu utraty wartości aktywów w wysokości 263,4 mln zł. [Źródło: Parkiet]",
           "Zwiększeniu produkcji koksu i węgla towarzyszyło ograniczenie kosztów. [Źródło: WNP.pl]",
-          "Wzrost wydatków inwestycyjnych (z 2 957 mln zł w III kwartale 2025 roku do blisko 4 mld zł w III kwartale 2026 roku) wynika przede wszystkim ze zwiększenia nakładów na energetykę odnawialną – przekazano w komunikacie prasowym. Najwięcej dołożyły energetyka węglowa i odnawialna, przy słabszym obrocie i dystrybucji. [Źródło: Comparic.pl]",
-          "Największa w Polsce czarterowa linia lotnicza, Enter Air, osiągnęła w ciągu dziewięciu miesięcy tego roku przychody w wysokości 3,1 miliarda złotych, co oznacza wzrost o 26 procent, porównując rok do roku. W ujęciu dolarowym, w którym rozliczana jest większość kontraktów spółki, przychody wyniosły 832,4 miliona, o 31 procent więcej. [Źródło: Rzeczpospolita]"
+          "Wzrost wydatków inwestycyjnych (z 2 957 mln zł w III kwartale 2025 roku do blisko 4 mld zł w III kwartale 2026 roku) wynika przede wszystkim ze zwiększenia nakładów na energetykę odnawialną – przekazano w komunikacie prasowym. Najwięcej dołożyły energetyka węglowa i odnawialna, przy słabszym obrocie i dystrybucji. [Źródło: Comparic.pl]"
         ]
       }
     ],
@@ -27909,14 +27739,6 @@
         "url": "https://www.radio90.pl/jastrzebska-spolka-weglowa-z-kolejna-strata-ale-tez-z-wiekszymi-przychodami-i-wieksza-produkcja.html",
         "focus": "Podkreśla konkretne liczby (3 mld zł, 15,851 mld zł) w ujęciu: doniesienie regionalne.",
         "omits": "Pomija wyliczenia (2,9 mld zł, 8 proc.) przytaczane przez Puls Biznesu, Energetyka24."
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Doniesienie regionalne",
-        "summary": "W tym roku Enter Air zwiększył przychody o 26 procent. „To był rekordowy sezon\"",
-        "url": "https://turystyka.rp.pl/linie-lotnicze/art45550551-w-tym-roku-enter-air-zwiekszyl-przychody-o-26-procent-to-byl-rekordowy-sezon",
-        "focus": "Wyróżnia własne wątki i pojęcia: Enter, procent, rekordowy.",
-        "omits": "Pomija wyliczenia (15,851 mld zł, 3,465 mld zł) przytaczane przez Puls Biznesu, Energetyka24."
       }
     ],
     "sources": [
@@ -27926,7 +27748,6 @@
       "Parkiet",
       "Puls Biznesu",
       "Radio 90",
-      "Rzeczpospolita",
       "WNP.pl"
     ],
     "corrections": [
@@ -27954,7 +27775,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Energia i rachunki",
-      "status": "Potwierdzone (8 źródeł)"
+      "status": "Potwierdzone (7 źródeł)"
     },
     "seo_faq": [
       {
@@ -27967,7 +27788,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Energia i rachunki). Status: Potwierdzone (8 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Energia i rachunki). Status: Potwierdzone (7 źródeł)."
       }
     ],
     "discrepancies": [
@@ -27992,7 +27813,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Crisler_Arena,_UM_Basketball,_wide_angle_court_view,_vs_Indiana_1993.jpg",
     "media_label": "Koszykówka",
-    "independent_sources_count": 8,
+    "independent_sources_count": 7,
     "syndicate_groups": []
   },
   {
@@ -30106,7 +29927,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "8 redakcji"
+        "val": "7 redakcji"
       },
       {
         "label": "Kategoria",
@@ -30118,15 +29939,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (8 źródeł)"
+        "val": "Potwierdzone (7 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (8 redakcji)",
+        "heading": "Ustalenia wspólne (7 redakcji)",
         "paragraphs": [
-          "Do Sądu Okręgowego w Warszawie skierowany został pozew o ochronę dóbr osobistych premiera Mateusza Morawieckiego naruszonych przez Oskara Szafarowicza – oświadczył pełnomocnik byłego premiera i poseł Rozwoju Plus Paweł Jabłoński. Młody działacz PiS ma odpowiedzieć przed sądem za wpis, w którym przekonywał, że Morawiecki odbył w Nowym Sączu spotkanie z Donaldem Tuskiem. [Źródło: Polsat News, Interia Wydarzenia, Onet Wiadomości, Rzeczpospolita, Radio Lublin, WP Wiadomości, Kresy.pl, Dziennik.pl]",
+          "Do Sądu Okręgowego w Warszawie skierowany został pozew o ochronę dóbr osobistych premiera Mateusza Morawieckiego naruszonych przez Oskara Szafarowicza – oświadczył pełnomocnik byłego premiera i poseł Rozwoju Plus Paweł Jabłoński. Młody działacz PiS ma odpowiedzieć przed sądem za wpis, w którym przekonywał, że Morawiecki odbył w Nowym Sączu spotkanie z Donaldem Tuskiem. [Źródło: Polsat News, Interia Wydarzenia, Onet Wiadomości, Rzeczpospolita, Radio Lublin, WP Wiadomości, Kresy.pl]",
           "Sprawa dotyczy wpisu młodego działacza PiS Oskara Szafarowicza, który w niedzielę za pośrednictwem mediów społecznościowych zasugerował, że doszło do spotkania premiera Donalda Tuska i byłego szefa polskiego rządu, a dziś lidera Rozwoju Plus Mateusza Morawieckiego. [Źródło: Polsat News, Interia Wydarzenia, Onet Wiadomości, WP Wiadomości, Kresy.pl]",
           "Z jego wpisu wynika, że obaj politycy mieli spotkać się w piątek późnym popołudniem w jednej z ekskluzywnych restauracji w Nowym Sączu w towarzystwie wpływowego biznesmena Zbigniewa Jarubasa. Zaczęło się od rosołu, na drugie pierogi. Potem już twarda polityka… Magdalenka 2.0 ma dziś miejsce na Podhalu – podsumował puszczoną przez siebie plotkę Szafarowicz. [Źródło: Polsat News, Interia Wydarzenia]",
           "Tłumaczył, że kwota jest trzykrotnie wyższa niż przed trzema dniami z kilku powodów – nie usunął skutków naruszenia dóbr osobistych dobrowolnie oraz brnął w kłamstwa, które uzyskały ponad 20 razy większy zasięg niż w chwili, gdy dałem mu możliwość dobrowolnej naprawy szkody. [Źródło: Polsat News]"
@@ -30140,8 +29961,7 @@
           "Jako pierwszy poinformował o tym portal Wirtualna Polska, a potwierdził to w serwisie X sam poseł. Jednocześnie Jabłoński podkreśla, że wciąż możliwa jest ugoda. [Źródło: Rzeczpospolita]",
           "To krótka historia o politycznym spotkaniu, do którego nigdy nie doszło. A zapowiadało się interesująco. Rzeczywistość bardzo szybko została zweryfikowana. [Źródło: Radio Lublin]",
           "Współpracownicy byłego premiera bagatelizują sprawę i twierdzą, że spodziewali się podobnego ruchu ze strony politycznej konkurencji. [Źródło: WP Wiadomości]",
-          "Sąd Okręgowy w Warszawie wydał w środę, 25 listopada, nieprawomocne postanowienie o wpisaniu do ewidencji partii politycznej Rozwój Plus (R+). [Źródło: Kresy.pl]",
-          "Mówił m.in. o Grzegorzu Braunie, szefie Konfederacji Korony Polskiej. \"Braun to nie jest bardziej radykalny patriota, tylko człowiek niebezpieczny\" – stwierdził Mateusz Morawiecki. Polityk zastanawiał się także, czy Grzegorz Braun jest \"rosyjskim agentem\". [Źródło: Dziennik.pl]"
+          "Sąd Okręgowy w Warszawie wydał w środę, 25 listopada, nieprawomocne postanowienie o wpisaniu do ewidencji partii politycznej Rozwój Plus (R+). [Źródło: Kresy.pl]"
         ]
       }
     ],
@@ -30152,7 +29972,7 @@
         "summary": "Plotka o Mateuszu Morawieckim i Donaldzie Tusku. \"Został skierowany pozew\"",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-24/plotka-o-mateuszu-morawieckim-i-donaldzie-tusku-zostal-skierowany-pozew/",
         "focus": "Wyróżnia własne wątki i pojęcia: Donaldzie, Tłumaczył, kwota.",
-        "omits": "Pomija kontekst (Rozwój, zarejestrowana, Grzegorza) rozwijany w Onet Wiadomości, WP Wiadomości."
+        "omits": "Pomija kontekst (Rozwój, zarejestrowana, zadośćuczynienia) rozwijany w Onet Wiadomości, WP Wiadomości."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -30160,7 +29980,7 @@
         "summary": "Plotka o Tusku i Morawieckim. Szafarowiczowi skończył się czas, jest pozew",
         "url": "https://wydarzenia.interia.pl/kraj/news-echa-plotki-o-tusku-i-morawieckim-szafarowiczowi-skonczyl-si,nId,23578556",
         "focus": "Wyróżnia własne wątki i pojęcia: skończył, czas, Powód.",
-        "omits": "Pomija kontekst (Rozwój, zarejestrowana, Grzegorza) rozwijany w Onet Wiadomości, WP Wiadomości."
+        "omits": "Pomija kontekst (Rozwój, zarejestrowana, Współpracownicy) rozwijany w Onet Wiadomości, WP Wiadomości."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -30176,7 +29996,7 @@
         "summary": "Oskar Szafarowicz pozwany za wpis o Mateuszu Morawieckim. „Ugoda wciąż możliwa”",
         "url": "https://www.rp.pl/polityka/art45537941-oskar-szafarowicz-pozwany-za-wpis-o-mateuszu-morawieckim-ugoda-wciaz-mozliwa",
         "focus": "Wyróżnia własne wątki i pojęcia: Oskar, pozwany, Ugoda.",
-        "omits": "Pomija kontekst (polskiego, doszło, Tuska) rozwijany w Polsat News, Interia Wydarzenia."
+        "omits": "Pomija kontekst (doszło, Tuska, społecznościowych) rozwijany w Polsat News, Interia Wydarzenia."
       },
       {
         "outlet": "Radio Lublin",
@@ -30184,7 +30004,7 @@
         "summary": "25.11.2026 Czy na pewno? – Pojednanie Tuska z Morawieckim? Fake news o spotkaniu polityków",
         "url": "https://radio.lublin.pl/2026/11/25-11-2026-czy-na-pewno-pojednanie-tuska-z-morawieckim-fake-news-o-spotkaniu-politykow/",
         "focus": "Wyróżnia własne wątki i pojęcia: pewno, Pojednanie, Fake.",
-        "omits": "Pomija kontekst (polskiego, społecznościowych, pośrednictwem) rozwijany w Polsat News, Interia Wydarzenia."
+        "omits": "Pomija kontekst (społecznościowych, pośrednictwem, zasugerował) rozwijany w Polsat News, Interia Wydarzenia."
       },
       {
         "outlet": "WP Wiadomości",
@@ -30199,20 +30019,11 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Ludzie Grzegorza Brauna zarejestrowali partię Rozwój Plus – przed Morawieckim",
         "url": "https://kresy.pl/wydarzenia/ludzie-grzegorza-brauna-zarejestrowali-partie-rozwoj-plus-przed-morawieckim/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Ludzie, Brauna, partię.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Ludzie, Grzegorza, Brauna.",
         "omits": "Pomija kontekst (polityka, Plotka, Tusku) rozwijany w Polsat News, Interia Wydarzenia."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Morawiecki ostro o Grzegorzu Braunie. \"Pcha nas w ręce Rosji, czyni umizgi...\"",
-        "url": "https://wiadomosci.dziennik.pl/polityka/artykuly/11355490,morawiecki-ostro-o-grzegorzu-braunie-pcha-nas-w-rece-rosji-czyni-umizgi.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: ostro, Braunie, Pcha.",
-        "omits": "Pomija kontekst (doszło, Tuska, społecznościowych) rozwijany w Polsat News, Interia Wydarzenia."
       }
     ],
     "sources": [
-      "Dziennik.pl",
       "Interia Wydarzenia",
       "Kresy.pl",
       "Onet Wiadomości",
@@ -30246,7 +30057,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Prawo i decyzje publiczne",
-      "status": "Potwierdzone (8 źródeł)"
+      "status": "Potwierdzone (7 źródeł)"
     },
     "seo_faq": [
       {
@@ -30259,7 +30070,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (8 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (7 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -30269,7 +30080,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
     "media_label": "Polityka i instytucje państwowe",
-    "independent_sources_count": 8,
+    "independent_sources_count": 7,
     "syndicate_groups": []
   },
   {
@@ -31052,7 +30863,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -31064,21 +30875,21 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
-          "Doszło do gwałtownego wzrostu napięcia na Morzu Bałtyckim. Spowodowały to uderzenia ukraińskich dronów i próby europejskich okrętów zatrzymywania rosyjskich tankowców „szarej floty”. Rosja reaguje na ruch Estonii. [Źródło: Rzeczpospolita, Interia Wydarzenia, Forsal.pl]",
-          "Gieorgij Michno, ambasador Federacji Rosyjskiej w Rzeczypospolitej Polskiej, został zaproszony do MSZ kraju przyjmującego, gdzie przekazano mu protest w ramach rzekomego powiązania naszego kraju z incydentami dotyczącymi naruszenia polskiej przestrzeni powietrznej w dniu 20 listopada 2026 r. – czytamy w komunikacie rosyjskiej ambasady w Polsce na Telegramie. [Źródło: Interia Wydarzenia, Onet Wiadomości]"
+          "Doszło do gwałtownego wzrostu napięcia na Morzu Bałtyckim. Spowodowały to uderzenia ukraińskich dronów i próby europejskich okrętów zatrzymywania rosyjskich tankowców „szarej floty”. Rosja reaguje na ruch Estonii. [Źródło: Rzeczpospolita, Interia Wydarzenia, Forsal.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
+          "Gieorgij Michno, ambasador Federacji Rosyjskiej w Rzeczypospolitej Polskiej, został zaproszony do MSZ kraju przyjmującego, gdzie przekazano mu protest w ramach rzekomego powiązania naszego kraju z incydentami dotyczącymi naruszenia polskiej przestrzeni powietrznej w dniu 20 listopada 2026 r. – czytamy w komunikacie rosyjskiej ambasady w Polsce na Telegramie. [Źródło: Interia Wydarzenia]",
           "Eksperci mówią, że to tylko retoryka służąca zastraszaniu, bo Moskwa jest teraz za słaba na konflikt z NATO. \"Ten najnowszy antyrosyjski chwyt Estonii dołącza do licznych wrogich działań podejmowanych przez to państwo na przestrzeni ostatnich lat\" – dodano. Rosyjskie Ministerstwo Spraw Zagranicznych oskarżyło Estonię o „zaciekłą rusofobię” oraz prowadzenie szeregu wrogich działań wymierzonych w Federację Rosyjską. [Źródło: Defence24]",
           "Rosyjskie MSZ mówi o \"skraju otwartej wojny\", zarzuca władzom w Tallinnie wspieranie ukraińskich ataków i zapowiada możliwe działania odwetowe. W tle jest decyzja o zamknięciu przejść granicznych z Rosją. [Źródło: Forsal.pl]"
         ]
@@ -31090,16 +30901,16 @@
         "angle": "Relacja wiodąca",
         "summary": "Kreml wzywa chargé d’affaires Estonii i grozi „otwartą wojną z Rosją”",
         "url": "https://www.rp.pl/dyplomacja/art45532191-kreml-wzywa-charge-d-affaires-estonii-i-grozi-otwarta-wojna-z-rosja",
-        "focus": "Wyróżnia własne wątki i pojęcia: Kreml, charg, affaires.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia, Onet Wiadomości."
+        "focus": "Wyróżnia własne wątki i pojęcia: Kreml, wzywa, charg.",
+        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia."
       },
       {
         "outlet": "Interia Wydarzenia",
         "angle": "Relacja uzupełniająca",
         "summary": "Rosja ostrzega państwo NATO. \"To grozi otwartą wojną\"",
         "url": "https://wydarzenia.interia.pl/zagranica/news-rosja-ostrzega-panstwo-nato-to-grozi-otwarta-wojna,nId,23577862",
-        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (działań, wzywa, podejmowanych) rozwijany w Defence24, Forsal.pl."
+        "focus": "Eksponuje dane (2026) oraz wątki: Gieorgij, Michno.",
+        "omits": "Pomija kontekst (działań, podejmowanych, Zagranicznych) rozwijany w Defence24, Forsal.pl."
       },
       {
         "outlet": "Defence24",
@@ -31107,7 +30918,7 @@
         "summary": "Rosja grozi kolejnemu państwu NATO. Ostrzega przed otwartą wojną",
         "url": "https://defence24.pl/geopolityka/rosja-grozi-kolejnemu-panstwu-nato-ostrzega-przed-otwarta-wojna",
         "focus": "Wyróżnia własne wątki i pojęcia: kolejnemu, państwu, Eksperci.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia, Onet Wiadomości."
+        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia."
       },
       {
         "outlet": "Forsal.pl",
@@ -31115,22 +30926,13 @@
         "summary": "Rosja grozi sąsiadowi otwartą wojną. Kolejny kraj chce zetrzeć z mapy",
         "url": "https://forsal.pl/swiat/bezpieczenstwo/artykuly/11406950,rosja-grozi-sasiadowi-otwarta-wojna-kolejny-kraj-chce-zetrzec-z-mapy.html",
         "focus": "Wyróżnia własne wątki i pojęcia: sąsiadowi, Kolejny, kraj.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia, Onet Wiadomości."
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Szwecja wzywa ambasadora Rosji. Chodzi o Polskę i planowany zamach w Danii",
-        "url": "https://wiadomosci.onet.pl/swiat/szwecja-stanela-po-stronie-polski-i-danii-wezwano-ambasadora-rosji/hyzcvpg",
-        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija kontekst (Estonii, otwartą, grozi) rozwijany w Rzeczpospolita, Interia Wydarzenia."
+        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia."
       }
     ],
     "sources": [
       "Defence24",
       "Forsal.pl",
       "Interia Wydarzenia",
-      "Onet Wiadomości",
       "Rzeczpospolita"
     ],
     "corrections": [
@@ -31158,7 +30960,7 @@
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (4 źródła)"
     },
     "seo_faq": [
       {
@@ -31171,7 +30973,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (4 źródła)."
       }
     ],
     "discrepancies": [],
@@ -31181,7 +30983,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Czech_Leopard_2A4_tank_043_during_NATO_Days_2026,_Ostrava,_20260919_0956_0635.jpg",
     "media_label": "Obronność i bezpieczeństwo",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": []
   },
   {
@@ -37282,7 +37084,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "14 redakcji"
+        "val": "12 redakcji"
       },
       {
         "label": "Kategoria",
@@ -37294,19 +37096,19 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (14 źródeł)"
+        "val": "Potwierdzone (12 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (14 redakcji)",
+        "heading": "Ustalenia wspólne (12 redakcji)",
         "paragraphs": [
           "Dziennikarze Meduzy i Mediazony potwierdzili autentyczność wykradzionych przez hakerów dokumentów, zestawiając je z danymi z Rejestru Spraw Spadkowych. Po uwzględnieniu osób zaginionych, łączna liczba rosyjskich strat wojennych wzrasta do poziomu przekraczającego 700 tysięcy osób. [Źródło: Interia Wydarzenia, WP Wiadomości, Onet Wiadomości, Kresy.pl, o2.pl, Polsat News]",
           "Więcej ważnych informacji znajdziesz na stronie głównej Interii Hakerzy z grup \"CyberPartyzanci Białorusi\" i \"Silent Crow\" włamali się na stronę internetową rosyjskiego urzędu statystycznego Rosstat, uzyskując w ten sposób dostęp do bazy danych zawierającej informacje o stratach poniesionych przez rosyjskie siły zbrojne w wojnie przeciwko Ukrainie. [Źródło: Interia Wydarzenia, WP Wiadomości, Onet Wiadomości, CyberDefence24, Kresy.pl, o2.pl, TVN24, Polsat News, Wiadomości Handlowe]",
           "Przedstawiona łączna liczba zgonów \"nie obejmuje członków personelu wojskowego, którzy zginęli podczas wojny, ale na terytorium Rosji i z przyczyn wyraźnie niezwiązanych z wojną\" – zapewniają dziennikarze. W bazach oficjalnie zarejestrowano co najmniej 490 tys. zgonów, ale część śmierci jest zgłaszana z dużym opóźnieniem, zwłaszcza gdy ofiary wcześniej uznano za zaginione. [Źródło: Interia Wydarzenia, WP Wiadomości, Onet Wiadomości, TVN24]",
           "Branża fotograficzna zarabia nie tylko na utrwalaniu ważnych chwil i podniosłych momentów, ale także na przetwarzaniu danych osobowych, choć zwykle to nie z tym fotografów kojarzycie. Dane osobowe, w tym wizerunek, powinny być odpowiednio zabezpieczone przed dostępem osób nieuprawnionych, nie wspominając już o prawie do prywatności. [Źródło: CyberDefence24, TVN24, Niebezpiecznik, Polsat News, Wiadomości Handlowe]",
-          "W jego wyniku cyberprzestępca uzyskał dostęp do danych osobowych kibiców. Hiszpańska LaLiga padła ofiarą cyberataku na jedną ze swoich platform. Omawiamy karygodne zachowania niektórych firm i fotografów z branży foto w zakresie (braku) ochrony danych klientów, które — za zaskakujące — wciąż są powszechnie tolerowane [Źródło: CyberDefence24, TVN24, Niebezpiecznik, Polsat News, Wiadomości Handlowe, Dziennik.pl]"
+          "W jego wyniku cyberprzestępca uzyskał dostęp do danych osobowych kibiców. Hiszpańska LaLiga padła ofiarą cyberataku na jedną ze swoich platform. Omawiamy karygodne zachowania niektórych firm i fotografów z branży foto w zakresie (braku) ochrony danych klientów, które — za zaskakujące — wciąż są powszechnie tolerowane [Źródło: CyberDefence24, TVN24, Niebezpiecznik, Polsat News, Wiadomości Handlowe]"
         ]
       },
       {
@@ -37320,9 +37122,7 @@
           "Są też inne problemy i czas najwyższy zacząć zwracać na nie uwagę. [Źródło: Niebezpiecznik]",
           "Przedstawiciel Władimira Putina uznał, że danych tych nie należy brać pod uwagę. [Źródło: Polsat News]",
           "Cyberataki coraz większym zagrożeniem dla handlu Deichmann poinformował o incydencie związanym z bezpieczeństwem IT na swojej stronie internetowej i w wiadomościach e-mail skierowanych do klientów. Deichmann niezwłocznie powiadomiła odpowiednie organy, złożyła zawiadomienie i podjęła działania mające na celu usunięcie luki w zabezpieczeniach. [Źródło: Wiadomości Handlowe]",
-          "1Password oficjalnie przyznaje, że hakerzy włamali się na konto GitHuba jednego z ich pracowników. W ten sposób udało się wykraść dane klientów, chociaż firma podkreśla, że nie naruszono ich haseł. Menadżer haseł wydaje się najlepszym sposobem na zabezpieczenie naszych kont. [Źródło: Telepolis.pl]",
-          "Klienci sklepu internetowego Dedoles zaczęli otrzymywać maile z informacją, że ich dane wpadły w niepowołane ręce. Firma poinformowała, że wyciek obejmuje dane z pięciu lat, w tym adresy, numery telefonów, a w niektórych przypadkach także numery kont bankowych. Firma ostrzega przed możliwymi działaniami oszustów. [Źródło: Fakt.pl]",
-          "Cyberprzestępcy zaatakowali polskiego dostawcę oprogramowania medycznego. Incydent zagraża nie tylko placówkom medycznym, ale również tysiącom pacjentów korzystających z usługi eRejestracji. [Źródło: Dziennik.pl]"
+          "1Password oficjalnie przyznaje, że hakerzy włamali się na konto GitHuba jednego z ich pracowników. W ten sposób udało się wykraść dane klientów, chociaż firma podkreśla, że nie naruszono ich haseł. Menadżer haseł wydaje się najlepszym sposobem na zabezpieczenie naszych kont. [Źródło: Telepolis.pl]"
         ]
       }
     ],
@@ -37340,7 +37140,7 @@
         "angle": "Relacja uzupełniająca",
         "summary": "Wyciek danych ujawnia straty Rosji. Setki tysięcy poległych",
         "url": "https://wiadomosci.wp.pl/wyciek-danych-ujawnia-straty-rosji-liczby-robia-wrazenie-7354188298868768a",
-        "focus": "Eksponuje dane (29,7 mln, 15 mln) oraz wątki: Setki, poległych.",
+        "focus": "Eksponuje dane (29,7 mln, 15 mln) oraz wątki: Wyciek, Setki.",
         "omits": "Pomija wyliczenia (720 tys.) przytaczane przez Kresy.pl."
       },
       {
@@ -37420,30 +37220,12 @@
         "angle": "Kontekst technologiczny",
         "summary": "Korzystasz z menadżera haseł? Hakerzy wykradli dane z 1Password",
         "url": "https://www.telepolis.pl/tech/bezpieczenstwo/1password-atak-wyciek-danych-klientow-cyberbezpieczenstwo",
-        "focus": "Wyróżnia własne wątki i pojęcia: menadżera, haseł, 1Password.",
-        "omits": "Pomija wyliczenia (490 tys., 29,7 mln) przytaczane przez Interia Wydarzenia, WP Wiadomości."
-      },
-      {
-        "outlet": "Fakt.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Robiłeś zakupy w tym sklepie? Uważaj, ktoś może mieć twoje dane. Doszło do wycieku",
-        "url": "https://www.fakt.pl/wydarzenia/wyciek-danych-klientow-sklepu-internetowego-dedoles-firma-ostrzega/3ql5nkg",
-        "focus": "Wyróżnia własne wątki i pojęcia: Robiłeś, zakupy, sklepie.",
-        "omits": "Pomija wyliczenia (490 tys., 29,7 mln) przytaczane przez Interia Wydarzenia, WP Wiadomości."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Cyberatak na firmę drEryk. Mogły wyciec dane pacjentów",
-        "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11407135,cyberatak-na-firme-dreryk-mogly-wyciec-dane-pacjentow.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: firmę, drEryk, Mogły.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Korzystasz, menadżera, haseł.",
         "omits": "Pomija wyliczenia (490 tys., 29,7 mln) przytaczane przez Interia Wydarzenia, WP Wiadomości."
       }
     ],
     "sources": [
       "CyberDefence24",
-      "Dziennik.pl",
-      "Fakt.pl",
       "Interia Wydarzenia",
       "Kresy.pl",
       "MamStartup.pl",
@@ -37481,7 +37263,7 @@
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (14 źródeł)"
+      "status": "Potwierdzone (12 źródeł)"
     },
     "seo_faq": [
       {
@@ -37494,7 +37276,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (14 źródeł)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (12 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -37504,7 +37286,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg",
     "media_label": "Wydarzenia międzynarodowe",
-    "independent_sources_count": 14,
+    "independent_sources_count": 12,
     "syndicate_groups": []
   },
   {
@@ -37520,13 +37302,13 @@
     "updated_iso": "2026-11-23T17:56:08+01:00",
     "display_date": "23.11.2026, 17:56",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -37538,13 +37320,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
           "Zarząd spółki Cuiavia sp. z o.o. podjął decyzję o postawieniu przedsiębiorstwa w stan likwidacji i zakończeniu jego działalności. Mimo ponad półrocznych prób restrukturyzacji nie udało się wypracować rentownego modelu biznesowego, a dalsza produkcja pogłębiała straty i prowadziła do dalszego zadłużania zakładu. [Źródło: TVP3 Bydgoszcz]",
           "Decyzja o zamknięciu inowrocławskiej mleczarni zapadła po wielomiesięcznych działaniach naprawczych, które zakładały przekształcenie dotychczasowego modelu produkcji. Nie przyniosły one jednak oczekiwanych efektów, a utrzymywanie zakładu każdego miesiąca generowało kolejne dotkliwe straty finansowe, tym samym zmuszając zarząd do podjęcia drastycznych kroków. [Źródło: TVP3 Bydgoszcz]"
@@ -37554,8 +37336,7 @@
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
           "— Zwolnienia, które będą obejmowały wszystkich pracowników zakładu, zaplanowane zostaną według czasowego harmonogramu, w zależności od konieczności funkcjonowania poszczególnych działów zakładu – mówił likwidator spółki Lech Dębowski. [Źródło: Radio PiK]",
-          "Decyzję o likwidacji właściciele zakładu podjęli w związku z coraz gorszą sytuacja finansową firmy. Wdrożony plan naprawczy nie przyniósł spodziewanych efektów. Mleczarnia Cuiavia z Inowrocławia zostanie zlikwidowana, w efekcie pracę stracić ma 110 osób. [Źródło: Biznes Interia]",
-          "Niemiecki producent oprogramowania biznesowego przygotowuje plan restrukturyzacji w związku z wdrażaniem rozwiązań AI na szerszą skalę. Obejmuje on m.in. redukcję globalnej liczby pracowników o około 10 tys. – informuje Bloomberg. [Źródło: Puls Biznesu]"
+          "Decyzję o likwidacji właściciele zakładu podjęli w związku z coraz gorszą sytuacja finansową firmy. Wdrożony plan naprawczy nie przyniósł spodziewanych efektów. Mleczarnia Cuiavia z Inowrocławia zostanie zlikwidowana, w efekcie pracę stracić ma 110 osób. [Źródło: Biznes Interia]"
         ]
       }
     ],
@@ -37574,7 +37355,7 @@
         "summary": "Inowrocławska mleczarnia Cuiavia weszła w stan likwidacji. Pracę straci ponad 100 osób",
         "url": "https://www.radiopik.pl/40,143961,inowroclawska-mleczarnia-cuiavia-weszla-w-stan-l",
         "focus": "Podkreśla konkretne liczby (100 osób) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija wyliczenia (110 osób, 10 tys.) przytaczane przez Biznes Interia, Puls Biznesu."
+        "omits": "Pomija wyliczenia (110 osób) przytaczane przez Biznes Interia."
       },
       {
         "outlet": "Biznes Interia",
@@ -37582,20 +37363,11 @@
         "summary": "Mleczarnia Cuiavia zamyka się po 81 latach. Ponad 100 osób straci pracę",
         "url": "https://biznes.interia.pl/gospodarka/news-polska-mleczarnia-zamyka-sie-po-81-latach-ponad-100-osob-str,nId,23578341",
         "focus": "Eksponuje dane (110 osób) oraz wątki: zamyka, latach.",
-        "omits": "Pomija wyliczenia (10 tys.) przytaczane przez Puls Biznesu."
-      },
-      {
-        "outlet": "Puls Biznesu",
-        "angle": "Doniesienie regionalne",
-        "summary": "SAP szykuje duże zwolnienia. 10 tys. osób może stracić pracę przez AI",
-        "url": "https://www.pb.pl/sap-szykuje-duze-zwolnienia-10-tys-osob-moze-stracic-prace-przez-ai-1271150",
-        "focus": "Eksponuje dane (10 tys.) oraz wątki: szykuje, duże.",
-        "omits": "Pomija wyliczenia (100 osób, 110 osób) przytaczane przez Radio PiK, Biznes Interia."
+        "omits": "Pomija kontekst (zwolnienia, spółki, wielomiesięcznych) rozwijany w TVP3 Bydgoszcz, Radio PiK."
       }
     ],
     "sources": [
       "Biznes Interia",
-      "Puls Biznesu",
       "Radio PiK",
       "TVP3 Bydgoszcz"
     ],
@@ -37616,7 +37388,7 @@
     "impact": {
       "audience": "Mieszkańcy woj. kujawsko-pomorskiego",
       "scope": "Sprawy lokalne i samorząd",
-      "status": "Potwierdzone (4 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -37629,7 +37401,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Mieszkańcy woj. kujawsko-pomorskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (4 źródła)."
+        "a": "Dotyczy grupy: Mieszkańcy woj. kujawsko-pomorskiego (obszar: Sprawy lokalne i samorząd). Status: Potwierdzone (3 źródła)."
       }
     ],
     "discrepancies": [],
@@ -37639,7 +37411,7 @@
     "media_license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Bdg_Wyspa_Mlynska_zm_1_07-2014.jpg",
     "media_label": "Kujawy i Pomorze (zdjęcie ilustracyjne)",
-    "independent_sources_count": 4,
+    "independent_sources_count": 3,
     "syndicate_groups": []
   },
   {
@@ -38798,26 +38570,7 @@
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Storm_clouds_over_the_Oasis_of_Mara_(51183671077).jpg",
     "media_label": "Pogoda i aura",
     "independent_sources_count": 3,
-    "syndicate_groups": [],
-    "dossier_title": "Warszawie · służby",
-    "dossier_count": 2,
-    "dossier_index": 1,
-    "dossier_items": [
-      {
-        "id": 1922296188,
-        "seo_url": "/Polska/Regiony/Mazowieckie/pierwszy-snieg-w-warszawie-460-pojazdow-w-gotowosci-sluzby-juz",
-        "seo_title": "Pierwszy śnieg w Warszawie. 460 pojazdów w gotowości, służby już wyjechały na ulice",
-        "display_date": "23.11.2026, 16:04",
-        "published_iso": "2026-11-23T16:04:38+01:00"
-      },
-      {
-        "id": 425997445,
-        "seo_url": "/Polska/Regiony/Mazowieckie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki",
-        "seo_title": "Służby przekopują działkę pod Warszawą. W tle \"gangsterskie porachunki\"",
-        "display_date": "26.11.2026, 20:01",
-        "published_iso": "2026-11-26T20:01:21+01:00"
-      }
-    ]
+    "syndicate_groups": []
   },
   {
     "id": 743341101,

@@ -1112,9 +1112,12 @@ function renderFeed(list, q, allPublished = null) {
   const container = document.getElementById('articlesFeed');
   if (!container) return;
 
-  const crumbText = q ? 'Wszystkie działy' : currentPath;
+  const segs = (currentPath || '').split('/').filter(Boolean);
+  const crumbHtml = q
+    ? '<span class="feed-crumb">Wszystkie działy</span>'
+    : (segs.length > 1 ? `<span class="feed-crumb">${esc(segs.slice(0, -1).join(' › '))}</span>` : '');
   const titleText = q ? `Wyniki dla „${esc(q)}”` : esc(PATH_TITLES[currentPath] || currentPath);
-  const heading = `<div class="feed-heading"><div><span class="feed-crumb">${esc(crumbText)}</span><h1>${titleText}</h1></div><span>${countArticlesLabel(list.length)}</span></div>`;
+  const heading = `<div class="feed-heading"><div class="feed-heading-title">${crumbHtml}<h1>${titleText}</h1></div><div class="feed-heading-meta"><span class="feed-count">${countArticlesLabel(list.length)}</span></div></div>`;
   const stripHtml = q ? '' : regionStripHtml(allPublished || articles.filter(a => a.status === 'AUTO_PUBLISHED'));
 
   const syncStripScroll = () => {

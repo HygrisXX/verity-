@@ -155,7 +155,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=1f1c5345" />
+  <link rel="stylesheet" href="../../../../styles.css?v=3b9991aa" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -167,7 +167,7 @@
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
-        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+        <span class="top-hide-sm">16 województw · 0 clickbaitu · 0 fake news</span>
       </div>
       <div class="top-utility-actions">
         <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
@@ -200,6 +200,7 @@
               id="searchInput"
               type="search"
               class="search-input"
+              placeholder="Szukaj…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -215,17 +216,21 @@
       </div>
 
       <nav class="path-nav" aria-label="Kategorie tematyczne">
-        <a class="path-chip" data-path="/Polska" href="../../../../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
-        <a class="path-chip" data-path="/Polska/Gospodarka" href="../../../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
-        <a class="path-chip" data-path="/Polska/Polityka" href="../../../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
-        <a class="path-chip" data-path="/Polska/Energetyka" href="../../../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
-        <div class="path-region-group"><a class="path-chip active" data-path="/Polska/Regiony" href="../../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
-        <span class="path-divider" aria-hidden="true">|</span>
-        <a class="path-chip" data-path="/Swiat" href="../../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
-        <a class="path-chip" data-path="/Sport" href="../../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
-        <a class="path-chip" data-path="/kamery" href="../../../../kamery/" onclick="return fixFileHref(event)">Kamery</a>
-        <a class="path-chip" data-path="/rynki" href="../../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
-        <a class="path-chip" data-path="/ranking" href="../../../../ranking/" onclick="return fixFileHref(event)">Ranking redakcji</a>
+        <div class="nav-sections">
+          <a class="path-chip" data-path="/Polska" href="../../../../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+          <a class="path-chip" data-path="/Polska/Gospodarka" href="../../../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')">Gospodarka</a>
+          <a class="path-chip" data-path="/Polska/Polityka" href="../../../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')">Polityka</a>
+          <a class="path-chip" data-path="/Polska/Energetyka" href="../../../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')">Energetyka</a>
+          <div class="path-region-group"><a class="path-chip active" data-path="/Polska/Regiony" href="../../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
+          <span class="path-divider" aria-hidden="true">|</span>
+          <a class="path-chip" data-path="/Swiat" href="../../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+          <a class="path-chip" data-path="/Sport" href="../../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+        </div>
+        <div class="nav-tools" aria-label="Narzędzia i dane">
+          <a class="path-chip" data-path="/rynki" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki i pogoda</a>
+          <a class="path-chip" data-path="/kamery" href="../../../../kamery/" onclick="return fixFileHref(event)"><span class="nav-tool-dot" aria-hidden="true"></span>Kamery</a>
+          <a class="path-chip" data-path="/ranking" href="../../../../ranking/" onclick="return fixFileHref(event)">Ranking</a>
+        </div>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -259,7 +264,7 @@
     </div>
     </div>
   </header>
-  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.48</span><span class="mkt-chg chg-down">▼ -0.02%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.32%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.36%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.90</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 044</span><span class="mkt-chg chg-up">▲ +1.59%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 183</span><span class="mkt-chg chg-down">▼ -0.25%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 971</span><span class="mkt-chg chg-up">▲ +1.50%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$60 659</span><span class="mkt-chg chg-up">▲ +1.18%</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">❄️</span><span class="tk-lbl">Warszawa</span><span class="tk-val">-2.6°C</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">⛅</span><span class="tk-lbl">Oslo</span><span class="tk-val">-5.2°C</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)">Rynki i mapa pogody →</a></div></div>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.48</span><span class="mkt-chg chg-down">▼ -0.02%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.32%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.36%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.90</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 044</span><span class="mkt-chg chg-up">▲ +1.59%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 183</span><span class="mkt-chg chg-down">▼ -0.25%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 971</span><span class="mkt-chg chg-up">▲ +1.50%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$60 659</span><span class="mkt-chg chg-up">▲ +1.18%</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">❄️</span><span class="tk-lbl">Warszawa</span><span class="tk-val">-2.6°C</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">⛅</span><span class="tk-lbl">Oslo</span><span class="tk-val">-5.2°C</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Rynki i pogoda →</span><span class="tk-more-short">Rynki →</span></a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -365,7 +370,23 @@
         </aside>
       </div>
       
-      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:12" data-id="1074000472">
+      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:12" data-id="373791258">
+      <div class="story-card">
+        <a class="card-media-link" href="../../../../Polska/Regiony/Malopolskie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki/" onclick="return openArticleLink(event, 373791258, '/Polska/Regiony/Malopolskie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki')" tabindex="-1" aria-hidden="true">
+          <div class="story-thumb-wrap">
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Małopolskie</span><span class="thumb-fallback-mark">V</span></div>
+            <img src="../../../../media/topic-nature-3.jpg" alt="Służby przekopują działkę pod Warszawą. W tle &quot;gangsterskie porachunki&quot;" class="story-thumb" loading="lazy" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+          </div>
+        </a>
+        <div class="story-body">
+          <div class="story-top"><span class="cat-badge">Małopolskie</span><span class="story-date">26.11.2026, 20:01</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Malopolskie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki/" onclick="return openArticleLink(event, 373791258, '/Polska/Regiony/Malopolskie/sluzby-przekopuja-dzialke-pod-warszawa-w-tle-gangsterskie-porachunki')">Służby przekopują działkę pod Warszawą. W tle &quot;gangsterskie porachunki&quot;</a></h2>
+          <p class="story-lede">Dotyczą porachunków gangsterskich na tle narkotykowym. Śledczy dysponują informacją, że na tym terenie miało zostać zakopane ciało – przekazał reporter tvnwarszawa.pl Artur Węgrzynowicz, który pojechał na…</p>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:90%"></span></span>90% zgodności</span><span>2 źródła · 1 min</span></div>
+        </div>
+      </div>
+    </article><article class="cat" style="--h:12" data-id="1074000472">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Malopolskie/kuracjusza-poskarzyla-sie-na-pobyt-w-sanatorium-zerowaly-na-mnie/" onclick="return openArticleLink(event, 1074000472, '/Polska/Regiony/Malopolskie/kuracjusza-poskarzyla-sie-na-pobyt-w-sanatorium-zerowaly-na-mnie')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
@@ -379,22 +400,6 @@
           <p class="story-lede">Wyjazd do sanatorium miał być okazją do odpoczynku, poprawy zdrowia i poznania nowych ludzi. Dla pani Małgorzaty pobyt w Krynicy-Zdroju okazał się jednak lekcją asertywności.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
-        </div>
-      </div>
-    </article><article class="cat" style="--h:12" data-id="1548509083">
-      <div class="story-card">
-        <a class="card-media-link" href="../../../../Polska/Regiony/Malopolskie/region-nadciagaja-intensywne-opady-sniegu-lokalnie-moze-spasc-nawet-20/" onclick="return openArticleLink(event, 1548509083, '/Polska/Regiony/Malopolskie/region-nadciagaja-intensywne-opady-sniegu-lokalnie-moze-spasc-nawet-20')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Małopolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="../../../../media/topic-weather-winter-2.jpg" alt="Region. Nadciągają intensywne opady śniegu. Lokalnie może spaść nawet 20 cm (80 proc.)" class="story-thumb" loading="lazy" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
-          </div>
-        </a>
-        <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Małopolskie</span><span class="story-date">26.11.2026, 16:01</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Malopolskie/region-nadciagaja-intensywne-opady-sniegu-lokalnie-moze-spasc-nawet-20/" onclick="return openArticleLink(event, 1548509083, '/Polska/Regiony/Malopolskie/region-nadciagaja-intensywne-opady-sniegu-lokalnie-moze-spasc-nawet-20')">Region. Nadciągają intensywne opady śniegu. Lokalnie może spaść nawet 20 cm (80 proc.)</a></h2>
-          <p class="story-lede">Instytut Meteorologii i Gospodarki Wodnej wydał w czwartek rano ostrzeżenie przed intensywnymi opadami śniegu dla powiatów bocheńskiego, brzeskiego i wielickiego.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">4 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Malopolskie</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:98%"></span></span>98% zgodności</span><span>4 źródła · 1 min</span></div>
         </div>
       </div>
     </article></div></section>
@@ -441,8 +446,8 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Malopolskie/miasto-zlozylo-skarge-kasacyjna-od-wyroku-wsa-ws-odwolania-dyrektora";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=ce21a970"></script>
-  <script src="../../../../community.js?v=cace9da1" defer></script>
+  <script src="../../../../app.js?v=fd0891d2"></script>
+  <script src="../../../../community.js?v=7bc8db68" defer></script>
   
   
   

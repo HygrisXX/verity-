@@ -96,15 +96,6 @@
           "@type": "Organization",
           "name": "Business Insider PL"
         }
-      },
-      {
-        "@type": "NewsArticle",
-        "headline": "Historyczna zmiana na czele EBC. Wiadomo, kto ma zastąpić Christine Lagarde",
-        "url": "https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Rzeczpospolita"
-        }
       }
     ]
   },
@@ -157,7 +148,7 @@
         "name": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (5 źródeł)."
+          "text": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (4 źródła)."
         }
       }
     ]
@@ -170,7 +161,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../styles.css?v=1f1c5345" />
+  <link rel="stylesheet" href="../../styles.css?v=3b9991aa" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -182,7 +173,7 @@
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
-        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+        <span class="top-hide-sm">16 województw · 0 clickbaitu · 0 fake news</span>
       </div>
       <div class="top-utility-actions">
         <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
@@ -215,6 +206,7 @@
               id="searchInput"
               type="search"
               class="search-input"
+              placeholder="Szukaj…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -230,17 +222,21 @@
       </div>
 
       <nav class="path-nav" aria-label="Kategorie tematyczne">
-        <a class="path-chip active" data-path="/Polska" href="../../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
-        <a class="path-chip" data-path="/Polska/Gospodarka" href="../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
-        <a class="path-chip" data-path="/Polska/Polityka" href="../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
-        <a class="path-chip" data-path="/Polska/Energetyka" href="../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
-        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
-        <span class="path-divider" aria-hidden="true">|</span>
-        <a class="path-chip" data-path="/Swiat" href="../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
-        <a class="path-chip" data-path="/Sport" href="../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
-        <a class="path-chip" data-path="/kamery" href="../../kamery/" onclick="return fixFileHref(event)">Kamery</a>
-        <a class="path-chip" data-path="/rynki" href="../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
-        <a class="path-chip" data-path="/ranking" href="../../ranking/" onclick="return fixFileHref(event)">Ranking redakcji</a>
+        <div class="nav-sections">
+          <a class="path-chip active" data-path="/Polska" href="../../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+          <a class="path-chip" data-path="/Polska/Gospodarka" href="../../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')">Gospodarka</a>
+          <a class="path-chip" data-path="/Polska/Polityka" href="../../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')">Polityka</a>
+          <a class="path-chip" data-path="/Polska/Energetyka" href="../../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')">Energetyka</a>
+          <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
+          <span class="path-divider" aria-hidden="true">|</span>
+          <a class="path-chip" data-path="/Swiat" href="../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+          <a class="path-chip" data-path="/Sport" href="../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+        </div>
+        <div class="nav-tools" aria-label="Narzędzia i dane">
+          <a class="path-chip" data-path="/rynki" href="../../rynki/" onclick="return fixFileHref(event)"><span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki i pogoda</a>
+          <a class="path-chip" data-path="/kamery" href="../../kamery/" onclick="return fixFileHref(event)"><span class="nav-tool-dot" aria-hidden="true"></span>Kamery</a>
+          <a class="path-chip" data-path="/ranking" href="../../ranking/" onclick="return fixFileHref(event)">Ranking</a>
+        </div>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -274,7 +270,7 @@
     </div>
     </div>
   </header>
-  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.48</span><span class="mkt-chg chg-down">▼ -0.02%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.32%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.36%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.90</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 044</span><span class="mkt-chg chg-up">▲ +1.59%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 183</span><span class="mkt-chg chg-down">▼ -0.25%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 971</span><span class="mkt-chg chg-up">▲ +1.50%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$60 659</span><span class="mkt-chg chg-up">▲ +1.18%</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">❄️</span><span class="tk-lbl">Warszawa</span><span class="tk-val">-2.6°C</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">⛅</span><span class="tk-lbl">Oslo</span><span class="tk-val">-5.2°C</span></span></div><a class="ticker-more" href="../../rynki/" onclick="return fixFileHref(event)">Rynki i mapa pogody →</a></div></div>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.48</span><span class="mkt-chg chg-down">▼ -0.02%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.32%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.36%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.90</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 044</span><span class="mkt-chg chg-up">▲ +1.59%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 183</span><span class="mkt-chg chg-down">▼ -0.25%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 971</span><span class="mkt-chg chg-up">▲ +1.50%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$60 659</span><span class="mkt-chg chg-up">▲ +1.18%</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">❄️</span><span class="tk-lbl">Warszawa</span><span class="tk-val">-2.6°C</span></span><span class="ticker-pill ticker-weather"><span aria-hidden="true">⛅</span><span class="tk-lbl">Oslo</span><span class="tk-val">-5.2°C</span></span></div><a class="ticker-more" href="../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Rynki i pogoda →</span><span class="tk-more-short">Rynki →</span></a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -292,7 +288,7 @@
             </div>
             <h1 class="article-title">Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde</h1>
             <p class="article-lede">Hiszpan Pablo Hernandez de Cos został wskazany wstępnie przez ambasadorów państw strefy euro na kandydata na nowego prezesa Europejskiego Banku Centralnego (EBC) – poinformował w czwartek unijny dyplomata.</p>
-            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Wydarzenia krajowe</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (5 źródeł)</span></div>
+            <div class="impact-strip" aria-label="Kogo dotyczy i jaki ma status"><span class="impact-pill"><strong>Kogo dotyczy:</strong> Obywatele i instytucje w Polsce</span><span class="impact-pill"><strong>Obszar:</strong> Wydarzenia krajowe</span><span class="impact-pill"><strong>Status:</strong> Potwierdzone (4 źródła)</span></div>
             
           </header>
 
@@ -303,22 +299,22 @@
           </div>
           <figcaption class="article-hero-caption">Fot. ilustracyjne: Chris Olszewski (CC BY-SA 4.0, Wikimedia Commons) · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">Licencja CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
         </figure>
-          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">5 redakcji</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Bankier.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (5 źródeł)</div></div></div>
+          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">4 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Bankier.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (4 źródła)</div></div></div>
           
           
           
           
           
-          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(5)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Bankier.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Bankier.pl <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WNP.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WNP.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Puls Biznesu" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Puls Biznesu <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Business Insider PL" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Business Insider PL <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Rzeczpospolita" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Rzeczpospolita <span class="source-chip-count">(3)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Bankier.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Bankier.pl <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WNP.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WNP.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Puls Biznesu" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Puls Biznesu <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Business Insider PL" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Business Insider PL <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section data-sec-idx="0"><h2 class="section-heading" id="sec_1643317357_0">Ustalenia wspólne (5 redakcji)</h2><p class="section-paragraph" data-outlets="Bankier.pl|WNP.pl|Puls Biznesu|Business Insider PL|Rzeczpospolita">Wieczorem ma zostać oficjalnie kandydatem na to stanowisko. Rekomendacja Hernandeza de Cosa musi zostać potwierdzona w procedurze pisemnej. <a class="cite-tag cite-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Bankier.pl">Bankier.pl ↗</a> <a class="cite-tag cite-link" href="https://www.wnp.pl/rynki/znamy-nastepce-lagarde-to-on-ma-zostac-szefem-europejskiego-banku-centralnego,1124035.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WNP.pl">WNP.pl ↗</a> <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a> <a class="cite-tag cite-link" href="https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Business Insider PL">Business Insider PL ↗</a> <a class="cite-tag cite-link" href="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Rzeczpospolita">Rzeczpospolita ↗</a></p><p class="section-paragraph has-dropcap" data-outlets="Bankier.pl|Puls Biznesu">Po jej zakończeniu wieczorem w czwartek sprawa powróci na szczebel przywódców obradujących na szczycie w Brukseli. Obecnie pełni funkcję dyrektora Banku Rozrachunków Międzynarodowych (BIS).W czwartek wskazani zostali wstępnie także dwaj kandydaci do zarządu EBC: Francuzka Laurence Boone i Niemiec Markus Brunnermeier. <a class="cite-tag cite-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Bankier.pl">Bankier.pl ↗</a> <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a></p><p class="section-paragraph" data-outlets="Bankier.pl|Puls Biznesu">Po zatwierdzeniu jego kandydatury w czwartek wieczorem przez przywódców na szczycie, szef Rady Europejskiej Antonio Costa przeprowadzi konsultacje z Parlamentem Europejskim i Radą Prezesów EBC (sześciu członków zarządu Banku i 21 prezesów banków centralnych strefy euro). Rada Europejska podejmie ostateczną decyzję na szczycie 17-18 grudnia w Brukseli. (PAP)mce/ kj/ <a class="cite-tag cite-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Bankier.pl">Bankier.pl ↗</a> <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a></p><p class="section-paragraph" data-outlets="Puls Biznesu|Rzeczpospolita">Jeżeli informacje się potwierdzą, Pablo Hernandez de Cos będzie pierwszy w historii Hiszpanem zajmującym najwyższe stanowisko a po raz pierwszy objęłaby wówczas najważniejsze stanowisko w Europejskim Banku Centralnym. <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a> <a class="cite-tag cite-link" href="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Rzeczpospolita">Rzeczpospolita ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_1643317357_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><blockquote class="section-paragraph source-quote" cite="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" data-outlets="Rzeczpospolita">Były szef Banku Hiszpanii zastąpi Christine Lagarde w lutym. <a class="cite-tag cite-link" href="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Rzeczpospolita">Rzeczpospolita ↗</a></blockquote></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_1643317357_0">Ustalenia wspólne (4 redakcje)</h2><p class="section-paragraph" data-outlets="Bankier.pl|WNP.pl|Puls Biznesu|Business Insider PL">Wieczorem ma zostać oficjalnie kandydatem na to stanowisko. Rekomendacja Hernandeza de Cosa musi zostać potwierdzona w procedurze pisemnej. <a class="cite-tag cite-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Bankier.pl">Bankier.pl ↗</a> <a class="cite-tag cite-link" href="https://www.wnp.pl/rynki/znamy-nastepce-lagarde-to-on-ma-zostac-szefem-europejskiego-banku-centralnego,1124035.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WNP.pl">WNP.pl ↗</a> <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a> <a class="cite-tag cite-link" href="https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Business Insider PL">Business Insider PL ↗</a></p><p class="section-paragraph has-dropcap" data-outlets="Bankier.pl|Puls Biznesu">Po jej zakończeniu wieczorem w czwartek sprawa powróci na szczebel przywódców obradujących na szczycie w Brukseli. Obecnie pełni funkcję dyrektora Banku Rozrachunków Międzynarodowych (BIS).W czwartek wskazani zostali wstępnie także dwaj kandydaci do zarządu EBC: Francuzka Laurence Boone i Niemiec Markus Brunnermeier. <a class="cite-tag cite-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Bankier.pl">Bankier.pl ↗</a> <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a></p><p class="section-paragraph" data-outlets="Bankier.pl|Puls Biznesu">Po zatwierdzeniu jego kandydatury w czwartek wieczorem przez przywódców na szczycie, szef Rady Europejskiej Antonio Costa przeprowadzi konsultacje z Parlamentem Europejskim i Radą Prezesów EBC (sześciu członków zarządu Banku i 21 prezesów banków centralnych strefy euro). Rada Europejska podejmie ostateczną decyzję na szczycie 17-18 grudnia w Brukseli. (PAP)mce/ kj/ <a class="cite-tag cite-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Bankier.pl">Bankier.pl ↗</a> <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_1643317357_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><blockquote class="section-paragraph source-quote" cite="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" data-outlets="Puls Biznesu">Jeżeli informacje się potwierdzą, Pablo Hernandez de Cos będzie pierwszy w historii Hiszpanem zajmującym najwyższe stanowisko a po raz pierwszy objęłaby wówczas najważniejsze stanowisko w Europejskim Banku Centralnym. <a class="cite-tag cite-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Puls Biznesu">Puls Biznesu ↗</a></blockquote></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">5 źródeł · kliknij wybraną, by wyróżnić jej ustalenia</span>
+              <span class="perspectives-sources">4 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
             <div class="perspectives-grid"><div class="perspective-col" data-outlet="Bankier.pl">
           <div class="perspective-head">
@@ -329,7 +325,7 @@
             </div>
           </div>
           <p class="perspective-summary">Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (raport rynkowy).</div><div><strong>Pomija:</strong> Pomija kontekst (najważniejsze, zajmującym, Christine) rozwijany w Puls Biznesu, Rzeczpospolita.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (raport rynkowy).</div><div><strong>Pomija:</strong> Pomija kontekst (Financial, Christine, szefem) rozwijany w Puls Biznesu, WNP.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Bankier.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="WNP.pl">
           <div class="perspective-head">
@@ -351,7 +347,7 @@
             </div>
           </div>
           <p class="perspective-summary">Kulisy wyboru szefa EBC. „Financial Times”: już jest następca Christine Lagarde</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Kulisy, wyboru, Financial.</div><div><strong>Pomija:</strong> Pomija kontekst (Znamy, nazwisko, Historyczna) rozwijany w Bankier.pl, WNP.pl.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Kulisy, wyboru, Financial.</div><div><strong>Pomija:</strong> Pomija kontekst (Znamy, nazwisko, szefem) rozwijany w Bankier.pl, WNP.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Puls Biznesu" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Business Insider PL">
           <div class="perspective-head">
@@ -362,23 +358,12 @@
             </div>
           </div>
           <p class="perspective-summary">Znamy nazwisko nowego szefa Europejskiego Banku Centralnego</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).</div><div><strong>Pomija:</strong> Pomija kontekst (Lagarde, następcy, Międzynarodowych) rozwijany w Bankier.pl, WNP.pl.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).</div><div><strong>Pomija:</strong> Pomija kontekst (następcy, Lagarde, Międzynarodowych) rozwijany w Bankier.pl, WNP.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Business Insider PL" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
-        </div><div class="perspective-col is-collapsed-persp" data-outlet="Rzeczpospolita">
-          <div class="perspective-head">
-            <span class="outlet-mono" aria-hidden="true">RZ</span>
-            <div>
-              <div class="perspective-outlet">Rzeczpospolita</div>
-              <div class="perspective-angle">Relacja uzupełniająca</div>
-            </div>
-          </div>
-          <p class="perspective-summary">Historyczna zmiana na czele EBC. Wiadomo, kto ma zastąpić Christine Lagarde</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Historyczna, zmiana, czele.</div><div><strong>Pomija:</strong> Pomija kontekst (następcy, szefa, Znamy) rozwijany w Bankier.pl, WNP.pl.</div></div>
-          <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
-            <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="5" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (5)</button></div>
+            
           </div>
-          <section class="faq-box" aria-label="Pytania i odpowiedzi"><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde?</summary><div class="faq-a">Wieczorem ma zostać oficjalnie kandydatem na to stanowisko.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Rekomendacja Hernandeza de Cosa musi zostać potwierdzona w procedurze pisemnej.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (5 źródeł).</div></details></section>
+          <section class="faq-box" aria-label="Pytania i odpowiedzi"><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde?</summary><div class="faq-a">Wieczorem ma zostać oficjalnie kandydatem na to stanowisko.</div></details><details class="faq-item"><summary class="faq-q">Jakie dodatkowe szczegóły przekazują relacje źródłowe?</summary><div class="faq-a">Rekomendacja Hernandeza de Cosa musi zostać potwierdzona w procedurze pisemnej.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (4 źródła).</div></details></section>
 
           <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (2):</strong><div>• Dopisano źródło: Biznes Interia (aktualizacja wieloźródłowa) (<a href="https://biznes.interia.pl/gospodarka/news-nowy-prezes-ebc-juz-wiadomo-kto-zastapi-christine-lagarde,nId,23579624" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa) (<a href="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
@@ -405,11 +390,11 @@
         <aside class="article-aside">
           <div class="aside-card">
             <div class="aside-title">Zgodność danych</div>
-            <div class="big-meter meter ok">98%<small>5 źródeł</small></div>
+            <div class="big-meter meter ok">98%<small>4 źródła</small></div>
             <div class="meter-bar wide"><span class="meter-fill" style="width:98%"></span></div>
           </div>
-          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_1643317357_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (5 redakcji)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_1643317357_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
-          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer"><span>Bankier.pl</span><span>↗</span></a></li><li><a href="https://www.wnp.pl/rynki/znamy-nastepce-lagarde-to-on-ma-zostac-szefem-europejskiego-banku-centralnego,1124035.html" target="_blank" rel="noopener noreferrer"><span>WNP.pl</span><span>↗</span></a></li><li><a href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer"><span>Puls Biznesu</span><span>↗</span></a></li><li><a href="https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b" target="_blank" rel="noopener noreferrer"><span>Business Insider PL</span><span>↗</span></a></li><li><a href="https://www.rp.pl/banki/art45550421-historyczna-zmiana-na-czele-ebc-wiadomo-kto-ma-zastapic-christine-lagarde" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li></ul></div>
+          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_1643317357_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (4 redakcje)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_1643317357_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
+          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=Wiadomosci" target="_blank" rel="noopener noreferrer"><span>Bankier.pl</span><span>↗</span></a></li><li><a href="https://www.wnp.pl/rynki/znamy-nastepce-lagarde-to-on-ma-zostac-szefem-europejskiego-banku-centralnego,1124035.html" target="_blank" rel="noopener noreferrer"><span>WNP.pl</span><span>↗</span></a></li><li><a href="https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127" target="_blank" rel="noopener noreferrer"><span>Puls Biznesu</span><span>↗</span></a></li><li><a href="https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b" target="_blank" rel="noopener noreferrer"><span>Business Insider PL</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
       
@@ -489,8 +474,8 @@
   </footer>
 
   <script>window.VERITY_BASE="../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/jest-kandydat-na-nowego-szefa-ebc-znamy-nazwisko-nastepcy-lagarde";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../app.js?v=ce21a970"></script>
-  <script src="../../community.js?v=cace9da1" defer></script>
+  <script src="../../app.js?v=fd0891d2"></script>
+  <script src="../../community.js?v=7bc8db68" defer></script>
   
   
   

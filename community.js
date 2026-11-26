@@ -626,22 +626,26 @@
     }
 
     let toolbar = existingBar;
+    const hostMeta = feed.querySelector('.feed-heading-meta');
     if (!toolbar) {
       toolbar = document.createElement('div');
       toolbar.id = 'communityFeedToolbar';
       toolbar.className = 'comm-feed-toolbar';
+    }
+    if (hostMeta) {
+      if (toolbar.parentElement !== hostMeta) hostMeta.appendChild(toolbar);
+      toolbar.classList.add('is-inline');
+    } else if (toolbar.parentElement !== viewPub) {
+      toolbar.classList.remove('is-inline');
       viewPub.insertBefore(toolbar, feed);
     }
 
     const postCnt = state.posts.length;
+    const splitSuffix = postCnt > 0 ? ` (${postCnt})` : '';
     toolbar.innerHTML = `
-      <div class="comm-feed-meta">
-        <span class="comm-slash-pill">${esc(state.currentPath || '/Polska')}</span>
-        <span class="comm-feed-desc">Porównuj <strong>Syntezę Automatu</strong> z <strong>Aktywnością Ludzi</strong> (${postCnt})</span>
-      </div>
-      <div class="comm-layout-switch" role="group" aria-label="Tryb kolumn">
-        <button type="button" class="comm-mode-btn${state.layoutMode === 'classic' ? ' active' : ''}" onclick="window.VERITY_COMMUNITY.setLayoutMode('classic')">Widok klasyczny</button>
-        <button type="button" id="toggleSplitCommunityBtn" class="comm-mode-btn${state.layoutMode === 'split' ? ' active' : ''}" onclick="window.VERITY_COMMUNITY.setLayoutMode('split')">Widok 2-kolumnowy (${postCnt})</button>
+      <div class="comm-layout-switch" role="group" aria-label="Tryb widoku">
+        <button type="button" class="comm-mode-btn${state.layoutMode === 'classic' ? ' active' : ''}" onclick="window.VERITY_COMMUNITY.setLayoutMode('classic')" title="Tylko zweryfikowane syntezy">Klasyczny</button>
+        <button type="button" id="toggleSplitCommunityBtn" class="comm-mode-btn${state.layoutMode === 'split' ? ' active' : ''}" onclick="window.VERITY_COMMUNITY.setLayoutMode('split')" title="Porównuj syntezę automatu z aktywnością społeczności">2 kolumny${splitSuffix}</button>
       </div>
     `;
 
@@ -910,6 +914,7 @@
       state.currentArticleId = detail.articleId || null;
       state.currentView = detail.view || 'public';
     }
+    mountFeedCommunity();
 
     const q = new URLSearchParams({ path: state.currentPath || '/Polska', room: state.chatRoom });
     if (state.currentArticleId) q.set('article_id', String(state.currentArticleId));

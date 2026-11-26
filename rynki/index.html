@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../styles.css?v=1f1c5345" />
+  <link rel="stylesheet" href="../styles.css?v=3b9991aa" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -51,7 +51,7 @@
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
         <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
         <span class="top-sep top-hide-sm" aria-hidden="true"></span>
-        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+        <span class="top-hide-sm">16 województw · 0 clickbaitu · 0 fake news</span>
       </div>
       <div class="top-utility-actions">
         <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
@@ -84,6 +84,7 @@
               id="searchInput"
               type="search"
               class="search-input"
+              placeholder="Szukaj…"
               oninput="handleSearchInput()"
               aria-label="Wyszukaj artykuły"
             />
@@ -99,17 +100,21 @@
       </div>
 
       <nav class="path-nav" aria-label="Kategorie tematyczne">
-        <a class="path-chip" data-path="/Polska" href="../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
-        <a class="path-chip" data-path="/Polska/Gospodarka" href="../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
-        <a class="path-chip" data-path="/Polska/Polityka" href="../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
-        <a class="path-chip" data-path="/Polska/Energetyka" href="../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
-        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
-        <span class="path-divider" aria-hidden="true">|</span>
-        <a class="path-chip" data-path="/Swiat" href="../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
-        <a class="path-chip" data-path="/Sport" href="../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
-        <a class="path-chip" data-path="/kamery" href="../kamery/" onclick="return fixFileHref(event)">Kamery</a>
-        <a class="path-chip active" data-path="/rynki" href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
-        <a class="path-chip" data-path="/ranking" href="../ranking/" onclick="return fixFileHref(event)">Ranking redakcji</a>
+        <div class="nav-sections">
+          <a class="path-chip" data-path="/Polska" href="../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+          <a class="path-chip" data-path="/Polska/Gospodarka" href="../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')">Gospodarka</a>
+          <a class="path-chip" data-path="/Polska/Polityka" href="../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')">Polityka</a>
+          <a class="path-chip" data-path="/Polska/Energetyka" href="../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')">Energetyka</a>
+          <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
+          <span class="path-divider" aria-hidden="true">|</span>
+          <a class="path-chip" data-path="/Swiat" href="../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+          <a class="path-chip" data-path="/Sport" href="../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+        </div>
+        <div class="nav-tools" aria-label="Narzędzia i dane">
+          <a class="path-chip active" data-path="/rynki" href="../rynki/" onclick="return fixFileHref(event)"><span class="nav-tool-ico" aria-hidden="true">↗</span>Rynki i pogoda</a>
+          <a class="path-chip" data-path="/kamery" href="../kamery/" onclick="return fixFileHref(event)"><span class="nav-tool-dot" aria-hidden="true"></span>Kamery</a>
+          <a class="path-chip" data-path="/ranking" href="../ranking/" onclick="return fixFileHref(event)">Ranking</a>
+        </div>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -310,8 +315,8 @@
   </footer>
 
   <script>window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/rynki";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../app.js?v=ce21a970"></script>
-  <script src="../community.js?v=cace9da1" defer></script>
+  <script src="../app.js?v=fd0891d2"></script>
+  <script src="../community.js?v=7bc8db68" defer></script>
   
   <script src="../markets.js?v=9225b496" defer></script>
   
