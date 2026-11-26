@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/doniesienia-o-przemocy-w-schronisku-dla-nieletnich-w-dominowie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:01:00+01:00</news:publication_date>
+      <news:title>Doniesienia o przemocy w Schronisku dla Nieletnich w Dominowie. Prokuratura prowadzi śledztwo</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s3.tvp.pl/images2/3/c/1/uid_3c1ea5ab46eb417399466e909cdaf67c_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Doniesienia o przemocy w Schronisku dla Nieletnich w Dominowie. Prokuratura prowadzi śledztwo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/miasto-zlozylo-skarge-kasacyjna-od-wyroku-wsa-ws-odwolania-dyrektora/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:59+01:00</news:publication_date>
+      <news:title>Miasto złożyło skargę kasacyjną od wyroku WSA ws. odwołania dyrektora MOCAK-u</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s10.tvp.pl/images2/0/8/0/uid_080baf358ed44f68b4a3d3bed4368cb3_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Miasto złożyło skargę kasacyjną od wyroku WSA ws. odwołania dyrektora MOCAK-u</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/blisko-piec-kilogramow-narkotykow-w-mieszkaniu-na-gornej-dwie-osoby-z/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:58+01:00</news:publication_date>
+      <news:title>Blisko pięć kilogramów narkotyków w mieszkaniu na Górnej. Dwie osoby z zarzutami</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s2.tvp.pl/images2/2/7/a/uid_27a73aa0f7354705869de462e6d7c5b3_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Blisko pięć kilogramów narkotyków w mieszkaniu na Górnej. Dwie osoby z zarzutami</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/356-sprawcow-i-385-ofiar-pedofilii-w-ciagu-20-lat-raport-wloskiego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:55+01:00</news:publication_date>
+      <news:title>356 sprawców i 385 ofiar pedofilii w ciągu 20 lat. Raport włoskiego Episkopatu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.gremicdn.pl/image/free/ce46436bb9e9f3c4a87aa7e0e1f7f31b/?t=crop:4802:2099:nowe:0:1092,resize:fill:600:300,enlarge:1</image:loc>
+      <image:title>356 sprawców i 385 ofiar pedofilii w ciągu 20 lat. Raport włoskiego Episkopatu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/slascy-lowcy-glow-dopadli-25-latka-byl-scigany-dwoma-listami-gonczymi/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:54+01:00</news:publication_date>
+      <news:title>Śląscy „łowcy głów” dopadli 25-latka! Był ścigany dwoma listami gończymi</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://s10.tvp.pl/images2/0/a/d/uid_0ade58d0cd434a6c99e4c1e0d67b03bf_width_900_play_0_pos_0_gs_0_height_506.jpg</image:loc>
+      <image:title>Śląscy „łowcy głów” dopadli 25-latka! Był ścigany dwoma listami gończymi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/elon-musk-rozdaje-akcje-spacex-dzieciom-w-usa-ich-wartosc-to-18-mld/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:52+01:00</news:publication_date>
+      <news:title>Elon Musk rozdaje akcje SpaceX dzieciom w USA. Ich wartość to 18 mld dolarów</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGlj/LmluY2RuLnBsL2RncHN0YXRpYy9kb2N1bWVudHMv/Rk9CMDAwMDAwMDAwMDAwNzcxNjE0Mi9maWxlcy9l/bG9uLW11c2stMzkzMzMzMTUuanBnIiwidyI6Mzg0MH0</image:loc>
+      <image:title>Elon Musk rozdaje akcje SpaceX dzieciom w USA. Ich wartość to 18 mld dolarów</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/samolot-z-teneryfy-awaryjnie-ladowal-na-lotnisku-chopina-zglosil-usterke/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:51+01:00</news:publication_date>
+      <news:title>Samolot z Teneryfy awaryjnie lądował na Lotnisku Chopina. "Zgłosił usterkę"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-lotnisko-chopina-w-warszawie-ph9146531/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Samolot z Teneryfy awaryjnie lądował na Lotnisku Chopina. "Zgłosił usterkę"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/probowal-otworzyc-drzwi-w-trakcie-lotu-maszyna-ladowala-awaryjnie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:50+01:00</news:publication_date>
+      <news:title>Próbował otworzyć drzwi w trakcie lotu. Maszyna lądowała awaryjnie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://tvn24.pl/najnowsze/cdn-zdjecie-samolot-cnn-ph9358029/alternates/LANDSCAPE_1280</image:loc>
+      <image:title>Próbował otworzyć drzwi w trakcie lotu. Maszyna lądowała awaryjnie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/wraca-temat-diecezji-sosnowieckiej-ksiadz-z-prokuratorskimi-zarzutami/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T09:00:50+01:00</news:publication_date>
+      <news:title>Wraca temat diecezji sosnowieckiej. Ksiądz z prokuratorskimi zarzutami (29 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://i.iplsc.com/-/000J0ZH9C17Y7558-C321.webp</image:loc>
+      <image:title>Wraca temat diecezji sosnowieckiej. Ksiądz z prokuratorskimi zarzutami (29 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/lodzkie-dla-bezpieczenstwa-rekordowe-2-5-mln-zl-na-systemy-lacznosci/</loc>
     <news:news>
       <news:publication>
@@ -358,7 +493,7 @@
       <news:title>Intel Core Ultra 4000 – poznaliśmy specyfikację procesorów z rodziny Nova Lake-S. Duża pamięć LLC i obsługa sz</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/639416483.png</image:loc>
+      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/69aef915-0535-4c52-9329-9c412f253e50</image:loc>
       <image:title>Intel Core Ultra 4000 – poznaliśmy specyfikację procesorów z rodziny Nova Lake-S. Duża pamięć LLC i obsługa sz</image:title>
     </image:image>
   </url>
@@ -933,21 +1068,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/slisko-na-drogach-i-chodnikach-alerty-imgw-dla-czesci-kraju/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T19:55:35+01:00</news:publication_date>
-      <news:title>Ślisko na drogach i chodnikach. Alerty IMGW dla części kraju</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://i.wpimg.pl/308x/filerepo.grupawp.pl/api/v1/display/embed/2adf6436-8181-4c79-9c4a-a1a40752d0f6</image:loc>
-      <image:title>Ślisko na drogach i chodnikach. Alerty IMGW dla części kraju</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/gibala-podjal-decyzje-chce-pisemnej-gwarancji-od-rzadu-40-mln-zl/</loc>
     <news:news>
       <news:publication>
@@ -1080,21 +1200,6 @@
     <image:image>
       <image:loc>https://webp-konwerter.incdn.pl/eyJmIjoiaHR0cHM6Ly9pbmZvci13ZWItc3RhdGljLmluY2R/uLnBsL2RncHN0YXRpYy9kb2N1bWVudHMvRk9CMDAwMDAwMD/AwMDAwNzcwOTE2OC9maWxlcy9rZS1icnVrc2VsYS1rb21pc/2phLWV1cm9wZWpza2EtMzkzMTk2NjQuanBnIiwidyI6Mzg0MH0</image:loc>
       <image:title>Nowe cła USA na towary z UE. Bruksela przypomina o limicie 15 proc.</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/dramat-na-krakowskim-przedmiesciu-mezczyzna-stanal-w-plomieniach/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T18:50:03+01:00</news:publication_date>
-      <news:title>Dramat na Krakowskim Przedmieściu. Mężczyzna stanął w płomieniach. Ruszyła pomoc</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://warszawawpigulce.pl/wp-content/uploads/2026/11/Radiowoz-policja-tasma33.webp</image:loc>
-      <image:title>Dramat na Krakowskim Przedmieściu. Mężczyzna stanął w płomieniach. Ruszyła pomoc</image:title>
     </image:image>
   </url>
   <url>
@@ -1873,7 +1978,7 @@
       <news:title>Powiat przejmie organizację transportu konnego do Morskiego Oka? "Czujemy się oszukani" – mówią fiakrzy i samo</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/621075476.png</image:loc>
+      <image:loc>https://i.iplsc.com/-/000N5TU83STQ92JI-C321.webp</image:loc>
       <image:title>Powiat przejmie organizację transportu konnego do Morskiego Oka? "Czujemy się oszukani" – mówią fiakrzy i samo</image:title>
     </image:image>
   </url>
@@ -2260,11 +2365,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-25T01:02:37+01:00</news:publication_date>
-      <news:title>Sondaż CBOS: Ponad połowa badanych dobrze ocenia prezydenta Karola Nawrockiego, Sejm i Senat z przewagą ocen n</news:title>
+      <news:title>Sondaż zaufania IBRiS: Karol Nawrocki traci pierwsze miejsce po raz pierwszy od sierpnia 2025 roku</news:title>
     </news:news>
     <image:image>
       <image:loc>https://zachod.pl/wp-content/uploads/2026/11/1604c135f0bcbc7ded2a280046c307c5_xl-150x150.jpg</image:loc>
-      <image:title>Sondaż CBOS: Ponad połowa badanych dobrze ocenia prezydenta Karola Nawrockiego, Sejm i Senat z przewagą ocen n</image:title>
+      <image:title>Sondaż zaufania IBRiS: Karol Nawrocki traci pierwsze miejsce po raz pierwszy od sierpnia 2025 roku</image:title>
     </image:image>
   </url>
   <url>
