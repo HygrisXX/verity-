@@ -94,6 +94,42 @@
           "@type": "Organization",
           "name": "Wyborcza.pl"
         }
+      },
+      {
+        "@type": "NewsArticle",
+        "headline": "Karol Nawrocki przegrywa z Radosławem Sikorskim. Jest nowy ranking zaufania",
+        "url": "https://www.rp.pl/polityka/art45545081-karol-nawrocki-przegrywa-z-radoslawem-sikorskim-jest-nowy-ranking-zaufania",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Rzeczpospolita"
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "headline": "Spadek Nawrockiego w rankingu zaufania. Pierwszy taki wynik od ponad roku",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Polsat News"
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "headline": "Nowy ranking zaufania. Zmiana na pierwszym miejscu",
+        "url": "https://tvn24.pl/polska/ranking-zaufania-do-politykow-ibris-dla-onetu-listopad-2026-zmiana-na-pierwszym-miejscu-st9358061?source=rss",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TVN24"
+        }
+      },
+      {
+        "@type": "NewsArticle",
+        "headline": "Sikorski wyprzedził prezydenta. Nowy sondaż zaufania",
+        "url": "https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a",
+        "publisher": {
+          "@type": "Organization",
+          "name": "WP Wiadomości"
+        }
       }
     ]
   },
@@ -187,7 +223,7 @@
           Konto
         </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">2</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">1</span>
         </button>
       </div>
     </div>
@@ -292,19 +328,19 @@
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
             <img src="https://zachod.pl/wp-content/uploads/2026/11/1604c135f0bcbc7ded2a280046c307c5_xl-150x150.jpg" alt="Sondaż CBOS: Ponad połowa badanych dobrze ocenia prezydenta Karola Nawrockiego, Sejm i Senat z przewagą ocen negatywnych" class="article-hero-img" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.remove()" />
           </div>
-          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">4 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Polityka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Radio Zachód</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (4 źródła)</div></div></div>
+          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">8 redakcji</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Polityka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Radio Zachód</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (8 źródeł)</div></div></div>
           
           
-          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Radio Zachód" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Radio Zachód <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Gazeta.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Gazeta.pl <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Dziennik.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Dziennik.pl <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Wyborcza.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wyborcza.pl <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(6)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Radio Zachód" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Radio Zachód <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Gazeta.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Gazeta.pl <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Dziennik.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Dziennik.pl <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Wyborcza.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wyborcza.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Rzeczpospolita" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Rzeczpospolita <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Polsat News" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Polsat News <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="TVN24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">TVN24 <span class="source-chip-count">(2)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WP Wiadomości" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WP Wiadomości <span class="source-chip-count">(3)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section data-sec-idx="0"><h2 class="section-heading" id="sec_848959455_0">Ustalenia wspólne (4 redakcje)</h2><p class="section-paragraph has-dropcap" data-outlets="Radio Zachód|Gazeta.pl|Dziennik.pl">Pracę Sejmu pozytywnie ocenia 29 proc. respondentów, a negatywnie 55 proc. Senat dobrze ocenia 33 proc. ankietowanych, źle – 43 proc. CBOS zauważył, że listopadowy pomiar potwierdza utrzymujący się od kilku miesięcy układ ocen parlamentu i prezydenta. <a class="cite-tag cite-link" href="https://zachod.pl/1595702/sondaz-cbos-ponad-polowa-badanych-dobrze-ocenia-prezydenta-karola-nawrockiego-sejm-i-senat-z-przewaga-ocen-negatywnych/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Radio Zachód">Radio Zachód ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Gazeta.pl">Gazeta.pl ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Dziennik.pl">Dziennik.pl ↗</a></p><p class="section-paragraph" data-outlets="Radio Zachód|Gazeta.pl|Dziennik.pl">Wszystkie zmiany, które obserwujemy obecnie, mieszczą się w granicach błędu statystycznego Działalność prezydenta Karola Nawrockiego pozytywnie oceniło 52 proc. badanych (wzrost o 1 pkt proc. względem październikowego badania). Zdania na ten temat nie miało 10 proc. respondentów (bez zmian). Działalność Sejmu dobrze oceniło 29 proc. ankietowanych (bez zmian). <a class="cite-tag cite-link" href="https://zachod.pl/1595702/sondaz-cbos-ponad-polowa-badanych-dobrze-ocenia-prezydenta-karola-nawrockiego-sejm-i-senat-z-przewaga-ocen-negatywnych/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Radio Zachód">Radio Zachód ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Gazeta.pl">Gazeta.pl ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Dziennik.pl">Dziennik.pl ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_848959455_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Gazeta.pl">Odpowiedź &quot;trudno powiedzieć&quot; wskazało 15 proc. respondentów (spadek o 1 pkt proc.). Badanie CBOS przeprowadzono w ramach procedury mixed-mode na reprezentatywnej imiennej próbie pełnoletnich mieszkańców Polski, wylosowanej z rejestru PESEL. Sondaż zrealizowano w dniach 5-15 listopada na próbie liczącej 963 osoby (w tym: 59,1 proc. metodą CAPI, 23,3 proc. <a class="cite-tag cite-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Gazeta.pl">Gazeta.pl ↗</a></p><p class="section-paragraph" data-outlets="Wyborcza.pl">Premier Donald Tusk i paru jego ministrów w dół. Prezes Jarosław Kaczyński i paru jego kolegów na prawicy w górę. Ale obaj mają powód do zmartwienia. <a class="cite-tag cite-link" href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Wyborcza.pl">Wyborcza.pl ↗</a></p></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_848959455_0">Ustalenia wspólne (8 redakcji)</h2><p class="section-paragraph has-dropcap" data-outlets="Radio Zachód|Gazeta.pl|Dziennik.pl|Polsat News|TVN24|WP Wiadomości">Pracę Sejmu pozytywnie ocenia 29 proc. respondentów, a negatywnie 55 proc. Senat dobrze ocenia 33 proc. ankietowanych, źle – 43 proc. CBOS zauważył, że listopadowy pomiar potwierdza utrzymujący się od kilku miesięcy układ ocen parlamentu i prezydenta. <a class="cite-tag cite-link" href="https://zachod.pl/1595702/sondaz-cbos-ponad-polowa-badanych-dobrze-ocenia-prezydenta-karola-nawrockiego-sejm-i-senat-z-przewaga-ocen-negatywnych/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Radio Zachód">Radio Zachód ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Gazeta.pl">Gazeta.pl ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Dziennik.pl">Dziennik.pl ↗</a> <a class="cite-tag cite-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Polsat News">Polsat News ↗</a> <a class="cite-tag cite-link" href="https://tvn24.pl/polska/ranking-zaufania-do-politykow-ibris-dla-onetu-listopad-2026-zmiana-na-pierwszym-miejscu-st9358061?source=rss" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVN24">TVN24 ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a></p><p class="section-paragraph" data-outlets="Radio Zachód|Gazeta.pl|Dziennik.pl|Polsat News|TVN24">Wszystkie zmiany, które obserwujemy obecnie, mieszczą się w granicach błędu statystycznego Działalność prezydenta Karola Nawrockiego pozytywnie oceniło 52 proc. badanych (wzrost o 1 pkt proc. względem październikowego badania). Zdania na ten temat nie miało 10 proc. respondentów (bez zmian). Działalność Sejmu dobrze oceniło 29 proc. ankietowanych (bez zmian). <a class="cite-tag cite-link" href="https://zachod.pl/1595702/sondaz-cbos-ponad-polowa-badanych-dobrze-ocenia-prezydenta-karola-nawrockiego-sejm-i-senat-z-przewaga-ocen-negatywnych/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Radio Zachód">Radio Zachód ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Gazeta.pl">Gazeta.pl ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Dziennik.pl">Dziennik.pl ↗</a> <a class="cite-tag cite-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Polsat News">Polsat News ↗</a> <a class="cite-tag cite-link" href="https://tvn24.pl/polska/ranking-zaufania-do-politykow-ibris-dla-onetu-listopad-2026-zmiana-na-pierwszym-miejscu-st9358061?source=rss" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: TVN24">TVN24 ↗</a></p><p class="section-paragraph" data-outlets="Rzeczpospolita|Polsat News|WP Wiadomości">Pierwszy w zestawieniu jest wicepremier i minister spraw zagranicznych Radosław Sikorski. Największy wzrost zaufania w listopadowym badaniu zanotował jednak współprzewodniczący Konfederacji Krzysztof Bosak. <a class="cite-tag cite-link" href="https://www.rp.pl/polityka/art45545081-karol-nawrocki-przegrywa-z-radoslawem-sikorskim-jest-nowy-ranking-zaufania" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Rzeczpospolita">Rzeczpospolita ↗</a> <a class="cite-tag cite-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Polsat News">Polsat News ↗</a> <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_848959455_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="Gazeta.pl">Odpowiedź &quot;trudno powiedzieć&quot; wskazało 15 proc. respondentów (spadek o 1 pkt proc.). Badanie CBOS przeprowadzono w ramach procedury mixed-mode na reprezentatywnej imiennej próbie pełnoletnich mieszkańców Polski, wylosowanej z rejestru PESEL. Sondaż zrealizowano w dniach 5-15 listopada na próbie liczącej 963 osoby (w tym: 59,1 proc. metodą CAPI, 23,3 proc. <a class="cite-tag cite-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Gazeta.pl">Gazeta.pl ↗</a></p><p class="section-paragraph" data-outlets="Wyborcza.pl">Premier Donald Tusk i paru jego ministrów w dół. Prezes Jarosław Kaczyński i paru jego kolegów na prawicy w górę. Ale obaj mają powód do zmartwienia. <a class="cite-tag cite-link" href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Wyborcza.pl">Wyborcza.pl ↗</a></p><p class="section-paragraph" data-outlets="WP Wiadomości">Szef MSZ cieszy się poparciem 45 proc. badanych i notuje mniejszy elektorat negatywny niż głowa państwa. <a class="cite-tag cite-link" href="https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WP Wiadomości">WP Wiadomości ↗</a></p></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">4 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
+              <span class="perspectives-sources">8 źródeł · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
             <div class="perspectives-grid"><div class="perspective-col" data-outlet="Radio Zachód">
           <div class="perspective-head">
@@ -326,7 +362,7 @@
             </div>
           </div>
           <p class="perspective-summary">Duża różnica w ocenach prezydenta i Sejmu. Nowy sondaż CBOS</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (15 proc., 963 osoby) oraz wątki: Duża, różnica.</div><div><strong>Pomija:</strong> Pomija kontekst (zmartwienia, ministrów, Kaczyński) rozwijany w Wyborcza.pl.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (15 proc., 963 osoby) oraz wątki: Duża, różnica.</div><div><strong>Pomija:</strong> Pomija wyliczenia (45 proc.) przytaczane przez WP Wiadomości.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Gazeta.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Dziennik.pl">
           <div class="perspective-head">
@@ -348,14 +384,58 @@
             </div>
           </div>
           <p class="perspective-summary">Sondaż zaufania CBOS: Nawrocki bez zmian, rząd Tuska w dół</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: zaufania, rząd, Tuska.</div><div><strong>Pomija:</strong> Pomija wyliczenia (52 proc., 38 proc.) przytaczane przez Radio Zachód, Gazeta.pl.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: rząd, Tuska, Premier.</div><div><strong>Pomija:</strong> Pomija wyliczenia (52 proc., 38 proc.) przytaczane przez Radio Zachód, Gazeta.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Wyborcza.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col is-collapsed-persp" data-outlet="Rzeczpospolita">
+          <div class="perspective-head">
+            <span class="outlet-mono" aria-hidden="true">RZ</span>
+            <div>
+              <div class="perspective-outlet">Rzeczpospolita</div>
+              <div class="perspective-angle">Relacja uzupełniająca</div>
+            </div>
+          </div>
+          <p class="perspective-summary">Karol Nawrocki przegrywa z Radosławem Sikorskim. Jest nowy ranking zaufania</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Karol, przegrywa.</div><div><strong>Pomija:</strong> Pomija wyliczenia (52 proc., 38 proc.) przytaczane przez Radio Zachód, Gazeta.pl.</div></div>
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.rp.pl/polityka/art45545081-karol-nawrocki-przegrywa-z-radoslawem-sikorskim-jest-nowy-ranking-zaufania" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Rzeczpospolita" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col is-collapsed-persp" data-outlet="Polsat News">
+          <div class="perspective-head">
+            <span class="outlet-mono" aria-hidden="true">PN</span>
+            <div>
+              <div class="perspective-outlet">Polsat News</div>
+              <div class="perspective-angle">Relacja uzupełniająca</div>
+            </div>
+          </div>
+          <p class="perspective-summary">Spadek Nawrockiego w rankingu zaufania. Pierwszy taki wynik od ponad roku</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (52 proc., 10 proc.) w ujęciu: relacja uzupełniająca.</div><div><strong>Pomija:</strong> Pomija wyliczenia (59,1 proc., 23,3 proc.) przytaczane przez Gazeta.pl.</div></div>
+          <div class="perspective-actions"><a class="perspective-link" href="https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Polsat News" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col is-collapsed-persp" data-outlet="TVN24">
+          <div class="perspective-head">
+            <span class="outlet-mono" aria-hidden="true">TV</span>
+            <div>
+              <div class="perspective-outlet">TVN24</div>
+              <div class="perspective-angle">Relacja uzupełniająca</div>
+            </div>
+          </div>
+          <p class="perspective-summary">Nowy ranking zaufania. Zmiana na pierwszym miejscu</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Podkreśla konkretne liczby (52 proc., 38 proc.) w ujęciu: relacja uzupełniająca.</div><div><strong>Pomija:</strong> Pomija wyliczenia (59,1 proc., 23,3 proc.) przytaczane przez Gazeta.pl.</div></div>
+          <div class="perspective-actions"><a class="perspective-link" href="https://tvn24.pl/polska/ranking-zaufania-do-politykow-ibris-dla-onetu-listopad-2026-zmiana-na-pierwszym-miejscu-st9358061?source=rss" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVN24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
+        </div><div class="perspective-col is-collapsed-persp" data-outlet="WP Wiadomości">
+          <div class="perspective-head">
+            <span class="outlet-mono" aria-hidden="true">WW</span>
+            <div>
+              <div class="perspective-outlet">WP Wiadomości</div>
+              <div class="perspective-angle">Relacja uzupełniająca</div>
+            </div>
+          </div>
+          <p class="perspective-summary">Sikorski wyprzedził prezydenta. Nowy sondaż zaufania</p>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (45 proc.) oraz wątki: wyprzedził, nowym.</div><div><strong>Pomija:</strong> Pomija wyliczenia (10 proc., 59,1 proc.) przytaczane przez Radio Zachód, Gazeta.pl.</div></div>
+          <div class="perspective-actions"><a class="perspective-link" href="https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WP Wiadomości" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
-            
+            <div class="perspectives-more-wrap"><button type="button" class="perspectives-expand-btn" aria-expanded="false" data-total="8" onclick="toggleAllPerspectives(this)">Pokaż wszystkie ujęcia (8)</button></div>
           </div>
           <section class="faq-box" aria-label="Pytania i odpowiedzi"><details class="faq-item" open><summary class="faq-q">Co wiadomo w sprawie: Sondaż CBOS: Ponad połowa badanych dobrze ocenia prezydenta Karola?</summary><div class="faq-a">Pracę Sejmu pozytywnie ocenia 29 proc. respondentów, a negatywnie 55 proc.</div></details><details class="faq-item"><summary class="faq-q">Jakie konkretne liczby, terminy lub dane podają źródła?</summary><div class="faq-a">Senat dobrze ocenia 33 proc. ankietowanych, źle – 43 proc.</div></details><details class="faq-item"><summary class="faq-q">Kogo dotyczy i w jakim obszarze wywołuje skutki?</summary><div class="faq-a">Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Prace legislacyjne / Głosowanie.</div></details></section>
 
-          <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (2):</strong><div>• Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Wyborcza.pl (aktualizacja wieloźródłowa) (<a href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
+          <div class="callout callout-success"><strong>Zweryfikowane uzupełnienia czytelników (5):</strong><div>• Dopisano źródło: Wyborcza.pl (aktualizacja wieloźródłowa) (<a href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa) (<a href="https://www.rp.pl/polityka/art45545081-karol-nawrocki-przegrywa-z-radoslawem-sikorskim-jest-nowy-ranking-zaufania" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: Polsat News (aktualizacja wieloźródłowa) (<a href="https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: TVN24 (aktualizacja wieloźródłowa) (<a href="https://tvn24.pl/polska/ranking-zaufania-do-politykow-ibris-dla-onetu-listopad-2026-zmiana-na-pierwszym-miejscu-st9358061?source=rss" target="_blank" rel="noopener noreferrer">link</a>)</div><div>• Dopisano źródło: WP Wiadomości (aktualizacja wieloźródłowa) (<a href="https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a" target="_blank" rel="noopener noreferrer">link</a>)</div></div>
 
           <div class="article-footer">
             <div class="permalink-wrap">
@@ -380,15 +460,31 @@
         <aside class="article-aside">
           <div class="aside-card">
             <div class="aside-title">Zgodność danych</div>
-            <div class="big-meter meter ok">98%<small>4 źródła</small></div>
+            <div class="big-meter meter ok">98%<small>8 źródeł</small></div>
             <div class="meter-bar wide"><span class="meter-fill" style="width:98%"></span></div>
           </div>
-          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_848959455_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (4 redakcje)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_848959455_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
-          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://zachod.pl/1595702/sondaz-cbos-ponad-polowa-badanych-dobrze-ocenia-prezydenta-karola-nawrockiego-sejm-i-senat-z-przewaga-ocen-negatywnych/" target="_blank" rel="noopener noreferrer"><span>Radio Zachód</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer"><span>Dziennik.pl</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li></ul></div>
+          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_848959455_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (8 redakcji)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_848959455_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
+          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://zachod.pl/1595702/sondaz-cbos-ponad-polowa-badanych-dobrze-ocenia-prezydenta-karola-nawrockiego-sejm-i-senat-z-przewaga-ocen-negatywnych/" target="_blank" rel="noopener noreferrer"><span>Radio Zachód</span><span>↗</span></a></li><li><a href="https://wiadomosci.gazeta.pl/polityka/7,198012,33148960,duza-roznica-w-ocenach-prezydenta-i-sejmu-nowy-sondaz-cbos.html?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=10199882" target="_blank" rel="noopener noreferrer"><span>Gazeta.pl</span><span>↗</span></a></li><li><a href="https://wiadomosci.dziennik.pl/polityka/artykuly/11406216,najnowszy-sondaz-pokazuje-co-polacy-mysla-o-karolu-nawrockim-potwierdza-sie-wyrazny-trend.html" target="_blank" rel="noopener noreferrer"><span>Dziennik.pl</span><span>↗</span></a></li><li><a href="https://wyborcza.pl/7,75398,33150691,sondaz-zaufania-cbos-nawrocki-bez-zmian-rzad-tuska-w-dol.html" target="_blank" rel="noopener noreferrer"><span>Wyborcza.pl</span><span>↗</span></a></li><li><a href="https://www.rp.pl/polityka/art45545081-karol-nawrocki-przegrywa-z-radoslawem-sikorskim-jest-nowy-ranking-zaufania" target="_blank" rel="noopener noreferrer"><span>Rzeczpospolita</span><span>↗</span></a></li><li><a href="https://www.polsatnews.pl/wiadomosc/2026-11-26/nawrocki-drugi-w-rankingu-zaufania-pierwszy-raz-od-ponad-roku/" target="_blank" rel="noopener noreferrer"><span>Polsat News</span><span>↗</span></a></li><li><a href="https://tvn24.pl/polska/ranking-zaufania-do-politykow-ibris-dla-onetu-listopad-2026-zmiana-na-pierwszym-miejscu-st9358061?source=rss" target="_blank" rel="noopener noreferrer"><span>TVN24</span><span>↗</span></a></li><li><a href="https://wiadomosci.wp.pl/sikorski-wyprzedzil-prezydenta-nowy-sondaz-zaufania-7355069668005984a" target="_blank" rel="noopener noreferrer"><span>WP Wiadomości</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
       
-      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:215" data-id="662184526">
+      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:215" data-id="2054790297">
+      <div class="story-card">
+        <a class="card-media-link" href="../../../Polska/Polityka/senatorowie-przeciw-zmianom-karta-rodziny-mundurowej-nie-obejmie/" onclick="return openArticleLink(event, 2054790297, '/Polska/Polityka/senatorowie-przeciw-zmianom-karta-rodziny-mundurowej-nie-obejmie')" tabindex="-1" aria-hidden="true">
+          <div class="story-thumb-wrap">
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
+            <img src="https://cdn.defence24.pl/2026/11/25/320x240px/qsl6XAzGQ19y8Q5YWjrvpYJnZ2h2WVjXbU08qzWj.gjmv.jpg" alt="Senatorowie przeciw zmianom. Karta Rodziny Mundurowej nie obejmie wszystkich funkcjonariuszy?" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+          </div>
+        </a>
+        <div class="story-body">
+          <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">26.11.2026, 07:10</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Polityka/senatorowie-przeciw-zmianom-karta-rodziny-mundurowej-nie-obejmie/" onclick="return openArticleLink(event, 2054790297, '/Polska/Polityka/senatorowie-przeciw-zmianom-karta-rodziny-mundurowej-nie-obejmie')">Senatorowie przeciw zmianom. Karta Rodziny Mundurowej nie obejmie wszystkich funkcjonariuszy?</a></h2>
+          <p class="story-lede">Wtorkowe posiedzenie komisji poprzedziła konferencja prasowa Międzyzwiązkowego Komitetu Protestacyjnego Służby Więziennej przed Sejmem.</p>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:86%"></span></span>86% zgodności</span><span>2 źródła · 1 min</span></div>
+        </div>
+      </div>
+    </article><article class="cat" style="--h:215" data-id="662184526">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Polityka/ruch-rzadu-w-sprawie-tk-minister-w-tym-duchu-podjeto-uchwale/" onclick="return openArticleLink(event, 662184526, '/Polska/Polityka/ruch-rzadu-w-sprawie-tk-minister-w-tym-duchu-podjeto-uchwale')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
@@ -402,22 +498,6 @@
           <p class="story-lede">Rada Ministrów podjęła uchwałę, w której oceniła, że funkcjonowanie Trybunału Konstytucyjnego jest zagrożone w sferze wydatków budżetowych z powodu wstrzymania przez NBP zleceń płatniczych…</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:94%"></span></span>94% zgodności</span><span>3 źródła · 1 min</span></div>
-        </div>
-      </div>
-    </article><article class="cat" style="--h:215" data-id="671955166">
-      <div class="story-card">
-        <a class="card-media-link" href="../../../Polska/Polityka/kiedy-decyzja-w-sprawie-bazy-usa-w-polsce-wiceminister-wskazal-termin/" onclick="return openArticleLink(event, 671955166, '/Polska/Polityka/kiedy-decyzja-w-sprawie-bazy-usa-w-polsce-wiceminister-wskazal-termin')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Polityka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ipla.pluscdn.pl/dituel/cp/44/44rjibp73o6weah3spxju1mh13uqggcy.jpg" alt="Kiedy decyzja w sprawie bazy USA w Polsce? Wiceminister wskazał termin" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
-          </div>
-        </a>
-        <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Polityka</span><span class="story-date">25.11.2026, 23:48</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../Polska/Polityka/kiedy-decyzja-w-sprawie-bazy-usa-w-polsce-wiceminister-wskazal-termin/" onclick="return openArticleLink(event, 671955166, '/Polska/Polityka/kiedy-decyzja-w-sprawie-bazy-usa-w-polsce-wiceminister-wskazal-termin')">Kiedy decyzja w sprawie bazy USA w Polsce? Wiceminister wskazał termin</a></h2>
-          <p class="story-lede">— Czekamy na analizę Białego Domu, nie spodziewamy się, że będzie szybka – powiedział wiceminister obrony narodowej Paweł Zalewski.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">3 redakcje</span><span class="chip" title="Kategoria">/Polska/Polityka</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:96%"></span></span>96% zgodności</span><span>3 źródła · 1 min</span></div>
         </div>
       </div>
     </article></div></section>
