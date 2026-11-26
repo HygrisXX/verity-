@@ -54,7 +54,7 @@ _CLICKBAIT_GUARD_RE = re.compile(
 
 _NUM_UNIT_RE = re.compile(
     r"(?<![\d.,:/-])(?:"
-    r"\d+(?:[.,]\d+)?\s*(?:proc\.?|%|mld\s*zł|mln\s*zł|tys\.\s*zł|mld|mln|tys\.|zł/MWh|zł|EUR|USD|euro|lat|lata|za|przeciw|osób|osoby|posłów|MW|GW|km)"
+    r"\d+(?:[.,]\d+)?\s*(?:%|(?:proc\.?|mld\s*zł|mln\s*zł|tys\.\s*zł|mld|mln|tys\.|zł/MWh|zł|EUR|USD|euro|lat|lata|za|przeciw|osób|osoby|posłów|zastępów|zastępy|MW|GW|km)(?![A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]))"
     r"|20[2-4]\d"
     r")(?!\d|[:.,]\d)",
     re.IGNORECASE,
@@ -251,6 +251,75 @@ def compute_comparative_perspectives(
         p["omits"] = omits_txt
 
     return persps
+
+
+_DISCREPANCY_UNIT_CANON = {
+    "zastępów": "zastępów",
+    "zastępy": "zastępów",
+    "osób": "osób",
+    "osoby": "osób",
+    "posłów": "posłów",
+    "mln zł": "mln zł",
+    "mld zł": "mld zł",
+    "tys. zł": "tys. zł",
+    "mw": "MW",
+    "gw": "GW",
+    "km": "km",
+}
+
+
+def detect_numeric_discrepancies(art: dict, candidates: list | None = None) -> list:
+    """
+    Wykrywa rozbieżności liczbowe między redakcjami dla tej samej konkretnej jednostki
+    (np. jedna redakcja podaje '10 zastępów', druga '12 zastępów').
+    """
+    corpus_by_outlet = _outlet_source_corpus(art, candidates)
+    if len(corpus_by_outlet) < 2:
+        return []
+
+    unit_to_outlet_val = {}
+    for outlet, text in corpus_by_outlet.items():
+        if not outlet or not text:
+            continue
+        per_unit = {}
+        for fig in _extract_concrete_figures(text):
+            m = re.match(r"^(\d+(?:[.,]\d+)?)\s*(.+)$", fig.strip())
+            if not m:
+                continue
+            num_raw, unit_raw = m.group(1), re.sub(r"\s+", " ", m.group(2).strip()).lower()
+            canon_unit = _DISCREPANCY_UNIT_CANON.get(unit_raw)
+            if not canon_unit:
+                continue
+            per_unit.setdefault(canon_unit, set()).add((num_raw.replace(",", "."), fig.strip()))
+        # Porównuj tylko jednoznaczne wskazania (gdy dana redakcja podaje jedną wartość dla jednostki)
+        for u, vals in per_unit.items():
+            nums_only = {v[0] for v in vals}
+            if len(nums_only) == 1:
+                num_norm, disp = next(iter(vals))
+                unit_to_outlet_val.setdefault(u, []).append((outlet, num_norm, disp))
+
+    discrepancies = []
+    for unit, entries in unit_to_outlet_val.items():
+        distinct_nums = {e[1] for e in entries}
+        if len(distinct_nums) < 2:
+            continue
+        # Wybierz po jednym reprezentancie dla każdej odmiennej wartości (maks. 3)
+        by_num = {}
+        for outlet, num_norm, disp in entries:
+            by_num.setdefault(num_norm, (outlet, disp))
+        picked = list(by_num.values())[:3]
+        vals_out = [{"outlet": o, "value": d} for o, d in picked]
+        if len(vals_out) >= 2:
+            summary = (
+                f"Rozbieżność danych ({unit}): {vals_out[0]['outlet']} podaje {vals_out[0]['value']}, "
+                f"natomiast {vals_out[1]['outlet']}: {vals_out[1]['value']}."
+            )
+            discrepancies.append({
+                "unit": unit,
+                "values": vals_out,
+                "summary": summary,
+            })
+    return discrepancies[:3]
 
 
 def enrich_seo_title_deterministic(
@@ -1069,6 +1138,7 @@ def enhance_article_narrative_and_seo(
     art["perspectives"] = compute_comparative_perspectives(
         art, candidates=ranked_group, perspectives=art.get("perspectives") or []
     )
+    art["discrepancies"] = detect_numeric_discrepancies(art, candidates=ranked_group)
     if not (art.get("ai_synthesized") and art.get("seo_faq")):
         art["seo_faq"] = generate_seo_faq_deterministic(art, art.get("full_sections") or [], impact=impact)
 

@@ -18,8 +18,10 @@
   <meta property="og:title" content="Opolskie — VERITY" />
   <meta property="og:description" content="Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa." />
   <meta property="og:url" content="https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/" />
-  <meta property="og:image" content="https://d-pt.ppstatic.pl/kadry/k/r/1/88/02/63bab9bf60fb0_o,size,640x400,q,71,h,fcb617.jpg" />
-  <meta name="twitter:image" content="https://d-pt.ppstatic.pl/kadry/k/r/1/88/02/63bab9bf60fb0_o,size,640x400,q,71,h,fcb617.jpg" />
+  <meta property="og:image" content="https://hygrisxx.github.io/verity-/og/39850301.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://hygrisxx.github.io/verity-/og/39850301.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Opolskie — VERITY" />
   <meta name="twitter:description" content="Wiadomości z całej Opolszczyzny: Opole, Kędzierzyn-Koźle, Nysa, Brzeg, Kluczbork i powiaty województwa." />
@@ -90,7 +92,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=a0b8a7ec" />
+  <link rel="stylesheet" href="../../../styles.css?v=3a7126da" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -159,6 +161,7 @@
         <a class="path-chip" data-path="/Swiat" href="../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
         <a class="path-chip" data-path="/kamery" href="../../../kamery/" onclick="return fixFileHref(event)">Kamery</a>
+        <a class="path-chip" data-path="/rynki" href="../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -192,6 +195,7 @@
     </div>
     </div>
   </header>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-item"><strong>EUR/PLN</strong> 4.48 <span class="mkt-chg chg-down">-0.02%</span></span><span class="ticker-item"><strong>USD/PLN</strong> 4.08 <span class="mkt-chg chg-down">-0.32%</span></span><span class="ticker-item"><strong>CHF/PLN</strong> 4.90 <span class="mkt-chg chg-down">-0.20%</span></span><span class="ticker-item"><strong>NOK/PLN</strong> 0.42 <span class="mkt-chg chg-up">+0.36%</span></span><span class="ticker-item"><strong>WIG20</strong> 4 044 <span class="mkt-chg chg-up">+1.59%</span></span><span class="ticker-item"><strong>S&amp;P 500</strong> 7 183 <span class="mkt-chg chg-down">-0.25%</span></span><span class="ticker-item"><strong>DAX</strong> 25 216 <span class="mkt-chg chg-up">+2.08%</span></span><span class="ticker-item"><strong>OBX Oslo</strong> 1 971 <span class="mkt-chg chg-up">+1.50%</span></span><span class="ticker-item"><strong>Złoto</strong> 3 593 USD <span class="mkt-chg chg-up">+1.63%</span></span><span class="ticker-item"><strong>BTC</strong> 60 497 USD <span class="mkt-chg chg-up">+1.34%</span></span><span class="ticker-item ticker-weather"><strong>Warszawa</strong> -2.3°C</span><span class="ticker-item ticker-weather"><strong>Oslo</strong> -5.6°C</span></div><a class="ticker-more" href="../../../rynki/" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -203,10 +207,10 @@
         </div>
         <span>7 opracowań</span>
       </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">123</span></a><a class="region-pill has-items" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">8</span></a><a class="region-pill has-items" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">7</span></a><a class="region-pill active has-items" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">15</span></a><a class="region-pill has-items" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">8</span></a><a class="region-pill has-items" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">8</span></a><a class="region-pill has-items" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">6</span></a></nav><article class="cat lead-wrap" style="--h:48">
-      <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 39850301, '/Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy')">
-        <a class="lead-thumb-wrap" href="../../../Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy/" onclick="return openArticleLink(event, 39850301, '/Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy')" tabindex="-1" aria-hidden="true">
+      <div class="lead-story no-thumb" onclick="if(!event.target.closest('a'))openArticleLink(event, 39850301, '/Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy')">
+        <a class="lead-thumb-wrap no-thumb" href="../../../Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy/" onclick="return openArticleLink(event, 39850301, '/Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-          <img src="https://d-pt.ppstatic.pl/kadry/k/r/1/88/02/63bab9bf60fb0_o,size,640x400,q,71,h,fcb617.jpg" alt="Tak wyglądają rynki opolskich miast. Który z nich jest najpiękniejszy?" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />
+          
         </a>
         <div class="lead-main">
           <div class="story-top"><span class="cat-badge">Opolskie</span><span class="story-date">26.11.2026, 14:57</span></div>
@@ -239,9 +243,9 @@
 <article class="cat" style="--h:48" data-id="1586977327">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali/" onclick="return openArticleLink(event, 1586977327, '/Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://opolska360.pl/wp-content/uploads/2026/11/856745910_29289908920613246_8482881178364690625_n.jpg" alt="75 lat Opolskiego Związku Lekkiej Atletyki. To ludzie, którzy wychowali mistrzów" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -256,9 +260,9 @@
 <article class="cat" style="--h:48" data-id="42448303">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Opolskie/narkotykowy-rynek-w-polsce-kokaina-dla-elit-mefedron-dla-mas/" onclick="return openArticleLink(event, 42448303, '/Polska/Regiony/Opolskie/narkotykowy-rynek-w-polsce-kokaina-dla-elit-mefedron-dla-mas')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://opolska360.pl/wp-content/uploads/2026/11/Finansowane-przez-SWO.jpg" alt="Narkotykowy rynek w Polsce: kokaina dla elit, mefedron dla mas" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -273,9 +277,9 @@
 <article class="cat" style="--h:48" data-id="1932835746">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Opolskie/opolski-jarmark-bozonarodzeniowy-2026-otwarcie-juz-w-najblizszy-piatek/" onclick="return openArticleLink(event, 1932835746, '/Polska/Regiony/Opolskie/opolski-jarmark-bozonarodzeniowy-2026-otwarcie-juz-w-najblizszy-piatek')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://opolska360.pl/wp-content/uploads/2026/11/Jarmarki-Opolskie.jpg" alt="Opolski Jarmark Bożonarodzeniowy 2026: otwarcie już w najbliższy piątek" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -290,9 +294,9 @@
 <article class="cat" style="--h:48" data-id="2057035911">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Opolskie/kompletnie-pijana-wiozla-dziecko-w-foteliku-kobieta-miala-niemal-2/" onclick="return openArticleLink(event, 2057035911, '/Polska/Regiony/Opolskie/kompletnie-pijana-wiozla-dziecko-w-foteliku-kobieta-miala-niemal-2')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://s9.tvp.pl/images2/9/6/c/uid_96ce459ab2004e8fa30f2bcaa588b0b2_width_900_play_0_pos_0_gs_0_height_506.png" alt="Kompletnie pijana wiozła dziecko w foteliku! Kobieta miała niemal 2 promile" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -307,9 +311,9 @@
 <article class="cat" style="--h:48" data-id="83905879">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Opolskie/przed-policja-schowal-sie-pod-kocem-27-latek-zatrzymany-10-lat/" onclick="return openArticleLink(event, 83905879, '/Polska/Regiony/Opolskie/przed-policja-schowal-sie-pod-kocem-27-latek-zatrzymany-10-lat')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://s3.tvp.pl/images2/c/4/4/uid_c448a049e9be434a96d90332d919416c_width_900_play_0_pos_0_gs_0_height_506.jpg" alt="Przed policją schował się… pod kocem. 27-latek zatrzymany (10 lat)" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -345,8 +349,13 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
         <a href="../../../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="../../../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="../../../o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="../../../polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="../../../zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -357,7 +366,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_PATH="/Polska/Regiony/Opolskie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=7bef122f"></script>
+  <script src="../../../app.js?v=df835acb"></script>
   <script src="../../../community.js?v=337d3bfe" defer></script>
   
 </body>

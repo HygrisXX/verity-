@@ -18,8 +18,10 @@
   <meta property="og:title" content="Podlasie (podlaskie) — VERITY" />
   <meta property="og:description" content="Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu." />
   <meta property="og:url" content="https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/" />
-  <meta property="og:image" content="https://www.radio.bialystok.pl/src/thumbs/709/15bf98b1fc038d8f4e11569476ba9e8f" />
-  <meta name="twitter:image" content="https://www.radio.bialystok.pl/src/thumbs/709/15bf98b1fc038d8f4e11569476ba9e8f" />
+  <meta property="og:image" content="https://hygrisxx.github.io/verity-/og/63933186.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://hygrisxx.github.io/verity-/og/63933186.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Podlasie (podlaskie) — VERITY" />
   <meta name="twitter:description" content="Wydarzenia z całego Podlasia: Białystok, Łomża, Suwałki, Augustów, Bielsk Podlaski i powiaty regionu." />
@@ -90,7 +92,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../styles.css?v=a0b8a7ec" />
+  <link rel="stylesheet" href="../../../styles.css?v=3a7126da" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -159,6 +161,7 @@
         <a class="path-chip" data-path="/Swiat" href="../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
         <a class="path-chip" data-path="/kamery" href="../../../kamery/" onclick="return fixFileHref(event)">Kamery</a>
+        <a class="path-chip" data-path="/rynki" href="../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -192,6 +195,7 @@
     </div>
     </div>
   </header>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-item"><strong>EUR/PLN</strong> 4.48 <span class="mkt-chg chg-down">-0.02%</span></span><span class="ticker-item"><strong>USD/PLN</strong> 4.08 <span class="mkt-chg chg-down">-0.32%</span></span><span class="ticker-item"><strong>CHF/PLN</strong> 4.90 <span class="mkt-chg chg-down">-0.20%</span></span><span class="ticker-item"><strong>NOK/PLN</strong> 0.42 <span class="mkt-chg chg-up">+0.36%</span></span><span class="ticker-item"><strong>WIG20</strong> 4 044 <span class="mkt-chg chg-up">+1.59%</span></span><span class="ticker-item"><strong>S&amp;P 500</strong> 7 183 <span class="mkt-chg chg-down">-0.25%</span></span><span class="ticker-item"><strong>DAX</strong> 25 216 <span class="mkt-chg chg-up">+2.08%</span></span><span class="ticker-item"><strong>OBX Oslo</strong> 1 971 <span class="mkt-chg chg-up">+1.50%</span></span><span class="ticker-item"><strong>Złoto</strong> 3 593 USD <span class="mkt-chg chg-up">+1.63%</span></span><span class="ticker-item"><strong>BTC</strong> 60 497 USD <span class="mkt-chg chg-up">+1.34%</span></span><span class="ticker-item ticker-weather"><strong>Warszawa</strong> -2.3°C</span><span class="ticker-item ticker-weather"><strong>Oslo</strong> -5.6°C</span></div><a class="ticker-more" href="../../../rynki/" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -203,10 +207,10 @@
         </div>
         <span>7 opracowań</span>
       </div><nav class="region-strip" aria-label="Wybierz województwo"><a class="region-pill" href="../../../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')">Wszystkie <span class="region-pill-count">123</span></a><a class="region-pill has-items" style="--h:330" href="../../../Polska/Regiony/Dolnoslaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')">Dolnośląskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:195" href="../../../Polska/Regiony/Kujawsko-Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')">Kujawsko-Pomorskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:105" href="../../../Polska/Regiony/Lubelskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubelskie')">Lubelskie<span class="region-pill-count">8</span></a><a class="region-pill has-items" style="--h:132" href="../../../Polska/Regiony/Lubuskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lubuskie')">Lubuskie<span class="region-pill-count">11</span></a><a class="region-pill has-items" style="--h:25" href="../../../Polska/Regiony/Lodzkie/" onclick="return selectPathLink(event, '/Polska/Regiony/Lodzkie')">Łódzkie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:12" href="../../../Polska/Regiony/Malopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Malopolskie')">Małopolskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:225" href="../../../Polska/Regiony/Mazowieckie/" onclick="return selectPathLink(event, '/Polska/Regiony/Mazowieckie')">Mazowieckie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:48" href="../../../Polska/Regiony/Opolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Opolskie')">Opolskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:162" href="../../../Polska/Regiony/Podkarpackie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podkarpackie')">Podkarpackie<span class="region-pill-count">7</span></a><a class="region-pill active has-items" style="--h:145" href="../../../Polska/Regiony/Podlaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Podlaskie')">Podlaskie<span class="region-pill-count">7</span></a><a class="region-pill has-items" style="--h:200" href="../../../Polska/Regiony/Pomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Pomorskie')">Pomorskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:245" href="../../../Polska/Regiony/Slaskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Slaskie')">Śląskie<span class="region-pill-count">15</span></a><a class="region-pill has-items" style="--h:310" href="../../../Polska/Regiony/Swietokrzyskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')">Świętokrzyskie<span class="region-pill-count">6</span></a><a class="region-pill has-items" style="--h:140" href="../../../Polska/Regiony/Warminsko-Mazurskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')">Warmińsko-Mazurskie<span class="region-pill-count">8</span></a><a class="region-pill has-items" style="--h:350" href="../../../Polska/Regiony/Wielkopolskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')">Wielkopolskie<span class="region-pill-count">8</span></a><a class="region-pill has-items" style="--h:188" href="../../../Polska/Regiony/Zachodniopomorskie/" onclick="return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')">Zachodniopomorskie<span class="region-pill-count">6</span></a></nav><article class="cat lead-wrap" style="--h:145">
-      <div class="lead-story" onclick="if(!event.target.closest('a'))openArticleLink(event, 63933186, '/Polska/Regiony/Podlaskie/woda-w-piatnicy-nie-nadaje-sie-do-spozycia-szkola-zamknieta-500-osob')">
-        <a class="lead-thumb-wrap" href="../../../Polska/Regiony/Podlaskie/woda-w-piatnicy-nie-nadaje-sie-do-spozycia-szkola-zamknieta-500-osob/" onclick="return openArticleLink(event, 63933186, '/Polska/Regiony/Podlaskie/woda-w-piatnicy-nie-nadaje-sie-do-spozycia-szkola-zamknieta-500-osob')" tabindex="-1" aria-hidden="true">
+      <div class="lead-story no-thumb" onclick="if(!event.target.closest('a'))openArticleLink(event, 63933186, '/Polska/Regiony/Podlaskie/woda-w-piatnicy-nie-nadaje-sie-do-spozycia-szkola-zamknieta-500-osob')">
+        <a class="lead-thumb-wrap no-thumb" href="../../../Polska/Regiony/Podlaskie/woda-w-piatnicy-nie-nadaje-sie-do-spozycia-szkola-zamknieta-500-osob/" onclick="return openArticleLink(event, 63933186, '/Polska/Regiony/Podlaskie/woda-w-piatnicy-nie-nadaje-sie-do-spozycia-szkola-zamknieta-500-osob')" tabindex="-1" aria-hidden="true">
           <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-          <img src="https://www.radio.bialystok.pl/src/thumbs/709/15bf98b1fc038d8f4e11569476ba9e8f" alt="Woda w Piątnicy nie nadaje się do spożycia. Szkoła zamknięta (500 osób)" class="lead-thumb" loading="eager" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.closest('.lead-story')?.classList.add('no-thumb');this.remove()" />
+          
         </a>
         <div class="lead-main">
           <div class="story-top"><span class="cat-badge">Podlaskie</span><span class="story-date">26.11.2026, 13:12</span></div>
@@ -222,9 +226,9 @@
     </article><div id="feedGrid" class="cards-grid after-lead"><article class="cat" style="--h:145" data-id="1162663248">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Podlaskie/zbieral-autografy-artystow-powod-moze-zszokowac/" onclick="return openArticleLink(event, 1162663248, '/Polska/Regiony/Podlaskie/zbieral-autografy-artystow-powod-moze-zszokowac')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://4lomza.pl/foto/2026/11/261118133358_3.png" alt="Zbierał autografy artystów. Powód może zszokować" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -239,9 +243,9 @@
 <article class="cat" style="--h:145" data-id="1578986862">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Podlaskie/podlaska-tkanine-dwuosnowowa-bedzie-mozna-podziwiac-w-internecie/" onclick="return openArticleLink(event, 1578986862, '/Polska/Regiony/Podlaskie/podlaska-tkanine-dwuosnowowa-bedzie-mozna-podziwiac-w-internecie')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://www.radio.bialystok.pl/src/thumbs/709/03c17d0ac5134510c4b0533f6d6430cb" alt="Podlaską tkaninę dwuosnowową będzie można podziwiać w internecie" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -256,9 +260,9 @@
 <article class="cat" style="--h:145" data-id="1709841661">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Podlaskie/funkcjonariusze-strazy-granicznej-z-rutki-tartak-zatrzymali/" onclick="return openArticleLink(event, 1709841661, '/Polska/Regiony/Podlaskie/funkcjonariusze-strazy-granicznej-z-rutki-tartak-zatrzymali')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://www.suwalki24.pl/_uploads/2026/Listopad/Drobne/thumb_posg_23_11_2026_(1).jpg" alt="Funkcjonariusze Straży Granicznej z Rutki-Tartak zatrzymali poszukiwanego czerwoną notą Interpolu" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -273,9 +277,9 @@
 <article class="cat" style="--h:145" data-id="2103971864">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Podlaskie/odslonieto-pomnik-druha-ryszarda-kaczorowskiego-stanal-przed-siedziba/" onclick="return openArticleLink(event, 2103971864, '/Polska/Regiony/Podlaskie/odslonieto-pomnik-druha-ryszarda-kaczorowskiego-stanal-przed-siedziba')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://www.radio.bialystok.pl/src/thumbs/709/dbba0bbc5cf63f7cc0a566c5c5c5c1c9" alt="Odsłonięto pomnik druha Ryszarda Kaczorowskiego. Stanął przed siedzibą białostockich harcerzy" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -290,9 +294,9 @@
 <article class="cat" style="--h:145" data-id="1854581106">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Podlaskie/zdobywcy-kulinarnych-perel-odbieraja-honory-za-maslo-z-gib-sekacz/" onclick="return openArticleLink(event, 1854581106, '/Polska/Regiony/Podlaskie/zdobywcy-kulinarnych-perel-odbieraja-honory-za-maslo-z-gib-sekacz')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://www.suwalki24.pl/_uploads/2026/Listopad/Gmina_Punsk/thumb_zaperly000.jpg" alt="Zdobywcy kulinarnych Pereł odbierają honory. Za masło z Gib, sękacz klejwiański, za keptas pilvas" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -307,9 +311,9 @@
 <article class="cat" style="--h:145" data-id="161904315">
       <div class="story-card">
         <a class="card-media-link" href="../../../Polska/Regiony/Podlaskie/z-konca-swiata-wrocil-do-bliskich-na-pogrzebie-piotra-moczulskiego/" onclick="return openArticleLink(event, 161904315, '/Polska/Regiony/Podlaskie/z-konca-swiata-wrocil-do-bliskich-na-pogrzebie-piotra-moczulskiego')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://ocdn.eu/pulscms-transforms/1/tkDk9kuTURBXy83ZDQzNzRiNS1mNDY3LTQzMjgtYjdkZS03MjBiZDI3MmU4NDkuanBlZ5GTAs0EsADeAAGhMAE" alt="Z końca świata wrócił do bliskich. Na pogrzebie Piotra Moczulskiego padły poruszające słowa o &quot;jedynym nałogu&quot;" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -345,8 +349,13 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
         <a href="../../../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="../../../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="../../../o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="../../../polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="../../../zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
         <a href="../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../feed.xml">Kanał RSS</a>
@@ -357,7 +366,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../";window.VERITY_INITIAL_PATH="/Polska/Regiony/Podlaskie";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../app.js?v=7bef122f"></script>
+  <script src="../../../app.js?v=df835acb"></script>
   <script src="../../../community.js?v=337d3bfe" defer></script>
   
 </body>

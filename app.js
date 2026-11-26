@@ -482,7 +482,9 @@ function syncNavActive() {
     const dp = btn.getAttribute('data-path');
     const isAct = window.VERITY_IS_CAMERAS
       ? dp === '/kamery'
-      : (dp === currentPath || (dp === '/Polska/Regiony' && currentPath.startsWith('/Polska/Regiony/')));
+      : window.VERITY_STATIC_PAGE
+        ? dp === (window.VERITY_INITIAL_PATH || '')
+        : (dp === currentPath || (dp === '/Polska/Regiony' && currentPath.startsWith('/Polska/Regiony/')));
     btn.classList.toggle('active', isAct);
     if (isAct) activeBtn = btn;
   });
@@ -966,7 +968,7 @@ function renderPortal() {
       if (container) {
         container.innerHTML = `<div class="empty-state"><h2>Nie znaleziono strony (404)</h2><p style="margin-top:0.6rem">Wybrany adres nie istnieje lub został zaktualizowany.</p><p style="margin-top:1rem"><a class="btn-primary" style="text-decoration:none;display:inline-block" href="${esc(ROOT_URL)}" onclick="return selectPathLink(event, '/Polska')">Wróć na stronę główną VERITY</a></p></div>`;
       }
-    } else if ((window.VERITY_IS_MODERATION || window.VERITY_IS_CAMERAS) && !q) {
+    } else if ((window.VERITY_IS_MODERATION || window.VERITY_IS_CAMERAS || window.VERITY_STATIC_PAGE) && !q) {
     } else {
       const list = published
         .filter(a => q ? true : (a.path || '').startsWith(currentPath))
@@ -976,10 +978,10 @@ function renderPortal() {
     }
   }
   renderEditorialPanel(pendingArts);
-  const staticMode = (window.VERITY_IS_MODERATION || window.VERITY_IS_CAMERAS) && !q;
+  const staticMode = (window.VERITY_IS_MODERATION || window.VERITY_IS_CAMERAS || window.VERITY_STATIC_PAGE) && !q;
   if (!staticMode) syncSeoHead(openArt, published, q);
   updateReadingProgress();
-  if (typeof CustomEvent === 'function') window.dispatchEvent(new CustomEvent('verity:rendered', { detail: { path: staticMode ? (window.VERITY_IS_CAMERAS ? '/kamery' : '/moderacja') : currentPath, articleId: openArt ? openArt.id : null, view: currentView } }));
+  if (typeof CustomEvent === 'function') window.dispatchEvent(new CustomEvent('verity:rendered', { detail: { path: staticMode ? (window.VERITY_IS_CAMERAS ? '/kamery' : (window.VERITY_STATIC_PAGE ? (window.VERITY_INITIAL_PATH || '/rynki') : '/moderacja')) : currentPath, articleId: openArt ? openArt.id : null, view: currentView } }));
 }
 
 function shortCatLabel(path) {
@@ -1490,7 +1492,9 @@ function renderArticleView(art, published) {
 `<h1 class="article-title">${esc(plTypography(art.seo_title))}</h1>${ledeHtml}${impactHtml}${dossierBannerHtml}</header>` +
 `${heroThumb}` +
 `${art.metrics && art.metrics.length ? `<div class="facts-strip">${art.metrics.map(m => `<div class="fact-box"><div class="fact-label">${esc(m.label)}</div><div class="fact-val">${metricValHtml(m.val)}</div></div>`).join('')}</div>` : ''}` +
+`${srcs.length <= 1 ? '<div class="callout callout-single-source"><strong>Niepotwierdzone (1 źródło):</strong> Ten temat podaje obecnie jedna redakcja. VERITY prezentuje wyłącznie krótką wzmiankę z linkiem do publikacji źródłowej do czasu potwierdzenia przez inne niezależne media.</div>' : ''}` +
 `${art.admin_note ? `<div class="callout callout-warn"><strong>Nota weryfikacyjna redakcji:</strong> ${esc(plTypography(art.admin_note))}</div>` : ''}` +
+`${art.discrepancies && art.discrepancies.length ? `<div class="callout callout-discrepancy"><div class="callout-title">Rozbieżności między źródłami</div>${art.discrepancies.map(d => `<div class="disc-item">• ${esc(plTypography(d.summary || ''))}</div>`).join('')}</div>` : ''}` +
 `${art.declickbait && art.declickbait.length ? `<div class="callout callout-clickbait"><div class="callout-title">Odfiltrowany clickbait</div>${art.declickbait.map(dc => `<div class="cb-item"><div class="cb-strike">„${esc(dc.original)}” <em>— ${esc(dc.outlet)}</em></div><div class="cb-fact">→ ${esc(dc.fact)}</div></div>`).join('')}</div>` : ''}` +
 `${sourceFilterBarHtml}` +
 `<div class="article-sections">${(art._isIndexOnly && !articlesLoadedFull && !secs.length) ? '<div class="callout">Wczytywanie pełnej treści opracowania i perspektyw redakcji…</div>' : sectionsHtml}</div>` +

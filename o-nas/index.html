@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O projekcie VERITY</title>
+  <meta name="description" content="Informacje o automatycznym portalu porównującym przekazy medialne." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#151b28" />
+  <link rel="icon" type="image/svg+xml" href="../icon.svg" />
+  <link rel="apple-touch-icon" href="../icon-192.png" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="canonical" href="https://hygrisxx.github.io/verity-/o-nas/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="VERITY" />
+  <meta property="og:title" content="O projekcie VERITY" />
+  <meta property="og:description" content="Informacje o automatycznym portalu porównującym przekazy medialne." />
+  <meta property="og:url" content="https://hygrisxx.github.io/verity-/o-nas/" />
+  <meta property="og:image" content="https://hygrisxx.github.io/verity-/og/1154073713.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://hygrisxx.github.io/verity-/og/1154073713.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="O projekcie VERITY" />
+  <meta name="twitter:description" content="Informacje o automatycznym portalu porównującym przekazy medialne." />
+
+  <script id="dynamicJsonLd" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "O projekcie VERITY",
+  "url": "https://hygrisxx.github.io/verity-/o-nas/"
+}
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="VERITY RSS" href="../feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
+  <link rel="stylesheet" href="../styles.css?v=3a7126da" />
+</head>
+<body>
+  <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+
+  <div class="top-utility">
+    <div class="container top-utility-inner">
+      <div class="top-utility-meta">
+        <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+      </div>
+      <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
+        <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">1</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <a class="brand" href="../" onclick="return selectPathLink(event, '/Polska')">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-title">VERITY</div>
+            <div class="brand-subtitle">Wieloźródłowa weryfikacja i synteza informacji</div>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <div class="search-box">
+            <input
+              id="searchInput"
+              type="search"
+              class="search-input"
+              oninput="handleSearchInput()"
+              aria-label="Wyszukaj artykuły"
+            />
+            <button id="clearSearchBtn" class="search-clear hidden" onclick="clearSearch()" title="Wyczyść">✕</button>
+          </div>
+
+          <div class="theme-switcher" role="group" aria-label="Wybór motywu kolorystycznego">
+            <button id="themeBtn_auto" class="theme-btn active" onclick="applyTheme('auto')" title="Automatycznie dopasuj do motywu urządzenia">Auto</button>
+            <button id="themeBtn_light" class="theme-btn" onclick="applyTheme('light')" title="Motyw jasny">Jasny</button>
+            <button id="themeBtn_dark" class="theme-btn" onclick="applyTheme('dark')" title="Motyw ciemny">Ciemny</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="path-nav" aria-label="Kategorie tematyczne">
+        <a class="path-chip" data-path="/Polska" href="../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+        <a class="path-chip" data-path="/Polska/Gospodarka" href="../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
+        <a class="path-chip" data-path="/Polska/Polityka" href="../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
+        <a class="path-chip" data-path="/Polska/Energetyka" href="../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
+        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
+        <span class="path-divider" aria-hidden="true">|</span>
+        <a class="path-chip" data-path="/Swiat" href="../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+        <a class="path-chip" data-path="/Sport" href="../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+        <a class="path-chip" data-path="/kamery" href="../kamery/" onclick="return fixFileHref(event)">Kamery</a>
+        <a class="path-chip" data-path="/rynki" href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
+      </nav>
+      <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="regions-drawer-all" data-region-link="/Polska/Regiony" href="../Polska/Regiony/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Dolnoslaskie" href="../Polska/Regiony/Dolnoslaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')"><span class="region-dot" style="--h:330" aria-hidden="true"></span><span>Dolnośląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Kujawsko-Pomorskie" href="../Polska/Regiony/Kujawsko-Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')"><span class="region-dot" style="--h:195" aria-hidden="true"></span><span>Kujawsko-Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubelskie" href="../Polska/Regiony/Lubelskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubelskie')"><span class="region-dot" style="--h:105" aria-hidden="true"></span><span>Lubelskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubuskie" href="../Polska/Regiony/Lubuskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubuskie')"><span class="region-dot" style="--h:132" aria-hidden="true"></span><span>Lubuskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lodzkie" href="../Polska/Regiony/Lodzkie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lodzkie')"><span class="region-dot" style="--h:25" aria-hidden="true"></span><span>Łódzkie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Malopolskie" href="../Polska/Regiony/Malopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Malopolskie')"><span class="region-dot" style="--h:12" aria-hidden="true"></span><span>Małopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Mazowieckie" href="../Polska/Regiony/Mazowieckie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Mazowieckie')"><span class="region-dot" style="--h:225" aria-hidden="true"></span><span>Mazowieckie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Opolskie" href="../Polska/Regiony/Opolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Opolskie')"><span class="region-dot" style="--h:48" aria-hidden="true"></span><span>Opolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podkarpackie" href="../Polska/Regiony/Podkarpackie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podkarpackie')"><span class="region-dot" style="--h:162" aria-hidden="true"></span><span>Podkarpackie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podlaskie" href="../Polska/Regiony/Podlaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podlaskie')"><span class="region-dot" style="--h:145" aria-hidden="true"></span><span>Podlaskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Pomorskie" href="../Polska/Regiony/Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Pomorskie')"><span class="region-dot" style="--h:200" aria-hidden="true"></span><span>Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Slaskie" href="../Polska/Regiony/Slaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Slaskie')"><span class="region-dot" style="--h:245" aria-hidden="true"></span><span>Śląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Swietokrzyskie" href="../Polska/Regiony/Swietokrzyskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')"><span class="region-dot" style="--h:310" aria-hidden="true"></span><span>Świętokrzyskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Warminsko-Mazurskie" href="../Polska/Regiony/Warminsko-Mazurskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')"><span class="region-dot" style="--h:140" aria-hidden="true"></span><span>Warmińsko-Mazurskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Wielkopolskie" href="../Polska/Regiony/Wielkopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')"><span class="region-dot" style="--h:350" aria-hidden="true"></span><span>Wielkopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Zachodniopomorskie" href="../Polska/Regiony/Zachodniopomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')"><span class="region-dot" style="--h:188" aria-hidden="true"></span><span>Zachodniopomorskie</span></a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-item"><strong>EUR/PLN</strong> 4.48 <span class="mkt-chg chg-down">-0.02%</span></span><span class="ticker-item"><strong>USD/PLN</strong> 4.08 <span class="mkt-chg chg-down">-0.32%</span></span><span class="ticker-item"><strong>CHF/PLN</strong> 4.90 <span class="mkt-chg chg-down">-0.20%</span></span><span class="ticker-item"><strong>NOK/PLN</strong> 0.42 <span class="mkt-chg chg-up">+0.36%</span></span><span class="ticker-item"><strong>WIG20</strong> 4 044 <span class="mkt-chg chg-up">+1.59%</span></span><span class="ticker-item"><strong>S&amp;P 500</strong> 7 183 <span class="mkt-chg chg-down">-0.25%</span></span><span class="ticker-item"><strong>DAX</strong> 25 216 <span class="mkt-chg chg-up">+2.08%</span></span><span class="ticker-item"><strong>OBX Oslo</strong> 1 971 <span class="mkt-chg chg-up">+1.50%</span></span><span class="ticker-item"><strong>Złoto</strong> 3 593 USD <span class="mkt-chg chg-up">+1.63%</span></span><span class="ticker-item"><strong>BTC</strong> 60 497 USD <span class="mkt-chg chg-up">+1.34%</span></span><span class="ticker-item ticker-weather"><strong>Warszawa</strong> -2.3°C</span><span class="ticker-item ticker-weather"><strong>Oslo</strong> -5.6°C</span></div><a class="ticker-more" href="../rynki/" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a></div></div>
+
+  <main class="container main-content">
+    <section id="viewPublic">
+      <div id="articlesFeed" class="articles-stack">
+        <div class="info-page">
+      <div class="feed-meta">
+        <div>
+          <span class="feed-crumb">/o-nas</span>
+          <h1>O projekcie VERITY</h1>
+        </div>
+        <a class="back-link" href="../" onclick="return selectPathLink(event, '/Polska')">← Strona główna</a>
+      </div>
+      <article class="info-card">
+        <h2>Czym jest VERITY</h2>
+        <p>VERITY to niezależny projekt technologiczny stworzony do porównywania, w jaki sposób różne redakcje opisują te same wydarzenia — bez clickbaitu, bez ukrywania źródeł i bez przedruku cudzych fotografii.</p>
+        <h2>Zasady działania</h2>
+        <ul>
+          <li>Pełna automatyzacja zbierania i porównywania depesz z bezpośrednimi linkami do wydawców.</li>
+          <li>Zero zewnętrznych zdjęć wydawców — wyłącznie własne karty graficzne oraz publiczne dane (NBP, IMGW-PIB, Open-Meteo).</li>
+          <li>Otwarty rejestr korekt i szybka reakcja na zgłoszenia błędów lub wnioski o wyłączenie źródła.</li>
+        </ul>
+      </article>
+    </div>
+      </div>
+    </section>
+
+    <section id="viewEditorial" class="hidden">
+      <div class="editorial-head">
+        <div>
+          <h1>Kolejka Weryfikacji Redakcyjnej</h1>
+          <p>
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
+          </p>
+        </div>
+        <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
+      </div>
+      <div id="editorialQueue" class="articles-stack"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>VERITY</strong>
+        <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
+        <a href="../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
+        <a href="../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="../o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="../polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="../zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
+        <a href="../news-sitemap.xml">Mapa Google News (XML)</a>
+        <a href="../sitemap.xml">Sitemap (XML)</a>
+        <a href="../feed.xml">Kanał RSS</a>
+        <a href="../robots.txt">robots.txt</a>
+        <a href="../articles.json">Dane (JSON)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/o-nas";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
+  <script src="../app.js?v=df835acb"></script>
+  <script src="../community.js?v=337d3bfe" defer></script>
+  
+</body>
+</html>

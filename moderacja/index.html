@@ -18,8 +18,10 @@
   <meta property="og:title" content="Publiczny Rejestr Moderacji i Taryfikator (§1.1–§2.3) — VERITY" />
   <meta property="og:description" content="Jawny rejestr moderacji VERITY. Zero kar za poglądy polityczne — usuwamy wyłącznie spam, rajdy multikont i wulgarne wyzwiska według taryfikatora." />
   <meta property="og:url" content="https://hygrisxx.github.io/verity-/moderacja/" />
-  <meta property="og:image" content="https://radioolsztyn.pl/wp-content/uploads/2025/11/997-scaled.jpg" />
-  <meta name="twitter:image" content="https://radioolsztyn.pl/wp-content/uploads/2025/11/997-scaled.jpg" />
+  <meta property="og:image" content="https://hygrisxx.github.io/verity-/og/1154073713.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://hygrisxx.github.io/verity-/og/1154073713.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Publiczny Rejestr Moderacji i Taryfikator (§1.1–§2.3) — VERITY" />
   <meta name="twitter:description" content="Jawny rejestr moderacji VERITY. Zero kar za poglądy polityczne — usuwamy wyłącznie spam, rajdy multikont i wulgarne wyzwiska według taryfikatora." />
@@ -37,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../styles.css?v=a0b8a7ec" />
+  <link rel="stylesheet" href="../styles.css?v=3a7126da" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -106,6 +108,7 @@
         <a class="path-chip" data-path="/Swiat" href="../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
         <a class="path-chip" data-path="/kamery" href="../kamery/" onclick="return fixFileHref(event)">Kamery</a>
+        <a class="path-chip" data-path="/rynki" href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -139,6 +142,7 @@
     </div>
     </div>
   </header>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-item"><strong>EUR/PLN</strong> 4.48 <span class="mkt-chg chg-down">-0.02%</span></span><span class="ticker-item"><strong>USD/PLN</strong> 4.08 <span class="mkt-chg chg-down">-0.32%</span></span><span class="ticker-item"><strong>CHF/PLN</strong> 4.90 <span class="mkt-chg chg-down">-0.20%</span></span><span class="ticker-item"><strong>NOK/PLN</strong> 0.42 <span class="mkt-chg chg-up">+0.36%</span></span><span class="ticker-item"><strong>WIG20</strong> 4 044 <span class="mkt-chg chg-up">+1.59%</span></span><span class="ticker-item"><strong>S&amp;P 500</strong> 7 183 <span class="mkt-chg chg-down">-0.25%</span></span><span class="ticker-item"><strong>DAX</strong> 25 216 <span class="mkt-chg chg-up">+2.08%</span></span><span class="ticker-item"><strong>OBX Oslo</strong> 1 971 <span class="mkt-chg chg-up">+1.50%</span></span><span class="ticker-item"><strong>Złoto</strong> 3 593 USD <span class="mkt-chg chg-up">+1.63%</span></span><span class="ticker-item"><strong>BTC</strong> 60 497 USD <span class="mkt-chg chg-up">+1.34%</span></span><span class="ticker-item ticker-weather"><strong>Warszawa</strong> -2.3°C</span><span class="ticker-item ticker-weather"><strong>Oslo</strong> -5.6°C</span></div><a class="ticker-more" href="../rynki/" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -223,8 +227,13 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
         <a href="../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="../o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="../polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="../zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
         <a href="../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../sitemap.xml">Sitemap (XML)</a>
         <a href="../feed.xml">Kanał RSS</a>
@@ -235,7 +244,7 @@
   </footer>
 
   <script>window.VERITY_IS_MODERATION=true;window.VERITY_BASE="../";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../app.js?v=7bef122f"></script>
+  <script src="../app.js?v=df835acb"></script>
   <script src="../community.js?v=337d3bfe" defer></script>
   
 </body>

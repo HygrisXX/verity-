@@ -155,7 +155,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
-  <link rel="stylesheet" href="../../../../styles.css?v=a0b8a7ec" />
+  <link rel="stylesheet" href="../../../../styles.css?v=3a7126da" />
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -224,6 +224,7 @@
         <a class="path-chip" data-path="/Swiat" href="../../../../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
         <a class="path-chip" data-path="/Sport" href="../../../../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
         <a class="path-chip" data-path="/kamery" href="../../../../kamery/" onclick="return fixFileHref(event)">Kamery</a>
+        <a class="path-chip" data-path="/rynki" href="../../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
       </nav>
       <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
       <div class="regions-drawer-head">
@@ -257,6 +258,7 @@
     </div>
     </div>
   </header>
+  <div class="market-ticker" role="region" aria-label="Notowania i pogoda"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-item"><strong>EUR/PLN</strong> 4.48 <span class="mkt-chg chg-down">-0.02%</span></span><span class="ticker-item"><strong>USD/PLN</strong> 4.08 <span class="mkt-chg chg-down">-0.32%</span></span><span class="ticker-item"><strong>CHF/PLN</strong> 4.90 <span class="mkt-chg chg-down">-0.20%</span></span><span class="ticker-item"><strong>NOK/PLN</strong> 0.42 <span class="mkt-chg chg-up">+0.36%</span></span><span class="ticker-item"><strong>WIG20</strong> 4 044 <span class="mkt-chg chg-up">+1.59%</span></span><span class="ticker-item"><strong>S&amp;P 500</strong> 7 183 <span class="mkt-chg chg-down">-0.25%</span></span><span class="ticker-item"><strong>DAX</strong> 25 216 <span class="mkt-chg chg-up">+2.08%</span></span><span class="ticker-item"><strong>OBX Oslo</strong> 1 971 <span class="mkt-chg chg-up">+1.50%</span></span><span class="ticker-item"><strong>Złoto</strong> 3 593 USD <span class="mkt-chg chg-up">+1.63%</span></span><span class="ticker-item"><strong>BTC</strong> 60 497 USD <span class="mkt-chg chg-up">+1.34%</span></span><span class="ticker-item ticker-weather"><strong>Warszawa</strong> -2.3°C</span><span class="ticker-item ticker-weather"><strong>Oslo</strong> -5.6°C</span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -282,10 +284,12 @@
           <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">2 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Regiony/<wbr>Opolskie</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Opolska360.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (2 źródła)</div></div></div>
           
           
+          
+          
           <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Opolska360.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Opolska360.pl <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="CzasNaOpole.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">CzasNaOpole.pl <span class="source-chip-count">(3)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section data-sec-idx="0"><h2 class="section-heading" id="sec_533286097_0">Ustalenia wspólne (2 redakcje)</h2><p class="section-paragraph" data-outlets="Opolska360.pl|CzasNaOpole.pl">Budowa aquaparku w Opolu w WPF otwiera tym samym drogę do zamknięcia procesu finansowania i wejście w fazę realizacji. <a class="cite-tag cite-link" href="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Opolska360.pl">Opolska360.pl ↗</a> <a class="cite-tag cite-link" href="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: CzasNaOpole.pl">CzasNaOpole.pl ↗</a></p><p class="section-paragraph has-dropcap" data-outlets="Opolska360.pl">Miasto nie zrealizuje tej inwestycji bezpośrednio z budżetu urzędu. Magistrat wybrał formułę dokapitalizowania miejskiej spółki, obejmując udziały w Zakładzie Komunalnym Sp. z o.o. w Opolu. To właśnie ten podmiot przejął realizację zadania własnego gminy w zakresie kultury fizycznej i rekreacji. <a class="cite-tag cite-link" href="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Opolska360.pl">Opolska360.pl ↗</a></p><p class="section-paragraph" data-outlets="Opolska360.pl|CzasNaOpole.pl">Autopoprawka do uchwały o WPF Opola precyzyjnie rozpisuje wydatki majątkowe na ten cel. Radni podjęli decyzję o ujęciu budowy parku wodnego w wieloletniej prognozie finansowej. Z kolei kwota 350,64 mln zł w Wieloletniej Prognozie Finansowej obejmuje wieloletnie dokapitalizowanie Zakładu Komunalnego aż do 2051 roku. <a class="cite-tag cite-link" href="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Opolska360.pl">Opolska360.pl ↗</a> <a class="cite-tag cite-link" href="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: CzasNaOpole.pl">CzasNaOpole.pl ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_533286097_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><p class="section-paragraph" data-outlets="CzasNaOpole.pl">Przypominamy, że oferta firmy ADAMIETZ ze Strzelec Opolskich została wybrana jako najkorzystniejsza w postępowaniu przetargowym na budowę opolskiego aquaparku. Wartość oferty wynosi około 220 mln zł netto, a przewidywany czas realizacji inwestycji to 30 miesięcy. Za przygotowanie i przeprowadzenie postępowania przetargowego oraz realizację inwestycji odpowiada Zakład Komunalny w Opolu. <a class="cite-tag cite-link" href="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: CzasNaOpole.pl">CzasNaOpole.pl ↗</a></p></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_533286097_0">Ustalenia wspólne (2 redakcje)</h2><p class="section-paragraph" data-outlets="Opolska360.pl|CzasNaOpole.pl">Budowa aquaparku w Opolu w WPF otwiera tym samym drogę do zamknięcia procesu finansowania i wejście w fazę realizacji. <a class="cite-tag cite-link" href="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Opolska360.pl">Opolska360.pl ↗</a> <a class="cite-tag cite-link" href="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: CzasNaOpole.pl">CzasNaOpole.pl ↗</a></p><blockquote class="section-paragraph has-dropcap source-quote" cite="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" data-outlets="Opolska360.pl">Miasto nie zrealizuje tej inwestycji bezpośrednio z budżetu urzędu. Magistrat wybrał formułę dokapitalizowania miejskiej spółki, obejmując udziały w Zakładzie Komunalnym Sp. z o.o. w Opolu. To właśnie ten podmiot przejął realizację zadania własnego gminy w zakresie kultury fizycznej i rekreacji. <a class="cite-tag cite-link" href="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Opolska360.pl">Opolska360.pl ↗</a></blockquote><p class="section-paragraph" data-outlets="Opolska360.pl|CzasNaOpole.pl">Autopoprawka do uchwały o WPF Opola precyzyjnie rozpisuje wydatki majątkowe na ten cel. Radni podjęli decyzję o ujęciu budowy parku wodnego w wieloletniej prognozie finansowej. Z kolei kwota 350,64 mln zł w Wieloletniej Prognozie Finansowej obejmuje wieloletnie dokapitalizowanie Zakładu Komunalnego aż do 2051 roku. <a class="cite-tag cite-link" href="https://opolska360.pl/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Opolska360.pl">Opolska360.pl ↗</a> <a class="cite-tag cite-link" href="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: CzasNaOpole.pl">CzasNaOpole.pl ↗</a></p></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_533286097_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><blockquote class="section-paragraph source-quote" cite="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" data-outlets="CzasNaOpole.pl">Przypominamy, że oferta firmy ADAMIETZ ze Strzelec Opolskich została wybrana jako najkorzystniejsza w postępowaniu przetargowym na budowę opolskiego aquaparku. Wartość oferty wynosi około 220 mln zł netto, a przewidywany czas realizacji inwestycji to 30 miesięcy. Za przygotowanie i przeprowadzenie postępowania przetargowego oraz realizację inwestycji odpowiada Zakład Komunalny w Opolu. <a class="cite-tag cite-link" href="https://czasnaopole.pl/radni-zdecydowali-aquapark-ujety-w-wieloletniej-prognozie-finansowej/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: CzasNaOpole.pl">CzasNaOpole.pl ↗</a></blockquote></section>
           </div>
 
           <div class="perspectives-box">
@@ -356,9 +360,9 @@
       <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:48" data-id="39850301">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy/" onclick="return openArticleLink(event, 39850301, '/Polska/Regiony/Opolskie/tak-wygladaja-rynki-opolskich-miast-ktory-z-nich-jest-najpiekniejszy')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://d-pt.ppstatic.pl/kadry/k/r/1/88/02/63bab9bf60fb0_o,size,640x400,q,71,h,fcb617.jpg" alt="Tak wyglądają rynki opolskich miast. Który z nich jest najpiękniejszy?" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -372,9 +376,9 @@
     </article><article class="cat" style="--h:48" data-id="1586977327">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali/" onclick="return openArticleLink(event, 1586977327, '/Polska/Regiony/Opolskie/75-lat-opolskiego-zwiazku-lekkiej-atletyki-to-ludzie-ktorzy-wychowali')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
+          <div class="story-thumb-wrap no-thumb">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Opolskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="https://opolska360.pl/wp-content/uploads/2026/11/856745910_29289908920613246_8482881178364690625_n.jpg" alt="75 lat Opolskiego Związku Lekkiej Atletyki. To ludzie, którzy wychowali mistrzów" class="story-thumb" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+            
           </div>
         </a>
         <div class="story-body">
@@ -411,8 +415,13 @@
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="../../../../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
         <a href="../../../../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="../../../../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="../../../../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="../../../../o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="../../../../polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="../../../../zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
         <a href="../../../../news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="../../../../sitemap.xml">Sitemap (XML)</a>
         <a href="../../../../feed.xml">Kanał RSS</a>
@@ -423,7 +432,7 @@
   </footer>
 
   <script>window.VERITY_BASE="../../../../";window.VERITY_INITIAL_ARTICLE_URL="/Polska/Regiony/Opolskie/budowa-aquaparku-w-opolu-radni-wpisali-350-mln-zl-do-prognozy-finansowej";window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
-  <script src="../../../../app.js?v=7bef122f"></script>
+  <script src="../../../../app.js?v=df835acb"></script>
   <script src="../../../../community.js?v=337d3bfe" defer></script>
   
 </body>

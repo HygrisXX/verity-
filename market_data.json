@@ -1,0 +1,399 @@
+{
+  "updated_iso": "2026-11-26T18:25:33+00:00",
+  "currencies": {
+    "effective_date": "2026-11-26",
+    "table_no": "230/A/NBP/2026",
+    "source": "NBP API (Tabela A)",
+    "items": [
+      {
+        "code": "EUR",
+        "pair": "EUR/PLN",
+        "name": "euro",
+        "rate": 4.4802,
+        "change_pct": -0.02
+      },
+      {
+        "code": "USD",
+        "pair": "USD/PLN",
+        "name": "dolar amerykański",
+        "rate": 4.0835,
+        "change_pct": -0.32
+      },
+      {
+        "code": "CHF",
+        "pair": "CHF/PLN",
+        "name": "frank szwajcarski",
+        "rate": 4.8988,
+        "change_pct": -0.2
+      },
+      {
+        "code": "GBP",
+        "pair": "GBP/PLN",
+        "name": "funt szterling",
+        "rate": 5.3533,
+        "change_pct": 0.08
+      },
+      {
+        "code": "NOK",
+        "pair": "NOK/PLN",
+        "name": "korona norweska",
+        "rate": 0.4166,
+        "change_pct": 0.36
+      },
+      {
+        "code": "SEK",
+        "pair": "SEK/PLN",
+        "name": "korona szwedzka",
+        "rate": 0.3996,
+        "change_pct": 0.2
+      },
+      {
+        "code": "CZK",
+        "pair": "CZK/PLN",
+        "name": "korona czeska",
+        "rate": 0.1833,
+        "change_pct": 0.05
+      },
+      {
+        "code": "JPY",
+        "pair": "JPY/PLN",
+        "name": "jen (Japonia)",
+        "rate": 0.0256,
+        "change_pct": -0.18
+      }
+    ]
+  },
+  "indices": [
+    {
+      "symbol": "WIG20.WA",
+      "name": "WIG20",
+      "market": "GPW",
+      "unit": "pkt",
+      "price": 4043.87,
+      "change_pct": 1.59
+    },
+    {
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "market": "USA",
+      "unit": "pkt",
+      "price": 7182.78,
+      "change_pct": -0.25
+    },
+    {
+      "symbol": "^IXIC",
+      "name": "NASDAQ",
+      "market": "USA",
+      "unit": "pkt",
+      "price": 23585.8,
+      "change_pct": -0.62
+    },
+    {
+      "symbol": "^GDAXI",
+      "name": "DAX",
+      "market": "DE",
+      "unit": "pkt",
+      "price": 25215.52,
+      "change_pct": 2.08
+    },
+    {
+      "symbol": "^FTSE",
+      "name": "FTSE 100",
+      "market": "UK",
+      "unit": "pkt",
+      "price": 10609.3,
+      "change_pct": 1.75
+    },
+    {
+      "symbol": "OBX.OL",
+      "name": "OBX Oslo",
+      "market": "NO",
+      "unit": "pkt",
+      "price": 1971.44,
+      "change_pct": 1.5
+    }
+  ],
+  "stocks": [
+    {
+      "symbol": "PKO.WA",
+      "name": "PKO BP",
+      "market": "GPW",
+      "unit": "PLN",
+      "price": 110.2,
+      "change_pct": 1.9
+    },
+    {
+      "symbol": "PKN.WA",
+      "name": "Orlen",
+      "market": "GPW",
+      "unit": "PLN",
+      "price": 119.4,
+      "change_pct": 2.23
+    },
+    {
+      "symbol": "PZU.WA",
+      "name": "PZU",
+      "market": "GPW",
+      "unit": "PLN",
+      "price": 68.68,
+      "change_pct": -6.79
+    },
+    {
+      "symbol": "CDR.WA",
+      "name": "CD Projekt",
+      "market": "GPW",
+      "unit": "PLN",
+      "price": 277.6,
+      "change_pct": 2.06
+    },
+    {
+      "symbol": "KGH.WA",
+      "name": "KGHM",
+      "market": "GPW",
+      "unit": "PLN",
+      "price": 235.15,
+      "change_pct": 4.05
+    },
+    {
+      "symbol": "ALE.WA",
+      "name": "Allegro",
+      "market": "GPW",
+      "unit": "PLN",
+      "price": 66.67,
+      "change_pct": 2.36
+    }
+  ],
+  "commodities": [
+    {
+      "symbol": "GC=F",
+      "name": "Złoto",
+      "market": "COMEX",
+      "unit": "USD/oz",
+      "price": 3593.4,
+      "change_pct": 1.63
+    },
+    {
+      "symbol": "BZ=F",
+      "name": "Ropa Brent",
+      "market": "ICE",
+      "unit": "USD/bbl",
+      "price": 91.47,
+      "change_pct": -3.32
+    },
+    {
+      "symbol": "SI=F",
+      "name": "Srebro",
+      "market": "COMEX",
+      "unit": "USD/oz",
+      "price": 41.73,
+      "change_pct": 4.2
+    }
+  ],
+  "crypto": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price_usd": 60497.0,
+      "price_pln": 247143.0,
+      "change_pct": 1.34
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "price_usd": 1692.39,
+      "price_pln": 6913.81,
+      "change_pct": 0.53
+    }
+  ],
+  "weather": {
+    "source": "IMGW-PIB (dane publiczne) + Open-Meteo (CC BY 4.0)",
+    "cities": [
+      {
+        "city": "Warszawa",
+        "voivodeship": "Mazowieckie",
+        "temp_c": -2.3,
+        "wind_kmh": 14.4,
+        "pressure_hpa": 1023.6,
+        "humidity_pct": 89,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Kraków",
+        "voivodeship": "Małopolskie",
+        "temp_c": -0.2,
+        "wind_kmh": 28.8,
+        "pressure_hpa": 1018.1,
+        "humidity_pct": 74,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Wrocław",
+        "voivodeship": "Dolnośląskie",
+        "temp_c": 0.0,
+        "wind_kmh": 10.8,
+        "pressure_hpa": 1021.1,
+        "humidity_pct": 67,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Poznań",
+        "voivodeship": "Wielkopolskie",
+        "temp_c": -3.1,
+        "wind_kmh": 10.8,
+        "pressure_hpa": 1023.4,
+        "humidity_pct": 90,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Gdańsk",
+        "voivodeship": "Pomorskie",
+        "temp_c": 0.7,
+        "wind_kmh": 14.4,
+        "pressure_hpa": 1024.7,
+        "humidity_pct": 87,
+        "precip_mm": 0.7,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Łódź",
+        "voivodeship": "Łódzkie",
+        "temp_c": 0.1,
+        "wind_kmh": 21.6,
+        "pressure_hpa": 1022.0,
+        "humidity_pct": 65,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Katowice",
+        "voivodeship": "Śląskie",
+        "temp_c": -0.4,
+        "wind_kmh": 14.4,
+        "pressure_hpa": 1018.5,
+        "humidity_pct": 77,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Szczecin",
+        "voivodeship": "Zachodniopomorskie",
+        "temp_c": -2.3,
+        "wind_kmh": 3.6,
+        "pressure_hpa": 1024.5,
+        "humidity_pct": 95,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Lublin",
+        "voivodeship": "Lubelskie",
+        "temp_c": -0.9,
+        "wind_kmh": 10.8,
+        "pressure_hpa": 1022.4,
+        "humidity_pct": 73,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Białystok",
+        "voivodeship": "Podlaskie",
+        "temp_c": -1.1,
+        "wind_kmh": 7.2,
+        "pressure_hpa": 1024.7,
+        "humidity_pct": 81,
+        "precip_mm": 1.4,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Rzeszów",
+        "voivodeship": "Podkarpackie",
+        "temp_c": 0.1,
+        "wind_kmh": 25.2,
+        "pressure_hpa": 1019.6,
+        "humidity_pct": 69,
+        "precip_mm": 0.1,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Kielce",
+        "voivodeship": "Świętokrzyskie",
+        "temp_c": -1.2,
+        "wind_kmh": 18.0,
+        "pressure_hpa": 1020.6,
+        "humidity_pct": 72,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Olsztyn",
+        "voivodeship": "Warmińsko-Mazurskie",
+        "temp_c": -0.4,
+        "wind_kmh": 7.2,
+        "pressure_hpa": 1024.5,
+        "humidity_pct": 86,
+        "precip_mm": 0.3,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Opole",
+        "voivodeship": "Opolskie",
+        "temp_c": -0.4,
+        "wind_kmh": 14.4,
+        "pressure_hpa": 1019.9,
+        "humidity_pct": 67,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Toruń",
+        "voivodeship": "Kujawsko-Pomorskie",
+        "temp_c": -0.8,
+        "wind_kmh": 7.2,
+        "pressure_hpa": 1024.0,
+        "humidity_pct": 92,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Zielona Góra",
+        "voivodeship": "Lubuskie",
+        "temp_c": -1.5,
+        "wind_kmh": 10.8,
+        "pressure_hpa": 1022.6,
+        "humidity_pct": 85,
+        "precip_mm": 0.0,
+        "measured_at": "2026-11-26 18:00",
+        "source": "IMGW-PIB"
+      },
+      {
+        "city": "Oslo",
+        "voivodeship": "Norwegia",
+        "temp_c": -5.6,
+        "wind_kmh": 9.0,
+        "pressure_hpa": 1030.8,
+        "humidity_pct": 66,
+        "precip_mm": 0.0,
+        "source": "Open-Meteo (CC BY 4.0)"
+      }
+    ]
+  }
+}

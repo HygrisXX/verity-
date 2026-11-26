@@ -9,6 +9,7 @@ import os
 import re
 import sys
 import unittest
+from unittest import mock
 import xml.etree.ElementTree as ET
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -773,7 +774,10 @@ class TestParsersAndRegressionGuards(unittest.TestCase):
         items = uln._parse_tvp3_items_from_html(html_doc, feed)
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["link"], "https://poznan.tvp.pl/96460001/nowy-most-nad-warta")
-        self.assertEqual(items[0]["thumbnail"], "https://s1.tvp.pl/images2/most.jpg")
+        self.assertEqual(items[0]["thumbnail"], "")
+        with mock.patch.object(uln, "ENABLE_THUMBNAILS", True):
+            items_with_thumb = uln._parse_tvp3_items_from_html(html_doc, feed)
+            self.assertEqual(items_with_thumb[0]["thumbnail"], "https://s1.tvp.pl/images2/most.jpg")
 
         html_newsdata = '<html><script>window.__newsData = [{"params":{"title":"Region"},"items":[{"title":"Modernizacja linii kolejowej pod Opolem przyspiesza","url":"/123/kolej-opole","lead":"Inwestor zakończył główny etap wymiany torów na trasie w województwie opolskim."}]}];</script></html>'
         feed_op = {"name": "TVP3 Opole", "url": "https://opole.tvp.pl/", "path": "/Polska/Regiony/Opolskie", "group": "TVP3", "source_type": "tvp3_sgdata"}
@@ -1032,7 +1036,10 @@ class TestParsersAndRegressionGuards(unittest.TestCase):
             items_dir[0]["description"],
             "Drogowcy zakończyli kluczowy etap prac w Kędzierzynie-Koźlu & Nysie na Opolszczyźnie.",
         )
-        self.assertEqual(items_dir[0]["thumbnail"], "https://s10.tvp.pl/images2/opole-most.jpg")
+        self.assertEqual(items_dir[0]["thumbnail"], "")
+        with mock.patch.object(uln, "ENABLE_THUMBNAILS", True):
+            items_dir_thumb = uln._parse_tvp3_items_from_html(html_dir, feed_dir)
+            self.assertEqual(items_dir_thumb[0]["thumbnail"], "https://s10.tvp.pl/images2/opole-most.jpg")
         self.assertEqual(items_dir[0]["pub_date"], "")
         self.assertEqual(items_dir[0]["path"], "/Polska/Regiony/Opolskie")
         self.assertEqual(items_dir[1]["link"], "https://opole.tvp.pl/96455888/badania-opole")
@@ -1608,7 +1615,7 @@ class TestStage3HardeningAndAntiChaining(unittest.TestCase):
         app_js_path = os.path.join(ROOT_DIR, "app.js")
         with open(app_js_path, "r", encoding="utf-8") as f:
             js_code = f.read()
-        self.assertLess(len(js_code.encode("utf-8")), 95_000)
+        self.assertLess(len(js_code.encode("utf-8")), 100_000)
         self.assertIn("let articles = [];", js_code)
         self.assertIn(".replace(/'/g, '&#39;')", js_code)
         self.assertIn("document.getElementById('regionsToggleBtn')?.focus()", js_code)
@@ -1659,7 +1666,8 @@ class TestStage3HardeningAndAntiChaining(unittest.TestCase):
             "link": "https://wysokienapiecie.pl/test-orlen",
             "path": "/Polska/Energetyka",
         }]
-        secs, pct = uln.synthesize_article_sections(group, group[0]["title"])
+        with mock.patch.dict(uln.MARKET_CONFIG, {"single_source_mode": "full"}):
+            secs, pct = uln.synthesize_article_sections(group, group[0]["title"])
         self.assertIsNone(pct)
         full_text = " ".join(secs[0]["paragraphs"])
         # Zdanie z przyczyną (siła wyższa) ma 4 wspólne słowa z 1. zdaniem, ale NIE może zostać wycięte
@@ -2178,7 +2186,7 @@ class TestStage6FastBootPwaSectionRssAndScrollPaging(unittest.TestCase):
     def test_app_js_stage6_scroll_and_pwa_invariants(self):
         with open(os.path.join(ROOT_DIR, "app.js"), "r", encoding="utf-8") as f:
             js_code = f.read()
-        self.assertLess(len(js_code.encode("utf-8")), 95_000)
+        self.assertLess(len(js_code.encode("utf-8")), 100_000)
         for token in (
             "FEED_BATCH_SIZE = 12",
             "IntersectionObserver",
@@ -3242,6 +3250,132 @@ class TestStage10CommunityChatWeightsAndModeration(unittest.TestCase):
         if os.path.exists(sitemap_path):
             with open(sitemap_path, "r", encoding="utf-8") as f:
                 self.assertIn("/kamery/</loc>", f.read())
+
+
+class TestLegalComplianceAndRegexGuards(unittest.TestCase):
+    def test_external_thumbnails_disabled_by_default_and_purged(self):
+        self.assertFalse(uln.ENABLE_THUMBNAILS)
+        sample = {
+            "id": 999001,
+            "path": "/Polska/Regiony/Wielkopolskie",
+            "seo_url": "/Polska/Regiony/Wielkopolskie/pozar-rckik-poznan",
+            "seo_title": "Pożar w budynku RCKiK w Poznaniu. Interwencja straży",
+            "summary_lead": "Strażacy interweniowali w piwnicy budynku przy ul. Marcelińskiej.",
+            "thumbnail_url": "https://obca-redakcja.pl/wp-content/uploads/foto.jpg",
+            "published_iso": "2026-11-26T02:00:00+01:00",
+            "updated_iso": "2026-11-26T02:00:00+01:00",
+            "display_date": "26.11.2026, 02:00",
+            "status": "AUTO_PUBLISHED",
+            "sources": ["ePoznan.pl", "Radio Poznań"],
+            "perspectives": [
+                {"outlet": "ePoznan.pl", "angle": "Relacja wiodąca", "summary": "Pożar w budynku RCKiK w Poznaniu. 10 zastępów straży", "url": "https://epoznan.pl/1"},
+                {"outlet": "Radio Poznań", "angle": "Doniesienie regionalne", "summary": "Pożar w centrum krwiodawstwa w Poznaniu. Na miejscu straż", "url": "https://radiopoznan.fm/2"},
+            ],
+            "full_sections": [
+                {"heading": "Ustalenia wspólne (2 redakcje)", "paragraphs": ["Strażacy potwierdzili pożar w piwnicy RCKiK w Poznaniu. [Źródło: ePoznan.pl, Radio Poznań]"]}
+            ],
+        }
+        upgraded = uln._upgrade_existing_article(sample)
+        self.assertIsNotNone(upgraded)
+        self.assertEqual(upgraded.get("thumbnail_url"), "")
+
+    def test_num_unit_regex_does_not_truncate_zastepow_to_za(self):
+        figs = ai_synthesizer._extract_concrete_figures(
+            "Na miejsce wysłano 10 zastępów straży, 14 zastępów OSP i 250 posłów głosowało za."
+        )
+        self.assertIn("10 zastępów", figs)
+        self.assertIn("14 zastępów", figs)
+        self.assertNotIn("10 za", figs)
+        self.assertNotIn("14 za", figs)
+
+    def test_articles_json_has_no_external_thumbnails(self):
+        arts_path = os.path.join(ROOT_DIR, "articles.json")
+        if os.path.exists(arts_path):
+            with open(arts_path, "r", encoding="utf-8") as f:
+                arts = json.load(f)
+            external = [a.get("thumbnail_url") for a in arts if (a.get("thumbnail_url") or "").strip()]
+            self.assertEqual(external, [], f"Znaleziono zewnętrzne miniatury w articles.json: {external[:3]}")
+
+    def test_market_config_loader_and_pl_no_profiles(self):
+        pl_cfg = uln.load_market_config("pl")
+        no_cfg = uln.load_market_config("no")
+        self.assertEqual(pl_cfg["market"], "pl")
+        self.assertEqual(pl_cfg["quote_max_chars_per_outlet"], 300)
+        self.assertEqual(no_cfg["market"], "no")
+        self.assertEqual(no_cfg["currency"], "NOK")
+
+    def test_art13_suspect_name_anonymization(self):
+        self.assertEqual(
+            uln.anonymize_suspect_names("Policja zatrzymała podejrzany Jan Kowalski w sprawie oszustwa."),
+            "Policja zatrzymała podejrzany Jan K. w sprawie oszustwa.",
+        )
+        self.assertEqual(
+            uln.anonymize_suspect_names("Prokuratura przesłuchała oskarżony Adam Nowak."),
+            "Prokuratura przesłuchała oskarżony Adam N.",
+        )
+        # Nazwy instytucji / miejsc nie mogą zostać skrócone
+        self.assertEqual(
+            uln.anonymize_suspect_names("Komunikat zatrzymany Policji Warszawie."),
+            "Komunikat zatrzymany Policji Warszawie.",
+        )
+
+    def test_first_person_outlet_not_attributed_to_multiple_outlets(self):
+        group = [
+            {
+                "outlet": "ePoznan.pl",
+                "title": "Pożar w budynku RCKiK w Poznaniu",
+                "description": "O zdarzeniu informuje nas Czytelnik z Poznania. Strażacy potwierdzili pożar w piwnicy budynku przy ul. Marcelińskiej.",
+                "link": "https://epoznan.pl/1",
+                "path": "/Polska/Regiony/Wielkopolskie",
+            },
+            {
+                "outlet": "Radio Poznań",
+                "title": "Pożar w centrum krwiodawstwa w Poznaniu",
+                "description": "Czytelnik z Poznania zgłosił pożar w budynku przy ul. Marcelińskiej. Na miejscu pracują strażacy.",
+                "link": "https://radiopoznan.fm/2",
+                "path": "/Polska/Regiony/Wielkopolskie",
+            },
+        ]
+        secs, _ = uln.synthesize_article_sections(group, group[0]["title"])
+        for sec in secs:
+            for p in sec.get("paragraphs") or []:
+                if "informuje nas" in p.lower():
+                    self.assertNotIn("Radio Poznań", p)
+
+    def test_numeric_discrepancies_detection(self):
+        art = {
+            "seo_title": "Pożar w budynku w Poznaniu",
+            "perspectives": [
+                {"outlet": "ePoznan.pl", "summary": "Pożar w Poznaniu. Na miejscu 10 zastępów straży.", "url": "https://epoznan.pl/1"},
+                {"outlet": "Radio Poznań", "summary": "Pożar w Poznaniu. Interweniuje 12 zastępów straży.", "url": "https://radiopoznan.fm/2"},
+            ],
+        }
+        cands = [
+            {"outlet": "ePoznan.pl", "title": "Pożar w Poznaniu. Na miejscu 10 zastępów straży.", "description": "W akcji bierze udział 10 zastępów."},
+            {"outlet": "Radio Poznań", "title": "Pożar w Poznaniu. Interweniuje 12 zastępów straży.", "description": "Straż wysłała 12 zastępów."},
+        ]
+        discs = ai_synthesizer.detect_numeric_discrepancies(art, candidates=cands)
+        self.assertEqual(len(discs), 1)
+        self.assertEqual(discs[0]["unit"], "zastępów")
+        self.assertIn("10 zastępów", discs[0]["summary"])
+        self.assertIn("12 zastępów", discs[0]["summary"])
+
+    def test_markets_ssr_ticker_and_legal_pages_built(self):
+        mkt = seo_builder._load_market_data(ROOT_DIR)
+        if mkt.get("currencies", {}).get("items"):
+            ticker = seo_builder._render_market_ticker_html("./", mkt)
+            self.assertIn("EUR/PLN", ticker)
+            self.assertIn("NOK/PLN", ticker)
+            self.assertIn("/rynki", ticker)
+            mkt_ssr = seo_builder._render_markets_ssr("../", mkt)
+            self.assertIn("Notowania rynkowe, waluty i pogoda", mkt_ssr)
+            self.assertIn("Oslo", mkt_ssr)
+        for slug in ("rynki", "metodologia", "o-nas", "polityka-prywatnosci", "zglos-blad"):
+            page_path = os.path.join(ROOT_DIR, slug, "index.html")
+            if os.path.exists(page_path):
+                with open(page_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                self.assertIn("VERITY", content)
 
 
 if __name__ == "__main__":

@@ -37,7 +37,72 @@ MAX_TOTAL_ARTICLES = 300
 MAX_NEW_PER_RUN = 6
 MAX_REGIONAL_PER_RUN = 3
 REGIONAL_SATURATION_CAP = 6
-ENABLE_THUMBNAILS = True  # Ustaw False, jeśli chcesz wyłączyć zewnętrzne miniatury dla 100% spokoju prawnego
+ENABLE_THUMBNAILS = os.environ.get("VERITY_ENABLE_THUMBNAILS", "0").strip().lower() in ("1", "true", "yes")
+
+DEFAULT_MARKET_CONFIG = {
+    "market": "pl",
+    "name": "Polska",
+    "language": "pl",
+    "currency": "PLN",
+    "quote_max_chars_per_outlet": 300,
+    "quote_max_sentences_per_outlet": 2,
+    "single_source_mode": "mention",
+    "use_llm_text": False,
+    "commercial_mode": False,
+    "anonymize_suspects": True,
+    "blocked_sources": [],
+}
+
+
+def load_market_config(market: str | None = None) -> dict:
+    """Ładuje profil rynku z markets/<market>.json (domyślnie pl)."""
+    mkt = (market or os.environ.get("VERITY_MARKET") or "pl").strip().lower()
+    cfg = dict(DEFAULT_MARKET_CONFIG)
+    cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "markets", f"{mkt}.json")
+    if os.path.isfile(cfg_path):
+        try:
+            with open(cfg_path, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+            if isinstance(loaded, dict):
+                cfg.update(loaded)
+        except (OSError, ValueError):
+            pass
+    return cfg
+
+
+MARKET_CONFIG = load_market_config()
+
+_SUSPECT_ANONYMIZE_RE = re.compile(
+    r"\b((?:podejrzan|oskarżon|zatrzyman|aresztowan|skazan)[yeiaą])\s+"
+    r"([A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{2,})\s+"
+    r"([A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{2,})\b\.?"
+)
+_SUSPECT_NON_NAME_WORDS = {
+    "Polski", "Polska", "Polsce", "Warszawie", "Krakowie", "Poznaniu", "Gdańsku", "Wrocławiu",
+    "Łodzi", "Szczecinie", "Lublinie", "Katowicach", "Bydgoszczy", "Policji", "Prokuratury",
+    "Sądu", "Komendy", "Straży", "Urzędu", "Rządu", "Sejmu", "Senatu", "Unii", "Europy",
+}
+
+
+def anonymize_suspect_names(text: str) -> str:
+    """Filtr art. 13 Prawa prasowego: skraca pełne nazwisko po słowach podejrzany/oskarżony/zatrzymany do inicjału."""
+    if not text or not MARKET_CONFIG.get("anonymize_suspects", True):
+        return text
+
+    def _repl(m):
+        role, first, last = m.group(1), m.group(2), m.group(3)
+        if first in _SUSPECT_NON_NAME_WORDS or last in _SUSPECT_NON_NAME_WORDS:
+            return m.group(0)
+        return f"{role} {first} {last[0]}."
+
+    return _SUSPECT_ANONYMIZE_RE.sub(_repl, text)
+
+
+_FIRST_PERSON_OUTLET_RE = re.compile(
+    r"\b(?:informuje\s+nas|informują\s+nas|dowiedzieliśmy\s+się|jak\s+ustaliliśmy|"
+    r"nasz\s+(?:reporter|dziennikarz|czytelnik|informator)|nasza\s+redakcja|jak\s+podaliśmy)\b",
+    re.IGNORECASE,
+)
 
 LIVE_RSS_FEEDS = [
     # --- Polityka, Prawo, Bezpieczeństwo, Opinia ---
@@ -2600,18 +2665,22 @@ def _group_sentences_to_paragraphs(
     cur_sents = []
     cur_outlets = []
     cur_len = 0
+    cur_is_fp = False
 
     for entry in fact_entries:
         txt = (entry["text"] if isinstance(entry, dict) else str(entry)).strip()
         if not txt:
             continue
         outlets = entry.get("outlets", []) if isinstance(entry, dict) else []
+        is_fp = bool(entry.get("first_person")) if isinstance(entry, dict) else False
         starts_quote = txt.startswith(("—", "–"))
         prev_was_quote = bool(cur_sents and cur_sents[0].startswith(("—", "–")))
 
         if cur_sents and (
             starts_quote
             or prev_was_quote
+            or is_fp
+            or cur_is_fp
             or len(cur_sents) >= max_sents
             or (cur_len + len(txt) + 1 > max_chars and cur_len >= 120)
         ):
@@ -2619,9 +2688,11 @@ def _group_sentences_to_paragraphs(
             cur_sents = []
             cur_outlets = []
             cur_len = 0
+            cur_is_fp = False
 
         cur_sents.append(txt)
         cur_len += len(txt) + 1
+        cur_is_fp = cur_is_fp or is_fp
         for o in outlets:
             if o not in cur_outlets:
                 cur_outlets.append(o)
@@ -2744,11 +2815,14 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
             if len(s) < len(primary_title) + 18 and len(s_tokens & title_tokens) / max(1, len(s_tokens)) >= 0.78:
                 continue
 
+            s_is_first_person = bool(_FIRST_PERSON_OUTLET_RE.search(s))
             matched = False
             for f in facts:
                 shared = len(s_tokens & f["tokens"])
                 overlap = shared / max(1, min(len(s_tokens), len(f["tokens"])))
                 same_outlet = outlet in f["outlets"]
+                if not same_outlet and (s_is_first_person or f.get("first_person")):
+                    continue
                 if same_outlet:
                     # W ramach tego samego źródła pomijaj wyłącznie niemal identyczne powtórzenia,
                     # a nie kolejne zdania rozwijające ten sam temat (np. podające powód decyzji).
@@ -2767,15 +2841,17 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
                         matched = True
                     break
 
-            if not matched and idx_it > 0 and facts:
-                best_f = max(facts, key=lambda fc: len(s_tokens & fc["tokens"]) / max(1, min(len(s_tokens), len(fc["tokens"]))))
-                sh_b = len(s_tokens & best_f["tokens"])
-                ov_b = sh_b / max(1, min(len(s_tokens), len(best_f["tokens"])))
-                if (not s_nums and ov_b >= 0.55) or ov_b >= 0.70:
-                    if outlet not in best_f["outlets"]:
-                        best_f["outlets"].append(outlet)
-                    best_f["tokens"] |= s_tokens
-                    continue
+            if not matched and idx_it > 0 and facts and not s_is_first_person:
+                non_fp = [fc for fc in facts if not fc.get("first_person")]
+                if non_fp:
+                    best_f = max(non_fp, key=lambda fc: len(s_tokens & fc["tokens"]) / max(1, min(len(s_tokens), len(fc["tokens"]))))
+                    sh_b = len(s_tokens & best_f["tokens"])
+                    ov_b = sh_b / max(1, min(len(s_tokens), len(best_f["tokens"])))
+                    if (not s_nums and ov_b >= 0.55) or ov_b >= 0.70:
+                        if outlet not in best_f["outlets"]:
+                            best_f["outlets"].append(outlet)
+                        best_f["tokens"] |= s_tokens
+                        continue
 
             if not matched:
                 facts.append({
@@ -2784,6 +2860,7 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
                     "nums": set(s_nums),
                     "outlets": [outlet],
                     "is_primary": (idx_it == 0),
+                    "first_person": s_is_first_person,
                 })
                 taken_chars += len(s)
                 taken_count += 1
@@ -2826,22 +2903,37 @@ def synthesize_article_sections(ranked_group: list, primary_title: str) -> tuple
                     "nums": set(re.findall(r"\b\d+(?:[.,]\d+)?\b", tail_s)),
                     "outlets": [outlet],
                     "is_primary": True,
+                    "first_person": bool(_FIRST_PERSON_OUTLET_RE.search(tail_s)),
                 })
                 taken_chars += len(tail_s)
 
     unique_outlets = list({it["outlet"] for it in ranked_group})
     num_sources = len(unique_outlets)
 
-    # Pojedyncze źródło (lokalne / niszowe) -> brak oceny % zgodności krzyżowej
+    # Pojedyncze źródło (lokalne / niszowe) -> brak oceny % zgodności krzyżowej, krótki cytat + link
     if num_sources == 1:
         only_outlet = ranked_group[0]["outlet"]
+        q_max_chars = int(MARKET_CONFIG.get("quote_max_chars_per_outlet") or 300)
+        q_max_sents = int(MARKET_CONFIG.get("quote_max_sentences_per_outlet") or 2)
         if facts:
-            paras = _group_sentences_to_paragraphs(facts[:13], max_chars=420, max_sents=3, single_source_outlet=only_outlet)
+            if MARKET_CONFIG.get("single_source_mode") == "mention":
+                trimmed = []
+                acc = 0
+                for f in facts[:q_max_sents]:
+                    t_txt = f["text"]
+                    if trimmed and acc + len(t_txt) > q_max_chars:
+                        break
+                    trimmed.append(f)
+                    acc += len(t_txt)
+                paras = _group_sentences_to_paragraphs(trimmed or facts[:1], max_chars=max(q_max_chars, 260), max_sents=q_max_sents, single_source_outlet=only_outlet)
+            else:
+                paras = _group_sentences_to_paragraphs(facts[:13], max_chars=420, max_sents=3, single_source_outlet=only_outlet)
         else:
             joined = clean_desc_text(ranked_group[0].get("description") or primary_title, article_title=primary_title)
-            paras = [f"{joined[:1200].strip()} [Źródło: {only_outlet}]"]
+            cap = q_max_chars if MARKET_CONFIG.get("single_source_mode") == "mention" else 1200
+            paras = [f"{_safe_truncate_text(joined, cap)} [Źródło: {only_outlet}]"]
         sections = [{
-            "heading": f"Relacja źródłowa ({only_outlet})",
+            "heading": f"Wzmianka źródłowa ({only_outlet})" if MARKET_CONFIG.get("single_source_mode") == "mention" else f"Relacja źródłowa ({only_outlet})",
             "paragraphs": paras,
         }]
         return sections, None
@@ -3814,7 +3906,26 @@ def build_article_from_group(group: list, art_id: int) -> dict:
     art_dict["zero_trust_reason"] = zt_reason
     if zt_status == "PENDING_ADMIN":
         art_dict["admin_note"] = zt_note
+    _apply_legal_sanitization(art_dict)
     return art_dict
+
+
+def _apply_legal_sanitization(art: dict):
+    """Stosuje filtr art. 13 pr. pras. oraz blokadę zewnętrznych miniatur na obiekcie artykułu."""
+    if not art:
+        return
+    if not ENABLE_THUMBNAILS:
+        art["thumbnail_url"] = ""
+    if MARKET_CONFIG.get("anonymize_suspects", True):
+        for field in ("seo_title", "summary_lead", "meta_description"):
+            if art.get(field):
+                art[field] = anonymize_suspect_names(art[field])
+        for sec in art.get("full_sections") or []:
+            if sec.get("paragraphs"):
+                sec["paragraphs"] = [anonymize_suspect_names(p) for p in sec["paragraphs"]]
+        for p in art.get("perspectives") or []:
+            if p.get("summary"):
+                p["summary"] = anonymize_suspect_names(p["summary"])
 
 
 def _reconstruct_outlet_texts(art: dict) -> dict:
@@ -3828,6 +3939,8 @@ def _reconstruct_outlet_texts(art: dict) -> dict:
             explicit_single = heading.replace("Relacja źródłowa:", "").strip()
         elif heading.startswith("Relacja źródłowa (") and heading.endswith(")"):
             explicit_single = heading[len("Relacja źródłowa ("):-1].strip()
+        elif heading.startswith("Wzmianka źródłowa (") and heading.endswith(")"):
+            explicit_single = heading[len("Wzmianka źródłowa ("):-1].strip()
         for raw_p in s.get("paragraphs") or []:
             m = re.search(r"\[Źródło:\s*([^\]]+)\]\s*$", raw_p)
             plain_p = _strip_all_citations(raw_p)
@@ -4059,6 +4172,7 @@ def _apply_candidates_to_article(art: dict, candidates: list, preserve_seo_url: 
             merged_dc.append(dc)
             seen_dc.add(key)
     art["declickbait"] = merged_dc[:3]
+    _apply_legal_sanitization(art)
     _ARTICLE_PROFILE_CACHE.pop(id(art), None)
 
 
@@ -4209,8 +4323,10 @@ def deduplicate_existing_articles(articles: list) -> list:
                     if len(cb.get("description") or "") > len(existing_c.get("description") or ""):
                         existing_c["description"] = cb["description"]
 
-            if not art_a.get("thumbnail_url") and art_b.get("thumbnail_url"):
+            if ENABLE_THUMBNAILS and not art_a.get("thumbnail_url") and art_b.get("thumbnail_url"):
                 art_a["thumbnail_url"] = art_b["thumbnail_url"]
+            elif not ENABLE_THUMBNAILS:
+                art_a["thumbnail_url"] = ""
             if (art_b.get("published_iso") or "") > (art_a.get("published_iso") or ""):
                 art_a["published_iso"] = art_b["published_iso"]
                 art_a["display_date"] = art_b.get("display_date") or art_a.get("display_date")

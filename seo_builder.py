@@ -392,7 +392,7 @@ def generate_og_card_png(art: dict, out_path: str) -> bool:
     fr_box = draw.textbbox((0, 0), foot_right, font=f_small)
     draw.text((width - 84 - (fr_box[2] - fr_box[0]), height - 121), foot_right, font=f_small, fill=text_muted)
 
-    img.save(out_path, format="PNG", optimize=True)
+    img.save(out_path, format="PNG", compress_level=1)
     return True
 
 
@@ -624,6 +624,12 @@ def _render_nav_html(rel_root: str, active_path: str = "/Polska") -> str:
     out.append(
         f'<a class="{cam_cls}" data-path="/kamery" href="{cam_href}" '
         'onclick="return fixFileHref(event)">Kamery</a>'
+    )
+    mkt_cls = "path-chip active" if active_path == "/rynki" else "path-chip"
+    mkt_href = html.escape(_rel_href(rel_root, "/rynki"), quote=True)
+    out.append(
+        f'<a class="{mkt_cls}" data-path="/rynki" href="{mkt_href}" '
+        'onclick="return fixFileHref(event)">Rynki i pogoda</a>'
     )
     return "\n        ".join(out)
 
@@ -957,6 +963,11 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
     secs_html_parts = []
     dropcap_applied = False
     total_rendered_paras = 0
+    outlet_url_map = {
+        (p.get("outlet") or "").strip(): (p.get("url") or "").strip()
+        for p in persps
+        if (p.get("outlet") or "").strip() and (p.get("url") or "").strip()
+    }
     outlet_para_counts = {}
     for si, s in enumerate(secs):
         sec_heading = s.get("heading") or ""
@@ -982,7 +993,15 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
             for o in p_outlets:
                 outlet_para_counts[o] = outlet_para_counts.get(o, 0) + 1
             outlets_attr = f' data-outlets="{html.escape("|".join(p_outlets), quote=True)}"' if p_outlets else ""
-            p_htmls.append(f'<p class="{" ".join(p_classes)}"{outlets_attr}>{format_citations_html(p, persps)}</p>')
+            cite_url = outlet_url_map.get(p_outlets[0], "") if len(p_outlets) == 1 else ""
+            if cite_url:
+                p_classes.append("source-quote")
+                p_htmls.append(
+                    f'<blockquote class="{" ".join(p_classes)}" cite="{html.escape(cite_url, quote=True)}"{outlets_attr}>'
+                    f'{format_citations_html(p, persps)}</blockquote>'
+                )
+            else:
+                p_htmls.append(f'<p class="{" ".join(p_classes)}"{outlets_attr}>{format_citations_html(p, persps)}</p>')
         if p_htmls:
             secs_html_parts.append(
                 f'<section data-sec-idx="{si}"><h2 class="section-heading" id="sec_{art["id"]}_{si}">{html.escape(sec_heading)}</h2>{"".join(p_htmls)}</section>'
@@ -1212,6 +1231,29 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
 
     ai_badge_html = '<span class="ai-badge">Synteza AI Zero-Trust</span>' if art.get("ai_synthesized") else ""
 
+    discrepancies_html = ""
+    if art.get("discrepancies"):
+        disc_items = "".join(
+            f'<div class="disc-item">• {html.escape(pl_typography(d.get("summary") or ""))}</div>'
+            for d in art["discrepancies"]
+            if d.get("summary")
+        )
+        if disc_items:
+            discrepancies_html = (
+                '<div class="callout callout-discrepancy">'
+                '<div class="callout-title">Rozbieżności między źródłami</div>'
+                f'{disc_items}</div>'
+            )
+
+    single_source_notice_html = ""
+    if len(srcs) <= 1:
+        single_source_notice_html = (
+            '<div class="callout callout-single-source">'
+            '<strong>Niepotwierdzone (1 źródło):</strong> Ten temat podaje obecnie jedna redakcja. '
+            'VERITY prezentuje wyłącznie krótką wzmiankę z linkiem do publikacji źródłowej do czasu potwierdzenia przez inne niezależne media.'
+            '</div>'
+        )
+
     return f"""<div class="cat" style="--h:{hue}">
       <a class="back-link" href="{back_href}" onclick="return selectPathLink(event, '{html.escape(back_cat, quote=True)}')">← Wróć do {back_label}</a>
       <div class="reader has-aside">
@@ -1231,7 +1273,9 @@ def _render_article_body_ssr(art: dict, all_articles: list, rel_root: str, site_
 
           {hero_html}
           {facts_html}
+          {single_source_notice_html}
           {admin_note_html}
+          {discrepancies_html}
           {declickbait_html}
           {source_filter_bar_html}
 
@@ -1648,6 +1692,238 @@ def _render_cameras_ssr(rel_root: str, cameras: list) -> str:
     </div>"""
 
 
+_ACTIVE_MARKET_DATA = None
+
+
+def _load_market_data(base_dir: str) -> dict:
+    """Ładuje zbuforowane dane rynkowe i pogodowe z market_data.json (bez zapytań sieciowych)."""
+    path = os.path.join(base_dir, "market_data.json")
+    if os.path.isfile(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, dict):
+                return data
+        except (OSError, ValueError):
+            pass
+    return {}
+
+
+def _fmt_chg(chg) -> str:
+    try:
+        v = float(chg)
+    except (TypeError, ValueError):
+        return ""
+    cls = "chg-up" if v > 0 else ("chg-down" if v < 0 else "chg-flat")
+    sign = "+" if v > 0 else ""
+    return f'<span class="mkt-chg {cls}">{sign}{v:.2f}%</span>'
+
+
+def _render_market_ticker_html(rel_root: str, mkt: dict | None) -> str:
+    """Renderuje zwięzły pasek notowań (waluty, indeksy, złoto, BTC, pogoda) pod nagłówkiem."""
+    if not isinstance(mkt, dict) or not mkt:
+        return ""
+    pills = []
+    cur_items = (mkt.get("currencies") or {}).get("items") or []
+    wanted_cur = {"EUR", "USD", "CHF", "NOK"}
+    for c in cur_items:
+        if c.get("code") in wanted_cur:
+            pills.append(
+                f'<span class="ticker-item"><strong>{html.escape(c["code"])}/PLN</strong> '
+                f'{float(c["rate"]):.2f} {_fmt_chg(c.get("change_pct"))}</span>'
+            )
+    wanted_idx = {"WIG20", "S&P 500", "DAX", "OBX Oslo"}
+    for idx in mkt.get("indices") or []:
+        if idx.get("name") in wanted_idx:
+            pills.append(
+                f'<span class="ticker-item"><strong>{html.escape(idx["name"])}</strong> '
+                f'{float(idx["price"]):,.0f} {_fmt_chg(idx.get("change_pct"))}</span>'.replace(",", "\u00A0")
+            )
+    for cm in (mkt.get("commodities") or [])[:1]:
+        pills.append(
+            f'<span class="ticker-item"><strong>{html.escape(cm["name"])}</strong> '
+            f'{float(cm["price"]):,.0f} USD {_fmt_chg(cm.get("change_pct"))}</span>'.replace(",", "\u00A0")
+        )
+    for cr in (mkt.get("crypto") or [])[:1]:
+        pills.append(
+            f'<span class="ticker-item"><strong>{html.escape(cr["symbol"])}</strong> '
+            f'{float(cr["price_usd"]):,.0f} USD {_fmt_chg(cr.get("change_pct"))}</span>'.replace(",", "\u00A0")
+        )
+    cities = (mkt.get("weather") or {}).get("cities") or []
+    for w in cities:
+        if w.get("city") in ("Warszawa", "Oslo"):
+            pills.append(
+                f'<span class="ticker-item ticker-weather"><strong>{html.escape(w["city"])}</strong> '
+                f'{float(w["temp_c"]):.1f}°C</span>'
+            )
+    if not pills:
+        return ""
+    href = html.escape(_rel_href(rel_root, "/rynki"), quote=True)
+    return (
+        '<div class="market-ticker" role="region" aria-label="Notowania i pogoda">'
+        '<div class="container market-ticker-inner">'
+        f'<div class="ticker-track">{"".join(pills)}</div>'
+        f'<a class="ticker-more" href="{href}" onclick="return fixFileHref(event)">Pełne notowania i pogoda →</a>'
+        '</div></div>'
+    )
+
+
+def _render_markets_ssr(rel_root: str, mkt: dict) -> str:
+    """Renderuje stronę /rynki/ z kursami walut (NBP), indeksami, akcjami GPW, surowcami, krypto i pogodą."""
+    updated = html.escape((mkt.get("updated_iso") or "")[:16].replace("T", " "))
+    cur_block = mkt.get("currencies") or {}
+    cur_items = cur_block.get("items") or []
+    cur_rows = "".join(
+        f'<tr><td><strong>{html.escape(c.get("pair",""))}</strong></td>'
+        f'<td>{html.escape(c.get("name",""))}</td>'
+        f'<td class="num">{float(c.get("rate",0)):.4f} zł</td>'
+        f'<td class="num">{_fmt_chg(c.get("change_pct"))}</td></tr>'
+        for c in cur_items
+    ) or '<tr><td colspan="4">Brak danych walutowych.</td></tr>'
+
+    def _quote_rows(items: list) -> str:
+        if not items:
+            return '<tr><td colspan="4">Brak danych notowań.</td></tr>'
+        return "".join(
+            f'<tr><td><strong>{html.escape(it.get("name",""))}</strong> <span class="mkt-sym">{html.escape(it.get("symbol",""))}</span></td>'
+            f'<td>{html.escape(it.get("market",""))}</td>'
+            f'<td class="num">{float(it.get("price",0)):,.2f} {html.escape(it.get("unit",""))}</td>'
+            f'<td class="num">{_fmt_chg(it.get("change_pct"))}</td></tr>'.replace(",", "\u00A0")
+            for it in items
+        )
+
+    crypto_rows = "".join(
+        f'<tr><td><strong>{html.escape(c.get("name",""))}</strong> <span class="mkt-sym">{html.escape(c.get("symbol",""))}</span></td>'
+        f'<td class="num">{float(c.get("price_usd",0)):,.2f} USD</td>'
+        f'<td class="num">{float(c.get("price_pln",0)):,.0f} PLN</td>'
+        f'<td class="num">{_fmt_chg(c.get("change_pct"))}</td></tr>'.replace(",", "\u00A0")
+        for c in (mkt.get("crypto") or [])
+    ) or '<tr><td colspan="4">Brak danych kryptowalut.</td></tr>'
+
+    weather_cities = (mkt.get("weather") or {}).get("cities") or []
+    weather_card_parts = []
+    for w in weather_cities:
+        press_txt = f" · {float(w['pressure_hpa']):.0f} hPa" if w.get("pressure_hpa") else ""
+        hum_txt = f" · Wilg. {int(w['humidity_pct'])}%" if w.get("humidity_pct") is not None else ""
+        weather_card_parts.append(
+            f'<div class="weather-card">'
+            f'<div class="weather-head"><strong>{html.escape(w.get("city",""))}</strong><span class="weather-reg">{html.escape(w.get("voivodeship",""))}</span></div>'
+            f'<div class="weather-temp">{float(w.get("temp_c",0)):.1f}°C</div>'
+            f'<div class="weather-meta">Wiatr: {float(w.get("wind_kmh",0)):.0f} km/h{press_txt}{hum_txt}</div></div>'
+        )
+    weather_cards = "".join(weather_card_parts) or '<p>Brak danych pogodowych.</p>'
+
+    return f"""<div class="markets-page">
+      <div class="feed-meta">
+        <div>
+          <span class="feed-crumb">/rynki</span>
+          <h1>Notowania rynkowe, waluty i pogoda</h1>
+        </div>
+        <span>Aktualizacja: {updated or "—"}</span>
+      </div>
+
+      <div class="markets-grid">
+        <section class="mkt-panel">
+          <h2>Kursy walut (NBP Tabela A)</h2>
+          <table class="mkt-table"><thead><tr><th>Para</th><th>Waluta</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead><tbody>{cur_rows}</tbody></table>
+          <p class="mkt-source">Źródło: {html.escape(cur_block.get("source") or "NBP API")} {html.escape(cur_block.get("effective_date") or "")}</p>
+        </section>
+
+        <section class="mkt-panel">
+          <h2>Indeksy giełdowe</h2>
+          <table class="mkt-table"><thead><tr><th>Indeks</th><th>Rynek</th><th class="num">Poziom</th><th class="num">Zmiana</th></tr></thead><tbody>{_quote_rows(mkt.get("indices") or [])}</tbody></table>
+        </section>
+
+        <section class="mkt-panel">
+          <h2>Wybrane spółki GPW</h2>
+          <table class="mkt-table"><thead><tr><th>Spółka</th><th>Rynek</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead><tbody>{_quote_rows(mkt.get("stocks") or [])}</tbody></table>
+        </section>
+
+        <section class="mkt-panel">
+          <h2>Surowce i kryptowaluty</h2>
+          <table class="mkt-table"><thead><tr><th>Instrument</th><th>Rynek</th><th class="num">Cena</th><th class="num">Zmiana</th></tr></thead><tbody>{_quote_rows(mkt.get("commodities") or [])}</tbody></table>
+          <table class="mkt-table mkt-table-sub"><thead><tr><th>Kryptowaluta</th><th class="num">USD</th><th class="num">PLN</th><th class="num">24h</th></tr></thead><tbody>{crypto_rows}</tbody></table>
+        </section>
+      </div>
+
+      <section class="mkt-panel weather-panel">
+        <h2>Pogoda na żywo — 16 stolic województw i Oslo</h2>
+        <div class="weather-grid">{weather_cards}</div>
+        <p class="mkt-source">Źródło: {html.escape((mkt.get("weather") or {}).get("source") or "IMGW-PIB + Open-Meteo (CC BY 4.0)")}</p>
+      </section>
+
+      <p class="cam-legal-note">Notowania mają charakter wyłącznie informacyjny (mogą być opóźnione) i nie stanowią porady inwestycyjnej.</p>
+    </div>"""
+
+
+_INFO_PAGES = [
+    (
+        "metodologia",
+        "Metodologia weryfikacji — VERITY",
+        "Jak automatycznie porównujemy źródła, usuwamy clickbait i oznaczamy rozbieżności.",
+        """<h2>Jak działa VERITY</h2>
+        <p>VERITY to w pełni automatyczny agregator porównawczy. Co godzinę pobiera depesze z publicznych kanałów RSS i zestawień redakcji ogólnopolskich oraz regionalnych ze wszystkich 16 województw, grupuje doniesienia dotyczące tego samego wydarzenia i pokazuje, jak różne media je przedstawiają.</p>
+        <h2>0 clickbait i 0 fake news</h2>
+        <ul>
+          <li><strong>Wieloźródłowość:</strong> tematy opisywane przez co najmniej 2 niezależne redakcje otrzymują wskaźnik zgodności faktów oraz zestawienie perspektyw (co dana redakcja eksponuje, a co pomija).</li>
+          <li><strong>Wzmianki z jednego źródła:</strong> tematy raportowane wyłącznie przez jedną redakcję są wyraźnie oznaczone jako niepotwierdzone, skrócone do krótkiej wzmianki z linkiem i nieindeksowane (<code>noindex</code>) do czasu potwierdzenia przez inne źródła.</li>
+          <li><strong>Rozbieżności:</strong> gdy redakcje podają odmienne liczby dla tej samej jednostki, system automatycznie wyświetla ramkę „Rozbieżności między źródłami”.</li>
+          <li><strong>Filtr anty-clickbait:</strong> neutralizujemy sensacyjne nagłówki i pokazujemy oryginalny tytuł źródła w zestawieniu porównawczym.</li>
+        </ul>
+        <h2>Prawo cytatu i brak cudzych zdjęć</h2>
+        <p>VERITY nie kopiuje i nie wyświetla zdjęć z innych stron. Każdy temat korzysta wyłącznie z automatycznie generowanych kart graficznych VERITY. Fragmenty tekstów redakcji są prezentowane jako oznaczone cytaty z bezpośrednim linkiem do oryginalnej publikacji.</p>""",
+    ),
+    (
+        "o-nas",
+        "O projekcie VERITY",
+        "Informacje o automatycznym portalu porównującym przekazy medialne.",
+        """<h2>Czym jest VERITY</h2>
+        <p>VERITY to niezależny projekt technologiczny stworzony do porównywania, w jaki sposób różne redakcje opisują te same wydarzenia — bez clickbaitu, bez ukrywania źródeł i bez przedruku cudzych fotografii.</p>
+        <h2>Zasady działania</h2>
+        <ul>
+          <li>Pełna automatyzacja zbierania i porównywania depesz z bezpośrednimi linkami do wydawców.</li>
+          <li>Zero zewnętrznych zdjęć wydawców — wyłącznie własne karty graficzne oraz publiczne dane (NBP, IMGW-PIB, Open-Meteo).</li>
+          <li>Otwarty rejestr korekt i szybka reakcja na zgłoszenia błędów lub wnioski o wyłączenie źródła.</li>
+        </ul>""",
+    ),
+    (
+        "polityka-prywatnosci",
+        "Polityka prywatności i cookies — VERITY",
+        "Zasady przetwarzania danych, minimalizacji cookies i osadzeń zewnętrznych.",
+        """<h2>Minimalizacja danych i brak śledzenia</h2>
+        <p>Statyczna część portalu VERITY nie używa reklamowych plików cookie ani skryptów śledzących (brak Google Analytics, pikseli reklamowych i profilowania). Wybór motywu (Auto / Jasny / Ciemny) zapisywany jest wyłącznie lokalnie w przeglądarce (<code>localStorage</code>).</p>
+        <h2>Osadzenia zewnętrzne (Kamery)</h2>
+        <p>W zakładce <a href="../kamery/">Kamery</a> odtwarzacze YouTube (<code>youtube-nocookie.com</code>) ładują się dopiero po wyraźnym kliknięciu użytkownika. Przed kliknięciem żadne dane nie są przesyłane do serwerów zewnętrznych.</p>
+        <h2>Dane publiczne</h2>
+        <p>Dane walutowe pochodzą z NBP API (dane publiczne), a dane pogodowe z IMGW-PIB (dane publiczne) oraz Open-Meteo (licencja CC BY 4.0).</p>""",
+    ),
+    (
+        "zglos-blad",
+        "Zgłoś błąd, sprostowanie lub wyłączenie źródła — VERITY",
+        "Jak zgłosić korektę faktograficzną lub wniosek wydawcy o usunięcie źródła.",
+        """<h2>Korekta faktograficzna („Pokaż dowód!”)</h2>
+        <p>Pod każdym tematem znajduje się przycisk <strong>„Zgłoś sprostowanie”</strong>. Zgłoszenie powinno zawierać opis rozbieżności oraz bezpośredni link do wiarygodnego źródła lub dokumentu.</p>
+        <h2>Wnioski wydawców i opt-out</h2>
+        <p>Jeżeli reprezentujesz redakcję i chcesz ograniczyć lub wyłączyć indeksowanie swojego kanału RSS w VERITY, zgłoś wniosek przez repozytorium projektu lub kontakt redakcyjny — źródło zostanie dopisane do listy <code>blocked_sources</code> w profilu rynku.</p>""",
+    ),
+]
+
+
+def _render_info_page_ssr(rel_root: str, slug: str, title: str, body_html: str) -> str:
+    return f"""<div class="info-page">
+      <div class="feed-meta">
+        <div>
+          <span class="feed-crumb">/{html.escape(slug)}</span>
+          <h1>{html.escape(title)}</h1>
+        </div>
+        <a class="back-link" href="{html.escape(rel_root or './', quote=True)}" onclick="return selectPathLink(event, '/Polska')">← Strona główna</a>
+      </div>
+      <article class="info-card">
+        {body_html}
+      </article>
+    </div>"""
+
+
 def _page_shell(
     *,
     title: str,
@@ -1791,6 +2067,7 @@ def _page_shell(
       {_render_regions_drawer_html(rel_root, active_path)}
     </div>
   </header>
+  {_render_market_ticker_html(rel_root, _ACTIVE_MARKET_DATA) if active_path != "/rynki" else ""}
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -1820,8 +2097,13 @@ def _page_shell(
         <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
       </div>
       <div class="footer-links">
+        <a href="{html.escape(rel_root, quote=True)}rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
         <a href="{html.escape(rel_root, quote=True)}kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
         <a href="{html.escape(rel_root, quote=True)}moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="{html.escape(rel_root, quote=True)}metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="{html.escape(rel_root, quote=True)}o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="{html.escape(rel_root, quote=True)}polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="{html.escape(rel_root, quote=True)}zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
         <a href="{html.escape(rel_root, quote=True)}news-sitemap.xml">Mapa Google News (XML)</a>
         <a href="{html.escape(rel_root, quote=True)}sitemap.xml">Sitemap (XML)</a>
         <a href="{html.escape(rel_root, quote=True)}feed.xml">Kanał RSS</a>
@@ -1956,6 +2238,8 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     if not site_base_url:
         site_base_url = detect_site_base_url(base_dir)
     site_base_url = site_base_url.rstrip("/")
+    global _ACTIVE_MARKET_DATA
+    _ACTIVE_MARKET_DATA = _load_market_data(base_dir)
     css_ver = _asset_hash(os.path.join(base_dir, "styles.css"))
     js_ver = _asset_hash(os.path.join(base_dir, "app.js"))
     comm_ver = _asset_hash(os.path.join(base_dir, "community.js"))
@@ -2201,7 +2485,59 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
     )
     _write_file(os.path.join(base_dir, "kamery", "index.html"), cam_html)
 
-    # 4. Strony pojedynczych artykułów (prawdziwy HTTP 200 OK dla każdego artykułu, z noindex dla PENDING_ADMIN)
+    # 3d. Strona Notowań i Pogody (/rynki/)
+    mkt_data = _ACTIVE_MARKET_DATA or {}
+    mkt_html = _page_shell(
+        title="Notowania rynkowe, waluty i pogoda — VERITY",
+        description="Aktualne kursy walut NBP (EUR, USD, CHF, GBP, NOK), indeksy giełdowe (WIG20, S&P 500, DAX, OBX), spółki GPW, surowce, kryptowaluty i pogoda dla 16 województw oraz Oslo.",
+        canonical_url=f"{site_base_url}/rynki/",
+        og_type="website",
+        og_image=first_thumb,
+        og_image_dims=first_thumb_dims,
+        json_ld_obj={
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Notowania rynkowe, waluty i pogoda — VERITY",
+            "url": f"{site_base_url}/rynki/",
+        },
+        rel_root="../",
+        active_path="/rynki",
+        ssr_main_html=_render_markets_ssr("../", mkt_data),
+        init_script_vars=f'window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/rynki";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+        css_ver=css_ver,
+        js_ver=js_ver,
+        comm_ver=comm_ver,
+        pending_count=pending_badge_total,
+    )
+    _write_file(os.path.join(base_dir, "rynki", "index.html"), mkt_html)
+
+    # 3e. Strony transparentności i prawne (/metodologia/, /o-nas/, /polityka-prywatnosci/, /zglos-blad/)
+    for info_slug, info_title, info_desc, info_body in _INFO_PAGES:
+        info_html = _page_shell(
+            title=info_title,
+            description=info_desc,
+            canonical_url=f"{site_base_url}/{info_slug}/",
+            og_type="website",
+            og_image=first_thumb,
+            og_image_dims=first_thumb_dims,
+            json_ld_obj={
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": info_title,
+                "url": f"{site_base_url}/{info_slug}/",
+            },
+            rel_root="../",
+            active_path=f"/{info_slug}",
+            ssr_main_html=_render_info_page_ssr("../", info_slug, info_title.replace(" — VERITY", ""), info_body),
+            init_script_vars=f'window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/{info_slug}";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN={json.dumps(site_base_url)};',
+            css_ver=css_ver,
+            js_ver=js_ver,
+            comm_ver=comm_ver,
+            pending_count=pending_badge_total,
+        )
+        _write_file(os.path.join(base_dir, info_slug, "index.html"), info_html)
+
+    # 4. Strony pojedynczych artykułów (prawdziwy HTTP 200 OK dla każdego artykułu, z noindex dla PENDING_ADMIN i tematów 1-źródłowych)
     written_urls = set()
     for art in all_sorted:
         seo_url = (art.get("seo_url") or "").strip("/")
@@ -2224,7 +2560,7 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         sec_rss_rel, sec_rss_title = _section_rss_for_path(cat_path)
         art_robots = (
             "noindex, follow"
-            if art.get("status") == "PENDING_ADMIN"
+            if art.get("status") == "PENDING_ADMIN" or len(art.get("sources") or []) <= 1
             else "index, follow, max-image-preview:large, max-snippet:-1"
         )
         art_og_img, art_og_dims = _article_og_image_info(art, site_base_url)
@@ -2357,7 +2693,22 @@ def build_all_seo_artifacts(base_dir: str, articles: list, site_base_url: str = 
         "    <changefreq>daily</changefreq>",
         "    <priority>0.7</priority>",
         "  </url>",
+        "  <url>",
+        f"    <loc>{xml.sax.saxutils.escape(site_base_url + '/rynki/')}</loc>",
+        f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
+        "    <changefreq>hourly</changefreq>",
+        "    <priority>0.8</priority>",
+        "  </url>",
     ]
+    for info_slug, _, _, _ in _INFO_PAGES:
+        sitemap_lines.extend([
+            "  <url>",
+            f"    <loc>{xml.sax.saxutils.escape(f'{site_base_url}/{info_slug}/')}</loc>",
+            f"    <lastmod>{xml.sax.saxutils.escape(root_lastmod)}</lastmod>",
+            "    <changefreq>monthly</changefreq>",
+            "    <priority>0.4</priority>",
+            "  </url>",
+        ])
     for cat_path, _, _ in CATEGORIES:
         cat_lastmod = max(
             (

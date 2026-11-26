@@ -37,3 +37,11 @@ Szczegóły architektury, harmonogramu GitHub Actions oraz konfiguracji publikac
    ```bash
    python3 update_live_news.py --rebuild-only
    ```
+
+## Notowania rynkowe i pogoda (`/rynki/`)
+- Odświeżenie `market_data.json` (NBP API, IMGW-PIB, Open-Meteo, indeksy/akcje/surowce/krypto):
+  ```bash
+  PYTHONDONTWRITEBYTECODE=1 python3 -W error market_data.py
+  ```
+- Konfiguracja profili rynków (limity cytatu, tryb 1-źródłowy, filtr art. 13 pr. pras., `blocked_sources`): `markets/pl.json`, `markets/no.json`.
+

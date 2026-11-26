@@ -1,0 +1,13 @@
+{
+  "market": "no",
+  "name": "Norge",
+  "language": "nb",
+  "currency": "NOK",
+  "quote_max_chars_per_outlet": 300,
+  "quote_max_sentences_per_outlet": 2,
+  "single_source_mode": "mention",
+  "use_llm_text": false,
+  "commercial_mode": false,
+  "anonymize_suspects": true,
+  "blocked_sources": []
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notowania rynkowe, waluty i pogoda — VERITY</title>
+  <meta name="description" content="Aktualne kursy walut NBP (EUR, USD, CHF, GBP, NOK), indeksy giełdowe (WIG20, S&amp;P 500, DAX, OBX), spółki GPW, surowce, kryptowaluty i pogoda dla 16 województw oraz Oslo." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#151b28" />
+  <link rel="icon" type="image/svg+xml" href="../icon.svg" />
+  <link rel="apple-touch-icon" href="../icon-192.png" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="canonical" href="https://hygrisxx.github.io/verity-/rynki/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="VERITY" />
+  <meta property="og:title" content="Notowania rynkowe, waluty i pogoda — VERITY" />
+  <meta property="og:description" content="Aktualne kursy walut NBP (EUR, USD, CHF, GBP, NOK), indeksy giełdowe (WIG20, S&amp;P 500, DAX, OBX), spółki GPW, surowce, kryptowaluty i pogoda dla 16 województw oraz Oslo." />
+  <meta property="og:url" content="https://hygrisxx.github.io/verity-/rynki/" />
+  <meta property="og:image" content="https://hygrisxx.github.io/verity-/og/1154073713.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://hygrisxx.github.io/verity-/og/1154073713.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Notowania rynkowe, waluty i pogoda — VERITY" />
+  <meta name="twitter:description" content="Aktualne kursy walut NBP (EUR, USD, CHF, GBP, NOK), indeksy giełdowe (WIG20, S&amp;P 500, DAX, OBX), spółki GPW, surowce, kryptowaluty i pogoda dla 16 województw oraz Oslo." />
+
+  <script id="dynamicJsonLd" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Notowania rynkowe, waluty i pogoda — VERITY",
+  "url": "https://hygrisxx.github.io/verity-/rynki/"
+}
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="VERITY RSS" href="../feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,600&display=swap" />
+  <link rel="stylesheet" href="../styles.css?v=3a7126da" />
+</head>
+<body>
+  <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+
+  <div class="top-utility">
+    <div class="container top-utility-inner">
+      <div class="top-utility-meta">
+        <span id="todayDateLabel" class="top-date">Wydanie bieżące</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">Weryfikacja z 151 redakcji</span>
+        <span class="top-sep top-hide-sm" aria-hidden="true"></span>
+        <span class="top-hide-sm">16 województw · Filtr anty-clickbait</span>
+      </div>
+      <div class="top-utility-actions">
+        <button id="liveChatBtn" class="queue-btn chat-toggle-btn" type="button" onclick="window.VERITY_COMMUNITY?.toggleChat()">
+          <span class="chat-live-dot" aria-hidden="true"></span><span class="btn-label-full">Czat live</span><span class="btn-label-short">Czat</span>
+        </button>
+        <button id="authAccountBtn" class="queue-btn auth-pill-btn" type="button" onclick="window.VERITY_COMMUNITY?.openAuthModal()">
+          Konto
+        </button>
+        <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">1</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <a class="brand" href="../" onclick="return selectPathLink(event, '/Polska')">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="brand-title">VERITY</div>
+            <div class="brand-subtitle">Wieloźródłowa weryfikacja i synteza informacji</div>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <div class="search-box">
+            <input
+              id="searchInput"
+              type="search"
+              class="search-input"
+              oninput="handleSearchInput()"
+              aria-label="Wyszukaj artykuły"
+            />
+            <button id="clearSearchBtn" class="search-clear hidden" onclick="clearSearch()" title="Wyczyść">✕</button>
+          </div>
+
+          <div class="theme-switcher" role="group" aria-label="Wybór motywu kolorystycznego">
+            <button id="themeBtn_auto" class="theme-btn active" onclick="applyTheme('auto')" title="Automatycznie dopasuj do motywu urządzenia">Auto</button>
+            <button id="themeBtn_light" class="theme-btn" onclick="applyTheme('light')" title="Motyw jasny">Jasny</button>
+            <button id="themeBtn_dark" class="theme-btn" onclick="applyTheme('dark')" title="Motyw ciemny">Ciemny</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="path-nav" aria-label="Kategorie tematyczne">
+        <a class="path-chip" data-path="/Polska" href="../Polska/" onclick="return selectPathLink(event, '/Polska')">Polska</a>
+        <a class="path-chip" data-path="/Polska/Gospodarka" href="../Polska/Gospodarka/" onclick="return selectPathLink(event, '/Polska/Gospodarka')"><span class="path-root">Polska / </span>Gospodarka</a>
+        <a class="path-chip" data-path="/Polska/Polityka" href="../Polska/Polityka/" onclick="return selectPathLink(event, '/Polska/Polityka')"><span class="path-root">Polska / </span>Polityka</a>
+        <a class="path-chip" data-path="/Polska/Energetyka" href="../Polska/Energetyka/" onclick="return selectPathLink(event, '/Polska/Energetyka')"><span class="path-root">Polska / </span>Energetyka</a>
+        <div class="path-region-group"><a class="path-chip" data-path="/Polska/Regiony" href="../Polska/Regiony/" onclick="return selectPathLink(event, '/Polska/Regiony')"><span class="path-root">Polska / </span>Regiony</a><button type="button" id="regionsToggleBtn" class="regions-toggle" onclick="toggleRegionsDrawer()" aria-expanded="false" aria-controls="regionsDrawer" title="Wybierz dowolne z 16 województw Polski">16 woj. <span class="regions-caret" aria-hidden="true">▾</span></button></div>
+        <span class="path-divider" aria-hidden="true">|</span>
+        <a class="path-chip" data-path="/Swiat" href="../Swiat/" onclick="return selectPathLink(event, '/Swiat')">Świat</a>
+        <a class="path-chip" data-path="/Sport" href="../Sport/" onclick="return selectPathLink(event, '/Sport')">Sport</a>
+        <a class="path-chip" data-path="/kamery" href="../kamery/" onclick="return fixFileHref(event)">Kamery</a>
+        <a class="path-chip active" data-path="/rynki" href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda</a>
+      </nav>
+      <div id="regionsDrawer" class="regions-drawer hidden" role="region" aria-label="Wszystkie 16 województw Polski">
+      <div class="regions-drawer-head">
+        <div>
+          <span class="regions-drawer-title">16 województw Polski</span>
+          <span class="regions-drawer-sub">Wiadomości lokalne ze stolic i powiatów całego kraju</span>
+        </div>
+        <div class="regions-drawer-actions">
+          <a class="regions-drawer-all" data-region-link="/Polska/Regiony" href="../Polska/Regiony/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony')">Wszystkie regiony →</a>
+          <button type="button" class="regions-drawer-close" onclick="toggleRegionsDrawer(false)" aria-label="Zamknij wybór województw">✕</button>
+        </div>
+      </div>
+      <div class="regions-drawer-grid">
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Dolnoslaskie" href="../Polska/Regiony/Dolnoslaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Dolnoslaskie')"><span class="region-dot" style="--h:330" aria-hidden="true"></span><span>Dolnośląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Kujawsko-Pomorskie" href="../Polska/Regiony/Kujawsko-Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Kujawsko-Pomorskie')"><span class="region-dot" style="--h:195" aria-hidden="true"></span><span>Kujawsko-Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubelskie" href="../Polska/Regiony/Lubelskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubelskie')"><span class="region-dot" style="--h:105" aria-hidden="true"></span><span>Lubelskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lubuskie" href="../Polska/Regiony/Lubuskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lubuskie')"><span class="region-dot" style="--h:132" aria-hidden="true"></span><span>Lubuskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Lodzkie" href="../Polska/Regiony/Lodzkie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Lodzkie')"><span class="region-dot" style="--h:25" aria-hidden="true"></span><span>Łódzkie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Malopolskie" href="../Polska/Regiony/Malopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Malopolskie')"><span class="region-dot" style="--h:12" aria-hidden="true"></span><span>Małopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Mazowieckie" href="../Polska/Regiony/Mazowieckie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Mazowieckie')"><span class="region-dot" style="--h:225" aria-hidden="true"></span><span>Mazowieckie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Opolskie" href="../Polska/Regiony/Opolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Opolskie')"><span class="region-dot" style="--h:48" aria-hidden="true"></span><span>Opolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podkarpackie" href="../Polska/Regiony/Podkarpackie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podkarpackie')"><span class="region-dot" style="--h:162" aria-hidden="true"></span><span>Podkarpackie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Podlaskie" href="../Polska/Regiony/Podlaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Podlaskie')"><span class="region-dot" style="--h:145" aria-hidden="true"></span><span>Podlaskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Pomorskie" href="../Polska/Regiony/Pomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Pomorskie')"><span class="region-dot" style="--h:200" aria-hidden="true"></span><span>Pomorskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Slaskie" href="../Polska/Regiony/Slaskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Slaskie')"><span class="region-dot" style="--h:245" aria-hidden="true"></span><span>Śląskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Swietokrzyskie" href="../Polska/Regiony/Swietokrzyskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Swietokrzyskie')"><span class="region-dot" style="--h:310" aria-hidden="true"></span><span>Świętokrzyskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Warminsko-Mazurskie" href="../Polska/Regiony/Warminsko-Mazurskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Warminsko-Mazurskie')"><span class="region-dot" style="--h:140" aria-hidden="true"></span><span>Warmińsko-Mazurskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Wielkopolskie" href="../Polska/Regiony/Wielkopolskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Wielkopolskie')"><span class="region-dot" style="--h:350" aria-hidden="true"></span><span>Wielkopolskie</span></a>
+        <a class="region-drawer-item" data-region-link="/Polska/Regiony/Zachodniopomorskie" href="../Polska/Regiony/Zachodniopomorskie/" onclick="toggleRegionsDrawer(false); return selectPathLink(event, '/Polska/Regiony/Zachodniopomorskie')"><span class="region-dot" style="--h:188" aria-hidden="true"></span><span>Zachodniopomorskie</span></a>
+      </div>
+    </div>
+    </div>
+  </header>
+  
+
+  <main class="container main-content">
+    <section id="viewPublic">
+      <div id="articlesFeed" class="articles-stack">
+        <div class="markets-page">
+      <div class="feed-meta">
+        <div>
+          <span class="feed-crumb">/rynki</span>
+          <h1>Notowania rynkowe, waluty i pogoda</h1>
+        </div>
+        <span>Aktualizacja: 2026-11-26 18:25</span>
+      </div>
+
+      <div class="markets-grid">
+        <section class="mkt-panel">
+          <h2>Kursy walut (NBP Tabela A)</h2>
+          <table class="mkt-table"><thead><tr><th>Para</th><th>Waluta</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead><tbody><tr><td><strong>EUR/PLN</strong></td><td>euro</td><td class="num">4.4802 zł</td><td class="num"><span class="mkt-chg chg-down">-0.02%</span></td></tr><tr><td><strong>USD/PLN</strong></td><td>dolar amerykański</td><td class="num">4.0835 zł</td><td class="num"><span class="mkt-chg chg-down">-0.32%</span></td></tr><tr><td><strong>CHF/PLN</strong></td><td>frank szwajcarski</td><td class="num">4.8988 zł</td><td class="num"><span class="mkt-chg chg-down">-0.20%</span></td></tr><tr><td><strong>GBP/PLN</strong></td><td>funt szterling</td><td class="num">5.3533 zł</td><td class="num"><span class="mkt-chg chg-up">+0.08%</span></td></tr><tr><td><strong>NOK/PLN</strong></td><td>korona norweska</td><td class="num">0.4166 zł</td><td class="num"><span class="mkt-chg chg-up">+0.36%</span></td></tr><tr><td><strong>SEK/PLN</strong></td><td>korona szwedzka</td><td class="num">0.3996 zł</td><td class="num"><span class="mkt-chg chg-up">+0.20%</span></td></tr><tr><td><strong>CZK/PLN</strong></td><td>korona czeska</td><td class="num">0.1833 zł</td><td class="num"><span class="mkt-chg chg-up">+0.05%</span></td></tr><tr><td><strong>JPY/PLN</strong></td><td>jen (Japonia)</td><td class="num">0.0256 zł</td><td class="num"><span class="mkt-chg chg-down">-0.18%</span></td></tr></tbody></table>
+          <p class="mkt-source">Źródło: NBP API (Tabela A) 2026-11-26</p>
+        </section>
+
+        <section class="mkt-panel">
+          <h2>Indeksy giełdowe</h2>
+          <table class="mkt-table"><thead><tr><th>Indeks</th><th>Rynek</th><th class="num">Poziom</th><th class="num">Zmiana</th></tr></thead><tbody><tr><td><strong>WIG20</strong> <span class="mkt-sym">WIG20.WA</span></td><td>GPW</td><td class="num">4 043.87 pkt</td><td class="num"><span class="mkt-chg chg-up">+1.59%</span></td></tr><tr><td><strong>S&amp;P 500</strong> <span class="mkt-sym">^GSPC</span></td><td>USA</td><td class="num">7 182.78 pkt</td><td class="num"><span class="mkt-chg chg-down">-0.25%</span></td></tr><tr><td><strong>NASDAQ</strong> <span class="mkt-sym">^IXIC</span></td><td>USA</td><td class="num">23 585.80 pkt</td><td class="num"><span class="mkt-chg chg-down">-0.62%</span></td></tr><tr><td><strong>DAX</strong> <span class="mkt-sym">^GDAXI</span></td><td>DE</td><td class="num">25 215.52 pkt</td><td class="num"><span class="mkt-chg chg-up">+2.08%</span></td></tr><tr><td><strong>FTSE 100</strong> <span class="mkt-sym">^FTSE</span></td><td>UK</td><td class="num">10 609.30 pkt</td><td class="num"><span class="mkt-chg chg-up">+1.75%</span></td></tr><tr><td><strong>OBX Oslo</strong> <span class="mkt-sym">OBX.OL</span></td><td>NO</td><td class="num">1 971.44 pkt</td><td class="num"><span class="mkt-chg chg-up">+1.50%</span></td></tr></tbody></table>
+        </section>
+
+        <section class="mkt-panel">
+          <h2>Wybrane spółki GPW</h2>
+          <table class="mkt-table"><thead><tr><th>Spółka</th><th>Rynek</th><th class="num">Kurs</th><th class="num">Zmiana</th></tr></thead><tbody><tr><td><strong>PKO BP</strong> <span class="mkt-sym">PKO.WA</span></td><td>GPW</td><td class="num">110.20 PLN</td><td class="num"><span class="mkt-chg chg-up">+1.90%</span></td></tr><tr><td><strong>Orlen</strong> <span class="mkt-sym">PKN.WA</span></td><td>GPW</td><td class="num">119.40 PLN</td><td class="num"><span class="mkt-chg chg-up">+2.23%</span></td></tr><tr><td><strong>PZU</strong> <span class="mkt-sym">PZU.WA</span></td><td>GPW</td><td class="num">68.68 PLN</td><td class="num"><span class="mkt-chg chg-down">-6.79%</span></td></tr><tr><td><strong>CD Projekt</strong> <span class="mkt-sym">CDR.WA</span></td><td>GPW</td><td class="num">277.60 PLN</td><td class="num"><span class="mkt-chg chg-up">+2.06%</span></td></tr><tr><td><strong>KGHM</strong> <span class="mkt-sym">KGH.WA</span></td><td>GPW</td><td class="num">235.15 PLN</td><td class="num"><span class="mkt-chg chg-up">+4.05%</span></td></tr><tr><td><strong>Allegro</strong> <span class="mkt-sym">ALE.WA</span></td><td>GPW</td><td class="num">66.67 PLN</td><td class="num"><span class="mkt-chg chg-up">+2.36%</span></td></tr></tbody></table>
+        </section>
+
+        <section class="mkt-panel">
+          <h2>Surowce i kryptowaluty</h2>
+          <table class="mkt-table"><thead><tr><th>Instrument</th><th>Rynek</th><th class="num">Cena</th><th class="num">Zmiana</th></tr></thead><tbody><tr><td><strong>Złoto</strong> <span class="mkt-sym">GC=F</span></td><td>COMEX</td><td class="num">3 593.40 USD/oz</td><td class="num"><span class="mkt-chg chg-up">+1.63%</span></td></tr><tr><td><strong>Ropa Brent</strong> <span class="mkt-sym">BZ=F</span></td><td>ICE</td><td class="num">91.47 USD/bbl</td><td class="num"><span class="mkt-chg chg-down">-3.32%</span></td></tr><tr><td><strong>Srebro</strong> <span class="mkt-sym">SI=F</span></td><td>COMEX</td><td class="num">41.73 USD/oz</td><td class="num"><span class="mkt-chg chg-up">+4.20%</span></td></tr></tbody></table>
+          <table class="mkt-table mkt-table-sub"><thead><tr><th>Kryptowaluta</th><th class="num">USD</th><th class="num">PLN</th><th class="num">24h</th></tr></thead><tbody><tr><td><strong>Bitcoin</strong> <span class="mkt-sym">BTC</span></td><td class="num">60 497.00 USD</td><td class="num">247 143 PLN</td><td class="num"><span class="mkt-chg chg-up">+1.34%</span></td></tr><tr><td><strong>Ethereum</strong> <span class="mkt-sym">ETH</span></td><td class="num">1 692.39 USD</td><td class="num">6 914 PLN</td><td class="num"><span class="mkt-chg chg-up">+0.53%</span></td></tr></tbody></table>
+        </section>
+      </div>
+
+      <section class="mkt-panel weather-panel">
+        <h2>Pogoda na żywo — 16 stolic województw i Oslo</h2>
+        <div class="weather-grid"><div class="weather-card"><div class="weather-head"><strong>Warszawa</strong><span class="weather-reg">Mazowieckie</span></div><div class="weather-temp">-2.3°C</div><div class="weather-meta">Wiatr: 14 km/h · 1024 hPa · Wilg. 89%</div></div><div class="weather-card"><div class="weather-head"><strong>Kraków</strong><span class="weather-reg">Małopolskie</span></div><div class="weather-temp">-0.2°C</div><div class="weather-meta">Wiatr: 29 km/h · 1018 hPa · Wilg. 74%</div></div><div class="weather-card"><div class="weather-head"><strong>Wrocław</strong><span class="weather-reg">Dolnośląskie</span></div><div class="weather-temp">0.0°C</div><div class="weather-meta">Wiatr: 11 km/h · 1021 hPa · Wilg. 67%</div></div><div class="weather-card"><div class="weather-head"><strong>Poznań</strong><span class="weather-reg">Wielkopolskie</span></div><div class="weather-temp">-3.1°C</div><div class="weather-meta">Wiatr: 11 km/h · 1023 hPa · Wilg. 90%</div></div><div class="weather-card"><div class="weather-head"><strong>Gdańsk</strong><span class="weather-reg">Pomorskie</span></div><div class="weather-temp">0.7°C</div><div class="weather-meta">Wiatr: 14 km/h · 1025 hPa · Wilg. 87%</div></div><div class="weather-card"><div class="weather-head"><strong>Łódź</strong><span class="weather-reg">Łódzkie</span></div><div class="weather-temp">0.1°C</div><div class="weather-meta">Wiatr: 22 km/h · 1022 hPa · Wilg. 65%</div></div><div class="weather-card"><div class="weather-head"><strong>Katowice</strong><span class="weather-reg">Śląskie</span></div><div class="weather-temp">-0.4°C</div><div class="weather-meta">Wiatr: 14 km/h · 1018 hPa · Wilg. 77%</div></div><div class="weather-card"><div class="weather-head"><strong>Szczecin</strong><span class="weather-reg">Zachodniopomorskie</span></div><div class="weather-temp">-2.3°C</div><div class="weather-meta">Wiatr: 4 km/h · 1024 hPa · Wilg. 95%</div></div><div class="weather-card"><div class="weather-head"><strong>Lublin</strong><span class="weather-reg">Lubelskie</span></div><div class="weather-temp">-0.9°C</div><div class="weather-meta">Wiatr: 11 km/h · 1022 hPa · Wilg. 73%</div></div><div class="weather-card"><div class="weather-head"><strong>Białystok</strong><span class="weather-reg">Podlaskie</span></div><div class="weather-temp">-1.1°C</div><div class="weather-meta">Wiatr: 7 km/h · 1025 hPa · Wilg. 81%</div></div><div class="weather-card"><div class="weather-head"><strong>Rzeszów</strong><span class="weather-reg">Podkarpackie</span></div><div class="weather-temp">0.1°C</div><div class="weather-meta">Wiatr: 25 km/h · 1020 hPa · Wilg. 69%</div></div><div class="weather-card"><div class="weather-head"><strong>Kielce</strong><span class="weather-reg">Świętokrzyskie</span></div><div class="weather-temp">-1.2°C</div><div class="weather-meta">Wiatr: 18 km/h · 1021 hPa · Wilg. 72%</div></div><div class="weather-card"><div class="weather-head"><strong>Olsztyn</strong><span class="weather-reg">Warmińsko-Mazurskie</span></div><div class="weather-temp">-0.4°C</div><div class="weather-meta">Wiatr: 7 km/h · 1024 hPa · Wilg. 86%</div></div><div class="weather-card"><div class="weather-head"><strong>Opole</strong><span class="weather-reg">Opolskie</span></div><div class="weather-temp">-0.4°C</div><div class="weather-meta">Wiatr: 14 km/h · 1020 hPa · Wilg. 67%</div></div><div class="weather-card"><div class="weather-head"><strong>Toruń</strong><span class="weather-reg">Kujawsko-Pomorskie</span></div><div class="weather-temp">-0.8°C</div><div class="weather-meta">Wiatr: 7 km/h · 1024 hPa · Wilg. 92%</div></div><div class="weather-card"><div class="weather-head"><strong>Zielona Góra</strong><span class="weather-reg">Lubuskie</span></div><div class="weather-temp">-1.5°C</div><div class="weather-meta">Wiatr: 11 km/h · 1023 hPa · Wilg. 85%</div></div><div class="weather-card"><div class="weather-head"><strong>Oslo</strong><span class="weather-reg">Norwegia</span></div><div class="weather-temp">-5.6°C</div><div class="weather-meta">Wiatr: 9 km/h · 1031 hPa · Wilg. 66%</div></div></div>
+        <p class="mkt-source">Źródło: IMGW-PIB (dane publiczne) + Open-Meteo (CC BY 4.0)</p>
+      </section>
+
+      <p class="cam-legal-note">Notowania mają charakter wyłącznie informacyjny (mogą być opóźnione) i nie stanowią porady inwestycyjnej.</p>
+    </div>
+      </div>
+    </section>
+
+    <section id="viewEditorial" class="hidden">
+      <div class="editorial-head">
+        <div>
+          <h1>Kolejka Weryfikacji Redakcyjnej</h1>
+          <p>
+            Artykuły wymagające zatwierdzenia z uwagi na rozbieżność między komunikatem instytucji rządowej a twardymi danymi NBP / GUS / NIK oraz zgłoszenia korekt od czytelników.
+          </p>
+        </div>
+        <button class="btn-outline" onclick="switchView('public')">← Wróć do widoku portalu</button>
+      </div>
+      <div id="editorialQueue" class="articles-stack"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>VERITY</strong>
+        <p>Wieloźródłowa weryfikacja faktów z 151 redakcji w Polsce — bez clickbaitu, powtórzeń i opinii publicystycznych, z bezpośrednimi odnośnikami do oryginalnych publikacji.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../rynki/" onclick="return fixFileHref(event)">Rynki i pogoda (/rynki)</a>
+        <a href="../kamery/" onclick="return fixFileHref(event)">Kamery na żywo (/kamery)</a>
+        <a href="../moderacja/" onclick="return fixFileHref(event)">Rejestr moderacji (/moderacja)</a>
+        <a href="../metodologia/" onclick="return fixFileHref(event)">Metodologia</a>
+        <a href="../o-nas/" onclick="return fixFileHref(event)">O nas</a>
+        <a href="../polityka-prywatnosci/" onclick="return fixFileHref(event)">Prywatność i cookies</a>
+        <a href="../zglos-blad/" onclick="return fixFileHref(event)">Zgłoś błąd</a>
+        <a href="../news-sitemap.xml">Mapa Google News (XML)</a>
+        <a href="../sitemap.xml">Sitemap (XML)</a>
+        <a href="../feed.xml">Kanał RSS</a>
+        <a href="../robots.txt">robots.txt</a>
+        <a href="../articles.json">Dane (JSON)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>window.VERITY_BASE="../";window.VERITY_INITIAL_PATH="/rynki";window.VERITY_STATIC_PAGE=true;window.VERITY_CANONICAL_ORIGIN="https://hygrisxx.github.io/verity-";</script>
+  <script src="../app.js?v=df835acb"></script>
+  <script src="../community.js?v=337d3bfe" defer></script>
+  
+</body>
+</html>
