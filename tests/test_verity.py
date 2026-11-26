@@ -3403,6 +3403,15 @@ class TestLegalComplianceAndRegexGuards(unittest.TestCase):
                     self.assertIn(mf, by_file, f"media_file spoza media_registry.json: {mf}")
                     covered += 1
             self.assertEqual(covered, len(arts), "Każdy artykuł powinien mieć legalne lokalne zdjęcie CC")
+            home_top = sorted(
+                [a for a in arts if a.get("status", "AUTO_PUBLISHED") == "AUTO_PUBLISHED" and (a.get("path") or "").startswith("/Polska")],
+                key=lambda a: a.get("published_iso") or "",
+                reverse=True,
+            )[:15]
+            home_files = [a.get("media_file") for a in home_top]
+            self.assertEqual(len(home_files), len(set(home_files)), f"Powtórzone zdjęcia na 1. ekranie: {home_files}")
+            uniq_used = len({a.get("media_file") for a in arts if a.get("media_file")})
+            self.assertGreaterEqual(uniq_used, 70, f"Za mała różnorodność zdjęć w bazie: {uniq_used}")
 
 
 if __name__ == "__main__":

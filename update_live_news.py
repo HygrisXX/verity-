@@ -5354,6 +5354,12 @@ def update_news_cycle(
         editorial_state = load_editorial_state(base_dir)
         combined = apply_editorial_state_to_articles(combined, editorial_state, base_dir=base_dir)
 
+        # 5.5 Dobór zróżnicowanych, legalnych zdjęć CC bez powtórzeń na pierwszych ekranach
+        media_cnt = media_library.assign_diverse_media(combined, registry=_get_media_registry(), base_dir=base_dir)
+        if media_cnt:
+            uniq_media = len({a.get("media_file") for a in combined if a.get("media_file")})
+            print(f"[MEDIA] Przypisano {media_cnt} zdjęć CC ({uniq_media} unikalnych kadrów).")
+
         # 6. Zapisz articles.json
         with open(articles_path, "w", encoding="utf-8") as f:
             json.dump(combined, f, ensure_ascii=False, indent=2)
