@@ -3,6 +3,36 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/zelenski-ostrzega-rosja-przygotowuje-kolejny-zmasowany-atak/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T02:53:33+01:00</news:publication_date>
+      <news:title>Zełenski ostrzega. Rosja przygotowuje kolejny zmasowany atak</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/295564376.png</image:loc>
+      <image:title>Zełenski ostrzega. Rosja przygotowuje kolejny zmasowany atak</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nie-do-przyjecia-kolejny-taki-glos-ws-nowego-budzetu-ue-45-mld/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T02:53:32+01:00</news:publication_date>
+      <news:title>"Nie do przyjęcia". Kolejny taki głos ws. nowego budżetu UE (45 mld)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1173469133.png</image:loc>
+      <image:title>"Nie do przyjęcia". Kolejny taki głos ws. nowego budżetu UE (45 mld)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/incydent-z-kibicami-jagiellonii-w-anglii-wylapywano-i-wyrzucano-ze/</loc>
     <news:news>
       <news:publication>
@@ -18,7 +48,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/orange-daje-7-miesiecy-abonamentu-za-darmo-0-zl/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/orange-daje-7-miesiecy-abonamentu-za-darmo-0-zl/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -28,7 +58,7 @@
       <news:title>Orange daje 7 miesięcy abonamentu za darmo (0 zł)</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1122752239.png</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/871188926.png</image:loc>
       <image:title>Orange daje 7 miesięcy abonamentu za darmo (0 zł)</image:title>
     </image:image>
   </url>
@@ -48,7 +78,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/od-ekspresow-po-odkurzacze-male-i-duze-agd-z-megaobnizkami-na-black/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/od-ekspresow-po-odkurzacze-male-i-duze-agd-z-megaobnizkami-na-black/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -58,7 +88,7 @@
       <news:title>Od ekspresów po odkurzacze. Małe i duże AGD z megaobniżkami na Black Friday (399 zł)</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1262266981.png</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1716231641.png</image:loc>
       <image:title>Od ekspresów po odkurzacze. Małe i duże AGD z megaobniżkami na Black Friday (399 zł)</image:title>
     </image:image>
   </url>
@@ -120,21 +150,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1603276982.png</image:loc>
       <image:title>Poczobut przemówił po odebraniu nagrody. "Jest w tym coś symbolicznego"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/megarabaty-na-sprzet-dla-graczy-black-friday-juz-trwa-6499-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T23:54:17+01:00</news:publication_date>
-      <news:title>Megarabaty na sprzęt dla graczy! Black Friday już trwa (6499 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1395826120.png</image:loc>
-      <image:title>Megarabaty na sprzęt dla graczy! Black Friday już trwa (6499 zł)</image:title>
     </image:image>
   </url>
   <url>
@@ -3213,21 +3228,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/stoleczny-ratusz-mowi-dosc-zgromadzeniu-pod-trybunalem-konstytucyjnym/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T12:00:31+01:00</news:publication_date>
-      <news:title>Stołeczny ratusz mówi „dość” zgromadzeniu pod Trybunałem Konstytucyjnym. Wskazano ostateczną datę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1635581477.png</image:loc>
-      <image:title>Stołeczny ratusz mówi „dość” zgromadzeniu pod Trybunałem Konstytucyjnym. Wskazano ostateczną datę</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/alimentation-couche-tard-nie-podniesiemy-ceny-w-wezwaniu-na-zabke/</loc>
     <news:news>
       <news:publication>
@@ -3630,111 +3630,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/998051979.png</image:loc>
       <image:title>Rodzina powiązana z Gazpromem pozwała szwedzkie banki. Miliony zablokowane (6 mln)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/nocne-niebo-w-bardzo-limitowanej-edycji-orient-star-swietuje-75-lecie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:14+01:00</news:publication_date>
-      <news:title>Nocne niebo w bardzo limitowanej edycji. Orient Star świętuje 75-lecie nowym modelem M45</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/819075218.png</image:loc>
-      <image:title>Nocne niebo w bardzo limitowanej edycji. Orient Star świętuje 75-lecie nowym modelem M45</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/nowe-ograniczenia-dla-chinskich-samochodow-ue-ustalila-limity-importowe/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:10+01:00</news:publication_date>
-      <news:title>Nowe ograniczenia dla chińskich samochodów. UE ustaliła limity importowe (191 tys.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/866550994.png</image:loc>
-      <image:title>Nowe ograniczenia dla chińskich samochodów. UE ustaliła limity importowe (191 tys.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/sylwia-rembiszewska-piatek-rezygnuje-z-funkcji-zastepcy-prezydenta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:08+01:00</news:publication_date>
-      <news:title>Sylwia Rembiszewska-Piątek rezygnuje z funkcji zastępcy prezydenta Olsztyna</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/910297955.png</image:loc>
-      <image:title>Sylwia Rembiszewska-Piątek rezygnuje z funkcji zastępcy prezydenta Olsztyna</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/where-winds-meet-to-jedno-z-lepszych-wdrozen-dlss-5-ta-gra-jest-darmowa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:08+01:00</news:publication_date>
-      <news:title>Where Winds Meet to jedno z lepszych wdrożeń DLSS 5. Ta gra jest darmowa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2051196881.png</image:loc>
-      <image:title>Where Winds Meet to jedno z lepszych wdrożeń DLSS 5. Ta gra jest darmowa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/narkotyki-nierzad-i-brutalne-porachunki-wyrok-dla-zbrojnego-gangu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:07+01:00</news:publication_date>
-      <news:title>Narkotyki, nierząd i brutalne porachunki. Wyrok dla zbrojnego gangu, którego lider poszedł na układ</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/404699630.png</image:loc>
-      <image:title>Narkotyki, nierząd i brutalne porachunki. Wyrok dla zbrojnego gangu, którego lider poszedł na układ</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pacjent-zaatakowal-czterech-pracownikow-szpitala-w-moragu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:07+01:00</news:publication_date>
-      <news:title>Pacjent zaatakował czterech pracowników szpitala w Morągu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/671834133.png</image:loc>
-      <image:title>Pacjent zaatakował czterech pracowników szpitala w Morągu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/ukrainski-atak-w-libii-zabil-2-zolnierzy-armia-zapowiada-odwet/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T02:55:06+01:00</news:publication_date>
-      <news:title>Ukraiński atak w Libii zabił 2 żołnierzy. Armia zapowiada odwet</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2000287677.png</image:loc>
-      <image:title>Ukraiński atak w Libii zabił 2 żołnierzy. Armia zapowiada odwet</image:title>
     </image:image>
   </url>
 </urlset>
