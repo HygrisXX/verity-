@@ -1,5 +1,132 @@
 [
   {
+    "id": 939145345,
+    "path": "/Polska/Polityka",
+    "seo_url": "/Polska/Polityka/jest-decyzja-premiera-w-sprawie-finansowania-trybunalu-konstytucyjnego",
+    "seo_title": "Jest decyzja premiera w sprawie finansowania Trybunału Konstytucyjnego",
+    "summary_lead": "— Premier Donald Tusk wydał dyspozycję, by Bank Gospodarstwa Krajowego zapewniał finansowanie Trybunału Konstytucyjnego, a środki na ten cel zabezpieczy minister finansów – poinformował w czwartek rzecznik rządu Adam Szłapka.",
+    "meta_description": "— Premier Donald Tusk wydał dyspozycję, by Bank Gospodarstwa Krajowego zapewniał finansowanie Trybunału Konstytucyjnego, a środki na ten cel zabezpieczy…",
+    "keywords": "Polityka, premiera, finansowania, Trybunału, Konstytucyjnego",
+    "thumbnail_url": "",
+    "published_iso": "2026-11-27T03:58:46+01:00",
+    "updated_iso": "2026-11-27T03:58:46+01:00",
+    "display_date": "27.11.2026, 03:58",
+    "status": "PENDING_ADMIN",
+    "fact_agreement_pct": 98,
+    "admin_note": "Weryfikacja redakcyjna: Zestawiono oficjalne stanowisko rządowe z danymi instytucjonalnymi i rynkowymi — szczegółowe wyliczenia poszczególnych redakcji poniżej.",
+    "zero_trust_reason": "Wstrzymano (Zero-Trust): Wykryto potencjalną rozbieżność między komunikatem rządowym a danymi instytucjonalnymi lub rynkowymi. | Sygnały: rząd/resort (premiera, Premier, minister) vs dane (NBP, BGK); spór (Spór) | Wyzwalacz: „Spór o pieniądze dla Trybunału Konstytucyjnego.”",
+    "metrics": [
+      {
+        "label": "Liczba źródeł",
+        "val": "4 redakcje"
+      },
+      {
+        "label": "Kategoria",
+        "val": "/Polska/Polityka"
+      },
+      {
+        "label": "Główne źródło",
+        "val": "Money.pl"
+      },
+      {
+        "label": "Weryfikacja",
+        "val": "Potwierdzone (4 źródła)"
+      }
+    ],
+    "declickbait": [],
+    "full_sections": [
+      {
+        "heading": "Ustalenia wspólne (4 redakcje)",
+        "paragraphs": [
+          "— Premier Donald Tusk wydał dyspozycję, by Bank Gospodarstwa Krajowego zapewniał finansowanie Trybunału Konstytucyjnego, a środki na ten cel zabezpieczy minister finansów – poinformował w czwartek rzecznik rządu Adam Szłapka. [Źródło: Money.pl, GazetaPrawna.pl (DGP), RadioMaryja.pl, TVP.info]",
+          "O wstrzymaniu przyjmowania zleceń płatniczych dotyczących rachunków TK, bank centralny poinformował w ubiegłym tygodniu. Przedstawił stanowisko, w którym wskazał, że 2 listopada 2026 r. prezes Trybunału Konstytucyjnego Bogdan Święczkowski złożył w NBP oświadczenie dotyczące reprezentacji TK (wskazał osoby uprawnione) w relacjach z NBP w związku z realizacją umowy rachunku bankowego. [Źródło: Money.pl, GazetaPrawna.pl (DGP), RadioMaryja.pl]",
+          "Jednocześnie 6 listopada 2026 r. zostały przekazane do NBP dokumenty, podpisane przez sędzię Annę Korwin-Piotrowską, wskazujące na inne osoby uprawnione w zakresie dysponowania środkami na rachunkach bankowych Trybunału Konstytucyjnego prowadzonych przez NBP. [Źródło: Money.pl, GazetaPrawna.pl (DGP)]",
+          "Bank centralny podkreślił, że doszło do sytuacji, w której w NBP złożone zostały wzajemnie znoszące się zestawy dokumentów, dotyczące dysponowania środkami zgromadzonymi na rachunkach TK. [Źródło: Money.pl, GazetaPrawna.pl (DGP), TVP.info]",
+          "— Znaleźliśmy stosowne rozwiązanie prawne, dzięki któremu można poprzez BGK sfinansować działanie Trybunału Konstytucyjnego. [Źródło: GazetaPrawna.pl (DGP), TVP.info]",
+          "Zostaną założone osobne rachunki w Banku Gospodarstwa Krajowego – powiedział Domański w TVP Info. [Źródło: GazetaPrawna.pl (DGP), RadioMaryja.pl, TVP.info]"
+        ]
+      },
+      {
+        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
+        "paragraphs": [
+          "— Myślę, że w dniu jutrzejszym, najdalej w poniedziałek, wszystko będzie – wskazał wicepremier w odpowiedzi na pytanie, kiedy rachunki w BGK zostaną założone. [Źródło: GazetaPrawna.pl (DGP)]",
+          "Pracownicy tej instytucji nie zostali wpuszczeni do budynku. Policja nie wpuszcza do Trybunału nie tylko legalnych sędziów i prezesów, ale również zwykłych pracowników, którzy nie podporządkowali się uzurpatorom. Pracownicy podjęli również próbę wejścia przez kancelarię premiera. [Źródło: RadioMaryja.pl]",
+          "— W końcu, po wielu latach paraliżu – TK działa.",
+          "Odbyło się zgromadzenie ogólne i podjęte są pierwsze decyzję. Niestety NBP postanowił zablokować konta TK, włączając się w ten sposób w polityczną walkę. [Źródło: TVP.info]"
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "outlet": "Money.pl",
+        "angle": "Raport rynkowy",
+        "summary": "Jest decyzja premiera w sprawie finansowania Trybunału Konstytucyjnego",
+        "url": "https://www.money.pl/finanse/jest-decyzja-premiera-w-sprawie-finansowania-trybunalu-konstytucyjnego-7355122216110240a.html",
+        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: raport rynkowy.",
+        "omits": "Pomija kontekst (powiedział, działanie, Domański) rozwijany w GazetaPrawna.pl (DGP), RadioMaryja.pl."
+      },
+      {
+        "outlet": "GazetaPrawna.pl (DGP)",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Spór o pieniądze dla Trybunału Konstytucyjnego. Rząd znalazł rozwiązanie",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11407463,rachunki-tk-w-bgk-rozwiazanie-po-decyzji-nbp.html",
+        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: perspektywa rynkowa.",
+        "omits": "Pomija kontekst (kontroluje, państwa, dyscyplinarny) rozwijany w Money.pl, RadioMaryja.pl."
+      },
+      {
+        "outlet": "RadioMaryja.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Zamach na Trybunał Konstytucyjny. „Koalicja 13 grudnia” nie ustaje w niszczeniu Polski",
+        "url": "https://www.radiomaryja.pl/informacje/zamach-na-trybunal-konstytucyjny-koalicja-13-grudnia-nie-ustaje-w-niszczeniu-polski/",
+        "focus": "Podkreśla konkretne liczby (2026) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija kontekst (dysponowania, podkreślił, dokumenty) rozwijany w Money.pl, GazetaPrawna.pl (DGP)."
+      },
+      {
+        "outlet": "TVP.info",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Alternatywne finansowanie Trybunału. „Najpóźniej w poniedziałek”",
+        "url": "https://www.tvp.info/96704752/andrzej-domanski-w-pytaniu-dnia-26112026-kiedy-finansowanie-dla-tk-minister-wskazal-termin",
+        "focus": "Wyróżnia własne wątki i pojęcia: Alternatywne, zapytany, redaktorkę.",
+        "omits": "Pomija wyliczenia (2026) przytaczane przez Money.pl, GazetaPrawna.pl (DGP)."
+      }
+    ],
+    "sources": [
+      "GazetaPrawna.pl (DGP)",
+      "Money.pl",
+      "RadioMaryja.pl",
+      "TVP.info"
+    ],
+    "corrections": [],
+    "impact": {
+      "audience": "Obywatele i instytucje w Polsce",
+      "scope": "Prawo i decyzje publiczne",
+      "status": "Zdarzenie i utrudnienia"
+    },
+    "discrepancies": [],
+    "independent_sources_count": 4,
+    "syndicate_groups": [],
+    "seo_faq": [
+      {
+        "q": "Co wiadomo w sprawie: Jest decyzja premiera w sprawie finansowania Trybunału Konstytucyjnego?",
+        "a": "O wstrzymaniu przyjmowania zleceń płatniczych dotyczących rachunków TK, bank centralny poinformował w ubiegłym tygodniu."
+      },
+      {
+        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "a": "Przedstawił stanowisko, w którym wskazał, że 2 listopada 2026 r. prezes Trybunału Konstytucyjnego Bogdan Święczkowski złożył w NBP oświadczenie dotyczące reprezentacji TK (wskazał osoby uprawnione) w relacjach z NBP w związku z realizacją umowy."
+      },
+      {
+        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Zdarzenie i utrudnienia."
+      }
+    ],
+    "media_file": "media/topic-sejm.jpg",
+    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
+    "media_label": "Polityka i instytucje państwowe"
+  },
+  {
     "id": 295564376,
     "path": "/Swiat",
     "seo_url": "/Swiat/zelenski-ostrzega-rosja-przygotowuje-kolejny-zmasowany-atak",
@@ -12,7 +139,7 @@
     "updated_iso": "2026-11-27T02:53:33+01:00",
     "display_date": "27.11.2026, 02:53",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 90,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
@@ -39,15 +166,13 @@
         "heading": "Ustalenia wspólne (2 redakcje)",
         "paragraphs": [
           "Rosja kończy przygotowania do kolejnego zmasowanego ataku w Ukrainie – poinformował Wołodymyr Zełenski. Powołując się na dane wywiadowcze wskazał, że uderzenie wymierzone będzie w infrastrukturę energetyczną i obiekty niezbędne do funkcjonowania ludności cywilnej. [Źródło: Polsat News, Defence24]",
-          "— Mamy niestety informacje o przygotowywanym przez Rosjan nowym, zmasowanym ataku. [Źródło: Polsat News]",
-          "W najbliższych dniach prosimy o zwracanie uwagi na sygnały ostrzegające przed zagrożeniem rakietowym. A niech Rosja wie: odbudujemy to, co nasze, i na każdy atak Rosji odpowiemy – powiedział Zełenski w wieczornym przemówieniu. Prezydent zaznaczył, że obecnie trwają ważne prace z partnerami w Europie, mające na celu dostarczenie na Ukrainę dodatkowych dostaw broni. [Źródło: Polsat News, Defence24]",
-          "Zełenski o informacjach wywiadu – Rozmawiałem dziś na ten temat z ministrem spraw zagranicznych Ukrainy oraz z zespołem Ministerstwa Obrony. [Źródło: Polsat News, Defence24]"
+          "— Mamy niestety informacje o przygotowywanym przez Rosjan nowym, zmasowanym ataku. [Źródło: Polsat News]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Ostatni tak duży rosyjski atak miał miejsce blisko tydzień temu, w piątek 20 listopada. Rosja wykorzystała wtedy przeszło 400 dronów uderzeniowych oraz 110 pocisków rakietowych, z czego 27 to były pociski balistyczne. Przypomniał, że nadal priorytetowym zadaniem dla jego kraju jest pozyskanie rakiet przechwytujących do systemów Patriot oraz NASAMS. [Źródło: Defence24]"
+          "W najbliższych dniach prosimy o zwracanie uwagi na sygnały ostrzegające przed zagrożeniem rakietowym. A niech Rosja wie: odbudujemy to, co nasze, i na każdy atak Rosji odpowiemy – powiedział Zełenski w wieczornym przemówieniu. Prezydent zaznaczył, że obecnie trwają ważne prace z partnerami w Europie, mające na celu dostarczenie na Ukrainę dodatkowych dostaw broni. [Źródło: Defence24]"
         ]
       }
     ],
@@ -58,15 +183,15 @@
         "summary": "Zełenski ostrzega. Rosja przygotowuje kolejny zmasowany atak",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/zelenski-ostrzega-rosja-przygotowuje-kolejny-zmasowany-atak/",
         "focus": "Wyróżnia własne wątki i pojęcia: Mamy, niestety, Rosjan.",
-        "omits": "Pomija kontekst (potencjalnych, logistyczna, Przypomniał) rozwijany w Defence24."
+        "omits": "Pomija kontekst (najbliższych, przemówieniu, dostarczenie) rozwijany w Defence24."
       },
       {
         "outlet": "Defence24",
         "angle": "Relacja uzupełniająca",
         "summary": "Rosja szykuje kolejny zmasowany atak. Ukraina ostrzega",
         "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/rosja-szykuje-kolejny-zmasowany-atak-ukraina-ostrzega",
-        "focus": "Wyróżnia własne wątki i pojęcia: szykuje, celami, danych.",
-        "omits": "Pomija kontekst (elektroenergetyczne, przedstawiciele, przedsiębiorstw) rozwijany w Polsat News."
+        "focus": "Wyróżnia własne wątki i pojęcia: szykuje, Ukraina, najbliższych.",
+        "omits": "Pomija kontekst (niestety, Rosjan, nowym) rozwijany w Polsat News."
       }
     ],
     "sources": [
@@ -116,13 +241,13 @@
     "updated_iso": "2026-11-27T02:53:32+01:00",
     "display_date": "27.11.2026, 02:53",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 92,
+    "fact_agreement_pct": 98,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "3 redakcje"
+        "val": "6 redakcji"
       },
       {
         "label": "Kategoria",
@@ -134,28 +259,27 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (3 źródła)"
+        "val": "Potwierdzone (6 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (3 redakcje)",
+        "heading": "Ustalenia wspólne (6 redakcji)",
         "paragraphs": [
-          "Premier Holandii Rob Jetten powiedział w czwartek w Brukseli, że obecny projekt budżetu UE na lata 2028–2034 jest nie do przyjęcia dla holenderskich podatników. Jak dodał, jest gotowy na negocjacyjny maraton, niezależnie od tego, czy zakończy się on dziś, jutro czy w grudniu. [Źródło: Money.pl]",
+          "Premier Holandii Rob Jetten powiedział w czwartek w Brukseli, że obecny projekt budżetu UE na lata 2028–2034 jest nie do przyjęcia dla holenderskich podatników. Jak dodał, jest gotowy na negocjacyjny maraton, niezależnie od tego, czy zakończy się on dziś, jutro czy w grudniu. [Źródło: Money.pl, Rzeczpospolita, Farmer.pl, Onet Wiadomości]",
           "— Europa musi skupić się na swoim bezpieczeństwie, konkurencyjności oraz kwestiach migracji. [Źródło: Money.pl]",
           "Musi to znaleźć odzwierciedlenie w budżecie; dla Holandii jest to sprawa najwyższej wagi. Jednocześnie w porównaniu z obecną propozycją, budżet ten powinien zostać ograniczony – podkreślił Jetten przed rozpoczęciem unijnego szczytu, którego głównym tematem będzie nowa unijna perspektywa budżetowa. [Źródło: Money.pl]",
           "— W obecnym kształcie propozycja ta jest nie do przyjęcia dla holenderskich podatników – dodał. [Źródło: Money.pl]",
-          "Zależy mi na dobrym porozumieniu, nie ma powodu do pośpiechu – powiedział Jetten. Jak przekazał przewodniczący Rady Europejskiej Antonio Costa, 24 z 27 państw poparły jednak dodatkową pożyczkę dla Ukrainy w wysokości 45 mld euro na 2027 r. Szefowie państw i rządów na szczycie w czwartek omawiali propozycję kompromisu zaproponowaną przez Costę. [Źródło: Money.pl, WP Wiadomości, Radio Zachód]"
+          "Zależy mi na dobrym porozumieniu, nie ma powodu do pośpiechu – powiedział Jetten. Jak przekazał przewodniczący Rady Europejskiej Antonio Costa, 24 z 27 państw poparły jednak dodatkową pożyczkę dla Ukrainy w wysokości 45 mld euro na 2027 r. Szefowie państw i rządów na szczycie w czwartek omawiali propozycję kompromisu zaproponowaną przez Costę. [Źródło: Money.pl, WP Wiadomości, Radio Zachód, Farmer.pl, Onet Wiadomości]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Przywódcy państw Unii Europejskiej nie uzgodnili nowego budżetu na lata 2028–2034. Przewiduje ona, że kolejny budżet na lata 2028-34 wyniesie 1,58 bln euro wobec 1,76 bln euro proponowanych przez KE w cenach stałych z 2025 r.",
           "— Jeśli chodzi o ogólną wielkość budżetu, niektóre państwa członkowskie domagały się dalszych cięć. [Źródło: WP Wiadomości]",
-          "Polska przyjechała na unijny szczyt do Brukseli z twardymi postulatami obrony puli pieniędzy na rozwój regionów i rolnictwo. Wiceszef MSZ-tu Ignacy Niemczycki powiedział w trakcie szczytu, że Warszawa sprzeciwia się ograniczaniu wydatków, czego domagają się płatnicy netto, czyli kraje, które więcej wpłacają do unijnej kasy niż z niej otrzymują.",
-          "Drugi kluczowy postulat Polski jest związany z ETS-em, czyli systemem opłat za emisję CO2. [Źródło: Radio Zachód]"
+          "Drugi kluczowy postulat Polski jest związany z ETS-em, czyli systemem opłat za emisję CO2. [Źródło: Radio Zachód]",
+          "Holandia chce ograniczyć wydatki, Francja i Włochy bronią pieniędzy na rolnictwo i rozwój regionów, a Niemcy domagają się wspólnego zobowiązania w sprawie pomocy dla Ukrainy. [Źródło: Farmer.pl]"
         ]
       }
     ],
@@ -165,16 +289,16 @@
         "angle": "Raport rynkowy",
         "summary": "\"Nie do przyjęcia\". Kolejny taki głos ws. nowego budżetu UE",
         "url": "https://www.money.pl/gospodarka/nie-do-przyjecia-kolejny-taki-glos-ws-nowego-budzetu-ue-7355137188702368a.html",
-        "focus": "Eksponuje dane (10 proc., 115,7 mld) oraz wątki: taki, głos.",
-        "omits": "Pomija kontekst (spójności, związana, rozmowy) rozwijany w WP Wiadomości, Radio Zachód."
+        "focus": "Podkreśla konkretne liczby (2028, 2034) w ujęciu: raport rynkowy.",
+        "omits": "Pomija kontekst (poinformował, przywódcom, 2028-2034) rozwijany w Rzeczpospolita, Onet Wiadomości."
       },
       {
         "outlet": "WP Wiadomości",
         "angle": "Relacja uzupełniająca",
         "summary": "Costa: Nie ma porozumienia ws. nowego budżetu UE",
         "url": "https://wiadomosci.wp.pl/costa-nie-ma-porozumienia-ws-nowego-budzetu-ue-7355352792639648a",
-        "focus": "Podkreśla konkretne liczby (2028, 2034) w ujęciu: relacja uzupełniająca.",
-        "omits": "Pomija wyliczenia (115,7 mld, 10 proc.) przytaczane przez Money.pl."
+        "focus": "Podkreśla konkretne liczby (45 mld, 2027) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija wyliczenia (2028, 2034) przytaczane przez Money.pl, Rzeczpospolita."
       },
       {
         "outlet": "Radio Zachód",
@@ -182,22 +306,62 @@
         "summary": "Niemczycki o postulatach Polski ws. budżetu UE",
         "url": "https://zachod.pl/1596954/niemczycki-o-postulatach-polski-ws-budzetu-ue/",
         "focus": "Podkreśla konkretne liczby (45 mld, 2027) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija wyliczenia (2028, 2034) przytaczane przez Money.pl, WP Wiadomości."
+        "omits": "Pomija wyliczenia (2028, 2034) przytaczane przez Money.pl, Rzeczpospolita."
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Wciąż nie ma porozumienia w sprawie budżetu UE",
+        "url": "https://www.rp.pl/fundusze-europejskie/art45551131-wciaz-nie-ma-porozumienia-w-sprawie-budzetu-ue",
+        "focus": "Podkreśla konkretne liczby (2028, 2034) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija wyliczenia (45 mld, 2027) przytaczane przez Money.pl, WP Wiadomości."
+      },
+      {
+        "outlet": "Farmer.pl",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Meloni o budżecie UE: „Od porozumienia dzielą nas lata świetlne”",
+        "url": "https://www.farmer.pl/finanse/meloni-o-budzecie-ue-od-porozumienia-dziela-nas-lata-swietlne,187760.html",
+        "focus": "Podkreśla konkretne liczby (2028, 2034) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija kontekst (poinformował, 2028-2034, osiągnąć) rozwijany w Rzeczpospolita, Onet Wiadomości."
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Budżet UE na lata 2028-2034 wciąż niepewny. Porozumienie nie zostało osiągnięte",
+        "url": "https://wiadomosci.onet.pl/swiat/budzet-ue-na-lata-2028-2034-wciaz-niepewny-nie-osiagnieto-porozumienia/5y2763t",
+        "focus": "Podkreśla konkretne liczby (2028, 2034) w ujęciu: relacja uzupełniająca.",
+        "omits": "Pomija kontekst (ograniczony, przywódcom, budżecie) rozwijany w Money.pl, Farmer.pl."
       }
     ],
     "sources": [
+      "Farmer.pl",
       "Money.pl",
+      "Onet Wiadomości",
       "Radio Zachód",
+      "Rzeczpospolita",
       "WP Wiadomości"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.rp.pl/fundusze-europejskie/art45551131-wciaz-nie-ma-porozumienia-w-sprawie-budzetu-ue"
+      },
+      {
+        "claim_text": "Dopisano źródło: Farmer.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.farmer.pl/finanse/meloni-o-budzecie-ue-od-porozumienia-dziela-nas-lata-swietlne,187760.html"
+      },
+      {
+        "claim_text": "Dopisano źródło: Onet Wiadomości (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wiadomosci.onet.pl/swiat/budzet-ue-na-lata-2028-2034-wciaz-niepewny-nie-osiagnieto-porozumienia/5y2763t"
+      }
+    ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (3 źródła)"
+      "status": "Potwierdzone (6 źródeł)"
     },
     "discrepancies": [],
-    "independent_sources_count": 3,
+    "independent_sources_count": 6,
     "syndicate_groups": [],
     "seo_faq": [
       {
@@ -210,7 +374,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (3 źródła)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Portfel, podatki i rynek). Status: Potwierdzone (6 źródeł)."
       }
     ],
     "media_file": "media/topic-finance-4.jpg",
@@ -545,13 +709,13 @@
     "updated_iso": "2026-11-27T01:08:18+01:00",
     "display_date": "27.11.2026, 01:08",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 96,
+    "fact_agreement_pct": 98,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "4 redakcje"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -563,13 +727,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (4 źródła)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (4 redakcje)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
           "Telewizor HISENSE 85U77SE 85\" QD-Mini LED 4K 144 Hz — sprawdź teraz w Media Expert Podczas Black Friday w Media Expert cena telewizora HISENSE 85U77SE została obniżona do 6499 zł z kodem rabatowym, czyli o 550 zł względem ceny 7049 zł (najniższa cena z ostatnich 30 dni przed obniżką). [Źródło: o2.pl, Komputer Świat, Sekurak]",
           "Black Friday w Media Expert to dobra okazja, by przyjrzeć się promocjom na sprzęt gamingowy i urządzenia, które urozmaicą domową rozrywkę. Szykujemy się na zimę z grami? Jaka grupa graczy ma najliczniejszą reprezentację? [Źródło: o2.pl]",
@@ -581,7 +745,8 @@
         "paragraphs": [
           "Grudzień zbliża się wielkimi krokami, a wraz z nim świąteczne gotowanie, pieczenie, porządki i przygotowania do rodzinnych spotkań. To dobry moment, by pomyśleć o sprzętach, które ułatwią codzienne obowiązki i pozwolą zaoszczędzić trochę czasu. Wśród przecenionych propozycji znajdziemy między innymi ekspresy do kawy, frytkownice beztłuszczowe, suszarki, roboty kuchenne i urządzenia do stylizacji włosów. [Źródło: Komputer Świat]",
           "Jeśli akurat kończy ci się ważność konta w Plusie lub Plushu albo po prostu lubisz mieć w zapasie paczkę danych na zimowe wyjazdy i oglądanie seriali w pociągu, warto zanotować w kalendarzu datę 27 listopada. Mechanizm promocji został skonstruowany tak, by premiować nieco wyższe doładowania w bardzo odczuwalny sposób.",
-          "Więc tak, Plus chce, żebyśmy wydali tego dnia więcej, ale w zamian też da nam znacznie więcej danych do wykorzystania, więc to całkiem atrakcyjna opcja. [Źródło: CHIP.pl]"
+          "Więc tak, Plus chce, żebyśmy wydali tego dnia więcej, ale w zamian też da nam znacznie więcej danych do wykorzystania, więc to całkiem atrakcyjna opcja. [Źródło: CHIP.pl]",
+          "Przecena na światowych rynkach nie ominęła akcji, złota, obligacji ani bitcoina. Wyceny wielu aktywów są znacznie niższe niż przed kilkoma tygodniami. [Źródło: XYZ.pl]"
         ]
       }
     ],
@@ -592,15 +757,15 @@
         "summary": "Od ekspresów po odkurzacze. Małe i duże AGD z megaobniżkami na Black Friday",
         "url": "https://www.o2.pl/pozostale/od-ekspresow-po-odkurzacze-male-i-duze-agd-z-megaobnizkami-na-black-friday-7355131771185248a",
         "focus": "Podkreśla konkretne liczby (6499 zł, 550 zł) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija wyliczenia (999,99 zł, 399 zł) przytaczane przez Komputer Świat, Sekurak."
+        "omits": "Pomija kontekst (przecenionych, znacznie, odzwierciedlają) rozwijany w Komputer Świat, CHIP.pl."
       },
       {
         "outlet": "Komputer Świat",
         "angle": "Kontekst technologiczny",
         "summary": "Świąteczne przygotowania bez przepłacania. Megapromocje na małe AGD na Black Friday!",
         "url": "https://www.komputerswiat.pl/inne/black-friday-w-media-expert-okazje-na-agd-i-sprzet-do-domu-juz-dostepne/918ex7q",
-        "focus": "Podkreśla konkretne liczby (399 zł, 999,99 zł) w ujęciu: kontekst technologiczny.",
-        "omits": "Pomija kontekst (promocjom, najliczniejszą, megaobniżkami) rozwijany w o2.pl, CHIP.pl."
+        "focus": "Podkreśla konkretne liczby (6499 zł, 550 zł) w ujęciu: kontekst technologiczny.",
+        "omits": "Pomija kontekst (promocjom, znacznie, odzwierciedlają) rozwijany w o2.pl, CHIP.pl."
       },
       {
         "outlet": "CHIP.pl",
@@ -615,14 +780,23 @@
         "angle": "Kontekst technologiczny",
         "summary": "Pełna lista promek na Black Friday… plus gratisy! 🙂",
         "url": "https://sekurak.pl/pelna-lista-promek-na-black-friday-plus-gratisy/",
-        "focus": "Podkreśla konkretne liczby (399 zł, 999,99 zł) w ujęciu: kontekst technologiczny.",
+        "focus": "Podkreśla konkretne liczby (6499 zł, 550 zł) w ujęciu: kontekst technologiczny.",
         "omits": "Pomija kontekst (przecenionych, ekspresów, promocjom) rozwijany w Komputer Świat, CHIP.pl."
+      },
+      {
+        "outlet": "XYZ.pl",
+        "angle": "Perspektywa rynkowa",
+        "summary": "Black Friday na Wall Street. Okazje inwestycyjne czy pułapka?",
+        "url": "https://xyz.pl/black-friday-na-wall-street-okazje-inwestycyjne-czy-pulapka/",
+        "focus": "Wyróżnia własne wątki i pojęcia: Wall, Street, Okazje.",
+        "omits": "Pomija wyliczenia (6499 zł, 7049 zł) przytaczane przez o2.pl, Komputer Świat."
       }
     ],
     "sources": [
       "CHIP.pl",
       "Komputer Świat",
       "Sekurak",
+      "XYZ.pl",
       "o2.pl"
     ],
     "corrections": [
@@ -633,15 +807,19 @@
       {
         "claim_text": "Dopisano źródło: Sekurak (aktualizacja wieloźródłowa)",
         "evidence_url": "https://sekurak.pl/pelna-lista-promek-na-black-friday-plus-gratisy/"
+      },
+      {
+        "claim_text": "Dopisano źródło: XYZ.pl (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://xyz.pl/black-friday-na-wall-street-okazje-inwestycyjne-czy-pulapka/"
       }
     ],
     "impact": {
       "audience": "Kierowcy i pasażerowie",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (4 źródła)"
+      "status": "Potwierdzone (5 źródeł)"
     },
     "discrepancies": [],
-    "independent_sources_count": 4,
+    "independent_sources_count": 5,
     "syndicate_groups": [],
     "seo_faq": [
       {
@@ -654,7 +832,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Portfel, podatki i rynek). Status: Potwierdzone (4 źródła)."
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Portfel, podatki i rynek). Status: Potwierdzone (5 źródeł)."
       }
     ],
     "media_file": "media/topic-retail.jpg",
@@ -683,7 +861,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "27 redakcji"
+        "val": "28 redakcji"
       },
       {
         "label": "Kategoria",
@@ -695,7 +873,7 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (27 źródeł)"
+        "val": "Potwierdzone (28 źródeł)"
       }
     ],
     "declickbait": [
@@ -707,34 +885,33 @@
     ],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (27 redakcji)",
+        "heading": "Ustalenia wspólne (28 redakcji)",
         "paragraphs": [
-          "Sąd uchylił decyzję stołecznego ratusza odmawiającą przedłużenia zgody na zgromadzenie przed Trybunałem Konstytucyjnym. Sędzia Anna Bonkowska-Kubek argumentowała decyzję, odnosząc się m.in. do kwestionowania przez ratusz terminu złożenia zawiadomienia o przedłużeniu zgromadzenia, że taki wniosek należy odnosić do pierwszego dnia planowanego posiedzenia i ten wymóg został spełniony. [Źródło: WP Wiadomości, Gazeta.pl, Radio Lublin, Niezależna.pl, Interia Wydarzenia, Dziennik.pl, TVP.info, Niedziela.pl, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Kresy.pl, Radio Zachód, Warszawa w Pigułce, TVN24, Wyborcza.pl, RadioMaryja.pl, Rzeczpospolita, Bankier.pl, Business Insider PL, Biznes Interia, Polsat News]",
-          "Według ratusza organizator zgromadzenia, składając zawiadomienie, przekroczył 30-dniowy termin wskazany w ustawie. Wniosek został zgłoszony 10 listopada dla zgromadzenia planowanego do 5 stycznia. [Źródło: WP Wiadomości, TVP.info, Dziennik.pl]",
+          "Sąd uchylił decyzję stołecznego ratusza odmawiającą przedłużenia zgody na zgromadzenie przed Trybunałem Konstytucyjnym. Sędzia Anna Bonkowska-Kubek argumentowała decyzję, odnosząc się m.in. do kwestionowania przez ratusz terminu złożenia zawiadomienia o przedłużeniu zgromadzenia, że taki wniosek należy odnosić do pierwszego dnia planowanego posiedzenia i ten wymóg został spełniony. [Źródło: WP Wiadomości, Gazeta.pl, Radio Lublin, Niezależna.pl, Interia Wydarzenia, Dziennik.pl, TVP.info, Niedziela.pl, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Kresy.pl, Radio Zachód, TVN24, Wyborcza.pl, RadioMaryja.pl, Rzeczpospolita, Bankier.pl, Business Insider PL, Biznes Interia, Polsat News, Radio PiK, Radio Rzeszów, Newsweek Polska]",
+          "Według ratusza organizator zgromadzenia, składając zawiadomienie, przekroczył 30-dniowy termin wskazany w ustawie. Wniosek został zgłoszony 10 listopada dla zgromadzenia planowanego do 5 stycznia. [Źródło: WP Wiadomości, Dziennik.pl, TVP.info]",
           "\"Zgodnie z przepisem Prawa o zgromadzeniach zawiadomienie o zamiarze zorganizowania zgromadzenia ma dotrzeć do organu gminy niewcześniej niż na 30 dni i niepóźniej niż na 6 dni przed planowaną datą zgromadzenia\" – napisał ratusz, dodając, że zawiadomienie o zgromadzeniu, obejmujące okres po 10 grudnia, jest więc przedwczesne. [Źródło: WP Wiadomości]",
-          "Sędzia odniosła się też do argumentów ratusza, który przytaczał skargi mieszkańców i opinie służb ratunkowych, które wydały negatywną opinię, argumentując to brakiem możliwości przejazdu zablokowaną Aleją Szucha, przy której jest Trybunał Konstytucyjny. [Źródło: WP Wiadomości, Gazeta.pl, Radio Lublin, Interia Wydarzenia, Dziennik.pl, TVP.info, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Radio Zachód, Warszawa w Pigułce, TVN24, Wyborcza.pl, RadioMaryja.pl, Rzeczpospolita, Bankier.pl, Business Insider PL, Biznes Interia, Money.pl]",
-          "Przed siedzibą tej instytucji od tygodni zwolennicy Prawa i Sprawiedliwości protestują przeciwko odsunięciu od czynności prezesa Bogdana Święczkowskiego, powołanego do trybunału za czasów PiS. Następnie, tego samego dnia, wstrzymał wszelkie zlecenia płatnicze, dotyczące środków na rachunkach TK. Oznacza to, że zgromadzenie może trwać tylko do 30 listopada. [Źródło: Gazeta.pl, Niezależna.pl, Interia Wydarzenia, Dziennik.pl, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Kresy.pl, Radio Zachód, Warszawa w Pigułce, RadioMaryja.pl, Rzeczpospolita, Bankier.pl, Business Insider PL, Biznes Interia, Polsat News, Radio Lublin, TVN24, Wyborcza.pl]",
-          "Urzędnicy przypominają w uzasadnieniu o poszanowaniu praw innych obywateli, a organizatorzy mają teraz zaledwie 24 godziny na odwołanie się do sądu. [Źródło: Radio Lublin, Interia Wydarzenia, Dziennik.pl, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Radio Zachód, Warszawa w Pigułce, RadioMaryja.pl, Rzeczpospolita]"
+          "Sędzia odniosła się też do argumentów ratusza, który przytaczał skargi mieszkańców i opinie służb ratunkowych, które wydały negatywną opinię, argumentując to brakiem możliwości przejazdu zablokowaną Aleją Szucha, przy której jest Trybunał Konstytucyjny. Oznacza to, że zgromadzenie może trwać tylko do 30 listopada. [Źródło: WP Wiadomości, Gazeta.pl, Radio Lublin, Niezależna.pl, Interia Wydarzenia, Dziennik.pl, TVP.info, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Kresy.pl, Radio Zachód, TVN24, Wyborcza.pl, RadioMaryja.pl, Rzeczpospolita, Bankier.pl, Business Insider PL, Biznes Interia, Polsat News, Radio PiK, Radio Rzeszów]",
+          "Przed siedzibą tej instytucji od tygodni zwolennicy Prawa i Sprawiedliwości protestują przeciwko odsunięciu od czynności prezesa Bogdana Święczkowskiego, powołanego do trybunału za czasów PiS. Następnie, tego samego dnia, wstrzymał wszelkie zlecenia płatnicze, dotyczące środków na rachunkach TK. [Źródło: Gazeta.pl, Radio Lublin, Niezależna.pl, Interia Wydarzenia, Dziennik.pl, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Kresy.pl, Radio Zachód, TVN24, Wyborcza.pl, RadioMaryja.pl, Rzeczpospolita, Bankier.pl, Business Insider PL, Biznes Interia, Polsat News, Infor.pl, Radio PiK, Radio Rzeszów, Newsweek Polska]",
+          "Urzędnicy przypominają w uzasadnieniu o poszanowaniu praw innych obywateli, a organizatorzy mają teraz zaledwie 24 godziny na odwołanie się do sądu. [Źródło: Radio Lublin, Interia Wydarzenia, Dziennik.pl, GazetaPrawna.pl (DGP), naTemat.pl, Onet Wiadomości, TVP3 Warszawa, Radio Kolor, Radio Zachód, RadioMaryja.pl, Rzeczpospolita, Polsat News, Radio PiK]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "— Protestować może każdy, ale blokować ulice i zamykać drzwi do instytucji na dwa miesiące – nikt – przekonywał Rafał Trzaskowski, prezydent Warszawy.",
           "PiS i wspierająca tę partię telewizja TV Republika przekonują, że to \"zamach na trybunał\". [Źródło: Gazeta.pl]",
           "Konfederacja proponuje reset konstytucyjny. Co więcej, to się dzieje również nawet w polskim Sejmie. Ja jestem przewodniczącym Komisji Cyfryzacji. [Źródło: Radio Lublin]",
           "Trzaskowski chce likwidacji miasteczka obrońców TK: \"Tak to wygląda w państwie prawa\" Mówiąc o samym przejęciu TK stwierdził, że \"od 30 października jest prezesem na uchodźstwie\". [Źródło: Niezależna.pl]",
           "Zaznaczyła, że przesłanki te „muszą mieć miejsce w dniu wydawania decyzji o zakazie, a w świetle orzecznictwa Trybunału Konstytucyjnego okoliczności te muszą być bardzo prawdopodobne”. [Źródło: TVP.info]",
-          "Katastrofa inicjatywy Karola Nawrockiego. [Źródło: Onet Wiadomości]",
+          "Sędzia ocenił, że działania te miały doprowadzić do przejęcia Trybunału przez osoby wybrane przez obecną większość parlamentarną. Zarzucił premierowi Tuskowi, że wcześniej publicznie zapowiadał konieczność posiadania przez rządzących swoich sędziów w TK oraz usunięcia go z funkcji prezesa. [Źródło: GazetaPrawna.pl (DGP)]",
           "Ratusz zakazał zgromadzenia odbywającego się od września w al. Szucha. Droga w pewnym momencie została przez protestujących zablokowana, na co skarżyli się mieszkańcy. Do tego dochodziły krzyki, śmieci, chamstwo i „działalność komercyjna” jednej z pracującej tam telewizji. [Źródło: Radio Kolor]",
           "„Prezydent stolicy Warszawy, wiceprzewodniczący partii rządzącej, podjął decyzję o nieprzedłużaniu protestu w obronie TK, więc muszę być na miejscu w Warszawie. [Źródło: Kresy.pl]",
           "„Taka sytuacja istnieje już obecnie od 17 września” – dodał. [Źródło: Radio Zachód]",
-          "Zgodnie z informacjami przekazanymi przez Dziennik Gazetę Prawną zgromadzenie w obecnej formule może odbywać się do 30 listopada 2026 roku. [Źródło: Warszawa w Pigułce]",
-          "— Nigdy nie przyszło mi do głowy, że będę musiał bronić Trybunału Konstytucyjnego na arenie międzynarodowej, informować państwa o tym – zaznaczał.",
+          "— Protestować może każdy, ale blokować ulice i zamykać drzwi do instytucji na dwa miesiące – nikt – przekonywał Rafał Trzaskowski, prezydent Warszawy.",
           "— To proste: odwołamy się do sądu. [Źródło: Bankier.pl]",
-          "W uzasadnieniu urząd powołał się między innymi na utrudnienia, z jakimi zmagają się mieszkańcy w związku z przebiegiem wydarzenia. [Źródło: Polsat News]",
           "Monument powstał w latach 50. XX wieku jako Pomnik Wdzięczności Armii Czerwonej. W latach 90. zmieniono jego nazwę i wpisano do rejestru zabytków. [Źródło: Radio Olsztyn]",
-          "Czy opodatkowanie książek elektronicznych wyższą stawką VAT niż ich papierowych odpowiedników jest zgodne z prawem? Trybunał Konstytucyjny podjął przełomową decyzję i skierował do unijnego trybunału w Luksemburgu dwa kluczowe pytania prejudycjalne, które mogą wywrócić dotychczasowy system opodatkowania publikacji cyfrowych w całej Unii Europejskiej. [Źródło: Infor.pl]"
+          "Czy opodatkowanie książek elektronicznych wyższą stawką VAT niż ich papierowych odpowiedników jest zgodne z prawem? [Źródło: Infor.pl]",
+          "Powodem było to, że nie dopuścił do orzekania ani udziału w Zgromadzeniu Ogólnym sędziów TK wybranych przez obecny Sejm. [Źródło: Radio PiK]",
+          "Środowe posiedzenie w sprawie Święczkowskiego przerwano po tym, jak jego pełnomocnik, mecenas Michał Skwarzyński, złożył wniosek o wyłączenie wszystkich trojga członków składu sądu dyscyplinarnego. [Źródło: Radio Rzeszów]"
         ]
       }
     ],
@@ -744,16 +921,16 @@
         "angle": "Relacja wiodąca",
         "summary": "Protest przed TK. Jest decyzja sądu",
         "url": "https://wiadomosci.wp.pl/protest-przed-tk-jest-decyzja-sadu-7355291037784224a",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja wiodąca).",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: Zgodnie, przepisem, zamiarze.",
+        "omits": "Pomija kontekst (rachunkach, Sprawiedliwości, Święczkowskiego) rozwijany w Gazeta.pl, Radio Lublin."
       },
       {
         "outlet": "Gazeta.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Protest przed TK. Prezydent Warszawy zakazał, sąd wydał decyzję",
         "url": "https://wiadomosci.gazeta.pl/polska/7,198072,33152928,protest-przed-tk-prezydent-warszawy-zakazal-sad-wydal-decyzje.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: wspierająca, partię, Republika.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: wydał, wspierająca, partię.",
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Radio Lublin",
@@ -761,15 +938,15 @@
         "summary": "Warszawa: Sąd uwzględnił odwołanie w sprawie protestu przed TK",
         "url": "https://radio.lublin.pl/2026/11/warszawa-sad-uwzglednil-odwolanie-w-sprawie-protestu-przed-tk-2/",
         "focus": "Wyróżnia własne wątki i pojęcia: uwzględnił, Konfederacja, proponuje.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "Niezależna.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Sąd uchylił decyzję Trzaskowskiego w sprawie miasteczka przed TK. Adam Borowski: Walka trwa!",
         "url": "https://niezalezna.pl/polska/sad-uchylil-decyzje-trzaskowskiego-w-sprawie-miasteczka-przed-tk-adam-borowski-walka-trwa/585060",
-        "focus": "Wyróżnia własne wątki i pojęcia: Borowski, Walka, trwa.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: Adam, Borowski, Walka.",
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -777,7 +954,7 @@
         "summary": "Co z miasteczkiem przed TK? Uchylono decyzję Trzaskowskiego",
         "url": "https://wydarzenia.interia.pl/mazowieckie/news-co-z-miasteczkiem-przed-tk-uchylono-decyzje-trzaskowskiego,nId,23579749",
         "focus": "Wyróżnia własne wątki i pojęcia: Uchylono.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "Dziennik.pl",
@@ -785,15 +962,15 @@
         "summary": "Protest pod Trybunałem Konstytucyjnym. Sąd uchylił decyzję Rafała Trzaskowskiego",
         "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11407481,protest-pod-trybunalem-konstytucyjnym-sad-uchylil-decyzje-rafala-trzaskowskiego.html",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "TVP.info",
         "angle": "Relacja uzupełniająca",
         "summary": "Zgromadzenie przed TK. Sąd uchylił decyzję stołecznego ratusza",
         "url": "https://www.tvp.info/96705342/zgromadzenie-pod-trybunalem-konstytucyjny-wyrok-sadu-okregowego-czy-miasteczko-zniknie-spod-siedziby-tk",
-        "focus": "Wyróżnia własne wątki i pojęcia: muszą, mieć, miejsce.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: przesłanki, muszą, mieć.",
+        "omits": "Pomija kontekst (rachunkach, Protest, Prawa) rozwijany w Gazeta.pl, Radio Lublin."
       },
       {
         "outlet": "Niedziela.pl",
@@ -801,39 +978,39 @@
         "summary": "Sąd uchylił decyzję odmawiającą przedłużenia zgody na zgromadzenie pod TK",
         "url": "https://www.niedziela.pl/artykul/130339/Sad-uchylil-decyzje-odmawiajaca-przedluzenia-zgody-na-zgromadzenie-pod-TK",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (rachunkach, Protest, Oznacza) rozwijany w Gazeta.pl, Radio Lublin."
       },
       {
         "outlet": "GazetaPrawna.pl (DGP)",
         "angle": "Perspektywa rynkowa",
         "summary": "Stołeczny ratusz mówi „dość” zgromadzeniu pod Trybunałem Konstytucyjnym. Wskazano ostateczną datę",
         "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/11406554,stoleczny-ratusz-nie-przedluzyl-zgody-zgromadzenie-pod-trybunalem-konstytucyjnym-30-listopada.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: ostateczną, datę.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: dość, ostateczną, datę.",
+        "omits": "Pomija kontekst (Trzaskowskiego, Warszawy, zawieszenie) rozwijany w Niezależna.pl, Interia Wydarzenia."
       },
       {
         "outlet": "naTemat.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Protest przed Trybunałem Konstytucyjnym. Warszawski ratusz postawił sprawę jasno",
         "url": "https://natemat.pl/676921,protest-przed-trybunalem-konstytucyjnym-warszawski-ratusz-postawil-sprawe-jasno",
-        "focus": "Wyróżnia własne wątki i pojęcia: postawił, sprawę, jasno.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: sprawę, jasno.",
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "Onet Wiadomości",
         "angle": "Relacja uzupełniająca",
         "summary": "Zgromadzenie przed Trybunałem Konstytucyjnym tylko do 30 listopada. Ratusz zdecydował",
         "url": "https://wiadomosci.onet.pl/warszawa/wladze-warszawy-nie-przedluzyly-zgody-na-zgromadzenie-pod-tk/qfqpxss",
-        "focus": "Wyróżnia własne wątki i pojęcia: zdecydował, Katastrofa, inicjatywy.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
+        "omits": "Pomija kontekst (Trzaskowskiego, Warszawy, zawieszenie) rozwijany w Niezależna.pl, Interia Wydarzenia."
       },
       {
         "outlet": "TVP3 Warszawa",
         "angle": "Doniesienie regionalne",
         "summary": "Z OSTATNIEJ CHWILI: Protest przed Trybunałem Konstytucyjnym. Ratusz nie przedłużył zgody",
         "url": "https://warszawa.tvp.pl/96677522/protest-pod-trybunalem-konstytucyjnym-dobiega-konca-ratusz-podjal-decyzje",
-        "focus": "Wyróżnia własne wątki i pojęcia: OSTATNIEJ, CHWILI.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: CHWILI.",
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "Radio Kolor",
@@ -841,7 +1018,7 @@
         "summary": "To koniec „miasteczka” pod Trybunałem Konstytucyjnym. Ratusz nie przedłużył zgody na protest",
         "url": "https://radiokolor.pl/to-koniec-miasteczka-pod-trybunalem-konstytucyjnym-ratusz-nie-przedluzyl-zgody-na-protest/",
         "focus": "Wyróżnia własne wątki i pojęcia: koniec, odbywającego, Droga.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "Kresy.pl",
@@ -849,7 +1026,7 @@
         "summary": "Warszawski ratusz nie zgodził się na przedłużenie zgromadzenia przed Trybunałem Konstytucyjnym",
         "url": "https://kresy.pl/wydarzenia/warszawski-ratusz-nie-zgodzil-sie-na-przedluzenie-zgromadzenia-przed-trybunalem-konstytucyjnym/",
         "focus": "Wyróżnia własne wątki i pojęcia: zgodził, stolicy, wiceprzewodniczący.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Radio Zachód",
@@ -857,15 +1034,7 @@
         "summary": "Stołeczny ratusz nie przedłużył zgody na zgromadzenie pod TK",
         "url": "https://zachod.pl/1596103/stoleczny-ratusz-nie-przedluzyl-zgody-na-zgromadzenie-pod-tk/",
         "focus": "Wyróżnia własne wątki i pojęcia: Taka, istnieje, obecnie.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
-      },
-      {
-        "outlet": "Warszawa w Pigułce",
-        "angle": "Doniesienie regionalne",
-        "summary": "Miarka się przebrała? Warszawa mówi „dość”. Zapadła stanowcza decyzja ws. TK",
-        "url": "https://warszawawpigulce.pl/miarka-sie-przebrala-warszawa-mowi-dosc-zapadla-stanowcza-decyzja-ws-tk/",
-        "focus": "Eksponuje dane (2026) oraz wątki: Miarka, przebrała.",
-        "omits": "Pomija kontekst (Trzaskowski, miasteczka, zgłoszony) rozwijany w Gazeta.pl, Niezależna.pl."
+        "omits": "Pomija kontekst (Europejskim, Prezydent, Bogdan) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "TVN24",
@@ -873,7 +1042,7 @@
         "summary": "Nowy komunikat Trybunału Konstytucyjnego. Anna Korwin-Piotrowska zaprosiła Rafała Trzaskowskiego",
         "url": "https://tvn24.pl/polska/trybunal-konstytucyjny-anna-korwin-piotrowska-zaprosila-rafala-trzaskowskiego-i-szefa-warszawskiej-policji-krzysztofa-ogronskiego-st9353543?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: zaprosiła.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Wyborcza.pl",
@@ -881,15 +1050,15 @@
         "summary": "Święczkowski mówi w PE o sytuacji w Trybunale Konstytucyjnym. \"Jestem prezesem na uchodźstwie\"",
         "url": "https://wyborcza.pl/7,75398,33150531,swieczkowski-mowi-w-pe-o-sytuacji-w-trybunale-konstytucyjnym.html",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "RadioMaryja.pl",
         "angle": "Relacja uzupełniająca",
         "summary": "Zamach stanu w Polsce. Prezes TK Bogdan Święczkowski opowiedział w Parlamencie Europejskim o nielegalnych działaniach Tuska",
         "url": "https://www.radiomaryja.pl/informacje/zamach-stanu-w-polsce-prezes-tk-bogdan-swieczkowski-opowiedzial-w-parlamencie-europejskim-o-nielegalnych-dzialaniach-tuska/",
-        "focus": "Wyróżnia własne wątki i pojęcia: stanu, Prezes, Bogdan.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: stanu, opowiedział, nielegalnych.",
+        "omits": "Pomija kontekst (Prezydent, sytuację, Trzaskowskiego) rozwijany w Gazeta.pl, GazetaPrawna.pl (DGP)."
       },
       {
         "outlet": "Rzeczpospolita",
@@ -897,23 +1066,23 @@
         "summary": "Anna Korwin-Piotrowska zaprasza Rafała Trzaskowskiego. Chodzi o dostęp do siedziby TK",
         "url": "https://www.rp.pl/sady-i-trybunaly/art45529291-anna-korwin-piotrowska-zaprasza-rafala-trzaskowskiego-chodzi-o-dostep-do-siedziby-tk",
         "focus": "Wyróżnia własne wątki i pojęcia: zaprasza, Chodzi, dostęp.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (Europejskim, Prezydent, sytuację) rozwijany w GazetaPrawna.pl (DGP), Onet Wiadomości."
       },
       {
         "outlet": "Bankier.pl",
         "angle": "Perspektywa rynkowa",
         "summary": "Finansowy pat w TK z NBP w tle. Obie strony wzywają bank do odblokowania rachunków",
         "url": "https://www.bankier.pl/wiadomosc/Finansowy-pat-w-TK-Zarowno-Korwin-Piotrowska-jak-i-Swieczkowski-wzywaja-NBP-do-odblokowania-rachunkow-9235162.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
-        "focus": "Wyróżnia własne wątki i pojęcia: Obie, strony, wzywają.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: Finansowy, Obie, strony.",
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Business Insider PL",
         "angle": "Perspektywa rynkowa",
         "summary": "Anna Korwin-Piotrowska wzywa NBP do odblokowania rachunków TK. Jest pismo",
         "url": "https://businessinsider.com.pl/prawo/praca/anna-korwin-piotrowska-domaga-sie-od-nbp-odblokowania-rachunkow/qsz2x4f",
-        "focus": "Wyróżnia własne wątki i pojęcia: wzywa.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: wzywa, pismo.",
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Biznes Interia",
@@ -921,23 +1090,15 @@
         "summary": "NBP wstrzymał obsługę rachunków TK. Święczkowski reaguje",
         "url": "https://biznes.interia.pl/gospodarka/news-swieczkowski-domaga-sie-od-nbp-przywrocenia-obslugi-rachunko,nId,23579083",
         "focus": "Wyróżnia własne wątki i pojęcia: obsługę, reaguje.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
       },
       {
         "outlet": "Polsat News",
         "angle": "Relacja uzupełniająca",
         "summary": "Zgromadzenie przed Trybunałem Konstytucyjnym. Organizatorzy reagują na decyzję ratusza",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/zgromadzenie-przed-tk-organizatorzy-reaguja-na-decyzje-ratusza/",
-        "focus": "Wyróżnia własne wątki i pojęcia: reagują, urząd, powołał.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
-      },
-      {
-        "outlet": "Money.pl",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Jest decyzja premiera w sprawie finansowania Trybunału Konstytucyjnego",
-        "url": "https://www.money.pl/finanse/jest-decyzja-premiera-w-sprawie-finansowania-trybunalu-konstytucyjnego-7355122216110240a.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: premiera, Donald, Tusk.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "focus": "Wyróżnia własne wątki i pojęcia: reagują.",
+        "omits": "Pomija kontekst (Trzaskowskiego, Warszawy, zawieszenie) rozwijany w Niezależna.pl, Interia Wydarzenia."
       },
       {
         "outlet": "Radio Olsztyn",
@@ -945,7 +1106,7 @@
         "summary": "Janusz Cichoń o „szubienicach” i blokadzie rachunku Trybunału Konstytucyjnego",
         "url": "https://radioolsztyn.pl/janusz-cichon-o-szubienicach-i-blokadzie-rachunku-trybunalu-konstytucyjnego/01903089",
         "focus": "Wyróżnia własne wątki i pojęcia: Janusz, Cichoń, szubienicach.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (decyzję, Bonkowska-Kubek, kwestionowania) rozwijany w WP Wiadomości, Gazeta.pl."
       },
       {
         "outlet": "Infor.pl",
@@ -953,7 +1114,31 @@
         "summary": "Wyższy podatek na e-booki pod lupą sędziów. Historyczny ruch Trybunału Konstytucyjnego w sprawie cyfrowych książek",
         "url": "https://ksiegowosc.infor.pl/7716177,wyzszy-podatek-na-ebooki-pod-lupa-sedziow-historyczny-ruch-trybunalu-konstytucyjnego-w-sprawie-cyfrowych-ksiazek.html",
         "focus": "Wyróżnia własne wątki i pojęcia: Wyższy, podatek, e-booki.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Warszawa w Pigułce."
+        "omits": "Pomija kontekst (Bonkowska-Kubek, kwestionowania, argumentowała) rozwijany w WP Wiadomości, Gazeta.pl."
+      },
+      {
+        "outlet": "Radio PiK",
+        "angle": "Doniesienie regionalne",
+        "summary": "Bogdan Święczkowski zawieszony w czynnościach służbowych sędziego Trybunału Konstytucyjnego",
+        "url": "https://www.radiopik.pl/40,144044,bogdan-swieczkowski-zawieszony-w-czynnosciach-sl",
+        "focus": "Wyróżnia własne wątki i pojęcia: służbowych, sędziego, Powodem.",
+        "omits": "Pomija kontekst (Trzaskowskiego, Warszawy, wskazany) rozwijany w Niezależna.pl, Interia Wydarzenia."
+      },
+      {
+        "outlet": "Radio Rzeszów",
+        "angle": "Doniesienie regionalne",
+        "summary": "Bogdan Święczkowski zawieszony na 12 miesięcy. Decyzja sądu dyscyplinarnego TK",
+        "url": "https://radio.rzeszow.pl/377414/bogdan-swieczkowski-zawieszony-na-12-miesiecy-decyzja-sadu-dyscyplinarnego-tk/",
+        "focus": "Wyróżnia własne wątki i pojęcia: miesięcy, dyscyplinarnego, Środowe.",
+        "omits": "Pomija kontekst (organizator, przypominają, uzasadnieniu) rozwijany w WP Wiadomości, Radio Lublin."
+      },
+      {
+        "outlet": "Newsweek Polska",
+        "angle": "Relacja uzupełniająca",
+        "summary": "\"Jestem prezesem na uchodźstwie\". Sądne dni dla Święczkowskiego. Co może się zmienić w TK po ostatnich decyzjach sędziów? [WYJAŚNIAMY]",
+        "url": "https://www.newsweek.pl/polska/polityka/trybunal-konstytucyjny-swieczkowski-i-sochanski-maja-sie-czym-martwic/2rs7cvj",
+        "focus": "Wyróżnia własne wątki i pojęcia: Sądne, zmienić, WYJAŚNIAMY.",
+        "omits": "Pomija kontekst (mieszkańców, ratunkowych, zablokowaną) rozwijany w WP Wiadomości, Gazeta.pl."
       }
     ],
     "sources": [
@@ -966,7 +1151,7 @@
       "Infor.pl",
       "Interia Wydarzenia",
       "Kresy.pl",
-      "Money.pl",
+      "Newsweek Polska",
       "Niedziela.pl",
       "Niezależna.pl",
       "Onet Wiadomości",
@@ -974,6 +1159,8 @@
       "Radio Kolor",
       "Radio Lublin",
       "Radio Olsztyn",
+      "Radio PiK",
+      "Radio Rzeszów",
       "Radio Zachód",
       "RadioMaryja.pl",
       "Rzeczpospolita",
@@ -981,23 +1168,10 @@
       "TVP.info",
       "TVP3 Warszawa",
       "WP Wiadomości",
-      "Warszawa w Pigułce",
       "Wyborcza.pl",
       "naTemat.pl"
     ],
     "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Niezależna.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://niezalezna.pl/polska/sad-uchylil-decyzje-trzaskowskiego-w-sprawie-miasteczka-przed-tk-adam-borowski-walka-trwa/585060"
-      },
-      {
-        "claim_text": "Dopisano źródło: Interia Wydarzenia (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wydarzenia.interia.pl/mazowieckie/news-co-z-miasteczkiem-przed-tk-uchylono-decyzje-trzaskowskiego,nId,23579749"
-      },
-      {
-        "claim_text": "Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11407481,protest-pod-trybunalem-konstytucyjnym-sad-uchylil-decyzje-rafala-trzaskowskiego.html"
-      },
       {
         "claim_text": "Dopisano źródło: TVP.info (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.tvp.info/96705342/zgromadzenie-pod-trybunalem-konstytucyjny-wyrok-sadu-okregowego-czy-miasteczko-zniknie-spod-siedziby-tk"
@@ -1005,15 +1179,27 @@
       {
         "claim_text": "Dopisano źródło: Niedziela.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.niedziela.pl/artykul/130339/Sad-uchylil-decyzje-odmawiajaca-przedluzenia-zgody-na-zgromadzenie-pod-TK"
+      },
+      {
+        "claim_text": "Dopisano źródło: Radio PiK (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.radiopik.pl/40,144044,bogdan-swieczkowski-zawieszony-w-czynnosciach-sl"
+      },
+      {
+        "claim_text": "Dopisano źródło: Radio Rzeszów (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://radio.rzeszow.pl/377414/bogdan-swieczkowski-zawieszony-na-12-miesiecy-decyzja-sadu-dyscyplinarnego-tk/"
+      },
+      {
+        "claim_text": "Dopisano źródło: Newsweek Polska (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.newsweek.pl/polska/polityka/trybunal-konstytucyjny-swieczkowski-i-sochanski-maja-sie-czym-martwic/2rs7cvj"
       }
     ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Prawo i decyzje publiczne",
-      "status": "Potwierdzone (27 źródeł)"
+      "status": "Potwierdzone (28 źródeł)"
     },
     "discrepancies": [],
-    "independent_sources_count": 27,
+    "independent_sources_count": 28,
     "syndicate_groups": [],
     "seo_faq": [
       {
@@ -1021,12 +1207,12 @@
         "a": "Sędzia Anna Bonkowska-Kubek argumentowała decyzję, odnosząc się m.in. do kwestionowania przez ratusz terminu złożenia zawiadomienia o przedłużeniu zgromadzenia, że taki wniosek należy odnosić do pierwszego dnia planowanego posiedzenia i ten."
       },
       {
-        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
-        "a": "Zgodnie z informacjami przekazanymi przez Dziennik Gazetę Prawną zgromadzenie w obecnej formule może odbywać się do 30 listopada 2026 roku."
+        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
+        "a": "Według ratusza organizator zgromadzenia, składając zawiadomienie, przekroczył 30-dniowy termin wskazany w ustawie."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (27 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (28 źródeł)."
       }
     ],
     "media_file": "media/topic-court-3.jpg",
@@ -1150,7 +1336,7 @@
     "keywords": "Kujawsko-Pomorskie, fuzja, trzech, placówek, medycznych, Taką, decyzję",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T23:54:20+01:00",
-    "updated_iso": "2026-11-27T02:53:39+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 23:54",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -1368,7 +1554,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "8 redakcji"
+        "val": "9 redakcji"
       },
       {
         "label": "Kategoria",
@@ -1380,28 +1566,27 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (8 źródeł)"
+        "val": "Potwierdzone (9 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (8 redakcji)",
+        "heading": "Ustalenia wspólne (9 redakcji)",
         "paragraphs": [
           "Trzy dni później – w czwartek – udał się do Chile, gdzie rozmawiał z przywódcą tego kraju José Antoniem Kastem Ristem. Sikorski wypomniał Nawrockiemu nominacje ambasaroskie Minister spraw zagranicznych, Radosław Sikorski zwrócił uwagę w serwisie X na \"godne przyjęcie prezydenta RP w Chile\". Następnie poinformował, że wizytę przygotował charge d'affaires Michał Świetlik. [Źródło: Gazeta.pl, Niezależna.pl, Kresy.pl, Onet Wiadomości, Polsat News]",
           "Jest to jeden z dyplomatów, którzy nadal czekają, aż prezydent mianuje ich na ambasadorów. Celem jego wizyty jest uzyskanie poparcia dla członkostwa Polski w grupie G20. W stolicy Chile Santiago Nawrocki wręczy odznaczenia przedstawicielom lokalnej Polonii. [Źródło: Gazeta.pl, naTemat.pl, Niezależna.pl, Kresy.pl, RadioMaryja.pl]",
-          "Później spotka się z prezydentem Jose Antonio Kastem. W czwartek ma złożyć wieniec pod pomnikiem generała Bernardo O’Higginsa. Obu prezydentów czekają rozmowy w wąskim gronie, rozmowy plenarne oraz spotkanie z mediami. [Źródło: Gazeta.pl, Niezależna.pl, Kresy.pl, RadioMaryja.pl]",
+          "Później spotka się z prezydentem Jose Antonio Kastem. W czwartek ma złożyć wieniec pod pomnikiem generała Bernardo O’Higginsa. Obu prezydentów czekają rozmowy w wąskim gronie, rozmowy plenarne oraz spotkanie z mediami. [Źródło: Gazeta.pl, Niezależna.pl, Kresy.pl, RadioMaryja.pl, TVN24]",
           "W czwartek planowane jest też spotkanie prezydenta z sekretarzem wykonawczym CEPAL, czyli Komisji Gospodarczej Narodów Zjednoczonych ds. [Źródło: Niezależna.pl, Kresy.pl]"
         ]
       },
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Karol Nawrocki przebywa w Ameryce Południowej od 23 listopada. Prezydent w poniedziałek spotkał się z ze swoim argentyńskim odpowiednikiem Javierem Mileiem. [Źródło: naTemat.pl]",
+          "Prezydent w poniedziałek spotkał się z ze swoim argentyńskim odpowiednikiem Javierem Mileiem. [Źródło: naTemat.pl]",
           "Stosunki dyplomatyczne pomiędzy oboma państwami nawiązano w 1920 roku. Podczas uroczystości prezydent wręczy odznaczenia państwowe zasłużonym działaczom polonijnym. [Źródło: Kresy.pl]",
           "Jak podkreślił, choć Polonia w Chile liczy niewiele ponad 2 tys. osób, to wykonuje olbrzymią pracę na rzecz podtrzymania związków między oboma narodami. [Źródło: RadioMaryja.pl]",
-          "\"Ciekawe, czy dostanie nominację ambasadorską\" — dodał wicepremier, nawiązując do ciągnącego się sporu. [Źródło: Onet Wiadomości]",
-          "Prezydenci rozmawiali m.in. o współpracy w górnictwie, geologii, astronomii i wojnie w Ukrainie. [Źródło: Polsat News]"
+          "\"Ciekawe, czy dostanie nominację ambasadorską\" — dodał wicepremier, nawiązując do ciągnącego się sporu. [Źródło: Onet Wiadomości]"
         ]
       }
     ],
@@ -1452,7 +1637,7 @@
         "summary": "Chile: prezydent Karol Nawrocki odznaczył osoby zasłużone dla stosunków polsko-chilijskich",
         "url": "https://www.radiomaryja.pl/informacje/chile-prezydent-karol-nawrocki-odznaczyl-osoby-zasluzone-dla-stosunkow-polsko-chilijskich/",
         "focus": "Eksponuje dane (2 tys.) oraz wątki: osoby, polsko-chilijskich.",
-        "omits": "Pomija kontekst (Sikorski, zagranicznych, ambasaroskie) rozwijany w Gazeta.pl, naTemat.pl."
+        "omits": "Pomija kontekst (rozmawiał, Sikorski, zagranicznych) rozwijany w Gazeta.pl, Niezależna.pl."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -1469,6 +1654,14 @@
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/karol-nawrocki-w-chile-padly-wazne-zapowiedzi/",
         "focus": "Wyróżnia własne wątki i pojęcia: Padły, ważne, zapowiedzi.",
         "omits": "Pomija wyliczenia (2 tys.) przytaczane przez RadioMaryja.pl."
+      },
+      {
+        "outlet": "TVN24",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Nawrocki w Chile. Prezydenci rozmawiali o inwestycjach i wojnie w Ukrainie",
+        "url": "https://tvn24.pl/biznes/ze-swiata/prezydent-karol-nawrocki-w-chile-rozmowy-o-inwestycjach-kghm-i-wojnie-w-ukrainie-st9359806?source=rss",
+        "focus": "Wyróżnia własne wątki i pojęcia: inwestycjach, chce, wzmacniać.",
+        "omits": "Pomija wyliczenia (2 tys.) przytaczane przez RadioMaryja.pl."
       }
     ],
     "sources": [
@@ -1478,6 +1671,7 @@
       "Onet Wiadomości",
       "Polsat News",
       "RadioMaryja.pl",
+      "TVN24",
       "TVP.info",
       "naTemat.pl"
     ],
@@ -1485,15 +1679,19 @@
       {
         "claim_text": "Dopisano źródło: Polsat News (aktualizacja wieloźródłowa)",
         "evidence_url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/karol-nawrocki-w-chile-padly-wazne-zapowiedzi/"
+      },
+      {
+        "claim_text": "Dopisano źródło: TVN24 (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://tvn24.pl/biznes/ze-swiata/prezydent-karol-nawrocki-w-chile-rozmowy-o-inwestycjach-kghm-i-wojnie-w-ukrainie-st9359806?source=rss"
       }
     ],
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Prawo i decyzje publiczne",
-      "status": "Potwierdzone (8 źródeł)"
+      "status": "Potwierdzone (9 źródeł)"
     },
     "discrepancies": [],
-    "independent_sources_count": 8,
+    "independent_sources_count": 9,
     "syndicate_groups": [],
     "seo_faq": [
       {
@@ -1506,14 +1704,14 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (8 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Prawo i decyzje publiczne). Status: Potwierdzone (9 źródeł)."
       }
     ],
-    "media_file": "media/topic-sejm.jpg",
-    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
+    "media_file": "media/topic-sejm-4.jpg",
+    "media_credit": "Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
     "media_label": "Polityka i instytucje państwowe"
   },
   {
@@ -2213,7 +2411,7 @@
     "keywords": "Slaskie, Obława, świnią, Nietypowa, mieszkanka, Częstochowy, pozostaje",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T22:56:00+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:56+01:00",
     "display_date": "26.11.2026, 22:56",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -3539,7 +3737,7 @@
     "keywords": "Swiat, Zmarł, Strobe, Talbott, wpływowy, amerykański, dyplomata",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T21:55:52+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:56+01:00",
     "display_date": "26.11.2026, 21:55",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 90,
@@ -3649,7 +3847,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "10 redakcji"
+        "val": "11 redakcji"
       },
       {
         "label": "Kategoria",
@@ -3661,18 +3859,18 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (10 źródeł)"
+        "val": "Potwierdzone (11 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (10 redakcji)",
+        "heading": "Ustalenia wspólne (11 redakcji)",
         "paragraphs": [
-          "\"Podczas moich rozmów w Chinach z prezydentem Rosji Władimirem Putinem poświęciłem wiele czasu na rozmowę o tym, że chciałbym, aby prezydent Putin wycofał się ze wszelkiej agresji militarnej wymierzonej w terytoria w Europie\" – napisał Donald Trump w czwartek w serwisie Truth Social. [Źródło: TVN24, Kresy.pl, GazetaPrawna.pl (DGP), Dziennik.pl, Rzeczpospolita, WP Wiadomości, Gazeta.pl, Interia Wydarzenia, Polsat News, Bankier.pl]",
+          "\"Podczas moich rozmów w Chinach z prezydentem Rosji Władimirem Putinem poświęciłem wiele czasu na rozmowę o tym, że chciałbym, aby prezydent Putin wycofał się ze wszelkiej agresji militarnej wymierzonej w terytoria w Europie\" – napisał Donald Trump w czwartek w serwisie Truth Social. [Źródło: TVN24, Kresy.pl, GazetaPrawna.pl (DGP), Dziennik.pl, Rzeczpospolita, WP Wiadomości, Gazeta.pl, Interia Wydarzenia, Polsat News, Bankier.pl, Onet Wiadomości]",
           "We wpisie Trump dodał, że w środę w Mar-a-Lago na Florydzie spotkał się z sekretarzem generalnym NATO Markiem Rutte, któremu zrelacjonował swoje rozmowy z Władimirem Putinem w Chinach i z którym poruszył \"wiele tematów\". We wspólnym komunikacie Trump i Rutte poinformowali, że głównymi tematami ich rozmów była wojna w Ukrainie i konflikt z Iranem. [Źródło: TVN24, Kresy.pl, GazetaPrawna.pl (DGP), WP Wiadomości, Gazeta.pl, Interia Wydarzenia]",
           "\"Omówiliśmy również, jak ważne jest, aby Rosja unikała wszelkich działań, które umyślnie lub nieumyślnie rozszerzają konflikt, oraz jak ważne jest jak najszybsze pokojowe rozwiązanie konfliktu\" – napisano w oświadczeniu. Prezydent USA wyraził też nadzieję, że uda się szybko doprowadzić do zawarcia porozumienia między Rosją a Ukrainą. [Źródło: TVN24, Kresy.pl, GazetaPrawna.pl (DGP), Dziennik.pl, WP Wiadomości, Gazeta.pl, Interia Wydarzenia]",
-          "Do rozmów Trumpa i szefa NATO doszło po dwukrotnym w ostatnich dniach naruszeniu przestrzeni powietrznej Polski przez Rosję. TO CAŁKOWITA RZEŹ — a (doprowadzenie do porozumienia) będzie wielkim hołdem dla wszystkich!” – przekazał. Innym tematem było zwiększanie inwestycji w obronność i przemysł zbrojeniowy w całym NATO. [Źródło: TVN24, GazetaPrawna.pl (DGP), Dziennik.pl, WP Wiadomości, Gazeta.pl, Polsat News]"
+          "Do rozmów Trumpa i szefa NATO doszło po dwukrotnym w ostatnich dniach naruszeniu przestrzeni powietrznej Polski przez Rosję. TO CAŁKOWITA RZEŹ — a (doprowadzenie do porozumienia) będzie wielkim hołdem dla wszystkich!” – przekazał. Innym tematem było zwiększanie inwestycji w obronność i przemysł zbrojeniowy w całym NATO. [Źródło: TVN24, GazetaPrawna.pl (DGP), Dziennik.pl, WP Wiadomości, Gazeta.pl, Polsat News, Onet Wiadomości]"
         ]
       },
       {
@@ -3681,7 +3879,8 @@
           "Według amerykańskiego prezydenta znaczna część spotkania była poświęcona możliwości zakończenia działań wojennych. [Źródło: Kresy.pl]",
           "Uważam więc, że właśnie to powinniśmy kontynuować – dodał. [Źródło: GazetaPrawna.pl (DGP)]",
           "Posiadłość, w której prezydent USA spędza przerwę z okazji Święta Dziękczynienia, została w oficjalnym komunikacie nazwana \"południowym Białym Domem\". Po zamkniętym spotkaniu wydano wspólne oświadczenie. Czy jest gotów doprowadzić do zakończenia tej straszliwej wojny? – powiedział Rutte. [Źródło: WP Wiadomości]",
-          "Przypomnijmy, że Rosja była wielokrotnie wiązana z organizowaniem i wspieraniem aktów dywersji. Ponadto wielokrotnie naruszała przestrzeń powietrzną europejskich krajów, w tym Polski. Zwrócił również uwagę na liczne ofiary śmiertelne. [Źródło: Gazeta.pl]"
+          "Przypomnijmy, że Rosja była wielokrotnie wiązana z organizowaniem i wspieraniem aktów dywersji. Ponadto wielokrotnie naruszała przestrzeń powietrzną europejskich krajów, w tym Polski. Zwrócił również uwagę na liczne ofiary śmiertelne. [Źródło: Gazeta.pl]",
+          "W rozmowie z mediami nie zabrakło też odniesień do Iranu i Grenlandii. Trump ponownie skomentował też sytuację w Ukrainie i stanowisko Rosji. [Źródło: Onet Wiadomości]"
         ]
       }
     ],
@@ -3692,7 +3891,7 @@
         "summary": "Donald Trump zaapelował do Władimira Putina o zaprzestanie agresji w Europie",
         "url": "https://tvn24.pl/swiat/donald-trump-zaapelowal-do-wladimira-putina-o-zaprzestanie-agresji-w-europie-st9359509?source=rss",
         "focus": "Wyróżnia własne wątki i pojęcia: zaapelował, Putina.",
-        "omits": "Pomija kontekst (rozmawiał, ujawnił, powiedział) rozwijany w GazetaPrawna.pl (DGP), Dziennik.pl."
+        "omits": "Pomija kontekst (rozmawiał, ujawnił, spotkania) rozwijany w GazetaPrawna.pl (DGP), Dziennik.pl."
       },
       {
         "outlet": "Kresy.pl",
@@ -3708,7 +3907,7 @@
         "summary": "Trump rozmawiał z Putinem o agresji w Europie. „Chciałbym, aby się wycofał”",
         "url": "https://www.gazetaprawna.pl/wiadomosci/swiat/artykuly/11407343,trump-ujawnil-szczegoly-rozmowy-z-putinem.html",
         "focus": "Wyróżnia własne wątki i pojęcia: Uważam, więc, właśnie.",
-        "omits": "Pomija kontekst (ujawnił, powiedział, spotkania) rozwijany w Dziennik.pl, WP Wiadomości."
+        "omits": "Pomija kontekst (ujawnił, spotkania, powiedział) rozwijany w Dziennik.pl, WP Wiadomości."
       },
       {
         "outlet": "Dziennik.pl",
@@ -3716,7 +3915,7 @@
         "summary": "Trump ujawnił, o czym rozmawiał z Putinem. Takie słowa padły o agresji Rosji w Europie",
         "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11407420,trump-ujawnil-o-czym-rozmawial-z-putinem-takie-slowa-padly-o-agresji-rosji-w-europie.html",
         "focus": "Wyróżnia własne wątki i pojęcia: Takie, słowa, padły.",
-        "omits": "Pomija kontekst (poinformowali, zrelacjonował, sekretarzem) rozwijany w TVN24, Kresy.pl."
+        "omits": "Pomija kontekst (poinformowali, Florydzie, Ukrainie) rozwijany w TVN24, Kresy.pl."
       },
       {
         "outlet": "Rzeczpospolita",
@@ -3724,7 +3923,7 @@
         "summary": "Trump ujawnia kulisy rozmów z Putinem. „Chciałbym, żeby się wycofał”",
         "url": "https://www.rp.pl/konflikty-zbrojne/art45549521-trump-ujawnia-kulisy-rozmow-z-putinem-chcialbym-zeby-sie-wycofal",
         "focus": "Wyróżnia własne wątki i pojęcia: kulisy, żeby.",
-        "omits": "Pomija kontekst (porozumienia, doprowadzić, poinformowali) rozwijany w TVN24, Kresy.pl."
+        "omits": "Pomija kontekst (porozumienia, doprowadzić, Trumpa) rozwijany w TVN24, Kresy.pl."
       },
       {
         "outlet": "WP Wiadomości",
@@ -3732,7 +3931,7 @@
         "summary": "Trump ujawnił, o czym rozmawiał z Putinem. \"Poświęciłem dużo czasu\"",
         "url": "https://wiadomosci.wp.pl/trump-mowilem-putinowi-zeby-zaprzestal-wszelkiej-agresji-w-europie-7355223305136288a",
         "focus": "Wyróżnia własne wątki i pojęcia: Posiadłość, spędza, przerwę.",
-        "omits": "Pomija kontekst (zaprzestanie, Putinowi, ujawnia) rozwijany w TVN24, Bankier.pl."
+        "omits": "Pomija kontekst (ujawnia, amerykańskiego, zaprzestanie) rozwijany w Rzeczpospolita, Bankier.pl."
       },
       {
         "outlet": "Gazeta.pl",
@@ -3740,7 +3939,7 @@
         "summary": "Trump ujawnił szczegóły rozmowy z Putinem. \"Poświęciłem dużo czasu\"",
         "url": "https://wiadomosci.gazeta.pl/polityka/7,198013,33152604,trump-ujawnil-szczegoly-rozmowy-z-putinem-poswiecilem-duzo.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
         "focus": "Wyróżnia własne wątki i pojęcia: Przypomnijmy, wielokrotnie, wiązana.",
-        "omits": "Pomija kontekst (rozmawiał, powiedział, spotkania) rozwijany w GazetaPrawna.pl (DGP), Dziennik.pl."
+        "omits": "Pomija kontekst (rozmawiał, spotkania, powiedział) rozwijany w GazetaPrawna.pl (DGP), Dziennik.pl."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -3765,6 +3964,14 @@
         "url": "https://www.bankier.pl/wiadomosc/Putin-uslyszal-od-Trumpa-zadanie-dotyczace-Europy-Prezydent-USA-ujawnia-szczegoly-9235773.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Wyróżnia własne wątki i pojęcia: usłyszał, żądanie, dotyczące.",
         "omits": "Pomija kontekst (porozumienia, doprowadzić, oświadczeniu) rozwijany w TVN24, Kresy.pl."
+      },
+      {
+        "outlet": "Onet Wiadomości",
+        "angle": "Relacja uzupełniająca",
+        "summary": "Donald Trump ujawnia szczegóły rozmów z szefem NATO. Wśród tematów wojska USA w Europie",
+        "url": "https://wiadomosci.onet.pl/swiat/donald-trump-mowi-o-wojskach-usa-w-europie-w-tle-ukraina-i-rosja/x6nq7cf",
+        "focus": "Wyróżnia własne wątki i pojęcia: szefem, wojska, wojskach.",
+        "omits": "Pomija kontekst (poinformowali, oświadczeniu, nieumyślnie) rozwijany w TVN24, Kresy.pl."
       }
     ],
     "sources": [
@@ -3774,6 +3981,7 @@
       "GazetaPrawna.pl (DGP)",
       "Interia Wydarzenia",
       "Kresy.pl",
+      "Onet Wiadomości",
       "Polsat News",
       "Rzeczpospolita",
       "TVN24",
@@ -3791,15 +3999,19 @@
       {
         "claim_text": "Dopisano źródło: Dziennik.pl (aktualizacja wieloźródłowa)",
         "evidence_url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11407420,trump-ujawnil-o-czym-rozmawial-z-putinem-takie-slowa-padly-o-agresji-rosji-w-europie.html"
+      },
+      {
+        "claim_text": "Dopisano źródło: Onet Wiadomości (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://wiadomosci.onet.pl/swiat/donald-trump-mowi-o-wojskach-usa-w-europie-w-tle-ukraina-i-rosja/x6nq7cf"
       }
     ],
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (10 źródeł)"
+      "status": "Potwierdzone (11 źródeł)"
     },
     "discrepancies": [],
-    "independent_sources_count": 10,
+    "independent_sources_count": 11,
     "syndicate_groups": [],
     "seo_faq": [
       {
@@ -3812,7 +4024,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (10 źródeł)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (11 źródeł)."
       }
     ],
     "media_file": "media/world-ukraine-3.jpg",
@@ -4353,7 +4565,7 @@
     "keywords": "Zachodniopomorskie, Sztuczna, wyspa, powstać, nieopodal, Świnoujścia, badanie",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T20:58:42+01:00",
-    "updated_iso": "2026-11-27T02:53:39+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 20:58",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -5925,7 +6137,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "7 redakcji"
+        "val": "5 redakcji"
       },
       {
         "label": "Kategoria",
@@ -5937,18 +6149,18 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (7 źródeł)"
+        "val": "Potwierdzone (5 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (7 redakcji)",
+        "heading": "Ustalenia wspólne (5 redakcji)",
         "paragraphs": [
           "Pierwszy mecz i pierwsze zwycięstwo. UNI Opole zagrało w wielkim stylu na inaugurację fazy grupowej Ligi Mistrzyń. Konfrontacja z Volley Mulhouse Alsace zakończyła się zwycięstwem 3:0 po niespełna półtorej godzinie. [Źródło: WP SportoweFakty, Polsat Sport]",
           "UNI Opole było rewelacją poprzedniego sezonu w Tauron Lidze Kobiet. Drużyna po raz pierwszy w historii znalazła się w półfinale mistrzostw Polski, a następnie w serii o brązowe medale zapewniła sobie pierwsze miejsce na podium. Dodatkowa nagroda to start w prestiżowej Lidze Mistrzyń. [Źródło: WP SportoweFakty]",
           "Na początek było domowe starcie z francuskim Volley Mulhouse Alsace, w którym UNI spisało się wyśmienicie. Drugi set zakończył się zdecydowanym zwycięstwem opolanek 25:19. Ostatni punkt zdobyła Wieczorek, kończąc udany europejski debiut opolskiego zespołu. [Źródło: WP SportoweFakty, Polsat Sport]",
-          "Piłkarze Lecha Poznań w meczu piątej kolejki Ligi Europy prowadzili do przerwy 2:0 z Royale Union Saint-Gilloise, ale ostatecznie nieco szczęśliwie zremisowali 2:2. [Źródło: Polsat Sport, Przegląd Sportowy, Weszło.com, Sport.pl, Rzeczpospolita, Niezależna.pl]"
+          "Piłkarze Lecha Poznań w meczu piątej kolejki Ligi Europy prowadzili do przerwy 2:0 z Royale Union Saint-Gilloise, ale ostatecznie nieco szczęśliwie zremisowali 2:2. [Źródło: Polsat Sport, Przegląd Sportowy, Weszło.com, Sport.pl]"
         ]
       },
       {
@@ -5957,8 +6169,7 @@
           "Opolanki udanie zadebiutowały w tych prestiżowych rozgrywkach. W innym spotkaniu grupy A broniący trofeum VakifBank Stambuł wygrał w trzech setach z Asterix Avo Beveren. Premierowa partia przyniosła równą grę obu ekip, a wynik oscylował wokół remisu (8:8, 16:16). [Źródło: Polsat Sport]",
           "Mistrzowie Polski byli blisko wygranej nad faworytem, ale ostatecznie nie pokonali belgijskiego zespołu. Rywale wprost podsumowali grę Lecha. [Źródło: Przegląd Sportowy]",
           "Tylko że, w przeciwieństwie do Kolejorza ze starć z Czarnymi Kotami i Unionem SG, może wracać do Polski z ogromnym poczuciem niedosytu. I zanim ktoś napisze, że „hola, hola, zaraz, zaraz, przecież Lech też mógł wygrać z Belgami czy Anglikami”, od razu odpowiemy. Ano mógł, ale równie dobrze mógł też stracić jakieś dwie, trzy, cztery bramki więcej. [Źródło: Weszło.com]",
-          "Piłkarze Adriana Siemieńca nie mają za sobą udanego początku rozgrywek, ale wciąż walczą o awans do fazy pucharowej. W Anglii udało im się zremisować 1:1. Tak wygląda tabela Ligi Europy po tym spotkaniu. [Źródło: Sport.pl]",
-          "Mistrzowie Polski już po 18 minutach prowadzili różnicą dwóch bramek, ale po przerwie roztrwonili przewagę. [Źródło: Niezależna.pl]"
+          "Piłkarze Adriana Siemieńca nie mają za sobą udanego początku rozgrywek, ale wciąż walczą o awans do fazy pucharowej. W Anglii udało im się zremisować 1:1. Tak wygląda tabela Ligi Europy po tym spotkaniu. [Źródło: Sport.pl]"
         ]
       }
     ],
@@ -5969,7 +6180,7 @@
         "summary": "Wielki debiut polskiego zespołu w Lidze Mistrzyń",
         "url": "https://sportowefakty.wp.pl/siatkowka/1286299/wielki-debiut-polskiego-zespolu-w-lidze-mistrzyn",
         "focus": "Wyróżnia własne wątki i pojęcia: Wielki, rewelacją, poprzedniego.",
-        "omits": "Pomija kontekst (Saint-Gilloise, ostatecznie, szczęśliwie) rozwijany w Polsat Sport, Przegląd Sportowy."
+        "omits": "Pomija kontekst (rozgrywkach, Jagiellonii, Wymarzony) rozwijany w Polsat Sport, Sport.pl."
       },
       {
         "outlet": "Polsat Sport",
@@ -5977,15 +6188,15 @@
         "summary": "Trzy do zera! Wymarzony debiut siatkarek UNI Opole w Lidze Mistrzyń",
         "url": "https://www.polsatsport.pl/wiadomosc/2026-11-26/uni-opole-volley-mulhouse-alsace-siatkowka-wynik-meczu/",
         "focus": "Wyróżnia własne wątki i pojęcia: zera, siatkarek, Opolanki.",
-        "omits": "Pomija kontekst (Jagiellonia, Frederiksena, trudności) rozwijany w Przegląd Sportowy, Weszło.com."
+        "omits": "Pomija kontekst (Jagiellonii, mistrzostw, polskiego) rozwijany w Weszło.com, Sport.pl."
       },
       {
         "outlet": "Przegląd Sportowy",
         "angle": "Relacja sportowa",
         "summary": "Demolka w Lidze Mistrzyń. Co za mecz polskiej drużyny, wymarzony debiut",
         "url": "https://przegladsportowy.onet.pl/siatkowka/demolka-w-lidze-mistrzyn-co-za-mecz-polskiej-druzyny-wymarzony-debiut/l4kwmne",
-        "focus": "Wyróżnia własne wątki i pojęcia: Demolka, drużyny, wygranej.",
-        "omits": "Pomija kontekst (zwycięstwo, początek, Konfrontacja) rozwijany w WP SportoweFakty, Polsat Sport."
+        "focus": "Wyróżnia własne wątki i pojęcia: Demolka, drużyny, blisko.",
+        "omits": "Pomija kontekst (Konfrontacja, zdecydowanym, inaugurację) rozwijany w WP SportoweFakty, Polsat Sport."
       },
       {
         "outlet": "Weszło.com",
@@ -5993,7 +6204,7 @@
         "summary": "LIVE po Lidze Europy. Analizujemy mecze Lecha i Jagiellonii!",
         "url": "https://weszlo.com/live-po-lidze-europy-analizujemy-mecze-lecha-i-jagiellonii",
         "focus": "Wyróżnia własne wątki i pojęcia: LIVE, Analizujemy, mecze.",
-        "omits": "Pomija kontekst (zwycięstwo, mistrzostw, Mistrzyń) rozwijany w WP SportoweFakty, Polsat Sport."
+        "omits": "Pomija kontekst (Mistrzyń, zespołu, debiut) rozwijany w WP SportoweFakty, Polsat Sport."
       },
       {
         "outlet": "Sport.pl",
@@ -6001,30 +6212,12 @@
         "summary": "Tak wygląda tabela Ligi Europy po meczach Lecha i Jagiellonii",
         "url": "https://www.sport.pl/pilka/7,65042,33152951,jagiellonia-sprawila-niespodzianke-w-anglii-tak-wyglada-tabela.html",
         "focus": "Wyróżnia własne wątki i pojęcia: wygląda, tabela, meczach.",
-        "omits": "Pomija kontekst (punkt, Lidze, Frederiksena) rozwijany w WP SportoweFakty, Polsat Sport."
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja sportowa",
-        "summary": "Lech Poznań wciąż bez zwycięstwa w Lidze Europy. A było tak blisko",
-        "url": "https://sport.rp.pl/pilka-nozna/art45550681-lech-poznan-wciaz-bez-zwyciestwa-w-lidze-europy-a-bylo-tak-blisko",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja sportowa).",
-        "omits": "Pomija kontekst (mistrzostw, Mistrzyń, początek) rozwijany w WP SportoweFakty, Przegląd Sportowy."
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja sportowa",
-        "summary": "Kapitalny początek i bolesny finał. Lech Poznań zmarnował dwubramkową przewagę",
-        "url": "https://niezalezna.pl/sport/pilka-nozna/lech-poznan-royale-unionsaint-gilloise-mecz-wynik/585058",
-        "focus": "Wyróżnia własne wątki i pojęcia: Kapitalny, bolesny, finał.",
-        "omits": "Pomija kontekst (Lidze, zwycięstwo, Mistrzyń) rozwijany w WP SportoweFakty, Polsat Sport."
+        "omits": "Pomija kontekst (Lidze, Mistrzyń, zespołu) rozwijany w WP SportoweFakty, Polsat Sport."
       }
     ],
     "sources": [
-      "Niezależna.pl",
       "Polsat Sport",
       "Przegląd Sportowy",
-      "Rzeczpospolita",
       "Sport.pl",
       "WP SportoweFakty",
       "Weszło.com"
@@ -6042,10 +6235,10 @@
     "impact": {
       "audience": "Kibice i środowisko sportowe",
       "scope": "Sport i rozgrywki",
-      "status": "Potwierdzone (7 źródeł)"
+      "status": "Potwierdzone (5 źródeł)"
     },
     "discrepancies": [],
-    "independent_sources_count": 7,
+    "independent_sources_count": 5,
     "syndicate_groups": [],
     "seo_faq": [
       {
@@ -6058,7 +6251,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (7 źródeł)."
+        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (5 źródeł)."
       }
     ],
     "media_file": "media/sport-football-2.jpg",
@@ -7123,7 +7316,7 @@
     "keywords": "Warminsko-Mazurskie, Banki, Żywności, ruszają, przedświąteczną, zbiórką, Susz",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T17:11:07+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 17:11",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -8762,7 +8955,7 @@
         "summary": "Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde",
         "url": "https://www.bankier.pl/wiadomosc/Jest-kandydat-na-nowego-szefa-EBC-Znamy-nazwisko-nastepcy-Lagarde-9235734.html?utm_source=RSS&utm_medium=RSS&utm_campaign=Wiadomosci",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (raport rynkowy).",
-        "omits": "Pomija wyliczenia (65 proc., 2027) przytaczane przez TVP.info."
+        "omits": "Pomija kontekst (wyboru, francuskiemu, prezydentowi) rozwijany w Puls Biznesu, TVP.info."
       },
       {
         "outlet": "WNP.pl",
@@ -8770,7 +8963,7 @@
         "summary": "Znamy następcę Lagarde. To on ma zostać szefem Europejskiego Banku Centralnego",
         "url": "https://www.wnp.pl/rynki/znamy-nastepce-lagarde-to-on-ma-zostac-szefem-europejskiego-banku-centralnego,1124035.html",
         "focus": "Wyróżnia własne wątki i pojęcia: szefem.",
-        "omits": "Pomija wyliczenia (65 proc., 2027) przytaczane przez TVP.info."
+        "omits": "Pomija kontekst (Międzynarodowych, zatwierdzeniu, obradujących) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Puls Biznesu",
@@ -8778,7 +8971,7 @@
         "summary": "Kulisy wyboru szefa EBC. „Financial Times”: już jest następca Christine Lagarde",
         "url": "https://www.pb.pl/kulisy-wyboru-szefa-ebc-financial-times-nastepca-christine-lagarde-juz-wybrany-1271127",
         "focus": "Wyróżnia własne wątki i pojęcia: Kulisy, Financial, Times.",
-        "omits": "Pomija wyliczenia (65 proc., 2027) przytaczane przez TVP.info."
+        "omits": "Pomija kontekst (Znamy, nazwisko, francuskiemu) rozwijany w Bankier.pl, WNP.pl."
       },
       {
         "outlet": "Business Insider PL",
@@ -8786,7 +8979,7 @@
         "summary": "Znamy nazwisko nowego szefa Europejskiego Banku Centralnego",
         "url": "https://businessinsider.com.pl/finanse/europejski-bank-centralny-zyska-nowego-prezesa-kim-jest-pablo-hernandez-de-cos/495z58b",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (perspektywa rynkowa).",
-        "omits": "Pomija wyliczenia (65 proc., 2027) przytaczane przez TVP.info."
+        "omits": "Pomija kontekst (Międzynarodowych, zatwierdzeniu, obradujących) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Interia Wydarzenia",
@@ -8794,7 +8987,7 @@
         "summary": "Nowy prezes Europejskiego Banku Centralnego. Jest oficjalna kandydatura",
         "url": "https://wydarzenia.interia.pl/zagranica/news-nowy-prezes-europejskiego-banku-centralnego-jest-oficjalna-k,nId,23579763",
         "focus": "Wyróżnia własne wątki i pojęcia: prezes.",
-        "omits": "Pomija wyliczenia (65 proc., 2027) przytaczane przez TVP.info."
+        "omits": "Pomija kontekst (szefa, następcy, Znamy) rozwijany w Bankier.pl, Puls Biznesu."
       },
       {
         "outlet": "Onet Wiadomości",
@@ -8802,14 +8995,14 @@
         "summary": "Państwa strefy euro zdecydowały. Jest kandydat na nowego szefa Europejskiego Banku Centralnego",
         "url": "https://wiadomosci.onet.pl/swiat/hiszpan-moze-pokierowac-ebc-rada-europejska-zdecyduje-w-grudniu/1fn9bqq",
         "focus": "Wyróżnia własne wątki i pojęcia: Państwa, zdecydowały.",
-        "omits": "Pomija wyliczenia (65 proc., 2027) przytaczane przez TVP.info."
+        "omits": "Pomija kontekst (Lagarde, najważniejsze, zajmującym) rozwijany w Bankier.pl, WNP.pl."
       },
       {
         "outlet": "TVP.info",
         "angle": "Relacja uzupełniająca",
         "summary": "Zmiany w EBC. Jest kandydat na nowego szefa",
         "url": "https://www.tvp.info/96710676/hiszpan-pablo-hernandez-de-cos-zostal-kandydatem-na-nowego-prezesa-ebc",
-        "focus": "Eksponuje dane (2027, 65 proc.) oraz wątki: Zmiany, latach.",
+        "focus": "Wyróżnia własne wątki i pojęcia: Zmiany, wybiera, składzie.",
         "omits": "Pomija kontekst (Znamy, nazwisko, zdecydowały) rozwijany w Bankier.pl, WNP.pl."
       }
     ],
@@ -10121,12 +10314,12 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-4.jpg",
-    "media_credit": "Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe",
+    "media_file": "media/topic-housing.jpg",
+    "media_credit": "Fot. ilustracyjne: Acabashi (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Building_construction_crane_and_White_Hart_Lane_Stadium_Haringey_2025.jpg",
+    "media_label": "Nieruchomości i budownictwo",
     "independent_sources_count": 2,
     "syndicate_groups": []
   },
@@ -10817,7 +11010,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -10829,13 +11022,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
           "Zima to czas, gdy na drogach pojawia się więcej zagrożeń. Śnieg na dachu, zamarznięte szyby czy nieczytelne tablice rejestracyjne mogą kosztować kierowcę nie tylko zdrowie, ale i spory mandat. Najwyższa kara sięga 3000 zł. Warto więc przed wyjazdem poświęcić kilka minut na dokładne przygotowanie auta, bo pośpiech w tym przypadku bywa bardzo kosztowny. [Źródło: Polsat News]",
           "Przepisy drogowe nie zawierają wprost nakazu usunięcia śniegu z samochodu. Obowiązek wynika z art. 66 Prawa o ruchu drogowy – pojazd musi być utrzymany tak, aby korzystanie z niego nie zagrażało bezpieczeństwu osób nim jadących ani innych uczestników ruchu. Na tej podstawie policjant może ukarać kierowcę, który wyjechał autem przykrytym śniegiem. [Źródło: Polsat News]",
@@ -10848,8 +11041,7 @@
         "paragraphs": [
           "Takie pytanie pojawiło się pewnie w niejednym polskim domu, gdy aura na zewnątrz zaczęła przypominać tę zimową. Nieprawidłowe postępowanie z tego typu odpadami może nas słono kosztować. Mandaty sięgają nawet 30 tys. zł. Sezon grzewczy trwa już w pełni, bowiem do Polski napłynęło chłodne powietrze i nawet w ciągu dnia temperatura utrzymuje się na minusie. [Źródło: naTemat.pl]",
           "Sądowe zakazy nie powstrzymały go przed kolejnymi przejażdżkami samochodem! Mieszkaniec katowickich Piotrowic usłyszał aż 21 zarzutów prowadzenia auta wbrew prawomocnym wyrokom. Prokuratura skierowała już przeciwko niemu akt oskarżenia. [Źródło: TVP3 Katowice]",
-          "Z pozoru zwykła kradzież sklepowa przerodziła się w znacznie poważniejsze przestępstwo. Kiedy pracownik ochrony próbował zatrzymać klientkę jednego ze sklepów, kobieta zareagowała agresją. Wartość zabranego towaru nie przekraczała 60 złotych, jednak konsekwencje jej zachowania mogą być bardzo poważne. [Źródło: TKO Olsztyn]",
-          "Problemy prawne Gérarda Depardieu przybierają na sile. Jeden z najbardziej znanych francuskich aktorów ponownie znalazł się na celowniku wymiaru sprawiedliwości. Paryski sąd apelacyjny podjął właśnie decyzję w sprawie oskarżenia o gwałt, a to może oznaczać dla 77-letniego gwiazdora nawet dwie dekady za kratkami. [Źródło: Niezależna.pl]"
+          "Z pozoru zwykła kradzież sklepowa przerodziła się w znacznie poważniejsze przestępstwo. Kiedy pracownik ochrony próbował zatrzymać klientkę jednego ze sklepów, kobieta zareagowała agresją. Wartość zabranego towaru nie przekraczała 60 złotych, jednak konsekwencje jej zachowania mogą być bardzo poważne. [Źródło: TKO Olsztyn]"
         ]
       }
     ],
@@ -10860,7 +11052,7 @@
         "summary": "Kierowcy muszą mieć się teraz na baczności. Za jeden z tych błędów grozi nawet 3000 zł",
         "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/kierowcy-musza-miec-sie-teraz-na-bacznosci-za-jeden-z-tych-bledow-grozi-nawet-3000-zl/",
         "focus": "Eksponuje dane (3000 zł, 50 zł) oraz wątki: Kierowcy, muszą.",
-        "omits": "Pomija wyliczenia (30 tys. zł, 20 lat) przytaczane przez naTemat.pl, Niezależna.pl."
+        "omits": "Pomija wyliczenia (30 tys. zł, 5 lat) przytaczane przez naTemat.pl, TKO Olsztyn."
       },
       {
         "outlet": "naTemat.pl",
@@ -10885,18 +11077,9 @@
         "url": "https://tko.pl/415496,2026,11,26,35-latka-ukradla-alkohol-i-flage-polski-teraz-grozi-jej-5-lat-wiezienia",
         "focus": "Eksponuje dane (5 lat) oraz wątki: 35-latka, ukradła.",
         "omits": "Pomija wyliczenia (30 tys. zł, 3000 zł) przytaczane przez naTemat.pl, Polsat News."
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Gérard Depardieu może trafić do więzienia nawet na 20 lat! Sąd podjął decyzję",
-        "url": "https://blaskonline.pl/gerard-depardieu-moze-trafic-do-wiezienia-nawet-na-20-lat-sad-podjal-decyzje/",
-        "focus": "Eksponuje dane (20 lat) oraz wątki: rard, Depardieu.",
-        "omits": "Pomija wyliczenia (30 tys. zł, 3000 zł) przytaczane przez naTemat.pl, Polsat News."
       }
     ],
     "sources": [
-      "Niezależna.pl",
       "Polsat News",
       "TKO Olsztyn",
       "TVP3 Katowice",
@@ -10915,7 +11098,7 @@
     "impact": {
       "audience": "Kierowcy i pasażerowie",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (4 źródła)"
     },
     "seo_faq": [
       {
@@ -10928,7 +11111,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Portfel, podatki i rynek). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Kierowcy i pasażerowie (obszar: Portfel, podatki i rynek). Status: Potwierdzone (4 źródła)."
       }
     ],
     "discrepancies": [],
@@ -10938,7 +11121,7 @@
     "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Autostrada_A2_-_Ko%C5%82o.jpg",
     "media_label": "Ruch drogowy i infrastruktura",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": []
   },
   {
@@ -11054,7 +11237,7 @@
     "keywords": "Opolskie, Opolskiego, Związku, Lekkiej, Atletyki, którzy, wychowali",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T11:57:19+01:00",
-    "updated_iso": "2026-11-27T02:53:39+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 11:57",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -12234,7 +12417,7 @@
     "keywords": "Opolskie, Narkotykowy, rynek, kokaina, elit, mefedron",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T10:13:04+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 10:13",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -13548,12 +13731,12 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-housing.jpg",
-    "media_credit": "Fot. ilustracyjne: Acabashi (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Building_construction_crane_and_White_Hart_Lane_Stadium_Haringey_2025.jpg",
-    "media_label": "Nieruchomości i budownictwo",
+    "media_file": "media/topic-police-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Kevin.B (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
+    "media_label": "Policja i bezpieczeństwo",
     "independent_sources_count": 4,
     "syndicate_groups": []
   },
@@ -14192,7 +14375,7 @@
     "keywords": "Lodzkie, bezpieczeństwa, systemy, łączności",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T07:11:01+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 07:11",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -14712,269 +14895,6 @@
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 2,
     "syndicate_groups": []
-  },
-  {
-    "id": 176503207,
-    "path": "/Polska",
-    "seo_url": "/Polska/zorganizowany-zwiazek-przestepczy-swieczkowski-w-parlamencie-europejskim",
-    "seo_title": "\"Zorganizowany związek przestępczy\". Święczkowski w Parlamencie Europejskim",
-    "summary_lead": "Prezes Trybunału Konstytucyjnego pojawił się w środę w Parlamencie Europejskim.",
-    "meta_description": "Prezes Trybunału Konstytucyjnego pojawił się w środę w Parlamencie Europejskim.",
-    "keywords": "Polska, Zorganizowany, związek, przestępczy, Święczkowski, Parlamencie, Europejskim",
-    "thumbnail_url": "",
-    "published_iso": "2026-11-26T07:10:57+01:00",
-    "updated_iso": "2026-11-26T07:10:57+01:00",
-    "display_date": "26.11.2026, 07:10",
-    "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 98,
-    "admin_note": "",
-    "zero_trust_reason": "",
-    "metrics": [
-      {
-        "label": "Liczba źródeł",
-        "val": "16 redakcji"
-      },
-      {
-        "label": "Kategoria",
-        "val": "/Polska"
-      },
-      {
-        "label": "Główne źródło",
-        "val": "Polsat News"
-      },
-      {
-        "label": "Weryfikacja",
-        "val": "Potwierdzone (16 źródeł)"
-      }
-    ],
-    "declickbait": [],
-    "full_sections": [
-      {
-        "heading": "Ustalenia wspólne (16 redakcji)",
-        "paragraphs": [
-          "Prezes Trybunału Konstytucyjnego pojawił się w środę w Parlamencie Europejskim. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Interia Wydarzenia, Onet Wiadomości, Gazeta.pl, Wyborcza.pl, naTemat.pl, TVN24, Dziennik.pl, Niezależna.pl, Newsweek Polska, Radio Rzeszów, Kresy.pl, Radio PiK, Rzeczpospolita]",
-          "— W Trybunale Konstytucyjnym obraduje ośmioro tak zwanych sędziów, z czego pięć osób nie złożyło ślubowania wobec prezydenta, a trzy inne osoby, które zostały wybrane i złożyły ślubowanie, uczestniczą w zorganizowanym związku przestępczym, który dokonuje zamachu na konstytucyjny organ – mówił Święczkowski. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Onet Wiadomości, naTemat.pl, TVN24, Niezależna.pl, Radio Rzeszów, Radio PiK, Business Insider PL]",
-          "Prezes TK Bogdan Święczkowski zjawił się w środę w Parlamencie Europejskim, gdzie opisywał sytuację wokół instytucji. Zapowiedział, że jego wystąpienie będzie krótsze, bo musi wrócić do Polski z uwagi na decyzję w sprawie zgromadzenia przed TK. Stołeczny ratusz poinformował, że nie przedłużył zgody na zgromadzenie przed Trybunałem Konstytucyjnym. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Interia Wydarzenia, Onet Wiadomości, naTemat.pl, TVN24, Newsweek Polska, Radio Rzeszów, Radio PiK]",
-          "Oznacza to, że może ono trwać do 30 listopada. Organizatorzy mają 24 godziny na odwołanie się od tej decyzji do sądu. Stołeczny ratusz zdecydował – Szczerze mówiąc, nie przyszło mi do głowy, że ktoś będzie próbował na pałkach policyjnych wejść do Trybunału Konstytucyjnego, przejąć organ po to, żeby podejmować decyzje, oczywiście bezprawne i nie wywołujące skutków prawnych, ale które będą publikowane przez Prezesa Rady Ministrów i które mają doprowadzić do przemocowej zmiany ustroju Rzeczpospolitej Polskiej, tak aby jedna osoba, jedna partia mogła rządzić przez kolejne lata – wskazywał Święczkowski. [Źródło: Polsat News, GazetaPrawna.pl (DGP), Onet Wiadomości, Radio PiK]",
-          "Powodem było to, że nie dopuścił do orzekania ani udziału w Zgromadzeniu Ogólnym sędziów TK wybranych przez obecny Sejm. [Źródło: Dziennik.pl, Radio Rzeszów, Kresy.pl, Radio PiK]"
-        ]
-      },
-      {
-        "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
-        "paragraphs": [
-          "Sędzia ocenił, że działania te miały doprowadzić do przejęcia Trybunału przez osoby wybrane przez obecną większość parlamentarną. Zarzucił premierowi Tuskowi, że wcześniej publicznie zapowiadał konieczność posiadania przez rządzących swoich sędziów w TK oraz usunięcia go z funkcji prezesa. [Źródło: GazetaPrawna.pl (DGP)]",
-          "Najpierw czasowe, a następnie bezterminowe zawieszenie oraz odebranie immunitetów, co z kolei poprzedza postawienie przez prokuraturę zarzutów — sprawy Bogdana Święczkowskiego i Bartłomieja Sochańskiego nabierają tempa. Kolejne dni przynoszą prezesowi TK i jego zastępcy kolejne kłopoty i oznaczają nowe zawirowania wokół samego Trybunału Konstytucyjnego. [Źródło: Newsweek Polska]",
-          "Orzeczenie zapadło po dwudniowym jawnym posiedzeniu, które odbyło się w środę i czwartek w gmachu Sądu Okręgowego w Warszawie. Jak wyjaśniła sędzia Bentkowska, w ocenie sądu roczny okres zawieszenia Święczkowskiego „pozwoli na przeprowadzenie postępowania dyscyplinarnego”. [Źródło: Radio Rzeszów]",
-          "Wcześniej zgromadzenie zwołane w TK zgodziło się na uchylenie immunitetu prezesa w czterech sprawach. [Źródło: Kresy.pl]",
-          "25 listopada Okręgowa Rada Adwokacka zdecydowała o wykreśleniu Macieja Taborowskiego z listy adwokatów. Taborowski złożył wniosek o wykreślenie z listy adwokatów dopiero 20 listopada. [Źródło: Rzeczpospolita]",
-          "Zainteresowany uznał to orzeczenie za nieważne i pozbawione mocy prawnej. [Źródło: Business Insider PL]"
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja wiodąca",
-        "summary": "\"Zorganizowany związek przestępczy\". Święczkowski w Parlamencie Europejskim",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-25/zorganizowana-grupa-przestepcza-swieczkowski-grzmi-w-parlamencie-europejskim/",
-        "focus": "Wyróżnia własne wątki i pojęcia: związek.",
-        "omits": "Pomija kontekst (Dyscyplinarny, zawieszony, decyzja) rozwijany w Interia Wydarzenia, Onet Wiadomości."
-      },
-      {
-        "outlet": "GazetaPrawna.pl (DGP)",
-        "angle": "Perspektywa rynkowa",
-        "summary": "„Prezes TK na uchodźstwie”. Bogdan Święczkowski wystąpił w Parlamencie Europejskim",
-        "url": "https://www.gazetaprawna.pl/prawnik/artykuly/11406867,swieczkowski-prezes-na-uchodzstwie-wysluchanie-pe.html",
-        "focus": "Wyróżnia własne wątki i pojęcia: uchodźstwie, ocenił, działania.",
-        "omits": "Pomija kontekst (Dyscyplinarny, zawieszony, decyzja) rozwijany w Interia Wydarzenia, Onet Wiadomości."
-      },
-      {
-        "outlet": "Interia Wydarzenia",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Nowy ruch w sprawie Święczkowskiego. Sąd Dyscyplinarny TK zadecydował",
-        "url": "https://wydarzenia.interia.pl/kraj/news-nowy-ruch-w-sprawie-swieczkowskiego-sad-dyscyplinarny-tk-zad,nId,23579649",
-        "focus": "Wyróżnia własne wątki i pojęcia: ruch, zadecydował.",
-        "omits": "Pomija kontekst (sędziów, Zorganizowany, przestępczy) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Onet Wiadomości",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Jest decyzja sądu dyscyplinarnego TK. Bogdan Święczkowski zawieszony",
-        "url": "https://wiadomosci.onet.pl/kraj/jest-decyzja-sadu-dyscyplinarnego-tk-bogdan-swieczkowski-zawieszony/z68wg35",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (orzekania, wybranych, dopuścił) rozwijany w Dziennik.pl, Radio Rzeszów."
-      },
-      {
-        "outlet": "Gazeta.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Sąd dyscyplinarny TK zawiesił Bogdana Święczkowskiego. \"Przebrani w togi uzurpatorzy\"",
-        "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33152407,sad-dyscyplinarny-tk-zawiesil-bogdana-swieczkowskiego.html?utm_source=RSS&utm_medium=RSS&utm_campaign=10199882",
-        "focus": "Wyróżnia własne wątki i pojęcia: Przebrani, togi.",
-        "omits": "Pomija kontekst (sędziów, Bogdan, zgromadzenia) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Wyborcza.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Bogdan Święczkowski zawieszony na 12 miesięcy. Jest decyzja Sądu Dyscyplinarnego TK",
-        "url": "https://wyborcza.pl/7,75398,33152565,bogdan-swieczkowski-zawieszony-na-12-miesiecy-jest-decyzja.html",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (sędziów, zgromadzenia, Zorganizowany) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "naTemat.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Święczkowski doczekał się decyzji sądu dyscyplinarnego. Do TK szybko nie wróci",
-        "url": "https://natemat.pl/677107,swieczkowski-doczekal-sie-decyzji-sadu-dyscyplinarnego-do-tk-szybko-nie-wroci",
-        "focus": "Wyróżnia własne wątki i pojęcia: doczekał, szybko, wróci.",
-        "omits": "Pomija kontekst (zdecydował, zawieszony, bezprawne) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "TVN24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Sąd dyscyplinarny zdecydował w sprawie Bogdana Święczkowskiego",
-        "url": "https://tvn24.pl/polska/sad-dyscyplinarny-zdecydowal-w-sprawie-bogdana-swieczkowskiego-st9359469?source=rss",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (zawieszony, bezprawne, decyzja) rozwijany w Onet Wiadomości, Wyborcza.pl."
-      },
-      {
-        "outlet": "Dziennik.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Bogdan Święczkowski zawieszony. Sąd dyscyplinarny Trybunału Konstytucyjnego zdecydował",
-        "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11407292,bogdan-swieczkowski-zawieszony-sad-dyscyplinarny-trybunalu-konstytucyjnego-zdecydowal.html",
-        "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
-        "omits": "Pomija kontekst (Zorganizowany, Zapowiedział, poinformował) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Niezależna.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Uzurpatorzy zawiesili Święczkowskiego na rok. Legalny prezez TK odpowiada: Decyzja bezprawna",
-        "url": "https://niezalezna.pl/polska/swieczkowski-zawieszony-na-rok-legalny-prezez-tk-odpowiada-decyzja-bezprawna/585042",
-        "focus": "Wyróżnia własne wątki i pojęcia: Legalny, prezez, odpowiada.",
-        "omits": "Pomija kontekst (Bogdan, zgromadzenia, Dyscyplinarny) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Newsweek Polska",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Sądne dni dla Święczkowskiego. Co może się zmienić w Trybunale Konstytucyjnym po ostatnich decyzjach sędziów? [WYJAŚNIAMY]",
-        "url": "https://www.newsweek.pl/polska/polityka/trybunal-konstytucyjny-swieczkowski-i-sochanski-maja-sie-czym-martwic/2rs7cvj",
-        "focus": "Wyróżnia własne wątki i pojęcia: Sądne, zmienić, ostatnich.",
-        "omits": "Pomija kontekst (Zorganizowany, Dyscyplinarny, przestępczy) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Radio Rzeszów",
-        "angle": "Doniesienie regionalne",
-        "summary": "Bogdan Święczkowski zawieszony na 12 miesięcy. Decyzja sądu dyscyplinarnego TK",
-        "url": "https://radio.rzeszow.pl/377414/bogdan-swieczkowski-zawieszony-na-12-miesiecy-decyzja-sadu-dyscyplinarnego-tk/",
-        "focus": "Wyróżnia własne wątki i pojęcia: zapadło, dwudniowym, jawnym.",
-        "omits": "Pomija kontekst (zdecydował, bezprawne, listopada) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Kresy.pl",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Sąd Dyscyplinarny Trybunału Konstytucyjnego zawiesił prezesa TK Bogdana Święczkowskiego",
-        "url": "https://kresy.pl/wydarzenia/sad-dyscyplinarny-trybunalu-konstytucyjnego-zawiesil-prezesa-tk-bogdana-swieczkowskiego/",
-        "focus": "Wyróżnia własne wątki i pojęcia: zwołane, zgodziło, uchylenie.",
-        "omits": "Pomija kontekst (Bogdan, Zorganizowany, Zapowiedział) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Radio PiK",
-        "angle": "Doniesienie regionalne",
-        "summary": "Bogdan Święczkowski zawieszony w czynnościach służbowych sędziego Trybunału Konstytucyjnego",
-        "url": "https://www.radiopik.pl/40,144044,bogdan-swieczkowski-zawieszony-w-czynnosciach-sl",
-        "focus": "Wyróżnia własne wątki i pojęcia: czynnościach, służbowych, sędziego.",
-        "omits": "Pomija kontekst (Dyscyplinarny, decyzja, Bogdana) rozwijany w Interia Wydarzenia, Onet Wiadomości."
-      },
-      {
-        "outlet": "Rzeczpospolita",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Błąd proceduralny uratuje Święczkowskiego? Jeden sędzia komplikuje sprawę w TK",
-        "url": "https://www.rp.pl/sady-i-trybunaly/art45546641-blad-proceduralny-uratuje-swieczkowskiego-jeden-sedzia-komplikuje-sprawe-w-tk",
-        "focus": "Wyróżnia własne wątki i pojęcia: Błąd, proceduralny, uratuje.",
-        "omits": "Pomija kontekst (sędziów, Bogdan, zgromadzenia) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      },
-      {
-        "outlet": "Business Insider PL",
-        "angle": "Perspektywa rynkowa",
-        "summary": "Bogdan Święczkowski zawieszony. \"Decyzja bezprawna i pozbawiona skutków prawnych\"",
-        "url": "https://businessinsider.com.pl/gospodarka/trybunal-konstytucyjny-pod-presja-spor-wokol-zawieszenia-bogdana-swieczkowskiego/1hzfhbw",
-        "focus": "Wyróżnia własne wątki i pojęcia: pozbawiona, Zainteresowany, uznał.",
-        "omits": "Pomija kontekst (Parlamencie, Europejskim, pojawił) rozwijany w Polsat News, GazetaPrawna.pl (DGP)."
-      }
-    ],
-    "sources": [
-      "Business Insider PL",
-      "Dziennik.pl",
-      "Gazeta.pl",
-      "GazetaPrawna.pl (DGP)",
-      "Interia Wydarzenia",
-      "Kresy.pl",
-      "Newsweek Polska",
-      "Niezależna.pl",
-      "Onet Wiadomości",
-      "Polsat News",
-      "Radio PiK",
-      "Radio Rzeszów",
-      "Rzeczpospolita",
-      "TVN24",
-      "Wyborcza.pl",
-      "naTemat.pl"
-    ],
-    "corrections": [
-      {
-        "claim_text": "Dopisano źródło: Radio Rzeszów (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://radio.rzeszow.pl/377414/bogdan-swieczkowski-zawieszony-na-12-miesiecy-decyzja-sadu-dyscyplinarnego-tk/"
-      },
-      {
-        "claim_text": "Dopisano źródło: Kresy.pl (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://kresy.pl/wydarzenia/sad-dyscyplinarny-trybunalu-konstytucyjnego-zawiesil-prezesa-tk-bogdana-swieczkowskiego/"
-      },
-      {
-        "claim_text": "Dopisano źródło: Radio PiK (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.radiopik.pl/40,144044,bogdan-swieczkowski-zawieszony-w-czynnosciach-sl"
-      },
-      {
-        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://www.rp.pl/sady-i-trybunaly/art45546641-blad-proceduralny-uratuje-swieczkowskiego-jeden-sedzia-komplikuje-sprawe-w-tk"
-      },
-      {
-        "claim_text": "Dopisano źródło: Business Insider PL (aktualizacja wieloźródłowa)",
-        "evidence_url": "https://businessinsider.com.pl/gospodarka/trybunal-konstytucyjny-pod-presja-spor-wokol-zawieszenia-bogdana-swieczkowskiego/1hzfhbw"
-      }
-    ],
-    "impact": {
-      "audience": "Obywatele i instytucje w Polsce",
-      "scope": "Wydarzenia krajowe",
-      "status": "Potwierdzone (16 źródeł)"
-    },
-    "seo_faq": [
-      {
-        "q": "Co wiadomo w sprawie: \"Zorganizowany związek przestępczy\". Święczkowski w Parlamencie?",
-        "a": "— W Trybunale Konstytucyjnym obraduje ośmioro tak zwanych sędziów, z czego pięć osób nie złożyło ślubowania wobec prezydenta, a trzy inne osoby, które zostały wybrane i złożyły ślubowanie, uczestniczą w zorganizowanym związku przestępczym."
-      },
-      {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "Prezes TK Bogdan Święczkowski zjawił się w środę w Parlamencie Europejskim, gdzie opisywał sytuację wokół instytucji."
-      },
-      {
-        "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (16 źródeł)."
-      }
-    ],
-    "discrepancies": [],
-    "media_file": "media/topic-police-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Kevin.B (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
-    "media_label": "Policja i bezpieczeństwo",
-    "independent_sources_count": 14,
-    "syndicate_groups": [
-      [
-        "Onet Wiadomości",
-        "Wyborcza.pl",
-        "Radio Rzeszów"
-      ]
-    ]
   },
   {
     "id": 2054790297,
@@ -15672,7 +15592,7 @@
     "keywords": "Lodzkie, Jesień, Sztuki, Łodzi, jedno, kulturalnych, wydarzeń",
     "thumbnail_url": "",
     "published_iso": "2026-11-26T05:01:42+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "26.11.2026, 05:01",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -16878,11 +16798,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-housing-3.jpg",
-    "media_credit": "Fot. ilustracyjne: Tarasna0922 (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-housing.jpg",
+    "media_credit": "Fot. ilustracyjne: Acabashi (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Housing_estate,_construction_detail.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Building_construction_crane_and_White_Hart_Lane_Stadium_Haringey_2025.jpg",
     "media_label": "Nieruchomości i budownictwo",
     "independent_sources_count": 5,
     "syndicate_groups": []
@@ -17774,12 +17694,12 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-4.jpg",
-    "media_credit": "Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
-    "media_label": "Polityka i instytucje państwowe",
+    "media_file": "media/topic-finance-4.jpg",
+    "media_credit": "Fot. ilustracyjne: Steven Lek (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
+    "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 6,
     "syndicate_groups": []
   },
@@ -18454,11 +18374,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-4.jpg",
-    "media_credit": "Fot. ilustracyjne: Steven Lek (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-finance-3.jpg",
+    "media_credit": "Fot. ilustracyjne: Chris Olszewski (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 6,
     "syndicate_groups": []
@@ -18874,12 +18794,12 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-culture-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-sejm.jpg",
+    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_194_Grand_Theatre_Relief.jpg",
-    "media_label": "Kultura i sztuka",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
+    "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 5,
     "syndicate_groups": []
   },
@@ -19115,7 +19035,7 @@
     "keywords": "Polityka, Tusk, Nawrockiego, miłość, Boga, czym, zastanawiać",
     "thumbnail_url": "",
     "published_iso": "2026-11-25T22:54:34+01:00",
-    "updated_iso": "2026-11-27T01:08:28+01:00",
+    "updated_iso": "2026-11-27T03:58:56+01:00",
     "display_date": "25.11.2026, 22:54",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 92,
@@ -19738,11 +19658,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-3.jpg",
-    "media_credit": "Fot. ilustracyjne: Chris Olszewski (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
+    "media_file": "media/topic-finance-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Henryk Borawski (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 15,
     "syndicate_groups": [
@@ -20534,11 +20454,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Henryk Borawski (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
+    "media_file": "media/topic-finance-5.jpg",
+    "media_credit": "Fot. ilustracyjne: Dominik Danelski (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 5,
     "syndicate_groups": []
@@ -20784,7 +20704,7 @@
     "keywords": "Mazowieckie, Pierwsi, Bogu, Maszyniści, kulisach, swojej, pracy",
     "thumbnail_url": "",
     "published_iso": "2026-11-25T20:53:40+01:00",
-    "updated_iso": "2026-11-27T02:53:39+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "25.11.2026, 20:53",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -20950,11 +20870,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-5.jpg",
-    "media_credit": "Fot. ilustracyjne: Leon Jarumski (1887-1947) (Public domain, Wikimedia Commons)",
-    "media_license": "Public domain",
-    "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
+    "media_file": "media/topic-sejm-4.jpg",
+    "media_credit": "Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -21817,11 +21737,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-culture.jpg",
-    "media_credit": "Fot. ilustracyjne: Muzeum Narodowe w Warszawie (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-culture-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Muzeum_Narodowe_w_Warszawie.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_194_Grand_Theatre_Relief.jpg",
     "media_label": "Kultura i sztuka",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -21839,13 +21759,13 @@
     "updated_iso": "2026-11-25T19:55:36+01:00",
     "display_date": "25.11.2026, 19:55",
     "status": "AUTO_PUBLISHED",
-    "fact_agreement_pct": 90,
+    "fact_agreement_pct": 94,
     "admin_note": "",
     "zero_trust_reason": "",
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "2 redakcje"
+        "val": "3 redakcje"
       },
       {
         "label": "Kategoria",
@@ -21857,13 +21777,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (2 źródła)"
+        "val": "Potwierdzone (3 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (2 redakcje)",
+        "heading": "Ustalenia wspólne (3 redakcje)",
         "paragraphs": [
           "O tym, jak będzie wyglądał lubelski rynek pracy w 2040 roku rozmawiali specjaliści podczas konferencji w Lublinie. Uczestnicy dyskutują między innymi o tym jak zmiany demograficzne wpłyną na zatrudnienie w regionie, transformacji energetycznej i rozwoju zielnych miejsc pracy oraz wpływie automatyzacji i sztucznej inteligencji na rynek pracy. [Źródło: Radio Lublin, TVP3 Lublin]",
           "— W niektórych zawodach rola człowieka zupełnie się zmieni – mówi dyrektor Wojewódzkiego Urzędu Pracy w Lublinie Tomasz Pitucha. [Źródło: Radio Lublin]",
@@ -21874,7 +21794,8 @@
       {
         "heading": "Dodatkowe szczegóły i kontekst ze źródeł",
         "paragraphs": [
-          "Starzejące się społeczeństwo i wyludnianie się regionu. To wbrew pozorom nie tak odległa perspektywa a na horyzoncie wiele niepewności. [Źródło: TVP3 Lublin]"
+          "Starzejące się społeczeństwo i wyludnianie się regionu. To wbrew pozorom nie tak odległa perspektywa a na horyzoncie wiele niepewności. [Źródło: TVP3 Lublin]",
+          "Choć liczba ofert rośnie, firmy jednocześnie zwalniają i zatrudniają, stawiając na specjalistów od AI i danych. Najtrudniej o pracę juniorom, programistom stron i aplikacji internetowych oraz twórcom gier. Eksperci ostrzegają, że rok 2027 może przynieść redukcje zatrudnienia, gdy firmy zaczną dostosowywać wielkość zespołów do możliwości AI. [Źródło: Rzeczpospolita]"
         ]
       }
     ],
@@ -21885,7 +21806,7 @@
         "summary": "Lubelski rynek pracy w 2040 roku. Jak zmienią go AI i demografia? [ZDJĘCIA]",
         "url": "https://radio.lublin.pl/2026/11/lubelski-rynek-pracy-w-2040-roku-jak-zmienia-go-ai-i-demografia-zdjecia/",
         "focus": "Podkreśla konkretne liczby (2040) w ujęciu: relacja wiodąca.",
-        "omits": "Pomija kontekst (społeczeństwo, szkolnictwie, regionalnej) rozwijany w TVP3 Lublin."
+        "omits": "Pomija wyliczenia (2027) przytaczane przez Rzeczpospolita."
       },
       {
         "outlet": "TVP3 Lublin",
@@ -21893,18 +21814,32 @@
         "summary": "Lubelski Rynek Pracy 2040. Wyzwania demograficzne, zmiany w szkolnictwie i przyszłość regionalnej gospodarki",
         "url": "https://lublin.tvp.pl/96686395/lubelski-rynek-pracy-2040-wyzwania-demograficzne-zmiany-w-szkolnictwie-i-przyszlosc-regionalnej-gospodarki",
         "focus": "Podkreśla konkretne liczby (2040) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija kontekst (charakterystycznego, dotychczasowej, zaprezentowane) rozwijany w Radio Lublin."
+        "omits": "Pomija wyliczenia (2027) przytaczane przez Rzeczpospolita."
+      },
+      {
+        "outlet": "Rzeczpospolita",
+        "angle": "Doniesienie regionalne",
+        "summary": "300 wysłanych CV i półtora roku bez pracy. Tak zmienia się rynek IT w erze AI",
+        "url": "https://www.rp.pl/rynek-pracy/art45537881-300-wyslanych-cv-i-poltora-roku-bez-pracy-tak-zmienia-sie-rynek-it-w-erze-ai",
+        "focus": "Eksponuje dane (2027) oraz wątki: wysłanych, półtora.",
+        "omits": "Pomija wyliczenia (2040) przytaczane przez Radio Lublin, TVP3 Lublin."
       }
     ],
     "sources": [
       "Radio Lublin",
+      "Rzeczpospolita",
       "TVP3 Lublin"
     ],
-    "corrections": [],
+    "corrections": [
+      {
+        "claim_text": "Dopisano źródło: Rzeczpospolita (aktualizacja wieloźródłowa)",
+        "evidence_url": "https://www.rp.pl/rynek-pracy/art45537881-300-wyslanych-cv-i-poltora-roku-bez-pracy-tak-zmienia-sie-rynek-it-w-erze-ai"
+      }
+    ],
     "impact": {
       "audience": "Pacjenci, pracownicy i usługi",
       "scope": "Portfel, podatki i rynek",
-      "status": "Potwierdzone (2 źródła)"
+      "status": "Potwierdzone (3 źródła)"
     },
     "seo_faq": [
       {
@@ -21912,12 +21847,12 @@
         "a": "Uczestnicy dyskutują między innymi o tym jak zmiany demograficzne wpłyną na zatrudnienie w regionie, transformacji energetycznej i rozwoju zielnych miejsc pracy oraz wpływie automatyzacji i sztucznej inteligencji na rynek pracy."
       },
       {
-        "q": "Jakie dodatkowe szczegóły przekazują relacje źródłowe?",
-        "a": "— W niektórych zawodach rola człowieka zupełnie się zmieni – mówi dyrektor Wojewódzkiego Urzędu Pracy w Lublinie Tomasz Pitucha."
+        "q": "Jakie konkretne liczby, terminy lub dane podają źródła?",
+        "a": "Eksperci ostrzegają, że rok 2027 może przynieść redukcje zatrudnienia, gdy firmy zaczną dostosowywać wielkość zespołów do możliwości AI."
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Portfel, podatki i rynek). Status: Potwierdzone (2 źródła)."
+        "a": "Dotyczy grupy: Pacjenci, pracownicy i usługi (obszar: Portfel, podatki i rynek). Status: Potwierdzone (3 źródła)."
       }
     ],
     "discrepancies": [],
@@ -21927,7 +21862,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:RJ-45_Ethernet_socket_on_Lenovo_T410_Laptop_(cropped).jpg",
     "media_label": "Technologie i cyfryzacja",
-    "independent_sources_count": 2,
+    "independent_sources_count": 3,
     "syndicate_groups": []
   },
   {
@@ -22079,11 +22014,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-3.jpg",
-    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
+    "media_file": "media/topic-sejm-5.jpg",
+    "media_credit": "Fot. ilustracyjne: Leon Jarumski (1887-1947) (Public domain, Wikimedia Commons)",
+    "media_license": "Public domain",
+    "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 6,
     "syndicate_groups": []
@@ -22987,11 +22922,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm.jpg",
+    "media_file": "media/topic-sejm-3.jpg",
     "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -23453,7 +23388,7 @@
     "keywords": "Pomorskie, Wysyłasz, paczki, świętami, prostych, zasad, dzięki",
     "thumbnail_url": "",
     "published_iso": "2026-11-25T16:09:24+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "25.11.2026, 16:09",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -24207,7 +24142,7 @@
     "keywords": "Zachodniopomorskie, Każdy, czterdziestce, powinien, sprawdzić",
     "thumbnail_url": "",
     "published_iso": "2026-11-25T15:01:26+01:00",
-    "updated_iso": "2026-11-27T02:53:39+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "25.11.2026, 15:01",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": null,
@@ -25019,11 +24954,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-culture-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-culture.jpg",
+    "media_credit": "Fot. ilustracyjne: Muzeum Narodowe w Warszawie (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_194_Grand_Theatre_Relief.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Muzeum_Narodowe_w_Warszawie.jpg",
     "media_label": "Kultura i sztuka",
     "independent_sources_count": 4,
     "syndicate_groups": []
@@ -26124,11 +26059,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-5.jpg",
-    "media_credit": "Fot. ilustracyjne: Dominik Danelski (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-finance-4.jpg",
+    "media_credit": "Fot. ilustracyjne: Steven Lek (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 5,
     "syndicate_groups": []
@@ -26398,11 +26333,11 @@
         "summary": "Rozbieżność danych (mln zł): TVS Śląsk podaje 295 mln zł, natomiast Rzeszow-News.pl: 118,5 mln zł."
       }
     ],
-    "media_file": "media/topic-finance.jpg",
-    "media_credit": "Fot. ilustracyjne: mamik (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
+    "media_file": "media/topic-finance-5.jpg",
+    "media_credit": "Fot. ilustracyjne: Dominik Danelski (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 5,
     "syndicate_groups": []
@@ -27597,11 +27532,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-culture.jpg",
-    "media_credit": "Fot. ilustracyjne: Muzeum Narodowe w Warszawie (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-culture-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Muzeum_Narodowe_w_Warszawie.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_194_Grand_Theatre_Relief.jpg",
     "media_label": "Kultura i sztuka",
     "independent_sources_count": 5,
     "syndicate_groups": []
@@ -28768,11 +28703,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-2.jpg",
-    "media_credit": "Fot. ilustracyjne: Henryk Borawski (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
+    "media_file": "media/topic-finance-3.jpg",
+    "media_credit": "Fot. ilustracyjne: Chris Olszewski (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 6,
     "syndicate_groups": []
@@ -28902,11 +28837,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-4.jpg",
-    "media_credit": "Fot. ilustracyjne: Steven Lek (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:National_Bank_of_Poland_Warsaw_2018.jpg",
+    "media_file": "media/topic-finance.jpg",
+    "media_credit": "Fot. ilustracyjne: mamik (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Zesp%C3%B3%C5%82_budynk%C3%B3w_NBP_-_fotopolska.eu_(110114).jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 4,
     "syndicate_groups": []
@@ -29276,11 +29211,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm.jpg",
-    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
+    "media_file": "media/topic-sejm-4.jpg",
+    "media_credit": "Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 13,
     "syndicate_groups": []
@@ -30330,7 +30265,7 @@
     "keywords": "Gospodarka, Macie, domu, kominek, Jeśli, zrobicie, wlepią",
     "thumbnail_url": "",
     "published_iso": "2026-11-25T07:10:53+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:56+01:00",
     "display_date": "25.11.2026, 07:10",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 86,
@@ -30412,11 +30347,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-housing.jpg",
-    "media_credit": "Fot. ilustracyjne: Acabashi (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-housing-3.jpg",
+    "media_credit": "Fot. ilustracyjne: Tarasna0922 (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Building_construction_crane_and_White_Hart_Lane_Stadium_Haringey_2025.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Housing_estate,_construction_detail.jpg",
     "media_label": "Nieruchomości i budownictwo",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -32467,11 +32402,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-police-2.jpg",
+    "media_file": "media/topic-police.jpg",
     "media_credit": "Fot. ilustracyjne: Kevin.B (CC BY-SA 3.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja_cars,_Krakow_2012.JPG",
     "media_label": "Policja i bezpieczeństwo",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -34367,11 +34302,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-5.jpg",
-    "media_credit": "Fot. ilustracyjne: Dominik Danelski (CC BY-SA 4.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 4.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
+    "media_file": "media/topic-finance-2.jpg",
+    "media_credit": "Fot. ilustracyjne: Henryk Borawski (CC BY-SA 3.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 3.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Mispol_w_Bia%C5%82ymstoku_(Octowa).jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -34619,7 +34554,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "17 redakcji"
+        "val": "16 redakcji"
       },
       {
         "label": "Kategoria",
@@ -34631,15 +34566,15 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (17 źródeł)"
+        "val": "Potwierdzone (16 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (17 redakcji)",
+        "heading": "Ustalenia wspólne (16 redakcji)",
         "paragraphs": [
-          "Gieorgij Michno w sposób najbardziej stanowczy odrzucił wysunięte pod adresem Federacji Rosyjskiej oskarżenia – przekazała rosyjska ambasada w Polsce. We wtorek dyplomata pojawił się w siedzibie polskiego MSZ w związku z piątkowym naruszeniem polskiej przestrzeni powietrznej przez rosyjskie rakiety. [Źródło: Polsat News, WP Wiadomości, Dziennik.pl, Bankier.pl, Onet Wiadomości, Gazeta.pl, TVP.info, Wyborcza.pl, Lublin112.pl, Radio Zachód, Warszawa w Pigułce, Rzeszow-News.pl, Kresy.pl, Rzeczpospolita, Defence24]",
+          "Gieorgij Michno w sposób najbardziej stanowczy odrzucił wysunięte pod adresem Federacji Rosyjskiej oskarżenia – przekazała rosyjska ambasada w Polsce. We wtorek dyplomata pojawił się w siedzibie polskiego MSZ w związku z piątkowym naruszeniem polskiej przestrzeni powietrznej przez rosyjskie rakiety. [Źródło: Polsat News, WP Wiadomości, Dziennik.pl, Bankier.pl, Onet Wiadomości, Gazeta.pl, TVP.info, Wyborcza.pl, Lublin112.pl, Radio Zachód, Warszawa w Pigułce, Rzeszow-News.pl, Kresy.pl, Rzeczpospolita]",
           "Gieorgij Michno, ambasador Federacji Rosyjskiej w Rzeczypospolitej Polskiej, został zaproszony do MSZ kraju przyjmującego, gdzie przekazano mu protest w ramach rzekomego powiązania naszego kraju z incydentami dotyczącymi naruszenia polskiej przestrzeni powietrznej w dniu 20 listopada 2026 r. – czytamy w komunikacie rosyjskiej ambasady w Polsce na Telegramie. [Źródło: Polsat News, WP Wiadomości, Onet Wiadomości, Lublin112.pl, Radio Zachód, Warszawa w Pigułce, Rzeszow-News.pl, Kresy.pl]",
           "Otrzymał ostrą notę Jak wynika z komunikatu, Michno w sposób najbardziej stanowczy odrzucił te oskarżenia i uznał je za bezpodstawne, gołosłowne i niepoparte dowodami. [Źródło: Polsat News, WP Wiadomości, Onet Wiadomości, Lublin112.pl, Warszawa w Pigułce, Rzeszow-News.pl]",
           "Głos z rosyjskiej ambasady po spotkaniu w MSZ Za całkowicie niedopuszczalną uznał on także praktykę wysuwania oskarżeń pod adresem Rosji (...) na podstawie tendencyjnych przesłanek podyktowanych koniunkturą polityczn ą, z góry wskazując winowajcę – przekazała ambasada. [Źródło: Polsat News, WP Wiadomości]",
@@ -34658,8 +34593,7 @@
           "W języku dyplomacji każde słowo, każdy sygnał ma znaczenie, więc podkreślam, była to ostra nota – powiedział Maciej Wewiór. W przekazanej rosyjskiemu ambasadorowi nocie znalazło się jednoznaczne stanowisko polskich władz dotyczące dalszych działań. Zaapelował przy tym o zachowanie spokoju i ostrożność wobec rosyjskich działań dezinformacyjnych. [Źródło: Lublin112.pl]",
           "Sugerowałbym ostrożność przy różnych komentarzach, przy różnych ocenach. [Źródło: Radio Zachód]",
           "Spotkanie trwało zaledwie dziewięć minut. Na reakcję rosyjskiej dyplomacji nie trzeba było długo czekać. Zarzuciła również stronie polskiej kierowanie się względami politycznymi oraz wskazywanie winnego jeszcze przed wyjaśnieniem wszystkich okoliczności. [Źródło: Warszawa w Pigułce]",
-          "Nasza prokuratura to bardzo jasno państwu przekazała w ostatnich dniach. Zupełnie inną narrację przedstawił przed budynkiem ministerstwa sam Gieorgij Michno. [Źródło: Rzeszow-News.pl]",
-          "To niejedyne wsparcie udzielone ostatnio naszemu krajowi przez Sztokholm. [Źródło: Defence24]"
+          "Nasza prokuratura to bardzo jasno państwu przekazała w ostatnich dniach. Zupełnie inną narrację przedstawił przed budynkiem ministerstwa sam Gieorgij Michno. [Źródło: Rzeszow-News.pl]"
         ]
       }
     ],
@@ -34734,7 +34668,7 @@
         "summary": "Ambasador Rosji wezwany do MSZ. Otrzymał ostrą notę protestacyjną. Chodzi o rosyjskie rakiety nad Polską",
         "url": "https://www.lublin112.pl/ambasador-rosji-wezwany-do-msz-otrzymal-ostra-note-protestacyjna-chodzi-o-rosyjskie-rakiety-nad-polska/",
         "focus": "Podkreśla konkretne liczby (2026) w ujęciu: doniesienie regionalne.",
-        "omits": "Pomija kontekst (spotkaniu, polityczn, sprzeciw) rozwijany w Polsat News, WP Wiadomości."
+        "omits": "Pomija kontekst (spotkaniu, polityczn, niedopuszczalną) rozwijany w Polsat News, WP Wiadomości."
       },
       {
         "outlet": "Radio Zachód",
@@ -34781,7 +34715,7 @@
         "angle": "Doniesienie regionalne",
         "summary": "Szef MON: otrzymamy od sojuszników z NATO wsparcie wzmacniające ochronę wschodniej granicy",
         "url": "https://rzeszow.tvp.pl/96619678/szef-mon-otrzymamy-od-sojusznikow-z-nato-wsparcie-wzmacniajace-ochrone-wschodniej-granicy",
-        "focus": "Wyróżnia własne wątki i pojęcia: ochronę, wschodniej, granicy.",
+        "focus": "Wyróżnia własne wątki i pojęcia: wsparcie, ochronę, wschodniej.",
         "omits": "Pomija wyliczenia (2026) przytaczane przez Polsat News, WP Wiadomości."
       },
       {
@@ -34791,19 +34725,10 @@
         "url": "https://www.rp.pl/dyplomacja/art45537041-incydent-z-rosyjskimi-pociskami-ambasador-rosji-otrzymal-ostra-note-protestacyjna",
         "focus": "Koncentruje się na głównym fakcie wydarzenia (relacja uzupełniająca).",
         "omits": "Pomija wyliczenia (2026) przytaczane przez Polsat News, WP Wiadomości."
-      },
-      {
-        "outlet": "Defence24",
-        "angle": "Relacja uzupełniająca",
-        "summary": "Szwecja wzywa ambasadora Rosji i wspiera Polskę",
-        "url": "https://defence24.pl/polityka-obronna/szwecja-wzywa-ambasadora-rosji-i-wspiera-polske",
-        "focus": "Wyróżnia własne wątki i pojęcia: Szwecja, wzywa, wspiera.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Polsat News, WP Wiadomości."
       }
     ],
     "sources": [
       "Bankier.pl",
-      "Defence24",
       "Dziennik.pl",
       "Gazeta.pl",
       "Kresy.pl",
@@ -34845,7 +34770,7 @@
     "impact": {
       "audience": "Obywatele i instytucje w Polsce",
       "scope": "Wydarzenia krajowe",
-      "status": "Potwierdzone (17 źródeł)"
+      "status": "Potwierdzone (16 źródeł)"
     },
     "seo_faq": [
       {
@@ -34858,7 +34783,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (17 źródeł)."
+        "a": "Dotyczy grupy: Obywatele i instytucje w Polsce (obszar: Wydarzenia krajowe). Status: Potwierdzone (16 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -34868,7 +34793,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Corte_Suprema_di_Cassazione_--_2013_--_3787.jpg",
     "media_label": "Wymiar sprawiedliwości",
-    "independent_sources_count": 17,
+    "independent_sources_count": 16,
     "syndicate_groups": []
   },
   {
@@ -34890,7 +34815,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "5 redakcji"
+        "val": "4 redakcje"
       },
       {
         "label": "Kategoria",
@@ -34902,16 +34827,16 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (5 źródeł)"
+        "val": "Potwierdzone (4 źródła)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (5 redakcji)",
+        "heading": "Ustalenia wspólne (4 redakcje)",
         "paragraphs": [
           "Doszło do gwałtownego wzrostu napięcia na Morzu Bałtyckim. Spowodowały to uderzenia ukraińskich dronów i próby europejskich okrętów zatrzymywania rosyjskich tankowców „szarej floty”. Rosja reaguje na ruch Estonii. [Źródło: Rzeczpospolita, Interia Wydarzenia, Forsal.pl]",
-          "Rosyjskie MSZ mówi o \"skraju otwartej wojny\", zarzuca władzom w Tallinnie wspieranie ukraińskich ataków i zapowiada możliwe działania odwetowe. [Źródło: Rzeczpospolita, Forsal.pl, Polsat News]"
+          "Rosyjskie MSZ mówi o \"skraju otwartej wojny\", zarzuca władzom w Tallinnie wspieranie ukraińskich ataków i zapowiada możliwe działania odwetowe. [Źródło: Rzeczpospolita, Forsal.pl]"
         ]
       },
       {
@@ -34919,9 +34844,7 @@
         "paragraphs": [
           "Gieorgij Michno, ambasador Federacji Rosyjskiej w Rzeczypospolitej Polskiej, został zaproszony do MSZ kraju przyjmującego, gdzie przekazano mu protest w ramach rzekomego powiązania naszego kraju z incydentami dotyczącymi naruszenia polskiej przestrzeni powietrznej w dniu 20 listopada 2026 r. – czytamy w komunikacie rosyjskiej ambasady w Polsce na Telegramie. [Źródło: Interia Wydarzenia]",
           "Eksperci mówią, że to tylko retoryka służąca zastraszaniu, bo Moskwa jest teraz za słaba na konflikt z NATO. \"Ten najnowszy antyrosyjski chwyt Estonii dołącza do licznych wrogich działań podejmowanych przez to państwo na przestrzeni ostatnich lat\" – dodano. Rosyjskie Ministerstwo Spraw Zagranicznych oskarżyło Estonię o „zaciekłą rusofobię” oraz prowadzenie szeregu wrogich działań wymierzonych w Federację Rosyjską. [Źródło: Defence24]",
-          "W tle jest decyzja o zamknięciu przejść granicznych z Rosją. [Źródło: Forsal.pl]",
-          "— Już za późno, by mówić tylko o wojnie hybrydowej.",
-          "Ekspert stwierdził, że konflikt ukraińsko-rosyjski przenosi się już na nowe terytoria. [Źródło: Polsat News]"
+          "W tle jest decyzja o zamknięciu przejść granicznych z Rosją. [Źródło: Forsal.pl]"
         ]
       }
     ],
@@ -34957,21 +34880,12 @@
         "url": "https://forsal.pl/swiat/bezpieczenstwo/artykuly/11406950,rosja-grozi-sasiadowi-otwarta-wojna-kolejny-kraj-chce-zetrzec-z-mapy.html",
         "focus": "Wyróżnia własne wątki i pojęcia: sąsiadowi, Kolejny, kraj.",
         "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia."
-      },
-      {
-        "outlet": "Polsat News",
-        "angle": "Relacja uzupełniająca",
-        "summary": "\"To już wojna\". Litewski analityk wprost o konflikcie NATO z Rosją",
-        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-26/to-juz-wojna-litewski-analityk-wprost-o-konflikcie-nato-z-rosja/",
-        "focus": "Wyróżnia własne wątki i pojęcia: Litewski, analityk, wprost.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Interia Wydarzenia."
       }
     ],
     "sources": [
       "Defence24",
       "Forsal.pl",
       "Interia Wydarzenia",
-      "Polsat News",
       "Rzeczpospolita"
     ],
     "corrections": [
@@ -34999,7 +34913,7 @@
     "impact": {
       "audience": "Opinia publiczna i dyplomacja",
       "scope": "Świat i bezpieczeństwo",
-      "status": "Potwierdzone (5 źródeł)"
+      "status": "Potwierdzone (4 źródła)"
     },
     "seo_faq": [
       {
@@ -35012,7 +34926,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (5 źródeł)."
+        "a": "Dotyczy grupy: Opinia publiczna i dyplomacja (obszar: Świat i bezpieczeństwo). Status: Potwierdzone (4 źródła)."
       }
     ],
     "discrepancies": [],
@@ -35022,7 +34936,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Czech_Leopard_2A4_tank_043_during_NATO_Days_2026,_Ostrava,_20260919_0956_0635.jpg",
     "media_label": "Obronność i bezpieczeństwo",
-    "independent_sources_count": 5,
+    "independent_sources_count": 4,
     "syndicate_groups": []
   },
   {
@@ -35522,7 +35436,7 @@
     "metrics": [
       {
         "label": "Liczba źródeł",
-        "val": "9 redakcji"
+        "val": "8 redakcji"
       },
       {
         "label": "Kategoria",
@@ -35534,13 +35448,13 @@
       },
       {
         "label": "Weryfikacja",
-        "val": "Potwierdzone (9 źródeł)"
+        "val": "Potwierdzone (8 źródeł)"
       }
     ],
     "declickbait": [],
     "full_sections": [
       {
-        "heading": "Ustalenia wspólne (9 redakcji)",
+        "heading": "Ustalenia wspólne (8 redakcji)",
         "paragraphs": [
           "Wtorkowe mecze Ligi Mistrzów dostarczyły sporo emocji i zapewniły przetasowania w tabeli. Na ten moment poznaliśmy samodzielnego lidera, jakim jest Real Madryt. Królewscy we wtorkowy wieczór, choć zaczęli od 0:1 z PSV Eindhoven, byli w stanie odwrócić losy meczu i ostatecznie wygrać 5:1, co daje im pierwsze miejsce w tabeli z kompletem zwycięstw. [Źródło: Przegląd Sportowy, WP SportoweFakty, Rzeczpospolita, Gol24.pl]",
           "I dwie niespodzianki w czołówce Dogonić już w środę może ich drugie PSG. Miejsca trzy i cztery to spore niespodzianki, bo należą kolejno do Como i Realu Betis. Zaufany człowiek Cezarego Kuleszy Warto wspomnieć także o Manchesterze City. [Źródło: Przegląd Sportowy, Sport.pl, WP SportoweFakty, Rzeczpospolita, Interia Sport, Gol24.pl]",
@@ -35554,8 +35468,7 @@
           "Oba mecze zakończyły się remisami. Pięć meczów i pięć zwycięstw. [Źródło: Sport.pl]",
           "Po świetnej 2. połowie wysoko wygrał Real. We wtorkowy wieczór dwie twarze pokazał Real. Niespodziewanie punkty zgubił Arsenal, który wprawdzie po trzech kwadransach prowadził z Borussią 1:0. [Źródło: WP SportoweFakty]",
           "Zespół prowadzony przez Francesco Fariolego rozbił SSC Napoli na własnym stadionie. W piątej serii gier \"Smoki\" czekał wyjazd do Holandii na mecz z Feyenoordem. [Źródło: Interia Sport]",
-          "18-letni Polak odegrał kluczową rolę przy jedynym golu spotkania, a FC Porto po emocjonującej końcówce pokonało Feyenoord Rotterdam 1:0. [Źródło: Niezależna.pl]",
-          "Polskie kluby solidarnie zapunktowały w czwartek w Lidze Europy, ale ich sytuacja w tabeli wciąż nie przedstawia się najkorzystniej. Po pięciu seriach spotkań zarówno Lech Poznań, jak i Jagiellonia Białystok znajdują się pod kreską. Trzeba jednak zaznaczyć, że awans do play-offów dalej jest jak najbardziej w zasięgu obu przedstawicieli Ekstraklasy. [Źródło: Weszło.com]"
+          "18-letni Polak odegrał kluczową rolę przy jedynym golu spotkania, a FC Porto po emocjonującej końcówce pokonało Feyenoord Rotterdam 1:0. [Źródło: Niezależna.pl]"
         ]
       }
     ],
@@ -35566,7 +35479,7 @@
         "summary": "Tak wygląda tabela Ligi Mistrzów. Nowy lider. I dwie niespodzianki",
         "url": "https://przegladsportowy.onet.pl/pilka-nozna/liga-mistrzow/119-kleska-znanego-zespolu-w-lidze-mistrzow-jest-na-samym-dnie/3kvcm52",
         "focus": "Wyróżnia własne wątki i pojęcia: lider.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (bohaterem, Lidze, Feyenoordem) rozwijany w Rzeczpospolita, Interia Sport."
       },
       {
         "outlet": "Sport.pl",
@@ -35574,7 +35487,7 @@
         "summary": "Tak wygląda tabela Ligi Mistrzów po wtorkowych meczach. Sensacyjna czołówka",
         "url": "https://www.sport.pl/pilka/7,65041,33149196,tak-wyglada-tabela-ligi-mistrzow-po-wtorkowych-meczach-sensacyjna.html",
         "focus": "Wyróżnia własne wątki i pojęcia: meczach, Sensacyjna, czołówka.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (meczu, przetasowania, samodzielnego) rozwijany w Przegląd Sportowy, WP SportoweFakty."
       },
       {
         "outlet": "WP SportoweFakty",
@@ -35582,7 +35495,7 @@
         "summary": "Liga Mistrzów. Wyniki wtorkowych meczów",
         "url": "https://sportowefakty.wp.pl/pilka-nozna/1285971/liga-mistrzow-wyniki-wtorkowych-meczow",
         "focus": "Wyróżnia własne wątki i pojęcia: Wyniki, świetnej, połowie.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (bohaterem, Lidze, Feyenoordem) rozwijany w Rzeczpospolita, Interia Sport."
       },
       {
         "outlet": "Rzeczpospolita",
@@ -35590,7 +35503,7 @@
         "summary": "Liga Mistrzów. Real Madryt z perfekcyjnym bilansem, Pietuszewski bohaterem Porto",
         "url": "https://sport.rp.pl/pilka-nozna/art45538401-liga-mistrzow-real-madryt-z-perfekcyjnym-bilansem-pietuszewski-bohaterem-porto",
         "focus": "Wyróżnia własne wątki i pojęcia: perfekcyjnym, bilansem.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (Lidze, Feyenoordem, prowadził) rozwijany w Interia Sport, Gol24.pl."
       },
       {
         "outlet": "Interia Sport",
@@ -35598,7 +35511,7 @@
         "summary": "Pietuszewski bohaterem Porto. Polak już błyszczy w Lidze Mistrzów",
         "url": "https://sport.interia.pl/pilka-nozna/liga-mistrzow/news-pietuszewski-bohaterem-porto-polak-juz-blyszczy-w-lidze-mist,nId,23578571",
         "focus": "Wyróżnia własne wątki i pojęcia: błyszczy, Zespół, Francesco.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (zwycięstw, Wtorkowe, mecze) rozwijany w Przegląd Sportowy, Sport.pl."
       },
       {
         "outlet": "Gol24.pl",
@@ -35606,7 +35519,7 @@
         "summary": "Pierwsza asysta Oskara Pietuszewskiego w Lidze Mistrzów. Wjechał jak dzik w żołędzie już w 2 minucie",
         "url": "https://gol24.pl/pierwsza-asysta-oskara-pietuszewskiego-w-lidze-mistrzow-wjechal-jak-dzik-w-zoledzie-juz-w-2-minucie/ar/c2-19152003",
         "focus": "Wyróżnia własne wątki i pojęcia: Pierwsza, asysta, Oskara.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (bohaterem, Feyenoordem, prowadził) rozwijany w Rzeczpospolita, Interia Sport."
       },
       {
         "outlet": "Niezależna.pl",
@@ -35614,7 +35527,7 @@
         "summary": "Polak bohaterem meczu Ligi Mistrzów. Akcja Pietuszewskiego dała Porto zwycięstwo [WIDEO]",
         "url": "https://niezalezna.pl/sport/pilka-nozna/polak-bohaterem-meczu-ligi-mistrzow-akcja-pietuszewskiego-dala-porto-zwyciestwo-wideo/584914",
         "focus": "Wyróżnia własne wątki i pojęcia: Akcja, dała, WIDEO.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
+        "omits": "Pomija kontekst (niespodzianki, Manchesterze, wspomnieć) rozwijany w Przegląd Sportowy, Sport.pl."
       },
       {
         "outlet": "Polsat Sport",
@@ -35622,15 +35535,7 @@
         "summary": "Są zachwyceni Pietuszewskim! Tak ocenili Polaków po zwycięstwie w Lidze Mistrzów",
         "url": "https://www.polsatsport.pl/wiadomosc/2026-11-25/sa-zachwyceni-pietuszewskim-tak-ocenili-polakow-po-zwyciestwie-w-lidze-mistrzow/",
         "focus": "Wyróżnia własne wątki i pojęcia: zachwyceni, ocenili, Polaków.",
-        "omits": "Pomija wyliczenia (2026) przytaczane przez Weszło.com."
-      },
-      {
-        "outlet": "Weszło.com",
-        "angle": "Relacja sportowa",
-        "summary": "Jaga i Lech pod kreską, ale jest nadzieja. Tabela Ligi Europy po 5. kolejce",
-        "url": "https://weszlo.com/liga-europy-po-piatej-kolejce-polskie-kluby-pod-kreska-ale-jest-nadzieja",
-        "focus": "Eksponuje dane (2026) oraz wątki: Jaga, Lech.",
-        "omits": "Pomija kontekst (Pietuszewski, poprzedniej, przyczynił) rozwijany w Przegląd Sportowy, Sport.pl."
+        "omits": "Pomija kontekst (niespodzianki, Manchesterze, wspomnieć) rozwijany w Przegląd Sportowy, Sport.pl."
       }
     ],
     "sources": [
@@ -35641,8 +35546,7 @@
       "Przegląd Sportowy",
       "Rzeczpospolita",
       "Sport.pl",
-      "WP SportoweFakty",
-      "Weszło.com"
+      "WP SportoweFakty"
     ],
     "corrections": [
       {
@@ -35669,7 +35573,7 @@
     "impact": {
       "audience": "Kibice i środowisko sportowe",
       "scope": "Sport i rozgrywki",
-      "status": "Potwierdzone (9 źródeł)"
+      "status": "Potwierdzone (8 źródeł)"
     },
     "seo_faq": [
       {
@@ -35682,7 +35586,7 @@
       },
       {
         "q": "Kogo dotyczy i w jakim obszarze wywołuje skutki?",
-        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (9 źródeł)."
+        "a": "Dotyczy grupy: Kibice i środowisko sportowe (obszar: Sport i rozgrywki). Status: Potwierdzone (8 źródeł)."
       }
     ],
     "discrepancies": [],
@@ -35692,7 +35596,7 @@
     "media_license_url": "https://creativecommons.org/licenses/by/4.0",
     "media_source_url": "https://commons.wikimedia.org/wiki/File:Mecz_pi%C5%82karski_Wis%C5%82a_Krak%C3%B3w_-_Zag%C5%82%C4%99bie_Sosnwoiec,_28_pa%C5%BAdziernika_2022,_Po%C5%BCegnanie_Stadionu_Ludowego,_KP.jpg",
     "media_label": "Piłka nożna",
-    "independent_sources_count": 9,
+    "independent_sources_count": 8,
     "syndicate_groups": []
   },
   {
@@ -35891,11 +35795,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-police.jpg",
+    "media_file": "media/topic-police-2.jpg",
     "media_credit": "Fot. ilustracyjne: Kevin.B (CC BY-SA 3.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 3.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja_cars,_Krakow_2012.JPG",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Policja,_old_cars,_Krakow.JPG",
     "media_label": "Policja i bezpieczeństwo",
     "independent_sources_count": 2,
     "syndicate_groups": []
@@ -36165,11 +36069,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-5.jpg",
-    "media_credit": "Fot. ilustracyjne: Leon Jarumski (1887-1947) (Public domain, Wikimedia Commons)",
-    "media_license": "Public domain",
-    "media_license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg",
+    "media_file": "media/topic-sejm.jpg",
+    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 5,
     "syndicate_groups": []
@@ -36651,11 +36555,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-4.jpg",
-    "media_credit": "Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons)",
-    "media_license": "CC BY-SA 3.0",
-    "media_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg",
+    "media_file": "media/topic-sejm-3.jpg",
+    "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_license": "CC BY-SA 4.0",
+    "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 10,
     "syndicate_groups": []
@@ -37427,11 +37331,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-sejm-3.jpg",
+    "media_file": "media/topic-sejm.jpg",
     "media_credit": "Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_01.jpg",
     "media_label": "Polityka i instytucje państwowe",
     "independent_sources_count": 3,
     "syndicate_groups": []
@@ -38700,7 +38604,7 @@
     "keywords": "Lubuskie, Zegar, gorzowskiej, katedry, naprawy, zdążą, jubileusz",
     "thumbnail_url": "",
     "published_iso": "2026-11-23T20:54:38+01:00",
-    "updated_iso": "2026-11-27T02:53:40+01:00",
+    "updated_iso": "2026-11-27T03:58:55+01:00",
     "display_date": "23.11.2026, 20:54",
     "status": "AUTO_PUBLISHED",
     "fact_agreement_pct": 96,
@@ -39416,11 +39320,11 @@
       }
     ],
     "discrepancies": [],
-    "media_file": "media/topic-finance-3.jpg",
-    "media_credit": "Fot. ilustracyjne: Chris Olszewski (CC BY-SA 4.0, Wikimedia Commons)",
+    "media_file": "media/topic-finance-5.jpg",
+    "media_credit": "Fot. ilustracyjne: Dominik Danelski (CC BY-SA 4.0, Wikimedia Commons)",
     "media_license": "CC BY-SA 4.0",
     "media_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "media_source_url": "https://commons.wikimedia.org/wiki/File:Former_National_Bank_in_Warsaw,_Warsaw,_Poland,_2015.jpg",
+    "media_source_url": "https://commons.wikimedia.org/wiki/File:Varso_-_widok_na_zielony_taras_widokowy.jpg",
     "media_label": "Finanse i rynek kapitałowy",
     "independent_sources_count": 4,
     "syndicate_groups": []
