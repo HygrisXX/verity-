@@ -1,5 +1,5 @@
 {
-  "updated_iso": "2026-11-27T17:01:28+00:00",
+  "updated_iso": "2026-11-27T18:51:54+00:00",
   "currencies": {
     "effective_date": "2026-11-27",
     "table_no": "231/A/NBP/2026",
@@ -152,8 +152,8 @@
       "name": "S&P 500",
       "market": "USA",
       "unit": "pkt",
-      "price": 7283.02,
-      "change_pct": 1.4,
+      "price": 7297.49,
+      "change_pct": 1.6,
       "history": [
         7323.63,
         7175.83,
@@ -161,7 +161,7 @@
         7237.17,
         7201.09,
         7182.78,
-        7283.02
+        7297.49
       ]
     },
     {
@@ -169,8 +169,8 @@
       "name": "NASDAQ",
       "market": "USA",
       "unit": "pkt",
-      "price": 24021.59,
-      "change_pct": 1.85,
+      "price": 24129.5,
+      "change_pct": 2.31,
       "history": [
         24429.88,
         23879.2,
@@ -178,7 +178,7 @@
         24089.56,
         23733.54,
         23585.8,
-        24021.59
+        24129.5
       ]
     },
     {
@@ -343,8 +343,8 @@
       "name": "Złoto",
       "market": "COMEX",
       "unit": "USD/oz",
-      "price": 3658.4,
-      "change_pct": 3.47,
+      "price": 3668.5,
+      "change_pct": 3.75,
       "history": [
         3741.9,
         3685.5,
@@ -352,7 +352,7 @@
         3651.4,
         3561.9,
         3535.8,
-        3658.4
+        3668.5
       ]
     },
     {
@@ -360,8 +360,8 @@
       "name": "Ropa Brent",
       "market": "ICE",
       "unit": "USD/bbl",
-      "price": 90.0,
-      "change_pct": -4.87,
+      "price": 90.33,
+      "change_pct": -4.52,
       "history": [
         91.95,
         91.98,
@@ -369,7 +369,7 @@
         89.37,
         91.4,
         94.61,
-        90.0
+        90.33
       ]
     },
     {
@@ -377,8 +377,8 @@
       "name": "Srebro",
       "market": "COMEX",
       "unit": "USD/oz",
-      "price": 43.78,
-      "change_pct": 9.33,
+      "price": 43.7,
+      "change_pct": 9.12,
       "history": [
         45.0,
         44.32,
@@ -386,7 +386,7 @@
         43.15,
         40.76,
         40.05,
-        43.78
+        43.7
       ]
     }
   ],
@@ -394,16 +394,16 @@
     {
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price_usd": 59950.0,
-      "price_pln": 244839.0,
-      "change_pct": -0.88
+      "price_usd": 59841.0,
+      "price_pln": 244558.0,
+      "change_pct": -1.12
     },
     {
       "symbol": "ETH",
       "name": "Ethereum",
-      "price_usd": 1670.3,
-      "price_pln": 6821.52,
-      "change_pct": -1.22
+      "price_usd": 1667.66,
+      "price_pln": 6815.38,
+      "change_pct": -1.9
     }
   ],
   "weather": {
@@ -414,14 +414,14 @@
         "voivodeship": "Mazowieckie",
         "lat": 52.23,
         "lon": 21.01,
-        "temp_c": 0.4,
-        "wind_kmh": 18.0,
-        "pressure_hpa": 1030.0,
-        "humidity_pct": 64,
+        "temp_c": 0.3,
+        "wind_kmh": 14.4,
+        "pressure_hpa": 1031.3,
+        "humidity_pct": 65,
         "precip_mm": 0.0,
         "condition_key": "sun",
         "condition": "Pogodnie",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -429,14 +429,14 @@
         "voivodeship": "Małopolskie",
         "lat": 50.06,
         "lon": 19.94,
-        "temp_c": -1.7,
+        "temp_c": -1.9,
         "wind_kmh": 21.6,
-        "pressure_hpa": 1025.9,
-        "humidity_pct": 89,
+        "pressure_hpa": 1027.7,
+        "humidity_pct": 86,
         "precip_mm": 4.1,
         "condition_key": "snow",
         "condition": "Opady śniegu",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -444,14 +444,14 @@
         "voivodeship": "Dolnośląskie",
         "lat": 51.11,
         "lon": 17.04,
-        "temp_c": -0.6,
-        "wind_kmh": 7.2,
-        "pressure_hpa": 1028.0,
-        "humidity_pct": 79,
+        "temp_c": -0.5,
+        "wind_kmh": 14.4,
+        "pressure_hpa": 1029.4,
+        "humidity_pct": 76,
         "precip_mm": 2.1,
         "condition_key": "snow",
         "condition": "Opady śniegu",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -459,14 +459,14 @@
         "voivodeship": "Wielkopolskie",
         "lat": 52.41,
         "lon": 16.93,
-        "temp_c": 0.2,
-        "wind_kmh": 18.0,
-        "pressure_hpa": 1029.8,
-        "humidity_pct": 76,
+        "temp_c": 0.1,
+        "wind_kmh": 21.6,
+        "pressure_hpa": 1031.3,
+        "humidity_pct": 74,
         "precip_mm": 0.0,
         "condition_key": "partly",
         "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -474,14 +474,14 @@
         "voivodeship": "Pomorskie",
         "lat": 54.35,
         "lon": 18.65,
-        "temp_c": 0.0,
-        "wind_kmh": 7.2,
-        "pressure_hpa": 1032.7,
-        "humidity_pct": 77,
+        "temp_c": -0.6,
+        "wind_kmh": 10.8,
+        "pressure_hpa": 1034.1,
+        "humidity_pct": 74,
         "precip_mm": 0.0,
         "condition_key": "partly",
         "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -491,12 +491,12 @@
         "lon": 19.46,
         "temp_c": -0.5,
         "wind_kmh": 21.6,
-        "pressure_hpa": 1029.0,
-        "humidity_pct": 72,
+        "pressure_hpa": 1030.3,
+        "humidity_pct": 70,
         "precip_mm": 0.0,
-        "condition_key": "partly",
-        "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "condition_key": "sun",
+        "condition": "Pogodnie",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -504,14 +504,14 @@
         "voivodeship": "Śląskie",
         "lat": 50.26,
         "lon": 19.03,
-        "temp_c": -1.7,
-        "wind_kmh": 10.8,
-        "pressure_hpa": 1026.3,
-        "humidity_pct": 88,
+        "temp_c": -1.6,
+        "wind_kmh": 18.0,
+        "pressure_hpa": 1028.1,
+        "humidity_pct": 83,
         "precip_mm": 4.1,
         "condition_key": "snow",
         "condition": "Opady śniegu",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -519,14 +519,14 @@
         "voivodeship": "Zachodniopomorskie",
         "lat": 53.43,
         "lon": 14.55,
-        "temp_c": 0.6,
+        "temp_c": 0.9,
         "wind_kmh": 7.2,
-        "pressure_hpa": 1031.2,
-        "humidity_pct": 72,
+        "pressure_hpa": 1032.4,
+        "humidity_pct": 75,
         "precip_mm": 0.0,
         "condition_key": "partly",
         "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -534,14 +534,14 @@
         "voivodeship": "Lubelskie",
         "lat": 51.25,
         "lon": 22.57,
-        "temp_c": -1.5,
+        "temp_c": -1.2,
         "wind_kmh": 10.8,
-        "pressure_hpa": 1028.7,
-        "humidity_pct": 73,
+        "pressure_hpa": 1030.2,
+        "humidity_pct": 72,
         "precip_mm": 0.0,
         "condition_key": "partly",
         "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -549,14 +549,14 @@
         "voivodeship": "Podlaskie",
         "lat": 53.13,
         "lon": 23.16,
-        "temp_c": -2.2,
-        "wind_kmh": 7.2,
-        "pressure_hpa": 1031.5,
-        "humidity_pct": 81,
+        "temp_c": -4.3,
+        "wind_kmh": 3.6,
+        "pressure_hpa": 1033.0,
+        "humidity_pct": 89,
         "precip_mm": 0.0,
         "condition_key": "frost",
         "condition": "Mróz",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -566,12 +566,12 @@
         "lon": 22.0,
         "temp_c": -1.5,
         "wind_kmh": 14.4,
-        "pressure_hpa": 1026.5,
-        "humidity_pct": 90,
+        "pressure_hpa": 1027.9,
+        "humidity_pct": 87,
         "precip_mm": 0.5,
         "condition_key": "snow",
         "condition": "Opady śniegu",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -581,12 +581,12 @@
         "lon": 20.63,
         "temp_c": -1.6,
         "wind_kmh": 14.4,
-        "pressure_hpa": 1027.5,
-        "humidity_pct": 78,
+        "pressure_hpa": 1029.1,
+        "humidity_pct": 77,
         "precip_mm": 0.0,
         "condition_key": "partly",
         "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -594,14 +594,14 @@
         "voivodeship": "Warmińsko-Mazurskie",
         "lat": 53.78,
         "lon": 20.49,
-        "temp_c": -1.6,
-        "wind_kmh": 7.2,
-        "pressure_hpa": 1032.3,
+        "temp_c": -3.1,
+        "wind_kmh": 10.8,
+        "pressure_hpa": 1033.8,
         "humidity_pct": 89,
         "precip_mm": 0.0,
-        "condition_key": "cloud",
-        "condition": "Pochmurno / mgła",
-        "measured_at": "2026-11-27 16:00",
+        "condition_key": "frost",
+        "condition": "Mróz",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -609,14 +609,14 @@
         "voivodeship": "Opolskie",
         "lat": 50.67,
         "lon": 17.92,
-        "temp_c": -2.1,
+        "temp_c": -1.8,
         "wind_kmh": 10.8,
-        "pressure_hpa": 1027.3,
-        "humidity_pct": 95,
+        "pressure_hpa": 1028.7,
+        "humidity_pct": 88,
         "precip_mm": 3.6,
         "condition_key": "snow",
         "condition": "Opady śniegu",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -624,14 +624,14 @@
         "voivodeship": "Kujawsko-Pomorskie",
         "lat": 53.01,
         "lon": 18.6,
-        "temp_c": 0.7,
+        "temp_c": 0.1,
         "wind_kmh": 10.8,
-        "pressure_hpa": 1031.2,
-        "humidity_pct": 69,
+        "pressure_hpa": 1032.4,
+        "humidity_pct": 65,
         "precip_mm": 0.0,
         "condition_key": "sun",
         "condition": "Pogodnie",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -639,14 +639,14 @@
         "voivodeship": "Lubuskie",
         "lat": 51.94,
         "lon": 15.51,
-        "temp_c": -1.7,
+        "temp_c": -1.2,
         "wind_kmh": 10.8,
-        "pressure_hpa": 1029.4,
-        "humidity_pct": 74,
+        "pressure_hpa": 1030.8,
+        "humidity_pct": 73,
         "precip_mm": 0.0,
         "condition_key": "partly",
         "condition": "Zachmurzenie umiarkowane",
-        "measured_at": "2026-11-27 16:00",
+        "measured_at": "2026-11-27 18:00",
         "source": "IMGW-PIB"
       },
       {
@@ -656,8 +656,8 @@
         "lon": 10.75,
         "temp_c": -1.0,
         "wind_kmh": 10.1,
-        "pressure_hpa": 1034.9,
-        "humidity_pct": 82,
+        "pressure_hpa": 1035.2,
+        "humidity_pct": 83,
         "precip_mm": 0.0,
         "condition_key": "cloud",
         "condition": "Pochmurno",
