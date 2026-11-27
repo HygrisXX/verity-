@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/bedzie-referendum-ws-odwolania-prezydenta-nowy-sondaz-w-poznaniu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:10+01:00</news:publication_date>
+      <news:title>Będzie referendum ws. odwołania prezydenta? Nowy sondaż w Poznaniu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/174254894.png</image:loc>
+      <image:title>Będzie referendum ws. odwołania prezydenta? Nowy sondaż w Poznaniu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/tatrzanskie-stawy-zamarzly-tpn-apeluje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:09+01:00</news:publication_date>
+      <news:title>Tatrzańskie stawy zamarzły. TPN apeluje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/965038897.png</image:loc>
+      <image:title>Tatrzańskie stawy zamarzły. TPN apeluje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/nowy-dar-mlodziezy-kto-i-za-ile-go-zbuduje-trwaja-analizy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:08+01:00</news:publication_date>
+      <news:title>Nowy Dar Młodzieży – kto i za ile go zbuduje? „Trwają analizy”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/988010837.png</image:loc>
+      <image:title>Nowy Dar Młodzieży – kto i za ile go zbuduje? „Trwają analizy”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/polacy-odwracaja-sie-od-piwa-gigant-zwolni-61-osob/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:06+01:00</news:publication_date>
+      <news:title>Polacy odwracają się od piwa. Gigant zwolni 61 osób</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1476179364.png</image:loc>
+      <image:title>Polacy odwracają się od piwa. Gigant zwolni 61 osób</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/co-z-jaroslawem-wyrembakiem-jego-nazwisko-zniknelo-z-listy-sedziow-tk/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:05+01:00</news:publication_date>
+      <news:title>Co z Jarosławem Wyrembakiem? Jego nazwisko zniknęło z listy sędziów TK</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1241587760.png</image:loc>
+      <image:title>Co z Jarosławem Wyrembakiem? Jego nazwisko zniknęło z listy sędziów TK</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/pomalowanie-pomnikow-w-warszawie-sa-zatrzymania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:03+01:00</news:publication_date>
+      <news:title>Pomalowanie pomników w Warszawie. Są zatrzymania</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1129839251.png</image:loc>
+      <image:title>Pomalowanie pomników w Warszawie. Są zatrzymania</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/atlas-do-cwiczen-taniej-o-1800-zl-megaprzeceny-na-black-friday-w-media/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:02+01:00</news:publication_date>
+      <news:title>Atlas do ćwiczeń taniej o 1800 zł. Megaprzeceny na Black Friday w Media Expert!</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/521961103.png</image:loc>
+      <image:title>Atlas do ćwiczeń taniej o 1800 zł. Megaprzeceny na Black Friday w Media Expert!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/trump-ujawnia-kulisy-spotkania-z-szefem-nato-rozmawialismy-o-tym-dlugo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:11:00+01:00</news:publication_date>
+      <news:title>Trump ujawnia kulisy spotkania z szefem NATO. "Rozmawialiśmy o tym długo"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1880151765.png</image:loc>
+      <image:title>Trump ujawnia kulisy spotkania z szefem NATO. "Rozmawialiśmy o tym długo"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/wypadek-na-dolnym-slasku-bus-uderzyl-w-drzewo-13-osob/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T07:10:59+01:00</news:publication_date>
+      <news:title>Wypadek na Dolnym Śląsku. Bus uderzył w drzewo (13 osób)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1348435351.png</image:loc>
+      <image:title>Wypadek na Dolnym Śląsku. Bus uderzył w drzewo (13 osób)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/swieczkowski-reaguje-na-zawieszenie-decyzje-sa-bezprawne/</loc>
     <news:news>
       <news:publication>
@@ -798,21 +933,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/wielki-debiut-polskiego-zespolu-w-lidze-mistrzyn/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:01:20+01:00</news:publication_date>
-      <news:title>Wielki debiut polskiego zespołu w Lidze Mistrzyń</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/462115590.png</image:loc>
-      <image:title>Wielki debiut polskiego zespołu w Lidze Mistrzyń</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podlaskie/jak-nie-dac-sie-oszukac-swiadomy-senior-bezpieczny-senior/</loc>
     <news:news>
       <news:publication>
@@ -1140,21 +1260,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1391263062.png</image:loc>
       <image:title>Miliardy na inwestycje, miliony na odsetki. Tak zadłużają się największe polskie miasta</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/jest-kandydat-na-nowego-szefa-ebc-znamy-nazwisko-nastepcy-lagarde/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T16:01:06+01:00</news:publication_date>
-      <news:title>Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1643317357.png</image:loc>
-      <image:title>Jest kandydat na nowego szefa EBC. Znamy nazwisko następcy Lagarde</image:title>
     </image:image>
   </url>
   <url>
@@ -3405,81 +3510,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/736474599.png</image:loc>
       <image:title>Poważna awaria na kolei w Warszawie. Opóźnione i przekierowane pociągi</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/problem-ubostwa-dotyczy-2-mln-polakow-takze-na-kujawach-i-pomorzu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T07:10:57+01:00</news:publication_date>
-      <news:title>Problem ubóstwa dotyczy 2 mln Polaków, także na Kujawach i Pomorzu. „Niektórym wstyd jest prosić o pomoc”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/445377289.png</image:loc>
-      <image:title>Problem ubóstwa dotyczy 2 mln Polaków, także na Kujawach i Pomorzu. „Niektórym wstyd jest prosić o pomoc”</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/ten-dokument-musza-miec-wlasciciele-wszystkich-domow-i-mieszkan/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T07:10:56+01:00</news:publication_date>
-      <news:title>Ten dokument muszą mieć właściciele wszystkich domów i mieszkań. Wlepiają 5 tysięcy złotych kary za jego brak.</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1497074608.png</image:loc>
-      <image:title>Ten dokument muszą mieć właściciele wszystkich domów i mieszkań. Wlepiają 5 tysięcy złotych kary za jego brak.</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/leszczyna-kandydatka-ko-do-rady-polityki-pienieznej-grodzki-potwierdza/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T07:10:55+01:00</news:publication_date>
-      <news:title>Leszczyna kandydatką KO do Rady Polityki Pieniężnej. Grodzki potwierdza</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1350921737.png</image:loc>
-      <image:title>Leszczyna kandydatką KO do Rady Polityki Pieniężnej. Grodzki potwierdza</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/macie-w-domu-kominek-jesli-tego-nie-zrobicie-wlepia-wam-wielka-kare-to/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T07:10:53+01:00</news:publication_date>
-      <news:title>Macie w domu kominek? Jeśli tego nie zrobicie, wlepią wam wielką karę. To nawet kilka tysięcy złotych</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1937525537.png</image:loc>
-      <image:title>Macie w domu kominek? Jeśli tego nie zrobicie, wlepią wam wielką karę. To nawet kilka tysięcy złotych</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/podwyzka-cel-w-usa-ue-ogranicza-import-hybryd-z-chin-ai-w-polskich/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T07:10:52+01:00</news:publication_date>
-      <news:title>Podwyżka ceł w USA, UE ogranicza import hybryd z Chin, AI w polskich firmach</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2110514769.png</image:loc>
-      <image:title>Podwyżka ceł w USA, UE ogranicza import hybryd z Chin, AI w polskich firmach</image:title>
     </image:image>
   </url>
 </urlset>
