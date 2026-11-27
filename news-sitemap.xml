@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/wypadek-na-autostradzie-a1-zderzenie-trzech-pojazdow-w-akcji-lpr/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:11+01:00</news:publication_date>
+      <news:title>Wypadek na autostradzie A1. Zderzenie trzech pojazdów, w akcji LPR</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1950427038.png</image:loc>
+      <image:title>Wypadek na autostradzie A1. Zderzenie trzech pojazdów, w akcji LPR</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/zakopane-stawia-betonowe-zapory-przy-krupowkach-i-jarmarku-swiatecznym/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:10+01:00</news:publication_date>
+      <news:title>Zakopane stawia betonowe zapory przy Krupówkach i jarmarku świątecznym</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2107683421.png</image:loc>
+      <image:title>Zakopane stawia betonowe zapory przy Krupówkach i jarmarku świątecznym</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/szczecinski-jarmark-bozonarodzeniowy-zmiany-w-komunikacji/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:09+01:00</news:publication_date>
+      <news:title>Szczeciński Jarmark Bożonarodzeniowy. Zmiany w komunikacji</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1974555573.png</image:loc>
+      <image:title>Szczeciński Jarmark Bożonarodzeniowy. Zmiany w komunikacji</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/padla-propozycja-sprzedazy-chinom-volkswagena-dopoki-cos-za-niego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:07+01:00</news:publication_date>
+      <news:title>Padła propozycja sprzedaży Chinom Volkswagena. "Dopóki coś za niego dostaniemy" (50 tys. zł)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/885104368.png</image:loc>
+      <image:title>Padła propozycja sprzedaży Chinom Volkswagena. "Dopóki coś za niego dostaniemy" (50 tys. zł)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/biedronka-lidl-i-dino-biora-tylko-polowe-rynku-miejsca-dla-rywali-wciaz/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:06+01:00</news:publication_date>
+      <news:title>Biedronka, Lidl i Dino biorą „tylko” połowę rynku. Miejsca dla rywali wciąż sporo [DANE]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1867989551.png</image:loc>
+      <image:title>Biedronka, Lidl i Dino biorą „tylko” połowę rynku. Miejsca dla rywali wciąż sporo [DANE]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/inpost-wchodzi-do-irlandii-w-dwa-lata-stanie-tam-ponad-1000-paczkomatow/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:05+01:00</news:publication_date>
+      <news:title>InPost wchodzi do Irlandii. W dwa lata stanie tam ponad 1000 Paczkomatów (1 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2044780397.png</image:loc>
+      <image:title>InPost wchodzi do Irlandii. W dwa lata stanie tam ponad 1000 Paczkomatów (1 tys.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/lotwa-dron-naruszyl-lotewska-przestrzen-powietrzna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:04+01:00</news:publication_date>
+      <news:title>Łotwa: Dron naruszył łotewską przestrzeń powietrzną</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/407343970.png</image:loc>
+      <image:title>Łotwa: Dron naruszył łotewską przestrzeń powietrzną</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/autopay-potwierdza-ze-wlamywacz-mial-dostep-do-kodow-cvv2/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:04+01:00</news:publication_date>
+      <news:title>Autopay potwierdza, że włamywacz miał dostęp do kodów CVV2</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1925803613.png</image:loc>
+      <image:title>Autopay potwierdza, że włamywacz miał dostęp do kodów CVV2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/tragedia-w-chelmie-nie-zyje-mlody-zolnierz-wczesniej-komendant-oglosil/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T09:00:03+01:00</news:publication_date>
+      <news:title>Tragedia w Chełmie. Nie żyje młody żołnierz. Wcześniej komendant ogłosił alarm</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/231673696.png</image:loc>
+      <image:title>Tragedia w Chełmie. Nie żyje młody żołnierz. Wcześniej komendant ogłosił alarm</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/bedzie-referendum-ws-odwolania-prezydenta-nowy-sondaz-w-poznaniu/</loc>
     <news:news>
       <news:publication>
@@ -85,11 +220,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-27T07:11:03+01:00</news:publication_date>
-      <news:title>Pomalowanie pomników w Warszawie. Są zatrzymania</news:title>
+      <news:title>Rosyjski wywiad za dewastacją pomników w Warszawie? Policja zatrzymała 6 osób</news:title>
     </news:news>
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1129839251.png</image:loc>
-      <image:title>Pomalowanie pomników w Warszawie. Są zatrzymania</image:title>
+      <image:title>Rosyjski wywiad za dewastacją pomników w Warszawie? Policja zatrzymała 6 osób</image:title>
     </image:image>
   </url>
   <url>
@@ -213,6 +348,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/znamy-nastepce-lagarde-to-on-ma-zostac-szefem-europejskiego-banku/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T02:53:32+01:00</news:publication_date>
+      <news:title>Znamy następcę Lagarde. To on ma zostać szefem Europejskiego Banku Centralnego (45 mld)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/140707193.png</image:loc>
+      <image:title>Znamy następcę Lagarde. To on ma zostać szefem Europejskiego Banku Centralnego (45 mld)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/incydent-z-kibicami-jagiellonii-w-anglii-wylapywano-i-wyrzucano-ze/</loc>
     <news:news>
       <news:publication>
@@ -255,21 +405,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/373465054.png</image:loc>
       <image:title>Premier Litwy odpowiada Radosławowi Sikorskiemu: takie sprawy załatwia się bez mediów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/od-ekspresow-po-odkurzacze-male-i-duze-agd-z-megaobnizkami-na-black/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T01:08:18+01:00</news:publication_date>
-      <news:title>Od ekspresów po odkurzacze. Małe i duże AGD z megaobniżkami na Black Friday (399 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1716231641.png</image:loc>
-      <image:title>Od ekspresów po odkurzacze. Małe i duże AGD z megaobniżkami na Black Friday (399 zł)</image:title>
     </image:image>
   </url>
   <url>
@@ -615,21 +750,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/341170521.png</image:loc>
       <image:title>Nie żyje Strobe Talbott. Były podsekretarz stanu USA miał 80 lat</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/donald-trump-zaapelowal-do-wladimira-putina-o-zaprzestanie-agresji-w/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T21:55:51+01:00</news:publication_date>
-      <news:title>Donald Trump zaapelował do Władimira Putina o zaprzestanie agresji w Europie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/812277265.png</image:loc>
-      <image:title>Donald Trump zaapelował do Władimira Putina o zaprzestanie agresji w Europie</image:title>
     </image:image>
   </url>
   <url>
@@ -2013,21 +2133,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/jesien-sztuki-w-lodzi-to-jedno-z-kulturalnych-wydarzen-tego-roku-przed/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T05:01:42+01:00</news:publication_date>
-      <news:title>Jesień Sztuki w Łodzi. To jedno z kulturalnych wydarzeń tego roku. Przed nami polska premiera serialu wyproduk</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/940613982.png</image:loc>
-      <image:title>Jesień Sztuki w Łodzi. To jedno z kulturalnych wydarzeń tego roku. Przed nami polska premiera serialu wyproduk</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/beniaminek-ogral-faworyta-w-polskiej-lidze-siatkarzy-co-za-popis-mvp/</loc>
     <news:news>
       <news:publication>
@@ -3213,21 +3318,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/2-5-mln-biletow-co-najmniej-35-proc-taniej-pkp-intercity-ruszyly-z/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T13:20:40+01:00</news:publication_date>
-      <news:title>2,5 mln biletów co najmniej 35 proc. taniej. PKP Intercity ruszyły z promocją na święta</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/683952668.png</image:loc>
-      <image:title>2,5 mln biletów co najmniej 35 proc. taniej. PKP Intercity ruszyły z promocją na święta</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/tragiczny-wypadek-nie-zyje-45-latek/</loc>
     <news:news>
       <news:publication>
@@ -3420,96 +3510,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1142790033.png</image:loc>
       <image:title>Rafał Brzoska stawia 1,2 mld zł na InPost. Oto kulisy transakcji z FedExem (WYWIAD)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/praca-tymczasowa-rosnie-w-sile-rekrutacje-na-etaty-wyhamowaly-7-proc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:13+01:00</news:publication_date>
-      <news:title>Praca tymczasowa rośnie w siłę. Rekrutacje na etaty wyhamowały (7 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/983010043.png</image:loc>
-      <image:title>Praca tymczasowa rośnie w siłę. Rekrutacje na etaty wyhamowały (7 proc.)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/komunikat-pzpn-ws-urbana-boniek-grzmi-nie-rozumiem/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:12+01:00</news:publication_date>
-      <news:title>Komunikat PZPN ws. Urbana. Boniek grzmi. "Nie rozumiem"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/523929713.png</image:loc>
-      <image:title>Komunikat PZPN ws. Urbana. Boniek grzmi. "Nie rozumiem"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/burza-wokol-collegium-humanum-wniosek-wobec-holowni-wstrzymany-na/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:11+01:00</news:publication_date>
-      <news:title>Burza wokół Collegium Humanum. Wniosek wobec Hołowni wstrzymany na ostatniej prostej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1373145773.png</image:loc>
-      <image:title>Burza wokół Collegium Humanum. Wniosek wobec Hołowni wstrzymany na ostatniej prostej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Mazowieckie/groza-w-warszawskim-liceum-15-latka-deklarowala-przygotowanie-zamachu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:10+01:00</news:publication_date>
-      <news:title>Groza w warszawskim liceum. 15-latka deklarowała przygotowanie zamachu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/999886186.png</image:loc>
-      <image:title>Groza w warszawskim liceum. 15-latka deklarowała przygotowanie zamachu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/usa-zmieniaja-strategie-wobec-putina-kreml-odrzucil-amerykanska-pokuse/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:09+01:00</news:publication_date>
-      <news:title>USA zmieniają strategię wobec Putina? Kreml odrzucił amerykańską pokusę gospodarczą</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/91570995.png</image:loc>
-      <image:title>USA zmieniają strategię wobec Putina? Kreml odrzucił amerykańską pokusę gospodarczą</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/powazna-awaria-na-kolei-w-warszawie-opoznione-i-przekierowane-pociagi/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T09:01:08+01:00</news:publication_date>
-      <news:title>Poważna awaria na kolei w Warszawie. Opóźnione i przekierowane pociągi</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/736474599.png</image:loc>
-      <image:title>Poważna awaria na kolei w Warszawie. Opóźnione i przekierowane pociągi</image:title>
     </image:image>
   </url>
 </urlset>
