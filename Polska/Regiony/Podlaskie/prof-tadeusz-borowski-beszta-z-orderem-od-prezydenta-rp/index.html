@@ -177,7 +177,7 @@
           Konto
         </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">2</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">1</span>
         </button>
       </div>
     </div>
@@ -194,7 +194,7 @@
           </div>
         </a>
 
-        <a id="weatherBubble" class="weather-bubble" href="../../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Pogodnie, 0.3°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, 0°C, Pogodnie. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">☀️</span><span class="wb-city">Warszawa</span><span class="wb-temp">0°C</span></a>
+        <a id="weatherBubble" class="weather-bubble" href="../../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Pogodnie, -0.4°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, 0°C, Pogodnie. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">☀️</span><span class="wb-city">Warszawa</span><span class="wb-temp">0°C</span></a>
 
         <div class="header-controls">
           <div class="search-box">
@@ -266,7 +266,7 @@
     </div>
     </div>
   </header>
-  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.47</span><span class="mkt-chg chg-down">▼ -0.29%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.67%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.88</span><span class="mkt-chg chg-down">▼ -0.43%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 090</span><span class="mkt-chg chg-up">▲ +1.15%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 297</span><span class="mkt-chg chg-up">▲ +1.60%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 987</span><span class="mkt-chg chg-up">▲ +0.80%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$59 841</span><span class="mkt-chg chg-down">▼ -1.12%</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
+  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.47</span><span class="mkt-chg chg-down">▼ -0.29%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.67%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.88</span><span class="mkt-chg chg-down">▼ -0.43%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 090</span><span class="mkt-chg chg-up">▲ +1.15%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 297</span><span class="mkt-chg chg-up">▲ +1.60%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 987</span><span class="mkt-chg chg-up">▲ +0.80%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$59 858</span><span class="mkt-chg chg-down">▼ -1.34%</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -291,9 +291,9 @@
           <figure class="article-hero-figure">
           <div class="article-hero-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Podlaskie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="../../../../media/topic-sejm-4.jpg" alt="Prof. Tadeusz Borowski-Beszta z orderem od prezydenta RP" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
+            <img src="../../../../media/topic-sejm-3.jpg" alt="Prof. Tadeusz Borowski-Beszta z orderem od prezydenta RP" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
           </div>
-          <figcaption class="article-hero-caption">Fot. ilustracyjne: Marek and Ewa Wojciechowscy (CC BY-SA 3.0, Wikimedia Commons) · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">Licencja CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:5_Warszawa_083.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
+          <figcaption class="article-hero-caption">Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons) · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">Licencja CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
         </figure>
           <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">2 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Regiony/<wbr>Podlaskie</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Radio Białystok</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (2 źródła)</div></div></div>
           
@@ -321,7 +321,7 @@
             </div>
           </div>
           <p class="perspective-summary">Prof. Tadeusz Borowski-Beszta z orderem od prezydenta RP</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Państwowe, przyznał, profesorowi.</div><div><strong>Pomija:</strong> Pomija kontekst (organizacyjne, osiągnięcia, ochrony) rozwijany w TVP3 Białystok.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Państwowe, przyznał, profesorowi.</div><div><strong>Pomija:</strong> Pomija kontekst (Order, WIDEO) rozwijany w TVP3 Białystok.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.radio.bialystok.pl/wiadomosci/index/id/267176" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Radio Białystok" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="TVP3 Białystok">
           <div class="perspective-head">
@@ -332,7 +332,7 @@
             </div>
           </div>
           <p class="perspective-summary">Order Odrodzenia Polski dla dr Tadeusza Borowskiego-Beszty [WIDEO]</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Order, WIDEO, Doktor.</div><div><strong>Pomija:</strong> Pomija kontekst (Niepodległości, Andruszkiewicz, zaangażowanie) rozwijany w Radio Białystok.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Order, WIDEO.</div><div><strong>Pomija:</strong> Pomija kontekst (Niepodległości, białostockim, profesorowi) rozwijany w Radio Białystok.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://bialystok.tvp.pl/96731932/order-odrodzenia-polski-dla-dr-tadeusza-borowskiego-beszty-wideo" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="TVP3 Białystok" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
@@ -364,8 +364,8 @@
         <aside class="article-aside">
           <div class="aside-card">
             <div class="aside-title">Zgodność danych</div>
-            <div class="big-meter meter ok">88%<small>2 źródła</small></div>
-            <div class="meter-bar wide"><span class="meter-fill" style="width:88%"></span></div>
+            <div class="big-meter meter ok">90%<small>2 źródła</small></div>
+            <div class="meter-bar wide"><span class="meter-fill" style="width:90%"></span></div>
           </div>
           
           <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.radio.bialystok.pl/wiadomosci/index/id/267176" target="_blank" rel="noopener noreferrer"><span>Radio Białystok</span><span>↗</span></a></li><li><a href="https://bialystok.tvp.pl/96731932/order-odrodzenia-polski-dla-dr-tadeusza-borowskiego-beszty-wideo" target="_blank" rel="noopener noreferrer"><span>TVP3 Białystok</span><span>↗</span></a></li></ul></div>

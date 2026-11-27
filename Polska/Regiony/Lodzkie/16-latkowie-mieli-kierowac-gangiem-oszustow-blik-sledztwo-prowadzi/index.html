@@ -204,7 +204,7 @@
           Konto
         </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">2</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">1</span>
         </button>
       </div>
     </div>
@@ -221,7 +221,7 @@
           </div>
         </a>
 
-        <a id="weatherBubble" class="weather-bubble" href="../../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Pogodnie, 0.3°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, 0°C, Pogodnie. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">☀️</span><span class="wb-city">Warszawa</span><span class="wb-temp">0°C</span></a>
+        <a id="weatherBubble" class="weather-bubble" href="../../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Pogodnie, -0.4°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, 0°C, Pogodnie. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">☀️</span><span class="wb-city">Warszawa</span><span class="wb-temp">0°C</span></a>
 
         <div class="header-controls">
           <div class="search-box">
@@ -293,7 +293,7 @@
     </div>
     </div>
   </header>
-  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.47</span><span class="mkt-chg chg-down">▼ -0.29%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.67%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.88</span><span class="mkt-chg chg-down">▼ -0.43%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 090</span><span class="mkt-chg chg-up">▲ +1.15%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 297</span><span class="mkt-chg chg-up">▲ +1.60%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 987</span><span class="mkt-chg chg-up">▲ +0.80%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$59 841</span><span class="mkt-chg chg-down">▼ -1.12%</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
+  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.47</span><span class="mkt-chg chg-down">▼ -0.29%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.67%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.88</span><span class="mkt-chg chg-down">▼ -0.43%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 090</span><span class="mkt-chg chg-up">▲ +1.15%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 297</span><span class="mkt-chg chg-up">▲ +1.60%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 987</span><span class="mkt-chg chg-up">▲ +0.80%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$59 858</span><span class="mkt-chg chg-down">▼ -1.34%</span></span></div><a class="ticker-more" href="../../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -318,9 +318,9 @@
           <figure class="article-hero-figure">
           <div class="article-hero-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Łódzkie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="../../../../media/reg-lodzkie-2.jpg" alt="16-latkowie mieli kierować gangiem oszustów BLIK. Śledztwo prowadzi łódzka prokuratura" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
+            <img src="../../../../media/reg-lodzkie.jpg" alt="16-latkowie mieli kierować gangiem oszustów BLIK. Śledztwo prowadzi łódzka prokuratura" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
           </div>
-          <figcaption class="article-hero-caption">Fot. ilustracyjne: Scotch Mist (CC BY-SA 4.0, Wikimedia Commons) · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">Licencja CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:%C5%81%C3%B3d%C5%BA_2023_01.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
+          <figcaption class="article-hero-caption">Fot. ilustracyjne: Aciarium (CC BY-SA 4.0, Wikimedia Commons) · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">Licencja CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:DSC08246_Memorial_Stones_for_the_Citizens_of_%C5%81%C3%B3d%C5%BA,_Poland,_2025-09.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
         </figure>
           <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">5 redakcji</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Regiony/<wbr>Lodzkie</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">TVP3 Łódź</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (5 źródeł)</div></div></div>
           
@@ -432,7 +432,23 @@
         </aside>
       </div>
       
-      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:25" data-id="1950427038">
+      <section class="related"><h2>Czytaj dalej</h2><div class="cards-grid"><article class="cat" style="--h:25" data-id="118312765">
+      <div class="story-card">
+        <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/niebezpieczne-znalezisko-przy-zeromskiego-w-lodzi-ewakuowano-47-osob/" onclick="return openArticleLink(event, 118312765, '/Polska/Regiony/Lodzkie/niebezpieczne-znalezisko-przy-zeromskiego-w-lodzi-ewakuowano-47-osob')" tabindex="-1" aria-hidden="true">
+          <div class="story-thumb-wrap">
+            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Łódzkie</span><span class="thumb-fallback-mark">V</span></div>
+            <img src="../../../../media/reg-lodzkie-2.jpg" alt="Niebezpieczne znalezisko przy Żeromskiego w Łodzi. Ewakuowano 47 osób" class="story-thumb" loading="lazy" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
+          </div>
+        </a>
+        <div class="story-body">
+          <div class="story-top"><span class="cat-badge">Łódzkie</span><span class="story-date">27.11.2026, 19:56</span></div>
+          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Lodzkie/niebezpieczne-znalezisko-przy-zeromskiego-w-lodzi-ewakuowano-47-osob/" onclick="return openArticleLink(event, 118312765, '/Polska/Regiony/Lodzkie/niebezpieczne-znalezisko-przy-zeromskiego-w-lodzi-ewakuowano-47-osob')">Niebezpieczne znalezisko przy Żeromskiego w Łodzi. Ewakuowano 47 osób</a></h2>
+          <p class="story-lede">Trzy butelki z silnie wybuchową substancją znaleziono podczas prac inwentaryzacyjnych w jednym z budynków przy ul. Żeromskiego.</p>
+          <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Lodzkie</span></div>
+          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
+        </div>
+      </div>
+    </article><article class="cat" style="--h:25" data-id="1950427038">
       <div class="story-card">
         <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/wypadek-na-autostradzie-a1-zderzenie-trzech-pojazdow-w-akcji-lpr/" onclick="return openArticleLink(event, 1950427038, '/Polska/Regiony/Lodzkie/wypadek-na-autostradzie-a1-zderzenie-trzech-pojazdow-w-akcji-lpr')" tabindex="-1" aria-hidden="true">
           <div class="story-thumb-wrap">
@@ -444,22 +460,6 @@
           <div class="story-top"><span class="cat-badge">Łódzkie</span><span class="story-date">27.11.2026, 09:00</span></div>
           <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Lodzkie/wypadek-na-autostradzie-a1-zderzenie-trzech-pojazdow-w-akcji-lpr/" onclick="return openArticleLink(event, 1950427038, '/Polska/Regiony/Lodzkie/wypadek-na-autostradzie-a1-zderzenie-trzech-pojazdow-w-akcji-lpr')">Wypadek na autostradzie A1. Zderzenie trzech pojazdów, w akcji LPR</a></h2>
           <p class="story-lede">W piątek, 27 listopada, na 339. kilometrze autostrady A1, na wysokości miejscowości Sierosław w powiecie piotrkowskim, doszło do poważnego wypadku z udziałem trzech pojazdów.</p>
-          <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Lodzkie</span></div>
-          <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
-        </div>
-      </div>
-    </article><article class="cat" style="--h:25" data-id="588718028">
-      <div class="story-card">
-        <a class="card-media-link" href="../../../../Polska/Regiony/Lodzkie/smiertelny-pozar-przy-ul-brzezinskiej-w-lodzi-mimo-reanimacji-zycia/" onclick="return openArticleLink(event, 588718028, '/Polska/Regiony/Lodzkie/smiertelny-pozar-przy-ul-brzezinskiej-w-lodzi-mimo-reanimacji-zycia')" tabindex="-1" aria-hidden="true">
-          <div class="story-thumb-wrap">
-            <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Łódzkie</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="../../../../media/reg-lodzkie.jpg" alt="Śmiertelny pożar przy ul. Brzezińskiej w Łodzi. Mimo reanimacji życia seniorki nie udało się uratować" class="story-thumb" loading="lazy" onerror="this.parentElement.classList.add('no-thumb');this.remove()" />
-          </div>
-        </a>
-        <div class="story-body">
-          <div class="story-top"><span class="cat-badge">Łódzkie</span><span class="story-date">26.11.2026, 19:05</span></div>
-          <h2 class="story-title"><a class="story-title-link" href="../../../../Polska/Regiony/Lodzkie/smiertelny-pozar-przy-ul-brzezinskiej-w-lodzi-mimo-reanimacji-zycia/" onclick="return openArticleLink(event, 588718028, '/Polska/Regiony/Lodzkie/smiertelny-pozar-przy-ul-brzezinskiej-w-lodzi-mimo-reanimacji-zycia')">Śmiertelny pożar przy ul. Brzezińskiej w Łodzi. Mimo reanimacji życia seniorki nie udało się uratować</a></h2>
-          <p class="story-lede">W czwartek, 26 listopada około godz. 11:00 doszło do tragicznego w skutkach pożaru przy ulicy Brzezińskiej w Łodzi. Mimo reanimacji życia około 90-letniej kobiety nie udało się uratować.</p>
           <div class="story-chips"><span class="chip" title="Liczba źródeł">2 redakcje</span><span class="chip" title="Kategoria">/Polska/Regiony/Lodzkie</span></div>
           <div class="story-foot"><span class="meter ok"><span class="meter-bar"><span class="meter-fill" style="width:92%"></span></span>92% zgodności</span><span>2 źródła · 1 min</span></div>
         </div>

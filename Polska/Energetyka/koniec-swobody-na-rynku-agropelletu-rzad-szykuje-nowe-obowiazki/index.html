@@ -87,15 +87,6 @@
           "@type": "Organization",
           "name": "WysokieNapiecie.pl"
         }
-      },
-      {
-        "@type": "NewsArticle",
-        "headline": "Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał",
-        "url": "https://businessinsider.com.pl/prawo/podatki/podwyzki-podatkow-i-inne-zmiany-od-2027-r-te-ustawy-prezydent-podpisal/38k5sy4",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Business Insider PL"
-        }
       }
     ]
   },
@@ -189,7 +180,7 @@
           Konto
         </button>
         <button class="queue-btn" onclick="switchView(currentView === 'public' ? 'editorial' : 'public')">
-          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">2</span>
+          <span class="btn-label-full">Kolejka redakcyjna</span><span class="btn-label-short">Kolejka</span> <span id="pendingBadge" class="queue-count">1</span>
         </button>
       </div>
     </div>
@@ -206,7 +197,7 @@
           </div>
         </a>
 
-        <a id="weatherBubble" class="weather-bubble" href="../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Pogodnie, 0.3°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, 0°C, Pogodnie. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">☀️</span><span class="wb-city">Warszawa</span><span class="wb-temp">0°C</span></a>
+        <a id="weatherBubble" class="weather-bubble" href="../../../pogoda/" onclick="return fixFileHref(event)" title="Warszawa: Pogodnie, -0.4°C — kliknij, aby otworzyć mapę pogody" aria-label="Pogoda: Warszawa, 0°C, Pogodnie. Otwórz mapę pogody."><span class="wb-ico" aria-hidden="true">☀️</span><span class="wb-city">Warszawa</span><span class="wb-temp">0°C</span></a>
 
         <div class="header-controls">
           <div class="search-box">
@@ -278,7 +269,7 @@
     </div>
     </div>
   </header>
-  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.47</span><span class="mkt-chg chg-down">▼ -0.29%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.67%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.88</span><span class="mkt-chg chg-down">▼ -0.43%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 090</span><span class="mkt-chg chg-up">▲ +1.15%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 297</span><span class="mkt-chg chg-up">▲ +1.60%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 987</span><span class="mkt-chg chg-up">▲ +0.80%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$59 841</span><span class="mkt-chg chg-down">▼ -1.12%</span></span></div><a class="ticker-more" href="../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
+  <div class="market-ticker" role="region" aria-label="Notowania rynkowe"><div class="container market-ticker-inner"><div class="ticker-track"><span class="ticker-pill"><span class="tk-lbl">EUR/PLN</span><span class="tk-val">4.47</span><span class="mkt-chg chg-down">▼ -0.29%</span></span><span class="ticker-pill"><span class="tk-lbl">USD/PLN</span><span class="tk-val">4.08</span><span class="mkt-chg chg-down">▼ -0.20%</span></span><span class="ticker-pill"><span class="tk-lbl">NOK/PLN</span><span class="tk-val">0.42</span><span class="mkt-chg chg-up">▲ +0.67%</span></span><span class="ticker-pill"><span class="tk-lbl">CHF/PLN</span><span class="tk-val">4.88</span><span class="mkt-chg chg-down">▼ -0.43%</span></span><span class="ticker-pill"><span class="tk-lbl">WIG20</span><span class="tk-val">4 090</span><span class="mkt-chg chg-up">▲ +1.15%</span></span><span class="ticker-pill"><span class="tk-lbl">S&amp;P 500</span><span class="tk-val">7 297</span><span class="mkt-chg chg-up">▲ +1.60%</span></span><span class="ticker-pill"><span class="tk-lbl">OBX Oslo</span><span class="tk-val">1 987</span><span class="mkt-chg chg-up">▲ +0.80%</span></span><span class="ticker-pill"><span class="tk-lbl">BTC</span><span class="tk-val">$59 858</span><span class="mkt-chg chg-down">▼ -1.34%</span></span></div><a class="ticker-more" href="../../../rynki/" onclick="return fixFileHref(event)"><span class="tk-more-full">Wszystkie notowania →</span><span class="tk-more-short">Rynki →</span></a></div></div>
 
   <main class="container main-content">
     <section id="viewPublic">
@@ -303,26 +294,26 @@
           <figure class="article-hero-figure">
           <div class="article-hero-wrap">
             <div class="thumb-fallback" aria-hidden="true"><span class="thumb-fallback-label">Energetyka</span><span class="thumb-fallback-mark">V</span></div>
-            <img src="../../../media/topic-sejm-3.jpg" alt="Koniec swobody na rynku agropelletu. Rząd szykuje nowe obowiązki" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
+            <img src="../../../media/topic-sejm-5.jpg" alt="Koniec swobody na rynku agropelletu. Rząd szykuje nowe obowiązki" class="article-hero-img" loading="eager" onerror="this.closest('.article-hero-figure')?.remove()" />
           </div>
-          <figcaption class="article-hero-caption">Fot. ilustracyjne: Tadeusz Rudzki (CC BY-SA 4.0, Wikimedia Commons) · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">Licencja CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:POL_Warszawa_Sejm_reliefs_outside_02.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
+          <figcaption class="article-hero-caption">Fot. ilustracyjne: Leon Jarumski (1887-1947) (Public domain, Wikimedia Commons) · <a href="https://commons.wikimedia.org/wiki/Commons:Licensing" target="_blank" rel="noopener noreferrer">Licencja Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Budynek_Senatu_RP_w_1932_roku.jpg" target="_blank" rel="noopener noreferrer">Źródło zdjęcia ↗</a></figcaption>
         </figure>
-          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">4 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Energetyka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Farmer.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (4 źródła)</div></div></div>
+          <div class="facts-strip"><div class="fact-box"><div class="fact-label">Liczba źródeł</div><div class="fact-val">3 redakcje</div></div><div class="fact-box"><div class="fact-label">Kategoria</div><div class="fact-val">/<wbr>Polska/<wbr>Energetyka</div></div><div class="fact-box"><div class="fact-label">Główne źródło</div><div class="fact-val">Farmer.pl</div></div><div class="fact-box"><div class="fact-label">Weryfikacja</div><div class="fact-val">Potwierdzone (3 źródła)</div></div></div>
           
           
           
           
           
-          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(4)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Farmer.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Farmer.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Energetyka24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Energetyka24 <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WysokieNapiecie.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WysokieNapiecie.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Business Insider PL" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Business Insider PL <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
+          <div class="source-filter-bar" role="region" aria-label="Filtruj relacje według redakcji"><div class="source-filter-head"><span class="source-filter-label">Filtruj wg redakcji</span><span class="source-filter-hint">Kliknij źródło, aby wyróżnić jego ustalenia w tekście</span></div><div class="source-filter-pills"><button type="button" class="source-filter-chip active" data-outlet-filter="" aria-pressed="true" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Wszystkie <span class="source-chip-count">(3)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Farmer.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Farmer.pl <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="Energetyka24" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">Energetyka24 <span class="source-chip-count">(1)</span></button><button type="button" class="source-filter-chip" data-outlet-filter="WysokieNapiecie.pl" aria-pressed="false" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-filter'))">WysokieNapiecie.pl <span class="source-chip-count">(1)</span></button></div><div id="sourceFilterStatus" class="source-filter-status hidden" aria-live="polite"></div></div>
 
           <div class="article-sections">
-            <section data-sec-idx="0"><h2 class="section-heading" id="sec_1200223694_0">Ustalenia wspólne (4 redakcje)</h2><blockquote class="section-paragraph has-dropcap source-quote" cite="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" data-outlets="Farmer.pl">Nowelizacja przepisów o systemie monitorowania i kontrolowania jakości paliw ma ukrócić sprzedaż niskiej jakości biomasy i dostosować polskie prawo do unijnych norm środowiskowych. <a class="cite-tag cite-link" href="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Farmer.pl">Farmer.pl ↗</a></blockquote></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_1200223694_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><blockquote class="section-paragraph source-quote" cite="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" data-outlets="Energetyka24">Polskie regulacje dotyczące rynku wodoru mają zostać rozszerzone. Nowe przepisy mają uzupełnić rozwiązania przyjęte w 2024 r. i usunąć bariery prawne utrudniające rozwój infrastruktury oraz obrót wodorem. <a class="cite-tag cite-link" href="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Energetyka24">Energetyka24 ↗</a></blockquote><blockquote class="section-paragraph source-quote" cite="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" data-outlets="WysokieNapiecie.pl">Rząd musi coś zrobić z obecnym systemem, bo Komisja Europejska uważa, że jest niezgodny z unijnymi regulacjami i pozwała Polskę do TSUE. Zgodnie z opublikowanymi założeniami projektu utrzymywanie zapasów ma przejść na Rządową Agencję Rezerw Strategicznych. Ma być finansowane z opłaty magazynowej, płaconej przez operatorów systemów gazowych i podmioty, zlecające przesył gazu. <a class="cite-tag cite-link" href="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WysokieNapiecie.pl">WysokieNapiecie.pl ↗</a></blockquote><blockquote class="section-paragraph source-quote" cite="https://businessinsider.com.pl/prawo/podatki/podwyzki-podatkow-i-inne-zmiany-od-2027-r-te-ustawy-prezydent-podpisal/38k5sy4" data-outlets="Business Insider PL">Poniżej udostępniamy kalkulator, w którym sprawdzisz, ile stracisz (albo raczej: nie zyskasz) na tej decyzji. <a class="cite-tag cite-link" href="https://businessinsider.com.pl/prawo/podatki/podwyzki-podatkow-i-inne-zmiany-od-2027-r-te-ustawy-prezydent-podpisal/38k5sy4" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Business Insider PL">Business Insider PL ↗</a></blockquote></section>
+            <section data-sec-idx="0"><h2 class="section-heading" id="sec_1200223694_0">Ustalenia wspólne (3 redakcje)</h2><blockquote class="section-paragraph has-dropcap source-quote" cite="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" data-outlets="Farmer.pl">Nowelizacja przepisów o systemie monitorowania i kontrolowania jakości paliw ma ukrócić sprzedaż niskiej jakości biomasy i dostosować polskie prawo do unijnych norm środowiskowych. <a class="cite-tag cite-link" href="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Farmer.pl">Farmer.pl ↗</a></blockquote></section><section data-sec-idx="1"><h2 class="section-heading" id="sec_1200223694_1">Dodatkowe szczegóły i kontekst ze źródeł</h2><blockquote class="section-paragraph source-quote" cite="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" data-outlets="Energetyka24">Polskie regulacje dotyczące rynku wodoru mają zostać rozszerzone. Nowe przepisy mają uzupełnić rozwiązania przyjęte w 2024 r. i usunąć bariery prawne utrudniające rozwój infrastruktury oraz obrót wodorem. <a class="cite-tag cite-link" href="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: Energetyka24">Energetyka24 ↗</a></blockquote><blockquote class="section-paragraph source-quote" cite="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" data-outlets="WysokieNapiecie.pl">Rząd musi coś zrobić z obecnym systemem, bo Komisja Europejska uważa, że jest niezgodny z unijnymi regulacjami i pozwała Polskę do TSUE. Zgodnie z opublikowanymi założeniami projektu utrzymywanie zapasów ma przejść na Rządową Agencję Rezerw Strategicznych. Ma być finansowane z opłaty magazynowej, płaconej przez operatorów systemów gazowych i podmioty, zlecające przesył gazu. <a class="cite-tag cite-link" href="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" target="_blank" rel="noopener noreferrer" title="Otwórz artykuł źródłowy w: WysokieNapiecie.pl">WysokieNapiecie.pl ↗</a></blockquote></section>
           </div>
 
           <div class="perspectives-box">
             <div class="perspectives-header">
               <span class="perspectives-title">Kto jak to przedstawia?</span>
-              <span class="perspectives-sources">4 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
+              <span class="perspectives-sources">3 źródła · kliknij wybraną, by wyróżnić jej ustalenia</span>
             </div>
             <div class="perspectives-grid"><div class="perspective-col" data-outlet="Farmer.pl">
           <div class="perspective-head">
@@ -333,7 +324,7 @@
             </div>
           </div>
           <p class="perspective-summary">Koniec swobody na rynku agropelletu. Rząd szykuje nowe obowiązki</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Koniec, swobody, agropelletu.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2024, 2027) przytaczane przez Energetyka24, Business Insider PL.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Koniec, swobody, agropelletu.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2024) przytaczane przez Energetyka24.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Farmer.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="Energetyka24">
           <div class="perspective-head">
@@ -344,7 +335,7 @@
             </div>
           </div>
           <p class="perspective-summary">Rząd szykuje przepisy, które otworzą drogę do rozwoju rynku wodoru w Polsce</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2024) oraz wątki: otworzą, drogę.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2027) przytaczane przez Business Insider PL.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2024) oraz wątki: otworzą, drogę.</div><div><strong>Pomija:</strong> Pomija kontekst (środowiskowych, opublikowanymi, Strategicznych) rozwijany w Farmer.pl, WysokieNapiecie.pl.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Energetyka24" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div><div class="perspective-col" data-outlet="WysokieNapiecie.pl">
           <div class="perspective-head">
@@ -355,19 +346,8 @@
             </div>
           </div>
           <p class="perspective-summary">Duże zmiany na rynku gazu? Rząd szykuje nową ustawę, a magazyny mogą zmienić właściciela</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: gazu, ustawę, magazyny.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2024, 2027) przytaczane przez Energetyka24, Business Insider PL.</div></div>
+          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Wyróżnia własne wątki i pojęcia: Duże, zmiany, gazu.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2024) przytaczane przez Energetyka24.</div></div>
           <div class="perspective-actions"><a class="perspective-link" href="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="WysokieNapiecie.pl" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
-        </div><div class="perspective-col" data-outlet="Business Insider PL">
-          <div class="perspective-head">
-            <span class="outlet-mono" aria-hidden="true">BI</span>
-            <div>
-              <div class="perspective-outlet">Business Insider PL</div>
-              <div class="perspective-angle">Doniesienie regionalne</div>
-            </div>
-          </div>
-          <p class="perspective-summary">Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</p>
-          <div class="perspective-diff"><div><strong>Eksponuje:</strong> Eksponuje dane (2027) oraz wątki: podatkach, ustawy.</div><div><strong>Pomija:</strong> Pomija wyliczenia (2024) przytaczane przez Energetyka24.</div></div>
-          <div class="perspective-actions"><a class="perspective-link" href="https://businessinsider.com.pl/prawo/podatki/podwyzki-podatkow-i-inne-zmiany-od-2027-r-te-ustawy-prezydent-podpisal/38k5sy4" target="_blank" rel="noopener noreferrer">Otwórz artykuł źródłowy ↗</a><button type="button" class="perspective-filter-btn" data-outlet-btn="Business Insider PL" onclick="setArticleOutletFilter(this.getAttribute('data-outlet-btn'))">Wyróżnij w tekście</button></div>
         </div></div>
             
           </div>
@@ -398,11 +378,11 @@
         <aside class="article-aside">
           <div class="aside-card">
             <div class="aside-title">Zgodność danych</div>
-            <div class="big-meter meter ok">92%<small>4 źródła</small></div>
-            <div class="meter-bar wide"><span class="meter-fill" style="width:92%"></span></div>
+            <div class="big-meter meter ok">90%<small>3 źródła</small></div>
+            <div class="meter-bar wide"><span class="meter-fill" style="width:90%"></span></div>
           </div>
-          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_1200223694_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (4 redakcje)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_1200223694_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
-          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" target="_blank" rel="noopener noreferrer"><span>Farmer.pl</span><span>↗</span></a></li><li><a href="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" target="_blank" rel="noopener noreferrer"><span>Energetyka24</span><span>↗</span></a></li><li><a href="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" target="_blank" rel="noopener noreferrer"><span>WysokieNapiecie.pl</span><span>↗</span></a></li><li><a href="https://businessinsider.com.pl/prawo/podatki/podwyzki-podatkow-i-inne-zmiany-od-2027-r-te-ustawy-prezydent-podpisal/38k5sy4" target="_blank" rel="noopener noreferrer"><span>Business Insider PL</span><span>↗</span></a></li></ul></div>
+          <div class="aside-card"><div class="aside-title">W tym artykule</div><ul class="aside-list"><li><button class="toc-btn" onclick="document.getElementById('sec_1200223694_0').scrollIntoView({behavior:'smooth'})"><span>Ustalenia wspólne (3 redakcje)</span><span>↓</span></button></li><li><button class="toc-btn" onclick="document.getElementById('sec_1200223694_1').scrollIntoView({behavior:'smooth'})"><span>Dodatkowe szczegóły i kontekst ze źródeł</span><span>↓</span></button></li></ul></div>
+          <div class="aside-card"><div class="aside-title">Źródła do przeczytania</div><ul class="aside-list"><li><a href="https://www.farmer.pl/energia/koniec-swobody-na-rynku-agropelletu-rzad-szykuje-nowe-obowiazki,186627.html" target="_blank" rel="noopener noreferrer"><span>Farmer.pl</span><span>↗</span></a></li><li><a href="https://energetyka24.com/energetyka/oze/rzad-szykuje-przepisy-ktore-otworza-droge-do-rozwoju-rynku-wodoru-w-polsce" target="_blank" rel="noopener noreferrer"><span>Energetyka24</span><span>↗</span></a></li><li><a href="https://wysokienapiecie.pl/122988-duze-zmiany-na-rynku-gazu-rzad-szykuje-nowa-ustawe-a-magazyny-moga-zmienic-wlasciciela/" target="_blank" rel="noopener noreferrer"><span>WysokieNapiecie.pl</span><span>↗</span></a></li></ul></div>
         </aside>
       </div>
       
