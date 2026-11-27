@@ -1,8 +1,8 @@
 {
-  "updated_iso": "2026-11-27T21:55:06+00:00",
+  "updated_iso": "2026-11-27T22:55:40+00:00",
   "articles_analyzed": 300,
   "outlets_ranked": 122,
-  "zero_clickbait_outlets": 111,
+  "zero_clickbait_outlets": 112,
   "overall_clickbait_pct": 1.1,
   "outlets": [
     {
@@ -54,40 +54,16 @@
       "rank": 4
     },
     {
-      "outlet": "Business Insider PL",
-      "articles_count": 18,
-      "multi_source_count": 18,
-      "primary_count": 1,
+      "outlet": "WP Wiadomości",
+      "articles_count": 50,
+      "multi_source_count": 50,
+      "primary_count": 8,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 97.6,
       "discrepancy_count": 0,
       "reliability_score": 98.7,
       "rank": 5
-    },
-    {
-      "outlet": "Sport.pl",
-      "articles_count": 6,
-      "multi_source_count": 6,
-      "primary_count": 1,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.7,
-      "discrepancy_count": 0,
-      "reliability_score": 98.7,
-      "rank": 6
-    },
-    {
-      "outlet": "WP Wiadomości",
-      "articles_count": 52,
-      "multi_source_count": 52,
-      "primary_count": 9,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.5,
-      "discrepancy_count": 0,
-      "reliability_score": 98.6,
-      "rank": 7
     },
     {
       "outlet": "Onet Wiadomości",
@@ -99,7 +75,7 @@
       "avg_agreement_pct": 97.4,
       "discrepancy_count": 0,
       "reliability_score": 98.6,
-      "rank": 8
+      "rank": 6
     },
     {
       "outlet": "Kresy.pl",
@@ -111,18 +87,42 @@
       "avg_agreement_pct": 97.4,
       "discrepancy_count": 0,
       "reliability_score": 98.6,
+      "rank": 7
+    },
+    {
+      "outlet": "Sport.pl",
+      "articles_count": 7,
+      "multi_source_count": 7,
+      "primary_count": 1,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 97.4,
+      "discrepancy_count": 0,
+      "reliability_score": 98.6,
+      "rank": 8
+    },
+    {
+      "outlet": "Interia Wydarzenia",
+      "articles_count": 29,
+      "multi_source_count": 29,
+      "primary_count": 4,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 97.2,
+      "discrepancy_count": 0,
+      "reliability_score": 98.5,
       "rank": 9
     },
     {
       "outlet": "Dziennik.pl",
-      "articles_count": 26,
-      "multi_source_count": 26,
+      "articles_count": 27,
+      "multi_source_count": 27,
       "primary_count": 0,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.5,
+      "avg_agreement_pct": 97.2,
       "discrepancy_count": 0,
-      "reliability_score": 98.6,
+      "reliability_score": 98.5,
       "rank": 10
     },
     {
@@ -132,7 +132,7 @@
       "primary_count": 5,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.3,
+      "avg_agreement_pct": 97.2,
       "discrepancy_count": 0,
       "reliability_score": 98.5,
       "rank": 11
@@ -162,10 +162,10 @@
       "rank": 13
     },
     {
-      "outlet": "Wyborcza.pl",
-      "articles_count": 18,
-      "multi_source_count": 18,
-      "primary_count": 0,
+      "outlet": "Business Insider PL",
+      "articles_count": 19,
+      "multi_source_count": 19,
+      "primary_count": 2,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 97.2,
@@ -186,10 +186,10 @@
       "rank": 15
     },
     {
-      "outlet": "Interia Wydarzenia",
-      "articles_count": 29,
-      "multi_source_count": 29,
-      "primary_count": 4,
+      "outlet": "Infor.pl",
+      "articles_count": 15,
+      "multi_source_count": 15,
+      "primary_count": 3,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 97.1,
@@ -201,7 +201,7 @@
       "outlet": "Biznes Interia",
       "articles_count": 29,
       "multi_source_count": 29,
-      "primary_count": 1,
+      "primary_count": 0,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 97.0,
@@ -234,18 +234,6 @@
       "rank": 19
     },
     {
-      "outlet": "Infor.pl",
-      "articles_count": 16,
-      "multi_source_count": 16,
-      "primary_count": 3,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.0,
-      "discrepancy_count": 0,
-      "reliability_score": 98.3,
-      "rank": 20
-    },
-    {
       "outlet": "Przegląd Sportowy",
       "articles_count": 7,
       "multi_source_count": 7,
@@ -255,7 +243,7 @@
       "avg_agreement_pct": 96.9,
       "discrepancy_count": 0,
       "reliability_score": 98.3,
-      "rank": 21
+      "rank": 20
     },
     {
       "outlet": "Radio Piekary",
@@ -267,19 +255,19 @@
       "avg_agreement_pct": 96.9,
       "discrepancy_count": 0,
       "reliability_score": 98.3,
-      "rank": 22
+      "rank": 21
     },
     {
       "outlet": "TVN24",
-      "articles_count": 54,
-      "multi_source_count": 54,
-      "primary_count": 23,
+      "articles_count": 55,
+      "multi_source_count": 55,
+      "primary_count": 24,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
-      "avg_agreement_pct": 96.7,
+      "avg_agreement_pct": 96.8,
       "discrepancy_count": 0,
       "reliability_score": 98.2,
-      "rank": 23
+      "rank": 22
     },
     {
       "outlet": "Bankier.pl",
@@ -291,7 +279,7 @@
       "avg_agreement_pct": 96.8,
       "discrepancy_count": 0,
       "reliability_score": 98.2,
-      "rank": 24
+      "rank": 23
     },
     {
       "outlet": "Forsal.pl",
@@ -303,7 +291,7 @@
       "avg_agreement_pct": 96.8,
       "discrepancy_count": 1,
       "reliability_score": 98.2,
-      "rank": 25
+      "rank": 24
     },
     {
       "outlet": "TVP3 Katowice",
@@ -315,7 +303,7 @@
       "avg_agreement_pct": 96.7,
       "discrepancy_count": 0,
       "reliability_score": 98.2,
-      "rank": 26
+      "rank": 25
     },
     {
       "outlet": "Rzeczpospolita",
@@ -327,67 +315,67 @@
       "avg_agreement_pct": 96.6,
       "discrepancy_count": 1,
       "reliability_score": 98.1,
-      "rank": 27
+      "rank": 26
     },
     {
-      "outlet": "Interia Sport",
-      "articles_count": 7,
-      "multi_source_count": 7,
-      "primary_count": 2,
+      "outlet": "Wyborcza.pl",
+      "articles_count": 19,
+      "multi_source_count": 19,
+      "primary_count": 0,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 96.6,
       "discrepancy_count": 0,
       "reliability_score": 98.1,
-      "rank": 28
-    },
-    {
-      "outlet": "TVP.info",
-      "articles_count": 42,
-      "multi_source_count": 42,
-      "primary_count": 1,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 96.3,
-      "discrepancy_count": 0,
-      "reliability_score": 98.0,
-      "rank": 29
-    },
-    {
-      "outlet": "Radio Rzeszów",
-      "articles_count": 17,
-      "multi_source_count": 17,
-      "primary_count": 1,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 96.4,
-      "discrepancy_count": 0,
-      "reliability_score": 98.0,
-      "rank": 30
+      "rank": 27
     },
     {
       "outlet": "Puls Biznesu",
-      "articles_count": 14,
-      "multi_source_count": 14,
+      "articles_count": 15,
+      "multi_source_count": 15,
       "primary_count": 3,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 96.3,
       "discrepancy_count": 0,
       "reliability_score": 98.0,
-      "rank": 31
+      "rank": 28
     },
     {
-      "outlet": "ePoznan.pl",
-      "articles_count": 8,
-      "multi_source_count": 8,
-      "primary_count": 2,
+      "outlet": "TVP.info",
+      "articles_count": 43,
+      "multi_source_count": 43,
+      "primary_count": 1,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 96.1,
+      "discrepancy_count": 0,
+      "reliability_score": 97.9,
+      "rank": 29
+    },
+    {
+      "outlet": "Radio Rzeszów",
+      "articles_count": 16,
+      "multi_source_count": 16,
+      "primary_count": 1,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 96.2,
       "discrepancy_count": 0,
       "reliability_score": 97.9,
-      "rank": 32
+      "rank": 30
+    },
+    {
+      "outlet": "ePoznan.pl",
+      "articles_count": 7,
+      "multi_source_count": 7,
+      "primary_count": 2,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 96.0,
+      "discrepancy_count": 0,
+      "reliability_score": 97.8,
+      "rank": 31
     },
     {
       "outlet": "InfoSecurity24",
@@ -399,6 +387,18 @@
       "avg_agreement_pct": 96.0,
       "discrepancy_count": 0,
       "reliability_score": 97.8,
+      "rank": 32
+    },
+    {
+      "outlet": "Farmer.pl",
+      "articles_count": 13,
+      "multi_source_count": 13,
+      "primary_count": 4,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 95.8,
+      "discrepancy_count": 0,
+      "reliability_score": 97.7,
       "rank": 33
     },
     {
@@ -426,28 +426,16 @@
       "rank": 35
     },
     {
-      "outlet": "Polsat News",
-      "articles_count": 37,
-      "multi_source_count": 37,
-      "primary_count": 11,
-      "clickbait_count": 1,
-      "clickbait_pct": 2.7,
-      "avg_agreement_pct": 97.5,
+      "outlet": "Interia Sport",
+      "articles_count": 8,
+      "multi_source_count": 8,
+      "primary_count": 2,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 95.8,
       "discrepancy_count": 0,
       "reliability_score": 97.7,
       "rank": 36
-    },
-    {
-      "outlet": "Weszło.com",
-      "articles_count": 10,
-      "multi_source_count": 10,
-      "primary_count": 6,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 95.4,
-      "discrepancy_count": 0,
-      "reliability_score": 97.5,
-      "rank": 37
     },
     {
       "outlet": "Comparic.pl",
@@ -457,6 +445,18 @@
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 95.5,
+      "discrepancy_count": 0,
+      "reliability_score": 97.5,
+      "rank": 37
+    },
+    {
+      "outlet": "Polsat News",
+      "articles_count": 37,
+      "multi_source_count": 37,
+      "primary_count": 11,
+      "clickbait_count": 1,
+      "clickbait_pct": 2.7,
+      "avg_agreement_pct": 97.2,
       "discrepancy_count": 0,
       "reliability_score": 97.5,
       "rank": 38
@@ -474,18 +474,6 @@
       "rank": 39
     },
     {
-      "outlet": "Farmer.pl",
-      "articles_count": 13,
-      "multi_source_count": 13,
-      "primary_count": 5,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 95.2,
-      "discrepancy_count": 0,
-      "reliability_score": 97.4,
-      "rank": 40
-    },
-    {
       "outlet": "Parkiet",
       "articles_count": 12,
       "multi_source_count": 12,
@@ -495,10 +483,22 @@
       "avg_agreement_pct": 95.2,
       "discrepancy_count": 0,
       "reliability_score": 97.4,
+      "rank": 40
+    },
+    {
+      "outlet": "Weszło.com",
+      "articles_count": 11,
+      "multi_source_count": 11,
+      "primary_count": 7,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 95.3,
+      "discrepancy_count": 0,
+      "reliability_score": 97.4,
       "rank": 41
     },
     {
-      "outlet": "TVP3 Rzeszów",
+      "outlet": "Energetyka24",
       "articles_count": 10,
       "multi_source_count": 10,
       "primary_count": 5,
@@ -510,18 +510,6 @@
       "rank": 42
     },
     {
-      "outlet": "Rzeszow-News.pl",
-      "articles_count": 13,
-      "multi_source_count": 13,
-      "primary_count": 5,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 95.1,
-      "discrepancy_count": 1,
-      "reliability_score": 97.3,
-      "rank": 43
-    },
-    {
       "outlet": "Pościgi.pl",
       "articles_count": 13,
       "multi_source_count": 13,
@@ -531,7 +519,7 @@
       "avg_agreement_pct": 94.9,
       "discrepancy_count": 0,
       "reliability_score": 97.2,
-      "rank": 44
+      "rank": 43
     },
     {
       "outlet": "Radio Lublin",
@@ -543,7 +531,31 @@
       "avg_agreement_pct": 94.9,
       "discrepancy_count": 0,
       "reliability_score": 97.2,
+      "rank": 44
+    },
+    {
+      "outlet": "TVP3 Rzeszów",
+      "articles_count": 9,
+      "multi_source_count": 9,
+      "primary_count": 5,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.9,
+      "discrepancy_count": 0,
+      "reliability_score": 97.2,
       "rank": 45
+    },
+    {
+      "outlet": "CHIP.pl",
+      "articles_count": 6,
+      "multi_source_count": 6,
+      "primary_count": 1,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 95.0,
+      "discrepancy_count": 0,
+      "reliability_score": 97.2,
+      "rank": 46
     },
     {
       "outlet": "Subiektywnie o Finansach",
@@ -555,7 +567,19 @@
       "avg_agreement_pct": 95.0,
       "discrepancy_count": 0,
       "reliability_score": 97.2,
-      "rank": 46
+      "rank": 47
+    },
+    {
+      "outlet": "Rzeszow-News.pl",
+      "articles_count": 12,
+      "multi_source_count": 12,
+      "primary_count": 5,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.8,
+      "discrepancy_count": 1,
+      "reliability_score": 97.1,
+      "rank": 48
     },
     {
       "outlet": "Radio Szczecin",
@@ -567,7 +591,7 @@
       "avg_agreement_pct": 94.8,
       "discrepancy_count": 0,
       "reliability_score": 97.1,
-      "rank": 47
+      "rank": 49
     },
     {
       "outlet": "TVS Śląsk",
@@ -579,7 +603,7 @@
       "avg_agreement_pct": 94.7,
       "discrepancy_count": 1,
       "reliability_score": 97.1,
-      "rank": 48
+      "rank": 50
     },
     {
       "outlet": "TVP3 Łódź",
@@ -591,7 +615,7 @@
       "avg_agreement_pct": 94.5,
       "discrepancy_count": 1,
       "reliability_score": 97.0,
-      "rank": 49
+      "rank": 51
     },
     {
       "outlet": "Auto Świat",
@@ -603,7 +627,7 @@
       "avg_agreement_pct": 94.6,
       "discrepancy_count": 0,
       "reliability_score": 97.0,
-      "rank": 50
+      "rank": 52
     },
     {
       "outlet": "Lublin112.pl",
@@ -615,7 +639,7 @@
       "avg_agreement_pct": 94.6,
       "discrepancy_count": 0,
       "reliability_score": 97.0,
-      "rank": 51
+      "rank": 53
     },
     {
       "outlet": "TVP3 Wrocław",
@@ -627,19 +651,7 @@
       "avg_agreement_pct": 94.6,
       "discrepancy_count": 0,
       "reliability_score": 97.0,
-      "rank": 52
-    },
-    {
-      "outlet": "TVP3 Poznań",
-      "articles_count": 7,
-      "multi_source_count": 7,
-      "primary_count": 4,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 94.6,
-      "discrepancy_count": 0,
-      "reliability_score": 97.0,
-      "rank": 53
+      "rank": 54
     },
     {
       "outlet": "Radio Kraków",
@@ -651,7 +663,7 @@
       "avg_agreement_pct": 94.4,
       "discrepancy_count": 0,
       "reliability_score": 96.9,
-      "rank": 54
+      "rank": 55
     },
     {
       "outlet": "TVP3 Bydgoszcz",
@@ -663,7 +675,19 @@
       "avg_agreement_pct": 94.2,
       "discrepancy_count": 0,
       "reliability_score": 96.8,
-      "rank": 55
+      "rank": 56
+    },
+    {
+      "outlet": "Antyweb.pl",
+      "articles_count": 6,
+      "multi_source_count": 6,
+      "primary_count": 3,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.0,
+      "discrepancy_count": 0,
+      "reliability_score": 96.7,
+      "rank": 57
     },
     {
       "outlet": "MamStartup.pl",
@@ -675,7 +699,19 @@
       "avg_agreement_pct": 94.0,
       "discrepancy_count": 0,
       "reliability_score": 96.7,
-      "rank": 56
+      "rank": 58
+    },
+    {
+      "outlet": "TVP3 Poznań",
+      "articles_count": 6,
+      "multi_source_count": 6,
+      "primary_count": 3,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.0,
+      "discrepancy_count": 0,
+      "reliability_score": 96.7,
+      "rank": 59
     },
     {
       "outlet": "TVP3 Szczecin",
@@ -687,19 +723,7 @@
       "avg_agreement_pct": 94.0,
       "discrepancy_count": 0,
       "reliability_score": 96.7,
-      "rank": 57
-    },
-    {
-      "outlet": "Energetyka24",
-      "articles_count": 10,
-      "multi_source_count": 10,
-      "primary_count": 5,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 93.8,
-      "discrepancy_count": 0,
-      "reliability_score": 96.6,
-      "rank": 58
+      "rank": 60
     },
     {
       "outlet": "TVP3 Kielce",
@@ -711,19 +735,7 @@
       "avg_agreement_pct": 93.8,
       "discrepancy_count": 0,
       "reliability_score": 96.6,
-      "rank": 59
-    },
-    {
-      "outlet": "CHIP.pl",
-      "articles_count": 5,
-      "multi_source_count": 5,
-      "primary_count": 1,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 96.8,
-      "discrepancy_count": 0,
-      "reliability_score": 96.6,
-      "rank": 60
+      "rank": 61
     },
     {
       "outlet": "NewsLubuski.pl",
@@ -735,7 +747,7 @@
       "avg_agreement_pct": 96.8,
       "discrepancy_count": 0,
       "reliability_score": 96.6,
-      "rank": 61
+      "rank": 62
     },
     {
       "outlet": "TVP3 Kraków",
@@ -747,7 +759,7 @@
       "avg_agreement_pct": 93.6,
       "discrepancy_count": 0,
       "reliability_score": 96.5,
-      "rank": 62
+      "rank": 63
     },
     {
       "outlet": "TVP3 Lublin",
@@ -759,7 +771,7 @@
       "avg_agreement_pct": 93.6,
       "discrepancy_count": 0,
       "reliability_score": 96.5,
-      "rank": 63
+      "rank": 64
     },
     {
       "outlet": "TVP3 Białystok",
@@ -771,7 +783,7 @@
       "avg_agreement_pct": 93.7,
       "discrepancy_count": 0,
       "reliability_score": 96.5,
-      "rank": 64
+      "rank": 65
     },
     {
       "outlet": "Radio Białystok",
@@ -783,7 +795,7 @@
       "avg_agreement_pct": 93.4,
       "discrepancy_count": 0,
       "reliability_score": 96.4,
-      "rank": 65
+      "rank": 66
     },
     {
       "outlet": "Radio Łódź",
@@ -795,7 +807,7 @@
       "avg_agreement_pct": 93.2,
       "discrepancy_count": 0,
       "reliability_score": 96.3,
-      "rank": 66
+      "rank": 67
     },
     {
       "outlet": "Opolska360.pl",
@@ -807,7 +819,7 @@
       "avg_agreement_pct": 93.2,
       "discrepancy_count": 1,
       "reliability_score": 96.3,
-      "rank": 67
+      "rank": 68
     },
     {
       "outlet": "WNP.pl",
@@ -819,7 +831,7 @@
       "avg_agreement_pct": 97.1,
       "discrepancy_count": 0,
       "reliability_score": 96.2,
-      "rank": 68
+      "rank": 69
     },
     {
       "outlet": "Polsat Sport",
@@ -831,7 +843,7 @@
       "avg_agreement_pct": 96.0,
       "discrepancy_count": 0,
       "reliability_score": 96.1,
-      "rank": 69
+      "rank": 70
     },
     {
       "outlet": "Radio Kielce",
@@ -841,18 +853,6 @@
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 92.6,
-      "discrepancy_count": 0,
-      "reliability_score": 95.9,
-      "rank": 70
-    },
-    {
-      "outlet": "Antyweb.pl",
-      "articles_count": 5,
-      "multi_source_count": 5,
-      "primary_count": 2,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 95.6,
       "discrepancy_count": 0,
       "reliability_score": 95.9,
       "rank": 71
@@ -906,27 +906,27 @@
       "rank": 75
     },
     {
-      "outlet": "o2.pl",
-      "articles_count": 15,
-      "multi_source_count": 15,
-      "primary_count": 5,
-      "clickbait_count": 1,
-      "clickbait_pct": 6.7,
-      "avg_agreement_pct": 96.0,
+      "outlet": "Radio Wrocław",
+      "articles_count": 5,
+      "multi_source_count": 5,
+      "primary_count": 1,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.8,
       "discrepancy_count": 0,
       "reliability_score": 95.5,
       "rank": 76
     },
     {
-      "outlet": "Radio Gdańsk",
-      "articles_count": 5,
-      "multi_source_count": 3,
-      "primary_count": 2,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 94.7,
+      "outlet": "TVP3 Warszawa",
+      "articles_count": 14,
+      "multi_source_count": 14,
+      "primary_count": 1,
+      "clickbait_count": 1,
+      "clickbait_pct": 7.1,
+      "avg_agreement_pct": 96.3,
       "discrepancy_count": 0,
-      "reliability_score": 95.4,
+      "reliability_score": 95.5,
       "rank": 77
     },
     {
@@ -942,6 +942,18 @@
       "rank": 78
     },
     {
+      "outlet": "XYZ.pl",
+      "articles_count": 5,
+      "multi_source_count": 5,
+      "primary_count": 2,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.4,
+      "discrepancy_count": 0,
+      "reliability_score": 95.3,
+      "rank": 79
+    },
+    {
       "outlet": "Radio Kolor",
       "articles_count": 4,
       "multi_source_count": 4,
@@ -951,43 +963,55 @@
       "avg_agreement_pct": 97.5,
       "discrepancy_count": 0,
       "reliability_score": 95.3,
-      "rank": 79
-    },
-    {
-      "outlet": "TVP3 Warszawa",
-      "articles_count": 14,
-      "multi_source_count": 14,
-      "primary_count": 1,
-      "clickbait_count": 1,
-      "clickbait_pct": 7.1,
-      "avg_agreement_pct": 95.7,
-      "discrepancy_count": 0,
-      "reliability_score": 95.2,
       "rank": 80
     },
     {
-      "outlet": "Radio Wrocław",
-      "articles_count": 5,
-      "multi_source_count": 5,
-      "primary_count": 1,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 94.0,
+      "outlet": "o2.pl",
+      "articles_count": 14,
+      "multi_source_count": 14,
+      "primary_count": 5,
+      "clickbait_count": 1,
+      "clickbait_pct": 7.1,
+      "avg_agreement_pct": 95.9,
       "discrepancy_count": 0,
-      "reliability_score": 95.0,
+      "reliability_score": 95.3,
       "rank": 81
     },
     {
       "outlet": "Money.pl",
-      "articles_count": 11,
-      "multi_source_count": 11,
+      "articles_count": 10,
+      "multi_source_count": 10,
       "primary_count": 4,
       "clickbait_count": 1,
-      "clickbait_pct": 9.1,
-      "avg_agreement_pct": 96.7,
+      "clickbait_pct": 10.0,
+      "avg_agreement_pct": 97.4,
+      "discrepancy_count": 0,
+      "reliability_score": 95.1,
+      "rank": 82
+    },
+    {
+      "outlet": "Radio Gdańsk",
+      "articles_count": 4,
+      "multi_source_count": 2,
+      "primary_count": 2,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 97.0,
       "discrepancy_count": 0,
       "reliability_score": 95.0,
-      "rank": 82
+      "rank": 83
+    },
+    {
+      "outlet": "WP SportoweFakty",
+      "articles_count": 11,
+      "multi_source_count": 11,
+      "primary_count": 2,
+      "clickbait_count": 1,
+      "clickbait_pct": 9.1,
+      "avg_agreement_pct": 96.4,
+      "discrepancy_count": 0,
+      "reliability_score": 94.8,
+      "rank": 84
     },
     {
       "outlet": "PurePC",
@@ -999,7 +1023,7 @@
       "avg_agreement_pct": 96.5,
       "discrepancy_count": 0,
       "reliability_score": 94.7,
-      "rank": 83
+      "rank": 85
     },
     {
       "outlet": "Radio Index",
@@ -1011,7 +1035,7 @@
       "avg_agreement_pct": 96.5,
       "discrepancy_count": 0,
       "reliability_score": 94.7,
-      "rank": 84
+      "rank": 86
     },
     {
       "outlet": "TVP3 Gorzów",
@@ -1023,31 +1047,19 @@
       "avg_agreement_pct": 96.5,
       "discrepancy_count": 0,
       "reliability_score": 94.7,
-      "rank": 85
+      "rank": 87
     },
     {
-      "outlet": "WP SportoweFakty",
-      "articles_count": 11,
-      "multi_source_count": 11,
-      "primary_count": 2,
-      "clickbait_count": 1,
-      "clickbait_pct": 9.1,
-      "avg_agreement_pct": 96.0,
-      "discrepancy_count": 0,
-      "reliability_score": 94.6,
-      "rank": 86
-    },
-    {
-      "outlet": "XYZ.pl",
+      "outlet": "Wiadomości Handlowe",
       "articles_count": 5,
       "multi_source_count": 5,
-      "primary_count": 2,
+      "primary_count": 3,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 92.8,
       "discrepancy_count": 0,
       "reliability_score": 94.4,
-      "rank": 87
+      "rank": 88
     },
     {
       "outlet": "Radio PiK",
@@ -1059,7 +1071,7 @@
       "avg_agreement_pct": 94.3,
       "discrepancy_count": 0,
       "reliability_score": 94.4,
-      "rank": 88
+      "rank": 89
     },
     {
       "outlet": "Medonet.pl",
@@ -1071,7 +1083,7 @@
       "avg_agreement_pct": 95.0,
       "discrepancy_count": 0,
       "reliability_score": 93.9,
-      "rank": 89
+      "rank": 90
     },
     {
       "outlet": "Radio Olsztyn",
@@ -1083,7 +1095,7 @@
       "avg_agreement_pct": 95.0,
       "discrepancy_count": 0,
       "reliability_score": 93.9,
-      "rank": 90
+      "rank": 91
     },
     {
       "outlet": "TKO Olsztyn",
@@ -1095,7 +1107,7 @@
       "avg_agreement_pct": 95.0,
       "discrepancy_count": 0,
       "reliability_score": 93.9,
-      "rank": 91
+      "rank": 92
     },
     {
       "outlet": "PulsHR",
@@ -1107,7 +1119,7 @@
       "avg_agreement_pct": 98.0,
       "discrepancy_count": 1,
       "reliability_score": 93.9,
-      "rank": 92
+      "rank": 93
     },
     {
       "outlet": "Gorzowianin.com",
@@ -1119,18 +1131,6 @@
       "avg_agreement_pct": 91.6,
       "discrepancy_count": 0,
       "reliability_score": 93.7,
-      "rank": 93
-    },
-    {
-      "outlet": "Wiadomości Handlowe",
-      "articles_count": 4,
-      "multi_source_count": 4,
-      "primary_count": 2,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 94.5,
-      "discrepancy_count": 0,
-      "reliability_score": 93.6,
       "rank": 94
     },
     {
@@ -1158,18 +1158,6 @@
       "rank": 96
     },
     {
-      "outlet": "Podhale24.pl",
-      "articles_count": 3,
-      "multi_source_count": 3,
-      "primary_count": 0,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.3,
-      "discrepancy_count": 0,
-      "reliability_score": 93.5,
-      "rank": 97
-    },
-    {
       "outlet": "Beskidzka24.pl",
       "articles_count": 4,
       "multi_source_count": 4,
@@ -1179,7 +1167,7 @@
       "avg_agreement_pct": 93.5,
       "discrepancy_count": 0,
       "reliability_score": 93.1,
-      "rank": 98
+      "rank": 97
     },
     {
       "outlet": "CzasNaOpole.pl",
@@ -1191,7 +1179,7 @@
       "avg_agreement_pct": 93.5,
       "discrepancy_count": 0,
       "reliability_score": 93.1,
-      "rank": 99
+      "rank": 98
     },
     {
       "outlet": "Suwałki24.pl",
@@ -1203,7 +1191,7 @@
       "avg_agreement_pct": 93.5,
       "discrepancy_count": 0,
       "reliability_score": 93.1,
-      "rank": 100
+      "rank": 99
     },
     {
       "outlet": "TVP3 Olsztyn",
@@ -1215,7 +1203,31 @@
       "avg_agreement_pct": 96.0,
       "discrepancy_count": 0,
       "reliability_score": 92.8,
+      "rank": 100
+    },
+    {
+      "outlet": "Wroclaw.pl",
+      "articles_count": 4,
+      "multi_source_count": 4,
+      "primary_count": 1,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 92.5,
+      "discrepancy_count": 0,
+      "reliability_score": 92.5,
       "rank": 101
+    },
+    {
+      "outlet": "TVP3 Gdańsk",
+      "articles_count": 3,
+      "multi_source_count": 3,
+      "primary_count": 2,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 95.3,
+      "discrepancy_count": 0,
+      "reliability_score": 92.4,
+      "rank": 102
     },
     {
       "outlet": "Newsweek Polska",
@@ -1227,7 +1239,7 @@
       "avg_agreement_pct": 98.0,
       "discrepancy_count": 0,
       "reliability_score": 92.2,
-      "rank": 102
+      "rank": 103
     },
     {
       "outlet": "PetroNews.pl",
@@ -1239,19 +1251,19 @@
       "avg_agreement_pct": 98.0,
       "discrepancy_count": 0,
       "reliability_score": 92.2,
-      "rank": 103
+      "rank": 104
     },
     {
-      "outlet": "Wroclaw.pl",
-      "articles_count": 4,
-      "multi_source_count": 4,
-      "primary_count": 1,
+      "outlet": "Podhale24.pl",
+      "articles_count": 2,
+      "multi_source_count": 2,
+      "primary_count": 0,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
-      "avg_agreement_pct": 91.5,
+      "avg_agreement_pct": 98.0,
       "discrepancy_count": 0,
-      "reliability_score": 92.0,
-      "rank": 104
+      "reliability_score": 92.2,
+      "rank": 105
     },
     {
       "outlet": "StrefaInwestorów.pl",
@@ -1263,25 +1275,13 @@
       "avg_agreement_pct": 94.0,
       "discrepancy_count": 0,
       "reliability_score": 91.7,
-      "rank": 105
+      "rank": 106
     },
     {
       "outlet": "Gazeta Wrocławska",
       "articles_count": 2,
       "multi_source_count": 2,
       "primary_count": 0,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 97.0,
-      "discrepancy_count": 0,
-      "reliability_score": 91.7,
-      "rank": 106
-    },
-    {
-      "outlet": "Legalis.pl",
-      "articles_count": 2,
-      "multi_source_count": 2,
-      "primary_count": 1,
       "clickbait_count": 0,
       "clickbait_pct": 0.0,
       "avg_agreement_pct": 97.0,
@@ -1338,6 +1338,30 @@
       "rank": 111
     },
     {
+      "outlet": "WysokieNapiecie.pl",
+      "articles_count": 2,
+      "multi_source_count": 2,
+      "primary_count": 1,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 95.0,
+      "discrepancy_count": 0,
+      "reliability_score": 90.6,
+      "rank": 112
+    },
+    {
+      "outlet": "4Lomza.pl",
+      "articles_count": 2,
+      "multi_source_count": 2,
+      "primary_count": 0,
+      "clickbait_count": 0,
+      "clickbait_pct": 0.0,
+      "avg_agreement_pct": 94.0,
+      "discrepancy_count": 0,
+      "reliability_score": 90.0,
+      "rank": 113
+    },
+    {
       "outlet": "Świdnica24.pl",
       "articles_count": 2,
       "multi_source_count": 2,
@@ -1347,7 +1371,7 @@
       "avg_agreement_pct": 94.0,
       "discrepancy_count": 0,
       "reliability_score": 90.0,
-      "rank": 112
+      "rank": 114
     },
     {
       "outlet": "Forbes Polska",
@@ -1359,7 +1383,7 @@
       "avg_agreement_pct": 92.0,
       "discrepancy_count": 0,
       "reliability_score": 88.9,
-      "rank": 113
+      "rank": 115
     },
     {
       "outlet": "Niebezpiecznik",
@@ -1371,7 +1395,7 @@
       "avg_agreement_pct": 92.0,
       "discrepancy_count": 0,
       "reliability_score": 88.9,
-      "rank": 114
+      "rank": 116
     },
     {
       "outlet": "Sekurak",
@@ -1383,7 +1407,7 @@
       "avg_agreement_pct": 92.0,
       "discrepancy_count": 0,
       "reliability_score": 88.9,
-      "rank": 115
+      "rank": 117
     },
     {
       "outlet": "info.elblag.pl",
@@ -1395,7 +1419,7 @@
       "avg_agreement_pct": 92.0,
       "discrepancy_count": 0,
       "reliability_score": 88.9,
-      "rank": 116
+      "rank": 118
     },
     {
       "outlet": "CoZaDzień.pl",
@@ -1407,19 +1431,7 @@
       "avg_agreement_pct": 91.0,
       "discrepancy_count": 0,
       "reliability_score": 88.4,
-      "rank": 117
-    },
-    {
-      "outlet": "WysokieNapiecie.pl",
-      "articles_count": 2,
-      "multi_source_count": 2,
-      "primary_count": 1,
-      "clickbait_count": 0,
-      "clickbait_pct": 0.0,
-      "avg_agreement_pct": 91.0,
-      "discrepancy_count": 0,
-      "reliability_score": 88.4,
-      "rank": 118
+      "rank": 119
     },
     {
       "outlet": "WP Finanse",
@@ -1431,18 +1443,6 @@
       "avg_agreement_pct": 87.3,
       "discrepancy_count": 0,
       "reliability_score": 88.0,
-      "rank": 119
-    },
-    {
-      "outlet": "TVP3 Gdańsk",
-      "articles_count": 4,
-      "multi_source_count": 4,
-      "primary_count": 2,
-      "clickbait_count": 1,
-      "clickbait_pct": 25.0,
-      "avg_agreement_pct": 94.0,
-      "discrepancy_count": 0,
-      "reliability_score": 84.6,
       "rank": 120
     },
     {
@@ -1547,13 +1547,6 @@
       "fact": "Poseł Wojciech Król pozostanie w areszcie. Prokuratura zarzuca mu korupcję",
       "seo_url": "/Polska/Polityka/posel-wojciech-krol-pozostanie-w-areszcie-prokuratura-zarzuca-mu",
       "display_date": "25.11.2026, 15:01"
-    },
-    {
-      "outlet": "TVP3 Gdańsk",
-      "original": "Remonty słupskich ulic",
-      "fact": "Od centrum Słupska na zachód. Zobaczcie ulicę Tuwima na dawnych zdjęciach!",
-      "seo_url": "/Polska/Regiony/Pomorskie/od-centrum-slupska-na-zachod-zobaczcie-ulice-tuwima-na-dawnych-zdjeciach",
-      "display_date": "25.11.2026, 12:00"
     }
   ]
 }
