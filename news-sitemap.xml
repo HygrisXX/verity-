@@ -3,6 +3,96 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/trzy-miliony-wyswietlen-kampanii-o-czystym-powietrzu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T05:56:15+01:00</news:publication_date>
+      <news:title>Trzy miliony wyświetleń kampanii o czystym powietrzu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/685954347.png</image:loc>
+      <image:title>Trzy miliony wyświetleń kampanii o czystym powietrzu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pewnosc-siebie-mimo-nietrzymania-moczu-sprawdz-skuteczne-i-dyskretne/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T05:56:14+01:00</news:publication_date>
+      <news:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1718150614.png</image:loc>
+      <image:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/putin-chce-poteznej-floty-rosja-zaprezentowala-pierwszy-taki-okret/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T05:56:12+01:00</news:publication_date>
+      <news:title>Putin chce potężnej floty. Rosja zaprezentowała pierwszy taki okręt</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1691464189.png</image:loc>
+      <image:title>Putin chce potężnej floty. Rosja zaprezentowała pierwszy taki okręt</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/polskie-obywatelstwo-za-lapowke-sledczy-rozbili-uklad-w-dolnoslaskim/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T05:56:12+01:00</news:publication_date>
+      <news:title>Polskie obywatelstwo za łapówkę? Śledczy rozbili układ w Dolnośląskim Urzędzie Wojewódzkim</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/174702806.png</image:loc>
+      <image:title>Polskie obywatelstwo za łapówkę? Śledczy rozbili układ w Dolnośląskim Urzędzie Wojewódzkim</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sondaz-niemal-polowy-polakow-chce-zmiany-premiera-jesli-obecna-koalicja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T05:56:11+01:00</news:publication_date>
+      <news:title>Sondaż: Niemal połowy Polaków chce zmiany premiera, jeśli obecna koalicja utrzyma władzę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/9220889.png</image:loc>
+      <image:title>Sondaż: Niemal połowy Polaków chce zmiany premiera, jeśli obecna koalicja utrzyma władzę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/znamy-nowe-maksymalne-ceny-paliw-czy-w-weekend-bedzie-drogo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T05:56:09+01:00</news:publication_date>
+      <news:title>Znamy nowe maksymalne ceny paliw. Czy w weekend będzie drogo?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1665807481.png</image:loc>
+      <image:title>Znamy nowe maksymalne ceny paliw. Czy w weekend będzie drogo?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/niepokojace-doniesienia-dotyczace-dziecka-w-dps-sprawa-zajela-sie/</loc>
     <news:news>
       <news:publication>
@@ -45,36 +135,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/2078639124.png</image:loc>
       <image:title>Zakaz noszenia widocznych symboli religijnych zgodny z konstytucją</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/warmia-i-mazury-w-podrozy-jak-zadbac-o-bezpieczenstwo-online-podczas/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T03:53:06+01:00</news:publication_date>
-      <news:title>Warmia i Mazury w podróży: jak zadbać o bezpieczeństwo online podczas wypoczynku nad jeziorami</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/626230635.png</image:loc>
-      <image:title>Warmia i Mazury w podróży: jak zadbać o bezpieczeństwo online podczas wypoczynku nad jeziorami</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/andrzejki-na-pomorzu-te-tradycje-sa-nadal-zywe/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T03:53:06+01:00</news:publication_date>
-      <news:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/871349883.png</image:loc>
-      <image:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</image:title>
     </image:image>
   </url>
   <url>
@@ -225,6 +285,21 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1200223694.png</image:loc>
       <image:title>Koniec swobody na rynku agropelletu. Rząd szykuje nowe obowiązki</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/potrafia-to-tylko-grinch-i-nawrocki-tusk-ostro-o-decyzji-prezydenta/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T23:50:34+01:00</news:publication_date>
+      <news:title>"Potrafią to tylko Grinch i Nawrocki". Tusk ostro o decyzji prezydenta</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1881288082.png</image:loc>
+      <image:title>"Potrafią to tylko Grinch i Nawrocki". Tusk ostro o decyzji prezydenta</image:title>
     </image:image>
   </url>
   <url>
