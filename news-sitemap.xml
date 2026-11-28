@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/protest-przed-warminsko-mazurskim-szpitalem-dyrektor-zlozyl-wazna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:25+01:00</news:publication_date>
+      <news:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1622195756.png</image:loc>
+      <image:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/spojrzenie-na-stan-wojenny-przez-pryzmat-zwyklych-ludzi-konferencja-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:25+01:00</news:publication_date>
+      <news:title>Spojrzenie na stan wojenny przez pryzmat zwykłych ludzi. Konferencja w bydgoskiej delegaturze IPN</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/368055857.png</image:loc>
+      <image:title>Spojrzenie na stan wojenny przez pryzmat zwykłych ludzi. Konferencja w bydgoskiej delegaturze IPN</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/nowy-kompleks-sportowy-pod-kolobrzegiem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:25+01:00</news:publication_date>
+      <news:title>Nowy kompleks sportowy pod Kołobrzegiem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/305818025.png</image:loc>
+      <image:title>Nowy kompleks sportowy pod Kołobrzegiem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/goraco-po-wystepie-lewandowskiego-czas-na-wakacje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:22+01:00</news:publication_date>
+      <news:title>Gorąco po występie Lewandowskiego. "Czas na wakacje"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1569882311.png</image:loc>
+      <image:title>Gorąco po występie Lewandowskiego. "Czas na wakacje"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/100-lat-staru-starachowice-jubileusz-klubu-z-wielka-historia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:21+01:00</news:publication_date>
+      <news:title>100 lat Staru Starachowice. Jubileusz klubu z wielką historią</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/970612601.png</image:loc>
+      <image:title>100 lat Staru Starachowice. Jubileusz klubu z wielką historią</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/dramat-22-latka-w-warszawie-prokuratura-wszczela-sledztwo-pojawily-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:20+01:00</news:publication_date>
+      <news:title>Dramat 22-latka w Warszawie. Prokuratura wszczęła śledztwo, pojawiły się nowe ustalenia</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/336097911.png</image:loc>
+      <image:title>Dramat 22-latka w Warszawie. Prokuratura wszczęła śledztwo, pojawiły się nowe ustalenia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/szansa-przepadla-ekonomisci-zabrali-glos-ws-wet-prezydenta-120-tys/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:19+01:00</news:publication_date>
+      <news:title>"Szansa przepadła". Ekonomiści zabrali głos ws. wet prezydenta (120 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1927421000.png</image:loc>
+      <image:title>"Szansa przepadła". Ekonomiści zabrali głos ws. wet prezydenta (120 tys.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/alert-rcb-odwolany-po-niecalym-kwadransie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:17+01:00</news:publication_date>
+      <news:title>Alert RCB odwołany po niecałym kwadransie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1162288903.png</image:loc>
+      <image:title>Alert RCB odwołany po niecałym kwadransie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/atak-rosji-na-ukraine-rozeslano-alert-rcb/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T20:45:16+01:00</news:publication_date>
+      <news:title>Atak Rosji na Ukrainę. Rozesłano alert RCB</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1029482370.png</image:loc>
+      <image:title>Atak Rosji na Ukrainę. Rozesłano alert RCB</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/duze-zmiany-w-komunikacji-wokol-olsztyna-zapadla-wazna-decyzja/</loc>
     <news:news>
       <news:publication>
@@ -78,7 +213,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/polska-przedluza-strefe-buforowa-na-granicy-z-bialorusia-zagrozenie/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/polska-przedluza-strefe-buforowa-na-granicy-z-bialorusia-zagrozenie/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -88,7 +223,7 @@
       <news:title>Polska przedłuża strefę buforową na granicy z Białorusią. Zagrożenie nadal realne (3 mld zł)</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1261547504.png</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1715902540.png</image:loc>
       <image:title>Polska przedłuża strefę buforową na granicy z Białorusią. Zagrożenie nadal realne (3 mld zł)</image:title>
     </image:image>
   </url>
@@ -135,36 +270,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1261871150.png</image:loc>
       <image:title>Para "romantyków" ukradła toi toie pod osłoną nocy. 52-latek miał plan dla ukochanej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/jaka-sprezarke-spalinowa-wybrac-do-jednostki-strazy-pozarnej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T18:45:29+01:00</news:publication_date>
-      <news:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/52743448.png</image:loc>
-      <image:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/warsztaty-zajecia-i-panele-eksperckie-mok-w-policach-swietuje-dzien/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T18:45:29+01:00</news:publication_date>
-      <news:title>Warsztaty, zajęcia i panele eksperckie. MOK w Policach świętuje Dzień Wcześniaka</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1909437976.png</image:loc>
-      <image:title>Warsztaty, zajęcia i panele eksperckie. MOK w Policach świętuje Dzień Wcześniaka</image:title>
     </image:image>
   </url>
   <url>
@@ -630,21 +735,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/52806376.png</image:loc>
       <image:title>Wisła Kraków – Motor Lublin. Jop: chcemy obronić naszą twierdzę</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/bialorus-ma-pomysl-jak-naruszyc-zapore-na-granicy-z-polska-chytre/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T14:53:13+01:00</news:publication_date>
-      <news:title>Białoruś ma pomysł, jak naruszyć zaporę na granicy z Polską. "Chytre posunięcie, musimy być czujni"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/871253334.png</image:loc>
-      <image:title>Białoruś ma pomysł, jak naruszyć zaporę na granicy z Polską. "Chytre posunięcie, musimy być czujni"</image:title>
     </image:image>
   </url>
   <url>
@@ -1278,6 +1368,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/duze-zmiany-w-podatkach-od-2027-r-te-ustawy-prezydent-podpisal/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:05+01:00</news:publication_date>
+      <news:title>Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1587320628.png</image:loc>
+      <image:title>Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Sport/polska-awansowala-na-ms-wielka-gra-w-katarze-trener-mowi-o-medalu/</loc>
     <news:news>
       <news:publication>
@@ -1575,21 +1680,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/203056304.png</image:loc>
       <image:title>Polscy koszykarze jadą na mistrzostwa świata! Porażka z Chorwacją nie odebrała im awansu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Energetyka/duze-zmiany-w-podatkach-od-2027-r-te-ustawy-prezydent-podpisal/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T23:50:34+01:00</news:publication_date>
-      <news:title>Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1587320628.png</image:loc>
-      <image:title>Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</image:title>
     </image:image>
   </url>
   <url>
@@ -3615,111 +3705,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1104777851.png</image:loc>
       <image:title>„Mogło być lżej”. Brzęczek wprost po losowaniu grup EURO U-21</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/pionierki-fotografii-i-kobiecej-niezaleznosci-historia-trzech-siostr/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:44+01:00</news:publication_date>
-      <news:title>Pionierki fotografii i kobiecej niezależności. Historia trzech sióstr, które wyprzedziły swoje czasy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/354516617.png</image:loc>
-      <image:title>Pionierki fotografii i kobiecej niezależności. Historia trzech sióstr, które wyprzedziły swoje czasy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/kielce-beda-europejska-stolica-mlodziezy-2029/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:43+01:00</news:publication_date>
-      <news:title>Kielce będą Europejską Stolicą Młodzieży 2029</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/6557911.png</image:loc>
-      <image:title>Kielce będą Europejską Stolicą Młodzieży 2029</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/honory-dla-jakuba-kulika-i-tadeusza-pietrzykowskiego-radni-byli/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:40+01:00</news:publication_date>
-      <news:title>Honory dla Jakuba Kulika i Tadeusza Pietrzykowskiego. Radni byli jednogłośni</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1918419824.png</image:loc>
-      <image:title>Honory dla Jakuba Kulika i Tadeusza Pietrzykowskiego. Radni byli jednogłośni</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/blues-zza-krat-muzyka-pomaga-osadzonym-zmieniac-swoje-zycie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:39+01:00</news:publication_date>
-      <news:title>Blues zza krat. Muzyka pomaga osadzonym zmieniać swoje życie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1034767034.png</image:loc>
-      <image:title>Blues zza krat. Muzyka pomaga osadzonym zmieniać swoje życie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wilfredo-leon-o-hejcie-i-presji-siatkarz-spotkal-sie-z-lubelska/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:38+01:00</news:publication_date>
-      <news:title>Wilfredo Leon o hejcie i presji. Siatkarz spotkał się z lubelską młodzieżą</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1805062163.png</image:loc>
-      <image:title>Wilfredo Leon o hejcie i presji. Siatkarz spotkał się z lubelską młodzieżą</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Swietokrzyskie/przez-kilka-godzin-uciekal-czerwona-corvetta-zatrzymali-go-w-domu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:37+01:00</news:publication_date>
-      <news:title>Przez kilka godzin uciekał czerwoną Corvettą. Zatrzymali go w domu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/717961594.png</image:loc>
-      <image:title>Przez kilka godzin uciekał czerwoną Corvettą. Zatrzymali go w domu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/iran-zaciska-pasa-po-miesiacach-wojny-rzad-wycofuje-popularne-doplaty/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T20:58:36+01:00</news:publication_date>
-      <news:title>Iran zaciska pasa po miesiącach wojny. Rząd wycofuje popularne dopłaty</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/457642260.png</image:loc>
-      <image:title>Iran zaciska pasa po miesiącach wojny. Rząd wycofuje popularne dopłaty</image:title>
     </image:image>
   </url>
 </urlset>
