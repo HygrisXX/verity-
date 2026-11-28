@@ -3,6 +3,81 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/niepokojace-doniesienia-dotyczace-dziecka-w-dps-sprawa-zajela-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T01:03:03+01:00</news:publication_date>
+      <news:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1604257945.png</image:loc>
+      <image:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/zdrowe-porty-w-sopocie-czasem-zaczyna-sie-od-jednego-pytania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T01:03:03+01:00</news:publication_date>
+      <news:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/23710474.png</image:loc>
+      <image:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/dyskont-i-produkty-premium-aldi-rozwija-oferte-gourmet-finest-cuisine/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T01:03:02+01:00</news:publication_date>
+      <news:title>Dyskont i produkty premium? Aldi rozwija ofertę Gourmet Finest Cuisine</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/271968773.png</image:loc>
+      <image:title>Dyskont i produkty premium? Aldi rozwija ofertę Gourmet Finest Cuisine</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/sondaz-przewaga-tiszy-nad-obozem-orbana-wzrosla-do-44-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T01:03:01+01:00</news:publication_date>
+      <news:title>Sondaż: przewaga Tiszy nad obozem Orbana wzrosła do 44 proc.</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/968004085.png</image:loc>
+      <image:title>Sondaż: przewaga Tiszy nad obozem Orbana wzrosła do 44 proc.</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/psp-nr-14-w-opolu-po-termomodernizacji-koszt-inwestycji-to-ponad-13-mln/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T01:03:00+01:00</news:publication_date>
+      <news:title>PSP nr 14 w Opolu po termomodernizacji. Koszt inwestycji to ponad 13 mln zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1499427852.png</image:loc>
+      <image:title>PSP nr 14 w Opolu po termomodernizacji. Koszt inwestycji to ponad 13 mln zł</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/warmia-i-mazury-w-podrozy-jak-zadbac-o-bezpieczenstwo-online-podczas/</loc>
     <news:news>
       <news:publication>
@@ -90,21 +165,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1408323982.png</image:loc>
       <image:title>Weto prezydenta oznacza utratę szansy na oszczędności w wysokości nawet 3600 zł rocznie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pewnosc-siebie-mimo-nietrzymania-moczu-sprawdz-skuteczne-i-dyskretne/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T22:54:43+01:00</news:publication_date>
-      <news:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1718150614.png</image:loc>
-      <image:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</image:title>
     </image:image>
   </url>
   <url>
@@ -255,51 +315,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1847321909.png</image:loc>
       <image:title>Niebezpieczna sytuacja w Katowicach. Dwa pociągi na jednym torze</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/prezydent-niespodziewanie-podpisal-ustawe-o-opodatkowaniu-fundacji/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T21:53:39+01:00</news:publication_date>
-      <news:title>Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1290811642.png</image:loc>
-      <image:title>Duże zmiany w podatkach od 2027 r. Te ustawy prezydent podpisał</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nauczyciele-gleboko-oburzeni-wetem-nawrockiego-tyle-mogli-zyskac-3600-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T21:53:39+01:00</news:publication_date>
-      <news:title>Nauczyciele "głęboko oburzeni" wetem Nawrockiego. Tyle mogli zyskać (3600 zł)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1596998561.png</image:loc>
-      <image:title>Nauczyciele "głęboko oburzeni" wetem Nawrockiego. Tyle mogli zyskać (3600 zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/nawrocki-zawetowal-nowe-progi-podatkowe-co-z-obnizka-pit-do-3600-zl/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T21:53:39+01:00</news:publication_date>
-      <news:title>Nawrocki zawetował nowe progi podatkowe. Co z obniżką PIT do 3600 zł?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/576100092.png</image:loc>
-      <image:title>Nawrocki zawetował nowe progi podatkowe. Co z obniżką PIT do 3600 zł?</image:title>
     </image:image>
   </url>
   <url>
@@ -3660,81 +3675,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/344077720.png</image:loc>
       <image:title>CD Projekt zacieśnia współpracę z Sony. Nowa umowa dotyczy Wiedźmina 4 (208 mln zł)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/akcja-sluzb-w-budynku-rckik-w-poznaniu-10-strazackich-zastepow-w-tym/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T01:03:47+01:00</news:publication_date>
-      <news:title>Akcja służb w budynku RCKiK w Poznaniu. 10 strażackich zastępów, w tym grupa chemiczna</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1642024589.png</image:loc>
-      <image:title>Akcja służb w budynku RCKiK w Poznaniu. 10 strażackich zastępów, w tym grupa chemiczna</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/intel-core-ultra-4000-poznalismy-specyfikacje-procesorow-z-rodziny-nova/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T01:03:42+01:00</news:publication_date>
-      <news:title>Intel Core Ultra 4000 – poznaliśmy specyfikację procesorów z rodziny Nova Lake-S. Duża pamięć LLC i obsługa sz</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/639416483.png</image:loc>
-      <image:title>Intel Core Ultra 4000 – poznaliśmy specyfikację procesorów z rodziny Nova Lake-S. Duża pamięć LLC i obsługa sz</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/gracze-klientem-gorszego-sortu-nvidia-obcina-dostawy-geforce-ow/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T01:03:41+01:00</news:publication_date>
-      <news:title>Gracze klientem gorszego sortu. NVIDIA obcina dostawy GeForce’ów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1995497299.png</image:loc>
-      <image:title>Gracze klientem gorszego sortu. NVIDIA obcina dostawy GeForce’ów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/eksplozje-w-usa-armia-przeprowadzila-detonacje-niebezpiecznego-ladunku/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T01:03:40+01:00</news:publication_date>
-      <news:title>Eksplozje w USA. Armia przeprowadziła detonację niebezpiecznego ładunku w stanie Iowa</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/436624697.png</image:loc>
-      <image:title>Eksplozje w USA. Armia przeprowadziła detonację niebezpiecznego ładunku w stanie Iowa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/jakie-dane-osobowe-i-jednostkowe-dane-medyczne-bedzie-zawierac-karta/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T01:03:39+01:00</news:publication_date>
-      <news:title>Jakie dane osobowe i jednostkowe dane medyczne będzie zawierać karta pacjenta?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2085930560.png</image:loc>
-      <image:title>Jakie dane osobowe i jednostkowe dane medyczne będzie zawierać karta pacjenta?</image:title>
     </image:image>
   </url>
 </urlset>
