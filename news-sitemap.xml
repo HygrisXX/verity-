@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/nie-zyje-61-letni-mieszkaniec-emilii-mezczyzna-zostal-odnaleziony-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:29+01:00</news:publication_date>
+      <news:title>Nie żyje 61-letni mieszkaniec Emilii. Mężczyzna został odnaleziony w głębokim wykopie</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1595879366.png</image:loc>
+      <image:title>Nie żyje 61-letni mieszkaniec Emilii. Mężczyzna został odnaleziony w głębokim wykopie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/protest-przed-warminsko-mazurskim-szpitalem-dyrektor-zlozyl-wazna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:28+01:00</news:publication_date>
+      <news:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1622195756.png</image:loc>
+      <image:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/nowy-kompleks-sportowy-pod-kolobrzegiem/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:28+01:00</news:publication_date>
+      <news:title>Nowy kompleks sportowy pod Kołobrzegiem</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/305818025.png</image:loc>
+      <image:title>Nowy kompleks sportowy pod Kołobrzegiem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/czlowiek-putina-korzysta-ze-sztucznej-inteligencji-w-negocjacjach-to/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:25+01:00</news:publication_date>
+      <news:title>Człowiek Putina korzysta ze sztucznej inteligencji w negocjacjach. "To ważne narzędzie"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1136836016.png</image:loc>
+      <image:title>Człowiek Putina korzysta ze sztucznej inteligencji w negocjacjach. "To ważne narzędzie"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/jest-nowe-swieto-panstwowe-czy-10-lutego-bedzie-dniem-wolnym-od-pracy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:24+01:00</news:publication_date>
+      <news:title>Jest nowe święto państwowe. Czy 10 lutego będzie dniem wolnym od pracy?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1073095622.png</image:loc>
+      <image:title>Jest nowe święto państwowe. Czy 10 lutego będzie dniem wolnym od pracy?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/rosja-grozi-atomem-wojna-dociera-na-baltyk-europa-wciaz-negocjuje-pb/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:24+01:00</news:publication_date>
+      <news:title>Rosja grozi atomem, wojna dociera na Bałtyk. Europa wciąż negocjuje. PB BRIEF</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/362554593.png</image:loc>
+      <image:title>Rosja grozi atomem, wojna dociera na Bałtyk. Europa wciąż negocjuje. PB BRIEF</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/wielkie-spolki-technologiczne-na-celowniku-szpiegow-czy-dolina-krzemowa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:22+01:00</news:publication_date>
+      <news:title>Wielkie spółki technologiczne na celowniku szpiegów. Czy Dolina Krzemowa się obroni?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1400229844.png</image:loc>
+      <image:title>Wielkie spółki technologiczne na celowniku szpiegów. Czy Dolina Krzemowa się obroni?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/tomasiak-najlepszy-z-polakow-bitwa-na-ps-w-ruce-najdalszy-skok-146-5-m/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:21+01:00</news:publication_date>
+      <news:title>Tomasiak najlepszy z Polaków. Bitwa na PŚ w Ruce. Najdalszy skok – 146,5 m</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/539703695.png</image:loc>
+      <image:title>Tomasiak najlepszy z Polaków. Bitwa na PŚ w Ruce. Najdalszy skok – 146,5 m</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/siarczysty-mroz-i-zamiecie-sniezne-imgw-ostrzega-cztery-wojewodztwa-55/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:42:19+01:00</news:publication_date>
+      <news:title>Siarczysty mróz i zamiecie śnieżne. IMGW ostrzega cztery województwa (55 km)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/801097116.png</image:loc>
+      <image:title>Siarczysty mróz i zamiecie śnieżne. IMGW ostrzega cztery województwa (55 km)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/zima-w-tatrach-lawinowa-dwojka-i-bardzo-trudne-warunki-na-szlakach/</loc>
     <news:news>
       <news:publication>
@@ -108,7 +243,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/starcia-z-policja-podczas-protestow-w-albanii-19-osob-rannych/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/starcia-z-policja-podczas-protestow-w-albanii-19-osob-rannych/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -118,7 +253,7 @@
       <news:title>Starcia z policją podczas protestów w Albanii. 19 osób rannych</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/439911612.png</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/863006353.png</image:loc>
       <image:title>Starcia z policją podczas protestów w Albanii. 19 osób rannych</image:title>
     </image:image>
   </url>
@@ -165,21 +300,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/80235912.png</image:loc>
       <image:title>Tragiczny finał poszukiwań. Znaleziono ciało wędkarza</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/jaka-sprezarke-spalinowa-wybrac-do-jednostki-strazy-pozarnej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T15:42:59+01:00</news:publication_date>
-      <news:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/52743448.png</image:loc>
-      <image:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</image:title>
     </image:image>
   </url>
   <url>
@@ -285,21 +405,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1100601954.png</image:loc>
       <image:title>Godzina różnicy, dwa pożary. Strażacy ruszyli do akcji przed świtem (6 zastępów)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/premiera-filmu-dokumentalnego-wolne-sady-na-antenach-tvp/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T14:53:17+01:00</news:publication_date>
-      <news:title>Premiera filmu dokumentalnego „Wolne Sądy” na antenach TVP</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1188488158.png</image:loc>
-      <image:title>Premiera filmu dokumentalnego „Wolne Sądy” na antenach TVP</image:title>
     </image:image>
   </url>
   <url>
@@ -2190,21 +2295,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/516993805.png</image:loc>
       <image:title>Ruchy kadrowe w TK. Anna Korwin-Piotrowska zwolniła Andrzeja Stróżnego</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/to-koniec-miasteczka-pod-trybunalem-konstytucyjnym-ratusz-nie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T14:53:55+01:00</news:publication_date>
-      <news:title>To koniec „miasteczka” pod Trybunałem Konstytucyjnym. Ratusz nie przedłużył zgody na protest</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1878882041.png</image:loc>
-      <image:title>To koniec „miasteczka” pod Trybunałem Konstytucyjnym. Ratusz nie przedłużył zgody na protest</image:title>
     </image:image>
   </url>
   <url>
