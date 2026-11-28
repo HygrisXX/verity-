@@ -3,6 +3,36 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/warmia-i-mazury-w-podrozy-jak-zadbac-o-bezpieczenstwo-online-podczas/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T03:53:06+01:00</news:publication_date>
+      <news:title>Warmia i Mazury w podróży: jak zadbać o bezpieczeństwo online podczas wypoczynku nad jeziorami</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/626230635.png</image:loc>
+      <image:title>Warmia i Mazury w podróży: jak zadbać o bezpieczeństwo online podczas wypoczynku nad jeziorami</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/andrzejki-na-pomorzu-te-tradycje-sa-nadal-zywe/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T03:53:06+01:00</news:publication_date>
+      <news:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/871349883.png</image:loc>
+      <image:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pewnosc-siebie-mimo-nietrzymania-moczu-sprawdz-skuteczne-i-dyskretne/</loc>
     <news:news>
       <news:publication>
@@ -45,36 +75,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/743526670.png</image:loc>
       <image:title>Niebezpieczny incydent. Dwa samoloty zderzyły się skrzydłami</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/niepokojace-doniesienia-dotyczace-dziecka-w-dps-sprawa-zajela-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T01:03:03+01:00</news:publication_date>
-      <news:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1604257945.png</image:loc>
-      <image:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/zdrowe-porty-w-sopocie-czasem-zaczyna-sie-od-jednego-pytania/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T01:03:03+01:00</news:publication_date>
-      <news:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/23710474.png</image:loc>
-      <image:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</image:title>
     </image:image>
   </url>
   <url>
@@ -3570,36 +3570,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/94537188.png</image:loc>
       <image:title>Liderzy Finlandii i Norwegii rozmawiali z Putinem. Kreml dostał gwarancje dotyczące Bałtyku</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Sport/beniaminek-ogral-faworyta-w-polskiej-lidze-siatkarzy-co-za-popis-mvp/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T03:57:28+01:00</news:publication_date>
-      <news:title>Beniaminek ograł faworyta w polskiej lidze siatkarzy. Co za popis. MVP</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1214905026.png</image:loc>
-      <image:title>Beniaminek ograł faworyta w polskiej lidze siatkarzy. Co za popis. MVP</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/rakiety-balistyczne-uderzyly-w-kijow-kraza-nagrania/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T03:56:55+01:00</news:publication_date>
-      <news:title>Rakiety balistyczne uderzyły w Kijów. Krążą nagrania</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1687894605.png</image:loc>
-      <image:title>Rakiety balistyczne uderzyły w Kijów. Krążą nagrania</image:title>
     </image:image>
   </url>
 </urlset>
