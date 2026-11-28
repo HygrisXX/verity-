@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/odra-opole-polonia-warszawa-dodatkowe-autobusy-na-mecz-skad-i-o-ktorej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:19+01:00</news:publication_date>
+      <news:title>Odra Opole – Polonia Warszawa. Dodatkowe autobusy na mecz. Skąd i o której odjadą?</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2009379249.png</image:loc>
+      <image:title>Odra Opole – Polonia Warszawa. Dodatkowe autobusy na mecz. Skąd i o której odjadą?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/protest-przed-warminsko-mazurskim-szpitalem-dyrektor-zlozyl-wazna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:18+01:00</news:publication_date>
+      <news:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1622195756.png</image:loc>
+      <image:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/gejzer-goracej-wody-na-chodniku-w-gdansku-sluzby-odciely-ogrzewanie-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:17+01:00</news:publication_date>
+      <news:title>Gejzer gorącej wody na chodniku w Gdańsku. Służby odcięły ogrzewanie w 147 budynkach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1747254000.png</image:loc>
+      <image:title>Gejzer gorącej wody na chodniku w Gdańsku. Służby odcięły ogrzewanie w 147 budynkach</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/baza-z-ktorej-zaatakowano-polske-na-celowniku-ukrainy-padla-zapowiedz/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:14+01:00</news:publication_date>
+      <news:title>Baza, z której zaatakowano Polskę, na celowniku Ukrainy. Padła zapowiedź (200 km)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/758086250.png</image:loc>
+      <image:title>Baza, z której zaatakowano Polskę, na celowniku Ukrainy. Padła zapowiedź (200 km)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/rosja-sabotaze-i-cztery-scenariusze-do-2029-r-polska-w-jednym-z-nich/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:13+01:00</news:publication_date>
+      <news:title>Rosja, sabotaże i cztery scenariusze do 2029 r. Polska w jednym z nich</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1841780501.png</image:loc>
+      <image:title>Rosja, sabotaże i cztery scenariusze do 2029 r. Polska w jednym z nich</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubuskie/wypadek-na-dk32-sprawca-jest-tak-pijany-ze-nie-mogl-dmuchnac-w-alkomat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:13+01:00</news:publication_date>
+      <news:title>Wypadek na DK32. Sprawca jest tak pijany, że nie mógł dmuchnąć w alkomat (ZDJĘCIA)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/821865270.png</image:loc>
+      <image:title>Wypadek na DK32. Sprawca jest tak pijany, że nie mógł dmuchnąć w alkomat (ZDJĘCIA)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/openai-kontra-apple-padly-zarzuty-o-kradziez/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:12+01:00</news:publication_date>
+      <news:title>OpenAI kontra Apple. Padły zarzuty o kradzież</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1117570502.png</image:loc>
+      <image:title>OpenAI kontra Apple. Padły zarzuty o kradzież</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/mamy-medal-michal-niewinski-zachwycil-w-chinach-sedziowie-zmienili/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:11+01:00</news:publication_date>
+      <news:title>Mamy medal! Michał Niewiński zachwycił w Chinach. Sędziowie zmienili wyniki finału</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/426163121.png</image:loc>
+      <image:title>Mamy medal! Michał Niewiński zachwycił w Chinach. Sędziowie zmienili wyniki finału</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/nie-zyje-gwiazda-wwe-bronson-reed-mial-38-lat/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T10:50:10+01:00</news:publication_date>
+      <news:title>Nie żyje gwiazda WWE. Bronson Reed miał 38 lat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1428179294.png</image:loc>
+      <image:title>Nie żyje gwiazda WWE. Bronson Reed miał 38 lat</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/sa-wyniki-poznanskiego-budzetu-obywatelskiego-2-mln-zl/</loc>
     <news:news>
       <news:publication>
@@ -165,21 +300,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1015982826.png</image:loc>
       <image:title>50 lat reaktywacji toruńskiej adwokatury. Rondo i medal dla Kujawsko-Pomorskiej Izby Adwokackiej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/jaka-sprezarke-spalinowa-wybrac-do-jednostki-strazy-pozarnej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T08:50:08+01:00</news:publication_date>
-      <news:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/52743448.png</image:loc>
-      <image:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</image:title>
     </image:image>
   </url>
   <url>
