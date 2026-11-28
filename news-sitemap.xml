@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/ukradli-z-lokalu-kegi-po-piwie-i-sprzedali-na-zlom-za-80-zl/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:09+01:00</news:publication_date>
+      <news:title>Ukradli z lokalu kegi po piwie i sprzedali na złom za 80 zł</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1412165455.png</image:loc>
+      <image:title>Ukradli z lokalu kegi po piwie i sprzedali na złom za 80 zł</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/50-lat-reaktywacji-torunskiej-adwokatury-rondo-i-medal-dla-kujawsko/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:09+01:00</news:publication_date>
+      <news:title>50 lat reaktywacji toruńskiej adwokatury. Rondo i medal dla Kujawsko-Pomorskiej Izby Adwokackiej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1015982826.png</image:loc>
+      <image:title>50 lat reaktywacji toruńskiej adwokatury. Rondo i medal dla Kujawsko-Pomorskiej Izby Adwokackiej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/jaka-sprezarke-spalinowa-wybrac-do-jednostki-strazy-pozarnej/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:08+01:00</news:publication_date>
+      <news:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/52743448.png</image:loc>
+      <image:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/zmiana-kursu-rosyjskiej-flotylli-zawrocila-po-zatopieniu-korwety-2-tys/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:06+01:00</news:publication_date>
+      <news:title>Zmiana kursu rosyjskiej flotylli. Zawróciła po zatopieniu korwety (2 tys.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1833762424.png</image:loc>
+      <image:title>Zmiana kursu rosyjskiej flotylli. Zawróciła po zatopieniu korwety (2 tys.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/strefa-buforowa-przy-granicy-z-bialorusia-jest-nowa-decyzja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:05+01:00</news:publication_date>
+      <news:title>Strefa buforowa przy granicy z Białorusią. Jest nowa decyzja</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/991463406.png</image:loc>
+      <image:title>Strefa buforowa przy granicy z Białorusią. Jest nowa decyzja</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/kobiety-rusza-przed-palac-prezydencki-chca-decyzji-karola-nawrockiego/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:05+01:00</news:publication_date>
+      <news:title>Kobiety ruszą przed Pałac Prezydencki. Chcą decyzji Karola Nawrockiego</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1245454225.png</image:loc>
+      <image:title>Kobiety ruszą przed Pałac Prezydencki. Chcą decyzji Karola Nawrockiego</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/polska-awansowala-na-ms-wielka-gra-w-katarze-trener-mowi-o-medalu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:04+01:00</news:publication_date>
+      <news:title>Polska awansowała na MŚ. Wielka gra w Katarze. Trener mówi o medalu</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/437676899.png</image:loc>
+      <image:title>Polska awansowała na MŚ. Wielka gra w Katarze. Trener mówi o medalu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/ai-zagrozeniem-dla-wyborow-estonia-blokuje-glosowanie-przez-aplikacje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:02+01:00</news:publication_date>
+      <news:title>AI zagrożeniem dla wyborów? Estonia blokuje głosowanie przez aplikację</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1132150957.png</image:loc>
+      <image:title>AI zagrożeniem dla wyborów? Estonia blokuje głosowanie przez aplikację</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/szesc-dronow-nad-baza-usa-w-wielkiej-brytanii-ft-zadzialaly/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T08:50:01+01:00</news:publication_date>
+      <news:title>Sześć dronów nad bazą USA w Wielkiej Brytanii. „FT”: zadziałały amerykańskie systemy obrony</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/49134305.png</image:loc>
+      <image:title>Sześć dronów nad bazą USA w Wielkiej Brytanii. „FT”: zadziałały amerykańskie systemy obrony</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/warmia-i-mazury-w-podrozy-jak-zadbac-o-bezpieczenstwo-online-podczas/</loc>
     <news:news>
       <news:publication>
@@ -123,36 +258,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/trzy-miliony-wyswietlen-kampanii-o-czystym-powietrzu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T05:56:15+01:00</news:publication_date>
-      <news:title>Trzy miliony wyświetleń kampanii o czystym powietrzu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/685954347.png</image:loc>
-      <image:title>Trzy miliony wyświetleń kampanii o czystym powietrzu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pewnosc-siebie-mimo-nietrzymania-moczu-sprawdz-skuteczne-i-dyskretne/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T05:56:14+01:00</news:publication_date>
-      <news:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1718150614.png</image:loc>
-      <image:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Swiat/putin-chce-poteznej-floty-rosja-zaprezentowala-pierwszy-taki-okret/</loc>
     <news:news>
       <news:publication>
@@ -180,21 +285,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/174702806.png</image:loc>
       <image:title>Korupcyjny proceder w Dolnośląskim Urzędzie Wojewódzkim. Zatrzymano 12 osób</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/sondaz-niemal-polowy-polakow-chce-zmiany-premiera-jesli-obecna-koalicja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T05:56:11+01:00</news:publication_date>
-      <news:title>Sondaż: Niemal połowy Polaków chce zmiany premiera, jeśli obecna koalicja utrzyma władzę</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/9220889.png</image:loc>
-      <image:title>Sondaż: Niemal połowy Polaków chce zmiany premiera, jeśli obecna koalicja utrzyma władzę</image:title>
     </image:image>
   </url>
   <url>
@@ -2088,21 +2178,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Kujawsko-Pomorskie/bedzie-fuzja-trzech-placowek-medycznych-taka-decyzje-podjeli-radni-rady/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T23:54:20+01:00</news:publication_date>
-      <news:title>Będzie fuzja trzech placówek medycznych. Taką decyzję podjęli radni Rady Miasta Torunia</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1651725667.png</image:loc>
-      <image:title>Będzie fuzja trzech placówek medycznych. Taką decyzję podjęli radni Rady Miasta Torunia</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/poczobut-przemowil-po-odebraniu-nagrody-jest-w-tym-cos-symbolicznego/</loc>
     <news:news>
       <news:publication>
@@ -3480,141 +3555,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1728854606.png</image:loc>
       <image:title>Ważny wyrok TSUE w sprawie VAT. Dotyczy milionów przedsiębiorców</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/doniesienia-o-przemocy-w-schronisku-dla-nieletnich-w-dominowie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:01:00+01:00</news:publication_date>
-      <news:title>Doniesienia o przemocy w Schronisku dla Nieletnich w Dominowie. Prokuratura prowadzi śledztwo</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1125944086.png</image:loc>
-      <image:title>Doniesienia o przemocy w Schronisku dla Nieletnich w Dominowie. Prokuratura prowadzi śledztwo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/miasto-zlozylo-skarge-kasacyjna-od-wyroku-wsa-ws-odwolania-dyrektora/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:59+01:00</news:publication_date>
-      <news:title>Miasto złożyło skargę kasacyjną od wyroku WSA ws. odwołania dyrektora MOCAK-u</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1745899988.png</image:loc>
-      <image:title>Miasto złożyło skargę kasacyjną od wyroku WSA ws. odwołania dyrektora MOCAK-u</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lodzkie/blisko-piec-kilogramow-narkotykow-w-mieszkaniu-na-gornej-dwie-osoby-z/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:58+01:00</news:publication_date>
-      <news:title>Blisko pięć kilogramów narkotyków w mieszkaniu na Górnej. Dwie osoby z zarzutami</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1123799529.png</image:loc>
-      <image:title>Blisko pięć kilogramów narkotyków w mieszkaniu na Górnej. Dwie osoby z zarzutami</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/356-sprawcow-i-385-ofiar-pedofilii-w-ciagu-20-lat-raport-wloskiego/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:55+01:00</news:publication_date>
-      <news:title>356 sprawców i 385 ofiar pedofilii w ciągu 20 lat. Raport włoskiego Episkopatu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1394395071.png</image:loc>
-      <image:title>356 sprawców i 385 ofiar pedofilii w ciągu 20 lat. Raport włoskiego Episkopatu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/slascy-lowcy-glow-dopadli-25-latka-byl-scigany-dwoma-listami-gonczymi/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:54+01:00</news:publication_date>
-      <news:title>Śląscy „łowcy głów” dopadli 25-latka! Był ścigany dwoma listami gończymi</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1865490358.png</image:loc>
-      <image:title>Śląscy „łowcy głów” dopadli 25-latka! Był ścigany dwoma listami gończymi</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/elon-musk-rozdaje-akcje-spacex-dzieciom-w-usa-ich-wartosc-to-18-mld/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:52+01:00</news:publication_date>
-      <news:title>Elon Musk rozdaje akcje SpaceX dzieciom w USA. Ich wartość to 18 mld dolarów</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/54858404.png</image:loc>
-      <image:title>Elon Musk rozdaje akcje SpaceX dzieciom w USA. Ich wartość to 18 mld dolarów</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/samolot-z-teneryfy-awaryjnie-ladowal-na-lotnisku-chopina-zglosil-usterke/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:51+01:00</news:publication_date>
-      <news:title>Samolot z Teneryfy awaryjnie lądował na Lotnisku Chopina. "Zgłosił usterkę"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1258551442.png</image:loc>
-      <image:title>Samolot z Teneryfy awaryjnie lądował na Lotnisku Chopina. "Zgłosił usterkę"</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/probowal-otworzyc-drzwi-w-trakcie-lotu-maszyna-ladowala-awaryjnie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:50+01:00</news:publication_date>
-      <news:title>Próbował otworzyć drzwi w trakcie lotu. Maszyna lądowała awaryjnie</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2061672964.png</image:loc>
-      <image:title>Próbował otworzyć drzwi w trakcie lotu. Maszyna lądowała awaryjnie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/wraca-temat-diecezji-sosnowieckiej-ksiadz-z-prokuratorskimi-zarzutami/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T09:00:50+01:00</news:publication_date>
-      <news:title>Wraca temat diecezji sosnowieckiej. Ksiądz z prokuratorskimi zarzutami (29 osób)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/42315429.png</image:loc>
-      <image:title>Wraca temat diecezji sosnowieckiej. Ksiądz z prokuratorskimi zarzutami (29 osób)</image:title>
     </image:image>
   </url>
 </urlset>
