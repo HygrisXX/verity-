@@ -3,6 +3,141 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Wielkopolskie/godzina-roznicy-dwa-pozary-strazacy-ruszyli-do-akcji-przed-switem-6/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:18+01:00</news:publication_date>
+      <news:title>Godzina różnicy, dwa pożary. Strażacy ruszyli do akcji przed świtem (6 zastępów)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1100601954.png</image:loc>
+      <image:title>Godzina różnicy, dwa pożary. Strażacy ruszyli do akcji przed świtem (6 zastępów)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/protest-przed-warminsko-mazurskim-szpitalem-dyrektor-zlozyl-wazna/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:17+01:00</news:publication_date>
+      <news:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1622195756.png</image:loc>
+      <image:title>Protest przed warmińsko-mazurskim szpitalem. Dyrektor złożył ważną deklarację</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/premiera-filmu-dokumentalnego-wolne-sady-na-antenach-tvp/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:17+01:00</news:publication_date>
+      <news:title>Premiera filmu dokumentalnego „Wolne Sądy” na antenach TVP</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1188488158.png</image:loc>
+      <image:title>Premiera filmu dokumentalnego „Wolne Sądy” na antenach TVP</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Dolnoslaskie/widzew-lodz-zaglebie-lubin-relacja-na-zywo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:15+01:00</news:publication_date>
+      <news:title>Widzew Łódź – Zagłębie Lubin [RELACJA NA ŻYWO]</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/548216793.png</image:loc>
+      <image:title>Widzew Łódź – Zagłębie Lubin [RELACJA NA ŻYWO]</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Lubelskie/wisla-krakow-motor-lublin-jop-chcemy-obronic-nasza-twierdze/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:14+01:00</news:publication_date>
+      <news:title>Wisła Kraków – Motor Lublin. Jop: chcemy obronić naszą twierdzę</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/52806376.png</image:loc>
+      <image:title>Wisła Kraków – Motor Lublin. Jop: chcemy obronić naszą twierdzę</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/bialorus-ma-pomysl-jak-naruszyc-zapore-na-granicy-z-polska-chytre/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:13+01:00</news:publication_date>
+      <news:title>Białoruś ma pomysł, jak naruszyć zaporę na granicy z Polską. "Chytre posunięcie, musimy być czujni"</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/871253334.png</image:loc>
+      <image:title>Białoruś ma pomysł, jak naruszyć zaporę na granicy z Polską. "Chytre posunięcie, musimy być czujni"</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/burza-po-decyzji-nawrockiego-bedzie-ruch-rzadu-50-mln/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:11+01:00</news:publication_date>
+      <news:title>Burza po decyzji Nawrockiego. Będzie ruch rządu (50 mln)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1498215768.png</image:loc>
+      <image:title>Burza po decyzji Nawrockiego. Będzie ruch rządu (50 mln)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/przedswiateczne-targi-rzemiosla-wzory-w-rzeszowie-rekodzielo-warsztaty/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:10+01:00</news:publication_date>
+      <news:title>Przedświąteczne Targi Rzemiosła WZORY w Rzeszowie. Rękodzieło, warsztaty i świetny klimat</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/350680445.png</image:loc>
+      <image:title>Przedświąteczne Targi Rzemiosła WZORY w Rzeszowie. Rękodzieło, warsztaty i świetny klimat</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/pozar-domku-letniskowego-wsrod-poszkodowanych-poltoraroczne-dziecko/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:53:09+01:00</news:publication_date>
+      <news:title>Pożar domku letniskowego, wśród poszkodowanych półtoraroczne dziecko</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/719366557.png</image:loc>
+      <image:title>Pożar domku letniskowego, wśród poszkodowanych półtoraroczne dziecko</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/duze-zmiany-w-komunikacji-wokol-olsztyna-zapadla-wazna-decyzja/</loc>
     <news:news>
       <news:publication>
@@ -123,7 +258,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rusza-nabor-do-akademii-prezydenckiej-2027-bezplatny-program-dla/</loc>
+    <loc>https://hygrisxx.github.io/verity-/Polska/rusza-nabor-do-akademii-prezydenckiej-2027-bezplatny-program-dla/</loc>
     <news:news>
       <news:publication>
         <news:name>VERITY</news:name>
@@ -133,7 +268,7 @@
       <news:title>Rusza nabór do Akademii Prezydenckiej 2027. Bezpłatny program dla młodych liderów</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1687025555.png</image:loc>
+      <image:loc>https://hygrisxx.github.io/verity-/og/143585357.png</image:loc>
       <image:title>Rusza nabór do Akademii Prezydenckiej 2027. Bezpłatny program dla młodych liderów</image:title>
     </image:image>
   </url>
@@ -150,36 +285,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1984631158.png</image:loc>
       <image:title>Gdański Jarmark św. Dominika na krajowej liście dziedzictwa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/jaka-sprezarke-spalinowa-wybrac-do-jednostki-strazy-pozarnej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T12:54:44+01:00</news:publication_date>
-      <news:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/52743448.png</image:loc>
-      <image:title>Jaką sprężarkę spalinową wybrać do jednostki straży pożarnej</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Zachodniopomorskie/w-szczecinie-trwa-montaz-choinki-segment-po-segmencie-do-nieba/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T12:54:44+01:00</news:publication_date>
-      <news:title>W Szczecinie trwa montaż choinki. "Segment po segmencie do nieba"</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/933890037.png</image:loc>
-      <image:title>W Szczecinie trwa montaż choinki. "Segment po segmencie do nieba"</image:title>
     </image:image>
   </url>
   <url>
@@ -250,11 +355,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-28T12:54:37+01:00</news:publication_date>
-      <news:title>Nie żyje 10 uczniów, ponad 100 rannych. Potężny wybuch w pobliżu szkoły</news:title>
+      <news:title>Eksplozja nieopodal szkoły w Afganistanie. Nie żyją uczniowie, rannych ponad 100 osób</news:title>
     </news:news>
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1012784411.png</image:loc>
-      <image:title>Nie żyje 10 uczniów, ponad 100 rannych. Potężny wybuch w pobliżu szkoły</image:title>
+      <image:title>Eksplozja nieopodal szkoły w Afganistanie. Nie żyją uczniowie, rannych ponad 100 osób</image:title>
     </image:image>
   </url>
   <url>
