@@ -3,6 +3,126 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/warmia-i-mazury-w-podrozy-jak-zadbac-o-bezpieczenstwo-online-podczas/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:31+01:00</news:publication_date>
+      <news:title>Warmia i Mazury w podróży: jak zadbać o bezpieczeństwo online podczas wypoczynku nad jeziorami</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/626230635.png</image:loc>
+      <image:title>Warmia i Mazury w podróży: jak zadbać o bezpieczeństwo online podczas wypoczynku nad jeziorami</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/andrzejki-na-pomorzu-te-tradycje-sa-nadal-zywe/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:31+01:00</news:publication_date>
+      <news:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/871349883.png</image:loc>
+      <image:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rosja-domaga-sie-wycofania-polski-z-nato-grochmalski-o-niszczeniu/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:28+01:00</news:publication_date>
+      <news:title>Rosja domaga się wycofania Polski z NATO. Grochmalski o niszczeniu państwa przez ekipę Donalda Tuska</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/352614991.png</image:loc>
+      <image:title>Rosja domaga się wycofania Polski z NATO. Grochmalski o niszczeniu państwa przez ekipę Donalda Tuska</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Sport/as-sportu-interii-i-polsatu-sport-2026-kacper-tomasiak-kontra-iga/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:27+01:00</news:publication_date>
+      <news:title>"As Sportu Interii i Polsatu Sport 2026". Kacper Tomasiak kontra Iga Świątek. Zagłosuj!</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2099031215.png</image:loc>
+      <image:title>"As Sportu Interii i Polsatu Sport 2026". Kacper Tomasiak kontra Iga Świątek. Zagłosuj!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Malopolskie/driftowali-pod-przedszkolem-wojt-zapowiada-surowe-konsekwencje/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:26+01:00</news:publication_date>
+      <news:title>Driftowali pod przedszkolem. Wójt zapowiada surowe konsekwencje</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2140242878.png</image:loc>
+      <image:title>Driftowali pod przedszkolem. Wójt zapowiada surowe konsekwencje</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Swiat/ukraina-uderzyla-na-zachodzie-rosji-wazna-rafineria-stanela-w-ogniu-7-5/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:23+01:00</news:publication_date>
+      <news:title>Ukraina uderzyła na zachodzie Rosji. Ważna rafineria stanęła w ogniu (7,5 mld)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/752778432.png</image:loc>
+      <image:title>Ukraina uderzyła na zachodzie Rosji. Ważna rafineria stanęła w ogniu (7,5 mld)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/rozwoj-plus-na-listach-z-pis-polacy-podzieleni-w-nowym-sondazu-40-proc/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:22+01:00</news:publication_date>
+      <news:title>Rozwój Plus na listach z PiS? Polacy podzieleni w nowym sondażu (40 proc.)</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/484357787.png</image:loc>
+      <image:title>Rozwój Plus na listach z PiS? Polacy podzieleni w nowym sondażu (40 proc.)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Gospodarka/energia-przyszlosci-wypelni-slask-energy-days-2025-juz-w-pazdzierniku-w/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T07:04:21+01:00</news:publication_date>
+      <news:title>Energia przyszłości wypełni Śląsk – Energy Days 2025 już w październiku w Katowicach</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/822203706.png</image:loc>
+      <image:title>Energia przyszłości wypełni Śląsk – Energy Days 2025 już w październiku w Katowicach</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/trzy-miliony-wyswietlen-kampanii-o-czystym-powietrzu/</loc>
     <news:news>
       <news:publication>
@@ -55,11 +175,11 @@
         <news:language>pl</news:language>
       </news:publication>
       <news:publication_date>2026-11-28T05:56:12+01:00</news:publication_date>
-      <news:title>Polskie obywatelstwo za łapówkę? Śledczy rozbili układ w Dolnośląskim Urzędzie Wojewódzkim</news:title>
+      <news:title>Korupcyjny proceder w Dolnośląskim Urzędzie Wojewódzkim. Zatrzymano 12 osób</news:title>
     </news:news>
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/174702806.png</image:loc>
-      <image:title>Polskie obywatelstwo za łapówkę? Śledczy rozbili układ w Dolnośląskim Urzędzie Wojewódzkim</image:title>
+      <image:title>Korupcyjny proceder w Dolnośląskim Urzędzie Wojewódzkim. Zatrzymano 12 osób</image:title>
     </image:image>
   </url>
   <url>
@@ -90,36 +210,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1665807481.png</image:loc>
       <image:title>Znamy nowe maksymalne ceny paliw. Czy w weekend będzie drogo?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/niepokojace-doniesienia-dotyczace-dziecka-w-dps-sprawa-zajela-sie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T04:58:50+01:00</news:publication_date>
-      <news:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1604257945.png</image:loc>
-      <image:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/zdrowe-porty-w-sopocie-czasem-zaczyna-sie-od-jednego-pytania/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T04:58:50+01:00</news:publication_date>
-      <news:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/23710474.png</image:loc>
-      <image:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</image:title>
     </image:image>
   </url>
   <url>
@@ -1575,21 +1665,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/1645984798.png</image:loc>
       <image:title>Zostali pobici za koszulkę innego klubu. Pięciu pseudokibiców z zarzutami (41 lat)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/tak-rzad-utrzymalby-wladze-nowy-sondaz-pokazuje-zwyciestwo-wspolnej/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27T10:09:10+01:00</news:publication_date>
-      <news:title>Tak rząd utrzymałby władzę. Nowy sondaż pokazuje zwycięstwo wspólnej listy (41,6 proc.)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/754550083.png</image:loc>
-      <image:title>Tak rząd utrzymałby władzę. Nowy sondaż pokazuje zwycięstwo wspólnej listy (41,6 proc.)</image:title>
     </image:image>
   </url>
   <url>
@@ -3540,126 +3615,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/42315429.png</image:loc>
       <image:title>Wraca temat diecezji sosnowieckiej. Ksiądz z prokuratorskimi zarzutami (29 osób)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Podkarpackie/od-jutra-w-regionie-intensywne-opady-sniegu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:11:01+01:00</news:publication_date>
-      <news:title>Od jutra w regionie intensywne opady śniegu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/692370665.png</image:loc>
-      <image:title>Od jutra w regionie intensywne opady śniegu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Slaskie/sniezyca-nadciaga-nad-region-nawet-20-cm-sniegu-w-ciagu-doby-imgw-wydal/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:11:01+01:00</news:publication_date>
-      <news:title>Śnieżyca nadciąga nad region! Nawet 20 cm śniegu w ciągu doby. IMGW wydał OSTRZEŻENIE</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/376466548.png</image:loc>
-      <image:title>Śnieżyca nadciąga nad region! Nawet 20 cm śniegu w ciągu doby. IMGW wydał OSTRZEŻENIE</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Opolskie/opolski-jarmark-bozonarodzeniowy-2026-otwarcie-juz-w-najblizszy-piatek/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:11:00+01:00</news:publication_date>
-      <news:title>Opolski Jarmark Bożonarodzeniowy 2026: otwarcie już w najbliższy piątek</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1932835746.png</image:loc>
-      <image:title>Opolski Jarmark Bożonarodzeniowy 2026: otwarcie już w najbliższy piątek</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/senatorowie-przeciw-zmianom-karta-rodziny-mundurowej-nie-obejmie/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:10:55+01:00</news:publication_date>
-      <news:title>Senatorowie przeciw zmianom. Karta Rodziny Mundurowej nie obejmie wszystkich funkcjonariuszy?</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2054790297.png</image:loc>
-      <image:title>Senatorowie przeciw zmianom. Karta Rodziny Mundurowej nie obejmie wszystkich funkcjonariuszy?</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/wielkie-zmiany-w-dowodach-osobistych-termin-juz-podali-wszystko-przez/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:10:53+01:00</news:publication_date>
-      <news:title>Wielkie zmiany w dowodach osobistych. Termin już podali. Wszystko przez nowe przepisy</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/2029536203.png</image:loc>
-      <image:title>Wielkie zmiany w dowodach osobistych. Termin już podali. Wszystko przez nowe przepisy</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/miedzynarodowy-gang-napadal-na-przechodniow-akcja-na-nowym-swiecie-10/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:10:52+01:00</news:publication_date>
-      <news:title>Międzynarodowy gang napadał na przechodniów. Akcja na Nowym Świecie (10 osób)</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/494362269.png</image:loc>
-      <image:title>Międzynarodowy gang napadał na przechodniów. Akcja na Nowym Świecie (10 osób)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Swiat/premier-lotwy-estonia-zbyt-pochopnie-zamknela-granice-z-rosja/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:10:51+01:00</news:publication_date>
-      <news:title>Premier Łotwy: Estonia zbyt pochopnie zamknęła granicę z Rosją</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/239671364.png</image:loc>
-      <image:title>Premier Łotwy: Estonia zbyt pochopnie zamknęła granicę z Rosją</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/liderzy-finlandii-i-norwegii-rozmawiali-z-putinem-kreml-dostal/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T07:10:49+01:00</news:publication_date>
-      <news:title>Liderzy Finlandii i Norwegii rozmawiali z Putinem. Kreml dostał gwarancje dotyczące Bałtyku</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/94537188.png</image:loc>
-      <image:title>Liderzy Finlandii i Norwegii rozmawiali z Putinem. Kreml dostał gwarancje dotyczące Bałtyku</image:title>
     </image:image>
   </url>
 </urlset>
