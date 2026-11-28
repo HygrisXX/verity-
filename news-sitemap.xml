@@ -3,6 +3,51 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/niepokojace-doniesienia-dotyczace-dziecka-w-dps-sprawa-zajela-sie/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T04:58:50+01:00</news:publication_date>
+      <news:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/1604257945.png</image:loc>
+      <image:title>Niepokojące doniesienia dotyczące dziecka w DPS. Sprawą zajęła się policja</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/zdrowe-porty-w-sopocie-czasem-zaczyna-sie-od-jednego-pytania/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T04:58:50+01:00</news:publication_date>
+      <news:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/23710474.png</image:loc>
+      <image:title>„Zdrowe Porty” w Sopocie. „Czasem zaczyna się od jednego pytania”</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hygrisxx.github.io/verity-/Polska/Polityka/zakaz-noszenia-widocznych-symboli-religijnych-zgodny-z-konstytucja/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>VERITY</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T04:58:47+01:00</news:publication_date>
+      <news:title>Zakaz noszenia widocznych symboli religijnych zgodny z konstytucją</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://hygrisxx.github.io/verity-/og/2078639124.png</image:loc>
+      <image:title>Zakaz noszenia widocznych symboli religijnych zgodny z konstytucją</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/warmia-i-mazury-w-podrozy-jak-zadbac-o-bezpieczenstwo-online-podczas/</loc>
     <news:news>
       <news:publication>
@@ -30,36 +75,6 @@
     <image:image>
       <image:loc>https://hygrisxx.github.io/verity-/og/871349883.png</image:loc>
       <image:title>Andrzejki na Pomorzu. Te tradycje są nadal żywe</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Warminsko-Mazurskie/pewnosc-siebie-mimo-nietrzymania-moczu-sprawdz-skuteczne-i-dyskretne/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T02:50:32+01:00</news:publication_date>
-      <news:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/1718150614.png</image:loc>
-      <image:title>Pewność siebie mimo nietrzymania moczu – sprawdź skuteczne i dyskretne rozwiązania na co dzień</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://hygrisxx.github.io/verity-/Polska/Regiony/Pomorskie/trzy-miliony-wyswietlen-kampanii-o-czystym-powietrzu/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>VERITY</news:name>
-        <news:language>pl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-28T02:50:32+01:00</news:publication_date>
-      <news:title>Trzy miliony wyświetleń kampanii o czystym powietrzu</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>https://hygrisxx.github.io/verity-/og/685954347.png</image:loc>
-      <image:title>Trzy miliony wyświetleń kampanii o czystym powietrzu</image:title>
     </image:image>
   </url>
   <url>
